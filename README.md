@@ -7,6 +7,14 @@
 [![Responsive](https://img.shields.io/badge/Responsive-Phone%20%7C%20Tablet%20%7C%20Desktop-0ea5e9)](#-responsive-design)
 [![No Build Step](https://img.shields.io/badge/Build%20Step-None-16a34a)](#-quick-start)
 
+## 🚀 Open the Website
+
+<a href="https://ankitvrsharma.github.io/NET-Psychology/">
+  <img src="https://img.shields.io/badge/🌐%20OPEN%20LIVE%20WEBSITE-UGC%20NET%20Psychology-2563eb?style=for-the-badge" alt="Open live website">
+</a>
+
+> **Before publishing:** Replace `YOUR-GITHUB-USERNAME` and `YOUR-REPOSITORY` above with your actual GitHub Pages address.
+
 ## ✨ What is this?
 
 The UGC NET Psychology Study Hub turns the Psychology syllabus into an interactive study workspace instead of a static list of topics.
