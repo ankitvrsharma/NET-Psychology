@@ -1,7 +1,7 @@
 {
-  "name": "UGC NET Psychology Study Hub v10",
+  "name": "UGC NET Psychology Study Hub v11",
   "short_name": "NET Psychology",
-  "description": "Complete UGC NET Psychology learning, recall, practice and revision hub.",
+  "description": "Adaptive UGC NET Psychology learning system with diagnostic study queues, retrieval, application, interleaving and spaced revision.",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",

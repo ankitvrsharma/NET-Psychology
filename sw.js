@@ -1,5 +1,5 @@
-const CACHE="net-psychology-v9-3-content-2";
-const CORE=["./","./index.html","./dashboard.html","./practice.html","./flashcards.html","./bookmarks.html","./unit.html","./topic.html","./microtopic.html","./style.css","./app.js","./data.json","./meta.json","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png"];
+const CACHE="net-psychology-v11-0";
+const CORE=["./","./index.html","./dashboard.html","./practice.html","./flashcards.html","./bookmarks.html","./unit.html","./topic.html","./microtopic.html","./planner.html","./pyq.html","./style.css","./app.js","./data.json","./meta.json","./hub_content.json","./adaptive_content.json","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png"];
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener("fetch",event=>{

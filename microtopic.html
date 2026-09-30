@@ -14,8 +14,8 @@
 </section>
 
 <section class="learning-loop-card">
-  <div class="section-head"><div><span class="eyebrow">LEARNING LOOP</span><h2>Learn → Retrieve → Check → Schedule</h2></div><span class="learning-chip">Retrieval practice</span></div>
-  <div class="learning-steps"><span class="active">1. Learn</span><span>2. Retrieve</span><span>3. Check</span><span>4. Space</span></div>
+  <div class="section-head"><div><span class="eyebrow">LEARNING LOOP</span><h2>Learn → Retrieve → Check → Schedule</h2></div><span class="learning-chip">Retrieval practice</span><button id="focusStart" class="btn ghost">Start 25-min focus</button></div>
+  <div class="learning-steps"><span class="active">1. Understand</span><span>2. Retrieve</span><span>3. Apply</span><span>4. Interleave</span><span>5. Space</span></div><div class="stage-chip">Current stage: <strong id="learningStage">Understand</strong></div>
 </section>
 
 <section class="content-notes card-panel">
@@ -24,13 +24,21 @@
   <div id="contentNotes" class="content-notes-body"></div>
 </section>
 
+<section class="visualize-panel card-panel"><div class="section-head"><div><span class="eyebrow">VISUALIZE</span><h2>Build a mental picture</h2><p class="muted">Use the structure below as a compact visual cue. Add your own diagram mentally or on paper.</p></div></div><div class="visual-cue"><span>CORE IDEA</span><b>Definition</b><i>→</i><b>Key distinction</b><i>→</i><b>Example / application</b></div></section>
+
 <section class="recall-panel card-panel">
-  <div class="section-head"><div><span class="eyebrow">ACTIVE RECALL</span><h2>Close the notes. Write what you remember.</h2><p class="muted">Do not copy the notes. Reconstruct the idea from memory in your own words.</p></div><span class="recall-timer" id="recallTimer">2:00</span></div>
+  <div class="focus-timer" id="focusTimer" hidden>25:00</div><div class="section-head"><div><span class="eyebrow">ACTIVE RECALL</span><h2>Close the notes. Write what you remember.</h2><p class="muted">Do not copy the notes. Reconstruct the idea from memory in your own words.</p></div><span class="recall-timer" id="recallTimer">2:00</span></div>
   <div class="recall-prompt" id="recallPrompt"></div>
   <textarea id="recallResponse" class="recall-box" placeholder="Write from memory… definitions, key points, theorists, distinctions, examples or steps. Keep it brief."></textarea>
   <div class="recall-actions"><button id="startRecall" class="btn primary">Start 2-minute recall</button><button id="checkRecall" class="btn" disabled>Reveal key points</button><span id="recallSaved" class="muted"></span></div>
   <div id="keyPoints" class="key-points" hidden></div>
 </section>
+
+<section class="apply-panel card-panel"><div class="section-head"><div><span class="eyebrow">APPLY</span><h2>Transfer the idea to a new situation.</h2><p class="muted">Application questions force conceptual transfer rather than recognition alone.</p></div></div><div id="applyQuestion"></div></section>
+
+<section class="teachback-grid"><section class="card-panel"><span class="eyebrow">BLURTING</span><h2>Write everything you remember.</h2><p class="muted">No notes. Reconstruct the topic in 60–90 seconds.</p><textarea id="blurting" class="recall-box" placeholder="Write the concepts, theorists, distinctions, examples and applications you remember…"></textarea><button id="saveBlurting" class="btn primary">Save blurt</button> <span id="blurtingSaved" class="muted"></span></section><section class="card-panel"><span class="eyebrow">TEACH-BACK</span><h2>You are the teacher.</h2><p class="muted">Explain the concept as if teaching a Class 10 student.</p><textarea id="teachback" class="recall-box" placeholder="Explain this concept in simple language…"></textarea><button id="saveTeachback" class="btn primary">Save teach-back</button> <span id="teachbackSaved" class="muted"></span></section></section>
+
+<section class="confidence-panel card-panel"><div class="section-head"><div><span class="eyebrow">METACOGNITION</span><h2>How confident were you?</h2></div></div><div class="confidence-grid"><button class="confidence" data-confidence="guessing">😕 Guessing</button><button class="confidence" data-confidence="somewhat">😐 Somewhat confident</button><button class="confidence" data-confidence="confident">🙂 Confident</button><button class="confidence" data-confidence="very">🔥 Very confident</button></div></section>
 
 <section class="review-panel card-panel">
   <div class="section-head"><div><span class="eyebrow">SPACED REVISION</span><h2>How well could you retrieve it?</h2><p class="muted">Your rating sets the next review interval. Harder retrieval brings the topic back sooner.</p></div></div>
