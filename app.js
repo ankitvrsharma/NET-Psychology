@@ -1,5 +1,5 @@
 
-const KEY="psychologyNetStudyHub_v9";
+const KEY="psychologyNetStudyHub_v9_3";
 let db=null, meta=null;
 
 async function loadAll(){
@@ -13,7 +13,12 @@ async function loadAll(){
       fresh.units.forEach(fu=>{
         const su=db?.units?.find(u=>u.id===fu.id); if(!su) return;
         fu.topics.forEach(ft=>{
-          const st=su.topics?.find(t=>t.id===ft.id); if(st && ft.microtopics) st.microtopics=ft.microtopics;
+          const st=su.topics?.find(t=>t.id===ft.id); if(!st) return;
+          const preserved={notes:st.notes,detailed_notes:st.detailed_notes,references:st.references};
+          Object.assign(st,ft);
+          if(preserved.notes) st.notes=preserved.notes;
+          if(preserved.detailed_notes) st.detailed_notes=preserved.detailed_notes;
+          if(preserved.references) st.references=preserved.references;
         });
       });
       return;
@@ -38,13 +43,6 @@ function renderNav(){
     ["index","index.html","Home"],["dashboard","dashboard.html","Dashboard"],["practice","practice.html","Practice"],["flashcards","flashcards.html","Flashcards"],["bookmarks","bookmarks.html","Bookmarks"]
   ];
   document.querySelectorAll("[data-nav]").forEach(e=>e.innerHTML=items.map(([key,url,label])=>`<a href="${url}" ${page===key?'aria-current="page"':''}>${label}</a>`).join(""));
-}
-function exportData(){
- const blob=new Blob([JSON.stringify({db,meta,learning:loadLearning()},null,2)],{type:"application/json"});
- const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="psychology-net-study-backup.json";a.click();
-}
-function importData(file){
- const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.db)throw 0;db=x.db;meta=x.meta||meta;if(x.learning)saveLearning(x.learning);saveAll();location.reload()}catch(e){alert("Invalid backup file.")}};r.readAsText(file);
 }
 function todayKey(d=new Date()){
   const x=new Date(d);
@@ -110,8 +108,6 @@ function getStreak(){
   while(true){const k=todayKey(d);if(!days[k] || ((days[k].topics||[]).length===0 && (days[k].mcqs||0)===0))break;count++;d.setDate(d.getDate()-1);}
   return count;
 }
-function resetData(){if(confirm("Reset all your notes, progress, bookmarks and study data?")){localStorage.removeItem(KEY);localStorage.removeItem("psychologyNetActivity_v1");localStorage.removeItem(LEARN_KEY);location.reload();}}
-
 
 const LEARN_KEY="psychologyNetLearning_v1";
 function loadLearning(){let x={micro:{}};try{x=JSON.parse(localStorage.getItem(LEARN_KEY))||x;}catch(e){};x.micro=x.micro||{};return x;}
@@ -181,7 +177,7 @@ async function initIndex(){
  if(next){
    const nextUrl=microUrl(next.unitId,next.topicId,next.id);
    const cb=document.querySelector("#continueBtn"); cb.href=nextUrl;
-   cb.textContent=(getMicroState(next.unitId,next.topicId,next.id).status==="Studying"?"Continue review →":(rs.due.length?"Start spaced review →":"Start micro topic →"));
+   cb.textContent="Start Learning →";
    document.querySelector("#heroFocus").textContent=next.title;
    document.querySelector("#heroFocusMeta").textContent=`Unit ${next.unitId} · ${next.topicId}.${next.id} · ${reviewLabel(next)}`;
    const hs=document.querySelector("#heroStartBtn"); if(hs){hs.href=nextUrl; hs.textContent=rs.due.length?"Start review →":"Start studying →";}
@@ -201,8 +197,6 @@ async function initIndex(){
  };
  render();
  document.querySelector("#search").oninput=e=>render(e.target.value);
- document.querySelector("#export").onclick=exportData;document.querySelector("#reset").onclick=resetData;
- document.querySelector("#importFile").onchange=e=>e.target.files[0]&&importData(e.target.files[0]);
  document.querySelector("#exportReviews")?.addEventListener("click",exportReviewCalendar);
  const homeInstall=document.querySelector("#homeInstall");
  homeInstall?.addEventListener("click",()=>document.querySelector("#installBtn")?.click());
@@ -213,7 +207,7 @@ async function initUnit(){
  if(!u){location.href="index.html";return}
  const microCount=u.topics.reduce((n,t)=>n+(t.microtopics||[]).length,0);
  document.querySelector("#title").textContent=`Unit ${u.id} — ${u.title}`;
- document.querySelector("#count").textContent=`${u.topics.length} outline points · ${microCount} micro topics`;
+ document.querySelector("#count").textContent=`${u.topics.length} Topics · ${microCount} Micro Topics`;
  document.querySelector("#progress").textContent=`${progress(u.id)}% mastered`;
  const list=document.querySelector("#outline");
  const render=q=>{
@@ -225,7 +219,7 @@ async function initUnit(){
        <div class="outline-item outline-heading">
          <span class="num">${t.id}</span>
          <div class="outline-main"><h3>${esc(t.title)}</h3><p>${mts.length} micro topics · ${mts.filter(m=>getMicroState(u.id,t.id,m.id).status==="Mastered").length} mastered</p></div>
-         <a class="outline-open btn ghost" href="topic.html?unit=${u.id}&topic=${t.id}">Open outline →</a>
+         <a class="outline-open btn ghost" href="topic.html?unit=${u.id}&topic=${t.id}">Open Topic →</a>
        </div>
        <div class="microtopic-grid">
          ${mts.map(m=>{const s=getMicroState(u.id,t.id,m.id);return `<a class="microtopic-card" href="${microUrl(u.id,t.id,m.id)}">
@@ -258,7 +252,7 @@ async function initMicrotopic(){
  document.querySelector("#unitLink").textContent=`Unit ${u.id} — ${u.title}`;document.querySelector("#unitLink").href=unitUrl(u.id);
  document.querySelector("#outlineLink").textContent=`${t.id}. ${t.title}`;document.querySelector("#outlineLink").href=topicUrl(u.id,t.id);
  document.querySelector("#microNum").textContent=`Micro topic ${t.id}.${m.id}`;document.querySelector("#microTitle").textContent=m.title;document.querySelector("#microParent").textContent=`Unit ${u.id} · ${t.title}`;
- document.querySelector("#syllabusAnchor").textContent=t.title;document.querySelector("#contentNotes").innerHTML=m.content_notes?esc(m.content_notes):microContent(full);
+ document.querySelector("#syllabusAnchor").textContent=t.title;document.querySelector("#contentNotes").innerHTML=m.content_notes?`<div class="rich-note"><div class="source-note"><strong>Content source:</strong> ${esc(m.source||"Source-aligned study content")}</div><div class="rich-note-text">${esc(m.content_notes)}</div></div>`:microContent(full);
  const statusEl=document.querySelector("#microStatus"),dueEl=document.querySelector("#dueLabel"),recall=document.querySelector("#recallResponse"),pyqResp=document.querySelector("#pyqResponse");
  const renderState=()=>{statusEl.textContent=s.status;dueEl.textContent=formatDue(s.nextReview);document.querySelector("#bookmarkMicro").textContent=s.bookmark?"★ Bookmarked":"☆ Bookmark micro topic";recall.value=s.recall||"";pyqResp.value=s.pyqResponse||"";document.querySelector("#nextReview").textContent=s.nextReview?`Next review: ${new Date(s.nextReview).toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"short"})} · ${formatDue(s.nextReview)}`:"Complete a recall attempt to schedule revision."};
  renderState();
@@ -279,7 +273,7 @@ async function initMicrotopic(){
    setMicroState(u.id,t.id,m.id,s);recordMicroActivity(full);
    document.querySelector("#nextReview").textContent=`Next review: ${new Date(s.nextReview).toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"short"})} · ${formatDue(s.nextReview)}`;renderState();
  });
- const pyqs=parsePyqBlocks(t.pyqs);document.querySelector("#pyqList").innerHTML=pyqs.length?pyqs.map((q,i)=>`<article class="pyq-item"><span>PYQ ${i+1}</span><p>${esc(q)}</p></article>`).join(""): `<div class="callout"><strong>No verified PYQ is attached to this outline point yet.</strong><p>When verified Psychology Paper-II PYQs are added to the source data, they will appear here. Do not treat generated practice questions as verified PYQs.</p></div>`;
+ const pyqs=parsePyqBlocks(t.pyqs);document.querySelector("#pyqList").innerHTML=pyqs.length?pyqs.map((q,i)=>`<article class="pyq-item"><span>PYQ-STYLE ${i+1}</span><p>${esc(q)}</p></article>`).join(""): `<div class="callout"><strong>No question has been added to this outline point yet.</strong><p>Generated practice questions are clearly labelled PYQ-style and should not be treated as verified past-year questions.</p></div>`;
  document.querySelector("#savePyq").onclick=()=>{s=getMicroState(u.id,t.id,m.id);s.pyqResponse=pyqResp.value.trim();s.status=s.status==="Not started"?"Studying":s.status;setMicroState(u.id,t.id,m.id,s);recordMicroActivity(full);document.querySelector("#pyqSaved").textContent="PYQ response saved ✓";renderState();setTimeout(()=>document.querySelector("#pyqSaved").textContent="",1600)};
  document.querySelector("#bookmarkMicro").onclick=()=>{s=getMicroState(u.id,t.id,m.id);s.bookmark=!s.bookmark;setMicroState(u.id,t.id,m.id,s);renderState()};
  document.querySelector("#backOutline").href=topicUrl(u.id,t.id);

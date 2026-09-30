@@ -1,5 +1,5 @@
 {
-  "app_version": "9.1",
+  "app_version": "9.3",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
@@ -30,9 +30,12 @@
     "overdue review carry-forward safety net",
     "review calendar fallback for missed website visits",
     "accessible responsive primary navigation with active state",
-    "desktop tablet landscape and mobile adaptive layout hardening"
+    "desktop tablet landscape and mobile adaptive layout hardening",
+    "learner-first home messaging and collapsible outline navigation",
+    "source-aligned micro-topic notes",
+    "PYQ-style question bank"
   ],
-  "version": "v9.1",
+  "version": "v9.3",
   "microtopic_count": 440,
-  "content_note": "v9.1 prioritizes spaced-repetition reviews in the progress block and carries missed reviews forward as overdue rather than silently skipping them. A calendar export provides an external reminder fallback when the learner does not open the website."
+  "content_note": "Populated from Prompts for notes.docx, aligned to the authoritative 10-unit syllabus. Generated questions are PYQ-style practice, not verified past-year questions."
 }
