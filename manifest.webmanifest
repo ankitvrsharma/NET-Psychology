@@ -1,0 +1,15 @@
+{
+  "name": "UGC NET Psychology Study Hub",
+  "short_name": "NET Psychology",
+  "description": "A mobile-first study hub for the UGC NET Psychology syllabus.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7fb",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

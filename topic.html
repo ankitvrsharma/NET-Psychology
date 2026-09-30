@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Topic — Psychology NET</title><meta name="description" content="Interactive UGC NET Psychology syllabus study hub">
+<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"></head>
+<body data-page="topic">
+<header class="topbar"><nav class="nav">
+<a class="brand" href="index.html">Psychology <span>NET Study Hub</span></a>
+<div class="navlinks"><a href="index.html">Home</a><a href="index.html#units">All Units</a><span data-units-nav></span></div>
+<button class="install-btn" id="installBtn" hidden>Install App</button></nav></header>
+
+
+
+<main class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a id="unitLink" href="#"></a> / Topic</div>
+<div class="topic-layout"><aside class="sidebar"><strong>Unit outline</strong><div id="side" style="margin-top:8px"></div></aside>
+<article class="topic"><div class="badge" id="num">Topic</div><h1 id="title">Topic</h1>
+<h2>What the syllabus says</h2><div class="source" id="syllabus"></div><h2>Study explanation</h2><p id="explanation"></p><div class="source"><strong>Study architecture:</strong> The expanded notes and micro-topic lenses are a study aid built around the exact syllabus anchor. They are not additional official syllabus wording.</div>
+<h2>Micro-topic map</h2><ol id="microtopics" class="microtopics"></ol>
+<div class="toolbar"><button id="bookmark" class="btn">☆ Bookmark</button><select id="status" class="select"><option>Not started</option><option>Studying</option><option>Mastered</option></select></div>
+<div class="workspace"><div class="field full"><label>Detailed notes / your expanded notes</label><textarea id="detailed" placeholder="Definitions, concepts, theories, diagrams, examples…"></textarea></div>
+<div class="field"><label>Quick revision notes</label><textarea id="notes" placeholder="Short revision notes, mnemonics and traps…"></textarea></div>
+<div class="field"><label>PYQs / verification workspace</label><textarea id="pyqs" placeholder="Add verified PYQs here with year and explanation."></textarea></div>
+<div class="field"><label>MCQs</label><textarea id="mcqs" placeholder="Add verified MCQs. Separate questions with a blank line."></textarea></div>
+<div class="field"><label>Flashcards</label><textarea id="flashcards" placeholder="One card per line."></textarea></div>
+<div class="field"><label>References</label><textarea id="references" placeholder="Books, pages, articles, videos…"></textarea></div></div>
+<div class="topic-actions"><div><button id="prev" class="btn">← Previous</button> <button id="next" class="btn">Next →</button></div>
+<div><span id="saved" class="muted"></span> <button id="clear" class="btn">Clear</button> <button id="save" class="btn primary">Save</button></div></div>
+</article></div></main>
+
+
+
+<footer class="footer">UGC NET Psychology Study Hub · Static, editable and ready for future expansion</footer>
+<div id="installToast" class="install-toast" hidden><strong>Make it feel like an app</strong><span>Add Psychology NET Study Hub to your home screen for a cleaner phone experience.</span><button id="installToastBtn" class="btn primary">Install</button><button id="installToastClose" class="toast-close" aria-label="Close">×</button></div><script src="app.js"></script></body></html>
