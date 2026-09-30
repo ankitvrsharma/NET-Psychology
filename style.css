@@ -534,3 +534,136 @@ body { position: relative; }
 }
 /* v8.4: install prompt is intentionally not rendered as a recurring overlay. */
 .install-toast { display:none !important; }
+
+
+/* ===== v8.5 LANDSCAPE SPLIT-SCREEN TABLET FIX =====
+   Android tablets may present the site in a ~700–900px landscape split-screen
+   viewport. Use the full available width for the progress card and prevent
+   the daily topic cards from squeezing long syllabus titles into narrow columns. */
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 1100px) {
+  .home-container {
+    width:100%;
+    max-width:none;
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .home-hero {
+    display:block;
+    width:100%;
+    max-width:none;
+    padding:28px 0 24px;
+  }
+
+  .hero-copy { width:100%; max-width:none; }
+  .hero-copy h1, .hero-lead { max-width:none; }
+
+  .hero-dashboard {
+    width:100%;
+    max-width:none;
+    min-height:0;
+    margin-top:20px;
+    display:block;
+    overflow:visible;
+  }
+
+  /* The decorative orb is unnecessary in split-screen landscape and was
+     competing with the progress card for horizontal space. */
+  .hero-orb { display:none; }
+
+  .mini-window {
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:22px;
+    border-radius:22px;
+  }
+
+  .mini-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .mini-grid div { min-width:0; }
+
+  .mini-focus {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:
+      "label button"
+      "title button"
+      "meta button";
+    column-gap:16px;
+    align-items:center;
+  }
+  .mini-focus .focus-label { grid-area:label; }
+  .mini-focus strong { grid-area:title; min-width:0; overflow-wrap:anywhere; }
+  .mini-focus small { grid-area:meta; }
+  .mini-start {
+    grid-area:button;
+    align-self:center;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:42px;
+    padding:10px 14px;
+    border-radius:11px;
+    background:#4f46e5;
+    color:#fff;
+    font-weight:800;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+
+  /* Full-width daily plan; each syllabus title gets enough horizontal
+     room to wrap instead of overflowing outside its card. */
+  .today-cockpit {
+    width:100%;
+    max-width:none;
+    padding:20px;
+  }
+  .today-grid {
+    grid-template-columns:1fr;
+    width:100%;
+  }
+  .today-list {
+    grid-template-columns:1fr;
+    width:100%;
+  }
+  .today-task {
+    width:100%;
+    max-width:none;
+    display:grid;
+    grid-template-columns:29px minmax(0,1fr) auto;
+    align-items:start;
+  }
+  .today-task > span:nth-child(2) { min-width:0; }
+  .today-task strong,
+  .today-task small {
+    white-space:normal;
+    overflow:visible;
+    text-overflow:clip;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  .today-task > b { margin-left:0; padding-top:2px; }
+
+  .today-mcq {
+    width:100%;
+    max-width:none;
+    grid-template-columns:auto minmax(0,1fr) auto;
+  }
+  .today-mcq > div { min-width:0; }
+  .today-mcq h3, .today-mcq p { overflow-wrap:anywhere; }
+
+  /* Quick cards below the cockpit also need wrapped text in split-screen. */
+  .quick-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .quick-card { min-width:0; }
+  .quick-card > div { min-width:0; }
+  .quick-card strong, .quick-card small { overflow-wrap:anywhere; }
+}
+
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 760px) {
+  .home-container { padding-left:12px; padding-right:12px; }
+  .mini-window { padding:17px; }
+  .mini-focus { grid-template-columns:1fr; grid-template-areas:
+    "label" "title" "meta" "button"; }
+  .mini-start { justify-self:start; margin-top:9px; }
+  .quick-grid { grid-template-columns:1fr; }
+}

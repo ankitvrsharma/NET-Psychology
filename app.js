@@ -101,10 +101,12 @@ async function initIndex(){
 
  const next=topics.find(t=>t.status==="Studying") || topics.find(t=>t.bookmarks) || topics.find(t=>t.status!=="Mastered") || topics[0];
  if(next){
-   const cb=document.querySelector("#continueBtn"); cb.href=topicUrl(next.unitId,next.id);
+   const nextUrl=topicUrl(next.unitId,next.id);
+   const cb=document.querySelector("#continueBtn"); cb.href=nextUrl;
    cb.textContent=(next.status==="Studying"?"Continue studying →":next.bookmarks?"Resume saved topic →":"Start your first topic →");
    document.querySelector("#heroFocus").textContent=next.title;
    document.querySelector("#heroFocusMeta").textContent=`Unit ${next.unitId} · ${next.status}`;
+   const hs=document.querySelector("#heroStartBtn"); if(hs){hs.href=nextUrl; hs.textContent=(next.status==="Studying"?"Continue studying →":"Start studying →");}
  }
  const queue=[];
  const addUnique=(arr)=>arr.forEach(t=>{if(t && !queue.some(x=>x.unitId===t.unitId&&x.id===t.id))queue.push(t)});
