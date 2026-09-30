@@ -1,5 +1,5 @@
 {
-  "app_version": "9.3",
+  "app_version": "9.4",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
@@ -35,7 +35,17 @@
     "source-aligned micro-topic notes",
     "PYQ-style question bank"
   ],
-  "version": "v9.3",
+  "version": "v9.4",
   "microtopic_count": 440,
-  "content_note": "Populated from Prompts for notes.docx, aligned to the authoritative 10-unit syllabus. Generated questions are PYQ-style practice, not verified past-year questions."
+  "content_note": "Content enriched with the attached Psychology: A Self-Teaching Guide. Chapter-aligned notes and source-based self-test questions were added where directly relevant; existing UGC NET syllabus structure and micro-topic learning system are preserved.",
+  "content_sources": [
+    "Authoritative UGC NET Psychology syllabus",
+    "Prompts for notes.docx",
+    "Psychology: A Self-Teaching Guide (attached PDF)"
+  ],
+  "book_integration": {
+    "chapters": 16,
+    "microtopic_count": 440,
+    "source_based_self_tests": 160
+  }
 }
