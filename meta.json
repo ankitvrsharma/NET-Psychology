@@ -1,5 +1,5 @@
 {
-  "app_version": "8.2",
+  "app_version": "8.4",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
@@ -16,9 +16,11 @@
     "topic search",
     "JSON backup",
     "mobile-first responsive layout",
-    "tablet overflow + overlay hardening"
+    "tablet overflow + overlay hardening",
+    "landscape tablet normal-flow layout",
+    "micro-topic hierarchy and persistent non-overlay install controls"
   ],
-  "version": "v8.2",
+  "version": "v8.4",
   "microtopic_count": 1368,
-  "content_note": "Expanded exam-oriented notes, 12 micro-lenses per syllabus point, draft practice MCQs and flashcards. PYQs are intentionally not labelled verified unless sourced separately. Mobile layout hardened for phone viewport widths and PWA cache refresh. Tablet overflow and progress/practice normal-flow fixes added in v8.2."
+  "content_note": "10-unit syllabus with nested outline-point and micro-topic study hierarchy; responsive tablet/landscape layout; install overlay removed."
 }

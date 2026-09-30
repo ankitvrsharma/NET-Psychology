@@ -4,9 +4,23 @@ let db=null, meta=null;
 
 async function loadAll(){
   const saved=localStorage.getItem(KEY);
-  if(saved){try{const x=JSON.parse(saved); db=x.db; meta=x.meta; return;}catch(e){}}
-  db=await (await fetch("data.json")).json();
-  meta=await (await fetch("meta.json")).json();
+  if(saved){
+    try{
+      const x=JSON.parse(saved); db=x.db; meta=x.meta;
+      // Merge the latest syllabus structure (including micro-topics) into saved local data
+      // without overwriting the learner's notes, status or bookmarks.
+      const fresh=await (await fetch("data.json",{cache:"no-store"})).json();
+      fresh.units.forEach(fu=>{
+        const su=db?.units?.find(u=>u.id===fu.id); if(!su) return;
+        fu.topics.forEach(ft=>{
+          const st=su.topics?.find(t=>t.id===ft.id); if(st && ft.microtopics) st.microtopics=ft.microtopics;
+        });
+      });
+      return;
+    }catch(e){}
+  }
+  db=await (await fetch("data.json",{cache:"no-store"})).json();
+  meta=await (await fetch("meta.json",{cache:"no-store"})).json();
 }
 function saveAll(){localStorage.setItem(KEY,JSON.stringify({db,meta}));}
 function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
@@ -104,7 +118,7 @@ async function initIndex(){
  const render=(q="")=>{
   q=q.toLowerCase().trim();
   const units=db.units.filter(u=>(`unit ${u.id} ${u.title} ${u.topics.map(t=>t.title).join(" ")}`).toLowerCase().includes(q));
-  grid.innerHTML=units.map(u=>`<a class="unit-card" href="${unitUrl(u.id)}"><div class="unit-num">UNIT ${u.id}</div><h3>${esc(u.title)}</h3><p>${u.topics.length} syllabus points</p><div class="progress"><i style="width:${progress(u.id)}%"></i></div><small>${progress(u.id)}% mastered</small></a>`).join("") || `<div class="callout"><strong>No matching unit or topic.</strong><p>Try a broader search term.</p></div>`;
+  grid.innerHTML=units.map(u=>`<a class="unit-card" href="${unitUrl(u.id)}"><div class="unit-num">UNIT ${u.id}</div><h3>${esc(u.title)}</h3><p>${u.topics.length} outline points · ${u.topics.reduce((n,t)=>n+(t.microtopics||[]).length,0)} micro topics</p><div class="progress"><i style="width:${progress(u.id)}%"></i></div><small>${progress(u.id)}% mastered</small></a>`).join("") || `<div class="callout"><strong>No matching unit or topic.</strong><p>Try a broader search term.</p></div>`;
  };
  render();
  document.querySelector("#search").oninput=e=>render(e.target.value);
@@ -117,11 +131,33 @@ async function initIndex(){
 async function initUnit(){
  await loadAll();renderNav();const id=new URLSearchParams(location.search).get("unit"),u=unitById(id);
  if(!u){location.href="index.html";return}
- document.querySelector("#title").textContent=`Unit ${u.id} — ${u.title}`;document.querySelector("#count").textContent=`${u.topics.length} syllabus points`;
+ const microCount=u.topics.reduce((n,t)=>n+(t.microtopics||[]).length,0);
+ document.querySelector("#title").textContent=`Unit ${u.id} — ${u.title}`;
+ document.querySelector("#count").textContent=`${u.topics.length} outline points · ${microCount} micro topics`;
  document.querySelector("#progress").textContent=`${progress(u.id)}% mastered`;
  const list=document.querySelector("#outline");
- const render=q=>{q=q.toLowerCase();list.innerHTML=u.topics.filter(t=>t.title.toLowerCase().includes(q)).map(t=>`
- <a class="outline-item" href="${topicUrl(u.id,t.id)}"><span class="num">${t.id}</span><div><h3>${esc(t.title)}</h3><p>${t.status==="Mastered"?"✓ Mastered":t.status==="Studying"?"◐ Studying":"○ Not started"}${t.bookmarks?" · ★ Bookmarked":""}</p></div></a>`).join("")};
+ const render=q=>{
+   q=q.toLowerCase().trim();
+   const topics=u.topics.filter(t=>{
+     const hay=[t.title,...(t.microtopics||[]).map(m=>m.title)].join(" ").toLowerCase();
+     return hay.includes(q);
+   });
+   list.innerHTML=topics.map(t=>{
+     const mts=t.microtopics||[];
+     return `<section class="outline-group" id="outline-${u.id}-${t.id}">
+       <div class="outline-item outline-heading">
+         <span class="num">${t.id}</span>
+         <div class="outline-main"><h3>${esc(t.title)}</h3><p>${t.status==="Mastered"?"✓ Mastered":t.status==="Studying"?"◐ Studying":"○ Not started"}${t.bookmarks?" · ★ Bookmarked":""} · ${mts.length} micro topics</p></div>
+         <a class="outline-open btn ghost" href="${topicUrl(u.id,t.id)}">Open workspace →</a>
+       </div>
+       <div class="microtopic-grid">
+         ${mts.map(m=>`<a class="microtopic-card" id="micro-${u.id}-${t.id}-${m.id}" href="${topicUrl(u.id,t.id)}#micro-${u.id}-${t.id}-${m.id}">
+           <span class="microtopic-num">${t.id}.${m.id}</span><div><strong>${esc(m.title)}</strong><small>Micro topic · Study within this outline point</small></div><span class="microtopic-arrow">→</span>
+         </a>`).join("")}
+       </div>
+     </section>`;
+   }).join("") || `<div class="callout"><strong>No matching syllabus point or micro topic.</strong><p>Try a broader search term.</p></div>`;
+ };
  render("");document.querySelector("#search").oninput=e=>render(e.target.value);
 }
 async function initTopic(){
@@ -130,7 +166,7 @@ async function initTopic(){
  if(!u||!t){location.href="index.html";return}
  document.querySelector("#unitLink").textContent=`Unit ${u.id} — ${u.title}`;document.querySelector("#unitLink").href=unitUrl(u.id);
  document.querySelector("#num").textContent=`Topic ${t.id}`;document.querySelector("#title").textContent=t.title;document.querySelector("#syllabus").textContent=t.title;document.querySelector("#explanation").textContent=t.explanation;
- const mt=document.querySelector("#microtopics"); if(mt){mt.innerHTML=(t.microtopics||[]).map((x,i)=>`<li><strong>${i+1}.</strong> ${esc(x)}</li>`).join("");}
+ const mt=document.querySelector("#microtopics"); if(mt){mt.innerHTML=(t.microtopics||[]).map((x,i)=>`<li id="micro-${u.id}-${t.id}-${x.id}" class="microtopic-panel"><span class="microtopic-num">${t.id}.${x.id}</span><div><strong>${esc(x.title)}</strong><small>Micro topic study space</small></div></li>`).join("");}
  ["detailed","notes","pyqs","mcqs","flashcards","references"].forEach(k=>document.querySelector("#"+k).value=t[k]||"");
  document.querySelector("#status").value=t.status||"Not started";document.querySelector("#bookmark").textContent=t.bookmarks?"★ Bookmarked":"☆ Bookmark";
  const side=document.querySelector("#side");side.innerHTML=u.topics.map(x=>`<a class="${x.id===t.id?"active":""}" href="${topicUrl(u.id,x.id)}">${x.id}. ${esc(x.title)}</a>`).join("");
@@ -189,13 +225,9 @@ function setupPWA(){
     navigator.serviceWorker.register("sw.js").catch(()=>{});
   }
   const installBtn=document.querySelector("#installBtn");
-  const toast=document.querySelector("#installToast");
-  const toastBtn=document.querySelector("#installToastBtn");
-  const toastClose=document.querySelector("#installToastClose");
   window.addEventListener("beforeinstallprompt",e=>{
     e.preventDefault(); deferredInstallPrompt=e;
     if(installBtn) installBtn.hidden=false;
-    if(toast) toast.hidden=false;
   });
   async function install(){
     if(!deferredInstallPrompt){ return; }
@@ -203,14 +235,10 @@ function setupPWA(){
     try{ await deferredInstallPrompt.userChoice; }catch(e){}
     deferredInstallPrompt=null;
     if(installBtn) installBtn.hidden=true;
-    if(toast) toast.hidden=true;
   }
   installBtn?.addEventListener("click",install);
-  toastBtn?.addEventListener("click",install);
-  toastClose?.addEventListener("click",()=>{if(toast) toast.hidden=true});
-  window.addEventListener("appinstalled",()=>{if(installBtn) installBtn.hidden=true;if(toast) toast.hidden=true});
+  window.addEventListener("appinstalled",()=>{if(installBtn) installBtn.hidden=true;});
 }
-
 document.addEventListener("DOMContentLoaded",()=>{
  const p=document.body.dataset.page;
  if(p==="index")initIndex();if(p==="unit")initUnit();if(p==="topic")initTopic();if(p==="dashboard")initDashboard();if(p==="practice")initPractice();if(p==="flashcards")initFlashcards();if(p==="bookmarks")initBookmarks();

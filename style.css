@@ -376,3 +376,161 @@ body { position: relative; }
   .today-mcq { grid-template-columns: auto minmax(0, 1fr); }
   .today-mcq > b { grid-column: 2; justify-self: start; margin-top: 4px; }
 }
+
+/* ===== v8.3 LANDSCAPE TABLET / LARGE-PHONE HARDENING ===== */
+/* Some Android tablets report a landscape CSS viewport wider than 1100px.
+   Keep the home page in normal flow instead of allowing desktop grids to
+   create a clipped/overlapping canvas. */
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1600px) {
+  html, body { width:100%; max-width:100%; overflow-x:hidden; }
+  .topbar { width:100%; max-width:100%; }
+  .nav { width:100%; max-width:1180px; margin:0 auto; box-sizing:border-box; }
+
+  .home-container {
+    width:100%;
+    max-width:1240px;
+    margin:0 auto;
+    padding-left:28px;
+    padding-right:28px;
+    box-sizing:border-box;
+  }
+
+  /* The hero becomes a controlled two-row layout on landscape tablets. */
+  .home-hero {
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:20px;
+    padding:34px 0 26px;
+    box-sizing:border-box;
+  }
+  .hero-copy,
+  .hero-dashboard { width:100%; min-width:0; max-width:100%; }
+  .hero-copy h1 { max-width:100%; font-size:clamp(2.8rem,5.5vw,4.4rem); }
+  .hero-lead { max-width:760px; }
+  .hero-actions { display:flex; flex-wrap:wrap; }
+
+  .hero-dashboard {
+    min-height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+  }
+  .hero-orb { width:270px; height:270px; font-size:100px; }
+  .mini-window {
+    width:min(560px,92%);
+    max-width:560px;
+    margin:20px auto 0;
+  }
+
+  /* Keep the daily plan strictly vertical so the MCQ sprint gets a full row. */
+  .today-cockpit { width:100%; max-width:100%; box-sizing:border-box; }
+  .today-grid {
+    width:100%;
+    max-width:100%;
+    grid-template-columns:minmax(0,1fr);
+    min-width:0;
+  }
+  .today-list {
+    width:100%;
+    max-width:100%;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    min-width:0;
+  }
+  .today-task { min-width:0; max-width:100%; }
+  .today-task strong,
+  .today-task small { min-width:0; overflow:hidden; text-overflow:ellipsis; }
+  .today-mcq {
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    display:grid;
+    grid-template-columns:auto minmax(0,1fr) auto;
+    align-items:center;
+    box-sizing:border-box;
+  }
+  .today-mcq > div { min-width:0; max-width:100%; }
+  .today-mcq h3,
+  .today-mcq p { max-width:100%; overflow-wrap:anywhere; word-break:normal; }
+  .today-mcq > b { margin-left:0; white-space:nowrap; }
+
+  /* Other homepage grids must never establish a wider-than-viewport canvas. */
+  .quick-grid,
+  .home-stats,
+  .focus-grid,
+  .unit-grid,
+  .home-bottom {
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+  .quick-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home-stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .stat-feature { grid-column:1/-1; }
+  .focus-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home-bottom { grid-template-columns:1fr; }
+
+  .section-head,
+  .tool-strip,
+  .outline-item,
+  .topic-layout,
+  .workspace,
+  .dash-grid { min-width:0; max-width:100%; }
+}
+
+/* Extra-wide landscape tablets: retain readable margins without ever
+   restoring the cramped desktop home layout. */
+@media (orientation: landscape) and (min-width: 1401px) and (max-width: 1800px) {
+  .home-container { max-width:1320px; padding-left:32px; padding-right:32px; }
+  .home-hero { grid-template-columns:minmax(0,1fr); }
+  .today-grid { grid-template-columns:minmax(0,1fr); }
+}
+
+
+/* ===== v8.4 NAV + MICRO-TOPIC HIERARCHY ===== */
+.nav { display:flex; flex-direction:column; align-items:stretch; gap:8px; }
+.nav-top { display:flex; align-items:center; justify-content:space-between; gap:14px; min-width:0; width:100%; }
+.nav-top .brand { min-width:0; }
+.nav-top .install-btn { margin-left:auto; flex:0 0 auto; }
+.navlinks { width:100%; justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; scrollbar-width:none; }
+.navlinks::-webkit-scrollbar { display:none; }
+.navlinks a { flex:0 0 auto; }
+
+.outline-group { margin:0 0 18px; border:1px solid var(--line); border-radius:20px; background:#fff; overflow:hidden; box-shadow:0 8px 24px rgba(15,23,42,.04); }
+.outline-heading { display:flex; align-items:center; gap:14px; padding:18px 20px; border:0; border-bottom:1px solid #eef0f6; border-radius:0; background:linear-gradient(180deg,#fff,#fafbff); }
+.outline-heading .outline-main { flex:1; min-width:0; }
+.outline-heading h3 { margin:0 0 5px; }
+.outline-heading p { margin:0; }
+.outline-open { flex:0 0 auto; white-space:nowrap; }
+.microtopic-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; padding:12px; background:#fafbff; }
+.microtopic-card { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:11px; min-width:0; padding:14px 15px; border:1px solid #e5e7eb; border-radius:15px; background:#fff; color:var(--ink); text-decoration:none; transition:.16s ease; }
+.microtopic-card:hover { border-color:#c7d2fe; box-shadow:0 6px 18px rgba(79,70,229,.08); transform:translateY(-1px); }
+.microtopic-card > div { min-width:0; }
+.microtopic-card strong { display:block; font-size:.84rem; line-height:1.35; overflow-wrap:anywhere; }
+.microtopic-card small { display:block; margin-top:4px; color:var(--muted); font-size:.67rem; }
+.microtopic-num { display:inline-grid; place-items:center; min-width:42px; height:28px; padding:0 7px; border-radius:8px; background:#eef2ff; color:#4338ca; font-weight:800; font-size:.68rem; }
+.microtopic-arrow { color:#9ca3af; font-weight:800; }
+.microtopics { list-style:none; padding:0; margin:0 0 20px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.microtopic-panel { display:flex; align-items:center; gap:12px; min-width:0; padding:14px; border:1px solid var(--line); border-radius:14px; background:#fbfcff; }
+.microtopic-panel > div { min-width:0; }
+.microtopic-panel strong { display:block; font-size:.86rem; overflow-wrap:anywhere; }
+.microtopic-panel small { display:block; margin-top:3px; color:var(--muted); font-size:.68rem; }
+
+@media (max-width:700px) {
+  .nav { padding:12px 14px; }
+  .microtopic-grid, .microtopics { grid-template-columns:1fr; }
+  .outline-heading { align-items:flex-start; flex-wrap:wrap; }
+  .outline-open { width:100%; text-align:center; }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  .nav { padding:12px 20px; }
+  .microtopic-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (orientation:landscape) and (min-width:700px) {
+  .nav-top { min-height:42px; }
+}
+/* v8.4: install prompt is intentionally not rendered as a recurring overlay. */
+.install-toast { display:none !important; }

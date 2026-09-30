@@ -20,7 +20,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Bhagavad Gita"
+            },
+            {
+              "id": 2,
+              "title": "Buddhism"
+            },
+            {
+              "id": 3,
+              "title": "Sufism"
+            },
+            {
+              "id": 4,
+              "title": "Integral Yoga"
+            }
+          ]
         },
         {
           "id": 2,
@@ -36,7 +54,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Pre-independence era"
+            },
+            {
+              "id": 2,
+              "title": "Post-independence era"
+            },
+            {
+              "id": 3,
+              "title": "1970s social issues"
+            },
+            {
+              "id": 4,
+              "title": "1980s indigenization"
+            },
+            {
+              "id": 5,
+              "title": "1990s paradigmatic concerns"
+            },
+            {
+              "id": 6,
+              "title": "1990s disciplinary identity crisis"
+            },
+            {
+              "id": 7,
+              "title": "2000s Indian psychology in academia"
+            }
+          ]
         },
         {
           "id": 3,
@@ -52,7 +100,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Colonial encounter"
+            },
+            {
+              "id": 2,
+              "title": "Postcolonialism and psychology"
+            },
+            {
+              "id": 3,
+              "title": "Lack of distinct disciplinary identity"
+            }
+          ]
         },
         {
           "id": 4,
@@ -68,7 +130,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Greek heritage"
+            },
+            {
+              "id": 2,
+              "title": "Medieval period"
+            },
+            {
+              "id": 3,
+              "title": "Modern period"
+            }
+          ]
         },
         {
           "id": 5,
@@ -84,7 +160,45 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Structuralism"
+            },
+            {
+              "id": 2,
+              "title": "Functionalism"
+            },
+            {
+              "id": 3,
+              "title": "Psychoanalytical psychology"
+            },
+            {
+              "id": 4,
+              "title": "Gestalt psychology"
+            },
+            {
+              "id": 5,
+              "title": "Behaviorism"
+            },
+            {
+              "id": 6,
+              "title": "Humanistic-Existential psychology"
+            },
+            {
+              "id": 7,
+              "title": "Transpersonal psychology"
+            },
+            {
+              "id": 8,
+              "title": "Cognitive revolution"
+            },
+            {
+              "id": 9,
+              "title": "Multiculturalism"
+            }
+          ]
         },
         {
           "id": 6,
@@ -100,7 +214,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Wundt"
+            },
+            {
+              "id": 2,
+              "title": "Freud"
+            },
+            {
+              "id": 3,
+              "title": "James"
+            },
+            {
+              "id": 4,
+              "title": "Dilthey"
+            }
+          ]
         },
         {
           "id": 7,
@@ -116,7 +248,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Experimental-analytical paradigm"
+            },
+            {
+              "id": 2,
+              "title": "Logical empiricism"
+            },
+            {
+              "id": 3,
+              "title": "Crisis in psychology"
+            }
+          ]
         },
         {
           "id": 8,
@@ -132,7 +278,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Indic influences on modern psychology"
+            }
+          ]
         },
         {
           "id": 9,
@@ -148,7 +300,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Ontology"
+            },
+            {
+              "id": 2,
+              "title": "Epistemology"
+            },
+            {
+              "id": 3,
+              "title": "Methodology"
+            }
+          ]
         },
         {
           "id": 10,
@@ -164,7 +330,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Positivism"
+            },
+            {
+              "id": 2,
+              "title": "Post-Positivism"
+            },
+            {
+              "id": 3,
+              "title": "Critical perspective"
+            },
+            {
+              "id": 4,
+              "title": "Social Constructionism"
+            },
+            {
+              "id": 5,
+              "title": "Existential Phenomenology"
+            },
+            {
+              "id": 6,
+              "title": "Co-operative Enquiry"
+            }
+          ]
         },
         {
           "id": 11,
@@ -180,7 +372,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Paradigmatic controversies"
+            }
+          ]
         },
         {
           "id": 12,
@@ -196,7 +394,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Yoga"
+            },
+            {
+              "id": 2,
+              "title": "Bhagavad Gita"
+            },
+            {
+              "id": 3,
+              "title": "Buddhism"
+            },
+            {
+              "id": 4,
+              "title": "Sufism"
+            },
+            {
+              "id": 5,
+              "title": "Integral Yoga"
+            }
+          ]
         },
         {
           "id": 13,
@@ -212,7 +432,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Science and spirituality"
+            },
+            {
+              "id": 2,
+              "title": "Avidya"
+            },
+            {
+              "id": 3,
+              "title": "Vidya"
+            }
+          ]
         },
         {
           "id": 14,
@@ -228,7 +462,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Primacy of self-knowledge"
+            },
+            {
+              "id": 2,
+              "title": "Self-knowledge in Indian psychology"
+            }
+          ]
         }
       ]
     },
@@ -250,7 +494,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Meaning of research"
+            },
+            {
+              "id": 2,
+              "title": "Purpose of research"
+            },
+            {
+              "id": 3,
+              "title": "Dimensions of research"
+            }
+          ]
         },
         {
           "id": 2,
@@ -266,7 +524,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Research problems"
+            },
+            {
+              "id": 2,
+              "title": "Variables"
+            },
+            {
+              "id": 3,
+              "title": "Operational definitions"
+            },
+            {
+              "id": 4,
+              "title": "Hypothesis"
+            },
+            {
+              "id": 5,
+              "title": "Sampling"
+            }
+          ]
         },
         {
           "id": 3,
@@ -282,7 +562,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Ethics in conducting research"
+            },
+            {
+              "id": 2,
+              "title": "Ethics in reporting research"
+            }
+          ]
         },
         {
           "id": 4,
@@ -298,7 +588,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Quantitative research"
+            },
+            {
+              "id": 2,
+              "title": "Qualitative research"
+            },
+            {
+              "id": 3,
+              "title": "Mixed methods approach"
+            }
+          ]
         },
         {
           "id": 5,
@@ -314,7 +618,65 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Observation"
+            },
+            {
+              "id": 2,
+              "title": "Survey"
+            },
+            {
+              "id": 3,
+              "title": "Interview"
+            },
+            {
+              "id": 4,
+              "title": "Questionnaires"
+            },
+            {
+              "id": 5,
+              "title": "Experimental method"
+            },
+            {
+              "id": 6,
+              "title": "Quasi-experimental method"
+            },
+            {
+              "id": 7,
+              "title": "Field studies"
+            },
+            {
+              "id": 8,
+              "title": "Cross-cultural studies"
+            },
+            {
+              "id": 9,
+              "title": "Phenomenology"
+            },
+            {
+              "id": 10,
+              "title": "Grounded theory"
+            },
+            {
+              "id": 11,
+              "title": "Focus groups"
+            },
+            {
+              "id": 12,
+              "title": "Narratives"
+            },
+            {
+              "id": 13,
+              "title": "Case studies"
+            },
+            {
+              "id": 14,
+              "title": "Ethnography"
+            }
+          ]
         },
         {
           "id": 6,
@@ -330,7 +692,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Measures of central tendency"
+            },
+            {
+              "id": 2,
+              "title": "Measures of dispersion"
+            }
+          ]
         },
         {
           "id": 7,
@@ -346,7 +718,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Normal probability curve"
+            }
+          ]
         },
         {
           "id": 8,
@@ -362,7 +740,41 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Parametric tests"
+            },
+            {
+              "id": 2,
+              "title": "t-test"
+            },
+            {
+              "id": 3,
+              "title": "Non-parametric tests"
+            },
+            {
+              "id": 4,
+              "title": "Sign test"
+            },
+            {
+              "id": 5,
+              "title": "Wilcoxon Signed rank test"
+            },
+            {
+              "id": 6,
+              "title": "Mann-Whitney test"
+            },
+            {
+              "id": 7,
+              "title": "Kruskal-Wallis test"
+            },
+            {
+              "id": 8,
+              "title": "Friedman test"
+            }
+          ]
         },
         {
           "id": 9,
@@ -378,7 +790,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Power analysis"
+            }
+          ]
         },
         {
           "id": 10,
@@ -394,7 +812,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Effect size"
+            }
+          ]
         },
         {
           "id": 11,
@@ -410,7 +834,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Correlation"
+            },
+            {
+              "id": 2,
+              "title": "Product Moment correlation"
+            },
+            {
+              "id": 3,
+              "title": "Rank Order correlation"
+            },
+            {
+              "id": 4,
+              "title": "Partial correlation"
+            },
+            {
+              "id": 5,
+              "title": "Multiple correlation"
+            }
+          ]
         },
         {
           "id": 12,
@@ -426,7 +872,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Biserial correlation"
+            },
+            {
+              "id": 2,
+              "title": "Point biserial correlation"
+            },
+            {
+              "id": 3,
+              "title": "Tetrachoric correlation"
+            },
+            {
+              "id": 4,
+              "title": "Phi coefficient"
+            }
+          ]
         },
         {
           "id": 13,
@@ -442,7 +906,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Simple linear regression"
+            },
+            {
+              "id": 2,
+              "title": "Multiple regression"
+            }
+          ]
         },
         {
           "id": 14,
@@ -458,7 +932,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Assumptions of factor analysis"
+            },
+            {
+              "id": 2,
+              "title": "Methods of factor analysis"
+            },
+            {
+              "id": 3,
+              "title": "Rotation"
+            },
+            {
+              "id": 4,
+              "title": "Interpretation"
+            }
+          ]
         },
         {
           "id": 15,
@@ -474,7 +966,53 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "ANOVA"
+            },
+            {
+              "id": 2,
+              "title": "One-way ANOVA"
+            },
+            {
+              "id": 3,
+              "title": "Factorial ANOVA"
+            },
+            {
+              "id": 4,
+              "title": "Randomized Block Designs"
+            },
+            {
+              "id": 5,
+              "title": "Repeated Measures Design"
+            },
+            {
+              "id": 6,
+              "title": "Latin Square"
+            },
+            {
+              "id": 7,
+              "title": "Cohort studies"
+            },
+            {
+              "id": 8,
+              "title": "Time series"
+            },
+            {
+              "id": 9,
+              "title": "MANOVA"
+            },
+            {
+              "id": 10,
+              "title": "ANCOVA"
+            },
+            {
+              "id": 11,
+              "title": "Single-subject designs"
+            }
+          ]
         }
       ]
     },
@@ -496,7 +1034,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Types of psychological tests"
+            }
+          ]
         },
         {
           "id": 2,
@@ -512,7 +1056,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Item writing"
+            },
+            {
+              "id": 2,
+              "title": "Item analysis"
+            }
+          ]
         },
         {
           "id": 3,
@@ -528,7 +1082,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Standardization"
+            },
+            {
+              "id": 2,
+              "title": "Reliability"
+            },
+            {
+              "id": 3,
+              "title": "Validity"
+            },
+            {
+              "id": 4,
+              "title": "Norms"
+            }
+          ]
         },
         {
           "id": 4,
@@ -544,7 +1116,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Intelligence tests"
+            },
+            {
+              "id": 2,
+              "title": "Creativity tests"
+            },
+            {
+              "id": 3,
+              "title": "Neuropsychological tests"
+            },
+            {
+              "id": 4,
+              "title": "Aptitude tests"
+            },
+            {
+              "id": 5,
+              "title": "Personality assessment"
+            },
+            {
+              "id": 6,
+              "title": "Interest inventories"
+            }
+          ]
         },
         {
           "id": 5,
@@ -560,7 +1158,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Semantic differential scale"
+            },
+            {
+              "id": 2,
+              "title": "Staples scale"
+            },
+            {
+              "id": 3,
+              "title": "Likert scale"
+            },
+            {
+              "id": 4,
+              "title": "Computer-based psychological testing"
+            }
+          ]
         },
         {
           "id": 6,
@@ -576,7 +1192,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Clinical settings"
+            },
+            {
+              "id": 2,
+              "title": "Organizational and business settings"
+            },
+            {
+              "id": 3,
+              "title": "Educational settings"
+            },
+            {
+              "id": 4,
+              "title": "Counseling settings"
+            },
+            {
+              "id": 5,
+              "title": "Military settings"
+            }
+          ]
         },
         {
           "id": 7,
@@ -592,7 +1230,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Career guidance"
+            }
+          ]
         }
       ]
     },
@@ -614,7 +1258,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "General sensations"
+            },
+            {
+              "id": 2,
+              "title": "Specific sensations"
+            },
+            {
+              "id": 3,
+              "title": "Receptors"
+            },
+            {
+              "id": 4,
+              "title": "Sensory processes"
+            }
+          ]
         },
         {
           "id": 2,
@@ -630,7 +1292,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Neuron structure"
+            },
+            {
+              "id": 2,
+              "title": "Neuron functions"
+            },
+            {
+              "id": 3,
+              "title": "Types of neurons"
+            },
+            {
+              "id": 4,
+              "title": "Neural impulse"
+            },
+            {
+              "id": 5,
+              "title": "Synaptic transmission"
+            }
+          ]
         },
         {
           "id": 3,
@@ -646,7 +1330,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Neurotransmitters"
+            }
+          ]
         },
         {
           "id": 4,
@@ -662,7 +1352,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Central nervous system"
+            },
+            {
+              "id": 2,
+              "title": "Peripheral nervous system"
+            },
+            {
+              "id": 3,
+              "title": "Structure and functions"
+            }
+          ]
         },
         {
           "id": 5,
@@ -678,7 +1382,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Neuroplasticity"
+            }
+          ]
         },
         {
           "id": 6,
@@ -694,7 +1404,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Anatomical methods"
+            },
+            {
+              "id": 2,
+              "title": "Degeneration techniques"
+            },
+            {
+              "id": 3,
+              "title": "Lesion techniques"
+            },
+            {
+              "id": 4,
+              "title": "Chemical methods"
+            },
+            {
+              "id": 5,
+              "title": "Microelectrode studies"
+            },
+            {
+              "id": 6,
+              "title": "EEG"
+            },
+            {
+              "id": 7,
+              "title": "Scanning methods"
+            }
+          ]
         },
         {
           "id": 7,
@@ -710,7 +1450,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Muscular system"
+            },
+            {
+              "id": 2,
+              "title": "Glandular system"
+            },
+            {
+              "id": 3,
+              "title": "Hunger"
+            },
+            {
+              "id": 4,
+              "title": "Thirst"
+            },
+            {
+              "id": 5,
+              "title": "Sleep"
+            },
+            {
+              "id": 6,
+              "title": "Sex"
+            }
+          ]
         },
         {
           "id": 8,
@@ -726,7 +1492,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Limbic system"
+            },
+            {
+              "id": 2,
+              "title": "Hormonal regulation of behavior"
+            }
+          ]
         },
         {
           "id": 9,
@@ -742,7 +1518,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Chromosomal anomalies"
+            },
+            {
+              "id": 2,
+              "title": "Nature-Nurture controversy"
+            },
+            {
+              "id": 3,
+              "title": "Twin studies"
+            },
+            {
+              "id": 4,
+              "title": "Adoption studies"
+            }
+          ]
         }
       ]
     },
@@ -764,7 +1558,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Forms of attention"
+            },
+            {
+              "id": 2,
+              "title": "Models of attention"
+            }
+          ]
         },
         {
           "id": 2,
@@ -780,7 +1584,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Perception"
+            }
+          ]
         },
         {
           "id": 3,
@@ -796,7 +1606,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Gestalt approach"
+            },
+            {
+              "id": 2,
+              "title": "Physiological approach"
+            }
+          ]
         },
         {
           "id": 4,
@@ -812,7 +1632,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Gestalt organization"
+            },
+            {
+              "id": 2,
+              "title": "Figure and ground"
+            },
+            {
+              "id": 3,
+              "title": "Laws of organization"
+            }
+          ]
         },
         {
           "id": 5,
@@ -828,7 +1662,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Size constancy"
+            },
+            {
+              "id": 2,
+              "title": "Shape constancy"
+            },
+            {
+              "id": 3,
+              "title": "Color constancy"
+            },
+            {
+              "id": 4,
+              "title": "Illusions"
+            },
+            {
+              "id": 5,
+              "title": "Perception of form"
+            },
+            {
+              "id": 6,
+              "title": "Perception of depth"
+            },
+            {
+              "id": 7,
+              "title": "Perception of movement"
+            }
+          ]
         },
         {
           "id": 6,
@@ -844,7 +1708,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Motivation in perception"
+            },
+            {
+              "id": 2,
+              "title": "Learning in perception"
+            }
+          ]
         },
         {
           "id": 7,
@@ -860,7 +1734,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Assumptions of signal detection theory"
+            },
+            {
+              "id": 2,
+              "title": "Applications of signal detection theory"
+            }
+          ]
         },
         {
           "id": 8,
@@ -876,7 +1760,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Subliminal perception"
+            },
+            {
+              "id": 2,
+              "title": "Factors related to subliminal perception"
+            },
+            {
+              "id": 3,
+              "title": "Information processing approach to perception"
+            },
+            {
+              "id": 4,
+              "title": "Culture and perception"
+            },
+            {
+              "id": 5,
+              "title": "Perceptual styles"
+            },
+            {
+              "id": 6,
+              "title": "Pattern recognition"
+            },
+            {
+              "id": 7,
+              "title": "Ecological perspective on perception"
+            }
+          ]
         },
         {
           "id": 9,
@@ -892,7 +1806,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Learning process"
+            }
+          ]
         },
         {
           "id": 10,
@@ -908,7 +1828,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Classical conditioning procedure"
+            },
+            {
+              "id": 2,
+              "title": "Classical conditioning phenomena"
+            },
+            {
+              "id": 3,
+              "title": "Related issues in classical conditioning"
+            }
+          ]
         },
         {
           "id": 11,
@@ -924,7 +1858,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Instrumental learning phenomena"
+            },
+            {
+              "id": 2,
+              "title": "Instrumental learning paradigms"
+            },
+            {
+              "id": 3,
+              "title": "Theoretical issues in instrumental learning"
+            }
+          ]
         },
         {
           "id": 12,
@@ -940,7 +1888,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Basic reinforcement variables"
+            },
+            {
+              "id": 2,
+              "title": "Reinforcement schedules"
+            }
+          ]
         },
         {
           "id": 13,
@@ -956,7 +1914,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Behavior modification"
+            },
+            {
+              "id": 2,
+              "title": "Applications of behavior modification"
+            }
+          ]
         },
         {
           "id": 14,
@@ -972,7 +1940,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Latent learning"
+            },
+            {
+              "id": 2,
+              "title": "Observational learning"
+            }
+          ]
         },
         {
           "id": 15,
@@ -988,7 +1966,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Verbal learning"
+            },
+            {
+              "id": 2,
+              "title": "Discrimination learning"
+            }
+          ]
         },
         {
           "id": 16,
@@ -1004,7 +1992,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Neurophysiology of learning"
+            }
+          ]
         },
         {
           "id": 17,
@@ -1020,7 +2014,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Encoding"
+            },
+            {
+              "id": 2,
+              "title": "Storage"
+            },
+            {
+              "id": 3,
+              "title": "Retrieval"
+            }
+          ]
         },
         {
           "id": 18,
@@ -1036,7 +2044,41 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Sensory memory"
+            },
+            {
+              "id": 2,
+              "title": "Short-term memory"
+            },
+            {
+              "id": 3,
+              "title": "Working memory"
+            },
+            {
+              "id": 4,
+              "title": "Long-term memory"
+            },
+            {
+              "id": 5,
+              "title": "Declarative memory"
+            },
+            {
+              "id": 6,
+              "title": "Episodic memory"
+            },
+            {
+              "id": 7,
+              "title": "Semantic memory"
+            },
+            {
+              "id": 8,
+              "title": "Procedural memory"
+            }
+          ]
         },
         {
           "id": 19,
@@ -1052,7 +2094,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Interference theory"
+            },
+            {
+              "id": 2,
+              "title": "Retrieval failure"
+            },
+            {
+              "id": 3,
+              "title": "Decay"
+            },
+            {
+              "id": 4,
+              "title": "Motivated forgetting"
+            }
+          ]
         }
       ]
     },
@@ -1074,7 +2134,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Associationism"
+            },
+            {
+              "id": 2,
+              "title": "Gestalt perspective"
+            },
+            {
+              "id": 3,
+              "title": "Information processing perspective"
+            },
+            {
+              "id": 4,
+              "title": "Feature integration model"
+            }
+          ]
         },
         {
           "id": 2,
@@ -1090,7 +2168,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Rules of concept formation"
+            },
+            {
+              "id": 2,
+              "title": "Types of concepts"
+            },
+            {
+              "id": 3,
+              "title": "Strategies of concept formation"
+            },
+            {
+              "id": 4,
+              "title": "Role of concepts in thinking"
+            },
+            {
+              "id": 5,
+              "title": "Types of reasoning"
+            }
+          ]
         },
         {
           "id": 3,
@@ -1106,7 +2206,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Language and thought"
+            }
+          ]
         },
         {
           "id": 4,
@@ -1122,7 +2228,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Types of problem solving"
+            },
+            {
+              "id": 2,
+              "title": "Problem-solving strategies"
+            },
+            {
+              "id": 3,
+              "title": "Obstacles to problem solving"
+            },
+            {
+              "id": 4,
+              "title": "Types of decision-making"
+            },
+            {
+              "id": 5,
+              "title": "Decision-making models"
+            }
+          ]
         },
         {
           "id": 5,
@@ -1138,7 +2266,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Metacognitive knowledge"
+            },
+            {
+              "id": 2,
+              "title": "Metacognitive regulation"
+            }
+          ]
         },
         {
           "id": 6,
@@ -1154,7 +2292,41 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Spearman"
+            },
+            {
+              "id": 2,
+              "title": "Thurstone"
+            },
+            {
+              "id": 3,
+              "title": "Jensen"
+            },
+            {
+              "id": 4,
+              "title": "Cattell"
+            },
+            {
+              "id": 5,
+              "title": "Gardner"
+            },
+            {
+              "id": 6,
+              "title": "Stenberg"
+            },
+            {
+              "id": 7,
+              "title": "Goleman"
+            },
+            {
+              "id": 8,
+              "title": "Das, Kar & Parrila"
+            }
+          ]
         },
         {
           "id": 7,
@@ -1170,7 +2342,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Torrance"
+            },
+            {
+              "id": 2,
+              "title": "Getzels & Jackson"
+            },
+            {
+              "id": 3,
+              "title": "Guilford"
+            },
+            {
+              "id": 4,
+              "title": "Wallach & Kogan"
+            }
+          ]
         },
         {
           "id": 8,
@@ -1186,7 +2376,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Relationship between intelligence and creativity"
+            }
+          ]
         }
       ]
     },
@@ -1208,7 +2404,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Biological determinants"
+            },
+            {
+              "id": 2,
+              "title": "Socio-cultural determinants"
+            }
+          ]
         },
         {
           "id": 2,
@@ -1224,7 +2430,41 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Psychoanalytical approach"
+            },
+            {
+              "id": 2,
+              "title": "Neo-Freudian approach"
+            },
+            {
+              "id": 3,
+              "title": "Social learning approach"
+            },
+            {
+              "id": 4,
+              "title": "Trait and Type approach"
+            },
+            {
+              "id": 5,
+              "title": "Cognitive approach"
+            },
+            {
+              "id": 6,
+              "title": "Humanistic approach"
+            },
+            {
+              "id": 7,
+              "title": "Existential approach"
+            },
+            {
+              "id": 8,
+              "title": "Transpersonal psychology"
+            }
+          ]
         },
         {
           "id": 3,
@@ -1240,7 +2480,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Rotter's Locus of Control"
+            },
+            {
+              "id": 2,
+              "title": "Seligman's Explanatory styles"
+            },
+            {
+              "id": 3,
+              "title": "Kohlberg’s theory of Moral development"
+            }
+          ]
         },
         {
           "id": 4,
@@ -1256,7 +2510,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Instincts"
+            },
+            {
+              "id": 2,
+              "title": "Needs"
+            },
+            {
+              "id": 3,
+              "title": "Drives"
+            },
+            {
+              "id": 4,
+              "title": "Arousal"
+            },
+            {
+              "id": 5,
+              "title": "Incentives"
+            },
+            {
+              "id": 6,
+              "title": "Motivational cycle"
+            }
+          ]
         },
         {
           "id": 5,
@@ -1272,7 +2552,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Psychoanalytical approach"
+            },
+            {
+              "id": 2,
+              "title": "Ethological approach"
+            },
+            {
+              "id": 3,
+              "title": "S-R Cognitive approach"
+            },
+            {
+              "id": 4,
+              "title": "Humanistic approach"
+            }
+          ]
         },
         {
           "id": 6,
@@ -1288,7 +2586,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Exploratory behavior"
+            },
+            {
+              "id": 2,
+              "title": "Curiosity"
+            }
+          ]
         },
         {
           "id": 7,
@@ -1304,7 +2612,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Zuckerman’s Sensation seeking"
+            }
+          ]
         },
         {
           "id": 8,
@@ -1320,7 +2634,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Achievement"
+            },
+            {
+              "id": 2,
+              "title": "Affiliation"
+            },
+            {
+              "id": 3,
+              "title": "Power"
+            }
+          ]
         },
         {
           "id": 9,
@@ -1336,7 +2664,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Motivational competence"
+            }
+          ]
         },
         {
           "id": 10,
@@ -1352,7 +2686,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Self-regulation"
+            }
+          ]
         },
         {
           "id": 11,
@@ -1368,7 +2708,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Flow"
+            }
+          ]
         },
         {
           "id": 12,
@@ -1384,7 +2730,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Physiological correlates of emotion"
+            }
+          ]
         },
         {
           "id": 13,
@@ -1400,7 +2752,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "James-Lange theory"
+            },
+            {
+              "id": 2,
+              "title": "Canon-Bard theory"
+            },
+            {
+              "id": 3,
+              "title": "Schachter and Singer theory"
+            },
+            {
+              "id": 4,
+              "title": "Lazarus theory"
+            },
+            {
+              "id": 5,
+              "title": "Lindsley theory"
+            }
+          ]
         },
         {
           "id": 14,
@@ -1416,7 +2790,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Emotion regulation"
+            }
+          ]
         },
         {
           "id": 15,
@@ -1432,7 +2812,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Sources of conflict"
+            },
+            {
+              "id": 2,
+              "title": "Types of conflict"
+            }
+          ]
         },
         {
           "id": 16,
@@ -1448,7 +2838,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Concept of stress and coping"
+            },
+            {
+              "id": 2,
+              "title": "Models of stress and coping"
+            },
+            {
+              "id": 3,
+              "title": "Type A behavior"
+            },
+            {
+              "id": 4,
+              "title": "Type B behavior"
+            },
+            {
+              "id": 5,
+              "title": "Type C behavior"
+            },
+            {
+              "id": 6,
+              "title": "Type D behavior"
+            }
+          ]
         },
         {
           "id": 17,
@@ -1464,7 +2880,45 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Biofeedback"
+            },
+            {
+              "id": 2,
+              "title": "Music therapy"
+            },
+            {
+              "id": 3,
+              "title": "Breathing exercises"
+            },
+            {
+              "id": 4,
+              "title": "Progressive Muscular Relaxation"
+            },
+            {
+              "id": 5,
+              "title": "Guided Imagery"
+            },
+            {
+              "id": 6,
+              "title": "Mindfulness"
+            },
+            {
+              "id": 7,
+              "title": "Meditation"
+            },
+            {
+              "id": 8,
+              "title": "Yogasana"
+            },
+            {
+              "id": 9,
+              "title": "Stress Inoculation Training"
+            }
+          ]
         }
       ]
     },
@@ -1486,7 +2940,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Nature of social psychology"
+            },
+            {
+              "id": 2,
+              "title": "Scope of social psychology"
+            },
+            {
+              "id": 3,
+              "title": "History of social psychology"
+            }
+          ]
         },
         {
           "id": 2,
@@ -1502,7 +2970,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Field theory"
+            },
+            {
+              "id": 2,
+              "title": "Cognitive Dissonance"
+            },
+            {
+              "id": 3,
+              "title": "Sociobiology"
+            },
+            {
+              "id": 4,
+              "title": "Psychodynamic approaches"
+            },
+            {
+              "id": 5,
+              "title": "Social Cognition"
+            }
+          ]
         },
         {
           "id": 3,
@@ -1518,7 +3008,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Social perception"
+            },
+            {
+              "id": 2,
+              "title": "Communication"
+            },
+            {
+              "id": 3,
+              "title": "Attributions"
+            },
+            {
+              "id": 4,
+              "title": "Attitude"
+            },
+            {
+              "id": 5,
+              "title": "Attitude change"
+            },
+            {
+              "id": 6,
+              "title": "Cultural context of attitudes"
+            },
+            {
+              "id": 7,
+              "title": "Prosocial behavior"
+            }
+          ]
         },
         {
           "id": 4,
@@ -1534,7 +3054,45 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Social Facilitation"
+            },
+            {
+              "id": 2,
+              "title": "Social loafing"
+            },
+            {
+              "id": 3,
+              "title": "Conformity"
+            },
+            {
+              "id": 4,
+              "title": "Peer Pressure"
+            },
+            {
+              "id": 5,
+              "title": "Persuasion"
+            },
+            {
+              "id": 6,
+              "title": "Compliance"
+            },
+            {
+              "id": 7,
+              "title": "Obedience"
+            },
+            {
+              "id": 8,
+              "title": "Social Power"
+            },
+            {
+              "id": 9,
+              "title": "Reactance"
+            }
+          ]
         },
         {
           "id": 5,
@@ -1550,7 +3108,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Aggression"
+            }
+          ]
         },
         {
           "id": 6,
@@ -1566,7 +3130,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Group dynamics"
+            },
+            {
+              "id": 2,
+              "title": "Leadership styles"
+            },
+            {
+              "id": 3,
+              "title": "Leadership effectiveness"
+            }
+          ]
         },
         {
           "id": 7,
@@ -1582,7 +3160,37 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Minimal Group Experiment"
+            },
+            {
+              "id": 2,
+              "title": "Social Identity Theory"
+            },
+            {
+              "id": 3,
+              "title": "Relative Deprivation Theory"
+            },
+            {
+              "id": 4,
+              "title": "Realistic Conflict Theory"
+            },
+            {
+              "id": 5,
+              "title": "Balance Theories"
+            },
+            {
+              "id": 6,
+              "title": "Equity Theory"
+            },
+            {
+              "id": 7,
+              "title": "Social Exchange Theory"
+            }
+          ]
         },
         {
           "id": 8,
@@ -1598,7 +3206,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Health applications"
+            },
+            {
+              "id": 2,
+              "title": "Environmental applications"
+            },
+            {
+              "id": 3,
+              "title": "Law applications"
+            },
+            {
+              "id": 4,
+              "title": "Personal space"
+            },
+            {
+              "id": 5,
+              "title": "Crowding"
+            },
+            {
+              "id": 6,
+              "title": "Territoriality"
+            }
+          ]
         }
       ]
     },
@@ -1620,7 +3254,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Nature of development"
+            },
+            {
+              "id": 2,
+              "title": "Principles of development"
+            },
+            {
+              "id": 3,
+              "title": "Factors in development"
+            },
+            {
+              "id": 4,
+              "title": "Stages of development"
+            }
+          ]
         },
         {
           "id": 2,
@@ -1636,7 +3288,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Successful aging"
+            }
+          ]
         },
         {
           "id": 3,
@@ -1652,7 +3310,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Psychoanalytical theories"
+            },
+            {
+              "id": 2,
+              "title": "Behavioristic theories"
+            },
+            {
+              "id": 3,
+              "title": "Cognitive theories"
+            }
+          ]
         },
         {
           "id": 4,
@@ -1668,7 +3340,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Sensory-motor development"
+            },
+            {
+              "id": 2,
+              "title": "Cognitive development"
+            },
+            {
+              "id": 3,
+              "title": "Language development"
+            },
+            {
+              "id": 4,
+              "title": "Emotional development"
+            },
+            {
+              "id": 5,
+              "title": "Social development"
+            },
+            {
+              "id": 6,
+              "title": "Moral development"
+            }
+          ]
         },
         {
           "id": 5,
@@ -1684,7 +3382,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Concept of psychopathology"
+            },
+            {
+              "id": 2,
+              "title": "Mental Status Examination"
+            },
+            {
+              "id": 3,
+              "title": "Classification"
+            },
+            {
+              "id": 4,
+              "title": "Causes of psychopathology"
+            }
+          ]
         },
         {
           "id": 6,
@@ -1700,7 +3416,73 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Psychoanalysis"
+            },
+            {
+              "id": 2,
+              "title": "Person-centered therapy"
+            },
+            {
+              "id": 3,
+              "title": "Gestalt therapy"
+            },
+            {
+              "id": 4,
+              "title": "Existential therapy"
+            },
+            {
+              "id": 5,
+              "title": "Acceptance Commitment Therapy"
+            },
+            {
+              "id": 6,
+              "title": "Behavior therapy"
+            },
+            {
+              "id": 7,
+              "title": "REBT"
+            },
+            {
+              "id": 8,
+              "title": "CBT"
+            },
+            {
+              "id": 9,
+              "title": "MBCT"
+            },
+            {
+              "id": 10,
+              "title": "Play therapy"
+            },
+            {
+              "id": 11,
+              "title": "Positive psychotherapy"
+            },
+            {
+              "id": 12,
+              "title": "Transactional Analysis"
+            },
+            {
+              "id": 13,
+              "title": "Dialectic behavior therapy"
+            },
+            {
+              "id": 14,
+              "title": "Art therapy"
+            },
+            {
+              "id": 15,
+              "title": "Performing Art Therapy"
+            },
+            {
+              "id": 16,
+              "title": "Family therapy"
+            }
+          ]
         },
         {
           "id": 7,
@@ -1716,7 +3498,17 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Applications of motivation theories in school"
+            },
+            {
+              "id": 2,
+              "title": "Applications of learning theories in school"
+            }
+          ]
         },
         {
           "id": 8,
@@ -1732,7 +3524,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Factors in educational achievement"
+            }
+          ]
         },
         {
           "id": 9,
@@ -1748,7 +3546,13 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Teacher effectiveness"
+            }
+          ]
         },
         {
           "id": 10,
@@ -1764,7 +3568,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Needs for school guidance"
+            },
+            {
+              "id": 2,
+              "title": "Organizational setup for school guidance"
+            },
+            {
+              "id": 3,
+              "title": "School guidance techniques"
+            }
+          ]
         },
         {
           "id": 11,
@@ -1780,7 +3598,21 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Counselling process"
+            },
+            {
+              "id": 2,
+              "title": "Counselling skills"
+            },
+            {
+              "id": 3,
+              "title": "Counselling techniques"
+            }
+          ]
         }
       ]
     },
@@ -1802,7 +3634,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Gender"
+            },
+            {
+              "id": 2,
+              "title": "Poverty"
+            },
+            {
+              "id": 3,
+              "title": "Disability"
+            },
+            {
+              "id": 4,
+              "title": "Migration"
+            },
+            {
+              "id": 5,
+              "title": "Cultural bias"
+            },
+            {
+              "id": 6,
+              "title": "Discrimination"
+            }
+          ]
         },
         {
           "id": 2,
@@ -1818,7 +3676,29 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Stigma"
+            },
+            {
+              "id": 2,
+              "title": "Marginalization"
+            },
+            {
+              "id": 3,
+              "title": "Social suffering"
+            },
+            {
+              "id": 4,
+              "title": "Child abuse"
+            },
+            {
+              "id": 5,
+              "title": "Domestic violence"
+            }
+          ]
         },
         {
           "id": 3,
@@ -1834,7 +3714,25 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Violence"
+            },
+            {
+              "id": 2,
+              "title": "Non-violence"
+            },
+            {
+              "id": 3,
+              "title": "Conflict resolution at macro level"
+            },
+            {
+              "id": 4,
+              "title": "Role of media in conflict resolution"
+            }
+          ]
         },
         {
           "id": 4,
@@ -1850,7 +3748,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Types of wellbeing"
+            },
+            {
+              "id": 2,
+              "title": "Hedonic wellbeing"
+            },
+            {
+              "id": 3,
+              "title": "Eudemonic wellbeing"
+            },
+            {
+              "id": 4,
+              "title": "Character strengths"
+            },
+            {
+              "id": 5,
+              "title": "Resilience"
+            },
+            {
+              "id": 6,
+              "title": "Post-Traumatic Growth"
+            }
+          ]
         },
         {
           "id": 5,
@@ -1866,7 +3790,45 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Health-promoting behaviors"
+            },
+            {
+              "id": 2,
+              "title": "Health-compromising behaviors"
+            },
+            {
+              "id": 3,
+              "title": "Lifestyle"
+            },
+            {
+              "id": 4,
+              "title": "Diabetes"
+            },
+            {
+              "id": 5,
+              "title": "Hypertension"
+            },
+            {
+              "id": 6,
+              "title": "Coronary Heart Disease"
+            },
+            {
+              "id": 7,
+              "title": "Psychoneuroimmunology"
+            },
+            {
+              "id": 8,
+              "title": "Cancer"
+            },
+            {
+              "id": 9,
+              "title": "HIV/AIDS"
+            }
+          ]
         },
         {
           "id": 6,
@@ -1882,7 +3844,33 @@
           "source_scope": "Syllabus point from uploaded UGC NET Psychology syllabus",
           "bookmarks": false,
           "review_date": "",
-          "last_reviewed": ""
+          "last_reviewed": "",
+          "microtopics": [
+            {
+              "id": 1,
+              "title": "Digital learning"
+            },
+            {
+              "id": 2,
+              "title": "Digital etiquette"
+            },
+            {
+              "id": 3,
+              "title": "Cyberbullying"
+            },
+            {
+              "id": 4,
+              "title": "Cyber pornography: consumption"
+            },
+            {
+              "id": 5,
+              "title": "Cyber pornography: implications"
+            },
+            {
+              "id": 6,
+              "title": "Parental mediation of digital usage"
+            }
+          ]
         }
       ]
     }

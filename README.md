@@ -1,3 +1,9 @@
+## v8.4 update
+- Header install control aligned with the website title.
+- Global navigation order: Home → Dashboard → Practice → Flashcards → Bookmarks.
+- Recurring install toast removed; installation is available through the header/install section only.
+- Syllabus hierarchy expanded to Unit → numbered outline point → micro topics, with 440 source-derived micro-topic study cards.
+
 # 🧠 UGC NET Psychology Study Hub
 
 > A mobile-first, tablet-friendly study platform for **UGC NET Psychology** — built around the official 10-unit syllabus, topic-level study, revision, practice, flashcards, bookmarks, and personal progress tracking.
