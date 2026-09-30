@@ -1,4 +1,4 @@
-const CACHE="net-psychology-v8-5";
+const CACHE="net-psychology-v8-6";
 const CORE=["./","./index.html","./dashboard.html","./practice.html","./flashcards.html","./bookmarks.html","./unit.html","./topic.html","./style.css","./app.js","./data.json","./meta.json","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png"];
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

@@ -1,5 +1,5 @@
 {
-  "app_version": "8.5",
+  "app_version": "8.6",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
@@ -19,9 +19,10 @@
     "tablet overflow + overlay hardening",
     "landscape tablet normal-flow layout",
     "split-screen landscape progress card and wrapped daily study cards",
+    "full-viewport landscape progress card and multi-line study cards",
     "micro-topic hierarchy and persistent non-overlay install controls"
   ],
-  "version": "v8.5",
+  "version": "v8.6",
   "microtopic_count": 1368,
   "content_note": "10-unit syllabus with nested outline-point and micro-topic study hierarchy; responsive tablet/landscape layout; split-screen landscape progress card; install overlay removed."
 }
