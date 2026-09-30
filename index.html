@@ -1,30 +1,88 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Psychology NET Study Hub</title><meta name="description" content="Interactive UGC NET Psychology syllabus study hub">
-<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"></head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>UGC NET Psychology — Study Hub</title><meta name="description" content="Your personal UGC NET Psychology study dashboard, syllabus, notes, practice and revision hub.">
+<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
 <body data-page="index">
 <header class="topbar"><nav class="nav">
-<a class="brand" href="index.html">Psychology <span>NET Study Hub</span></a>
-<div class="navlinks"><a href="index.html">Home</a><a href="index.html#units">All Units</a><span data-units-nav></span></div>
+<a class="brand" href="index.html"><span class="brand-mark">Ψ</span><span>UGC NET <b>Psychology</b></span></a>
+<div class="navlinks"><a href="index.html">Home</a><a href="#units">Syllabus</a><a href="dashboard.html">Dashboard</a><a href="practice.html">Practice</a><a href="flashcards.html">Flashcards</a></div>
 <button class="install-btn" id="installBtn" hidden>Install App</button></nav></header>
 
+<main class="container home-container">
+<section class="home-hero">
+  <div class="hero-copy">
+    <span class="badge"><span class="pulse-dot"></span> UGC NET Psychology · 10-unit syllabus</span>
+    <h1>Study Psychology.<br><em>Track mastery.</em><br>Revise smarter.</h1>
+    <p class="hero-lead">One focused workspace for your syllabus, topic notes, PYQs, MCQs, flashcards, bookmarks and revision progress.</p>
+    <div class="hero-actions">
+      <a class="btn primary btn-lg" id="continueBtn" href="dashboard.html">Continue studying →</a>
+      <a class="btn ghost btn-lg" href="#units">Explore syllabus</a>
+    </div>
+    <div class="hero-mini"><span>✓ Source-aligned syllabus</span><span>✓ Your data stays in your browser</span><span>✓ Phone + tablet + desktop</span></div>
+  </div>
+  <div class="hero-dashboard">
+    <div class="hero-orb">Ψ</div>
+    <div class="mini-window">
+      <div class="mini-top"><span>YOUR PROGRESS</span><strong id="heroPercent">0%</strong></div>
+      <div class="big-progress"><i id="heroProgress"></i></div>
+      <div class="mini-grid">
+        <div><strong id="heroMastered">0</strong><span>mastered</span></div>
+        <div><strong id="heroStudying">0</strong><span>studying</span></div>
+        <div><strong id="heroSaved">0</strong><span>bookmarked</span></div>
+      </div>
+      <div class="mini-focus"><span class="focus-label">NEXT FOCUS</span><strong id="heroFocus">Open Dashboard</strong><small id="heroFocusMeta">Build your study queue</small></div>
+    </div>
+  </div>
+</section>
 
+<section class="today-cockpit" aria-label="Today's study plan">
+  <div class="today-head">
+    <div><span class="eyebrow">TODAY'S STUDY COCKPIT</span><h2>Know exactly what to do next.</h2><p id="todayDate">Today</p></div>
+    <div class="streak-pill">🔥 <strong id="streak">0</strong> day streak</div>
+  </div>
+  <div class="today-progress"><div><span>Daily progress</span><strong id="todayTopicCount">0/3 topics</strong></div><div><span>MCQ practice</span><strong id="todayMcq">0/20</strong></div><div class="today-bar"><i id="todayBar"></i></div></div>
+  <div class="today-grid"><div id="todayList" class="today-list"></div><a class="today-mcq" href="practice.html"><span class="today-mcq-icon">✓</span><div><span class="eyebrow">20-MCQ SPRINT</span><h3>Test today's learning</h3><p>Practice, review your responses and build your daily streak.</p></div><b>Start →</b></a></div>
+</section>
 
-<main class="container"><section class="hero"><div><span class="badge">UGC NET Psychology · Knowledge Platform</span>
-<h1>Your syllabus is now a living study system.</h1><p>Navigate unit → outline → topic, then build your own notes, PYQs, MCQs, flashcards and revision history.</p>
-<div class="toolbar"><input id="search" class="search" placeholder="Search the syllabus…"><button id="export" class="btn">Export backup</button><label class="btn">Import backup<input id="importFile" type="file" accept=".json" hidden></label><button id="reset" class="btn">Reset</button></div></div>
-<div class="hero-card"><strong>10</strong><span>syllabus units</span><hr><strong id="topics" style="font-size:1.6rem">—</strong><span>numbered syllabus points</span></div></section>
-<div class="stats"><div class="stat"><strong id="overall">0%</strong><span>mastered</span></div><div class="stat"><strong id="mastered">0</strong><span>topics mastered</span></div><div class="stat"><strong id="topicCount">0</strong><span>syllabus points</span></div></div>
-<section id="units"><div class="section-head"><h2>All Units</h2><span class="muted">Click a unit → outline → topic</span></div><div id="unitGrid" class="grid"></div></section>
-<section style="margin-top:45px"><div class="section-head"><h2>Study tools</h2></div><div class="grid">
-<a class="unit-card" href="dashboard.html"><div class="unit-num">DASHBOARD</div><h3>Study Dashboard</h3><p>Track mastery, studying topics, bookmarks and current focus.</p></a>
-<a class="unit-card" href="practice.html"><div class="unit-num">PRACTICE</div><h3>MCQ Practice</h3><p>Practice from the MCQs you add to your topic workspaces.</p></a>
-<a class="unit-card" href="flashcards.html"><div class="unit-num">RECALL</div><h3>Flashcards</h3><p>Review flashcards created from your own verified study material.</p></a>
-<a class="unit-card" href="bookmarks.html"><div class="unit-num">SAVE</div><h3>Bookmarks</h3><p>Keep difficult or high-priority topics in one place.</p></a>
-</div></section></main>
+<section class="quick-grid" aria-label="Quick study actions">
+  <a class="quick-card q-primary" href="dashboard.html"><span class="quick-icon">◔</span><div><strong>Study Dashboard</strong><small>See progress & focus topics</small></div><span>→</span></a>
+  <a class="quick-card" href="practice.html"><span class="quick-icon">✓</span><div><strong>Practice MCQs</strong><small>Test what you know</small></div><span>→</span></a>
+  <a class="quick-card" href="flashcards.html"><span class="quick-icon">▣</span><div><strong>Flashcards</strong><small>Active recall in seconds</small></div><span>→</span></a>
+  <a class="quick-card" href="bookmarks.html"><span class="quick-icon">★</span><div><strong>Saved Topics</strong><small>Return to difficult areas</small></div><span>→</span></a>
+</section>
 
+<section class="home-stats">
+  <div class="stat stat-feature"><span class="stat-kicker">OVERALL MASTERY</span><strong id="overall">0%</strong><div class="progress"><i id="overallBar"></i></div><small>Mastered syllabus points</small></div>
+  <div class="stat"><span class="stat-kicker">MASTERED</span><strong id="mastered">0</strong><small>topics completed</small></div>
+  <div class="stat"><span class="stat-kicker">STUDYING</span><strong id="studying">0</strong><small>topics in progress</small></div>
+  <div class="stat"><span class="stat-kicker">SYLLABUS</span><strong id="topicCount">0</strong><small>numbered points across 10 units</small></div>
+</section>
 
+<section class="focus-section">
+  <div class="section-head"><div><span class="eyebrow">PERSONAL QUEUE</span><h2>Pick up where you left off</h2></div><a href="dashboard.html" class="text-link">Open full dashboard →</a></div>
+  <div class="focus-grid" id="focusGrid"></div>
+</section>
 
-<footer class="footer">UGC NET Psychology Study Hub · Static, editable and ready for future expansion</footer>
-<div id="installToast" class="install-toast" hidden><strong>Make it feel like an app</strong><span>Add Psychology NET Study Hub to your home screen for a cleaner phone experience.</span><button id="installToastBtn" class="btn primary">Install</button><button id="installToastClose" class="toast-close" aria-label="Close">×</button></div><script src="app.js"></script></body></html>
+<section class="tool-strip">
+  <div><span class="eyebrow">YOUR STUDY DATA</span><h2>Keep your workspace portable</h2><p>Export a backup before changing devices, then import it on your phone, tablet or computer.</p></div>
+  <div class="toolbar compact"><button id="export" class="btn">Export backup</button><label class="btn">Import backup<input id="importFile" type="file" accept=".json" hidden></label><button id="reset" class="btn danger-btn">Reset data</button></div>
+</section>
+
+<section id="units" class="units-section">
+  <div class="section-head"><div><span class="eyebrow">AUTHORITATIVE SYLLABUS MAP</span><h2>Explore all 10 units</h2></div><span class="muted">Search by unit or topic</span></div>
+  <div class="toolbar syllabus-search"><div class="search-wrap"><span>⌕</span><input id="search" class="search" placeholder="Search psychology syllabus…" autocomplete="off"></div></div>
+  <div id="unitGrid" class="unit-grid"></div>
+</section>
+
+<section class="home-bottom">
+  <div class="principles-card"><span class="eyebrow">A SIMPLE STUDY LOOP</span><h2>Learn → Recall → Practice → Revise</h2><p>Use topic pages for your detailed notes, verified PYQs and MCQs; then return to the dashboard to decide what to study next.</p><div class="loop"><span>1<br><b>Learn</b></span><i>→</i><span>2<br><b>Recall</b></span><i>→</i><span>3<br><b>Practice</b></span><i>→</i><span>4<br><b>Revise</b></span></div></div>
+  <div class="install-card"><span class="eyebrow">STUDY ANYWHERE</span><h2>Make it an app</h2><p>Install the study hub on your Android phone or tablet for a cleaner, app-like experience.</p><button id="homeInstall" class="btn primary">Install / Add to Home Screen</button></div>
+</section>
+</main>
+
+<footer class="footer">UGC NET Psychology Study Hub · Built for focused, source-aligned study · Your local study data stays on your device</footer>
+<div id="installToast" class="install-toast" hidden><strong>Make it feel like an app</strong><span>Add Psychology NET Study Hub to your home screen for a cleaner phone experience.</span><button id="installToastBtn" class="btn primary">Install</button><button id="installToastClose" class="toast-close" aria-label="Close">×</button></div>
+<script src="app.js"></script></body></html>

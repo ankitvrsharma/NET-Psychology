@@ -29,24 +29,91 @@ function exportData(){
 function importData(file){
  const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.db)throw 0;db=x.db;meta=x.meta||meta;saveAll();location.reload()}catch(e){alert("Invalid backup file.")}};r.readAsText(file);
 }
-function resetData(){if(confirm("Reset all your notes, progress, bookmarks and study data?")){localStorage.removeItem(KEY);location.reload();}}
+function todayKey(){return new Date().toISOString().slice(0,10);}
+function recordActivity(kind, topic){
+  const key="psychologyNetActivity_v1";
+  let a={days:{},today:{topics:[],mcqs:0}};
+  try{a=JSON.parse(localStorage.getItem(key))||a;}catch(e){}
+  const d=todayKey(); if(!a.days[d]) a.days[d]={topics:[],mcqs:0};
+  if(kind==="topic" && topic){const id=`${topic.unitId}-${topic.id}`;if(!a.days[d].topics.includes(id))a.days[d].topics.push(id);}
+  if(kind==="mcq")a.days[d].mcqs=(a.days[d].mcqs||0)+1;
+  a.today=a.days[d];
+  localStorage.setItem(key,JSON.stringify(a));
+}
+function getActivity(){
+  const key="psychologyNetActivity_v1";let a={days:{}};
+  try{a=JSON.parse(localStorage.getItem(key))||a;}catch(e){}
+  return a;
+}
+function getStreak(){
+  const days=getActivity().days||{};let d=new Date(),count=0;
+  while(true){const k=d.toISOString().slice(0,10);if(!days[k] || ((days[k].topics||[]).length===0 && (days[k].mcqs||0)===0))break;count++;d.setDate(d.getDate()-1);}
+  return count;
+}
+function resetData(){if(confirm("Reset all your notes, progress, bookmarks and study data?")){localStorage.removeItem(KEY);localStorage.removeItem("psychologyNetActivity_v1");location.reload();}}
 
 async function initIndex(){
  await loadAll();renderNav();
- document.querySelector("#overall").textContent=overall()+"%";
- document.querySelector("#mastered").textContent=allTopics().filter(t=>t.status==="Mastered").length;
- document.querySelector("#topicCount").textContent=allTopics().length;
+ const topics=allTopics();
+ const mastered=topics.filter(t=>t.status==="Mastered").length;
+ const studying=topics.filter(t=>t.status==="Studying").length;
+ const saved=topics.filter(t=>t.bookmarks).length;
+ const pct=overall();
+ document.querySelector("#overall").textContent=pct+"%";
+ document.querySelector("#mastered").textContent=mastered;
+ document.querySelector("#studying").textContent=studying;
+ document.querySelector("#topicCount").textContent=topics.length;
+ document.querySelector("#heroPercent").textContent=pct+"%";
+ document.querySelector("#heroProgress").style.width=pct+"%";
+ document.querySelector("#overallBar").style.width=pct+"%";
+ document.querySelector("#heroMastered").textContent=mastered;
+ document.querySelector("#heroStudying").textContent=studying;
+ document.querySelector("#heroSaved").textContent=saved;
+
+ // Today cockpit: a small deterministic daily plan built from unfinished syllabus topics.
+ const todayTopics=topics.filter(t=>t.status!=="Mastered");
+ const plan=[]; const add=(arr)=>arr.forEach(t=>{if(t&&!plan.some(x=>x.unitId===t.unitId&&x.id===t.id)&&plan.length<3)plan.push(t)});
+ add(topics.filter(t=>t.status==="Studying")); add(topics.filter(t=>t.bookmarks)); add(todayTopics); add(topics);
+ const act=getActivity(), day=act.days?.[todayKey()]||{topics:[],mcqs:0};
+ const doneTopics=day.topics||[], mcqGoal=20, mcqs=Math.min(day.mcqs||0,mcqGoal), streak=getStreak();
+ const todayTitle=document.querySelector("#todayDate"); if(todayTitle) todayTitle.textContent=new Date().toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
+ const streakEl=document.querySelector("#streak"); if(streakEl) streakEl.textContent=streak;
+ const topicDone=plan.filter(t=>doneTopics.includes(`${t.unitId}-${t.id}`)).length;
+ const todayTopicCount=document.querySelector("#todayTopicCount"); if(todayTopicCount) todayTopicCount.textContent=`${topicDone}/${plan.length}`;
+ const todayMcq=document.querySelector("#todayMcq"); if(todayMcq) todayMcq.textContent=`${mcqs}/${mcqGoal}`;
+ const todayBar=document.querySelector("#todayBar"); if(todayBar) todayBar.style.width=Math.min(100,Math.round(((topicDone/Math.max(1,plan.length))+(mcqs/mcqGoal))/2*100))+"%";
+ const todayList=document.querySelector("#todayList");
+ if(todayList) todayList.innerHTML=plan.map((t,i)=>{const done=doneTopics.includes(`${t.unitId}-${t.id}`);return `<a class="today-task ${done?"done":""}" href="${topicUrl(t.unitId,t.id)}"><span class="today-check">${done?"✓":i+1}</span><span><strong>${esc(t.title)}</strong><small>Unit ${t.unitId} · ${done?"Completed today":"Study this topic"}</small></span><b>→</b></a>`}).join("") || `<div class="callout"><strong>Syllabus complete.</strong><p>Use today for revision and MCQ practice.</p></div>`;
+
+ const next=topics.find(t=>t.status==="Studying") || topics.find(t=>t.bookmarks) || topics.find(t=>t.status!=="Mastered") || topics[0];
+ if(next){
+   const cb=document.querySelector("#continueBtn"); cb.href=topicUrl(next.unitId,next.id);
+   cb.textContent=(next.status==="Studying"?"Continue studying →":next.bookmarks?"Resume saved topic →":"Start your first topic →");
+   document.querySelector("#heroFocus").textContent=next.title;
+   document.querySelector("#heroFocusMeta").textContent=`Unit ${next.unitId} · ${next.status}`;
+ }
+ const queue=[];
+ const addUnique=(arr)=>arr.forEach(t=>{if(t && !queue.some(x=>x.unitId===t.unitId&&x.id===t.id))queue.push(t)});
+ addUnique(topics.filter(t=>t.status==="Studying"));
+ addUnique(topics.filter(t=>t.bookmarks));
+ addUnique(topics.filter(t=>t.status!=="Mastered"));
+ const fg=document.querySelector("#focusGrid");
+ fg.innerHTML=queue.slice(0,6).map(t=>`<a class="focus-item" href="${topicUrl(t.unitId,t.id)}"><strong>${esc(t.title)}</strong><small>Unit ${t.unitId} · ${esc(t.unitTitle)}</small><span class="focus-state ${t.status.toLowerCase().replace(/\s+/g,'-')}">${t.status}${t.bookmarks?" · ★ Saved":""}</span></a>`).join("") || `<div class="callout"><strong>Your study queue is empty.</strong><p>Open any syllabus topic and set its status to Studying or bookmark it.</p></div>`;
+
  const grid=document.querySelector("#unitGrid");
  const render=(q="")=>{
-  q=q.toLowerCase();
-  grid.innerHTML=db.units.filter(u=>(`unit ${u.id} ${u.title} ${u.topics.map(t=>t.title).join(" ")}`).toLowerCase().includes(q)).map(u=>`
-   <a class="unit-card" href="${unitUrl(u.id)}"><div class="unit-num">UNIT ${u.id}</div><h3>${esc(u.title)}</h3>
-   <p>${u.topics.length} syllabus points</p><div class="progress"><i style="width:${progress(u.id)}%"></i></div><small>${progress(u.id)}% mastered</small></a>`).join("");
+  q=q.toLowerCase().trim();
+  const units=db.units.filter(u=>(`unit ${u.id} ${u.title} ${u.topics.map(t=>t.title).join(" ")}`).toLowerCase().includes(q));
+  grid.innerHTML=units.map(u=>`<a class="unit-card" href="${unitUrl(u.id)}"><div class="unit-num">UNIT ${u.id}</div><h3>${esc(u.title)}</h3><p>${u.topics.length} syllabus points</p><div class="progress"><i style="width:${progress(u.id)}%"></i></div><small>${progress(u.id)}% mastered</small></a>`).join("") || `<div class="callout"><strong>No matching unit or topic.</strong><p>Try a broader search term.</p></div>`;
  };
- render();document.querySelector("#search").oninput=e=>render(e.target.value);
+ render();
+ document.querySelector("#search").oninput=e=>render(e.target.value);
  document.querySelector("#export").onclick=exportData;document.querySelector("#reset").onclick=resetData;
  document.querySelector("#importFile").onchange=e=>e.target.files[0]&&importData(e.target.files[0]);
+ const homeInstall=document.querySelector("#homeInstall");
+ homeInstall?.addEventListener("click",()=>document.querySelector("#installBtn")?.click());
 }
+
 async function initUnit(){
  await loadAll();renderNav();const id=new URLSearchParams(location.search).get("unit"),u=unitById(id);
  if(!u){location.href="index.html";return}
@@ -67,9 +134,9 @@ async function initTopic(){
  ["detailed","notes","pyqs","mcqs","flashcards","references"].forEach(k=>document.querySelector("#"+k).value=t[k]||"");
  document.querySelector("#status").value=t.status||"Not started";document.querySelector("#bookmark").textContent=t.bookmarks?"★ Bookmarked":"☆ Bookmark";
  const side=document.querySelector("#side");side.innerHTML=u.topics.map(x=>`<a class="${x.id===t.id?"active":""}" href="${topicUrl(u.id,x.id)}">${x.id}. ${esc(x.title)}</a>`).join("");
- const save=()=>{["detailed","notes","pyqs","mcqs","flashcards","references"].forEach(k=>t[k]=document.querySelector("#"+k).value);t.status=document.querySelector("#status").value;t.last_reviewed=new Date().toISOString();saveAll();document.querySelector("#saved").textContent="Saved ✓";setTimeout(()=>document.querySelector("#saved").textContent="",1200)};
+ const save=()=>{["detailed","notes","pyqs","mcqs","flashcards","references"].forEach(k=>t[k]=document.querySelector("#"+k).value);t.status=document.querySelector("#status").value;t.last_reviewed=new Date().toISOString();recordActivity("topic",t);saveAll();document.querySelector("#saved").textContent="Saved ✓";setTimeout(()=>document.querySelector("#saved").textContent="",1200)};
  document.querySelector("#save").onclick=save;
- document.querySelector("#bookmark").onclick=()=>{t.bookmarks=!t.bookmarks;document.querySelector("#bookmark").textContent=t.bookmarks?"★ Bookmarked":"☆ Bookmark";saveAll()};
+ document.querySelector("#bookmark").onclick=()=>{t.bookmarks=!t.bookmarks;recordActivity("topic",t);document.querySelector("#bookmark").textContent=t.bookmarks?"★ Bookmarked":"☆ Bookmark";saveAll()};
  document.querySelector("#clear").onclick=()=>{if(confirm("Clear this topic workspace?")){["detailed","notes","pyqs","mcqs","flashcards","references"].forEach(k=>document.querySelector("#"+k).value="");document.querySelector("#status").value="Not started";save()}};
  document.querySelector("#prev").onclick=()=>{const i=u.topics.findIndex(x=>x.id===t.id);if(i>0)location.href=topicUrl(u.id,u.topics[i-1].id)};
  document.querySelector("#next").onclick=()=>{const i=u.topics.findIndex(x=>x.id===t.id);if(i<u.topics.length-1)location.href=topicUrl(u.id,u.topics[i+1].id)};
@@ -96,7 +163,7 @@ async function initPractice(){
  if(!bank.length){document.querySelector("#practice").innerHTML=`<div class="callout"><strong>Your MCQ bank is empty.</strong><p>Add MCQs inside individual topic pages. They will automatically appear here.</p></div>`;return}
  let idx=0,score=0;
  const draw=()=>{const q=bank[idx%bank.length];document.querySelector("#q").textContent=q.text;document.querySelector("#qnum").textContent=`Question ${idx+1}`;document.querySelector("#feedback").textContent="";document.querySelector("#answer").value=""};
- document.querySelector("#submit").onclick=()=>{document.querySelector("#feedback").textContent="Answer saved for your review. The platform does not invent an answer key; compare with your verified source.";idx++;draw()};
+ document.querySelector("#submit").onclick=()=>{recordActivity("mcq");document.querySelector("#feedback").textContent="Answer saved for your review. The platform does not invent an answer key; compare with your verified source.";idx++;draw()};
  document.querySelector("#skip").onclick=()=>{idx++;draw()};draw();
 }
 async function initFlashcards(){
