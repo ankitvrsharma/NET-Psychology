@@ -1,11 +1,3 @@
-## v9.1 update
-- Progress suggestions are driven by spaced-repetition due dates; overdue reviews are prioritised before new learning.
-- Missed website visits do not erase reviews: overdue micro-topics carry forward until retrieved and rated.
-- Review dates can be exported as an `.ics` calendar for an external reminder fallback when the website is not opened.
-- Navigation now has an accessible active-page state, skip link, touch-friendly targets and responsive scrolling on small screens.
-- Desktop, tablet landscape, tablet portrait and mobile layouts use constrained grids and multi-line text wrapping to prevent horizontal overflow.
-- Micro-topic pages remain the dedicated learning destination: content → active recall → self-check → spaced scheduling → PYQ practice.
-
 # 🧠 UGC NET Psychology Study Hub
 
 > A mobile-first, tablet-friendly study platform for **UGC NET Psychology** — built around the official 10-unit syllabus, topic-level study, revision, practice, flashcards, bookmarks, and personal progress tracking.
