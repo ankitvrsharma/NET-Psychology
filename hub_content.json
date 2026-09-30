@@ -1,0 +1,25 @@
+{
+  "version": "10.0",
+  "source_note": "The attached PowerWithin PDF is a comprehensive NET/JRF/SET Psychology study compilation. It is not a standalone verified previous-year-question archive, so questions already labelled PYQ-style are kept clearly separate from verified PYQs.",
+  "verified_pyq_status": "not_present_in_attached_file",
+  "unit_packs": [
+    {"id":1,"title":"Emergence of Psychology","focus":"Build the historical and conceptual skeleton first.","rapid":"Academic psychology in India; psychological thought; Eastern/Indian psychology; Yoga, Gita, Buddhism, Sufism and related traditions; signs and spirituality.","exam_moves":["Compare schools, thinkers and traditions","Link concepts with their defining assumptions","Revise Indian and Western perspectives side by side"]},
+    {"id":2,"title":"Research Methodology and Statistics","focus":"Turn methods into decision rules.","rapid":"Research methodology, paradigms, variables, designs, sampling, measurement, statistics, experimental designs and interpretation.","exam_moves":["Identify the design from a scenario","Separate correlation from causation","Choose the appropriate statistic/design from the data structure"]},
+    {"id":3,"title":"Psychological Testing","focus":"Master the language of measurement.","rapid":"Types of tests, construction, standardization, reliability, validity, norms, test use and interpretation, and attitude scales.","exam_moves":["Differentiate reliability and validity","Match test type to purpose","Remember scale characteristics and standardization steps"]},
+    {"id":4,"title":"Biological Basis of Behavior","focus":"Build a brain–behavior map.","rapid":"Physiological psychology, sensory systems, neurons, neural communication and brain organization.","exam_moves":["Map structures to functions","Distinguish CNS/PNS and autonomic divisions","Connect neurotransmitters and systems with behavior"]},
+    {"id":5,"title":"Attention, Perception, Learning, Memory and Forgetting","focus":"Use process diagrams and comparison tables.","rapid":"Attention, perception, illusions, learning processes, conditioning, observational learning, memory and forgetting.","exam_moves":["Compare theories and paradigms","Use examples to identify processes","Separate encoding, storage and retrieval explanations"]},
+    {"id":6,"title":"Thinking, Intelligence and Creativity","focus":"Learn models through contrasts.","rapid":"Language and thought, problem solving and decision making, intelligence theories and assessment, creativity.","exam_moves":["Compare intelligence models","Identify biases/heuristics in scenarios","Connect creativity with divergent thinking and related models"]},
+    {"id":7,"title":"Personality, Motivation, Emotion, Stress and Coping","focus":"Create theory–construct–example links.","rapid":"Personality theories, motivation, emotion, conflicts, stress, coping and self-regulation.","exam_moves":["Match theorist to construct","Compare emotion theories","Differentiate stress models, conflict types and coping strategies"]},
+    {"id":8,"title":"Social Psychology","focus":"Think in situations, groups and relationships.","rapid":"Social perception, attraction, attitudes, persuasion, conformity, obedience, groups, leadership, aggression, prosocial behavior and intergroup processes.","exam_moves":["Identify the social process in a vignette","Compare conformity, compliance and obedience","Connect classic studies with the construct they demonstrate"]},
+    {"id":9,"title":"Human Development and Interventions","focus":"Build lifespan timelines and intervention maps.","rapid":"Developmental psychology, developmental theories, psychopathology, psychotherapy, counselling and guidance.","exam_moves":["Use age/stage clues","Compare therapeutic approaches","Distinguish disorder features, explanations and interventions"]},
+    {"id":10,"title":"Emerging Areas","focus":"Revise contemporary applications as connected themes.","rapid":"Gender, disability, migration, peace psychology, wellbeing, health psychology and the digital world.","exam_moves":["Define emerging constructs precisely","Use application-based examples","Connect psychological principles with contemporary social issues"]}
+  ],
+  "study_system": [
+    {"title":"1. Diagnose","text":"Start with a 20-question mixed diagnostic set. Mark every miss as concept gap, confusion, recall failure or careless error."},
+    {"title":"2. Learn","text":"Study the micro-topic capsule, source-aligned notes, key terms and the parent syllabus point. Do not jump randomly between books."},
+    {"title":"3. Retrieve","text":"Close the notes and explain the concept. Write the definition, two distinguishing features and one example from memory."},
+    {"title":"4. Practice","text":"Do PYQ-style and source-based MCQs. Record why each option is right or wrong, not just the final answer."},
+    {"title":"5. Schedule","text":"Rate recall as Again, Hard, Good or Easy. The built-in spaced-review queue brings weak topics back automatically."},
+    {"title":"6. Interleave","text":"Mix units during revision so recognition does not become the only skill you practise."}
+  ]
+}

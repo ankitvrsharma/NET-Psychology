@@ -1,9 +1,9 @@
 
-const KEY="psychologyNetStudyHub_v9_3";
+const KEY="psychologyNetStudyHub_v10_0";
 let db=null, meta=null;
 
 async function loadAll(){
-  const saved=localStorage.getItem(KEY) || localStorage.getItem("psychologyNetStudyHub_v5");
+  const saved=localStorage.getItem(KEY) || localStorage.getItem("psychologyNetStudyHub_v9_4") || localStorage.getItem("psychologyNetStudyHub_v9_3") || localStorage.getItem("psychologyNetStudyHub_v5");
   if(saved){
     try{
       const x=JSON.parse(saved); db=x.db; meta=x.meta;
@@ -40,7 +40,7 @@ function overall(){return overallMicro();}
 function renderNav(){
   const page=document.body?.dataset?.page||"index";
   const items=[
-    ["index","index.html","Home"],["dashboard","dashboard.html","Dashboard"],["practice","practice.html","Practice"],["flashcards","flashcards.html","Flashcards"],["bookmarks","bookmarks.html","Bookmarks"]
+    ["index","index.html","Home"],["dashboard","dashboard.html","Dashboard"],["planner","planner.html","Planner"],["pyq","pyq.html","Question Lab"],["practice","practice.html","Practice"],["flashcards","flashcards.html","Flashcards"],["bookmarks","bookmarks.html","Saved"]
   ];
   document.querySelectorAll("[data-nav]").forEach(e=>e.innerHTML=items.map(([key,url,label])=>`<a href="${url}" ${page===key?'aria-current="page"':''}>${label}</a>`).join(""));
 }
@@ -279,6 +279,57 @@ async function initMicrotopic(){
  document.querySelector("#backOutline").href=topicUrl(u.id,t.id);
  const mts=t.microtopics||[],idx=mts.findIndex(x=>x.id===m.id);const next=idx<mts.length-1?mts[idx+1]:null;const nextBtn=document.querySelector("#nextMicro");if(next){nextBtn.href=microUrl(u.id,t.id,next.id)}else{nextBtn.href=unitUrl(u.id);nextBtn.textContent="Back to unit →";}
 }
+
+async function loadHubContent(){
+  try{return await (await fetch("hub_content.json",{cache:"no-store"})).json();}
+  catch(e){return {unit_packs:[],study_system:[]};}
+}
+function questionBank(){
+  const out=[];
+  allTopics().forEach(t=>{
+    const add=(raw,type)=>parsePyqBlocks(raw).forEach((text,i)=>out.push({id:`${type}-${t.unitId}-${t.id}-${i}`,type,unit:t.unitId,unitTitle:t.unitTitle,topic:t.id,topicTitle:t.title,text}));
+    add(t.pyqs,"pyq"); add(t.mcqs,"mcq");
+  });
+  return out;
+}
+function parseQuestionText(text){
+  const raw=String(text||'').trim();
+  const m=raw.match(/(?:^|\n)Answer\s*:\s*(.+?)(?=\n|$)/i);
+  const answer=m?m[1].trim():'';
+  const body=m?raw.replace(m[0],'').trim():raw;
+  return {body,answer};
+}
+async function initPyq(){
+  await loadAll();renderNav();
+  const bank=questionBank();
+  const total=document.querySelector("#bankTotal"); if(total) total.textContent=bank.length;
+  const uf=document.querySelector("#unitFilter");
+  if(uf) uf.innerHTML='<option value="">All units</option>'+db.units.map(u=>`<option value="${u.id}">Unit ${u.id} — ${esc(u.title)}</option>`).join("");
+  const grid=document.querySelector("#questionGrid");
+  const render=()=>{
+    const q=(document.querySelector("#pyqSearch")?.value||"").toLowerCase().trim();
+    const unit=document.querySelector("#unitFilter")?.value||""; const type=document.querySelector("#typeFilter")?.value||"all";
+    let rows=bank.filter(x=>(!unit||String(x.unit)===unit)&&(type==="all"||x.type===type)&&(!q||`${x.text} ${x.topicTitle} ${x.unitTitle}`.toLowerCase().includes(q)));
+    if(document.querySelector("#randomBtn")?.dataset.random==="1") rows=[...rows].sort(()=>Math.random()-.5).slice(0,20);
+    grid.innerHTML=rows.slice(0,120).map((x,i)=>{const qx=parseQuestionText(x.text);const key=`ans-${x.id}`;return `<article class="question-card"><div class="q-meta"><span class="source-pill ${x.type}">${x.type==="pyq"?"PYQ-STYLE":"SOURCE / TOPIC MCQ"}</span><span>Unit ${x.unit} · ${x.topic}</span></div><div class="q-text">${esc(qx.body).replace(/\n/g,"<br>")}</div><div class="answer-reveal"><button class="btn ghost reveal-btn" data-target="${key}">Reveal answer</button><div id="${key}" class="hidden-answer" hidden><b>Answer:</b> ${esc(qx.answer||'No answer embedded in this item.')}</div></div><div class="q-foot"><a href="${topicUrl(x.unit,x.topic)}">Study this concept →</a><span>${esc(x.topicTitle)}</span></div></article>`}).join("")||`<div class="callout"><strong>No questions match those filters.</strong><p>Try another unit, source type or search term.</p></div>`;
+    grid.querySelectorAll('.reveal-btn').forEach(btn=>btn.addEventListener('click',()=>{const el=document.getElementById(btn.dataset.target);el.hidden=!el.hidden;btn.textContent=el.hidden?'Reveal answer':'Hide answer';}));
+  };
+  ["pyqSearch","unitFilter","typeFilter"].forEach(id=>document.querySelector("#"+id)?.addEventListener("input",()=>{document.querySelector("#randomBtn").dataset.random="0";render()}));
+  document.querySelector("#randomBtn")?.addEventListener("click",()=>{document.querySelector("#randomBtn").dataset.random="1";render()});
+  render();
+}
+async function initPlanner(){
+  await loadAll();renderNav();
+  const content=await loadHubContent();
+  const pct=overall();document.querySelector("#plannerPct").textContent=pct+"%";
+  const system=document.querySelector("#studySystem");
+  system.innerHTML=(content.study_system||[]).map((x,i)=>`<article class="system-card"><span>${String(i+1).padStart(2,"0")}</span><div><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div></article>`).join("");
+  const packs=document.querySelector("#unitPacks");
+  packs.innerHTML=(content.unit_packs||[]).map(x=>`<article class="pack-card"><div class="pack-top"><span>UNIT ${x.id}</span><strong>${progress(x.id)}%</strong></div><h3>${esc(x.title)}</h3><p class="pack-focus">${esc(x.focus)}</p><p>${esc(x.rapid)}</p><ul>${(x.exam_moves||[]).map(y=>`<li>${esc(y)}</li>`).join("")}</ul><a href="${unitUrl(x.id)}">Open unit →</a></article>`).join("");
+  const rs=reviewStats();const t=rs.due[0]||allMicrotopics().find(m=>getMicroState(m.unitId,m.topicId,m.id).status!=="Mastered");
+  if(t){document.querySelector("#todayPlanTitle").textContent=t.title;document.querySelector("#todayPlanText").textContent=`Unit ${t.unitId} · ${t.topicTitle} · ${reviewLabel(t)}`;}
+}
+
 async function initDashboard(){
  await loadAll();touchVisit();renderNav();
  const micros=allMicrotopics();document.querySelector("#overall").textContent=overall()+"%";
@@ -347,6 +398,6 @@ function setupPWA(){
 }
 document.addEventListener("DOMContentLoaded",()=>{
  const p=document.body.dataset.page;
- if(p==="index")initIndex();if(p==="unit")initUnit();if(p==="topic")initTopic();if(p==="dashboard")initDashboard();if(p==="practice")initPractice();if(p==="flashcards")initFlashcards();if(p==="bookmarks")initBookmarks();if(p==="microtopic")initMicrotopic();
+ if(p==="index")initIndex();if(p==="unit")initUnit();if(p==="topic")initTopic();if(p==="dashboard")initDashboard();if(p==="planner")initPlanner();if(p==="pyq")initPyq();if(p==="practice")initPractice();if(p==="flashcards")initFlashcards();if(p==="bookmarks")initBookmarks();if(p==="microtopic")initMicrotopic();
  setupPWA();
 });

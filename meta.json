@@ -1,5 +1,5 @@
 {
-  "app_version": "9.4",
+  "app_version": "10.0",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
@@ -35,17 +35,24 @@
     "source-aligned micro-topic notes",
     "PYQ-style question bank"
   ],
-  "version": "v9.4",
+  "version": "v10.0",
   "microtopic_count": 440,
-  "content_note": "Content enriched with the attached Psychology: A Self-Teaching Guide. Chapter-aligned notes and source-based self-test questions were added where directly relevant; existing UGC NET syllabus structure and micro-topic learning system are preserved.",
+  "content_note": "Complete study-hub revamp. Preserves the authoritative 10-unit / 440-microtopic architecture and integrates source-aligned content from Psychology: A Self-Teaching Guide plus the attached PowerWithin NET/JRF/SET Psychology compilation. Adds a study operating system, question lab, planner, rapid unit packs and clearer source provenance.",
   "content_sources": [
     "Authoritative UGC NET Psychology syllabus",
     "Prompts for notes.docx",
-    "Psychology: A Self-Teaching Guide (attached PDF)"
+    "Psychology: A Self-Teaching Guide",
+    "_NTA_UGC_NET_JRF_SLET_Psychology_Paper_2_Power_within_Psychology.pdf"
   ],
   "book_integration": {
     "chapters": 16,
     "microtopic_count": 440,
     "source_based_self_tests": 160
+  },
+  "question_bank": {
+    "pyq_style_blocks": 204,
+    "topic_mcq_blocks": 435,
+    "verified_pyq_blocks": 0,
+    "verified_pyq_status": "The newly attached PowerWithin PDF is not a standalone verified PYQ archive."
   }
 }
