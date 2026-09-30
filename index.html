@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>UGC NET Psychology — Study Hub</title><meta name="description" content="Your personal UGC NET Psychology study dashboard, syllabus, notes, practice and revision hub.">
+<title>UGC NET Psychology — Study Hub</title><meta name="description" content="Your personal UGC NET Psychology Study Dashboard.">
 <link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body data-page="index"><a class="skip-link" href="#main-content">Skip to main content</a>
@@ -13,7 +13,7 @@
 <main id="main-content" class="container home-container">
 <section class="home-hero">
   <div class="hero-copy">
-    <span class="badge"><span class="pulse-dot"></span> UGC NET Psychology · 10-unit syllabus</span>
+    <span class="badge"><span class="pulse-dot"></span> UGC NET Psychology.</span>
     <h1>Study Psychology.<br><em>Track mastery.</em><br>Revise smarter.</h1>
     <p class="hero-lead">One focused workspace for your syllabus, topic notes, PYQs, MCQs, flashcards, bookmarks and revision progress.</p>
     <div class="hero-actions">
@@ -32,18 +32,18 @@
         <div><strong id="heroStudying">0</strong><span>studying</span></div>
         <div><strong id="heroSaved">0</strong><span>bookmarked</span></div>
       </div>
-      <div class="mini-focus"><span class="focus-label" id="heroReviewLabel">TODAY'S SPACED REVIEW</span><strong id="heroFocus">Open Dashboard</strong><small id="heroFocusMeta">Build your spaced-review queue</small><span class="review-meta" id="heroReviewMeta">0 due · 0 overdue · 0 scheduled</span><a id="heroStartBtn" class="mini-start" href="dashboard.html">Start review →</a></div>
+      <div class="mini-focus"><span class="focus-label" id="heroReviewLabel">TODAY'S REVISION</span><strong id="heroFocus">Open Dashboard</strong><small id="heroFocusMeta">Build your spaced-revision queue</small><span class="review-meta" id="heroReviewMeta">0 due · 0 overdue · 0 scheduled</span><a id="heroStartBtn" class="mini-start" href="dashboard.html">Start Revision→</a></div>
     </div>
   </div>
 </section>
 
 <section class="today-cockpit" aria-label="Today's study plan">
   <div class="today-head">
-    <div><span class="eyebrow">TODAY'S SPACED REVIEW</span><h2>Review what memory says is due.</h2><p id="todayDate">Today</p></div>
+    <div><span class="eyebrow">TODAY'S SPACED REVISION</span><h2>Revise what memory says is due.</h2><p id="todayDate">Today</p></div>
     <div class="streak-pill">🔥 <strong id="streak">0</strong> day streak</div>
   </div>
-  <div class="today-progress"><div><span>Daily progress</span><strong id="todayTopicCount">0/3 topics</strong></div><div><span>MCQ practice</span><strong id="todayMcq">0/20</strong></div><div class="today-bar"><i id="todayBar"></i></div></div>
-  <div class="today-grid"><div id="todayList" class="today-list"></div><a class="today-mcq" href="practice.html"><span class="today-mcq-icon">✓</span><div><span class="eyebrow">20-MCQ SPRINT</span><h3>Test today's learning</h3><p>Practice, review your responses and build your daily streak.</p></div><b>Start →</b></a></div>
+  <div class="today-progress"><div><span>Daily progress</span><strong id="todayTopicCount">0/3 topics</strong></div><div><span>MCQ Practice</span><strong id="todayMcq">0/20</strong></div><div class="today-bar"><i id="todayBar"></i></div></div>
+  <div class="today-grid"><div id="todayList" class="today-list"></div><a class="today-mcq" href="practice.html"><span class="today-mcq-icon">✓</span><div><span class="eyebrow">20-MCQ SPRINT</span><h3>Test today's learning</h3><p>Practice, revise and build your daily streak.</p></div><b>Start →</b></a></div>
 </section>
 
 <section class="quick-grid" aria-label="Quick study actions">
@@ -57,7 +57,7 @@
   <div class="stat stat-feature"><span class="stat-kicker">OVERALL MASTERY</span><strong id="overall">0%</strong><div class="progress"><i id="overallBar"></i></div><small>Mastered syllabus points</small></div>
   <div class="stat"><span class="stat-kicker">MASTERED</span><strong id="mastered">0</strong><small>topics completed</small></div>
   <div class="stat"><span class="stat-kicker">STUDYING</span><strong id="studying">0</strong><small>topics in progress</small></div>
-  <div class="stat"><span class="stat-kicker">SYLLABUS</span><strong id="topicCount">0</strong><small>numbered points across 10 units</small></div>
+  <div class="stat"><span class="stat-kicker">SYLLABUS</span><strong id="topicCount">0</strong><small>Total micro topics across the syllabus</small></div>
 </section>
 
 <section class="focus-section">
@@ -71,13 +71,13 @@
 </section>
 
 <section id="units" class="units-section">
-  <div class="section-head"><div><span class="eyebrow">AUTHORITATIVE SYLLABUS MAP</span><h2>Explore all 10 units</h2></div><span class="muted">Search by unit or topic</span></div>
+  <div class="section-head"><div><span class="eyebrow">OFFICIAL NTA UGC NET SYLLABUS MAP</span><h2>Explore all 10 Units</h2></div><span class="muted">Search by unit or topic</span></div>
   <div class="toolbar syllabus-search"><div class="search-wrap"><span>⌕</span><input id="search" class="search" placeholder="Search psychology syllabus…" autocomplete="off"></div></div>
   <div id="unitGrid" class="unit-grid"></div>
 </section>
 
 <section class="home-bottom">
-  <div class="principles-card"><span class="eyebrow">A SIMPLE STUDY LOOP</span><h2>Learn → Recall → Practice → Revise</h2><p>Use topic pages for your detailed notes, verified PYQs and MCQs; then return to the dashboard to decide what to study next.</p><div class="loop"><span>1<br><b>Learn</b></span><i>→</i><span>2<br><b>Recall</b></span><i>→</i><span>3<br><b>Practice</b></span><i>→</i><span>4<br><b>Revise</b></span></div></div>
+  <div class="principles-card"><span class="eyebrow">A SIMPLE STUDY LOOP</span><h2>Learn → Recall → Practice → Revise</h2><p>Use topic pages for detailed notes, practice PYQs and MCQs; then return to the dashboard to decide what to study next.</p><div class="loop"><span>1<br><b>Learn</b></span><i>→</i><span>2<br><b>Recall</b></span><i>→</i><span>3<br><b>Practice</b></span><i>→</i><span>4<br><b>Revise</b></span></div></div>
   <div class="install-card"><span class="eyebrow">STUDY ANYWHERE</span><h2>Make it an app</h2><p>Install the study hub on your Android phone or tablet for a cleaner, app-like experience.</p><button id="homeInstall" class="btn primary">Install / Add to Home Screen</button></div>
 </section>
 </main>
