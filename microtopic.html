@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Micro Topic — Psychology NET</title><meta name="description" content="Micro-topic learning, active recall, spaced revision and PYQ practice for UGC NET Psychology.">
+<link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
+</head><body data-page="microtopic"><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="topbar"><nav class="nav" aria-label="Primary navigation"><div class="nav-top"><a class="brand" href="index.html"><span class="brand-mark">Ψ</span><span>UGC NET <b>Psychology</b></span></a><button class="install-btn" id="installBtn" hidden>Install App</button></div><div class="navlinks" data-nav></div></nav></header>
+<main id="main-content" class="container micro-page">
+<div class="breadcrumb"><a href="index.html">Home</a> / <a id="unitLink" href="#">Unit</a> / <a id="outlineLink" href="#">Outline</a> / Micro topic</div>
+<section class="micro-hero">
+  <div><span class="badge" id="microNum">Micro topic</span><h1 id="microTitle">Micro topic</h1><p id="microParent" class="micro-parent"></p></div>
+  <div class="micro-status-card"><span class="eyebrow">LEARNING STATUS</span><strong id="microStatus">Not started</strong><span id="dueLabel">Ready to learn</span></div>
+</section>
+
+<section class="learning-loop-card">
+  <div class="section-head"><div><span class="eyebrow">LEARNING LOOP</span><h2>Learn → Retrieve → Check → Schedule</h2></div><span class="learning-chip">Retrieval practice</span></div>
+  <div class="learning-steps"><span class="active">1. Learn</span><span>2. Retrieve</span><span>3. Check</span><span>4. Space</span></div>
+</section>
+
+<section class="content-notes card-panel">
+  <div class="section-head"><div><span class="eyebrow">CONTENT NOTES</span><h2>Read this first</h2></div><button id="hideNotes" class="btn ghost">Hide notes for recall</button></div>
+  <div class="source-note"><strong>Syllabus anchor:</strong> <span id="syllabusAnchor"></span></div>
+  <div id="contentNotes" class="content-notes-body"></div>
+</section>
+
+<section class="recall-panel card-panel">
+  <div class="section-head"><div><span class="eyebrow">ACTIVE RECALL</span><h2>Close the notes. Write what you remember.</h2><p class="muted">Do not copy the notes. Reconstruct the idea from memory in your own words.</p></div><span class="recall-timer" id="recallTimer">2:00</span></div>
+  <div class="recall-prompt" id="recallPrompt"></div>
+  <textarea id="recallResponse" class="recall-box" placeholder="Write from memory… definitions, key points, theorists, distinctions, examples or steps. Keep it brief."></textarea>
+  <div class="recall-actions"><button id="startRecall" class="btn primary">Start 2-minute recall</button><button id="checkRecall" class="btn" disabled>Reveal key points</button><span id="recallSaved" class="muted"></span></div>
+  <div id="keyPoints" class="key-points" hidden></div>
+</section>
+
+<section class="review-panel card-panel">
+  <div class="section-head"><div><span class="eyebrow">SPACED REVISION</span><h2>How well could you retrieve it?</h2><p class="muted">Your rating sets the next review interval. Harder retrieval brings the topic back sooner.</p></div></div>
+  <div class="rating-grid">
+    <button class="rating again" data-rating="again"><strong>Again</strong><small>Review today</small></button>
+    <button class="rating hard" data-rating="hard"><strong>Hard</strong><small>Review tomorrow</small></button>
+    <button class="rating good" data-rating="good"><strong>Good</strong><small>Review in 3 days</small></button>
+    <button class="rating easy" data-rating="easy"><strong>Easy</strong><small>Review in 7 days</small></button>
+  </div>
+  <div class="next-review" id="nextReview">Complete a recall attempt to schedule revision.</div>
+</section>
+
+<section class="pyq-panel card-panel">
+  <div class="section-head"><div><span class="eyebrow">PREVIOUS-YEAR QUESTION PRACTICE</span><h2>Retrieve through PYQs</h2><p class="muted">Answer from memory first. The page will keep your response, not a conventional notes file.</p></div><span class="learning-chip">Testing effect</span></div>
+  <div id="pyqList" class="pyq-list"></div>
+  <div class="pyq-response-wrap"><label for="pyqResponse">Your answer / reasoning</label><textarea id="pyqResponse" class="recall-box" placeholder="Answer the PYQ in exam conditions. Then compare with your verified source."></textarea><button id="savePyq" class="btn primary">Save PYQ response</button><span id="pyqSaved" class="muted"></span></div>
+</section>
+
+<section class="micro-footer-actions"><button id="bookmarkMicro" class="btn">☆ Bookmark micro topic</button><a id="backOutline" class="btn ghost" href="#">← Back to outline</a><a id="nextMicro" class="btn primary" href="#">Next micro topic →</a></section>
+</main>
+<footer class="footer">UGC NET Psychology Study Hub · Learn from provided content, retrieve from memory, practise PYQs, then revisit on schedule.</footer>
+<script src="app.js"></script></body></html>

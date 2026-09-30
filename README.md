@@ -1,8 +1,10 @@
-## v8.4 update
-- Header install control aligned with the website title.
-- Global navigation order: Home → Dashboard → Practice → Flashcards → Bookmarks.
-- Recurring install toast removed; installation is available through the header/install section only.
-- Syllabus hierarchy expanded to Unit → numbered outline point → micro topics, with 440 source-derived micro-topic study cards.
+## v9.1 update
+- Progress suggestions are driven by spaced-repetition due dates; overdue reviews are prioritised before new learning.
+- Missed website visits do not erase reviews: overdue micro-topics carry forward until retrieved and rated.
+- Review dates can be exported as an `.ics` calendar for an external reminder fallback when the website is not opened.
+- Navigation now has an accessible active-page state, skip link, touch-friendly targets and responsive scrolling on small screens.
+- Desktop, tablet landscape, tablet portrait and mobile layouts use constrained grids and multi-line text wrapping to prevent horizontal overflow.
+- Micro-topic pages remain the dedicated learning destination: content → active recall → self-check → spaced scheduling → PYQ practice.
 
 # 🧠 UGC NET Psychology Study Hub
 
@@ -35,6 +37,9 @@ The current site includes:
 - Flashcards
 - Bookmarks and mastery status
 - Progress dashboard
+- Daily spaced-review cockpit
+- Overdue-review recovery queue
+- Review-calendar fallback
 - Daily Study Cockpit
 - Topic search and navigation
 - JSON export/import for backups
@@ -45,24 +50,26 @@ The current site includes:
 ## 🎯 Study workflow
 
 ```text
-Syllabus
+Syllabus unit
    ↓
-Topic
+Outline point
    ↓
-Learn
+Micro topic
    ↓
-Recall / Flashcards
+Read content
    ↓
-Practice MCQs
+Active recall
    ↓
-Add & verify PYQs
+Self-check + PYQ
    ↓
-Mark mastery
+Rate retrieval
    ↓
-Revise again
+Spaced review date
+   ↓
+Overdue reviews carry forward
 ```
 
-The homepage is designed as a **study cockpit**: open the site and immediately see what to work on, your progress, and your next study actions.
+The homepage is designed as a **study cockpit**: open the site and immediately see the micro-topics whose spaced-repetition schedule says they need retrieval. New learning is used only when the review queue does not fill the small daily plan.
 
 ---
 
@@ -381,3 +388,7 @@ The long-term goal is to turn the official UGC NET Psychology syllabus into a pr
 > **Understand → Recall → Practice → Verify → Revise → Master**
 
 Built to grow from a static GitHub Pages project into a complete Psychology exam-preparation platform.
+
+
+## v9 learning architecture
+The learner path is Unit → Outline point → Micro topic. Micro topics have dedicated pages with read-only content notes, active recall response, self-rating based spaced revision, and a PYQ response area. Conventional detailed-note fields have been removed from the micro-topic learner workflow.

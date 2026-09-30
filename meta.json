@@ -1,14 +1,13 @@
 {
-  "app_version": "8.6",
+  "app_version": "9.1",
   "description": "UGC NET Psychology interactive learning platform",
   "content_policy": "Syllabus wording is source-derived; learning tools and starter guidance are platform scaffolding.",
   "test_bank": [],
   "flashcards": [],
   "bookmarks": [],
   "features": [
+    "Unit → outline point → micro-topic hierarchy",
     "syllabus-to-topic hierarchy",
-    "editable detailed notes",
-    "PYQ/MCQ/flashcard/reference fields",
     "bookmarks and mastery",
     "dashboard",
     "MCQ practice",
@@ -20,9 +19,20 @@
     "landscape tablet normal-flow layout",
     "split-screen landscape progress card and wrapped daily study cards",
     "full-viewport landscape progress card and multi-line study cards",
-    "micro-topic hierarchy and persistent non-overlay install controls"
+    "micro-topic hierarchy and persistent non-overlay install controls",
+    "micro-topic pages",
+    "active recall",
+    "spaced revision",
+    "PYQ practice workflow",
+    "learning-science study architecture",
+    "no conventional note-taking required",
+    "spaced-repetition-first daily progress suggestions",
+    "overdue review carry-forward safety net",
+    "review calendar fallback for missed website visits",
+    "accessible responsive primary navigation with active state",
+    "desktop tablet landscape and mobile adaptive layout hardening"
   ],
-  "version": "v8.6",
-  "microtopic_count": 1368,
-  "content_note": "10-unit syllabus with nested outline-point and micro-topic study hierarchy; responsive tablet/landscape layout; split-screen landscape progress card; install overlay removed."
+  "version": "v9.1",
+  "microtopic_count": 440,
+  "content_note": "v9.1 prioritizes spaced-repetition reviews in the progress block and carries missed reviews forward as overdue rather than silently skipping them. A calendar export provides an external reminder fallback when the learner does not open the website."
 }

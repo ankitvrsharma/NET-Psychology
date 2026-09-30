@@ -5,12 +5,12 @@
 <title>UGC NET Psychology — Study Hub</title><meta name="description" content="Your personal UGC NET Psychology study dashboard, syllabus, notes, practice and revision hub.">
 <link rel="stylesheet" href="style.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
-<body data-page="index">
-<header class="topbar"><nav class="nav">
+<body data-page="index"><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="topbar"><nav class="nav" aria-label="Primary navigation">
 <div class="nav-top"><a class="brand" href="index.html"><span class="brand-mark">Ψ</span><span>UGC NET <b>Psychology</b></span></a><button class="install-btn" id="installBtn" hidden>Install App</button></div>
 <div class="navlinks" data-nav></div></nav></header>
 
-<main class="container home-container">
+<main id="main-content" class="container home-container">
 <section class="home-hero">
   <div class="hero-copy">
     <span class="badge"><span class="pulse-dot"></span> UGC NET Psychology · 10-unit syllabus</span>
@@ -32,14 +32,14 @@
         <div><strong id="heroStudying">0</strong><span>studying</span></div>
         <div><strong id="heroSaved">0</strong><span>bookmarked</span></div>
       </div>
-      <div class="mini-focus"><span class="focus-label">NEXT FOCUS</span><strong id="heroFocus">Open Dashboard</strong><small id="heroFocusMeta">Build your study queue</small><a id="heroStartBtn" class="mini-start" href="dashboard.html">Start studying →</a></div>
+      <div class="mini-focus"><span class="focus-label" id="heroReviewLabel">TODAY'S SPACED REVIEW</span><strong id="heroFocus">Open Dashboard</strong><small id="heroFocusMeta">Build your spaced-review queue</small><span class="review-meta" id="heroReviewMeta">0 due · 0 overdue · 0 scheduled</span><a id="heroStartBtn" class="mini-start" href="dashboard.html">Start review →</a></div>
     </div>
   </div>
 </section>
 
 <section class="today-cockpit" aria-label="Today's study plan">
   <div class="today-head">
-    <div><span class="eyebrow">TODAY'S STUDY COCKPIT</span><h2>Know exactly what to do next.</h2><p id="todayDate">Today</p></div>
+    <div><span class="eyebrow">TODAY'S SPACED REVIEW</span><h2>Review what memory says is due.</h2><p id="todayDate">Today</p></div>
     <div class="streak-pill">🔥 <strong id="streak">0</strong> day streak</div>
   </div>
   <div class="today-progress"><div><span>Daily progress</span><strong id="todayTopicCount">0/3 topics</strong></div><div><span>MCQ practice</span><strong id="todayMcq">0/20</strong></div><div class="today-bar"><i id="todayBar"></i></div></div>
