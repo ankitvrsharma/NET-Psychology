@@ -1,5 +1,5 @@
-const CACHE='netpsych-v6';
-const VERSION='20261001-3';
+const CACHE='netpsych-v7';
+const VERSION='20261001-4';
 const STATIC=['./','./index.html','./unit.html','./topic.html','./microtopic.html','./practice.html','./revision.html','./progress.html',`./style.css?v=${VERSION}`,`./app.js?v=${VERSION}`,'./data.json','./manifest.webmanifest'];
 
 self.addEventListener('install',event=>{
