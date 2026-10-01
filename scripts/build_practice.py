@@ -80,7 +80,7 @@ def main():
    if len(opts)!=4:dropped.append([s,n,'incomplete-options']);continue
    ans=normalize_answer(key.get(n))
    if ans is None:dropped.append([s,n,key.get(n,'missing-key')]);continue
-   kind=classify(q);out.append({'id':f'{s.replace(" ","-")}-{n}','session':s,'question_number':n,'question':q,'options':opts,'answer':ans,'type':'PYQ','explanation':explain(ans,kind),'kind':kind,**map_syllabus(q,data['units'])})
+   kind=classify(q); q=re.sub(r'\\s+(?:Instructions for Questions(?: Nos\\.)?|Questions)\\s+\\d+\\s+to\\s+\\d+\\s*:', '', q, flags=re.I).strip(); opts=[re.sub(r'\\s+(?:Instructions for Questions(?: Nos\\.)?|Questions)\\s+\\d+\\s+to\\s+\\d+\\s*:', '', o, flags=re.I).strip() for o in opts]; out.append({'id':f'{s.replace(" ","-")}-{n}','session':s,'question_number':n,'question':q,'options':opts,'answer':ans,'type':'PYQ','explanation':explain(ans,kind),'kind':kind,**map_syllabus(q,data['units'])})
  Path('practice_questions.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
  Path('practice-build-report.json').write_text(json.dumps({'questions':len(out),'dropped':dropped,'source':SOURCE_URL,'source_sha256':EXPECTED_SHA256},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'Built {len(out)} verified PYQs; dropped {len(dropped)}.')
