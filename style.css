@@ -300,9 +300,9 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
 .daily-focus-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .daily-focus-card{min-height:94px}
 .daily-focus-card .action-icon{flex:0 0 30px}
-@media(max-width:900px){
+@media(max-width:1100px){
   .study-focus-enhanced{grid-template-columns:1fr}
-  .daily-focus-actions{grid-template-columns:repeat(3,1fr);width:100%}
+  .daily-focus-actions{grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
 }
 @media(max-width:620px){
   .daily-focus-actions{grid-template-columns:1fr}
