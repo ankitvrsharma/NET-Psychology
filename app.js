@@ -46,7 +46,8 @@ async function loadStudyData(){
   D=json;
   try{
     const pq=await fetch('./practice_questions.json?v='+Date.now(),{cache:'no-store'});
-    if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}\n  try{const pe=await fetch('./practice_explanations.json?v='+Date.now(),{cache:'no-store'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
+    if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
+    try{const pe=await fetch('./practice_explanations.json?v='+Date.now(),{cache:'no-store'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
   }catch(e){console.warn('PYQ bank could not be loaded:',e)}
   render();
   return true;
