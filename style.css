@@ -228,7 +228,7 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
 }
 
 /* Enhanced Today's Study Focus */
-.study-focus-enhanced{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,330px);align-items:center;gap:34px;padding:26px 30px;border-radius:20px}
+.study-focus-enhanced{display:grid;grid-template-columns:1fr;align-items:stretch;gap:20px;padding:26px 30px;border-radius:20px}
 .study-focus-main h2{font-size:28px;line-height:1.15;letter-spacing:-.025em;margin:5px 0 8px}
 .study-focus-main>p{max-width:720px;line-height:1.55}
 .study-sequence{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:18px}
