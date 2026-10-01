@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
-const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[];
+const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
 const ladder=[0,1,3,7,14,30,60,90,180];
 const SW_MIGRATION_KEY='netPsychSwMigratedV2';
@@ -46,7 +46,7 @@ async function loadStudyData(){
   D=json;
   try{
     const pq=await fetch('./practice_questions.json?v='+Date.now(),{cache:'no-store'});
-    if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
+    if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}\n  try{const pe=await fetch('./practice_explanations.json?v='+Date.now(),{cache:'no-store'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
   }catch(e){console.warn('PYQ bank could not be loaded:',e)}
   render();
   return true;
