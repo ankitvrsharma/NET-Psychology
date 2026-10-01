@@ -5,7 +5,6 @@ const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],P
 const KEY='netPsychProgress';
 let STATE_CACHE=null;
 const ladder=[0,1,3,7,14,30,60,90,180];
-const SW_MIGRATION_KEY='netPsychSwMigratedV2';
 
 function loadScript(src){
   return new Promise((resolve,reject)=>{

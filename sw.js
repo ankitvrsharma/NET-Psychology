@@ -29,10 +29,10 @@ self.addEventListener('fetch',event=>{
   if(url.pathname.endsWith('.json')||url.pathname.endsWith('.html')){
     event.respondWith(fetch(req).then(res=>{
       const copy=res.clone(); caches.open(CACHE).then(c=>c.put(req,copy)); return res;
-    }).catch(()=>caches.match(req)));
+    }).catch(()=>caches.match(req,{ignoreSearch:true})));
     return;
   }
-  event.respondWith(caches.match(req).then(cached=>cached||fetch(req).then(res=>{
+  event.respondWith(caches.match(req,{ignoreSearch:true}).then(cached=>cached||fetch(req).then(res=>{
     const copy=res.clone(); caches.open(CACHE).then(c=>c.put(req,copy)); return res;
   })));
 });
