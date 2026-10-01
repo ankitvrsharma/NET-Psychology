@@ -46,15 +46,9 @@ async function loadStudyData(){
   await loadScript('data.js?v='+encodeURIComponent(version));
   if(!window.NETPSY_DATA) throw new Error('Study data is missing');
   D=window.NETPSY_DATA;
+  if(!D || !Array.isArray(D.units)) throw new Error('Study data has an invalid structure');
   render();
   return true;
-}
-
-async function fallbackStudyData(){
-  const r=await fetch('./data.json?cb='+Date.now(),{cache:'no-store'});
-  if(!r.ok) throw new Error('Study data request failed');
-  D=await r.json();
-  render();
 }
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -159,7 +153,10 @@ function progress(){
   $('#importData').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.progress)throw Error();save(x.progress);location.reload()}catch{alert('That backup file is not valid.')}};r.readAsText(f)};
 }
 function readiness(s){if(s.coverage>=80&&s.mastery>=70&&s.accuracy>=70&&s.retention>=60)return {label:'Exam Ready',note:'Your learning record shows broad coverage, solid mastery, question performance, and delayed recall. Keep maintaining these gains through mixed practice and spaced revision.',focus:['Maintain delayed recall across older concepts','Mix MCQs and PYQs across units','Keep revising concepts before they become due'],action:'Open Mixed Practice',href:'practice.html'};if(s.coverage>=60&&s.mastery>=45&&s.accuracy>=60)return {label:'Ready for Exam Practice',note:'You have built a substantial base. The next step is to strengthen retrieval, application, and delayed recall while continuing to expand coverage.',focus:['Strengthen concept mastery','Use recall before checking notes','Practice across different units'],action:'Practice Questions',href:'practice.html'};if(s.coverage>=25)return {label:'Developing',note:'You are building the foundation. Keep moving through the syllabus while turning each new concept into something you can recall and apply.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Continue Learning',href:'unit.html?id=1'};return {label:'Building',note:'You are still establishing your foundation. Start with one concept at a time and move through understanding, recall, and application.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Start Learning',href:'unit.html?id=1'}}
-loadStudyData().catch(()=>fallbackStudyData()).catch(()=>{
-  document.body.innerHTML='<main class="shell"><section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p></section></main>';
+loadStudyData().catch(err=>{
+  console.error('NET Psychology data loading failed:',err);
+  if(!D){
+    document.body.innerHTML='<main class="shell"><section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p></section></main>';
+  }
 });
 })();
