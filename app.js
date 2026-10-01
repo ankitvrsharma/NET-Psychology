@@ -52,9 +52,46 @@ function practice(){
     if(!qs.length)qs=pool.flatMap(x=>buildQuestions(x.m,x.t).map(q=>({...q,micro:x})));
     qs.sort(()=>Math.random()-.5);qs=qs.slice(0,+$('#setSize').value);
     $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question 1 of ${qs.length}</h2></div><a class="text-link" href="practice.html">Change settings</a></div><div class="session-progress"><i id="sessionProgress" style="width:${100/qs.length}%"></i></div><div class="session-questions">${qs.map((q,i)=>mcqHTML(q,i,q.pyq?'PYQ':'MCQ')).join('')}</div><div class="practice-complete hidden" id="practiceComplete"><div class="eyebrow">SESSION COMPLETE</div><h2 id="practiceScore"></h2><p id="practiceSummary"></p><div class="complete-actions"><a class="btn primary" href="practice.html">Try another set <span>→</span></a><a class="btn" href="revision.html">Go to Revision</a></div></div></section>`;
-    const cards=$$('#practiceSet .mcq');cards.forEach((card,i)=>{if(i!==0)card.classList.add('session-hidden');const next=document.createElement('button');next.className='btn primary mcq-next';next.textContent=i===cards.length-1?'Finish Session →':'Next Question →';card.appendChild(next);next.hidden=true});
-    wireMCQ($('#practiceSet'),null,qs);let correct=0;
-    cards.forEach((card,i)=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{if(card.dataset.done)return;card.dataset.done='1';if(+btn.dataset.a===+card.dataset.answer)correct++;card.querySelector('.mcq-next').hidden=false}));card.querySelector('.mcq-next').onclick=()=>{if(i<cards.length-1){card.classList.add('session-hidden');cards[i+1].classList.remove('session-hidden');$('#sessionTitle').textContent=`Question ${i+2} of ${cards.length}`;$('#sessionProgress').style.width=`${((i+2)/cards.length)*100}%`;window.scrollTo({top:document.querySelector('.practice-session').offsetTop-20,behavior:'smooth'})}else{$('#sessionProgress').style.width='100%';$('#sessionTitle').textContent='Session complete';$('#practiceComplete').classList.remove('hidden');$('#practiceScore').textContent=`${correct} of ${cards.length} correct · ${Math.round(correct/cards.length*100)}%`;const missed=cards.length-correct;$('#practiceSummary').textContent=missed?`${missed} concept${missed===1?'':'s'} may need another pass. Use Revision to return to weak areas.`:'Strong session. Keep the concepts durable with spaced revision.';card.querySelector('.mcq-next').hidden=true}}})});
+    const cards=$$('#practiceSet .mcq');
+    cards.forEach((card,i)=>{
+      if(i!==0) card.classList.add('session-hidden');
+      const next=document.createElement('button');
+      next.className='btn primary mcq-next';
+      next.textContent=i===cards.length-1?'Finish Session →':'Next Question →';
+      card.appendChild(next);
+      next.hidden=true;
+    });
+    wireMCQ($('#practiceSet'),null,qs);
+    let correct=0;
+    cards.forEach((card,i)=>{
+      card.querySelectorAll('.mcq-option').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          if(card.dataset.done) return;
+          card.dataset.done='1';
+          if(+btn.dataset.a===+card.dataset.answer) correct++;
+          card.querySelector('.mcq-next').hidden=false;
+        });
+      });
+      card.querySelector('.mcq-next').onclick=()=>{
+        if(i<cards.length-1){
+          card.classList.add('session-hidden');
+          cards[i+1].classList.remove('session-hidden');
+          $('#sessionTitle').textContent=`Question ${i+2} of ${cards.length}`;
+          $('#sessionProgress').style.width=`${((i+2)/cards.length)*100}%`;
+          window.scrollTo({top:document.querySelector('.practice-session').offsetTop-20,behavior:'smooth'});
+        }else{
+          $('#sessionProgress').style.width='100%';
+          $('#sessionTitle').textContent='Session complete';
+          $('#practiceComplete').classList.remove('hidden');
+          $('#practiceScore').textContent=`${correct} of ${cards.length} correct · ${Math.round(correct/cards.length*100)}%`;
+          const missed=cards.length-correct;
+          $('#practiceSummary').textContent=missed
+            ? `${missed} concept${missed===1?'':'s'} may need another pass. Use Revision to return to weak areas.`
+            : 'Strong session. Keep the concepts durable with spaced revision.';
+          card.querySelector('.mcq-next').hidden=true;
+        }
+      };
+    });
   }
   $('#startSet').onclick=draw;draw()
 }
