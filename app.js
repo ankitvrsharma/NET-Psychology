@@ -146,9 +146,7 @@ function daily3(){
   const allItems=all();
   const due=dueItems();
   const candidates=[...due,...allItems.filter(x=>getP(x.k).status==='NEW')];
-  const seen=new Set(),pick=[];
-  for(const x of candidates){if(!seen.has(x.k)){seen.add(x.k);pick.push(x)}if(pick.length===3)break}
-  if(pick.length<3){for(const x of allItems){if(!seen.has(x.k)){seen.add(x.k);pick.push(x)}if(pick.length===3)break}}
+  const pick=interleaveBy(candidates,x=>x.u.id,3);
   const keyName='netPsychDaily3';
   let stored=null; try{stored=JSON.parse(localStorage.getItem(keyName)||'null')}catch{stored=null}
   const validStored=stored&&stored.date===todayKey&&Array.isArray(stored.items);
@@ -159,6 +157,7 @@ function daily3(){
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&new Date(getP(x.k).next).getTime()<=now).sort((a,b)=>new Date(getP(a.k).next)-new Date(getP(b.k).next))}
 function dueCount(){return dueItems().length}
+function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
   if(!u)return $('#unitPage').innerHTML='<div class="panel empty">Unit not found.</div>';
@@ -209,7 +208,9 @@ function practice(){
     if(session!=='all')qs=qs.filter(q=>q.session===session);
     if(unit!=='all')qs=qs.filter(q=>String(q.unit)===unit);
     if(topic!=='all'){const [u,t]=topic.split('-');qs=qs.filter(q=>String(q.unit)===u&&String(q.topic)===t)}
-    qs.sort(()=>Math.random()-.5);qs=qs.slice(0,+$('#setSize').value);
+    const limit=+$\('#setSize'\).value;
+    const groupingKey=unit==='all'?'unit':topic==='all'?'topic':'random';
+    qs=groupingKey==='random'?qs.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(qs,x=>groupingKey==='unit'?x.unit:x.topic,limit);
     if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No PYQs match these filters.</h2><p>Choose a broader session, unit or topic.</p></section>';return}
     $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PYQ PRACTICE SESSION</div><h2 id="sessionTitle">Question 1 of ${qs.length}</h2></div><a class="text-link" href="practice.html">Reset</a></div><div class="session-progress"><i id="sessionProgress" style="width:${100/qs.length}%"></i></div><div class="session-questions">${qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join('')}</div><div class="practice-complete hidden" id="practiceComplete"><div class="eyebrow">SESSION COMPLETE</div><h2 id="practiceScore"></h2><p id="practiceSummary"></p><div class="complete-actions"><a class="btn primary" href="practice.html">Try another set <span>→</span></a><a class="btn" href="revision.html">Go to Revision</a></div></div></section>`;
     const cards=$$('#practiceSet .mcq');
