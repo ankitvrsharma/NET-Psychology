@@ -1,28 +1,42 @@
 # Beginner maintenance guide
 
-You do not need to learn web development to use the project.
+You do not need to learn web development to maintain the project.
 
-### When you want a change
-Tell ChatGPT what you want, for example:
+## Content workflow
 
-> Add Unit 2 content from the supplied books.
+When you add a new Psychology source, use it to populate the relevant learning locations rather than repeating the same material everywhere. Keep:
+- concise concept explanations in learning pages;
+- retrieval prompts and application questions where they serve a different learning decision;
+- source attribution/provenance with the content;
+- PYQs in the practice system, with their session/source information preserved.
 
-> Populate the PYQs from this PDF.
+Learner progress belongs on the learner's device and must not be committed to GitHub.
 
-> Change the revision rule.
+## Main files
 
-> Redesign the home page without adding more features.
+- `app.js` — application behaviour, learning flow and progress logic.
+- `style.css` — responsive presentation.
+- `data.json` — canonical syllabus/content data.
+- `data.js` — generated browser bundle.
+- `practice_questions.json` / `practice_explanations.json` — generated practice data.
+- `scripts/build_practice.py` — practice-bank build and validation.
+- `sw.js` — PWA caching.
+- `manifest.webmanifest` — install metadata.
 
-ChatGPT can produce a replacement repository ZIP. You then upload/replace the files on GitHub.
+## Publishing content
 
-### Files you normally do not need to edit
-- `app.js`
-- `styles.css`
-- `sw.js`
-- `manifest.webmanifest`
+The GitHub Actions workflow validates generated content; it does not push commits to `main` automatically. Generated files should be reviewed and committed deliberately.
 
-### Content
-`content.js` is deliberately separate from application logic so content population can grow without redesigning the whole website.
+## Quality checks
 
-### Important
-Do not place learner progress into GitHub files. It belongs to the learner's device.
+Before publishing:
+1. validate JSON;
+2. build the generated content bundles;
+3. check internal links and page loading;
+4. test keyboard navigation and mobile layouts;
+5. confirm new source material is represented in the appropriate learning location;
+6. review source/provenance and copyright-sensitive excerpts.
+
+## Learner data
+
+Progress, revision history and imported backups stay local to the learner. Do not place personal progress data in repository files.

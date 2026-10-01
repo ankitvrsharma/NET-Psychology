@@ -1,4 +1,4 @@
-name: Build Psychology content bundle
+name: Validate Psychology content
 
 on:
   push:
@@ -6,13 +6,21 @@ on:
     paths:
       - data.json
       - scripts/build_practice.py
+      - practice_explanations.json
+      - .github/workflows/build-content.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - data.json
+      - scripts/build_practice.py
+      - practice_explanations.json
       - .github/workflows/build-content.yml
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build-content:
+  validate-content:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -33,29 +41,24 @@ jobs:
           print(f"Validated {len(data['units'])} units")
           PY
 
-      - name: Build verified PYQ question bank
+      - name: Build practice bank
         run: python scripts/build_practice.py
 
-      - name: Build browser content bundle
+      - name: Validate generated browser bundle
         run: |
           python - <<'PY'
           import hashlib,json
           from pathlib import Path
           raw=Path("data.json").read_text(encoding="utf-8")
           version=hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
-          Path("data.js").write_text("window.NETPSY_DATA = "+raw+";\n",encoding="utf-8")
-          Path("content-version.js").write_text("window.NETPSY_DATA_VERSION = "+json.dumps(version)+";\n",encoding="utf-8")
-          print("Built data.js and content-version.js:",version)
+          expected="window.NETPSY_DATA = "+raw+";
+"
+          assert Path("data.js").read_text(encoding="utf-8")==expected, "data.js is stale; rebuild it before publishing"
+          expected_version="window.NETPSY_DATA_VERSION = "+json.dumps(version)+";
+"
+          assert Path("content-version.js").read_text(encoding="utf-8")==expected_version, "content-version.js is stale; rebuild it before publishing"
+          print("Generated browser bundles are current:",version)
           PY
 
-      - name: Commit generated bundles
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.js content-version.js practice_questions.json practice-build-report.json
-          if git diff --cached --quiet; then
-            echo "Generated bundles are already current."
-            exit 0
-          fi
-          git commit -m "chore: rebuild Psychology content and PYQ practice bank"
-          git push
+      - name: Validate generated files are tracked
+        run: git diff --exit-code -- data.js content-version.js practice_questions.json practice-build-report.json

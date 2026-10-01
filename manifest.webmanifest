@@ -1,1 +1,13 @@
-{"name":"UGC NET Psychology — Learning System","short_name":"NET Psychology","start_url":"./index.html","display":"standalone","background_color":"#f7f8fb","theme_color":"#12284f","description":"A learner-first UGC NET Psychology system for understanding, retrieval, practice and spaced revision.","icons":[{"src":"./assets/icons/icon.svg","sizes":"64x64","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "id":"./index.html",
+  "name":"UGC NET Psychology — Learning System",
+  "short_name":"NET Psychology",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#f7f8fb",
+  "theme_color":"#12284f",
+  "description":"A learner-first UGC NET Psychology system for understanding, retrieval, practice and spaced revision.",
+  "icons":[
+    {"src":"./assets/icons/icon.svg","sizes":"64x64","type":"image/svg+xml","purpose":"any"}
+  ]
+}

@@ -92,5 +92,5 @@ def main():
    print(f'Could not merge practice_explanations.json: {e}')
  Path('practice_questions.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
  Path('practice-build-report.json').write_text(json.dumps({'questions':len(out),'dropped':dropped,'source':SOURCE_URL,'source_sha256':EXPECTED_SHA256},ensure_ascii=False,indent=2),encoding='utf-8')
- print(f'Built {len(out)} verified PYQs; dropped {len(dropped)}.')
+ print(f'Built {len(out)} PYQs; dropped {len(dropped)}.')
 if __name__=='__main__':main()
