@@ -44,6 +44,9 @@ jobs:
       - name: Build practice bank
         run: python scripts/build_practice.py
 
+      - name: Validate PYQ structure and mappings
+        run: python scripts/validate_content.py
+
       - name: Validate generated browser bundle
         run: |
           python - <<'PY'
