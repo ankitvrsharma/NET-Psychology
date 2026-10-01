@@ -1,6 +1,6 @@
 # UGC NET Psychology — Your Learning Guide
 
-> **[🚀 Open the UGC NET Psychology Website](https://ankitvrsharma.github.io/NET-Psychology/index.html)**
+> **[🚀 Open the Website](https://ankitvrsharma.github.io/NET-Psychology/index.html)**
 
 ## What is this?
 
