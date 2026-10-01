@@ -1,0 +1,65 @@
+name: Build Psychology content bundle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data.json
+      - .github/workflows/build-content.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate content JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          raw = Path("data.json").read_text(encoding="utf-8")
+          data = json.loads(raw)
+          assert isinstance(data, dict), "data.json must contain an object"
+          assert isinstance(data.get("units"), list), "data.json must contain units"
+          print(f"Validated {len(data['units'])} units")
+          PY
+
+      - name: Build browser content bundle
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          raw = Path("data.json").read_text(encoding="utf-8")
+          json.loads(raw)
+          version = hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+          Path("data.js").write_text(
+              "window.NETPSY_DATA = " + raw + ";\n",
+              encoding="utf-8"
+          )
+          Path("content-version.js").write_text(
+              "window.NETPSY_DATA_VERSION = " + json.dumps(version) + ";\n",
+              encoding="utf-8"
+          )
+          print("Built data.js and content-version.js:", version)
+          PY
+
+      - name: Commit generated bundle
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data.js content-version.js; then
+            echo "Generated content bundle is already current."
+            exit 0
+          fi
+          git add data.js content-version.js
+          git commit -m "chore: rebuild Psychology content bundle"
+          git push

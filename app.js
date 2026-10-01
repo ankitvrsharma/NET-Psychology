@@ -3,10 +3,10 @@
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 const Q=new URLSearchParams(location.search); let D=null;
 const KEY='netPsychProgress';
-const DATA_URL='./data.json?v=20261001-9';
 const ladder=[0,1,3,7,14,30,60,90,180];
-const SW_MIGRATION_KEY='netPsychSwMigratedV1';
-const serviceWorkerCleanup=(async()=>{
+const SW_MIGRATION_KEY='netPsychSwMigratedV2';
+
+async function retireLegacyServiceWorker(){
   if(!('serviceWorker' in navigator)) return false;
   try{
     const regs=await navigator.serviceWorker.getRegistrations();
@@ -22,7 +22,41 @@ const serviceWorkerCleanup=(async()=>{
     }
   }catch{}
   return false;
-})();
+}
+
+function loadScript(src){
+  return new Promise((resolve,reject)=>{
+    const s=document.createElement('script');
+    s.src=src;
+    s.async=true;
+    s.onload=resolve;
+    s.onerror=()=>reject(new Error('Could not load '+src));
+    document.head.appendChild(s);
+  });
+}
+
+async function loadStudyData(){
+  const migrated=await retireLegacyServiceWorker();
+  if(migrated) return false;
+
+  await loadScript('content-version.js?cb='+Date.now());
+  const version=window.NETPSY_DATA_VERSION;
+  if(!version) throw new Error('Content version is missing');
+
+  await loadScript('data.js?v='+encodeURIComponent(version));
+  if(!window.NETPSY_DATA) throw new Error('Study data is missing');
+  D=window.NETPSY_DATA;
+  render();
+  return true;
+}
+
+async function fallbackStudyData(){
+  const r=await fetch('./data.json?cb='+Date.now(),{cache:'no-store'});
+  if(!r.ok) throw new Error('Study data request failed');
+  D=await r.json();
+  render();
+}
+
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>JSON.parse(localStorage.getItem(KEY)||'{}');
 const save=s=>localStorage.setItem(KEY,JSON.stringify(s));
@@ -125,8 +159,7 @@ function progress(){
   $('#importData').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.progress)throw Error();save(x.progress);location.reload()}catch{alert('That backup file is not valid.')}};r.readAsText(f)};
 }
 function readiness(s){if(s.coverage>=80&&s.mastery>=70&&s.accuracy>=70&&s.retention>=60)return {label:'Exam Ready',note:'Your learning record shows broad coverage, solid mastery, question performance, and delayed recall. Keep maintaining these gains through mixed practice and spaced revision.',focus:['Maintain delayed recall across older concepts','Mix MCQs and PYQs across units','Keep revising concepts before they become due'],action:'Open Mixed Practice',href:'practice.html'};if(s.coverage>=60&&s.mastery>=45&&s.accuracy>=60)return {label:'Ready for Exam Practice',note:'You have built a substantial base. The next step is to strengthen retrieval, application, and delayed recall while continuing to expand coverage.',focus:['Strengthen concept mastery','Use recall before checking notes','Practice across different units'],action:'Practice Questions',href:'practice.html'};if(s.coverage>=25)return {label:'Developing',note:'You are building the foundation. Keep moving through the syllabus while turning each new concept into something you can recall and apply.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Continue Learning',href:'unit.html?id=1'};return {label:'Building',note:'You are still establishing your foundation. Start with one concept at a time and move through understanding, recall, and application.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Start Learning',href:'unit.html?id=1'}}
-serviceWorkerCleanup.then(migrated=>{
-  if(migrated) return null;
-  return fetch(DATA_URL,{cache:'reload'}).then(r=>{if(!r.ok)throw Error();return r.json()});
-}).then(x=>{if(x){D=x;render()}}).catch(()=>{document.body.innerHTML='<main class="shell"><section class="panel empty"><h1>Study data could not be loaded.</h1><p>Refresh once the site connection is available.</p></section></main>'});
+loadStudyData().catch(()=>fallbackStudyData()).catch(()=>{
+  document.body.innerHTML='<main class="shell"><section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p></section></main>';
+});
 })();
