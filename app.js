@@ -123,8 +123,9 @@ function daily3(){
   if(pick.length<3){for(const x of allItems){if(!seen.has(x.k)){seen.add(x.k);pick.push(x)}if(pick.length===3)break}}
   const keyName='netPsychDaily3';
   let stored=null; try{stored=JSON.parse(localStorage.getItem(keyName)||'null')}catch{stored=null}
-  const session=stored&&Array.isArray(stored.items)?stored.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean):pick;
-  if(!stored)localStorage.setItem(keyName,JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));
+  const validStored=stored&&stored.date===todayKey&&Array.isArray(stored.items);
+  const session=validStored?stored.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean):pick;
+  if(!validStored)localStorage.setItem(keyName,JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));
   $('#daily3App').innerHTML=`<section class="page-hero daily3-hero"><div class="eyebrow">DAILY 3-CONCEPT SESSION</div><h1>Learn three concepts today.</h1><p>Your session is kept simple: work through three concepts using understand → recall → apply → practice → revision.</p></section><section class="daily3-list">${session.map((x,i)=>`<article class="daily3-item card"><div class="daily3-number">0${i+1}</div><div class="daily3-copy"><div class="eyebrow">UNIT ${x.u.id} · TOPIC ${x.t.id}</div><h2>${esc(x.m.title)}</h2><p>${esc(x.t.title)}</p></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">START CONCEPT →</a></article>`).join('')||'<section class="panel empty"><h2>No concepts available</h2><p>Return to the learning path to choose a topic.</p></section>'}</section><section class="panel daily3-note"><b>Why three?</b><span>A small daily set keeps the session focused while leaving room for recall, application and spaced revision.</span></section>`;
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
