@@ -71,6 +71,7 @@ function render(){layout();const p=document.body.dataset.page;({home:home,learn:
 function learnPage(){
   document.title='Learn — UGC NET Psychology';
   const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
+  const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
   const stats=u=>{
     const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));
     const started=items.filter(p=>p.status&&p.status!=='NEW').length;
