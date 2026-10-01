@@ -360,3 +360,8 @@ body[data-page="home"] .daily-focus-card:focus-visible{outline:3px solid rgba(63
   .start-form label{font-size:13px}
   .start-submit{width:100%}
 }
+
+/* Accessibility baseline */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid rgba(49,91,214,.38);outline-offset:3px}
+.menu-toggle:focus-visible,.nav-link:focus-visible{outline-offset:2px}
