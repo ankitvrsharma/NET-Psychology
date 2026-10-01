@@ -81,7 +81,39 @@ function progressSummary(){const ps=Object.values(state()),total=all().length,st
 function setDue(k,rating){const p=getP(k),now=new Date(),late=p.next&&new Date(p.next)<now,prior=Number.isInteger(p.lastCompletedStage)?p.lastCompletedStage:-1;let base=Math.max(0,late?prior:(p.stage||0));let jump=late?({again:0,hard:0,good:1,easy:2}[rating]??1):({again:0,hard:1,good:2,easy:3}[rating]??1);let nextStage=Math.min(ladder.length-1,base+jump);let days=ladder[nextStage];if(rating==='again')days=0;const d=new Date(now);d.setDate(d.getDate()+days);return {status:rating==='again'?'RETENTION':(p.status==='MASTERED'?'MASTERED':'RETENTION'),rating,next:d.toISOString(),stage:nextStage,lastCompletedStage:nextStage,revisionCount:(p.revisionCount||0)+1,lastRevision:now.toISOString(),lateReset:!!late}}
 function navActive(){const page=document.body.dataset.page;$$('.nav-link').forEach(a=>a.classList.toggle('active',a.dataset.nav===page))}
 function layout(){navActive();const menu=$('.menu-toggle');if(menu)menu.onclick=()=>document.body.classList.toggle('menu-open')}
-function render(){layout();const p=document.body.dataset.page;({home:home,learn:learnPage,daily3:daily3,unit:unitPage,topic:topicPage,micro:micro,practice:practice,revision:revision,progress:progress}[p]||home)()}
+function render(){layout();const p=document.body.dataset.page;({home:home,start:startPage,learn:learnPage,daily3:daily3,unit:unitPage,topic:topicPage,micro:micro,practice:practice,revision:revision,progress:progress}[p]||home)()}
+function startPage(){
+  document.title='Start Learning — UGC NET Psychology';
+  const root=$('#startPage'); if(!root)return;
+  root.innerHTML=`<section class="start-hero"><div class="eyebrow">START YOUR LEARNING JOURNEY</div><h1>What brings you here?</h1><p>Tell us what you want from the website and where you are starting from. We’ll take you to a suitable first step — you can change direction anytime.</p></section>
+  <form class="start-form" id="startForm">
+    <fieldset><legend>1. What is your main goal?</legend>
+      <label><input type="radio" name="goal" value="net" required><span>Prepare for UGC NET / JRF</span></label>
+      <label><input type="radio" name="goal" value="concepts"><span>Strengthen my Psychology concepts</span></label>
+      <label><input type="radio" name="goal" value="revision"><span>Revise Psychology</span></label>
+      <label><input type="radio" name="goal" value="practice"><span>Practise MCQs / PYQs</span></label>
+      <label><input type="radio" name="goal" value="explore"><span>Explore Psychology systematically</span></label>
+    </fieldset>
+    <fieldset><legend>2. Where are you starting from?</legend>
+      <label><input type="radio" name="experience" value="new-net" required><span>I’m new to UGC NET Psychology</span></label>
+      <label><input type="radio" name="experience" value="psych-new-net"><span>I know Psychology but I’m new to NET preparation</span></label>
+      <label><input type="radio" name="experience" value="prepared"><span>I’ve prepared for NET before</span></label>
+      <label><input type="radio" name="experience" value="appeared"><span>I’ve appeared for NET before</span></label>
+      <label><input type="radio" name="experience" value="revision"><span>I mainly need revision and practice</span></label>
+    </fieldset>
+    <button class="btn primary start-submit" type="submit">TAKE ME TO MY STARTING POINT →</button>
+  </form>`;
+  $('#startForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const data=new FormData(e.currentTarget),goal=data.get('goal'),experience=data.get('experience');
+    localStorage.setItem('netPsychStartProfile',JSON.stringify({goal,experience,created:new Date().toISOString()}));
+    let target='learn.html';
+    if(goal==='revision'||experience==='revision') target='revision.html';
+    else if(goal==='practice') target='practice.html';
+    else if(goal==='net'&&(experience==='prepared'||experience==='appeared')) target='practice.html';
+    location.href=target;
+  });
+}
 function learnPage(){
   document.title='Learn — UGC NET Psychology';
   const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
@@ -113,15 +145,15 @@ function learnPage(){
   if(has&&resume){
     hero.innerHTML='<div class="eyebrow">YOUR NEXT STEP</div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Pick up where you left off. Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id)+'">CONTINUE LEARNING →</a></div>';
   }else{
-    hero.innerHTML='<div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Start with one concept at a time. Learn at your own pace, build understanding, practise recall, and return to concepts when they need revision.</p><div class="hero-actions"><a class="btn primary" href="learn.html">START LEARNING →</a></div>';
+    hero.innerHTML='<div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Start with one concept at a time. Learn at your own pace, build understanding, practise recall, and return to concepts when they need revision.</p><div class="hero-actions"><a class="btn primary" href="start.html">START LEARNING →</a></div>';
   }
   const cards={
-    learn:'<a class="study-primary-action daily-focus-card" href="daily3.html"><span><strong>3-CONCEPT LEARNING</strong><small>Build your understanding</small><em>Explore three concepts and develop a clear grasp of the ideas.</em></span><b>START LEARNING →</b></a>',
-    revise:'<a class="study-primary-action daily-focus-card" href="revision.html"><span><strong>TODAY’S REVISION</strong><small>Strengthen what you know</small><em>Revisit concepts that are ready for another look and reinforce your memory.</em></span><b>START REVISION →</b></a>',
-    practice:'<a class="study-primary-action daily-focus-card" href="practice.html"><span><strong>DAILY MCQ PRACTICE</strong><small>Put your knowledge to work</small><em>Answer questions, check your reasoning, and identify areas that need more attention.</em></span><b>START PRACTICE →</b></a>'
+    learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',
+    revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',
+    practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'
   };
   const sequence=has?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
-  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">TODAY’S STUDY FOCUS</div><h2>Your learning rhythm for today.</h2><p>Learn something new, revisit what matters, and practise what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
+  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Keep your Psychology learning moving every day. Learn something new, revisit concepts that need another look, or practise with MCQs — even a small study session keeps your learning going.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from understanding to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Understand</b><span>Build the conceptual framework.</span></div><div><b>Recall</b><span>Recall without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Revise</b><span>Return to it at spaced intervals.</span></div></div>`;
   const g=$('#unitGrid');const draw=q=>{q=(q||'').toLowerCase();g.innerHTML=units().filter(u=>!q||JSON.stringify(u).toLowerCase().includes(q)).map(u=>`<a class="unit-card" href="unit.html?id=${u.id}"><div class="unit-card-top"><div class="unit-num">UNIT ${u.id}</div><span class="unit-arrow" aria-hidden="true">→</span></div><h3>${esc(u.title)}</h3><p>${esc(u.description||'Build your understanding of this part of the syllabus.')}</p><div class="unit-meta"><span>${u.topics.length} topics</span><span>${countMicro(u)} micro-topics</span></div></a>`).join('')||'<div class="panel empty">No matching topic found.</div>'};draw('');$('#search')?.addEventListener('input',e=>draw(e.target.value))
 }
