@@ -39,9 +39,18 @@ async function loadStudyData(){
   const migrated=await retireLegacyServiceWorker();
   if(migrated) return false;
 
-  const response=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
-  if(!response.ok) throw new Error('Study data request failed: '+response.status);
-  const json=await response.json();
+  let json=window.NETPSY_DATA||null;
+  if(!json){
+    try{
+      const response=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
+      if(!response.ok) throw new Error('Study data request failed: '+response.status);
+      json=await response.json();
+    }catch(fetchError){
+      console.warn('Study data JSON fetch failed; falling back to browser bundle.',fetchError);
+      await loadScript('./data.js?v='+Date.now());
+      json=window.NETPSY_DATA||null;
+    }
+  }
   if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
   D=json;
   try{
