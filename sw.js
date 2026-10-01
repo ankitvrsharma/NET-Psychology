@@ -1,5 +1,5 @@
-const CACHE='netpsych-v7';
-const VERSION='20261001-4';
+const CACHE='netpsych-v8';
+const VERSION='20261001-5';
 const STATIC=['./','./index.html','./unit.html','./topic.html','./microtopic.html','./practice.html','./revision.html','./progress.html',`./style.css?v=${VERSION}`,`./app.js?v=${VERSION}`,'./data.json','./manifest.webmanifest'];
 
 self.addEventListener('install',event=>{
@@ -24,6 +24,10 @@ self.addEventListener('fetch',event=>{
       const copy=response.clone();
       caches.open(CACHE).then(cache=>cache.put(event.request,copy));
       return response;
-    }).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./index.html')))
+    }).catch(()=>caches.match(event.request).then(cached=>{
+      if(cached) return cached;
+      if(url.pathname.endsWith('/data.json') || url.pathname==='./data.json') return caches.match('./data.json');
+      return caches.match('./index.html');
+    }))
   );
 });
