@@ -39,14 +39,11 @@ async function loadStudyData(){
   const migrated=await retireLegacyServiceWorker();
   if(migrated) return false;
 
-  await loadScript('content-version.js?cb='+Date.now());
-  const version=window.NETPSY_DATA_VERSION;
-  if(!version) throw new Error('Content version is missing');
-
-  await loadScript('data.js?v='+encodeURIComponent(version));
-  if(!window.NETPSY_DATA) throw new Error('Study data is missing');
-  D=window.NETPSY_DATA;
-  if(!D || !Array.isArray(D.units)) throw new Error('Study data has an invalid structure');
+  const response=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok) throw new Error('Study data request failed: '+response.status);
+  const json=await response.json();
+  if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  D=json;
   render();
   return true;
 }
