@@ -5,7 +5,15 @@ const Q=new URLSearchParams(location.search); let D=null;
 const KEY='netPsychProgress';
 const DATA_URL='./data.json';
 const ladder=[0,1,3,7,14,30,60,90,180];
-const serviceWorkerCleanup = (async()=>{\n  if(!('serviceWorker' in navigator)) return;\n  try{\n    const regs=await navigator.serviceWorker.getRegistrations();\n    await Promise.all(regs.map(r=>r.unregister()));\n    const keys=await caches.keys();\n    await Promise.all(keys.filter(k=>k.startsWith('netpsych-')).map(k=>caches.delete(k)));\n  }catch{}\n})();
+const serviceWorkerCleanup = (async()=>{
+  if(!('serviceWorker' in navigator)) return;
+  try{
+    const regs=await navigator.serviceWorker.getRegistrations();
+    await Promise.all(regs.map(r=>r.unregister()));
+    const keys=await caches.keys();
+    await Promise.all(keys.filter(k=>k.startsWith('netpsych-')).map(k=>caches.delete(k)));
+  }catch{}
+})();
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>JSON.parse(localStorage.getItem(KEY)||'{}');
 const save=s=>localStorage.setItem(KEY,JSON.stringify(s));
