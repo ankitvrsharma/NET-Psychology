@@ -80,6 +80,16 @@ def main():
    ans=normalize_answer(key.get(n))
    if ans is None:dropped.append([s,n,key.get(n,'missing-key')]);continue
    kind=classify(q); q=re.sub(r'\\s+(?:Instructions for Questions(?: Nos\\.)?|Questions)\\s+\\d+\\s+to\\s+\\d+\\s*:', '', q, flags=re.I).strip(); opts=[re.sub(r'\\s+(?:Instructions for Questions(?: Nos\\.)?|Questions)\\s+\\d+\\s+to\\s+\\d+\\s*:', '', o, flags=re.I).strip() for o in opts]; out.append({'id':f'{s.replace(" ","-")}-{n}','session':s,'question_number':n,'question':q,'options':opts,'answer':ans,'type':'PYQ','explanation':explain(ans,kind),'kind':kind,**map_syllabus(q,data['units'])})
+ # Preserve any richer learner-facing explanations maintained in the repository.
+ explanations_path=Path('practice_explanations.json')
+ if explanations_path.exists():
+  try:
+   enriched=json.loads(explanations_path.read_text(encoding='utf-8'))
+   if isinstance(enriched,dict):
+    for item in out:
+     if enriched.get(item['id']): item['explanation']=enriched[item['id']]
+  except Exception as e:
+   print(f'Could not merge practice_explanations.json: {e}')
  Path('practice_questions.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
  Path('practice-build-report.json').write_text(json.dumps({'questions':len(out),'dropped':dropped,'source':SOURCE_URL,'source_sha256':EXPECTED_SHA256},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'Built {len(out)} verified PYQs; dropped {len(dropped)}.')
