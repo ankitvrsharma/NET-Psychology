@@ -52,7 +52,6 @@ def answer_map(pages,session):
 def normalize_answer(v):
  if re.fullmatch(r'[ABCDabcd]',v):return ord(v.upper())-65
  if re.fullmatch(r'[1-4]',v):return int(v)-1
- if re.fullmatch(r'[1-4](?:\s*[,;&]\s*[1-4])+',v):return [int(z)-1 for z in re.split(r'\s*[,;&]\s*',v)]
 def classify(q):
  s=q.lower()
  if 'assertion (a)' in s and 'reason (r)' in s:return 'assertion-reason'
