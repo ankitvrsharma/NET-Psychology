@@ -239,9 +239,11 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
 .study-primary-action{display:flex;align-items:center;gap:11px;padding:14px 15px;background:var(--blue);color:#fff;border-radius:13px;text-decoration:none;box-shadow:0 6px 16px rgba(63,103,217,.16);transition:transform .15s ease,box-shadow .15s ease}
 .study-primary-action:hover{transform:translateY(-1px);box-shadow:0 9px 20px rgba(63,103,217,.2);color:#fff}
 .study-primary-action .action-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.16);font-size:11px}
-.study-primary-action span:nth-child(2){display:flex;flex-direction:column;gap:2px;flex:1;font-size:14px;font-weight:800}
-.study-primary-action small{font-size:8px;letter-spacing:.1em;opacity:.72}
-.study-primary-action>b{font-size:18px}
+.study-primary-action>span{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+.study-primary-action strong{font-size:14px;line-height:1.3}
+.study-primary-action small{font-size:10px;line-height:1.3;opacity:.78}
+.study-primary-action em{font-style:normal;font-size:11px;line-height:1.4;font-weight:500;opacity:.84}
+.study-primary-action>b{font-size:12px;white-space:nowrap}
 .study-secondary-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .study-secondary-actions a{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:9px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;color:#53627a;font-size:11px;font-weight:750}
 .study-secondary-actions a:hover{background:#f7f8fc;color:var(--navy)}
