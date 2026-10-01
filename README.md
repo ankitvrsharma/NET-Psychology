@@ -10,7 +10,7 @@ It is built around the complete **10-unit, 114-topic, 440-micro-topic** syllabus
 
 The goal is simple:
 
-> **Understand → Retrieve → Apply → Practice → Schedule Revision**
+> **Understand → Recall → Apply → Practice → Schedule Revision**
 
 You do not need to figure out what to study next from a long list of chapters. Start with a micro-topic, learn it, test yourself, and schedule your next return.
 
@@ -44,7 +44,7 @@ This helps you avoid spending the same amount of time on every concept.
 
 ---
 
-### 3. Retrieve from memory
+### 3. Recall from memory
 
 After learning, **close the notes and reconstruct the idea yourself**.
 
@@ -106,10 +106,10 @@ You can rate your retrieval:
 
 | Rating | What it means |
 |---|---|
-| **Again** | I could not retrieve it successfully. |
-| **Hard** | I retrieved it, but it required substantial effort. |
-| **Good** | I retrieved it successfully with normal effort. |
-| **Easy** | I retrieved it easily. |
+| **Again** | I could not recall it successfully. |
+| **Hard** | I recalld it, but it required substantial effort. |
+| **Good** | I recalld it successfully with normal effort. |
+| **Easy** | I recalld it easily. |
 
 Your next revision is then scheduled from your performance.
 
@@ -165,7 +165,7 @@ When you sit down to study, follow this sequence:
 ↓  
 **Close the notes**  
 ↓  
-**Retrieve**  
+**Recall**  
 ↓  
 **Apply**  
 ↓  
@@ -203,7 +203,7 @@ Your personal learning progress is separate from the website's syllabus and stud
 
 If you are beginning from scratch:
 
-**Home → Start Learning → Choose a micro-topic → Understand → Retrieve → Apply → Practice → Schedule Revision**
+**Home → Start Learning → Choose a micro-topic → Understand → Recall → Apply → Practice → Schedule Revision**
 
 If you are returning after a gap:
 
@@ -211,4 +211,4 @@ If you are returning after a gap:
 
 The objective is not to make you spend more time on the website.
 
-The objective is to help you **learn Psychology, retain it, and retrieve it when you need it for UGC NET.**
+The objective is to help you **learn Psychology, retain it, and recall it when you need it for UGC NET.**
