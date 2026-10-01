@@ -208,7 +208,7 @@ function practice(){
     if(session!=='all')qs=qs.filter(q=>q.session===session);
     if(unit!=='all')qs=qs.filter(q=>String(q.unit)===unit);
     if(topic!=='all'){const [u,t]=topic.split('-');qs=qs.filter(q=>String(q.unit)===u&&String(q.topic)===t)}
-    const limit=+$\('#setSize'\).value;
+    const limit=+$('#setSize').value;
     const groupingKey=unit==='all'?'unit':topic==='all'?'topic':'random';
     qs=groupingKey==='random'?qs.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(qs,x=>groupingKey==='unit'?x.unit:x.topic,limit);
     if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No PYQs match these filters.</h2><p>Choose a broader session, unit or topic.</p></section>';return}
