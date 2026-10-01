@@ -56,11 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git status --porcelain -- data.js content-version.js | grep -q '^
-          git add data.js content-version.js
-          git commit -m "chore: rebuild Psychology content bundle"
-          git push
-; then
+          if [ -z "$(git status --porcelain -- data.js content-version.js)" ]; then
             echo "Generated content bundle is already current."
             exit 0
           fi
