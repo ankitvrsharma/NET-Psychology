@@ -294,3 +294,33 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
 .unit-navigation div{display:flex;gap:4px}
 .unit-navigation .disabled{opacity:.35}
 @media(max-width:520px){.unit-navigation{align-items:stretch;flex-direction:column}.unit-navigation div{justify-content:space-between}.unit-navigation div a,.unit-navigation div .disabled{flex:1;text-align:center}}
+
+
+/* Home: three equal daily study actions */
+.daily-focus-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.daily-focus-card{min-height:94px}
+.daily-focus-card .action-icon{flex:0 0 30px}
+@media(max-width:900px){
+  .study-focus-enhanced{grid-template-columns:1fr}
+  .daily-focus-actions{grid-template-columns:repeat(3,1fr);width:100%}
+}
+@media(max-width:620px){
+  .daily-focus-actions{grid-template-columns:1fr}
+  .daily-focus-card{min-height:68px}
+}
+
+/* Daily three-concept session */
+.daily3-hero{max-width:820px;padding-bottom:24px}
+.daily3-hero h1{font-size:clamp(34px,5vw,52px)}
+.daily3-list{display:grid;gap:12px}
+.daily3-item{display:grid;grid-template-columns:52px minmax(0,1fr) auto;align-items:center;gap:18px;padding:20px}
+.daily3-number{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:#eef2ff;color:var(--blue);font-weight:850;font-size:13px}
+.daily3-copy h2{margin:4px 0;color:var(--navy);font-size:20px;line-height:1.25}
+.daily3-copy p{margin:0;color:var(--muted);font-size:13px}
+.daily3-note{display:flex;gap:8px;align-items:flex-start;margin-top:16px;color:var(--muted);font-size:13px}
+.daily3-note b{color:var(--navy);white-space:nowrap}
+@media(max-width:620px){
+  .daily3-item{grid-template-columns:44px 1fr}
+  .daily3-item .btn{grid-column:1/-1;width:100%}
+  .daily3-note{flex-direction:column}
+}
