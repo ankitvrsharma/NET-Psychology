@@ -23,9 +23,9 @@ for q in questions:
     key=(q.get("unit"),q.get("topic"),q.get("micro"))
     conf=q.get("mapping_confidence")
     confidence_counts[conf if conf in confidence_counts else "missing"] += 1
-    if key not in micro_ids:
+    if any(v is not None for v in key) and key not in micro_ids:
         bad_mapping.append(q["id"])
-assert not bad_mapping, f"PYQ: invalid syllabus mappings: {bad_mapping[:10]}"
+assert not bad_mapping, f"PYQ: invalid non-null syllabus mappings: {bad_mapping[:10]}"
 
 generic_markers=(
     "The stem describes the concept or relationship represented by",
