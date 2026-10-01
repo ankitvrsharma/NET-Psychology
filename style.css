@@ -162,3 +162,13 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
   .session-questions .mcq h3{font-size:17px}
   .session-questions .mcq-option{font-size:13px;padding:12px}
 }
+
+/* Exam readiness guidance */
+.readiness{align-items:flex-start}
+.readiness-copy{flex:1;min-width:0}
+.readiness-copy p{max-width:720px}
+.readiness-focus{margin-top:13px;padding:12px 14px;background:#f7f9fd;border:1px solid var(--line);border-radius:12px}
+.readiness-focus b{display:block;color:var(--navy);font-size:13px;margin-bottom:5px}
+.readiness-focus ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.55}
+.readiness-focus li+li{margin-top:3px}
+@media(max-width:820px){.readiness .btn{width:100%}}
