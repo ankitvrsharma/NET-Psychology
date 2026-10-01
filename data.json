@@ -8220,5 +8220,10 @@
   "content_policy": {
     "note": "Learner-facing notes are synthesized from the attached source library and mapped to the retained 440-micro-topic structure. Actual previous-year questions are not invented; PYQ material is shown only when supplied with source metadata.",
     "source_library": "NTA syllabus + PowerWithin compilation + Ciccarelli & White + Baron & Misra + Psychology: A Self-Teaching Guide"
+  },
+  "practice_bank": {
+    "source": "Supplied UGC NET/JRF Psychology previous-year question-paper PDF; answer-key section verified",
+    "generated_at": "2026-10-01",
+    "policy": "Only source-backed questions with a usable single-answer key are included; questions with incomplete options, dropped/withdrawn/no-final-answer codes, or non-single answer keys are excluded."
   }
 }
