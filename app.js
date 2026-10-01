@@ -3,7 +3,7 @@
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 const Q=new URLSearchParams(location.search); let D=null;
 const KEY='netPsychProgress';
-const DATA_URL='./data.json?v=20261001-3';
+const DATA_URL='./data.json';
 const ladder=[0,1,3,7,14,30,60,90,180];
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>{}));}
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
