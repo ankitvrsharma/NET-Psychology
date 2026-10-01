@@ -326,3 +326,37 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
   .daily3-item .btn{grid-column:1/-1;width:100%}
   .daily3-note{flex-direction:column}
 }
+
+
+/* Home daily ritual: lightweight actions, with the hero CTA as the primary action */
+body[data-page="home"] .hero-actions .btn.primary{padding:13px 20px;font-size:14px;min-height:46px;box-shadow:0 7px 18px rgba(63,103,217,.16)}
+body[data-page="home"] .study-focus-enhanced{gap:18px;padding:24px 28px}
+body[data-page="home"] .study-focus-main>p{margin:0;max-width:760px;color:var(--muted)}
+body[data-page="home"] .daily-focus-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+body[data-page="home"] .daily-focus-card{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px;padding:13px 15px;border:1px solid var(--line);background:#fff;border-radius:12px;color:var(--navy);text-decoration:none;box-shadow:0 3px 10px rgba(37,57,100,.035);transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease}
+body[data-page="home"] .daily-focus-card:hover{transform:translateY(-1px);border-color:#ccd6e8;box-shadow:0 6px 16px rgba(37,57,100,.065)}
+body[data-page="home"] .daily-focus-card strong{font-size:12px;letter-spacing:.04em}
+body[data-page="home"] .daily-focus-card span{color:var(--blue);font-size:17px;line-height:1}
+body[data-page="home"] .daily-focus-card:focus-visible{outline:3px solid rgba(63,103,217,.2);outline-offset:2px}
+
+/* Start-learning onboarding */
+.start-hero{max-width:760px;padding:54px 0 24px}
+.start-hero h1{font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.035em;margin:7px 0 12px;color:var(--navy)}
+.start-hero p{max-width:700px;font-size:17px;line-height:1.6;color:var(--muted);margin:0}
+.start-form{max-width:760px;display:grid;gap:18px;padding-bottom:48px}
+.start-form fieldset{margin:0;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 5px 18px rgba(18,40,79,.035)}
+.start-form legend{padding:0 5px;color:var(--navy);font-size:16px;font-weight:800}
+.start-form label{display:flex;align-items:center;gap:11px;padding:12px 13px;border:1px solid #e7ebf2;border-radius:10px;margin-top:9px;background:#fff;color:#53627a;font-size:14px;line-height:1.4;cursor:pointer}
+.start-form label:hover{border-color:#ccd6e8;background:#f9faff}
+.start-form input{accent-color:var(--blue);width:16px;height:16px;flex:0 0 auto}
+.start-submit{justify-self:start;min-height:46px}
+@media(max-width:620px){
+  body[data-page="home"] .study-focus-enhanced{padding:20px}
+  body[data-page="home"] .daily-focus-actions{grid-template-columns:1fr}
+  body[data-page="home"] .daily-focus-card{min-height:54px}
+  .start-hero{padding:36px 0 20px}
+  .start-hero p{font-size:15px}
+  .start-form fieldset{padding:17px}
+  .start-form label{font-size:13px}
+  .start-submit{width:100%}
+}
