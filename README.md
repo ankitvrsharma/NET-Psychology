@@ -1,5 +1,7 @@
 # UGC NET Psychology — Your Learning Guide
 
+> **[🚀 Open the UGC NET Psychology Website](https://ankitvrsharma.github.io/NET-Psychology/index.html)**
+
 ## What is this?
 
 This is a focused study space for **UGC NET Psychology** learners.
