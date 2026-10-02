@@ -758,7 +758,7 @@ setupMobileNavigation();
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===page));
-  const routes={home,learn:learnPage,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice,revision,progress};
+  const routes={home,learn:learnPage,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
