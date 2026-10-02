@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "topic_map": {
     "1": {
       "title": "Stages of Retirement",
@@ -1030,5 +1030,17 @@
   "powerwithin": {
     "status": "not_imported_as_mcqs",
     "reason": "The supplied PowerWithin PDF describes 5000+ MCQs as an online mock-test resource, but the uploaded PDF itself does not contain that question bank. No questions are fabricated or attributed to PowerWithin without the actual question source."
+  },
+  "mapping_policy": {
+    "question_bank": "practice_questions.json",
+    "authentic_pyq_source": "Supplied UGC NET Psychology question-paper source",
+    "revisathon_rule": "Only questions explicitly listed in question_overrides receive the REVISATHON tag. Topic-level targets describe where REVISATHON themes belong; they do not imply every question in that micro-topic came from REVISATHON.",
+    "powerwithin_rule": "Do not tag a question as PowerWithin unless the actual PowerWithin MCQ/question source is available. The supplied PowerWithin PDF documents an online 5000+ MCQ resource but does not contain that question bank."
+  },
+  "coverage": {
+    "revisathon_topic_mappings": 71,
+    "explicit_revisathon_question_mappings": 65,
+    "powerwithin_question_mappings": 0,
+    "note": "Coverage counts are provenance mappings, not claims about question frequency."
   }
 }
