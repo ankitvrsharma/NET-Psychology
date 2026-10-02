@@ -1150,3 +1150,13 @@ body[data-page="home"] .hero-cta b{display:none}
   .learn-unit-meta{flex:1}
   .learn-unit-card .link{font-size:11px}
 }
+
+/* Learn unit cards: metadata sits beside the unit number */
+.learn-unit-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.learn-unit-top .learn-unit-meta{margin:0;justify-content:flex-end}
+.learn-unit-card .link,.learn-unit-arrow{display:none}
+@media(max-width:520px){
+  .learn-unit-top{align-items:flex-start}
+  .learn-unit-top .learn-unit-meta{justify-content:flex-end;gap:5px}
+  .learn-unit-top .learn-unit-meta span{font-size:9px;padding:4px 6px}
+}
