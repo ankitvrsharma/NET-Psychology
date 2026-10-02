@@ -646,13 +646,16 @@ function practice(){
     const last=p.rating?' · Last: '+esc(p.rating):'';
     return '<article class="revision-item"><div><span class="status '+esc(String(p.status||'NEW').toLowerCase())+'">'+esc(p.status||'NEW')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+overdue+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'">Start Recall →</a></article>';
   }).join('');
-  const queue=rows
-    ? '<section class="revision-list">'+rows+'</section>'
-    : '<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>';
+  const first=items[0];
+  const startHref=first?'microtopic.html?unit='+encodeURIComponent(first.u.id)+'&topic='+encodeURIComponent(first.t.id)+'&micro='+encodeURIComponent(first.m.id):'unit.html?id=1';
+  const stateBlock=items.length
+    ? '<section class="panel empty"><h2>'+items.length+' concept'+(items.length===1?' is':'s are')+' ready to revise</h2><p>These are your scheduled revisions. Recall first, then check the explanation.</p><a class="btn primary" href="'+startHref+'">START REVISION →</a></section>'
+    : '<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
+  const queue=rows?'<section class="revision-list">'+rows+'</section>':'';
   root.innerHTML='<section class="page-hero revision-hero"><h1>Strengthen what you’ve already learned.</h1><p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p></section>'+
-    '<section class="revision-ready card"><div><div class="eyebrow">REVISION</div><strong>'+items.length+'</strong><h2>'+(items.length===1?'concept is ready to revisit':'concepts are ready to revisit')+'</h2><p>'+(items.length?'Work through your revision queue one concept at a time.':'There is nothing waiting for revision right now. Your next scheduled revision will appear here.')+'</p></div></section>'+
+    stateBlock+
     queue+
-    '<section class="panel revision-rules"><h2>How to use revision</h2><ul><li><b>Recall first</b> — try to bring the idea back without looking.</li><li><b>Then check</b> — compare your recall with the explanation.</li><li><b>Again</b> — you couldn’t recall it.</li><li><b>Hard</b> — you recalled it with effort.</li><li><b>Good</b> — you recalled it successfully.</li><li><b>Easy</b> — you recalled it quickly.</li></ul></section>';
+    '<section class="panel revision-rules"><h2>How to use revision</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating sets the next scheduled revision.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
 }
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
