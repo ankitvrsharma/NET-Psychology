@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "f672c6e7d23ba5f4";
+window.NETPSY_DATA_VERSION = "2026-10-02-learning-v1";
