@@ -730,3 +730,22 @@ body[data-page="home"] .hero-cta:focus-visible{outline:3px solid rgba(63,103,217
  body[data-page="home"] .hero-cta span{font-size:18px}
  body[data-page="home"] .hero-cta b{width:42px;height:42px;flex-basis:42px;border-radius:12px}
 }
+
+/* Home refinement — centered hero CTA and bottom-right Quick Learn link */
+body[data-page="home"] .hero{text-align:center}
+body[data-page="home"] .hero .eyebrow{display:inline-block}
+body[data-page="home"] .hero h1,
+body[data-page="home"] .hero p{margin-left:auto;margin-right:auto}
+body[data-page="home"] .hero-actions{display:flex;justify-content:center}
+body[data-page="home"] .hero-cta{width:min(100%,720px);justify-content:center;padding:20px 30px}
+body[data-page="home"] .hero-cta b{display:none}
+body[data-page="home"] .quick-learn-card{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;row-gap:12px;min-height:210px}
+body[data-page="home"] .quick-learn-top{grid-column:1;display:flex;align-items:center;justify-content:space-between}
+body[data-page="home"] .quick-learn-body{grid-column:1;align-self:start}
+body[data-page="home"] .quick-learn-link{grid-column:1;grid-row:3;justify-self:end;align-self:end;margin-top:4px}
+@media(max-width:720px){
+ body[data-page="home"] .hero-actions{display:flex}
+ body[data-page="home"] .hero-cta{width:100%}
+ body[data-page="home"] .quick-learn-card{min-height:220px}
+ body[data-page="home"] .quick-learn-link{justify-self:end}
+}
