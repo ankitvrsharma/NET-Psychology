@@ -816,3 +816,35 @@ body[data-page="home"] .quick-flow>i{align-self:center;color:var(--blue);font-st
   .start-profile-actions{display:grid}
   .start-profile-actions .btn{width:100%}
 }
+
+
+/* Homepage short-landscape tablet hardening */
+@media (min-width:721px) and (orientation:landscape) and (max-height:800px){
+  body[data-page="home"] .shell{padding-top:10px;padding-bottom:48px}
+  body[data-page="home"] .hero{padding:24px 0 22px}
+  body[data-page="home"] .hero h1{
+    max-width:980px;
+    font-size:clamp(48px,5.2vw,64px);
+    line-height:.98;
+    letter-spacing:-.04em;
+    text-wrap:balance;
+  }
+  body[data-page="home"] .hero p{max-width:720px;font-size:16px;margin-bottom:20px}
+  body[data-page="home"] .hero-cta{min-height:68px;width:min(100%,620px);padding:16px 24px;border-radius:16px}
+  body[data-page="home"] .hero-cta span{font-size:20px}
+  body[data-page="home"] .net-countdown{margin-bottom:18px}
+  body[data-page="home"] .net-countdown-copy{padding:18px 22px}
+  body[data-page="home"] .net-countdown-copy strong{font-size:clamp(30px,3.5vw,40px)}
+  body[data-page="home"] .syllabus-coverage{padding:18px 22px}
+  body[data-page="home"] .syllabus-coverage strong{font-size:30px}
+  body[data-page="home"] .quick-learn-card{min-height:176px;padding:18px 22px}
+  body[data-page="home"] .quick-learn-body h3{font-size:23px}
+  body[data-page="home"] .quick-learn-body p{font-size:14px}
+  body[data-page="home"] .learning-approach{margin-top:42px!important;padding-top:20px}
+}
+
+/* Extra-wide short landscape: keep the hero readable without desktop-scale whitespace. */
+@media (min-width:1101px) and (orientation:landscape) and (max-height:800px){
+  body[data-page="home"] .hero h1{max-width:1000px;font-size:clamp(50px,5vw,66px)}
+  body[data-page="home"] .hero{padding-top:22px;padding-bottom:20px}
+}
