@@ -1957,7 +1957,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Science and spirituality",
-              "content_notes": "CORE CONCEPT\nScience and spirituality is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Science and spirituality\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Science and spirituality as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nScience and spirituality → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nThe PowerWithin material treats science and spirituality as different but potentially complementary modes of inquiry. Indian psychology is presented as concerned with consciousness and inner experience, while scientific psychology emphasizes systematic observation and empirical inquiry.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nDo not collapse spirituality into religion or assume the source treats science and spirituality as identical.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1967,14 +1967,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nScience and spirituality is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Science and spirituality\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Science and spirituality as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe PowerWithin material treats science and spirituality as different but potentially complementary modes of inquiry. Indian psychology is presented as concerned with consciousness and inner experience, while scientific psychology emphasizes systematic observation and empirical inquiry.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nDo not collapse spirituality into religion or assume the source treats science and spirituality as identical.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Science and spirituality”.",
-                "List the key points associated with “Science and spirituality” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Science and spirituality”?"
+                "Define Science and spirituality in the source's terminology.",
+                "State its role or relationship in the Indian-psychology framework.",
+                "State the key distinction/caution for Science and spirituality."
               ],
-              "application_question": "Source-based check: Given a new question about “Science and spirituality”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Science and spirituality → define → distinguish → apply",
+              "application_question": "Source-based application: identify Science and spirituality in a new statement and justify it using the source-defined relationship.",
+              "exam_takeaway": "The PowerWithin material treats science and spirituality as different but potentially complementary modes of inquiry",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1984,16 +1984,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1"
               ]
             },
             {
               "id": 2,
               "title": "Avidya",
-              "content_notes": "CORE CONCEPT\nAvidya is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Avidya\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Avidya as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAvidya → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nIn the Indian-psychology material, avidya denotes ignorance or limited understanding that obscures knowledge of the self and reality. It is discussed in contrast with vidya and within the science/spirituality framework.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nAvidya is not simply lack of factual information; the source uses it in a broader epistemic/spiritual sense.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2003,14 +2000,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nAvidya is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Avidya\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Avidya as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIn the Indian-psychology material, avidya denotes ignorance or limited understanding that obscures knowledge of the self and reality. It is discussed in contrast with vidya and within the science/spirituality framework.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nAvidya is not simply lack of factual information; the source uses it in a broader epistemic/spiritual sense.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Avidya”.",
-                "List the key points associated with “Avidya” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Avidya”?"
+                "Define Avidya in the source's terminology.",
+                "State its role or relationship in the Indian-psychology framework.",
+                "State the key distinction/caution for Avidya."
               ],
-              "application_question": "Source-based check: Given a new question about “Avidya”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Avidya → define → distinguish → apply",
+              "application_question": "Source-based application: identify Avidya in a new statement and justify it using the source-defined relationship.",
+              "exam_takeaway": "In the Indian-psychology material, avidya denotes ignorance or limited understanding that obscures knowledge of the self and reality",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2020,16 +2017,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1"
               ]
             },
             {
               "id": 3,
               "title": "Vidya",
-              "content_notes": "CORE CONCEPT\nVidya is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Vidya\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Vidya as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nVidya → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nVidya denotes knowledge or insight and is presented as the counterpart of avidya in the Indian-psychology framework. The emphasis is on knowledge that transforms understanding of self and reality.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nKeep vidya/avidya as a source-defined conceptual pair rather than translating them into generic education terms.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2039,14 +2033,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nVidya is a focused concept within “Science and spirituality (avidya and vidya)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Vidya\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Vidya as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nVidya denotes knowledge or insight and is presented as the counterpart of avidya in the Indian-psychology framework. The emphasis is on knowledge that transforms understanding of self and reality.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nKeep vidya/avidya as a source-defined conceptual pair rather than translating them into generic education terms.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 1\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Vidya”.",
-                "List the key points associated with “Vidya” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Vidya”?"
+                "Define Vidya in the source's terminology.",
+                "State its role or relationship in the Indian-psychology framework.",
+                "State the key distinction/caution for Vidya."
               ],
-              "application_question": "Source-based check: Given a new question about “Vidya”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Vidya → define → distinguish → apply",
+              "application_question": "Source-based application: identify Vidya in a new statement and justify it using the source-defined relationship.",
+              "exam_takeaway": "Vidya denotes knowledge or insight and is presented as the counterpart of avidya in the Indian-psychology framework",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2056,10 +2050,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1"
               ]
             }
           ],
@@ -2084,7 +2075,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Primacy of self-knowledge",
-              "content_notes": "CORE CONCEPT\nPrimacy of self-knowledge is a focused concept within “The primacy of self-knowledge in Indian psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Primacy of self-knowledge\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Primacy of self-knowledge as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPrimacy of self-knowledge → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nIndian psychology gives primacy to knowledge of the self and inner experience. The source describes ancient Indian traditions as integrating psychological, philosophical and spiritual inquiry around self-realization and liberation from suffering.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nSelf-knowledge is a central orientation of Indian psychology, not merely introspection in the structuralist sense.\n\nSOURCE BASIS\n• PowerWithin Psychology — Indian Psychology\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2094,14 +2085,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nPrimacy of self-knowledge is a focused concept within “The primacy of self-knowledge in Indian psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Primacy of self-knowledge\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Primacy of self-knowledge as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIndian psychology gives primacy to knowledge of the self and inner experience. The source describes ancient Indian traditions as integrating psychological, philosophical and spiritual inquiry around self-realization and liberation from suffering.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nSelf-knowledge is a central orientation of Indian psychology, not merely introspection in the structuralist sense.\n\nSOURCE BASIS\n• PowerWithin Psychology — Indian Psychology\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Primacy of self-knowledge”.",
-                "List the key points associated with “Primacy of self-knowledge” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Primacy of self-knowledge”?"
+                "Define Primacy of self-knowledge in the source's terminology.",
+                "State its role or relationship in the Indian-psychology framework.",
+                "State the key distinction/caution for Primacy of self-knowledge."
               ],
-              "application_question": "Source-based check: Given a new question about “Primacy of self-knowledge”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Primacy of self-knowledge → define → distinguish → apply",
+              "application_question": "Source-based application: identify Primacy of self-knowledge in a new statement and justify it using the source-defined relationship.",
+              "exam_takeaway": "Indian psychology gives primacy to knowledge of the self and inner experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2111,16 +2102,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Indian Psychology"
               ]
             },
             {
               "id": 2,
               "title": "Self-knowledge in Indian psychology",
-              "content_notes": "CORE CONCEPT\nSelf-knowledge in Indian psychology is a focused concept within “The primacy of self-knowledge in Indian psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Self-knowledge in Indian psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Self-knowledge in Indian psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSelf-knowledge in Indian psychology → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nThe source presents self-knowledge as a route toward understanding consciousness, suffering and transformation. Indian psychology takes inner states and consciousness as important subject matter and uses practices such as yoga and meditation in this framework.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nDo not reduce Indian self-knowledge to ordinary autobiographical self-awareness; the source places it within a broader theory of consciousness and liberation.\n\nSOURCE BASIS\n• PowerWithin Psychology — Indian Psychology\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2130,14 +2118,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nSelf-knowledge in Indian psychology is a focused concept within “The primacy of self-knowledge in Indian psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Self-knowledge in Indian psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Self-knowledge in Indian psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source presents self-knowledge as a route toward understanding consciousness, suffering and transformation. Indian psychology takes inner states and consciousness as important subject matter and uses practices such as yoga and meditation in this framework.\n\nKEY POINTS\n• central definition/relationship\n• role in the source framework\n• closest distinction\n\nDISTINCTION / CAUTION\nDo not reduce Indian self-knowledge to ordinary autobiographical self-awareness; the source places it within a broader theory of consciousness and liberation.\n\nSOURCE BASIS\n• PowerWithin Psychology — Indian Psychology\n\nSTUDY RULE\nUse the terminology and conceptual relationships given in the uploaded NET material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Self-knowledge in Indian psychology”.",
-                "List the key points associated with “Self-knowledge in Indian psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Self-knowledge in Indian psychology”?"
+                "Define Self-knowledge in Indian psychology in the source's terminology.",
+                "State its role or relationship in the Indian-psychology framework.",
+                "State the key distinction/caution for Self-knowledge in Indian psychology."
               ],
-              "application_question": "Source-based check: Given a new question about “Self-knowledge in Indian psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Self-knowledge in Indian psychology → define → distinguish → apply",
+              "application_question": "Source-based application: identify Self-knowledge in Indian psychology in a new statement and justify it using the source-defined relationship.",
+              "exam_takeaway": "The source presents self-knowledge as a route toward understanding consciousness, suffering and transformation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2147,10 +2135,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Indian Psychology"
               ]
             }
           ],
