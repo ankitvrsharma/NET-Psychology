@@ -5571,7 +5571,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "General sensations",
-              "content_notes": "CORE CONCEPT\nGeneral sensations is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of General sensations\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating General sensations as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGeneral sensations → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.\n\nKEY POINTS\n• General sensations arise from bodily sensory systems.\n• Specific sensations involve specialized sensory organs/pathways.\n• Both depend on receptors and neural processing.\n• The distinction is about sensory-system organization, not about whether a sensation is psychologically important.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Sensory Systems; Baron & Misra — Sensory Processes.\n\nCOMMON EXAM TRAP\nDo not treat 'general' as meaning vague or nonspecific; it refers to a class of bodily sensory modalities.\n\nMEMORY CUE\nGeneral sensations → General sensations arise from bodily sensory systems • Specific sensations involve specialized sensory organs/pathways • Both depend on receptors and neural processing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5581,14 +5581,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nGeneral sensations is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of General sensations\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating General sensations as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.\n\nKEY POINTS\n• General sensations arise from bodily sensory systems.\n• Specific sensations involve specialized sensory organs/pathways.\n• Both depend on receptors and neural processing.\n• The distinction is about sensory-system organization, not about whether a sensation is psychologically important.\n\nDISTINCTION / CAUTION\nDo not treat 'general' as meaning vague or nonspecific; it refers to a class of bodily sensory modalities.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Sensory Systems; Baron & Misra — Sensory Processes.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “General sensations”.",
-                "List the key points associated with “General sensations” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “General sensations”?"
+                "State the source-based core idea of “General sensations”.",
+                "List the key source-supported points for “General sensations”.",
+                "State the most important distinction or caution for “General sensations”."
               ],
-              "application_question": "Source-based check: Given a new question about “General sensations”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "General sensations → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “General sensations” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "General sensations arise from bodily sensory systems",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5598,16 +5598,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Sensory Systems; Baron & Misra — Sensory Processes."
               ]
             },
             {
               "id": 2,
               "title": "Specific sensations",
-              "content_notes": "CORE CONCEPT\nSpecific sensations is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Specific sensations\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Specific sensations as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSpecific sensations → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSpecific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.\n\nKEY POINTS\n• Vision, hearing, taste and smell are specialized sensory systems.\n• Each system has characteristic receptors and pathways.\n• Sensory transduction converts physical stimulation into neural signals.\n• Perception involves further processing beyond receptor activation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4; Ciccarelli & White 6e; Baron & Misra.\n\nCOMMON EXAM TRAP\nSensation and perception are related but not identical: sensation concerns detection/transduction, while perception involves organizing and interpreting sensory information.\n\nMEMORY CUE\nSpecific sensations → Vision, hearing, taste and smell are specialized sensory systems • Each system has characteristic receptors and pathways • Sensory transduction converts physical stimulation into neural signals",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5617,14 +5614,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nSpecific sensations is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Specific sensations\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Specific sensations as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSpecific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.\n\nKEY POINTS\n• Vision, hearing, taste and smell are specialized sensory systems.\n• Each system has characteristic receptors and pathways.\n• Sensory transduction converts physical stimulation into neural signals.\n• Perception involves further processing beyond receptor activation.\n\nDISTINCTION / CAUTION\nSensation and perception are related but not identical: sensation concerns detection/transduction, while perception involves organizing and interpreting sensory information.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4; Ciccarelli & White 6e; Baron & Misra.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Specific sensations”.",
-                "List the key points associated with “Specific sensations” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Specific sensations”?"
+                "State the source-based core idea of “Specific sensations”.",
+                "List the key source-supported points for “Specific sensations”.",
+                "State the most important distinction or caution for “Specific sensations”."
               ],
-              "application_question": "Source-based check: Given a new question about “Specific sensations”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Specific sensations → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Specific sensations” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Vision, hearing, taste and smell are specialized sensory systems",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5634,16 +5631,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4; Ciccarelli & White 6e; Baron & Misra."
               ]
             },
             {
               "id": 3,
               "title": "Receptors",
-              "content_notes": "CORE CONCEPT\nReceptors is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Receptors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Receptors as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nReceptors → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.\n\nKEY POINTS\n• Receptors are specialized for particular kinds of stimulation.\n• They initiate neural signals when appropriate stimulation occurs.\n• Different sensory modalities use different receptor systems.\n• Receptor activity is an early stage of sensory processing.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Sensory Systems; Ciccarelli & White and Baron & Misra on sensation.\n\nCOMMON EXAM TRAP\nA receptor detects stimulation; it is not the same thing as the entire sensory pathway or perceptual experience.\n\nMEMORY CUE\nReceptors → Receptors are specialized for particular kinds of stimulation • They initiate neural signals when appropriate stimulation occurs • Different sensory modalities use different receptor systems",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5653,14 +5647,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nReceptors is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Receptors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Receptors as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.\n\nKEY POINTS\n• Receptors are specialized for particular kinds of stimulation.\n• They initiate neural signals when appropriate stimulation occurs.\n• Different sensory modalities use different receptor systems.\n• Receptor activity is an early stage of sensory processing.\n\nDISTINCTION / CAUTION\nA receptor detects stimulation; it is not the same thing as the entire sensory pathway or perceptual experience.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Sensory Systems; Ciccarelli & White and Baron & Misra on sensation.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Receptors”.",
-                "List the key points associated with “Receptors” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Receptors”?"
+                "State the source-based core idea of “Receptors”.",
+                "List the key source-supported points for “Receptors”.",
+                "State the most important distinction or caution for “Receptors”."
               ],
-              "application_question": "Source-based check: Given a new question about “Receptors”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Receptors → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Receptors” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Receptors are specialized for particular kinds of stimulation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5670,16 +5664,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Sensory Systems; Ciccarelli & White and Baron & Misra on sensation."
               ]
             },
             {
               "id": 4,
               "title": "Sensory processes",
-              "content_notes": "CORE CONCEPT\nSensory processes is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory processes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sensory processes as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSensory processes → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.\n\nKEY POINTS\n• Physical stimulation provides the input.\n• Receptors detect relevant stimulation.\n• Transduction converts stimulation into neural signals.\n• Subsequent neural processing contributes to sensory experience.\n\nSOURCE BASIS\nBaron & Misra — Sensory Processes; PowerWithin Psychology — Unit 4 Sensory Systems.\n\nCOMMON EXAM TRAP\nThe minimum detectable stimulation and the interpretation of a stimulus are different questions; detection is not identical to perception.\n\nMEMORY CUE\nSensory processes → Physical stimulation provides the input • Receptors detect relevant stimulation • Transduction converts stimulation into neural signals",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5689,14 +5680,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nSensory processes is a focused concept within “Sensory systems: General and specific sensations, receptors and processes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory processes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sensory processes as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.\n\nKEY POINTS\n• Physical stimulation provides the input.\n• Receptors detect relevant stimulation.\n• Transduction converts stimulation into neural signals.\n• Subsequent neural processing contributes to sensory experience.\n\nDISTINCTION / CAUTION\nThe minimum detectable stimulation and the interpretation of a stimulus are different questions; detection is not identical to perception.\n\nSOURCE BASIS\nBaron & Misra — Sensory Processes; PowerWithin Psychology — Unit 4 Sensory Systems.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sensory processes”.",
-                "List the key points associated with “Sensory processes” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sensory processes”?"
+                "State the source-based core idea of “Sensory processes”.",
+                "List the key source-supported points for “Sensory processes”.",
+                "State the most important distinction or caution for “Sensory processes”."
               ],
-              "application_question": "Source-based check: Given a new question about “Sensory processes”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sensory processes → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Sensory processes” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Physical stimulation provides the input",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5706,10 +5697,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Sensory Processes; PowerWithin Psychology — Unit 4 Sensory Systems."
               ]
             }
           ],
@@ -5770,7 +5758,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Neuron functions",
-              "content_notes": "CORE CONCEPT\nNeuron functions is a focused concept within “Neurons: Structure, functions, types, neural impulse, synaptic transmission”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neuron functions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Neuron functions as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNeuron functions → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nNeurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.\n\nKEY POINTS\n• Neurons receive and transmit information.\n• Neural impulses travel along the neuron.\n• Communication between neurons occurs at synapses.\n• Neurotransmitters participate in synaptic communication.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Neurons and Neural Transmission; Self-Teaching Guide and Ciccarelli & White.\n\nCOMMON EXAM TRAP\nA neural impulse within a neuron and synaptic transmission between neurons are related but distinct stages of neural communication.\n\nMEMORY CUE\nNeuron functions → Neurons receive and transmit information • Neural impulses travel along the neuron • Communication between neurons occurs at synapses",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5780,14 +5768,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nNeuron functions is a focused concept within “Neurons: Structure, functions, types, neural impulse, synaptic transmission”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neuron functions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Neuron functions as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNeurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.\n\nKEY POINTS\n• Neurons receive and transmit information.\n• Neural impulses travel along the neuron.\n• Communication between neurons occurs at synapses.\n• Neurotransmitters participate in synaptic communication.\n\nDISTINCTION / CAUTION\nA neural impulse within a neuron and synaptic transmission between neurons are related but distinct stages of neural communication.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Neurons and Neural Transmission; Self-Teaching Guide and Ciccarelli & White.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Neuron functions”.",
-                "List the key points associated with “Neuron functions” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Neuron functions”?"
+                "State the source-based core idea of “Neuron functions”.",
+                "List the key source-supported points for “Neuron functions”.",
+                "State the most important distinction or caution for “Neuron functions”."
               ],
-              "application_question": "Source-based check: Given a new question about “Neuron functions”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Neuron functions → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Neuron functions” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Neurons receive and transmit information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5797,10 +5785,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Neurons and Neural Transmission; Self-Teaching Guide and Ciccarelli & White."
               ]
             },
             {
@@ -6060,7 +6045,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Structure and functions",
-              "content_notes": "CORE CONCEPT\nStructure and functions is a focused concept within “The Central and Peripheral Nervous Systems – Structure and functions”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Structure and functions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Structure and functions as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStructure and functions → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.\n\nKEY POINTS\n• CNS = brain and spinal cord.\n• PNS connects the CNS with sensory receptors and effectors.\n• Somatic functions involve skeletal-muscle control.\n• Autonomic functions regulate internal bodily processes.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 CNS/PNS; Ciccarelli & White 6e; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nCNS and PNS are structural divisions; sympathetic/parasympathetic are divisions within the autonomic branch of the PNS.\n\nMEMORY CUE\nStructure and functions → CNS = brain and spinal cord • PNS connects the CNS with sensory receptors and effectors • Somatic functions involve skeletal-muscle control",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6070,14 +6055,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nStructure and functions is a focused concept within “The Central and Peripheral Nervous Systems – Structure and functions”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Structure and functions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Structure and functions as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.\n\nKEY POINTS\n• CNS = brain and spinal cord.\n• PNS connects the CNS with sensory receptors and effectors.\n• Somatic functions involve skeletal-muscle control.\n• Autonomic functions regulate internal bodily processes.\n\nDISTINCTION / CAUTION\nCNS and PNS are structural divisions; sympathetic/parasympathetic are divisions within the autonomic branch of the PNS.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 CNS/PNS; Ciccarelli & White 6e; Kaplan AP Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Structure and functions”.",
-                "List the key points associated with “Structure and functions” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Structure and functions”?"
+                "State the source-based core idea of “Structure and functions”.",
+                "List the key source-supported points for “Structure and functions”.",
+                "State the most important distinction or caution for “Structure and functions”."
               ],
-              "application_question": "Source-based check: Given a new question about “Structure and functions”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Structure and functions → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Structure and functions” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "CNS = brain and spinal cord",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6087,10 +6072,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 CNS/PNS; Ciccarelli & White 6e; Kaplan AP Psychology."
               ]
             }
           ],
@@ -6170,7 +6152,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Anatomical methods",
-              "content_notes": "CORE CONCEPT\nAnatomical methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Anatomical methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Anatomical methods as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAnatomical methods → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAnatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.\n\nKEY POINTS\n• The focus is neural structure and organization.\n• They are concerned with locating or describing anatomical structures.\n• The source classifies them under physiological-psychology research methods.\n• They differ from functional methods that focus on activity or responses.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology.\n\nCOMMON EXAM TRAP\nAnatomical methods are about structure; they should not be treated as interchangeable with methods that record moment-to-moment neural activity.\n\nMEMORY CUE\nAnatomical methods → The focus is neural structure and organization • They are concerned with locating or describing anatomical structures • The source classifies them under physiological-psychology research methods",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6180,14 +6162,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nAnatomical methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Anatomical methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Anatomical methods as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAnatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.\n\nKEY POINTS\n• The focus is neural structure and organization.\n• They are concerned with locating or describing anatomical structures.\n• The source classifies them under physiological-psychology research methods.\n• They differ from functional methods that focus on activity or responses.\n\nDISTINCTION / CAUTION\nAnatomical methods are about structure; they should not be treated as interchangeable with methods that record moment-to-moment neural activity.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Anatomical methods”.",
-                "List the key points associated with “Anatomical methods” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Anatomical methods”?"
+                "State the source-based core idea of “Anatomical methods”.",
+                "List the key source-supported points for “Anatomical methods”.",
+                "State the most important distinction or caution for “Anatomical methods”."
               ],
-              "application_question": "Source-based check: Given a new question about “Anatomical methods”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Anatomical methods → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Anatomical methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "The focus is neural structure and organization",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6197,16 +6179,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology."
               ]
             },
             {
               "id": 2,
               "title": "Degeneration techniques",
-              "content_notes": "CORE CONCEPT\nDegeneration techniques is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Degeneration techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Degeneration techniques as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDegeneration techniques → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDegeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.\n\nKEY POINTS\n• They are used to study brain–behavior relationships.\n• Neural damage or degeneration provides information about function.\n• They are invasive research techniques.\n• Interpretation depends on linking the affected structure/pathway with behavioral change.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Invasive Methods; Baron & Misra — physiological research methods.\n\nCOMMON EXAM TRAP\nEvidence from degeneration is inferential; a behavioral change following damage does not mean the damaged area was the only structure involved.\n\nMEMORY CUE\nDegeneration techniques → They are used to study brain–behavior relationships • Neural damage or degeneration provides information about function • They are invasive research techniques",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6216,14 +6195,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nDegeneration techniques is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Degeneration techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Degeneration techniques as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDegeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.\n\nKEY POINTS\n• They are used to study brain–behavior relationships.\n• Neural damage or degeneration provides information about function.\n• They are invasive research techniques.\n• Interpretation depends on linking the affected structure/pathway with behavioral change.\n\nDISTINCTION / CAUTION\nEvidence from degeneration is inferential; a behavioral change following damage does not mean the damaged area was the only structure involved.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Invasive Methods; Baron & Misra — physiological research methods.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Degeneration techniques”.",
-                "List the key points associated with “Degeneration techniques” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Degeneration techniques”?"
+                "State the source-based core idea of “Degeneration techniques”.",
+                "List the key source-supported points for “Degeneration techniques”.",
+                "State the most important distinction or caution for “Degeneration techniques”."
               ],
-              "application_question": "Source-based check: Given a new question about “Degeneration techniques”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Degeneration techniques → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Degeneration techniques” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "They are used to study brain–behavior relationships",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6233,16 +6212,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Invasive Methods; Baron & Misra — physiological research methods."
               ]
             },
             {
               "id": 3,
               "title": "Lesion techniques",
-              "content_notes": "CORE CONCEPT\nLesion techniques is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lesion techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Lesion techniques as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLesion techniques → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.\n\nKEY POINTS\n• A lesion is damage to neural tissue.\n• Behavioral changes after a lesion can provide functional evidence.\n• The method is invasive.\n• Interpretation requires attention to the exact location and extent of damage.\n\nSOURCE BASIS\nBaron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Lesion Techniques.\n\nCOMMON EXAM TRAP\nA lesion does not prove that a structure works alone; connected neural systems can also contribute to the observed effect.\n\nMEMORY CUE\nLesion techniques → A lesion is damage to neural tissue • Behavioral changes after a lesion can provide functional evidence • The method is invasive",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6252,14 +6228,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nLesion techniques is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lesion techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Lesion techniques as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.\n\nKEY POINTS\n• A lesion is damage to neural tissue.\n• Behavioral changes after a lesion can provide functional evidence.\n• The method is invasive.\n• Interpretation requires attention to the exact location and extent of damage.\n\nDISTINCTION / CAUTION\nA lesion does not prove that a structure works alone; connected neural systems can also contribute to the observed effect.\n\nSOURCE BASIS\nBaron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Lesion Techniques.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Lesion techniques”.",
-                "List the key points associated with “Lesion techniques” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Lesion techniques”?"
+                "State the source-based core idea of “Lesion techniques”.",
+                "List the key source-supported points for “Lesion techniques”.",
+                "State the most important distinction or caution for “Lesion techniques”."
               ],
-              "application_question": "Source-based check: Given a new question about “Lesion techniques”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Lesion techniques → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Lesion techniques” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "A lesion is damage to neural tissue",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6269,16 +6245,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Lesion Techniques."
               ]
             },
             {
               "id": 4,
               "title": "Chemical methods",
-              "content_notes": "CORE CONCEPT\nChemical methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Chemical methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Chemical methods as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nChemical methods → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nChemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.\n\nKEY POINTS\n• Chemical methods investigate neurochemical influences on behavior.\n• They may involve altering or examining chemical signaling.\n• They complement anatomical and electrophysiological methods.\n• Interpretation links chemical changes with neural or behavioral outcomes.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology and biological basis of behavior.\n\nCOMMON EXAM TRAP\nChemical methods are not identical to recording electrical neural activity; they target a different level of biological explanation.\n\nMEMORY CUE\nChemical methods → Chemical methods investigate neurochemical influences on behavior • They may involve altering or examining chemical signaling • They complement anatomical and electrophysiological methods",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6288,14 +6261,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nChemical methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Chemical methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Chemical methods as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nChemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.\n\nKEY POINTS\n• Chemical methods investigate neurochemical influences on behavior.\n• They may involve altering or examining chemical signaling.\n• They complement anatomical and electrophysiological methods.\n• Interpretation links chemical changes with neural or behavioral outcomes.\n\nDISTINCTION / CAUTION\nChemical methods are not identical to recording electrical neural activity; they target a different level of biological explanation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology and biological basis of behavior.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Chemical methods”.",
-                "List the key points associated with “Chemical methods” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Chemical methods”?"
+                "State the source-based core idea of “Chemical methods”.",
+                "List the key source-supported points for “Chemical methods”.",
+                "State the most important distinction or caution for “Chemical methods”."
               ],
-              "application_question": "Source-based check: Given a new question about “Chemical methods”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Chemical methods → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Chemical methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Chemical methods investigate neurochemical influences on behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6305,16 +6278,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology and biological basis of behavior."
               ]
             },
             {
               "id": 5,
               "title": "Microelectrode studies",
-              "content_notes": "CORE CONCEPT\nMicroelectrode studies is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Microelectrode studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Microelectrode studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMicroelectrode studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMicroelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.\n\nKEY POINTS\n• Microelectrodes permit fine-grained neural recording.\n• They can link neural activity with stimuli or behavior.\n• The technique is invasive when electrodes are implanted.\n• It provides functional information rather than only anatomical description.\n\nSOURCE BASIS\nBaron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Microelectrode Studies.\n\nCOMMON EXAM TRAP\nMicroelectrode recording is a method for measuring neural activity; it should not be confused with lesioning, which changes tissue to study consequences.\n\nMEMORY CUE\nMicroelectrode studies → Microelectrodes permit fine-grained neural recording • They can link neural activity with stimuli or behavior • The technique is invasive when electrodes are implanted",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6324,14 +6294,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nMicroelectrode studies is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Microelectrode studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Microelectrode studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMicroelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.\n\nKEY POINTS\n• Microelectrodes permit fine-grained neural recording.\n• They can link neural activity with stimuli or behavior.\n• The technique is invasive when electrodes are implanted.\n• It provides functional information rather than only anatomical description.\n\nDISTINCTION / CAUTION\nMicroelectrode recording is a method for measuring neural activity; it should not be confused with lesioning, which changes tissue to study consequences.\n\nSOURCE BASIS\nBaron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Microelectrode Studies.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Microelectrode studies”.",
-                "List the key points associated with “Microelectrode studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Microelectrode studies”?"
+                "State the source-based core idea of “Microelectrode studies”.",
+                "List the key source-supported points for “Microelectrode studies”.",
+                "State the most important distinction or caution for “Microelectrode studies”."
               ],
-              "application_question": "Source-based check: Given a new question about “Microelectrode studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Microelectrode studies → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Microelectrode studies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Microelectrodes permit fine-grained neural recording",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6341,10 +6311,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Microelectrode Studies."
               ]
             },
             {
@@ -6386,7 +6353,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Scanning methods",
-              "content_notes": "CORE CONCEPT\nScanning methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Scanning methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Scanning methods as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nScanning methods → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nScanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.\n\nKEY POINTS\n• Scanning methods are categorized as non-invasive in the source.\n• They allow researchers to examine brain-related structure or activity.\n• They differ from lesion or implanted-electrode techniques.\n• Interpretation depends on what the particular scanning method measures.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology.\n\nCOMMON EXAM TRAP\n'Scanning' is a broad category; different imaging techniques answer different structural or functional questions.\n\nMEMORY CUE\nScanning methods → Scanning methods are categorized as non-invasive in the source • They allow researchers to examine brain-related structure or activity • They differ from lesion or implanted-electrode techniques",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6396,14 +6363,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nScanning methods is a focused concept within “Methods of Physiological Psychology: Invasive methods – Anatomical methods, degeneration techniques, lesion techniques, chemical methods, microelectrode studies. Non-invasive methods – EEG, Scanning methods”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Scanning methods\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Scanning methods as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nScanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.\n\nKEY POINTS\n• Scanning methods are categorized as non-invasive in the source.\n• They allow researchers to examine brain-related structure or activity.\n• They differ from lesion or implanted-electrode techniques.\n• Interpretation depends on what the particular scanning method measures.\n\nDISTINCTION / CAUTION\n'Scanning' is a broad category; different imaging techniques answer different structural or functional questions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Methods of Physiological Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Scanning methods”.",
-                "List the key points associated with “Scanning methods” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Scanning methods”?"
+                "State the source-based core idea of “Scanning methods”.",
+                "List the key source-supported points for “Scanning methods”.",
+                "State the most important distinction or caution for “Scanning methods”."
               ],
-              "application_question": "Source-based check: Given a new question about “Scanning methods”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Scanning methods → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Scanning methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Scanning methods are categorized as non-invasive in the source",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6413,10 +6380,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology."
               ]
             }
           ],
@@ -6441,7 +6405,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Muscular system",
-              "content_notes": "CORE CONCEPT\nMuscular system is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Muscular system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Muscular system as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMuscular system → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.\n\nKEY POINTS\n• Muscles execute movement in response to neural control.\n• Muscular activity is an important output of the nervous system.\n• Skeletal-muscle control is associated with somatic functions.\n• Muscular activity can be studied as a physiological correlate of behavior.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Muscular and Glandular Systems; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nMuscular activity is an output system; it should not be confused with the glandular/endocrine system, which communicates through hormones.\n\nMEMORY CUE\nMuscular system → Muscles execute movement in response to neural control • Muscular activity is an important output of the nervous system • Skeletal-muscle control is associated with somatic functions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6451,14 +6415,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nMuscular system is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Muscular system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Muscular system as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.\n\nKEY POINTS\n• Muscles execute movement in response to neural control.\n• Muscular activity is an important output of the nervous system.\n• Skeletal-muscle control is associated with somatic functions.\n• Muscular activity can be studied as a physiological correlate of behavior.\n\nDISTINCTION / CAUTION\nMuscular activity is an output system; it should not be confused with the glandular/endocrine system, which communicates through hormones.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Muscular and Glandular Systems; Ciccarelli & White.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Muscular system”.",
-                "List the key points associated with “Muscular system” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Muscular system”?"
+                "State the source-based core idea of “Muscular system”.",
+                "List the key source-supported points for “Muscular system”.",
+                "State the most important distinction or caution for “Muscular system”."
               ],
-              "application_question": "Source-based check: Given a new question about “Muscular system”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Muscular system → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Muscular system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Muscles execute movement in response to neural control",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6468,17 +6432,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Muscular and Glandular Systems; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
             {
               "id": 2,
               "title": "Glandular system",
-              "content_notes": "CORE CONCEPT\nGlandular system is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Glandular system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Glandular system as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGlandular system → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.\n\nKEY POINTS\n• Endocrine glands release hormones into the bloodstream.\n• Hormones can influence behavior and physiological states.\n• The hypothalamus and pituitary are important regulators in the endocrine system.\n• Hormonal effects interact with nervous-system processes.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Glandular/Hormonal Regulation; Self-Teaching Guide and Kaplan.\n\nCOMMON EXAM TRAP\nHormones are chemical messengers; glands are structures that produce/release them. Do not use the terms as exact synonyms.\n\nMEMORY CUE\nGlandular system → Endocrine glands release hormones into the bloodstream • Hormones can influence behavior and physiological states • The hypothalamus and pituitary are important regulators in the endocrine system",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6488,14 +6449,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nGlandular system is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Glandular system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Glandular system as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.\n\nKEY POINTS\n• Endocrine glands release hormones into the bloodstream.\n• Hormones can influence behavior and physiological states.\n• The hypothalamus and pituitary are important regulators in the endocrine system.\n• Hormonal effects interact with nervous-system processes.\n\nDISTINCTION / CAUTION\nHormones are chemical messengers; glands are structures that produce/release them. Do not use the terms as exact synonyms.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Glandular/Hormonal Regulation; Self-Teaching Guide and Kaplan.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Glandular system”.",
-                "List the key points associated with “Glandular system” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Glandular system”?"
+                "State the source-based core idea of “Glandular system”.",
+                "List the key source-supported points for “Glandular system”.",
+                "State the most important distinction or caution for “Glandular system”."
               ],
-              "application_question": "Source-based check: Given a new question about “Glandular system”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Glandular system → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Glandular system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Endocrine glands release hormones into the bloodstream",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6505,17 +6466,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Glandular/Hormonal Regulation; Self-Teaching Guide and Kaplan."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
             {
               "id": 3,
               "title": "Hunger",
-              "content_notes": "CORE CONCEPT\nHunger is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hunger\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Hunger as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHunger → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nHunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.\n\nKEY POINTS\n• Hunger is linked to energy regulation and homeostasis.\n• The hypothalamus is involved in the regulation of hunger and related drives.\n• Internal physiological signals influence eating behavior.\n• Motivation is produced through interaction between bodily states and psychological processes.\n\nSOURCE BASIS\nBaron & Misra — Biological Bases of Motivation; PowerWithin Psychology — Hunger; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nHunger is not explained only by an empty stomach; the source framework treats motivation as involving multiple physiological and psychological processes.\n\nMEMORY CUE\nHunger → Hunger is linked to energy regulation and homeostasis • The hypothalamus is involved in the regulation of hunger and related drives • Internal physiological signals influence eating behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6525,14 +6483,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHunger is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hunger\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Hunger as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nHunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.\n\nKEY POINTS\n• Hunger is linked to energy regulation and homeostasis.\n• The hypothalamus is involved in the regulation of hunger and related drives.\n• Internal physiological signals influence eating behavior.\n• Motivation is produced through interaction between bodily states and psychological processes.\n\nDISTINCTION / CAUTION\nHunger is not explained only by an empty stomach; the source framework treats motivation as involving multiple physiological and psychological processes.\n\nSOURCE BASIS\nBaron & Misra — Biological Bases of Motivation; PowerWithin Psychology — Hunger; Kaplan AP Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Hunger”.",
-                "List the key points associated with “Hunger” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Hunger”?"
+                "State the source-based core idea of “Hunger”.",
+                "List the key source-supported points for “Hunger”.",
+                "State the most important distinction or caution for “Hunger”."
               ],
-              "application_question": "Source-based check: Given a new question about “Hunger”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Hunger → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Hunger” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Hunger is linked to energy regulation and homeostasis",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6542,17 +6500,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Biological Bases of Motivation; PowerWithin Psychology — Hunger; Kaplan AP Psychology."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
             {
               "id": 4,
               "title": "Thirst",
-              "content_notes": "CORE CONCEPT\nThirst is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Thirst\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Thirst as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nThirst → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.\n\nKEY POINTS\n• Thirst helps maintain fluid balance.\n• Physiological changes provide signals related to drinking.\n• Hypothalamic mechanisms contribute to regulation.\n• Thirst, like hunger, illustrates homeostatic motivation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Motivation; Baron & Misra; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nThirst is not simply a subjective feeling; it is linked to physiological regulation of fluid balance.\n\nMEMORY CUE\nThirst → Thirst helps maintain fluid balance • Physiological changes provide signals related to drinking • Hypothalamic mechanisms contribute to regulation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6562,14 +6517,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nThirst is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Thirst\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Thirst as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.\n\nKEY POINTS\n• Thirst helps maintain fluid balance.\n• Physiological changes provide signals related to drinking.\n• Hypothalamic mechanisms contribute to regulation.\n• Thirst, like hunger, illustrates homeostatic motivation.\n\nDISTINCTION / CAUTION\nThirst is not simply a subjective feeling; it is linked to physiological regulation of fluid balance.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Motivation; Baron & Misra; Kaplan AP Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Thirst”.",
-                "List the key points associated with “Thirst” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Thirst”?"
+                "State the source-based core idea of “Thirst”.",
+                "List the key source-supported points for “Thirst”.",
+                "State the most important distinction or caution for “Thirst”."
               ],
-              "application_question": "Source-based check: Given a new question about “Thirst”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Thirst → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Thirst” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Thirst helps maintain fluid balance",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6579,10 +6534,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Biological Basis of Motivation; Baron & Misra; Kaplan AP Psychology."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
@@ -6626,7 +6578,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Sex",
-              "content_notes": "CORE CONCEPT\nSex is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sex\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sex as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSex → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.\n\nKEY POINTS\n• Sexual behavior has biological and hormonal influences.\n• Neural and endocrine systems interact in sexual motivation.\n• Psychological and social context also affects behavior.\n• The source treats sex as one component of biological motivation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Motivation and Hormonal Regulation of Behavior; Self-Teaching Guide.\n\nCOMMON EXAM TRAP\nA biological basis does not imply that sexual behavior is determined only by biology; the source framework is broader than a single-factor explanation.\n\nMEMORY CUE\nSex → Sexual behavior has biological and hormonal influences • Neural and endocrine systems interact in sexual motivation • Psychological and social context also affects behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6636,14 +6588,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nSex is a focused concept within “Muscular and Glandular system: Types and functions. Biological basis of Motivation: Hunger, Thirst, Sleep and Sex”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sex\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sex as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.\n\nKEY POINTS\n• Sexual behavior has biological and hormonal influences.\n• Neural and endocrine systems interact in sexual motivation.\n• Psychological and social context also affects behavior.\n• The source treats sex as one component of biological motivation.\n\nDISTINCTION / CAUTION\nA biological basis does not imply that sexual behavior is determined only by biology; the source framework is broader than a single-factor explanation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Motivation and Hormonal Regulation of Behavior; Self-Teaching Guide.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sex”.",
-                "List the key points associated with “Sex” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sex”?"
+                "State the source-based core idea of “Sex”.",
+                "List the key source-supported points for “Sex”.",
+                "State the most important distinction or caution for “Sex”."
               ],
-              "application_question": "Source-based check: Given a new question about “Sex”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sex → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Sex” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Sexual behavior has biological and hormonal influences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6653,10 +6605,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Biological Basis of Motivation and Hormonal Regulation of Behavior; Self-Teaching Guide."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             }
@@ -6682,7 +6631,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Limbic system",
-              "content_notes": "CORE CONCEPT\nLimbic system is a focused concept within “Biological basis of emotion: The Limbic system, Hormonal regulation of behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Limbic system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Limbic system as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLimbic system → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.\n\nKEY POINTS\n• The limbic system is associated with emotion and motivation.\n• The amygdala is especially important in fear and other emotional responses.\n• The hypothalamus contributes to motivated and physiological regulation.\n• Emotion involves distributed neural systems rather than one isolated structure.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Emotion; Baron & Misra; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nDo not treat the limbic system as a single brain structure; it is a network/system of structures.\n\nMEMORY CUE\nLimbic system → The limbic system is associated with emotion and motivation • The amygdala is especially important in fear and other emotional responses • The hypothalamus contributes to motivated and physiological regulation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6692,14 +6641,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nLimbic system is a focused concept within “Biological basis of emotion: The Limbic system, Hormonal regulation of behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Limbic system\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Limbic system as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.\n\nKEY POINTS\n• The limbic system is associated with emotion and motivation.\n• The amygdala is especially important in fear and other emotional responses.\n• The hypothalamus contributes to motivated and physiological regulation.\n• Emotion involves distributed neural systems rather than one isolated structure.\n\nDISTINCTION / CAUTION\nDo not treat the limbic system as a single brain structure; it is a network/system of structures.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Biological Basis of Emotion; Baron & Misra; Kaplan AP Psychology.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Limbic system”.",
-                "List the key points associated with “Limbic system” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Limbic system”?"
+                "State the source-based core idea of “Limbic system”.",
+                "List the key source-supported points for “Limbic system”.",
+                "State the most important distinction or caution for “Limbic system”."
               ],
-              "application_question": "Source-based check: Given a new question about “Limbic system”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Limbic system → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Limbic system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "The limbic system is associated with emotion and motivation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6709,17 +6658,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Biological Basis of Emotion; Baron & Misra; Kaplan AP Psychology."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
             {
               "id": 2,
               "title": "Hormonal regulation of behavior",
-              "content_notes": "CORE CONCEPT\nHormonal regulation of behavior is a focused concept within “Biological basis of emotion: The Limbic system, Hormonal regulation of behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hormonal regulation of behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Hormonal regulation of behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHormonal regulation of behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nHormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.\n\nKEY POINTS\n• Hormones are chemical messengers released by endocrine glands.\n• The endocrine system interacts with neural regulation.\n• Hypothalamic–pituitary processes are important in endocrine control.\n• Hormonal influences can affect motivation, emotion and other behaviors.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Hormonal Regulation of Behavior; Self-Teaching Guide and Kaplan.\n\nCOMMON EXAM TRAP\nHormonal regulation is one biological mechanism; it does not replace neural explanations of behavior.\n\nMEMORY CUE\nHormonal regulation of behavior → Hormones are chemical messengers released by endocrine glands • The endocrine system interacts with neural regulation • Hypothalamic–pituitary processes are important in endocrine control",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6729,14 +6675,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHormonal regulation of behavior is a focused concept within “Biological basis of emotion: The Limbic system, Hormonal regulation of behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hormonal regulation of behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Hormonal regulation of behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nHormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.\n\nKEY POINTS\n• Hormones are chemical messengers released by endocrine glands.\n• The endocrine system interacts with neural regulation.\n• Hypothalamic–pituitary processes are important in endocrine control.\n• Hormonal influences can affect motivation, emotion and other behaviors.\n\nDISTINCTION / CAUTION\nHormonal regulation is one biological mechanism; it does not replace neural explanations of behavior.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Hormonal Regulation of Behavior; Self-Teaching Guide and Kaplan.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Hormonal regulation of behavior”.",
-                "List the key points associated with “Hormonal regulation of behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Hormonal regulation of behavior”?"
+                "State the source-based core idea of “Hormonal regulation of behavior”.",
+                "List the key source-supported points for “Hormonal regulation of behavior”.",
+                "State the most important distinction or caution for “Hormonal regulation of behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Hormonal regulation of behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Hormonal regulation of behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Hormonal regulation of behavior” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Hormones are chemical messengers released by endocrine glands",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6746,10 +6692,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Hormonal Regulation of Behavior; Self-Teaching Guide and Kaplan."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             }
@@ -6775,7 +6718,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Chromosomal anomalies",
-              "content_notes": "CORE CONCEPT\nChromosomal anomalies is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Chromosomal anomalies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Chromosomal anomalies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nChromosomal anomalies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nChromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.\n\nKEY POINTS\n• Chromosomes carry genetic information.\n• Anomalies can alter developmental processes.\n• Behavioral and cognitive effects depend on the specific anomaly.\n• Genetic explanations should distinguish biological contribution from environmental influence.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Genetics and Behaviour.\n\nCOMMON EXAM TRAP\nA chromosomal anomaly is a biological condition, not a complete explanation of an individual's psychological functioning.\n\nMEMORY CUE\nChromosomal anomalies → Chromosomes carry genetic information • Anomalies can alter developmental processes • Behavioral and cognitive effects depend on the specific anomaly",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6785,14 +6728,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nChromosomal anomalies is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Chromosomal anomalies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Chromosomal anomalies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nChromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.\n\nKEY POINTS\n• Chromosomes carry genetic information.\n• Anomalies can alter developmental processes.\n• Behavioral and cognitive effects depend on the specific anomaly.\n• Genetic explanations should distinguish biological contribution from environmental influence.\n\nDISTINCTION / CAUTION\nA chromosomal anomaly is a biological condition, not a complete explanation of an individual's psychological functioning.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 4 Genetics and Behaviour.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Chromosomal anomalies”.",
-                "List the key points associated with “Chromosomal anomalies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Chromosomal anomalies”?"
+                "State the source-based core idea of “Chromosomal anomalies”.",
+                "List the key source-supported points for “Chromosomal anomalies”.",
+                "State the most important distinction or caution for “Chromosomal anomalies”."
               ],
-              "application_question": "Source-based check: Given a new question about “Chromosomal anomalies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Chromosomal anomalies → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Chromosomal anomalies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Chromosomes carry genetic information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6802,16 +6745,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 4 Genetics and Behaviour."
               ]
             },
             {
               "id": 2,
               "title": "Nature-Nurture controversy",
-              "content_notes": "CORE CONCEPT\nNature-Nurture controversy is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Nature-Nurture controversy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Nature-Nurture controversy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNature-Nurture controversy → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.\n\nKEY POINTS\n• Nature refers broadly to inherited/genetic influences.\n• Nurture refers broadly to environmental and experiential influences.\n• Twin and adoption studies help estimate relative contributions.\n• Heritability concerns variation within a population, not how fixed a trait is in an individual.\n\nSOURCE BASIS\nBaron & Misra — Heredity and Environment; PowerWithin Psychology — Nature-Nurture Controversy.\n\nCOMMON EXAM TRAP\nHeritability does not mean that a trait is genetically predetermined or unchangeable.\n\nMEMORY CUE\nNature-Nurture controversy → Nature refers broadly to inherited/genetic influences • Nurture refers broadly to environmental and experiential influences • Twin and adoption studies help estimate relative contributions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6821,14 +6761,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nNature-Nurture controversy is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Nature-Nurture controversy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Nature-Nurture controversy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.\n\nKEY POINTS\n• Nature refers broadly to inherited/genetic influences.\n• Nurture refers broadly to environmental and experiential influences.\n• Twin and adoption studies help estimate relative contributions.\n• Heritability concerns variation within a population, not how fixed a trait is in an individual.\n\nDISTINCTION / CAUTION\nHeritability does not mean that a trait is genetically predetermined or unchangeable.\n\nSOURCE BASIS\nBaron & Misra — Heredity and Environment; PowerWithin Psychology — Nature-Nurture Controversy.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Nature-Nurture controversy”.",
-                "List the key points associated with “Nature-Nurture controversy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Nature-Nurture controversy”?"
+                "State the source-based core idea of “Nature-Nurture controversy”.",
+                "List the key source-supported points for “Nature-Nurture controversy”.",
+                "State the most important distinction or caution for “Nature-Nurture controversy”."
               ],
-              "application_question": "Source-based check: Given a new question about “Nature-Nurture controversy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Nature-Nurture controversy → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Nature-Nurture controversy” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Nature refers broadly to inherited/genetic influences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6838,10 +6778,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Heredity and Environment; PowerWithin Psychology — Nature-Nurture Controversy."
               ]
             },
             {
@@ -6883,7 +6820,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Adoption studies",
-              "content_notes": "CORE CONCEPT\nAdoption studies is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Adoption studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Adoption studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAdoption studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAdoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.\n\nKEY POINTS\n• Adoption separates some aspects of biological and rearing environments.\n• Similarity with biological relatives can provide evidence relevant to genetic influence.\n• Similarity with adoptive relatives can provide evidence relevant to environmental influence.\n• Findings are interpreted statistically across groups rather than as absolute proof for one individual.\n\nSOURCE BASIS\nBaron & Misra — Heredity, Environment and Adoption Studies; PowerWithin Psychology — Nature-Nurture Controversy.\n\nCOMMON EXAM TRAP\nAdoption studies estimate contributions; they do not create perfectly controlled environments or eliminate all prenatal/shared influences.\n\nMEMORY CUE\nAdoption studies → Adoption separates some aspects of biological and rearing environments • Similarity with biological relatives can provide evidence relevant to genetic influence • Similarity with adoptive relatives can provide evidence relevant to environmental influence",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6893,14 +6830,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nAdoption studies is a focused concept within “Genetics and behavior: Chromosomal anomalies; Nature-Nurture controversy (Twin studies and adoption studies)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Adoption studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Adoption studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAdoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.\n\nKEY POINTS\n• Adoption separates some aspects of biological and rearing environments.\n• Similarity with biological relatives can provide evidence relevant to genetic influence.\n• Similarity with adoptive relatives can provide evidence relevant to environmental influence.\n• Findings are interpreted statistically across groups rather than as absolute proof for one individual.\n\nDISTINCTION / CAUTION\nAdoption studies estimate contributions; they do not create perfectly controlled environments or eliminate all prenatal/shared influences.\n\nSOURCE BASIS\nBaron & Misra — Heredity, Environment and Adoption Studies; PowerWithin Psychology — Nature-Nurture Controversy.\n\nSTUDY RULE\nKeep the explanation at the level supported by the uploaded source. Do not add unsupported mechanisms, examples or named studies.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Adoption studies”.",
-                "List the key points associated with “Adoption studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Adoption studies”?"
+                "State the source-based core idea of “Adoption studies”.",
+                "List the key source-supported points for “Adoption studies”.",
+                "State the most important distinction or caution for “Adoption studies”."
               ],
-              "application_question": "Source-based check: Given a new question about “Adoption studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Adoption studies → define → distinguish → apply",
+              "application_question": "Source-based application: Identify how “Adoption studies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction.",
+              "exam_takeaway": "Adoption separates some aspects of biological and rearing environments",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6910,10 +6847,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Heredity, Environment and Adoption Studies; PowerWithin Psychology — Nature-Nurture Controversy."
               ]
             }
           ],
@@ -18233,7 +18167,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 55
+        "enrichedMicrotopics": 77
       }
     }
   },
