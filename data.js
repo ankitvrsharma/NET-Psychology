@@ -6916,7 +6916,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Models of attention",
-              "content_notes": "CORE CONCEPT\nModels of attention is a focused concept within “Attention: Forms of attention, Models of attention”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Models of attention\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Models of attention as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nModels of attention → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAttention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.\n\nKEY POINTS\n• Selective attention allocates limited processing resources.\n• Early and late selection models differ in where selection is proposed to occur.\n• The cocktail-party phenomenon illustrates shifts in attention to meaningful information.\n• Attention can influence what reaches conscious processing.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Models of Attention; Baron & Misra — selective/divided attention.\n\nCOMMON EXAM TRAP\nAttention models differ in the proposed stage and mechanism of selection; do not treat them as interchangeable.\n\nMEMORY CUE\nModels of attention → Selective attention allocates limited processing resources • Early and late selection models differ in where selection is proposed to occur • The cocktail-party phenomenon illustrates shifts in attention to meaningful information",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6926,14 +6926,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nModels of attention is a focused concept within “Attention: Forms of attention, Models of attention”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Models of attention\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Models of attention as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAttention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.\n\nKEY POINTS\n• Selective attention allocates limited processing resources.\n• Early and late selection models differ in where selection is proposed to occur.\n• The cocktail-party phenomenon illustrates shifts in attention to meaningful information.\n• Attention can influence what reaches conscious processing.\n\nDISTINCTION / CAUTION\nAttention models differ in the proposed stage and mechanism of selection; do not treat them as interchangeable.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Models of Attention; Baron & Misra — selective/divided attention.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Models of attention”.",
-                "List the key points associated with “Models of attention” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Models of attention”?"
+                "State the source-based core idea of “Models of attention”.",
+                "List the key source-supported points for “Models of attention”.",
+                "State the most important distinction or caution for “Models of attention”."
               ],
-              "application_question": "Source-based check: Given a new question about “Models of attention”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Models of attention → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Models of attention” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Selective attention allocates limited processing resources",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6943,10 +6943,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 5 Models of Attention; Baron & Misra — selective/divided attention."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -6972,7 +6969,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Perception",
-              "content_notes": "CORE CONCEPT\nPerception is a focused concept within “Perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPerception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.\n\nKEY POINTS\n• Perception organizes sensory information.\n• Perceptual sets can bias how stimuli are interpreted.\n• Bottom-up processing begins with sensory features.\n• Top-down processing uses knowledge, expectations and concepts.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Perception; Ciccarelli & White 6e; Baron & Misra.\n\nCOMMON EXAM TRAP\nPerception is not a passive copy of sensory input; interpretation is shaped by processing and prior knowledge.\n\nMEMORY CUE\nPerception → Perception organizes sensory information • Perceptual sets can bias how stimuli are interpreted • Bottom-up processing begins with sensory features",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6982,14 +6979,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPerception is a focused concept within “Perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPerception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.\n\nKEY POINTS\n• Perception organizes sensory information.\n• Perceptual sets can bias how stimuli are interpreted.\n• Bottom-up processing begins with sensory features.\n• Top-down processing uses knowledge, expectations and concepts.\n\nDISTINCTION / CAUTION\nPerception is not a passive copy of sensory input; interpretation is shaped by processing and prior knowledge.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Perception; Ciccarelli & White 6e; Baron & Misra.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Perception”.",
-                "List the key points associated with “Perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Perception”?"
+                "State the source-based core idea of “Perception”.",
+                "List the key source-supported points for “Perception”.",
+                "State the most important distinction or caution for “Perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception organizes sensory information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -6999,10 +6996,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 5 Perception; Ciccarelli & White 6e; Baron & Misra."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -7028,7 +7022,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Gestalt approach",
-              "content_notes": "CORE CONCEPT\nGestalt approach is a focused concept within “Approaches to the Study of Perception: Gestalt and physiological approaches”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Gestalt approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGestalt approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.\n\nKEY POINTS\n• Perception tends to form organized wholes.\n• Figure–ground segregation is a basic organizing process.\n• Similarity, proximity, closure and continuity are key Gestalt laws in the source.\n• The approach emphasizes organization rather than isolated sensory fragments.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Approaches; Baron & Misra; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nGestalt laws describe principles of perceptual organization; they are not separate sensory receptors or neural structures.\n\nMEMORY CUE\nGestalt approach → Perception tends to form organized wholes • Figure–ground segregation is a basic organizing process • Similarity, proximity, closure and continuity are key Gestalt laws in the source",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7038,14 +7032,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nGestalt approach is a focused concept within “Approaches to the Study of Perception: Gestalt and physiological approaches”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Gestalt approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.\n\nKEY POINTS\n• Perception tends to form organized wholes.\n• Figure–ground segregation is a basic organizing process.\n• Similarity, proximity, closure and continuity are key Gestalt laws in the source.\n• The approach emphasizes organization rather than isolated sensory fragments.\n\nDISTINCTION / CAUTION\nGestalt laws describe principles of perceptual organization; they are not separate sensory receptors or neural structures.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Approaches; Baron & Misra; Ciccarelli & White.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Gestalt approach”.",
-                "List the key points associated with “Gestalt approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Gestalt approach”?"
+                "State the source-based core idea of “Gestalt approach”.",
+                "List the key source-supported points for “Gestalt approach”.",
+                "State the most important distinction or caution for “Gestalt approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Gestalt approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Gestalt approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Gestalt approach” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception tends to form organized wholes",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7055,17 +7049,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Gestalt Approaches; Baron & Misra; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Physiological approach",
-              "content_notes": "CORE CONCEPT\nPhysiological approach is a focused concept within “Approaches to the Study of Perception: Gestalt and physiological approaches”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Physiological approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Physiological approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPhysiological approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.\n\nKEY POINTS\n• It emphasizes sensory receptors and neural mechanisms.\n• Physical stimulation is transformed into neural information.\n• Perception depends on biological processing as well as organization and interpretation.\n• The approach complements rather than simply duplicates Gestalt explanations.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Approaches to Perception and Unit 4 biological foundations.\n\nCOMMON EXAM TRAP\nA physiological explanation focuses on mechanisms; a Gestalt explanation focuses on principles of perceptual organization.\n\nMEMORY CUE\nPhysiological approach → It emphasizes sensory receptors and neural mechanisms • Physical stimulation is transformed into neural information • Perception depends on biological processing as well as organization and interpretation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7075,14 +7066,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPhysiological approach is a focused concept within “Approaches to the Study of Perception: Gestalt and physiological approaches”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Physiological approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Physiological approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.\n\nKEY POINTS\n• It emphasizes sensory receptors and neural mechanisms.\n• Physical stimulation is transformed into neural information.\n• Perception depends on biological processing as well as organization and interpretation.\n• The approach complements rather than simply duplicates Gestalt explanations.\n\nDISTINCTION / CAUTION\nA physiological explanation focuses on mechanisms; a Gestalt explanation focuses on principles of perceptual organization.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Approaches to Perception and Unit 4 biological foundations.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Physiological approach”.",
-                "List the key points associated with “Physiological approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Physiological approach”?"
+                "State the source-based core idea of “Physiological approach”.",
+                "List the key source-supported points for “Physiological approach”.",
+                "State the most important distinction or caution for “Physiological approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Physiological approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Physiological approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Physiological approach” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "It emphasizes sensory receptors and neural mechanisms",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7092,10 +7083,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 5 Approaches to Perception and Unit 4 biological foundations."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -7121,7 +7109,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Gestalt organization",
-              "content_notes": "CORE CONCEPT\nGestalt organization is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt organization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Gestalt organization as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGestalt organization → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nGestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.\n\nKEY POINTS\n• Grouping converts separate elements into organized patterns.\n• Figure and ground are differentiated within the perceptual field.\n• Similarity and proximity encourage grouping.\n• Closure and continuity support completion and coherent pattern formation.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Approaches; Baron & Misra — Perceptual Organization.\n\nCOMMON EXAM TRAP\nGestalt organization is broader than figure–ground alone; figure–ground is one organizing principle within the larger framework.\n\nMEMORY CUE\nGestalt organization → Grouping converts separate elements into organized patterns • Figure and ground are differentiated within the perceptual field • Similarity and proximity encourage grouping",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7131,14 +7119,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nGestalt organization is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt organization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Gestalt organization as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.\n\nKEY POINTS\n• Grouping converts separate elements into organized patterns.\n• Figure and ground are differentiated within the perceptual field.\n• Similarity and proximity encourage grouping.\n• Closure and continuity support completion and coherent pattern formation.\n\nDISTINCTION / CAUTION\nGestalt organization is broader than figure–ground alone; figure–ground is one organizing principle within the larger framework.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Approaches; Baron & Misra — Perceptual Organization.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Gestalt organization”.",
-                "List the key points associated with “Gestalt organization” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Gestalt organization”?"
+                "State the source-based core idea of “Gestalt organization”.",
+                "List the key source-supported points for “Gestalt organization”.",
+                "State the most important distinction or caution for “Gestalt organization”."
               ],
-              "application_question": "Source-based check: Given a new question about “Gestalt organization”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Gestalt organization → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Gestalt organization” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Grouping converts separate elements into organized patterns",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7148,17 +7136,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Gestalt Approaches; Baron & Misra — Perceptual Organization."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Figure and ground",
-              "content_notes": "CORE CONCEPT\nFigure and ground is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Figure and ground\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Figure and ground as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nFigure and ground → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nFigure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.\n\nKEY POINTS\n• Figure is the focal, structured element.\n• Ground provides the background against which the figure is perceived.\n• The same sensory input can support different figure–ground interpretations.\n• Figure–ground organization helps illustrate the difference between sensation and perception.\n\nSOURCE BASIS\nBaron & Misra — Figure and Ground; PowerWithin Psychology — Gestalt Approach.\n\nCOMMON EXAM TRAP\nFigure and ground are relational roles within a perceptual organization, not fixed physical properties of every stimulus.\n\nMEMORY CUE\nFigure and ground → Figure is the focal, structured element • Ground provides the background against which the figure is perceived • The same sensory input can support different figure–ground interpretations",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7168,14 +7153,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nFigure and ground is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Figure and ground\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Figure and ground as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nFigure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.\n\nKEY POINTS\n• Figure is the focal, structured element.\n• Ground provides the background against which the figure is perceived.\n• The same sensory input can support different figure–ground interpretations.\n• Figure–ground organization helps illustrate the difference between sensation and perception.\n\nDISTINCTION / CAUTION\nFigure and ground are relational roles within a perceptual organization, not fixed physical properties of every stimulus.\n\nSOURCE BASIS\nBaron & Misra — Figure and Ground; PowerWithin Psychology — Gestalt Approach.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Figure and ground”.",
-                "List the key points associated with “Figure and ground” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Figure and ground”?"
+                "State the source-based core idea of “Figure and ground”.",
+                "List the key source-supported points for “Figure and ground”.",
+                "State the most important distinction or caution for “Figure and ground”."
               ],
-              "application_question": "Source-based check: Given a new question about “Figure and ground”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Figure and ground → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Figure and ground” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Figure is the focal, structured element",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7185,17 +7170,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Figure and Ground; PowerWithin Psychology — Gestalt Approach."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 3,
               "title": "Laws of organization",
-              "content_notes": "CORE CONCEPT\nLaws of organization is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Laws of organization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Laws of organization as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLaws of organization → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.\n\nKEY POINTS\n• Similarity → similar elements are grouped.\n• Proximity → nearby elements are grouped.\n• Closure → incomplete figures are perceptually completed.\n• Continuity → elements are linked into continuous patterns.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Laws of Perceptual Organization.\n\nCOMMON EXAM TRAP\nThe laws are organizing tendencies; they do not mean that every stimulus will always be perceived in exactly one way.\n\nMEMORY CUE\nLaws of organization → Similarity → similar elements are grouped • Proximity → nearby elements are grouped • Closure → incomplete figures are perceptually completed",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7205,14 +7187,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nLaws of organization is a focused concept within “Perceptual Organization: Gestalt, Figure and Ground, Law of Organization”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Laws of organization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Laws of organization as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.\n\nKEY POINTS\n• Similarity → similar elements are grouped.\n• Proximity → nearby elements are grouped.\n• Closure → incomplete figures are perceptually completed.\n• Continuity → elements are linked into continuous patterns.\n\nDISTINCTION / CAUTION\nThe laws are organizing tendencies; they do not mean that every stimulus will always be perceived in exactly one way.\n\nSOURCE BASIS\nPowerWithin Psychology — Gestalt Laws of Perceptual Organization.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Laws of organization”.",
-                "List the key points associated with “Laws of organization” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Laws of organization”?"
+                "State the source-based core idea of “Laws of organization”.",
+                "List the key source-supported points for “Laws of organization”.",
+                "State the most important distinction or caution for “Laws of organization”."
               ],
-              "application_question": "Source-based check: Given a new question about “Laws of organization”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Laws of organization → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Laws of organization” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Similarity → similar elements are grouped",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7222,10 +7204,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Gestalt Laws of Perceptual Organization."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -7251,7 +7230,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Size constancy",
-              "content_notes": "CORE CONCEPT\nSize constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Size constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Size constancy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSize constancy → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSize constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.\n\nKEY POINTS\n• Retinal image size changes with distance.\n• Perceived physical size remains relatively stable.\n• Distance information helps support constancy.\n• Constancy allows stable recognition of familiar objects.\n\nSOURCE BASIS\nBaron & Misra — Size Constancy; PowerWithin Psychology — Perceptual Constancies; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nSize constancy concerns perceived physical size, not the literal size of the retinal image.\n\nMEMORY CUE\nSize constancy → Retinal image size changes with distance • Perceived physical size remains relatively stable • Distance information helps support constancy",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7261,14 +7240,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nSize constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Size constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Size constancy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSize constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.\n\nKEY POINTS\n• Retinal image size changes with distance.\n• Perceived physical size remains relatively stable.\n• Distance information helps support constancy.\n• Constancy allows stable recognition of familiar objects.\n\nDISTINCTION / CAUTION\nSize constancy concerns perceived physical size, not the literal size of the retinal image.\n\nSOURCE BASIS\nBaron & Misra — Size Constancy; PowerWithin Psychology — Perceptual Constancies; Ciccarelli & White.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Size constancy”.",
-                "List the key points associated with “Size constancy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Size constancy”?"
+                "State the source-based core idea of “Size constancy”.",
+                "List the key source-supported points for “Size constancy”.",
+                "State the most important distinction or caution for “Size constancy”."
               ],
-              "application_question": "Source-based check: Given a new question about “Size constancy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Size constancy → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Size constancy” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Retinal image size changes with distance",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7278,17 +7257,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Size Constancy; PowerWithin Psychology — Perceptual Constancies; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Shape constancy",
-              "content_notes": "CORE CONCEPT\nShape constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Shape constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Shape constancy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nShape constancy → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nShape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.\n\nKEY POINTS\n• Viewing angle changes the retinal image.\n• The perceived object's shape remains relatively stable.\n• Prior knowledge and contextual information support stable recognition.\n• Shape constancy contributes to object recognition.\n\nSOURCE BASIS\nBaron & Misra — Shape Constancy; PowerWithin Psychology — Perceptual Constancies.\n\nCOMMON EXAM TRAP\nShape constancy concerns stability of perceived form across viewing conditions; it is different from size constancy.\n\nMEMORY CUE\nShape constancy → Viewing angle changes the retinal image • The perceived object's shape remains relatively stable • Prior knowledge and contextual information support stable recognition",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7298,14 +7274,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nShape constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Shape constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Shape constancy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nShape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.\n\nKEY POINTS\n• Viewing angle changes the retinal image.\n• The perceived object's shape remains relatively stable.\n• Prior knowledge and contextual information support stable recognition.\n• Shape constancy contributes to object recognition.\n\nDISTINCTION / CAUTION\nShape constancy concerns stability of perceived form across viewing conditions; it is different from size constancy.\n\nSOURCE BASIS\nBaron & Misra — Shape Constancy; PowerWithin Psychology — Perceptual Constancies.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Shape constancy”.",
-                "List the key points associated with “Shape constancy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Shape constancy”?"
+                "State the source-based core idea of “Shape constancy”.",
+                "List the key source-supported points for “Shape constancy”.",
+                "State the most important distinction or caution for “Shape constancy”."
               ],
-              "application_question": "Source-based check: Given a new question about “Shape constancy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Shape constancy → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Shape constancy” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Viewing angle changes the retinal image",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7315,17 +7291,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Shape Constancy; PowerWithin Psychology — Perceptual Constancies."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 3,
               "title": "Color constancy",
-              "content_notes": "CORE CONCEPT\nColor constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Color constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Color constancy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nColor constancy → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nColor or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.\n\nKEY POINTS\n• Illumination can change the physical light reaching the eyes.\n• Perception can remain relatively stable across lighting conditions.\n• The surrounding context contributes to the perceived surface property.\n• Constancy supports stable recognition of objects.\n\nSOURCE BASIS\nPowerWithin Psychology — Perceptual Constancies; Baron & Misra — Brightness Constancy.\n\nCOMMON EXAM TRAP\nThe source explicitly develops brightness constancy; do not substitute unrelated claims about color vision mechanisms.\n\nMEMORY CUE\nColor constancy → Illumination can change the physical light reaching the eyes • Perception can remain relatively stable across lighting conditions • The surrounding context contributes to the perceived surface property",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7335,14 +7308,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nColor constancy is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Color constancy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Color constancy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nColor or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.\n\nKEY POINTS\n• Illumination can change the physical light reaching the eyes.\n• Perception can remain relatively stable across lighting conditions.\n• The surrounding context contributes to the perceived surface property.\n• Constancy supports stable recognition of objects.\n\nDISTINCTION / CAUTION\nThe source explicitly develops brightness constancy; do not substitute unrelated claims about color vision mechanisms.\n\nSOURCE BASIS\nPowerWithin Psychology — Perceptual Constancies; Baron & Misra — Brightness Constancy.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Color constancy”.",
-                "List the key points associated with “Color constancy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Color constancy”?"
+                "State the source-based core idea of “Color constancy”.",
+                "List the key source-supported points for “Color constancy”.",
+                "State the most important distinction or caution for “Color constancy”."
               ],
-              "application_question": "Source-based check: Given a new question about “Color constancy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Color constancy → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Color constancy” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Illumination can change the physical light reaching the eyes",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7352,10 +7325,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Perceptual Constancies; Baron & Misra — Brightness Constancy."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
@@ -7399,7 +7369,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Perception of form",
-              "content_notes": "CORE CONCEPT\nPerception of form is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of form\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Perception of form as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerception of form → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPerception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.\n\nKEY POINTS\n• Form perception organizes features into objects or patterns.\n• Gestalt grouping contributes to coherent form.\n• Bottom-up processing uses stimulus features.\n• Top-down processing uses schemas and expectations.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Form and Gestalt Approaches; Baron & Misra; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nForm perception is not explained by a single Gestalt law; multiple organizing and interpretive processes contribute.\n\nMEMORY CUE\nPerception of form → Form perception organizes features into objects or patterns • Gestalt grouping contributes to coherent form • Bottom-up processing uses stimulus features",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7409,14 +7379,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPerception of form is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of form\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Perception of form as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPerception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.\n\nKEY POINTS\n• Form perception organizes features into objects or patterns.\n• Gestalt grouping contributes to coherent form.\n• Bottom-up processing uses stimulus features.\n• Top-down processing uses schemas and expectations.\n\nDISTINCTION / CAUTION\nForm perception is not explained by a single Gestalt law; multiple organizing and interpretive processes contribute.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Form and Gestalt Approaches; Baron & Misra; Ciccarelli & White.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Perception of form”.",
-                "List the key points associated with “Perception of form” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Perception of form”?"
+                "State the source-based core idea of “Perception of form”.",
+                "List the key source-supported points for “Perception of form”.",
+                "State the most important distinction or caution for “Perception of form”."
               ],
-              "application_question": "Source-based check: Given a new question about “Perception of form”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Perception of form → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Perception of form” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Form perception organizes features into objects or patterns",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7426,17 +7396,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Perception of Form and Gestalt Approaches; Baron & Misra; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 6,
               "title": "Perception of depth",
-              "content_notes": "CORE CONCEPT\nPerception of depth is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of depth\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Perception of depth as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerception of depth → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDepth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.\n\nKEY POINTS\n• Depth perception converts two-dimensional retinal information into three-dimensional experience.\n• Monocular cues can operate with one eye.\n• Binocular cues use information from both eyes.\n• Depth cues support judgments of distance and spatial arrangement.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Depth and Distance; Ciccarelli & White 6e.\n\nCOMMON EXAM TRAP\nMonocular and binocular cues are different sources of depth information; do not classify every depth cue as binocular.\n\nMEMORY CUE\nPerception of depth → Depth perception converts two-dimensional retinal information into three-dimensional experience • Monocular cues can operate with one eye • Binocular cues use information from both eyes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7446,14 +7413,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPerception of depth is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of depth\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Perception of depth as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDepth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.\n\nKEY POINTS\n• Depth perception converts two-dimensional retinal information into three-dimensional experience.\n• Monocular cues can operate with one eye.\n• Binocular cues use information from both eyes.\n• Depth cues support judgments of distance and spatial arrangement.\n\nDISTINCTION / CAUTION\nMonocular and binocular cues are different sources of depth information; do not classify every depth cue as binocular.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Depth and Distance; Ciccarelli & White 6e.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Perception of depth”.",
-                "List the key points associated with “Perception of depth” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Perception of depth”?"
+                "State the source-based core idea of “Perception of depth”.",
+                "List the key source-supported points for “Perception of depth”.",
+                "State the most important distinction or caution for “Perception of depth”."
               ],
-              "application_question": "Source-based check: Given a new question about “Perception of depth”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Perception of depth → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Perception of depth” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Depth perception converts two-dimensional retinal information into three-dimensional experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7463,17 +7430,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Perception of Depth and Distance; Ciccarelli & White 6e."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 7,
               "title": "Perception of movement",
-              "content_notes": "CORE CONCEPT\nPerception of movement is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of movement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Perception of movement as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerception of movement → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPerception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.\n\nKEY POINTS\n• Movement perception depends on changing visual information over time.\n• Apparent movement can occur without a physically moving object.\n• Phi phenomenon is a classic example of perceived movement.\n• Movement perception is part of the broader organization of visual information.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Form, Depth and Movement; REVISATHON Part 7 — Phi phenomenon.\n\nCOMMON EXAM TRAP\nApparent movement and actual physical movement are not the same phenomenon.\n\nMEMORY CUE\nPerception of movement → Movement perception depends on changing visual information over time • Apparent movement can occur without a physically moving object • Phi phenomenon is a classic example of perceived movement",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7483,14 +7447,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPerception of movement is a focused concept within “Perceptual Constancy: Size, Shape, and Color; Illusions; Perception of Form, Depth and Movement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perception of movement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Perception of movement as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPerception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.\n\nKEY POINTS\n• Movement perception depends on changing visual information over time.\n• Apparent movement can occur without a physically moving object.\n• Phi phenomenon is a classic example of perceived movement.\n• Movement perception is part of the broader organization of visual information.\n\nDISTINCTION / CAUTION\nApparent movement and actual physical movement are not the same phenomenon.\n\nSOURCE BASIS\nPowerWithin Psychology — Perception of Form, Depth and Movement; REVISATHON Part 7 — Phi phenomenon.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Perception of movement”.",
-                "List the key points associated with “Perception of movement” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Perception of movement”?"
+                "State the source-based core idea of “Perception of movement”.",
+                "List the key source-supported points for “Perception of movement”.",
+                "State the most important distinction or caution for “Perception of movement”."
               ],
-              "application_question": "Source-based check: Given a new question about “Perception of movement”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Perception of movement → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Perception of movement” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Movement perception depends on changing visual information over time",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7500,10 +7464,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Perception of Form, Depth and Movement; REVISATHON Part 7 — Phi phenomenon."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -7529,7 +7490,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Motivation in perception",
-              "content_notes": "CORE CONCEPT\nMotivation in perception is a focused concept within “Role of motivation and learning in perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivation in perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Motivation in perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMotivation in perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMotivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.\n\nKEY POINTS\n• Perception is not completely independent of current needs and goals.\n• Motivational states can contribute to perceptual set.\n• The effect is interpretive rather than a change in the physical stimulus itself.\n• Motivation interacts with prior experience and expectations.\n\nSOURCE BASIS\nPowerWithin Psychology — Role of Motivation and Learning in Perception.\n\nCOMMON EXAM TRAP\nMotivation can bias perception, but this does not mean that motivation literally changes the external stimulus.\n\nMEMORY CUE\nMotivation in perception → Perception is not completely independent of current needs and goals • Motivational states can contribute to perceptual set • The effect is interpretive rather than a change in the physical stimulus itself",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7539,14 +7500,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nMotivation in perception is a focused concept within “Role of motivation and learning in perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivation in perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Motivation in perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMotivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.\n\nKEY POINTS\n• Perception is not completely independent of current needs and goals.\n• Motivational states can contribute to perceptual set.\n• The effect is interpretive rather than a change in the physical stimulus itself.\n• Motivation interacts with prior experience and expectations.\n\nDISTINCTION / CAUTION\nMotivation can bias perception, but this does not mean that motivation literally changes the external stimulus.\n\nSOURCE BASIS\nPowerWithin Psychology — Role of Motivation and Learning in Perception.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Motivation in perception”.",
-                "List the key points associated with “Motivation in perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Motivation in perception”?"
+                "State the source-based core idea of “Motivation in perception”.",
+                "List the key source-supported points for “Motivation in perception”.",
+                "State the most important distinction or caution for “Motivation in perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Motivation in perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Motivation in perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Motivation in perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception is not completely independent of current needs and goals",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7556,17 +7517,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Role of Motivation and Learning in Perception."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Learning in perception",
-              "content_notes": "CORE CONCEPT\nLearning in perception is a focused concept within “Role of motivation and learning in perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Learning in perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Learning in perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLearning in perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLearning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.\n\nKEY POINTS\n• Experience can improve recognition of familiar patterns.\n• Learned associations influence interpretation.\n• Schemas can guide top-down processing.\n• Perceptual learning can change how efficiently information is organized.\n\nSOURCE BASIS\nPowerWithin Psychology — Role of Motivation and Learning in Perception; Baron & Misra; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nLearning influences interpretation and recognition; it does not eliminate the sensory input itself.\n\nMEMORY CUE\nLearning in perception → Experience can improve recognition of familiar patterns • Learned associations influence interpretation • Schemas can guide top-down processing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7576,14 +7534,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nLearning in perception is a focused concept within “Role of motivation and learning in perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Learning in perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Learning in perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLearning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.\n\nKEY POINTS\n• Experience can improve recognition of familiar patterns.\n• Learned associations influence interpretation.\n• Schemas can guide top-down processing.\n• Perceptual learning can change how efficiently information is organized.\n\nDISTINCTION / CAUTION\nLearning influences interpretation and recognition; it does not eliminate the sensory input itself.\n\nSOURCE BASIS\nPowerWithin Psychology — Role of Motivation and Learning in Perception; Baron & Misra; Ciccarelli & White.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Learning in perception”.",
-                "List the key points associated with “Learning in perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Learning in perception”?"
+                "State the source-based core idea of “Learning in perception”.",
+                "List the key source-supported points for “Learning in perception”.",
+                "State the most important distinction or caution for “Learning in perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Learning in perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Learning in perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Learning in perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Experience can improve recognition of familiar patterns",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7593,10 +7551,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Role of Motivation and Learning in Perception; Baron & Misra; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -7715,7 +7670,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Subliminal perception",
-              "content_notes": "CORE CONCEPT\nSubliminal perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Subliminal perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Subliminal perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSubliminal perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSubliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.\n\nKEY POINTS\n• Subliminal refers to stimulation below reported conscious awareness.\n• It is different from ordinary conscious perception.\n• Evidence and interpretation require careful experimental control.\n• The source does not support treating subliminal messages as a universal form of behavior control.\n\nSOURCE BASIS\nREVISATHON Part 5 — Subliminal Perception; Baron & Misra — Perception.\n\nCOMMON EXAM TRAP\nSubliminal perception is not synonymous with signal detection; signal detection theory concerns how internal factors and criteria affect detection decisions.\n\nMEMORY CUE\nSubliminal perception → Subliminal refers to stimulation below reported conscious awareness • It is different from ordinary conscious perception • Evidence and interpretation require careful experimental control",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7726,14 +7681,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nSubliminal perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Subliminal perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Subliminal perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSubliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.\n\nKEY POINTS\n• Subliminal refers to stimulation below reported conscious awareness.\n• It is different from ordinary conscious perception.\n• Evidence and interpretation require careful experimental control.\n• The source does not support treating subliminal messages as a universal form of behavior control.\n\nDISTINCTION / CAUTION\nSubliminal perception is not synonymous with signal detection; signal detection theory concerns how internal factors and criteria affect detection decisions.\n\nSOURCE BASIS\nREVISATHON Part 5 — Subliminal Perception; Baron & Misra — Perception.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Subliminal perception”.",
-                "List the key points associated with “Subliminal perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Subliminal perception”?"
+                "State the source-based core idea of “Subliminal perception”.",
+                "List the key source-supported points for “Subliminal perception”.",
+                "State the most important distinction or caution for “Subliminal perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Subliminal perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Subliminal perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Subliminal perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Subliminal refers to stimulation below reported conscious awareness",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7743,18 +7698,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "REVISATHON Part 5 — Subliminal Perception; Baron & Misra — Perception."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Factors related to subliminal perception",
-              "content_notes": "CORE CONCEPT\nFactors related to subliminal perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors related to subliminal perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Factors related to subliminal perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nFactors related to subliminal perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.\n\nKEY POINTS\n• Attention affects what information is processed.\n• Perceptual set and expectations influence interpretation.\n• Processing conditions determine what information reaches awareness.\n• Claims about subliminal influence require empirical support rather than assumption.\n\nSOURCE BASIS\nPowerWithin Psychology — Subliminal Perception and Information Processing; Baron & Misra — Perception.\n\nCOMMON EXAM TRAP\nDo not treat every unconscious influence as evidence of a subliminal message effect.\n\nMEMORY CUE\nFactors related to subliminal perception → Attention affects what information is processed • Perceptual set and expectations influence interpretation • Processing conditions determine what information reaches awareness",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7765,14 +7716,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nFactors related to subliminal perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors related to subliminal perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Factors related to subliminal perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.\n\nKEY POINTS\n• Attention affects what information is processed.\n• Perceptual set and expectations influence interpretation.\n• Processing conditions determine what information reaches awareness.\n• Claims about subliminal influence require empirical support rather than assumption.\n\nDISTINCTION / CAUTION\nDo not treat every unconscious influence as evidence of a subliminal message effect.\n\nSOURCE BASIS\nPowerWithin Psychology — Subliminal Perception and Information Processing; Baron & Misra — Perception.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Factors related to subliminal perception”.",
-                "List the key points associated with “Factors related to subliminal perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Factors related to subliminal perception”?"
+                "State the source-based core idea of “Factors related to subliminal perception”.",
+                "List the key source-supported points for “Factors related to subliminal perception”.",
+                "State the most important distinction or caution for “Factors related to subliminal perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Factors related to subliminal perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Factors related to subliminal perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Factors related to subliminal perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Attention affects what information is processed",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7782,18 +7733,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Subliminal Perception and Information Processing; Baron & Misra — Perception."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 3,
               "title": "Information processing approach to perception",
-              "content_notes": "CORE CONCEPT\nInformation processing approach to perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Information processing approach to perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Information processing approach to perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInformation processing approach to perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.\n\nKEY POINTS\n• Perception involves active processing of information.\n• Bottom-up processing begins with stimulus features.\n• Top-down processing uses existing knowledge and expectations.\n• Schemas provide mental representations that help classify and identify input.\n\nSOURCE BASIS\nPowerWithin Psychology — Information Processing Approach to Perception.\n\nCOMMON EXAM TRAP\nBottom-up and top-down processing are complementary processes, not mutually exclusive explanations.\n\nMEMORY CUE\nInformation processing approach to perception → Perception involves active processing of information • Bottom-up processing begins with stimulus features • Top-down processing uses existing knowledge and expectations",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7804,14 +7751,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nInformation processing approach to perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Information processing approach to perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Information processing approach to perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.\n\nKEY POINTS\n• Perception involves active processing of information.\n• Bottom-up processing begins with stimulus features.\n• Top-down processing uses existing knowledge and expectations.\n• Schemas provide mental representations that help classify and identify input.\n\nDISTINCTION / CAUTION\nBottom-up and top-down processing are complementary processes, not mutually exclusive explanations.\n\nSOURCE BASIS\nPowerWithin Psychology — Information Processing Approach to Perception.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Information processing approach to perception”.",
-                "List the key points associated with “Information processing approach to perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Information processing approach to perception”?"
+                "State the source-based core idea of “Information processing approach to perception”.",
+                "List the key source-supported points for “Information processing approach to perception”.",
+                "State the most important distinction or caution for “Information processing approach to perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Information processing approach to perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Information processing approach to perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Information processing approach to perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception involves active processing of information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7821,18 +7768,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Information Processing Approach to Perception."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 4,
               "title": "Culture and perception",
-              "content_notes": "CORE CONCEPT\nCulture and perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Culture and perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Culture and perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCulture and perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCulture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.\n\nKEY POINTS\n• Perception has a subjective and experience-sensitive component.\n• Cultural experience can shape perceptual expectations.\n• Cross-cultural differences do not mean that sensory systems are completely different.\n• The effect concerns interpretation and perceptual habits.\n\nSOURCE BASIS\nCiccarelli & White 6e — Perception and culture; PowerWithin Psychology — Culture and Perception.\n\nCOMMON EXAM TRAP\nA cultural difference in perception should not be interpreted as proof that one culture has a fundamentally different sensory apparatus.\n\nMEMORY CUE\nCulture and perception → Perception has a subjective and experience-sensitive component • Cultural experience can shape perceptual expectations • Cross-cultural differences do not mean that sensory systems are completely different",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7843,14 +7786,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nCulture and perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Culture and perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Culture and perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCulture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.\n\nKEY POINTS\n• Perception has a subjective and experience-sensitive component.\n• Cultural experience can shape perceptual expectations.\n• Cross-cultural differences do not mean that sensory systems are completely different.\n• The effect concerns interpretation and perceptual habits.\n\nDISTINCTION / CAUTION\nA cultural difference in perception should not be interpreted as proof that one culture has a fundamentally different sensory apparatus.\n\nSOURCE BASIS\nCiccarelli & White 6e — Perception and culture; PowerWithin Psychology — Culture and Perception.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Culture and perception”.",
-                "List the key points associated with “Culture and perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Culture and perception”?"
+                "State the source-based core idea of “Culture and perception”.",
+                "List the key source-supported points for “Culture and perception”.",
+                "State the most important distinction or caution for “Culture and perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Culture and perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Culture and perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Culture and perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception has a subjective and experience-sensitive component",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7860,18 +7803,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "Ciccarelli & White 6e — Perception and culture; PowerWithin Psychology — Culture and Perception."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 5,
               "title": "Perceptual styles",
-              "content_notes": "CORE CONCEPT\nPerceptual styles is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perceptual styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Perceptual styles as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerceptual styles → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPerceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.\n\nKEY POINTS\n• The topic concerns individual differences in perceptual organization or interpretation.\n• Perceptual style can interact with experience and context.\n• The source places it within advanced perception rather than basic sensation.\n• Detailed classification is limited in the supplied material.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Advanced Topics in Perception; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not import an external classification system and present it as the source's own taxonomy.\n\nMEMORY CUE\nPerceptual styles → The topic concerns individual differences in perceptual organization or interpretation • Perceptual style can interact with experience and context • The source places it within advanced perception rather than basic sensation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7882,14 +7821,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPerceptual styles is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Perceptual styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Perceptual styles as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPerceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.\n\nKEY POINTS\n• The topic concerns individual differences in perceptual organization or interpretation.\n• Perceptual style can interact with experience and context.\n• The source places it within advanced perception rather than basic sensation.\n• Detailed classification is limited in the supplied material.\n\nDISTINCTION / CAUTION\nDo not import an external classification system and present it as the source's own taxonomy.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Advanced Topics in Perception; outline-level coverage.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Perceptual styles”.",
-                "List the key points associated with “Perceptual styles” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Perceptual styles”?"
+                "State the source-based core idea of “Perceptual styles”.",
+                "List the key source-supported points for “Perceptual styles”.",
+                "State the most important distinction or caution for “Perceptual styles”."
               ],
-              "application_question": "Source-based check: Given a new question about “Perceptual styles”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Perceptual styles → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Perceptual styles” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "The topic concerns individual differences in perceptual organization or interpretation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7899,18 +7838,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 5 Advanced Topics in Perception; outline-level coverage."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 6,
               "title": "Pattern recognition",
-              "content_notes": "CORE CONCEPT\nPattern recognition is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Pattern recognition\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Pattern recognition as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPattern recognition → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.\n\nKEY POINTS\n• Bottom-up recognition combines simpler stimulus features.\n• Top-down recognition uses prior knowledge and expectations.\n• Pattern recognition supports identification of letters, objects and familiar forms.\n• Both stimulus information and prior knowledge can contribute.\n\nSOURCE BASIS\nBaron & Misra — Pattern Recognition; PowerWithin Psychology — Information Processing Approach.\n\nCOMMON EXAM TRAP\nPattern recognition is broader than simple feature detection; the key issue is how features are organized into meaningful patterns.\n\nMEMORY CUE\nPattern recognition → Bottom-up recognition combines simpler stimulus features • Top-down recognition uses prior knowledge and expectations • Pattern recognition supports identification of letters, objects and familiar forms",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7921,14 +7856,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nPattern recognition is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Pattern recognition\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Pattern recognition as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.\n\nKEY POINTS\n• Bottom-up recognition combines simpler stimulus features.\n• Top-down recognition uses prior knowledge and expectations.\n• Pattern recognition supports identification of letters, objects and familiar forms.\n• Both stimulus information and prior knowledge can contribute.\n\nDISTINCTION / CAUTION\nPattern recognition is broader than simple feature detection; the key issue is how features are organized into meaningful patterns.\n\nSOURCE BASIS\nBaron & Misra — Pattern Recognition; PowerWithin Psychology — Information Processing Approach.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Pattern recognition”.",
-                "List the key points associated with “Pattern recognition” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Pattern recognition”?"
+                "State the source-based core idea of “Pattern recognition”.",
+                "List the key source-supported points for “Pattern recognition”.",
+                "State the most important distinction or caution for “Pattern recognition”."
               ],
-              "application_question": "Source-based check: Given a new question about “Pattern recognition”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Pattern recognition → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Pattern recognition” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Bottom-up recognition combines simpler stimulus features",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7938,18 +7873,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "Baron & Misra — Pattern Recognition; PowerWithin Psychology — Information Processing Approach."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 7,
               "title": "Ecological perspective on perception",
-              "content_notes": "CORE CONCEPT\nEcological perspective on perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ecological perspective on perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Ecological perspective on perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEcological perspective on perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.\n\nKEY POINTS\n• Perception is considered in relation to the organism's environment.\n• The approach emphasizes useful information available in real-world settings.\n• It differs from approaches that treat perception only as internal reconstruction.\n• Detailed source coverage for this node is limited.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Ecological Perspective on Perception; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not add a detailed Gibsonian taxonomy unless it is explicitly supported by the uploaded source set for this node.\n\nMEMORY CUE\nEcological perspective on perception → Perception is considered in relation to the organism's environment • The approach emphasizes useful information available in real-world settings • It differs from approaches that treat perception only as internal reconstruction",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7960,14 +7891,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nEcological perspective on perception is a focused concept within “Subliminal perception and related factors, information processing approach to perception, culture and perception, perceptual styles, Pattern recognition, Ecological perspective on perception”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ecological perspective on perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Ecological perspective on perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.\n\nKEY POINTS\n• Perception is considered in relation to the organism's environment.\n• The approach emphasizes useful information available in real-world settings.\n• It differs from approaches that treat perception only as internal reconstruction.\n• Detailed source coverage for this node is limited.\n\nDISTINCTION / CAUTION\nDo not add a detailed Gibsonian taxonomy unless it is explicitly supported by the uploaded source set for this node.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 5 Ecological Perspective on Perception; outline-level coverage.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Ecological perspective on perception”.",
-                "List the key points associated with “Ecological perspective on perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Ecological perspective on perception”?"
+                "State the source-based core idea of “Ecological perspective on perception”.",
+                "List the key source-supported points for “Ecological perspective on perception”.",
+                "State the most important distinction or caution for “Ecological perspective on perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Ecological perspective on perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Ecological perspective on perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Ecological perspective on perception” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Perception is considered in relation to the organism's environment",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -7977,11 +7908,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 5 Ecological Perspective on Perception; outline-level coverage."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8007,7 +7934,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Learning process",
-              "content_notes": "CORE CONCEPT\nLearning process is a focused concept within “Learning Process”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Learning process\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Learning process as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLearning process → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLearning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.\n\nKEY POINTS\n• Learning is linked to experience.\n• It produces relatively lasting change rather than a temporary state.\n• Different theories explain learning through different mechanisms.\n• Classical, instrumental and cognitive approaches are distinct traditions.\n\nSOURCE BASIS\nKaplan AP Psychology Prep Plus — Principles of Learning; PowerWithin Psychology — Unit 5 Learning Process.\n\nCOMMON EXAM TRAP\nTemporary changes caused by fatigue, drugs or maturation are not automatically evidence of learning.\n\nMEMORY CUE\nLearning process → Learning is linked to experience • It produces relatively lasting change rather than a temporary state • Different theories explain learning through different mechanisms",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8017,14 +7944,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nLearning process is a focused concept within “Learning Process”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Learning process\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Learning process as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLearning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.\n\nKEY POINTS\n• Learning is linked to experience.\n• It produces relatively lasting change rather than a temporary state.\n• Different theories explain learning through different mechanisms.\n• Classical, instrumental and cognitive approaches are distinct traditions.\n\nDISTINCTION / CAUTION\nTemporary changes caused by fatigue, drugs or maturation are not automatically evidence of learning.\n\nSOURCE BASIS\nKaplan AP Psychology Prep Plus — Principles of Learning; PowerWithin Psychology — Unit 5 Learning Process.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Learning process”.",
-                "List the key points associated with “Learning process” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Learning process”?"
+                "State the source-based core idea of “Learning process”.",
+                "List the key source-supported points for “Learning process”.",
+                "State the most important distinction or caution for “Learning process”."
               ],
-              "application_question": "Source-based check: Given a new question about “Learning process”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Learning process → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Learning process” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Learning is linked to experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8034,10 +7961,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Kaplan AP Psychology Prep Plus — Principles of Learning; PowerWithin Psychology — Unit 5 Learning Process."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8137,7 +8061,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Related issues in classical conditioning",
-              "content_notes": "CORE CONCEPT\nRelated issues in classical conditioning is a focused concept within “Classical Conditioning: Procedure, phenomena and related issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Related issues in classical conditioning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Related issues in classical conditioning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRelated issues in classical conditioning → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nRelated issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.\n\nKEY POINTS\n• Acquisition is the development of a conditioned response.\n• Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus.\n• Generalization extends responding to similar stimuli.\n• Discrimination involves learning to respond differently to distinct stimuli; spontaneous recovery is the return of an extinguished response after a delay.\n\nSOURCE BASIS\nCiccarelli & White 6e — Classical Conditioning; Self-Teaching Guide — conditioning phenomena; PowerWithin Psychology.\n\nCOMMON EXAM TRAP\nExtinction reduces a conditioned response but does not necessarily erase all underlying learning.\n\nMEMORY CUE\nRelated issues in classical conditioning → Acquisition is the development of a conditioned response • Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus • Generalization extends responding to similar stimuli",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8147,14 +8071,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nRelated issues in classical conditioning is a focused concept within “Classical Conditioning: Procedure, phenomena and related issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Related issues in classical conditioning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Related issues in classical conditioning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nRelated issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.\n\nKEY POINTS\n• Acquisition is the development of a conditioned response.\n• Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus.\n• Generalization extends responding to similar stimuli.\n• Discrimination involves learning to respond differently to distinct stimuli; spontaneous recovery is the return of an extinguished response after a delay.\n\nDISTINCTION / CAUTION\nExtinction reduces a conditioned response but does not necessarily erase all underlying learning.\n\nSOURCE BASIS\nCiccarelli & White 6e — Classical Conditioning; Self-Teaching Guide — conditioning phenomena; PowerWithin Psychology.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Related issues in classical conditioning”.",
-                "List the key points associated with “Related issues in classical conditioning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Related issues in classical conditioning”?"
+                "State the source-based core idea of “Related issues in classical conditioning”.",
+                "List the key source-supported points for “Related issues in classical conditioning”.",
+                "State the most important distinction or caution for “Related issues in classical conditioning”."
               ],
-              "application_question": "Source-based check: Given a new question about “Related issues in classical conditioning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Related issues in classical conditioning → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Related issues in classical conditioning” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Acquisition is the development of a conditioned response",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8164,10 +8088,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Classical Conditioning; Self-Teaching Guide — conditioning phenomena; PowerWithin Psychology."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8193,7 +8114,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Instrumental learning phenomena",
-              "content_notes": "CORE CONCEPT\nInstrumental learning phenomena is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instrumental learning phenomena\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Instrumental learning phenomena as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInstrumental learning phenomena → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nInstrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.\n\nKEY POINTS\n• Consequences influence future response frequency.\n• Extinction involves a decline when reinforcement is withheld.\n• Partial reinforcement can produce greater resistance to extinction.\n• Discriminative stimuli signal when a response is likely to be reinforced.\n\nSOURCE BASIS\nSelf-Teaching Guide — Operant Conditioning; Ciccarelli & White 6e — Operant Conditioning.\n\nCOMMON EXAM TRAP\nReinforcement increases the likelihood of behavior; punishment decreases it. They are not defined by whether a stimulus is pleasant or unpleasant alone.\n\nMEMORY CUE\nInstrumental learning phenomena → Consequences influence future response frequency • Extinction involves a decline when reinforcement is withheld • Partial reinforcement can produce greater resistance to extinction",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8203,14 +8124,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nInstrumental learning phenomena is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instrumental learning phenomena\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Instrumental learning phenomena as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nInstrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.\n\nKEY POINTS\n• Consequences influence future response frequency.\n• Extinction involves a decline when reinforcement is withheld.\n• Partial reinforcement can produce greater resistance to extinction.\n• Discriminative stimuli signal when a response is likely to be reinforced.\n\nDISTINCTION / CAUTION\nReinforcement increases the likelihood of behavior; punishment decreases it. They are not defined by whether a stimulus is pleasant or unpleasant alone.\n\nSOURCE BASIS\nSelf-Teaching Guide — Operant Conditioning; Ciccarelli & White 6e — Operant Conditioning.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Instrumental learning phenomena”.",
-                "List the key points associated with “Instrumental learning phenomena” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Instrumental learning phenomena”?"
+                "State the source-based core idea of “Instrumental learning phenomena”.",
+                "List the key source-supported points for “Instrumental learning phenomena”.",
+                "State the most important distinction or caution for “Instrumental learning phenomena”."
               ],
-              "application_question": "Source-based check: Given a new question about “Instrumental learning phenomena”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Instrumental learning phenomena → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Instrumental learning phenomena” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Consequences influence future response frequency",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8220,17 +8141,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Operant Conditioning; Ciccarelli & White 6e — Operant Conditioning."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Instrumental learning paradigms",
-              "content_notes": "CORE CONCEPT\nInstrumental learning paradigms is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instrumental learning paradigms\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Instrumental learning paradigms as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInstrumental learning paradigms → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nInstrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.\n\nKEY POINTS\n• Reinforcement strengthens behavior.\n• Shaping reinforces successive approximations to a target response.\n• Discriminative stimuli signal reinforcement contingencies.\n• Continuous and partial schedules create different patterns of behavior.\n\nSOURCE BASIS\nCiccarelli & White 6e — Operant Conditioning; Self-Teaching Guide — Instrumental Conditioning.\n\nCOMMON EXAM TRAP\nA paradigm describes the arrangement of responses and consequences; it is not simply another name for one reinforcement schedule.\n\nMEMORY CUE\nInstrumental learning paradigms → Reinforcement strengthens behavior • Shaping reinforces successive approximations to a target response • Discriminative stimuli signal reinforcement contingencies",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8240,14 +8158,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nInstrumental learning paradigms is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instrumental learning paradigms\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Instrumental learning paradigms as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nInstrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.\n\nKEY POINTS\n• Reinforcement strengthens behavior.\n• Shaping reinforces successive approximations to a target response.\n• Discriminative stimuli signal reinforcement contingencies.\n• Continuous and partial schedules create different patterns of behavior.\n\nDISTINCTION / CAUTION\nA paradigm describes the arrangement of responses and consequences; it is not simply another name for one reinforcement schedule.\n\nSOURCE BASIS\nCiccarelli & White 6e — Operant Conditioning; Self-Teaching Guide — Instrumental Conditioning.\n\nSTUDY RULE\nKeep the note tied to the uploaded source. Where the source is outline-level, do not add unsupported taxonomy or examples.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Instrumental learning paradigms”.",
-                "List the key points associated with “Instrumental learning paradigms” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Instrumental learning paradigms”?"
+                "State the source-based core idea of “Instrumental learning paradigms”.",
+                "List the key source-supported points for “Instrumental learning paradigms”.",
+                "State the most important distinction or caution for “Instrumental learning paradigms”."
               ],
-              "application_question": "Source-based check: Given a new question about “Instrumental learning paradigms”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Instrumental learning paradigms → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the perception/learning principle represented by “Instrumental learning paradigms” in a new question and justify the answer with the source-supported mechanism.",
+              "exam_takeaway": "Reinforcement strengthens behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8257,10 +8175,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Operant Conditioning; Self-Teaching Guide — Instrumental Conditioning."
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
@@ -18167,7 +18082,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 77
+        "enrichedMicrotopics": 103
       }
     }
   },
