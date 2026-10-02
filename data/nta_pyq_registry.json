@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "source": "NTA",
+  "subject": "Psychology",
+  "subject_code": "004",
+  "policy": "Only publicly accessible NTA assets are ingested. No question text is fabricated when the question paper is not publicly downloadable.",
+  "items": []
+}\n
