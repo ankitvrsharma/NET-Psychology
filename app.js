@@ -469,26 +469,46 @@ function practice(){
     const partOptions=unitParts(u).map(part=>`<label class="practice-unit-option practice-part-option"><input type="checkbox" data-scope="part" data-unit="${esc(u.id)}" value="${esc(part.id)}"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></label>`).join('');
     return unit+partOptions;
   }).join('');
-  const scopeHTML=`<div class="practice-unit-list" id="practiceUnitList"><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all" checked><span><b>All Units</b></span></label>${unitOptions}</div><p class="practice-unit-summary" id="practiceUnitSummary">All units selected</p>`;
-  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE</div><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose how many questions you want to attempt, what kind of questions you want to practise, how you want to take the test, and which units you want to cover.</p></div></div><div class="practice-toolbar"><label>Number of questions<select id="setSize"><option value="10">10 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="100">100 questions — Full Paper 2</option></select></label><label>Questions from<select id="practiceType"><option value="all">PYQs + Practice MCQs</option><option value="pyq">Previous Year Questions (PYQs)</option><option value="mcq">Practice MCQs</option></select></label><label>Practice mode<select id="practiceMode"><option value="timed">Timed Practice</option><option value="self-paced">Self-Paced Practice</option></select></label><div class="practice-unit-field"><span class="practice-field-label">Choose units</span>${scopeHTML}</div><button class="btn primary" id="startSet" type="button">START PRACTICE →</button></div></section><div id="practiceSet"><section class="panel practice-ready"><h2>Ready when you are.</h2><p>Your questions will appear here after you start. You’ll see one question at a time so you can focus on the test.</p></section></div>`;
+  const scopeHTML=`<div class="practice-unit-list" id="practiceUnitList"><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div><p class="practice-unit-summary" id="practiceUnitSummary">Select one or more units</p>`;
+  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE</div><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Set up your practice session, then follow the questions from start to finish with feedback along the way.</p></div></div><div class="practice-toolbar"><label>Number of questions<select id="setSize"><option value="" disabled selected>Choose</option><option value="10">10 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="100">100 questions — Full Paper 2</option></select></label><label>Questions from<select id="practiceType"><option value="" disabled selected>Choose</option><option value="all">PYQs + Practice MCQs</option><option value="pyq">Previous Year Questions (PYQs)</option><option value="mcq">Practice MCQs</option></select></label><label>Practice mode<select id="practiceMode"><option value="" disabled selected>Choose</option><option value="timed">Timed Practice</option><option value="self-paced">Self-Paced Practice</option></select></label><div class="practice-unit-field"><span class="practice-field-label">Choose units</span>${scopeHTML}</div></div><section class="practice-expect"><div class="eyebrow">WHAT TO EXPECT</div><p id="practiceExpectation">Choose your settings to see how your session will work.</p></section><div class="practice-start"><button class="btn primary" id="startSet" type="button" disabled>START PRACTICE →</button></div></section><div id="practiceSet"><section class="panel practice-ready"><h2>Ready when you are.</h2><p>Your questions will appear here after you start. You’ll see one question at a time so you can focus on the test.</p></section></div>`;
   const scopeInputs=()=>Array.from(document.querySelectorAll('#practiceUnitList input[type="checkbox"]'));
   const updateScopeSummary=()=>{
     const selected=scopeInputs().filter(x=>x.checked);
-    const allSelected=selected.some(x=>x.dataset.scope==='all')||selected.length===0;
+    const allSelected=selected.some(x=>x.dataset.scope==='all');
     const summary=$('#practiceUnitSummary');
     if(allSelected){summary.textContent='All units selected';return}
+    if(!selected.length){summary.textContent='Select one or more units';return}
     const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.value}`);
     const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.value}`);
     const labels=[...unitsSelected,...partsSelected];
     summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
   };
+  const syncPracticeSetup=()=>{
+    const size=$('#setSize').value;
+    const type=$('#practiceType').value;
+    const mode=$('#practiceMode').value;
+    const selected=scopeInputs().filter(x=>x.checked);
+    const ready=Boolean(size&&type&&mode&&selected.length);
+    const start=$('#startSet');
+    start.disabled=!ready;
+    const expectation=$('#practiceExpectation');
+    if(expectation){
+      expectation.textContent=mode==='timed'
+        ?'A countdown will run throughout the session, helping you keep a steady exam-like pace. You’ll answer one question at a time, see feedback after each response, and receive your final score when you finish.'
+        :mode==='self-paced'
+          ?'There is no countdown, so you can concentrate on understanding each question. You’ll answer one question at a time, see feedback after each response, and receive your final score when you finish.'
+          :'Choose a practice mode to see how your session will work.';
+    }
+  };
   scopeInputs().forEach(input=>input.addEventListener('change',()=>{
     if(input.dataset.scope==='all'&&input.checked)scopeInputs().forEach(x=>{if(x!==input)x.checked=false});
     if(input.dataset.scope!=='all'&&input.checked)$('#practiceUnitList input[data-scope="all"]').checked=false;
-    if(!scopeInputs().some(x=>x.checked))$('#practiceUnitList input[data-scope="all"]').checked=true;
     updateScopeSummary();
+    syncPracticeSetup();
   }));
+  ['#setSize','#practiceType','#practiceMode'].forEach(selector=>$(selector).addEventListener('change',syncPracticeSetup));
   updateScopeSummary();
+  syncPracticeSetup();
   let timerId=null;
   const stopTimer=()=>{if(timerId){clearInterval(timerId);timerId=null}};
   const formatTime=seconds=>{
@@ -496,6 +516,7 @@ function practice(){
     return h?`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`:`${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
   };
   function draw(){
+    if(!$('#setSize').value||!$('#practiceType').value||!$('#practiceMode').value||!scopeInputs().some(x=>x.checked))return;
     stopTimer();
     let qs=PRACTICE_QUESTIONS.slice();
     const type=$('#practiceType').value;
