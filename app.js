@@ -194,7 +194,7 @@ function learnPage(){
     </fieldset></div>
     <div class="start-actions"><button class="btn" type="button" id="startBack" hidden>← Back</button><button class="btn primary" type="button" id="startNext">Next →</button></div>
   </form>`;
-  const form=$('#startForm'),steps=$('.start-step'),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
+  const form=$('#startForm'),steps=$$('.start-step'),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
   const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
   form.addEventListener('change',e=>{
     if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
