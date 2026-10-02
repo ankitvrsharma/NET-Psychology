@@ -188,7 +188,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Pre-independence era",
-              "content_notes": "CORE CONCEPT\nPre-independence era is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Pre-independence era\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Pre-independence era as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPre-independence era → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nFormal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.\n\nKEY POINTS\n• Early formal education developed during the colonial period.\n• Calcutta University is presented as a major early institutional centre.\n• The early programme emphasized experimental psychology and laboratory research.\n• 1923, 1924 and 1925 mark important institutional milestones in the source account.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Academic Psychology in India; the source discusses Calcutta University, Experimental Psychology and the 1923–1925 milestones.\n\nCOMMON EXAM TRAP\nDo not confuse the early institutional history of psychology in India with the later indigenization movement; the latter is presented as a response to limitations of imported Western models.\n\nMEMORY CUE\nPre-independence era → Early formal education developed during the colonial period • Calcutta University is presented as a major early institutional centre • The early programme emphasized experimental psychology and laboratory research",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -198,14 +198,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPre-independence era is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Pre-independence era\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Pre-independence era as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nFormal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.\n\nKEY POINTS\n• Early formal education developed during the colonial period.\n• Calcutta University is presented as a major early institutional centre.\n• The early programme emphasized experimental psychology and laboratory research.\n• 1923, 1924 and 1925 mark important institutional milestones in the source account.\n\nDISTINCTION / CAUTION\nDo not confuse the early institutional history of psychology in India with the later indigenization movement; the latter is presented as a response to limitations of imported Western models.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Academic Psychology in India; the source discusses Calcutta University, Experimental Psychology and the 1923–1925 milestones.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Pre-independence era”.",
-                "List the key points associated with “Pre-independence era” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Pre-independence era”?"
+                "State the source-based core idea of “Pre-independence era” without looking at your notes.",
+                "List the main points the uploaded source gives for “Pre-independence era”.",
+                "What distinction or caution does the source require you to remember for “Pre-independence era”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Pre-independence era”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Pre-independence era → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Pre-independence era”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Early formal education developed during the colonial period",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -215,16 +215,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Academic Psychology in India; the source discusses Calcutta University, Experimental Psychology and the 1923–1925 milestones."
               ]
             },
             {
               "id": 2,
               "title": "Post-independence era",
-              "content_notes": "CORE CONCEPT\nPost-independence era is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Post-independence era\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Post-independence era as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPost-independence era → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.\n\nKEY POINTS\n• Post-1947 expansion occurred through universities, applied centres and professional training.\n• The UGC was established in 1956 and supported university psychology departments.\n• Clinical and applied psychology developed alongside academic psychology.\n• The source links institutional growth with continuing philosophical and Western methodological influences.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Post-independence section.\n\nCOMMON EXAM TRAP\nInstitutional expansion after independence is not the same thing as indigenization; the source treats the latter as a later response to concerns about cultural relevance.\n\nMEMORY CUE\nPost-independence era → Post-1947 expansion occurred through universities, applied centres and professional training • The UGC was established in 1956 and supported university psychology departments • Clinical and applied psychology developed alongside academic psychology",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -234,14 +231,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPost-independence era is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Post-independence era\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Post-independence era as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.\n\nKEY POINTS\n• Post-1947 expansion occurred through universities, applied centres and professional training.\n• The UGC was established in 1956 and supported university psychology departments.\n• Clinical and applied psychology developed alongside academic psychology.\n• The source links institutional growth with continuing philosophical and Western methodological influences.\n\nDISTINCTION / CAUTION\nInstitutional expansion after independence is not the same thing as indigenization; the source treats the latter as a later response to concerns about cultural relevance.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Post-independence section.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Post-independence era”.",
-                "List the key points associated with “Post-independence era” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Post-independence era”?"
+                "State the source-based core idea of “Post-independence era” without looking at your notes.",
+                "List the main points the uploaded source gives for “Post-independence era”.",
+                "What distinction or caution does the source require you to remember for “Post-independence era”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Post-independence era”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Post-independence era → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Post-independence era”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Post-1947 expansion occurred through universities, applied centres and professional training",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -251,16 +248,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Post-independence section."
               ]
             },
             {
               "id": 3,
               "title": "1970s social issues",
-              "content_notes": "CORE CONCEPT\n1970s social issues is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1970s social issues\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating 1970s social issues as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\n1970s social issues → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDuring the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.\n\nKEY POINTS\n• The period is associated with stronger concern for socially relevant problems.\n• Communal violence became an important research concern.\n• The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached.\n• The movement prepared the ground for later debates about indigenous psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, historical discussion of social issues and the identity crisis; Baron & Misra, Social Psychology of Prejudice: An Indian Perspective.\n\nCOMMON EXAM TRAP\nThe source's chronology distinguishes the 1970s move toward social issues from the 1980s focus on indigenization.\n\nMEMORY CUE\n1970s social issues → The period is associated with stronger concern for socially relevant problems • Communal violence became an important research concern • The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -270,14 +264,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\n1970s social issues is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1970s social issues\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating 1970s social issues as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDuring the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.\n\nKEY POINTS\n• The period is associated with stronger concern for socially relevant problems.\n• Communal violence became an important research concern.\n• The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached.\n• The movement prepared the ground for later debates about indigenous psychology.\n\nDISTINCTION / CAUTION\nThe source's chronology distinguishes the 1970s move toward social issues from the 1980s focus on indigenization.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, historical discussion of social issues and the identity crisis; Baron & Misra, Social Psychology of Prejudice: An Indian Perspective.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “1970s social issues”.",
-                "List the key points associated with “1970s social issues” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “1970s social issues”?"
+                "State the source-based core idea of “1970s social issues” without looking at your notes.",
+                "List the main points the uploaded source gives for “1970s social issues”.",
+                "What distinction or caution does the source require you to remember for “1970s social issues”?"
               ],
-              "application_question": "Source-based check: Given a new question about “1970s social issues”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "1970s social issues → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “1970s social issues”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "The period is associated with stronger concern for socially relevant problems",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -287,16 +281,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, historical discussion of social issues and the identity crisis; Baron & Misra, Social Psychology of Prejudice: An Indian Perspective."
               ]
             },
             {
               "id": 4,
               "title": "1980s indigenization",
-              "content_notes": "CORE CONCEPT\n1980s indigenization is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1980s indigenization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating 1980s indigenization as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\n1980s indigenization → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIndigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.\n\nKEY POINTS\n• Indigenization treats knowledge as rooted in a community's world-view and sociocultural history.\n• One facet is endogenous/culture-produced concepts and categories.\n• Another involves adapting or interacting with imported concepts, theories and methods.\n• The movement seeks greater relevance to Indian social and cultural realities.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, 1980s: Indigenization; examples include D. Sinha and J. B. P. Sinha.\n\nCOMMON EXAM TRAP\nIndigenization does not simply mean rejecting Western psychology; the source explicitly describes gradual processes of interaction between imported and indigenous knowledge.\n\nMEMORY CUE\n1980s indigenization → Indigenization treats knowledge as rooted in a community's world-view and sociocultural history • One facet is endogenous/culture-produced concepts and categories • Another involves adapting or interacting with imported concepts, theories and methods",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -306,14 +297,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\n1980s indigenization is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1980s indigenization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating 1980s indigenization as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIndigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.\n\nKEY POINTS\n• Indigenization treats knowledge as rooted in a community's world-view and sociocultural history.\n• One facet is endogenous/culture-produced concepts and categories.\n• Another involves adapting or interacting with imported concepts, theories and methods.\n• The movement seeks greater relevance to Indian social and cultural realities.\n\nDISTINCTION / CAUTION\nIndigenization does not simply mean rejecting Western psychology; the source explicitly describes gradual processes of interaction between imported and indigenous knowledge.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, 1980s: Indigenization; examples include D. Sinha and J. B. P. Sinha.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “1980s indigenization”.",
-                "List the key points associated with “1980s indigenization” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “1980s indigenization”?"
+                "State the source-based core idea of “1980s indigenization” without looking at your notes.",
+                "List the main points the uploaded source gives for “1980s indigenization”.",
+                "What distinction or caution does the source require you to remember for “1980s indigenization”?"
               ],
-              "application_question": "Source-based check: Given a new question about “1980s indigenization”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "1980s indigenization → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “1980s indigenization”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Indigenization treats knowledge as rooted in a community's world-view and sociocultural history",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -323,16 +314,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, 1980s: Indigenization; examples include D. Sinha and J. B. P. Sinha."
               ]
             },
             {
               "id": 5,
               "title": "1990s paradigmatic concerns",
-              "content_notes": "CORE CONCEPT\n1990s paradigmatic concerns is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1990s paradigmatic concerns\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating 1990s paradigmatic concerns as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\n1990s paradigmatic concerns → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.\n\nKEY POINTS\n• Paradigms involve assumptions about reality, knowledge and methods of inquiry.\n• The source contrasts positivism with several alternative approaches.\n• The Indian debate is connected to cultural relevance and disciplinary identity.\n• The issue is methodological as well as philosophical.\n\nSOURCE BASIS\nPowerWithin Psychology — knowledge paradigms and the Unit 1 discussion of Indian psychology's identity crisis.\n\nCOMMON EXAM TRAP\nA paradigm is broader than a research method: it includes assumptions about what can be known and how knowledge is produced.\n\nMEMORY CUE\n1990s paradigmatic concerns → Paradigms involve assumptions about reality, knowledge and methods of inquiry • The source contrasts positivism with several alternative approaches • The Indian debate is connected to cultural relevance and disciplinary identity",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -342,14 +330,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\n1990s paradigmatic concerns is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1990s paradigmatic concerns\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating 1990s paradigmatic concerns as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.\n\nKEY POINTS\n• Paradigms involve assumptions about reality, knowledge and methods of inquiry.\n• The source contrasts positivism with several alternative approaches.\n• The Indian debate is connected to cultural relevance and disciplinary identity.\n• The issue is methodological as well as philosophical.\n\nDISTINCTION / CAUTION\nA paradigm is broader than a research method: it includes assumptions about what can be known and how knowledge is produced.\n\nSOURCE BASIS\nPowerWithin Psychology — knowledge paradigms and the Unit 1 discussion of Indian psychology's identity crisis.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “1990s paradigmatic concerns”.",
-                "List the key points associated with “1990s paradigmatic concerns” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “1990s paradigmatic concerns”?"
+                "State the source-based core idea of “1990s paradigmatic concerns” without looking at your notes.",
+                "List the main points the uploaded source gives for “1990s paradigmatic concerns”.",
+                "What distinction or caution does the source require you to remember for “1990s paradigmatic concerns”?"
               ],
-              "application_question": "Source-based check: Given a new question about “1990s paradigmatic concerns”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "1990s paradigmatic concerns → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “1990s paradigmatic concerns”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Paradigms involve assumptions about reality, knowledge and methods of inquiry",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -359,16 +347,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — knowledge paradigms and the Unit 1 discussion of Indian psychology's identity crisis."
               ]
             },
             {
               "id": 6,
               "title": "1990s disciplinary identity crisis",
-              "content_notes": "CORE CONCEPT\n1990s disciplinary identity crisis is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1990s disciplinary identity crisis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating 1990s disciplinary identity crisis as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\n1990s disciplinary identity crisis → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.\n\nKEY POINTS\n• The crisis concerned relevance, identity and dependence on imported models.\n• Western theories were criticized when transferred without adequate cultural consideration.\n• Indigenous concepts and Indian social realities became more explicit research concerns.\n• The source describes uneven change rather than a complete replacement of Western psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Crisis of Identity; Nandy (1974), K. G. Agrawal (1973), D. Sinha (1977), J. B. P. Sinha (1993).\n\nCOMMON EXAM TRAP\nThe identity crisis is a historical critique of disciplinary direction; it should not be treated as a claim that all Indian psychological research was identical or uniformly Western.\n\nMEMORY CUE\n1990s disciplinary identity crisis → The crisis concerned relevance, identity and dependence on imported models • Western theories were criticized when transferred without adequate cultural consideration • Indigenous concepts and Indian social realities became more explicit research concerns",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -378,14 +363,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\n1990s disciplinary identity crisis is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 1990s disciplinary identity crisis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating 1990s disciplinary identity crisis as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.\n\nKEY POINTS\n• The crisis concerned relevance, identity and dependence on imported models.\n• Western theories were criticized when transferred without adequate cultural consideration.\n• Indigenous concepts and Indian social realities became more explicit research concerns.\n• The source describes uneven change rather than a complete replacement of Western psychology.\n\nDISTINCTION / CAUTION\nThe identity crisis is a historical critique of disciplinary direction; it should not be treated as a claim that all Indian psychological research was identical or uniformly Western.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Crisis of Identity; Nandy (1974), K. G. Agrawal (1973), D. Sinha (1977), J. B. P. Sinha (1993).\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “1990s disciplinary identity crisis”.",
-                "List the key points associated with “1990s disciplinary identity crisis” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “1990s disciplinary identity crisis”?"
+                "State the source-based core idea of “1990s disciplinary identity crisis” without looking at your notes.",
+                "List the main points the uploaded source gives for “1990s disciplinary identity crisis”.",
+                "What distinction or caution does the source require you to remember for “1990s disciplinary identity crisis”?"
               ],
-              "application_question": "Source-based check: Given a new question about “1990s disciplinary identity crisis”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "1990s disciplinary identity crisis → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “1990s disciplinary identity crisis”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "The crisis concerned relevance, identity and dependence on imported models",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -395,16 +380,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Crisis of Identity; Nandy (1974), K. G. Agrawal (1973), D. Sinha (1977), J. B. P. Sinha (1993)."
               ]
             },
             {
               "id": 7,
               "title": "2000s Indian psychology in academia",
-              "content_notes": "CORE CONCEPT\n2000s Indian psychology in academia is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 2000s Indian psychology in academia\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating 2000s Indian psychology in academia as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\n2000s Indian psychology in academia → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.\n\nKEY POINTS\n• The 2000s are presented as a period of greater academic articulation of Indian psychology.\n• The 2002 Pondicherry conference is a key source example.\n• The Manifesto on Indian Psychology is an important landmark in the source account.\n• Indian psychology is presented through multiple traditions rather than a single doctrine.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Significant Indian Paradigms on Psychological Knowledge and discussion of the 2002 Manifesto on Indian Psychology.\n\nCOMMON EXAM TRAP\nThe source describes emergence and academic articulation; it does not imply that Indian psychology replaced mainstream experimental psychology.\n\nMEMORY CUE\n2000s Indian psychology in academia → The 2000s are presented as a period of greater academic articulation of Indian psychology • The 2002 Pondicherry conference is a key source example • The Manifesto on Indian Psychology is an important landmark in the source account",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -414,14 +396,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\n2000s Indian psychology in academia is a focused concept within “Academic psychology in India: Pre-independence era; post-independence era; 1970s social issues; 1980s indigenization; 1990s paradigmatic concerns and disciplinary identity crisis; 2000s Indian psychology in academia”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of 2000s Indian psychology in academia\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating 2000s Indian psychology in academia as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.\n\nKEY POINTS\n• The 2000s are presented as a period of greater academic articulation of Indian psychology.\n• The 2002 Pondicherry conference is a key source example.\n• The Manifesto on Indian Psychology is an important landmark in the source account.\n• Indian psychology is presented through multiple traditions rather than a single doctrine.\n\nDISTINCTION / CAUTION\nThe source describes emergence and academic articulation; it does not imply that Indian psychology replaced mainstream experimental psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Significant Indian Paradigms on Psychological Knowledge and discussion of the 2002 Manifesto on Indian Psychology.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “2000s Indian psychology in academia”.",
-                "List the key points associated with “2000s Indian psychology in academia” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “2000s Indian psychology in academia”?"
+                "State the source-based core idea of “2000s Indian psychology in academia” without looking at your notes.",
+                "List the main points the uploaded source gives for “2000s Indian psychology in academia”.",
+                "What distinction or caution does the source require you to remember for “2000s Indian psychology in academia”?"
               ],
-              "application_question": "Source-based check: Given a new question about “2000s Indian psychology in academia”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "2000s Indian psychology in academia → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “2000s Indian psychology in academia”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "The 2000s are presented as a period of greater academic articulation of Indian psychology",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -431,10 +413,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Significant Indian Paradigms on Psychological Knowledge and discussion of the 2002 Manifesto on Indian Psychology."
               ]
             }
           ],
@@ -459,7 +438,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Colonial encounter",
-              "content_notes": "CORE CONCEPT\nColonial encounter is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Colonial encounter\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Colonial encounter as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nColonial encounter → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.\n\nKEY POINTS\n• Colonial education structures influenced the institutional entry of psychology.\n• Western experimental psychology became an important model for Indian academic psychology.\n• The encounter created a long-term question of cultural fit and disciplinary identity.\n• The later indigenization debate can be understood against this historical background.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Pre-independence history and identity-crisis discussion.\n\nCOMMON EXAM TRAP\nThe source treats the colonial encounter as a historical condition, not as a single psychological theory or method.\n\nMEMORY CUE\nColonial encounter → Colonial education structures influenced the institutional entry of psychology • Western experimental psychology became an important model for Indian academic psychology • The encounter created a long-term question of cultural fit and disciplinary identity",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -469,14 +448,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nColonial encounter is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Colonial encounter\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Colonial encounter as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.\n\nKEY POINTS\n• Colonial education structures influenced the institutional entry of psychology.\n• Western experimental psychology became an important model for Indian academic psychology.\n• The encounter created a long-term question of cultural fit and disciplinary identity.\n• The later indigenization debate can be understood against this historical background.\n\nDISTINCTION / CAUTION\nThe source treats the colonial encounter as a historical condition, not as a single psychological theory or method.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Pre-independence history and identity-crisis discussion.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Colonial encounter”.",
-                "List the key points associated with “Colonial encounter” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Colonial encounter”?"
+                "State the source-based core idea of “Colonial encounter” without looking at your notes.",
+                "List the main points the uploaded source gives for “Colonial encounter”.",
+                "What distinction or caution does the source require you to remember for “Colonial encounter”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Colonial encounter”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Colonial encounter → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Colonial encounter”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Colonial education structures influenced the institutional entry of psychology",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -486,16 +465,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Pre-independence history and identity-crisis discussion."
               ]
             },
             {
               "id": 2,
               "title": "Postcolonialism and psychology",
-              "content_notes": "CORE CONCEPT\nPostcolonialism and psychology is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Postcolonialism and psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Postcolonialism and psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPostcolonialism and psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIn the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nKEY POINTS\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections.\n\nCOMMON EXAM TRAP\nThe uploaded source provides a broad historical framing rather than a separate, fully developed postcolonial theory of psychology.\n\nMEMORY CUE\nPostcolonialism and psychology → Postcolonial analysis raises questions about the cultural location of psychological knowledge • Imported concepts may require cultural interpretation rather than mechanical transfer • Indigenization is one response to the problem of cultural fit",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -505,14 +481,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nPostcolonialism and psychology is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Postcolonialism and psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Postcolonialism and psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIn the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nKEY POINTS\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n\nDISTINCTION / CAUTION\nThe uploaded source provides a broad historical framing rather than a separate, fully developed postcolonial theory of psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Postcolonialism and psychology”.",
-                "List the key points associated with “Postcolonialism and psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Postcolonialism and psychology”?"
+                "State the source-based core idea of “Postcolonialism and psychology” without looking at your notes.",
+                "List the main points the uploaded source gives for “Postcolonialism and psychology”.",
+                "What distinction or caution does the source require you to remember for “Postcolonialism and psychology”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Postcolonialism and psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Postcolonialism and psychology → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Postcolonialism and psychology”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Postcolonial analysis raises questions about the cultural location of psychological knowledge",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -522,16 +498,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections."
               ]
             },
             {
               "id": 3,
               "title": "Lack of distinct disciplinary identity",
-              "content_notes": "CORE CONCEPT\nLack of distinct disciplinary identity is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lack of distinct disciplinary identity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Lack of distinct disciplinary identity as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLack of distinct disciplinary identity → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.\n\nKEY POINTS\n• Psychology inherited a philosophical background but sought scientific status.\n• Western methods became influential in research and training.\n• Cultural relevance became a central identity question.\n• Indigenization was proposed as one route toward a more distinctive psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, post-independence and crisis-of-identity discussion.\n\nCOMMON EXAM TRAP\nA lack of distinct identity does not mean that no psychological institutions or research existed; the source is discussing the character and direction of the discipline.\n\nMEMORY CUE\nLack of distinct disciplinary identity → Psychology inherited a philosophical background but sought scientific status • Western methods became influential in research and training • Cultural relevance became a central identity question",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -541,14 +514,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nLack of distinct disciplinary identity is a focused concept within “Issues: The colonial encounter; Post colonialism and psychology; Lack of distinct disciplinary identity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lack of distinct disciplinary identity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Lack of distinct disciplinary identity as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.\n\nKEY POINTS\n• Psychology inherited a philosophical background but sought scientific status.\n• Western methods became influential in research and training.\n• Cultural relevance became a central identity question.\n• Indigenization was proposed as one route toward a more distinctive psychology.\n\nDISTINCTION / CAUTION\nA lack of distinct identity does not mean that no psychological institutions or research existed; the source is discussing the character and direction of the discipline.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, post-independence and crisis-of-identity discussion.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Lack of distinct disciplinary identity”.",
-                "List the key points associated with “Lack of distinct disciplinary identity” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Lack of distinct disciplinary identity”?"
+                "State the source-based core idea of “Lack of distinct disciplinary identity” without looking at your notes.",
+                "List the main points the uploaded source gives for “Lack of distinct disciplinary identity”.",
+                "What distinction or caution does the source require you to remember for “Lack of distinct disciplinary identity”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Lack of distinct disciplinary identity”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Lack of distinct disciplinary identity → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Lack of distinct disciplinary identity”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Psychology inherited a philosophical background but sought scientific status",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -558,10 +531,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, post-independence and crisis-of-identity discussion."
               ]
             }
           ],
@@ -586,7 +556,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Greek heritage",
-              "content_notes": "CORE CONCEPT\nGreek heritage is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Greek heritage\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Greek heritage as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGreek heritage → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nKEY POINTS\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective.\n\nCOMMON EXAM TRAP\nThese are philosophical foundations rather than modern psychological schools; do not equate Greek philosophy directly with experimental psychology.\n\nMEMORY CUE\nGreek heritage → Metaphysics asks about the nature of reality • Epistemology asks how knowledge of reality is possible • Materialism and idealism provide contrasting accounts of reality",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -596,14 +566,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nGreek heritage is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Greek heritage\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Greek heritage as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nKEY POINTS\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n\nDISTINCTION / CAUTION\nThese are philosophical foundations rather than modern psychological schools; do not equate Greek philosophy directly with experimental psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Greek heritage”.",
-                "List the key points associated with “Greek heritage” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Greek heritage”?"
+                "State the source-based core idea of “Greek heritage” without looking at your notes.",
+                "List the main points the uploaded source gives for “Greek heritage”.",
+                "What distinction or caution does the source require you to remember for “Greek heritage”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Greek heritage”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Greek heritage → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Greek heritage”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Metaphysics asks about the nature of reality",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -613,16 +583,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective."
               ]
             },
             {
               "id": 2,
               "title": "Medieval period",
-              "content_notes": "CORE CONCEPT\nMedieval period is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Medieval period\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Medieval period as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMedieval period → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nKEY POINTS\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic.\n\nCOMMON EXAM TRAP\nDo not import a generic history-of-medieval-psychology narrative into this node when it is not supported by the uploaded material.\n\nMEMORY CUE\nMedieval period → It is a historical period in the source's Western intellectual sequence • It follows the Greek heritage in the syllabus structure • The supplied material gives limited detailed coverage here",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -632,14 +599,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nMedieval period is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Medieval period\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Medieval period as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nKEY POINTS\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n\nDISTINCTION / CAUTION\nDo not import a generic history-of-medieval-psychology narrative into this node when it is not supported by the uploaded material.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Medieval period”.",
-                "List the key points associated with “Medieval period” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Medieval period”?"
+                "State the source-based core idea of “Medieval period” without looking at your notes.",
+                "List the main points the uploaded source gives for “Medieval period”.",
+                "What distinction or caution does the source require you to remember for “Medieval period”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Medieval period”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Medieval period → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Medieval period”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "It is a historical period in the source's Western intellectual sequence",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -649,16 +616,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic."
               ]
             },
             {
               "id": 3,
               "title": "Modern period",
-              "content_notes": "CORE CONCEPT\nModern period is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Modern period\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Modern period as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nModern period → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.\n\nKEY POINTS\n• Modern psychology is presented as developing through several distinct intellectual paths.\n• Major schools should be learned as separate traditions rather than collapsed into one model.\n• The source identifies Wundt, Freud, James and Dilthey as four founding paths.\n• The historical sequence leads toward debates about the experimental-analytical paradigm.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1 Western Psychology outline and four founding paths.\n\nCOMMON EXAM TRAP\nThe modern period is a historical umbrella; Structuralism, Functionalism and the other schools are distinct traditions within the later development.\n\nMEMORY CUE\nModern period → Modern psychology is presented as developing through several distinct intellectual paths • Major schools should be learned as separate traditions rather than collapsed into one model • The source identifies Wundt, Freud, James and Dilthey as four founding paths",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -668,14 +632,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nModern period is a focused concept within “Western psychology: Greek heritage, medieval period and modern period”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Modern period\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Modern period as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.\n\nKEY POINTS\n• Modern psychology is presented as developing through several distinct intellectual paths.\n• Major schools should be learned as separate traditions rather than collapsed into one model.\n• The source identifies Wundt, Freud, James and Dilthey as four founding paths.\n• The historical sequence leads toward debates about the experimental-analytical paradigm.\n\nDISTINCTION / CAUTION\nThe modern period is a historical umbrella; Structuralism, Functionalism and the other schools are distinct traditions within the later development.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1 Western Psychology outline and four founding paths.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Modern period”.",
-                "List the key points associated with “Modern period” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Modern period”?"
+                "State the source-based core idea of “Modern period” without looking at your notes.",
+                "List the main points the uploaded source gives for “Modern period”.",
+                "What distinction or caution does the source require you to remember for “Modern period”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Modern period”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Modern period → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Modern period”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Modern psychology is presented as developing through several distinct intellectual paths",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -685,10 +649,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1 Western Psychology outline and four founding paths."
               ]
             }
           ],
@@ -1219,7 +1180,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Experimental-analytical paradigm",
-              "content_notes": "CORE CONCEPT\nExperimental-analytical paradigm is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Experimental-analytical paradigm\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Experimental-analytical paradigm as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nExperimental-analytical paradigm → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.\n\nKEY POINTS\n• The paradigm emphasizes experimental and analytic inquiry.\n• Positivist assumptions include realism and an objectivist approach to knowledge.\n• Variables, measurement and controlled methods are central to the model.\n• The later critique focuses on context, meaning and the limits of purely objectivist assumptions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, knowledge paradigms and disenchantment with positivism.\n\nCOMMON EXAM TRAP\nDo not treat 'experimental-analytical' as synonymous with all experimental research; the source is discussing a broader paradigm of knowledge.\n\nMEMORY CUE\nExperimental-analytical paradigm → The paradigm emphasizes experimental and analytic inquiry • Positivist assumptions include realism and an objectivist approach to knowledge • Variables, measurement and controlled methods are central to the model",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1229,14 +1190,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nExperimental-analytical paradigm is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Experimental-analytical paradigm\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Experimental-analytical paradigm as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.\n\nKEY POINTS\n• The paradigm emphasizes experimental and analytic inquiry.\n• Positivist assumptions include realism and an objectivist approach to knowledge.\n• Variables, measurement and controlled methods are central to the model.\n• The later critique focuses on context, meaning and the limits of purely objectivist assumptions.\n\nDISTINCTION / CAUTION\nDo not treat 'experimental-analytical' as synonymous with all experimental research; the source is discussing a broader paradigm of knowledge.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, knowledge paradigms and disenchantment with positivism.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Experimental-analytical paradigm”.",
-                "List the key points associated with “Experimental-analytical paradigm” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Experimental-analytical paradigm”?"
+                "State the source-based core idea of “Experimental-analytical paradigm” without looking at your notes.",
+                "List the main points the uploaded source gives for “Experimental-analytical paradigm”.",
+                "What distinction or caution does the source require you to remember for “Experimental-analytical paradigm”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Experimental-analytical paradigm”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Experimental-analytical paradigm → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Experimental-analytical paradigm”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "The paradigm emphasizes experimental and analytic inquiry",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1246,16 +1207,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, knowledge paradigms and disenchantment with positivism."
               ]
             },
             {
               "id": 2,
               "title": "Logical empiricism",
-              "content_notes": "CORE CONCEPT\nLogical empiricism is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Logical empiricism\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Logical empiricism as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLogical empiricism → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIn the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.\n\nKEY POINTS\n• Ontology: realism is identified in the source's positivist formulation.\n• Epistemology: dualist and objectivist assumptions are emphasized.\n• Methodology: experimental and manipulative procedures are central.\n• Critiques focus on meaning, context, representation and the limits of generalization.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Logical Empiricism, Positivism and Disenchantment with Positivism.\n\nCOMMON EXAM TRAP\nLogical empiricism is a paradigm-level position in this material, not simply a synonym for using statistics or conducting an experiment.\n\nMEMORY CUE\nLogical empiricism → Ontology: realism is identified in the source's positivist formulation • Epistemology: dualist and objectivist assumptions are emphasized • Methodology: experimental and manipulative procedures are central",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1265,14 +1223,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nLogical empiricism is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Logical empiricism\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Logical empiricism as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIn the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.\n\nKEY POINTS\n• Ontology: realism is identified in the source's positivist formulation.\n• Epistemology: dualist and objectivist assumptions are emphasized.\n• Methodology: experimental and manipulative procedures are central.\n• Critiques focus on meaning, context, representation and the limits of generalization.\n\nDISTINCTION / CAUTION\nLogical empiricism is a paradigm-level position in this material, not simply a synonym for using statistics or conducting an experiment.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Logical Empiricism, Positivism and Disenchantment with Positivism.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Logical empiricism”.",
-                "List the key points associated with “Logical empiricism” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Logical empiricism”?"
+                "State the source-based core idea of “Logical empiricism” without looking at your notes.",
+                "List the main points the uploaded source gives for “Logical empiricism”.",
+                "What distinction or caution does the source require you to remember for “Logical empiricism”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Logical empiricism”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Logical empiricism → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Logical empiricism”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Ontology: realism is identified in the source's positivist formulation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1282,16 +1240,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Logical Empiricism, Positivism and Disenchantment with Positivism."
               ]
             },
             {
               "id": 3,
               "title": "Crisis in psychology",
-              "content_notes": "CORE CONCEPT\nCrisis in psychology is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Crisis in psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Crisis in psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCrisis in psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.\n\nKEY POINTS\n• Strict paradigm adherence can narrow the kinds of questions psychology asks.\n• The source highlights meaning, context and representation as neglected concerns.\n• The etic–emic issue challenges simple transfer of general findings to culturally specific cases.\n• Alternative paradigms broaden the conception of psychological knowledge.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, crisis in psychology, post-positivism and critical perspective.\n\nCOMMON EXAM TRAP\nThe source describes a crisis of assumptions and representation, not the disappearance of experimental psychology.\n\nMEMORY CUE\nCrisis in psychology → Strict paradigm adherence can narrow the kinds of questions psychology asks • The source highlights meaning, context and representation as neglected concerns • The etic–emic issue challenges simple transfer of general findings to culturally specific cases",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1301,14 +1256,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nCrisis in psychology is a focused concept within “Crisis in psychology due to strict adherence to experimental-analytical paradigm (logical empiricism)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Crisis in psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Crisis in psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.\n\nKEY POINTS\n• Strict paradigm adherence can narrow the kinds of questions psychology asks.\n• The source highlights meaning, context and representation as neglected concerns.\n• The etic–emic issue challenges simple transfer of general findings to culturally specific cases.\n• Alternative paradigms broaden the conception of psychological knowledge.\n\nDISTINCTION / CAUTION\nThe source describes a crisis of assumptions and representation, not the disappearance of experimental psychology.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, crisis in psychology, post-positivism and critical perspective.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Crisis in psychology”.",
-                "List the key points associated with “Crisis in psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Crisis in psychology”?"
+                "State the source-based core idea of “Crisis in psychology” without looking at your notes.",
+                "List the main points the uploaded source gives for “Crisis in psychology”.",
+                "What distinction or caution does the source require you to remember for “Crisis in psychology”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Crisis in psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Crisis in psychology → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Crisis in psychology”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Strict paradigm adherence can narrow the kinds of questions psychology asks",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1318,10 +1273,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, crisis in psychology, post-positivism and critical perspective."
               ]
             }
           ],
@@ -1346,7 +1298,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Indic influences on modern psychology",
-              "content_notes": "CORE CONCEPT\nIndic influences on modern psychology is a focused concept within “Indic influences on modern psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Indic influences on modern psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Indic influences on modern psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nIndic influences on modern psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.\n\nKEY POINTS\n• Consciousness is given a central place in the source's account of Indian psychology.\n• The traditions focus strongly on inner experience and transformation.\n• Yoga and meditation are described as methods for psychological/spiritual development.\n• Indian approaches are presented as distinct paradigms rather than a single homogeneous system.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.\n\nCOMMON EXAM TRAP\nIndic influence should not be reduced to a single technique such as meditation; the source presents a wider set of philosophical and psychological assumptions.\n\nMEMORY CUE\nIndic influences on modern psychology → Consciousness is given a central place in the source's account of Indian psychology • The traditions focus strongly on inner experience and transformation • Yoga and meditation are described as methods for psychological/spiritual development",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1356,14 +1308,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nIndic influences on modern psychology is a focused concept within “Indic influences on modern psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Indic influences on modern psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Indic influences on modern psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.\n\nKEY POINTS\n• Consciousness is given a central place in the source's account of Indian psychology.\n• The traditions focus strongly on inner experience and transformation.\n• Yoga and meditation are described as methods for psychological/spiritual development.\n• Indian approaches are presented as distinct paradigms rather than a single homogeneous system.\n\nDISTINCTION / CAUTION\nIndic influence should not be reduced to a single technique such as meditation; the source presents a wider set of philosophical and psychological assumptions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Indic influences on modern psychology”.",
-                "List the key points associated with “Indic influences on modern psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Indic influences on modern psychology”?"
+                "State the source-based core idea of “Indic influences on modern psychology” without looking at your notes.",
+                "List the main points the uploaded source gives for “Indic influences on modern psychology”.",
+                "What distinction or caution does the source require you to remember for “Indic influences on modern psychology”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Indic influences on modern psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Indic influences on modern psychology → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Indic influences on modern psychology”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Consciousness is given a central place in the source's account of Indian psychology",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1373,10 +1325,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms."
               ]
             }
           ],
@@ -1600,7 +1549,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Critical perspective",
-              "content_notes": "CORE CONCEPT\nCritical perspective is a focused concept within “Paradigms of Western Psychology: Positivism, Post-Positivism, Critical perspective, Social Constructionism, Existential Phenomenology, and Co-operative Enquiry”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Critical perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Critical perspective as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCritical perspective → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.\n\nKEY POINTS\n• Knowledge is treated as value-mediated rather than completely value-free.\n• Social and historical forces are part of the account of reality.\n• Critical inquiry examines assumptions and conventional structures.\n• The perspective connects understanding with effective action.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Critical Perspective.\n\nCOMMON EXAM TRAP\nThe critical perspective differs from positivism in its treatment of values, social context and the status of the researcher and participant.\n\nMEMORY CUE\nCritical perspective → Knowledge is treated as value-mediated rather than completely value-free • Social and historical forces are part of the account of reality • Critical inquiry examines assumptions and conventional structures",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1610,14 +1559,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCritical perspective is a focused concept within “Paradigms of Western Psychology: Positivism, Post-Positivism, Critical perspective, Social Constructionism, Existential Phenomenology, and Co-operative Enquiry”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Critical perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Critical perspective as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.\n\nKEY POINTS\n• Knowledge is treated as value-mediated rather than completely value-free.\n• Social and historical forces are part of the account of reality.\n• Critical inquiry examines assumptions and conventional structures.\n• The perspective connects understanding with effective action.\n\nDISTINCTION / CAUTION\nThe critical perspective differs from positivism in its treatment of values, social context and the status of the researcher and participant.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Critical Perspective.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Critical perspective”.",
-                "List the key points associated with “Critical perspective” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Critical perspective”?"
+                "State the source-based core idea of “Critical perspective” without looking at your notes.",
+                "List the main points the uploaded source gives for “Critical perspective”.",
+                "What distinction or caution does the source require you to remember for “Critical perspective”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Critical perspective”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Critical perspective → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Critical perspective”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Knowledge is treated as value-mediated rather than completely value-free",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1627,10 +1576,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Critical Perspective."
               ]
             },
             {
@@ -1763,7 +1709,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Paradigmatic controversies",
-              "content_notes": "CORE CONCEPT\nParadigmatic controversies is a focused concept within “Paradigmatic Controversies”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Paradigmatic controversies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Paradigmatic controversies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nParadigmatic controversies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nParadigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.\n\nKEY POINTS\n• Ontology concerns assumptions about reality and what exists.\n• Epistemology concerns assumptions about knowledge and knowing.\n• Methodology concerns how inquiry should be conducted.\n• Different paradigms can generate different interpretations of the same psychological phenomenon.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Essential Aspects of Knowledge Paradigms and Paradigmatic Controversies.\n\nCOMMON EXAM TRAP\nA paradigm is broader than a method; two researchers can use similar techniques while working from different philosophical assumptions.\n\nMEMORY CUE\nParadigmatic controversies → Ontology concerns assumptions about reality and what exists • Epistemology concerns assumptions about knowledge and knowing • Methodology concerns how inquiry should be conducted",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1773,14 +1719,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nParadigmatic controversies is a focused concept within “Paradigmatic Controversies”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Paradigmatic controversies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Paradigmatic controversies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nParadigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.\n\nKEY POINTS\n• Ontology concerns assumptions about reality and what exists.\n• Epistemology concerns assumptions about knowledge and knowing.\n• Methodology concerns how inquiry should be conducted.\n• Different paradigms can generate different interpretations of the same psychological phenomenon.\n\nDISTINCTION / CAUTION\nA paradigm is broader than a method; two researchers can use similar techniques while working from different philosophical assumptions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Essential Aspects of Knowledge Paradigms and Paradigmatic Controversies.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Paradigmatic controversies”.",
-                "List the key points associated with “Paradigmatic controversies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Paradigmatic controversies”?"
+                "State the source-based core idea of “Paradigmatic controversies” without looking at your notes.",
+                "List the main points the uploaded source gives for “Paradigmatic controversies”.",
+                "What distinction or caution does the source require you to remember for “Paradigmatic controversies”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Paradigmatic controversies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Paradigmatic controversies → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Paradigmatic controversies”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Ontology concerns assumptions about reality and what exists",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1790,10 +1736,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Essential Aspects of Knowledge Paradigms and Paradigmatic Controversies."
               ]
             }
           ],
@@ -1818,7 +1761,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Yoga",
-              "content_notes": "CORE CONCEPT\nYoga is a focused concept within “Significant Indian paradigms on psychological knowledge: Yoga, Bhagavad Gita, Buddhism, Sufism, and Integral Yoga”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Yoga\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Yoga as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nYoga → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nYoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.\n\nKEY POINTS\n• Yoga is treated as a knowledge tradition, not merely a physical exercise system.\n• Consciousness and the inner life are central concerns.\n• Yoga and meditation are presented as methods of psychological transformation.\n• The source connects these practices with self-realization and liberation from suffering.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.\n\nCOMMON EXAM TRAP\nFor this NET node, do not reduce Yoga to postures; the source's psychological framing emphasizes consciousness, discipline and transformation.\n\nMEMORY CUE\nYoga → Yoga is treated as a knowledge tradition, not merely a physical exercise system • Consciousness and the inner life are central concerns • Yoga and meditation are presented as methods of psychological transformation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1828,14 +1771,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nYoga is a focused concept within “Significant Indian paradigms on psychological knowledge: Yoga, Bhagavad Gita, Buddhism, Sufism, and Integral Yoga”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Yoga\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Yoga as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nYoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.\n\nKEY POINTS\n• Yoga is treated as a knowledge tradition, not merely a physical exercise system.\n• Consciousness and the inner life are central concerns.\n• Yoga and meditation are presented as methods of psychological transformation.\n• The source connects these practices with self-realization and liberation from suffering.\n\nDISTINCTION / CAUTION\nFor this NET node, do not reduce Yoga to postures; the source's psychological framing emphasizes consciousness, discipline and transformation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.\n\nSTUDY RULE\nUse the source terminology and chronology. Do not add theorists, studies or examples not supported by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Yoga”.",
-                "List the key points associated with “Yoga” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Yoga”?"
+                "State the source-based core idea of “Yoga” without looking at your notes.",
+                "List the main points the uploaded source gives for “Yoga”.",
+                "What distinction or caution does the source require you to remember for “Yoga”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Yoga”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Yoga → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a situation or statement related to “Yoga”. Identify the concept being tested and justify the answer using the terminology and relationships established in the uploaded source material.",
+              "exam_takeaway": "Yoga is treated as a knowledge tradition, not merely a physical exercise system",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -1845,10 +1788,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms."
               ]
             },
             {
@@ -18357,7 +18297,12 @@ window.NETPSY_DATA = {
       "status": "source-grounded",
       "changedMicrotopics": 440,
       "genericPlaceholdersFlagged": 285,
-      "rule": "No unsupported mechanism, example, theorist, study or application is added. Existing source-derived core/key-point content is preserved; generic AI transfer text is removed."
+      "rule": "No unsupported mechanism, example, theorist, study or application is added. Existing source-derived core/key-point content is preserved; generic AI transfer text is removed.",
+      "phase2": {
+        "version": "2026-10-02-source-enrichment-v1",
+        "status": "in-progress",
+        "enrichedMicrotopics": 20
+      }
     }
   },
   "learning_design": {
