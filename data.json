@@ -2142,7 +2142,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Trace how psychology developed through Indian and Western thought, major schools, knowledge paradigms, and debates about the discipline’s identity."
+      "description": "Trace the emergence of psychology through Indian and Western thought, major schools, knowledge paradigms, and debates about what psychology should study. Build a clear historical and conceptual map so you can distinguish traditions, paradigms, and the development of psychology as a discipline."
     },
     {
       "id": 2,
@@ -4609,7 +4609,7 @@
           "part_id": "2A"
         }
       ],
-      "description": "Learn how psychologists frame questions, choose methods, analyse data, and judge evidence through research designs and statistics.",
+      "description": "Learn how psychological research is planned, conducted, analysed, and interpreted. Build confidence with research designs, variables, sampling, measurement, data analysis, and statistics so you can connect a research question with the evidence needed to answer it.",
       "parts": [
         {
           "id": "2A",
@@ -5577,7 +5577,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Build fluency in psychological testing—from construction and standardisation to major assessment areas and real-world applications."
+      "description": "Build a working understanding of psychological testing, from test construction and standardisation to reliability, validity, norms, and interpretation. Connect these foundations with major areas of assessment and the practical use of psychological tests."
     },
     {
       "id": 4,
@@ -6885,7 +6885,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Understand how the nervous, sensory, endocrine, and genetic systems shape behaviour, motivation, emotion, and cognition."
+      "description": "Understand the biological systems that contribute to behaviour, including the nervous system, brain, sensory systems, endocrine processes, and genetic influences. Use these foundations to connect biological mechanisms with cognition, motivation, emotion, and behaviour."
     },
     {
       "id": 5,
@@ -9275,7 +9275,7 @@
           "part_id": "5B"
         }
       ],
-      "description": "Learn how attention, perception, learning, memory, and forgetting work, and distinguish the major processes and theories.",
+      "description": "Understand how attention and perception organise information and how learning changes behaviour and knowledge. Then connect memory and forgetting to their major processes, models, theories, and explanations so you can distinguish where and why information is gained, retained, or lost.",
       "parts": [
         {
           "id": "5A",
@@ -10515,7 +10515,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Connect thought, concepts, language, problem solving, decision making, intelligence, and creativity into one usable framework."
+      "description": "Connect thinking, concepts, language, problem solving, decision making, intelligence, and creativity as related psychological processes. Build clear distinctions between major theories and approaches while learning how these processes operate in everyday and exam-based situations."
     },
     {
       "id": 7,
@@ -12797,7 +12797,7 @@
           "part_id": "7B"
         }
       ],
-      "description": "Understand how personality, motivation, emotion, stress, and coping shape behaviour and adaptation across major theories.",
+      "description": "Examine how personality, motivation, emotion, stress, and coping influence behaviour and adaptation. Compare the major theories and processes, and connect them to how people respond to goals, emotions, demands, and challenging situations.",
       "parts": [
         {
           "id": "7A",
@@ -14383,7 +14383,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Learn how people perceive others, form attitudes, behave in groups, respond to social influence, and navigate intergroup relations."
+      "description": "Understand how people perceive, interpret, and respond to one another in social contexts. Study attitudes, social influence, groups, interpersonal processes, and intergroup relations as connected parts of social behaviour."
     },
     {
       "id": 9,
@@ -16164,7 +16164,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Understand development across the lifespan and build foundations in psychopathology, psychotherapy, education, guidance, and counselling."
+      "description": "Follow psychological development across the lifespan and connect developmental understanding with major areas of intervention. Build foundations in psychopathology, psychotherapy, education, guidance, and counselling while keeping the developmental context in view."
     },
     {
       "id": 10,
@@ -17530,7 +17530,7 @@
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Explore contemporary psychological issues involving diversity, inequality, wellbeing, health, peace, and digital life."
+      "description": "Explore contemporary psychological issues that extend psychology into changing social, health, cultural, and digital contexts. Examine themes such as diversity, inequality, wellbeing, health, peace, and digital life through their psychological implications."
     }
   ],
   "content_sources": [
