@@ -1191,6 +1191,18 @@ body[data-page="home"] .hero-cta b{display:none}
   .revision-ready strong{font-size:36px}
 }
 
+/* Unit page — refined header, breadcrumb, hero and navigation spacing */
+.topbar + .shell{padding-top:8px}
+.breadcrumbs{margin-top:0;margin-bottom:10px}
+.unit-hero{padding-top:4px}
+.unit-navigation a,.unit-navigation .disabled{font-size:14px}
+@media(max-width:620px){
+  .topbar + .shell{padding-top:6px}
+  .breadcrumbs{margin-bottom:8px}
+  .unit-hero{padding-top:2px}
+  .unit-navigation a,.unit-navigation .disabled{font-size:13px}
+}
+
 /* Unit page — learner-first topic progress */
 .unit-hero{padding-bottom:24px}
 .unit-hero .unit-progress{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px}
