@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v20-homefix5';
+const CACHE='netpsych-shell-v21-homefix6';
 const SHELL=[
   './',
   './index.html',
