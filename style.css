@@ -1126,3 +1126,9 @@ body[data-page="home"] .hero-cta b{display:none}
 @media(max-width:820px){
   .practice-unit-list{grid-template-columns:1fr}
 }
+
+/* Practice hero spacing refinement */
+.practice-hero{padding-top:8px}
+@media(max-width:620px){
+  .practice-hero{padding-top:4px}
+}
