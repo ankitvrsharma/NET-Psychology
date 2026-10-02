@@ -606,7 +606,7 @@ if(menuButton){
     menuButton.setAttribute('aria-expanded',String(open));
     menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');
   });
-  $('#site-navigation a').forEach(link=>link.addEventListener('click',closeMenu));
+  $$('#site-navigation a').forEach(link=>link.addEventListener('click',closeMenu));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 }
 function render(){
