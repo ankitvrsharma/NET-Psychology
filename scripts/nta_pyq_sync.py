@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 
 BASE="https://ugcnet.nta.ac.in/"
 PAGES=[
+    "",
     "AnswerKey_june2025.html",
     "AnswerKey.html",
     "archive.html",
