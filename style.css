@@ -776,3 +776,43 @@ body[data-page="home"] .quick-flow>i{align-self:center;color:var(--blue);font-st
 
 
 
+
+
+/* Homepage + learner-flow responsive hardening */
+@media (min-width:721px) and (max-width:1100px) and (orientation:landscape){
+  body[data-page="home"] .shell{padding:18px 28px 58px}
+  body[data-page="home"] .hero{padding:34px 0 30px}
+  body[data-page="home"] .hero h1{max-width:820px;font-size:clamp(48px,5.6vw,62px);line-height:1.02;letter-spacing:-.04em}
+  body[data-page="home"] .hero p{max-width:700px;font-size:16px;margin-bottom:22px}
+  body[data-page="home"] .hero-cta{min-height:72px;width:min(100%,620px);padding:18px 24px;border-radius:16px}
+  body[data-page="home"] .net-countdown{margin-bottom:20px}
+  body[data-page="home"] .net-countdown-copy{padding:20px 24px}
+  body[data-page="home"] .syllabus-coverage{padding:20px 22px}
+  body[data-page="home"] .quick-learn-card{min-height:190px;padding:19px 22px 20px}
+  body[data-page="home"] .quick-learn-body h3{font-size:24px}
+  body[data-page="home"] .quick-learn-body p{font-size:14px}
+}
+@media (min-width:721px) and (max-width:900px){
+  body[data-page="home"] .hero h1{max-width:760px}
+  body[data-page="home"] .learning-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:901px) and (max-width:1180px){
+  body[data-page="home"] .hero h1{max-width:850px}
+}
+.start-progress{display:grid;gap:7px;margin:0 0 4px}
+.start-progress span{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.06em}
+.start-progress i{display:block;height:6px;border-radius:99px;background:#e8edf5;overflow:hidden}
+.start-progress i b{display:block;height:100%;background:var(--blue);border-radius:inherit;transition:width .2s ease}
+.start-step{display:none}.start-step.active{display:block}
+.start-help{margin:5px 0 8px;color:var(--muted);font-size:12px}
+.start-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.start-profile{max-width:760px;margin:22px 0;padding:28px}
+.start-profile h2{margin:5px 0 8px;color:var(--navy)}
+.start-profile p{color:var(--muted);max-width:650px}
+.start-profile-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+@media(max-width:620px){
+  .start-actions .btn{flex:1;min-width:130px}
+  .start-profile{padding:21px}
+  .start-profile-actions{display:grid}
+  .start-profile-actions .btn{width:100%}
+}
