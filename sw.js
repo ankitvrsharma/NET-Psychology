@@ -1,9 +1,10 @@
-const CACHE='netpsych-shell-v26-robust1';
+const CACHE='netpsych-shell-v27-practice-session1';
 const SHELL=[
   './',
   './index.html',
   './learn.html',
   './practice.html',
+  './practice-session.html',
   './microtopic.html',
   './topic.html',
   './unit.html',
