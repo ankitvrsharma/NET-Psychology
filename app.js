@@ -299,7 +299,7 @@ function topicPage(){
     }).join('');
     const filters=['all','new','learning','mastered','due'].map(f=>`<button class="topic-filter ${filter===f?'active':''}" data-filter="${f}">${f==='all'?'All':f[0].toUpperCase()+f.slice(1)}${f==='due'&&s.due?' · '+s.due:''}</button>`).join('');
     $('#topicPage').innerHTML=`<div class="breadcrumbs"><a href="unit.html?id=${u.id}">Unit ${u.id}</a>${partForTopic(u,t)?`<span>›</span><span>Part ${esc(partForTopic(u,t).id)}</span>`:''}<span>›</span><span>Topic ${t.id}</span></div><section class="topic-learning-hero"><div class="topic-learning-copy"><div class="eyebrow">UNIT ${u.id}${partForTopic(u,t)?` · PART ${esc(partForTopic(u,t).id)}`:''} · TOPIC ${t.id}</div><h1>${esc(t.title)}</h1><p>${esc(t.explanation||'Build a clear understanding of this topic and its key distinctions.')}</p><div class="topic-hero-actions"><a class="btn primary" href="microtopic.html?unit=${u.id}&topic=${t.id}&micro=${pinned.id}">${s.started?'Continue Learning':'Start Learning'} <span>→</span></a><a class="btn" href="practice.html">Practice Questions</a></div></div><div class="topic-progress-card"><div class="eyebrow">TOPIC PROGRESS</div><strong>${s.percent}%</strong><div class="bar"><i style="width:${s.percent}%"></i></div><div class="topic-progress-stats"><span>${s.started}/${s.total} started</span><span>${s.mastered} mastered</span></div></div></section><section class="card topic-notes-card"><div class="eyebrow">TOPIC NOTES</div><div class="notes topic-notes">${esc(t.notes||'Build the topic map first, then learn each micro-topic.')}</div></section><section class="topic-study-strip"><div><div class="eyebrow">HOW TO STUDY</div><h2>Move from understanding to durable recall.</h2></div><div class="topic-study-steps"><span><b>1</b> Understand</span><span><b>2</b> Recall</span><span><b>3</b> Apply</span><span><b>4</b> Practice</span><span><b>5</b> Revise</span></div></section><section class="topic-micro-section"><div class="topic-section-head"><div><div class="eyebrow">MICRO-TOPICS</div><h2>${topicItems.length} concepts to work through</h2><p>Choose one concept at a time. Your progress is saved on this device.</p></div><div class="topic-filters" role="tablist">${filters}</div></div><div class="micro-grid topic-micro-grid">${cards||'<div class="panel empty topic-empty"><h3>No micro-topics in this filter</h3><p>Try another filter or return to All.</p></div>'}</div></section>`;
-    $('.topic-filter').forEach(b=>b.onclick=()=>render(b.dataset.filter));
+    $$('.topic-filter').forEach(b=>b.onclick=()=>render(b.dataset.filter));
   };
   render('all');
 }
@@ -510,7 +510,7 @@ function micro(){
   </div>`;
 
   const stages=$$('.stage'),show=s=>stages.forEach(x=>x.classList.toggle('hidden',x.dataset.stage!==s));
-  $('.next-stage').forEach(b=>b.onclick=()=>{
+  $$('.next-stage').forEach(b=>b.onclick=()=>{
     const target=b.dataset.next;
     if(target==='recall'){setP(k,{understanding:true,status:'LEARNING',last:new Date().toISOString()});show(target);return}
     if(target==='apply'){
@@ -530,12 +530,12 @@ function micro(){
   $$('.micro-resource-btn[data-resource-target]').forEach(b=>b.onclick=()=>{
     const target=document.getElementById(b.dataset.resourceTarget);
     if(!target)return;
-    $('.micro-resource-panel').forEach(panel=>panel.classList.add('hidden'));
+    $$('.micro-resource-panel').forEach(panel=>panel.classList.add('hidden'));
     target.classList.remove('hidden');
     requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));
   });
 
-  $('[data-confidence]').forEach(b=>b.onclick=()=>{
+  $$('[data-confidence]').forEach(b=>b.onclick=()=>{
     const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
     if(boxes.some(x=>x.dataset.checked!=='true')){alert('Check every Active Recall item before rating your confidence.');return}
     $('[data-confidence]').forEach(x=>x.classList.toggle('selected',x===b));
@@ -545,7 +545,7 @@ function micro(){
 
   wireActiveRecall(document.querySelector('[data-stage="recall"]'),k);
   wireMCQ($('#microQuestions'),k,qs);
-  $('[data-rating]').forEach(b=>b.onclick=()=>{
+  $$('[data-rating]').forEach(b=>b.onclick=()=>{
     const patch=setDue(k,b.dataset.rating);setP(k,patch);
     $('#scheduleResult').innerHTML=patch.lateReset?`<b>Revision reset to your last successful checkpoint.</b> Next revision: ${date(patch.next)}`:`<b>Next revision scheduled.</b> ${patch.next?date(patch.next):'today'}`;
   });
@@ -606,7 +606,7 @@ if(menuButton){
     menuButton.setAttribute('aria-expanded',String(open));
     menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');
   });
-  $('#site-navigation a').forEach(link=>link.addEventListener('click',closeMenu));
+  $$('#site-navigation a').forEach(link=>link.addEventListener('click',closeMenu));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 }
 function render(){
