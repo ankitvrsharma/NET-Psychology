@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1';
+const CACHE='netpsych-shell-v2';
 const SHELL=[
   './',
   './index.html',
@@ -14,6 +14,9 @@ const SHELL=[
   './style.css',
   './app.js',
   './data.json',
+  './content-version.js',
+  './practice_questions.json',
+  './practice_explanations.json',
   './manifest.webmanifest'
 ];
 self.addEventListener('install',event=>{
