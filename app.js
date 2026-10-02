@@ -635,32 +635,24 @@ function practice(){
   }
   $('#startSet').onclick=draw;
 }function revision(){
+  const root=$('#revisionApp');
+  if(!root)return;
   const items=dueItems(),shown=items.slice(0,5);
-  $('#revisionApp').innerHTML=`
-    <section class="page-hero revision-hero">
-      <h1>Strengthen what you’ve already learned.</h1>
-      <p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p>
-    </section>
-    <section class="revision-ready card">
-      <div>
-        <div class="eyebrow">REVISION</div>
-        <strong>${items.length}</strong>
-        <h2>${items.length===1?'concept is ready to revisit':'concepts are ready to revisit'}</h2>
-        <p>${items.length?'Work through your revision queue one concept at a time.':'There is nothing waiting for revision right now. Your next scheduled revision will appear here.'}</p>
-      </div>
-    </section>
-    ${shown.length?`<section class="revision-list">${shown.map(x=>{const p=getP(x.k),late=(Date.now()-new Date(p.next).getTime())/86400000;return \`<article class="revision-item"><div><span class="status ${p.status.toLowerCase()}">${p.status}</span><h3>${esc(x.m.title)}</h3><p>${esc(x.t.title)} · Unit ${x.u.id}</p><small>${late>0?\`Overdue by ${Math.floor(late)} day${Math.floor(late)===1?'':'s'}\`:'Due today'}${p.rating?\` · Last: ${p.rating}\`:''}</small></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">Start Recall →</a></article>\`}).join('')}</section>`:'<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>'}
-    <section class="panel revision-rules">
-      <h2>How to use revision</h2>
-      <ul>
-        <li><b>Recall first</b> — try to bring the idea back without looking.</li>
-        <li><b>Then check</b> — compare your recall with the explanation.</li>
-        <li><b>Again</b> — you couldn’t recall it.</li>
-        <li><b>Hard</b> — you recalled it with effort.</li>
-        <li><b>Good</b> — you recalled it successfully.</li>
-        <li><b>Easy</b> — you recalled it quickly.</li>
-      </ul>
-    </section>`;
+  const rows=shown.map(x=>{
+    const p=getP(x.k);
+    const nextAt=Date.parse(p.next||'');
+    const late=Number.isFinite(nextAt)?(Date.now()-nextAt)/86400000:0;
+    const overdue=late>0?'Overdue by '+Math.floor(late)+' day'+(Math.floor(late)===1?'':'s'):'Due today';
+    const last=p.rating?' · Last: '+esc(p.rating):'';
+    return '<article class="revision-item"><div><span class="status '+esc(String(p.status||'NEW').toLowerCase())+'">'+esc(p.status||'NEW')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+overdue+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'">Start Recall →</a></article>';
+  }).join('');
+  const queue=rows
+    ? '<section class="revision-list">'+rows+'</section>'
+    : '<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>';
+  root.innerHTML='<section class="page-hero revision-hero"><h1>Strengthen what you’ve already learned.</h1><p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p></section>'+
+    '<section class="revision-ready card"><div><div class="eyebrow">REVISION</div><strong>'+items.length+'</strong><h2>'+(items.length===1?'concept is ready to revisit':'concepts are ready to revisit')+'</h2><p>'+(items.length?'Work through your revision queue one concept at a time.':'There is nothing waiting for revision right now. Your next scheduled revision will appear here.')+'</p></div></section>'+
+    queue+
+    '<section class="panel revision-rules"><h2>How to use revision</h2><ul><li><b>Recall first</b> — try to bring the idea back without looking.</li><li><b>Then check</b> — compare your recall with the explanation.</li><li><b>Again</b> — you couldn’t recall it.</li><li><b>Hard</b> — you recalled it with effort.</li><li><b>Good</b> — you recalled it successfully.</li><li><b>Easy</b> — you recalled it quickly.</li></ul></section>';
 }
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
@@ -716,7 +708,7 @@ function render(){
 function safeRender(){
   try{render()}catch(err){
     console.error('NET Psychology page render failed:',err);
-    const root=document.querySelector('#practiceApp,#startPage,#homeHero');
+    const root=document.querySelector('#practiceApp,#startPage,#homeHero,#revisionApp');
     if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
   }
 }
@@ -724,7 +716,7 @@ if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.se
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
-    const pageRoot=document.querySelector('#practiceApp,#startPage,#homeHero');
+    const pageRoot=document.querySelector('#practiceApp,#startPage,#homeHero,#revisionApp');
     if(pageRoot&&!pageRoot.innerHTML.trim()) pageRoot.innerHTML='<section class="panel empty"><h1>This section could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
     return;
   }
