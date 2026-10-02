@@ -64,10 +64,11 @@ async function loadStudyData(){
         const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
         PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>{
           const o=overrides[q.id];
-          if(!o)return q;
+          const base={...q,source_tags:Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:['PYQ']};
+          if(!o)return base;
           const parts=String(o.target||'').split('-').map(Number);
-          if(parts.length!==3||parts.some(Number.isNaN))return {...q,source_tags:o.sources||['PYQ'],source_topic:o.topic||''};
-          return {...q,unit:parts[0],topic:parts[1],micro:parts[2],source_tags:o.sources||['PYQ'],source_topic:o.topic||''};
+          if(parts.length!==3||parts.some(Number.isNaN))return {...base,source_tags:o.sources||base.source_tags,source_topic:o.topic||''};
+          return {...base,unit:parts[0],topic:parts[1],micro:parts[2],source_tags:o.sources||base.source_tags,source_topic:o.topic||''};
         });
         json.mcq_mapping=map;
       }
@@ -398,21 +399,26 @@ function micro(){
 function practice(){
   const box=$('#practiceApp');
   const sessions=[...new Set(PRACTICE_QUESTIONS.map(q=>q.session))];
+  const availableSources=[...new Set(PRACTICE_QUESTIONS.flatMap(q=>Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:['PYQ']))];
+  const sourceOptions=['all',...availableSources.filter(s=>s!=='all')];
   const unitOptions=units().map(u=>`<option value="${u.id}">Unit ${u.id} · ${esc(u.title)}</option>`).join('');
-  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE · PYQs</div><h1>Practise with the questions you were actually given.</h1><p>Every question in this bank comes from the supplied UGC NET Psychology question-paper source. No model-generated MCQ is mixed into the PYQ bank.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">SET UP YOUR SESSION</div><h2>Choose your question set.</h2></div><span class="practice-tip">${PRACTICE_QUESTIONS.length} PYQs available.</span></div><div class="practice-toolbar"><label>Questions<select id="setSize"><option>5</option><option>10</option><option>20</option></select></label><label>Session<select id="session"><option value="all">All sessions</option>${sessions.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select></label><label>Unit<select id="practiceUnit"><option value="all">All units</option>${unitOptions}</select></label><label>Topic<select id="practiceTopic"><option value="all">All topics</option></select></label><button class="btn primary" id="startSet">Start Practice <span>→</span></button></div></section><div id="practiceSet"></div>`;
+  const sourceLabel=s=>s==='all'?'All sources':s;
+  const sourceTip=availableSources.map(s=>`${s}: ${PRACTICE_QUESTIONS.filter(q=>(q.source_tags||['PYQ']).includes(s)).length}`).join(' · ');
+  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE · MAPPED MCQs</div><h1>Practise the questions linked to what you are learning.</h1><p>The practice bank keeps authentic PYQs separate from source-specific mappings. REVISATHON tags are shown only where the question has been explicitly mapped; no question is labelled from a source without provenance.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">SET UP YOUR SESSION</div><h2>Choose your question set.</h2></div><span class="practice-tip">${PRACTICE_QUESTIONS.length} questions · ${esc(sourceTip)}</span></div><div class="practice-toolbar"><label>Questions<select id="setSize"><option>5</option><option>10</option><option>20</option></select></label><label>Source<select id="practiceSource">${sourceOptions.map(s=>`<option value="${esc(s)}">${esc(sourceLabel(s))}</option>`).join('')}</select></label><label>Session<select id="session"><option value="all">All sessions</option>${sessions.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select></label><label>Unit<select id="practiceUnit"><option value="all">All units</option>${unitOptions}</select></label><label>Topic<select id="practiceTopic"><option value="all">All topics</option></select></label><button class="btn primary" id="startSet">Start Practice <span>→</span></button></div></section><div id="practiceSet"></div>`;
   const updateTopics=()=>{const id=$('#practiceUnit').value;const list=id==='all'?units().flatMap(u=>u.topics.map(t=>({u,t}))):units().filter(u=>String(u.id)===id).flatMap(u=>u.topics.map(t=>({u,t})));$('#practiceTopic').innerHTML='<option value="all">All topics</option>'+list.map(x=>`<option value="${x.u.id}-${x.t.id}">${esc(x.t.title)}</option>`).join('')};
   $('#practiceUnit').onchange=updateTopics;updateTopics();
   function draw(){
     let qs=PRACTICE_QUESTIONS.slice();
-    const session=$('#session').value,unit=$('#practiceUnit').value,topic=$('#practiceTopic').value;
+    const source=$('#practiceSource').value,session=$('#session').value,unit=$('#practiceUnit').value,topic=$('#practiceTopic').value;
+    if(source!=='all')qs=qs.filter(q=>(q.source_tags||['PYQ']).includes(source));
     if(session!=='all')qs=qs.filter(q=>q.session===session);
     if(unit!=='all')qs=qs.filter(q=>String(q.unit)===unit);
     if(topic!=='all'){const [u,t]=topic.split('-');qs=qs.filter(q=>String(q.unit)===u&&String(q.topic)===t)}
     const limit=+$('#setSize').value;
     const groupingKey=unit==='all'?'unit':topic==='all'?'topic':'random';
     qs=groupingKey==='random'?qs.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(qs,x=>groupingKey==='unit'?x.unit:x.topic,limit);
-    if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No PYQs match these filters.</h2><p>Choose a broader session, unit or topic.</p></section>';return}
-    $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PYQ PRACTICE SESSION</div><h2 id="sessionTitle">Question 1 of ${qs.length}</h2></div><a class="text-link" href="practice.html">Reset</a></div><div class="session-progress"><i id="sessionProgress" style="width:${100/qs.length}%"></i></div><div class="session-questions">${qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join('')}</div><div class="practice-complete hidden" id="practiceComplete"><div class="eyebrow">SESSION COMPLETE</div><h2 id="practiceScore"></h2><p id="practiceSummary"></p><div class="complete-actions"><a class="btn primary" href="practice.html">Try another set <span>→</span></a><a class="btn" href="revision.html">Go to Revision</a></div></div></section>`;
+    if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No mapped questions match these filters.</h2><p>Try another source, session, unit or topic.</p></section>';return}
+    $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">MAPPED QUESTION SESSION</div><h2 id="sessionTitle">Question 1 of ${qs.length}</h2></div><a class="text-link" href="practice.html">Reset</a></div><div class="session-progress"><i id="sessionProgress" style="width:${100/qs.length}%"></i></div><div class="session-questions">${qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join('')}</div><div class="practice-complete hidden" id="practiceComplete"><div class="eyebrow">SESSION COMPLETE</div><h2 id="practiceScore"></h2><p id="practiceSummary"></p><div class="complete-actions"><a class="btn primary" href="practice.html">Try another set <span>→</span></a><a class="btn" href="revision.html">Go to Revision</a></div></div></section>`;
     const cards=$$('#practiceSet .mcq');
     cards.forEach((card,i)=>{if(i!==0)card.classList.add('session-hidden');const next=document.createElement('button');next.className='btn primary mcq-next';next.textContent=i===cards.length-1?'Finish Session →':'Next Question →';card.appendChild(next);next.hidden=true});
     wireMCQ($('#practiceSet'),null,qs);
