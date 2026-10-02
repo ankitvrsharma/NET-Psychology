@@ -14,6 +14,7 @@ function initMobileNavigation(){
   window.addEventListener('resize',()=>{if(window.innerWidth>820)close()},{passive:true});
 }
 
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMobileNavigation,{once:true}); else initMobileNavigation();
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
