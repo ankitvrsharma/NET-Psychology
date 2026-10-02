@@ -616,7 +616,7 @@ function render(){
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
 }
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261002-homefix4').catch(()=>{}));}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261002-homefix5').catch(()=>{}));}
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(!D){
