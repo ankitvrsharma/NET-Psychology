@@ -139,6 +139,14 @@ function startPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
   if(!root)return;
+  let existing=null;
+  try{existing=JSON.parse(localStorage.getItem('netPsychStartProfile')||'null')}catch{existing=null}
+  if(existing&&existing.experience){
+    const target=existing.experience==='revision'?'revision.html':(existing.experience==='prepared'||existing.experience==='appeared')?'practice.html':'learn.html';
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING PROFILE</div><h1>Welcome back.</h1><p>Your learner profile is already saved on this device. Your starting path is ready.</p><div class="start-profile-actions"><a class="btn primary" href="'+target+'">CONTINUE MY LEARNING →</a><button class="btn" type="button" id="editStartProfile">EDIT PROFILE</button></div></section>';
+    $('#editStartProfile').onclick=()=>{localStorage.removeItem('netPsychStartProfile');startPage()};
+    return;
+  }
   root.innerHTML=\`<section class="start-hero"><div class="eyebrow">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>A short profile helps us shape your starting experience. You can change your answers later.</p></section>
   <form class="start-form" id="startForm">
     <div class="start-progress"><span>1 of 4</span><i><b style="width:25%"></b></i></div>
@@ -164,7 +172,7 @@ function startPage(){
     </fieldset></div>
     <div class="start-actions"><button class="btn" type="button" id="startBack" hidden>← Back</button><button class="btn primary" type="button" id="startNext">Next →</button></div>
   </form>\`;
-  const form=$('#startForm'),steps=$('.start-step'),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
+  const form=$('#startForm'),steps=Array.from(form.querySelectorAll('.start-step')),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
   const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
   form.addEventListener('change',e=>{
     if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
