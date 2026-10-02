@@ -1176,3 +1176,17 @@ body[data-page="home"] .hero-cta b{display:none}
   .learn-unit-card{padding:23px 20px 22px}
   .learn-unit-card h2{margin:13px 0 14px}
 }
+
+/* Revision page — learner-first recall flow */
+.revision-hero{padding-bottom:18px}
+.revision-ready{margin:0 0 18px;padding:25px 28px}
+.revision-ready strong{display:block;font-size:42px;line-height:1;color:var(--navy);margin:8px 0 2px}
+.revision-ready h2{margin:0 0 7px;color:var(--navy)}
+.revision-ready p{margin:0;color:var(--muted);line-height:1.55}
+.revision-rules{margin-top:18px}
+.revision-rules ul{margin:10px 0 0;padding-left:22px}
+@media(max-width:620px){
+  .revision-hero{padding-bottom:14px}
+  .revision-ready{padding:22px 20px}
+  .revision-ready strong{font-size:36px}
+}
