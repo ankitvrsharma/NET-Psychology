@@ -1160,3 +1160,19 @@ body[data-page="home"] .hero-cta b{display:none}
   .learn-unit-top .learn-unit-meta{justify-content:flex-end;gap:5px}
   .learn-unit-top .learn-unit-meta span{font-size:9px;padding:4px 6px}
 }
+
+/* Learn page: direct learner flow and roomier unit cards */
+.learn-hub-hero{padding-bottom:16px}
+.learn-units-section{padding-top:8px}
+.learn-search-full{display:flex;width:100%;max-width:none;margin:0 0 22px}
+.learn-search-full input{width:100%}
+.learn-unit-card{padding:25px 25px 24px}
+.learn-unit-card h2{margin:14px 0 14px}
+.learn-unit-progress>div:first-child{margin-bottom:8px}
+@media(max-width:720px){
+  .learn-hub-hero{padding-bottom:14px}
+  .learn-units-section{padding-top:6px}
+  .learn-search-full{margin-bottom:18px}
+  .learn-unit-card{padding:23px 20px 22px}
+  .learn-unit-card h2{margin:13px 0 14px}
+}
