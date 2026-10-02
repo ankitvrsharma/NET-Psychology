@@ -9285,7 +9285,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Associationism",
-              "content_notes": "CORE CONCEPT\nAssociationism is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Associationism\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Associationism as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAssociationism → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAssociationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.\n\nKEY POINTS\n• Thought can be analyzed in terms of associations.\n• Experience contributes to the formation of connections.\n• Associationist explanations emphasize learned links rather than holistic organization.\n• The perspective differs from Gestalt accounts that emphasize organized wholes.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Perspectives on Thought Processes; historical associationist framing in the major psychology texts.\n\nCOMMON EXAM TRAP\nAssociationism and Gestalt psychology offer contrasting ways of explaining how mental elements become organized.\n\nMEMORY CUE\nAssociationism → Thought can be analyzed in terms of associations • Experience contributes to the formation of connections • Associationist explanations emphasize learned links rather than holistic organization",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9296,14 +9296,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nAssociationism is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Associationism\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Associationism as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAssociationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.\n\nKEY POINTS\n• Thought can be analyzed in terms of associations.\n• Experience contributes to the formation of connections.\n• Associationist explanations emphasize learned links rather than holistic organization.\n• The perspective differs from Gestalt accounts that emphasize organized wholes.\n\nDISTINCTION / CAUTION\nAssociationism and Gestalt psychology offer contrasting ways of explaining how mental elements become organized.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Perspectives on Thought Processes; historical associationist framing in the major psychology texts.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Associationism”.",
-                "List the key points associated with “Associationism” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Associationism”?"
+                "State the source-based core idea of “Associationism”.",
+                "List the key source-supported points for “Associationism”.",
+                "State the most important distinction or caution for “Associationism”."
               ],
-              "application_question": "Source-based check: Given a new question about “Associationism”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Associationism → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Associationism” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Thought can be analyzed in terms of associations",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9313,18 +9313,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; historical associationist framing in the major psychology texts."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Gestalt perspective",
-              "content_notes": "CORE CONCEPT\nGestalt perspective is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Gestalt perspective as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGestalt perspective → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.\n\nKEY POINTS\n• Organization of relationships is central.\n• Problem solving can involve restructuring rather than only gradual association.\n• The whole can have properties not captured by isolated elements.\n• The approach contrasts with purely associationist explanations.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Perspectives on Thought Processes; Gestalt tradition in Ciccarelli & White.\n\nCOMMON EXAM TRAP\nGestalt does not mean simply 'visual perception'; the organizing principle is also applied to thought and problem solving.\n\nMEMORY CUE\nGestalt perspective → Organization of relationships is central • Problem solving can involve restructuring rather than only gradual association • The whole can have properties not captured by isolated elements",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9335,14 +9331,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nGestalt perspective is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Gestalt perspective as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.\n\nKEY POINTS\n• Organization of relationships is central.\n• Problem solving can involve restructuring rather than only gradual association.\n• The whole can have properties not captured by isolated elements.\n• The approach contrasts with purely associationist explanations.\n\nDISTINCTION / CAUTION\nGestalt does not mean simply 'visual perception'; the organizing principle is also applied to thought and problem solving.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Perspectives on Thought Processes; Gestalt tradition in Ciccarelli & White.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Gestalt perspective”.",
-                "List the key points associated with “Gestalt perspective” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Gestalt perspective”?"
+                "State the source-based core idea of “Gestalt perspective”.",
+                "List the key source-supported points for “Gestalt perspective”.",
+                "State the most important distinction or caution for “Gestalt perspective”."
               ],
-              "application_question": "Source-based check: Given a new question about “Gestalt perspective”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Gestalt perspective → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Gestalt perspective” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Organization of relationships is central",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9352,18 +9348,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; Gestalt tradition in Ciccarelli & White."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Information processing perspective",
-              "content_notes": "CORE CONCEPT\nInformation processing perspective is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Information processing perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Information processing perspective as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInformation processing perspective → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.\n\nKEY POINTS\n• Mental activity is described in terms of information processing.\n• Attention selects or prioritizes information.\n• Memory provides stored representations used in thinking.\n• Problem solving and decision making involve multiple processing operations.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Cognitive Psychology; Kaplan AP Psychology — cognition and problem solving.\n\nCOMMON EXAM TRAP\nInformation processing is a framework for describing cognitive operations; it is not one single experiment or one single cognitive ability.\n\nMEMORY CUE\nInformation processing perspective → Mental activity is described in terms of information processing • Attention selects or prioritizes information • Memory provides stored representations used in thinking",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9374,14 +9366,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nInformation processing perspective is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Information processing perspective\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Information processing perspective as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.\n\nKEY POINTS\n• Mental activity is described in terms of information processing.\n• Attention selects or prioritizes information.\n• Memory provides stored representations used in thinking.\n• Problem solving and decision making involve multiple processing operations.\n\nDISTINCTION / CAUTION\nInformation processing is a framework for describing cognitive operations; it is not one single experiment or one single cognitive ability.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Cognitive Psychology; Kaplan AP Psychology — cognition and problem solving.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Information processing perspective”.",
-                "List the key points associated with “Information processing perspective” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Information processing perspective”?"
+                "State the source-based core idea of “Information processing perspective”.",
+                "List the key source-supported points for “Information processing perspective”.",
+                "State the most important distinction or caution for “Information processing perspective”."
               ],
-              "application_question": "Source-based check: Given a new question about “Information processing perspective”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Information processing perspective → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Information processing perspective” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Mental activity is described in terms of information processing",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9391,18 +9383,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 6 Cognitive Psychology; Kaplan AP Psychology — cognition and problem solving."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Feature integration model",
-              "content_notes": "CORE CONCEPT\nFeature integration model is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Feature integration model\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Feature integration model as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nFeature integration model → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.\n\nKEY POINTS\n• Features such as color, shape or orientation can initially be processed separately.\n• Attention helps bind features into an integrated object representation.\n• The model connects selective attention with perceptual organization.\n• It is concerned with how separate features become a coherent percept.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Feature Integration Model and Unit 5 Attention/Perception.\n\nCOMMON EXAM TRAP\nFeature integration is about binding features into objects; it should not be confused with Gestalt grouping laws, although both address perceptual organization.\n\nMEMORY CUE\nFeature integration model → Features such as color, shape or orientation can initially be processed separately • Attention helps bind features into an integrated object representation • The model connects selective attention with perceptual organization",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9413,14 +9401,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nFeature integration model is a focused concept within “Theoretical perspectives on thought processes: Associationism, Gestalt, Information processing, Feature integration model”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Feature integration model\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Feature integration model as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.\n\nKEY POINTS\n• Features such as color, shape or orientation can initially be processed separately.\n• Attention helps bind features into an integrated object representation.\n• The model connects selective attention with perceptual organization.\n• It is concerned with how separate features become a coherent percept.\n\nDISTINCTION / CAUTION\nFeature integration is about binding features into objects; it should not be confused with Gestalt grouping laws, although both address perceptual organization.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Feature Integration Model and Unit 5 Attention/Perception.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Feature integration model”.",
-                "List the key points associated with “Feature integration model” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Feature integration model”?"
+                "State the source-based core idea of “Feature integration model”.",
+                "List the key source-supported points for “Feature integration model”.",
+                "State the most important distinction or caution for “Feature integration model”."
               ],
-              "application_question": "Source-based check: Given a new question about “Feature integration model”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Feature integration model → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Feature integration model” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Features such as color, shape or orientation can initially be processed separately",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9430,11 +9418,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 6 Feature Integration Model and Unit 5 Attention/Perception."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -9460,7 +9444,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Rules of concept formation",
-              "content_notes": "CORE CONCEPT\nRules of concept formation is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Rules of concept formation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Rules of concept formation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRules of concept formation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nConcept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.\n\nKEY POINTS\n• Concepts group related instances.\n• Categorization reduces the complexity of experience.\n• Rules or defining features can guide category membership.\n• Concepts support reasoning and problem solving.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White — concepts and problem solving.\n\nCOMMON EXAM TRAP\nA concept is a mental category; a rule is a criterion or strategy used to form or apply that category.\n\nMEMORY CUE\nRules of concept formation → Concepts group related instances • Categorization reduces the complexity of experience • Rules or defining features can guide category membership",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9470,14 +9454,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nRules of concept formation is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Rules of concept formation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Rules of concept formation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nConcept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.\n\nKEY POINTS\n• Concepts group related instances.\n• Categorization reduces the complexity of experience.\n• Rules or defining features can guide category membership.\n• Concepts support reasoning and problem solving.\n\nDISTINCTION / CAUTION\nA concept is a mental category; a rule is a criterion or strategy used to form or apply that category.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White — concepts and problem solving.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Rules of concept formation”.",
-                "List the key points associated with “Rules of concept formation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Rules of concept formation”?"
+                "State the source-based core idea of “Rules of concept formation”.",
+                "List the key source-supported points for “Rules of concept formation”.",
+                "State the most important distinction or caution for “Rules of concept formation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Rules of concept formation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Rules of concept formation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Rules of concept formation” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Concepts group related instances",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9487,17 +9471,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White — concepts and problem solving."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Types of concepts",
-              "content_notes": "CORE CONCEPT\nTypes of concepts is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of concepts\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of concepts as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of concepts → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nConcepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.\n\nKEY POINTS\n• Concepts allow efficient categorization.\n• Some concepts can be defined by clear rules or features.\n• Other categories may be organized around typical examples or prototypes.\n• Concepts guide recognition, inference and communication.\n\nSOURCE BASIS\nCiccarelli & White 6e — Concepts and Problem Solving; PowerWithin Psychology — Concept Formation.\n\nCOMMON EXAM TRAP\nDo not assume every natural category has a perfectly sharp defining rule.\n\nMEMORY CUE\nTypes of concepts → Concepts allow efficient categorization • Some concepts can be defined by clear rules or features • Other categories may be organized around typical examples or prototypes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9507,14 +9488,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nTypes of concepts is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of concepts\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of concepts as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nConcepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.\n\nKEY POINTS\n• Concepts allow efficient categorization.\n• Some concepts can be defined by clear rules or features.\n• Other categories may be organized around typical examples or prototypes.\n• Concepts guide recognition, inference and communication.\n\nDISTINCTION / CAUTION\nDo not assume every natural category has a perfectly sharp defining rule.\n\nSOURCE BASIS\nCiccarelli & White 6e — Concepts and Problem Solving; PowerWithin Psychology — Concept Formation.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of concepts”.",
-                "List the key points associated with “Types of concepts” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of concepts”?"
+                "State the source-based core idea of “Types of concepts”.",
+                "List the key source-supported points for “Types of concepts”.",
+                "State the most important distinction or caution for “Types of concepts”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of concepts”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of concepts → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Types of concepts” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Concepts allow efficient categorization",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9524,17 +9505,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Concepts and Problem Solving; PowerWithin Psychology — Concept Formation."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Strategies of concept formation",
-              "content_notes": "CORE CONCEPT\nStrategies of concept formation is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Strategies of concept formation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Strategies of concept formation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStrategies of concept formation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nConcept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.\n\nKEY POINTS\n• People compare instances when forming categories.\n• Relevant similarities and differences help refine a concept.\n• Hypotheses about category membership can be tested against examples.\n• Experience can improve categorization efficiency.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nA concept-formation strategy is a cognitive procedure; it is not itself the final concept.\n\nMEMORY CUE\nStrategies of concept formation → People compare instances when forming categories • Relevant similarities and differences help refine a concept • Hypotheses about category membership can be tested against examples",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9544,14 +9522,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nStrategies of concept formation is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Strategies of concept formation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Strategies of concept formation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nConcept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.\n\nKEY POINTS\n• People compare instances when forming categories.\n• Relevant similarities and differences help refine a concept.\n• Hypotheses about category membership can be tested against examples.\n• Experience can improve categorization efficiency.\n\nDISTINCTION / CAUTION\nA concept-formation strategy is a cognitive procedure; it is not itself the final concept.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Strategies of concept formation”.",
-                "List the key points associated with “Strategies of concept formation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Strategies of concept formation”?"
+                "State the source-based core idea of “Strategies of concept formation”.",
+                "List the key source-supported points for “Strategies of concept formation”.",
+                "State the most important distinction or caution for “Strategies of concept formation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Strategies of concept formation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Strategies of concept formation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Strategies of concept formation” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "People compare instances when forming categories",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9561,17 +9539,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Role of concepts in thinking",
-              "content_notes": "CORE CONCEPT\nRole of concepts in thinking is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Role of concepts in thinking\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Role of concepts in thinking as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRole of concepts in thinking → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nConcepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.\n\nKEY POINTS\n• Concepts reduce cognitive complexity.\n• They support classification and inference.\n• They provide categories for communication and memory.\n• They are used in reasoning and problem solving.\n\nSOURCE BASIS\nCiccarelli & White 6e — Thinking and Concepts; PowerWithin Psychology — Role of Concepts in Thinking.\n\nCOMMON EXAM TRAP\nConcepts organize information; they do not guarantee that every inference based on a category is correct.\n\nMEMORY CUE\nRole of concepts in thinking → Concepts reduce cognitive complexity • They support classification and inference • They provide categories for communication and memory",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9581,14 +9556,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nRole of concepts in thinking is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Role of concepts in thinking\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Role of concepts in thinking as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nConcepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.\n\nKEY POINTS\n• Concepts reduce cognitive complexity.\n• They support classification and inference.\n• They provide categories for communication and memory.\n• They are used in reasoning and problem solving.\n\nDISTINCTION / CAUTION\nConcepts organize information; they do not guarantee that every inference based on a category is correct.\n\nSOURCE BASIS\nCiccarelli & White 6e — Thinking and Concepts; PowerWithin Psychology — Role of Concepts in Thinking.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Role of concepts in thinking”.",
-                "List the key points associated with “Role of concepts in thinking” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Role of concepts in thinking”?"
+                "State the source-based core idea of “Role of concepts in thinking”.",
+                "List the key source-supported points for “Role of concepts in thinking”.",
+                "State the most important distinction or caution for “Role of concepts in thinking”."
               ],
-              "application_question": "Source-based check: Given a new question about “Role of concepts in thinking”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Role of concepts in thinking → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Role of concepts in thinking” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Concepts reduce cognitive complexity",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9598,17 +9573,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Thinking and Concepts; PowerWithin Psychology — Role of Concepts in Thinking."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 5,
               "title": "Types of reasoning",
-              "content_notes": "CORE CONCEPT\nTypes of reasoning is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of reasoning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of reasoning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of reasoning → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nReasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.\n\nKEY POINTS\n• Inductive reasoning moves from particular observations toward broader conclusions.\n• Deductive reasoning applies general premises to specific conclusions.\n• Reasoning depends on the quality of the premises or evidence.\n• Different reasoning forms answer different kinds of questions.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — inductive/deductive reasoning; PowerWithin Psychology — Types of Reasoning.\n\nCOMMON EXAM TRAP\nInductive conclusions are typically probabilistic, whereas deductive validity depends on the relationship between premises and conclusion.\n\nMEMORY CUE\nTypes of reasoning → Inductive reasoning moves from particular observations toward broader conclusions • Deductive reasoning applies general premises to specific conclusions • Reasoning depends on the quality of the premises or evidence",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9618,14 +9590,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nTypes of reasoning is a focused concept within “Concept formation: Rules, Types, and Strategies; Role of concepts in thinking. Types of Reasoning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of reasoning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of reasoning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nReasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.\n\nKEY POINTS\n• Inductive reasoning moves from particular observations toward broader conclusions.\n• Deductive reasoning applies general premises to specific conclusions.\n• Reasoning depends on the quality of the premises or evidence.\n• Different reasoning forms answer different kinds of questions.\n\nDISTINCTION / CAUTION\nInductive conclusions are typically probabilistic, whereas deductive validity depends on the relationship between premises and conclusion.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — inductive/deductive reasoning; PowerWithin Psychology — Types of Reasoning.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of reasoning”.",
-                "List the key points associated with “Types of reasoning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of reasoning”?"
+                "State the source-based core idea of “Types of reasoning”.",
+                "List the key source-supported points for “Types of reasoning”.",
+                "State the most important distinction or caution for “Types of reasoning”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of reasoning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of reasoning → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Types of reasoning” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Inductive reasoning moves from particular observations toward broader conclusions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9635,10 +9607,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide — inductive/deductive reasoning; PowerWithin Psychology — Types of Reasoning."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -9664,7 +9633,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Language and thought",
-              "content_notes": "CORE CONCEPT\nLanguage and thought is a focused concept within “Language and thought”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Language and thought\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Language and thought as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLanguage and thought → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.\n\nKEY POINTS\n• Language provides categories and symbols for representing experience.\n• The linguistic-relativity hypothesis proposes influence of language on thought.\n• Language and thought are related but not identical processes.\n• Cultural and linguistic experience can affect interpretation.\n\nSOURCE BASIS\nBaron & Misra — Language and Thought; PowerWithin Psychology — Language and Thought.\n\nCOMMON EXAM TRAP\nThe source presents language influence as a theoretical position; it should not be turned into the unsupported claim that language completely determines thought.\n\nMEMORY CUE\nLanguage and thought → Language provides categories and symbols for representing experience • The linguistic-relativity hypothesis proposes influence of language on thought • Language and thought are related but not identical processes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9675,14 +9644,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nLanguage and thought is a focused concept within “Language and thought”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Language and thought\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Language and thought as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.\n\nKEY POINTS\n• Language provides categories and symbols for representing experience.\n• The linguistic-relativity hypothesis proposes influence of language on thought.\n• Language and thought are related but not identical processes.\n• Cultural and linguistic experience can affect interpretation.\n\nDISTINCTION / CAUTION\nThe source presents language influence as a theoretical position; it should not be turned into the unsupported claim that language completely determines thought.\n\nSOURCE BASIS\nBaron & Misra — Language and Thought; PowerWithin Psychology — Language and Thought.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Language and thought”.",
-                "List the key points associated with “Language and thought” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Language and thought”?"
+                "State the source-based core idea of “Language and thought”.",
+                "List the key source-supported points for “Language and thought”.",
+                "State the most important distinction or caution for “Language and thought”."
               ],
-              "application_question": "Source-based check: Given a new question about “Language and thought”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Language and thought → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Language and thought” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Language provides categories and symbols for representing experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9692,11 +9661,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "Baron & Misra — Language and Thought; PowerWithin Psychology — Language and Thought."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -9722,7 +9687,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Types of problem solving",
-              "content_notes": "CORE CONCEPT\nTypes of problem solving is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of problem solving\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of problem solving as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of problem solving → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nProblem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.\n\nKEY POINTS\n• Trial-and-error tests possible responses.\n• Algorithms provide systematic step-by-step procedures.\n• Heuristics use efficient rules of thumb.\n• Different problems may require different strategies.\n\nSOURCE BASIS\nCiccarelli & White 6e — Problem Solving and Decision Making; PowerWithin Psychology — Problem Solving.\n\nCOMMON EXAM TRAP\nA heuristic is efficient but does not guarantee a correct solution; an algorithm is more systematic.\n\nMEMORY CUE\nTypes of problem solving → Trial-and-error tests possible responses • Algorithms provide systematic step-by-step procedures • Heuristics use efficient rules of thumb",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9732,14 +9697,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nTypes of problem solving is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of problem solving\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of problem solving as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nProblem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.\n\nKEY POINTS\n• Trial-and-error tests possible responses.\n• Algorithms provide systematic step-by-step procedures.\n• Heuristics use efficient rules of thumb.\n• Different problems may require different strategies.\n\nDISTINCTION / CAUTION\nA heuristic is efficient but does not guarantee a correct solution; an algorithm is more systematic.\n\nSOURCE BASIS\nCiccarelli & White 6e — Problem Solving and Decision Making; PowerWithin Psychology — Problem Solving.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of problem solving”.",
-                "List the key points associated with “Types of problem solving” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of problem solving”?"
+                "State the source-based core idea of “Types of problem solving”.",
+                "List the key source-supported points for “Types of problem solving”.",
+                "State the most important distinction or caution for “Types of problem solving”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of problem solving”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of problem solving → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Types of problem solving” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Trial-and-error tests possible responses",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9749,17 +9714,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Problem Solving and Decision Making; PowerWithin Psychology — Problem Solving."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Problem-solving strategies",
-              "content_notes": "CORE CONCEPT\nProblem-solving strategies is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Problem-solving strategies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Problem-solving strategies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nProblem-solving strategies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nProblem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.\n\nKEY POINTS\n• Algorithms provide systematic procedures.\n• Heuristics reduce effort but can produce error.\n• Experts organize problem information differently from novices.\n• Practice can make parts of problem solving more automatic.\n\nSOURCE BASIS\nCiccarelli & White 6e; PowerWithin Psychology — Problem Solving and Decision Making.\n\nCOMMON EXAM TRAP\nA strategy is a procedure for solving a problem, not the same thing as the final solution.\n\nMEMORY CUE\nProblem-solving strategies → Algorithms provide systematic procedures • Heuristics reduce effort but can produce error • Experts organize problem information differently from novices",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9769,14 +9731,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nProblem-solving strategies is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Problem-solving strategies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Problem-solving strategies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nProblem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.\n\nKEY POINTS\n• Algorithms provide systematic procedures.\n• Heuristics reduce effort but can produce error.\n• Experts organize problem information differently from novices.\n• Practice can make parts of problem solving more automatic.\n\nDISTINCTION / CAUTION\nA strategy is a procedure for solving a problem, not the same thing as the final solution.\n\nSOURCE BASIS\nCiccarelli & White 6e; PowerWithin Psychology — Problem Solving and Decision Making.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Problem-solving strategies”.",
-                "List the key points associated with “Problem-solving strategies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Problem-solving strategies”?"
+                "State the source-based core idea of “Problem-solving strategies”.",
+                "List the key source-supported points for “Problem-solving strategies”.",
+                "State the most important distinction or caution for “Problem-solving strategies”."
               ],
-              "application_question": "Source-based check: Given a new question about “Problem-solving strategies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Problem-solving strategies → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Problem-solving strategies” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Algorithms provide systematic procedures",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9786,17 +9748,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e; PowerWithin Psychology — Problem Solving and Decision Making."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Obstacles to problem solving",
-              "content_notes": "CORE CONCEPT\nObstacles to problem solving is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Obstacles to problem solving\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Obstacles to problem solving as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nObstacles to problem solving → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nObstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.\n\nKEY POINTS\n• Poor problem representation can block solution search.\n• Fixation can keep a person tied to an ineffective approach.\n• False assumptions can restrict possible solutions.\n• Changing the representation can sometimes reveal a solution.\n\nSOURCE BASIS\nCiccarelli & White 6e — Problems with Problem Solving and Decision Making; PowerWithin Psychology.\n\nCOMMON EXAM TRAP\nDifficulty solving a problem does not necessarily mean lack of ability; the representation and strategy can be the limiting factors.\n\nMEMORY CUE\nObstacles to problem solving → Poor problem representation can block solution search • Fixation can keep a person tied to an ineffective approach • False assumptions can restrict possible solutions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9806,14 +9765,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nObstacles to problem solving is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Obstacles to problem solving\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Obstacles to problem solving as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nObstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.\n\nKEY POINTS\n• Poor problem representation can block solution search.\n• Fixation can keep a person tied to an ineffective approach.\n• False assumptions can restrict possible solutions.\n• Changing the representation can sometimes reveal a solution.\n\nDISTINCTION / CAUTION\nDifficulty solving a problem does not necessarily mean lack of ability; the representation and strategy can be the limiting factors.\n\nSOURCE BASIS\nCiccarelli & White 6e — Problems with Problem Solving and Decision Making; PowerWithin Psychology.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Obstacles to problem solving”.",
-                "List the key points associated with “Obstacles to problem solving” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Obstacles to problem solving”?"
+                "State the source-based core idea of “Obstacles to problem solving”.",
+                "List the key source-supported points for “Obstacles to problem solving”.",
+                "State the most important distinction or caution for “Obstacles to problem solving”."
               ],
-              "application_question": "Source-based check: Given a new question about “Obstacles to problem solving”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Obstacles to problem solving → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Obstacles to problem solving” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Poor problem representation can block solution search",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9823,17 +9782,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Problems with Problem Solving and Decision Making; PowerWithin Psychology."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Types of decision-making",
-              "content_notes": "CORE CONCEPT\nTypes of decision-making is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of decision-making\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of decision-making as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of decision-making → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDecision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.\n\nKEY POINTS\n• Decision making requires alternatives and a choice.\n• Choices may be made under different levels of information and uncertainty.\n• Cognitive biases can affect decisions.\n• Decision-making models describe how alternatives are evaluated.\n\nSOURCE BASIS\nPowerWithin Psychology — Decision Making: Types and Models; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nDecision making is not identical to problem solving: problem solving seeks a route to a goal, whereas decision making selects among alternatives.\n\nMEMORY CUE\nTypes of decision-making → Decision making requires alternatives and a choice • Choices may be made under different levels of information and uncertainty • Cognitive biases can affect decisions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9843,14 +9799,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nTypes of decision-making is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of decision-making\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of decision-making as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDecision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.\n\nKEY POINTS\n• Decision making requires alternatives and a choice.\n• Choices may be made under different levels of information and uncertainty.\n• Cognitive biases can affect decisions.\n• Decision-making models describe how alternatives are evaluated.\n\nDISTINCTION / CAUTION\nDecision making is not identical to problem solving: problem solving seeks a route to a goal, whereas decision making selects among alternatives.\n\nSOURCE BASIS\nPowerWithin Psychology — Decision Making: Types and Models; Ciccarelli & White.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of decision-making”.",
-                "List the key points associated with “Types of decision-making” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of decision-making”?"
+                "State the source-based core idea of “Types of decision-making”.",
+                "List the key source-supported points for “Types of decision-making”.",
+                "State the most important distinction or caution for “Types of decision-making”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of decision-making”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of decision-making → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Types of decision-making” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Decision making requires alternatives and a choice",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9860,17 +9816,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Decision Making: Types and Models; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 5,
               "title": "Decision-making models",
-              "content_notes": "CORE CONCEPT\nDecision-making models is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Decision-making models\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Decision-making models as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDecision-making models → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDecision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.\n\nKEY POINTS\n• Models specify how alternatives are represented and evaluated.\n• Information availability affects choice.\n• People may use simplifying strategies rather than exhaustive analysis.\n• A model is useful for identifying the process assumed by a question.\n\nSOURCE BASIS\nPowerWithin Psychology — Decision Making: Types and Models; Kaplan AP Psychology — cognition and decision making.\n\nCOMMON EXAM TRAP\nDo not treat every choice as fully rational or exhaustive; cognitive psychology recognizes limits on information processing.\n\nMEMORY CUE\nDecision-making models → Models specify how alternatives are represented and evaluated • Information availability affects choice • People may use simplifying strategies rather than exhaustive analysis",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9880,14 +9833,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nDecision-making models is a focused concept within “Problem solving: Type, Strategies, and Obstacles. Decision-making: Types and models”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Decision-making models\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Decision-making models as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDecision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.\n\nKEY POINTS\n• Models specify how alternatives are represented and evaluated.\n• Information availability affects choice.\n• People may use simplifying strategies rather than exhaustive analysis.\n• A model is useful for identifying the process assumed by a question.\n\nDISTINCTION / CAUTION\nDo not treat every choice as fully rational or exhaustive; cognitive psychology recognizes limits on information processing.\n\nSOURCE BASIS\nPowerWithin Psychology — Decision Making: Types and Models; Kaplan AP Psychology — cognition and decision making.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Decision-making models”.",
-                "List the key points associated with “Decision-making models” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Decision-making models”?"
+                "State the source-based core idea of “Decision-making models”.",
+                "List the key source-supported points for “Decision-making models”.",
+                "State the most important distinction or caution for “Decision-making models”."
               ],
-              "application_question": "Source-based check: Given a new question about “Decision-making models”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Decision-making models → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Decision-making models” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Models specify how alternatives are represented and evaluated",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9897,10 +9850,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Decision Making: Types and Models; Kaplan AP Psychology — cognition and decision making."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -9926,7 +9876,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Metacognitive knowledge",
-              "content_notes": "CORE CONCEPT\nMetacognitive knowledge is a focused concept within “Metacognition: Metacognitive knowledge and Metacognitive regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Metacognitive knowledge\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Metacognitive knowledge as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMetacognitive knowledge → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMetacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.\n\nKEY POINTS\n• It includes knowledge about one's own cognition.\n• It includes knowledge of strategies.\n• It includes knowing when and why to use a strategy.\n• It supports deliberate control of learning.\n\nSOURCE BASIS\nREVISATHON Part 1 — Metacognitive Knowledge; PowerWithin Psychology — Metacognition.\n\nCOMMON EXAM TRAP\nKnowing a strategy is metacognitive knowledge; actually planning, monitoring and changing its use belongs to metacognitive regulation.\n\nMEMORY CUE\nMetacognitive knowledge → It includes knowledge about one's own cognition • It includes knowledge of strategies • It includes knowing when and why to use a strategy",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9936,14 +9886,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nMetacognitive knowledge is a focused concept within “Metacognition: Metacognitive knowledge and Metacognitive regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Metacognitive knowledge\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Metacognitive knowledge as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMetacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.\n\nKEY POINTS\n• It includes knowledge about one's own cognition.\n• It includes knowledge of strategies.\n• It includes knowing when and why to use a strategy.\n• It supports deliberate control of learning.\n\nDISTINCTION / CAUTION\nKnowing a strategy is metacognitive knowledge; actually planning, monitoring and changing its use belongs to metacognitive regulation.\n\nSOURCE BASIS\nREVISATHON Part 1 — Metacognitive Knowledge; PowerWithin Psychology — Metacognition.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Metacognitive knowledge”.",
-                "List the key points associated with “Metacognitive knowledge” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Metacognitive knowledge”?"
+                "State the source-based core idea of “Metacognitive knowledge”.",
+                "List the key source-supported points for “Metacognitive knowledge”.",
+                "State the most important distinction or caution for “Metacognitive knowledge”."
               ],
-              "application_question": "Source-based check: Given a new question about “Metacognitive knowledge”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Metacognitive knowledge → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Metacognitive knowledge” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "It includes knowledge about one's own cognition",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9953,17 +9903,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "REVISATHON Part 1 — Metacognitive Knowledge; PowerWithin Psychology — Metacognition."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Metacognitive regulation",
-              "content_notes": "CORE CONCEPT\nMetacognitive regulation is a focused concept within “Metacognition: Metacognitive knowledge and Metacognitive regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Metacognitive regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Metacognitive regulation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMetacognitive regulation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMetacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.\n\nKEY POINTS\n• Planning sets goals and chooses strategies.\n• Monitoring checks progress during the task.\n• Evaluation judges the effectiveness of the strategy or outcome.\n• Regulation can involve changing the strategy when needed.\n\nSOURCE BASIS\nREVISATHON Part 1 — Metacognitive Regulation; PowerWithin Psychology — Metacognition.\n\nCOMMON EXAM TRAP\nMetacognitive regulation is action on cognition; it is more than simply knowing that a strategy exists.\n\nMEMORY CUE\nMetacognitive regulation → Planning sets goals and chooses strategies • Monitoring checks progress during the task • Evaluation judges the effectiveness of the strategy or outcome",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9973,14 +9920,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nMetacognitive regulation is a focused concept within “Metacognition: Metacognitive knowledge and Metacognitive regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Metacognitive regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Metacognitive regulation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMetacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.\n\nKEY POINTS\n• Planning sets goals and chooses strategies.\n• Monitoring checks progress during the task.\n• Evaluation judges the effectiveness of the strategy or outcome.\n• Regulation can involve changing the strategy when needed.\n\nDISTINCTION / CAUTION\nMetacognitive regulation is action on cognition; it is more than simply knowing that a strategy exists.\n\nSOURCE BASIS\nREVISATHON Part 1 — Metacognitive Regulation; PowerWithin Psychology — Metacognition.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Metacognitive regulation”.",
-                "List the key points associated with “Metacognitive regulation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Metacognitive regulation”?"
+                "State the source-based core idea of “Metacognitive regulation”.",
+                "List the key source-supported points for “Metacognitive regulation”.",
+                "State the most important distinction or caution for “Metacognitive regulation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Metacognitive regulation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Metacognitive regulation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Metacognitive regulation” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Planning sets goals and chooses strategies",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9990,10 +9937,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "REVISATHON Part 1 — Metacognitive Regulation; PowerWithin Psychology — Metacognition."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -10093,7 +10037,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Jensen",
-              "content_notes": "CORE CONCEPT\nJensen is a focused concept within “Intelligence: Spearman; Thurstone; Jensen; Cattell; Gardner; Stenberg; Goleman; Das, Kar & Parrila”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Jensen\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Jensen as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nJensen → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.\n\nKEY POINTS\n• Jensen is included in the NET intelligence-theory sequence.\n• The topic belongs to theories of intelligence rather than intelligence testing alone.\n• Use the source's specific model and terminology when revising Jensen.\n• The supplied extract is not sufficient for a longer source-specific treatment here.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Theories of Intelligence; outline-level Jensen coverage in the supplied extract.\n\nCOMMON EXAM TRAP\nDo not substitute Spearman's or Cattell's model for Jensen's simply because all are psychometric approaches.\n\nMEMORY CUE\nJensen → Jensen is included in the NET intelligence-theory sequence • The topic belongs to theories of intelligence rather than intelligence testing alone • Use the source's specific model and terminology when revising Jensen",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10103,14 +10047,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nJensen is a focused concept within “Intelligence: Spearman; Thurstone; Jensen; Cattell; Gardner; Stenberg; Goleman; Das, Kar & Parrila”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Jensen\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Jensen as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.\n\nKEY POINTS\n• Jensen is included in the NET intelligence-theory sequence.\n• The topic belongs to theories of intelligence rather than intelligence testing alone.\n• Use the source's specific model and terminology when revising Jensen.\n• The supplied extract is not sufficient for a longer source-specific treatment here.\n\nDISTINCTION / CAUTION\nDo not substitute Spearman's or Cattell's model for Jensen's simply because all are psychometric approaches.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Theories of Intelligence; outline-level Jensen coverage in the supplied extract.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Jensen”.",
-                "List the key points associated with “Jensen” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Jensen”?"
+                "State the source-based core idea of “Jensen”.",
+                "List the key source-supported points for “Jensen”.",
+                "State the most important distinction or caution for “Jensen”."
               ],
-              "application_question": "Source-based check: Given a new question about “Jensen”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Jensen → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Jensen” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Jensen is included in the NET intelligence-theory sequence",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10120,10 +10064,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 6 Theories of Intelligence; outline-level Jensen coverage in the supplied extract."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
@@ -10278,7 +10219,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Das, Kar & Parrila",
-              "content_notes": "CORE CONCEPT\nDas, Kar & Parrila is a focused concept within “Intelligence: Spearman; Thurstone; Jensen; Cattell; Gardner; Stenberg; Goleman; Das, Kar & Parrila”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Das, Kar & Parrila\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Das, Kar & Parrila as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDas, Kar & Parrila → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nDas, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.\n\nKEY POINTS\n• P = Planning: goal setting, problem solving and monitoring.\n• A = Attention/Arousal: selective attention, resistance to distraction and vigilance.\n• S = Simultaneous: integrates elements into a whole.\n• S = Successive: integrates elements in a serial order.\n\nSOURCE BASIS\nBaron & Misra — PASS Theory of Intelligence (Das, Naglieri & Kirby); PowerWithin Psychology — Das, Kar & Parrila.\n\nCOMMON EXAM TRAP\nPASS describes cognitive processes rather than reducing intelligence to one general score.\n\nMEMORY CUE\nDas, Kar & Parrila → P = Planning: goal setting, problem solving and monitoring • A = Attention/Arousal: selective attention, resistance to distraction and vigilance • S = Simultaneous: integrates elements into a whole",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10288,14 +10229,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nDas, Kar & Parrila is a focused concept within “Intelligence: Spearman; Thurstone; Jensen; Cattell; Gardner; Stenberg; Goleman; Das, Kar & Parrila”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Das, Kar & Parrila\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Das, Kar & Parrila as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDas, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.\n\nKEY POINTS\n• P = Planning: goal setting, problem solving and monitoring.\n• A = Attention/Arousal: selective attention, resistance to distraction and vigilance.\n• S = Simultaneous: integrates elements into a whole.\n• S = Successive: integrates elements in a serial order.\n\nDISTINCTION / CAUTION\nPASS describes cognitive processes rather than reducing intelligence to one general score.\n\nSOURCE BASIS\nBaron & Misra — PASS Theory of Intelligence (Das, Naglieri & Kirby); PowerWithin Psychology — Das, Kar & Parrila.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Das, Kar & Parrila”.",
-                "List the key points associated with “Das, Kar & Parrila” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Das, Kar & Parrila”?"
+                "State the source-based core idea of “Das, Kar & Parrila”.",
+                "List the key source-supported points for “Das, Kar & Parrila”.",
+                "State the most important distinction or caution for “Das, Kar & Parrila”."
               ],
-              "application_question": "Source-based check: Given a new question about “Das, Kar & Parrila”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Das, Kar & Parrila → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Das, Kar & Parrila” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "P = Planning: goal setting, problem solving and monitoring",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10305,10 +10246,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — PASS Theory of Intelligence (Das, Naglieri & Kirby); PowerWithin Psychology — Das, Kar & Parrila."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -10371,7 +10309,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Getzels & Jackson",
-              "content_notes": "CORE CONCEPT\nGetzels & Jackson is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Getzels & Jackson\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Getzels & Jackson as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGetzels & Jackson → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nGetzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.\n\nKEY POINTS\n• Creativity and intelligence can be distinguished conceptually.\n• Getzels and Jackson compared groups using creativity and intelligence measures.\n• Their work is relevant to the debate about whether creativity is reducible to intelligence.\n• The source places their work within creativity theory/testing.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Creativity; Getzels & Jackson material.\n\nCOMMON EXAM TRAP\nThe existence of a creativity–intelligence relationship does not mean the constructs are identical.\n\nMEMORY CUE\nGetzels & Jackson → Creativity and intelligence can be distinguished conceptually • Getzels and Jackson compared groups using creativity and intelligence measures • Their work is relevant to the debate about whether creativity is reducible to intelligence",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10381,14 +10319,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nGetzels & Jackson is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Getzels & Jackson\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Getzels & Jackson as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGetzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.\n\nKEY POINTS\n• Creativity and intelligence can be distinguished conceptually.\n• Getzels and Jackson compared groups using creativity and intelligence measures.\n• Their work is relevant to the debate about whether creativity is reducible to intelligence.\n• The source places their work within creativity theory/testing.\n\nDISTINCTION / CAUTION\nThe existence of a creativity–intelligence relationship does not mean the constructs are identical.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Creativity; Getzels & Jackson material.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Getzels & Jackson”.",
-                "List the key points associated with “Getzels & Jackson” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Getzels & Jackson”?"
+                "State the source-based core idea of “Getzels & Jackson”.",
+                "List the key source-supported points for “Getzels & Jackson”.",
+                "State the most important distinction or caution for “Getzels & Jackson”."
               ],
-              "application_question": "Source-based check: Given a new question about “Getzels & Jackson”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Getzels & Jackson → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Getzels & Jackson” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Creativity and intelligence can be distinguished conceptually",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10398,17 +10336,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 6 Creativity; Getzels & Jackson material."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Guilford",
-              "content_notes": "CORE CONCEPT\nGuilford is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Guilford\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Guilford as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGuilford → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nGuilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.\n\nKEY POINTS\n• Guilford emphasized divergent production.\n• His Structure of Intellect model organizes abilities by operations, contents and products.\n• Divergent production concerns generating multiple possibilities.\n• Fluency, flexibility and originality are central creativity-related abilities in the source tradition.\n\nSOURCE BASIS\nPowerWithin Psychology — Guilford's Model of Structure of Intellect and Creativity.\n\nCOMMON EXAM TRAP\nDivergent production is not the same as convergent production, which focuses on arriving at a single appropriate answer.\n\nMEMORY CUE\nGuilford → Guilford emphasized divergent production • His Structure of Intellect model organizes abilities by operations, contents and products • Divergent production concerns generating multiple possibilities",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10418,14 +10353,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nGuilford is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Guilford\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Guilford as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGuilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.\n\nKEY POINTS\n• Guilford emphasized divergent production.\n• His Structure of Intellect model organizes abilities by operations, contents and products.\n• Divergent production concerns generating multiple possibilities.\n• Fluency, flexibility and originality are central creativity-related abilities in the source tradition.\n\nDISTINCTION / CAUTION\nDivergent production is not the same as convergent production, which focuses on arriving at a single appropriate answer.\n\nSOURCE BASIS\nPowerWithin Psychology — Guilford's Model of Structure of Intellect and Creativity.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Guilford”.",
-                "List the key points associated with “Guilford” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Guilford”?"
+                "State the source-based core idea of “Guilford”.",
+                "List the key source-supported points for “Guilford”.",
+                "State the most important distinction or caution for “Guilford”."
               ],
-              "application_question": "Source-based check: Given a new question about “Guilford”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Guilford → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Guilford” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Guilford emphasized divergent production",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10435,17 +10370,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Guilford's Model of Structure of Intellect and Creativity."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Wallach & Kogan",
-              "content_notes": "CORE CONCEPT\nWallach & Kogan is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Wallach & Kogan\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Wallach & Kogan as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nWallach & Kogan → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nWallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.\n\nKEY POINTS\n• Wallach and Kogan are associated with creativity assessment.\n• Their work is used in discussions distinguishing creativity from conventional intelligence.\n• Open-ended performance can be important when assessing creative production.\n• The source places them within the creativity-theory sequence.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Theories of Creativity; Wallach & Kogan coverage.\n\nCOMMON EXAM TRAP\nDo not substitute Guilford's Structure of Intellect model for Wallach and Kogan's specific contribution.\n\nMEMORY CUE\nWallach & Kogan → Wallach and Kogan are associated with creativity assessment • Their work is used in discussions distinguishing creativity from conventional intelligence • Open-ended performance can be important when assessing creative production",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10455,14 +10387,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nWallach & Kogan is a focused concept within “Creativity: Torrance, Getzels & Jackson, Guilford, Wallach & Kogan”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Wallach & Kogan\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Wallach & Kogan as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nWallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.\n\nKEY POINTS\n• Wallach and Kogan are associated with creativity assessment.\n• Their work is used in discussions distinguishing creativity from conventional intelligence.\n• Open-ended performance can be important when assessing creative production.\n• The source places them within the creativity-theory sequence.\n\nDISTINCTION / CAUTION\nDo not substitute Guilford's Structure of Intellect model for Wallach and Kogan's specific contribution.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 6 Theories of Creativity; Wallach & Kogan coverage.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Wallach & Kogan”.",
-                "List the key points associated with “Wallach & Kogan” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Wallach & Kogan”?"
+                "State the source-based core idea of “Wallach & Kogan”.",
+                "List the key source-supported points for “Wallach & Kogan”.",
+                "State the most important distinction or caution for “Wallach & Kogan”."
               ],
-              "application_question": "Source-based check: Given a new question about “Wallach & Kogan”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Wallach & Kogan → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Wallach & Kogan” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Wallach and Kogan are associated with creativity assessment",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10472,10 +10404,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 6 Theories of Creativity; Wallach & Kogan coverage."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -10501,7 +10430,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Relationship between intelligence and creativity",
-              "content_notes": "CORE CONCEPT\nRelationship between intelligence and creativity is a focused concept within “Relationship between Intelligence and Creativity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Relationship between intelligence and creativity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Relationship between intelligence and creativity as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRelationship between intelligence and creativity → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.\n\nKEY POINTS\n• Intelligence can contribute to creativity but is not sufficient by itself.\n• Creativity involves multiple interacting conditions.\n• Domain knowledge and intrinsic motivation can support creative performance.\n• Creativity can vary across domains.\n\nSOURCE BASIS\nBaron & Misra — Creativity: A Confluence Approach; PowerWithin Psychology — Relationship between Intelligence and Creativity.\n\nCOMMON EXAM TRAP\nDo not reduce creativity to IQ; the source explicitly presents a multi-factor/confluence account.\n\nMEMORY CUE\nRelationship between intelligence and creativity → Intelligence can contribute to creativity but is not sufficient by itself • Creativity involves multiple interacting conditions • Domain knowledge and intrinsic motivation can support creative performance",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10511,14 +10440,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nRelationship between intelligence and creativity is a focused concept within “Relationship between Intelligence and Creativity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Relationship between intelligence and creativity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Relationship between intelligence and creativity as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.\n\nKEY POINTS\n• Intelligence can contribute to creativity but is not sufficient by itself.\n• Creativity involves multiple interacting conditions.\n• Domain knowledge and intrinsic motivation can support creative performance.\n• Creativity can vary across domains.\n\nDISTINCTION / CAUTION\nDo not reduce creativity to IQ; the source explicitly presents a multi-factor/confluence account.\n\nSOURCE BASIS\nBaron & Misra — Creativity: A Confluence Approach; PowerWithin Psychology — Relationship between Intelligence and Creativity.\n\nSTUDY RULE\nUse the named theorists, constructs and distinctions exactly as supported by the uploaded sources. Where coverage is limited, do not invent details.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Relationship between intelligence and creativity”.",
-                "List the key points associated with “Relationship between intelligence and creativity” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Relationship between intelligence and creativity”?"
+                "State the source-based core idea of “Relationship between intelligence and creativity”.",
+                "List the key source-supported points for “Relationship between intelligence and creativity”.",
+                "State the most important distinction or caution for “Relationship between intelligence and creativity”."
               ],
-              "application_question": "Source-based check: Given a new question about “Relationship between intelligence and creativity”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Relationship between intelligence and creativity → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the cognitive theory or process represented by “Relationship between intelligence and creativity” in a new question and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Intelligence can contribute to creativity but is not sufficient by itself",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10528,10 +10457,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Creativity: A Confluence Approach; PowerWithin Psychology — Relationship between Intelligence and Creativity."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -18082,7 +18008,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 103
+        "enrichedMicrotopics": 126
       }
     }
   },
