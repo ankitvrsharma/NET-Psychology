@@ -190,7 +190,7 @@ function renderNetCountdown(summary=progressSummary()){
     const update=()=>{
       const diff=Math.max(0,target-new Date()),days=Math.ceil(diff/86400000);
       const dateText=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(target);
-      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(cycleLabel)+' · '+statusText+': '+dateText+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT EXAM</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(cycleLabel)+' · '+statusText+': '+dateText+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
     };
     update();
     clearInterval(window.__netCountdownTimer);window.__netCountdownTimer=setInterval(update,60000);
@@ -198,7 +198,7 @@ function renderNetCountdown(summary=progressSummary()){
     const now=new Date(),future=now.getMonth()<6?new Date(now.getFullYear(),6,1):new Date(now.getFullYear(),11,1);
     if(future<=now)future.setFullYear(future.getFullYear()+1);
     const cycle=cycleForFallback(future),days=Math.ceil(Math.max(0,future-now)/86400000);
-    root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>UGC NET '+esc(cycle.label)+' · Reference date: '+esc(cycle.dateLabel)+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+    root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT EXAM</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>UGC NET '+esc(cycle.label)+' · Reference date: '+esc(cycle.dateLabel)+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
   });
 }
 function quickLearnItem(){
@@ -234,10 +234,10 @@ function quickLearnItem(){
   const key=item.u.id+'-'+item.t.id+'-'+item.m.id;
   seen=[key,...seen.filter(x=>x!==key)].slice(0,Math.min(30,pool.length));
   try{sessionStorage.setItem('netpsych_quick_seen',JSON.stringify(seen))}catch(e){}
-  const detail=item.points.slice(0,2).join(' ');
+  const detail=item.points.slice(0,4).join(' ');
   const body=clean(item.core||detail);
   const secondary=clean(detail&&detail!==body?detail:'');
-  return {title:item.m.title,category:item.category,body:body.slice(0,420),secondary:secondary.slice(0,360),unit:item.u.id,topic:item.t.id,micro:item.m.id};
+  return {title:item.m.title,category:item.category,body:body.slice(0,700),secondary:secondary.slice(0,520),unit:item.u.id,topic:item.t.id,micro:item.m.id};
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
