@@ -4,7 +4,7 @@ const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
-let STATE_CACHE=null;
+let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 const ladder=[0,1,3,7,14,30,60,90,180];
 
 function loadScript(src){
@@ -51,7 +51,7 @@ async function loadStudyData(){
     m.study_source_config=json.study_source_config||null;
   }
   D=json;
-  if(document.body.dataset.page==='practice'){
+  // Render the core homepage immediately; optional enrichment must never block the learning interface.\n  if(document.body.dataset.page==='home') render();\n  if(document.body.dataset.page==='practice'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
@@ -201,58 +201,26 @@ function renderNetCountdown(summary=progressSummary()){
     root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>UGC NET '+esc(cycle.label)+' · Reference date: '+esc(cycle.dateLabel)+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
   });
 }
-function quickLearnItem(){
-  const pool=[];
-  const classify=(title,text)=>{
-    const s=(title+' '+text).toLowerCase();
-    if(/\b(theory|model)\b/.test(s))return 'THEORY';
-    if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return 'SCHOOL';
-    if(/\b(approach|therapy)\b/.test(s))return 'APPROACH';
-    if(/\b(psychologist|theorist|contribution)\b/.test(s))return 'PSYCHOLOGIST';
-    if(/\b(timeline|history|development of|origin|emergence)\b/.test(s))return 'TIMELINE';
-    if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return 'FINDING';
-    if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return 'DISTINCTION';
-    return 'CONCEPT';
-  };
-  const clean=x=>String(x||'').replace(/^[-•*]\s*/,'').replace(/\s+/g,' ').trim();
-  units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{
-    const exam=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');
-    if(!exam)return;
-    const core=clean(section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||'');
-    const points=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(clean).filter(Boolean);
-    if(core||points.length){
-      const sourceText=(core+' '+points.slice(0,3).join(' ')).trim();
-      pool.push({u,t,m,category:classify(m.title,sourceText),core,points,score:exam.length+core.length});
-    }
-  })));
-  if(!pool.length)return null;
-  let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_seen')||'[]')}catch(e){}
-  const unseen=pool.filter(x=>!seen.includes(x.u.id+'-'+x.t.id+'-'+x.m.id));
-  const choices=(unseen.length?unseen:pool).sort((a,b)=>b.score-a.score);
-  const top=choices.slice(0,Math.min(24,choices.length));
-  const item=top[Math.floor(Math.random()*top.length)];
-  const key=item.u.id+'-'+item.t.id+'-'+item.m.id;
-  seen=[key,...seen.filter(x=>x!==key)].slice(0,Math.min(30,pool.length));
-  try{sessionStorage.setItem('netpsych_quick_seen',JSON.stringify(seen))}catch(e){}
-  const detail=item.points.slice(0,2).join(' ');
-  const body=clean(item.core||detail);
-  const secondary=clean(detail&&detail!==body?detail:'');
-  return {title:item.m.title,category:item.category,body:body.slice(0,420),secondary:secondary.slice(0,360),unit:item.u.id,topic:item.t.id,micro:item.m.id};
-}
-function home(){
+function quickClean(x){return String(x||'').replace(/^[-•*]\s*/,'').replace(/\s+/g,' ').trim()}
+function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.content_notes||''),core=quickClean(section(d,'ACADEMIC CORE','\n\nKEY POINTS')||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title),points=bullets(section(d,'KEY POINTS','\n\nDISTINCTION / CAUTION')||section(n,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(quickClean).filter(Boolean),dist=quickClean(section(d,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')||section(n,'COMMON EXAM TRAP','\n\nMEMORY CUE')||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')),exam=quickClean(m.exam_takeaway||''),hook=quickClean(section(n,'MEMORY CUE')||'');return{core,points,dist,exam,hook}}
+function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
+function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
+function quickVisual(m,k,p){const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='DISTINCTION'||/\b(vs|versus|difference|distinction|compare)\b/.test(s)){const a=p[0]||'Identify the defining feature.',b=p[1]||'Identify the contrasting feature.';return'<div class="quick-visual quick-table"><div><b>COMPARE</b><span>'+esc(a.slice(0,150))+'</span></div><div><b>CONTRAST</b><span>'+esc(b.slice(0,150))+'</span></div></div>'}if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const e=quickClean(a[1](p));if(e)bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_cards_seen')||'[]')}catch(e){}const unseen=bank.filter(x=>!seen.includes(x.id)),pool=unseen.length?unseen:bank,item=pool[Math.floor(Math.random()*pool.length)];seen=[item.id,...seen.filter(x=>x!==item.id)].slice(0,120);try{sessionStorage.setItem('netpsych_quick_cards_seen',JSON.stringify(seen))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   if(hasStarted&&resume){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">YOUR NEXT STEP</div></div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="hero-cta" href="microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id)+'"><span>CONTINUE LEARNING</span><b>→</b></a></div>';
   }else{
-    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn one concept · Recall it · Apply it in your daily life · Revisit it when needed.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
+    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
   const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
   const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a purpose: learn a concept, strengthen your recall, or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
-  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.body)+'</p>'+(quick.secondary?'<p class="quick-learn-secondary">'+esc(quick.secondary)+'</p>':'')+'</div><a class="quick-learn-link" href="microtopic.html?unit='+encodeURIComponent(quick.unit)+'&topic='+encodeURIComponent(quick.topic)+'&micro='+encodeURIComponent(quick.micro)+'">Explore this concept →</a></section>';
+  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><div class="quick-learn-angle">'+esc(quick.angle)+'</div><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
   const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Build the conceptual framework.</span></div><div><b>Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Spaced Revision</b><span>Return to it at spaced intervals.</span></div></div>`;
 }
 function daily3(){
