@@ -665,7 +665,6 @@ function practice(){
 }
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
-  const attention=all().filter(x=>{const p=ps[x.k];return p?.confidence==='low'||p?.rating==='again'||(p?.next&&new Date(p.next)<=new Date())}).slice(0,6);
   const started=s.started,total=s.total;
   const interpretation=progressInterpretation(s);
   const nextAction=due?{label:'Start Revision',href:'revision.html',note:`${due} concept${due===1?'':'s'} ready for another pass.`}:started<total?{label:'Continue Learning',href:'unit.html?id=1',note:'Keep building your understanding one concept at a time.'}:{label:'Practice Questions',href:'practice.html',note:'Use recall and application to test what you know.'};
