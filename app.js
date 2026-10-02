@@ -187,6 +187,24 @@ function learnPage(){
     root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">UGC NET COUNTDOWN</div><strong>CHECK SCHEDULE</strong><p>The latest examination schedule could not be loaded right now.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
   });
 }
+function quickLearnItem(){
+  const pool=[];
+  units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{
+    const exam=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');
+    if(!exam)return;
+    const core=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||'';
+    const points=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
+    if(core||points.length)pool.push({u,t,m,core,points});
+  })));
+  if(!pool.length)return null;
+  let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_seen')||'[]')}catch(e){}
+  const unseen=pool.filter(x=>!seen.includes(x.u.id+'-'+x.t.id+'-'+x.m.id));
+  const choices=unseen.length?unseen:pool;
+  const item=choices[Math.floor(Math.random()*choices.length)],key=item.u.id+'-'+item.t.id+'-'+item.m.id;
+  seen=[key,...seen.filter(x=>x!==key)].slice(0,Math.min(30,pool.length));
+  try{sessionStorage.setItem('netpsych_quick_seen',JSON.stringify(seen))}catch(e){}
+  return {title:item.m.title,body:String(item.points[0]||item.core).replace(/^[-•]\s*/,'').trim(),unit:item.u.id,topic:item.t.id,micro:item.m.id};
+}
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
@@ -198,7 +216,9 @@ function home(){
   renderNetCountdown(summary);
   const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
   const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
-  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Keep your Psychology learning moving every day. Learn something new, revisit concepts that need another look, or practise with MCQs — even a small study session keeps your learning going.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
+  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a purpose: learn a concept, strengthen your recall, or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
+  const quick=quickLearnItem(),quickBox=$('#quickLearn');
+  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-label"><span class="eyebrow">QUICK LEARN</span><span>ONE CARD · ONE IDEA</span></div><div class="quick-learn-content"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.body)+'</p></div><a class="quick-learn-link" href="microtopic.html?unit='+encodeURIComponent(quick.unit)+'&topic='+encodeURIComponent(quick.topic)+'&micro='+encodeURIComponent(quick.micro)+'">Explore this concept →</a></section>';
   const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Build the conceptual framework.</span></div><div><b>Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Spaced Revision</b><span>Return to it at spaced intervals.</span></div></div>`;
 }
 function daily3(){

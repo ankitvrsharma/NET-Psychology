@@ -579,3 +579,12 @@ body[data-page="home"] .learning-approach{
     padding:20px;
   }
 }
+
+/* Quick Learn */
+body[data-page="home"] .quick-learn-section{margin-top:24px}
+body[data-page="home"] .quick-learn-card{border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow);padding:22px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:28px;row-gap:8px}
+body[data-page="home"] .quick-learn-label{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.06em}
+body[data-page="home"] .quick-learn-content h3{margin:2px 0 5px;color:var(--navy);font-size:22px;line-height:1.2}
+body[data-page="home"] .quick-learn-content p{margin:0;color:var(--ink);font-size:14px;line-height:1.6;max-width:850px}
+body[data-page="home"] .quick-learn-link{align-self:end;color:var(--blue);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap}
+@media(max-width:620px){body[data-page="home"] .quick-learn-card{grid-template-columns:1fr;padding:19px 20px}body[data-page="home"] .quick-learn-label{align-items:flex-start;flex-direction:column;gap:3px}body[data-page="home"] .quick-learn-content h3{font-size:19px}body[data-page="home"] .quick-learn-link{margin-top:5px}}
