@@ -2248,7 +2248,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Dimensions of research",
-              "content_notes": "CORE CONCEPT\nDimensions of research is a focused concept within “Research: Meaning, Purpose, and Dimensions”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Dimensions of research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Dimensions of research as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDimensions of research → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nKEY POINTS\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics.\n\nCOMMON EXAM TRAP\nDo not confuse a dimension of research with a single method or statistical test.\n\nMEMORY CUE\nDimensions of research → Research is systematic rather than casual observation • The research paradigm shapes assumptions about knowledge • Methods operationalize the research question",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2256,14 +2256,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nDimensions of research is a focused concept within “Research: Meaning, Purpose, and Dimensions”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Dimensions of research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Dimensions of research as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nKEY POINTS\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n\nDISTINCTION / CAUTION\nDo not confuse a dimension of research with a single method or statistical test.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Dimensions of research”.",
-                "List the key points associated with “Dimensions of research” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Dimensions of research”?"
+                "State the source-based core idea of “Dimensions of research” without looking at your notes.",
+                "List the main source-supported points for “Dimensions of research”.",
+                "What distinction or caution must you remember for “Dimensions of research”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Dimensions of research”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Dimensions of research → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Dimensions of research”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Research is systematic rather than casual observation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2273,8 +2273,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             }
@@ -2300,7 +2299,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Research problems",
-              "content_notes": "CORE CONCEPT\nResearch problems is a focused concept within “Research problems, Variables and Operational Definitions, Hypothesis, Sampling”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Research problems\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Research problems as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nResearch problems → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nA research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nKEY POINTS\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling.\n\nCOMMON EXAM TRAP\nA research problem is broader than a hypothesis; the hypothesis states a testable proposition about expected relationships.\n\nMEMORY CUE\nResearch problems → The problem defines the focus of inquiry • Variables identify relevant characteristics or conditions • Operational definitions specify how constructs will be observed or measured",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2308,14 +2307,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nResearch problems is a focused concept within “Research problems, Variables and Operational Definitions, Hypothesis, Sampling”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Research problems\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Research problems as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nA research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nKEY POINTS\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n\nDISTINCTION / CAUTION\nA research problem is broader than a hypothesis; the hypothesis states a testable proposition about expected relationships.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Research problems”.",
-                "List the key points associated with “Research problems” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Research problems”?"
+                "State the source-based core idea of “Research problems” without looking at your notes.",
+                "List the main source-supported points for “Research problems”.",
+                "What distinction or caution must you remember for “Research problems”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Research problems”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Research problems → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Research problems”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "The problem defines the focus of inquiry",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2325,8 +2324,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -2484,7 +2482,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Ethics in conducting research",
-              "content_notes": "CORE CONCEPT\nEthics in conducting research is a focused concept within “Ethics in conducting and reporting research”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethics in conducting research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Ethics in conducting research as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEthics in conducting research → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEthics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nKEY POINTS\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable.\n\nCOMMON EXAM TRAP\nEthics is part of the research process itself, not something added only when results are written.\n\nMEMORY CUE\nEthics in conducting research → Participant welfare is a central ethical concern • Consent and voluntary participation matter • Privacy and confidentiality must be protected",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2492,14 +2490,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nEthics in conducting research is a focused concept within “Ethics in conducting and reporting research”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethics in conducting research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Ethics in conducting research as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEthics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nKEY POINTS\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n\nDISTINCTION / CAUTION\nEthics is part of the research process itself, not something added only when results are written.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Ethics in conducting research”.",
-                "List the key points associated with “Ethics in conducting research” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Ethics in conducting research”?"
+                "State the source-based core idea of “Ethics in conducting research” without looking at your notes.",
+                "List the main source-supported points for “Ethics in conducting research”.",
+                "What distinction or caution must you remember for “Ethics in conducting research”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Ethics in conducting research”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Ethics in conducting research → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Ethics in conducting research”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Participant welfare is a central ethical concern",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2509,15 +2507,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 2,
               "title": "Ethics in reporting research",
-              "content_notes": "CORE CONCEPT\nEthics in reporting research is a focused concept within “Ethics in conducting and reporting research”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethics in reporting research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Ethics in reporting research as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEthics in reporting research → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEthics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nKEY POINTS\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research.\n\nCOMMON EXAM TRAP\nA statistically significant finding does not justify conclusions that the design cannot support.\n\nMEMORY CUE\nEthics in reporting research → Report methods and findings accurately • Do not fabricate or falsify data • Give appropriate credit to sources and contributors",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2525,14 +2522,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nEthics in reporting research is a focused concept within “Ethics in conducting and reporting research”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethics in reporting research\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Ethics in reporting research as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEthics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nKEY POINTS\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n\nDISTINCTION / CAUTION\nA statistically significant finding does not justify conclusions that the design cannot support.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Ethics in reporting research”.",
-                "List the key points associated with “Ethics in reporting research” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Ethics in reporting research”?"
+                "State the source-based core idea of “Ethics in reporting research” without looking at your notes.",
+                "List the main source-supported points for “Ethics in reporting research”.",
+                "What distinction or caution must you remember for “Ethics in reporting research”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Ethics in reporting research”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Ethics in reporting research → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Ethics in reporting research”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Report methods and findings accurately",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2542,8 +2539,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             }
@@ -2687,7 +2683,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Observation",
-              "content_notes": "CORE CONCEPT\nObservation is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Observation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Observation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nObservation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nObservation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nKEY POINTS\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation.\n\nCOMMON EXAM TRAP\nObservation is not automatically objective; what is noticed and recorded can be influenced by the observer and the recording system.\n\nMEMORY CUE\nObservation → Behavior is recorded rather than inferred only from self-report • Participant and non-participant observation are distinct forms • Naturalistic observation can increase ecological relevance",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2695,14 +2691,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nObservation is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Observation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Observation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nObservation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nKEY POINTS\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n\nDISTINCTION / CAUTION\nObservation is not automatically objective; what is noticed and recorded can be influenced by the observer and the recording system.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Observation”.",
-                "List the key points associated with “Observation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Observation”?"
+                "State the source-based core idea of “Observation” without looking at your notes.",
+                "List the main source-supported points for “Observation”.",
+                "What distinction or caution must you remember for “Observation”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Observation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Observation → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Observation”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Behavior is recorded rather than inferred only from self-report",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2712,15 +2708,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 2,
               "title": "Survey",
-              "content_notes": "CORE CONCEPT\nSurvey is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Survey\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Survey as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSurvey → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nKEY POINTS\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n\nSOURCE BASIS\nBaron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method.\n\nCOMMON EXAM TRAP\nA large survey sample does not by itself guarantee valid conclusions; sampling and measurement quality remain important.\n\nMEMORY CUE\nSurvey → Surveys can reach large samples efficiently • Questions may assess attitudes, opinions or reported behavior • Repeated surveys can examine change over time",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2728,14 +2723,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSurvey is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Survey\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Survey as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nKEY POINTS\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n\nDISTINCTION / CAUTION\nA large survey sample does not by itself guarantee valid conclusions; sampling and measurement quality remain important.\n\nSOURCE BASIS\nBaron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Survey”.",
-                "List the key points associated with “Survey” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Survey”?"
+                "State the source-based core idea of “Survey” without looking at your notes.",
+                "List the main source-supported points for “Survey”.",
+                "What distinction or caution must you remember for “Survey”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Survey”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Survey → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Survey”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Surveys can reach large samples efficiently",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2745,15 +2740,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 3,
               "title": "Interview",
-              "content_notes": "CORE CONCEPT\nInterview is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interview\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Interview as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInterview → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAn interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nKEY POINTS\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews.\n\nCOMMON EXAM TRAP\nStructured and unstructured interviews should not be treated as interchangeable: they differ in flexibility, data type and standardization.\n\nMEMORY CUE\nInterview → Structured interviews use predetermined questions • Unstructured interviews are flexible and allow probing • Group interviews/focus groups generate interaction among participants",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2761,14 +2755,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nInterview is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interview\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Interview as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAn interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nKEY POINTS\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n\nDISTINCTION / CAUTION\nStructured and unstructured interviews should not be treated as interchangeable: they differ in flexibility, data type and standardization.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Interview”.",
-                "List the key points associated with “Interview” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Interview”?"
+                "State the source-based core idea of “Interview” without looking at your notes.",
+                "List the main source-supported points for “Interview”.",
+                "What distinction or caution must you remember for “Interview”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Interview”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Interview → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Interview”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Structured interviews use predetermined questions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2778,15 +2772,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 4,
               "title": "Questionnaires",
-              "content_notes": "CORE CONCEPT\nQuestionnaires is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Questionnaires\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Questionnaires as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nQuestionnaires → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nQuestionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nKEY POINTS\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n\nSOURCE BASIS\nBaron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires.\n\nCOMMON EXAM TRAP\nA questionnaire is a data-collection instrument; 'survey' is the broader research method or strategy in which questionnaires may be used.\n\nMEMORY CUE\nQuestionnaires → Questionnaires standardize the questions presented to respondents • They are efficient for collecting data from many people • Response format influences the kind of data obtained",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2794,14 +2787,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nQuestionnaires is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Questionnaires\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Questionnaires as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nQuestionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nKEY POINTS\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n\nDISTINCTION / CAUTION\nA questionnaire is a data-collection instrument; 'survey' is the broader research method or strategy in which questionnaires may be used.\n\nSOURCE BASIS\nBaron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Questionnaires”.",
-                "List the key points associated with “Questionnaires” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Questionnaires”?"
+                "State the source-based core idea of “Questionnaires” without looking at your notes.",
+                "List the main source-supported points for “Questionnaires”.",
+                "What distinction or caution must you remember for “Questionnaires”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Questionnaires”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Questionnaires → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Questionnaires”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Questionnaires standardize the questions presented to respondents",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2811,8 +2804,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -2885,7 +2877,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Field studies",
-              "content_notes": "CORE CONCEPT\nField studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Field studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Field studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nField studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nField studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nKEY POINTS\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples.\n\nCOMMON EXAM TRAP\nField study does not automatically mean qualitative research; field research can use different kinds of data and designs.\n\nMEMORY CUE\nField studies → Research occurs in a natural or real-world setting • Contextual information can be richer than in a laboratory • Control over extraneous variables is generally lower",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2893,14 +2885,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nField studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Field studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Field studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nField studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nKEY POINTS\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n\nDISTINCTION / CAUTION\nField study does not automatically mean qualitative research; field research can use different kinds of data and designs.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Field studies”.",
-                "List the key points associated with “Field studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Field studies”?"
+                "State the source-based core idea of “Field studies” without looking at your notes.",
+                "List the main source-supported points for “Field studies”.",
+                "What distinction or caution must you remember for “Field studies”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Field studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Field studies → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Field studies”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Research occurs in a natural or real-world setting",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2910,15 +2902,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 8,
               "title": "Cross-cultural studies",
-              "content_notes": "CORE CONCEPT\nCross-cultural studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cross-cultural studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cross-cultural studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCross-cultural studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nKEY POINTS\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development.\n\nCOMMON EXAM TRAP\nFinding a cultural difference does not by itself establish its cause; cultural groups differ on many correlated conditions.\n\nMEMORY CUE\nCross-cultural studies → The basic purpose is comparison across cultural contexts • Culture can influence behavior, development and interpretation • Cross-cultural comparisons can reveal limits of generalization",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2926,14 +2917,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCross-cultural studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cross-cultural studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cross-cultural studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nKEY POINTS\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n\nDISTINCTION / CAUTION\nFinding a cultural difference does not by itself establish its cause; cultural groups differ on many correlated conditions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cross-cultural studies”.",
-                "List the key points associated with “Cross-cultural studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cross-cultural studies”?"
+                "State the source-based core idea of “Cross-cultural studies” without looking at your notes.",
+                "List the main source-supported points for “Cross-cultural studies”.",
+                "What distinction or caution must you remember for “Cross-cultural studies”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Cross-cultural studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cross-cultural studies → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Cross-cultural studies”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "The basic purpose is comparison across cultural contexts",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -2943,8 +2934,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -3050,7 +3040,7 @@ window.NETPSY_DATA = {
             {
               "id": 12,
               "title": "Narratives",
-              "content_notes": "CORE CONCEPT\nNarratives is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Narratives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Narratives as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNarratives → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nNarratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nKEY POINTS\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives.\n\nCOMMON EXAM TRAP\nNarrative data are not simply unstructured anecdotes; they can be systematically collected and analyzed.\n\nMEMORY CUE\nNarratives → Narratives preserve participants' accounts of experience • They are useful for studying meaning and lived experience • Analysis can identify themes and layers of meaning",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3058,14 +3048,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nNarratives is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Narratives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Narratives as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNarratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nKEY POINTS\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n\nDISTINCTION / CAUTION\nNarrative data are not simply unstructured anecdotes; they can be systematically collected and analyzed.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Narratives”.",
-                "List the key points associated with “Narratives” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Narratives”?"
+                "State the source-based core idea of “Narratives” without looking at your notes.",
+                "List the main source-supported points for “Narratives”.",
+                "What distinction or caution must you remember for “Narratives”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Narratives”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Narratives → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Narratives”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Narratives preserve participants' accounts of experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -3075,15 +3065,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 13,
               "title": "Case studies",
-              "content_notes": "CORE CONCEPT\nCase studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Case studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Case studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCase studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nA case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nKEY POINTS\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion.\n\nCOMMON EXAM TRAP\nCase study depth is not the same as experimental control; the two methods answer different kinds of questions.\n\nMEMORY CUE\nCase studies → The unit of analysis is an individual case or bounded case • Multiple data sources may be combined • The approach is idiographic and context-sensitive",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3091,14 +3080,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCase studies is a focused concept within “Methods of research: Observation, Survey (Interview, Questionnaires), Experimental, Quasi-experimental, Field studies, Cross-Cultural Studies, Phenomenology, Grounded theory, Focus groups, Narratives, Case studies, Ethnography”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Case studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Case studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nA case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nKEY POINTS\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n\nDISTINCTION / CAUTION\nCase study depth is not the same as experimental control; the two methods answer different kinds of questions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Case studies”.",
-                "List the key points associated with “Case studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Case studies”?"
+                "State the source-based core idea of “Case studies” without looking at your notes.",
+                "List the main source-supported points for “Case studies”.",
+                "What distinction or caution must you remember for “Case studies”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Case studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Case studies → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Case studies”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "The unit of analysis is an individual case or bounded case",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -3108,8 +3097,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -3305,7 +3293,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Parametric tests",
-              "content_notes": "CORE CONCEPT\nParametric tests is a focused concept within “Parametric (t-test) and Non-parametric tests (Sign Test, Wilcoxon Signed rank test, Mann-Whitney test, Kruskal-Wallis test, Friedman)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Parametric tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Parametric tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nParametric tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nKEY POINTS\n• t-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Statistics in Psychology.\n\nCOMMON EXAM TRAP\nDo not select a test only from the number of groups; design, measurement level and assumptions also matter.\n\nMEMORY CUE\nParametric tests → t-tests are listed under parametric tests in the source • Parametric and non-parametric procedures form different families of inferential tests • Choice of test depends on design, variables and assumptions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3313,14 +3301,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nParametric tests is a focused concept within “Parametric (t-test) and Non-parametric tests (Sign Test, Wilcoxon Signed rank test, Mann-Whitney test, Kruskal-Wallis test, Friedman)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Parametric tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Parametric tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nKEY POINTS\n• t-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n\nDISTINCTION / CAUTION\nDo not select a test only from the number of groups; design, measurement level and assumptions also matter.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Statistics in Psychology.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Parametric tests”.",
-                "List the key points associated with “Parametric tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Parametric tests”?"
+                "State the source-based core idea of “Parametric tests” without looking at your notes.",
+                "List the main source-supported points for “Parametric tests”.",
+                "What distinction or caution must you remember for “Parametric tests”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Parametric tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Parametric tests → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Parametric tests”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "t-tests are listed under parametric tests in the source",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -3330,8 +3318,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Statistics in Psychology."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -4211,7 +4198,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Interpretation",
-              "content_notes": "CORE CONCEPT\nInterpretation is a focused concept within “Factor analysis: Assumptions, Methods, Rotation and Interpretation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interpretation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Interpretation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInterpretation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nFactor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nKEY POINTS\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation.\n\nCOMMON EXAM TRAP\nA factor loading is not itself a factor; it indicates how strongly a measured variable is associated with a factor.\n\nMEMORY CUE\nInterpretation → Factor loading indicates the relationship of a variable with a factor • Eigenvalues represent variance explained by factors • Rotation helps make factor patterns more interpretable",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4219,14 +4206,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nInterpretation is a focused concept within “Factor analysis: Assumptions, Methods, Rotation and Interpretation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interpretation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Interpretation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nFactor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nKEY POINTS\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n\nDISTINCTION / CAUTION\nA factor loading is not itself a factor; it indicates how strongly a measured variable is associated with a factor.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Interpretation”.",
-                "List the key points associated with “Interpretation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Interpretation”?"
+                "State the source-based core idea of “Interpretation” without looking at your notes.",
+                "List the main source-supported points for “Interpretation”.",
+                "What distinction or caution must you remember for “Interpretation”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Interpretation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Interpretation → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Interpretation”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Factor loading indicates the relationship of a variable with a factor",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4236,8 +4223,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             }
@@ -4362,7 +4348,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Randomized Block Designs",
-              "content_notes": "CORE CONCEPT\nRandomized Block Designs is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Randomized Block Designs\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Randomized Block Designs as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRandomized Block Designs → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nA randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nKEY POINTS\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material.\n\nCOMMON EXAM TRAP\nBlocking is not the same as matching every participant individually; the block is the design structure within which randomization occurs.\n\nMEMORY CUE\nRandomized Block Designs → Blocking controls or reduces variation associated with a known nuisance variable • Treatment assignment is randomized within blocks • The design can improve precision when the blocking variable is relevant",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4370,14 +4356,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nRandomized Block Designs is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Randomized Block Designs\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Randomized Block Designs as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nA randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nKEY POINTS\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n\nDISTINCTION / CAUTION\nBlocking is not the same as matching every participant individually; the block is the design structure within which randomization occurs.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Randomized Block Designs”.",
-                "List the key points associated with “Randomized Block Designs” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Randomized Block Designs”?"
+                "State the source-based core idea of “Randomized Block Designs” without looking at your notes.",
+                "List the main source-supported points for “Randomized Block Designs”.",
+                "What distinction or caution must you remember for “Randomized Block Designs”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Randomized Block Designs”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Randomized Block Designs → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Randomized Block Designs”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Blocking controls or reduces variation associated with a known nuisance variable",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4387,8 +4373,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -4428,7 +4413,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Latin Square",
-              "content_notes": "CORE CONCEPT\nLatin Square is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Latin Square\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Latin Square as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLatin Square → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nA Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nKEY POINTS\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Latin Square Design.\n\nCOMMON EXAM TRAP\nLatin square is a balanced blocking design; it is not simply a four-or-more-group version of a randomized block design.\n\nMEMORY CUE\nLatin Square → Each treatment occurs once in every row • Each treatment also occurs once in every column • Rows and columns represent two sources of systematic variation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4436,14 +4421,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nLatin Square is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Latin Square\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Latin Square as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nA Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nKEY POINTS\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n\nDISTINCTION / CAUTION\nLatin square is a balanced blocking design; it is not simply a four-or-more-group version of a randomized block design.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Latin Square Design.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Latin Square”.",
-                "List the key points associated with “Latin Square” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Latin Square”?"
+                "State the source-based core idea of “Latin Square” without looking at your notes.",
+                "List the main source-supported points for “Latin Square”.",
+                "What distinction or caution must you remember for “Latin Square”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Latin Square”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Latin Square → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Latin Square”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "Each treatment occurs once in every row",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4453,15 +4438,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Latin Square Design."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 7,
               "title": "Cohort studies",
-              "content_notes": "CORE CONCEPT\nCohort studies is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cohort studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cohort studies as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCohort studies → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nKEY POINTS\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs outline.\n\nCOMMON EXAM TRAP\nDo not automatically label every longitudinal study a cohort study; the defining feature is the cohort-based grouping of participants.\n\nMEMORY CUE\nCohort studies → A cohort is a defined group followed as a unit of observation • The design is useful for studying change or outcomes associated with an exposure • Temporal ordering can be important in cohort research",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4469,14 +4453,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nCohort studies is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cohort studies\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cohort studies as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nKEY POINTS\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n\nDISTINCTION / CAUTION\nDo not automatically label every longitudinal study a cohort study; the defining feature is the cohort-based grouping of participants.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs outline.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cohort studies”.",
-                "List the key points associated with “Cohort studies” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cohort studies”?"
+                "State the source-based core idea of “Cohort studies” without looking at your notes.",
+                "List the main source-supported points for “Cohort studies”.",
+                "What distinction or caution must you remember for “Cohort studies”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Cohort studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cohort studies → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Cohort studies”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "A cohort is a defined group followed as a unit of observation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4486,15 +4470,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Experimental Designs outline."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
             {
               "id": 8,
               "title": "Time series",
-              "content_notes": "CORE CONCEPT\nTime series is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Time series\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Time series as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTime series → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nTime-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nKEY POINTS\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design.\n\nCOMMON EXAM TRAP\nRepeated measurement alone does not establish causality; alternative explanations for changes over time must still be considered.\n\nMEMORY CUE\nTime series → The same outcome is observed repeatedly across time • The sequence of observations is central to interpretation • Time-series designs are useful when random assignment is not feasible",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4502,14 +4485,14 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ACADEMIC CORE\nTime series is a focused concept within “Experimental Designs: ANOVA (One-way, Factorial), Randomized Block Designs, Repeated Measures Design, Latin Square, Cohort studies, Time series, MANOVA, ANCOVA. Single-subject designs”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Time series\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Time series as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTime-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nKEY POINTS\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n\nDISTINCTION / CAUTION\nRepeated measurement alone does not establish causality; alternative explanations for changes over time must still be considered.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design.\n\nSTUDY RULE\nUse only source-supported terminology and distinctions. Where the uploaded material is outline-level, keep the note deliberately limited rather than filling the gap with generic material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Time series”.",
-                "List the key points associated with “Time series” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Time series”?"
+                "State the source-based core idea of “Time series” without looking at your notes.",
+                "List the main source-supported points for “Time series”.",
+                "What distinction or caution must you remember for “Time series”?"
               ],
-              "application_question": "Source-based check: Given a new question about “Time series”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Time series → define → distinguish → apply",
+              "application_question": "Source-based application: Given a research situation involving “Time series”, identify the design/method or statistical concept being tested and justify the answer using the source-supported distinction.",
+              "exam_takeaway": "The same outcome is observed repeatedly across time",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4519,8 +4502,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
+                "PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design."
               ],
               "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
             },
@@ -18301,7 +18283,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 20
+        "enrichedMicrotopics": 38
       }
     }
   },
