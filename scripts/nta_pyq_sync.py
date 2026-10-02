@@ -32,7 +32,7 @@ def get(url):
     return r
 
 def clean(s):
-    return re.sub(r"\\s+"," ",s or "").strip()
+    return re.sub(r"\s+"," ",s or "").strip()
 
 def session_from_text(text,url):
     m=re.search(r"UGC\\s*-?\\s*NET\\s+(JUNE|DECEMBER)\\s*-?\\s*(20\\d{2})",text,re.I)
