@@ -8182,7 +8182,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Theoretical issues in instrumental learning",
-              "content_notes": "CORE CONCEPT\nTheoretical issues in instrumental learning is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Theoretical issues in instrumental learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Theoretical issues in instrumental learning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTheoretical issues in instrumental learning → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nInstrumental learning explains changes in voluntary behavior through consequences. Reinforcement increases future response probability; punishment decreases it. Schedules and stimulus control help explain when learned behavior occurs.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nReinforcement is defined by its effect on behavior, not by whether a consequence is pleasant.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8192,14 +8192,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nTheoretical issues in instrumental learning is a focused concept within “Instrumental learning: Phenomena, Paradigms and theoretical issues”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Theoretical issues in instrumental learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Theoretical issues in instrumental learning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nInstrumental learning explains changes in voluntary behavior through consequences. Reinforcement increases future response probability; punishment decreases it. Schedules and stimulus control help explain when learned behavior occurs.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nReinforcement is defined by its effect on behavior, not by whether a consequence is pleasant.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Theoretical issues in instrumental learning”.",
-                "List the key points associated with “Theoretical issues in instrumental learning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Theoretical issues in instrumental learning”?"
+                "Define Theoretical issues in instrumental learning using the source terminology.",
+                "State the main mechanism or features of Theoretical issues in instrumental learning.",
+                "State the source-based distinction/caution for Theoretical issues in instrumental learning."
               ],
-              "application_question": "Source-based check: Given a new question about “Theoretical issues in instrumental learning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Theoretical issues in instrumental learning → define → distinguish → apply",
+              "application_question": "Source-based application: identify Theoretical issues in instrumental learning in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Instrumental learning explains changes in voluntary behavior through consequences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8209,10 +8209,9 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8331,7 +8330,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Behavior modification",
-              "content_notes": "CORE CONCEPT\nBehavior modification is a focused concept within “Behaviour modification and its applications”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavior modification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Behavior modification as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBehavior modification → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nBehavior modification applies learning principles to change specified behavior, using procedures such as reinforcement, shaping and extinction.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is a learning-based intervention, not simply advice or punishment.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8341,14 +8340,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nBehavior modification is a focused concept within “Behaviour modification and its applications”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavior modification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Behavior modification as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBehavior modification applies learning principles to change specified behavior, using procedures such as reinforcement, shaping and extinction.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is a learning-based intervention, not simply advice or punishment.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Behavior modification”.",
-                "List the key points associated with “Behavior modification” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Behavior modification”?"
+                "Define Behavior modification using the source terminology.",
+                "State the main mechanism or features of Behavior modification.",
+                "State the source-based distinction/caution for Behavior modification."
               ],
-              "application_question": "Source-based check: Given a new question about “Behavior modification”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Behavior modification → define → distinguish → apply",
+              "application_question": "Source-based application: identify Behavior modification in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Behavior modification applies learning principles to change specified behavior, using procedures such as reinforcement, shaping and extinction",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8358,17 +8357,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Applications of behavior modification",
-              "content_notes": "CORE CONCEPT\nApplications of behavior modification is a focused concept within “Behaviour modification and its applications”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of behavior modification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Applications of behavior modification as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nApplications of behavior modification → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nApplications use conditioning principles to increase desired responses and reduce unwanted behavior. The target behavior and maintaining contingency must be identified.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nMap each application to its learning principle.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8378,14 +8375,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nApplications of behavior modification is a focused concept within “Behaviour modification and its applications”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of behavior modification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Applications of behavior modification as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nApplications use conditioning principles to increase desired responses and reduce unwanted behavior. The target behavior and maintaining contingency must be identified.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nMap each application to its learning principle.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Applications of behavior modification”.",
-                "List the key points associated with “Applications of behavior modification” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Applications of behavior modification”?"
+                "Define Applications of behavior modification using the source terminology.",
+                "State the main mechanism or features of Applications of behavior modification.",
+                "State the source-based distinction/caution for Applications of behavior modification."
               ],
-              "application_question": "Source-based check: Given a new question about “Applications of behavior modification”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Applications of behavior modification → define → distinguish → apply",
+              "application_question": "Source-based application: identify Applications of behavior modification in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Applications use conditioning principles to increase desired responses and reduce unwanted behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8395,10 +8392,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8424,7 +8419,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Latent learning",
-              "content_notes": "CORE CONCEPT\nLatent learning is a focused concept within “Cognitive approaches in learning: Latent learning, observational learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Latent learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Latent learning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLatent learning → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nTolman's latent learning shows that learning may occur without immediate performance or reinforcement, separating learning from its immediate expression.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nLatent learning is delayed expression of acquired knowledge, not absence of learning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8434,14 +8429,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nLatent learning is a focused concept within “Cognitive approaches in learning: Latent learning, observational learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Latent learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Latent learning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTolman's latent learning shows that learning may occur without immediate performance or reinforcement, separating learning from its immediate expression.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nLatent learning is delayed expression of acquired knowledge, not absence of learning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Latent learning”.",
-                "List the key points associated with “Latent learning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Latent learning”?"
+                "Define Latent learning using the source terminology.",
+                "State the main mechanism or features of Latent learning.",
+                "State the source-based distinction/caution for Latent learning."
               ],
-              "application_question": "Source-based check: Given a new question about “Latent learning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Latent learning → define → distinguish → apply",
+              "application_question": "Source-based application: identify Latent learning in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Tolman's latent learning shows that learning may occur without immediate performance or reinforcement, separating learning from its immediate expression",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8451,10 +8446,9 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
@@ -8517,7 +8511,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Verbal learning",
-              "content_notes": "CORE CONCEPT\nVerbal learning is a focused concept within “Verbal learning and Discrimination learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Verbal learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Verbal learning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nVerbal learning → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nVerbal learning concerns acquisition and retention of words, paired associates and other verbally mediated material; meaning, organization, rehearsal and retrieval influence performance.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is a domain of learned material, not one single learning theory.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8527,14 +8521,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nVerbal learning is a focused concept within “Verbal learning and Discrimination learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Verbal learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Verbal learning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nVerbal learning concerns acquisition and retention of words, paired associates and other verbally mediated material; meaning, organization, rehearsal and retrieval influence performance.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is a domain of learned material, not one single learning theory.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Verbal learning”.",
-                "List the key points associated with “Verbal learning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Verbal learning”?"
+                "Define Verbal learning using the source terminology.",
+                "State the main mechanism or features of Verbal learning.",
+                "State the source-based distinction/caution for Verbal learning."
               ],
-              "application_question": "Source-based check: Given a new question about “Verbal learning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Verbal learning → define → distinguish → apply",
+              "application_question": "Source-based application: identify Verbal learning in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Verbal learning concerns acquisition and retention of words, paired associates and other verbally mediated material; meaning, organization, rehearsal and retrieval influence performance",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8544,10 +8538,9 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
@@ -8610,7 +8603,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Neurophysiology of learning",
-              "content_notes": "CORE CONCEPT\nNeurophysiology of learning is a focused concept within “Recent trends in learning: Neurophysiology of learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neurophysiology of learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Neurophysiology of learning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNeurophysiology of learning → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nNeurophysiology examines biological changes associated with learning and memory. The sources connect psychological learning processes with nervous-system functioning while keeping the levels distinct.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nA neural correlate does not by itself constitute the full psychological definition of learning.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8620,14 +8613,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nNeurophysiology of learning is a focused concept within “Recent trends in learning: Neurophysiology of learning”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neurophysiology of learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Neurophysiology of learning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNeurophysiology examines biological changes associated with learning and memory. The sources connect psychological learning processes with nervous-system functioning while keeping the levels distinct.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nA neural correlate does not by itself constitute the full psychological definition of learning.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Neurophysiology of learning”.",
-                "List the key points associated with “Neurophysiology of learning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Neurophysiology of learning”?"
+                "Define Neurophysiology of learning using the source terminology.",
+                "State the main mechanism or features of Neurophysiology of learning.",
+                "State the source-based distinction/caution for Neurophysiology of learning."
               ],
-              "application_question": "Source-based check: Given a new question about “Neurophysiology of learning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Neurophysiology of learning → define → distinguish → apply",
+              "application_question": "Source-based application: identify Neurophysiology of learning in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Neurophysiology examines biological changes associated with learning and memory",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8637,10 +8630,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8666,7 +8657,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Encoding",
-              "content_notes": "CORE CONCEPT\nEncoding is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Encoding\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Encoding as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEncoding → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nEncoding converts information into a form that can enter memory. Baron & Misra place it alongside storage and retrieval; Ciccarelli & White emphasize attention and meaningful processing.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nEncoding concerns entry/transformation; storage concerns retention.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8676,14 +8667,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nEncoding is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Encoding\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Encoding as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEncoding converts information into a form that can enter memory. Baron & Misra place it alongside storage and retrieval; Ciccarelli & White emphasize attention and meaningful processing.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nEncoding concerns entry/transformation; storage concerns retention.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Encoding”.",
-                "List the key points associated with “Encoding” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Encoding”?"
+                "Define Encoding using the source terminology.",
+                "State the main mechanism or features of Encoding.",
+                "State the source-based distinction/caution for Encoding."
               ],
-              "application_question": "Source-based check: Given a new question about “Encoding”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Encoding → define → distinguish → apply",
+              "application_question": "Source-based application: identify Encoding in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Encoding converts information into a form that can enter memory",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8693,17 +8684,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Storage",
-              "content_notes": "CORE CONCEPT\nStorage is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Storage\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Storage as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStorage → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nStorage is retention of information over time. The modal model distinguishes sensory, short-term and long-term retention, while contemporary treatment cautions against treating them as completely isolated boxes.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nStorage is the process; the memory systems are forms of retention in the model.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8713,14 +8702,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nStorage is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Storage\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Storage as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nStorage is retention of information over time. The modal model distinguishes sensory, short-term and long-term retention, while contemporary treatment cautions against treating them as completely isolated boxes.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nStorage is the process; the memory systems are forms of retention in the model.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Storage”.",
-                "List the key points associated with “Storage” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Storage”?"
+                "Define Storage using the source terminology.",
+                "State the main mechanism or features of Storage.",
+                "State the source-based distinction/caution for Storage."
               ],
-              "application_question": "Source-based check: Given a new question about “Storage”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Storage → define → distinguish → apply",
+              "application_question": "Source-based application: identify Storage in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Storage is retention of information over time",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8730,17 +8719,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 3,
               "title": "Retrieval",
-              "content_notes": "CORE CONCEPT\nRetrieval is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Retrieval\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Retrieval as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRetrieval → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nRetrieval is locating and accessing stored information when needed. Retrieval cues and interference can influence successful access.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nRetrieval failure is distinct from encoding failure.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8750,14 +8737,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nRetrieval is a focused concept within “Memory processes: Encoding, Storage, Retrieval”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Retrieval\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Retrieval as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nRetrieval is locating and accessing stored information when needed. Retrieval cues and interference can influence successful access.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nRetrieval failure is distinct from encoding failure.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Retrieval”.",
-                "List the key points associated with “Retrieval” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Retrieval”?"
+                "Define Retrieval using the source terminology.",
+                "State the main mechanism or features of Retrieval.",
+                "State the source-based distinction/caution for Retrieval."
               ],
-              "application_question": "Source-based check: Given a new question about “Retrieval”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Retrieval → define → distinguish → apply",
+              "application_question": "Source-based application: identify Retrieval in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Retrieval is locating and accessing stored information when needed",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8767,10 +8754,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -8796,7 +8781,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Sensory memory",
-              "content_notes": "CORE CONCEPT\nSensory memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sensory memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSensory memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSensory memory briefly retains representations of sensory input before further attention and processing; iconic and echoic forms are discussed in textbook treatment.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is brief sensory retention, not perception itself.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8806,14 +8791,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nSensory memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sensory memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSensory memory briefly retains representations of sensory input before further attention and processing; iconic and echoic forms are discussed in textbook treatment.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is brief sensory retention, not perception itself.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sensory memory”.",
-                "List the key points associated with “Sensory memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sensory memory”?"
+                "Define Sensory memory using the source terminology.",
+                "State the main mechanism or features of Sensory memory.",
+                "State the source-based distinction/caution for Sensory memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Sensory memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sensory memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Sensory memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Sensory memory briefly retains representations of sensory input before further attention and processing; iconic and echoic forms are discussed in textbook treatment",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8823,17 +8808,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Short-term memory",
-              "content_notes": "CORE CONCEPT\nShort-term memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Short-term memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Short-term memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nShort-term memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nShort-term memory holds a limited amount of information for a brief period. Ciccarelli & White also use working memory, emphasizing active processing as well as temporary retention.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nWorking memory is broader than the traditional passive short-term store.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8843,14 +8826,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nShort-term memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Short-term memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Short-term memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nShort-term memory holds a limited amount of information for a brief period. Ciccarelli & White also use working memory, emphasizing active processing as well as temporary retention.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nWorking memory is broader than the traditional passive short-term store.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Short-term memory”.",
-                "List the key points associated with “Short-term memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Short-term memory”?"
+                "Define Short-term memory using the source terminology.",
+                "State the main mechanism or features of Short-term memory.",
+                "State the source-based distinction/caution for Short-term memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Short-term memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Short-term memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Short-term memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Short-term memory holds a limited amount of information for a brief period",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8860,10 +8843,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
@@ -8907,7 +8888,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Long-term memory",
-              "content_notes": "CORE CONCEPT\nLong-term memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Long-term memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Long-term memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLong-term memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nLong-term memory permits retention of large amounts of information over long periods. The sources distinguish declarative knowledge from nondeclarative skills.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is not one undifferentiated store.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8917,14 +8898,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nLong-term memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Long-term memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Long-term memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLong-term memory permits retention of large amounts of information over long periods. The sources distinguish declarative knowledge from nondeclarative skills.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nIt is not one undifferentiated store.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Long-term memory”.",
-                "List the key points associated with “Long-term memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Long-term memory”?"
+                "Define Long-term memory using the source terminology.",
+                "State the main mechanism or features of Long-term memory.",
+                "State the source-based distinction/caution for Long-term memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Long-term memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Long-term memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Long-term memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Long-term memory permits retention of large amounts of information over long periods",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8934,17 +8915,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 5,
               "title": "Declarative memory",
-              "content_notes": "CORE CONCEPT\nDeclarative memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Declarative memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Declarative memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDeclarative memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDeclarative or explicit memory contains consciously known, reportable information and includes semantic and episodic memory.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nExplicit memory concerns conscious accessibility, not short versus long duration.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8954,14 +8933,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nDeclarative memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Declarative memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Declarative memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDeclarative or explicit memory contains consciously known, reportable information and includes semantic and episodic memory.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nExplicit memory concerns conscious accessibility, not short versus long duration.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Declarative memory”.",
-                "List the key points associated with “Declarative memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Declarative memory”?"
+                "Define Declarative memory using the source terminology.",
+                "State the main mechanism or features of Declarative memory.",
+                "State the source-based distinction/caution for Declarative memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Declarative memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Declarative memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Declarative memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Declarative or explicit memory contains consciously known, reportable information and includes semantic and episodic memory",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -8971,17 +8950,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 6,
               "title": "Episodic memory",
-              "content_notes": "CORE CONCEPT\nEpisodic memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Episodic memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Episodic memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEpisodic memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nEpisodic memory is declarative long-term memory for personally experienced events, contrasted with semantic memory for general knowledge.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nThe defining feature is personally experienced events.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8991,14 +8968,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nEpisodic memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Episodic memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Episodic memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEpisodic memory is declarative long-term memory for personally experienced events, contrasted with semantic memory for general knowledge.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nThe defining feature is personally experienced events.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Episodic memory”.",
-                "List the key points associated with “Episodic memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Episodic memory”?"
+                "Define Episodic memory using the source terminology.",
+                "State the main mechanism or features of Episodic memory.",
+                "State the source-based distinction/caution for Episodic memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Episodic memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Episodic memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Episodic memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Episodic memory is declarative long-term memory for personally experienced events, contrasted with semantic memory for general knowledge",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9008,17 +8985,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 7,
               "title": "Semantic memory",
-              "content_notes": "CORE CONCEPT\nSemantic memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Semantic memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Semantic memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSemantic memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSemantic memory is declarative long-term memory for general knowledge, meanings and facts; it does not require remembering the personal episode in which information was learned.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nSemantic differs from episodic even though both are declarative.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9028,14 +9003,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nSemantic memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Semantic memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Semantic memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSemantic memory is declarative long-term memory for general knowledge, meanings and facts; it does not require remembering the personal episode in which information was learned.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nSemantic differs from episodic even though both are declarative.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Semantic memory”.",
-                "List the key points associated with “Semantic memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Semantic memory”?"
+                "Define Semantic memory using the source terminology.",
+                "State the main mechanism or features of Semantic memory.",
+                "State the source-based distinction/caution for Semantic memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Semantic memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Semantic memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Semantic memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Semantic memory is declarative long-term memory for general knowledge, meanings and facts; it does not require remembering the personal episode in which information was learned",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9045,17 +9020,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 8,
               "title": "Procedural memory",
-              "content_notes": "CORE CONCEPT\nProcedural memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Procedural memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Procedural memory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nProcedural memory → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nProcedural memory is implicit/nondeclarative long-term memory for skills and procedures, primarily demonstrated through performance.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nProcedural memory concerns how to perform, not what can be consciously declared.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9065,14 +9038,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nProcedural memory is a focused concept within “Stages of memory: Sensory memory, Short-term memory (Working memory), Long-term Memory (Declarative – Episodic and Semantic; Procedural)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Procedural memory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Procedural memory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nProcedural memory is implicit/nondeclarative long-term memory for skills and procedures, primarily demonstrated through performance.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nProcedural memory concerns how to perform, not what can be consciously declared.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Procedural memory”.",
-                "List the key points associated with “Procedural memory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Procedural memory”?"
+                "Define Procedural memory using the source terminology.",
+                "State the main mechanism or features of Procedural memory.",
+                "State the source-based distinction/caution for Procedural memory."
               ],
-              "application_question": "Source-based check: Given a new question about “Procedural memory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Procedural memory → define → distinguish → apply",
+              "application_question": "Source-based application: identify Procedural memory in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Procedural memory is implicit/nondeclarative long-term memory for skills and procedures, primarily demonstrated through performance",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9082,10 +9055,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -9148,7 +9119,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Retrieval failure",
-              "content_notes": "CORE CONCEPT\nRetrieval failure is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Retrieval failure\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Retrieval failure as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRetrieval failure → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nRetrieval failure occurs when stored information cannot be accessed when needed. Cues and interference can affect access.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDo not confuse it with encoding failure, where information was not adequately entered.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9158,14 +9129,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nRetrieval failure is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Retrieval failure\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Retrieval failure as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nRetrieval failure occurs when stored information cannot be accessed when needed. Cues and interference can affect access.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDo not confuse it with encoding failure, where information was not adequately entered.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Retrieval failure”.",
-                "List the key points associated with “Retrieval failure” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Retrieval failure”?"
+                "Define Retrieval failure using the source terminology.",
+                "State the main mechanism or features of Retrieval failure.",
+                "State the source-based distinction/caution for Retrieval failure."
               ],
-              "application_question": "Source-based check: Given a new question about “Retrieval failure”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Retrieval failure → define → distinguish → apply",
+              "application_question": "Source-based application: identify Retrieval failure in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Retrieval failure occurs when stored information cannot be accessed when needed",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9175,17 +9146,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 3,
               "title": "Decay",
-              "content_notes": "CORE CONCEPT\nDecay is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Decay\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Decay as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDecay → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDecay explains forgetting through weakening or loss with time and disuse. Ciccarelli & White note that decay cannot by itself explain all long-term forgetting.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDecay emphasizes time/disuse; interference emphasizes competing information.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9195,14 +9164,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nDecay is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Decay\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Decay as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDecay explains forgetting through weakening or loss with time and disuse. Ciccarelli & White note that decay cannot by itself explain all long-term forgetting.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDecay emphasizes time/disuse; interference emphasizes competing information.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Decay”.",
-                "List the key points associated with “Decay” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Decay”?"
+                "Define Decay using the source terminology.",
+                "State the main mechanism or features of Decay.",
+                "State the source-based distinction/caution for Decay."
               ],
-              "application_question": "Source-based check: Given a new question about “Decay”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Decay → define → distinguish → apply",
+              "application_question": "Source-based application: identify Decay in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Decay explains forgetting through weakening or loss with time and disuse",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9212,17 +9181,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 4,
               "title": "Motivated forgetting",
-              "content_notes": "CORE CONCEPT\nMotivated forgetting is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivated forgetting\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Motivated forgetting as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMotivated forgetting → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMotivated forgetting treats forgetting in relation to psychological motives and avoidance of distressing material, alongside nonmotivational mechanisms such as encoding failure, decay and interference.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDo not assume every forgotten memory is deliberately repressed.\n\nSOURCE BASIS\n• Baron & Misra\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9232,14 +9199,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "ACADEMIC CORE\nMotivated forgetting is a focused concept within “Theories of Forgetting: Interference, Retrieval Failure, Decay, Motivated forgetting”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivated forgetting\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Motivated forgetting as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMotivated forgetting treats forgetting in relation to psychological motives and avoidance of distressing material, alongside nonmotivational mechanisms such as encoding failure, decay and interference.\n\nKEY POINTS\n• core definition and mechanism\n• closest distinction or comparison\n• relevant learning/memory framework\n\nDISTINCTION / CAUTION\nDo not assume every forgotten memory is deliberately repressed.\n\nSOURCE BASIS\n• Baron & Misra\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the source terminology and identify the mechanism before selecting an answer.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Motivated forgetting”.",
-                "List the key points associated with “Motivated forgetting” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Motivated forgetting”?"
+                "Define Motivated forgetting using the source terminology.",
+                "State the main mechanism or features of Motivated forgetting.",
+                "State the source-based distinction/caution for Motivated forgetting."
               ],
-              "application_question": "Source-based check: Given a new question about “Motivated forgetting”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Motivated forgetting → define → distinguish → apply",
+              "application_question": "Source-based application: identify Motivated forgetting in a new learning/memory scenario and justify the identification from the mechanism described in the note.",
+              "exam_takeaway": "Motivated forgetting treats forgetting in relation to psychological motives and avoidance of distressing material, alongside nonmotivational mechanisms such as encoding failure, decay and interference",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -9249,10 +9216,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -17788,4 +17753,4 @@ window.NETPSY_DATA = {
     "note": "Each topic is organised from a big picture into small learning nodes. Each micro-topic asks the learner to understand the core idea, close the notes and retrieve it, apply it to a new situation, practise a mapped question when available, and return later through spaced revision.",
     "source_use": "Baron & Misra, Ciccarelli & White, Self-Teaching Guide and PowerWithin provide the main conceptual spine. REVISATHON and Kaplan add exam/application practice. The remaining uploaded unit notes are used where their specialised coverage fits the micro-topic."
   }
-}
+};
