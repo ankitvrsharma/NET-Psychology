@@ -12420,7 +12420,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Biofeedback",
-              "content_notes": "CORE CONCEPT\nBiofeedback is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Biofeedback\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Biofeedback as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBiofeedback → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nBiofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.\n\nKEY POINTS\n• Physiological information is measured and fed back.\n• The person learns voluntary control over a physiological response.\n• It is used as a self-regulation technique.\n• It differs from relaxation alone because feedback about bodily activity is central.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Self-Teaching Guide/Ciccarelli & White on biofeedback.\n\nCOMMON EXAM TRAP\nBiofeedback is a training procedure using physiological feedback; it is not simply another name for meditation or relaxation.\n\nMEMORY CUE\nBiofeedback → Physiological information is measured and fed back • The person learns voluntary control over a physiological response • It is used as a self-regulation technique",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12430,14 +12430,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nBiofeedback is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Biofeedback\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Biofeedback as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBiofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.\n\nKEY POINTS\n• Physiological information is measured and fed back.\n• The person learns voluntary control over a physiological response.\n• It is used as a self-regulation technique.\n• It differs from relaxation alone because feedback about bodily activity is central.\n\nDISTINCTION / CAUTION\nBiofeedback is a training procedure using physiological feedback; it is not simply another name for meditation or relaxation.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Self-Teaching Guide/Ciccarelli & White on biofeedback.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Biofeedback”.",
-                "List the key points associated with “Biofeedback” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Biofeedback”?"
+                "State the source-based core idea of “Biofeedback”.",
+                "List the key source-supported points for “Biofeedback”.",
+                "State the most important distinction or caution for “Biofeedback”."
               ],
-              "application_question": "Source-based check: Given a new question about “Biofeedback”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Biofeedback → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Biofeedback” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Physiological information is measured and fed back",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12447,17 +12447,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies; Self-Teaching Guide/Ciccarelli & White on biofeedback."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Music therapy",
-              "content_notes": "CORE CONCEPT\nMusic therapy is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Music therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Music therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMusic therapy → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMusic therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.\n\nKEY POINTS\n• It is included as a stress-management strategy.\n• Music can be used within structured therapeutic or relaxation contexts.\n• The source does not provide a detailed protocol in the supplied extract.\n• Use source-specific examples when available.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies, Music Therapy; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not assume that every use of music is automatically 'music therapy'; therapy is a structured professional application.\n\nMEMORY CUE\nMusic therapy → It is included as a stress-management strategy • Music can be used within structured therapeutic or relaxation contexts • The source does not provide a detailed protocol in the supplied extract",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12467,14 +12464,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nMusic therapy is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Music therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Music therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMusic therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.\n\nKEY POINTS\n• It is included as a stress-management strategy.\n• Music can be used within structured therapeutic or relaxation contexts.\n• The source does not provide a detailed protocol in the supplied extract.\n• Use source-specific examples when available.\n\nDISTINCTION / CAUTION\nDo not assume that every use of music is automatically 'music therapy'; therapy is a structured professional application.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies, Music Therapy; outline-level coverage.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Music therapy”.",
-                "List the key points associated with “Music therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Music therapy”?"
+                "State the source-based core idea of “Music therapy”.",
+                "List the key source-supported points for “Music therapy”.",
+                "State the most important distinction or caution for “Music therapy”."
               ],
-              "application_question": "Source-based check: Given a new question about “Music therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Music therapy → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Music therapy” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "It is included as a stress-management strategy",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12484,17 +12481,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies, Music Therapy; outline-level coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "Breathing exercises",
-              "content_notes": "CORE CONCEPT\nBreathing exercises is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Breathing exercises\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Breathing exercises as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBreathing exercises → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nBreathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.\n\nKEY POINTS\n• Breathing exercises can be used to manage arousal.\n• They are listed among stress-management techniques.\n• They can be combined with other relaxation approaches.\n• Detailed dosage/protocol is not provided in the supplied extract.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies, Breathing Exercises.\n\nCOMMON EXAM TRAP\nDo not attach an unsupported clinical claim to a generic breathing exercise.\n\nMEMORY CUE\nBreathing exercises → Breathing exercises can be used to manage arousal • They are listed among stress-management techniques • They can be combined with other relaxation approaches",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12504,14 +12498,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nBreathing exercises is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Breathing exercises\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Breathing exercises as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBreathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.\n\nKEY POINTS\n• Breathing exercises can be used to manage arousal.\n• They are listed among stress-management techniques.\n• They can be combined with other relaxation approaches.\n• Detailed dosage/protocol is not provided in the supplied extract.\n\nDISTINCTION / CAUTION\nDo not attach an unsupported clinical claim to a generic breathing exercise.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies, Breathing Exercises.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Breathing exercises”.",
-                "List the key points associated with “Breathing exercises” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Breathing exercises”?"
+                "State the source-based core idea of “Breathing exercises”.",
+                "List the key source-supported points for “Breathing exercises”.",
+                "State the most important distinction or caution for “Breathing exercises”."
               ],
-              "application_question": "Source-based check: Given a new question about “Breathing exercises”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Breathing exercises → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Breathing exercises” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Breathing exercises can be used to manage arousal",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12521,17 +12515,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies, Breathing Exercises."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Progressive Muscular Relaxation",
-              "content_notes": "CORE CONCEPT\nProgressive Muscular Relaxation is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Progressive Muscular Relaxation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Progressive Muscular Relaxation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nProgressive Muscular Relaxation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nProgressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.\n\nKEY POINTS\n• Attention is directed to muscle tension and relaxation.\n• The technique aims to reduce physical tension and arousal.\n• It is commonly grouped with relaxation-based coping strategies.\n• It differs from guided imagery because the primary target is muscular tension.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Baron & Misra — progressive muscular relaxation reference.\n\nCOMMON EXAM TRAP\nProgressive muscular relaxation is not simply general physical exercise; its defining feature is systematic tension–release practice.\n\nMEMORY CUE\nProgressive Muscular Relaxation → Attention is directed to muscle tension and relaxation • The technique aims to reduce physical tension and arousal • It is commonly grouped with relaxation-based coping strategies",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12541,14 +12532,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nProgressive Muscular Relaxation is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Progressive Muscular Relaxation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Progressive Muscular Relaxation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nProgressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.\n\nKEY POINTS\n• Attention is directed to muscle tension and relaxation.\n• The technique aims to reduce physical tension and arousal.\n• It is commonly grouped with relaxation-based coping strategies.\n• It differs from guided imagery because the primary target is muscular tension.\n\nDISTINCTION / CAUTION\nProgressive muscular relaxation is not simply general physical exercise; its defining feature is systematic tension–release practice.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Baron & Misra — progressive muscular relaxation reference.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Progressive Muscular Relaxation”.",
-                "List the key points associated with “Progressive Muscular Relaxation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Progressive Muscular Relaxation”?"
+                "State the source-based core idea of “Progressive Muscular Relaxation”.",
+                "List the key source-supported points for “Progressive Muscular Relaxation”.",
+                "State the most important distinction or caution for “Progressive Muscular Relaxation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Progressive Muscular Relaxation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Progressive Muscular Relaxation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Progressive Muscular Relaxation” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Attention is directed to muscle tension and relaxation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12558,17 +12549,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies; Baron & Misra — progressive muscular relaxation reference."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Guided Imagery",
-              "content_notes": "CORE CONCEPT\nGuided Imagery is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Guided Imagery\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Guided Imagery as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGuided Imagery → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nGuided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.\n\nKEY POINTS\n• Mental imagery is used deliberately.\n• It can be used to promote relaxation or coping.\n• It is generally classified as an emotion-focused/relaxation strategy in the source material.\n• It differs from progressive muscular relaxation in its primary technique.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Ciccarelli & White — guided visualization and coping.\n\nCOMMON EXAM TRAP\nGuided imagery is a coping/relaxation procedure, not the same as perceptual imagery in ordinary cognition.\n\nMEMORY CUE\nGuided Imagery → Mental imagery is used deliberately • It can be used to promote relaxation or coping • It is generally classified as an emotion-focused/relaxation strategy in the source material",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12578,14 +12566,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nGuided Imagery is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Guided Imagery\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Guided Imagery as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGuided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.\n\nKEY POINTS\n• Mental imagery is used deliberately.\n• It can be used to promote relaxation or coping.\n• It is generally classified as an emotion-focused/relaxation strategy in the source material.\n• It differs from progressive muscular relaxation in its primary technique.\n\nDISTINCTION / CAUTION\nGuided imagery is a coping/relaxation procedure, not the same as perceptual imagery in ordinary cognition.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies; Ciccarelli & White — guided visualization and coping.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Guided Imagery”.",
-                "List the key points associated with “Guided Imagery” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Guided Imagery”?"
+                "State the source-based core idea of “Guided Imagery”.",
+                "List the key source-supported points for “Guided Imagery”.",
+                "State the most important distinction or caution for “Guided Imagery”."
               ],
-              "application_question": "Source-based check: Given a new question about “Guided Imagery”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Guided Imagery → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Guided Imagery” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Mental imagery is used deliberately",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12595,10 +12583,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies; Ciccarelli & White — guided visualization and coping."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
@@ -12642,7 +12627,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Meditation",
-              "content_notes": "CORE CONCEPT\nMeditation is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Meditation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Meditation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMeditation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMeditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.\n\nKEY POINTS\n• Meditation can promote relaxation.\n• It can be used to reduce anxiety/arousal.\n• It is one of several coping strategies.\n• Different forms of meditation may use different attentional procedures.\n\nSOURCE BASIS\nCiccarelli & White 6e — Coping with Stress; PowerWithin Psychology — Stress Management Strategies.\n\nCOMMON EXAM TRAP\nMeditation is a broad family of practices; do not treat every meditation technique as identical.\n\nMEMORY CUE\nMeditation → Meditation can promote relaxation • It can be used to reduce anxiety/arousal • It is one of several coping strategies",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12652,14 +12637,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nMeditation is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Meditation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Meditation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMeditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.\n\nKEY POINTS\n• Meditation can promote relaxation.\n• It can be used to reduce anxiety/arousal.\n• It is one of several coping strategies.\n• Different forms of meditation may use different attentional procedures.\n\nDISTINCTION / CAUTION\nMeditation is a broad family of practices; do not treat every meditation technique as identical.\n\nSOURCE BASIS\nCiccarelli & White 6e — Coping with Stress; PowerWithin Psychology — Stress Management Strategies.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Meditation”.",
-                "List the key points associated with “Meditation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Meditation”?"
+                "State the source-based core idea of “Meditation”.",
+                "List the key source-supported points for “Meditation”.",
+                "State the most important distinction or caution for “Meditation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Meditation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Meditation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Meditation” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Meditation can promote relaxation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12669,17 +12654,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Coping with Stress; PowerWithin Psychology — Stress Management Strategies."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 8,
               "title": "Yogasana",
-              "content_notes": "CORE CONCEPT\nYogasana is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Yogasana\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Yogasana as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nYogasana → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nYogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.\n\nKEY POINTS\n• Yogasana is included among stress-management strategies.\n• Yoga has a broader conceptual context in Indian psychology.\n• The technique is distinct from meditation, although they may be practiced together.\n• Do not reduce Yoga to a single physical posture.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies and Indian Paradigms of Psychological Knowledge.\n\nCOMMON EXAM TRAP\nFor NET preparation, distinguish the stress-management application of yogasana from the broader Indian-psychology paradigm of Yoga.\n\nMEMORY CUE\nYogasana → Yogasana is included among stress-management strategies • Yoga has a broader conceptual context in Indian psychology • The technique is distinct from meditation, although they may be practiced together",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12689,14 +12671,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nYogasana is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Yogasana\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Yogasana as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nYogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.\n\nKEY POINTS\n• Yogasana is included among stress-management strategies.\n• Yoga has a broader conceptual context in Indian psychology.\n• The technique is distinct from meditation, although they may be practiced together.\n• Do not reduce Yoga to a single physical posture.\n\nDISTINCTION / CAUTION\nFor NET preparation, distinguish the stress-management application of yogasana from the broader Indian-psychology paradigm of Yoga.\n\nSOURCE BASIS\nPowerWithin Psychology — Stress Management Strategies and Indian Paradigms of Psychological Knowledge.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Yogasana”.",
-                "List the key points associated with “Yogasana” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Yogasana”?"
+                "State the source-based core idea of “Yogasana”.",
+                "List the key source-supported points for “Yogasana”.",
+                "State the most important distinction or caution for “Yogasana”."
               ],
-              "application_question": "Source-based check: Given a new question about “Yogasana”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Yogasana → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Yogasana” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Yogasana is included among stress-management strategies",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12706,17 +12688,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Stress Management Strategies and Indian Paradigms of Psychological Knowledge."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 9,
               "title": "Stress Inoculation Training",
-              "content_notes": "CORE CONCEPT\nStress Inoculation Training is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Stress Inoculation Training\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Stress Inoculation Training as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStress Inoculation Training → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nStress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.\n\nKEY POINTS\n• It is a structured stress-management approach.\n• It emphasizes coping skills and preparation.\n• It is associated with cognitive-behavioral methods.\n• Training is intended to improve responses to future stressors.\n\nSOURCE BASIS\nKaplan AP Psychology Prep Plus — Stress Inoculation Training; PowerWithin Psychology — Stress Management Strategies.\n\nCOMMON EXAM TRAP\nStress inoculation training is not the same as exposure therapy; the emphasis is on coping skills and preparation for stress.\n\nMEMORY CUE\nStress Inoculation Training → It is a structured stress-management approach • It emphasizes coping skills and preparation • It is associated with cognitive-behavioral methods",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12726,14 +12705,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nStress Inoculation Training is a focused concept within “Stress management strategies: Biofeedback, Music therapy, Breathing exercises, Progressive Muscular Relaxation, Guided Imagery, Mindfulness, Meditation, Yogasana, Stress Inoculation Training”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Stress Inoculation Training\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Stress Inoculation Training as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nStress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.\n\nKEY POINTS\n• It is a structured stress-management approach.\n• It emphasizes coping skills and preparation.\n• It is associated with cognitive-behavioral methods.\n• Training is intended to improve responses to future stressors.\n\nDISTINCTION / CAUTION\nStress inoculation training is not the same as exposure therapy; the emphasis is on coping skills and preparation for stress.\n\nSOURCE BASIS\nKaplan AP Psychology Prep Plus — Stress Inoculation Training; PowerWithin Psychology — Stress Management Strategies.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Stress Inoculation Training”.",
-                "List the key points associated with “Stress Inoculation Training” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Stress Inoculation Training”?"
+                "State the source-based core idea of “Stress Inoculation Training”.",
+                "List the key source-supported points for “Stress Inoculation Training”.",
+                "State the most important distinction or caution for “Stress Inoculation Training”."
               ],
-              "application_question": "Source-based check: Given a new question about “Stress Inoculation Training”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Stress Inoculation Training → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Stress Inoculation Training” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "It is a structured stress-management approach",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12743,10 +12722,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Kaplan AP Psychology Prep Plus — Stress Inoculation Training; PowerWithin Psychology — Stress Management Strategies."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -12779,7 +12755,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Nature of social psychology",
-              "content_notes": "CORE CONCEPT\nNature of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Nature of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Nature of social psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNature of social psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocial psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.\n\nKEY POINTS\n• Social context is central to explanation.\n• The field examines cognition, affect and behavior in social situations.\n• Individuals and groups are both relevant levels of analysis.\n• Social psychology connects individual processes with interpersonal and group contexts.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 What is Social Psychology?; Kaplan AP Psychology — Social Psychology.\n\nCOMMON EXAM TRAP\nSocial psychology is not simply the study of groups; many social-psychological processes occur at the individual level in social contexts.\n\nMEMORY CUE\nNature of social psychology → Social context is central to explanation • The field examines cognition, affect and behavior in social situations • Individuals and groups are both relevant levels of analysis",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12789,14 +12765,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nNature of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Nature of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Nature of social psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.\n\nKEY POINTS\n• Social context is central to explanation.\n• The field examines cognition, affect and behavior in social situations.\n• Individuals and groups are both relevant levels of analysis.\n• Social psychology connects individual processes with interpersonal and group contexts.\n\nDISTINCTION / CAUTION\nSocial psychology is not simply the study of groups; many social-psychological processes occur at the individual level in social contexts.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 What is Social Psychology?; Kaplan AP Psychology — Social Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Nature of social psychology”.",
-                "List the key points associated with “Nature of social psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Nature of social psychology”?"
+                "State the source-based core idea of “Nature of social psychology”.",
+                "List the key source-supported points for “Nature of social psychology”.",
+                "State the most important distinction or caution for “Nature of social psychology”."
               ],
-              "application_question": "Source-based check: Given a new question about “Nature of social psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Nature of social psychology → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Nature of social psychology” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Social context is central to explanation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12806,16 +12782,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 8 What is Social Psychology?; Kaplan AP Psychology — Social Psychology."
               ]
             },
             {
               "id": 2,
               "title": "Scope of social psychology",
-              "content_notes": "CORE CONCEPT\nScope of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Scope of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Scope of social psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nScope of social psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.\n\nKEY POINTS\n• Social cognition and perception are core areas.\n• Attitudes and their change are studied.\n• Groups and social influence are major domains.\n• Intergroup relations and applied social psychology extend the field.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Psychology outline.\n\nCOMMON EXAM TRAP\nScope is broader than one topic such as conformity; the NET outline treats social psychology as a wide set of interacting domains.\n\nMEMORY CUE\nScope of social psychology → Social cognition and perception are core areas • Attitudes and their change are studied • Groups and social influence are major domains",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12825,14 +12798,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nScope of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Scope of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Scope of social psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.\n\nKEY POINTS\n• Social cognition and perception are core areas.\n• Attitudes and their change are studied.\n• Groups and social influence are major domains.\n• Intergroup relations and applied social psychology extend the field.\n\nDISTINCTION / CAUTION\nScope is broader than one topic such as conformity; the NET outline treats social psychology as a wide set of interacting domains.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Psychology outline.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Scope of social psychology”.",
-                "List the key points associated with “Scope of social psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Scope of social psychology”?"
+                "State the source-based core idea of “Scope of social psychology”.",
+                "List the key source-supported points for “Scope of social psychology”.",
+                "State the most important distinction or caution for “Scope of social psychology”."
               ],
-              "application_question": "Source-based check: Given a new question about “Scope of social psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Scope of social psychology → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Scope of social psychology” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Social cognition and perception are core areas",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12842,16 +12815,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 8 Social Psychology outline."
               ]
             },
             {
               "id": 3,
               "title": "History of social psychology",
-              "content_notes": "CORE CONCEPT\nHistory of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of History of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating History of social psychology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHistory of social psychology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.\n\nKEY POINTS\n• The field developed around systematic study of social behavior.\n• Attitudes, group influence and interpersonal processes became major areas.\n• Social psychology draws from multiple theoretical traditions.\n• Historical development led to both basic and applied research.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Nature and History; Kaplan AP Psychology — Social Psychology.\n\nCOMMON EXAM TRAP\nDo not reduce the history of social psychology to a single founder or experiment; the field developed through several traditions.\n\nMEMORY CUE\nHistory of social psychology → The field developed around systematic study of social behavior • Attitudes, group influence and interpersonal processes became major areas • Social psychology draws from multiple theoretical traditions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12861,14 +12831,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nHistory of social psychology is a focused concept within “Nature, scope and history of social psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of History of social psychology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating History of social psychology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.\n\nKEY POINTS\n• The field developed around systematic study of social behavior.\n• Attitudes, group influence and interpersonal processes became major areas.\n• Social psychology draws from multiple theoretical traditions.\n• Historical development led to both basic and applied research.\n\nDISTINCTION / CAUTION\nDo not reduce the history of social psychology to a single founder or experiment; the field developed through several traditions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Nature and History; Kaplan AP Psychology — Social Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “History of social psychology”.",
-                "List the key points associated with “History of social psychology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “History of social psychology”?"
+                "State the source-based core idea of “History of social psychology”.",
+                "List the key source-supported points for “History of social psychology”.",
+                "State the most important distinction or caution for “History of social psychology”."
               ],
-              "application_question": "Source-based check: Given a new question about “History of social psychology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "History of social psychology → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “History of social psychology” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "The field developed around systematic study of social behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12878,10 +12848,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 8 Nature and History; Kaplan AP Psychology — Social Psychology."
               ]
             }
           ],
@@ -12906,7 +12873,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Field theory",
-              "content_notes": "CORE CONCEPT\nField theory is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Field theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Field theory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nField theory → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nField theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.\n\nKEY POINTS\n• Lewin is the key theorist.\n• Behavior is considered in relation to person and environment.\n• The psychological field contains interacting forces.\n• The approach is dynamic and situational.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology; Lewinian field-theory coverage.\n\nCOMMON EXAM TRAP\nField theory is not simply an environmental theory; the person and environment are considered together.\n\nMEMORY CUE\nField theory → Lewin is the key theorist • Behavior is considered in relation to person and environment • The psychological field contains interacting forces",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12916,14 +12883,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nField theory is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Field theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Field theory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nField theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.\n\nKEY POINTS\n• Lewin is the key theorist.\n• Behavior is considered in relation to person and environment.\n• The psychological field contains interacting forces.\n• The approach is dynamic and situational.\n\nDISTINCTION / CAUTION\nField theory is not simply an environmental theory; the person and environment are considered together.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology; Lewinian field-theory coverage.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Field theory”.",
-                "List the key points associated with “Field theory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Field theory”?"
+                "State the source-based core idea of “Field theory”.",
+                "List the key source-supported points for “Field theory”.",
+                "State the most important distinction or caution for “Field theory”."
               ],
-              "application_question": "Source-based check: Given a new question about “Field theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Field theory → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Field theory” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Lewin is the key theorist",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12933,10 +12900,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Theoretical Perspectives in Social Psychology; Lewinian field-theory coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
@@ -12979,7 +12943,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Sociobiology",
-              "content_notes": "CORE CONCEPT\nSociobiology is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sociobiology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sociobiology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSociobiology → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.\n\nKEY POINTS\n• Social behavior can be examined through evolutionary principles.\n• Adaptive consequences are relevant to explanation.\n• The approach complements rather than replaces social and cultural explanations.\n• Genetic influence does not imply fixed behavior in every context.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology, Sociobiology.\n\nCOMMON EXAM TRAP\nSociobiological explanations concern evolutionary function; they should not be treated as proof that a behavior is genetically predetermined.\n\nMEMORY CUE\nSociobiology → Social behavior can be examined through evolutionary principles • Adaptive consequences are relevant to explanation • The approach complements rather than replaces social and cultural explanations",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12989,14 +12953,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSociobiology is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sociobiology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sociobiology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.\n\nKEY POINTS\n• Social behavior can be examined through evolutionary principles.\n• Adaptive consequences are relevant to explanation.\n• The approach complements rather than replaces social and cultural explanations.\n• Genetic influence does not imply fixed behavior in every context.\n\nDISTINCTION / CAUTION\nSociobiological explanations concern evolutionary function; they should not be treated as proof that a behavior is genetically predetermined.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology, Sociobiology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sociobiology”.",
-                "List the key points associated with “Sociobiology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sociobiology”?"
+                "State the source-based core idea of “Sociobiology”.",
+                "List the key source-supported points for “Sociobiology”.",
+                "State the most important distinction or caution for “Sociobiology”."
               ],
-              "application_question": "Source-based check: Given a new question about “Sociobiology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sociobiology → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Sociobiology” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Social behavior can be examined through evolutionary principles",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13006,16 +12970,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Sociobiology."
               ]
             },
             {
               "id": 4,
               "title": "Psychodynamic approaches",
-              "content_notes": "CORE CONCEPT\nPsychodynamic approaches is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychodynamic approaches\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Psychodynamic approaches as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPsychodynamic approaches → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPsychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.\n\nKEY POINTS\n• Unconscious processes can influence social behavior.\n• Early relationships may shape later interpersonal patterns.\n• Internal conflict can affect social interaction.\n• The approach differs from purely situational accounts.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology, Psychodynamic Approaches.\n\nCOMMON EXAM TRAP\nPsychodynamic social psychology is not identical to Freud's complete personality theory; it applies psychodynamic concepts to social behavior.\n\nMEMORY CUE\nPsychodynamic approaches → Unconscious processes can influence social behavior • Early relationships may shape later interpersonal patterns • Internal conflict can affect social interaction",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13025,14 +12986,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPsychodynamic approaches is a focused concept within “Traditional theoretical perspectives: Field theory, Cognitive Dissonance, Sociobiology, Psychodynamic Approaches, Social Cognition”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychodynamic approaches\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Psychodynamic approaches as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.\n\nKEY POINTS\n• Unconscious processes can influence social behavior.\n• Early relationships may shape later interpersonal patterns.\n• Internal conflict can affect social interaction.\n• The approach differs from purely situational accounts.\n\nDISTINCTION / CAUTION\nPsychodynamic social psychology is not identical to Freud's complete personality theory; it applies psychodynamic concepts to social behavior.\n\nSOURCE BASIS\nPowerWithin Psychology — Theoretical Perspectives in Social Psychology, Psychodynamic Approaches.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Psychodynamic approaches”.",
-                "List the key points associated with “Psychodynamic approaches” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Psychodynamic approaches”?"
+                "State the source-based core idea of “Psychodynamic approaches”.",
+                "List the key source-supported points for “Psychodynamic approaches”.",
+                "State the most important distinction or caution for “Psychodynamic approaches”."
               ],
-              "application_question": "Source-based check: Given a new question about “Psychodynamic approaches”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Psychodynamic approaches → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Psychodynamic approaches” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Unconscious processes can influence social behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13042,10 +13003,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Psychodynamic Approaches."
               ]
             },
             {
@@ -13107,7 +13065,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Social perception",
-              "content_notes": "CORE CONCEPT\nSocial perception is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social perception as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial perception → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocial perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.\n\nKEY POINTS\n• People form impressions from social information.\n• Interpretation is influenced by expectations and prior knowledge.\n• Social perception can involve bias and stereotypes.\n• Attributions are one important component of social interpretation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Perception, Communication and Attributions; Ciccarelli & White social cognition.\n\nCOMMON EXAM TRAP\nSocial perception is broader than attribution; attribution concerns explaining causes, while social perception includes impression formation more generally.\n\nMEMORY CUE\nSocial perception → People form impressions from social information • Interpretation is influenced by expectations and prior knowledge • Social perception can involve bias and stereotypes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13117,14 +13075,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSocial perception is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social perception\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social perception as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.\n\nKEY POINTS\n• People form impressions from social information.\n• Interpretation is influenced by expectations and prior knowledge.\n• Social perception can involve bias and stereotypes.\n• Attributions are one important component of social interpretation.\n\nDISTINCTION / CAUTION\nSocial perception is broader than attribution; attribution concerns explaining causes, while social perception includes impression formation more generally.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Perception, Communication and Attributions; Ciccarelli & White social cognition.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social perception”.",
-                "List the key points associated with “Social perception” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social perception”?"
+                "State the source-based core idea of “Social perception”.",
+                "List the key source-supported points for “Social perception”.",
+                "State the most important distinction or caution for “Social perception”."
               ],
-              "application_question": "Source-based check: Given a new question about “Social perception”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social perception → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Social perception” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "People form impressions from social information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13134,17 +13092,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 8 Social Perception, Communication and Attributions; Ciccarelli & White social cognition."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Communication",
-              "content_notes": "CORE CONCEPT\nCommunication is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Communication\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Communication as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCommunication → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCommunication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.\n\nKEY POINTS\n• Communication can be verbal and nonverbal.\n• Meaning depends partly on context and interpretation.\n• Communication affects interpersonal relationships.\n• Misinterpretation can contribute to social conflict.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Perception/Communication; Kaplan AP Psychology — Social Psychology.\n\nCOMMON EXAM TRAP\nCommunication is the process of exchanging information; persuasion is a specific social-influence process aimed at changing attitudes or behavior.\n\nMEMORY CUE\nCommunication → Communication can be verbal and nonverbal • Meaning depends partly on context and interpretation • Communication affects interpersonal relationships",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13154,14 +13109,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCommunication is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Communication\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Communication as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCommunication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.\n\nKEY POINTS\n• Communication can be verbal and nonverbal.\n• Meaning depends partly on context and interpretation.\n• Communication affects interpersonal relationships.\n• Misinterpretation can contribute to social conflict.\n\nDISTINCTION / CAUTION\nCommunication is the process of exchanging information; persuasion is a specific social-influence process aimed at changing attitudes or behavior.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 8 Social Perception/Communication; Kaplan AP Psychology — Social Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Communication”.",
-                "List the key points associated with “Communication” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Communication”?"
+                "State the source-based core idea of “Communication”.",
+                "List the key source-supported points for “Communication”.",
+                "State the most important distinction or caution for “Communication”."
               ],
-              "application_question": "Source-based check: Given a new question about “Communication”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Communication → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Communication” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Communication can be verbal and nonverbal",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13171,17 +13126,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 8 Social Perception/Communication; Kaplan AP Psychology — Social Psychology."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "Attributions",
-              "content_notes": "CORE CONCEPT\nAttributions is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attributions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Attributions as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAttributions → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAttribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.\n\nKEY POINTS\n• Internal attributions locate causes in the person.\n• External attributions locate causes in the situation.\n• Attributions influence judgments of self and others.\n• Self-serving bias can affect explanations of outcomes.\n\nSOURCE BASIS\nBaron & Misra — Attribution and Social Cognition; Kaplan AP Psychology — Attributions.\n\nCOMMON EXAM TRAP\nAn attribution is an explanation of cause, not merely an observation of behavior.\n\nMEMORY CUE\nAttributions → Internal attributions locate causes in the person • External attributions locate causes in the situation • Attributions influence judgments of self and others",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13191,14 +13143,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nAttributions is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attributions\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Attributions as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAttribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.\n\nKEY POINTS\n• Internal attributions locate causes in the person.\n• External attributions locate causes in the situation.\n• Attributions influence judgments of self and others.\n• Self-serving bias can affect explanations of outcomes.\n\nDISTINCTION / CAUTION\nAn attribution is an explanation of cause, not merely an observation of behavior.\n\nSOURCE BASIS\nBaron & Misra — Attribution and Social Cognition; Kaplan AP Psychology — Attributions.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Attributions”.",
-                "List the key points associated with “Attributions” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Attributions”?"
+                "State the source-based core idea of “Attributions”.",
+                "List the key source-supported points for “Attributions”.",
+                "State the most important distinction or caution for “Attributions”."
               ],
-              "application_question": "Source-based check: Given a new question about “Attributions”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Attributions → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Attributions” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Internal attributions locate causes in the person",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13208,17 +13160,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Attribution and Social Cognition; Kaplan AP Psychology — Attributions."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Attitude",
-              "content_notes": "CORE CONCEPT\nAttitude is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attitude\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Attitude as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAttitude → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAn attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.\n\nKEY POINTS\n• Attitudes have an evaluative component.\n• They can be positive, negative or mixed.\n• Attitudes can influence behavior under appropriate conditions.\n• Attitudes are shaped by social experience and information.\n\nSOURCE BASIS\nBaron & Misra — Social Psychology; PowerWithin Psychology — Attitude and Attitude Change.\n\nCOMMON EXAM TRAP\nAn attitude is an evaluation, not simply knowledge or a belief; beliefs may contribute to an attitude.\n\nMEMORY CUE\nAttitude → Attitudes have an evaluative component • They can be positive, negative or mixed • Attitudes can influence behavior under appropriate conditions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13228,14 +13177,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nAttitude is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attitude\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Attitude as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAn attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.\n\nKEY POINTS\n• Attitudes have an evaluative component.\n• They can be positive, negative or mixed.\n• Attitudes can influence behavior under appropriate conditions.\n• Attitudes are shaped by social experience and information.\n\nDISTINCTION / CAUTION\nAn attitude is an evaluation, not simply knowledge or a belief; beliefs may contribute to an attitude.\n\nSOURCE BASIS\nBaron & Misra — Social Psychology; PowerWithin Psychology — Attitude and Attitude Change.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Attitude”.",
-                "List the key points associated with “Attitude” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Attitude”?"
+                "State the source-based core idea of “Attitude”.",
+                "List the key source-supported points for “Attitude”.",
+                "State the most important distinction or caution for “Attitude”."
               ],
-              "application_question": "Source-based check: Given a new question about “Attitude”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Attitude → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Attitude” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Attitudes have an evaluative component",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13245,17 +13194,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Social Psychology; PowerWithin Psychology — Attitude and Attitude Change."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Attitude change",
-              "content_notes": "CORE CONCEPT\nAttitude change is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attitude change\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Attitude change as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAttitude change → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAttitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.\n\nKEY POINTS\n• Persuasive communication can change attitudes.\n• Cognitive dissonance can motivate attitude change.\n• The direction and durability of change depend on context and processing.\n• Attitude change is distinct from simple exposure to information.\n\nSOURCE BASIS\nBaron & Misra — Attitude Change and Cognitive Dissonance; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nCognitive dissonance is one mechanism of attitude change, not a synonym for all attitude change.\n\nMEMORY CUE\nAttitude change → Persuasive communication can change attitudes • Cognitive dissonance can motivate attitude change • The direction and durability of change depend on context and processing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13265,14 +13211,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nAttitude change is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Attitude change\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Attitude change as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAttitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.\n\nKEY POINTS\n• Persuasive communication can change attitudes.\n• Cognitive dissonance can motivate attitude change.\n• The direction and durability of change depend on context and processing.\n• Attitude change is distinct from simple exposure to information.\n\nDISTINCTION / CAUTION\nCognitive dissonance is one mechanism of attitude change, not a synonym for all attitude change.\n\nSOURCE BASIS\nBaron & Misra — Attitude Change and Cognitive Dissonance; Kaplan AP Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Attitude change”.",
-                "List the key points associated with “Attitude change” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Attitude change”?"
+                "State the source-based core idea of “Attitude change”.",
+                "List the key source-supported points for “Attitude change”.",
+                "State the most important distinction or caution for “Attitude change”."
               ],
-              "application_question": "Source-based check: Given a new question about “Attitude change”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Attitude change → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Attitude change” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Persuasive communication can change attitudes",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13282,17 +13228,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Attitude Change and Cognitive Dissonance; Kaplan AP Psychology."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 6,
               "title": "Cultural context of attitudes",
-              "content_notes": "CORE CONCEPT\nCultural context of attitudes is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cultural context of attitudes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cultural context of attitudes as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCultural context of attitudes → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAttitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.\n\nKEY POINTS\n• Culture provides norms and values relevant to evaluation.\n• The same behavior can be evaluated differently across cultural contexts.\n• Attitude expression is influenced by social expectations.\n• Cross-cultural interpretation requires attention to context.\n\nSOURCE BASIS\nPowerWithin Psychology — Attitude and Cultural Context; Baron & Misra — culture and social behavior.\n\nCOMMON EXAM TRAP\nCultural context influences attitudes but does not make every individual within a culture identical.\n\nMEMORY CUE\nCultural context of attitudes → Culture provides norms and values relevant to evaluation • The same behavior can be evaluated differently across cultural contexts • Attitude expression is influenced by social expectations",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13302,14 +13245,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCultural context of attitudes is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cultural context of attitudes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cultural context of attitudes as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAttitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.\n\nKEY POINTS\n• Culture provides norms and values relevant to evaluation.\n• The same behavior can be evaluated differently across cultural contexts.\n• Attitude expression is influenced by social expectations.\n• Cross-cultural interpretation requires attention to context.\n\nDISTINCTION / CAUTION\nCultural context influences attitudes but does not make every individual within a culture identical.\n\nSOURCE BASIS\nPowerWithin Psychology — Attitude and Cultural Context; Baron & Misra — culture and social behavior.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cultural context of attitudes”.",
-                "List the key points associated with “Cultural context of attitudes” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cultural context of attitudes”?"
+                "State the source-based core idea of “Cultural context of attitudes”.",
+                "List the key source-supported points for “Cultural context of attitudes”.",
+                "State the most important distinction or caution for “Cultural context of attitudes”."
               ],
-              "application_question": "Source-based check: Given a new question about “Cultural context of attitudes”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cultural context of attitudes → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Cultural context of attitudes” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Culture provides norms and values relevant to evaluation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13319,17 +13262,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Attitude and Cultural Context; Baron & Misra — culture and social behavior."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 7,
               "title": "Prosocial behavior",
-              "content_notes": "CORE CONCEPT\nProsocial behavior is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Prosocial behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Prosocial behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nProsocial behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nProsocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.\n\nKEY POINTS\n• The intended outcome benefits another person.\n• Helping and altruism are common examples.\n• Empathy and social context can influence prosocial behavior.\n• Costs and benefits can affect helping decisions.\n\nSOURCE BASIS\nKaplan AP Psychology — Prosocial Behavior; Baron & Misra — Prosocial Behavior.\n\nCOMMON EXAM TRAP\nProsocial behavior is broader than altruism; altruism usually emphasizes helping without direct self-benefit.\n\nMEMORY CUE\nProsocial behavior → The intended outcome benefits another person • Helping and altruism are common examples • Empathy and social context can influence prosocial behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13339,14 +13279,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nProsocial behavior is a focused concept within “Social perception (Communication, Attributions); attitude and its change within cultural context; prosocial behavior”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Prosocial behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Prosocial behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nProsocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.\n\nKEY POINTS\n• The intended outcome benefits another person.\n• Helping and altruism are common examples.\n• Empathy and social context can influence prosocial behavior.\n• Costs and benefits can affect helping decisions.\n\nDISTINCTION / CAUTION\nProsocial behavior is broader than altruism; altruism usually emphasizes helping without direct self-benefit.\n\nSOURCE BASIS\nKaplan AP Psychology — Prosocial Behavior; Baron & Misra — Prosocial Behavior.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Prosocial behavior”.",
-                "List the key points associated with “Prosocial behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Prosocial behavior”?"
+                "State the source-based core idea of “Prosocial behavior”.",
+                "List the key source-supported points for “Prosocial behavior”.",
+                "State the most important distinction or caution for “Prosocial behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Prosocial behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Prosocial behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Prosocial behavior” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "The intended outcome benefits another person",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13356,10 +13296,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Kaplan AP Psychology — Prosocial Behavior; Baron & Misra — Prosocial Behavior."
               ],
               "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -13385,7 +13322,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Social Facilitation",
-              "content_notes": "CORE CONCEPT\nSocial Facilitation is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social Facilitation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social Facilitation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial Facilitation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocial facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.\n\nKEY POINTS\n• Audience presence can affect performance.\n• Well-learned tasks may show improved performance.\n• Difficult or novel tasks can show impaired performance.\n• The effect is distinct from social loafing, which concerns reduced effort in groups.\n\nSOURCE BASIS\nKaplan AP Psychology — Social Facilitation; Baron & Misra — Social Facilitation.\n\nCOMMON EXAM TRAP\nSocial facilitation is about performance in the presence of others; social loafing is about effort in group tasks.\n\nMEMORY CUE\nSocial Facilitation → Audience presence can affect performance • Well-learned tasks may show improved performance • Difficult or novel tasks can show impaired performance",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13395,14 +13332,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSocial Facilitation is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social Facilitation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social Facilitation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.\n\nKEY POINTS\n• Audience presence can affect performance.\n• Well-learned tasks may show improved performance.\n• Difficult or novel tasks can show impaired performance.\n• The effect is distinct from social loafing, which concerns reduced effort in groups.\n\nDISTINCTION / CAUTION\nSocial facilitation is about performance in the presence of others; social loafing is about effort in group tasks.\n\nSOURCE BASIS\nKaplan AP Psychology — Social Facilitation; Baron & Misra — Social Facilitation.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social Facilitation”.",
-                "List the key points associated with “Social Facilitation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social Facilitation”?"
+                "State the source-based core idea of “Social Facilitation”.",
+                "List the key source-supported points for “Social Facilitation”.",
+                "State the most important distinction or caution for “Social Facilitation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Social Facilitation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social Facilitation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Social Facilitation” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Audience presence can affect performance",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13412,16 +13349,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Kaplan AP Psychology — Social Facilitation; Baron & Misra — Social Facilitation."
               ]
             },
             {
               "id": 2,
               "title": "Social loafing",
-              "content_notes": "CORE CONCEPT\nSocial loafing is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social loafing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social loafing as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial loafing → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocial loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.\n\nKEY POINTS\n• Effort can decline in group tasks.\n• Individual contribution may be less identifiable.\n• The effect differs from social facilitation.\n• Group size and accountability can influence the effect.\n\nSOURCE BASIS\nKaplan AP Psychology — Social Loafing; PowerWithin Psychology — Group and Social Influence.\n\nCOMMON EXAM TRAP\nSocial loafing concerns reduced effort; it is not simply any decline in performance caused by being in a group.\n\nMEMORY CUE\nSocial loafing → Effort can decline in group tasks • Individual contribution may be less identifiable • The effect differs from social facilitation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13431,14 +13365,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSocial loafing is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social loafing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social loafing as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.\n\nKEY POINTS\n• Effort can decline in group tasks.\n• Individual contribution may be less identifiable.\n• The effect differs from social facilitation.\n• Group size and accountability can influence the effect.\n\nDISTINCTION / CAUTION\nSocial loafing concerns reduced effort; it is not simply any decline in performance caused by being in a group.\n\nSOURCE BASIS\nKaplan AP Psychology — Social Loafing; PowerWithin Psychology — Group and Social Influence.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social loafing”.",
-                "List the key points associated with “Social loafing” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social loafing”?"
+                "State the source-based core idea of “Social loafing”.",
+                "List the key source-supported points for “Social loafing”.",
+                "State the most important distinction or caution for “Social loafing”."
               ],
-              "application_question": "Source-based check: Given a new question about “Social loafing”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social loafing → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Social loafing” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Effort can decline in group tasks",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13448,10 +13382,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Kaplan AP Psychology — Social Loafing; PowerWithin Psychology — Group and Social Influence."
               ]
             },
             {
@@ -13493,7 +13424,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Peer Pressure",
-              "content_notes": "CORE CONCEPT\nPeer Pressure is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Peer Pressure\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Peer Pressure as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPeer Pressure → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPeer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.\n\nKEY POINTS\n• Peers can influence behavior directly or indirectly.\n• Conformity and group norms are related processes.\n• The influence can be positive or negative depending on the behavior.\n• Individual responses depend on context and perceived norms.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence, Peer Pressure and Conformity; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nPeer pressure is a context of social influence; conformity is the broader process of adjusting behavior or judgments toward group norms.\n\nMEMORY CUE\nPeer Pressure → Peers can influence behavior directly or indirectly • Conformity and group norms are related processes • The influence can be positive or negative depending on the behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13503,14 +13434,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPeer Pressure is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Peer Pressure\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Peer Pressure as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPeer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.\n\nKEY POINTS\n• Peers can influence behavior directly or indirectly.\n• Conformity and group norms are related processes.\n• The influence can be positive or negative depending on the behavior.\n• Individual responses depend on context and perceived norms.\n\nDISTINCTION / CAUTION\nPeer pressure is a context of social influence; conformity is the broader process of adjusting behavior or judgments toward group norms.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence, Peer Pressure and Conformity; Kaplan AP Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Peer Pressure”.",
-                "List the key points associated with “Peer Pressure” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Peer Pressure”?"
+                "State the source-based core idea of “Peer Pressure”.",
+                "List the key source-supported points for “Peer Pressure”.",
+                "State the most important distinction or caution for “Peer Pressure”."
               ],
-              "application_question": "Source-based check: Given a new question about “Peer Pressure”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Peer Pressure → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Peer Pressure” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Peers can influence behavior directly or indirectly",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13520,16 +13451,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Social Influence, Peer Pressure and Conformity; Kaplan AP Psychology."
               ]
             },
             {
               "id": 5,
               "title": "Persuasion",
-              "content_notes": "CORE CONCEPT\nPersuasion is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Persuasion\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Persuasion as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPersuasion → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPersuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.\n\nKEY POINTS\n• Persuasion involves communication.\n• Messages can influence attitudes and behavior.\n• Source, message and audience factors can affect effectiveness.\n• Persuasion differs from coercion because influence is attempted through communication rather than direct force.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence and Persuasion; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nPersuasion aims at change; compliance concerns behavior following a request, which may occur with or without an attitude change.\n\nMEMORY CUE\nPersuasion → Persuasion involves communication • Messages can influence attitudes and behavior • Source, message and audience factors can affect effectiveness",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13539,14 +13467,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPersuasion is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Persuasion\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Persuasion as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPersuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.\n\nKEY POINTS\n• Persuasion involves communication.\n• Messages can influence attitudes and behavior.\n• Source, message and audience factors can affect effectiveness.\n• Persuasion differs from coercion because influence is attempted through communication rather than direct force.\n\nDISTINCTION / CAUTION\nPersuasion aims at change; compliance concerns behavior following a request, which may occur with or without an attitude change.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence and Persuasion; Kaplan AP Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Persuasion”.",
-                "List the key points associated with “Persuasion” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Persuasion”?"
+                "State the source-based core idea of “Persuasion”.",
+                "List the key source-supported points for “Persuasion”.",
+                "State the most important distinction or caution for “Persuasion”."
               ],
-              "application_question": "Source-based check: Given a new question about “Persuasion”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Persuasion → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Persuasion” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Persuasion involves communication",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13556,16 +13484,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Social Influence and Persuasion; Kaplan AP Psychology."
               ]
             },
             {
               "id": 6,
               "title": "Compliance",
-              "content_notes": "CORE CONCEPT\nCompliance is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Compliance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Compliance as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCompliance → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCompliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.\n\nKEY POINTS\n• Compliance involves responding to a request.\n• It differs from obedience, which typically involves an authority.\n• Compliance can occur without private attitude change.\n• Social influence techniques can increase or decrease compliance.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence; Kaplan AP Psychology.\n\nCOMMON EXAM TRAP\nCompliance is request-based influence; obedience is typically authority-based influence.\n\nMEMORY CUE\nCompliance → Compliance involves responding to a request • It differs from obedience, which typically involves an authority • Compliance can occur without private attitude change",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13575,14 +13500,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCompliance is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Compliance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Compliance as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCompliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.\n\nKEY POINTS\n• Compliance involves responding to a request.\n• It differs from obedience, which typically involves an authority.\n• Compliance can occur without private attitude change.\n• Social influence techniques can increase or decrease compliance.\n\nDISTINCTION / CAUTION\nCompliance is request-based influence; obedience is typically authority-based influence.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence; Kaplan AP Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Compliance”.",
-                "List the key points associated with “Compliance” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Compliance”?"
+                "State the source-based core idea of “Compliance”.",
+                "List the key source-supported points for “Compliance”.",
+                "State the most important distinction or caution for “Compliance”."
               ],
-              "application_question": "Source-based check: Given a new question about “Compliance”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Compliance → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Compliance” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Compliance involves responding to a request",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13592,10 +13517,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Social Influence; Kaplan AP Psychology."
               ]
             },
             {
@@ -13637,7 +13559,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Social Power",
-              "content_notes": "CORE CONCEPT\nSocial Power is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social Power\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social Power as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial Power → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocial power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.\n\nKEY POINTS\n• Power concerns influence over others or outcomes.\n• Power can operate through different social relationships and resources.\n• The use of power is context dependent.\n• Power is related to but not identical with authority.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence and Social Power.\n\nCOMMON EXAM TRAP\nHaving power does not necessarily mean using coercion; influence can occur through multiple forms of social control or resources.\n\nMEMORY CUE\nSocial Power → Power concerns influence over others or outcomes • Power can operate through different social relationships and resources • The use of power is context dependent",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13647,14 +13569,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSocial Power is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social Power\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social Power as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.\n\nKEY POINTS\n• Power concerns influence over others or outcomes.\n• Power can operate through different social relationships and resources.\n• The use of power is context dependent.\n• Power is related to but not identical with authority.\n\nDISTINCTION / CAUTION\nHaving power does not necessarily mean using coercion; influence can occur through multiple forms of social control or resources.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence and Social Power.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social Power”.",
-                "List the key points associated with “Social Power” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social Power”?"
+                "State the source-based core idea of “Social Power”.",
+                "List the key source-supported points for “Social Power”.",
+                "State the most important distinction or caution for “Social Power”."
               ],
-              "application_question": "Source-based check: Given a new question about “Social Power”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social Power → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Social Power” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Power concerns influence over others or outcomes",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13664,16 +13586,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Social Influence and Social Power."
               ]
             },
             {
               "id": 9,
               "title": "Reactance",
-              "content_notes": "CORE CONCEPT\nReactance is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Reactance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Reactance as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nReactance → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPsychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.\n\nKEY POINTS\n• Reactance follows perceived restriction of freedom.\n• People may resist or restore the threatened choice.\n• The response depends on how freedom is perceived.\n• It differs from ordinary disagreement because threatened freedom is central.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence/Reactance; P2 Environment & Population Psychology — perceived control and crowding.\n\nCOMMON EXAM TRAP\nReactance is not simply stubbornness; the key condition is perceived restriction of freedom.\n\nMEMORY CUE\nReactance → Reactance follows perceived restriction of freedom • People may resist or restore the threatened choice • The response depends on how freedom is perceived",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13683,14 +13602,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nReactance is a focused concept within “Group and Social influence (Social Facilitation; Social loafing); Social influence (Conformity, Peer Pressure, Persuasion, Compliance, Obedience, Social Power, Reactance)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Reactance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Reactance as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.\n\nKEY POINTS\n• Reactance follows perceived restriction of freedom.\n• People may resist or restore the threatened choice.\n• The response depends on how freedom is perceived.\n• It differs from ordinary disagreement because threatened freedom is central.\n\nDISTINCTION / CAUTION\nReactance is not simply stubbornness; the key condition is perceived restriction of freedom.\n\nSOURCE BASIS\nPowerWithin Psychology — Social Influence/Reactance; P2 Environment & Population Psychology — perceived control and crowding.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Reactance”.",
-                "List the key points associated with “Reactance” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Reactance”?"
+                "State the source-based core idea of “Reactance”.",
+                "List the key source-supported points for “Reactance”.",
+                "State the most important distinction or caution for “Reactance”."
               ],
-              "application_question": "Source-based check: Given a new question about “Reactance”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Reactance → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Reactance” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Reactance follows perceived restriction of freedom",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13700,10 +13619,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Social Influence/Reactance; P2 Environment & Population Psychology — perceived control and crowding."
               ]
             }
           ],
@@ -13783,7 +13699,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Group dynamics",
-              "content_notes": "CORE CONCEPT\nGroup dynamics is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Group dynamics\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Group dynamics as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGroup dynamics → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nGroup dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.\n\nKEY POINTS\n• Groups develop norms and roles.\n• Cohesion can affect interaction and performance.\n• Members influence one another.\n• Group processes can facilitate or hinder decision making.\n\nSOURCE BASIS\nPowerWithin Psychology — Group Dynamics and Leadership; Kaplan AP Psychology — Groups.\n\nCOMMON EXAM TRAP\nGroup dynamics is broader than group size; it concerns interaction patterns and processes within the group.\n\nMEMORY CUE\nGroup dynamics → Groups develop norms and roles • Cohesion can affect interaction and performance • Members influence one another",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13793,14 +13709,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nGroup dynamics is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Group dynamics\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Group dynamics as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGroup dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.\n\nKEY POINTS\n• Groups develop norms and roles.\n• Cohesion can affect interaction and performance.\n• Members influence one another.\n• Group processes can facilitate or hinder decision making.\n\nDISTINCTION / CAUTION\nGroup dynamics is broader than group size; it concerns interaction patterns and processes within the group.\n\nSOURCE BASIS\nPowerWithin Psychology — Group Dynamics and Leadership; Kaplan AP Psychology — Groups.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Group dynamics”.",
-                "List the key points associated with “Group dynamics” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Group dynamics”?"
+                "State the source-based core idea of “Group dynamics”.",
+                "List the key source-supported points for “Group dynamics”.",
+                "State the most important distinction or caution for “Group dynamics”."
               ],
-              "application_question": "Source-based check: Given a new question about “Group dynamics”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Group dynamics → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Group dynamics” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Groups develop norms and roles",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13810,16 +13726,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Group Dynamics and Leadership; Kaplan AP Psychology — Groups."
               ]
             },
             {
               "id": 2,
               "title": "Leadership styles",
-              "content_notes": "CORE CONCEPT\nLeadership styles is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Leadership styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Leadership styles as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLeadership styles → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLeadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.\n\nKEY POINTS\n• Autocratic leadership emphasizes leader control.\n• Democratic leadership involves greater participation.\n• Laissez-faire leadership provides greater autonomy.\n• Blake–Mouton organizes styles around concern for people and results.\n\nSOURCE BASIS\nREVISATHON Part 2 — Leadership Styles; Ciccarelli & White — Blake–Mouton Leadership Grid.\n\nCOMMON EXAM TRAP\nA leadership style is a behavioral pattern; effectiveness depends partly on the situation rather than one style being universally effective.\n\nMEMORY CUE\nLeadership styles → Autocratic leadership emphasizes leader control • Democratic leadership involves greater participation • Laissez-faire leadership provides greater autonomy",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13829,14 +13742,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nLeadership styles is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Leadership styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Leadership styles as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLeadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.\n\nKEY POINTS\n• Autocratic leadership emphasizes leader control.\n• Democratic leadership involves greater participation.\n• Laissez-faire leadership provides greater autonomy.\n• Blake–Mouton organizes styles around concern for people and results.\n\nDISTINCTION / CAUTION\nA leadership style is a behavioral pattern; effectiveness depends partly on the situation rather than one style being universally effective.\n\nSOURCE BASIS\nREVISATHON Part 2 — Leadership Styles; Ciccarelli & White — Blake–Mouton Leadership Grid.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Leadership styles”.",
-                "List the key points associated with “Leadership styles” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Leadership styles”?"
+                "State the source-based core idea of “Leadership styles”.",
+                "List the key source-supported points for “Leadership styles”.",
+                "State the most important distinction or caution for “Leadership styles”."
               ],
-              "application_question": "Source-based check: Given a new question about “Leadership styles”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Leadership styles → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Leadership styles” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Autocratic leadership emphasizes leader control",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13846,16 +13759,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "REVISATHON Part 2 — Leadership Styles; Ciccarelli & White — Blake–Mouton Leadership Grid."
               ]
             },
             {
               "id": 3,
               "title": "Leadership effectiveness",
-              "content_notes": "CORE CONCEPT\nLeadership effectiveness is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Leadership effectiveness\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Leadership effectiveness as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLeadership effectiveness → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLeadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.\n\nKEY POINTS\n• Leadership effectiveness is context dependent.\n• Fiedler distinguishes task- and relationship-oriented styles.\n• Situational favorability affects the fit between style and context.\n• Other models such as path-goal theory focus on clarifying routes to goals.\n\nSOURCE BASIS\nREVISATHON Part 2 — Fiedler Contingency Approach and Path-Goal Theory.\n\nCOMMON EXAM TRAP\nThe contingency approach does not claim one style is always superior; it emphasizes person–situation fit.\n\nMEMORY CUE\nLeadership effectiveness → Leadership effectiveness is context dependent • Fiedler distinguishes task- and relationship-oriented styles • Situational favorability affects the fit between style and context",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13865,14 +13775,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nLeadership effectiveness is a focused concept within “Group dynamics, leadership style and effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Leadership effectiveness\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Leadership effectiveness as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLeadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.\n\nKEY POINTS\n• Leadership effectiveness is context dependent.\n• Fiedler distinguishes task- and relationship-oriented styles.\n• Situational favorability affects the fit between style and context.\n• Other models such as path-goal theory focus on clarifying routes to goals.\n\nDISTINCTION / CAUTION\nThe contingency approach does not claim one style is always superior; it emphasizes person–situation fit.\n\nSOURCE BASIS\nREVISATHON Part 2 — Fiedler Contingency Approach and Path-Goal Theory.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Leadership effectiveness”.",
-                "List the key points associated with “Leadership effectiveness” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Leadership effectiveness”?"
+                "State the source-based core idea of “Leadership effectiveness”.",
+                "List the key source-supported points for “Leadership effectiveness”.",
+                "State the most important distinction or caution for “Leadership effectiveness”."
               ],
-              "application_question": "Source-based check: Given a new question about “Leadership effectiveness”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Leadership effectiveness → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Leadership effectiveness” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Leadership effectiveness is context dependent",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13882,10 +13792,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "REVISATHON Part 2 — Fiedler Contingency Approach and Path-Goal Theory."
               ]
             }
           ],
@@ -13910,7 +13817,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Minimal Group Experiment",
-              "content_notes": "CORE CONCEPT\nMinimal Group Experiment is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Minimal Group Experiment\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Minimal Group Experiment as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMinimal Group Experiment → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.\n\nKEY POINTS\n• Minimal categorization can create meaningful group distinctions.\n• In-group favoritism can emerge with minimal group formation.\n• The paradigm supports the importance of social categorization.\n• It is relevant to Social Identity Theory.\n\nSOURCE BASIS\nPowerWithin Psychology — Theories of Intergroup Relations, Minimal Group Experiment and Social Identity Theory.\n\nCOMMON EXAM TRAP\nMinimal-group findings do not require a history of real conflict between groups; the point is that categorization itself can matter.\n\nMEMORY CUE\nMinimal Group Experiment → Minimal categorization can create meaningful group distinctions • In-group favoritism can emerge with minimal group formation • The paradigm supports the importance of social categorization",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13920,14 +13827,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nMinimal Group Experiment is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Minimal Group Experiment\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Minimal Group Experiment as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.\n\nKEY POINTS\n• Minimal categorization can create meaningful group distinctions.\n• In-group favoritism can emerge with minimal group formation.\n• The paradigm supports the importance of social categorization.\n• It is relevant to Social Identity Theory.\n\nDISTINCTION / CAUTION\nMinimal-group findings do not require a history of real conflict between groups; the point is that categorization itself can matter.\n\nSOURCE BASIS\nPowerWithin Psychology — Theories of Intergroup Relations, Minimal Group Experiment and Social Identity Theory.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Minimal Group Experiment”.",
-                "List the key points associated with “Minimal Group Experiment” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Minimal Group Experiment”?"
+                "State the source-based core idea of “Minimal Group Experiment”.",
+                "List the key source-supported points for “Minimal Group Experiment”.",
+                "State the most important distinction or caution for “Minimal Group Experiment”."
               ],
-              "application_question": "Source-based check: Given a new question about “Minimal Group Experiment”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Minimal Group Experiment → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Minimal Group Experiment” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Minimal categorization can create meaningful group distinctions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -13937,10 +13844,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Theories of Intergroup Relations, Minimal Group Experiment and Social Identity Theory."
               ]
             },
             {
@@ -13983,7 +13887,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Relative Deprivation Theory",
-              "content_notes": "CORE CONCEPT\nRelative Deprivation Theory is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Relative Deprivation Theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Relative Deprivation Theory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRelative Deprivation Theory → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nRelative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.\n\nKEY POINTS\n• Perceived comparison is central.\n• People can feel deprived even when basic needs are met.\n• Relative deprivation can influence group attitudes and conflict.\n• The reference group or standard of comparison matters.\n\nSOURCE BASIS\nBaron & Misra — Relative Deprivation and Intergroup Attitudes; PowerWithin Psychology — Intergroup Relations.\n\nCOMMON EXAM TRAP\nRelative deprivation is a perception of disadvantage; it is not identical to objective poverty.\n\nMEMORY CUE\nRelative Deprivation Theory → Perceived comparison is central • People can feel deprived even when basic needs are met • Relative deprivation can influence group attitudes and conflict",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13993,14 +13897,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nRelative Deprivation Theory is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Relative Deprivation Theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Relative Deprivation Theory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nRelative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.\n\nKEY POINTS\n• Perceived comparison is central.\n• People can feel deprived even when basic needs are met.\n• Relative deprivation can influence group attitudes and conflict.\n• The reference group or standard of comparison matters.\n\nDISTINCTION / CAUTION\nRelative deprivation is a perception of disadvantage; it is not identical to objective poverty.\n\nSOURCE BASIS\nBaron & Misra — Relative Deprivation and Intergroup Attitudes; PowerWithin Psychology — Intergroup Relations.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Relative Deprivation Theory”.",
-                "List the key points associated with “Relative Deprivation Theory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Relative Deprivation Theory”?"
+                "State the source-based core idea of “Relative Deprivation Theory”.",
+                "List the key source-supported points for “Relative Deprivation Theory”.",
+                "State the most important distinction or caution for “Relative Deprivation Theory”."
               ],
-              "application_question": "Source-based check: Given a new question about “Relative Deprivation Theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Relative Deprivation Theory → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Relative Deprivation Theory” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Perceived comparison is central",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14010,10 +13914,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Relative Deprivation and Intergroup Attitudes; PowerWithin Psychology — Intergroup Relations."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
@@ -14057,7 +13958,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Balance Theories",
-              "content_notes": "CORE CONCEPT\nBalance Theories is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Balance Theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Balance Theories as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBalance Theories → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nBalance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.\n\nKEY POINTS\n• Relations among attitudes can be balanced or imbalanced.\n• People may be motivated to reduce inconsistency.\n• The framework examines triadic relationships among persons and objects.\n• Balance is a consistency principle rather than a simple positive/negative attitude score.\n\nSOURCE BASIS\nPowerWithin Psychology — Theories of Intergroup Relations, Balance Theories.\n\nCOMMON EXAM TRAP\nBalance theory is about patterns of relationships among attitudes, not merely whether one attitude is positive or negative.\n\nMEMORY CUE\nBalance Theories → Relations among attitudes can be balanced or imbalanced • People may be motivated to reduce inconsistency • The framework examines triadic relationships among persons and objects",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14067,14 +13968,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nBalance Theories is a focused concept within “Theories of intergroup relations: Minimal Group Experiment and Social Identity Theory, Relative Deprivation Theory, Realistic Conflict Theory, Balance Theories, Equity Theory, Social Exchange Theory”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Balance Theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Balance Theories as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBalance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.\n\nKEY POINTS\n• Relations among attitudes can be balanced or imbalanced.\n• People may be motivated to reduce inconsistency.\n• The framework examines triadic relationships among persons and objects.\n• Balance is a consistency principle rather than a simple positive/negative attitude score.\n\nDISTINCTION / CAUTION\nBalance theory is about patterns of relationships among attitudes, not merely whether one attitude is positive or negative.\n\nSOURCE BASIS\nPowerWithin Psychology — Theories of Intergroup Relations, Balance Theories.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Balance Theories”.",
-                "List the key points associated with “Balance Theories” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Balance Theories”?"
+                "State the source-based core idea of “Balance Theories”.",
+                "List the key source-supported points for “Balance Theories”.",
+                "State the most important distinction or caution for “Balance Theories”."
               ],
-              "application_question": "Source-based check: Given a new question about “Balance Theories”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Balance Theories → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Balance Theories” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Relations among attitudes can be balanced or imbalanced",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14084,10 +13985,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Theories of Intergroup Relations, Balance Theories."
               ]
             },
             {
@@ -14186,7 +14084,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Health applications",
-              "content_notes": "CORE CONCEPT\nHealth applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Health applications as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHealth applications → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nApplied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.\n\nKEY POINTS\n• Health behavior is influenced by social context.\n• Attitudes and norms can affect health decisions.\n• Social support can influence coping and wellbeing.\n• Interventions can use social-psychological principles.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Health; Baron & Misra — Social Psychology and Health.\n\nCOMMON EXAM TRAP\nHealth applications are not limited to individual counseling; social norms, communication and group processes can also be intervention targets.\n\nMEMORY CUE\nHealth applications → Health behavior is influenced by social context • Attitudes and norms can affect health decisions • Social support can influence coping and wellbeing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14196,14 +14094,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nHealth applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Health applications as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nApplied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.\n\nKEY POINTS\n• Health behavior is influenced by social context.\n• Attitudes and norms can affect health decisions.\n• Social support can influence coping and wellbeing.\n• Interventions can use social-psychological principles.\n\nDISTINCTION / CAUTION\nHealth applications are not limited to individual counseling; social norms, communication and group processes can also be intervention targets.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Health; Baron & Misra — Social Psychology and Health.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Health applications”.",
-                "List the key points associated with “Health applications” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Health applications”?"
+                "State the source-based core idea of “Health applications”.",
+                "List the key source-supported points for “Health applications”.",
+                "State the most important distinction or caution for “Health applications”."
               ],
-              "application_question": "Source-based check: Given a new question about “Health applications”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Health applications → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Health applications” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Health behavior is influenced by social context",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14213,16 +14111,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Applied Social Psychology: Health; Baron & Misra — Social Psychology and Health."
               ]
             },
             {
               "id": 2,
               "title": "Environmental applications",
-              "content_notes": "CORE CONCEPT\nEnvironmental applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Environmental applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Environmental applications as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEnvironmental applications → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEnvironmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.\n\nKEY POINTS\n• Physical settings can influence stress and interaction.\n• Crowding concerns perceived density and its psychological effects.\n• Personal space regulates interpersonal distance.\n• Environmental design can influence behavior.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Environment; Ciccarelli & White — Environmental/Social Psychology.\n\nCOMMON EXAM TRAP\nEnvironmental application is broader than pollution; it includes the psychological relationship between people and physical settings.\n\nMEMORY CUE\nEnvironmental applications → Physical settings can influence stress and interaction • Crowding concerns perceived density and its psychological effects • Personal space regulates interpersonal distance",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14232,14 +14127,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nEnvironmental applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Environmental applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Environmental applications as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEnvironmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.\n\nKEY POINTS\n• Physical settings can influence stress and interaction.\n• Crowding concerns perceived density and its psychological effects.\n• Personal space regulates interpersonal distance.\n• Environmental design can influence behavior.\n\nDISTINCTION / CAUTION\nEnvironmental application is broader than pollution; it includes the psychological relationship between people and physical settings.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Environment; Ciccarelli & White — Environmental/Social Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Environmental applications”.",
-                "List the key points associated with “Environmental applications” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Environmental applications”?"
+                "State the source-based core idea of “Environmental applications”.",
+                "List the key source-supported points for “Environmental applications”.",
+                "State the most important distinction or caution for “Environmental applications”."
               ],
-              "application_question": "Source-based check: Given a new question about “Environmental applications”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Environmental applications → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Environmental applications” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Physical settings can influence stress and interaction",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14249,16 +14144,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Applied Social Psychology: Environment; Ciccarelli & White — Environmental/Social Psychology."
               ]
             },
             {
               "id": 3,
               "title": "Law applications",
-              "content_notes": "CORE CONCEPT\nLaw applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Law applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Law applications as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLaw applications → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nApplied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.\n\nKEY POINTS\n• Social psychological principles can inform legal contexts.\n• Perception and judgment can affect legal decisions.\n• Communication and social influence are relevant to legal processes.\n• Detailed source-specific legal applications are limited in the supplied extract.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Law; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not import unsupported forensic procedures into this node; retain the social-psychological focus.\n\nMEMORY CUE\nLaw applications → Social psychological principles can inform legal contexts • Perception and judgment can affect legal decisions • Communication and social influence are relevant to legal processes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14268,14 +14160,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nLaw applications is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Law applications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Law applications as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nApplied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.\n\nKEY POINTS\n• Social psychological principles can inform legal contexts.\n• Perception and judgment can affect legal decisions.\n• Communication and social influence are relevant to legal processes.\n• Detailed source-specific legal applications are limited in the supplied extract.\n\nDISTINCTION / CAUTION\nDo not import unsupported forensic procedures into this node; retain the social-psychological focus.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology: Law; outline-level coverage.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Law applications”.",
-                "List the key points associated with “Law applications” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Law applications”?"
+                "State the source-based core idea of “Law applications”.",
+                "List the key source-supported points for “Law applications”.",
+                "State the most important distinction or caution for “Law applications”."
               ],
-              "application_question": "Source-based check: Given a new question about “Law applications”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Law applications → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Law applications” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Social psychological principles can inform legal contexts",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14285,16 +14177,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Applied Social Psychology: Law; outline-level coverage."
               ]
             },
             {
               "id": 4,
               "title": "Personal space",
-              "content_notes": "CORE CONCEPT\nPersonal space is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Personal space\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Personal space as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPersonal space → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPersonal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.\n\nKEY POINTS\n• Personal space varies across people and situations.\n• It regulates interpersonal distance.\n• Crowding can occur when desired space is reduced.\n• Cultural context can influence norms for interpersonal distance.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personal Space; PowerWithin Psychology — Applied Social Psychology.\n\nCOMMON EXAM TRAP\nPersonal space is not the same as territoriality: personal space is the interpersonal distance around the person, whereas territoriality concerns control of a physical area.\n\nMEMORY CUE\nPersonal space → Personal space varies across people and situations • It regulates interpersonal distance • Crowding can occur when desired space is reduced",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14304,14 +14193,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nPersonal space is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Personal space\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Personal space as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPersonal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.\n\nKEY POINTS\n• Personal space varies across people and situations.\n• It regulates interpersonal distance.\n• Crowding can occur when desired space is reduced.\n• Cultural context can influence norms for interpersonal distance.\n\nDISTINCTION / CAUTION\nPersonal space is not the same as territoriality: personal space is the interpersonal distance around the person, whereas territoriality concerns control of a physical area.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personal Space; PowerWithin Psychology — Applied Social Psychology.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Personal space”.",
-                "List the key points associated with “Personal space” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Personal space”?"
+                "State the source-based core idea of “Personal space”.",
+                "List the key source-supported points for “Personal space”.",
+                "State the most important distinction or caution for “Personal space”."
               ],
-              "application_question": "Source-based check: Given a new question about “Personal space”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Personal space → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Personal space” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Personal space varies across people and situations",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14321,16 +14210,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Personal Space; PowerWithin Psychology — Applied Social Psychology."
               ]
             },
             {
               "id": 5,
               "title": "Crowding",
-              "content_notes": "CORE CONCEPT\nCrowding is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Crowding\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Crowding as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCrowding → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCrowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.\n\nKEY POINTS\n• Density is a physical condition; crowding is a psychological experience.\n• Perceived control can influence stress responses to crowding.\n• The meaning of the setting affects the experience.\n• Crowding can influence interpersonal behavior and wellbeing.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology; P2 Environment & Population Psychology — Crowding and perceived control.\n\nCOMMON EXAM TRAP\nHigh density does not always produce crowding; crowding depends partly on perceived control and context.\n\nMEMORY CUE\nCrowding → Density is a physical condition; crowding is a psychological experience • Perceived control can influence stress responses to crowding • The meaning of the setting affects the experience",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14340,14 +14226,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nCrowding is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Crowding\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Crowding as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCrowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.\n\nKEY POINTS\n• Density is a physical condition; crowding is a psychological experience.\n• Perceived control can influence stress responses to crowding.\n• The meaning of the setting affects the experience.\n• Crowding can influence interpersonal behavior and wellbeing.\n\nDISTINCTION / CAUTION\nHigh density does not always produce crowding; crowding depends partly on perceived control and context.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology; P2 Environment & Population Psychology — Crowding and perceived control.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Crowding”.",
-                "List the key points associated with “Crowding” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Crowding”?"
+                "State the source-based core idea of “Crowding”.",
+                "List the key source-supported points for “Crowding”.",
+                "State the most important distinction or caution for “Crowding”."
               ],
-              "application_question": "Source-based check: Given a new question about “Crowding”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Crowding → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Crowding” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Density is a physical condition; crowding is a psychological experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14357,16 +14243,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Applied Social Psychology; P2 Environment & Population Psychology — Crowding and perceived control."
               ]
             },
             {
               "id": 6,
               "title": "Territoriality",
-              "content_notes": "CORE CONCEPT\nTerritoriality is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Territoriality\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Territoriality as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTerritoriality → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nTerritoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.\n\nKEY POINTS\n• Territories are physical areas associated with control or ownership.\n• Territorial behavior can regulate access and social interaction.\n• Territoriality can occur in homes, workplaces and other settings.\n• It differs from personal space because it concerns an area rather than an interpersonal radius.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology; Ciccarelli & White — Territoriality and Personal Space.\n\nCOMMON EXAM TRAP\nTerritoriality is not simply the amount of personal space a person prefers.\n\nMEMORY CUE\nTerritoriality → Territories are physical areas associated with control or ownership • Territorial behavior can regulate access and social interaction • Territoriality can occur in homes, workplaces and other settings",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14376,14 +14259,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nTerritoriality is a focused concept within “Applied social psychology: Health, Environment and Law; Personal space, crowding, and territoriality”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Territoriality\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Territoriality as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTerritoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.\n\nKEY POINTS\n• Territories are physical areas associated with control or ownership.\n• Territorial behavior can regulate access and social interaction.\n• Territoriality can occur in homes, workplaces and other settings.\n• It differs from personal space because it concerns an area rather than an interpersonal radius.\n\nDISTINCTION / CAUTION\nTerritoriality is not simply the amount of personal space a person prefers.\n\nSOURCE BASIS\nPowerWithin Psychology — Applied Social Psychology; Ciccarelli & White — Territoriality and Personal Space.\n\nSTUDY RULE\nUse the source terminology and keep the note within the evidence provided by the uploaded material.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Territoriality”.",
-                "List the key points associated with “Territoriality” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Territoriality”?"
+                "State the source-based core idea of “Territoriality”.",
+                "List the key source-supported points for “Territoriality”.",
+                "State the most important distinction or caution for “Territoriality”."
               ],
-              "application_question": "Source-based check: Given a new question about “Territoriality”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Territoriality → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the social-psychological process represented by “Territoriality” in a new scenario and justify the answer using the source-supported mechanism.",
+              "exam_takeaway": "Territories are physical areas associated with control or ownership",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14393,10 +14276,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Applied Social Psychology; Ciccarelli & White — Territoriality and Personal Space."
               ]
             }
           ],
@@ -17893,7 +17773,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 164
+        "enrichedMicrotopics": 204
       }
     }
   },
