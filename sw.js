@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v17-mobilefix';
+const CACHE='netpsych-shell-v18-responsivefix3';
 const SHELL=[
   './',
   './index.html',
@@ -14,6 +14,7 @@ const SHELL=[
   './style.css',
   './app.js',
   './data.json',
+  './exam_schedule.json',
   './content-version.js',
   './kaplan_enrichment.json',
   './study_sources.json',
