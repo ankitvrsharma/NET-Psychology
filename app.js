@@ -32,6 +32,10 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  D=json;
+  // Render the homepage as soon as core study data is available.
+  // Secondary enrichment must never block the primary learning interface.
+  if(document.body.dataset.page==='home') render();
   try{
     const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
     if(kr.ok){
@@ -50,7 +54,6 @@ async function loadStudyData(){
   for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
     m.study_source_config=json.study_source_config||null;
   }
-  D=json;
   if(document.body.dataset.page==='practice'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
