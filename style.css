@@ -1132,3 +1132,10 @@ body[data-page="home"] .hero-cta b{display:none}
 @media(max-width:620px){
   .practice-hero{padding-top:4px}
 }
+
+/* Learn page: tighter entry into the learning journey */
+.learn-hub-hero{padding:18px 0 28px}
+.learn-hub-hero h1{margin-top:0}
+@media(max-width:720px){
+  .learn-hub-hero{padding:14px 0 20px}
+}
