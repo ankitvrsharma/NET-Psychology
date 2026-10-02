@@ -386,6 +386,92 @@ function contextualExplanation(q){
   return detail?base+' Study link — '+c.title+': '+detail:base;
 }
 function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s)}})})}
+
+function activeRecallQuestions(m){
+  const explicit=Array.isArray(m.active_recall_questions)?m.active_recall_questions:[];
+  if(explicit.length)return explicit;
+  const fallback=Array.isArray(m.retrieval_questions)?m.retrieval_questions:[];
+  if(fallback.length)return fallback.map((prompt,i)=>({id:'legacy-'+i,type:'short_answer',prompt}));
+  return [{id:'default',type:'short_answer',prompt:'Explain the central idea of '+m.title+' from memory.'}];
+}
+function activeRecallTypeLabel(type){
+  return ({mcq:'MCQ',short_answer:'SHORT ANSWER',fill_blank:'FILL IN THE BLANK',true_false:'TRUE / FALSE',matching:'MATCH',ordering:'ARRANGE',identify:'IDENTIFY',scenario:'SCENARIO'}[type]||'RETRIEVE');
+}
+function activeRecallQuestionHTML(q,i){
+  const type=String(q.type||'short_answer').toLowerCase(),prompt=String(q.prompt||q.question||'').trim(),answer=q.answer;
+  let body='';
+  if(type==='mcq'){
+    const options=Array.isArray(q.options)?q.options:[];
+    body='<div class="active-recall-options">'+options.map((o,j)=>'<button type="button" class="active-recall-option" data-answer="'+j+'">'+esc(String(o))+'</button>').join('')+'</div>';
+  }else if(type==='fill_blank'){
+    const blanks=Array.isArray(q.blanks)&&q.blanks.length?q.blanks:[String(q.answer||'')];
+    body='<div class="active-recall-fill">'+blanks.map((_,j)=>'<input class="active-recall-response active-recall-blank" data-blank="'+j+'" autocomplete="off" placeholder="Retrieve the missing term…">').join('')+'</div>';
+  }else if(type==='true_false'){
+    body='<div class="active-recall-binary"><button type="button" class="active-recall-option" data-answer="true">True</button><button type="button" class="active-recall-option" data-answer="false">False</button></div>';
+  }else if(type==='matching'){
+    const pairs=Array.isArray(q.pairs)?q.pairs:[];
+    body='<div class="active-recall-matching">'+pairs.map((pair,j)=>{
+      const opts=Array.isArray(pair.options)?pair.options:[...new Set(pairs.map(x=>x.right).filter(Boolean))];
+      return '<label><span>'+esc(pair.left||'Item '+(j+1))+'</span><select class="active-recall-response" data-match="'+j+'"><option value="">Choose…</option>'+opts.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join('')+'</select></label>';
+    }).join('')+'</div>';
+  }else if(type==='ordering'){
+    const items=Array.isArray(q.items)?q.items:[];
+    body='<div class="active-recall-ordering">'+items.map((item,j)=>'<label><span>'+esc(item)+'</span><select class="active-recall-response" data-order="'+j+'"><option value="">Position…</option>'+items.map((_,p)=>'<option value="'+(p+1)+'">'+(p+1)+'</option>').join('')+'</select></label>').join('')+'</div>';
+  }else{
+    body='<textarea class="active-recall-response" placeholder="'+esc(q.placeholder||'Write from memory…')+'"></textarea>';
+  }
+  const answerAttr=answer!==undefined&&answer!==null?' data-answer-key="'+esc(Array.isArray(answer)?JSON.stringify(answer):String(answer))+'"':'';
+  return '<article class="active-recall-item" data-active-recall-item data-type="'+esc(type)+'"'+answerAttr+'><div class="active-recall-item-head"><span class="active-recall-type">'+activeRecallTypeLabel(type)+'</span><b>Retrieve '+(i+1)+'</b></div><h3>'+esc(prompt)+'</h3>'+body+'<div class="active-recall-actions"><button type="button" class="btn active-recall-check">Check my retrieval</button><span class="active-recall-status" aria-live="polite"></span></div><div class="active-recall-feedback" hidden></div></article>';
+}
+function normalizeRecallAnswer(v){return String(v??'').trim().toLowerCase().replace(/\s+/g,' ').replace(/[.。!?]+$/,'')}
+function activeRecallAnswered(item){
+  const type=item.dataset.type;
+  if(type==='mcq'||type==='true_false')return !!item.querySelector('.active-recall-option.selected');
+  const controls=Array.from(item.querySelectorAll('.active-recall-response,.active-recall-blank'));
+  return controls.length>0&&controls.every(x=>String(x.value||'').trim());
+}
+function activeRecallKeyedFeedback(item){
+  const key=item.dataset.answerKey;
+  if(key===undefined)return {known:false,correct:null,text:'No keyed answer is stored for this retrieval prompt. Compare your committed response with the Short Notes or Detailed Explanation.'};
+  let expected;try{expected=JSON.parse(key)}catch{expected=key}
+  const type=item.dataset.type;
+  if(type==='mcq'||type==='true_false'){
+    const chosen=item.querySelector('.active-recall-option.selected')?.dataset.answer;
+    const correct=String(chosen)===String(expected).toLowerCase();
+    return {known:true,correct,text:correct?'Correct retrieval.':'Not quite. Reconstruct the concept and compare with the keyed answer.'};
+  }
+  if(type==='fill_blank'){
+    const e=Array.isArray(expected)?expected:[expected],a=Array.from(item.querySelectorAll('.active-recall-blank')).map(x=>normalizeRecallAnswer(x.value));
+    const correct=a.length===e.length&&a.every((x,i)=>x===normalizeRecallAnswer(e[i]));
+    return {known:true,correct,text:correct?'Correct retrieval.':'Check the missing term(s) against the keyed answer.'};
+  }
+  if(type==='matching'){
+    const e=Array.isArray(expected)?expected:[],a=Array.from(item.querySelectorAll('[data-match]')).map(x=>normalizeRecallAnswer(x.value));
+    const correct=a.length===e.length&&a.every((x,i)=>x===normalizeRecallAnswer(e[i]));
+    return {known:true,correct,text:correct?'Correct matching.':'Some matches need reconstruction.'};
+  }
+  if(type==='ordering'){
+    const e=Array.isArray(expected)?expected:[],a=Array.from(item.querySelectorAll('[data-order]')).map(x=>Number(x.value));
+    const correct=a.length===e.length&&a.every((x,i)=>x===Number(e[i]));
+    return {known:true,correct,text:correct?'Correct sequence.':'The sequence needs another reconstruction.'};
+  }
+  const response=normalizeRecallAnswer(item.querySelector('.active-recall-response')?.value);
+  const correct=Array.isArray(expected)?expected.some(x=>response===normalizeRecallAnswer(x)):response===normalizeRecallAnswer(expected);
+  return {known:true,correct,text:correct?'Your response matches the keyed answer.':'Compare your response with the keyed answer and refine the missing element.'};
+}
+function wireActiveRecall(container,k){
+  if(!container)return;
+  const items=Array.from(container.querySelectorAll('[data-active-recall-item]'));
+  const refresh=()=>{const complete=items.length>0&&items.every(x=>x.dataset.checked==='true');const next=container.querySelector('#recallNext');if(next)next.disabled=!complete};
+  items.forEach(item=>{
+    item.querySelectorAll('.active-recall-option').forEach(btn=>btn.onclick=()=>{item.querySelectorAll('.active-recall-option').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');item.dataset.checked='false';const fb=item.querySelector('.active-recall-feedback');if(fb)fb.hidden=true;refresh()});
+    item.querySelectorAll('.active-recall-response,.active-recall-blank').forEach(input=>input.addEventListener('input',()=>{item.dataset.checked='false';refresh()}));
+    item.querySelectorAll('select').forEach(input=>input.addEventListener('change',()=>{item.dataset.checked='false';refresh()}));
+    item.querySelector('.active-recall-check').onclick=()=>{if(!activeRecallAnswered(item)){alert('Commit to an answer before checking your retrieval.');return}const result=activeRecallKeyedFeedback(item),fb=item.querySelector('.active-recall-feedback'),status=item.querySelector('.active-recall-status');item.dataset.checked='true';fb.innerHTML=result.known?'<b class="'+(result.correct?'correct':'incorrect')+'">'+(result.correct?'✓ Retrieved':'↺ Reconstruct')+'</b> '+esc(result.text):'<b>Self-check</b> '+esc(result.text);fb.hidden=false;status.textContent='Checked';refresh()};
+  });
+  refresh();
+}
+
 function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
@@ -397,17 +483,15 @@ function micro(){
   const core=stripLegacy(m.content_notes);
   const trap=section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS');
   const hook=section(m.content_notes,'MEMORY HOOK');
-  const deep=[m.detailed_explanation,m.deep,m.deep_learning,m.source_lens&&'Study lens: '+m.source_lens,trap&&'Distinction to check: '+trap,hook&&'Memory cue: '+hook].filter(Boolean).join('\n\n')||core;
+  const deep=[m.detailed_explanation,m.deep,m.deep_learning,trap&&'Distinction to check: '+trap,hook&&'Memory cue: '+hook].filter(Boolean).join('\n\n')||core;
   const sources=sourceNames(m),qs=practiceFor(u.id,t.id,m.id);
   const quickFocus=Q.get('focus')==='detailed';
   const quickId=Q.get('quick')||'';
   const detailedBlocks=[
-    ['Concept in context',concept],
     ['Key ideas',kp.join(' ')],
     ['PYQ focus',section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||''],
     ['Common trap',trap],
-    ['Learning focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK')||''],
-    ['Source lens',m.source_lens||'']
+    ['Learning focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK')||'']
   ].filter(x=>String(x[1]||'').trim());
   const detailedHTML=detailedBlocks.map(x=>'<section class="micro-detail-block"><div class="eyebrow">'+esc(x[0])+'</div><p>'+esc(x[1])+'</p></section>').join('');
 
@@ -418,7 +502,7 @@ function micro(){
     <div class="status-box"><span class="status ${p.status.toLowerCase()}">${p.status}</span><strong>${p.next?'Next revision '+date(p.next):'Ready to learn'}</strong><small>${p.rating?`Last rating: ${p.rating}`:'No revision scheduled yet'}</small></div>
   </section>
   <div class="session-shell">
-    <div class="learning-path"><span class="step active">1 Understand</span><span class="step">2 Recall</span><span class="step">3 Apply</span><span class="step">4 Practice</span><span class="step">5 Schedule Revision</span></div>
+    <div class="learning-path"><span class="step active">1 Understand</span><span class="step">2 Active Recall</span><span class="step">3 Apply</span><span class="step">4 Practice</span><span class="step">5 Schedule Revision</span></div>
     <div class="content-layout">
       <main class="content-stack">
         <section class="card stage" data-stage="understand">
@@ -442,13 +526,15 @@ function micro(){
         </section>
 
         <section class="card stage hidden" data-stage="recall">
-          <div class="stage-label">RECALL</div><h2>Close the notes. Reconstruct it.</h2>
-          ${(m.retrieval_questions||[`Define ${m.title} from memory.`,`State one distinction or example.`]).map((q,i)=>`<label class="retrieval-item"><b>Recall ${i+1}</b><span>${esc(q)}</span><textarea class="recall-box" placeholder="Write from memory…"></textarea></label>`).join('')}
-          <div class="confidence"><span>Before revealing feedback, rate your confidence.</span><button class="btn" data-confidence="low">Low</button><button class="btn" data-confidence="medium">Medium</button><button class="btn" data-confidence="high">High</button></div>
-          <button class="btn primary next-stage" data-next="apply" disabled id="recallNext">I recalled it — continue →</button>
-        </section>
+           <div class="stage-label">ACTIVE RECALL</div>
+           <h2>Close the notes. Retrieve the idea.</h2>
+           <p class="muted">Commit to an answer before checking it. The question format changes with the kind of knowledge being tested.</p>
+           <div class="active-recall-grid">\${activeRecallQuestions(m).map((q,i)=>activeRecallQuestionHTML(q,i)).join('')}</div>
+           <div class="confidence"><span>After checking every retrieval, rate your confidence.</span><button class="btn" data-confidence="low">Low</button><button class="btn" data-confidence="medium">Medium</button><button class="btn" data-confidence="high">High</button></div>
+           <button class="btn primary next-stage" data-next="apply" disabled id="recallNext">I retrieved it — continue →</button>
+         </section>
 
-        <section class="card stage hidden" data-stage="apply">
+         <section class="card stage hidden" data-stage="apply">
           <div class="stage-label">APPLY</div><h2>Transfer the idea</h2><p>${esc(m.application_question||'Apply the concept to an unfamiliar situation and explain why it fits.')}</p>
           <textarea class="recall-box" placeholder="Explain your reasoning…"></textarea>
           <button class="btn primary next-stage" data-next="practice">I applied it — continue →</button>
@@ -468,8 +554,7 @@ function micro(){
       </main>
 
       <aside class="content-stack">
-        <section class="card source-card"><div class="eyebrow">SOURCE-GROUNDED LEARNING</div><h2>Use the right source for the right job</h2><div class="source-details">${(m.study_source_config?.notes_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary notes source</span></div>`).join("")}${(m.study_source_config?.mcq_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary practice source</span></div>`).join("")}</div><p class="source-note">Notes teach the concept; practice tests retrieval and application. The page does not force every source into every micro-topic.</p></section>
-        <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Check it after some time</h2><p class="muted">A concept is becoming secure when you can understand it, recall it, use it, and still bring it back later.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
+        <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Return later and test the delay</h2><p class="muted">Use this as a delayed-retention checkpoint. Return later—without rereading first—and see whether you can still explain and use the idea. It records that the knowledge survived a delay, not simply that you understood it once.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
         <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:''}${next?`<a href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:''}<a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a></div></section>
       </aside>
     </div>
@@ -480,8 +565,8 @@ function micro(){
     const target=b.dataset.next;
     if(target==='recall'){setP(k,{understanding:true,status:'LEARNING',last:new Date().toISOString()});show(target);return}
     if(target==='apply'){
-      const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
-      if(boxes.some(x=>!x.value.trim())){alert('Write at least a short response to each recall prompt before continuing.');return}
+      const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] [data-active-recall-item]'));
+      if(boxes.some(x=>x.dataset.checked!=='true')){alert('Check every Active Recall item before continuing.');return}
       show(target);return
     }
     if(target==='practice'){
@@ -503,12 +588,13 @@ function micro(){
 
   $$('[data-confidence]').forEach(b=>b.onclick=()=>{
     const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
-    if(boxes.some(x=>!x.value.trim())){alert('Complete the recall prompts before rating your confidence.');return}
+    if(boxes.some(x=>x.dataset.checked!=='true')){alert('Check every Active Recall item before rating your confidence.');return}
     $$('[data-confidence]').forEach(x=>x.classList.toggle('selected',x===b));
     $('#recallNext').disabled=false;
     setP(k,{confidence:b.dataset.confidence,retrieval:true,status:'LEARNING',last:new Date().toISOString()})
   });
 
+  wireActiveRecall(document.querySelector('[data-stage="recall"]'),k);
   wireMCQ($('#microQuestions'),k,qs);
   $$('[data-rating]').forEach(b=>b.onclick=()=>{
     const patch=setDue(k,b.dataset.rating);setP(k,patch);
