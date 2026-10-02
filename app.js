@@ -465,22 +465,22 @@ function micro(){
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{
-    const unit='`<label class="practice-unit-option"><input type="checkbox" data-scope="unit" value="${{esc(u.id)}"><span><b>Unit ${{esc(u.id)}</b> — ${{esc(u.title)}</span></label>`';
-    const partOptions=unitParts(u).map(part=>'`<label class="practice-unit-option practice-part-option"><input type="checkbox" data-scope="part" data-unit="${{esc(u.id)}" value="${{esc(part.id)}"><span>↳ Part ${{esc(part.id)} — ${{esc(part.title)}</span></label>`').join('');
+    const unit=`<label class="practice-unit-option"><input type="checkbox" data-scope="unit" value="${esc(u.id)}"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></label>`;
+    const partOptions=unitParts(u).map(part=>`<label class="practice-unit-option practice-part-option"><input type="checkbox" data-scope="part" data-unit="${esc(u.id)}" value="${esc(part.id)}"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></label>`).join('');
     return unit+partOptions;
   }).join('');
-  const scopeHTML='`<div class="practice-unit-list" id="practiceUnitList"><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all" checked><span><b>All Units</b></span></label>${{unitOptions}</div><p class="practice-unit-summary" id="practiceUnitSummary">All units selected</p>`';
-  box.innerHTML='`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE</div><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose how many questions you want to attempt, what kind of questions you want to practise, how you want to take the test, and which units you want to cover.</p></div></div><div class="practice-toolbar"><label>Number of questions<select id="setSize"><option value="10">10 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="100">100 questions — Full Paper 2</option></select></label><label>Questions from<select id="practiceType"><option value="all">PYQs + Practice MCQs</option><option value="pyq">Previous Year Questions (PYQs)</option><option value="mcq">Practice MCQs</option></select></label><label>Practice mode<select id="practiceMode"><option value="timed">Timed Practice</option><option value="self-paced">Self-Paced Practice</option></select></label><div class="practice-unit-field"><span class="practice-field-label">Choose units</span>${{scopeHTML}</div><button class="btn primary" id="startSet" type="button">START PRACTICE →</button></div></section><div id="practiceSet"><section class="panel practice-ready"><h2>Ready when you are.</h2><p>Your questions will appear here after you start. You’ll see one question at a time so you can focus on the test.</p></section></div>`';
+  const scopeHTML=`<div class="practice-unit-list" id="practiceUnitList"><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all" checked><span><b>All Units</b></span></label>${unitOptions}</div><p class="practice-unit-summary" id="practiceUnitSummary">All units selected</p>`;
+  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE</div><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose how many questions you want to attempt, what kind of questions you want to practise, how you want to take the test, and which units you want to cover.</p></div></div><div class="practice-toolbar"><label>Number of questions<select id="setSize"><option value="10">10 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="100">100 questions — Full Paper 2</option></select></label><label>Questions from<select id="practiceType"><option value="all">PYQs + Practice MCQs</option><option value="pyq">Previous Year Questions (PYQs)</option><option value="mcq">Practice MCQs</option></select></label><label>Practice mode<select id="practiceMode"><option value="timed">Timed Practice</option><option value="self-paced">Self-Paced Practice</option></select></label><div class="practice-unit-field"><span class="practice-field-label">Choose units</span>${scopeHTML}</div><button class="btn primary" id="startSet" type="button">START PRACTICE →</button></div></section><div id="practiceSet"><section class="panel practice-ready"><h2>Ready when you are.</h2><p>Your questions will appear here after you start. You’ll see one question at a time so you can focus on the test.</p></section></div>`;
   const scopeInputs=()=>Array.from(document.querySelectorAll('#practiceUnitList input[type="checkbox"]'));
   const updateScopeSummary=()=>{
     const selected=scopeInputs().filter(x=>x.checked);
     const allSelected=selected.some(x=>x.dataset.scope==='all')||selected.length===0;
     const summary=$('#practiceUnitSummary');
     if(allSelected){summary.textContent='All units selected';return}
-    const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${{x.value}`);
-    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${{x.dataset.unit}${{x.value}`);
+    const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.value}`);
+    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.value}`);
     const labels=[...unitsSelected,...partsSelected];
-    summary.textContent=labels.length===1?labels[0]:`${{labels.length} selections`;
+    summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
   };
   scopeInputs().forEach(input=>input.addEventListener('change',()=>{
     if(input.dataset.scope==='all'&&input.checked)scopeInputs().forEach(x=>{if(x!==input)x.checked=false});
@@ -493,7 +493,7 @@ function practice(){
   const stopTimer=()=>{if(timerId){clearInterval(timerId);timerId=null}};
   const formatTime=seconds=>{
     const s=Math.max(0,seconds),h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;
-    return h?`${{String(h).padStart(2,'0')}:${{String(m).padStart(2,'0')}:${{String(sec).padStart(2,'0')}`:`${{String(m).padStart(2,'0')}:${{String(sec).padStart(2,'0')}`;
+    return h?`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`:`${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
   };
   function draw(){
     stopTimer();
@@ -510,7 +510,7 @@ function practice(){
     }
     if(!allUnits){
       const unitIds=new Set(unitScope.filter(x=>x.dataset.scope==='unit').map(x=>String(x.value)));
-      const partKeys=new Set(unitScope.filter(x=>x.dataset.scope==='part').map(x=>`${{x.dataset.unit}:${{x.value}`));
+      const partKeys=new Set(unitScope.filter(x=>x.dataset.scope==='part').map(x=>`${x.dataset.unit}:${x.value}`));
       qs=qs.filter(q=>{
         if(unitIds.has(String(q.unit)))return true;
         const u=units().find(x=>String(x.id)===String(q.unit));
@@ -540,7 +540,8 @@ function practice(){
     const renderComplete=(timeUp=false)=>{
       stopTimer();
       const percent=Math.round(correct/qs.length*100);
-      $('#practiceSet').innerHTML=`<section class="practice-complete card"><div class="eyebrow">${{timeUp?'TIME UP':'PRACTICE COMPLETE'}</div><h2>${{timeUp?'Your practice time has ended.':'You completed the practice set.'}</h2><p class="practice-score">${{correct} of ${{qs.length} correct · ${{percent}%</p><p>${{timeUp?'The unanswered questions were left unanswered. Review the explanations to see what to work on next.':correct===qs.length?'You answered every question correctly.':${{qs.length-correct}+' question'+${{qs.length-correct===1?'':'s'}+' may need another look. Review the explanations to see what to work on next.'}</p><div class="complete-actions"><a class="btn primary" href="practice.html">TRY ANOTHER SET →</a></div></section>`;
+      const resultText=timeUp?'The unanswered questions were left unanswered. Review the explanations to see what to work on next.':correct===qs.length?'You answered every question correctly.':qs.length-correct+' question'+(qs.length-correct===1?'':'s')+' may need another look. Review the explanations to see what to work on next.';
+      $('#practiceSet').innerHTML=`<section class="practice-complete card"><div class="eyebrow">${timeUp?'TIME UP':'PRACTICE COMPLETE'}</div><h2>${timeUp?'Your practice time has ended.':'You completed the practice set.'}</h2><p class="practice-score">${correct} of ${qs.length} correct · ${percent}%</p><p>${resultText}</p><div class="complete-actions"><a class="btn primary" href="practice.html">TRY ANOTHER SET →</a></div></section>`;
     };
     const finishForTime=()=>{
       if(ended)return;
@@ -562,7 +563,7 @@ function practice(){
     const renderQuestion=()=>{
       const q=qs[current];
       answered=false;
-      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${{current+1} of ${{qs.length}</h2></div><div class="session-head-actions">${{timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${{formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${{((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${{mcqHTML(q,0,'PYQ',false)}</div></section>`;
+      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div></section>`;
       const card=$('#practiceSet .mcq');
       card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
         if(answered||ended)return;
@@ -573,7 +574,7 @@ function practice(){
         card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
         const fb=card.querySelector('.mcq-feedback');
         fb.hidden=false;
-        fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${{esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${{String.fromCharCode(65+answer)}. ${{esc((q.options||q.o)[answer])}</b><br>${{esc(contextualExplanation(q))}`;
+        fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;
         const next=document.createElement('button');
         next.className='btn primary mcq-next';
         next.textContent=current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →';
