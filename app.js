@@ -535,10 +535,10 @@ function micro(){
     requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));
   });
 
-  $$$('[data-confidence]').forEach(b=>b.onclick=()=>{
+  $$$$('[data-confidence]').forEach(b=>b.onclick=()=>{
     const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
     if(boxes.some(x=>x.dataset.checked!=='true')){alert('Check every Active Recall item before rating your confidence.');return}
-    $('[data-confidence]').forEach(x=>x.classList.toggle('selected',x===b));
+    $$('[data-confidence]').forEach(x=>x.classList.toggle('selected',x===b));
     $('#recallNext').disabled=false;
     setP(k,{confidence:b.dataset.confidence,retrieval:true,status:'LEARNING',last:new Date().toISOString()})
   });
@@ -616,7 +616,7 @@ function render(){
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
 }
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261002-homefix8').catch(()=>{}));}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261002-homefix9').catch(()=>{}));}
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(!D){
