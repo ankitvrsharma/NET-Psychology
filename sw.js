@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v11';
+const CACHE='netpsych-shell-v25-homefix10';
 const SHELL=[
   './',
   './index.html',
@@ -14,6 +14,7 @@ const SHELL=[
   './style.css',
   './app.js',
   './data.json',
+  './exam_schedule.json',
   './content-version.js',
   './kaplan_enrichment.json',
   './study_sources.json',
