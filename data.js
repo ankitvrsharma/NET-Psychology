@@ -16075,7 +16075,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Poverty",
-              "content_notes": "CORE CONCEPT\nPoverty is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Poverty\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Poverty as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPoverty → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPoverty involves inadequate resources for material security and participation. PowerWithin distinguishes absolute poverty, which can threaten survival, from relative poverty, which limits participation within a society.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPoverty is a social condition and should not be reduced to individual motivation or personal failure.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16085,14 +16085,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nPoverty is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Poverty\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Poverty as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPoverty involves inadequate resources for material security and participation. PowerWithin distinguishes absolute poverty, which can threaten survival, from relative poverty, which limits participation within a society.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPoverty is a social condition and should not be reduced to individual motivation or personal failure.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Poverty”.",
-                "List the key points associated with “Poverty” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Poverty”?"
+                "Define Poverty using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Poverty."
               ],
-              "application_question": "Source-based check: Given a new question about “Poverty”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Poverty → define → distinguish → apply",
+              "application_question": "Source-based application: identify Poverty in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Poverty involves inadequate resources for material security and participation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16102,16 +16102,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 3,
               "title": "Disability",
-              "content_notes": "CORE CONCEPT\nDisability is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Disability\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Disability as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDisability → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPsychological analysis of disability considers impairment together with environmental barriers, accessibility, attitudes and stigma affecting participation.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAvoid defining disability only through deficit.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16121,14 +16118,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nDisability is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Disability\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Disability as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychological analysis of disability considers impairment together with environmental barriers, accessibility, attitudes and stigma affecting participation.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAvoid defining disability only through deficit.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Disability”.",
-                "List the key points associated with “Disability” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Disability”?"
+                "Define Disability using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Disability."
               ],
-              "application_question": "Source-based check: Given a new question about “Disability”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Disability → define → distinguish → apply",
+              "application_question": "Source-based application: identify Disability in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Psychological analysis of disability considers impairment together with environmental barriers, accessibility, attitudes and stigma affecting participation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16138,16 +16135,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 4,
               "title": "Migration",
-              "content_notes": "CORE CONCEPT\nMigration is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Migration\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Migration as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMigration → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMigration can affect social networks, cultural adaptation and identity; the NET material places it alongside cultural bias and discrimination.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMigration itself is not a disorder; psychological outcomes depend on context.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16157,14 +16152,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nMigration is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Migration\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Migration as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMigration can affect social networks, cultural adaptation and identity; the NET material places it alongside cultural bias and discrimination.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMigration itself is not a disorder; psychological outcomes depend on context.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Migration”.",
-                "List the key points associated with “Migration” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Migration”?"
+                "Define Migration using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Migration."
               ],
-              "application_question": "Source-based check: Given a new question about “Migration”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Migration → define → distinguish → apply",
+              "application_question": "Source-based application: identify Migration in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Migration can affect social networks, cultural adaptation and identity; the NET material places it alongside cultural bias and discrimination",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16174,16 +16169,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 5,
               "title": "Cultural bias",
-              "content_notes": "CORE CONCEPT\nCultural bias is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cultural bias\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cultural bias as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCultural bias → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCultural bias occurs when concepts, measures or judgments from one cultural setting are treated as universally applicable without adequate contextual examination. The Indian psychology material links this issue with indigenization.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nCultural difference is not itself bias; unjustified universalization is the issue.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16193,14 +16185,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nCultural bias is a focused concept within “Issues of Gender, Poverty, Disability, and Migration: Cultural bias and discrimination”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cultural bias\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cultural bias as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCultural bias occurs when concepts, measures or judgments from one cultural setting are treated as universally applicable without adequate contextual examination. The Indian psychology material links this issue with indigenization.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nCultural difference is not itself bias; unjustified universalization is the issue.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cultural bias”.",
-                "List the key points associated with “Cultural bias” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cultural bias”?"
+                "Define Cultural bias using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Cultural bias."
               ],
-              "application_question": "Source-based check: Given a new question about “Cultural bias”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cultural bias → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cultural bias in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Cultural bias occurs when concepts, measures or judgments from one cultural setting are treated as universally applicable without adequate contextual examination",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16210,10 +16202,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ]
             },
             {
@@ -16310,7 +16300,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Marginalization",
-              "content_notes": "CORE CONCEPT\nMarginalization is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Marginalization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Marginalization as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMarginalization → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMarginalization describes processes through which individuals or groups are pushed toward the social, economic or political periphery. It is linked in the NET material with stigma, discrimination, poverty, disability and migration.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMarginalization is a social process, not a personality characteristic.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16320,14 +16310,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nMarginalization is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Marginalization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Marginalization as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMarginalization describes processes through which individuals or groups are pushed toward the social, economic or political periphery. It is linked in the NET material with stigma, discrimination, poverty, disability and migration.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMarginalization is a social process, not a personality characteristic.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Marginalization”.",
-                "List the key points associated with “Marginalization” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Marginalization”?"
+                "Define Marginalization using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Marginalization."
               ],
-              "application_question": "Source-based check: Given a new question about “Marginalization”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Marginalization → define → distinguish → apply",
+              "application_question": "Source-based application: identify Marginalization in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Marginalization describes processes through which individuals or groups are pushed toward the social, economic or political periphery",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16337,16 +16327,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 3,
               "title": "Social suffering",
-              "content_notes": "CORE CONCEPT\nSocial suffering is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social suffering\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social suffering as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial suffering → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSocial suffering concerns distress and harm generated or intensified by social conditions, institutions and relationships. It broadens psychological analysis beyond purely individual explanations.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nIt does not deny individual processes; it adds social context.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16356,14 +16343,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nSocial suffering is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social suffering\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social suffering as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial suffering concerns distress and harm generated or intensified by social conditions, institutions and relationships. It broadens psychological analysis beyond purely individual explanations.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nIt does not deny individual processes; it adds social context.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social suffering”.",
-                "List the key points associated with “Social suffering” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social suffering”?"
+                "Define Social suffering using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Social suffering."
               ],
-              "application_question": "Source-based check: Given a new question about “Social suffering”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social suffering → define → distinguish → apply",
+              "application_question": "Source-based application: identify Social suffering in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Social suffering concerns distress and harm generated or intensified by social conditions, institutions and relationships",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16373,16 +16360,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 4,
               "title": "Child abuse",
-              "content_notes": "CORE CONCEPT\nChild abuse is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Child abuse\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Child abuse as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nChild abuse → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nChild abuse includes harmful treatment or neglect of children and requires attention to developmental vulnerability, family context and protection. Psychological consequences can extend across emotional, behavioral and developmental domains.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nDo not frame abuse as the child's problem; responsibility and context are central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16392,14 +16376,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nChild abuse is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Child abuse\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Child abuse as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nChild abuse includes harmful treatment or neglect of children and requires attention to developmental vulnerability, family context and protection. Psychological consequences can extend across emotional, behavioral and developmental domains.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nDo not frame abuse as the child's problem; responsibility and context are central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Child abuse”.",
-                "List the key points associated with “Child abuse” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Child abuse”?"
+                "Define Child abuse using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Child abuse."
               ],
-              "application_question": "Source-based check: Given a new question about “Child abuse”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Child abuse → define → distinguish → apply",
+              "application_question": "Source-based application: identify Child abuse in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Child abuse includes harmful treatment or neglect of children and requires attention to developmental vulnerability, family context and protection",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16409,16 +16393,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 5,
               "title": "Domestic violence",
-              "content_notes": "CORE CONCEPT\nDomestic violence is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Domestic violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Domestic violence as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDomestic violence → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDomestic violence concerns harmful or coercive behavior within intimate or family relationships. Psychological analysis includes power, control, fear, harm and social context.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nOrdinary disagreement is not automatically domestic violence; abuse and coercion are central considerations.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16428,14 +16410,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nDomestic violence is a focused concept within “Stigma, Marginalization, and Social Suffering; Child Abuse and Domestic violence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Domestic violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Domestic violence as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDomestic violence concerns harmful or coercive behavior within intimate or family relationships. Psychological analysis includes power, control, fear, harm and social context.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nOrdinary disagreement is not automatically domestic violence; abuse and coercion are central considerations.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Domestic violence”.",
-                "List the key points associated with “Domestic violence” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Domestic violence”?"
+                "Define Domestic violence using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Domestic violence."
               ],
-              "application_question": "Source-based check: Given a new question about “Domestic violence”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Domestic violence → define → distinguish → apply",
+              "application_question": "Source-based application: identify Domestic violence in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Domestic violence concerns harmful or coercive behavior within intimate or family relationships",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16445,10 +16427,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Baron & Misra"
               ]
             }
           ],
@@ -16473,7 +16453,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Violence",
-              "content_notes": "CORE CONCEPT\nViolence is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Violence as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nViolence → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPeace psychology studies psychological processes involved in violence, conflict, peace and prevention. Violence can be analyzed at individual, intergroup and structural levels.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAggression and violence overlap but are not identical concepts.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16483,14 +16463,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nViolence is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Violence as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPeace psychology studies psychological processes involved in violence, conflict, peace and prevention. Violence can be analyzed at individual, intergroup and structural levels.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAggression and violence overlap but are not identical concepts.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Violence”.",
-                "List the key points associated with “Violence” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Violence”?"
+                "Define Violence using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Violence."
               ],
-              "application_question": "Source-based check: Given a new question about “Violence”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Violence → define → distinguish → apply",
+              "application_question": "Source-based application: identify Violence in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Peace psychology studies psychological processes involved in violence, conflict, peace and prevention",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16500,16 +16480,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Baron & Misra"
               ]
             },
             {
               "id": 2,
               "title": "Non-violence",
-              "content_notes": "CORE CONCEPT\nNon-violence is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Non-violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Non-violence as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNon-violence → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nNon-violence rejects violent means and seeks alternatives for addressing conflict and grievances. Peace-psychology treatment connects it with constructive communication, cooperation and conflict transformation.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nNon-violence is not identical to passivity.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16519,14 +16497,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nNon-violence is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Non-violence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Non-violence as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNon-violence rejects violent means and seeks alternatives for addressing conflict and grievances. Peace-psychology treatment connects it with constructive communication, cooperation and conflict transformation.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nNon-violence is not identical to passivity.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Non-violence”.",
-                "List the key points associated with “Non-violence” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Non-violence”?"
+                "Define Non-violence using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Non-violence."
               ],
-              "application_question": "Source-based check: Given a new question about “Non-violence”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Non-violence → define → distinguish → apply",
+              "application_question": "Source-based application: identify Non-violence in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Non-violence rejects violent means and seeks alternatives for addressing conflict and grievances",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16536,16 +16514,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 3,
               "title": "Conflict resolution at macro level",
-              "content_notes": "CORE CONCEPT\nConflict resolution at macro level is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Conflict resolution at macro level\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Conflict resolution at macro level as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nConflict resolution at macro level → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMacro-level conflict resolution addresses conflicts between groups, communities or states. PowerWithin distinguishes conflict management from resolution and describes integrative solutions, negotiation, mediation, diplomacy, cooperation and interactive problem solving.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nResolution is broader than suppressing visible disagreement.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16555,14 +16530,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nConflict resolution at macro level is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Conflict resolution at macro level\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Conflict resolution at macro level as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMacro-level conflict resolution addresses conflicts between groups, communities or states. PowerWithin distinguishes conflict management from resolution and describes integrative solutions, negotiation, mediation, diplomacy, cooperation and interactive problem solving.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nResolution is broader than suppressing visible disagreement.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Conflict resolution at macro level”.",
-                "List the key points associated with “Conflict resolution at macro level” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Conflict resolution at macro level”?"
+                "Define Conflict resolution at macro level using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Conflict resolution at macro level."
               ],
-              "application_question": "Source-based check: Given a new question about “Conflict resolution at macro level”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Conflict resolution at macro level → define → distinguish → apply",
+              "application_question": "Source-based application: identify Conflict resolution at macro level in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Macro-level conflict resolution addresses conflicts between groups, communities or states",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16572,16 +16547,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 4,
               "title": "Role of media in conflict resolution",
-              "content_notes": "CORE CONCEPT\nRole of media in conflict resolution is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Role of media in conflict resolution\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Role of media in conflict resolution as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nRole of media in conflict resolution → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMedia influence representations of conflict through selection and framing. Communication can intensify hostility or support understanding depending on content and context.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMedia influence is not automatically peaceful or violent.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16591,14 +16563,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nRole of media in conflict resolution is a focused concept within “Peace psychology: Violence, non-violence, conflict resolution at macro level, role of media in conflict resolution”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Role of media in conflict resolution\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Role of media in conflict resolution as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMedia influence representations of conflict through selection and framing. Communication can intensify hostility or support understanding depending on content and context.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nMedia influence is not automatically peaceful or violent.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Role of media in conflict resolution”.",
-                "List the key points associated with “Role of media in conflict resolution” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Role of media in conflict resolution”?"
+                "Define Role of media in conflict resolution using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Role of media in conflict resolution."
               ],
-              "application_question": "Source-based check: Given a new question about “Role of media in conflict resolution”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Role of media in conflict resolution → define → distinguish → apply",
+              "application_question": "Source-based application: identify Role of media in conflict resolution in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Media influence representations of conflict through selection and framing",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16608,10 +16580,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Baron & Misra"
               ]
             }
           ],
@@ -16636,7 +16606,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Types of wellbeing",
-              "content_notes": "CORE CONCEPT\nTypes of wellbeing is a focused concept within “Wellbeing and self-growth: Types of wellbeing (Hedonic and Eudemonic), Character strengths, Resilience and Post-Traumatic Growth”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of wellbeing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of wellbeing as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of wellbeing → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nWellbeing concerns positive functioning and quality of life rather than merely absence of disorder. PowerWithin links wellbeing with flourishing, positive relationships, engagement and meaning.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nWellbeing should not be equated with momentary happiness alone.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16647,14 +16617,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nTypes of wellbeing is a focused concept within “Wellbeing and self-growth: Types of wellbeing (Hedonic and Eudemonic), Character strengths, Resilience and Post-Traumatic Growth”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of wellbeing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of wellbeing as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nWellbeing concerns positive functioning and quality of life rather than merely absence of disorder. PowerWithin links wellbeing with flourishing, positive relationships, engagement and meaning.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nWellbeing should not be equated with momentary happiness alone.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Baron & Misra\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of wellbeing”.",
-                "List the key points associated with “Types of wellbeing” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of wellbeing”?"
+                "Define Types of wellbeing using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Types of wellbeing."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of wellbeing”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of wellbeing → define → distinguish → apply",
+              "application_question": "Source-based application: identify Types of wellbeing in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Wellbeing concerns positive functioning and quality of life rather than merely absence of disorder",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16664,11 +16634,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology",
+                "Baron & Misra"
               ]
             },
             {
@@ -16750,7 +16717,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Character strengths",
-              "content_notes": "CORE CONCEPT\nCharacter strengths is a focused concept within “Wellbeing and self-growth: Types of wellbeing (Hedonic and Eudemonic), Character strengths, Resilience and Post-Traumatic Growth”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Character strengths\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Character strengths as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCharacter strengths → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPowerWithin, drawing on Peterson and Seligman, describes character strengths as positive capacities involving cognition, affect, volition and behavior that are valued in their own right and can contribute to flourishing.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nStrengths are not simply skills or the absence of weaknesses.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16761,14 +16728,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nCharacter strengths is a focused concept within “Wellbeing and self-growth: Types of wellbeing (Hedonic and Eudemonic), Character strengths, Resilience and Post-Traumatic Growth”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Character strengths\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Character strengths as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPowerWithin, drawing on Peterson and Seligman, describes character strengths as positive capacities involving cognition, affect, volition and behavior that are valued in their own right and can contribute to flourishing.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nStrengths are not simply skills or the absence of weaknesses.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Character strengths”.",
-                "List the key points associated with “Character strengths” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Character strengths”?"
+                "Define Character strengths using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Character strengths."
               ],
-              "application_question": "Source-based check: Given a new question about “Character strengths”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Character strengths → define → distinguish → apply",
+              "application_question": "Source-based application: identify Character strengths in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "PowerWithin, drawing on Peterson and Seligman, describes character strengths as positive capacities involving cognition, affect, volition and behavior that are valued in their own right and can contribute to flourishing",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16778,11 +16745,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology"
               ]
             },
             {
@@ -16883,7 +16846,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Health-promoting behaviors",
-              "content_notes": "CORE CONCEPT\nHealth-promoting behaviors is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health-promoting behaviors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Health-promoting behaviors as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHealth-promoting behaviors → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nHealth-promoting behaviors support physical and psychological health. Baron & Misra discuss exercise, healthy dietary practices, health education and prevention; autonomous motivation can support maintenance.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nDefine the behavior by its health function, not merely social approval.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16893,14 +16856,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHealth-promoting behaviors is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health-promoting behaviors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Health-promoting behaviors as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nHealth-promoting behaviors support physical and psychological health. Baron & Misra discuss exercise, healthy dietary practices, health education and prevention; autonomous motivation can support maintenance.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nDefine the behavior by its health function, not merely social approval.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Health-promoting behaviors”.",
-                "List the key points associated with “Health-promoting behaviors” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Health-promoting behaviors”?"
+                "Define Health-promoting behaviors using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Health-promoting behaviors."
               ],
-              "application_question": "Source-based check: Given a new question about “Health-promoting behaviors”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Health-promoting behaviors → define → distinguish → apply",
+              "application_question": "Source-based application: identify Health-promoting behaviors in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Health-promoting behaviors support physical and psychological health",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16910,16 +16873,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 2,
               "title": "Health-compromising behaviors",
-              "content_notes": "CORE CONCEPT\nHealth-compromising behaviors is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health-compromising behaviors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Health-compromising behaviors as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHealth-compromising behaviors → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nHealth-compromising behaviors increase risk of illness or undermine health. Baron & Misra discuss heavy alcohol consumption, poor diet and inadequate exercise as examples.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nRisk behavior does not make a disease outcome inevitable.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16929,14 +16890,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHealth-compromising behaviors is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Health-compromising behaviors\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Health-compromising behaviors as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nHealth-compromising behaviors increase risk of illness or undermine health. Baron & Misra discuss heavy alcohol consumption, poor diet and inadequate exercise as examples.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nRisk behavior does not make a disease outcome inevitable.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Health-compromising behaviors”.",
-                "List the key points associated with “Health-compromising behaviors” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Health-compromising behaviors”?"
+                "Define Health-compromising behaviors using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Health-compromising behaviors."
               ],
-              "application_question": "Source-based check: Given a new question about “Health-compromising behaviors”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Health-compromising behaviors → define → distinguish → apply",
+              "application_question": "Source-based application: identify Health-compromising behaviors in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Health-compromising behaviors increase risk of illness or undermine health",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16946,16 +16907,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 3,
               "title": "Lifestyle",
-              "content_notes": "CORE CONCEPT\nLifestyle is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lifestyle\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Lifestyle as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLifestyle → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nLifestyle refers to patterns of everyday behavior that influence health over time, including diet, exercise, substance use and stress-related habits.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nLifestyle is not purely individual choice; environments influence available choices.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16965,14 +16924,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nLifestyle is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lifestyle\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Lifestyle as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLifestyle refers to patterns of everyday behavior that influence health over time, including diet, exercise, substance use and stress-related habits.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nLifestyle is not purely individual choice; environments influence available choices.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Lifestyle”.",
-                "List the key points associated with “Lifestyle” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Lifestyle”?"
+                "Define Lifestyle using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Lifestyle."
               ],
-              "application_question": "Source-based check: Given a new question about “Lifestyle”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Lifestyle → define → distinguish → apply",
+              "application_question": "Source-based application: identify Lifestyle in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Lifestyle refers to patterns of everyday behavior that influence health over time, including diet, exercise, substance use and stress-related habits",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16982,16 +16941,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 4,
               "title": "Diabetes",
-              "content_notes": "CORE CONCEPT\nDiabetes is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Diabetes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Diabetes as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDiabetes → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDiabetes is a chronic condition involving impaired regulation of blood glucose. Health psychology examines behavior, stress, adherence and lifestyle as relevant to disease management.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPsychological factors can influence management without being treated as the sole cause.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17001,14 +16958,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nDiabetes is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Diabetes\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Diabetes as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDiabetes is a chronic condition involving impaired regulation of blood glucose. Health psychology examines behavior, stress, adherence and lifestyle as relevant to disease management.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPsychological factors can influence management without being treated as the sole cause.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Diabetes”.",
-                "List the key points associated with “Diabetes” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Diabetes”?"
+                "Define Diabetes using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Diabetes."
               ],
-              "application_question": "Source-based check: Given a new question about “Diabetes”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Diabetes → define → distinguish → apply",
+              "application_question": "Source-based application: identify Diabetes in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Diabetes is a chronic condition involving impaired regulation of blood glucose",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17018,16 +16975,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 5,
               "title": "Hypertension",
-              "content_notes": "CORE CONCEPT\nHypertension is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hypertension\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Hypertension as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHypertension → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nHypertension involves persistently elevated blood pressure. Health psychology considers behavior, stress, lifestyle and adherence relevant to prevention and management.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nStress is one factor among several; it should not be presented as the sole cause.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17037,14 +16992,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHypertension is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Hypertension\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Hypertension as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nHypertension involves persistently elevated blood pressure. Health psychology considers behavior, stress, lifestyle and adherence relevant to prevention and management.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nStress is one factor among several; it should not be presented as the sole cause.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Hypertension”.",
-                "List the key points associated with “Hypertension” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Hypertension”?"
+                "Define Hypertension using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Hypertension."
               ],
-              "application_question": "Source-based check: Given a new question about “Hypertension”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Hypertension → define → distinguish → apply",
+              "application_question": "Source-based application: identify Hypertension in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Hypertension involves persistently elevated blood pressure",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17054,16 +17009,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 6,
               "title": "Coronary Heart Disease",
-              "content_notes": "CORE CONCEPT\nCoronary Heart Disease is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Coronary Heart Disease\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Coronary Heart Disease as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCoronary Heart Disease → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCoronary heart disease is discussed in health psychology in relation to multiple behavioral and psychosocial risk factors, including dietary practices and stress.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nUse a multifactorial risk framework rather than a single-cause explanation.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17073,14 +17026,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nCoronary Heart Disease is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Coronary Heart Disease\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Coronary Heart Disease as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCoronary heart disease is discussed in health psychology in relation to multiple behavioral and psychosocial risk factors, including dietary practices and stress.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nUse a multifactorial risk framework rather than a single-cause explanation.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Coronary Heart Disease”.",
-                "List the key points associated with “Coronary Heart Disease” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Coronary Heart Disease”?"
+                "Define Coronary Heart Disease using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Coronary Heart Disease."
               ],
-              "application_question": "Source-based check: Given a new question about “Coronary Heart Disease”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Coronary Heart Disease → define → distinguish → apply",
+              "application_question": "Source-based application: identify Coronary Heart Disease in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Coronary heart disease is discussed in health psychology in relation to multiple behavioral and psychosocial risk factors, including dietary practices and stress",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17090,10 +17043,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
@@ -17135,7 +17086,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Cancer",
-              "content_notes": "CORE CONCEPT\nCancer is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cancer\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cancer as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCancer → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCancer involves abnormal cell growth and is heterogeneous. Health psychology examines behavioral risk, prevention, coping and health behavior without treating psychology as the sole cause.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPsychological stress should not be presented as a single direct cause of cancer.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17145,14 +17096,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nCancer is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cancer\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cancer as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCancer involves abnormal cell growth and is heterogeneous. Health psychology examines behavioral risk, prevention, coping and health behavior without treating psychology as the sole cause.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nPsychological stress should not be presented as a single direct cause of cancer.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cancer”.",
-                "List the key points associated with “Cancer” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cancer”?"
+                "Define Cancer using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Cancer."
               ],
-              "application_question": "Source-based check: Given a new question about “Cancer”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cancer → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cancer in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Cancer involves abnormal cell growth and is heterogeneous",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17162,16 +17113,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             },
             {
               "id": 9,
               "title": "HIV/AIDS",
-              "content_notes": "CORE CONCEPT\nHIV/AIDS is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of HIV/AIDS\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating HIV/AIDS as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHIV/AIDS → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nBaron & Misra describe HIV as the virus causing AIDS and discuss immune-system impairment, transmission through relevant exposures and prevention through informed health behavior.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nHIV infection and AIDS are related but not identical terms.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17181,14 +17130,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nHIV/AIDS is a focused concept within “Health: Health promoting and health compromising behaviors, Life style and Chronic diseases (Diabetes, Hypertension, Coronary Heart Disease), Psychoneuroimmunology (Cancer, HIV/AIDS)”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of HIV/AIDS\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating HIV/AIDS as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBaron & Misra describe HIV as the virus causing AIDS and discuss immune-system impairment, transmission through relevant exposures and prevention through informed health behavior.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nHIV infection and AIDS are related but not identical terms.\n\nSOURCE BASIS\n• Baron & Misra\n• Ciccarelli & White\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “HIV/AIDS”.",
-                "List the key points associated with “HIV/AIDS” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “HIV/AIDS”?"
+                "Define HIV/AIDS using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for HIV/AIDS."
               ],
-              "application_question": "Source-based check: Given a new question about “HIV/AIDS”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "HIV/AIDS → define → distinguish → apply",
+              "application_question": "Source-based application: identify HIV/AIDS in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Baron & Misra describe HIV as the virus causing AIDS and discuss immune-system impairment, transmission through relevant exposures and prevention through informed health behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17198,10 +17147,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra",
+                "Ciccarelli & White"
               ]
             }
           ],
@@ -17226,7 +17173,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Digital learning",
-              "content_notes": "CORE CONCEPT\nDigital learning is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Digital learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Digital learning as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDigital learning → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDigital learning uses technology to support learning, communication and access to educational material. Ciccarelli & White discuss multimedia learning and audio/visual cues; PowerWithin considers technology as an extension of instruction.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nTechnology use is not automatically equivalent to improved learning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17236,14 +17183,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nDigital learning is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Digital learning\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Digital learning as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDigital learning uses technology to support learning, communication and access to educational material. Ciccarelli & White discuss multimedia learning and audio/visual cues; PowerWithin considers technology as an extension of instruction.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nTechnology use is not automatically equivalent to improved learning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Digital learning”.",
-                "List the key points associated with “Digital learning” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Digital learning”?"
+                "Define Digital learning using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Digital learning."
               ],
-              "application_question": "Source-based check: Given a new question about “Digital learning”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Digital learning → define → distinguish → apply",
+              "application_question": "Source-based application: identify Digital learning in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Digital learning uses technology to support learning, communication and access to educational material",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17253,17 +17200,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Digital etiquette",
-              "content_notes": "CORE CONCEPT\nDigital etiquette is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Digital etiquette\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Digital etiquette as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDigital etiquette → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDigital etiquette concerns responsible and socially appropriate online communication, including respect, privacy, boundaries and awareness of consequences.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nIt is a social-behavioral framework, not a technical cybersecurity procedure.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17273,14 +17218,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nDigital etiquette is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Digital etiquette\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Digital etiquette as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDigital etiquette concerns responsible and socially appropriate online communication, including respect, privacy, boundaries and awareness of consequences.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nIt is a social-behavioral framework, not a technical cybersecurity procedure.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Digital etiquette”.",
-                "List the key points associated with “Digital etiquette” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Digital etiquette”?"
+                "Define Digital etiquette using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Digital etiquette."
               ],
-              "application_question": "Source-based check: Given a new question about “Digital etiquette”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Digital etiquette → define → distinguish → apply",
+              "application_question": "Source-based application: identify Digital etiquette in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Digital etiquette concerns responsible and socially appropriate online communication, including respect, privacy, boundaries and awareness of consequences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17290,10 +17235,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
@@ -17335,7 +17277,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Cyber pornography: consumption",
-              "content_notes": "CORE CONCEPT\nCyber pornography: consumption is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cyber pornography: consumption\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cyber pornography: consumption as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCyber pornography: consumption → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCyber pornography consumption concerns exposure to sexually explicit material through digital technologies. Psychological analysis should consider frequency, motives, context and impairment rather than assuming identical effects for all users.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nExposure alone should not be equated with addiction or disorder.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17345,14 +17287,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nCyber pornography: consumption is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cyber pornography: consumption\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cyber pornography: consumption as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCyber pornography consumption concerns exposure to sexually explicit material through digital technologies. Psychological analysis should consider frequency, motives, context and impairment rather than assuming identical effects for all users.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nExposure alone should not be equated with addiction or disorder.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cyber pornography: consumption”.",
-                "List the key points associated with “Cyber pornography: consumption” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cyber pornography: consumption”?"
+                "Define Cyber pornography: consumption using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Cyber pornography: consumption."
               ],
-              "application_question": "Source-based check: Given a new question about “Cyber pornography: consumption”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cyber pornography: consumption → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cyber pornography: consumption in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Cyber pornography consumption concerns exposure to sexually explicit material through digital technologies",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17362,16 +17304,13 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
               "id": 5,
               "title": "Cyber pornography: implications",
-              "content_notes": "CORE CONCEPT\nCyber pornography: implications is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cyber pornography: implications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cyber pornography: implications as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCyber pornography: implications → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nImplications of cyber pornography depend on pattern of use, developmental context, expectations, relationships and individual differences. The NET material treats it as an emerging psychological and social issue.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAvoid deterministic claims that exposure produces one inevitable outcome.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17381,14 +17320,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nCyber pornography: implications is a focused concept within “Psychology and technology interface: Digital learning; Digital etiquette: Cyber bullying; Cyber pornography: Consumption, implications; Parental mediation of Digital Usage”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cyber pornography: implications\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cyber pornography: implications as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nImplications of cyber pornography depend on pattern of use, developmental context, expectations, relationships and individual differences. The NET material treats it as an emerging psychological and social issue.\n\nKEY POINTS\n• definition and central psychological/social mechanism\n• relevant distinction or contextual factor\n• applied implication supported by the source\n\nDISTINCTION / CAUTION\nAvoid deterministic claims that exposure produces one inevitable outcome.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the source-defined level of analysis and avoid extending the concept beyond what the uploaded material supports.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cyber pornography: implications”.",
-                "List the key points associated with “Cyber pornography: implications” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cyber pornography: implications”?"
+                "Define Cyber pornography: implications using the source terminology.",
+                "State its main mechanism, distinction or contextual feature.",
+                "State the source-based caution for Cyber pornography: implications."
               ],
-              "application_question": "Source-based check: Given a new question about “Cyber pornography: implications”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cyber pornography: implications → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cyber pornography: implications in a new social/health/technology scenario and justify the identification from the source-defined mechanism or distinction.",
+              "exam_takeaway": "Implications of cyber pornography depend on pattern of use, developmental context, expectations, relationships and individual differences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -17398,10 +17337,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ]
             },
             {
