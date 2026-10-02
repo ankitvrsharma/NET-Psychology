@@ -508,6 +508,37 @@ function progress(){
 }
 function readiness(s){if(s.coverage>=80&&s.mastery>=70&&s.accuracy>=70&&s.retention>=60)return {label:'Strong study profile',note:'Your learning record shows broad coverage, strong mastery signals, question performance, and delayed recall. Use mixed practice and spaced revision to maintain these gains; this is a study indicator, not a guarantee of exam performance.',focus:['Maintain delayed recall across older concepts','Mix MCQs and PYQs across units','Keep revising concepts before they become due'],action:'Open Mixed Practice',href:'practice.html'};if(s.coverage>=60&&s.mastery>=45&&s.accuracy>=60)return {label:'Ready for Exam Practice',note:'You have built a substantial base. The next step is to strengthen retrieval, application, and delayed recall while continuing to expand coverage.',focus:['Strengthen concept mastery','Use recall before checking notes','Practice across different units'],action:'Practice Questions',href:'practice.html'};if(s.coverage>=25)return {label:'Developing',note:'You are building the foundation. Keep moving through the syllabus while turning each new concept into something you can recall and apply.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Continue Learning',href:'unit.html?id=1'};return {label:'Building',note:'You are still establishing your foundation. Start with one concept at a time and move through understanding, recall, and application.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Start Learning',href:'unit.html?id=1'}}
 initMobileNavigation();
+function setupMobileNavigation(){
+  const toggle=document.querySelector('.menu-toggle');
+  const nav=document.querySelector('#site-navigation');
+  if(!toggle||!nav)return;
+  const close=()=>{
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Open navigation');
+  };
+  const open=()=>{
+    document.body.classList.add('menu-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Close navigation');
+  };
+  toggle.addEventListener('click',e=>{
+    e.preventDefault();
+    e.stopPropagation();
+    document.body.classList.contains('menu-open')?close():open();
+  });
+  nav.addEventListener('click',e=>{
+    if(e.target.closest('a'))close();
+  });
+  document.addEventListener('click',e=>{
+    if(!document.body.classList.contains('menu-open'))return;
+    if(!e.target.closest('.nav-wrap'))close();
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape')close();
+  });
+}
+setupMobileNavigation();
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===page));
