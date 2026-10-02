@@ -14332,7 +14332,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Factors in development",
-              "content_notes": "CORE CONCEPT\nFactors in development is a focused concept within “Developmental processes: Nature, Principles, Factors in development, Stages of Development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors in development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Factors in development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nFactors in development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDevelopment reflects interaction among biological maturation, experience and environmental/contextual influences. The developmental texts discuss heredity, prenatal conditions, learning and social experience as contributors to change.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAvoid a simple heredity-versus-environment split; the source treatment emphasizes interaction.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14342,14 +14342,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "ACADEMIC CORE\nFactors in development is a focused concept within “Developmental processes: Nature, Principles, Factors in development, Stages of Development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors in development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Factors in development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDevelopment reflects interaction among biological maturation, experience and environmental/contextual influences. The developmental texts discuss heredity, prenatal conditions, learning and social experience as contributors to change.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAvoid a simple heredity-versus-environment split; the source treatment emphasizes interaction.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n• Baron & Misra\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Factors in development”.",
-                "List the key points associated with “Factors in development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Factors in development”?"
+                "Define Factors in development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Factors in development."
               ],
-              "application_question": "Source-based check: Given a new question about “Factors in development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Factors in development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Factors in development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Development reflects interaction among biological maturation, experience and environmental/contextual influences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14359,17 +14359,16 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 4,
               "title": "Stages of development",
-              "content_notes": "CORE CONCEPT\nStages of development is a focused concept within “Developmental processes: Nature, Principles, Factors in development, Stages of Development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Stages of development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Stages of development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStages of development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nDevelopmental stages organize age-related changes into periods. Ciccarelli & White present lifespan periods, while Piaget and Erikson provide theory-specific stage sequences.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not mix stages from different theories as one universal sequence.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14379,14 +14378,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "ACADEMIC CORE\nStages of development is a focused concept within “Developmental processes: Nature, Principles, Factors in development, Stages of Development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Stages of development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Stages of development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nDevelopmental stages organize age-related changes into periods. Ciccarelli & White present lifespan periods, while Piaget and Erikson provide theory-specific stage sequences.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not mix stages from different theories as one universal sequence.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Stages of development”.",
-                "List the key points associated with “Stages of development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Stages of development”?"
+                "Define Stages of development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Stages of development."
               ],
-              "application_question": "Source-based check: Given a new question about “Stages of development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Stages of development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Stages of development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Developmental stages organize age-related changes into periods",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14396,10 +14395,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -14481,7 +14478,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalytical theories",
-              "content_notes": "CORE CONCEPT\nPsychoanalytical theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Psychoanalytical theories as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPsychoanalytical theories → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nFreud explains development through psychosexual stages and early experience; Erikson extends developmental theory through psychosocial crises across the lifespan.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nFreud's stages and Erikson's stages are different systems with different organizing constructs.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14491,14 +14488,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPsychoanalytical theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Psychoanalytical theories as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nFreud explains development through psychosexual stages and early experience; Erikson extends developmental theory through psychosocial crises across the lifespan.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nFreud's stages and Erikson's stages are different systems with different organizing constructs.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Psychoanalytical theories”.",
-                "List the key points associated with “Psychoanalytical theories” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Psychoanalytical theories”?"
+                "Define Psychoanalytical theories using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Psychoanalytical theories."
               ],
-              "application_question": "Source-based check: Given a new question about “Psychoanalytical theories”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Psychoanalytical theories → define → distinguish → apply",
+              "application_question": "Source-based application: identify Psychoanalytical theories in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Freud explains development through psychosexual stages and early experience; Erikson extends developmental theory through psychosocial crises across the lifespan",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14508,17 +14505,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 2,
               "title": "Behavioristic theories",
-              "content_notes": "CORE CONCEPT\nBehavioristic theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavioristic theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Behavioristic theories as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBehavioristic theories → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nBehavioristic accounts explain development through learning and environmental contingencies, including conditioning, reinforcement and observational learning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThe behavioristic account does not use developmental stages as its primary explanatory unit.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14528,14 +14523,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nBehavioristic theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavioristic theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Behavioristic theories as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBehavioristic accounts explain development through learning and environmental contingencies, including conditioning, reinforcement and observational learning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThe behavioristic account does not use developmental stages as its primary explanatory unit.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Behavioristic theories”.",
-                "List the key points associated with “Behavioristic theories” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Behavioristic theories”?"
+                "Define Behavioristic theories using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Behavioristic theories."
               ],
-              "application_question": "Source-based check: Given a new question about “Behavioristic theories”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Behavioristic theories → define → distinguish → apply",
+              "application_question": "Source-based application: identify Behavioristic theories in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Behavioristic accounts explain development through learning and environmental contingencies, including conditioning, reinforcement and observational learning",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14545,17 +14540,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 3,
               "title": "Cognitive theories",
-              "content_notes": "CORE CONCEPT\nCognitive theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cognitive theories as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCognitive theories → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCognitive theories explain developmental change through changes in thinking and representation. Piaget's stages and processes such as assimilation and accommodation are central textbook examples.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse cognitive stages with psychosocial or psychosexual stages.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14565,14 +14558,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nCognitive theories is a focused concept within “Theories of development: Psychoanalytical, Behavioristic, and Cognitive”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive theories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cognitive theories as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCognitive theories explain developmental change through changes in thinking and representation. Piaget's stages and processes such as assimilation and accommodation are central textbook examples.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse cognitive stages with psychosocial or psychosexual stages.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cognitive theories”.",
-                "List the key points associated with “Cognitive theories” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cognitive theories”?"
+                "Define Cognitive theories using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Cognitive theories."
               ],
-              "application_question": "Source-based check: Given a new question about “Cognitive theories”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cognitive theories → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cognitive theories in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Cognitive theories explain developmental change through changes in thinking and representation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14582,10 +14575,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -14611,7 +14602,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Sensory-motor development",
-              "content_notes": "CORE CONCEPT\nSensory-motor development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory-motor development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sensory-motor development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSensory-motor development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSensory-motor development concerns changes in sensory capacities, perception and motor control during early development. Infant perception and motor milestones are discussed as interacting aspects of development.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThis domain is broader than Piaget's specific sensorimotor stage.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14621,14 +14612,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nSensory-motor development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sensory-motor development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sensory-motor development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSensory-motor development concerns changes in sensory capacities, perception and motor control during early development. Infant perception and motor milestones are discussed as interacting aspects of development.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThis domain is broader than Piaget's specific sensorimotor stage.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sensory-motor development”.",
-                "List the key points associated with “Sensory-motor development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sensory-motor development”?"
+                "Define Sensory-motor development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Sensory-motor development."
               ],
-              "application_question": "Source-based check: Given a new question about “Sensory-motor development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sensory-motor development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Sensory-motor development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Sensory-motor development concerns changes in sensory capacities, perception and motor control during early development",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14638,17 +14629,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 2,
               "title": "Cognitive development",
-              "content_notes": "CORE CONCEPT\nCognitive development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cognitive development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCognitive development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCognitive development concerns changes in thinking, reasoning, memory, problem solving and representation. Piaget describes movement from sensorimotor activity toward abstract reasoning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nCognitive development is broader than Piaget alone; information-processing approaches are also relevant.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14658,14 +14647,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nCognitive development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cognitive development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCognitive development concerns changes in thinking, reasoning, memory, problem solving and representation. Piaget describes movement from sensorimotor activity toward abstract reasoning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nCognitive development is broader than Piaget alone; information-processing approaches are also relevant.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cognitive development”.",
-                "List the key points associated with “Cognitive development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cognitive development”?"
+                "Define Cognitive development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Cognitive development."
               ],
-              "application_question": "Source-based check: Given a new question about “Cognitive development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cognitive development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Cognitive development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Cognitive development concerns changes in thinking, reasoning, memory, problem solving and representation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14675,17 +14664,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 3,
               "title": "Language development",
-              "content_notes": "CORE CONCEPT\nLanguage development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Language development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Language development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLanguage development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nLanguage develops from early vocalization through words, vocabulary growth and increasingly complex grammar and communication. The sources link language with cognitive and social development.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nLanguage development is broader than vocabulary alone.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14695,14 +14682,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nLanguage development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Language development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Language development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLanguage develops from early vocalization through words, vocabulary growth and increasingly complex grammar and communication. The sources link language with cognitive and social development.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nLanguage development is broader than vocabulary alone.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Language development”.",
-                "List the key points associated with “Language development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Language development”?"
+                "Define Language development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Language development."
               ],
-              "application_question": "Source-based check: Given a new question about “Language development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Language development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Language development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Language develops from early vocalization through words, vocabulary growth and increasingly complex grammar and communication",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14712,17 +14699,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 4,
               "title": "Emotional development",
-              "content_notes": "CORE CONCEPT\nEmotional development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Emotional development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Emotional development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEmotional development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nEmotional development includes changes in expression, regulation, attachment and understanding of emotions. Early caregiver relationships and increasing self-regulation are important developmental contexts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nEmotion as a developmental domain should not be confused with psychopathology or personality traits.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14732,14 +14717,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nEmotional development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Emotional development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Emotional development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEmotional development includes changes in expression, regulation, attachment and understanding of emotions. Early caregiver relationships and increasing self-regulation are important developmental contexts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nEmotion as a developmental domain should not be confused with psychopathology or personality traits.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Baron & Misra\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Emotional development”.",
-                "List the key points associated with “Emotional development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Emotional development”?"
+                "Define Emotional development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Emotional development."
               ],
-              "application_question": "Source-based check: Given a new question about “Emotional development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Emotional development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Emotional development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Emotional development includes changes in expression, regulation, attachment and understanding of emotions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14749,17 +14734,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Baron & Misra"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision."
             },
             {
               "id": 5,
               "title": "Social development",
-              "content_notes": "CORE CONCEPT\nSocial development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSocial development concerns attachment, relationships, peer interaction, social understanding and changing social roles. Family, peers and culture provide important contexts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nSocial development is broader than parent-child socialization alone.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14769,14 +14752,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nSocial development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocial development concerns attachment, relationships, peer interaction, social understanding and changing social roles. Family, peers and culture provide important contexts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nSocial development is broader than parent-child socialization alone.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social development”.",
-                "List the key points associated with “Social development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social development”?"
+                "Define Social development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Social development."
               ],
-              "application_question": "Source-based check: Given a new question about “Social development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Social development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Social development concerns attachment, relationships, peer interaction, social understanding and changing social roles",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14786,17 +14769,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 6,
               "title": "Moral development",
-              "content_notes": "CORE CONCEPT\nMoral development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Moral development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Moral development as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMoral development → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMoral development concerns changes in reasoning about rules, obligations and right and wrong. The Self-Teaching Guide presents Kohlberg's preconventional, conventional and postconventional levels.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nKohlberg's stages describe moral reasoning, not a complete measure of moral behavior.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14806,14 +14787,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nMoral development is a focused concept within “Various aspects of development: Sensory-motor, cognitive, language, emotional, social and moral”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Moral development\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Moral development as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMoral development concerns changes in reasoning about rules, obligations and right and wrong. The Self-Teaching Guide presents Kohlberg's preconventional, conventional and postconventional levels.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nKohlberg's stages describe moral reasoning, not a complete measure of moral behavior.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Moral development”.",
-                "List the key points associated with “Moral development” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Moral development”?"
+                "Define Moral development using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Moral development."
               ],
-              "application_question": "Source-based check: Given a new question about “Moral development”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Moral development → define → distinguish → apply",
+              "application_question": "Source-based application: identify Moral development in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Moral development concerns changes in reasoning about rules, obligations and right and wrong",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14823,10 +14804,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -14852,7 +14831,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Concept of psychopathology",
-              "content_notes": "CORE CONCEPT\nConcept of psychopathology is a focused concept within “Psychopathology: Concept, Mental Status Examination, Classification, Causes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Concept of psychopathology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Concept of psychopathology as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nConcept of psychopathology → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPsychopathology concerns abnormal behavior and mental disorders, including their description and explanation. The sources discuss distress, dysfunction and contextual judgment.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nUnusual behavior alone is not sufficient to establish psychopathology.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14862,14 +14841,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nConcept of psychopathology is a focused concept within “Psychopathology: Concept, Mental Status Examination, Classification, Causes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Concept of psychopathology\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Concept of psychopathology as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychopathology concerns abnormal behavior and mental disorders, including their description and explanation. The sources discuss distress, dysfunction and contextual judgment.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nUnusual behavior alone is not sufficient to establish psychopathology.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Concept of psychopathology”.",
-                "List the key points associated with “Concept of psychopathology” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Concept of psychopathology”?"
+                "Define Concept of psychopathology using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Concept of psychopathology."
               ],
-              "application_question": "Source-based check: Given a new question about “Concept of psychopathology”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Concept of psychopathology → define → distinguish → apply",
+              "application_question": "Source-based application: identify Concept of psychopathology in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Psychopathology concerns abnormal behavior and mental disorders, including their description and explanation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14879,10 +14858,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -14926,7 +14903,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Classification",
-              "content_notes": "CORE CONCEPT\nClassification is a focused concept within “Psychopathology: Concept, Mental Status Examination, Classification, Causes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Classification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Classification as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nClassification → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nClassification organizes symptom patterns into diagnostic categories to support communication, research and treatment planning. It is a descriptive/organizational task rather than a complete causal explanation.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nClassification and etiology are different questions.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14936,14 +14913,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nClassification is a focused concept within “Psychopathology: Concept, Mental Status Examination, Classification, Causes”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Classification\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Classification as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nClassification organizes symptom patterns into diagnostic categories to support communication, research and treatment planning. It is a descriptive/organizational task rather than a complete causal explanation.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nClassification and etiology are different questions.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Classification”.",
-                "List the key points associated with “Classification” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Classification”?"
+                "Define Classification using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Classification."
               ],
-              "application_question": "Source-based check: Given a new question about “Classification”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Classification → define → distinguish → apply",
+              "application_question": "Source-based application: identify Classification in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Classification organizes symptom patterns into diagnostic categories to support communication, research and treatment planning",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -14953,10 +14930,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15019,7 +14994,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalysis",
-              "content_notes": "CORE CONCEPT\nPsychoanalysis is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Psychoanalysis as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPsychoanalysis → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPsychoanalysis, associated with Freud, emphasizes unconscious processes and conflict. Free association, dream analysis, interpretation, resistance and transference are characteristic concepts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nPsychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15029,14 +15004,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPsychoanalysis is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Psychoanalysis as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychoanalysis, associated with Freud, emphasizes unconscious processes and conflict. Free association, dream analysis, interpretation, resistance and transference are characteristic concepts.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nPsychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central.\n\nSOURCE BASIS\n• Psychology: A Self-Teaching Guide\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Psychoanalysis”.",
-                "List the key points associated with “Psychoanalysis” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Psychoanalysis”?"
+                "Define Psychoanalysis using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Psychoanalysis."
               ],
-              "application_question": "Source-based check: Given a new question about “Psychoanalysis”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Psychoanalysis → define → distinguish → apply",
+              "application_question": "Source-based application: identify Psychoanalysis in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Psychoanalysis, associated with Freud, emphasizes unconscious processes and conflict",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15046,10 +15021,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15093,7 +15066,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Gestalt therapy",
-              "content_notes": "CORE CONCEPT\nGestalt therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Gestalt therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nGestalt therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nGestalt therapy, associated with Fritz Perls, emphasizes awareness, the whole person and present experience. The PowerWithin material describes experiential techniques such as empty-chair/self-dialogue.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse Gestalt therapy with Gestalt principles of perceptual organization.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15103,14 +15076,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nGestalt therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Gestalt therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Gestalt therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nGestalt therapy, associated with Fritz Perls, emphasizes awareness, the whole person and present experience. The PowerWithin material describes experiential techniques such as empty-chair/self-dialogue.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse Gestalt therapy with Gestalt principles of perceptual organization.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Gestalt therapy”.",
-                "List the key points associated with “Gestalt therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Gestalt therapy”?"
+                "Define Gestalt therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Gestalt therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Gestalt therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Gestalt therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Gestalt therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Gestalt therapy, associated with Fritz Perls, emphasizes awareness, the whole person and present experience",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15120,17 +15093,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 4,
               "title": "Existential therapy",
-              "content_notes": "CORE CONCEPT\nExistential therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Existential therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Existential therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nExistential therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nExistential therapy explores values, responsibility, meaning and the human condition. PowerWithin identifies Yalom's four ultimate concerns: freedom/responsibility, existential isolation, meaninglessness and death.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIt is an experiential/philosophical approach rather than a single symptom protocol.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15140,14 +15111,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nExistential therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Existential therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Existential therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nExistential therapy explores values, responsibility, meaning and the human condition. PowerWithin identifies Yalom's four ultimate concerns: freedom/responsibility, existential isolation, meaninglessness and death.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIt is an experiential/philosophical approach rather than a single symptom protocol.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Existential therapy”.",
-                "List the key points associated with “Existential therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Existential therapy”?"
+                "Define Existential therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Existential therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Existential therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Existential therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Existential therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Existential therapy explores values, responsibility, meaning and the human condition",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15157,10 +15128,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15204,7 +15172,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Behavior therapy",
-              "content_notes": "CORE CONCEPT\nBehavior therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavior therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Behavior therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBehavior therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nBehavior therapy treats problematic behavior using learning principles. Ciccarelli & White describe it as action based, using classical and operant conditioning to change learned responses.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIdentify the conditioning principle before naming a technique.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15214,14 +15182,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nBehavior therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Behavior therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Behavior therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBehavior therapy treats problematic behavior using learning principles. Ciccarelli & White describe it as action based, using classical and operant conditioning to change learned responses.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIdentify the conditioning principle before naming a technique.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Behavior therapy”.",
-                "List the key points associated with “Behavior therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Behavior therapy”?"
+                "Define Behavior therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Behavior therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Behavior therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Behavior therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Behavior therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Behavior therapy treats problematic behavior using learning principles",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15231,10 +15199,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15315,7 +15281,7 @@ window.NETPSY_DATA = {
             {
               "id": 9,
               "title": "MBCT",
-              "content_notes": "CORE CONCEPT\nMBCT is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of MBCT\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating MBCT as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMBCT → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nMindfulness-Based Cognitive Therapy combines cognitive therapy with mindfulness. It helps clients observe thoughts and feelings as mental events and reduce automatic reactivity, with a strong relapse-prevention application in depression.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nMBCT is not merely relaxation training; the cognitive relationship to thoughts is central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15325,14 +15291,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nMBCT is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of MBCT\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating MBCT as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMindfulness-Based Cognitive Therapy combines cognitive therapy with mindfulness. It helps clients observe thoughts and feelings as mental events and reduce automatic reactivity, with a strong relapse-prevention application in depression.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nMBCT is not merely relaxation training; the cognitive relationship to thoughts is central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “MBCT”.",
-                "List the key points associated with “MBCT” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “MBCT”?"
+                "Define MBCT using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for MBCT."
               ],
-              "application_question": "Source-based check: Given a new question about “MBCT”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "MBCT → define → distinguish → apply",
+              "application_question": "Source-based application: identify MBCT in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Mindfulness-Based Cognitive Therapy combines cognitive therapy with mindfulness",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15342,17 +15308,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 10,
               "title": "Play therapy",
-              "content_notes": "CORE CONCEPT\nPlay therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Play therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Play therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPlay therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPlay therapy uses play as a medium for communication and therapeutic work with children, adapting intervention to developmental level.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTherapeutic play is not simply recreational play.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15362,14 +15326,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPlay therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Play therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Play therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPlay therapy uses play as a medium for communication and therapeutic work with children, adapting intervention to developmental level.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTherapeutic play is not simply recreational play.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Play therapy”.",
-                "List the key points associated with “Play therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Play therapy”?"
+                "Define Play therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Play therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Play therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Play therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Play therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Play therapy uses play as a medium for communication and therapeutic work with children, adapting intervention to developmental level",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15379,17 +15343,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 11,
               "title": "Positive psychotherapy",
-              "content_notes": "CORE CONCEPT\nPositive psychotherapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Positive psychotherapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Positive psychotherapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPositive psychotherapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPositive psychotherapy draws on positive-psychology ideas and targets strengths, positive functioning and resources alongside distress. PowerWithin connects this orientation with flourishing, meaning, relationships and character strengths.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIt does not mean ignoring symptoms or suffering.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15399,14 +15361,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPositive psychotherapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Positive psychotherapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Positive psychotherapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPositive psychotherapy draws on positive-psychology ideas and targets strengths, positive functioning and resources alongside distress. PowerWithin connects this orientation with flourishing, meaning, relationships and character strengths.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nIt does not mean ignoring symptoms or suffering.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Positive psychotherapy”.",
-                "List the key points associated with “Positive psychotherapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Positive psychotherapy”?"
+                "Define Positive psychotherapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Positive psychotherapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Positive psychotherapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Positive psychotherapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Positive psychotherapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Positive psychotherapy draws on positive-psychology ideas and targets strengths, positive functioning and resources alongside distress",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15416,17 +15378,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 12,
               "title": "Transactional Analysis",
-              "content_notes": "CORE CONCEPT\nTransactional Analysis is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Transactional Analysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Transactional Analysis as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTransactional Analysis → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nTransactional Analysis, associated with Eric Berne, analyzes interpersonal transactions through Parent, Adult and Child ego states and recurring interaction patterns.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTA ego states should not be equated directly with Freud's id, ego and superego.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15436,14 +15395,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nTransactional Analysis is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Transactional Analysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Transactional Analysis as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTransactional Analysis, associated with Eric Berne, analyzes interpersonal transactions through Parent, Adult and Child ego states and recurring interaction patterns.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTA ego states should not be equated directly with Freud's id, ego and superego.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Transactional Analysis”.",
-                "List the key points associated with “Transactional Analysis” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Transactional Analysis”?"
+                "Define Transactional Analysis using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Transactional Analysis."
               ],
-              "application_question": "Source-based check: Given a new question about “Transactional Analysis”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Transactional Analysis → define → distinguish → apply",
+              "application_question": "Source-based application: identify Transactional Analysis in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Transactional Analysis, associated with Eric Berne, analyzes interpersonal transactions through Parent, Adult and Child ego states and recurring interaction patterns",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15453,10 +15412,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15500,7 +15457,7 @@ window.NETPSY_DATA = {
             {
               "id": 14,
               "title": "Art therapy",
-              "content_notes": "CORE CONCEPT\nArt therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Art therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Art therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nArt therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nArt therapy uses visual creative activity as a therapeutic medium for expression, exploration and communication. It can supplement verbal work.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not treat every drawing as a fixed diagnostic symbol.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15510,14 +15467,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nArt therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Art therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Art therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nArt therapy uses visual creative activity as a therapeutic medium for expression, exploration and communication. It can supplement verbal work.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not treat every drawing as a fixed diagnostic symbol.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Art therapy”.",
-                "List the key points associated with “Art therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Art therapy”?"
+                "Define Art therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Art therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Art therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Art therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Art therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Art therapy uses visual creative activity as a therapeutic medium for expression, exploration and communication",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15527,17 +15484,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 15,
               "title": "Performing Art Therapy",
-              "content_notes": "CORE CONCEPT\nPerforming Art Therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Performing Art Therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Performing Art Therapy as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPerforming Art Therapy → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPerforming-art approaches use drama, movement, music or performance as therapeutic media for expression, awareness and communication.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThe therapeutic medium distinguishes performing-art therapy from other expressive therapies.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15547,14 +15501,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPerforming Art Therapy is a focused concept within “Psychotherapies: Psychoanalysis, Person-centered, Gestalt, Existential, Acceptance Commitment Therapy, Behavior therapy, REBT, CBT, MBCT, Play therapy, Positive psychotherapy, Transactional Analysis, Dialectic behavior therapy, Art therapy, Performing Art Therapy, Family therapy”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Performing Art Therapy\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Performing Art Therapy as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPerforming-art approaches use drama, movement, music or performance as therapeutic media for expression, awareness and communication.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nThe therapeutic medium distinguishes performing-art therapy from other expressive therapies.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Performing Art Therapy”.",
-                "List the key points associated with “Performing Art Therapy” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Performing Art Therapy”?"
+                "Define Performing Art Therapy using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Performing Art Therapy."
               ],
-              "application_question": "Source-based check: Given a new question about “Performing Art Therapy”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Performing Art Therapy → define → distinguish → apply",
+              "application_question": "Source-based application: identify Performing Art Therapy in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Performing-art approaches use drama, movement, music or performance as therapeutic media for expression, awareness and communication",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15564,10 +15518,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
@@ -15630,7 +15581,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Applications of motivation theories in school",
-              "content_notes": "CORE CONCEPT\nApplications of motivation theories in school is a focused concept within “Applications of theories of motivation and learning in School”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of motivation theories in school\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Applications of motivation theories in school as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nApplications of motivation theories in school → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSchool applications of motivation theories involve goals, expectations, reinforcement, perceived competence and value. PowerWithin discusses goal theory, expectancy processes and social learning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAn application should identify the theory and its mechanism rather than merely stating that motivation improves learning.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15641,14 +15592,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nApplications of motivation theories in school is a focused concept within “Applications of theories of motivation and learning in School”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of motivation theories in school\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Applications of motivation theories in school as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSchool applications of motivation theories involve goals, expectations, reinforcement, perceived competence and value. PowerWithin discusses goal theory, expectancy processes and social learning.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAn application should identify the theory and its mechanism rather than merely stating that motivation improves learning.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Applications of motivation theories in school”.",
-                "List the key points associated with “Applications of motivation theories in school” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Applications of motivation theories in school”?"
+                "Define Applications of motivation theories in school using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Applications of motivation theories in school."
               ],
-              "application_question": "Source-based check: Given a new question about “Applications of motivation theories in school”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Applications of motivation theories in school → define → distinguish → apply",
+              "application_question": "Source-based application: identify Applications of motivation theories in school in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "School applications of motivation theories involve goals, expectations, reinforcement, perceived competence and value",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15658,18 +15609,15 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
             },
             {
               "id": 2,
               "title": "Applications of learning theories in school",
-              "content_notes": "CORE CONCEPT\nApplications of learning theories in school is a focused concept within “Applications of theories of motivation and learning in School”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of learning theories in school\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Applications of learning theories in school as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nApplications of learning theories in school → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nLearning theories can be applied through reinforcement, shaping, observational learning and cognitive learning principles. The sources describe multiple mechanisms rather than one universal classroom model.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not reduce all classroom learning to operant conditioning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15680,14 +15628,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nApplications of learning theories in school is a focused concept within “Applications of theories of motivation and learning in School”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Applications of learning theories in school\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Applications of learning theories in school as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLearning theories can be applied through reinforcement, shaping, observational learning and cognitive learning principles. The sources describe multiple mechanisms rather than one universal classroom model.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not reduce all classroom learning to operant conditioning.\n\nSOURCE BASIS\n• Ciccarelli & White\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Applications of learning theories in school”.",
-                "List the key points associated with “Applications of learning theories in school” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Applications of learning theories in school”?"
+                "Define Applications of learning theories in school using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Applications of learning theories in school."
               ],
-              "application_question": "Source-based check: Given a new question about “Applications of learning theories in school”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Applications of learning theories in school → define → distinguish → apply",
+              "application_question": "Source-based application: identify Applications of learning theories in school in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Learning theories can be applied through reinforcement, shaping, observational learning and cognitive learning principles",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15697,11 +15645,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "Ciccarelli & White",
+                "Psychology: A Self-Teaching Guide"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
             }
@@ -15727,7 +15672,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Factors in educational achievement",
-              "content_notes": "CORE CONCEPT\nFactors in educational achievement is a focused concept within “Factors in educational achievement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors in educational achievement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Factors in educational achievement as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nFactors in educational achievement → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nEducational achievement reflects learner, teaching and environmental influences. The sources identify learning strategies, motivation, study conditions and teaching as relevant contributors.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAchievement is an outcome and is not identical to intelligence.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15737,14 +15682,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nFactors in educational achievement is a focused concept within “Factors in educational achievement”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Factors in educational achievement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Factors in educational achievement as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEducational achievement reflects learner, teaching and environmental influences. The sources identify learning strategies, motivation, study conditions and teaching as relevant contributors.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nAchievement is an outcome and is not identical to intelligence.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Factors in educational achievement”.",
-                "List the key points associated with “Factors in educational achievement” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Factors in educational achievement”?"
+                "Define Factors in educational achievement using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Factors in educational achievement."
               ],
-              "application_question": "Source-based check: Given a new question about “Factors in educational achievement”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Factors in educational achievement → define → distinguish → apply",
+              "application_question": "Source-based application: identify Factors in educational achievement in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Educational achievement reflects learner, teaching and environmental influences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15754,10 +15699,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -15783,7 +15726,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Teacher effectiveness",
-              "content_notes": "CORE CONCEPT\nTeacher effectiveness is a focused concept within “Teacher effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Teacher effectiveness\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Teacher effectiveness as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTeacher effectiveness → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nTeacher effectiveness concerns the contribution of instruction to student learning and development. PowerWithin emphasizes effective instruction and notes that technology can extend teaching but may not automatically equalize access.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nEffectiveness is not synonymous with popularity or authority; educational impact is central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15793,14 +15736,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nTeacher effectiveness is a focused concept within “Teacher effectiveness”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Teacher effectiveness\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Teacher effectiveness as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTeacher effectiveness concerns the contribution of instruction to student learning and development. PowerWithin emphasizes effective instruction and notes that technology can extend teaching but may not automatically equalize access.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nEffectiveness is not synonymous with popularity or authority; educational impact is central.\n\nSOURCE BASIS\n• PowerWithin Psychology\n• Ciccarelli & White\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Teacher effectiveness”.",
-                "List the key points associated with “Teacher effectiveness” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Teacher effectiveness”?"
+                "Define Teacher effectiveness using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Teacher effectiveness."
               ],
-              "application_question": "Source-based check: Given a new question about “Teacher effectiveness”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Teacher effectiveness → define → distinguish → apply",
+              "application_question": "Source-based application: identify Teacher effectiveness in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Teacher effectiveness concerns the contribution of instruction to student learning and development",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15810,10 +15753,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology",
+                "Ciccarelli & White"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -15839,7 +15780,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Needs for school guidance",
-              "content_notes": "CORE CONCEPT\nNeeds for school guidance is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Needs for school guidance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Needs for school guidance as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNeeds for school guidance → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSchool guidance addresses educational, vocational/career and personal-social-emotional needs. PowerWithin describes academic assistance/course selection, career information/preparation, adjustment and emotional maturity.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nGuidance is broader than counselling; counselling is one service within a guidance programme.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15850,14 +15791,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nNeeds for school guidance is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Needs for school guidance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Needs for school guidance as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSchool guidance addresses educational, vocational/career and personal-social-emotional needs. PowerWithin describes academic assistance/course selection, career information/preparation, adjustment and emotional maturity.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nGuidance is broader than counselling; counselling is one service within a guidance programme.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Needs for school guidance”.",
-                "List the key points associated with “Needs for school guidance” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Needs for school guidance”?"
+                "Define Needs for school guidance using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Needs for school guidance."
               ],
-              "application_question": "Source-based check: Given a new question about “Needs for school guidance”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Needs for school guidance → define → distinguish → apply",
+              "application_question": "Source-based application: identify Needs for school guidance in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "School guidance addresses educational, vocational/career and personal-social-emotional needs",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15867,18 +15808,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 2,
               "title": "Organizational setup for school guidance",
-              "content_notes": "CORE CONCEPT\nOrganizational setup for school guidance is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Organizational setup for school guidance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Organizational setup for school guidance as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nOrganizational setup for school guidance → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nPowerWithin describes guidance as either integrated into ordinary teaching or delivered through a separate professionally staffed programme. These correspond to unstructured and structured arrangements.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nProgramme structure is different from the needs that guidance addresses.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15889,14 +15826,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nOrganizational setup for school guidance is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Organizational setup for school guidance\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Organizational setup for school guidance as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPowerWithin describes guidance as either integrated into ordinary teaching or delivered through a separate professionally staffed programme. These correspond to unstructured and structured arrangements.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nProgramme structure is different from the needs that guidance addresses.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Organizational setup for school guidance”.",
-                "List the key points associated with “Organizational setup for school guidance” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Organizational setup for school guidance”?"
+                "Define Organizational setup for school guidance using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Organizational setup for school guidance."
               ],
-              "application_question": "Source-based check: Given a new question about “Organizational setup for school guidance”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Organizational setup for school guidance → define → distinguish → apply",
+              "application_question": "Source-based application: identify Organizational setup for school guidance in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "PowerWithin describes guidance as either integrated into ordinary teaching or delivered through a separate professionally staffed programme",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15906,18 +15843,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             },
             {
               "id": 3,
               "title": "School guidance techniques",
-              "content_notes": "CORE CONCEPT\nSchool guidance techniques is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of School guidance techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating School guidance techniques as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSchool guidance techniques → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nSchool guidance services include orientation, information, placement, follow-up, referral, counselling, research and evaluation. Placement assists the next educational/occupational step; follow-up collects information after leaving school; referral connects students with specialized services.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse placement with follow-up or referral.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15928,14 +15861,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nSchool guidance techniques is a focused concept within “Guidance in schools: Needs, organizational set up and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of School guidance techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating School guidance techniques as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSchool guidance services include orientation, information, placement, follow-up, referral, counselling, research and evaluation. Placement assists the next educational/occupational step; follow-up collects information after leaving school; referral connects students with specialized services.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nDo not confuse placement with follow-up or referral.\n\nSOURCE BASIS\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “School guidance techniques”.",
-                "List the key points associated with “School guidance techniques” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “School guidance techniques”?"
+                "Define School guidance techniques using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for School guidance techniques."
               ],
-              "application_question": "Source-based check: Given a new question about “School guidance techniques”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "School guidance techniques → define → distinguish → apply",
+              "application_question": "Source-based application: identify School guidance techniques in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "School guidance services include orientation, information, placement, follow-up, referral, counselling, research and evaluation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -15945,11 +15878,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
@@ -16049,7 +15978,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Counselling techniques",
-              "content_notes": "CORE CONCEPT\nCounselling techniques is a focused concept within “Counselling: Process, skills, and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Counselling techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Counselling techniques as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCounselling techniques → define → distinguish → apply",
+              "content_notes": "ACADEMIC CORE\nCounselling techniques are methods used within a professional helping relationship. The sources include empathy, reflection and active listening in humanistic work, while other approaches use more directive or structured techniques.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTechnique must be interpreted within its counselling model and purpose.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16059,14 +15988,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nCounselling techniques is a focused concept within “Counselling: Process, skills, and techniques”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Counselling techniques\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Counselling techniques as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCounselling techniques are methods used within a professional helping relationship. The sources include empathy, reflection and active listening in humanistic work, while other approaches use more directive or structured techniques.\n\nKEY POINTS\n• definition and central mechanism\n• major named construct/stage/process where supported\n• relationship to the neighbouring concept\n\nDISTINCTION / CAUTION\nTechnique must be interpreted within its counselling model and purpose.\n\nSOURCE BASIS\n• Ciccarelli & White\n• PowerWithin Psychology\n\nSTUDY RULE\nUse the named theory, process or service function from the source before applying the concept.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Counselling techniques”.",
-                "List the key points associated with “Counselling techniques” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Counselling techniques”?"
+                "Define Counselling techniques using the source terminology.",
+                "State its central mechanism, stages or functions.",
+                "State the source-based distinction/caution for Counselling techniques."
               ],
-              "application_question": "Source-based check: Given a new question about “Counselling techniques”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Counselling techniques → define → distinguish → apply",
+              "application_question": "Source-based application: identify Counselling techniques in a new developmental/intervention scenario and justify the identification from the source-defined mechanism or function.",
+              "exam_takeaway": "Counselling techniques are methods used within a professional helping relationship",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -16076,10 +16005,8 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White",
+                "PowerWithin Psychology"
               ],
               "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
             }
