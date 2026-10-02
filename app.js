@@ -165,26 +165,40 @@ function learnPage(){
   }else r.hidden=true;
   draw('');
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
-}function renderNetCountdown(summary=progressSummary()){
+}function cycleForFallback(date){
+  const july=date.getMonth()===6;
+  return {label:'July '+date.getFullYear()+' cycle',dateLabel:july?'1 July '+date.getFullYear():'1 December '+date.getFullYear()};
+}
+function renderNetCountdown(summary=progressSummary()){
   const root=$('#netCountdown');
   if(!root)return;
   const coverage=summary.coverage||0,total=summary.total||0,started=summary.started||0;
   fetch('./exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
-    const exam=cfg?.next_exam;
-    if(!exam?.start_date){
-      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>DATE NOT ANNOUNCED</strong><p>The next examination date has not been confirmed in the schedule currently available to the site.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
-      return;
+    const configured=cfg?.next_exam||{},now=new Date();
+    let exam={...configured};
+    let target=exam.start_date?new Date(exam.start_date+'T00:00:00+05:30'):null;
+    if(!target||Number.isNaN(target.getTime())||target<=now){
+      const future=now.getMonth()<6?new Date(now.getFullYear(),6,1):new Date(now.getFullYear(),11,1);
+      if(future<=now)future.setFullYear(future.getFullYear()+1);
+      const cycle=cycleForFallback(future);
+      exam={label:'UGC NET '+cycle.label,start_date:future.getFullYear()+'-'+String(future.getMonth()+1).padStart(2,'0')+'-'+String(future.getDate()).padStart(2,'0'),status:'fallback'};
+      target=future;
     }
-    const target=new Date(exam.start_date+'T00:00:00+05:30');
+    const cycleLabel=String(exam.label||'UGC NET cycle').replace(/^UGC NET\s*/i,'');
+    const status=exam.status||(exam.tentative===true?'tentative':'confirmed');
+    const statusText=status==='confirmed'?'Confirmed date':status==='tentative'?'Tentative date':'Reference date';
     const update=()=>{
-      const now=new Date(),diff=Math.max(0,target-now),days=Math.ceil(diff/86400000);
-      const dateLabel=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(target);
-      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(exam.label||'UGC NET Examination')+' · Proposed start: '+dateLabel+(exam.tentative?' · Tentative NTA calendar date':'')+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+      const diff=Math.max(0,target-new Date()),days=Math.ceil(diff/86400000);
+      const dateText=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(target);
+      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(cycleLabel)+' · '+statusText+': '+dateText+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
     };
     update();
     clearInterval(window.__netCountdownTimer);window.__netCountdownTimer=setInterval(update,60000);
   }).catch(()=>{
-    root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">UGC NET COUNTDOWN</div><strong>CHECK SCHEDULE</strong><p>The latest examination schedule could not be loaded right now.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+    const now=new Date(),future=now.getMonth()<6?new Date(now.getFullYear(),6,1):new Date(now.getFullYear(),11,1);
+    if(future<=now)future.setFullYear(future.getFullYear()+1);
+    const cycle=cycleForFallback(future),days=Math.ceil(Math.max(0,future-now)/86400000);
+    root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>UGC NET '+esc(cycle.label)+' · Reference date: '+esc(cycle.dateLabel)+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
   });
 }
 function quickLearnItem(){

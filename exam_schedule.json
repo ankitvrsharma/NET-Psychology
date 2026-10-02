@@ -6,7 +6,7 @@
     "label": "UGC NET December 2026 cycle",
     "start_date": "2026-12-14",
     "end_date": "2026-12-19",
-    "tentative": true,
+    "status": "tentative",
     "buffer_dates": [
       "2026-12-20",
       "2026-12-21"
