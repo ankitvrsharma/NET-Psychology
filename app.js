@@ -174,7 +174,8 @@ function startPage(){
     if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
     const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
     localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING PROFILE</div><h2>Profile created.</h2><p>Your starting path will focus on understanding, active recall, application, practice and spaced revision.</p><div class="start-profile-actions"><a class="btn primary" href="'+((data.experience==='revision')?'revision.html':(data.experience==='prepared'||data.experience==='appeared')?'practice.html':'learn.html')+'">START MY LEARNING PATH →</a><a class="btn" href="learn.html">EXPLORE ALL UNITS</a></div></section>';
+    const startTarget=((data.experience==='revision')?'revision.html':(data.experience==='prepared'||data.experience==='appeared')?'practice.html':'learn.html');
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you understand concepts, strengthen recall, practise what you know, and return to important ideas at the right time.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
   });
   back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
   update();
@@ -311,12 +312,12 @@ function topicPage(){
 function practiceFor(u,t,m){
   return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u)&&Number(q.topic)===Number(t)&&Number(q.micro)===Number(m));
 }
-function mcqHTML(q,i,source='MCQ'){
+function mcqHTML(q,i,source='MCQ',showSource=true){
   const opts=q.options||q.o||[];
   const ans=Number.isInteger(q.answer)?q.answer:0;
   const tags=Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:[source];
   const provenance=tags.join(' · ');
-  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta"><span>${esc(provenance)}</span><span>Question ${i+1}</span></div><h3>${esc(q.question || q.q || '')}</h3><div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
+  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta">${showSource?`<span>${esc(provenance)}</span>`:""}<span>Question ${i+1}</span></div><h3>${esc(q.question || q.q || '')}</h3><div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
 }
 function mappedConcept(q){
   if(!q||q.unit==null||q.topic==null||q.micro==null||!D)return null;
@@ -468,8 +469,7 @@ function practice(){
   const sourceOptions=['all',...availableSources.filter(s=>s!=='all')];
   const unitOptions=units().map(u=>`<option value="${u.id}">Unit ${u.id} · ${esc(u.title)}</option>`).join('');
   const sourceLabel=s=>s==='all'?'All sources':s;
-  const sourceTip=availableSources.map(s=>`${s}: ${PRACTICE_QUESTIONS.filter(q=>(q.source_tags||['PYQ']).includes(s)).length}`).join(' · ');
-  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE · MAPPED MCQs</div><h1>Practise the questions linked to what you are learning.</h1><p>The practice bank keeps authentic PYQs separate from source-specific mappings. REVISATHON tags are shown only where the question has been explicitly mapped; no question is labelled from a source without provenance.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">SET UP YOUR SESSION</div><h2>Choose your question set.</h2></div><span class="practice-tip">${PRACTICE_QUESTIONS.length} questions · ${esc(sourceTip)}</span></div><div class="practice-toolbar"><label>Questions<select id="setSize"><option>5</option><option>10</option><option>20</option></select></label><label>Source<select id="practiceSource">${sourceOptions.map(s=>`<option value="${esc(s)}">${esc(sourceLabel(s))}</option>`).join('')}</select></label><label>Session<select id="session"><option value="all">All sessions</option>${sessions.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select></label><label>Unit<select id="practiceUnit"><option value="all">All units</option>${unitOptions}</select></label><label>Topic<select id="practiceTopic"><option value="all">All topics</option></select></label><button class="btn primary" id="startSet">Start Practice <span>→</span></button></div></section><div id="practiceSet"></div>`;
+  box.innerHTML=`<section class="page-hero practice-hero"><div class="eyebrow">PRACTICE</div><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">CHOOSE YOUR PRACTICE SET</div><h2>Set up your session.</h2><p class="practice-config-intro">Choose the size and scope of the test you want to take.</p></div></div><div class="practice-toolbar"><label>How many?<select id="setSize"><option>5</option><option>10</option><option>20</option></select></label><label>Question source<select id="practiceSource">${sourceOptions.map(s=>`<option value="${esc(s)}">${esc(sourceLabel(s))}</option>`).join('')}</select></label><label>Exam session<select id="session"><option value="all">All sessions</option>${sessions.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')}</select></label><label>Unit<select id="practiceUnit"><option value="all">All units</option>${unitOptions}</select></label><label>Topic<select id="practiceTopic"><option value="all">All topics</option></select></label><button class="btn primary" id="startSet" type="button">START PRACTICE →</button></div></section><div id="practiceSet"><section class="panel practice-ready"><h2>Ready when you are.</h2><p>Your questions will appear here after you start. You’ll see one question at a time so you can focus on the test.</p></section></div>`;
   const updateTopics=()=>{const id=$('#practiceUnit').value;const list=id==='all'?units().flatMap(u=>u.topics.map(t=>({u,t}))):units().filter(u=>String(u.id)===id).flatMap(u=>u.topics.map(t=>({u,t})));$('#practiceTopic').innerHTML='<option value="all">All topics</option>'+list.map(x=>`<option value="${x.u.id}-${x.t.id}">${esc(x.t.title)}</option>`).join('')};
   $('#practiceUnit').onchange=updateTopics;updateTopics();
   function draw(){
@@ -482,21 +482,36 @@ function practice(){
     const limit=+$('#setSize').value;
     const groupingKey=unit==='all'?'unit':topic==='all'?'topic':'random';
     qs=groupingKey==='random'?qs.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(qs,x=>groupingKey==='unit'?x.unit:x.topic,limit);
-    if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No mapped questions match these filters.</h2><p>Try another source, session, unit or topic.</p></section>';return}
-    $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">MAPPED QUESTION SESSION</div><h2 id="sessionTitle">Question 1 of ${qs.length}</h2></div><a class="text-link" href="practice.html">Reset</a></div><div class="session-progress"><i id="sessionProgress" style="width:${100/qs.length}%"></i></div><div class="session-questions">${qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join('')}</div><div class="practice-complete hidden" id="practiceComplete"><div class="eyebrow">SESSION COMPLETE</div><h2 id="practiceScore"></h2><p id="practiceSummary"></p><div class="complete-actions"><a class="btn primary" href="practice.html">Try another set <span>→</span></a><a class="btn" href="revision.html">Go to Revision</a></div></div></section>`;
-    const cards=$$('#practiceSet .mcq');
-    cards.forEach((card,i)=>{if(i!==0)card.classList.add('session-hidden');const next=document.createElement('button');next.className='btn primary mcq-next';next.textContent=i===cards.length-1?'Finish Session →':'Next Question →';card.appendChild(next);next.hidden=true});
-    wireMCQ($('#practiceSet'),null,qs);
-    let correct=0;
-    cards.forEach((card,i)=>{
-      card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{if(card.dataset.done)return;card.dataset.done='1';if(+btn.dataset.a===+card.dataset.answer)correct++;card.querySelector('.mcq-next').hidden=false}));
-      card.querySelector('.mcq-next').onclick=()=>{if(i<cards.length-1){card.classList.add('session-hidden');cards[i+1].classList.remove('session-hidden');$('#sessionTitle').textContent=`Question ${i+2} of ${cards.length}`;$('#sessionProgress').style.width=`${((i+2)/cards.length)*100}%`;window.scrollTo({top:document.querySelector('.practice-session').offsetTop-20,behavior:'smooth'})}else{$('#sessionProgress').style.width='100%';$('#sessionTitle').textContent='Session complete';$('#practiceComplete').classList.remove('hidden');$('#practiceScore').textContent=`${correct} of ${cards.length} correct · ${Math.round(correct/cards.length*100)}%`;const missed=cards.length-correct;$('#practiceSummary').textContent=missed?`${missed} concept${missed===1?'':'s'} may need another pass. Use Revision to return to weak areas.`:'Strong session. Keep the concepts durable with spaced revision.';card.querySelector('.mcq-next').hidden=true}};
-    });
+    if(!qs.length){$('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>We couldn’t find enough questions for this set.</h2><p>Try widening your selection and start again.</p></section>';return}
+    let current=0,correct=0,answered=false;
+    const renderQuestion=()=>{
+      const q=qs[current];
+      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><a class="text-link" href="practice.html">Start over</a></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div></section>`;
+      const card=$('#practiceSet .mcq');
+      wireMCQ($('#practiceSet'),null,[q]);
+      answered=false;
+      card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
+        if(answered)return;
+        answered=true;
+        if(+btn.dataset.a===+card.dataset.answer)correct++;
+        const next=document.createElement('button');
+        next.className='btn primary mcq-next';
+        next.textContent=current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →';
+        card.appendChild(next);
+        next.onclick=()=>{
+          if(current<qs.length-1){current++;window.scrollTo({top:document.querySelector('.practice-session').offsetTop-20,behavior:'smooth'});renderQuestion();}
+          else renderComplete();
+        };
+      }));
+    };
+    const renderComplete=()=>{
+      const percent=Math.round(correct/qs.length*100);
+      $('#practiceSet').innerHTML=`<section class="practice-complete card"><div class="eyebrow">PRACTICE COMPLETE</div><h2>You completed the practice set.</h2><p class="practice-score">${correct} of ${qs.length} correct · ${percent}%</p><p>${correct===qs.length?'You answered every question correctly.':`${qs.length-correct} question${qs.length-correct===1?'':'s'} may need another look. Review the explanations to see what to work on next.`}</p><div class="complete-actions"><a class="btn primary" href="practice.html">TRY ANOTHER SET →</a></div></section>`;
+    };
+    renderQuestion();
   }
   $('#startSet').onclick=draw;
-  draw();
-}
-function revision(){const items=dueItems(),shown=items.slice(0,5);$('#revisionApp').innerHTML=`<section class="page-hero"><div class="eyebrow">REVISION</div><h1>Bring earlier learning back to mind.</h1><p>Start with what is due. Try to recall it before looking back, notice what you missed, and strengthen the weak parts.</p></section><div class="revision-summary"><div><strong>${items.length}</strong><span>due now</span></div><div><strong>${Math.min(items.length,5)}</strong><span>in today’s queue</span></div><div><strong>${all().filter(x=>getP(x.k).status==='MASTERED').length}</strong><span>mastered</span></div></div>${shown.length?`<section class="revision-list">${shown.map(x=>{const p=getP(x.k),late=(Date.now()-new Date(p.next).getTime())/86400000;return `<article class="revision-item"><div><span class="status ${p.status.toLowerCase()}">${p.status}</span><h3>${esc(x.m.title)}</h3><p>${esc(x.t.title)} · Unit ${x.u.id}</p><small>${late>0?`Overdue by ${Math.floor(late)} day${Math.floor(late)===1?'':'s'}`:'Due today'}${p.rating?` · Last: ${p.rating}`:''}</small></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">Start Recall →</a></article>`}).join('')}</section>`:'<section class="panel empty"><h2>No revisions due</h2><p>Your next scheduled return will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>'}<section class="panel revision-rules"><h2>A simple way to revise</h2><ul><li><b>Again</b> — rebuild the idea before moving on.</li><li><b>Hard</b> — you remembered it, but with effort.</li><li><b>Good</b> — you recalled it successfully.</li><li><b>Easy</b> — you could bring it back quickly.</li><li>If you missed a revision, simply return to the concept and rebuild from your last successful recall.</li></ul></section>`}
+}function revision(){const items=dueItems(),shown=items.slice(0,5);$('#revisionApp').innerHTML=`<section class="page-hero"><div class="eyebrow">REVISION</div><h1>Bring earlier learning back to mind.</h1><p>Start with what is due. Try to recall it before looking back, notice what you missed, and strengthen the weak parts.</p></section><div class="revision-summary"><div><strong>${items.length}</strong><span>due now</span></div><div><strong>${Math.min(items.length,5)}</strong><span>in today’s queue</span></div><div><strong>${all().filter(x=>getP(x.k).status==='MASTERED').length}</strong><span>mastered</span></div></div>${shown.length?`<section class="revision-list">${shown.map(x=>{const p=getP(x.k),late=(Date.now()-new Date(p.next).getTime())/86400000;return `<article class="revision-item"><div><span class="status ${p.status.toLowerCase()}">${p.status}</span><h3>${esc(x.m.title)}</h3><p>${esc(x.t.title)} · Unit ${x.u.id}</p><small>${late>0?`Overdue by ${Math.floor(late)} day${Math.floor(late)===1?'':'s'}`:'Due today'}${p.rating?` · Last: ${p.rating}`:''}</small></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">Start Recall →</a></article>`}).join('')}</section>`:'<section class="panel empty"><h2>No revisions due</h2><p>Your next scheduled return will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>'}<section class="panel revision-rules"><h2>A simple way to revise</h2><ul><li><b>Again</b> — rebuild the idea before moving on.</li><li><b>Hard</b> — you remembered it, but with effort.</li><li><b>Good</b> — you recalled it successfully.</li><li><b>Easy</b> — you could bring it back quickly.</li><li>If you missed a revision, simply return to the concept and rebuild from your last successful recall.</li></ul></section>`}
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
   const attention=all().filter(x=>{const p=ps[x.k];return p?.confidence==='low'||p?.rating==='again'||(p?.next&&new Date(p.next)<=new Date())}).slice(0,6);
