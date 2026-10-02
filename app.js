@@ -597,7 +597,7 @@ function practice(){
     }
     const mode=$('#practiceMode').value,timed=mode==='timed';
     const totalSeconds=timed?Math.round(qs.length*(180*60/100)):0;
-    let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false;
+    let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false,answers={};
     const recordPracticeAnswer=wasCorrect=>{
       const s=state();
       s._practiceHistory=[...(s._practiceHistory||[]),{correct:wasCorrect,at:new Date().toISOString()}].slice(-200);
@@ -628,29 +628,26 @@ function practice(){
     };
     const renderQuestion=()=>{
       const q=qs[current];
-      answered=false;
-      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div></section>`;
+      answered=Boolean(answers[current]);
+      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div><div class="session-navigation"><button class="btn" id="prevQuestion" type="button"${current===0?' disabled':''}>← PREVIOUS</button><button class="btn primary" id="nextQuestion" type="button"${answered?'':' disabled'}>${current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →'}</button></div></section>`;
       const card=$('#practiceSet .mcq');
+      const prevBtn=$('#prevQuestion'),nextBtn=$('#nextQuestion');
+      if(answered){card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const fb=card.querySelector('.mcq-feedback'),a=+card.dataset.answer;fb.hidden=false;fb.innerHTML=answers[current].correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+a)}. ${esc((q.options||q.o)[a])}</b><br>${esc(contextualExplanation(q))}`}
       card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
         if(answered||ended)return;
         answered=true;
         const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
+        answers[current]={chosen,correct:wasCorrect};
         if(wasCorrect)correct++;
         recordPracticeAnswer(wasCorrect);
         card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
         const fb=card.querySelector('.mcq-feedback');
         fb.hidden=false;
         fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;
-        const next=document.createElement('button');
-        next.className='btn primary mcq-next';
-        next.textContent=current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →';
-        card.appendChild(next);
-        next.onclick=()=>{
-          if(ended)return;
-          if(current<qs.length-1){current++;window.scrollTo({top:document.querySelector('.practice-session').offsetTop-20,behavior:'smooth'});renderQuestion();}
-          else renderComplete(false);
-        };
+        nextBtn.disabled=false;
       });
+      prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
+      nextBtn.onclick=()=>{if(ended||!answers[current])return;if(current<qs.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else renderComplete(false)};
     };
     renderQuestion();
     if(timed){
