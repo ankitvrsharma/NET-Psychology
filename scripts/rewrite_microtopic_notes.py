@@ -49,3 +49,5 @@ Path('data.js').write_text('window.NETPSY_DATA = '+raw+';\n',encoding='utf-8')
 version=hashlib.sha256(raw.encode()).hexdigest()[:16]
 Path('content-version.js').write_text('window.NETPSY_DATA_VERSION = '+json.dumps(version)+';\n',encoding='utf-8')
 print(f'Rewrote {count} micro-topics; content version {version}')
+
+# Trigger rewrite workflow after workflow installation.
