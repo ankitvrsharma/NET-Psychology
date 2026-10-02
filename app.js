@@ -165,38 +165,41 @@ function learnPage(){
   }else r.hidden=true;
   draw('');
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
-}function renderNetCountdown(){
+}function renderNetCountdown(summary=progressSummary()){
   const root=$('#netCountdown');
   if(!root)return;
+  const coverage=summary.coverage||0,total=summary.total||0,started=summary.started||0;
   fetch('./exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
     const exam=cfg?.next_exam;
     if(!exam?.start_date){
-      root.innerHTML='<div class="net-countdown-inner"><div><div class="eyebrow">UGC NET COUNTDOWN</div><strong>DATE NOT ANNOUNCED</strong><p>NTA has not published a confirmed examination date for the next UGC NET cycle yet.</p></div><a class="net-countdown-source" href="'+esc(cfg?.source_url||'https://www.nta.ac.in/NoticeBoardArchive')+'" target="_blank" rel="noopener">NTA source ↗</a></div>';
+      root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">UGC NET COUNTDOWN</div><strong>DATE NOT ANNOUNCED</strong><p>The next examination date has not been confirmed in the schedule currently available to the site.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
       return;
     }
     const target=new Date(exam.start_date+'T00:00:00+05:30');
     const update=()=>{
       const now=new Date(),diff=Math.max(0,target-now),days=Math.ceil(diff/86400000);
       const dateLabel=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(target);
-      root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-icon" aria-hidden="true">◷</div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(exam.label||'UGC NET Examination')+' · Proposed start: '+dateLabel+(exam.tentative?' · Tentative NTA calendar date':'')+'</p></div><a class="net-countdown-source" href="'+esc(cfg.source_url||'https://www.nta.ac.in/NoticeBoardArchive')+'" target="_blank" rel="noopener">Official NTA ↗</a></div>';
+      root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(exam.label||'UGC NET Examination')+' · Proposed start: '+dateLabel+(exam.tentative?' · Tentative NTA calendar date':'')+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
     };
     update();
     clearInterval(window.__netCountdownTimer);window.__netCountdownTimer=setInterval(update,60000);
-  }).catch(()=>{root.innerHTML='<div class="net-countdown-inner"><div><div class="eyebrow">UGC NET COUNTDOWN</div><strong>CHECKING NTA DATE…</strong><p>The latest NTA schedule could not be loaded right now. Please check the official notice.</p></div><a class="net-countdown-source" href="https://www.nta.ac.in/NoticeBoardArchive" target="_blank" rel="noopener">NTA source ↗</a></div>'});
+  }).catch(()=>{
+    root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">UGC NET COUNTDOWN</div><strong>CHECK SCHEDULE</strong><p>The latest examination schedule could not be loaded right now.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+  });
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
-  const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0];
+  const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   if(hasStarted&&resume){
     hero.innerHTML='<div class="eyebrow">YOUR NEXT STEP</div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Pick up where you left off. Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id)+'">CONTINUE LEARNING →</a></div>';
   }else{
-    hero.innerHTML='<div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Start with one concept at a time. Learn at your own pace, build understanding, practise recall, and return to concepts when they need revision.</p><div class="hero-actions"><a class="btn primary" href="start.html">START LEARNING →</a></div>';
+    hero.innerHTML='<div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn one concept · Recall it · Apply it in your daily life · Revisit it when needed.</p><div class="hero-actions"><a class="btn primary" href="start.html">START LEARNING →</a></div>';
   }
-  renderNetCountdown();
+  renderNetCountdown(summary);
   const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
   const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Keep your Psychology learning moving every day. Learn something new, revisit concepts that need another look, or practise with MCQs — even a small study session keeps your learning going.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
-  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from understanding to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Understand</b><span>Build the conceptual framework.</span></div><div><b>Recall</b><span>Recall without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Revise</b><span>Return to it at spaced intervals.</span></div></div>`;
+  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Build the conceptual framework.</span></div><div><b>Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Spaced Revision</b><span>Return to it at spaced intervals.</span></div></div>`;
 }
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';

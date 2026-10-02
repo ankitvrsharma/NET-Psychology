@@ -462,3 +462,120 @@ body[data-page="home"] .net-countdown-copy strong span{font-size:12px;letter-spa
 body[data-page="home"] .net-countdown-copy p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
 body[data-page="home"] .net-countdown-source{flex:0 0 auto;color:var(--blue);font-size:11px;font-weight:800;text-decoration:none}
 @media(max-width:620px){body[data-page="home"] .net-countdown-inner{align-items:flex-start;gap:12px;padding:16px}.net-countdown-icon{width:38px!important;height:38px!important;flex-basis:38px!important;font-size:18px!important}body[data-page="home"] .net-countdown-copy strong{font-size:25px}body[data-page="home"] .net-countdown-source{display:none}}
+
+/* Homepage v2: stronger exam urgency and learner progress */
+body[data-page="home"] .hero p{
+  max-width:720px;
+  font-size:17px;
+  line-height:1.65;
+}
+body[data-page="home"] .net-countdown{
+  margin:4px 0 26px;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(18,40,79,.10);
+}
+body[data-page="home"] .net-countdown-inner{
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(260px,.7fr);
+  align-items:stretch;
+  gap:0;
+  padding:0;
+}
+body[data-page="home"] .net-countdown-copy{
+  padding:25px 28px;
+}
+body[data-page="home"] .net-countdown-copy strong{
+  font-size:clamp(34px,4.2vw,48px);
+  letter-spacing:-.04em;
+  margin:4px 0 4px;
+}
+body[data-page="home"] .net-countdown-copy strong span{
+  font-size:13px;
+  letter-spacing:.08em;
+}
+body[data-page="home"] .net-countdown-copy p{
+  margin:5px 0 0;
+  font-size:12px;
+}
+body[data-page="home"] .syllabus-coverage{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:22px 26px;
+  background:#f7f9ff;
+  border-left:1px solid var(--line);
+}
+body[data-page="home"] .syllabus-coverage strong{
+  color:var(--navy);
+  font-size:34px;
+  line-height:1.05;
+  letter-spacing:-.03em;
+  margin:3px 0 8px;
+}
+body[data-page="home"] .syllabus-coverage span{
+  color:var(--muted);
+  font-size:11px;
+  margin-top:2px;
+}
+body[data-page="home"] .coverage-bar{
+  height:8px;
+  background:#e4e9f3;
+  border-radius:99px;
+  overflow:hidden;
+}
+body[data-page="home"] .coverage-bar i{
+  display:block;
+  height:100%;
+  width:0;
+  background:var(--blue);
+  border-radius:inherit;
+  transition:width .25s ease;
+}
+body[data-page="home"] .today-section{
+  margin-top:20px;
+}
+body[data-page="home"] .study-focus-enhanced{
+  padding:25px 28px;
+}
+body[data-page="home"] .study-focus-main{
+  max-width:850px;
+}
+body[data-page="home"] .daily-focus-actions{
+  gap:9px;
+}
+body[data-page="home"] .daily-focus-card{
+  min-height:62px;
+}
+body[data-page="home"] .learning-approach{
+  margin-top:54px!important;
+}
+@media(max-width:720px){
+  body[data-page="home"] .net-countdown-inner{
+    grid-template-columns:1fr;
+  }
+  body[data-page="home"] .net-countdown-copy{
+    padding:22px 20px 18px;
+  }
+  body[data-page="home"] .syllabus-coverage{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:18px 20px 20px;
+  }
+}
+@media(max-width:520px){
+  body[data-page="home"] .hero{
+    padding-top:30px;
+  }
+  body[data-page="home"] .hero h1{
+    font-size:36px;
+  }
+  body[data-page="home"] .hero p{
+    font-size:15px;
+  }
+  body[data-page="home"] .net-countdown-copy strong{
+    font-size:32px;
+  }
+  body[data-page="home"] .study-focus-enhanced{
+    padding:20px;
+  }
+}
