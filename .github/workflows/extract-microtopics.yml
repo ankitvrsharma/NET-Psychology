@@ -1,0 +1,45 @@
+name: Extract Microtopics
+on:
+  push:
+    paths-ignore:
+      - "_work/microtopics.json"
+      - "_work/microtopics.md"
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract
+        run: |
+          mkdir -p _work
+          python - <<'PY'
+          import json
+          d=json.load(open("data.json",encoding="utf-8"))
+          out=[]
+          for u in d.get("units",[]):
+            for t in u.get("topics",[]):
+              for m in t.get("microtopics",[]):
+                out.append({
+                  "unit":u.get("title") or u.get("name"),
+                  "topic":t.get("title") or t.get("name"),
+                  "id":m.get("id"),
+                  "title":m.get("title"),
+                  "content_notes":m.get("content_notes",""),
+                  "deep_learning":m.get("deep_learning",""),
+                  "exam_takeaway":m.get("exam_takeaway",""),
+                  "retrieval_questions":m.get("retrieval_questions",[]),
+                  "application_question":m.get("application_question","")
+                })
+          json.dump(out,open("_work/microtopics.json","w",encoding="utf-8"),ensure_ascii=False,indent=2)
+          open("_work/microtopics.md","w",encoding="utf-8").write("\n".join(f'{i+1}. {x["unit"]} | {x["topic"]} | {x["id"]} | {x["title"]}' for i,x in enumerate(out)))
+          print("microtopics:",len(out))
+          PY
+      - name: Commit extraction
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _work/microtopics.json _work/microtopics.md
+          git diff --cached --quiet || git commit -m "chore: extract microtopic index"
+          git push
