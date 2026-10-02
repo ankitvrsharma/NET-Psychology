@@ -496,9 +496,8 @@ function micro(){
   const detailedHTML=detailedBlocks.map(x=>'<section class="micro-detail-block"><div class="eyebrow">'+esc(x[0])+'</div><p>'+esc(x[1])+'</p></section>').join('');
 
 
-  $('#microPage').innerHTML=`<div class="breadcrumbs"><span>${esc(m.title)}</span></div>
-  <section class="micro-hero">
-    <div><div class="eyebrow">MICRO-TOPIC ${m.id}</div><h1>${esc(m.title)}</h1><p>${esc(t.title)}</p></div>
+  $('#microPage').innerHTML=`<section class="micro-hero">
+    <div><div class="eyebrow">MICRO-TOPIC ${m.id}</div><h1>${esc(m.title)}</h1><a class="micro-topic-link" href="topic.html?unit=${u.id}&topic=${t.id}">${esc(t.title)} <span>→</span></a></div>
     <div class="status-box"><span class="status ${p.status.toLowerCase()}">${p.status}</span><strong>${p.next?'Next revision '+date(p.next):'Ready to learn'}</strong><small>${p.rating?`Last rating: ${p.rating}`:'No revision scheduled yet'}</small></div>
   </section>
   <div class="session-shell">
@@ -553,10 +552,14 @@ function micro(){
         </section>
       </main>
 
-      <aside class="content-stack">
-        <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Return later and test the delay</h2><p class="muted">Use this as a delayed-retention checkpoint. Return later—without rereading first—and see whether you can still explain and use the idea. It records that the knowledge survived a delay, not simply that you understood it once.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
-        <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:''}${next?`<a href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:''}<a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a></div></section>
-      </aside>
+      <section class="micro-next-nav card" aria-label="Micro-topic navigation">
+        <div class="eyebrow">CONTINUE LEARNING</div>
+        <div class="micro-next-links">
+          ${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:""}
+          <a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a>
+          ${next?`<a class="primary" href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:""}
+        </div>
+      </section>
     </div>
   </div>`;
 
@@ -600,14 +603,6 @@ function micro(){
     const patch=setDue(k,b.dataset.rating);setP(k,patch);
     $('#scheduleResult').innerHTML=patch.lateReset?`<b>Revision reset to your last successful checkpoint.</b> Next revision: ${date(patch.next)}`:`<b>Next revision scheduled.</b> ${patch.next?date(patch.next):'today'}`;
   });
-  const masterBtn=$('#master');
-  if(!(p.understanding&&p.retrieval&&p.application&&p.revisionCount>0))masterBtn.disabled=true;
-  masterBtn.onclick=()=>{
-    const current=getP(k);
-    if(!(current.understanding&&current.retrieval&&current.application&&current.revisionCount>0))return;
-    setP(k,{status:'MASTERED',delayedRetention:true,masteredAt:new Date().toISOString()});
-    $('#masterResult').textContent='Delayed retention recorded. You can still revisit this concept whenever it needs more work.'
-  }
 }
 function practice(){
   const box=$('#practiceApp');
