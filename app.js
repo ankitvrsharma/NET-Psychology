@@ -243,9 +243,9 @@ function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   if(hasStarted&&resume){
-    hero.innerHTML='<div class="eyebrow">YOUR NEXT STEP</div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Pick up where you left off. Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id)+'">CONTINUE LEARNING →</a></div>';
+    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">YOUR NEXT STEP</div></div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="hero-cta" href="microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id)+'"><span>CONTINUE LEARNING</span><b>→</b></a></div>';
   }else{
-    hero.innerHTML='<div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn one concept · Recall it · Apply it in your daily life · Revisit it when needed.</p><div class="hero-actions"><a class="btn primary" href="start.html">START LEARNING →</a></div>';
+    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn one concept · Recall it · Apply it in your daily life · Revisit it when needed.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START YOUR LEARNING</span><b>→</b></a></div>';
   }
   renderNetCountdown(summary);
   const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
