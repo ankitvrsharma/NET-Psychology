@@ -169,13 +169,48 @@ function learnPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
   if(!root)return;
-  const first=units()[0];
-  const topic=first?.topics?.[0];
-  const micro=topic?.microtopics?.[0];
-  const href=micro ? 'microtopic.html?unit='+first.id+'&topic='+topic.id+'&micro='+micro.id : 'learn.html';
-  root.innerHTML='<section class="page-hero start-hero"><div class="eyebrow">START LEARNING</div><h1>Build your Psychology knowledge one concept at a time.</h1><p>Start with understanding, then retrieve, apply, practise, and schedule your next revision.</p><div class="hero-actions"><a class="hero-cta" href="'+href+'"><span>START WITH THE FIRST CONCEPT</span><b>→</b></a><a class="btn" href="learn.html">EXPLORE ALL UNITS</a></div></section><section class="start-flow card"><div class="eyebrow">YOUR LEARNING FLOW</div><div class="learning-steps"><div><b>1 · Understand</b><span>Build the conceptual framework.</span></div><div><b>2 · Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>3 · Apply</b><span>Use the idea in a situation.</span></div><div><b>4 · Practice</b><span>Answer mapped questions and PYQs.</span></div><div><b>5 · Schedule Revision</b><span>Return at a useful interval.</span></div></div></section>';
-}
-function cycleForFallback(date){
+  root.innerHTML=\`<section class="start-hero"><div class="eyebrow">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>A short profile helps us shape your starting experience. You can change your answers later.</p></section>
+  <form class="start-form" id="startForm">
+    <div class="start-progress"><span>1 of 4</span><i><b style="width:25%"></b></i></div>
+    <div class="start-step active" data-step="1"><fieldset><legend>1. Where are you starting from?</legend>
+      <label><input type="radio" name="experience" value="new-net" required><span>I’m new to UGC NET Psychology</span></label>
+      <label><input type="radio" name="experience" value="psych-new-net"><span>I know Psychology but I’m new to NET preparation</span></label>
+      <label><input type="radio" name="experience" value="prepared"><span>I’ve prepared for NET before</span></label>
+      <label><input type="radio" name="experience" value="appeared"><span>I’ve appeared for NET before</span></label>
+      <label><input type="radio" name="experience" value="revision"><span>I mainly need revision and practice</span></label>
+    </fieldset></div>
+    <div class="start-step" data-step="2"><fieldset><legend>2. How confident do you currently feel?</legend>
+      <label><input type="radio" name="confidence" value="1" required><span>I struggle with most concepts</span></label>
+      <label><input type="radio" name="confidence" value="2"><span>I know some basics</span></label>
+      <label><input type="radio" name="confidence" value="3"><span>I understand many topics</span></label>
+      <label><input type="radio" name="confidence" value="4"><span>I’m fairly confident</span></label>
+      <label><input type="radio" name="confidence" value="5"><span>I can explain and apply most concepts</span></label>
+    </fieldset></div>
+    <div class="start-step" data-step="3"><fieldset><legend>3. What are your biggest challenges?</legend><p class="start-help">Choose up to 2.</p>
+      <label><input type="checkbox" name="challenge" value="0"><span>Understanding difficult concepts</span></label><label><input type="checkbox" name="challenge" value="1"><span>Remembering what I study</span></label><label><input type="checkbox" name="challenge" value="2"><span>Confusing similar theories or concepts</span></label><label><input type="checkbox" name="challenge" value="3"><span>Applying concepts to situations</span></label><label><input type="checkbox" name="challenge" value="4"><span>Solving MCQs and PYQs</span></label><label><input type="checkbox" name="challenge" value="5"><span>Revising consistently</span></label><label><input type="checkbox" name="challenge" value="6"><span>Knowing what to study next</span></label><label><input type="checkbox" name="challenge" value="7"><span>Managing the large syllabus</span></label>
+    </fieldset></div>
+    <div class="start-step" data-step="4"><fieldset><legend>4. What helps you learn best?</legend><p class="start-help">Choose up to 3. These are preferences, not fixed learning styles.</p>
+      <label><input type="checkbox" name="preference" value="0"><span>Clear explanations</span></label><label><input type="checkbox" name="preference" value="1"><span>Examples and applications</span></label><label><input type="checkbox" name="preference" value="2"><span>Active-recall questions</span></label><label><input type="checkbox" name="preference" value="3"><span>MCQs and PYQs</span></label><label><input type="checkbox" name="preference" value="4"><span>Visual summaries</span></label><label><input type="checkbox" name="preference" value="5"><span>Short revision notes</span></label><label><input type="checkbox" name="preference" value="6"><span>Comparisons between similar concepts</span></label>
+    </fieldset></div>
+    <div class="start-actions"><button class="btn" type="button" id="startBack" hidden>← Back</button><button class="btn primary" type="button" id="startNext">Next →</button></div>
+  </form>\`;
+  const form=$('#startForm'),steps=$('.start-step'),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
+  const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
+  form.addEventListener('change',e=>{
+    if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
+    if(e.target.name==='preference' && form.querySelectorAll('input[name="preference"]:checked').length>3)e.target.checked=false;
+  });
+  const valid=()=>{const active=steps[current]; if(current<2)return !!active.querySelector('input[required]:checked'); return current===2?form.querySelectorAll('input[name="challenge"]:checked').length>0:form.querySelectorAll('input[name="preference"]:checked').length>0;};
+  next.addEventListener('click',()=>{
+    if(!valid()){alert(current===2?'Choose at least one challenge.':current===3?'Choose at least one preference.':'Please select an answer to continue.');return;}
+    if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
+    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
+    localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING PROFILE</div><h2>Profile created.</h2><p>Your starting path will focus on understanding, active recall, application, practice and spaced revision.</p><div class="start-profile-actions"><a class="btn primary" href="'+((data.experience==='revision')?'revision.html':(data.experience==='prepared'||data.experience==='appeared')?'practice.html':'learn.html')+'">START MY LEARNING PATH →</a><a class="btn" href="learn.html">EXPLORE ALL UNITS</a></div></section>';
+  });
+  back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
+  update();
+}function cycleForFallback(date){
   const july=date.getMonth()===6;
   return {label:'July '+date.getFullYear()+' cycle',dateLabel:july?'1 July '+date.getFullYear():'1 December '+date.getFullYear()};
 }
