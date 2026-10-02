@@ -172,14 +172,14 @@ function learnPage(){
   fetch('./exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
     const exam=cfg?.next_exam;
     if(!exam?.start_date){
-      root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">UGC NET COUNTDOWN</div><strong>DATE NOT ANNOUNCED</strong><p>The next examination date has not been confirmed in the schedule currently available to the site.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>DATE NOT ANNOUNCED</strong><p>The next examination date has not been confirmed in the schedule currently available to the site.</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
       return;
     }
     const target=new Date(exam.start_date+'T00:00:00+05:30');
     const update=()=>{
       const now=new Date(),diff=Math.max(0,target-now),days=Math.ceil(diff/86400000);
       const dateLabel=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(target);
-      root.innerHTML='<div class="net-countdown-inner"><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(exam.label||'UGC NET Examination')+' · Proposed start: '+dateLabel+(exam.tentative?' · Tentative NTA calendar date':'')+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
+      root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT UGC NET</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>'+esc(exam.label||'UGC NET Examination')+' · Proposed start: '+dateLabel+(exam.tentative?' · Tentative NTA calendar date':'')+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
     };
     update();
     clearInterval(window.__netCountdownTimer);window.__netCountdownTimer=setInterval(update,60000);
@@ -189,21 +189,41 @@ function learnPage(){
 }
 function quickLearnItem(){
   const pool=[];
+  const classify=(title,text)=>{
+    const s=(title+' '+text).toLowerCase();
+    if(/\b(theory|model)\b/.test(s))return 'THEORY';
+    if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return 'SCHOOL';
+    if(/\b(approach|therapy)\b/.test(s))return 'APPROACH';
+    if(/\b(psychologist|theorist|contribution)\b/.test(s))return 'PSYCHOLOGIST';
+    if(/\b(timeline|history|development of|origin|emergence)\b/.test(s))return 'TIMELINE';
+    if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return 'FINDING';
+    if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return 'DISTINCTION';
+    return 'CONCEPT';
+  };
+  const clean=x=>String(x||'').replace(/^[-•*]\s*/,'').replace(/\s+/g,' ').trim();
   units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{
     const exam=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');
     if(!exam)return;
-    const core=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||'';
-    const points=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
-    if(core||points.length)pool.push({u,t,m,core,points});
+    const core=clean(section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||'');
+    const points=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(clean).filter(Boolean);
+    if(core||points.length){
+      const sourceText=(core+' '+points.slice(0,3).join(' ')).trim();
+      pool.push({u,t,m,category:classify(m.title,sourceText),core,points,score:exam.length+core.length});
+    }
   })));
   if(!pool.length)return null;
   let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_seen')||'[]')}catch(e){}
   const unseen=pool.filter(x=>!seen.includes(x.u.id+'-'+x.t.id+'-'+x.m.id));
-  const choices=unseen.length?unseen:pool;
-  const item=choices[Math.floor(Math.random()*choices.length)],key=item.u.id+'-'+item.t.id+'-'+item.m.id;
+  const choices=(unseen.length?unseen:pool).sort((a,b)=>b.score-a.score);
+  const top=choices.slice(0,Math.min(24,choices.length));
+  const item=top[Math.floor(Math.random()*top.length)];
+  const key=item.u.id+'-'+item.t.id+'-'+item.m.id;
   seen=[key,...seen.filter(x=>x!==key)].slice(0,Math.min(30,pool.length));
   try{sessionStorage.setItem('netpsych_quick_seen',JSON.stringify(seen))}catch(e){}
-  return {title:item.m.title,body:String(item.points[0]||item.core).replace(/^[-•]\s*/,'').trim(),unit:item.u.id,topic:item.t.id,micro:item.m.id};
+  const detail=item.points.slice(0,2).join(' ');
+  const body=clean(item.core||detail);
+  const secondary=clean(detail&&detail!==body?detail:'');
+  return {title:item.m.title,category:item.category,body:body.slice(0,420),secondary:secondary.slice(0,360),unit:item.u.id,topic:item.t.id,micro:item.m.id};
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
@@ -218,7 +238,7 @@ function home(){
   const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a purpose: learn a concept, strengthen your recall, or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
-  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-label"><span class="eyebrow">QUICK LEARN</span><span>ONE CARD · ONE IDEA</span></div><div class="quick-learn-content"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.body)+'</p></div><a class="quick-learn-link" href="microtopic.html?unit='+encodeURIComponent(quick.unit)+'&topic='+encodeURIComponent(quick.topic)+'&micro='+encodeURIComponent(quick.micro)+'">Explore this concept →</a></section>';
+  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.body)+'</p>'+(quick.secondary?'<p class="quick-learn-secondary">'+esc(quick.secondary)+'</p>':'')+'</div><a class="quick-learn-link" href="microtopic.html?unit='+encodeURIComponent(quick.unit)+'&topic='+encodeURIComponent(quick.topic)+'&micro='+encodeURIComponent(quick.micro)+'">Explore this concept →</a></section>';
   const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Build the conceptual framework.</span></div><div><b>Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Spaced Revision</b><span>Return to it at spaced intervals.</span></div></div>`;
 }
 function daily3(){
