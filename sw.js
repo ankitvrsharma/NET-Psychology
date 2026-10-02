@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v25-homefix10';
+const CACHE='netpsych-shell-v26-robust1';
 const SHELL=[
   './',
   './index.html',
@@ -13,6 +13,7 @@ const SHELL=[
   './daily3.html',
   './style.css',
   './app.js',
+  './data.js',
   './data.json',
   './exam_schedule.json',
   './content-version.js',
@@ -33,13 +34,15 @@ self.addEventListener('fetch',event=>{
   const req=event.request;
   if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;
   const url=new URL(req.url);
-  if(url.pathname.endsWith('.json')||url.pathname.endsWith('.html')){
-    event.respondWith(fetch(req).then(res=>{
-      const copy=res.clone(); caches.open(CACHE).then(c=>c.put(req,copy)); return res;
+  const networkFirst=/\.(?:html?|json|js|css|webmanifest)$/i.test(url.pathname);
+  if(networkFirst){
+    event.respondWith(fetch(req,{cache:'no-store'}).then(res=>{
+      if(!res.ok) throw new Error('Network response '+res.status);
+      const copy=res.clone(); event.waitUntil(caches.open(CACHE).then(c=>c.put(req,copy))); return res;
     }).catch(()=>caches.match(req,{ignoreSearch:true})));
     return;
   }
   event.respondWith(caches.match(req,{ignoreSearch:true}).then(cached=>cached||fetch(req).then(res=>{
-    const copy=res.clone(); caches.open(CACHE).then(c=>c.put(req,copy)); return res;
+    const copy=res.clone(); event.waitUntil(caches.open(CACHE).then(c=>c.put(req,copy))); return res;
   })));
 });
