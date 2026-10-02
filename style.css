@@ -806,3 +806,52 @@ body[data-page="home"] .quick-flow>i{align-self:center;color:var(--blue);font-st
   .active-recall-matching label,.active-recall-ordering label{grid-template-columns:1fr}
   body[data-page="micro"] .micro-resource-actions{grid-template-columns:1fr}
 }
+
+
+/* Micro-topic v7 — explanation-first single-column layout */
+body[data-page="micro"] .content-layout{grid-template-columns:minmax(0,1fr);gap:16px}
+body[data-page="micro"] .micro-hero{padding-bottom:22px}
+body[data-page="micro"] .micro-topic-link{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--blue);
+  font-size:14px;
+  font-weight:800;
+  text-decoration:none;
+}
+body[data-page="micro"] .micro-topic-link:hover{text-decoration:underline}
+body[data-page="micro"] .micro-resource-panel{margin-top:18px}
+body[data-page="micro"] .micro-next-nav{margin-top:0}
+body[data-page="micro"] .micro-next-links{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+body[data-page="micro"] .micro-next-links a{
+  flex:1 1 0;
+  min-width:150px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  color:var(--navy);
+  background:#fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:850;
+}
+body[data-page="micro"] .micro-next-links a.primary{
+  color:#fff;
+  background:var(--blue);
+  border-color:var(--blue);
+}
+@media(max-width:620px){
+  body[data-page="micro"] .micro-next-links{display:grid;grid-template-columns:1fr}
+  body[data-page="micro"] .micro-next-links a{min-width:0}
+}
