@@ -998,3 +998,17 @@ body[data-page="home"] .hero-cta b{display:none}
   body[data-page="home"] .hero p{margin-bottom:20px}
   body[data-page="home"] .hero-cta{min-height:76px}
 }
+
+/* Mobile navigation hit-area hardening */
+@media(max-width:820px){
+  .topbar{position:sticky;z-index:100}
+  .nav-wrap{position:relative;z-index:101}
+  .menu-toggle{
+    position:relative;
+    z-index:102;
+    pointer-events:auto;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .nav-wrap nav{position:relative;z-index:101}
+}
