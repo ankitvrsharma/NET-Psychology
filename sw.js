@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v2';
+const CACHE='netpsych-shell-v3';
 const SHELL=[
   './',
   './index.html',
@@ -15,6 +15,7 @@ const SHELL=[
   './app.js',
   './data.json',
   './content-version.js',
+  './kaplan_enrichment.json',
   './practice_questions.json',
   './practice_explanations.json',
   './manifest.webmanifest'

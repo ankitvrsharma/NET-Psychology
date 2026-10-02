@@ -32,6 +32,17 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  try{
+    const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
+    if(kr.ok){
+      const kp=await kr.json();
+      const map=kp&&kp.microtopics&&typeof kp.microtopics==='object'?kp.microtopics:{};
+      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+        if(map[m.title]) m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:map[m.title]};
+      }
+      json.kaplan_enrichment_meta=kp.source||null;
+    }
+  }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
   D=json;
   if(document.body.dataset.page==='practice'){
     try{
@@ -58,7 +69,7 @@ const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';co
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const stripLegacy=s=>String(s||'').replace(/\nPYQ-STYLE PATTERN[\s\S]*?(?=\nCOMMON TRAP|\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\nCOMMON TRAP[\s\S]*?(?=\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\n5-MINUTE TEACHING FOCUS[\s\S]*?(?=\nMEMORY HOOK|$)/,'').replace(/\nMEMORY HOOK[\s\S]*?$/,'').trim();
 const noteSection=(label,text,klass='')=>{const v=String(text||'').trim();return v?'<section class="study-note-block '+klass+'"><h3>'+esc(label)+'</h3><div class="study-note-text">'+esc(v)+'</div></section>':''};
-const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{const pyq=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');const focus=section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK');const example=m.application_question||'';return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Read for structure first. Then close the notes and retrieve the idea from memory.</p></div>'+noteSection('1. Core idea',concept,'core')+(kp.length?'<section class="study-note-block"><h3>2. Key points</h3><ul class="study-note-list">'+kp.slice(0,7).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+noteSection('3. Explanation & connections',core,'explanation')+noteSection('4. Apply it',example,'application')+noteSection('5. Exam focus',pyq,'exam-focus')+noteSection('6. Common trap / distinction',trap,'trap')+noteSection('7. 5-minute teaching focus',focus,'teaching-focus')+noteSection('8. Memory cue',hook,'memory')+(!pyq&&!focus&&!trap&&!hook?'<p class="study-note-source-note">Use the key points above as the primary revision notes; the recall stage is deliberately kept separate so you test yourself rather than reread.</p>':'')+'</div>';};
+const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{const pyq=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');const focus=section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK');const example=m.application_question||'';const kaplan=m.kaplan_enrichment?.notes||'';return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Read for structure first. Then close the notes and retrieve the idea from memory.</p></div>'+noteSection('1. Core idea',concept,'core')+(kp.length?'<section class="study-note-block"><h3>2. Key points</h3><ul class="study-note-list">'+kp.slice(0,7).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+noteSection('3. Kaplan enrichment',kaplan,'kaplan-enrichment')+noteSection('4. Explanation & connections',core,'explanation')+noteSection('5. Apply it',example,'application')+noteSection('6. Exam focus',pyq,'exam-focus')+noteSection('7. Common trap / distinction',trap,'trap')+noteSection('8. 5-minute teaching focus',focus,'teaching-focus')+noteSection('9. Memory cue',hook,'memory')+(!pyq&&!focus&&!trap&&!hook&&!kaplan?'<p class="study-note-source-note">Use the key points above as the primary revision notes; the recall stage is deliberately kept separate so you test yourself rather than reread.</p>':'')+'</div>';};
 const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
 const countMicro=u=>u.topics.reduce((n,t)=>n+t.microtopics.length,0);
 function sourceEntries(m){return (m.sources||[]).map(id=>D.source_library?.find(s=>s.id===id)).filter(Boolean)}
