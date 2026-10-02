@@ -634,7 +634,34 @@ function practice(){
     }
   }
   $('#startSet').onclick=draw;
-}function revision(){const items=dueItems(),shown=items.slice(0,5);$('#revisionApp').innerHTML=`<section class="page-hero"><h1>Bring earlier learning back to mind.</h1><p>Start with what is due. Try to recall it before looking back, notice what you missed, and strengthen the weak parts.</p></section><div class="revision-summary"><div><strong>${items.length}</strong><span>due now</span></div><div><strong>${Math.min(items.length,5)}</strong><span>in today’s queue</span></div><div><strong>${all().filter(x=>getP(x.k).status==='MASTERED').length}</strong><span>mastered</span></div></div>${shown.length?`<section class="revision-list">${shown.map(x=>{const p=getP(x.k),late=(Date.now()-new Date(p.next).getTime())/86400000;return `<article class="revision-item"><div><span class="status ${p.status.toLowerCase()}">${p.status}</span><h3>${esc(x.m.title)}</h3><p>${esc(x.t.title)} · Unit ${x.u.id}</p><small>${late>0?`Overdue by ${Math.floor(late)} day${Math.floor(late)===1?'':'s'}`:'Due today'}${p.rating?` · Last: ${p.rating}`:''}</small></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">Start Recall →</a></article>`}).join('')}</section>`:'<section class="panel empty"><h2>No revisions due</h2><p>Your next scheduled return will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>'}<section class="panel revision-rules"><h2>A simple way to revise</h2><ul><li><b>Again</b> — rebuild the idea before moving on.</li><li><b>Hard</b> — you remembered it, but with effort.</li><li><b>Good</b> — you recalled it successfully.</li><li><b>Easy</b> — you could bring it back quickly.</li><li>If you missed a revision, simply return to the concept and rebuild from your last successful recall.</li></ul></section>`}
+}function revision(){
+  const items=dueItems(),shown=items.slice(0,5);
+  $('#revisionApp').innerHTML=`
+    <section class="page-hero revision-hero">
+      <h1>Strengthen what you’ve already learned.</h1>
+      <p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p>
+    </section>
+    <section class="revision-ready card">
+      <div>
+        <div class="eyebrow">REVISION</div>
+        <strong>${items.length}</strong>
+        <h2>${items.length===1?'concept is ready to revisit':'concepts are ready to revisit'}</h2>
+        <p>${items.length?'Work through your revision queue one concept at a time.':'There is nothing waiting for revision right now. Your next scheduled revision will appear here.'}</p>
+      </div>
+    </section>
+    ${shown.length?`<section class="revision-list">${shown.map(x=>{const p=getP(x.k),late=(Date.now()-new Date(p.next).getTime())/86400000;return \`<article class="revision-item"><div><span class="status ${p.status.toLowerCase()}">${p.status}</span><h3>${esc(x.m.title)}</h3><p>${esc(x.t.title)} · Unit ${x.u.id}</p><small>${late>0?\`Overdue by ${Math.floor(late)} day${Math.floor(late)===1?'':'s'}\`:'Due today'}${p.rating?\` · Last: ${p.rating}\`:''}</small></div><a class="btn primary" href="microtopic.html?unit=${x.u.id}&topic=${x.t.id}&micro=${x.m.id}">Start Recall →</a></article>\`}).join('')}</section>`:'<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">Continue Learning</a></section>'}
+    <section class="panel revision-rules">
+      <h2>How to use revision</h2>
+      <ul>
+        <li><b>Recall first</b> — try to bring the idea back without looking.</li>
+        <li><b>Then check</b> — compare your recall with the explanation.</li>
+        <li><b>Again</b> — you couldn’t recall it.</li>
+        <li><b>Hard</b> — you recalled it with effort.</li>
+        <li><b>Good</b> — you recalled it successfully.</li>
+        <li><b>Easy</b> — you recalled it quickly.</li>
+      </ul>
+    </section>`;
+}
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
   const attention=all().filter(x=>{const p=ps[x.k];return p?.confidence==='low'||p?.rating==='again'||(p?.next&&new Date(p.next)<=new Date())}).slice(0,6);
