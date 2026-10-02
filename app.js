@@ -199,10 +199,10 @@ function startPage(){
     }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
   };
   const r=document.querySelector('#learnResume');
-  if(resume){
+  if(r&&resume){
     r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;
     r.hidden=false;
-  }else r.hidden=true;
+  }else if(r) r.hidden=true;
   draw('');
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
 }function cycleForFallback(date){
