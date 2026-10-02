@@ -165,7 +165,17 @@ function learnPage(){
   }else r.hidden=true;
   draw('');
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
-}function cycleForFallback(date){
+}function startPage(){
+  document.title='Start Learning — UGC NET Psychology';
+  const root=$('#startPage');
+  if(!root)return;
+  const first=units()[0];
+  const topic=first?.topics?.[0];
+  const micro=topic?.microtopics?.[0];
+  const href=micro ? 'microtopic.html?unit='+first.id+'&topic='+topic.id+'&micro='+micro.id : 'learn.html';
+  root.innerHTML='<section class="page-hero start-hero"><div class="eyebrow">START LEARNING</div><h1>Build your Psychology knowledge one concept at a time.</h1><p>Start with understanding, then retrieve, apply, practise, and schedule your next revision.</p><div class="hero-actions"><a class="hero-cta" href="'+href+'"><span>START WITH THE FIRST CONCEPT</span><b>→</b></a><a class="btn" href="learn.html">EXPLORE ALL UNITS</a></div></section><section class="start-flow card"><div class="eyebrow">YOUR LEARNING FLOW</div><div class="learning-steps"><div><b>1 · Understand</b><span>Build the conceptual framework.</span></div><div><b>2 · Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>3 · Apply</b><span>Use the idea in a situation.</span></div><div><b>4 · Practice</b><span>Answer mapped questions and PYQs.</span></div><div><b>5 · Schedule Revision</b><span>Return at a useful interval.</span></div></div></section>';
+}
+function cycleForFallback(date){
   const july=date.getMonth()===6;
   return {label:'July '+date.getFullYear()+' cycle',dateLabel:july?'1 July '+date.getFullYear():'1 December '+date.getFullYear()};
 }
@@ -653,7 +663,7 @@ function progress(){
 function readiness(s){if(s.coverage>=80&&s.mastery>=70&&s.accuracy>=70&&s.retention>=60)return {label:'Strong study profile',note:'Your learning record shows broad coverage, strong mastery signals, question performance, and delayed recall. Use mixed practice and spaced revision to maintain these gains; this is a study indicator, not a guarantee of exam performance.',focus:['Maintain delayed recall across older concepts','Mix MCQs and PYQs across units','Keep revising concepts before they become due'],action:'Open Mixed Practice',href:'practice.html'};if(s.coverage>=60&&s.mastery>=45&&s.accuracy>=60)return {label:'Ready for Exam Practice',note:'You have built a substantial base. The next step is to strengthen retrieval, application, and delayed recall while continuing to expand coverage.',focus:['Strengthen concept mastery','Use recall before checking notes','Practice across different units'],action:'Practice Questions',href:'practice.html'};if(s.coverage>=25)return {label:'Developing',note:'You are building the foundation. Keep moving through the syllabus while turning each new concept into something you can recall and apply.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Continue Learning',href:'unit.html?id=1'};return {label:'Building',note:'You are still establishing your foundation. Start with one concept at a time and move through understanding, recall, and application.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Start Learning',href:'unit.html?id=1'}}
 function render(){
   const page=document.body?.dataset?.page||'';
-  const routes={home,learn:learnPage,daily3,unit:unitPage,topic:topicPage,micro:micro,practice,revision,progress};
+  const routes={home,start:startPage,learn:learnPage,daily3,unit:unitPage,topic:topicPage,micro:micro,practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
