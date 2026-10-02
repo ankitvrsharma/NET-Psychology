@@ -49,7 +49,9 @@ async function loadStudyData(){
     m.study_source_config=json.study_source_config||null;
   }
   D=json;
-  // Render the core homepage immediately; optional enrichment must never block the learning interface.\n  if(document.body.dataset.page==='home') render();\n  if(document.body.dataset.page==='practice'){
+  // Render the core homepage immediately; optional enrichment must never block the learning interface.
+  if(document.body.dataset.page==='home') render();
+  if(document.body.dataset.page==='practice'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
