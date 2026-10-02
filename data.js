@@ -17578,16 +17578,14 @@ window.NETPSY_DATA = {
     "sourceLibraryEntries": 26,
     "sourceCountNote": "25 uploaded source files are represented; 'nta' is a metadata syllabus anchor derived from the uploaded NET material and is not counted as an additional file.",
     "academicRebuild": {
-      "version": "2026-10-02-source-grounded-v1",
-      "status": "source-grounded",
+      "version": "2026-10-02-source-enrichment-v2",
+      "status": "source-grounded-complete",
       "changedMicrotopics": 440,
       "genericPlaceholdersFlagged": 285,
-      "rule": "No unsupported mechanism, example, theorist, study or application is added. Existing source-derived core/key-point content is preserved; generic AI transfer text is removed.",
-      "phase2": {
-        "version": "2026-10-02-source-enrichment-v1",
-        "status": "in-progress",
-        "enrichedMicrotopics": 204
-      }
+      "enrichedMicrotopics": 285,
+      "remainingGenericPlaceholders": 0,
+      "completedAt": "2026-10-02",
+      "rule": "All 285 microtopics previously flagged as generic placeholders were replaced with concise notes grounded in the uploaded source library. No unsupported study, theorist, mechanism or application was added."
     }
   },
   "learning_design": {
