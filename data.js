@@ -4634,7 +4634,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Types of psychological tests",
-              "content_notes": "CORE CONCEPT\nTypes of psychological tests is a focused concept within “Types of tests”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of psychological tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of psychological tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of psychological tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPsychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.\n\nKEY POINTS\n• Tests use specified administration and scoring procedures.\n• They measure attributes, traits, abilities or other psychological characteristics.\n• Assessment is broader than testing.\n• Psychometric quality is part of test evaluation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Psychological Testing; Baron & Misra and Ciccarelli & White on assessment methods.\n\nCOMMON EXAM TRAP\nDo not use psychological test, psychological assessment and measurement as exact synonyms.\n\nMEMORY CUE\nTypes of psychological tests → Tests use specified administration and scoring procedures • They measure attributes, traits, abilities or other psychological characteristics • Assessment is broader than testing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4643,14 +4643,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nTypes of psychological tests is a focused concept within “Types of tests”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of psychological tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of psychological tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPsychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.\n\nKEY POINTS\n• Tests use specified administration and scoring procedures.\n• They measure attributes, traits, abilities or other psychological characteristics.\n• Assessment is broader than testing.\n• Psychometric quality is part of test evaluation.\n\nDISTINCTION / CAUTION\nDo not use psychological test, psychological assessment and measurement as exact synonyms.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Psychological Testing; Baron & Misra and Ciccarelli & White on assessment methods.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of psychological tests”.",
-                "List the key points associated with “Types of psychological tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of psychological tests”?"
+                "State the source-based core idea of “Types of psychological tests”.",
+                "List the main source-supported points for “Types of psychological tests”.",
+                "State the key distinction or caution for “Types of psychological tests”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of psychological tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of psychological tests → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Types of psychological tests”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Tests use specified administration and scoring procedures",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4660,9 +4660,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Unit 3 Psychological Testing; Baron & Misra and Ciccarelli & White on assessment methods."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -4688,7 +4686,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Item writing",
-              "content_notes": "CORE CONCEPT\nItem writing is a focused concept within “Test construction: Item writing, item analysis”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Item writing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Item writing as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nItem writing → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nItem writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.\n\nKEY POINTS\n• Items should represent the intended content or construct.\n• Wording and response format affect how an item functions.\n• Items are evaluated after administration through item analysis.\n• Good item construction supports reliability and validity.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Construction: Item Writing and Item Analysis.\n\nCOMMON EXAM TRAP\nItem writing creates the item; item analysis evaluates how the item performed in the test data.\n\nMEMORY CUE\nItem writing → Items should represent the intended content or construct • Wording and response format affect how an item functions • Items are evaluated after administration through item analysis",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4698,14 +4696,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nItem writing is a focused concept within “Test construction: Item writing, item analysis”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Item writing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Item writing as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nItem writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.\n\nKEY POINTS\n• Items should represent the intended content or construct.\n• Wording and response format affect how an item functions.\n• Items are evaluated after administration through item analysis.\n• Good item construction supports reliability and validity.\n\nDISTINCTION / CAUTION\nItem writing creates the item; item analysis evaluates how the item performed in the test data.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Construction: Item Writing and Item Analysis.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Item writing”.",
-                "List the key points associated with “Item writing” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Item writing”?"
+                "State the source-based core idea of “Item writing”.",
+                "List the main source-supported points for “Item writing”.",
+                "State the key distinction or caution for “Item writing”."
               ],
-              "application_question": "Source-based check: Given a new question about “Item writing”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Item writing → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Item writing”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Items should represent the intended content or construct",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4715,17 +4713,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Test Construction: Item Writing and Item Analysis."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Item analysis",
-              "content_notes": "CORE CONCEPT\nItem analysis is a focused concept within “Test construction: Item writing, item analysis”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Item analysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Item analysis as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nItem analysis → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nItem analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.\n\nKEY POINTS\n• Item analysis evaluates individual items empirically.\n• Item–total relationships can indicate whether an item fits the test.\n• Upper/lower group comparisons can help identify discriminating items.\n• Poorly functioning items may be revised or removed.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Construction and validity/item-analysis discussion.\n\nCOMMON EXAM TRAP\nItem analysis is not the same as calculating the final test score; it is a quality-control step at the item level.\n\nMEMORY CUE\nItem analysis → Item analysis evaluates individual items empirically • Item–total relationships can indicate whether an item fits the test • Upper/lower group comparisons can help identify discriminating items",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4735,14 +4730,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nItem analysis is a focused concept within “Test construction: Item writing, item analysis”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Item analysis\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Item analysis as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nItem analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.\n\nKEY POINTS\n• Item analysis evaluates individual items empirically.\n• Item–total relationships can indicate whether an item fits the test.\n• Upper/lower group comparisons can help identify discriminating items.\n• Poorly functioning items may be revised or removed.\n\nDISTINCTION / CAUTION\nItem analysis is not the same as calculating the final test score; it is a quality-control step at the item level.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Construction and validity/item-analysis discussion.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Item analysis”.",
-                "List the key points associated with “Item analysis” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Item analysis”?"
+                "State the source-based core idea of “Item analysis”.",
+                "List the main source-supported points for “Item analysis”.",
+                "State the key distinction or caution for “Item analysis”."
               ],
-              "application_question": "Source-based check: Given a new question about “Item analysis”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Item analysis → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Item analysis”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Item analysis evaluates individual items empirically",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4752,10 +4747,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Test Construction and validity/item-analysis discussion."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -4781,7 +4773,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Standardization",
-              "content_notes": "CORE CONCEPT\nStandardization is a focused concept within “Test standardization: Reliability, validity and Norms”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Standardization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Standardization as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStandardization → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nStandardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.\n\nKEY POINTS\n• Administration and scoring should be consistent.\n• A standardization sample provides the reference distribution.\n• Norms are derived from the standardization group.\n• Interpretation depends on the population represented by the norms.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Standardization, Reliability, Validity and Norms; Psychology: A Self-Teaching Guide.\n\nCOMMON EXAM TRAP\nStandardization is broader than norms alone; it includes standardized administration, scoring and the empirical reference framework.\n\nMEMORY CUE\nStandardization → Administration and scoring should be consistent • A standardization sample provides the reference distribution • Norms are derived from the standardization group",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4791,14 +4783,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nStandardization is a focused concept within “Test standardization: Reliability, validity and Norms”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Standardization\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Standardization as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nStandardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.\n\nKEY POINTS\n• Administration and scoring should be consistent.\n• A standardization sample provides the reference distribution.\n• Norms are derived from the standardization group.\n• Interpretation depends on the population represented by the norms.\n\nDISTINCTION / CAUTION\nStandardization is broader than norms alone; it includes standardized administration, scoring and the empirical reference framework.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Test Standardization, Reliability, Validity and Norms; Psychology: A Self-Teaching Guide.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Standardization”.",
-                "List the key points associated with “Standardization” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Standardization”?"
+                "State the source-based core idea of “Standardization”.",
+                "List the main source-supported points for “Standardization”.",
+                "State the key distinction or caution for “Standardization”."
               ],
-              "application_question": "Source-based check: Given a new question about “Standardization”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Standardization → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Standardization”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Administration and scoring should be consistent",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4808,10 +4800,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Test Standardization, Reliability, Validity and Norms; Psychology: A Self-Teaching Guide."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
@@ -4948,7 +4937,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Intelligence tests",
-              "content_notes": "CORE CONCEPT\nIntelligence tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Intelligence tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Intelligence tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nIntelligence tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIntelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.\n\nKEY POINTS\n• Binet and Simon published the Binet–Simon Scale in 1905.\n• Terman adapted it into the Stanford–Binet in 1916.\n• Wechsler scales are major individually administered intelligence tests.\n• Intelligence testing can involve multiple cognitive abilities rather than a single simple capacity.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Intelligence Tests; Baron & Misra; REVISATHON Part 5 on Wechsler tests.\n\nCOMMON EXAM TRAP\nAn intelligence test is not identical to a general measure of all human competence; what is assessed depends on the test's design and construct.\n\nMEMORY CUE\nIntelligence tests → Binet and Simon published the Binet–Simon Scale in 1905 • Terman adapted it into the Stanford–Binet in 1916 • Wechsler scales are major individually administered intelligence tests",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4958,14 +4947,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nIntelligence tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Intelligence tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Intelligence tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIntelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.\n\nKEY POINTS\n• Binet and Simon published the Binet–Simon Scale in 1905.\n• Terman adapted it into the Stanford–Binet in 1916.\n• Wechsler scales are major individually administered intelligence tests.\n• Intelligence testing can involve multiple cognitive abilities rather than a single simple capacity.\n\nDISTINCTION / CAUTION\nAn intelligence test is not identical to a general measure of all human competence; what is assessed depends on the test's design and construct.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Intelligence Tests; Baron & Misra; REVISATHON Part 5 on Wechsler tests.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Intelligence tests”.",
-                "List the key points associated with “Intelligence tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Intelligence tests”?"
+                "State the source-based core idea of “Intelligence tests”.",
+                "List the main source-supported points for “Intelligence tests”.",
+                "State the key distinction or caution for “Intelligence tests”."
               ],
-              "application_question": "Source-based check: Given a new question about “Intelligence tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Intelligence tests → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Intelligence tests”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Binet and Simon published the Binet–Simon Scale in 1905",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -4975,17 +4964,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Intelligence Tests; Baron & Misra; REVISATHON Part 5 on Wechsler tests."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Creativity tests",
-              "content_notes": "CORE CONCEPT\nCreativity tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Creativity tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Creativity tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCreativity tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCreativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.\n\nKEY POINTS\n• Creativity testing often emphasizes divergent production.\n• Guilford is a major source figure in the creativity-testing tradition.\n• Getzels and Jackson compared creativity and intelligence groups.\n• TTCT is an example of a creativity-testing approach.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 creativity-testing material; Baron & Misra; P2 Educational Psychology.\n\nCOMMON EXAM TRAP\nCreativity and intelligence are related constructs but are not treated as identical in the source material.\n\nMEMORY CUE\nCreativity tests → Creativity testing often emphasizes divergent production • Guilford is a major source figure in the creativity-testing tradition • Getzels and Jackson compared creativity and intelligence groups",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4995,14 +4981,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nCreativity tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Creativity tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Creativity tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCreativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.\n\nKEY POINTS\n• Creativity testing often emphasizes divergent production.\n• Guilford is a major source figure in the creativity-testing tradition.\n• Getzels and Jackson compared creativity and intelligence groups.\n• TTCT is an example of a creativity-testing approach.\n\nDISTINCTION / CAUTION\nCreativity and intelligence are related constructs but are not treated as identical in the source material.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 creativity-testing material; Baron & Misra; P2 Educational Psychology.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Creativity tests”.",
-                "List the key points associated with “Creativity tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Creativity tests”?"
+                "State the source-based core idea of “Creativity tests”.",
+                "List the main source-supported points for “Creativity tests”.",
+                "State the key distinction or caution for “Creativity tests”."
               ],
-              "application_question": "Source-based check: Given a new question about “Creativity tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Creativity tests → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Creativity tests”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Creativity testing often emphasizes divergent production",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5012,17 +4998,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 creativity-testing material; Baron & Misra; P2 Educational Psychology."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Neuropsychological tests",
-              "content_notes": "CORE CONCEPT\nNeuropsychological tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neuropsychological tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Neuropsychological tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNeuropsychological tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nNeuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.\n\nKEY POINTS\n• They focus on cognitive/behavioral functions related to the nervous system.\n• They can help assess possible brain dysfunction or damage.\n• Attention and memory are examples of assessed functions.\n• They form one component of broader psychological assessment.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3; Baron & Misra on neuropsychological tests; P2 Educational Psychology.\n\nCOMMON EXAM TRAP\nA neuropsychological test is not simply an intelligence test; its purpose is tied to brain-related cognitive functioning.\n\nMEMORY CUE\nNeuropsychological tests → They focus on cognitive/behavioral functions related to the nervous system • They can help assess possible brain dysfunction or damage • Attention and memory are examples of assessed functions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5032,14 +5015,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nNeuropsychological tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Neuropsychological tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Neuropsychological tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNeuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.\n\nKEY POINTS\n• They focus on cognitive/behavioral functions related to the nervous system.\n• They can help assess possible brain dysfunction or damage.\n• Attention and memory are examples of assessed functions.\n• They form one component of broader psychological assessment.\n\nDISTINCTION / CAUTION\nA neuropsychological test is not simply an intelligence test; its purpose is tied to brain-related cognitive functioning.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3; Baron & Misra on neuropsychological tests; P2 Educational Psychology.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Neuropsychological tests”.",
-                "List the key points associated with “Neuropsychological tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Neuropsychological tests”?"
+                "State the source-based core idea of “Neuropsychological tests”.",
+                "List the main source-supported points for “Neuropsychological tests”.",
+                "State the key distinction or caution for “Neuropsychological tests”."
               ],
-              "application_question": "Source-based check: Given a new question about “Neuropsychological tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Neuropsychological tests → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Neuropsychological tests”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "They focus on cognitive/behavioral functions related to the nervous system",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5049,17 +5032,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3; Baron & Misra on neuropsychological tests; P2 Educational Psychology."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Aptitude tests",
-              "content_notes": "CORE CONCEPT\nAptitude tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Aptitude tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Aptitude tests as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAptitude tests → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.\n\nKEY POINTS\n• Aptitude concerns potential or ability to learn/perform in a domain.\n• Batteries may contain several subtests.\n• Examples of domains include verbal, numerical and spatial reasoning.\n• Aptitude testing is used in selection and educational/career contexts.\n\nSOURCE BASIS\nBaron & Misra — Aptitude Tests; PowerWithin Psychology — Unit 3 and military testing.\n\nCOMMON EXAM TRAP\nAptitude is not the same as achievement: aptitude concerns capacity or potential, whereas achievement reflects learned knowledge or skill.\n\nMEMORY CUE\nAptitude tests → Aptitude concerns potential or ability to learn/perform in a domain • Batteries may contain several subtests • Examples of domains include verbal, numerical and spatial reasoning",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5069,14 +5049,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nAptitude tests is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Aptitude tests\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Aptitude tests as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.\n\nKEY POINTS\n• Aptitude concerns potential or ability to learn/perform in a domain.\n• Batteries may contain several subtests.\n• Examples of domains include verbal, numerical and spatial reasoning.\n• Aptitude testing is used in selection and educational/career contexts.\n\nDISTINCTION / CAUTION\nAptitude is not the same as achievement: aptitude concerns capacity or potential, whereas achievement reflects learned knowledge or skill.\n\nSOURCE BASIS\nBaron & Misra — Aptitude Tests; PowerWithin Psychology — Unit 3 and military testing.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Aptitude tests”.",
-                "List the key points associated with “Aptitude tests” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Aptitude tests”?"
+                "State the source-based core idea of “Aptitude tests”.",
+                "List the main source-supported points for “Aptitude tests”.",
+                "State the key distinction or caution for “Aptitude tests”."
               ],
-              "application_question": "Source-based check: Given a new question about “Aptitude tests”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Aptitude tests → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Aptitude tests”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Aptitude concerns potential or ability to learn/perform in a domain",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5086,17 +5066,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "Baron & Misra — Aptitude Tests; PowerWithin Psychology — Unit 3 and military testing."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 5,
               "title": "Personality assessment",
-              "content_notes": "CORE CONCEPT\nPersonality assessment is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Personality assessment\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Personality assessment as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPersonality assessment → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPersonality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.\n\nKEY POINTS\n• Interviews can provide self-report information.\n• Behavioral assessment uses direct observation, rating scales or frequency counts.\n• Projective tests use ambiguous stimuli and require interpretive judgment.\n• Personality inventories use standardized item formats and can include validity scales.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personality Assessment; PowerWithin Psychology — Personality Assessment.\n\nCOMMON EXAM TRAP\nPsychological assessment is broader than any one personality test; professionals may combine several methods.\n\nMEMORY CUE\nPersonality assessment → Interviews can provide self-report information • Behavioral assessment uses direct observation, rating scales or frequency counts • Projective tests use ambiguous stimuli and require interpretive judgment",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5106,14 +5083,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nPersonality assessment is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Personality assessment\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Personality assessment as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPersonality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.\n\nKEY POINTS\n• Interviews can provide self-report information.\n• Behavioral assessment uses direct observation, rating scales or frequency counts.\n• Projective tests use ambiguous stimuli and require interpretive judgment.\n• Personality inventories use standardized item formats and can include validity scales.\n\nDISTINCTION / CAUTION\nPsychological assessment is broader than any one personality test; professionals may combine several methods.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personality Assessment; PowerWithin Psychology — Personality Assessment.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Personality assessment”.",
-                "List the key points associated with “Personality assessment” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Personality assessment”?"
+                "State the source-based core idea of “Personality assessment”.",
+                "List the main source-supported points for “Personality assessment”.",
+                "State the key distinction or caution for “Personality assessment”."
               ],
-              "application_question": "Source-based check: Given a new question about “Personality assessment”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Personality assessment → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Personality assessment”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Interviews can provide self-report information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5123,17 +5100,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "Ciccarelli & White 6e — Personality Assessment; PowerWithin Psychology — Personality Assessment."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 6,
               "title": "Interest inventories",
-              "content_notes": "CORE CONCEPT\nInterest inventories is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interest inventories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Interest inventories as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInterest inventories → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nInterest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.\n\nKEY POINTS\n• They measure patterns of interests rather than intelligence or achievement.\n• They are useful for educational and career guidance.\n• Interpretation depends on the inventory and its normative framework.\n• Interests are one source of information in career decision-making, not a complete decision by themselves.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Areas of Testing and Career Guidance; P2 Educational Psychology.\n\nCOMMON EXAM TRAP\nInterest is different from aptitude: liking or preference for an activity is not the same construct as demonstrated or potential ability.\n\nMEMORY CUE\nInterest inventories → They measure patterns of interests rather than intelligence or achievement • They are useful for educational and career guidance • Interpretation depends on the inventory and its normative framework",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5143,14 +5117,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nInterest inventories is a focused concept within “Areas of testing: Intelligence, creativity, neuropsychological tests, aptitude, Personality assessment, interest inventories”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Interest inventories\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Interest inventories as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nInterest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.\n\nKEY POINTS\n• They measure patterns of interests rather than intelligence or achievement.\n• They are useful for educational and career guidance.\n• Interpretation depends on the inventory and its normative framework.\n• Interests are one source of information in career decision-making, not a complete decision by themselves.\n\nDISTINCTION / CAUTION\nInterest is different from aptitude: liking or preference for an activity is not the same construct as demonstrated or potential ability.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Areas of Testing and Career Guidance; P2 Educational Psychology.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Interest inventories”.",
-                "List the key points associated with “Interest inventories” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Interest inventories”?"
+                "State the source-based core idea of “Interest inventories”.",
+                "List the main source-supported points for “Interest inventories”.",
+                "State the key distinction or caution for “Interest inventories”."
               ],
-              "application_question": "Source-based check: Given a new question about “Interest inventories”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Interest inventories → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Interest inventories”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "They measure patterns of interests rather than intelligence or achievement",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5160,10 +5134,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Areas of Testing and Career Guidance; P2 Educational Psychology."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -5226,7 +5197,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Staples scale",
-              "content_notes": "CORE CONCEPT\nStaples scale is a focused concept within “Attitude scales – Semantic differential, Staples, Likert scale. Computer-based psychological testing”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Staples scale\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Staples scale as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nStaples scale → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.\n\nKEY POINTS\n• It is listed as an attitude-scale technique in the NET material.\n• It belongs to the measurement of attitudes rather than cognitive ability testing.\n• The source groups it with semantic differential and Likert scales.\n• Detailed source treatment is limited in the supplied material.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Attitude Scales: Semantic Differential, Staples and Likert.\n\nCOMMON EXAM TRAP\nDo not import features of another attitude scale and label them as Staples-scale properties when the source does not provide them.\n\nMEMORY CUE\nStaples scale → It is listed as an attitude-scale technique in the NET material • It belongs to the measurement of attitudes rather than cognitive ability testing • The source groups it with semantic differential and Likert scales",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5236,14 +5207,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nStaples scale is a focused concept within “Attitude scales – Semantic differential, Staples, Likert scale. Computer-based psychological testing”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Staples scale\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Staples scale as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.\n\nKEY POINTS\n• It is listed as an attitude-scale technique in the NET material.\n• It belongs to the measurement of attitudes rather than cognitive ability testing.\n• The source groups it with semantic differential and Likert scales.\n• Detailed source treatment is limited in the supplied material.\n\nDISTINCTION / CAUTION\nDo not import features of another attitude scale and label them as Staples-scale properties when the source does not provide them.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Attitude Scales: Semantic Differential, Staples and Likert.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Staples scale”.",
-                "List the key points associated with “Staples scale” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Staples scale”?"
+                "State the source-based core idea of “Staples scale”.",
+                "List the main source-supported points for “Staples scale”.",
+                "State the key distinction or caution for “Staples scale”."
               ],
-              "application_question": "Source-based check: Given a new question about “Staples scale”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Staples scale → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Staples scale”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "It is listed as an attitude-scale technique in the NET material",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5253,10 +5224,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Attitude Scales: Semantic Differential, Staples and Likert."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
@@ -5300,7 +5268,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Computer-based psychological testing",
-              "content_notes": "CORE CONCEPT\nComputer-based psychological testing is a focused concept within “Attitude scales – Semantic differential, Staples, Likert scale. Computer-based psychological testing”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Computer-based psychological testing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Computer-based psychological testing as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nComputer-based psychological testing → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nComputer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.\n\nKEY POINTS\n• Administration and scoring are computerized.\n• Standardization and psychometric quality remain necessary.\n• Computer delivery changes the mode of administration, not the construct itself.\n• Technical and accessibility conditions can affect administration.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3, Computer-based Psychological Testing.\n\nCOMMON EXAM TRAP\nComputerized administration does not automatically make a test more valid or reliable; psychometric quality still has to be established.\n\nMEMORY CUE\nComputer-based psychological testing → Administration and scoring are computerized • Standardization and psychometric quality remain necessary • Computer delivery changes the mode of administration, not the construct itself",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5310,14 +5278,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "ACADEMIC CORE\nComputer-based psychological testing is a focused concept within “Attitude scales – Semantic differential, Staples, Likert scale. Computer-based psychological testing”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Computer-based psychological testing\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Computer-based psychological testing as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nComputer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.\n\nKEY POINTS\n• Administration and scoring are computerized.\n• Standardization and psychometric quality remain necessary.\n• Computer delivery changes the mode of administration, not the construct itself.\n• Technical and accessibility conditions can affect administration.\n\nDISTINCTION / CAUTION\nComputerized administration does not automatically make a test more valid or reliable; psychometric quality still has to be established.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3, Computer-based Psychological Testing.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Computer-based psychological testing”.",
-                "List the key points associated with “Computer-based psychological testing” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Computer-based psychological testing”?"
+                "State the source-based core idea of “Computer-based psychological testing”.",
+                "List the main source-supported points for “Computer-based psychological testing”.",
+                "State the key distinction or caution for “Computer-based psychological testing”."
               ],
-              "application_question": "Source-based check: Given a new question about “Computer-based psychological testing”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Computer-based psychological testing → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Computer-based psychological testing”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Administration and scoring are computerized",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5327,10 +5295,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3, Computer-based Psychological Testing."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -5356,7 +5321,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Clinical settings",
-              "content_notes": "CORE CONCEPT\nClinical settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Clinical settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Clinical settings as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nClinical settings → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIn clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.\n\nKEY POINTS\n• Testing is one component of clinical assessment.\n• Interviews and other information sources may be combined with tests.\n• Neuropsychological tests may be used when brain functioning is relevant.\n• Interpretation should be integrated with the person's broader history and presentation.\n\nSOURCE BASIS\nBaron & Misra — Psychological Assessment and Research Methods; PowerWithin Psychology — clinical application of testing.\n\nCOMMON EXAM TRAP\nA test score alone is not equivalent to a clinical diagnosis; assessment integrates multiple sources of evidence.\n\nMEMORY CUE\nClinical settings → Testing is one component of clinical assessment • Interviews and other information sources may be combined with tests • Neuropsychological tests may be used when brain functioning is relevant",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5366,14 +5331,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nClinical settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Clinical settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Clinical settings as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIn clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.\n\nKEY POINTS\n• Testing is one component of clinical assessment.\n• Interviews and other information sources may be combined with tests.\n• Neuropsychological tests may be used when brain functioning is relevant.\n• Interpretation should be integrated with the person's broader history and presentation.\n\nDISTINCTION / CAUTION\nA test score alone is not equivalent to a clinical diagnosis; assessment integrates multiple sources of evidence.\n\nSOURCE BASIS\nBaron & Misra — Psychological Assessment and Research Methods; PowerWithin Psychology — clinical application of testing.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Clinical settings”.",
-                "List the key points associated with “Clinical settings” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Clinical settings”?"
+                "State the source-based core idea of “Clinical settings”.",
+                "List the main source-supported points for “Clinical settings”.",
+                "State the key distinction or caution for “Clinical settings”."
               ],
-              "application_question": "Source-based check: Given a new question about “Clinical settings”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Clinical settings → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Clinical settings”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Testing is one component of clinical assessment",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5383,17 +5348,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "Baron & Misra — Psychological Assessment and Research Methods; PowerWithin Psychology — clinical application of testing."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 2,
               "title": "Organizational and business settings",
-              "content_notes": "CORE CONCEPT\nOrganizational and business settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Organizational and business settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Organizational and business settings as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nOrganizational and business settings → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nOrganizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.\n\nKEY POINTS\n• Testing can support selection and placement decisions.\n• Aptitude and personality measures may be relevant to occupational requirements.\n• Standardized administration and interpretation are important for comparability.\n• Test use should match the attribute and decision being assessed.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications of Psychological Testing; organizational/business testing coverage.\n\nCOMMON EXAM TRAP\nA test should not be treated as a general predictor of every aspect of job performance; its relevance depends on the construct and context.\n\nMEMORY CUE\nOrganizational and business settings → Testing can support selection and placement decisions • Aptitude and personality measures may be relevant to occupational requirements • Standardized administration and interpretation are important for comparability",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5403,14 +5365,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nOrganizational and business settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Organizational and business settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Organizational and business settings as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nOrganizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.\n\nKEY POINTS\n• Testing can support selection and placement decisions.\n• Aptitude and personality measures may be relevant to occupational requirements.\n• Standardized administration and interpretation are important for comparability.\n• Test use should match the attribute and decision being assessed.\n\nDISTINCTION / CAUTION\nA test should not be treated as a general predictor of every aspect of job performance; its relevance depends on the construct and context.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications of Psychological Testing; organizational/business testing coverage.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Organizational and business settings”.",
-                "List the key points associated with “Organizational and business settings” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Organizational and business settings”?"
+                "State the source-based core idea of “Organizational and business settings”.",
+                "List the main source-supported points for “Organizational and business settings”.",
+                "State the key distinction or caution for “Organizational and business settings”."
               ],
-              "application_question": "Source-based check: Given a new question about “Organizational and business settings”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Organizational and business settings → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Organizational and business settings”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Testing can support selection and placement decisions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5420,17 +5382,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Applications of Psychological Testing; organizational/business testing coverage."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 3,
               "title": "Educational settings",
-              "content_notes": "CORE CONCEPT\nEducational settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Educational settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Educational settings as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEducational settings → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEducational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.\n\nKEY POINTS\n• Testing can inform educational decisions and support planning.\n• Intelligence and achievement measures assess different constructs.\n• Aptitude and interest information can support educational/career guidance.\n• Interpretation should consider the student's broader context.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications; P2 Educational Psychology.\n\nCOMMON EXAM TRAP\nEducational testing is broader than an IQ score; different tests answer different educational questions.\n\nMEMORY CUE\nEducational settings → Testing can inform educational decisions and support planning • Intelligence and achievement measures assess different constructs • Aptitude and interest information can support educational/career guidance",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5440,14 +5399,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nEducational settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Educational settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Educational settings as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEducational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.\n\nKEY POINTS\n• Testing can inform educational decisions and support planning.\n• Intelligence and achievement measures assess different constructs.\n• Aptitude and interest information can support educational/career guidance.\n• Interpretation should consider the student's broader context.\n\nDISTINCTION / CAUTION\nEducational testing is broader than an IQ score; different tests answer different educational questions.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications; P2 Educational Psychology.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Educational settings”.",
-                "List the key points associated with “Educational settings” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Educational settings”?"
+                "State the source-based core idea of “Educational settings”.",
+                "List the main source-supported points for “Educational settings”.",
+                "State the key distinction or caution for “Educational settings”."
               ],
-              "application_question": "Source-based check: Given a new question about “Educational settings”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Educational settings → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Educational settings”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Testing can inform educational decisions and support planning",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5457,17 +5416,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Applications; P2 Educational Psychology."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 4,
               "title": "Counseling settings",
-              "content_notes": "CORE CONCEPT\nCounseling settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Counseling settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Counseling settings as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCounseling settings → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIn counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.\n\nKEY POINTS\n• Tests can structure information relevant to counseling goals.\n• Interest and aptitude measures are especially relevant to career guidance.\n• Personality information can contribute to self-understanding.\n• Results require appropriate interpretation and discussion with the client.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications of Psychological Testing and Career Guidance.\n\nCOMMON EXAM TRAP\nA counseling test result is an aid to formulation and decision-making, not a substitute for the counseling process.\n\nMEMORY CUE\nCounseling settings → Tests can structure information relevant to counseling goals • Interest and aptitude measures are especially relevant to career guidance • Personality information can contribute to self-understanding",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5477,14 +5433,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nCounseling settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Counseling settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Counseling settings as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIn counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.\n\nKEY POINTS\n• Tests can structure information relevant to counseling goals.\n• Interest and aptitude measures are especially relevant to career guidance.\n• Personality information can contribute to self-understanding.\n• Results require appropriate interpretation and discussion with the client.\n\nDISTINCTION / CAUTION\nA counseling test result is an aid to formulation and decision-making, not a substitute for the counseling process.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Applications of Psychological Testing and Career Guidance.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Counseling settings”.",
-                "List the key points associated with “Counseling settings” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Counseling settings”?"
+                "State the source-based core idea of “Counseling settings”.",
+                "List the main source-supported points for “Counseling settings”.",
+                "State the key distinction or caution for “Counseling settings”."
               ],
-              "application_question": "Source-based check: Given a new question about “Counseling settings”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Counseling settings → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Counseling settings”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Tests can structure information relevant to counseling goals",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5494,17 +5450,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Applications of Psychological Testing and Career Guidance."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             },
             {
               "id": 5,
               "title": "Military settings",
-              "content_notes": "CORE CONCEPT\nMilitary settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Military settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Military settings as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMilitary settings → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.\n\nKEY POINTS\n• Military testing begins in recruitment and can continue through service.\n• Aptitude tests may assess verbal, numerical, spatial and related abilities.\n• Army Alpha and Army Beta are historical examples in the source.\n• Selection formats can be uniform, diversified or mixed.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Application of Psychological Testing in the Military.\n\nCOMMON EXAM TRAP\nMilitary testing is not limited to one intelligence test; the source describes a broader assessment system tied to specific competencies and roles.\n\nMEMORY CUE\nMilitary settings → Military testing begins in recruitment and can continue through service • Aptitude tests may assess verbal, numerical, spatial and related abilities • Army Alpha and Army Beta are historical examples in the source",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5514,14 +5467,14 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "ACADEMIC CORE\nMilitary settings is a focused concept within “Applications of psychological testing in various settings: Clinical, Organizational and business, Education, Counseling, Military”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Military settings\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Military settings as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Psychology: A Self-Teaching Guide\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.\n\nKEY POINTS\n• Military testing begins in recruitment and can continue through service.\n• Aptitude tests may assess verbal, numerical, spatial and related abilities.\n• Army Alpha and Army Beta are historical examples in the source.\n• Selection formats can be uniform, diversified or mixed.\n\nDISTINCTION / CAUTION\nMilitary testing is not limited to one intelligence test; the source describes a broader assessment system tied to specific competencies and roles.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 3 Application of Psychological Testing in the Military.\n\nSTUDY RULE\nPreserve the source terminology and distinctions. Where the uploaded material gives only outline-level coverage, do not fill the gap with unsupported detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Military settings”.",
-                "List the key points associated with “Military settings” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Military settings”?"
+                "State the source-based core idea of “Military settings”.",
+                "List the main source-supported points for “Military settings”.",
+                "State the key distinction or caution for “Military settings”."
               ],
-              "application_question": "Source-based check: Given a new question about “Military settings”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Military settings → define → distinguish → apply",
+              "application_question": "Source-based application: A question presents a testing situation involving “Military settings”. Identify the testing concept being used and justify the answer with the source-supported distinction.",
+              "exam_takeaway": "Military testing begins in recruitment and can continue through service",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -5531,10 +5484,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Psychology: A Self-Teaching Guide"
+                "PowerWithin Psychology — Unit 3 Application of Psychological Testing in the Military."
               ],
               "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
             }
@@ -18283,7 +18233,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 38
+        "enrichedMicrotopics": 55
       }
     }
   },
