@@ -16,6 +16,8 @@ const SHELL=[
   './data.json',
   './content-version.js',
   './kaplan_enrichment.json',
+  './study_sources.json',
+  './mcq_mapping.json',
   './practice_questions.json',
   './practice_explanations.json',
   './manifest.webmanifest'
