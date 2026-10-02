@@ -57,6 +57,21 @@ async function loadStudyData(){
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
       try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
+    try{
+      const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
+      if(mm.ok){
+        const map=await mm.json();
+        const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
+        PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>{
+          const o=overrides[q.id];
+          if(!o)return q;
+          const parts=String(o.target||'').split('-').map(Number);
+          if(parts.length!==3||parts.some(Number.isNaN))return {...q,source_tags:o.sources||['PYQ'],source_topic:o.topic||''};
+          return {...q,unit:parts[0],topic:parts[1],micro:parts[2],source_tags:o.sources||['PYQ'],source_topic:o.topic||''};
+        });
+        json.mcq_mapping=map;
+      }
+    }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
   }
   render();
   return true;
@@ -248,7 +263,13 @@ function topicPage(){
 function practiceFor(u,t,m){
   return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u)&&Number(q.topic)===Number(t)&&Number(q.micro)===Number(m));
 }
-function mcqHTML(q,i,source='MCQ'){const opts=q.options||q.o||[];const ans=Number.isInteger(q.answer)?q.answer:0;return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta"><span>${source}</span><span>Question ${i+1}</span></div><h3>${esc(q.question || q.q || '')}</h3><div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`}
+function mcqHTML(q,i,source='MCQ'){
+  const opts=q.options||q.o||[];
+  const ans=Number.isInteger(q.answer)?q.answer:0;
+  const tags=Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:[source];
+  const provenance=tags.join(' · ');
+  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta"><span>${esc(provenance)}</span><span>Question ${i+1}</span></div><h3>${esc(q.question || q.q || '')}</h3><div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
+}
 function mappedConcept(q){
   if(!q||q.unit==null||q.topic==null||q.micro==null||!D)return null;
   const u=units().find(x=>String(x.id)===String(q.unit));
