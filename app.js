@@ -217,20 +217,20 @@ function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
   const p=getP(k);
-  document.title=\`${m.title} — UGC NET Psychology\`;
+  document.title=`${m.title} — UGC NET Psychology`;
   const items=all(),idx=items.findIndex(x=>x.k===k),prev=items[idx-1],next=items[idx+1];
   const concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title;
   const kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
   const core=stripLegacy(m.content_notes);
   const trap=section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS');
   const hook=section(m.content_notes,'MEMORY HOOK');
-  const deep=[m.deep,m.deep_learning,m.source_lens&&\`Study lens: \${m.source_lens}\`,trap&&\`Distinction to check: \${trap}\`,hook&&\`Memory cue: \${hook}\`].filter(Boolean).join('\n\n')||core;
+  const deep=[m.deep,m.deep_learning,m.source_lens&&`Study lens: ${m.source_lens}`,trap&&`Distinction to check: ${trap}`,hook&&`Memory cue: ${hook}`].filter(Boolean).join('\n\n')||core;
   const sources=sourceNames(m),qs=practiceFor(u.id,t.id,m.id);
 
-  $('#microPage').innerHTML=\`<div class="breadcrumbs"><span>\${esc(m.title)}</span></div>
+  $('#microPage').innerHTML=`<div class="breadcrumbs"><span>${esc(m.title)}</span></div>
   <section class="micro-hero">
-    <div><div class="eyebrow">MICRO-TOPIC \${m.id}</div><h1>\${esc(m.title)}</h1><p>\${esc(t.title)}</p></div>
-    <div class="status-box"><span class="status \${p.status.toLowerCase()}">\${p.status}</span><strong>\${p.next?'Next revision '+date(p.next):'Ready to learn'}</strong><small>\${p.rating?\`Last rating: \${p.rating}\`:'No revision scheduled yet'}</small></div>
+    <div><div class="eyebrow">MICRO-TOPIC ${m.id}</div><h1>${esc(m.title)}</h1><p>${esc(t.title)}</p></div>
+    <div class="status-box"><span class="status ${p.status.toLowerCase()}">${p.status}</span><strong>${p.next?'Next revision '+date(p.next):'Ready to learn'}</strong><small>${p.rating?`Last rating: ${p.rating}`:'No revision scheduled yet'}</small></div>
   </section>
   <div class="session-shell">
     <div class="learning-path"><span class="step active">1 Understand</span><span class="step">2 Recall</span><span class="step">3 Apply</span><span class="step">4 Practice</span><span class="step">5 Schedule Revision</span></div>
@@ -239,56 +239,56 @@ function micro(){
         <section class="card stage" data-stage="understand">
           <div class="stage-label">UNDERSTAND</div>
           <h2>Understand the concept</h2>
-          <p class="lead micro-main-explanation">\${esc(concept)}</p>
-          \${kp.length?\`<ul class="key-points">\${kp.slice(0,5).map(x=>\`<li>\${esc(x)}</li>\`).join('')}</ul>\`:''}
+          <p class="lead micro-main-explanation">${esc(concept)}</p>
+          ${kp.length?`<ul class="key-points">${kp.slice(0,5).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
           <div class="micro-resource-actions" aria-label="Concept resources">
             <button type="button" class="micro-resource-btn" data-resource-target="microShortNotes"><span>SHORT NOTES</span><b>→</b></button>
             <button type="button" class="micro-resource-btn primary-action next-stage" data-next="recall"><span>I UNDERSTAND</span><b>→</b></button>
             <button type="button" class="micro-resource-btn" data-resource-target="microDetailedExplanation"><span>DETAILED EXPLANATION</span><b>→</b></button>
           </div>
           <section class="micro-resource-panel hidden" id="microShortNotes" aria-labelledby="microShortNotesTitle">
-            <div class="micro-resource-panel-head"><div><div class="eyebrow">SHORT NOTES</div><h3 id="microShortNotesTitle">\${esc(m.title)}</h3></div><span class="micro-resource-hint">Quick revision view</span></div>
-            \${studyNotesHTML(m,concept,kp,core,trap,hook)}
+            <div class="micro-resource-panel-head"><div><div class="eyebrow">SHORT NOTES</div><h3 id="microShortNotesTitle">${esc(m.title)}</h3></div><span class="micro-resource-hint">Quick revision view</span></div>
+            ${studyNotesHTML(m,concept,kp,core,trap,hook)}
           </section>
           <section class="micro-resource-panel hidden" id="microDetailedExplanation" aria-labelledby="microDetailedExplanationTitle">
-            <div class="micro-resource-panel-head"><div><div class="eyebrow">DETAILED EXPLANATION</div><h3 id="microDetailedExplanationTitle">\${esc(m.title)}</h3></div><span class="micro-resource-hint">Deeper conceptual view</span></div>
-            <div class="notes micro-detailed-copy">\${esc(deep)}</div>
+            <div class="micro-resource-panel-head"><div><div class="eyebrow">DETAILED EXPLANATION</div><h3 id="microDetailedExplanationTitle">${esc(m.title)}</h3></div><span class="micro-resource-hint">Deeper conceptual view</span></div>
+            <div class="notes micro-detailed-copy">${esc(deep)}</div>
           </section>
         </section>
 
         <section class="card stage hidden" data-stage="recall">
           <div class="stage-label">RECALL</div><h2>Close the notes. Reconstruct it.</h2>
-          \${(m.retrieval_questions||[\`Define \${m.title} from memory.\`,\`State one distinction or example.\`]).map((q,i)=>\`<label class="retrieval-item"><b>Recall \${i+1}</b><span>\${esc(q)}</span><textarea class="recall-box" placeholder="Write from memory…"></textarea></label>\`).join('')}
+          ${(m.retrieval_questions||[`Define ${m.title} from memory.`,`State one distinction or example.`]).map((q,i)=>`<label class="retrieval-item"><b>Recall ${i+1}</b><span>${esc(q)}</span><textarea class="recall-box" placeholder="Write from memory…"></textarea></label>`).join('')}
           <div class="confidence"><span>Before revealing feedback, rate your confidence.</span><button class="btn" data-confidence="low">Low</button><button class="btn" data-confidence="medium">Medium</button><button class="btn" data-confidence="high">High</button></div>
           <button class="btn primary next-stage" data-next="apply" disabled id="recallNext">I recalled it — continue →</button>
         </section>
 
         <section class="card stage hidden" data-stage="apply">
-          <div class="stage-label">APPLY</div><h2>Transfer the idea</h2><p>\${esc(m.application_question||'Apply the concept to an unfamiliar situation and explain why it fits.')}</p>
+          <div class="stage-label">APPLY</div><h2>Transfer the idea</h2><p>${esc(m.application_question||'Apply the concept to an unfamiliar situation and explain why it fits.')}</p>
           <textarea class="recall-box" placeholder="Explain your reasoning…"></textarea>
           <button class="btn primary next-stage" data-next="practice">I applied it — continue →</button>
         </section>
 
         <section class="card stage hidden" data-stage="practice">
           <div class="stage-label">PRACTICE · PYQ</div><h2>Answer before the explanation</h2>
-          <div id="microQuestions">\${qs.length?qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join(''):'<div class="panel empty"><h3>No PYQ mapped here yet</h3><p>This concept can still be completed. Use the application task, then continue directly to revision scheduling.</p></div>'}</div>
-          <button class="btn primary next-stage" data-next="schedule">\${qs.length?'Finish practice →':'Continue to revision scheduling →'}</button>
+          <div id="microQuestions">${qs.length?qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join(''):'<div class="panel empty"><h3>No PYQ mapped here yet</h3><p>This concept can still be completed. Use the application task, then continue directly to revision scheduling.</p></div>'}</div>
+          <button class="btn primary next-stage" data-next="schedule">${qs.length?'Finish practice →':'Continue to revision scheduling →'}</button>
         </section>
 
         <section class="card stage hidden" data-stage="schedule">
           <div class="stage-label">SCHEDULE REVISION</div><h2>How well could you recall it?</h2><p class="muted">Your rating changes the next interval. Forgetting brings the next return closer; it does not erase your learning.</p>
-          <div class="rating-grid">\${[['again','Again','I could not recall it'],['hard','Hard','I recalled it with effort'],['good','Good','Normal successful recall'],['easy','Easy','Easy successful recall']].map(x=>\`<button class="rating" data-rating="\${x[0]}"><strong>\${x[1]}</strong><small>\${x[2]}</small></button>\`).join('')}</div>
+          <div class="rating-grid">${[['again','Again','I could not recall it'],['hard','Hard','I recalled it with effort'],['good','Good','Normal successful recall'],['easy','Easy','Easy successful recall']].map(x=>`<button class="rating" data-rating="${x[0]}"><strong>${x[1]}</strong><small>${x[2]}</small></button>`).join('')}</div>
           <div id="scheduleResult" class="schedule-result">Choose a rating to schedule your next revision.</div>
         </section>
       </main>
 
       <aside class="content-stack">
-        <section class="card source-card"><div class="eyebrow">STUDY SUPPORT</div><h2>Go deeper when you need to</h2><div class="source-tags">\${sources.map(s=>\`<span class="pill">\${esc(s)}</span>\`).join('')||'<span class="muted">Mapped source metadata not available.</span>'}</div>\${sourceEntries(m).length?\`<div class="source-details">\${sourceEntries(m).map(s=>\`<div class="source-detail"><b>\${esc(s.title)}</b><span>\${esc(s.role||'')}</span></div>\`).join('')}</div>\`:''}<p class="source-note">The syllabus source anchors scope; the mapped study sources add conceptual or contextual depth. Use them selectively when the quick explanation is not enough.</p></section>
+        <section class="card source-card"><div class="eyebrow">STUDY SUPPORT</div><h2>Go deeper when you need to</h2><div class="source-tags">${sources.map(s=>`<span class="pill">${esc(s)}</span>`).join('')||'<span class="muted">Mapped source metadata not available.</span>'}</div>${sourceEntries(m).length?`<div class="source-details">${sourceEntries(m).map(s=>`<div class="source-detail"><b>${esc(s.title)}</b><span>${esc(s.role||'')}</span></div>`).join('')}</div>`:''}<p class="source-note">The syllabus source anchors scope; the mapped study sources add conceptual or contextual depth. Use them selectively when the quick explanation is not enough.</p></section>
         <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Check it after some time</h2><p class="muted">A concept is becoming secure when you can understand it, recall it, use it, and still bring it back later.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
-        <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">\${prev?\`<a href="microtopic.html?unit=\${prev.u.id}&topic=\${prev.t.id}&micro=\${prev.m.id}">← Previous</a>\`:''}\${next?\`<a href="microtopic.html?unit=\${next.u.id}&topic=\${next.t.id}&micro=\${next.m.id}">Next →</a>\`:''}<a href="topic.html?unit=\${u.id}&topic=\${t.id}">Back to topic</a></div></section>
+        <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:''}${next?`<a href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:''}<a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a></div></section>
       </aside>
     </div>
-  </div>\`;
+  </div>`;
 
   const stages=$$('.stage'),show=s=>stages.forEach(x=>x.classList.toggle('hidden',x.dataset.stage!==s));
   $$('.next-stage').forEach(b=>b.onclick=()=>{
@@ -326,7 +326,7 @@ function micro(){
   wireMCQ($('#microQuestions'),k,qs);
   $$('[data-rating]').forEach(b=>b.onclick=()=>{
     const patch=setDue(k,b.dataset.rating);setP(k,patch);
-    $('#scheduleResult').innerHTML=patch.lateReset?\`<b>Revision reset to your last successful checkpoint.</b> Next revision: \${date(patch.next)}\`:\`<b>Next revision scheduled.</b> \${patch.next?date(patch.next):'today'}\`;
+    $('#scheduleResult').innerHTML=patch.lateReset?`<b>Revision reset to your last successful checkpoint.</b> Next revision: ${date(patch.next)}`:`<b>Next revision scheduled.</b> ${patch.next?date(patch.next):'today'}`;
   });
   const masterBtn=$('#master');
   if(!(p.understanding&&p.retrieval&&p.application&&p.revisionCount>0))masterBtn.disabled=true;
