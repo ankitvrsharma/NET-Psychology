@@ -1,0 +1,37 @@
+name: NTA Psychology PYQ Sync
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install parser dependencies
+        run: pip install requests beautifulsoup4 pypdf
+      - name: Discover official NTA Psychology assets
+        run: python scripts/nta_pyq_sync.py
+      - name: Create review PR when NTA data changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "No NTA changes detected."
+            exit 0
+          fi
+          git config user.name "nta-pyq-sync"
+          git config user.email "actions@github.com"
+          git add data/nta_pyq_registry.json
+          git commit -m "chore: sync official NTA Psychology PYQ assets"
+          git push
+          gh pr create             --base main             --head "${GITHUB_REF_NAME}"             --title "NTA Psychology PYQ sync"             --body "Automated discovery of official NTA Psychology answer-key/question-paper assets. Review before merging into the live PYQ bank."
