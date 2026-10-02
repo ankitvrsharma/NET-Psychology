@@ -1,27 +1,30 @@
-name: Rewrite micro-topic knowledge
+name: Restore source grounded micro-topic knowledge
 
 on:
   push:
     branches: [main]
     paths:
-      - scripts/rewrite_microtopic_notes.py
+      - .github/workflows/rewrite-microtopics.yml
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  rewrite:
+  restore:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rewrite learner-first micro-topic knowledge
-        run: python scripts/rewrite_microtopic_notes.py
-      - name: Commit rewritten knowledge
+      - name: Restore approved source-grounded snapshots
+        run: |
+          git show 07c57f8168632f42710a72fffe4cefbf94e793ef:data.json > data.json
+          git show 43acab833ba21b6118c0a53089b9b13da7670d03:data.js > data.js
+          git show adabfed3e2c42773accca9f15bc9c768d02c2076:content-version.js > content-version.js
+      - name: Commit restored content
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json data.js content-version.js
-          git diff --cached --quiet && exit 0
-          git commit -m "Rewrite micro-topic knowledge for active learning"
+          git diff --cached --quiet || exit 0
+          git commit -m "Restore source-grounded microtopic knowledge"
           git push
