@@ -1,12 +1,10 @@
 (function(){
 'use strict';
-const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const $=s=>document.querySelector(s);
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
-const ladder=[0,1,3,7,14,30,60,90,180];
-
 function loadScript(src){
   return new Promise((resolve,reject)=>{
     const s=document.createElement('script');
@@ -91,10 +89,6 @@ const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const stripLegacy=s=>String(s||'').replace(/\nPYQ-STYLE PATTERN[\s\S]*?(?=\nCOMMON TRAP|\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\nCOMMON TRAP[\s\S]*?(?=\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\n5-MINUTE TEACHING FOCUS[\s\S]*?(?=\nMEMORY HOOK|$)/,'').replace(/\nMEMORY HOOK[\s\S]*?$/,'').trim();
-const noteSection=(label,text,klass='')=>{
-  const v=String(text||'').trim();
-  return v?'<section class="study-note-block '+klass+'"><h3>'+esc(label)+'</h3><div class="study-note-text">'+esc(v)+'</div></section>':'';
-};
 const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
   const explicit=Array.isArray(m.study_notes)?m.study_notes:[];
   if(explicit.length)return explicit.map((b)=>({
@@ -239,7 +233,6 @@ function daily3(){
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&new Date(getP(x.k).next).getTime()<=now).sort((a,b)=>new Date(getP(a.k).next)-new Date(getP(b.k).next))}
-function dueCount(){return dueItems().length}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
@@ -480,8 +473,7 @@ function render(){
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
-  if(!D){
-    document.body.innerHTML='<main class="shell"><section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p></section></main>';
-  }
+  const shell=document.querySelector('main.shell');
+  if(shell) shell.innerHTML='<section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
 });
 })();
