@@ -10490,7 +10490,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Biological determinants",
-              "content_notes": "CORE CONCEPT\nBiological determinants is a focused concept within “Determinants of personality: Biological and socio-cultural”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Biological determinants\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Biological determinants as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nBiological determinants → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nBiological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.\n\nKEY POINTS\n• Genes contribute to individual differences.\n• Biological systems can influence temperament and behavior.\n• Twin/adoption evidence is relevant to behavioral-genetic questions.\n• Biological influence does not imply complete determinism.\n\nSOURCE BASIS\nCiccarelli & White 6e — Biology of Personality and Behavioral Genetics; Baron & Misra.\n\nCOMMON EXAM TRAP\nBiological determinants are one part of personality explanation; they do not exclude learning, culture or social experience.\n\nMEMORY CUE\nBiological determinants → Genes contribute to individual differences • Biological systems can influence temperament and behavior • Twin/adoption evidence is relevant to behavioral-genetic questions",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10500,14 +10500,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nBiological determinants is a focused concept within “Determinants of personality: Biological and socio-cultural”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Biological determinants\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Biological determinants as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nBiological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.\n\nKEY POINTS\n• Genes contribute to individual differences.\n• Biological systems can influence temperament and behavior.\n• Twin/adoption evidence is relevant to behavioral-genetic questions.\n• Biological influence does not imply complete determinism.\n\nDISTINCTION / CAUTION\nBiological determinants are one part of personality explanation; they do not exclude learning, culture or social experience.\n\nSOURCE BASIS\nCiccarelli & White 6e — Biology of Personality and Behavioral Genetics; Baron & Misra.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Biological determinants”.",
-                "List the key points associated with “Biological determinants” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Biological determinants”?"
+                "State the source-based core idea of “Biological determinants”.",
+                "List the key source-supported points for “Biological determinants”.",
+                "State the most important distinction or caution for “Biological determinants”."
               ],
-              "application_question": "Source-based check: Given a new question about “Biological determinants”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Biological determinants → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Biological determinants” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Genes contribute to individual differences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10517,17 +10517,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Biology of Personality and Behavioral Genetics; Baron & Misra."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Socio-cultural determinants",
-              "content_notes": "CORE CONCEPT\nSocio-cultural determinants is a focused concept within “Determinants of personality: Biological and socio-cultural”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Socio-cultural determinants\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Socio-cultural determinants as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocio-cultural determinants → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSocio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.\n\nKEY POINTS\n• Family and socialization provide important developmental contexts.\n• Culture shapes expectations, roles and patterns of behavior.\n• Social learning contributes to personality development.\n• Biological and sociocultural influences interact.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personality and Social Context; Baron & Misra — personality and culture.\n\nCOMMON EXAM TRAP\nSocio-cultural influence is not equivalent to a single environmental event; it includes sustained social and cultural contexts.\n\nMEMORY CUE\nSocio-cultural determinants → Family and socialization provide important developmental contexts • Culture shapes expectations, roles and patterns of behavior • Social learning contributes to personality development",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10537,14 +10534,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nSocio-cultural determinants is a focused concept within “Determinants of personality: Biological and socio-cultural”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Socio-cultural determinants\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Socio-cultural determinants as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSocio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.\n\nKEY POINTS\n• Family and socialization provide important developmental contexts.\n• Culture shapes expectations, roles and patterns of behavior.\n• Social learning contributes to personality development.\n• Biological and sociocultural influences interact.\n\nDISTINCTION / CAUTION\nSocio-cultural influence is not equivalent to a single environmental event; it includes sustained social and cultural contexts.\n\nSOURCE BASIS\nCiccarelli & White 6e — Personality and Social Context; Baron & Misra — personality and culture.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Socio-cultural determinants”.",
-                "List the key points associated with “Socio-cultural determinants” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Socio-cultural determinants”?"
+                "State the source-based core idea of “Socio-cultural determinants”.",
+                "List the key source-supported points for “Socio-cultural determinants”.",
+                "State the most important distinction or caution for “Socio-cultural determinants”."
               ],
-              "application_question": "Source-based check: Given a new question about “Socio-cultural determinants”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Socio-cultural determinants → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Socio-cultural determinants” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Family and socialization provide important developmental contexts",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10554,10 +10551,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Personality and Social Context; Baron & Misra — personality and culture."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -10583,7 +10577,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalytical approach",
-              "content_notes": "CORE CONCEPT\nPsychoanalytical approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Psychoanalytical approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPsychoanalytical approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.\n\nKEY POINTS\n• Freud proposed conscious, preconscious and unconscious processes.\n• Id follows the pleasure principle.\n• Ego follows the reality principle.\n• Superego represents moral standards; defense mechanisms manage anxiety.\n\nSOURCE BASIS\nCiccarelli & White 6e — Psychodynamic Perspectives; Baron & Misra — Psychoanalytic approach.\n\nCOMMON EXAM TRAP\nPsychoanalytic explanations emphasize unconscious conflict and development, unlike trait approaches that focus on measurable patterns of characteristics.\n\nMEMORY CUE\nPsychoanalytical approach → Freud proposed conscious, preconscious and unconscious processes • Id follows the pleasure principle • Ego follows the reality principle",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10593,14 +10587,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nPsychoanalytical approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Psychoanalytical approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.\n\nKEY POINTS\n• Freud proposed conscious, preconscious and unconscious processes.\n• Id follows the pleasure principle.\n• Ego follows the reality principle.\n• Superego represents moral standards; defense mechanisms manage anxiety.\n\nDISTINCTION / CAUTION\nPsychoanalytic explanations emphasize unconscious conflict and development, unlike trait approaches that focus on measurable patterns of characteristics.\n\nSOURCE BASIS\nCiccarelli & White 6e — Psychodynamic Perspectives; Baron & Misra — Psychoanalytic approach.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Psychoanalytical approach”.",
-                "List the key points associated with “Psychoanalytical approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Psychoanalytical approach”?"
+                "State the source-based core idea of “Psychoanalytical approach”.",
+                "List the key source-supported points for “Psychoanalytical approach”.",
+                "State the most important distinction or caution for “Psychoanalytical approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Psychoanalytical approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Psychoanalytical approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Psychoanalytical approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Freud proposed conscious, preconscious and unconscious processes",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10610,10 +10604,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Psychodynamic Perspectives; Baron & Misra — Psychoanalytic approach."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
@@ -10657,7 +10648,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Social learning approach",
-              "content_notes": "CORE CONCEPT\nSocial learning approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social learning approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Social learning approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSocial learning approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.\n\nKEY POINTS\n• Behavior can be learned through observation and consequences.\n• Social context influences behavior.\n• Expectations and perceived consequences affect action.\n• Personality can reflect learned patterns rather than fixed traits alone.\n\nSOURCE BASIS\nCiccarelli & White 6e — Behavioral and Social Cognitive View of Personality; Baron & Misra.\n\nCOMMON EXAM TRAP\nSocial learning is broader than simple conditioning because observational and cognitive processes also matter.\n\nMEMORY CUE\nSocial learning approach → Behavior can be learned through observation and consequences • Social context influences behavior • Expectations and perceived consequences affect action",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10667,14 +10658,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nSocial learning approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Social learning approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Social learning approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.\n\nKEY POINTS\n• Behavior can be learned through observation and consequences.\n• Social context influences behavior.\n• Expectations and perceived consequences affect action.\n• Personality can reflect learned patterns rather than fixed traits alone.\n\nDISTINCTION / CAUTION\nSocial learning is broader than simple conditioning because observational and cognitive processes also matter.\n\nSOURCE BASIS\nCiccarelli & White 6e — Behavioral and Social Cognitive View of Personality; Baron & Misra.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Social learning approach”.",
-                "List the key points associated with “Social learning approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Social learning approach”?"
+                "State the source-based core idea of “Social learning approach”.",
+                "List the key source-supported points for “Social learning approach”.",
+                "State the most important distinction or caution for “Social learning approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Social learning approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Social learning approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Social learning approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Behavior can be learned through observation and consequences",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10684,17 +10675,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Behavioral and Social Cognitive View of Personality; Baron & Misra."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 4: classical/operant conditioning and learning comparisons. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Trait and Type approach",
-              "content_notes": "CORE CONCEPT\nTrait and Type approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Trait and Type approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Trait and Type approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTrait and Type approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nTrait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.\n\nKEY POINTS\n• Traits are relatively stable characteristics.\n• Type approaches classify people into broader categories.\n• Trait approaches allow dimensions and degrees of a characteristic.\n• Measurement and consistency across situations are important issues.\n\nSOURCE BASIS\nBaron & Misra — Personality: Individuals, Unique and Relatively Stable Patterns; Ciccarelli & White — Trait Theories.\n\nCOMMON EXAM TRAP\nTrait stability is not absolute; Baron & Misra discuss the debate over person–situation consistency.\n\nMEMORY CUE\nTrait and Type approach → Traits are relatively stable characteristics • Type approaches classify people into broader categories • Trait approaches allow dimensions and degrees of a characteristic",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10704,14 +10692,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nTrait and Type approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Trait and Type approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Trait and Type approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nTrait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.\n\nKEY POINTS\n• Traits are relatively stable characteristics.\n• Type approaches classify people into broader categories.\n• Trait approaches allow dimensions and degrees of a characteristic.\n• Measurement and consistency across situations are important issues.\n\nDISTINCTION / CAUTION\nTrait stability is not absolute; Baron & Misra discuss the debate over person–situation consistency.\n\nSOURCE BASIS\nBaron & Misra — Personality: Individuals, Unique and Relatively Stable Patterns; Ciccarelli & White — Trait Theories.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Trait and Type approach”.",
-                "List the key points associated with “Trait and Type approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Trait and Type approach”?"
+                "State the source-based core idea of “Trait and Type approach”.",
+                "List the key source-supported points for “Trait and Type approach”.",
+                "State the most important distinction or caution for “Trait and Type approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Trait and Type approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Trait and Type approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Trait and Type approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Traits are relatively stable characteristics",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10721,17 +10709,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Personality: Individuals, Unique and Relatively Stable Patterns; Ciccarelli & White — Trait Theories."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Cognitive approach",
-              "content_notes": "CORE CONCEPT\nCognitive approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Cognitive approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCognitive approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.\n\nKEY POINTS\n• Interpretation of events influences behavior.\n• Expectancies and beliefs affect action.\n• Cognitive patterns can show individual differences.\n• Personality is understood partly through information processing and meaning-making.\n\nSOURCE BASIS\nCiccarelli & White 6e — Behavioral/Social Cognitive and Cognitive influences on Personality; PowerWithin Psychology.\n\nCOMMON EXAM TRAP\nThe cognitive approach is not the same as the information-processing account of basic perception; here the focus is personality-related cognition.\n\nMEMORY CUE\nCognitive approach → Interpretation of events influences behavior • Expectancies and beliefs affect action • Cognitive patterns can show individual differences",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10741,14 +10726,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nCognitive approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Cognitive approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Cognitive approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.\n\nKEY POINTS\n• Interpretation of events influences behavior.\n• Expectancies and beliefs affect action.\n• Cognitive patterns can show individual differences.\n• Personality is understood partly through information processing and meaning-making.\n\nDISTINCTION / CAUTION\nThe cognitive approach is not the same as the information-processing account of basic perception; here the focus is personality-related cognition.\n\nSOURCE BASIS\nCiccarelli & White 6e — Behavioral/Social Cognitive and Cognitive influences on Personality; PowerWithin Psychology.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Cognitive approach”.",
-                "List the key points associated with “Cognitive approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Cognitive approach”?"
+                "State the source-based core idea of “Cognitive approach”.",
+                "List the key source-supported points for “Cognitive approach”.",
+                "State the most important distinction or caution for “Cognitive approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Cognitive approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Cognitive approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Cognitive approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Interpretation of events influences behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10758,17 +10743,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Behavioral/Social Cognitive and Cognitive influences on Personality; PowerWithin Psychology."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 6,
               "title": "Humanistic approach",
-              "content_notes": "CORE CONCEPT\nHumanistic approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Humanistic approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Humanistic approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHumanistic approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.\n\nKEY POINTS\n• The person is viewed as an active agent.\n• Self-concept and subjective experience are important.\n• Growth and self-actualization are central themes.\n• The approach emphasizes meaning and personal potential.\n\nSOURCE BASIS\nCiccarelli & White 6e — Humanistic Perspectives; Self-Teaching Guide — Humanistic Viewpoint and Self-Actualization.\n\nCOMMON EXAM TRAP\nHumanistic psychology does not define personality primarily through unconscious conflict or learned responses.\n\nMEMORY CUE\nHumanistic approach → The person is viewed as an active agent • Self-concept and subjective experience are important • Growth and self-actualization are central themes",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10778,14 +10760,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nHumanistic approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Humanistic approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Humanistic approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.\n\nKEY POINTS\n• The person is viewed as an active agent.\n• Self-concept and subjective experience are important.\n• Growth and self-actualization are central themes.\n• The approach emphasizes meaning and personal potential.\n\nDISTINCTION / CAUTION\nHumanistic psychology does not define personality primarily through unconscious conflict or learned responses.\n\nSOURCE BASIS\nCiccarelli & White 6e — Humanistic Perspectives; Self-Teaching Guide — Humanistic Viewpoint and Self-Actualization.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Humanistic approach”.",
-                "List the key points associated with “Humanistic approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Humanistic approach”?"
+                "State the source-based core idea of “Humanistic approach”.",
+                "List the key source-supported points for “Humanistic approach”.",
+                "State the most important distinction or caution for “Humanistic approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Humanistic approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Humanistic approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Humanistic approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "The person is viewed as an active agent",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10795,17 +10777,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Humanistic Perspectives; Self-Teaching Guide — Humanistic Viewpoint and Self-Actualization."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 7,
               "title": "Existential approach",
-              "content_notes": "CORE CONCEPT\nExistential approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Existential approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Existential approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nExistential approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.\n\nKEY POINTS\n• Meaning is a central concern.\n• Choice and responsibility are emphasized.\n• Human beings confront uncertainty and limitations.\n• Personal meaning can guide action and growth.\n\nSOURCE BASIS\nPowerWithin Psychology — Existential approaches and Frankl's Logotherapy; Self-Teaching Guide — Existentialism.\n\nCOMMON EXAM TRAP\nExistential psychology is not simply another trait model; it is concerned with meaning and lived existence.\n\nMEMORY CUE\nExistential approach → Meaning is a central concern • Choice and responsibility are emphasized • Human beings confront uncertainty and limitations",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10815,14 +10794,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "ACADEMIC CORE\nExistential approach is a focused concept within “Approaches to the study of personality: Psychoanalytical, Neo-Freudian, Social learning, Trait and Type, Cognitive, Humanistic, Existential, Transpersonal psychology”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Existential approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Existential approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.\n\nKEY POINTS\n• Meaning is a central concern.\n• Choice and responsibility are emphasized.\n• Human beings confront uncertainty and limitations.\n• Personal meaning can guide action and growth.\n\nDISTINCTION / CAUTION\nExistential psychology is not simply another trait model; it is concerned with meaning and lived existence.\n\nSOURCE BASIS\nPowerWithin Psychology — Existential approaches and Frankl's Logotherapy; Self-Teaching Guide — Existentialism.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Existential approach”.",
-                "List the key points associated with “Existential approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Existential approach”?"
+                "State the source-based core idea of “Existential approach”.",
+                "List the key source-supported points for “Existential approach”.",
+                "State the most important distinction or caution for “Existential approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Existential approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Existential approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Existential approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Meaning is a central concern",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10832,10 +10811,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Existential approaches and Frankl's Logotherapy; Self-Teaching Guide — Existentialism."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
@@ -10935,7 +10911,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Seligman's Explanatory styles",
-              "content_notes": "CORE CONCEPT\nSeligman's Explanatory styles is a focused concept within “Other theories: Rotter's Locus of Control, Seligman's Explanatory styles, Kohlberg’s theory of Moral development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Seligman's Explanatory styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Seligman's Explanatory styles as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSeligman's Explanatory styles → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSeligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.\n\nKEY POINTS\n• Explanations can differ in how permanent or temporary an outcome is seen.\n• Explanations can differ in how broadly an event is generalized.\n• Explanatory style is linked to expectations and coping.\n• The framework is relevant to learned optimism and pessimism.\n\nSOURCE BASIS\nPowerWithin Psychology — Seligman/optimism material; Ciccarelli & White on optimism and stress.\n\nCOMMON EXAM TRAP\nExplanatory style concerns habitual interpretation of events; it is not identical to a global personality trait score.\n\nMEMORY CUE\nSeligman's Explanatory styles → Explanations can differ in how permanent or temporary an outcome is seen • Explanations can differ in how broadly an event is generalized • Explanatory style is linked to expectations and coping",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10945,14 +10921,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "ACADEMIC CORE\nSeligman's Explanatory styles is a focused concept within “Other theories: Rotter's Locus of Control, Seligman's Explanatory styles, Kohlberg’s theory of Moral development”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Seligman's Explanatory styles\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Seligman's Explanatory styles as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSeligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.\n\nKEY POINTS\n• Explanations can differ in how permanent or temporary an outcome is seen.\n• Explanations can differ in how broadly an event is generalized.\n• Explanatory style is linked to expectations and coping.\n• The framework is relevant to learned optimism and pessimism.\n\nDISTINCTION / CAUTION\nExplanatory style concerns habitual interpretation of events; it is not identical to a global personality trait score.\n\nSOURCE BASIS\nPowerWithin Psychology — Seligman/optimism material; Ciccarelli & White on optimism and stress.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Seligman's Explanatory styles”.",
-                "List the key points associated with “Seligman's Explanatory styles” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Seligman's Explanatory styles”?"
+                "State the source-based core idea of “Seligman's Explanatory styles”.",
+                "List the key source-supported points for “Seligman's Explanatory styles”.",
+                "State the most important distinction or caution for “Seligman's Explanatory styles”."
               ],
-              "application_question": "Source-based check: Given a new question about “Seligman's Explanatory styles”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Seligman's Explanatory styles → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Seligman's Explanatory styles” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Explanations can differ in how permanent or temporary an outcome is seen",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -10962,10 +10938,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Seligman/optimism material; Ciccarelli & White on optimism and stress."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
@@ -11028,7 +11001,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Instincts",
-              "content_notes": "CORE CONCEPT\nInstincts is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instincts\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Instincts as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nInstincts → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nInstincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.\n\nKEY POINTS\n• Instincts are biologically based.\n• They do not require the same kind of learning as acquired motives.\n• Evolutionary explanations can be used to understand adaptive behavior.\n• Human motivation is not explained by instincts alone in modern psychology.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Motivation; PowerWithin Psychology — Approaches to Motivation.\n\nCOMMON EXAM TRAP\nInstinct and drive are related biological concepts but are not interchangeable: a drive is a motivational state, while an instinct refers to an innate behavioral tendency.\n\nMEMORY CUE\nInstincts → Instincts are biologically based • They do not require the same kind of learning as acquired motives • Evolutionary explanations can be used to understand adaptive behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11038,14 +11011,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nInstincts is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Instincts\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Instincts as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nInstincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.\n\nKEY POINTS\n• Instincts are biologically based.\n• They do not require the same kind of learning as acquired motives.\n• Evolutionary explanations can be used to understand adaptive behavior.\n• Human motivation is not explained by instincts alone in modern psychology.\n\nDISTINCTION / CAUTION\nInstinct and drive are related biological concepts but are not interchangeable: a drive is a motivational state, while an instinct refers to an innate behavioral tendency.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Motivation; PowerWithin Psychology — Approaches to Motivation.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Instincts”.",
-                "List the key points associated with “Instincts” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Instincts”?"
+                "State the source-based core idea of “Instincts”.",
+                "List the key source-supported points for “Instincts”.",
+                "State the most important distinction or caution for “Instincts”."
               ],
-              "application_question": "Source-based check: Given a new question about “Instincts”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Instincts → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Instincts” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Instincts are biologically based",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11055,17 +11028,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide — Motivation; PowerWithin Psychology — Approaches to Motivation."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Needs",
-              "content_notes": "CORE CONCEPT\nNeeds is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Needs\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Needs as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nNeeds → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nNeeds are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.\n\nKEY POINTS\n• Physiological needs include states such as hunger and thirst.\n• Psychological needs can involve achievement, affiliation or power.\n• Needs can activate goal-directed behavior.\n• Different theories organize needs differently.\n\nSOURCE BASIS\nSelf-Teaching Guide — Motivation and Biological/Acquired Motives; Ciccarelli & White — Motivation.\n\nCOMMON EXAM TRAP\nA need is not identical to a drive: a need refers to a requirement or deficiency, whereas a drive is the motivational state that can arise from it.\n\nMEMORY CUE\nNeeds → Physiological needs include states such as hunger and thirst • Psychological needs can involve achievement, affiliation or power • Needs can activate goal-directed behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11075,14 +11045,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nNeeds is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Needs\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Needs as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nNeeds are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.\n\nKEY POINTS\n• Physiological needs include states such as hunger and thirst.\n• Psychological needs can involve achievement, affiliation or power.\n• Needs can activate goal-directed behavior.\n• Different theories organize needs differently.\n\nDISTINCTION / CAUTION\nA need is not identical to a drive: a need refers to a requirement or deficiency, whereas a drive is the motivational state that can arise from it.\n\nSOURCE BASIS\nSelf-Teaching Guide — Motivation and Biological/Acquired Motives; Ciccarelli & White — Motivation.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Needs”.",
-                "List the key points associated with “Needs” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Needs”?"
+                "State the source-based core idea of “Needs”.",
+                "List the key source-supported points for “Needs”.",
+                "State the most important distinction or caution for “Needs”."
               ],
-              "application_question": "Source-based check: Given a new question about “Needs”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Needs → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Needs” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Physiological needs include states such as hunger and thirst",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11092,17 +11062,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Motivation and Biological/Acquired Motives; Ciccarelli & White — Motivation."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "Drives",
-              "content_notes": "CORE CONCEPT\nDrives is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Drives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Drives as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nDrives → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nA drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.\n\nKEY POINTS\n• Drives can arise from physiological states.\n• Drive reduction theory links motivation with restoring homeostasis.\n• Drives energize and direct behavior.\n• Psychological motives can also influence behavior.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Motivation; Ciccarelli & White — Drive-Reduction Theory.\n\nCOMMON EXAM TRAP\nDrive is not the same as incentive: a drive originates in an internal motivational state, whereas an incentive is an external or learned attraction/reward.\n\nMEMORY CUE\nDrives → Drives can arise from physiological states • Drive reduction theory links motivation with restoring homeostasis • Drives energize and direct behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11112,14 +11079,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nDrives is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Drives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Drives as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nA drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.\n\nKEY POINTS\n• Drives can arise from physiological states.\n• Drive reduction theory links motivation with restoring homeostasis.\n• Drives energize and direct behavior.\n• Psychological motives can also influence behavior.\n\nDISTINCTION / CAUTION\nDrive is not the same as incentive: a drive originates in an internal motivational state, whereas an incentive is an external or learned attraction/reward.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Motivation; Ciccarelli & White — Drive-Reduction Theory.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Drives”.",
-                "List the key points associated with “Drives” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Drives”?"
+                "State the source-based core idea of “Drives”.",
+                "List the key source-supported points for “Drives”.",
+                "State the most important distinction or caution for “Drives”."
               ],
-              "application_question": "Source-based check: Given a new question about “Drives”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Drives → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Drives” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Drives can arise from physiological states",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11129,17 +11096,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide — Motivation; Ciccarelli & White — Drive-Reduction Theory."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Arousal",
-              "content_notes": "CORE CONCEPT\nArousal is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Arousal\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Arousal as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nArousal → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nArousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.\n\nKEY POINTS\n• People may seek an optimal level of stimulation.\n• Underarousal can motivate exploration or stimulation.\n• Overarousal can motivate reduction of stimulation.\n• Individual differences occur in desired arousal levels.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal Theory; PowerWithin Psychology — Motivation.\n\nCOMMON EXAM TRAP\nArousal theory differs from drive reduction: it concerns an optimal level of stimulation rather than simply correcting a physiological deficit.\n\nMEMORY CUE\nArousal → People may seek an optimal level of stimulation • Underarousal can motivate exploration or stimulation • Overarousal can motivate reduction of stimulation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11149,14 +11113,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nArousal is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Arousal\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Arousal as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nArousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.\n\nKEY POINTS\n• People may seek an optimal level of stimulation.\n• Underarousal can motivate exploration or stimulation.\n• Overarousal can motivate reduction of stimulation.\n• Individual differences occur in desired arousal levels.\n\nDISTINCTION / CAUTION\nArousal theory differs from drive reduction: it concerns an optimal level of stimulation rather than simply correcting a physiological deficit.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal Theory; PowerWithin Psychology — Motivation.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Arousal”.",
-                "List the key points associated with “Arousal” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Arousal”?"
+                "State the source-based core idea of “Arousal”.",
+                "List the key source-supported points for “Arousal”.",
+                "State the most important distinction or caution for “Arousal”."
               ],
-              "application_question": "Source-based check: Given a new question about “Arousal”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Arousal → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Arousal” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "People may seek an optimal level of stimulation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11166,17 +11130,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Arousal Theory; PowerWithin Psychology — Motivation."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Incentives",
-              "content_notes": "CORE CONCEPT\nIncentives is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Incentives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Incentives as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nIncentives → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nIncentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.\n\nKEY POINTS\n• Incentives can attract behavior.\n• They may be learned rather than biologically necessary.\n• The same incentive can have different value for different people.\n• Incentives complement internal motivational states.\n\nSOURCE BASIS\nCiccarelli & White 6e — Incentive Approach; Self-Teaching Guide — acquired motives.\n\nCOMMON EXAM TRAP\nAn incentive is not the same as a drive; incentives are external/learned attractions, whereas drives involve internal motivational states.\n\nMEMORY CUE\nIncentives → Incentives can attract behavior • They may be learned rather than biologically necessary • The same incentive can have different value for different people",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11186,14 +11147,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nIncentives is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Incentives\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Incentives as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nIncentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.\n\nKEY POINTS\n• Incentives can attract behavior.\n• They may be learned rather than biologically necessary.\n• The same incentive can have different value for different people.\n• Incentives complement internal motivational states.\n\nDISTINCTION / CAUTION\nAn incentive is not the same as a drive; incentives are external/learned attractions, whereas drives involve internal motivational states.\n\nSOURCE BASIS\nCiccarelli & White 6e — Incentive Approach; Self-Teaching Guide — acquired motives.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Incentives”.",
-                "List the key points associated with “Incentives” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Incentives”?"
+                "State the source-based core idea of “Incentives”.",
+                "List the key source-supported points for “Incentives”.",
+                "State the most important distinction or caution for “Incentives”."
               ],
-              "application_question": "Source-based check: Given a new question about “Incentives”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Incentives → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Incentives” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Incentives can attract behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11203,17 +11164,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Incentive Approach; Self-Teaching Guide — acquired motives."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 6,
               "title": "Motivational cycle",
-              "content_notes": "CORE CONCEPT\nMotivational cycle is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivational cycle\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Motivational cycle as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMotivational cycle → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.\n\nKEY POINTS\n• A need or motive initiates motivational activity.\n• Arousal energizes goal-directed behavior.\n• Behavior is directed toward an objective or incentive.\n• Goal attainment can reduce or change the motivational state.\n\nSOURCE BASIS\nSelf-Teaching Guide — Motivation; PowerWithin Psychology — Basic Motivational Concepts.\n\nCOMMON EXAM TRAP\nThe cycle is a conceptual model; not every human motive follows a simple linear sequence.\n\nMEMORY CUE\nMotivational cycle → A need or motive initiates motivational activity • Arousal energizes goal-directed behavior • Behavior is directed toward an objective or incentive",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11223,14 +11181,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nMotivational cycle is a focused concept within “Basic motivational concepts: Instincts, Needs, Drives, Arousal, Incentives, Motivational Cycle”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivational cycle\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Motivational cycle as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.\n\nKEY POINTS\n• A need or motive initiates motivational activity.\n• Arousal energizes goal-directed behavior.\n• Behavior is directed toward an objective or incentive.\n• Goal attainment can reduce or change the motivational state.\n\nDISTINCTION / CAUTION\nThe cycle is a conceptual model; not every human motive follows a simple linear sequence.\n\nSOURCE BASIS\nSelf-Teaching Guide — Motivation; PowerWithin Psychology — Basic Motivational Concepts.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Motivational cycle”.",
-                "List the key points associated with “Motivational cycle” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Motivational cycle”?"
+                "State the source-based core idea of “Motivational cycle”.",
+                "List the key source-supported points for “Motivational cycle”.",
+                "State the most important distinction or caution for “Motivational cycle”."
               ],
-              "application_question": "Source-based check: Given a new question about “Motivational cycle”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Motivational cycle → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Motivational cycle” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "A need or motive initiates motivational activity",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11240,10 +11198,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Motivation; PowerWithin Psychology — Basic Motivational Concepts."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11269,7 +11224,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalytical approach",
-              "content_notes": "CORE CONCEPT\nPsychoanalytical approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Psychoanalytical approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPsychoanalytical approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.\n\nKEY POINTS\n• Unconscious motives can influence behavior.\n• Instinctual drives are central in Freud's model.\n• Conflict can create motivational tension.\n• Behavior may express motives indirectly.\n\nSOURCE BASIS\nSelf-Teaching Guide — Unconscious Motives and Psychoanalytic Theory; PowerWithin Psychology.\n\nCOMMON EXAM TRAP\nPsychoanalytic motivation is not equivalent to conscious goal setting; unconscious processes are central to the approach.\n\nMEMORY CUE\nPsychoanalytical approach → Unconscious motives can influence behavior • Instinctual drives are central in Freud's model • Conflict can create motivational tension",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11279,14 +11234,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nPsychoanalytical approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Psychoanalytical approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Psychoanalytical approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.\n\nKEY POINTS\n• Unconscious motives can influence behavior.\n• Instinctual drives are central in Freud's model.\n• Conflict can create motivational tension.\n• Behavior may express motives indirectly.\n\nDISTINCTION / CAUTION\nPsychoanalytic motivation is not equivalent to conscious goal setting; unconscious processes are central to the approach.\n\nSOURCE BASIS\nSelf-Teaching Guide — Unconscious Motives and Psychoanalytic Theory; PowerWithin Psychology.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Psychoanalytical approach”.",
-                "List the key points associated with “Psychoanalytical approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Psychoanalytical approach”?"
+                "State the source-based core idea of “Psychoanalytical approach”.",
+                "List the key source-supported points for “Psychoanalytical approach”.",
+                "State the most important distinction or caution for “Psychoanalytical approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Psychoanalytical approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Psychoanalytical approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Psychoanalytical approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Unconscious motives can influence behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11296,17 +11251,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Unconscious Motives and Psychoanalytic Theory; PowerWithin Psychology."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Ethological approach",
-              "content_notes": "CORE CONCEPT\nEthological approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethological approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Ethological approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEthological approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.\n\nKEY POINTS\n• Behavior can have evolutionary functions.\n• Innate tendencies are considered in relation to environmental conditions.\n• The approach emphasizes adaptation and species-typical behavior.\n• It differs from purely learned accounts of motivation.\n\nSOURCE BASIS\nPowerWithin Psychology — Ethological Approach to Motivation; evolutionary/biological material in Baron & Misra.\n\nCOMMON EXAM TRAP\nAn evolutionary explanation is not a claim that every behavior is fixed; behavior can still be influenced by learning and context.\n\nMEMORY CUE\nEthological approach → Behavior can have evolutionary functions • Innate tendencies are considered in relation to environmental conditions • The approach emphasizes adaptation and species-typical behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11316,14 +11268,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nEthological approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Ethological approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Ethological approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.\n\nKEY POINTS\n• Behavior can have evolutionary functions.\n• Innate tendencies are considered in relation to environmental conditions.\n• The approach emphasizes adaptation and species-typical behavior.\n• It differs from purely learned accounts of motivation.\n\nDISTINCTION / CAUTION\nAn evolutionary explanation is not a claim that every behavior is fixed; behavior can still be influenced by learning and context.\n\nSOURCE BASIS\nPowerWithin Psychology — Ethological Approach to Motivation; evolutionary/biological material in Baron & Misra.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Ethological approach”.",
-                "List the key points associated with “Ethological approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Ethological approach”?"
+                "State the source-based core idea of “Ethological approach”.",
+                "List the key source-supported points for “Ethological approach”.",
+                "State the most important distinction or caution for “Ethological approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Ethological approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Ethological approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Ethological approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Behavior can have evolutionary functions",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11333,17 +11285,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Ethological Approach to Motivation; evolutionary/biological material in Baron & Misra."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "S-R Cognitive approach",
-              "content_notes": "CORE CONCEPT\nS-R Cognitive approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of S-R Cognitive approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating S-R Cognitive approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nS-R Cognitive approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.\n\nKEY POINTS\n• Stimulus conditions can influence behavior.\n• Cognitive interpretation mediates responses.\n• Expectancies and goals can influence motivated action.\n• The approach goes beyond a simple stimulus-response chain.\n\nSOURCE BASIS\nPowerWithin Psychology — S-R Cognitive Approach to Motivation; cognitive approaches to motivation.\n\nCOMMON EXAM TRAP\nThe cognitive component is essential; do not reduce this approach to simple behaviorism.\n\nMEMORY CUE\nS-R Cognitive approach → Stimulus conditions can influence behavior • Cognitive interpretation mediates responses • Expectancies and goals can influence motivated action",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11353,14 +11302,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nS-R Cognitive approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of S-R Cognitive approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating S-R Cognitive approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.\n\nKEY POINTS\n• Stimulus conditions can influence behavior.\n• Cognitive interpretation mediates responses.\n• Expectancies and goals can influence motivated action.\n• The approach goes beyond a simple stimulus-response chain.\n\nDISTINCTION / CAUTION\nThe cognitive component is essential; do not reduce this approach to simple behaviorism.\n\nSOURCE BASIS\nPowerWithin Psychology — S-R Cognitive Approach to Motivation; cognitive approaches to motivation.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “S-R Cognitive approach”.",
-                "List the key points associated with “S-R Cognitive approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “S-R Cognitive approach”?"
+                "State the source-based core idea of “S-R Cognitive approach”.",
+                "List the key source-supported points for “S-R Cognitive approach”.",
+                "State the most important distinction or caution for “S-R Cognitive approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “S-R Cognitive approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "S-R Cognitive approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “S-R Cognitive approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Stimulus conditions can influence behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11370,17 +11319,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — S-R Cognitive Approach to Motivation; cognitive approaches to motivation."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Humanistic approach",
-              "content_notes": "CORE CONCEPT\nHumanistic approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Humanistic approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Humanistic approach as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nHumanistic approach → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.\n\nKEY POINTS\n• Growth and self-actualization are central.\n• Motivation includes psychological as well as biological needs.\n• Intrinsic motivation can arise from interest and mastery.\n• The person is treated as an active agent rather than a passive responder.\n\nSOURCE BASIS\nSelf-Teaching Guide — Self-Actualization; Ciccarelli & White — Humanistic Motivation.\n\nCOMMON EXAM TRAP\nHumanistic motivation differs from drive reduction because the goal is not simply restoration of physiological balance.\n\nMEMORY CUE\nHumanistic approach → Growth and self-actualization are central • Motivation includes psychological as well as biological needs • Intrinsic motivation can arise from interest and mastery",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11390,14 +11336,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "ACADEMIC CORE\nHumanistic approach is a focused concept within “Approaches to the study of motivation: Psychoanalytical, Ethological, S-R Cognitive, Humanistic”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Humanistic approach\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Humanistic approach as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.\n\nKEY POINTS\n• Growth and self-actualization are central.\n• Motivation includes psychological as well as biological needs.\n• Intrinsic motivation can arise from interest and mastery.\n• The person is treated as an active agent rather than a passive responder.\n\nDISTINCTION / CAUTION\nHumanistic motivation differs from drive reduction because the goal is not simply restoration of physiological balance.\n\nSOURCE BASIS\nSelf-Teaching Guide — Self-Actualization; Ciccarelli & White — Humanistic Motivation.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Humanistic approach”.",
-                "List the key points associated with “Humanistic approach” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Humanistic approach”?"
+                "State the source-based core idea of “Humanistic approach”.",
+                "List the key source-supported points for “Humanistic approach”.",
+                "State the most important distinction or caution for “Humanistic approach”."
               ],
-              "application_question": "Source-based check: Given a new question about “Humanistic approach”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Humanistic approach → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Humanistic approach” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Growth and self-actualization are central",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11407,10 +11353,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Self-Actualization; Ciccarelli & White — Humanistic Motivation."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11436,7 +11379,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Exploratory behavior",
-              "content_notes": "CORE CONCEPT\nExploratory behavior is a focused concept within “Exploratory behavior and curiosity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Exploratory behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Exploratory behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nExploratory behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nExploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.\n\nKEY POINTS\n• Exploration can increase stimulation or information.\n• It can occur without deprivation of a basic physiological need.\n• Novelty and curiosity can energize behavior.\n• Exploration has adaptive and learning-related value.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal and Incentive Approaches; PowerWithin Psychology — Exploratory Behaviour.\n\nCOMMON EXAM TRAP\nExploratory behavior is not necessarily goal-free; it can serve information gathering and environmental mastery.\n\nMEMORY CUE\nExploratory behavior → Exploration can increase stimulation or information • It can occur without deprivation of a basic physiological need • Novelty and curiosity can energize behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11446,14 +11389,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nExploratory behavior is a focused concept within “Exploratory behavior and curiosity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Exploratory behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Exploratory behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nExploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.\n\nKEY POINTS\n• Exploration can increase stimulation or information.\n• It can occur without deprivation of a basic physiological need.\n• Novelty and curiosity can energize behavior.\n• Exploration has adaptive and learning-related value.\n\nDISTINCTION / CAUTION\nExploratory behavior is not necessarily goal-free; it can serve information gathering and environmental mastery.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal and Incentive Approaches; PowerWithin Psychology — Exploratory Behaviour.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Exploratory behavior”.",
-                "List the key points associated with “Exploratory behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Exploratory behavior”?"
+                "State the source-based core idea of “Exploratory behavior”.",
+                "List the key source-supported points for “Exploratory behavior”.",
+                "State the most important distinction or caution for “Exploratory behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Exploratory behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Exploratory behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Exploratory behavior” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Exploration can increase stimulation or information",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11463,17 +11406,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Arousal and Incentive Approaches; PowerWithin Psychology — Exploratory Behaviour."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Curiosity",
-              "content_notes": "CORE CONCEPT\nCuriosity is a focused concept within “Exploratory behavior and curiosity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Curiosity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Curiosity as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nCuriosity → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nCuriosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.\n\nKEY POINTS\n• Curiosity can motivate information seeking.\n• It can be triggered by novelty or uncertainty.\n• Curiosity can support learning and exploration.\n• It can occur even without a physiological deficit.\n\nSOURCE BASIS\nCiccarelli & White 6e — Stimulus Motives; PowerWithin Psychology — Curiosity.\n\nCOMMON EXAM TRAP\nCuriosity is a motivational process, not simply a personality label.\n\nMEMORY CUE\nCuriosity → Curiosity can motivate information seeking • It can be triggered by novelty or uncertainty • Curiosity can support learning and exploration",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11483,14 +11423,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nCuriosity is a focused concept within “Exploratory behavior and curiosity”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Curiosity\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Curiosity as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nCuriosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.\n\nKEY POINTS\n• Curiosity can motivate information seeking.\n• It can be triggered by novelty or uncertainty.\n• Curiosity can support learning and exploration.\n• It can occur even without a physiological deficit.\n\nDISTINCTION / CAUTION\nCuriosity is a motivational process, not simply a personality label.\n\nSOURCE BASIS\nCiccarelli & White 6e — Stimulus Motives; PowerWithin Psychology — Curiosity.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Curiosity”.",
-                "List the key points associated with “Curiosity” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Curiosity”?"
+                "State the source-based core idea of “Curiosity”.",
+                "List the key source-supported points for “Curiosity”.",
+                "State the most important distinction or caution for “Curiosity”."
               ],
-              "application_question": "Source-based check: Given a new question about “Curiosity”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Curiosity → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Curiosity” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Curiosity can motivate information seeking",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11500,10 +11440,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Stimulus Motives; PowerWithin Psychology — Curiosity."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11529,7 +11466,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Zuckerman’s Sensation seeking",
-              "content_notes": "CORE CONCEPT\nZuckerman’s Sensation seeking is a focused concept within “Zuckerman's Sensation seeking”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Zuckerman’s Sensation seeking\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Zuckerman’s Sensation seeking as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nZuckerman’s Sensation seeking → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nZuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.\n\nKEY POINTS\n• Sensation seeking reflects a preference for stimulation.\n• People differ in their desired arousal levels.\n• Novel or intense activities can satisfy higher stimulation needs.\n• The construct is linked with arousal theory.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal Theory and Zuckerman's Sensation Seeking; Baron & Misra.\n\nCOMMON EXAM TRAP\nSensation seeking is an individual-difference construct, not simply a synonym for risk-taking; risk may be one possible expression.\n\nMEMORY CUE\nZuckerman’s Sensation seeking → Sensation seeking reflects a preference for stimulation • People differ in their desired arousal levels • Novel or intense activities can satisfy higher stimulation needs",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11539,14 +11476,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "ACADEMIC CORE\nZuckerman’s Sensation seeking is a focused concept within “Zuckerman's Sensation seeking”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Zuckerman’s Sensation seeking\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Zuckerman’s Sensation seeking as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nZuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.\n\nKEY POINTS\n• Sensation seeking reflects a preference for stimulation.\n• People differ in their desired arousal levels.\n• Novel or intense activities can satisfy higher stimulation needs.\n• The construct is linked with arousal theory.\n\nDISTINCTION / CAUTION\nSensation seeking is an individual-difference construct, not simply a synonym for risk-taking; risk may be one possible expression.\n\nSOURCE BASIS\nCiccarelli & White 6e — Arousal Theory and Zuckerman's Sensation Seeking; Baron & Misra.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Zuckerman’s Sensation seeking”.",
-                "List the key points associated with “Zuckerman’s Sensation seeking” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Zuckerman’s Sensation seeking”?"
+                "State the source-based core idea of “Zuckerman’s Sensation seeking”.",
+                "List the key source-supported points for “Zuckerman’s Sensation seeking”.",
+                "State the most important distinction or caution for “Zuckerman’s Sensation seeking”."
               ],
-              "application_question": "Source-based check: Given a new question about “Zuckerman’s Sensation seeking”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Zuckerman’s Sensation seeking → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Zuckerman’s Sensation seeking” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Sensation seeking reflects a preference for stimulation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11556,10 +11493,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Arousal Theory and Zuckerman's Sensation Seeking; Baron & Misra."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11585,7 +11519,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Achievement",
-              "content_notes": "CORE CONCEPT\nAchievement is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Achievement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Achievement as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAchievement → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAchievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.\n\nKEY POINTS\n• Achievement involves striving for success or mastery.\n• Goals and standards influence achievement behavior.\n• Feedback can be important to achievement motivation.\n• It is distinct from affiliation and power motives.\n\nSOURCE BASIS\nSelf-Teaching Guide — Acquired Motives; Ciccarelli & White — McClelland's Needs.\n\nCOMMON EXAM TRAP\nAchievement motivation is not simply high intelligence; it concerns motivation toward accomplishment.\n\nMEMORY CUE\nAchievement → Achievement involves striving for success or mastery • Goals and standards influence achievement behavior • Feedback can be important to achievement motivation",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11595,14 +11529,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nAchievement is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Achievement\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Achievement as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAchievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.\n\nKEY POINTS\n• Achievement involves striving for success or mastery.\n• Goals and standards influence achievement behavior.\n• Feedback can be important to achievement motivation.\n• It is distinct from affiliation and power motives.\n\nDISTINCTION / CAUTION\nAchievement motivation is not simply high intelligence; it concerns motivation toward accomplishment.\n\nSOURCE BASIS\nSelf-Teaching Guide — Acquired Motives; Ciccarelli & White — McClelland's Needs.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Achievement”.",
-                "List the key points associated with “Achievement” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Achievement”?"
+                "State the source-based core idea of “Achievement”.",
+                "List the key source-supported points for “Achievement”.",
+                "State the most important distinction or caution for “Achievement”."
               ],
-              "application_question": "Source-based check: Given a new question about “Achievement”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Achievement → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Achievement” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Achievement involves striving for success or mastery",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11612,17 +11546,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Self-Teaching Guide — Acquired Motives; Ciccarelli & White — McClelland's Needs."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Affiliation",
-              "content_notes": "CORE CONCEPT\nAffiliation is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Affiliation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Affiliation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nAffiliation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nAffiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.\n\nKEY POINTS\n• Affiliation involves desire for interpersonal connection.\n• Acceptance and belonging can motivate behavior.\n• Affiliation can influence choices and persistence in social settings.\n• It differs from achievement and power motives.\n\nSOURCE BASIS\nCiccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.\n\nCOMMON EXAM TRAP\nAffiliation is about relationship and belonging needs, not merely social activity frequency.\n\nMEMORY CUE\nAffiliation → Affiliation involves desire for interpersonal connection • Acceptance and belonging can motivate behavior • Affiliation can influence choices and persistence in social settings",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11632,14 +11563,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nAffiliation is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Affiliation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Affiliation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nAffiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.\n\nKEY POINTS\n• Affiliation involves desire for interpersonal connection.\n• Acceptance and belonging can motivate behavior.\n• Affiliation can influence choices and persistence in social settings.\n• It differs from achievement and power motives.\n\nDISTINCTION / CAUTION\nAffiliation is about relationship and belonging needs, not merely social activity frequency.\n\nSOURCE BASIS\nCiccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Affiliation”.",
-                "List the key points associated with “Affiliation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Affiliation”?"
+                "State the source-based core idea of “Affiliation”.",
+                "List the key source-supported points for “Affiliation”.",
+                "State the most important distinction or caution for “Affiliation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Affiliation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Affiliation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Affiliation” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Affiliation involves desire for interpersonal connection",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11649,17 +11580,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "Power",
-              "content_notes": "CORE CONCEPT\nPower is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Power\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Power as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPower → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nPower motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.\n\nKEY POINTS\n• Power involves influence or impact.\n• It can be expressed in interpersonal or organizational contexts.\n• Power motivation is one of McClelland's acquired needs.\n• Its expression depends on context and behavior.\n\nSOURCE BASIS\nCiccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.\n\nCOMMON EXAM TRAP\nPower motivation is not identical to aggression; influence can be expressed through leadership, control or responsibility.\n\nMEMORY CUE\nPower → Power involves influence or impact • It can be expressed in interpersonal or organizational contexts • Power motivation is one of McClelland's acquired needs",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11669,14 +11597,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nPower is a focused concept within “Achievement, Affiliation and Power”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Power\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Power as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nPower motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.\n\nKEY POINTS\n• Power involves influence or impact.\n• It can be expressed in interpersonal or organizational contexts.\n• Power motivation is one of McClelland's acquired needs.\n• Its expression depends on context and behavior.\n\nDISTINCTION / CAUTION\nPower motivation is not identical to aggression; influence can be expressed through leadership, control or responsibility.\n\nSOURCE BASIS\nCiccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Power”.",
-                "List the key points associated with “Power” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Power”?"
+                "State the source-based core idea of “Power”.",
+                "List the key source-supported points for “Power”.",
+                "State the most important distinction or caution for “Power”."
               ],
-              "application_question": "Source-based check: Given a new question about “Power”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Power → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Power” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Power involves influence or impact",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11686,10 +11614,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11715,7 +11640,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Motivational competence",
-              "content_notes": "CORE CONCEPT\nMotivational competence is a focused concept within “Motivational Competence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivational competence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Motivational competence as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nMotivational competence → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nMotivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.\n\nKEY POINTS\n• It concerns effective use and regulation of motivation.\n• Goal direction is central.\n• Self-regulation is closely related.\n• Detailed source-specific classification is limited in the supplied extract.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Motivation, Motivational Competence; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not substitute a general self-efficacy definition for motivational competence without source support.\n\nMEMORY CUE\nMotivational competence → It concerns effective use and regulation of motivation • Goal direction is central • Self-regulation is closely related",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11725,14 +11650,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nMotivational competence is a focused concept within “Motivational Competence”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Motivational competence\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Motivational competence as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nMotivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.\n\nKEY POINTS\n• It concerns effective use and regulation of motivation.\n• Goal direction is central.\n• Self-regulation is closely related.\n• Detailed source-specific classification is limited in the supplied extract.\n\nDISTINCTION / CAUTION\nDo not substitute a general self-efficacy definition for motivational competence without source support.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Motivation, Motivational Competence; outline-level coverage.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Motivational competence”.",
-                "List the key points associated with “Motivational competence” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Motivational competence”?"
+                "State the source-based core idea of “Motivational competence”.",
+                "List the key source-supported points for “Motivational competence”.",
+                "State the most important distinction or caution for “Motivational competence”."
               ],
-              "application_question": "Source-based check: Given a new question about “Motivational competence”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Motivational competence → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Motivational competence” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "It concerns effective use and regulation of motivation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11742,10 +11667,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 7 Motivation, Motivational Competence; outline-level coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11771,7 +11693,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Self-regulation",
-              "content_notes": "CORE CONCEPT\nSelf-regulation is a focused concept within “Self-regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Self-regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Self-regulation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSelf-regulation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nSelf-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.\n\nKEY POINTS\n• Goals provide standards for regulation.\n• Monitoring tracks progress and internal states.\n• Regulation can involve changing strategies or behavior.\n• Self-regulation supports persistence and goal pursuit.\n\nSOURCE BASIS\nPowerWithin Psychology — Self-Regulation; REVISATHON Part 1 — Metacognitive Regulation; Ciccarelli & White.\n\nCOMMON EXAM TRAP\nSelf-regulation is broader than willpower; it includes monitoring, evaluation and strategic adjustment.\n\nMEMORY CUE\nSelf-regulation → Goals provide standards for regulation • Monitoring tracks progress and internal states • Regulation can involve changing strategies or behavior",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11782,14 +11704,14 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nSelf-regulation is a focused concept within “Self-regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Self-regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Self-regulation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology: A Self-Teaching Guide\n• Baron & Misra — Psychology\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nSelf-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.\n\nKEY POINTS\n• Goals provide standards for regulation.\n• Monitoring tracks progress and internal states.\n• Regulation can involve changing strategies or behavior.\n• Self-regulation supports persistence and goal pursuit.\n\nDISTINCTION / CAUTION\nSelf-regulation is broader than willpower; it includes monitoring, evaluation and strategic adjustment.\n\nSOURCE BASIS\nPowerWithin Psychology — Self-Regulation; REVISATHON Part 1 — Metacognitive Regulation; Ciccarelli & White.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Self-regulation”.",
-                "List the key points associated with “Self-regulation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Self-regulation”?"
+                "State the source-based core idea of “Self-regulation”.",
+                "List the key source-supported points for “Self-regulation”.",
+                "State the most important distinction or caution for “Self-regulation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Self-regulation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Self-regulation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Self-regulation” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Goals provide standards for regulation",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11799,11 +11721,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology: A Self-Teaching Guide",
-                "Baron & Misra — Psychology",
-                "Psychology by Ciccarelli & White (6th ed.)"
+                "PowerWithin Psychology — Self-Regulation; REVISATHON Part 1 — Metacognitive Regulation; Ciccarelli & White."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -11885,7 +11803,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Physiological correlates of emotion",
-              "content_notes": "CORE CONCEPT\nPhysiological correlates of emotion is a focused concept within “Emotions: Physiological correlates”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Physiological correlates of emotion\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Physiological correlates of emotion as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nPhysiological correlates of emotion → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEmotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.\n\nKEY POINTS\n• Emotion involves physiological arousal.\n• The autonomic nervous system contributes to bodily changes.\n• Brain structures such as the amygdala are involved in emotional processing.\n• Different theories assign different causal roles to physiological arousal.\n\nSOURCE BASIS\nCiccarelli & White 6e — Emotion; PowerWithin Psychology — Physiological Correlates.\n\nCOMMON EXAM TRAP\nPhysiological arousal is one component of emotion, not a complete definition of emotion.\n\nMEMORY CUE\nPhysiological correlates of emotion → Emotion involves physiological arousal • The autonomic nervous system contributes to bodily changes • Brain structures such as the amygdala are involved in emotional processing",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11895,14 +11813,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nPhysiological correlates of emotion is a focused concept within “Emotions: Physiological correlates”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Physiological correlates of emotion\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Physiological correlates of emotion as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEmotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.\n\nKEY POINTS\n• Emotion involves physiological arousal.\n• The autonomic nervous system contributes to bodily changes.\n• Brain structures such as the amygdala are involved in emotional processing.\n• Different theories assign different causal roles to physiological arousal.\n\nDISTINCTION / CAUTION\nPhysiological arousal is one component of emotion, not a complete definition of emotion.\n\nSOURCE BASIS\nCiccarelli & White 6e — Emotion; PowerWithin Psychology — Physiological Correlates.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Physiological correlates of emotion”.",
-                "List the key points associated with “Physiological correlates of emotion” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Physiological correlates of emotion”?"
+                "State the source-based core idea of “Physiological correlates of emotion”.",
+                "List the key source-supported points for “Physiological correlates of emotion”.",
+                "State the most important distinction or caution for “Physiological correlates of emotion”."
               ],
-              "application_question": "Source-based check: Given a new question about “Physiological correlates of emotion”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Physiological correlates of emotion → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Physiological correlates of emotion” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Emotion involves physiological arousal",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -11912,10 +11830,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Emotion; PowerWithin Psychology — Physiological Correlates."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -12052,7 +11967,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Lazarus theory",
-              "content_notes": "CORE CONCEPT\nLazarus theory is a focused concept within “Theories of emotions: James-Lange, Canon-Bard, Schachter and Singer, Lazarus, Lindsley”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lazarus theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Lazarus theory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLazarus theory → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nLazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.\n\nKEY POINTS\n• Appraisal is central to emotion.\n• The interpretation of the stimulus comes before the emotional response in the model.\n• Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options.\n• Reappraisal can change how a situation is experienced.\n\nSOURCE BASIS\nCiccarelli & White 6e — Lazarus's Cognitive-Mediational Theory; PowerWithin Psychology — Lazarus Theory.\n\nCOMMON EXAM TRAP\nLazarus's theory is cognitive-mediational; it differs from James–Lange and Cannon–Bard in the proposed role and timing of appraisal.\n\nMEMORY CUE\nLazarus theory → Appraisal is central to emotion • The interpretation of the stimulus comes before the emotional response in the model • Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12062,14 +11977,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nLazarus theory is a focused concept within “Theories of emotions: James-Lange, Canon-Bard, Schachter and Singer, Lazarus, Lindsley”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lazarus theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Lazarus theory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nLazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.\n\nKEY POINTS\n• Appraisal is central to emotion.\n• The interpretation of the stimulus comes before the emotional response in the model.\n• Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options.\n• Reappraisal can change how a situation is experienced.\n\nDISTINCTION / CAUTION\nLazarus's theory is cognitive-mediational; it differs from James–Lange and Cannon–Bard in the proposed role and timing of appraisal.\n\nSOURCE BASIS\nCiccarelli & White 6e — Lazarus's Cognitive-Mediational Theory; PowerWithin Psychology — Lazarus Theory.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Lazarus theory”.",
-                "List the key points associated with “Lazarus theory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Lazarus theory”?"
+                "State the source-based core idea of “Lazarus theory”.",
+                "List the key source-supported points for “Lazarus theory”.",
+                "State the most important distinction or caution for “Lazarus theory”."
               ],
-              "application_question": "Source-based check: Given a new question about “Lazarus theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Lazarus theory → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Lazarus theory” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Appraisal is central to emotion",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12079,17 +11994,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Lazarus's Cognitive-Mediational Theory; PowerWithin Psychology — Lazarus Theory."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Lindsley theory",
-              "content_notes": "CORE CONCEPT\nLindsley theory is a focused concept within “Theories of emotions: James-Lange, Canon-Bard, Schachter and Singer, Lazarus, Lindsley”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lindsley theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Lindsley theory as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nLindsley theory → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.\n\nKEY POINTS\n• Lindsley is included in the NET theory sequence.\n• The topic belongs to physiological theories of emotion.\n• Use the source's exact formulation when answering a theorist-matching question.\n• The supplied extract is not sufficient for a longer independent explanation.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Theories of Emotion; outline-level Lindsley coverage.\n\nCOMMON EXAM TRAP\nDo not substitute the James–Lange or Cannon–Bard formulation for Lindsley's theory.\n\nMEMORY CUE\nLindsley theory → Lindsley is included in the NET theory sequence • The topic belongs to physiological theories of emotion • Use the source's exact formulation when answering a theorist-matching question",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12099,14 +12011,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nLindsley theory is a focused concept within “Theories of emotions: James-Lange, Canon-Bard, Schachter and Singer, Lazarus, Lindsley”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Lindsley theory\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Lindsley theory as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.\n\nKEY POINTS\n• Lindsley is included in the NET theory sequence.\n• The topic belongs to physiological theories of emotion.\n• Use the source's exact formulation when answering a theorist-matching question.\n• The supplied extract is not sufficient for a longer independent explanation.\n\nDISTINCTION / CAUTION\nDo not substitute the James–Lange or Cannon–Bard formulation for Lindsley's theory.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Theories of Emotion; outline-level Lindsley coverage.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Lindsley theory”.",
-                "List the key points associated with “Lindsley theory” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Lindsley theory”?"
+                "State the source-based core idea of “Lindsley theory”.",
+                "List the key source-supported points for “Lindsley theory”.",
+                "State the most important distinction or caution for “Lindsley theory”."
               ],
-              "application_question": "Source-based check: Given a new question about “Lindsley theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Lindsley theory → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Lindsley theory” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Lindsley is included in the NET theory sequence",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12116,10 +12028,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 7 Theories of Emotion; outline-level Lindsley coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -12145,7 +12054,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Emotion regulation",
-              "content_notes": "CORE CONCEPT\nEmotion regulation is a focused concept within “Emotion regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Emotion regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Emotion regulation as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nEmotion regulation → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nEmotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.\n\nKEY POINTS\n• Regulation can occur through changing interpretation or behavior.\n• Coping strategies can influence emotional responses.\n• Regulation does not mean eliminating all emotion.\n• Successful regulation depends on context and goals.\n\nSOURCE BASIS\nPowerWithin Psychology — Emotion Regulation; Ciccarelli & White — Coping and cognitive reappraisal.\n\nCOMMON EXAM TRAP\nEmotion regulation is broader than suppression; it can involve reappraisal, coping and other strategies.\n\nMEMORY CUE\nEmotion regulation → Regulation can occur through changing interpretation or behavior • Coping strategies can influence emotional responses • Regulation does not mean eliminating all emotion",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12155,14 +12064,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "ACADEMIC CORE\nEmotion regulation is a focused concept within “Emotion regulation”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Emotion regulation\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Emotion regulation as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nEmotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.\n\nKEY POINTS\n• Regulation can occur through changing interpretation or behavior.\n• Coping strategies can influence emotional responses.\n• Regulation does not mean eliminating all emotion.\n• Successful regulation depends on context and goals.\n\nDISTINCTION / CAUTION\nEmotion regulation is broader than suppression; it can involve reappraisal, coping and other strategies.\n\nSOURCE BASIS\nPowerWithin Psychology — Emotion Regulation; Ciccarelli & White — Coping and cognitive reappraisal.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Emotion regulation”.",
-                "List the key points associated with “Emotion regulation” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Emotion regulation”?"
+                "State the source-based core idea of “Emotion regulation”.",
+                "List the key source-supported points for “Emotion regulation”.",
+                "State the most important distinction or caution for “Emotion regulation”."
               ],
-              "application_question": "Source-based check: Given a new question about “Emotion regulation”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Emotion regulation → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Emotion regulation” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Regulation can occur through changing interpretation or behavior",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12172,10 +12081,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Emotion Regulation; Ciccarelli & White — Coping and cognitive reappraisal."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -12201,7 +12107,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Sources of conflict",
-              "content_notes": "CORE CONCEPT\nSources of conflict is a focused concept within “Conflicts: Sources and types”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sources of conflict\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Sources of conflict as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nSources of conflict → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nConflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.\n\nKEY POINTS\n• Incompatible goals can create conflict.\n• Conflict may involve internal motives or external demands.\n• Frustration and conflict can increase emotional arousal.\n• The type of conflict depends on the valence of the alternatives.\n\nSOURCE BASIS\nCiccarelli & White — Conflict and Frustration; Self-Teaching Guide — Psychological Conflict.\n\nCOMMON EXAM TRAP\nA source of conflict is the incompatibility producing the tension; a type of conflict classifies the pattern of alternatives.\n\nMEMORY CUE\nSources of conflict → Incompatible goals can create conflict • Conflict may involve internal motives or external demands • Frustration and conflict can increase emotional arousal",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12211,14 +12117,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nSources of conflict is a focused concept within “Conflicts: Sources and types”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Sources of conflict\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Sources of conflict as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nConflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.\n\nKEY POINTS\n• Incompatible goals can create conflict.\n• Conflict may involve internal motives or external demands.\n• Frustration and conflict can increase emotional arousal.\n• The type of conflict depends on the valence of the alternatives.\n\nDISTINCTION / CAUTION\nA source of conflict is the incompatibility producing the tension; a type of conflict classifies the pattern of alternatives.\n\nSOURCE BASIS\nCiccarelli & White — Conflict and Frustration; Self-Teaching Guide — Psychological Conflict.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Sources of conflict”.",
-                "List the key points associated with “Sources of conflict” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Sources of conflict”?"
+                "State the source-based core idea of “Sources of conflict”.",
+                "List the key source-supported points for “Sources of conflict”.",
+                "State the most important distinction or caution for “Sources of conflict”."
               ],
-              "application_question": "Source-based check: Given a new question about “Sources of conflict”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Sources of conflict → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Sources of conflict” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Incompatible goals can create conflict",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12228,17 +12134,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White — Conflict and Frustration; Self-Teaching Guide — Psychological Conflict."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 2,
               "title": "Types of conflict",
-              "content_notes": "CORE CONCEPT\nTypes of conflict is a focused concept within “Conflicts: Sources and types”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of conflict\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Types of conflict as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nTypes of conflict → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.\n\nKEY POINTS\n• Approach–approach: choose between two desirable alternatives.\n• Avoidance–avoidance: choose between two undesirable alternatives.\n• Approach–avoidance: one goal has both positive and negative features.\n• Double approach–avoidance: multiple alternatives each have positive and negative features.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Psychological Conflict; Ciccarelli & White — Conflict.\n\nCOMMON EXAM TRAP\nIdentify the valence of each alternative before naming the conflict type.\n\nMEMORY CUE\nTypes of conflict → Approach–approach: choose between two desirable alternatives • Avoidance–avoidance: choose between two undesirable alternatives • Approach–avoidance: one goal has both positive and negative features",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12248,14 +12151,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "ACADEMIC CORE\nTypes of conflict is a focused concept within “Conflicts: Sources and types”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Types of conflict\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Types of conflict as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.\n\nKEY POINTS\n• Approach–approach: choose between two desirable alternatives.\n• Avoidance–avoidance: choose between two undesirable alternatives.\n• Approach–avoidance: one goal has both positive and negative features.\n• Double approach–avoidance: multiple alternatives each have positive and negative features.\n\nDISTINCTION / CAUTION\nIdentify the valence of each alternative before naming the conflict type.\n\nSOURCE BASIS\nPsychology: A Self-Teaching Guide — Psychological Conflict; Ciccarelli & White — Conflict.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Types of conflict”.",
-                "List the key points associated with “Types of conflict” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Types of conflict”?"
+                "State the source-based core idea of “Types of conflict”.",
+                "List the key source-supported points for “Types of conflict”.",
+                "State the most important distinction or caution for “Types of conflict”."
               ],
-              "application_question": "Source-based check: Given a new question about “Types of conflict”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Types of conflict → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Types of conflict” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Approach–approach: choose between two desirable alternatives",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12265,10 +12168,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Psychology: A Self-Teaching Guide — Psychological Conflict; Ciccarelli & White — Conflict."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -12331,7 +12231,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Models of stress and coping",
-              "content_notes": "CORE CONCEPT\nModels of stress and coping is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Models of stress and coping\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Models of stress and coping as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nModels of stress and coping → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nThe uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.\n\nKEY POINTS\n• Stress depends on both demands and appraisal.\n• Cognitive appraisal influences whether an event is experienced as stressful.\n• Coping can be problem-focused or emotion-focused.\n• Reappraisal can change the experience of a stressor.\n\nSOURCE BASIS\nCiccarelli & White 6e — Stress and Health; PowerWithin Psychology — Stress and Coping.\n\nCOMMON EXAM TRAP\nA stressor is the event or demand; stress is the psychological/physiological response to it.\n\nMEMORY CUE\nModels of stress and coping → Stress depends on both demands and appraisal • Cognitive appraisal influences whether an event is experienced as stressful • Coping can be problem-focused or emotion-focused",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12341,14 +12241,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nModels of stress and coping is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Models of stress and coping\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Models of stress and coping as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nThe uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.\n\nKEY POINTS\n• Stress depends on both demands and appraisal.\n• Cognitive appraisal influences whether an event is experienced as stressful.\n• Coping can be problem-focused or emotion-focused.\n• Reappraisal can change the experience of a stressor.\n\nDISTINCTION / CAUTION\nA stressor is the event or demand; stress is the psychological/physiological response to it.\n\nSOURCE BASIS\nCiccarelli & White 6e — Stress and Health; PowerWithin Psychology — Stress and Coping.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Models of stress and coping”.",
-                "List the key points associated with “Models of stress and coping” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Models of stress and coping”?"
+                "State the source-based core idea of “Models of stress and coping”.",
+                "List the key source-supported points for “Models of stress and coping”.",
+                "State the most important distinction or caution for “Models of stress and coping”."
               ],
-              "application_question": "Source-based check: Given a new question about “Models of stress and coping”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Models of stress and coping → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Models of stress and coping” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Stress depends on both demands and appraisal",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12358,17 +12258,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Ciccarelli & White 6e — Stress and Health; PowerWithin Psychology — Stress and Coping."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 3,
               "title": "Type A behavior",
-              "content_notes": "CORE CONCEPT\nType A behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type A behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Type A behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nType A behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nType A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.\n\nKEY POINTS\n• Competitiveness is a characteristic of the pattern.\n• Impatience and time urgency are common features.\n• Hostility is especially relevant in the health literature discussed by Baron & Misra.\n• The pattern can be modified through behavior change.\n\nSOURCE BASIS\nBaron & Misra — Type A Behavior Pattern; Ciccarelli & White — Personality and Stress.\n\nCOMMON EXAM TRAP\nType A is a behavior pattern, not a diagnosis; the source specifically discusses components rather than treating the label as a single cause of disease.\n\nMEMORY CUE\nType A behavior → Competitiveness is a characteristic of the pattern • Impatience and time urgency are common features • Hostility is especially relevant in the health literature discussed by Baron & Misra",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12378,14 +12275,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nType A behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type A behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Type A behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nType A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.\n\nKEY POINTS\n• Competitiveness is a characteristic of the pattern.\n• Impatience and time urgency are common features.\n• Hostility is especially relevant in the health literature discussed by Baron & Misra.\n• The pattern can be modified through behavior change.\n\nDISTINCTION / CAUTION\nType A is a behavior pattern, not a diagnosis; the source specifically discusses components rather than treating the label as a single cause of disease.\n\nSOURCE BASIS\nBaron & Misra — Type A Behavior Pattern; Ciccarelli & White — Personality and Stress.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Type A behavior”.",
-                "List the key points associated with “Type A behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Type A behavior”?"
+                "State the source-based core idea of “Type A behavior”.",
+                "List the key source-supported points for “Type A behavior”.",
+                "State the most important distinction or caution for “Type A behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Type A behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Type A behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Type A behavior” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Competitiveness is a characteristic of the pattern",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12395,17 +12292,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Type A Behavior Pattern; Ciccarelli & White — Personality and Stress."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 4,
               "title": "Type B behavior",
-              "content_notes": "CORE CONCEPT\nType B behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type B behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Type B behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nType B behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nType B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.\n\nKEY POINTS\n• Less time urgency than Type A.\n• Less competitiveness and irritability in the source comparison.\n• Used as a comparison pattern in stress/personality research.\n• It is not a clinical diagnosis.\n\nSOURCE BASIS\nBaron & Misra — Type A/Type B comparison; Ciccarelli & White — Personality and Stress.\n\nCOMMON EXAM TRAP\nType B should not be treated as simply 'no stress'; it is a behavioral pattern contrasted with Type A characteristics.\n\nMEMORY CUE\nType B behavior → Less time urgency than Type A • Less competitiveness and irritability in the source comparison • Used as a comparison pattern in stress/personality research",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12415,14 +12309,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nType B behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type B behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Type B behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nType B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.\n\nKEY POINTS\n• Less time urgency than Type A.\n• Less competitiveness and irritability in the source comparison.\n• Used as a comparison pattern in stress/personality research.\n• It is not a clinical diagnosis.\n\nDISTINCTION / CAUTION\nType B should not be treated as simply 'no stress'; it is a behavioral pattern contrasted with Type A characteristics.\n\nSOURCE BASIS\nBaron & Misra — Type A/Type B comparison; Ciccarelli & White — Personality and Stress.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Type B behavior”.",
-                "List the key points associated with “Type B behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Type B behavior”?"
+                "State the source-based core idea of “Type B behavior”.",
+                "List the key source-supported points for “Type B behavior”.",
+                "State the most important distinction or caution for “Type B behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Type B behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Type B behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Type B behavior” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Less time urgency than Type A",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12432,17 +12326,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "Baron & Misra — Type A/Type B comparison; Ciccarelli & White — Personality and Stress."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 5,
               "title": "Type C behavior",
-              "content_notes": "CORE CONCEPT\nType C behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type C behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Type C behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nType C behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nType C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.\n\nKEY POINTS\n• Type C is listed as a stress/personality pattern.\n• It is distinct from Type A and Type B classifications.\n• Use the source's exact features when answering a matching question.\n• The supplied extract provides limited detailed coverage.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Stress and Coping, Type C behavior; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not import a detailed Type C disease-causation claim unless the uploaded source explicitly provides it.\n\nMEMORY CUE\nType C behavior → Type C is listed as a stress/personality pattern • It is distinct from Type A and Type B classifications • Use the source's exact features when answering a matching question",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12452,14 +12343,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nType C behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type C behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Type C behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nType C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.\n\nKEY POINTS\n• Type C is listed as a stress/personality pattern.\n• It is distinct from Type A and Type B classifications.\n• Use the source's exact features when answering a matching question.\n• The supplied extract provides limited detailed coverage.\n\nDISTINCTION / CAUTION\nDo not import a detailed Type C disease-causation claim unless the uploaded source explicitly provides it.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Stress and Coping, Type C behavior; outline-level coverage.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Type C behavior”.",
-                "List the key points associated with “Type C behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Type C behavior”?"
+                "State the source-based core idea of “Type C behavior”.",
+                "List the key source-supported points for “Type C behavior”.",
+                "State the most important distinction or caution for “Type C behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Type C behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Type C behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Type C behavior” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Type C is listed as a stress/personality pattern",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12469,17 +12360,14 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 7 Stress and Coping, Type C behavior; outline-level coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             },
             {
               "id": 6,
               "title": "Type D behavior",
-              "content_notes": "CORE CONCEPT\nType D behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type D behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nPYQ-STYLE PATTERN\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nCOMMON TRAP\nCommon trap: treating Type D behavior as interchangeable with a related concept in the same outline point.\n\n5-MINUTE TEACHING FOCUS\nHook → define → explain 3–5 key points → give one example/PYQ-style scenario → recap.\n\nMEMORY HOOK\nType D behavior → define → distinguish → apply",
+              "content_notes": "CORE CONCEPT\nType D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.\n\nKEY POINTS\n• Type D is included among stress-related personality patterns.\n• It is distinct from Type A, B and C classifications.\n• Use source-specific descriptors if a PYQ asks for the pattern.\n• Detailed source coverage is limited in the supplied extract.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Stress and Coping, Type D behavior; outline-level coverage.\n\nCOMMON EXAM TRAP\nDo not fill this node with an external Type D description unless supported by the uploaded source.\n\nMEMORY CUE\nType D behavior → Type D is included among stress-related personality patterns • It is distinct from Type A, B and C classifications • Use source-specific descriptors if a PYQ asks for the pattern",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12489,14 +12377,14 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "ACADEMIC CORE\nType D behavior is a focused concept within “Stress and Coping: Concept, Models, Type A, B, C, D behaviors”. Prepare it as an exam-sized learning node: define it, identify its key features, distinguish it from a close concept, and apply it to one short example.\n\nKEY POINTS\n• definition and scope of Type D behavior\n• key features/components/stages as applicable\n• one comparison or common confusion\n• one example or application\n\nDISTINCTION / CAUTION\nCommon trap: treating Type D behavior as interchangeable with a related concept in the same outline point.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• PowerWithin Psychology — UGC NET/JRF/SLET compilation\n• Psychology by Ciccarelli & White (6th ed.)\n• Baron & Misra — Psychology\n\nSTUDY RULE\nTreat this as an academic study note: preserve the terminology, named persons, classifications and relationships given in the source. Where the uploaded sources do not provide a detail, leave it unstated rather than filling the gap with generic AI-generated material.",
+              "deep_learning": "ACADEMIC CORE\nType D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.\n\nKEY POINTS\n• Type D is included among stress-related personality patterns.\n• It is distinct from Type A, B and C classifications.\n• Use source-specific descriptors if a PYQ asks for the pattern.\n• Detailed source coverage is limited in the supplied extract.\n\nDISTINCTION / CAUTION\nDo not fill this node with an external Type D description unless supported by the uploaded source.\n\nSOURCE BASIS\nPowerWithin Psychology — Unit 7 Stress and Coping, Type D behavior; outline-level coverage.\n\nSTUDY RULE\nUse source-supported terminology and named theorists only. Where the uploaded material is outline-level, keep the note limited rather than inventing detail.",
               "retrieval_questions": [
-                "Without looking at the notes, state the source-based definition/core idea of “Type D behavior”.",
-                "List the key points associated with “Type D behavior” in the uploaded study material.",
-                "What distinction, qualification or caution does the source material give for “Type D behavior”?"
+                "State the source-based core idea of “Type D behavior”.",
+                "List the key source-supported points for “Type D behavior”.",
+                "State the most important distinction or caution for “Type D behavior”."
               ],
-              "application_question": "Source-based check: Given a new question about “Type D behavior”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material.",
-              "exam_takeaway": "Type D behavior → define → distinguish → apply",
+              "application_question": "Source-based application: Identify the motivation, personality, emotion, conflict or stress principle represented by “Type D behavior” and justify the answer using the uploaded source terminology.",
+              "exam_takeaway": "Type D is included among stress-related personality patterns",
               "learning_time": "5–10 min first pass",
               "learning_sequence": [
                 "Understand the core",
@@ -12506,10 +12394,7 @@ window.NETPSY_DATA = {
                 "Schedule spaced revision"
               ],
               "source_focus": [
-                "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-                "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
-                "Psychology by Ciccarelli & White (6th ed.)",
-                "Baron & Misra — Psychology"
+                "PowerWithin Psychology — Unit 7 Stress and Coping, Type D behavior; outline-level coverage."
               ],
               "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
             }
@@ -18008,7 +17893,7 @@ window.NETPSY_DATA = {
       "phase2": {
         "version": "2026-10-02-source-enrichment-v1",
         "status": "in-progress",
-        "enrichedMicrotopics": 126
+        "enrichedMicrotopics": 164
       }
     }
   },
