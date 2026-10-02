@@ -154,7 +154,7 @@ function startPage(){
     if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
     if(e.target.name==='preference' && form.querySelectorAll('input[name="preference"]:checked').length>3)e.target.checked=false;
   });
-  const valid=()=>{const active=steps[current]; if(current<2)return !!active.querySelector('input[required]:checked'); return current===2?form.querySelectorAll('input[name="challenge"]:checked').length>0:form.querySelectorAll('input[name="preference"]:checked').length>0;};
+  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;return form.querySelectorAll('input[name="preference"]:checked').length>0;};
   next.addEventListener('click',()=>{
     if(!valid()){alert(current===2?'Choose at least one challenge.':current===3?'Choose at least one preference.':'Please select an answer to continue.');return;}
     if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
