@@ -1139,3 +1139,14 @@ body[data-page="home"] .hero-cta b{display:none}
 @media(max-width:720px){
   .learn-hub-hero{padding:14px 0 20px}
 }
+
+/* Learn unit cards: metadata and action share one bottom row */
+.learn-unit-arrow{display:none}
+.learn-unit-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:13px}
+.learn-unit-meta{margin:0;min-width:0}
+.learn-unit-card .link{flex:0 0 auto;white-space:nowrap}
+@media(max-width:520px){
+  .learn-unit-bottom{align-items:flex-end;gap:10px}
+  .learn-unit-meta{flex:1}
+  .learn-unit-card .link{font-size:11px}
+}
