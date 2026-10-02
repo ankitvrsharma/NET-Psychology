@@ -169,7 +169,7 @@ function learnPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
   if(!root)return;
-  root.innerHTML=\`<section class="start-hero"><div class="eyebrow">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>A short profile helps us shape your starting experience. You can change your answers later.</p></section>
+  root.innerHTML=`<section class="start-hero"><div class="eyebrow">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>A short profile helps us shape your starting experience. You can change your answers later.</p></section>
   <form class="start-form" id="startForm">
     <div class="start-progress"><span>1 of 4</span><i><b style="width:25%"></b></i></div>
     <div class="start-step active" data-step="1"><fieldset><legend>1. Where are you starting from?</legend>
@@ -193,7 +193,7 @@ function learnPage(){
       <label><input type="checkbox" name="preference" value="0"><span>Clear explanations</span></label><label><input type="checkbox" name="preference" value="1"><span>Examples and applications</span></label><label><input type="checkbox" name="preference" value="2"><span>Active-recall questions</span></label><label><input type="checkbox" name="preference" value="3"><span>MCQs and PYQs</span></label><label><input type="checkbox" name="preference" value="4"><span>Visual summaries</span></label><label><input type="checkbox" name="preference" value="5"><span>Short revision notes</span></label><label><input type="checkbox" name="preference" value="6"><span>Comparisons between similar concepts</span></label>
     </fieldset></div>
     <div class="start-actions"><button class="btn" type="button" id="startBack" hidden>← Back</button><button class="btn primary" type="button" id="startNext">Next →</button></div>
-  </form>\`;
+  </form>`;
   const form=$('#startForm'),steps=$('.start-step'),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
   const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
   form.addEventListener('change',e=>{
