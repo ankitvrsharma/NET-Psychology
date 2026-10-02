@@ -95,42 +95,9 @@ const noteSection=(label,text,klass='')=>{
   const v=String(text||'').trim();
   return v?'<section class="study-note-block '+klass+'"><h3>'+esc(label)+'</h3><div class="study-note-text">'+esc(v)+'</div></section>':'';
 };
-const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
-  const explicit=Array.isArray(m.study_notes)?m.study_notes:[];
-  if(explicit.length)return explicit.map((b)=>({
-    title:b?.title||b?.label||'Study note',
-    content:Array.isArray(b?.content)?b.content.join('\n'):b?.content,
-    type:b?.type||'note',
-    source:b?.source||b?.sources||''
-  })).filter(b=>String(b.content||'').trim());
-  const blocks=[];
-  const add=(title,content,type='note',source='')=>{if(String(content||'').trim())blocks.push({title,content,type,source})};
-  add('Core idea',concept,'core');
-  if(kp.length)add('Key points',kp,'list');
-  const sourceNotes=m.source_notes&&typeof m.source_notes==='object'?m.source_notes:{};
-  Object.entries(sourceNotes).forEach(([source,content])=>add(source,content,'source',source));
-  add('Explanation & connections',core,'explanation');
-  add('Apply it',m.application_question,'application');
-  add('Exam focus',section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS'),'exam');
-  add('Common trap / distinction',trap,'trap');
-  add('Teaching focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK'),'teaching');
-  add('Memory cue',hook,'memory');
-  if(m.kaplan_enrichment?.notes)add(m.kaplan_enrichment.source||'Kaplan source note',m.kaplan_enrichment.notes,'source',m.kaplan_enrichment.source||'Kaplan');
-  return blocks;
-};
-const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{
-  const blocks=normalizeNoteBlocks(m,concept,kp,core,trap,hook);
-  const sourceConfig=m.study_source_config||{};
-  const noteSources=Array.isArray(sourceConfig.notes_primary)?sourceConfig.notes_primary:[];
-  const provenance=noteSources.length?'<div class="study-note-source-note">Primary learning sources: '+noteSources.map(esc).join(' · ')+'</div>':'';
-  return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">SOURCE-GROUNDED STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Use only the parts you need: understand the idea, make the useful connection, then close the notes and retrieve it.</p></div>'+blocks.map(b=>{
-    const content=Array.isArray(b.content)?'<ul class="study-note-list">'+b.content.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':esc(b.content);
-    const cls=b.type==='trap'?'trap':b.type==='core'?'core':b.type==='exam'?'exam-focus':b.type==='memory'?'memory':'';
-    const src=b.source?'<small class="study-note-source-label">'+esc(Array.isArray(b.source)?b.source.join(' · '):b.source)+'</small>':'';
-    return '<section class="study-note-block '+cls+'"><h3>'+esc(b.title)+'</h3>'+src+'<div class="study-note-text">'+content+'</div></section>';
-  }).join('')+provenance+'</div>';
-};
-const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
+const extractExample=(text)=>{const s=String(text||'').replace(/\n+/g,' ').replace(/\s+/g,' ').trim();const hit=s.match(/[^.?!]*(?:for example|example of|e\.g\.)[^.?!]*[.?!]/i);return hit?quickClean(hit[0]):'';};
+const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{const explicit=Array.isArray(m.study_notes)?m.study_notes:[];if(explicit.length){const filtered=explicit.map(b=>({title:b?.title||b?.label||'Study note',content:Array.isArray(b?.content)?b.content.join('\n'):b?.content,type:b?.type||'note',source:b?.source||b?.sources||''})).filter(b=>{const t=String(b.title||'').toLowerCase(),c=String(b.content||'').toLowerCase();return String(b.content||'').trim()&&!t.includes('apply it')&&!c.startsWith('source-based application')&&!c.startsWith('source-based check')});if(filtered.length)return filtered}const deep=String(m.deep_learning||''),dc=quickClean(section(deep,'ACADEMIC CORE','\n\nKEY POINTS'))||concept,dp=bullets(section(deep,'KEY POINTS','\n\nDISTINCTION / CAUTION')).map(quickClean).filter(Boolean),dist=quickClean(section(deep,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')),ex=extractExample(dc),exam=quickClean(m.exam_takeaway||''),mem=quickClean(hook||section(String(m.content_notes||''),'MEMORY CUE')||''),blocks=[];const add=(title,content,type='note',source='')=>{if(String(content||'').trim())blocks.push({title,content,type,source})};add('Definition / core',dc,'core');if(dp.length)add('Key features',dp,'list');if(ex)add('Example',ex,'example');if(dist)add('Distinction',dist,'trap');if(exam)add('Exam cue',exam,'exam');if(mem)add('Memory cue',mem,'memory');if(m.source_notes&&typeof m.source_notes==='object')Object.entries(m.source_notes).forEach(([source,content])=>add(source,content,'source',source));if(m.kaplan_enrichment?.notes)add(m.kaplan_enrichment.source||'Supplementary source note',m.kaplan_enrichment.notes,'source',m.kaplan_enrichment.source||'Kaplan');return blocks};
+const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{const blocks=normalizeNoteBlocks(m,concept,kp,core,trap,hook),visual=typeof quickVisual==='function'?quickVisual(m,'',kp):'';return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">SOURCE-GROUNDED STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Keep this page for the first pass: understand the core, notice the distinction, then retrieve it without looking.</p></div>'+(visual?'<div class="study-note-visual" aria-label="Concept visual">'+visual+'</div>':'')+blocks.map(b=>{const content=Array.isArray(b.content)?'<ul class="study-note-list">'+b.content.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':esc(b.content),cls=b.type==='trap'?'trap':b.type==='core'?'core':b.type==='exam'?'exam-focus':b.type==='memory'?'memory':b.type==='example'?'example':'',src=b.source?'<small class="study-note-source-label">'+esc(Array.isArray(b.source)?b.source.join(' · '):b.source)+'</small>':'';return '<section class="study-note-block '+cls+'"><h3>'+esc(b.title)+'</h3>'+src+'<div class="study-note-text">'+content+'</div></section>'}).join('')+'</div>'};const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
 const countMicro=u=>u.topics.reduce((n,t)=>n+t.microtopics.length,0);
 const unitParts=u=>Array.isArray(u?.parts)?u.parts:[];
 const partForTopic=(u,t)=>unitParts(u).find(p=>Array.isArray(p.topic_ids)&&p.topic_ids.map(String).includes(String(t?.id)))||null;
@@ -246,100 +213,14 @@ function renderNetCountdown(summary=progressSummary()){
     root.innerHTML='<div class="net-countdown-inner"><div class="exam-status-head"><div class="eyebrow">EXAM READINESS</div><span>UGC NET PSYCHOLOGY</span></div><div class="net-countdown-copy"><div class="eyebrow">NEXT EXAM</div><strong>'+days+' <span>DAYS TO GO</span></strong><p>UGC NET '+esc(cycle.label)+' · Reference date: '+esc(cycle.dateLabel)+'</p></div><div class="syllabus-coverage"><div class="eyebrow">SYLLABUS COVERAGE</div><strong>'+coverage+'%</strong><div class="coverage-bar"><i style="width:'+coverage+'%"></i></div><span>'+started+' of '+total+' micro-topics started</span></div></div>';
   });
 }
-const QUICK_BANK_VERSION='2026-10-02-quickbank-v1';
-let QUICK_BANK_CACHE=null;
+const QUICK_BANK_VERSION='2026-10-02-quickbank-v2';let QUICK_BANK_CACHE=null;
 function quickClean(x){return String(x||'').replace(/^[-•*]\s*/,'').replace(/\s+/g,' ').trim()}
-function quickClassify(title,text){
-  const s=(title+' '+text).toLowerCase();
-  if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return 'TIMELINE';
-  if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return 'FINDING';
-  if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return 'DISTINCTION';
-  if(/\b(psychologist|theorist|contribution)\b/.test(s))return 'PSYCHOLOGIST';
-  if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return 'SCHOOL';
-  if(/\b(approach|therapy|perspective)\b/.test(s))return 'APPROACH';
-  if(/\b(theory|model|framework)\b/.test(s))return 'THEORY';
-  return 'CONCEPT';
-}
-function quickSources(m){
-  const names=sourceNames(m),cfg=m.study_source_config||{};
-  return [...new Set(names.concat(cfg.notes_primary||[],cfg.mcq_primary||[]).filter(Boolean))];
-}
-function quickVisual(m,kind,points){
-  const text=(String(m.title||'')+' '+points.join(' ')).toLowerCase();
-  if(kind==='DISTINCTION'||/\b(vs|versus|difference|distinction|compare)\b/.test(text)){
-    const a=points[0]||'Concept A: identify its defining feature.';
-    const b=points[1]||'Concept B: identify the contrasting feature.';
-    return '<div class="quick-visual quick-table"><div><b>COMPARE</b><span>'+esc(a.slice(0,150))+'</span></div><div><b>CONTRAST</b><span>'+esc(b.slice(0,150))+'</span></div></div>';
-  }
-  if(kind==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(text)){
-    const items=points.slice(0,4);
-    if(items.length>=2)return '<div class="quick-visual quick-flow">'+items.map((x,i)=>'<div><b>'+(i+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>';
-  }
-  if(/\b(mean|median|mode|correlation|z score|standard deviation|variance|regression|percentile)\b/.test(text)){
-    return '<div class="quick-visual quick-table stats"><div><b>EXAM MOVE</b><span>Identify the statistic or relation being tested.</span></div><div><b>CHECK</b><span>Separate definition, interpretation and calculation.</span></div></div>';
-  }
-  return '';
-}
-function buildQuickLearnBank(){
-  if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;
-  const bank=[],angles=[
-    {type:'CORE',label:'CORE CONCEPT'},
-    {type:'MECHANISM',label:'HOW IT WORKS'},
-    {type:'PYQ',label:'PYQ FOCUS'},
-    {type:'TRAP',label:'EXAM TRAP'},
-    {type:'APPLICATION',label:'APPLICATION'},
-    {type:'SOURCE',label:'SOURCE LENS'},
-    {type:'RECALL',label:'RECALL CUE'},
-    {type:'CONNECTION',label:'CONNECTION'}
-  ];
-  units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{
-    const notes=String(m.content_notes||'');
-    const core=quickClean(section(notes,'CORE CONCEPT','\n\nKEY POINTS')||'');
-    const points=bullets(section(notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(quickClean).filter(Boolean);
-    const pyq=quickClean(section(notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS')||'');
-    const trap=quickClean(section(notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'');
-    const teaching=quickClean(section(notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK')||'');
-    const hook=quickClean(section(notes,'MEMORY HOOK')||'');
-    const sourceLens=quickClean(m.source_lens||'');
-    const appq=quickClean(m.application_question||'');
-    if(!core&&!points.length&&!pyq)return;
-    const base=[core,...points].filter(Boolean),joined=base.join(' ');
-    const category=quickClassify(m.title,joined),sources=quickSources(m);
-    angles.forEach(a=>{
-      let parts=[];
-      if(a.type==='CORE')parts=[core,points.slice(0,3).join(' ')];
-      if(a.type==='MECHANISM')parts=[points.slice(0,4).join(' '),teaching];
-      if(a.type==='PYQ')parts=[pyq,core,points.slice(0,2).join(' ')];
-      if(a.type==='TRAP')parts=[trap,core,points.slice(0,2).join(' ')];
-      if(a.type==='APPLICATION')parts=[appq,core,points.slice(0,2).join(' ')];
-      if(a.type==='SOURCE')parts=[sourceLens,core,points.slice(0,3).join(' '),sources.length?'Sources: '+sources.slice(0,3).join(' · '):''];
-      if(a.type==='RECALL')parts=[hook,core,points.slice(0,2).join(' ')];
-      if(a.type==='CONNECTION')parts=[teaching,pyq,core,points.slice(0,3).join(' ')];
-      const explanation=quickClean(parts.filter(Boolean).join(' '));
-      if(!explanation)return;
-      bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category,angle:a.label,explanation:explanation.slice(0,1050),secondary:quickClean((pyq&&a.type!=='PYQ'?pyq:'')||(trap&&a.type!=='TRAP'?trap:'')).slice(0,520),visual:quickVisual(m,category,points),unit:u.id,topic:t.id,micro:m.id,sources});
-    });
-  })));
-  const seed=bank.slice();let round=1;
-  while(bank.length<1200&&seed.length){
-    for(const c of seed){
-      if(bank.length>=1200)break;
-      const point=(c.explanation.split(/(?<=[.!?])\s+/).find(x=>x.length>45)||c.explanation).trim();
-      bank.push({...c,id:'QL-'+String(bank.length+1).padStart(4,'0'),angle:'KEY IDEA '+round,explanation:quickClean(point+' '+(c.secondary||'')).slice(0,900)});
-    }
-    round++;if(round>12)break;
-  }
-  QUICK_BANK_CACHE=bank;return bank;
-}
-function quickLearnItem(){
-  const bank=buildQuickLearnBank();if(!bank.length)return null;
-  let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_cards_seen')||'[]')}catch(e){}
-  const unseen=bank.filter(x=>!seen.includes(x.id)),pool=unseen.length?unseen:bank,item=pool[Math.floor(Math.random()*pool.length)];
-  seen=[item.id,...seen.filter(x=>x!==item.id)].slice(0,80);
-  try{sessionStorage.setItem('netpsych_quick_cards_seen',JSON.stringify(seen))}catch(e){}
-  return {...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
-}
-function home(){
+function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.content_notes||''),core=quickClean(section(d,'ACADEMIC CORE','\n\nKEY POINTS')||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title),points=bullets(section(d,'KEY POINTS','\n\nDISTINCTION / CAUTION')||section(n,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(quickClean).filter(Boolean),dist=quickClean(section(d,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')||section(n,'COMMON EXAM TRAP','\n\nMEMORY CUE')||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')),exam=quickClean(m.exam_takeaway||''),hook=quickClean(section(n,'MEMORY CUE')||'');return{core,points,dist,exam,hook}}
+function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
+function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
+function quickVisual(m,k,p){const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='DISTINCTION'||/\b(vs|versus|difference|distinction|compare)\b/.test(s)){const a=p[0]||'Identify the defining feature.',b=p[1]||'Identify the contrasting feature.';return'<div class="quick-visual quick-table"><div><b>COMPARE</b><span>'+esc(a.slice(0,150))+'</span></div><div><b>CONTRAST</b><span>'+esc(b.slice(0,150))+'</span></div></div>'}if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const e=quickClean(a[1](p));if(e)bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;let seen=[];try{seen=JSON.parse(sessionStorage.getItem('netpsych_quick_cards_seen')||'[]')}catch(e){}const unseen=bank.filter(x=>!seen.includes(x.id)),pool=unseen.length?unseen:bank,item=pool[Math.floor(Math.random()*pool.length)];seen=[item.id,...seen.filter(x=>x!==item.id)].slice(0,120);try{sessionStorage.setItem('netpsych_quick_cards_seen',JSON.stringify(seen))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const hasStarted=started.length>0,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   if(hasStarted&&resume){
@@ -352,7 +233,7 @@ function home(){
   const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a purpose: learn a concept, strengthen your recall, or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
-  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-bank-count">'+buildQuickLearnBank().length+' CARDS</span></div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><div class="quick-learn-angle">'+esc(quick.angle)+'</div><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.secondary?'<p class="quick-learn-secondary">'+esc(quick.secondary)+'</p>':'')+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
+  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><div class="quick-learn-angle">'+esc(quick.angle)+'</div><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
   const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Build the conceptual framework.</span></div><div><b>Active Recall</b><span>Retrieve without looking at the notes.</span></div><div><b>Apply</b><span>Use the concept in questions and situations.</span></div><div><b>Spaced Revision</b><span>Return to it at spaced intervals.</span></div></div>`;
 }
 function daily3(){
