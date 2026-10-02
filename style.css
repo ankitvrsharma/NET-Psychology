@@ -1067,3 +1067,28 @@ body[data-page="home"] .hero-cta b{display:none}
 @media(max-width:620px){
   .session-head-actions{width:100%;justify-content:space-between}
 }
+
+/* Practice setup v3 — balanced 2x2 choices, expectation guidance, deliberate start */
+.practice-toolbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 18px;align-items:start;margin:22px 0 0}
+.practice-toolbar>label,.practice-unit-field{min-width:0}
+.practice-toolbar>label{display:grid;gap:7px;color:var(--navy);font-size:13px;font-weight:800}
+.practice-toolbar select{width:100%;min-height:50px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit}
+.practice-toolbar select:invalid{color:var(--muted)}
+.practice-unit-field{display:grid;gap:7px}
+.practice-field-label{color:var(--navy);font-size:13px;font-weight:800}
+.practice-unit-list{display:grid;grid-template-columns:1fr 1fr;max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:12px;background:#fff;padding:6px}
+.practice-unit-option{min-width:0}
+.practice-expect{margin:22px auto 0;padding:17px 19px;border:1px solid var(--line);border-radius:13px;background:#f8faff;max-width:900px}
+.practice-expect .eyebrow{margin-bottom:5px}
+.practice-expect p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.practice-start{display:flex;justify-content:center;margin-top:22px}
+.practice-start .btn{min-width:220px;min-height:50px}
+.practice-start .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+@media(max-width:820px){
+  .practice-toolbar{grid-template-columns:1fr}
+  .practice-unit-list{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .practice-expect{padding:15px}
+  .practice-start .btn{width:100%}
+}
