@@ -50,7 +50,7 @@ async function loadStudyData(){
   }
   D=json;
   // Render core UI immediately; optional enrichment must never block a usable page.
-  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='start') render();
+  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='start') safeRender();
   if(document.body.dataset.page==='practice'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
@@ -74,7 +74,7 @@ async function loadStudyData(){
       }
     }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
   }
-  render();
+  safeRender();
   return true;
 }
 
@@ -525,6 +525,13 @@ function render(){
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
+}
+function safeRender(){
+  try{render()}catch(err){
+    console.error('NET Psychology page render failed:',err);
+    const root=document.querySelector('#practiceApp,#startPage,#homeHero');
+    if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
+  }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
 loadStudyData().catch(err=>{
