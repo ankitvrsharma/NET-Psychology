@@ -710,3 +710,23 @@ body[data-page="home"] .quick-learn-link{grid-column:2;grid-row:2;align-self:cen
  body[data-page="home"] .quick-learn-body,body[data-page="home"] .quick-learn-link{grid-column:1}
  body[data-page="home"] .quick-learn-link{grid-row:3;justify-self:start;margin-top:4px}
 }
+/* Homepage v6 — learning CTA is the primary action */
+body[data-page="home"] .hero{position:relative;padding:clamp(34px,5vw,64px) 0 clamp(30px,4vw,48px)}
+body[data-page="home"] .hero-kicker{margin-bottom:10px}
+body[data-page="home"] .hero h1{max-width:900px;margin:0 0 18px;font-size:clamp(40px,6vw,76px);line-height:.98;letter-spacing:-.045em}
+body[data-page="home"] .hero p{max-width:760px;margin:0 0 28px;font-size:clamp(15px,1.6vw,18px);line-height:1.6}
+body[data-page="home"] .hero-actions{margin-top:0}
+body[data-page="home"] .hero-cta{min-height:88px;width:min(100%,720px);padding:20px 26px 20px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid var(--blue);border-radius:20px;background:var(--blue);color:#fff;text-decoration:none;box-shadow:0 18px 34px rgba(63,103,217,.22);transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+body[data-page="home"] .hero-cta span{font-size:clamp(18px,2vw,24px);font-weight:900;letter-spacing:.015em}
+body[data-page="home"] .hero-cta b{width:48px;height:48px;display:grid;place-items:center;flex:0 0 48px;border-radius:14px;background:rgba(255,255,255,.16);font-size:24px;line-height:1}
+body[data-page="home"] .hero-cta:hover{transform:translateY(-2px);box-shadow:0 22px 40px rgba(63,103,217,.27)}
+body[data-page="home"] .hero-cta:active{transform:translateY(0)}
+body[data-page="home"] .hero-cta:focus-visible{outline:3px solid rgba(63,103,217,.28);outline-offset:4px}
+@media(max-width:720px){
+ body[data-page="home"] .hero{padding:32px 0 34px}
+ body[data-page="home"] .hero h1{font-size:clamp(38px,10vw,54px);line-height:1;margin-bottom:16px}
+ body[data-page="home"] .hero p{margin-bottom:22px}
+ body[data-page="home"] .hero-cta{width:100%;min-height:76px;padding:17px 18px 17px 20px;border-radius:16px}
+ body[data-page="home"] .hero-cta span{font-size:18px}
+ body[data-page="home"] .hero-cta b{width:42px;height:42px;flex-basis:42px;border-radius:12px}
+}
