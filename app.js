@@ -64,8 +64,8 @@ async function loadStudyData(){
   }
   D=json;
   // Render core UI immediately; optional enrichment must never block a usable page.
-  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='start') safeRender();
-  if(document.body.dataset.page==='practice'){
+  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
+  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
@@ -318,12 +318,31 @@ function topicPage(){
 function practiceFor(u,t,m){
   return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u)&&Number(q.topic)===Number(t)&&Number(q.micro)===Number(m));
 }
+
+function cleanPracticeText(value){
+  let text=String(value??"").replace(/\r/g,"").replace(/<br\s*\/?>(?=.)/gi,"\n").replace(/&nbsp;/gi," ");
+  text=text.replace(/Tap\s+to\s+check\s+answer\s+key/gi,"");
+  text=text.replace(/(?:\b\d+\s*)?UGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\s*(?:\d+)?/gi,"");
+  return text.replace(/[ \t]{2,}/g," ").replace(/\n{3,}/g,"\n\n").trim();
+}
+function practiceListHTML(value){
+  const text=cleanPracticeText(value).replace(/\s+(?=(?:[A-Z]|\d+|[ivxlcdm]+)[.)]\s)/gi,"\n");
+  return text.split(/\n+/).map(x=>x.trim()).filter(Boolean).map(x=>"<li>"+esc(x)+"</li>").join("");
+}
+function practiceQuestionHTML(q){
+  const raw=cleanPracticeText(q?.question||q?.q||"");
+  const match=raw.match(/List\s*[-–—]?\s*I\b([\s\S]*?)List\s*[-–—]?\s*II\b([\s\S]*)/i);
+  if(!match)return "<div class=\"practice-question-copy\"><p>"+esc(raw)+"</p></div>";
+  const stem=raw.slice(0,match.index).trim();
+  return "<div class=\"practice-question-copy\"><p>"+esc(stem)+"</p><div class=\"matching-lists\"><section><div class=\"matching-label\">LIST I</div><ol>"+practiceListHTML(match[1])+"</ol></section><section><div class=\"matching-label\">LIST II</div><ol>"+practiceListHTML(match[2])+"</ol></section></div></div>";
+}
+
 function mcqHTML(q,i,source='MCQ',showSource=true){
   const opts=q.options||q.o||[];
   const ans=Number.isInteger(q.answer)?q.answer:0;
   const tags=Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:[source];
   const provenance=tags.join(' · ');
-  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta">${showSource?`<span>${esc(provenance)}</span>`:""}<span>Question ${i+1}</span></div><h3>${esc(q.question || q.q || '')}</h3><div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
+  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta">${showSource?`<span>${esc(provenance)}</span>`:""}<span>Question ${i+1}</span></div>${practiceQuestionHTML(q)}<div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
 }
 function mappedConcept(q){
   if(!q||q.unit==null||q.topic==null||q.micro==null||!D)return null;
@@ -566,7 +585,12 @@ function practice(){
     }
     const limit=+$('#setSize').value;
     const groupingKey=allUnits?'unit':unitScope.some(x=>x.dataset.scope==='part')?'topic':'random';
-    qs=groupingKey==='random'?qs.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(qs,x=>groupingKey==='unit'?x.unit:x.topic,limit);
+    let seen=[];try{seen=JSON.parse(localStorage.getItem('netPsychPracticeSeen')||'[]')}catch{}
+    const idOf=q=>String(q.id??q.question??'').trim();
+    const fresh=qs.filter(q=>{const id=idOf(q);return id&&!seen.includes(id)});
+    const pool=fresh.length>=limit?fresh:qs;
+    qs=groupingKey==='random'?pool.sort(()=>Math.random()-.5).slice(0,limit):interleaveBy(pool.sort(()=>Math.random()-.5),x=>groupingKey==='unit'?x.unit:x.topic,limit);
+    try{const next=[...seen,...qs.map(idOf).filter(Boolean)];localStorage.setItem('netPsychPracticeSeen',JSON.stringify(next.slice(-5000)))}catch{}
     if(!qs.length){
       $('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>We couldn’t find questions for this selection.</h2><p>Try another question type or choose more units, then start again.</p></section>';
       return;
@@ -639,7 +663,21 @@ function practice(){
       },1000);
     }
   }
-  $('#startSet').onclick=draw;
+  $('#startSet').onclick=()=>{
+    const selected=scopeInputs().filter(x=>x.checked),session={size:$('#setSize').value,type:$('#practiceType').value,mode:$('#practiceMode').value,units:selected.map(x=>({scope:x.dataset.scope,value:x.value,unit:x.dataset.unit||''}))};
+    sessionStorage.setItem('netPsychPracticeSetup',JSON.stringify(session));
+    location.href='practice-session.html';
+  };
+  if(document.body.dataset.page==='practice-session'){
+    const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch{return null}})();
+    if(saved){
+      $('#setSize').value=saved.size||'';$('#practiceType').value=saved.type||'';$('#practiceMode').value=saved.mode||'';
+      scopeInputs().forEach(x=>x.checked=saved.units.some(u=>u.scope===x.dataset.scope&&u.value===x.value&&String(u.unit||'')===String(x.dataset.unit||'')));
+      updateScopeSummary();syncPracticeSetup();
+      $('.practice-config').classList.add('session-hidden');
+      draw();
+    }
+  }
 }function revision(){
   const root=$('#revisionApp');
   if(!root)return;
@@ -731,7 +769,7 @@ function render(){
 function safeRender(){
   try{render()}catch(err){
     console.error('NET Psychology page render failed:',err);
-    const root=document.querySelector('#practiceApp,#startPage,#homeHero,#revisionApp');
+    const root=document.querySelector('#practiceApp,#practiceSessionApp,#startPage,#homeHero,#revisionApp');
     if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
   }
 }
