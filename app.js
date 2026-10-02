@@ -43,6 +43,13 @@ async function loadStudyData(){
       json.kaplan_enrichment_meta=kp.source||null;
     }
   }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
+  try{
+    const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
+    if(sr.ok) json.study_source_config=await sr.json();
+  }catch(e){console.warn('Study source configuration could not be loaded:',e)}
+  for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+    m.study_source_config=json.study_source_config||null;
+  }
   D=json;
   if(document.body.dataset.page==='practice'){
     try{
@@ -68,8 +75,45 @@ const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const stripLegacy=s=>String(s||'').replace(/\nPYQ-STYLE PATTERN[\s\S]*?(?=\nCOMMON TRAP|\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\nCOMMON TRAP[\s\S]*?(?=\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\n5-MINUTE TEACHING FOCUS[\s\S]*?(?=\nMEMORY HOOK|$)/,'').replace(/\nMEMORY HOOK[\s\S]*?$/,'').trim();
-const noteSection=(label,text,klass='')=>{const v=String(text||'').trim();return v?'<section class="study-note-block '+klass+'"><h3>'+esc(label)+'</h3><div class="study-note-text">'+esc(v)+'</div></section>':''};
-const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{const pyq=section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');const focus=section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK');const example=m.application_question||'';const kaplan=m.kaplan_enrichment?.notes||'';return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Read for structure first. Then close the notes and retrieve the idea from memory.</p></div>'+noteSection('1. Core idea',concept,'core')+(kp.length?'<section class="study-note-block"><h3>2. Key points</h3><ul class="study-note-list">'+kp.slice(0,7).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+noteSection('3. Kaplan enrichment',kaplan,'kaplan-enrichment')+noteSection('4. Explanation & connections',core,'explanation')+noteSection('5. Apply it',example,'application')+noteSection('6. Exam focus',pyq,'exam-focus')+noteSection('7. Common trap / distinction',trap,'trap')+noteSection('8. 5-minute teaching focus',focus,'teaching-focus')+noteSection('9. Memory cue',hook,'memory')+(!pyq&&!focus&&!trap&&!hook&&!kaplan?'<p class="study-note-source-note">Use the key points above as the primary revision notes; the recall stage is deliberately kept separate so you test yourself rather than reread.</p>':'')+'</div>';};
+const noteSection=(label,text,klass='')=>{
+  const v=String(text||'').trim();
+  return v?'<section class="study-note-block '+klass+'"><h3>'+esc(label)+'</h3><div class="study-note-text">'+esc(v)+'</div></section>':'';
+};
+const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
+  const explicit=Array.isArray(m.study_notes)?m.study_notes:[];
+  if(explicit.length)return explicit.map((b)=>({
+    title:b?.title||b?.label||'Study note',
+    content:Array.isArray(b?.content)?b.content.join('\n'):b?.content,
+    type:b?.type||'note',
+    source:b?.source||b?.sources||''
+  })).filter(b=>String(b.content||'').trim());
+  const blocks=[];
+  const add=(title,content,type='note',source='')=>{if(String(content||'').trim())blocks.push({title,content,type,source})};
+  add('Core idea',concept,'core');
+  if(kp.length)add('Key points',kp,'list');
+  const sourceNotes=m.source_notes&&typeof m.source_notes==='object'?m.source_notes:{};
+  Object.entries(sourceNotes).forEach(([source,content])=>add(source,content,'source',source));
+  add('Explanation & connections',core,'explanation');
+  add('Apply it',m.application_question,'application');
+  add('Exam focus',section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS'),'exam');
+  add('Common trap / distinction',trap,'trap');
+  add('Teaching focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK'),'teaching');
+  add('Memory cue',hook,'memory');
+  if(m.kaplan_enrichment?.notes)add(m.kaplan_enrichment.source||'Kaplan source note',m.kaplan_enrichment.notes,'source',m.kaplan_enrichment.source||'Kaplan');
+  return blocks;
+};
+const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{
+  const blocks=normalizeNoteBlocks(m,concept,kp,core,trap,hook);
+  const sourceConfig=m.study_source_config||{};
+  const noteSources=Array.isArray(sourceConfig.notes_primary)?sourceConfig.notes_primary:[];
+  const provenance=noteSources.length?'<div class="study-note-source-note">Primary learning sources: '+noteSources.map(esc).join(' · ')+'</div>':'';
+  return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">SOURCE-GROUNDED STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Use only the parts you need: understand the idea, make the useful connection, then close the notes and retrieve it.</p></div>'+blocks.map(b=>{
+    const content=Array.isArray(b.content)?'<ul class="study-note-list">'+b.content.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':esc(b.content);
+    const cls=b.type==='trap'?'trap':b.type==='core'?'core':b.type==='exam'?'exam-focus':b.type==='memory'?'memory':'';
+    const src=b.source?'<small class="study-note-source-label">'+esc(Array.isArray(b.source)?b.source.join(' · '):b.source)+'</small>':'';
+    return '<section class="study-note-block '+cls+'"><h3>'+esc(b.title)+'</h3>'+src+'<div class="study-note-text">'+content+'</div></section>';
+  }).join('')+provenance+'</div>';
+};
 const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
 const countMicro=u=>u.topics.reduce((n,t)=>n+t.microtopics.length,0);
 function sourceEntries(m){return (m.sources||[]).map(id=>D.source_library?.find(s=>s.id===id)).filter(Boolean)}
@@ -235,7 +279,7 @@ function micro(){
   const core=stripLegacy(m.content_notes);
   const trap=section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS');
   const hook=section(m.content_notes,'MEMORY HOOK');
-  const deep=[m.deep,m.deep_learning,m.source_lens&&`Study lens: ${m.source_lens}`,trap&&`Distinction to check: ${trap}`,hook&&`Memory cue: ${hook}`].filter(Boolean).join('\n\n')||core;
+  const deep=[m.detailed_explanation,m.deep,m.deep_learning,m.source_lens&&'Study lens: '+m.source_lens,trap&&'Distinction to check: '+trap,hook&&'Memory cue: '+hook].filter(Boolean).join('\n\n')||core;
   const sources=sourceNames(m),qs=practiceFor(u.id,t.id,m.id);
 
   $('#microPage').innerHTML=`<div class="breadcrumbs"><span>${esc(m.title)}</span></div>
@@ -294,7 +338,7 @@ function micro(){
       </main>
 
       <aside class="content-stack">
-        <section class="card source-card"><div class="eyebrow">STUDY SUPPORT</div><h2>Go deeper when you need to</h2><div class="source-tags">${sources.map(s=>`<span class="pill">${esc(s)}</span>`).join('')||'<span class="muted">Mapped source metadata not available.</span>'}</div>${sourceEntries(m).length?`<div class="source-details">${sourceEntries(m).map(s=>`<div class="source-detail"><b>${esc(s.title)}</b><span>${esc(s.role||'')}</span></div>`).join('')}</div>`:''}<p class="source-note">The syllabus source anchors scope; the mapped study sources add conceptual or contextual depth. Use them selectively when the quick explanation is not enough.</p></section>
+        <section class="card source-card"><div class="eyebrow">SOURCE-GROUNDED LEARNING</div><h2>Use the right source for the right job</h2><div class="source-details">${(m.study_source_config?.notes_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary notes source</span></div>`).join("")}${(m.study_source_config?.mcq_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary practice source</span></div>`).join("")}</div><p class="source-note">Notes teach the concept; practice tests retrieval and application. The page does not force every source into every micro-topic.</p></section>
         <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Check it after some time</h2><p class="muted">A concept is becoming secure when you can understand it, recall it, use it, and still bring it back later.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
         <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:''}${next?`<a href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:''}<a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a></div></section>
       </aside>
