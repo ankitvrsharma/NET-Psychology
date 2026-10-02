@@ -452,3 +452,13 @@ body[data-page="home"] .daily-focus-card:focus-visible{outline:3px solid rgba(63
   .micro-resource-panel-head{align-items:flex-start;flex-direction:column;gap:4px}
   .micro-resource-hint{white-space:normal}
 }
+\n\n/* Home exam countdown */
+body[data-page="home"] .net-countdown{margin:8px 0 24px;padding:0;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow);overflow:hidden}
+body[data-page="home"] .net-countdown-inner{display:flex;align-items:center;gap:18px;padding:18px 20px}
+body[data-page="home"] .net-countdown-icon{width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border-radius:12px;background:#eef2ff;color:var(--blue);font-size:22px}
+body[data-page="home"] .net-countdown-copy{flex:1;min-width:0}
+body[data-page="home"] .net-countdown-copy strong{display:block;color:var(--navy);font-size:30px;line-height:1.05;letter-spacing:-.03em}
+body[data-page="home"] .net-countdown-copy strong span{font-size:12px;letter-spacing:.07em;color:var(--blue);vertical-align:middle}
+body[data-page="home"] .net-countdown-copy p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+body[data-page="home"] .net-countdown-source{flex:0 0 auto;color:var(--blue);font-size:11px;font-weight:800;text-decoration:none}
+@media(max-width:620px){body[data-page="home"] .net-countdown-inner{align-items:flex-start;gap:12px;padding:16px}.net-countdown-icon{width:38px!important;height:38px!important;flex-basis:38px!important;font-size:18px!important}body[data-page="home"] .net-countdown-copy strong{font-size:25px}body[data-page="home"] .net-countdown-source{display:none}}
