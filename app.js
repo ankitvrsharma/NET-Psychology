@@ -492,11 +492,11 @@ function micro(){
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{
-    const unit=`<button class="practice-unit-option" type="button" data-scope="unit" data-value="${esc(u.id)}" aria-pressed="false"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></button>`;
-    const partOptions=unitParts(u).map(part=>`<button class="practice-unit-option practice-part-option" type="button" data-scope="part" data-unit="${esc(u.id)}" data-value="${esc(part.id)}" aria-pressed="false"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></button>`).join('');
+    const unit=`<button class="practice-unit-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="unit" data-value="unit:${esc(u.id)}" data-unit="${esc(u.id)}" aria-pressed="false"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></button>`;
+    const partOptions=unitParts(u).map(part=>`<button class="practice-unit-option practice-part-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="part" data-unit="${esc(u.id)}" data-value="part:${esc(u.id)}:${esc(part.id)}" aria-pressed="false"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></button>`).join('');
     return unit+partOptions;
   }).join('');
-  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><button class="practice-unit-option practice-all-option" type="button" data-scope="all" data-value="all" aria-pressed="false"><span><b>All Units</b></span></button>${unitOptions}</div>`;
+  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><button class="practice-unit-option practice-all-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="all" data-value="all" aria-pressed="false"><span><b>All Units</b></span></button>${unitOptions}</div>`;
   box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Set up your practice session, then follow the questions from start to finish with feedback along the way.</p></div></div><div class="practice-toolbar">
 <div class="practice-unit-field"><span class="practice-field-label">Select unit</span>${scopeHTML}</div>
 <div class="practice-choice-field"><span class="practice-field-label">Type of questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">Select one or both.</small></div>
@@ -515,19 +515,9 @@ function practice(){
     unitList.hidden=true;
     unitTrigger.setAttribute('aria-expanded','false');
   });
-  // Unit selection has one source of truth: selectedScopeKeys.
-  // UI buttons are only a visual representation of this state.
-  let selectedScopeKeys=[];
-  const scopeInputs=()=>Array.from(document.querySelectorAll('#practiceUnitList [data-scope]'));
-  const scopeKey=x=>`${x.dataset.scope}:${x.dataset.unit||''}:${x.dataset.value}`;
-  const selectedScope=()=>scopeInputs().filter(x=>selectedScopeKeys.includes(scopeKey(x)));
-  const syncScopeUI=()=>{
-    scopeInputs().forEach(x=>{
-      const on=selectedScopeKeys.includes(scopeKey(x));
-      x.setAttribute('aria-pressed',String(on));
-      x.classList.toggle('selected',on);
-    });
-  };
+  // Units, parts and All Units use the same choice model as MCQs/PYQs.
+  const scopeInputs=()=>Array.from(document.querySelectorAll('#practiceUnitList [data-practice-choice][data-choice-group="scope"]'));
+  const selectedScope=()=>scopeInputs().filter(x=>x.classList.contains('selected'));
   const updateScopeSummary=()=>{
     const selected=selectedScope();
     const allSelected=selected.some(x=>x.dataset.scope==='all');
@@ -595,11 +585,38 @@ function practice(){
       else expectation.textContent='You’ll practise '+size+' questions from '+scopeLabel+'. '+(mode==='timed'?'The session is timed, and explanations appear after you finish.':'The session is self-paced, with feedback as you work through each question.');
     }
   };
-  $$('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+  $('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
     const group=btn.dataset.choiceGroup;
+    if(group==='scope'){
+      const isAll=btn.dataset.scope==='all';
+      const wasSelected=btn.classList.contains('selected');
+      if(isAll){
+        document.querySelectorAll('[data-practice-choice][data-choice-group="scope"]').forEach(x=>{
+          const on=!wasSelected&&x===btn;
+          x.classList.toggle('selected',on);
+          x.setAttribute('aria-pressed',String(on));
+        });
+        if(!wasSelected){
+          unitList.hidden=true;
+          unitTrigger.setAttribute('aria-expanded','false');
+        }
+      }else{
+        const allBtn=document.querySelector('[data-practice-choice][data-choice-group="scope"][data-scope="all"]');
+        if(allBtn){
+          allBtn.classList.remove('selected');
+          allBtn.setAttribute('aria-pressed','false');
+        }
+        const on=!wasSelected;
+        btn.classList.toggle('selected',on);
+        btn.setAttribute('aria-pressed',String(on));
+      }
+      updateScopeSummary();
+      syncPracticeSetup();
+      return;
+    }
     if(group==='size'){
       const selected=selectedScope(),types=selectedPracticeChoices('type'),pool=getPracticePool(types,selected),n=Number(btn.dataset.value);
-      const unitCount=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
+      const unitCount=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.unit))).size;
       const hasAll=selected.some(x=>x.dataset.scope==='all');
       const hideSize=!hasAll&&((types.length===1&&unitCount>0&&unitCount<=5)||(types.length===2&&unitCount>0&&unitCount<=3));
       if(hideSize||pool.length<n){
@@ -615,29 +632,6 @@ function practice(){
     }else setPracticeChoices(group,[btn.dataset.value]);
     syncPracticeSetup();
   }));
-  const activateScopeOption=option=>{
-    const key=scopeKey(option);
-    const alreadySelected=selectedScopeKeys.includes(key);
-    if(option.dataset.scope==='all'){
-      selectedScopeKeys=alreadySelected?[]:['all::all'];
-      unitList.hidden=true;
-      unitTrigger.setAttribute('aria-expanded','false');
-    }else{
-      selectedScopeKeys=alreadySelected
-        ? selectedScopeKeys.filter(k=>k!==key)
-        : [...selectedScopeKeys.filter(k=>!k.startsWith('all:')),key];
-    }
-    syncScopeUI();
-    updateScopeSummary();
-    syncPracticeSetup();
-  };
-  // Use the same native click interaction model as MCQs/PYQs.
-  // Each option owns its click handler; no touch/pointer interception.
-  scopeInputs().forEach(option=>{
-    option.addEventListener('click',()=>{
-      activateScopeOption(option);
-    });
-  });
   updateScopeSummary();
   syncPracticeSetup();
   let timerId=null;
@@ -759,8 +753,11 @@ function practice(){
     const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch{return null}})();
     if(saved){
       setPracticeChoices('size',[String(saved.size||'')]);setPracticeChoices('type',String(saved.type||'').split(',').filter(Boolean));setPracticeChoices('mode',[String(saved.mode||'')]);
-      selectedScopeKeys=(saved.units||[]).map(u=>`${u.scope}:${u.unit||''}:${u.value}`);
-      syncScopeUI();
+      document.querySelectorAll('[data-practice-choice][data-choice-group="scope"]').forEach(option=>{
+        const match=(saved.units||[]).some(u=>u.scope===option.dataset.scope&&String(u.unit||'')===String(option.dataset.unit||'')&&String(u.value)===String(option.dataset.scope==='all'?'all':option.dataset.scope==='unit'?String(option.dataset.unit):String(option.dataset.value).split(':').slice(2).join(':')));
+        option.classList.toggle('selected',match);
+        option.setAttribute('aria-pressed',String(match));
+      });
       updateScopeSummary();syncPracticeSetup();
       $('.practice-config').classList.add('session-hidden');
       draw();
