@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v39-expert-microtopics';
+const CACHE='netpsych-shell-v40-daily-flows';
 const SHELL=[
   './',
   './index.html',
@@ -13,6 +13,8 @@ const SHELL=[
   './progress.html',
   './revision.html',
   './daily3.html',
+  './daily-revision.html',
+  './daily-practice.html',
   './style.css',
   './app.js',
   './data.js',
