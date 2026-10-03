@@ -528,7 +528,7 @@ function practice(){
     const labels=[...unitsSelected,...partsSelected];
     summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
   };
-  const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"].selected')).map(x=>x.dataset.value);
+  const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"][aria-pressed="true"]')).map(x=>x.dataset.value);
   const selectedPracticeChoice=group=>selectedPracticeChoices(group)[0]||'';
   const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{const on=values.includes(btn.dataset.value);btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on))});
   const getPracticePool=(types,selected)=>{
@@ -590,7 +590,12 @@ function practice(){
         return;
       }
     }
-    if(btn.dataset.multi==='true'){
+    if(group==='type'){
+      /* MCQs and PYQs are independent toggles: selecting one must never clear the other. */
+      const on=btn.getAttribute('aria-pressed')!=='true';
+      btn.classList.toggle('selected',on);
+      btn.setAttribute('aria-pressed',String(on));
+    }else if(btn.dataset.multi==='true'){
       const on=!btn.classList.contains('selected');
       btn.classList.toggle('selected',on);
       btn.setAttribute('aria-pressed',String(on));
