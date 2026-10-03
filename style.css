@@ -1713,3 +1713,13 @@ body[data-page="practice-session"] .practice-hero{display:none}
  .deep-dive-next{display:grid;padding:22px}
  .deep-dive-next .btn{width:100%;text-align:center}
 }
+/* Timed practice: make skipped-question return easy to scan and use. */
+.timed-skipped-panel{margin:20px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#f8faff}
+.timed-skipped-panel p{margin:5px 0 12px;color:var(--muted);font-size:13px;line-height:1.5}
+.timed-skipped-list{display:flex;flex-wrap:wrap;gap:8px}
+.timed-skipped-question{min-width:0;padding:9px 12px;font-size:11px}
+@media(max-width:620px){
+  .timed-skipped-panel{padding:14px}
+  .timed-skipped-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .timed-skipped-question{width:100%}
+}
