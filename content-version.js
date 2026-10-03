@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "2026-10-03-all-microtopics-rewrite";
+window.NETPSY_DATA_VERSION = "2026-10-03-microtopic-content-v2";
