@@ -400,24 +400,49 @@ function dailyPractice(){
     questions=shuffled.slice(0,10);
     localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}));
   }
-  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through 10 questions today, learn from the feedback, and use missed questions to decide what you need to strengthen.</p></section><section class="daily-practice-list">'+questions.map((q,i)=>mcqHTML(q,i,'DAILY PRACTICE',true)).join('')+'</section><section class="daily-practice-complete panel" id="dailyPracticeComplete" hidden><div class="eyebrow">SET COMPLETE</div><h2>Daily practice complete.</h2><p id="dailyPracticeScore"></p><a class="btn primary" href="practice.html">OPEN FULL PRACTICE →</a></section>';
-  const cards=Array.from(root.querySelectorAll('.mcq'));
-  cards.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
-    const q=questions[+card.dataset.i],chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;
-    card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-    const fb=card.querySelector('.mcq-feedback');
-    fb.hidden=false;
-    fb.innerHTML=correct?'<b class="correct">✓ Correct</b> '+esc(contextualExplanation(q)):'<b class="incorrect">✕ Not quite.</b> Correct answer: <b>'+String.fromCharCode(65+answer)+'. '+esc((q.options||q.o)[answer])+'</b><br>'+esc(contextualExplanation(q));
-    const s=state();
-    s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString(),source:'daily'}].slice(-200);
-    save(s);
-    const answered=cards.filter(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled)).length;
-    if(answered===10){
-      const correctCount=cards.filter(x=>x.querySelector('.mcq-feedback')?.textContent?.startsWith('✓')).length;
-      $('#dailyPracticeScore').textContent=correctCount+' of 10 correct · '+Math.round(correctCount/10*100)+'%';
-      $('#dailyPracticeComplete').hidden=false;
-    }
-  })));
+  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
+  let current=0,ended=false,correctCount=0,answers={};
+  const renderComplete=()=>{
+    ended=true;
+    const percent=Math.round(correctCount/questions.length*100);
+    const review=questions.map((q,i)=>{
+      const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen;
+      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
+      const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
+      const status=record?.correct?'correct':'incorrect';
+      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
+    }).join('');
+    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
+  };
+  const renderQuestion=()=>{
+    if(ended)return;
+    const q=questions[current],answered=Boolean(answers[current]);
+    $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');
+    if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+    card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
+      if(answered||ended)return;
+      answered=true;
+      const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
+      answers[current]={chosen,correct:wasCorrect};
+      if(wasCorrect)correctCount++;
+      card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+      nextBtn.disabled=false;
+    });
+    prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
+    nextBtn.onclick=()=>{
+      if(ended||!answers[current])return;
+      if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+      else{
+        const s=state();
+        questions.forEach((q,i)=>s._practiceHistory=[...(s._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
+        save(s);
+        renderComplete();
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    };
+  };
+  renderQuestion();
 }
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
