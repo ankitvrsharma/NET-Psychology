@@ -1059,7 +1059,7 @@ body[data-page="home"] .hero-cta b{display:none}
 @media (hover:hover) and (pointer:fine){
   .practice-unit-option:hover{background:#f5f7fb}
 }
-.practice-unit-option.selected{background:#eef3ff;color:var(--navy)!important;border-radius:12px;box-shadow:inset 0 0 0 1px #d7e0f7}
+.practice-unit-option.selected{background:#eef3ff;color:var(--navy)!important;border-radius:12px;box-shadow:none;outline:none!important}
 .practice-unit-option.selected span{color:var(--navy)!important}
 .practice-unit-option input{width:16px;height:16px;flex:0 0 16px;margin:1px 0 0;accent-color:var(--blue)}
 .practice-part-option{padding-left:31px;color:var(--muted)!important;font-weight:600!important}
