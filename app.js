@@ -528,7 +528,8 @@ function practice(){
     const labels=[...unitsSelected,...partsSelected];
     if(unitsSelected.length>1&&partsSelected.length===0)summary.textContent=`${unitsSelected.length} units selected`;
     else if(partsSelected.length>1&&unitsSelected.length===0)summary.textContent=`${partsSelected.length} parts selected`;
-    else if(labels.length===1)summary.textContent=labels[0];
+    else if(unitsSelected.length===1&&partsSelected.length===0)summary.textContent=`${unitsSelected[0]} selected`;
+    else if(partsSelected.length===1&&unitsSelected.length===0)summary.textContent=`${partsSelected[0]} selected`;
     else summary.textContent=`${labels.length} selections`;
   };
   const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"].selected')).map(x=>x.dataset.value);
