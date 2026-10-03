@@ -501,7 +501,7 @@ function micro(){
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
   const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN'));
+  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
   const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
   const deep=String(m.detailed_explanation||m.deep||concept).trim();
   const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
