@@ -129,7 +129,7 @@ body[data-page="home"] .unit-card .unit-meta span+span:before{content:"";positio
 
 .progress-next{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:8px 0 18px;padding:21px 24px;border-radius:18px}
 .progress-next h2{margin:3px 0 4px;color:var(--navy);font-size:22px}
-.progress-next p{margin:0;color:var(--muted);font-size:14px}
+.progress-next p{margin:10px 0 0;color:var(--muted);font-size:14px;line-height:1.55}
 .progress-next .btn{white-space:nowrap}
 .progress-hero p{max-width:720px}
 .unit-progress-section{margin-top:34px}
