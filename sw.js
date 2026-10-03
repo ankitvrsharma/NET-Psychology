@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v40-daily-flows';
+const CACHE='netpsych-shell-v41-daily-practice';
 const SHELL=[
   './',
   './index.html',
@@ -13,7 +13,6 @@ const SHELL=[
   './progress.html',
   './revision.html',
   './daily3.html',
-  './daily-revision.html',
   './daily-practice.html',
   './style.css',
   './app.js',
