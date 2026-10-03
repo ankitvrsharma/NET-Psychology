@@ -631,22 +631,10 @@ function practice(){
     updateScopeSummary();
     syncPracticeSetup();
   };
-  // Keep the earlier pointer activation as a touch fallback, while the
-  // native click path remains available for keyboard/mouse activation.
-  // The guard prevents a single touch from toggling twice.
+  // Use the same native click interaction model as MCQs/PYQs.
+  // Each option owns its click handler; no touch/pointer interception.
   scopeInputs().forEach(option=>{
-    let pointerActivatedAt=0;
-    option.addEventListener('pointerup',e=>{
-      if(e.pointerType==='mouse'&&e.button!==0)return;
-      e.preventDefault();
-      pointerActivatedAt=Date.now();
-      activateScopeOption(option);
-    });
-    option.addEventListener('click',e=>{
-      if(Date.now()-pointerActivatedAt<700){
-        e.preventDefault();
-        return;
-      }
+    option.addEventListener('click',()=>{
       activateScopeOption(option);
     });
   });
