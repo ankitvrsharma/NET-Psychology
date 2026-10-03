@@ -1651,3 +1651,17 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .learn-journey-actions .btn{width:100%;justify-content:center}
   .learn-current-head{gap:10px}
 }
+
+/* Daily revision and daily practice */
+.daily-revision-hero,.daily-practice-hero{max-width:820px}
+.daily-revision-hero h1,.daily-practice-hero h1{font-size:clamp(34px,5vw,52px);line-height:1.06}
+.daily-practice-list{display:grid;gap:16px}
+.daily-practice-list .mcq{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.daily-practice-complete{margin-top:18px}
+.revision-rating-box{margin-top:16px}
+.revision-rating-box .rating-grid{margin-top:10px}
+.rating.selected{outline:2px solid var(--blue);background:#f1f5ff}
+@media(max-width:620px){
+  .daily-practice-list .mcq{padding:16px}
+  .daily-practice-list .mcq-options{grid-template-columns:1fr}
+}
