@@ -1319,3 +1319,5 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .practice-review-explanation p{margin:5px 0 0;color:var(--muted);line-height:1.6}
 @media(max-width:820px){.practice-toolbar{grid-template-columns:1fr}.practice-unit-field{grid-column:auto}}
 @media(max-width:620px){.practice-choice{min-height:48px;padding:10px 8px;font-size:11px}.practice-review-item{padding:18px}.practice-review-head{align-items:flex-start}.practice-complete .complete-actions{display:grid;grid-template-columns:1fr}.practice-complete .complete-actions .btn{width:100%;justify-content:center}}
+
+.practice-choice:disabled{cursor:not-allowed;opacity:.38;background:#f7f8fb;color:var(--muted);box-shadow:none}
