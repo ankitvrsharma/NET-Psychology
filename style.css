@@ -1079,7 +1079,7 @@ body[data-page="home"] .hero-cta b{display:none}
 .practice-unit-field{display:grid;gap:7px}
 .practice-field-label{color:var(--navy);font-size:13px;font-weight:800}
 .practice-unit-list{display:grid;grid-template-columns:1fr 1fr;max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:12px;background:#fff;padding:6px}
-.practice-unit-option{min-width:0}
+.practice-unit-option{min-width:0} .practice-unit-option{appearance:none;-webkit-appearance:none;background:transparent;border:0;width:100%;text-align:left;font:inherit;color:inherit}
 .practice-expect{margin:22px auto 0;padding:17px 19px;border:1px solid var(--line);border-radius:13px;background:#f8faff;max-width:900px}
 .practice-expect .eyebrow{margin-bottom:5px}
 .practice-expect p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
