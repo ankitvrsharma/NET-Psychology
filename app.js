@@ -526,8 +526,8 @@ function practice(){
     if(trigger)trigger.classList.toggle('has-selection',selected.length>0);
     if(allSelected){summary.textContent='All units selected';return}
     if(!selected.length){summary.textContent='No units selected';return}
-    const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.value}`);
-    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.value}`);
+    const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.dataset.value}`);
+    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.dataset.value}`);
     const labels=[...unitsSelected,...partsSelected];
     if(unitsSelected.length>1&&partsSelected.length===0)summary.textContent=`${unitsSelected.length} units selected`;
     else if(partsSelected.length>1&&unitsSelected.length===0)summary.textContent=`${partsSelected.length} parts selected`;
@@ -738,7 +738,7 @@ function practice(){
     }
   }
   $('#startSet').onclick=()=>{
-    const selected=scopeInputs().filter(isScopeSelected),session={size:selectedPracticeChoice('size'),type:selectedPracticeChoices('type').join(','),mode:selectedPracticeChoice('mode'),units:selected.map(x=>({scope:x.dataset.scope,value:x.value,unit:x.dataset.unit||''}))};
+    const selected=scopeInputs().filter(isScopeSelected),session={size:selectedPracticeChoice('size'),type:selectedPracticeChoices('type').join(','),mode:selectedPracticeChoice('mode'),units:selected.map(x=>({scope:x.dataset.scope,value:x.dataset.value,unit:x.dataset.unit||''}))};
     sessionStorage.setItem('netPsychPracticeSetup',JSON.stringify(session));
     location.href='practice-session.html';
   };
