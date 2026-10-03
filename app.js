@@ -631,24 +631,10 @@ function practice(){
     updateScopeSummary();
     syncPracticeSetup();
   };
-  // Mobile-safe activation: use touchend as the primary touch path and
-  // click for keyboard/mouse. Prevent the synthetic click after touchend so
-  // one tap can never toggle twice.
+  // Native button click is the single activation path. Native buttons
+  // translate touch, mouse and keyboard activation into click events.
   scopeInputs().forEach(option=>{
-    let touched=false;
-    option.addEventListener('touchend',e=>{
-      e.preventDefault();
-      touched=true;
-      activateScopeOption(option);
-      window.setTimeout(()=>{touched=false},700);
-    },{passive:false});
-    option.addEventListener('click',e=>{
-      if(touched){
-        e.preventDefault();
-        return;
-      }
-      activateScopeOption(option);
-    });
+    option.onclick=()=>activateScopeOption(option);
   });
   updateScopeSummary();
   syncPracticeSetup();
