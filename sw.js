@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v27-practice-session1';
+const CACHE='netpsych-shell-v32-practice-unit2';
 const SHELL=[
   './',
   './index.html',

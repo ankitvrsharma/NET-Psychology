@@ -601,22 +601,26 @@ function practice(){
     }else setPracticeChoices(group,[btn.dataset.value]);
     syncPracticeSetup();
   }));
-  unitList.addEventListener('change',e=>{
-    const input=e.target.closest('input[type="checkbox"][data-scope]');
-    if(!input)return;
-    const inputs=scopeInputs();
-    if(input.dataset.scope==='all'&&input.checked){
-      inputs.forEach(x=>{if(x!==input)x.checked=false});
-    }else if(input.checked){
-      const allInput=inputs.find(x=>x.dataset.scope==='all');
-      if(allInput)allInput.checked=false;
-    }
-    inputs.forEach(x=>{
-      const label=x.closest('.practice-unit-option');
-      if(label)label.classList.toggle('selected',x.checked);
+  unitList.querySelectorAll('input[type="checkbox"][data-scope]').forEach(input=>{
+    input.addEventListener('change',()=>{
+      const inputs=scopeInputs();
+      if(input.dataset.scope==='all'&&input.checked){
+        inputs.forEach(x=>{if(x!==input)x.checked=false});
+      }else if(input.checked){
+        const allInput=inputs.find(x=>x.dataset.scope==='all');
+        if(allInput)allInput.checked=false;
+      }
+      inputs.forEach(x=>{
+        const label=x.closest('.practice-unit-option');
+        if(label)label.classList.toggle('selected',x.checked);
+      });
+      updateScopeSummary();
+      syncPracticeSetup();
+      if(input.dataset.scope==='all'&&input.checked){
+        unitList.hidden=true;
+        unitTrigger.setAttribute('aria-expanded','false');
+      }
     });
-    updateScopeSummary();
-    syncPracticeSetup();
   });
   /* Unit changes are handled by one delegated change listener so native checkbox state is never overwritten. */
   updateScopeSummary();
