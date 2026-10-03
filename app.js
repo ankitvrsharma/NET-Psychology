@@ -18,7 +18,7 @@ function initMobileNavigation(){
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMobileNavigation,{once:true}); else initMobileNavigation();
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-03-unit-descriptions-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
   return new Promise((resolve,reject)=>{
@@ -451,13 +451,12 @@ function unitPage(){
   const pos=units().findIndex(x=>String(x.id)===String(u.id)),prev=units()[pos-1],next=units()[pos+1];
   const prevLink=prev?`<a href="unit.html?id=${prev.id}">← Previous</a>`:'<span class="disabled">← Previous</span>';
   const nextLink=next?`<a href="unit.html?id=${next.id}">Next →</a>`:'<span class="disabled">Next →</span>';
-  const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
   const topicCard=t=>{
     const total=t.microtopics.length,done=t.microtopics.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
-    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id}</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
+    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id}</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3></a>`;
   };
   const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${u.topics.map(topicCard).join('')}</div>`;
-  $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p><div class="unit-progress"><strong>${explored} of ${countMicro(u)} concepts learned</strong>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}</div></section><div class="unit-navigation"><a class="unit-nav-prev" href="${prev?`unit.html?id=${prev.id}`:'#'}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${next?`unit.html?id=${next.id}`:'#'}">Next →</a></div>${topicContent}`;
+  $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p>${unitParts(u).length?`<div class="unit-progress"><span>${unitParts(u).length} parts</span></div>`:''}</section><div class="unit-navigation"><a class="unit-nav-prev" href="${prev?`unit.html?id=${prev.id}`:'#'}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${next?`unit.html?id=${next.id}`:'#'}">Next →</a></div>${topicContent}`;
 }
 function topicPage(){
   const {u,t}=find();

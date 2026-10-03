@@ -2142,7 +2142,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Trace the emergence of psychology through Indian and Western thought, major schools, knowledge paradigms, and debates about what psychology should study. Build a clear historical and conceptual map so you can distinguish traditions, paradigms, and the development of psychology as a discipline."
+      "description": "Build the story of psychology as a discipline: where its questions came from, how Indian and Western intellectual traditions shaped them, and how major schools and paradigms changed the subject. Move from philosophical roots to the emergence of scientific psychology, then compare the assumptions, methods, and objects of study that distinguish major traditions. By the end of the unit, you should be able to place major thinkers and schools in context and explain why psychology developed in different directions."
     },
     {
       "id": 2,
@@ -4609,7 +4609,7 @@ window.NETPSY_DATA = {
           "part_id": "2A"
         }
       ],
-      "description": "Learn how psychological research is planned, conducted, analysed, and interpreted. Build confidence with research designs, variables, sampling, measurement, data analysis, and statistics so you can connect a research question with the evidence needed to answer it.",
+      "description": "Build a complete research-to-evidence framework for psychology. Start with how research questions become variables, hypotheses, samples, designs, and ethical decisions, then connect these choices to measurement, data collection, and interpretation. In the statistics portion, develop the reasoning behind probability, distributions, statistical tests, power, effect size, correlation, regression, and factor analysis so that you can identify which method fits a research question and interpret what the result actually means.",
       "parts": [
         {
           "id": "2A",
@@ -5577,7 +5577,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Build a working understanding of psychological testing, from test construction and standardisation to reliability, validity, norms, and interpretation. Connect these foundations with major areas of assessment and the practical use of psychological tests."
+      "description": "Understand psychological testing as a systematic process rather than a collection of test names. Follow the path from test construction and standardisation through reliability, validity, norms, administration, scoring, and interpretation. Then connect these foundations with major types and applications of psychological assessment so you can distinguish what a test measures, how confidently it measures it, and how its results should be interpreted."
     },
     {
       "id": 4,
@@ -6885,7 +6885,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Understand the biological systems that contribute to behaviour, including the nervous system, brain, sensory systems, endocrine processes, and genetic influences. Use these foundations to connect biological mechanisms with cognition, motivation, emotion, and behaviour."
+      "description": "Connect behaviour with the biological systems that make it possible. Study the organisation and functioning of the nervous system, brain structures and processes, sensory systems, endocrine influences, and genetic contributions, then use these foundations to explain links with cognition, emotion, motivation, and behaviour. The unit is designed to help you move between biological mechanisms and psychological outcomes rather than memorising structures in isolation."
     },
     {
       "id": 5,
@@ -9275,7 +9275,7 @@ window.NETPSY_DATA = {
           "part_id": "5B"
         }
       ],
-      "description": "Understand how attention and perception organise information and how learning changes behaviour and knowledge. Then connect memory and forgetting to their major processes, models, theories, and explanations so you can distinguish where and why information is gained, retained, or lost.",
+      "description": "Follow the flow of information from attention and perception through learning, memory, and forgetting. First understand how people select, organise, and interpret incoming information, including perceptual organisation, constancy, illusions, and signal detection. Then connect this with how behaviour and knowledge change through learning, how information is encoded and stored in memory, and why remembering and forgetting take the forms they do across major theories and models.",
       "parts": [
         {
           "id": "5A",
@@ -10515,7 +10515,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Connect thinking, concepts, language, problem solving, decision making, intelligence, and creativity as related psychological processes. Build clear distinctions between major theories and approaches while learning how these processes operate in everyday and exam-based situations."
+      "description": "Understand thinking as a set of related processes involved in representing information, using concepts and language, solving problems, and making decisions. Then connect these processes with major approaches to intelligence and the study of creativity. The unit emphasises distinctions among theories while also showing how thinking, intelligence, and creativity can be applied to everyday situations and exam-style problems."
     },
     {
       "id": 7,
@@ -12797,7 +12797,7 @@ window.NETPSY_DATA = {
           "part_id": "7B"
         }
       ],
-      "description": "Examine how personality, motivation, emotion, stress, and coping influence behaviour and adaptation. Compare the major theories and processes, and connect them to how people respond to goals, emotions, demands, and challenging situations.",
+      "description": "Examine the person as an organised system of personality, motives, emotions, and responses to demands. Compare major approaches to personality and then connect motivation and emotion with goals, self-regulation, achievement, curiosity, sensation seeking, and flow. Finally, understand stress and coping as processes shaped by appraisal, resources, and responses, so you can integrate the unit instead of studying each topic as a separate list of theories.",
       "parts": [
         {
           "id": "7A",
@@ -14383,7 +14383,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Understand how people perceive, interpret, and respond to one another in social contexts. Study attitudes, social influence, groups, interpersonal processes, and intergroup relations as connected parts of social behaviour."
+      "description": "Understand social behaviour by examining how people perceive others, form and change attitudes, influence one another, function in groups, and relate across social and intergroup boundaries. Connect individual-level processes such as social cognition and attitude formation with influence, group processes, interpersonal relationships, and intergroup relations. The goal is to build a coherent explanation of how social context shapes thought, feeling, and behaviour."
     },
     {
       "id": 9,
@@ -16164,7 +16164,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Follow psychological development across the lifespan and connect developmental understanding with major areas of intervention. Build foundations in psychopathology, psychotherapy, education, guidance, and counselling while keeping the developmental context in view."
+      "description": "Trace psychological development across the lifespan and use that developmental perspective to understand major areas of psychological intervention. Connect developmental changes with psychopathology, psychotherapy, education, guidance, and counselling, while keeping the person’s age, context, and needs in view. This unit helps you distinguish developmental concepts from intervention approaches and understand where each becomes relevant."
     },
     {
       "id": 10,
@@ -17530,7 +17530,7 @@ window.NETPSY_DATA = {
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
         }
       ],
-      "description": "Explore contemporary psychological issues that extend psychology into changing social, health, cultural, and digital contexts. Examine themes such as diversity, inequality, wellbeing, health, peace, and digital life through their psychological implications."
+      "description": "Explore areas in which psychology responds to changing social, cultural, health, environmental, and digital realities. Examine diversity and inequality alongside wellbeing, health, peace, and the psychological consequences of contemporary and digital life. Use the unit to connect established psychological principles with emerging problems and applications, while recognising how context changes the questions psychologists ask and the interventions they design."
     }
   ],
   "content_sources": [
