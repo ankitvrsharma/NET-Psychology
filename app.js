@@ -208,7 +208,7 @@ function startPage(){
     const list=units().filter(u=>!q||JSON.stringify({title:u.title,description:u.description,topics:u.topics.map(t=>({title:t.title,explanation:t.explanation}))}).toLowerCase().includes(q));
     $('#learnUnits').innerHTML=list.map(u=>{
       const s=stats(u);
-      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span><div class="learn-unit-meta"><span>${u.topics.length} topics</span><span>${countMicro(u)} micro-topics</span>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}${s.due?'<span class="learn-due">'+s.due+' due</span>':''}</div></div><h2>${esc(u.title)}</h2><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
+      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
     }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
   };
   const r=document.querySelector('#learnResume');
@@ -675,7 +675,7 @@ function practice(){
     return unit+partOptions;
   }).join('');
   const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><button class="practice-unit-option practice-all-option" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="all" data-value="all" aria-pressed="false"><span><b>All Units</b></span></button>${unitOptions}</div>`;
-  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Check how well you can apply Psychology. Choose what you want to practise, answer one question at a time, and learn from your mistakes.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose what you want to practise, then work through the questions and use the feedback to strengthen your understanding.</p></div></div><div class="practice-toolbar">
+  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Check how well you can apply Psychology. Choose what you want to practise, answer one question at a time, and learn from your mistakes.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose what you want to practise, then work through one question at a time. In timed practice, you can skip a question and return to it before you finish.</p></div></div><div class="practice-toolbar">
 <div class="practice-unit-field"><span class="practice-field-label">Select unit</span>${scopeHTML}</div>
 <div class="practice-choice-field"><span class="practice-field-label">Type of questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">Select one or both.</small></div>
 <div class="practice-choice-field"><span class="practice-field-label">Practice mode</span><div class="practice-choice-group" id="practiceModeChoices" role="group" aria-label="Practice mode"><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="self-paced" aria-pressed="false">SELF-PACED</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="timed" aria-pressed="false">TIMED</button></div></div>
@@ -849,7 +849,7 @@ function practice(){
     }
     const mode=selectedMode,timed=mode==='timed';
     const totalSeconds=timed?Math.round(qs.length*(180*60/100)):0;
-    let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false,answers={};
+    let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false,answers={},skipped=new Set();
     const recordPracticeAnswer=wasCorrect=>{
       const s=state();
       s._practiceHistory=[...(s._practiceHistory||[]),{correct:wasCorrect,at:new Date().toISOString()}].slice(-200);
@@ -894,22 +894,31 @@ function practice(){
     const renderQuestion=()=>{
       const q=qs[current];
       answered=Boolean(answers[current]);
-      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div><div class="session-navigation"><button class="btn" id="prevQuestion" type="button"${current===0?' disabled':''}>← PREVIOUS</button><button class="btn primary" id="nextQuestion" type="button"${answered?'':' disabled'}>${current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →'}</button></div></section>`;
+      const skippedList=timed&&skipped.size?Array.from(skipped).sort((a,b)=>a-b):[];
+      const lastWithSkipped=timed&&current===qs.length-1&&skippedList.length>0;
+      const nextLabel=lastWithSkipped?'ATTEMPT SKIPPED →':current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →';
+      const skippedPanel=lastWithSkipped?'<div class="timed-skipped-panel"><div class="eyebrow">SKIPPED QUESTIONS</div><p>You can return to these before finishing the timed session.</p><div class="timed-skipped-list">'+skippedList.map(i=>'<button class="btn timed-skipped-question" type="button" data-skipped-index="'+i+'">QUESTION '+(i+1)+'</button>').join('')+'</div></div>':'';
+      $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div>${skippedPanel}<div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div><div class="session-navigation"><button class="btn" id="prevQuestion" type="button"${current===0?' disabled':''}>← PREVIOUS</button><button class="btn" id="skipQuestion" type="button"${answered?' disabled':''}>SKIP QUESTION</button><button class="btn primary" id="nextQuestion" type="button"${answered?'':' disabled'}>${nextLabel}</button></div></section>`;
       const card=$('#practiceSet .mcq');
-      const prevBtn=$('#prevQuestion'),nextBtn=$('#nextQuestion');
+      const prevBtn=$('#prevQuestion'),skipBtn=$('#skipQuestion'),nextBtn=$('#nextQuestion');
+      const skippedButtons=qsa('.timed-skipped-question');
       if(answered){card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);if(!timed){const fb=card.querySelector('.mcq-feedback'),a=+card.dataset.answer;fb.hidden=false;fb.innerHTML=answers[current].correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+a)}. ${esc((q.options||q.o)[a])}</b><br>${esc(contextualExplanation(q))}`}}
       card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
         if(answered||ended)return;
         answered=true;
+        skipped.delete(current);
         const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
         answers[current]={chosen,correct:wasCorrect};
         if(wasCorrect)correct++;
         recordPracticeAnswer(wasCorrect);
         card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
         if(!timed){const fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`}nextBtn.disabled=false;
+        if(timed&&current===qs.length-1&&skipped.size)renderQuestion();
       });
+      skipBtn.onclick=()=>{if(ended||answered)return;skipped.add(current);if(current<qs.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else renderQuestion()};
+      skippedButtons.forEach(btn=>btn.onclick=()=>{const target=Number(btn.dataset.skippedIndex);if(Number.isInteger(target)){current=target;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}});
       prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
-      nextBtn.onclick=()=>{if(ended||!answers[current])return;if(current<qs.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else renderComplete(false)};
+      nextBtn.onclick=()=>{if(ended||!answers[current])return;if(current<qs.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else if(timed&&skipped.size){current=Array.from(skipped).sort((a,b)=>a-b)[0];renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else renderComplete(false)};
     };
     renderQuestion();
     if(timed){
