@@ -1053,6 +1053,9 @@ body[data-page="home"] .hero-cta b{display:none}
 .practice-unit-list[hidden]{display:none!important}.practice-unit-list{display:grid;max-height:210px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff;padding:5px}
 .practice-unit-option{display:flex!important;align-items:flex-start;gap:9px;padding:9px 10px;border-radius:8px;color:var(--ink)!important;font-size:12px!important;font-weight:650!important;cursor:pointer}
 .practice-unit-option{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.practice-unit-option:focus{outline:none!important;box-shadow:none}
+.practice-unit-option:focus-visible{outline:2px solid rgba(62,103,215,.18)!important;outline-offset:-2px}
+.practice-unit-option.selected:focus,.practice-unit-option.selected:focus-visible{outline:none!important;box-shadow:inset 0 -3px 0 var(--navy)}
 @media (hover:hover) and (pointer:fine){
   .practice-unit-option:hover{background:#f5f7fb}
 }
