@@ -631,18 +631,19 @@ function practice(){
     updateScopeSummary();
     syncPracticeSetup();
   };
-  // Use direct pointer activation for touch devices. The click fallback keeps
-  // keyboard and non-pointer activation accessible without double-toggling.
+  // Mobile-safe activation: use touchend as the primary touch path and
+  // click for keyboard/mouse. Prevent the synthetic click after touchend so
+  // one tap can never toggle twice.
   scopeInputs().forEach(option=>{
-    option.addEventListener('pointerup',e=>{
-      if(e.pointerType==='mouse'&&e.button!==0)return;
+    let touched=false;
+    option.addEventListener('touchend',e=>{
       e.preventDefault();
-      option.dataset.pointerActivatedAt=String(Date.now());
+      touched=true;
       activateScopeOption(option);
-    });
+      window.setTimeout(()=>{touched=false},700);
+    },{passive:false});
     option.addEventListener('click',e=>{
-      const last=Number(option.dataset.pointerActivatedAt||0);
-      if(Date.now()-last<600){
+      if(touched){
         e.preventDefault();
         return;
       }
