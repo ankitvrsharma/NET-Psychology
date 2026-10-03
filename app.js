@@ -241,8 +241,28 @@ function startPage(){
     (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
     '</section><a class="learn-syllabus-link" href="learn.html">Browse the syllabus →</a>';
 }
+function deepDive(){
+  const {u,t,m,k}=find(),root=$('#deepDivePage');
+  if(!root)return;
+  if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
+  document.title='Deep Dive — '+m.title+' — UGC NET Psychology';
+  const concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title;
+  const kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
+  const deep=String(m.detailed_explanation||m.deep||m.content_notes||concept).trim();
+  const distinction=String(m.distinction||section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
+  root.innerHTML=
+    '<div class="breadcrumbs"><a href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">Micro-topic</a><span>›</span><span>Deep Dive</span></div>'+
+    '<section class="page-hero deep-dive-hero"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · '+esc(u.title)+'</p></section>'+
+    '<article class="deep-dive-content card"><div class="eyebrow">DETAILED EXPLANATION</div><div class="deep-dive-copy">'+esc(deep)+'</div>'+
+    (kp.length?'<section class="deep-dive-section"><div class="eyebrow">KEY POINTS</div><ul>'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
+    (distinction?'<section class="deep-dive-section"><div class="eyebrow">DISTINCTION / EXAM CAUTION</div><p>'+esc(distinction)+'</p></section>':'')+
+    '</article>'+
+    '<section class="deep-dive-next card"><div><div class="eyebrow">NEXT STEP</div><h2>Check what you can recall.</h2><p>Close the explanation, then test the concept with its mapped recall questions.</p></div><a class="btn primary" href="'+recallHref+'">CHECK YOUR RECALL →</a></section>';
+}
 function activeRecall(){
   const {u,t,m,k}=find(),root=$('#activeRecallPage');
+  const fromRevision=Q.get('from')==='revision';
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
   document.title='Active Recall — '+m.title+' — UGC NET Psychology';
@@ -617,13 +637,10 @@ function micro(){
     (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
     '</div></article>'+
     '<section class="micro-learning-actions">'+
-    '<button type="button" class="micro-action" id="microDeepDive" aria-expanded="false"><span>DEEP DIVE</span></button>'+
-    '<div class="micro-deep-dive-panel" id="microDeepDivePanel" hidden><div class="micro-deep-copy">'+esc(deep)+'</div></div>'+
+    '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
     '<a class="micro-action" href="'+recallHref+'"><span>CHECK YOUR RECALL</span></a>'+
     '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
     '</section></section>';
-  const deepBtn=$('#microDeepDive'),deepPanel=$('#microDeepDivePanel');
-  if(deepBtn&&deepPanel)deepBtn.onclick=()=>{const open=deepPanel.hidden;deepPanel.hidden=!open;deepBtn.setAttribute('aria-expanded',String(open));if(open)requestAnimationFrame(()=>deepPanel.scrollIntoView({behavior:'smooth',block:'start'}))};
 }
 function practice(){
   const box=$('#practiceApp');
@@ -949,7 +966,7 @@ function progressInterpretation(s){
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,learner:learnerPage,'deep-dive':deepDive,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
