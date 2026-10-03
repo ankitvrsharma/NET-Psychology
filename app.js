@@ -323,29 +323,135 @@ function practiceFor(u,t,m){
 }
 
 function cleanPracticeText(value){
-  let text=String(value??"").replace(/\r/g,"").replace(/<br\s*\/?>(?=.)/gi,"\n").replace(/&nbsp;/gi," ");
-  text=text.replace(/Tap\s+to\s+check\s+answer\s+key/gi,"");
-  text=text.replace(/(?:\b\d+\s*)?UGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\s*(?:\d+)?/gi,"");
+  let text=String(value??"")
+    .replace(/\r/g,"")
+    .replace(/<br\s*\/?>/gi,"\n")
+    .replace(/&nbsp;/gi," ")
+    .replace(/Tap\s+to\s+check\s+answer\s+key/gi," ")
+    .replace(/\b\d+\s+UGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\b/gi," ")
+    .replace(/\bUGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\b/gi," ")
+    .replace(/\s+-\s+/g,"-")
+    .replace(/\bchi-\s+square\b/gi,"chi-square")
+    .replace(/\s*\*\s*/g," × ");
   return text.replace(/[ \t]{2,}/g," ").replace(/\n{3,}/g,"\n\n").trim();
 }
-function practiceListHTML(value){
-  const text=cleanPracticeText(value).replace(/\s+(?=(?:[A-Z]|\d+|[ivxlcdm]+)[.)]\s)/gi,"\n");
-  return text.split(/\n+/).map(x=>x.trim()).filter(Boolean).map(x=>"<li>"+esc(x)+"</li>").join("");
+function stripQuestionTail(value){
+  let text=cleanPracticeText(value);
+  text=text.replace(/\s+\d+\s*\.?\s*Codes?\s*:\s*[\s\S]*$/i,"");
+  text=text.replace(/\s+Codes?\s*:\s*[\s\S]*$/i,"");
+  return text.trim();
 }
-function practiceQuestionHTML(q){
+function splitLabelledItems(value){
+  const text=cleanPracticeText(value);
+  const marker=/(?<!\S)([A-Za-z0-9]+)\s*[.)]+(?:\s+)/g;
+  const hits=[];
+  let match;
+  while((match=marker.exec(text))) hits.push({label:match[1],start:match.index,end:marker.lastIndex});
+  return hits.map((hit,i)=>{
+    const end=i+1<hits.length?hits[i+1].start:text.length;
+    return {label:hit.label.toLowerCase(),text:text.slice(hit.end,end).trim()};
+  }).filter(x=>x.text);
+}
+function extractBeforeCodes(value){
+  const text=cleanPracticeText(value);
+  const i=text.search(/\s+\d*\s*Codes?\s*:/i);
+  return i>=0?text.slice(0,i).trim():text;
+}
+function listItems(value,kind){
+  const body=extractBeforeCodes(value);
+  const items=splitLabelledItems(body);
+  if(kind==='match'){
+    return items;
+  }
+  return items;
+}
+function kindLabel(kind){
+  return ({
+    match:"MATCH THE COLUMNS",
+    "assertion-reason":"ASSERTION · REASON",
+    sequence:"SEQUENCE",
+    "statement-set":"STATEMENT SET",
+    direct:"MULTIPLE CHOICE"
+  })[kind]||"QUESTION";
+}
+function practiceListHTML(items){
+  return items.map(x=>"<li><span class=\"structured-item-label\">"+esc(x.label)+".</span><span>"+esc(x.text)+"</span></li>").join("");
+}
+function matchListsHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
-  const match=raw.match(/List\s*[-–—]?\s*I\b([\s\S]*?)List\s*[-–—]?\s*II\b([\s\S]*)/i);
-  if(!match)return "<div class=\"practice-question-copy\"><p>"+esc(raw)+"</p></div>";
-  const stem=raw.slice(0,match.index).trim();
-  return "<div class=\"practice-question-copy\"><p>"+esc(stem)+"</p><div class=\"matching-lists\"><section><div class=\"matching-label\">LIST I</div><ol>"+practiceListHTML(match[1])+"</ol></section><section><div class=\"matching-label\">LIST II</div><ol>"+practiceListHTML(match[2])+"</ol></section></div></div>";
+  const headerMatch=raw.match(/List\s*[-–—]?\s*I\b[\s\S]*?List\s*[-–—]?\s*II\b(?:\s*\([^)]*\))?/i);
+  const body=headerMatch?raw.slice(headerMatch.index+headerMatch[0].length):raw;
+  const beforeCodes=extractBeforeCodes(body);
+  const letterHits=[];
+  const letterRe=/(?<!\S)([a-d])\s*[.)]+\s+/gi;
+  let m;
+  while((m=letterRe.exec(beforeCodes))) letterHits.push({label:m[1].toLowerCase(),start:m.index,end:letterRe.lastIndex});
+  const left=letterHits.slice(0,4).map((hit,i)=>{
+    const end=i+1<letterHits.length?letterHits[i+1].start:beforeCodes.length;
+    let value=beforeCodes.slice(hit.end,end).trim();
+    value=value.split(/(?<!\S)[1-4]\s*[.)]+\s+/)[0].trim();
+    return {label:hit.label,text:value};
+  }).filter(x=>x.text);
+  const numHits=[];
+  const numRe=/(?<!\S)([1-4])\s*[.)]+\s+/g;
+  while((m=numRe.exec(beforeCodes))) numHits.push({label:m[1],start:m.index,end:numRe.lastIndex});
+  const right=numHits.slice(0,4).map((hit,i)=>{
+    const end=i+1<numHits.length?numHits[i+1].start:beforeCodes.length;
+    let value=beforeCodes.slice(hit.end,end).trim();
+    value=value.split(/(?<!\S)[a-d]\s*[.)]+\s+/i)[0].trim();
+    return {label:hit.label,text:value};
+  }).filter(x=>x.text);
+  const stem=stripQuestionTail(raw).replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b/i,"").trim();
+  const cleanedStem=(left.length>=2&&right.length>=2)?"":stem.replace(/List\s*[-–—]?\s*I\b[\s\S]*$/i,"").trim();
+  return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+((left.length||right.length)?("<div class=\"matching-lists\">"+
+    "<section><div class=\"matching-label\">LIST I</div><ol>"+practiceListHTML(left)+"</ol></section>"+
+    "<section><div class=\"matching-label\">LIST II</div><ol>"+practiceListHTML(right)+"</ol></section>"+
+    "</div>"):"<p>"+esc(stripQuestionTail(raw))+"</p>")+"</div>";
 }
-
+function assertionReasonHTML(q){
+  const raw=cleanPracticeText(q?.question||q?.q||"");
+  const assertion=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Reason\s*\(R\)|\s+Reason\s*\(R\)\s*:)/i)||[])[1]||"";
+  const reason=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]||"";
+  const stem=raw.split(/Assertion\s*\(A\)\s*:/i)[0].replace(/[\s:–-]+$/,"").trim();
+  return "<div class=\"question-stem assertion-stem\">"+
+    (stem?"<p>"+esc(stem)+"</p>":"")+
+    "<div class=\"assertion-reason-grid\">"+
+    "<section><span class=\"statement-label\">A</span><div><b>Assertion</b><p>"+esc(assertion||"Assertion statement")+"</p></div></section>"+
+    "<section><span class=\"statement-label\">R</span><div><b>Reason</b><p>"+esc(reason||"Reason statement")+"</p></div></section>"+
+    "</div></div>";
+}
+function structuredQuestionHTML(q){
+  const kind=q?.kind||"direct";
+  const raw=cleanPracticeText(q?.question||q?.q||"");
+  if(kind==="match")return matchListsHTML(q);
+  if(kind==="assertion-reason")return assertionReasonHTML(q);
+  if(kind==="sequence"||kind==="statement-set"){
+    const body=extractBeforeCodes(raw);
+    const items=splitLabelledItems(body);
+    const hasNumeric=items.filter(x=>/^\d+$/.test(x.label)).length>=2;
+    const preferred=hasNumeric?items.filter(x=>/^\d+$/.test(x.label)):items.filter(x=>/^(?:[a-d]|i{1,3}|iv|v|vi|vii|viii)$/i.test(x.label));
+    const stem=preferred.length?body.slice(0,body.indexOf(preferred[0].label+'.')>=0?body.indexOf(preferred[0].label+'.'):body.indexOf(preferred[0].label+')')).trim():body;
+    const optionMarker=stem.search(/\s(?:\([a-d]\)|[a-d]\.)\s+/i);
+    const cleanStem=(optionMarker>=0?stem.slice(0,optionMarker):stem).replace(/\s*:\s*$/,"").trim();
+    return "<div class=\"question-stem structured-stem\">"+
+      (cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+
+      (preferred.length?"<ol class=\"question-items\">"+practiceListHTML(preferred)+"</ol>":"")+
+      "</div>";
+  }
+  return "<div class=\"question-stem direct-stem\"><p>"+esc(stripQuestionTail(raw))+"</p></div>";
+}
 function mcqHTML(q,i,source='MCQ',showSource=true){
   const opts=q.options||q.o||[];
   const ans=Number.isInteger(q.answer)?q.answer:0;
   const tags=Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:[source];
   const provenance=tags.join(' · ');
-  return `<article class="mcq" data-i="${i}" data-answer="${ans}"><div class="mcq-meta">${showSource?`<span>${esc(provenance)}</span>`:""}<span>Question ${i+1}</span></div>${practiceQuestionHTML(q)}<div class="mcq-options">${opts.map((o,j)=>`<button class="mcq-option" data-a="${j}">${String.fromCharCode(65+j)}. ${esc(o)}</button>`).join('')}</div><div class="mcq-feedback" hidden></div></article>`;
+  const kind=q.kind||"direct";
+  const sourceLabel=q.session?String(q.session)+" · PYQ":provenance;
+  return "<article class=\"mcq\" data-i=\""+i+"\" data-answer=\""+ans+"\" data-kind=\""+esc(kind)+"\">"+
+    "<div class=\"mcq-meta\"><span class=\"question-kind\">"+esc(kindLabel(kind))+"</span>"+(showSource?"<span class=\"question-source\">"+esc(sourceLabel)+" · Q"+esc(q.question_number??(i+1))+"</span>":"")+"</div>"+
+    structuredQuestionHTML(q)+
+    "<div class=\"mcq-options\">"+opts.map((o,j)=>"<button class=\"mcq-option\" type=\"button\" data-a=\""+j+"\"><span class=\"option-letter\">"+String.fromCharCode(65+j)+"</span><span class=\"option-text\">"+esc(o)+"</span></button>").join("")+"</div>"+
+    "<div class=\"mcq-feedback\" hidden></div></article>";
 }
 function mappedConcept(q){
   if(!q||q.unit==null||q.topic==null||q.micro==null||!D)return null;
