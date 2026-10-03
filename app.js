@@ -492,8 +492,8 @@ function micro(){
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{
-    const unit=`<button class="practice-unit-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="unit" data-value="unit:${esc(u.id)}" data-unit="${esc(u.id)}" aria-pressed="false"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></button>`;
-    const partOptions=unitParts(u).map(part=>`<button class="practice-unit-option practice-part-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="part" data-unit="${esc(u.id)}" data-value="part:${esc(u.id)}:${esc(part.id)}" aria-pressed="false"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></button>`).join('');
+    const unit=`<button class="practice-unit-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="unit" data-value="${esc(u.id)}" data-unit="${esc(u.id)}" aria-pressed="false"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></button>`;
+    const partOptions=unitParts(u).map(part=>`<button class="practice-unit-option practice-part-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="part" data-unit="${esc(u.id)}" data-value="${esc(part.id)}" aria-pressed="false"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></button>`).join('');
     return unit+partOptions;
   }).join('');
   const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><button class="practice-unit-option practice-all-option practice-choice" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="all" data-value="all" aria-pressed="false"><span><b>All Units</b></span></button>${unitOptions}</div>`;
