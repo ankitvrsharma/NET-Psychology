@@ -56,7 +56,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in bhagavad gita is psychological themes of disciplined action, equanimity, duty and self-knowledge.",
+              "detailed_explanation": "The central idea in bhagavad gita is psychological themes of disciplined action, equanimity, duty and self-knowledge.psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe exam-relevant points are:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nA useful distinction to keep in mind is: Do not reduce it to a single religious slogan.",
+              "pyq_count": 44,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 26,
+                "match": 5,
+                "assertion-reason": 7,
+                "statement-set": 6
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 1
             },
             {
               "id": 2,
@@ -92,7 +104,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in buddhism is psychological ideas around suffering, its causes, cessation and a path of transformation.",
+              "detailed_explanation": "The central idea in buddhism is psychological ideas around suffering, its causes, cessation and a path of transformation.psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe exam-relevant points are:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nA useful distinction to keep in mind is: Non-self is not the same as saying nothing exists.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 130
             },
             {
               "id": 3,
@@ -128,7 +149,18 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in sufism is inner purification, remembrance and transformation of the self.",
+              "detailed_explanation": "The central idea in sufism is inner purification, remembrance and transformation of the self.inner purification, remembrance and transformation of the self.\n\nThe exam-relevant points are:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nA useful distinction to keep in mind is: Do not treat Sufism only as a social identity.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 109
             },
             {
               "id": 4,
@@ -164,10 +196,26 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in integral yoga is Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.",
+              "detailed_explanation": "The central idea in integral yoga is Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe exam-relevant points are:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nA useful distinction to keep in mind is: It is broader than physical postures.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 2,
+                "match": 1,
+                "direct": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 57
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 56,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -216,7 +264,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Academic Psychology in India; the source discusses Calcutta University, Experimental Psychology and the 1923–1925 milestones."
-              ]
+              ],
+              "expert_explanation": "Formal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.",
+              "detailed_explanation": "Formal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.\n\nThe exam-relevant points are:\n• Early formal education developed during the colonial period.\n• Calcutta University is presented as a major early institutional centre.\n• The early programme emphasized experimental psychology and laboratory research.\n• 1923, 1924 and 1925 mark important institutional milestones in the source account.\n\nA useful distinction to keep in mind is: Do not confuse the early institutional history of psychology in India with the later indigenization movement; the latter is presented as a response to limitations of imported Western models.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 2,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 86
             },
             {
               "id": 2,
@@ -249,7 +307,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Post-independence section."
-              ]
+              ],
+              "expert_explanation": "The source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.",
+              "detailed_explanation": "The source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.\n\nThe exam-relevant points are:\n• Post-1947 expansion occurred through universities, applied centres and professional training.\n• The UGC was established in 1956 and supported university psychology departments.\n• Clinical and applied psychology developed alongside academic psychology.\n• The source links institutional growth with continuing philosophical and Western methodological influences.\n\nA useful distinction to keep in mind is: Institutional expansion after independence is not the same thing as indigenization; the source treats the latter as a later response to concerns about cultural relevance.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 251
             },
             {
               "id": 3,
@@ -282,7 +347,20 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, historical discussion of social issues and the identity crisis; Baron & Misra, Social Psychology of Prejudice: An Indian Perspective."
-              ]
+              ],
+              "expert_explanation": "During the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.",
+              "detailed_explanation": "During the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.\n\nThe exam-relevant points are:\n• The period is associated with stronger concern for socially relevant problems.\n• Communal violence became an important research concern.\n• The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached.\n• The movement prepared the ground for later debates about indigenous psychology.\n\nA useful distinction to keep in mind is: The source's chronology distinguishes the 1970s move toward social issues from the 1980s focus on indigenization.",
+              "pyq_count": 16,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "match": 2,
+                "direct": 8,
+                "assertion-reason": 3,
+                "statement-set": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 22
             },
             {
               "id": 4,
@@ -315,7 +393,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, 1980s: Indigenization; examples include D. Sinha and J. B. P. Sinha."
-              ]
+              ],
+              "expert_explanation": "Indigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.",
+              "detailed_explanation": "Indigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.\n\nThe exam-relevant points are:\n• Indigenization treats knowledge as rooted in a community's world-view and sociocultural history.\n• One facet is endogenous/culture-produced concepts and categories.\n• Another involves adapting or interacting with imported concepts, theories and methods.\n• The movement seeks greater relevance to Indian social and cultural realities.\n\nA useful distinction to keep in mind is: Indigenization does not simply mean rejecting Western psychology; the source explicitly describes gradual processes of interaction between imported and indigenous knowledge.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 252
             },
             {
               "id": 5,
@@ -348,7 +433,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — knowledge paradigms and the Unit 1 discussion of Indian psychology's identity crisis."
-              ]
+              ],
+              "expert_explanation": "The uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.",
+              "detailed_explanation": "The uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.\n\nThe exam-relevant points are:\n• Paradigms involve assumptions about reality, knowledge and methods of inquiry.\n• The source contrasts positivism with several alternative approaches.\n• The Indian debate is connected to cultural relevance and disciplinary identity.\n• The issue is methodological as well as philosophical.\n\nA useful distinction to keep in mind is: A paradigm is broader than a research method: it includes assumptions about what can be known and how knowledge is produced.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 253
             },
             {
               "id": 6,
@@ -381,7 +473,20 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Crisis of Identity; Nandy (1974), K. G. Agrawal (1973), D. Sinha (1977), J. B. P. Sinha (1993)."
-              ]
+              ],
+              "expert_explanation": "The source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.",
+              "detailed_explanation": "The source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.\n\nThe exam-relevant points are:\n• The crisis concerned relevance, identity and dependence on imported models.\n• Western theories were criticized when transferred without adequate cultural consideration.\n• Indigenous concepts and Indian social realities became more explicit research concerns.\n• The source describes uneven change rather than a complete replacement of Western psychology.\n\nA useful distinction to keep in mind is: The identity crisis is a historical critique of disciplinary direction; it should not be treated as a claim that all Indian psychological research was identical or uniformly Western.",
+              "pyq_count": 10,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 2,
+                "match": 1,
+                "assertion-reason": 1,
+                "statement-set": 4,
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 39
             },
             {
               "id": 7,
@@ -414,10 +519,24 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Significant Indian Paradigms on Psychological Knowledge and discussion of the 2002 Manifesto on Indian Psychology."
-              ]
+              ],
+              "expert_explanation": "The source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.",
+              "detailed_explanation": "The source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.\n\nThe exam-relevant points are:\n• The 2000s are presented as a period of greater academic articulation of Indian psychology.\n• The 2002 Pondicherry conference is a key source example.\n• The Manifesto on Indian Psychology is an important landmark in the source account.\n• Indian psychology is presented through multiple traditions rather than a single doctrine.\n\nA useful distinction to keep in mind is: The source describes emergence and academic articulation; it does not imply that Indian psychology replaced mainstream experimental psychology.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 131
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 32,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 3,
@@ -466,7 +585,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Pre-independence history and identity-crisis discussion."
-              ]
+              ],
+              "expert_explanation": "The colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.",
+              "detailed_explanation": "The colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.\n\nThe exam-relevant points are:\n• Colonial education structures influenced the institutional entry of psychology.\n• Western experimental psychology became an important model for Indian academic psychology.\n• The encounter created a long-term question of cultural fit and disciplinary identity.\n• The later indigenization debate can be understood against this historical background.\n\nA useful distinction to keep in mind is: The source treats the colonial encounter as a historical condition, not as a single psychological theory or method.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 254
             },
             {
               "id": 2,
@@ -499,7 +625,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections."
-              ]
+              ],
+              "expert_explanation": "In the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.",
+              "detailed_explanation": "In the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nThe exam-relevant points are:\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n\nA useful distinction to keep in mind is: The uploaded source provides a broad historical framing rather than a separate, fully developed postcolonial theory of psychology.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 255
             },
             {
               "id": 3,
@@ -532,10 +665,24 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, post-independence and crisis-of-identity discussion."
-              ]
+              ],
+              "expert_explanation": "The source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.",
+              "detailed_explanation": "The source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.\n\nThe exam-relevant points are:\n• Psychology inherited a philosophical background but sought scientific status.\n• Western methods became influential in research and training.\n• Cultural relevance became a central identity question.\n• Indigenization was proposed as one route toward a more distinctive psychology.\n\nA useful distinction to keep in mind is: A lack of distinct identity does not mean that no psychological institutions or research existed; the source is discussing the character and direction of the discipline.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 132
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 4,
@@ -584,7 +731,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective."
-              ]
+              ],
+              "expert_explanation": "The uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.",
+              "detailed_explanation": "The uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nThe exam-relevant points are:\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n\nA useful distinction to keep in mind is: These are philosophical foundations rather than modern psychological schools; do not equate Greek philosophy directly with experimental psychology.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 133
             },
             {
               "id": 2,
@@ -617,7 +773,18 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic."
-              ]
+              ],
+              "expert_explanation": "The uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.",
+              "detailed_explanation": "The uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nThe exam-relevant points are:\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n\nA useful distinction to keep in mind is: Do not import a generic history-of-medieval-psychology narrative into this node when it is not supported by the uploaded material.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "statement-set": 1,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 87
             },
             {
               "id": 3,
@@ -650,10 +817,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1 Western Psychology outline and four founding paths."
-              ]
+              ],
+              "expert_explanation": "The uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.",
+              "detailed_explanation": "The uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.\n\nThe exam-relevant points are:\n• Modern psychology is presented as developing through several distinct intellectual paths.\n• Major schools should be learned as separate traditions rather than collapsed into one model.\n• The source identifies Wundt, Freud, James and Dilthey as four founding paths.\n• The historical sequence leads toward debates about the experimental-analytical paradigm.\n\nA useful distinction to keep in mind is: The modern period is a historical umbrella; Structuralism, Functionalism and the other schools are distinct traditions within the later development.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 256
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 5,
@@ -705,7 +883,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in structuralism is analysis of the structure of conscious experience.",
+              "detailed_explanation": "The central idea in structuralism is analysis of the structure of conscious experience.analysis of the structure of conscious experience.\n\nThe exam-relevant points are:\n• Introspection\n• Elements of consciousness\n• Titchener\n\nA useful distinction to keep in mind is: Wundt and Titchener are not identical in every respect.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 3,
+                "match": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 58
             },
             {
               "id": 2,
@@ -741,7 +931,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in functionalism is study of what mental processes and behavior do, especially their adaptive functions.",
+              "detailed_explanation": "The central idea in functionalism is study of what mental processes and behavior do, especially their adaptive functions.study of what mental processes and behavior do, especially their adaptive functions.\n\nThe exam-relevant points are:\n• William James\n• Adaptation\n• Stream of consciousness\n\nA useful distinction to keep in mind is: Functionalism asks about function, not just elements.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 257
             },
             {
               "id": 3,
@@ -777,7 +974,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in psychoanalytical psychology is unconscious processes, conflict and dynamic personality structure.",
+              "detailed_explanation": "The central idea in psychoanalytical psychology is unconscious processes, conflict and dynamic personality structure.unconscious processes, conflict and dynamic personality structure.\n\nThe exam-relevant points are:\n• Freud\n• Unconscious\n• Psychosexual development\n• Defense mechanisms\n\nA useful distinction to keep in mind is: Do not reduce psychoanalysis to one motive.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 258
             },
             {
               "id": 4,
@@ -813,7 +1017,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in gestalt psychology is organized wholes and principles of perceptual organization.",
+              "detailed_explanation": "The central idea in gestalt psychology is organized wholes and principles of perceptual organization.organized wholes and principles of perceptual organization.\n\nThe exam-relevant points are:\n• Wertheimer, Köhler, Koffka\n• Figure-ground\n• Grouping laws\n• Insight\n\nA useful distinction to keep in mind is: Gestalt is broader than insight learning.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 4
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 88
             },
             {
               "id": 5,
@@ -849,7 +1062,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in behaviorism is observable behavior and learning through environmental contingencies.",
+              "detailed_explanation": "The central idea in behaviorism is observable behavior and learning through environmental contingencies.observable behavior and learning through environmental contingencies.\n\nThe exam-relevant points are:\n• Watson\n• Skinner\n• Conditioning\n• Reinforcement\n\nA useful distinction to keep in mind is: Negative reinforcement increases behavior.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 259
             },
             {
               "id": 6,
@@ -885,7 +1105,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in humanistic-existential psychology is growth, meaning, freedom, choice, authenticity and agency.",
+              "detailed_explanation": "The central idea in humanistic-existential psychology is growth, meaning, freedom, choice, authenticity and agency.growth, meaning, freedom, choice, authenticity and agency.\n\nThe exam-relevant points are:\n• Rogers\n• Maslow\n• Meaning\n• Self-actualization\n\nA useful distinction to keep in mind is: Humanistic psychology is not merely positive thinking.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 260
             },
             {
               "id": 7,
@@ -921,7 +1148,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in transpersonal psychology is experiences beyond ordinary ego boundaries and self-transcendence.",
+              "detailed_explanation": "The central idea in transpersonal psychology is experiences beyond ordinary ego boundaries and self-transcendence.experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe exam-relevant points are:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nA useful distinction to keep in mind is: It is not identical to any single religion.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 261
             },
             {
               "id": 8,
@@ -957,7 +1191,20 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in cognitive revolution is renewed scientific study of internal mental processes.",
+              "detailed_explanation": "The central idea in cognitive revolution is renewed scientific study of internal mental processes.renewed scientific study of internal mental processes.\n\nThe exam-relevant points are:\n• Attention\n• Memory\n• Language\n• Problem solving\n• Information processing\n\nA useful distinction to keep in mind is: It did not simply erase behaviorism overnight.",
+              "pyq_count": 13,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6,
+                "match": 3,
+                "assertion-reason": 1,
+                "statement-set": 1,
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 29
             },
             {
               "id": 9,
@@ -993,10 +1240,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in multiculturalism is how culture, identity and context shape psychological processes and practice.",
+              "detailed_explanation": "The central idea in multiculturalism is how culture, identity and context shape psychological processes and practice.how culture, identity and context shape psychological processes and practice.\n\nThe exam-relevant points are:\n• Diversity\n• Cultural context\n• Assessment bias\n\nA useful distinction to keep in mind is: Culture is not just a demographic label.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 262
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 24,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 6,
@@ -1048,7 +1306,18 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "Wundt's central proposition is institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.",
+              "detailed_explanation": "Wundt's central proposition is institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.\n\nThe exam-relevant points are:\n• Experimental psychology\n• Leipzig\n• 1879\n\nA useful distinction to keep in mind is: Do not equate Wundt automatically with Titchener.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "sequence": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 68
             },
             {
               "id": 2,
@@ -1084,7 +1353,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "Freud's central proposition is psychoanalysis and psychodynamic explanations centered on unconscious processes.",
+              "detailed_explanation": "Freud's central proposition is psychoanalysis and psychodynamic explanations centered on unconscious processes.psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe exam-relevant points are:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nA useful distinction to keep in mind is: Freud is not the founder of behaviorism.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "match": 3,
+                "direct": 2,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 59
             },
             {
               "id": 3,
@@ -1120,7 +1401,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "James's central proposition is functionalism and the adaptive functions of consciousness.",
+              "detailed_explanation": "James's central proposition is functionalism and the adaptive functions of consciousness.functionalism and the adaptive functions of consciousness.\n\nThe exam-relevant points are:\n• William James\n• Functionalism\n• Stream of consciousness\n\nA useful distinction to keep in mind is: James is associated with function rather than structural analysis.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 184
             },
             {
               "id": 4,
@@ -1156,10 +1446,23 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "Dilthey's central proposition is understanding lived human experience through the human sciences.",
+              "detailed_explanation": "Dilthey's central proposition is understanding lived human experience through the human sciences.understanding lived human experience through the human sciences.\n\nThe exam-relevant points are:\n• Verstehen\n• Meaning\n• Human sciences\n\nA useful distinction to keep in mind is: He should not be reduced to experimental psychology.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 185
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 15,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 7,
@@ -1208,7 +1511,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, knowledge paradigms and disenchantment with positivism."
-              ]
+              ],
+              "expert_explanation": "The source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.",
+              "detailed_explanation": "The source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.\n\nThe exam-relevant points are:\n• The paradigm emphasizes experimental and analytic inquiry.\n• Positivist assumptions include realism and an objectivist approach to knowledge.\n• Variables, measurement and controlled methods are central to the model.\n• The later critique focuses on context, meaning and the limits of purely objectivist assumptions.\n\nA useful distinction to keep in mind is: Do not treat 'experimental-analytical' as synonymous with all experimental research; the source is discussing a broader paradigm of knowledge.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 89
             },
             {
               "id": 2,
@@ -1241,7 +1554,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Logical Empiricism, Positivism and Disenchantment with Positivism."
-              ]
+              ],
+              "expert_explanation": "In the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.",
+              "detailed_explanation": "In the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.\n\nThe exam-relevant points are:\n• Ontology: realism is identified in the source's positivist formulation.\n• Epistemology: dualist and objectivist assumptions are emphasized.\n• Methodology: experimental and manipulative procedures are central.\n• Critiques focus on meaning, context, representation and the limits of generalization.\n\nA useful distinction to keep in mind is: Logical empiricism is a paradigm-level position in this material, not simply a synonym for using statistics or conducting an experiment.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 110
             },
             {
               "id": 3,
@@ -1274,10 +1597,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, crisis in psychology, post-positivism and critical perspective."
-              ]
+              ],
+              "expert_explanation": "The source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.",
+              "detailed_explanation": "The source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.\n\nThe exam-relevant points are:\n• Strict paradigm adherence can narrow the kinds of questions psychology asks.\n• The source highlights meaning, context and representation as neglected concerns.\n• The etic–emic issue challenges simple transfer of general findings to culturally specific cases.\n• Alternative paradigms broaden the conception of psychological knowledge.\n\nA useful distinction to keep in mind is: The source describes a crisis of assumptions and representation, not the disappearance of experimental psychology.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 263
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 7,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 8,
@@ -1326,10 +1660,23 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms."
-              ]
+              ],
+              "expert_explanation": "The uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.",
+              "detailed_explanation": "The uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.\n\nThe exam-relevant points are:\n• Consciousness is given a central place in the source's account of Indian psychology.\n• The traditions focus strongly on inner experience and transformation.\n• Yoga and meditation are described as methods for psychological/spiritual development.\n• Indian approaches are presented as distinct paradigms rather than a single homogeneous system.\n\nA useful distinction to keep in mind is: Indic influence should not be reduced to a single technique such as meditation; the source presents a wider set of philosophical and psychological assumptions.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 186
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 8
         },
         {
           "id": 9,
@@ -1381,7 +1728,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in ontology is assumptions about what exists or the nature of reality.",
+              "detailed_explanation": "The central idea in ontology is assumptions about what exists or the nature of reality.assumptions about what exists or the nature of reality.\n\nThe exam-relevant points are:\n• Being\n• Reality\n• Objects of inquiry\n\nA useful distinction to keep in mind is: Ontology is not epistemology.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 264
             },
             {
               "id": 2,
@@ -1417,7 +1771,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in epistemology is how knowledge is produced, justified and known.",
+              "detailed_explanation": "The central idea in epistemology is how knowledge is produced, justified and known.how knowledge is produced, justified and known.\n\nThe exam-relevant points are:\n• Sources of knowledge\n• Justification\n• Knower-known relationship\n\nA useful distinction to keep in mind is: It asks how we know, not primarily what exists.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 265
             },
             {
               "id": 3,
@@ -1453,10 +1814,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in methodology is the overall logic and rationale for investigating a research question.",
+              "detailed_explanation": "The central idea in methodology is the overall logic and rationale for investigating a research question.the overall logic and rationale for investigating a research question.\n\nThe exam-relevant points are:\n• Research strategy\n• Paradigm-method link\n• Design choices\n\nA useful distinction to keep in mind is: Methodology is broader than one method.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 266
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 9
         },
         {
           "id": 10,
@@ -1508,7 +1880,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in positivism is empirical observation, measurement and regularities in phenomena.",
+              "detailed_explanation": "The central idea in positivism is empirical observation, measurement and regularities in phenomena.empirical observation, measurement and regularities in phenomena.\n\nThe exam-relevant points are:\n• Objectivity\n• Measurement\n• Empirical evidence\n\nA useful distinction to keep in mind is: Not every quantitative study is automatically positivist.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 267
             },
             {
               "id": 2,
@@ -1544,7 +1923,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in post-positivism is empirical inquiry combined with recognition of fallibility and limits of certainty.",
+              "detailed_explanation": "The central idea in post-positivism is empirical inquiry combined with recognition of fallibility and limits of certainty.empirical inquiry combined with recognition of fallibility and limits of certainty.\n\nThe exam-relevant points are:\n• Tentative knowledge\n• Critical scrutiny\n• Multiple methods\n\nA useful distinction to keep in mind is: It does not reject evidence.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 268
             },
             {
               "id": 3,
@@ -1577,7 +1963,20 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Critical Perspective."
-              ]
+              ],
+              "expert_explanation": "The critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.",
+              "detailed_explanation": "The critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.\n\nThe exam-relevant points are:\n• Knowledge is treated as value-mediated rather than completely value-free.\n• Social and historical forces are part of the account of reality.\n• Critical inquiry examines assumptions and conventional structures.\n• The perspective connects understanding with effective action.\n\nA useful distinction to keep in mind is: The critical perspective differs from positivism in its treatment of values, social context and the status of the researcher and participant.",
+              "pyq_count": 13,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 4,
+                "assertion-reason": 3,
+                "direct": 3,
+                "statement-set": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 30
             },
             {
               "id": 4,
@@ -1613,7 +2012,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in social constructionism is how meanings and categories are produced through language, interaction and history.",
+              "detailed_explanation": "The central idea in social constructionism is how meanings and categories are produced through language, interaction and history.how meanings and categories are produced through language, interaction and history.\n\nThe exam-relevant points are:\n• Language\n• Social interaction\n• Context\n\nA useful distinction to keep in mind is: It does not mean material reality is imaginary.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 269
             },
             {
               "id": 5,
@@ -1649,7 +2055,17 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in existential phenomenology is lived experience, meaning, freedom and situated existence.",
+              "detailed_explanation": "The central idea in existential phenomenology is lived experience, meaning, freedom and situated existence.lived experience, meaning, freedom and situated existence.\n\nThe exam-relevant points are:\n• First-person experience\n• Meaning\n• Lived world\n\nA useful distinction to keep in mind is: It is not simply casual introspection.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 134
             },
             {
               "id": 6,
@@ -1685,10 +2101,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in co-operative enquiry is participatory research in which participants contribute as co-researchers.",
+              "detailed_explanation": "The central idea in co-operative enquiry is participatory research in which participants contribute as co-researchers.participatory research in which participants contribute as co-researchers.\n\nThe exam-relevant points are:\n• Participation\n• Reflection/action\n• Collaboration\n\nA useful distinction to keep in mind is: Participants are not passive subjects.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 270
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 15,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 11,
@@ -1737,10 +2164,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Essential Aspects of Knowledge Paradigms and Paradigmatic Controversies."
-              ]
+              ],
+              "expert_explanation": "Paradigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.",
+              "detailed_explanation": "Paradigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.\n\nThe exam-relevant points are:\n• Ontology concerns assumptions about reality and what exists.\n• Epistemology concerns assumptions about knowledge and knowing.\n• Methodology concerns how inquiry should be conducted.\n• Different paradigms can generate different interpretations of the same psychological phenomenon.\n\nA useful distinction to keep in mind is: A paradigm is broader than a method; two researchers can use similar techniques while working from different philosophical assumptions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 271
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 11
         },
         {
           "id": 12,
@@ -1789,7 +2227,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms."
-              ]
+              ],
+              "expert_explanation": "Yoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.",
+              "detailed_explanation": "Yoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.\n\nThe exam-relevant points are:\n• Yoga is treated as a knowledge tradition, not merely a physical exercise system.\n• Consciousness and the inner life are central concerns.\n• Yoga and meditation are presented as methods of psychological transformation.\n• The source connects these practices with self-realization and liberation from suffering.\n\nA useful distinction to keep in mind is: For this NET node, do not reduce Yoga to postures; the source's psychological framing emphasizes consciousness, discipline and transformation.",
+              "pyq_count": 11,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "assertion-reason": 3,
+                "match": 2,
+                "statement-set": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 35
             },
             {
               "id": 2,
@@ -1825,7 +2275,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in bhagavad gita is psychological themes of disciplined action, equanimity, duty and self-knowledge.",
+              "detailed_explanation": "The central idea in bhagavad gita is psychological themes of disciplined action, equanimity, duty and self-knowledge.psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe exam-relevant points are:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nA useful distinction to keep in mind is: Do not reduce it to a single religious slogan.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 272
             },
             {
               "id": 3,
@@ -1861,7 +2318,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in buddhism is psychological ideas around suffering, its causes, cessation and a path of transformation.",
+              "detailed_explanation": "The central idea in buddhism is psychological ideas around suffering, its causes, cessation and a path of transformation.psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe exam-relevant points are:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nA useful distinction to keep in mind is: Non-self is not the same as saying nothing exists.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 187
             },
             {
               "id": 4,
@@ -1897,7 +2363,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in sufism is inner purification, remembrance and transformation of the self.",
+              "detailed_explanation": "The central idea in sufism is inner purification, remembrance and transformation of the self.inner purification, remembrance and transformation of the self.\n\nThe exam-relevant points are:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nA useful distinction to keep in mind is: Do not treat Sufism only as a social identity.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 273
             },
             {
               "id": 5,
@@ -1933,10 +2406,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in integral yoga is Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.",
+              "detailed_explanation": "The central idea in integral yoga is Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe exam-relevant points are:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nA useful distinction to keep in mind is: It is broader than physical postures.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 274
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 12,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 13,
@@ -1957,7 +2441,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Science and spirituality",
-              "content_notes": "Science and spirituality should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not collapse spirituality into religion or assume the source treats science and spirituality as identical.",
+              "content_notes": "Science and spirituality examines empirical inquiry alongside questions of meaning, consciousness and inner life. The two approaches can address different kinds of questions, but they should not be treated as identical forms of evidence.\n\nKEY POINTS\n\n• Empirical inquiry\n• Meaning and consciousness\n• Different kinds of evidence\n\nDISTINCTION / CAUTION\n\n• Spiritual interpretation is not automatically a scientific explanation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1985,12 +2469,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1"
-              ]
+              ],
+              "detailed_explanation": "Science and spirituality examines empirical inquiry alongside questions of meaning, consciousness and inner life. The two approaches can address different kinds of questions, but they should not be treated as identical forms of evidence.\n\nThe exam-relevant points are:\n• Empirical inquiry\n• Meaning and consciousness\n• Different kinds of evidence\n\nA useful distinction to keep in mind is: Spiritual interpretation is not automatically a scientific explanation.",
+              "expert_explanation": "Science and spirituality examines empirical inquiry alongside questions of meaning, consciousness and inner life. The two approaches can address different kinds of questions, but they should not be treated as identical forms of evidence.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 188
             },
             {
               "id": 2,
               "title": "Avidya",
-              "content_notes": "Avidya should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Avidya is not simply lack of factual information; the source uses it in a broader epistemic/spiritual sense.",
+              "content_notes": "In Indian philosophical psychology, avidya refers to ignorance or mistaken understanding of reality and the self. It concerns a fundamental misapprehension rather than simply a lack of information.\n\nKEY POINTS\n\n• Ignorance or misapprehension\n• Self and reality\n• Relation to suffering\n\nDISTINCTION / CAUTION\n\n• Avidya is not merely poor academic knowledge.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2018,12 +2511,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1"
-              ]
+              ],
+              "detailed_explanation": "In Indian philosophical psychology, avidya refers to ignorance or mistaken understanding of reality and the self. It concerns a fundamental misapprehension rather than simply a lack of information.\n\nThe exam-relevant points are:\n• Ignorance or misapprehension\n• Self and reality\n• Relation to suffering\n\nA useful distinction to keep in mind is: Avidya is not merely poor academic knowledge.",
+              "expert_explanation": "In Indian philosophical psychology, avidya refers to ignorance or mistaken understanding of reality and the self. It concerns a fundamental misapprehension rather than simply a lack of information.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 275
             },
             {
               "id": 3,
               "title": "Vidya",
-              "content_notes": "Vidya should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Keep vidya/avidya as a source-defined conceptual pair rather than translating them into generic education terms.",
+              "content_notes": "Vidya refers to knowledge or insight that removes ignorance and supports clearer understanding of the self and reality. In Indian psychology it carries a transformative meaning rather than referring only to information.\n\nKEY POINTS\n\n• Knowledge and insight\n• Removal of ignorance\n• Transformation\n\nDISTINCTION / CAUTION\n\n• Vidya should not be reduced to factual information.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2051,10 +2551,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 1"
-              ]
+              ],
+              "detailed_explanation": "Vidya refers to knowledge or insight that removes ignorance and supports clearer understanding of the self and reality. In Indian psychology it carries a transformative meaning rather than referring only to information.\n\nThe exam-relevant points are:\n• Knowledge and insight\n• Removal of ignorance\n• Transformation\n\nA useful distinction to keep in mind is: Vidya should not be reduced to factual information.",
+              "expert_explanation": "Vidya refers to knowledge or insight that removes ignorance and supports clearer understanding of the self and reality. In Indian psychology it carries a transformative meaning rather than referring only to information.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 276
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 11
         },
         {
           "id": 14,
@@ -2075,7 +2586,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Primacy of self-knowledge",
-              "content_notes": "Primacy of self-knowledge should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Self-knowledge is a central orientation of Indian psychology, not merely introspection in the structuralist sense.",
+              "content_notes": "The primacy of self-knowledge is the view that understanding the self is central to psychological growth in Indian psychological thought. Knowledge is treated not only as knowledge about the world but also as understanding the knower.\n\nKEY POINTS\n\n• Self as object of inquiry\n• Knowledge and transformation\n• Experiential dimension\n\nDISTINCTION / CAUTION\n\n• Self-knowledge is broader than self-description or self-esteem.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2103,12 +2614,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Indian Psychology"
-              ]
+              ],
+              "detailed_explanation": "The primacy of self-knowledge is the view that understanding the self is central to psychological growth in Indian psychological thought. Knowledge is treated not only as knowledge about the world but also as understanding the knower.\n\nThe exam-relevant points are:\n• Self as object of inquiry\n• Knowledge and transformation\n• Experiential dimension\n\nA useful distinction to keep in mind is: Self-knowledge is broader than self-description or self-esteem.",
+              "expert_explanation": "The primacy of self-knowledge is the view that understanding the self is central to psychological growth in Indian psychological thought. Knowledge is treated not only as knowledge about the world but also as understanding the knower.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 189
             },
             {
               "id": 2,
               "title": "Self-knowledge in Indian psychology",
-              "content_notes": "Self-knowledge in Indian psychology should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not reduce Indian self-knowledge to ordinary autobiographical self-awareness; the source places it within a broader theory of consciousness and liberation.",
+              "content_notes": "Self-knowledge in Indian psychology concerns inquiry into the nature of the person, consciousness and experience. The approach gives importance to examining experience alongside conceptual understanding.\n\nKEY POINTS\n\n• Self and consciousness\n• Experiential inquiry\n• Psychological growth\n\nDISTINCTION / CAUTION\n\n• It should not be equated automatically with the modern construct of self-concept.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2136,13 +2656,27 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Indian Psychology"
-              ]
+              ],
+              "detailed_explanation": "Self-knowledge in Indian psychology concerns inquiry into the nature of the person, consciousness and experience. The approach gives importance to examining experience alongside conceptual understanding.\n\nThe exam-relevant points are:\n• Self and consciousness\n• Experiential inquiry\n• Psychological growth\n\nA useful distinction to keep in mind is: It should not be equated automatically with the modern construct of self-concept.",
+              "expert_explanation": "Self-knowledge in Indian psychology concerns inquiry into the nature of the person, consciousness and experience. The approach gives importance to examining experience alongside conceptual understanding.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 277
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 12
         }
       ],
-      "description": "Build the story of psychology as a discipline: where its questions came from, how Indian and Western intellectual traditions shaped them, and how major schools and paradigms changed the subject. Move from philosophical roots to the emergence of scientific psychology, then compare the assumptions, methods, and objects of study that distinguish major traditions. By the end of the unit, you should be able to place major thinkers and schools in context and explain why psychology developed in different directions."
+      "description": "Build the story of psychology as a discipline: where its questions came from, how Indian and Western intellectual traditions shaped them, and how major schools and paradigms changed the subject. Move from philosophical roots to the emergence of scientific psychology, then compare the assumptions, methods, and objects of study that distinguish major traditions. By the end of the unit, you should be able to place major thinkers and schools in context and explain why psychology developed in different directions.",
+      "pyq_count": 172,
+      "pyq_mapped_microtopics": 27,
+      "pyq_frequency_band": "A"
     },
     {
       "id": 2,
@@ -2195,7 +2729,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in meaning of research is systematic, objective and empirical inquiry used to generate or test knowledge.",
+              "detailed_explanation": "The central idea in meaning of research is systematic, objective and empirical inquiry used to generate or test knowledge.systematic, objective and empirical inquiry used to generate or test knowledge.\n\nThe exam-relevant points are:\n• Systematic\n• Objective\n• Empirical\n• Replicable where appropriate\n\nA useful distinction to keep in mind is: Research is not merely collecting information.",
+              "pyq_count": 12,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 8,
+                "assertion-reason": 2,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 31
             },
             {
               "id": 2,
@@ -2228,7 +2773,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in purpose of research is description, explanation, prediction and application/improvement.",
+              "detailed_explanation": "The central idea in purpose of research is description, explanation, prediction and application/improvement.description, explanation, prediction and application/improvement.\n\nThe exam-relevant points are:\n• Describe\n• Explain\n• Predict\n• Apply\n\nA useful distinction to keep in mind is: Not every design establishes causation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 278
             },
             {
               "id": 3,
@@ -2260,11 +2812,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.",
+              "detailed_explanation": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nThe exam-relevant points are:\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n\nA useful distinction to keep in mind is: Do not confuse a dimension of research with a single method or statistical test.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 279
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 12,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -2312,7 +2875,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.",
+              "detailed_explanation": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nThe exam-relevant points are:\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n\nA useful distinction to keep in mind is: A research problem is broader than a hypothesis; the hypothesis states a testable proposition about expected relationships.",
+              "pyq_count": 28,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 13,
+                "statement-set": 7,
+                "assertion-reason": 4,
+                "match": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 4
             },
             {
               "id": 2,
@@ -2345,7 +2920,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in variables is characteristics that can take different values and structure research designs.",
+              "detailed_explanation": "The central idea in variables is characteristics that can take different values and structure research designs.characteristics that can take different values and structure research designs.\n\nThe exam-relevant points are:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nA useful distinction to keep in mind is: Confounding is an uncontrolled alternative explanation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 280
             },
             {
               "id": 3,
@@ -2378,7 +2960,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in operational definitions is specifying exactly how an abstract construct will be observed or measured.",
+              "detailed_explanation": "The central idea in operational definitions is specifying exactly how an abstract construct will be observed or measured.specifying exactly how an abstract construct will be observed or measured.\n\nThe exam-relevant points are:\n• Measurable indicator\n• Replicable procedure\n• Construct → measure\n\nA useful distinction to keep in mind is: It is not the same as a philosophical definition.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 135
             },
             {
               "id": 4,
@@ -2411,7 +3003,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in hypothesis is a tentative, specific and testable statement about a relationship or difference.",
+              "detailed_explanation": "The central idea in hypothesis is a tentative, specific and testable statement about a relationship or difference.a tentative, specific and testable statement about a relationship or difference.\n\nThe exam-relevant points are:\n• Null/alternative\n• Directional/non-directional\n• Testability\n\nA useful distinction to keep in mind is: A vague prediction is not a good hypothesis.",
+              "pyq_count": 25,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 22,
+                "match": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 9
             },
             {
               "id": 5,
@@ -2444,11 +3047,22 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in sampling is selecting a subset of a population for study.",
+              "detailed_explanation": "The central idea in sampling is selecting a subset of a population for study.selecting a subset of a population for study.\n\nThe exam-relevant points are:\n• Probability sampling\n• Non-probability sampling\n• Random sampling ≠ random assignment\n\nA useful distinction to keep in mind is: Do not confuse sampling with assignment.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 281
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 55,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -2496,7 +3110,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.",
+              "detailed_explanation": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nThe exam-relevant points are:\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n\nA useful distinction to keep in mind is: Ethics is part of the research process itself, not something added only when results are written.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 136
             },
             {
               "id": 2,
@@ -2528,11 +3152,24 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.",
+              "detailed_explanation": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nThe exam-relevant points are:\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n\nA useful distinction to keep in mind is: A statistically significant finding does not justify conclusions that the design cannot support.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 190
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 4,
@@ -2581,7 +3218,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in quantitative research is numerical measurement and statistical analysis of variables and relationships.",
+              "detailed_explanation": "The central idea in quantitative research is numerical measurement and statistical analysis of variables and relationships.numerical measurement and statistical analysis of variables and relationships.\n\nThe exam-relevant points are:\n• Measurement\n• Numbers\n• Statistical analysis\n\nA useful distinction to keep in mind is: Quantitative does not automatically mean experimental.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 282
             },
             {
               "id": 2,
@@ -2614,7 +3258,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in qualitative research is study of meanings, experiences, processes and contexts using rich non-numerical data.",
+              "detailed_explanation": "The central idea in qualitative research is study of meanings, experiences, processes and contexts using rich non-numerical data.study of meanings, experiences, processes and contexts using rich non-numerical data.\n\nThe exam-relevant points are:\n• Interviews/observations\n• Meaning\n• Context\n• Interpretive analysis\n\nA useful distinction to keep in mind is: Qualitative is not synonymous with unscientific.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 3,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 90
             },
             {
               "id": 3,
@@ -2647,11 +3301,26 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in mixed methods approach is intentional integration of quantitative and qualitative approaches.",
+              "detailed_explanation": "The central idea in mixed methods approach is intentional integration of quantitative and qualitative approaches.intentional integration of quantitative and qualitative approaches.\n\nThe exam-relevant points are:\n• Integration\n• Complementarity\n• Triangulation\n• Sequential/concurrent designs\n\nA useful distinction to keep in mind is: Two methods without integration are not automatically mixed methods.",
+              "pyq_count": 16,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 11,
+                "statement-set": 3,
+                "assertion-reason": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 23
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 20,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 5,
@@ -2699,7 +3368,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.",
+              "detailed_explanation": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nThe exam-relevant points are:\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n\nA useful distinction to keep in mind is: Observation is not automatically objective; what is noticed and recorded can be influenced by the observer and the recording system.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "assertion-reason": 3,
+                "direct": 3,
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 46
             },
             {
               "id": 2,
@@ -2731,7 +3411,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.",
+              "detailed_explanation": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nThe exam-relevant points are:\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n\nA useful distinction to keep in mind is: A large survey sample does not by itself guarantee valid conclusions; sampling and measurement quality remain important.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 111
             },
             {
               "id": 3,
@@ -2763,7 +3452,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.",
+              "detailed_explanation": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nThe exam-relevant points are:\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n\nA useful distinction to keep in mind is: Structured and unstructured interviews should not be treated as interchangeable: they differ in flexibility, data type and standardization.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 191
             },
             {
               "id": 4,
@@ -2795,7 +3493,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.",
+              "detailed_explanation": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nThe exam-relevant points are:\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n\nA useful distinction to keep in mind is: A questionnaire is a data-collection instrument; 'survey' is the broader research method or strategy in which questionnaires may be used.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 283
             },
             {
               "id": 5,
@@ -2828,7 +3533,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in experimental method is manipulation of an independent variable under controlled conditions to observe effects.",
+              "detailed_explanation": "The central idea in experimental method is manipulation of an independent variable under controlled conditions to observe effects.manipulation of an independent variable under controlled conditions to observe effects.\n\nThe exam-relevant points are:\n• IV manipulation\n• Control\n• Comparison\n• Random assignment where possible\n\nA useful distinction to keep in mind is: Random assignment is not random sampling.",
+              "pyq_count": 17,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 7,
+                "assertion-reason": 4,
+                "statement-set": 6
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 21
             },
             {
               "id": 6,
@@ -2861,7 +3577,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in quasi-experimental method is intervention research without full random assignment.",
+              "detailed_explanation": "The central idea in quasi-experimental method is intervention research without full random assignment.intervention research without full random assignment.\n\nThe exam-relevant points are:\n• Intervention\n• Comparison\n• No full random assignment\n\nA useful distinction to keep in mind is: It is not correlational research.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 10,
+              "pyq_global_rank": 284
             },
             {
               "id": 7,
@@ -2893,7 +3616,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.",
+              "detailed_explanation": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nThe exam-relevant points are:\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n\nA useful distinction to keep in mind is: Field study does not automatically mean qualitative research; field research can use different kinds of data and designs.",
+              "pyq_count": 11,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "sequence": 5,
+                "assertion-reason": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 36
             },
             {
               "id": 8,
@@ -2925,7 +3660,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.",
+              "detailed_explanation": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nThe exam-relevant points are:\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n\nA useful distinction to keep in mind is: Finding a cultural difference does not by itself establish its cause; cultural groups differ on many correlated conditions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 11,
+              "pyq_global_rank": 285
             },
             {
               "id": 9,
@@ -2958,7 +3700,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in phenomenology is systematic study of the meaning and structure of lived experience.",
+              "detailed_explanation": "The central idea in phenomenology is systematic study of the meaning and structure of lived experience.systematic study of the meaning and structure of lived experience.\n\nThe exam-relevant points are:\n• Lived experience\n• Meaning\n• First-person perspective\n\nA useful distinction to keep in mind is: Not just asking for opinions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 12,
+              "pyq_global_rank": 286
             },
             {
               "id": 10,
@@ -2991,7 +3740,20 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in grounded theory is development of concepts and theory from systematically analyzed qualitative data.",
+              "detailed_explanation": "The central idea in grounded theory is development of concepts and theory from systematically analyzed qualitative data.development of concepts and theory from systematically analyzed qualitative data.\n\nThe exam-relevant points are:\n• Coding\n• Categories\n• Constant comparison\n• Theory generation\n\nA useful distinction to keep in mind is: It is not a preselected theory imposed on the data.",
+              "pyq_count": 30,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "sequence": 2,
+                "assertion-reason": 4,
+                "direct": 17,
+                "statement-set": 3,
+                "match": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 3
             },
             {
               "id": 11,
@@ -3024,7 +3786,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in focus groups is guided group discussion in which interaction itself becomes data.",
+              "detailed_explanation": "The central idea in focus groups is guided group discussion in which interaction itself becomes data.guided group discussion in which interaction itself becomes data.\n\nThe exam-relevant points are:\n• Moderator\n• Group interaction\n• Shared/divergent views\n\nA useful distinction to keep in mind is: It is not just several individual interviews at once.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 2,
+                "direct": 1,
+                "assertion-reason": 3,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 47
             },
             {
               "id": 12,
@@ -3056,7 +3830,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.",
+              "detailed_explanation": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nThe exam-relevant points are:\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n\nA useful distinction to keep in mind is: Narrative data are not simply unstructured anecdotes; they can be systematically collected and analyzed.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 13,
+              "pyq_global_rank": 287
             },
             {
               "id": 13,
@@ -3088,7 +3869,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.",
+              "detailed_explanation": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nThe exam-relevant points are:\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n\nA useful distinction to keep in mind is: Case study depth is not the same as experimental control; the two methods answer different kinds of questions.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "sequence": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 69
             },
             {
               "id": 14,
@@ -3121,11 +3913,22 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in ethnography is sustained study of people and practices in cultural context.",
+              "detailed_explanation": "The central idea in ethnography is sustained study of people and practices in cultural context.sustained study of people and practices in cultural context.\n\nThe exam-relevant points are:\n• Culture\n• Fieldwork\n• Participant observation\n\nA useful distinction to keep in mind is: A brief field visit is not full ethnography.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 14,
+              "pyq_global_rank": 288
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 84,
+          "pyq_mapped_microtopics": 8,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 6,
@@ -3174,7 +3977,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in measures of central tendency is summary of the central location of a distribution.",
+              "detailed_explanation": "The central idea in measures of central tendency is summary of the central location of a distribution.summary of the central location of a distribution.\n\nThe exam-relevant points are:\n• Mean\n• Median\n• Mode\n\nA useful distinction to keep in mind is: Mean is sensitive to extreme scores.",
+              "pyq_count": 16,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 11,
+                "assertion-reason": 1,
+                "match": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 24
             },
             {
               "id": 2,
@@ -3207,11 +4022,25 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in measures of dispersion is summary of how spread out scores are.",
+              "detailed_explanation": "The central idea in measures of dispersion is summary of how spread out scores are.summary of how spread out scores are.\n\nThe exam-relevant points are:\n• Range\n• Variance\n• Standard deviation\n\nA useful distinction to keep in mind is: Spread and central tendency answer different questions.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 137
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 18,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 7,
@@ -3260,11 +4089,24 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in normal probability curve is symmetric bell-shaped distribution where mean, median and mode coincide.",
+              "detailed_explanation": "The central idea in normal probability curve is symmetric bell-shaped distribution where mean, median and mode coincide.symmetric bell-shaped distribution where mean, median and mode coincide.\n\nThe exam-relevant points are:\n• Symmetry\n• Mean = median = mode\n• 68–95–99.7% rule approximately\n\nA useful distinction to keep in mind is: Not every psychological distribution is perfectly normal.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 112
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 8,
@@ -3312,7 +4154,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Statistics in Psychology."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.",
+              "detailed_explanation": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nThe exam-relevant points are:\n• T-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n\nA useful distinction to keep in mind is: Do not select a test only from the number of groups; design, measurement level and assumptions also matter.",
+              "pyq_count": 9,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6,
+                "assertion-reason": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 43
             },
             {
               "id": 2,
@@ -3345,7 +4198,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in t-test is comparison of means using one-sample, independent-samples or paired-samples variants.",
+              "detailed_explanation": "The central idea in t-test is comparison of means using one-sample, independent-samples or paired-samples variants.comparison of means using one-sample, independent-samples or paired-samples variants.\n\nThe exam-relevant points are:\n• Compare means\n• Independent vs paired\n• T statistic\n\nA useful distinction to keep in mind is: Paired t is for related observations.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 138
             },
             {
               "id": 3,
@@ -3378,7 +4241,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in non-parametric tests is tests with fewer distributional assumptions, often useful for ordinal/rank data.",
+              "detailed_explanation": "The central idea in non-parametric tests is tests with fewer distributional assumptions, often useful for ordinal/rank data.tests with fewer distributional assumptions, often useful for ordinal/rank data.\n\nThe exam-relevant points are:\n• Rank-based methods\n• Fewer assumptions\n• Small/non-normal samples\n\nA useful distinction to keep in mind is: Non-parametric does not mean assumption-free.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 289
             },
             {
               "id": 4,
@@ -3411,7 +4281,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in sign test is non-parametric test using only the direction of paired differences.",
+              "detailed_explanation": "The central idea in sign test is non-parametric test using only the direction of paired differences.non-parametric test using only the direction of paired differences.\n\nThe exam-relevant points are:\n• Paired data\n• Plus/minus direction\n• Binomial logic\n\nA useful distinction to keep in mind is: It ignores magnitude and ranks.",
+              "pyq_count": 40,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 26,
+                "assertion-reason": 1,
+                "match": 8,
+                "statement-set": 5
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 2
             },
             {
               "id": 5,
@@ -3444,7 +4326,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in wilcoxon signed rank test is rank-based test for paired or related observations.",
+              "detailed_explanation": "The central idea in wilcoxon signed rank test is rank-based test for paired or related observations.rank-based test for paired or related observations.\n\nThe exam-relevant points are:\n• Related samples\n• Ranked differences\n• Alternative to paired t\n\nA useful distinction to keep in mind is: Do not confuse with Mann–Whitney for independent groups.",
+              "pyq_count": 11,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 10,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 37
             },
             {
               "id": 6,
@@ -3477,7 +4369,16 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in mann-whitney test is rank-based comparison of two independent groups.",
+              "detailed_explanation": "The central idea in mann-whitney test is rank-based comparison of two independent groups.rank-based comparison of two independent groups.\n\nThe exam-relevant points are:\n• Independent groups\n• Ordinal/rank data\n• Alternative to independent t\n\nA useful distinction to keep in mind is: It is not for paired data.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 192
             },
             {
               "id": 7,
@@ -3510,7 +4411,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in kruskal-wallis test is rank-based comparison of more than two independent groups.",
+              "detailed_explanation": "The central idea in kruskal-wallis test is rank-based comparison of more than two independent groups.rank-based comparison of more than two independent groups.\n\nThe exam-relevant points are:\n• 3+ independent groups\n• Ranks\n• Alternative to one-way ANOVA\n\nA useful distinction to keep in mind is: A significant result does not identify every pairwise difference.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 290
             },
             {
               "id": 8,
@@ -3543,11 +4451,24 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in friedman test is rank-based comparison of three or more related conditions.",
+              "detailed_explanation": "The central idea in friedman test is rank-based comparison of three or more related conditions.rank-based comparison of three or more related conditions.\n\nThe exam-relevant points are:\n• 3+ related conditions\n• Repeated measures\n• Alternative to repeated-measures ANOVA\n\nA useful distinction to keep in mind is: Not for independent groups.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 193
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 64,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 9,
@@ -3596,11 +4517,26 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in power analysis is analysis of the probability of detecting an effect when it exists.",
+              "detailed_explanation": "The central idea in power analysis is analysis of the probability of detecting an effect when it exists.analysis of the probability of detecting an effect when it exists.\n\nThe exam-relevant points are:\n• Power = 1 − beta\n• Sample size\n• Effect size\n• Alpha\n\nA useful distinction to keep in mind is: High power does not guarantee a true effect.",
+              "pyq_count": 9,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 4,
+                "direct": 4,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 44
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 9,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 10,
@@ -3649,11 +4585,28 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in effect size is quantification of the magnitude of a difference or relationship.",
+              "detailed_explanation": "The central idea in effect size is quantification of the magnitude of a difference or relationship.quantification of the magnitude of a difference or relationship.\n\nThe exam-relevant points are:\n• Cohen's d\n• R\n• Eta-squared\n\nA useful distinction to keep in mind is: Statistical significance and effect size answer different questions.",
+              "pyq_count": 18,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 11,
+                "assertion-reason": 1,
+                "statement-set": 3,
+                "match": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 18
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 18,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 11,
@@ -3702,7 +4655,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in correlation is direction and strength of association between variables.",
+              "detailed_explanation": "The central idea in correlation is direction and strength of association between variables.direction and strength of association between variables.\n\nThe exam-relevant points are:\n• Positive/negative/zero\n• Pearson r −1 to +1\n• Association ≠ causation\n\nA useful distinction to keep in mind is: Correlation alone does not establish causation.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "match": 1,
+                "assertion-reason": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 48
             },
             {
               "id": 2,
@@ -3735,7 +4700,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in product moment correlation is Pearson correlation for linear association between quantitative variables.",
+              "detailed_explanation": "The central idea in product moment correlation is Pearson correlation for linear association between quantitative variables.Pearson correlation for linear association between quantitative variables.\n\nThe exam-relevant points are:\n• Pearson r\n• Linear relation\n• −1 to +1\n\nA useful distinction to keep in mind is: High r does not prove causality.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 79
             },
             {
               "id": 3,
@@ -3768,7 +4743,20 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in rank order correlation is correlation based on ranks, commonly Spearman rho.",
+              "detailed_explanation": "The central idea in rank order correlation is correlation based on ranks, commonly Spearman rho.correlation based on ranks, commonly Spearman rho.\n\nThe exam-relevant points are:\n• Ordinal/rank data\n• Monotonic association\n• Spearman\n\nA useful distinction to keep in mind is: Do not confuse with Pearson.",
+              "pyq_count": 15,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 3,
+                "sequence": 8,
+                "match": 1,
+                "assertion-reason": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 26
             },
             {
               "id": 4,
@@ -3801,7 +4789,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in partial correlation is association between two variables after statistically controlling other variable(s).",
+              "detailed_explanation": "The central idea in partial correlation is association between two variables after statistically controlling other variable(s).association between two variables after statistically controlling other variable(s).\n\nThe exam-relevant points are:\n• Control third variable\n• Conditional association\n\nA useful distinction to keep in mind is: Controlling a variable can change the observed association.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 2,
+                "assertion-reason": 2,
+                "statement-set": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 70
             },
             {
               "id": 5,
@@ -3834,11 +4834,25 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in multiple correlation is relationship between one criterion and a set of predictors.",
+              "detailed_explanation": "The central idea in multiple correlation is relationship between one criterion and a set of predictors.relationship between one criterion and a set of predictors.\n\nThe exam-relevant points are:\n• Multiple predictors\n• Multiple R\n• Prediction\n\nA useful distinction to keep in mind is: It is related to but not identical with multiple regression.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 60
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 41,
+          "pyq_mapped_microtopics": 5,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 12,
@@ -3887,7 +4901,17 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in biserial correlation is association between a continuous variable and an artificially dichotomized variable.",
+              "detailed_explanation": "The central idea in biserial correlation is association between a continuous variable and an artificially dichotomized variable.association between a continuous variable and an artificially dichotomized variable.\n\nThe exam-relevant points are:\n• Continuous + artificial dichotomy\n• Distinguish from point-biserial\n\nA useful distinction to keep in mind is: Artificial versus natural dichotomy is the key distinction.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 113
             },
             {
               "id": 2,
@@ -3920,7 +4944,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in point biserial correlation is association between a continuous variable and a genuinely dichotomous variable.",
+              "detailed_explanation": "The central idea in point biserial correlation is association between a continuous variable and a genuinely dichotomous variable.association between a continuous variable and a genuinely dichotomous variable.\n\nThe exam-relevant points are:\n• Continuous + true dichotomy\n• Special Pearson case\n\nA useful distinction to keep in mind is: Do not confuse with biserial.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "sequence": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 80
             },
             {
               "id": 3,
@@ -3953,7 +4988,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in tetrachoric correlation is estimated association between two dichotomized variables assumed to reflect underlying continuous traits.",
+              "detailed_explanation": "The central idea in tetrachoric correlation is estimated association between two dichotomized variables assumed to reflect underlying continuous traits.estimated association between two dichotomized variables assumed to reflect underlying continuous traits.\n\nThe exam-relevant points are:\n• Two dichotomies\n• Latent continuity\n\nA useful distinction to keep in mind is: Not simply the same as phi.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 291
             },
             {
               "id": 4,
@@ -3986,11 +5028,24 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in phi coefficient is association between two genuinely dichotomous variables.",
+              "detailed_explanation": "The central idea in phi coefficient is association between two genuinely dichotomous variables.association between two genuinely dichotomous variables.\n\nThe exam-relevant points are:\n• 2×2 table\n• Two binary variables\n\nA useful distinction to keep in mind is: Not for continuous variables.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 8
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 49
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 16,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 8
         },
         {
           "id": 13,
@@ -4039,7 +5094,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in simple linear regression is prediction of one criterion from one predictor.",
+              "detailed_explanation": "The central idea in simple linear regression is prediction of one criterion from one predictor.prediction of one criterion from one predictor.\n\nThe exam-relevant points are:\n• Slope\n• Intercept\n• Prediction\n\nA useful distinction to keep in mind is: Prediction does not prove causation.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "assertion-reason": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 61
             },
             {
               "id": 2,
@@ -4072,11 +5138,22 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in multiple regression is prediction of one criterion from several predictors.",
+              "detailed_explanation": "The central idea in multiple regression is prediction of one criterion from several predictors.prediction of one criterion from several predictors.\n\nThe exam-relevant points are:\n• Multiple predictors\n• Coefficients\n• Unique contribution\n\nA useful distinction to keep in mind is: A predictor may lose unique contribution after controls.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 292
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 7,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 11
         },
         {
           "id": 14,
@@ -4125,7 +5202,19 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in assumptions of factor analysis is identification of latent dimensions underlying correlations among observed variables.",
+              "detailed_explanation": "The central idea in assumptions of factor analysis is identification of latent dimensions underlying correlations among observed variables.identification of latent dimensions underlying correlations among observed variables.\n\nThe exam-relevant points are:\n• Factors\n• Loadings\n• Common variance\n\nA useful distinction to keep in mind is: A factor is not automatically causal.",
+              "pyq_count": 23,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 16,
+                "assertion-reason": 1,
+                "statement-set": 2,
+                "sequence": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 11
             },
             {
               "id": 2,
@@ -4158,7 +5247,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in methods of factor analysis is identification of latent dimensions underlying correlations among observed variables.",
+              "detailed_explanation": "The central idea in methods of factor analysis is identification of latent dimensions underlying correlations among observed variables.identification of latent dimensions underlying correlations among observed variables.\n\nThe exam-relevant points are:\n• Factors\n• Loadings\n• Common variance\n\nA useful distinction to keep in mind is: A factor is not automatically causal.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 293
             },
             {
               "id": 3,
@@ -4191,7 +5287,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in rotation is re-expression of extracted factors to make loading patterns easier to interpret.",
+              "detailed_explanation": "The central idea in rotation is re-expression of extracted factors to make loading patterns easier to interpret.re-expression of extracted factors to make loading patterns easier to interpret.\n\nThe exam-relevant points are:\n• Orthogonal\n• Oblique\n• Interpretability\n\nA useful distinction to keep in mind is: Rotation does not create new variables.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "match": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 114
             },
             {
               "id": 4,
@@ -4223,11 +5330,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.",
+              "detailed_explanation": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nThe exam-relevant points are:\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n\nA useful distinction to keep in mind is: A factor loading is not itself a factor; it indicates how strongly a measured variable is associated with a factor.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 139
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2B"
+          "part_id": "2B",
+          "pyq_count": 28,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 15,
@@ -4276,7 +5397,16 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "ANOVA is a structured approach centred on test of mean differences through comparison of between- and within-group variability.",
+              "detailed_explanation": "ANOVA is a structured approach centred on test of mean differences through comparison of between- and within-group variability.test of mean differences through comparison of between- and within-group variability.\n\nThe exam-relevant points are:\n• F ratio\n• Between vs within\n• Post-hoc follow-up\n\nA useful distinction to keep in mind is: ANOVA alone does not locate every pairwise difference.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 194
             },
             {
               "id": 2,
@@ -4309,7 +5439,16 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in one-way anova is comparison of three or more group means on one factor.",
+              "detailed_explanation": "The central idea in one-way anova is comparison of three or more group means on one factor.comparison of three or more group means on one factor.\n\nThe exam-relevant points are:\n• One factor\n• 3+ groups\n• F test\n\nA useful distinction to keep in mind is: For two groups, a t-test may be equivalent under assumptions.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 140
             },
             {
               "id": 3,
@@ -4342,7 +5481,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in factorial anova is analysis with two or more factors, including main effects and interactions.",
+              "detailed_explanation": "The central idea in factorial anova is analysis with two or more factors, including main effects and interactions.analysis with two or more factors, including main effects and interactions.\n\nThe exam-relevant points are:\n• Main effect\n• Interaction\n• Multiple factors\n\nA useful distinction to keep in mind is: Interaction is not another name for a main effect.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 294
             },
             {
               "id": 4,
@@ -4374,7 +5520,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.",
+              "detailed_explanation": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nThe exam-relevant points are:\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n\nA useful distinction to keep in mind is: Blocking is not the same as matching every participant individually; the block is the design structure within which randomization occurs.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 295
             },
             {
               "id": 5,
@@ -4407,7 +5560,18 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in repeated measures design is same participants measured across conditions or times.",
+              "detailed_explanation": "The central idea in repeated measures design is same participants measured across conditions or times.same participants measured across conditions or times.\n\nThe exam-relevant points are:\n• Within-subjects\n• Individual differences controlled\n• Order effects\n\nA useful distinction to keep in mind is: Carryover/order effects matter.",
+              "pyq_count": 14,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 12,
+                "sequence": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 28
             },
             {
               "id": 6,
@@ -4439,7 +5603,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Latin Square Design."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.",
+              "detailed_explanation": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nThe exam-relevant points are:\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n\nA useful distinction to keep in mind is: Latin square is a balanced blocking design; it is not simply a four-or-more-group version of a randomized block design.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 115
             },
             {
               "id": 7,
@@ -4471,7 +5644,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Experimental Designs outline."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.",
+              "detailed_explanation": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nThe exam-relevant points are:\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n\nA useful distinction to keep in mind is: Do not automatically label every longitudinal study a cohort study; the defining feature is the cohort-based grouping of participants.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "assertion-reason": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 116
             },
             {
               "id": 8,
@@ -4503,7 +5686,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design."
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.",
+              "detailed_explanation": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nThe exam-relevant points are:\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n\nA useful distinction to keep in mind is: Repeated measurement alone does not establish causality; alternative explanations for changes over time must still be considered.",
+              "pyq_count": 15,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "match": 6,
+                "statement-set": 2,
+                "assertion-reason": 2,
+                "direct": 5
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 27
             },
             {
               "id": 9,
@@ -4536,7 +5731,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "MANOVA is a structured approach centred on multivariate comparison involving multiple dependent variables.",
+              "detailed_explanation": "MANOVA is a structured approach centred on multivariate comparison involving multiple dependent variables.multivariate comparison involving multiple dependent variables.\n\nThe exam-relevant points are:\n• Multiple DVs\n• Multivariate F\n\nA useful distinction to keep in mind is: It is not multiple regression.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 296
             },
             {
               "id": 10,
@@ -4569,7 +5771,14 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "ANCOVA is a structured approach centred on comparison of group means while statistically adjusting for a covariate.",
+              "detailed_explanation": "ANCOVA is a structured approach centred on comparison of group means while statistically adjusting for a covariate.comparison of group means while statistically adjusting for a covariate.\n\nThe exam-relevant points are:\n• ANOVA + covariate\n• Adjusted means\n\nA useful distinction to keep in mind is: The covariate must be appropriate.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 10,
+              "pyq_global_rank": 297
             },
             {
               "id": 11,
@@ -4602,11 +5811,22 @@ window.NETPSY_DATA = {
                 "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation"
               ],
-              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 3: stress, flow and applied/statistical PYQ revision. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in single-subject designs is repeated measurement of one person or a small number of cases across baseline/intervention phases.",
+              "detailed_explanation": "The central idea in single-subject designs is repeated measurement of one person or a small number of cases across baseline/intervention phases.repeated measurement of one person or a small number of cases across baseline/intervention phases.\n\nThe exam-relevant points are:\n• AB/ABA/ABAB\n• Baseline\n• Repeated measures\n\nA useful distinction to keep in mind is: Small N does not mean no experimental control.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 11,
+              "pyq_global_rank": 298
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "2A"
+          "part_id": "2A",
+          "pyq_count": 38,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 5
         }
       ],
       "description": "Build a complete research-to-evidence framework for psychology. Start with how research questions become variables, hypotheses, samples, designs, and ethical decisions, then connect these choices to measurement, data collection, and interpretation. In the statistics portion, develop the reasoning behind probability, distributions, statistical tests, power, effect size, correlation, regression, and factor analysis so that you can identify which method fits a research question and interpret what the result actually means.",
@@ -4640,7 +5860,10 @@ window.NETPSY_DATA = {
             14
           ]
         }
-      ]
+      ],
+      "pyq_count": 416,
+      "pyq_mapped_microtopics": 45,
+      "pyq_frequency_band": "A"
     },
     {
       "id": 3,
@@ -4693,10 +5916,26 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Psychological Testing; Baron & Misra and Ciccarelli & White on assessment methods."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Psychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.",
+              "detailed_explanation": "Psychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.\n\nThe exam-relevant points are:\n• Tests use specified administration and scoring procedures.\n• They measure attributes, traits, abilities or other psychological characteristics.\n• Assessment is broader than testing.\n• Psychometric quality is part of test evaluation.\n\nA useful distinction to keep in mind is: Do not use psychological test, psychological assessment and measurement as exact synonyms.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "direct": 2,
+                "statement-set": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 71
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -4746,7 +5985,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Test Construction: Item Writing and Item Analysis."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Item writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.",
+              "detailed_explanation": "Item writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.\n\nThe exam-relevant points are:\n• Items should represent the intended content or construct.\n• Wording and response format affect how an item functions.\n• Items are evaluated after administration through item analysis.\n• Good item construction supports reliability and validity.\n\nA useful distinction to keep in mind is: Item writing creates the item; item analysis evaluates how the item performed in the test data.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "direct": 5,
+                "assertion-reason": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 50
             },
             {
               "id": 2,
@@ -4780,10 +6030,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Test Construction and validity/item-analysis discussion."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Item analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.",
+              "detailed_explanation": "Item analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.\n\nThe exam-relevant points are:\n• Item analysis evaluates individual items empirically.\n• Item–total relationships can indicate whether an item fits the test.\n• Upper/lower group comparisons can help identify discriminating items.\n• Poorly functioning items may be revised or removed.\n\nA useful distinction to keep in mind is: Item analysis is not the same as calculating the final test score; it is a quality-control step at the item level.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "assertion-reason": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 72
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 14,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -4833,7 +6098,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Test Standardization, Reliability, Validity and Norms; Psychology: A Self-Teaching Guide."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Standardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.",
+              "detailed_explanation": "Standardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.\n\nThe exam-relevant points are:\n• Administration and scoring should be consistent.\n• A standardization sample provides the reference distribution.\n• Norms are derived from the standardization group.\n• Interpretation depends on the population represented by the norms.\n\nA useful distinction to keep in mind is: Standardization is broader than norms alone; it includes standardized administration, scoring and the empirical reference framework.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 299
             },
             {
               "id": 2,
@@ -4870,7 +6142,18 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The central idea in reliability is consistency or dependability of measurement.",
+              "detailed_explanation": "The central idea in reliability is consistency or dependability of measurement.consistency or dependability of measurement.\n\nThe exam-relevant points are:\n• Test-retest\n• Internal consistency\n• Inter-rater\n• Split-half\n\nA useful distinction to keep in mind is: Reliability is necessary but not sufficient for validity.",
+              "pyq_count": 12,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 8,
+                "assertion-reason": 2,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 32
             },
             {
               "id": 3,
@@ -4907,7 +6190,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The central idea in validity is evidence supporting the intended interpretation and use of test scores.",
+              "detailed_explanation": "The central idea in validity is evidence supporting the intended interpretation and use of test scores.evidence supporting the intended interpretation and use of test scores.\n\nThe exam-relevant points are:\n• Content\n• Criterion-related\n• Construct\n\nA useful distinction to keep in mind is: Validity is not simply one number.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 141
             },
             {
               "id": 4,
@@ -4944,10 +6237,24 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The central idea in norms is reference information for interpreting scores relative to a defined population.",
+              "detailed_explanation": "The central idea in norms is reference information for interpreting scores relative to a defined population.reference information for interpreting scores relative to a defined population.\n\nThe exam-relevant points are:\n• Percentiles\n• Age/grade norms\n• Standard scores\n\nA useful distinction to keep in mind is: Norms are not the same as cutoffs.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 117
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 17,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 4,
@@ -4997,7 +6304,20 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Intelligence Tests; Baron & Misra; REVISATHON Part 5 on Wechsler tests."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Intelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.",
+              "detailed_explanation": "Intelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.\n\nThe exam-relevant points are:\n• Binet and Simon published the Binet–Simon Scale in 1905.\n• Terman adapted it into the Stanford–Binet in 1916.\n• Wechsler scales are major individually administered intelligence tests.\n• Intelligence testing can involve multiple cognitive abilities rather than a single simple capacity.\n\nA useful distinction to keep in mind is: An intelligence test is not identical to a general measure of all human competence; what is assessed depends on the test's design and construct.",
+              "pyq_count": 27,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 20,
+                "assertion-reason": 2,
+                "sequence": 1,
+                "statement-set": 1,
+                "match": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 6
             },
             {
               "id": 2,
@@ -5031,7 +6351,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 creativity-testing material; Baron & Misra; P2 Educational Psychology."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Creativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.",
+              "detailed_explanation": "Creativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.\n\nThe exam-relevant points are:\n• Creativity testing often emphasizes divergent production.\n• Guilford is a major source figure in the creativity-testing tradition.\n• Getzels and Jackson compared creativity and intelligence groups.\n• TTCT is an example of a creativity-testing approach.\n\nA useful distinction to keep in mind is: Creativity and intelligence are related constructs but are not treated as identical in the source material.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "match": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 91
             },
             {
               "id": 3,
@@ -5065,7 +6396,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3; Baron & Misra on neuropsychological tests; P2 Educational Psychology."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Neuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.",
+              "detailed_explanation": "Neuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.\n\nThe exam-relevant points are:\n• They focus on cognitive/behavioral functions related to the nervous system.\n• They can help assess possible brain dysfunction or damage.\n• Attention and memory are examples of assessed functions.\n• They form one component of broader psychological assessment.\n\nA useful distinction to keep in mind is: A neuropsychological test is not simply an intelligence test; its purpose is tied to brain-related cognitive functioning.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 195
             },
             {
               "id": 4,
@@ -5099,7 +6439,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Aptitude Tests; PowerWithin Psychology — Unit 3 and military testing."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Aptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.",
+              "detailed_explanation": "Aptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.\n\nThe exam-relevant points are:\n• Aptitude concerns potential or ability to learn/perform in a domain.\n• Batteries may contain several subtests.\n• Examples of domains include verbal, numerical and spatial reasoning.\n• Aptitude testing is used in selection and educational/career contexts.\n\nA useful distinction to keep in mind is: Aptitude is not the same as achievement: aptitude concerns capacity or potential, whereas achievement reflects learned knowledge or skill.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 196
             },
             {
               "id": 5,
@@ -5133,7 +6482,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Personality Assessment; PowerWithin Psychology — Personality Assessment."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Personality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.",
+              "detailed_explanation": "Personality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.\n\nThe exam-relevant points are:\n• Interviews can provide self-report information.\n• Behavioral assessment uses direct observation, rating scales or frequency counts.\n• Projective tests use ambiguous stimuli and require interpretive judgment.\n• Personality inventories use standardized item formats and can include validity scales.\n\nA useful distinction to keep in mind is: Psychological assessment is broader than any one personality test; professionals may combine several methods.",
+              "pyq_count": 12,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 4,
+                "direct": 7,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 33
             },
             {
               "id": 6,
@@ -5167,10 +6527,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Areas of Testing and Career Guidance; P2 Educational Psychology."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Interest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.",
+              "detailed_explanation": "Interest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.\n\nThe exam-relevant points are:\n• They measure patterns of interests rather than intelligence or achievement.\n• They are useful for educational and career guidance.\n• Interpretation depends on the inventory and its normative framework.\n• Interests are one source of information in career decision-making, not a complete decision by themselves.\n\nA useful distinction to keep in mind is: Interest is different from aptitude: liking or preference for an activity is not the same construct as demonstrated or potential ability.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 300
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 45,
+          "pyq_mapped_microtopics": 5,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 5,
@@ -5223,7 +6594,20 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in semantic differential scale is measurement of connotative meaning using bipolar adjective dimensions.",
+              "detailed_explanation": "The central idea in semantic differential scale is measurement of connotative meaning using bipolar adjective dimensions.measurement of connotative meaning using bipolar adjective dimensions.\n\nThe exam-relevant points are:\n• Bipolar adjectives\n• Osgood\n• Attitude/meaning\n\nA useful distinction to keep in mind is: Not the same as Likert.",
+              "pyq_count": 23,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 17,
+                "match": 2,
+                "statement-set": 1,
+                "sequence": 2,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 12
             },
             {
               "id": 2,
@@ -5257,7 +6641,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Attitude Scales: Semantic Differential, Staples and Likert."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.",
+              "detailed_explanation": "The Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.\n\nThe exam-relevant points are:\n• It is listed as an attitude-scale technique in the NET material.\n• It belongs to the measurement of attitudes rather than cognitive ability testing.\n• The source groups it with semantic differential and Likert scales.\n• Detailed source treatment is limited in the supplied material.\n\nA useful distinction to keep in mind is: Do not import features of another attitude scale and label them as Staples-scale properties when the source does not provide them.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 301
             },
             {
               "id": 3,
@@ -5294,7 +6685,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in likert scale is summated agreement scale using ordered response categories.",
+              "detailed_explanation": "The central idea in likert scale is summated agreement scale using ordered response categories.summated agreement scale using ordered response categories.\n\nThe exam-relevant points are:\n• Strongly agree/disagree\n• Ordered categories\n• Summated ratings\n\nA useful distinction to keep in mind is: A single Likert item is not the same as a whole Likert scale.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 302
             },
             {
               "id": 4,
@@ -5328,10 +6726,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3, Computer-based Psychological Testing."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Computer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.",
+              "detailed_explanation": "Computer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.\n\nThe exam-relevant points are:\n• Administration and scoring are computerized.\n• Standardization and psychometric quality remain necessary.\n• Computer delivery changes the mode of administration, not the construct itself.\n• Technical and accessibility conditions can affect administration.\n\nA useful distinction to keep in mind is: Computerized administration does not automatically make a test more valid or reliable; psychometric quality still has to be established.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 303
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 23,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 6,
@@ -5381,7 +6790,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Psychological Assessment and Research Methods; PowerWithin Psychology — clinical application of testing."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "In clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.",
+              "detailed_explanation": "In clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.\n\nThe exam-relevant points are:\n• Testing is one component of clinical assessment.\n• Interviews and other information sources may be combined with tests.\n• Neuropsychological tests may be used when brain functioning is relevant.\n• Interpretation should be integrated with the person's broader history and presentation.\n\nA useful distinction to keep in mind is: A test score alone is not equivalent to a clinical diagnosis; assessment integrates multiple sources of evidence.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 304
             },
             {
               "id": 2,
@@ -5415,7 +6831,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Applications of Psychological Testing; organizational/business testing coverage."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Organizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.",
+              "detailed_explanation": "Organizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.\n\nThe exam-relevant points are:\n• Testing can support selection and placement decisions.\n• Aptitude and personality measures may be relevant to occupational requirements.\n• Standardized administration and interpretation are important for comparability.\n• Test use should match the attribute and decision being assessed.\n\nA useful distinction to keep in mind is: A test should not be treated as a general predictor of every aspect of job performance; its relevance depends on the construct and context.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 197
             },
             {
               "id": 3,
@@ -5449,7 +6874,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Applications; P2 Educational Psychology."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Educational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.",
+              "detailed_explanation": "Educational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.\n\nThe exam-relevant points are:\n• Testing can inform educational decisions and support planning.\n• Intelligence and achievement measures assess different constructs.\n• Aptitude and interest information can support educational/career guidance.\n• Interpretation should consider the student's broader context.\n\nA useful distinction to keep in mind is: Educational testing is broader than an IQ score; different tests answer different educational questions.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 198
             },
             {
               "id": 4,
@@ -5483,7 +6917,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Applications of Psychological Testing and Career Guidance."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "In counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.",
+              "detailed_explanation": "In counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.\n\nThe exam-relevant points are:\n• Tests can structure information relevant to counseling goals.\n• Interest and aptitude measures are especially relevant to career guidance.\n• Personality information can contribute to self-understanding.\n• Results require appropriate interpretation and discussion with the client.\n\nA useful distinction to keep in mind is: A counseling test result is an aid to formulation and decision-making, not a substitute for the counseling process.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 142
             },
             {
               "id": 5,
@@ -5517,10 +6960,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 3 Application of Psychological Testing in the Military."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.",
+              "detailed_explanation": "The uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.\n\nThe exam-relevant points are:\n• Military testing begins in recruitment and can continue through service.\n• Aptitude tests may assess verbal, numerical, spatial and related abilities.\n• Army Alpha and Army Beta are historical examples in the source.\n• Selection formats can be uniform, diversified or mixed.\n\nA useful distinction to keep in mind is: Military testing is not limited to one intelligence test; the source describes a broader assessment system tied to specific competencies and roles.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 305
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 7,
@@ -5571,13 +7025,29 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The central idea in career guidance is support for career decisions using self-understanding, occupational information and planning.",
+              "detailed_explanation": "The central idea in career guidance is support for career decisions using self-understanding, occupational information and planning.support for career decisions using self-understanding, occupational information and planning.\n\nThe exam-relevant points are:\n• Interests\n• Abilities\n• Values\n• Options\n\nA useful distinction to keep in mind is: It is broader than one interest inventory.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 199
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         }
       ],
-      "description": "Understand psychological testing as a systematic process rather than a collection of test names. Follow the path from test construction and standardisation through reliability, validity, norms, administration, scoring, and interpretation. Then connect these foundations with major types and applications of psychological assessment so you can distinguish what a test measures, how confidently it measures it, and how its results should be interpreted."
+      "description": "Understand psychological testing as a systematic process rather than a collection of test names. Follow the path from test construction and standardisation through reliability, validity, norms, administration, scoring, and interpretation. Then connect these foundations with major types and applications of psychological assessment so you can distinguish what a test measures, how confidently it measures it, and how its results should be interpreted.",
+      "pyq_count": 110,
+      "pyq_mapped_microtopics": 16,
+      "pyq_frequency_band": "B"
     },
     {
       "id": 4,
@@ -5630,7 +7100,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Sensory Systems; Baron & Misra — Sensory Processes."
-              ]
+              ],
+              "expert_explanation": "The uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.",
+              "detailed_explanation": "The uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.\n\nThe exam-relevant points are:\n• General sensations arise from bodily sensory systems.\n• Specific sensations involve specialized sensory organs/pathways.\n• Both depend on receptors and neural processing.\n• The distinction is about sensory-system organization, not about whether a sensation is psychologically important.\n\nA useful distinction to keep in mind is: Do not treat 'general' as meaning vague or nonspecific; it refers to a class of bodily sensory modalities.",
+              "pyq_count": 10,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "assertion-reason": 1,
+                "match": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 40
             },
             {
               "id": 2,
@@ -5663,7 +7145,18 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4; Ciccarelli & White 6e; Baron & Misra."
-              ]
+              ],
+              "expert_explanation": "Specific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.",
+              "detailed_explanation": "Specific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.\n\nThe exam-relevant points are:\n• Vision, hearing, taste and smell are specialized sensory systems.\n• Each system has characteristic receptors and pathways.\n• Sensory transduction converts physical stimulation into neural signals.\n• Perception involves further processing beyond receptor activation.\n\nA useful distinction to keep in mind is: Sensation and perception are related but not identical: sensation concerns detection/transduction, while perception involves organizing and interpreting sensory information.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "match": 2,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 51
             },
             {
               "id": 3,
@@ -5696,7 +7189,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Sensory Systems; Ciccarelli & White and Baron & Misra on sensation."
-              ]
+              ],
+              "expert_explanation": "Sensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.",
+              "detailed_explanation": "Sensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.\n\nThe exam-relevant points are:\n• Receptors are specialized for particular kinds of stimulation.\n• They initiate neural signals when appropriate stimulation occurs.\n• Different sensory modalities use different receptor systems.\n• Receptor activity is an early stage of sensory processing.\n\nA useful distinction to keep in mind is: A receptor detects stimulation; it is not the same thing as the entire sensory pathway or perceptual experience.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 3,
+                "sequence": 2,
+                "direct": 2,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 52
             },
             {
               "id": 4,
@@ -5729,10 +7234,25 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Baron & Misra — Sensory Processes; PowerWithin Psychology — Unit 4 Sensory Systems."
-              ]
+              ],
+              "expert_explanation": "Sensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.",
+              "detailed_explanation": "Sensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.\n\nThe exam-relevant points are:\n• Physical stimulation provides the input.\n• Receptors detect relevant stimulation.\n• Transduction converts stimulation into neural signals.\n• Subsequent neural processing contributes to sensory experience.\n\nA useful distinction to keep in mind is: The minimum detectable stimulation and the interpretation of a stimulus are different questions; detection is not identical to perception.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "match": 1,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 92
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 30,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -5784,7 +7304,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in neuron structure is organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.",
+              "detailed_explanation": "The central idea in neuron structure is organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.\n\nThe exam-relevant points are:\n• Dendrites receive\n• Soma integrates\n• Axon conducts\n• Terminals communicate\n\nA useful distinction to keep in mind is: Dendrites and axons have different typical roles.",
+              "pyq_count": 20,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "assertion-reason": 7,
+                "direct": 9,
+                "match": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 15
             },
             {
               "id": 2,
@@ -5817,7 +7349,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Neurons and Neural Transmission; Self-Teaching Guide and Ciccarelli & White."
-              ]
+              ],
+              "expert_explanation": "Neurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.",
+              "detailed_explanation": "Neurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.\n\nThe exam-relevant points are:\n• Neurons receive and transmit information.\n• Neural impulses travel along the neuron.\n• Communication between neurons occurs at synapses.\n• Neurotransmitters participate in synaptic communication.\n\nA useful distinction to keep in mind is: A neural impulse within a neuron and synaptic transmission between neurons are related but distinct stages of neural communication.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 306
             },
             {
               "id": 3,
@@ -5853,7 +7392,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in types of neurons is functional classification into sensory, motor and interneurons.",
+              "detailed_explanation": "The central idea in types of neurons is functional classification into sensory, motor and interneurons.functional classification into sensory, motor and interneurons.\n\nThe exam-relevant points are:\n• Afferent/sensory\n• Efferent/motor\n• Interneurons\n\nA useful distinction to keep in mind is: Afferent/efferent are defined relative to the CNS.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 307
             },
             {
               "id": 4,
@@ -5889,7 +7435,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in neural impulse is action potential as a rapid, all-or-none change in membrane potential.",
+              "detailed_explanation": "The central idea in neural impulse is action potential as a rapid, all-or-none change in membrane potential.action potential as a rapid, all-or-none change in membrane potential.\n\nThe exam-relevant points are:\n• Threshold\n• Depolarization\n• Repolarization\n• All-or-none\n\nA useful distinction to keep in mind is: Stimulus intensity is not coded by larger action potentials.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 308
             },
             {
               "id": 5,
@@ -5925,10 +7478,25 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in synaptic transmission is communication from a presynaptic neuron to a postsynaptic cell.",
+              "detailed_explanation": "The central idea in synaptic transmission is communication from a presynaptic neuron to a postsynaptic cell.communication from a presynaptic neuron to a postsynaptic cell.\n\nThe exam-relevant points are:\n• Neurotransmitter release\n• Receptors\n• Excitatory/inhibitory effects\n\nA useful distinction to keep in mind is: A neurotransmitter's effect depends on its receptor/context.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "assertion-reason": 1,
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 81
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 25,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 3,
@@ -5980,10 +7548,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in neurotransmitters is chemical messengers that influence postsynaptic activity.",
+              "detailed_explanation": "The central idea in neurotransmitters is chemical messengers that influence postsynaptic activity.chemical messengers that influence postsynaptic activity.\n\nThe exam-relevant points are:\n• Dopamine\n• Serotonin\n• GABA\n• Glutamate\n• Acetylcholine\n\nA useful distinction to keep in mind is: No single neurotransmitter causes one behavior alone.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 309
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 4,
@@ -6035,7 +7614,20 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in central nervous system is brain and spinal cord as the major integrative center.",
+              "detailed_explanation": "The central idea in central nervous system is brain and spinal cord as the major integrative center.brain and spinal cord as the major integrative center.\n\nThe exam-relevant points are:\n• Brain\n• Spinal cord\n• Integration\n\nA useful distinction to keep in mind is: CNS is not the autonomic nervous system.",
+              "pyq_count": 27,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 18,
+                "assertion-reason": 1,
+                "match": 4,
+                "statement-set": 3,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 7
             },
             {
               "id": 2,
@@ -6071,7 +7663,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in peripheral nervous system is neural structures outside brain/spinal cord connecting CNS with the body.",
+              "detailed_explanation": "The central idea in peripheral nervous system is neural structures outside brain/spinal cord connecting CNS with the body.neural structures outside brain/spinal cord connecting CNS with the body.\n\nThe exam-relevant points are:\n• Somatic\n• Autonomic\n• Afferent/efferent\n\nA useful distinction to keep in mind is: PNS includes voluntary and autonomic pathways.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 310
             },
             {
               "id": 3,
@@ -6104,10 +7703,23 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 CNS/PNS; Ciccarelli & White 6e; Kaplan AP Psychology."
-              ]
+              ],
+              "expert_explanation": "The nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.",
+              "detailed_explanation": "The nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.\n\nThe exam-relevant points are:\n• CNS = brain and spinal cord.\n• PNS connects the CNS with sensory receptors and effectors.\n• Somatic functions involve skeletal-muscle control.\n• Autonomic functions regulate internal bodily processes.\n\nA useful distinction to keep in mind is: CNS and PNS are structural divisions; sympathetic/parasympathetic are divisions within the autonomic branch of the PNS.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 143
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 29,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 5,
@@ -6159,10 +7771,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in neuroplasticity is capacity of nervous systems to change structure or function with experience, learning or injury.",
+              "detailed_explanation": "The central idea in neuroplasticity is capacity of nervous systems to change structure or function with experience, learning or injury.capacity of nervous systems to change structure or function with experience, learning or injury.\n\nThe exam-relevant points are:\n• Synaptic change\n• Experience-dependent plasticity\n• Reorganization\n\nA useful distinction to keep in mind is: Plasticity does not mean unlimited recovery.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 311
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 6,
@@ -6211,7 +7834,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology."
-              ]
+              ],
+              "expert_explanation": "Anatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.",
+              "detailed_explanation": "Anatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.\n\nThe exam-relevant points are:\n• The focus is neural structure and organization.\n• They are concerned with locating or describing anatomical structures.\n• The source classifies them under physiological-psychology research methods.\n• They differ from functional methods that focus on activity or responses.\n\nA useful distinction to keep in mind is: Anatomical methods are about structure; they should not be treated as interchangeable with methods that record moment-to-moment neural activity.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 118
             },
             {
               "id": 2,
@@ -6244,7 +7876,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Invasive Methods; Baron & Misra — physiological research methods."
-              ]
+              ],
+              "expert_explanation": "Degeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.",
+              "detailed_explanation": "Degeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.\n\nThe exam-relevant points are:\n• They are used to study brain–behavior relationships.\n• Neural damage or degeneration provides information about function.\n• They are invasive research techniques.\n• Interpretation depends on linking the affected structure/pathway with behavioral change.\n\nA useful distinction to keep in mind is: Evidence from degeneration is inferential; a behavioral change following damage does not mean the damaged area was the only structure involved.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 144
             },
             {
               "id": 3,
@@ -6277,7 +7919,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Lesion Techniques."
-              ]
+              ],
+              "expert_explanation": "Lesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.",
+              "detailed_explanation": "Lesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.\n\nThe exam-relevant points are:\n• A lesion is damage to neural tissue.\n• Behavioral changes after a lesion can provide functional evidence.\n• The method is invasive.\n• Interpretation requires attention to the exact location and extent of damage.\n\nA useful distinction to keep in mind is: A lesion does not prove that a structure works alone; connected neural systems can also contribute to the observed effect.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 312
             },
             {
               "id": 4,
@@ -6310,7 +7959,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology and biological basis of behavior."
-              ]
+              ],
+              "expert_explanation": "Chemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.",
+              "detailed_explanation": "Chemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.\n\nThe exam-relevant points are:\n• Chemical methods investigate neurochemical influences on behavior.\n• They may involve altering or examining chemical signaling.\n• They complement anatomical and electrophysiological methods.\n• Interpretation links chemical changes with neural or behavioral outcomes.\n\nA useful distinction to keep in mind is: Chemical methods are not identical to recording electrical neural activity; they target a different level of biological explanation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 313
             },
             {
               "id": 5,
@@ -6343,7 +7999,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Microelectrode Studies."
-              ]
+              ],
+              "expert_explanation": "Microelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.",
+              "detailed_explanation": "Microelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.\n\nThe exam-relevant points are:\n• Microelectrodes permit fine-grained neural recording.\n• They can link neural activity with stimuli or behavior.\n• The technique is invasive when electrodes are implanted.\n• It provides functional information rather than only anatomical description.\n\nA useful distinction to keep in mind is: Microelectrode recording is a method for measuring neural activity; it should not be confused with lesioning, which changes tissue to study consequences.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 314
             },
             {
               "id": 6,
@@ -6379,7 +8042,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "EEG is a structured approach centred on recording of scalp electrical activity, especially useful for temporal dynamics.",
+              "detailed_explanation": "EEG is a structured approach centred on recording of scalp electrical activity, especially useful for temporal dynamics.recording of scalp electrical activity, especially useful for temporal dynamics.\n\nThe exam-relevant points are:\n• Electrodes\n• High temporal resolution\n• ERP applications\n\nA useful distinction to keep in mind is: Spatial resolution is relatively limited.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 315
             },
             {
               "id": 7,
@@ -6412,10 +8082,23 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Methods of Physiological Psychology."
-              ]
+              ],
+              "expert_explanation": "Scanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.",
+              "detailed_explanation": "Scanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.\n\nThe exam-relevant points are:\n• Scanning methods are categorized as non-invasive in the source.\n• They allow researchers to examine brain-related structure or activity.\n• They differ from lesion or implanted-electrode techniques.\n• Interpretation depends on what the particular scanning method measures.\n\nA useful distinction to keep in mind is: 'Scanning' is a broad category; different imaging techniques answer different structural or functional questions.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 200
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 7,
@@ -6465,7 +8148,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Muscular and Glandular Systems; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.",
+              "detailed_explanation": "The muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.\n\nThe exam-relevant points are:\n• Muscles execute movement in response to neural control.\n• Muscular activity is an important output of the nervous system.\n• Skeletal-muscle control is associated with somatic functions.\n• Muscular activity can be studied as a physiological correlate of behavior.\n\nA useful distinction to keep in mind is: Muscular activity is an output system; it should not be confused with the glandular/endocrine system, which communicates through hormones.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 3,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 82
             },
             {
               "id": 2,
@@ -6499,7 +8192,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Glandular/Hormonal Regulation; Self-Teaching Guide and Kaplan."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.",
+              "detailed_explanation": "The glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.\n\nThe exam-relevant points are:\n• Endocrine glands release hormones into the bloodstream.\n• Hormones can influence behavior and physiological states.\n• The hypothalamus and pituitary are important regulators in the endocrine system.\n• Hormonal effects interact with nervous-system processes.\n\nA useful distinction to keep in mind is: Hormones are chemical messengers; glands are structures that produce/release them. Do not use the terms as exact synonyms.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 316
             },
             {
               "id": 3,
@@ -6533,7 +8233,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Biological Bases of Motivation; PowerWithin Psychology — Hunger; Kaplan AP Psychology."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Hunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.",
+              "detailed_explanation": "Hunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.\n\nThe exam-relevant points are:\n• Hunger is linked to energy regulation and homeostasis.\n• The hypothalamus is involved in the regulation of hunger and related drives.\n• Internal physiological signals influence eating behavior.\n• Motivation is produced through interaction between bodily states and psychological processes.\n\nA useful distinction to keep in mind is: Hunger is not explained only by an empty stomach; the source framework treats motivation as involving multiple physiological and psychological processes.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 145
             },
             {
               "id": 4,
@@ -6567,7 +8277,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Biological Basis of Motivation; Baron & Misra; Kaplan AP Psychology."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Thirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.",
+              "detailed_explanation": "Thirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.\n\nThe exam-relevant points are:\n• Thirst helps maintain fluid balance.\n• Physiological changes provide signals related to drinking.\n• Hypothalamic mechanisms contribute to regulation.\n• Thirst, like hunger, illustrates homeostatic motivation.\n\nA useful distinction to keep in mind is: Thirst is not simply a subjective feeling; it is linked to physiological regulation of fluid balance.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 201
             },
             {
               "id": 5,
@@ -6604,7 +8323,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in sleep is biologically regulated state with distinct stages and circadian/homeostatic regulation.",
+              "detailed_explanation": "The central idea in sleep is biologically regulated state with distinct stages and circadian/homeostatic regulation.biologically regulated state with distinct stages and circadian/homeostatic regulation.\n\nThe exam-relevant points are:\n• Circadian rhythm\n• NREM/REM\n• Sleep pressure\n\nA useful distinction to keep in mind is: REM and NREM are not interchangeable.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 93
             },
             {
               "id": 6,
@@ -6638,10 +8367,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Biological Basis of Motivation and Hormonal Regulation of Behavior; Self-Teaching Guide."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Sexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.",
+              "detailed_explanation": "Sexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.\n\nThe exam-relevant points are:\n• Sexual behavior has biological and hormonal influences.\n• Neural and endocrine systems interact in sexual motivation.\n• Psychological and social context also affects behavior.\n• The source treats sex as one component of biological motivation.\n\nA useful distinction to keep in mind is: A biological basis does not imply that sexual behavior is determined only by biology; the source framework is broader than a single-factor explanation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 317
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 12,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 8,
@@ -6691,7 +8431,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Biological Basis of Emotion; Baron & Misra; Kaplan AP Psychology."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.",
+              "detailed_explanation": "The limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.\n\nThe exam-relevant points are:\n• The limbic system is associated with emotion and motivation.\n• The amygdala is especially important in fear and other emotional responses.\n• The hypothalamus contributes to motivated and physiological regulation.\n• Emotion involves distributed neural systems rather than one isolated structure.\n\nA useful distinction to keep in mind is: Do not treat the limbic system as a single brain structure; it is a network/system of structures.",
+              "pyq_count": 9,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 2,
+                "direct": 6,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 45
             },
             {
               "id": 2,
@@ -6725,10 +8476,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Hormonal Regulation of Behavior; Self-Teaching Guide and Kaplan."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Hormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.",
+              "detailed_explanation": "Hormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.\n\nThe exam-relevant points are:\n• Hormones are chemical messengers released by endocrine glands.\n• The endocrine system interacts with neural regulation.\n• Hypothalamic–pituitary processes are important in endocrine control.\n• Hormonal influences can affect motivation, emotion and other behaviors.\n\nA useful distinction to keep in mind is: Hormonal regulation is one biological mechanism; it does not replace neural explanations of behavior.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 146
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 11,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 9,
@@ -6777,7 +8541,20 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 4 Genetics and Behaviour."
-              ]
+              ],
+              "expert_explanation": "Chromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.",
+              "detailed_explanation": "Chromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.\n\nThe exam-relevant points are:\n• Chromosomes carry genetic information.\n• Anomalies can alter developmental processes.\n• Behavioral and cognitive effects depend on the specific anomaly.\n• Genetic explanations should distinguish biological contribution from environmental influence.\n\nA useful distinction to keep in mind is: A chromosomal anomaly is a biological condition, not a complete explanation of an individual's psychological functioning.",
+              "pyq_count": 22,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "match": 2,
+                "assertion-reason": 3,
+                "direct": 14,
+                "sequence": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 14
             },
             {
               "id": 2,
@@ -6810,7 +8587,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Baron & Misra — Heredity and Environment; PowerWithin Psychology — Nature-Nurture Controversy."
-              ]
+              ],
+              "expert_explanation": "The nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.",
+              "detailed_explanation": "The nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.\n\nThe exam-relevant points are:\n• Nature refers broadly to inherited/genetic influences.\n• Nurture refers broadly to environmental and experiential influences.\n• Twin and adoption studies help estimate relative contributions.\n• Heritability concerns variation within a population, not how fixed a trait is in an individual.\n\nA useful distinction to keep in mind is: Heritability does not mean that a trait is genetically predetermined or unchangeable.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 318
             },
             {
               "id": 3,
@@ -6846,7 +8630,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in twin studies is comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.",
+              "detailed_explanation": "The central idea in twin studies is comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.\n\nThe exam-relevant points are:\n• MZ vs DZ\n• Heritability\n• Environmental assumptions\n\nA useful distinction to keep in mind is: Heritability is a population statistic, not an individual destiny.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 202
             },
             {
               "id": 4,
@@ -6879,13 +8672,29 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Baron & Misra — Heredity, Environment and Adoption Studies; PowerWithin Psychology — Nature-Nurture Controversy."
-              ]
+              ],
+              "expert_explanation": "Adoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.",
+              "detailed_explanation": "Adoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.\n\nThe exam-relevant points are:\n• Adoption separates some aspects of biological and rearing environments.\n• Similarity with biological relatives can provide evidence relevant to genetic influence.\n• Similarity with adoptive relatives can provide evidence relevant to environmental influence.\n• Findings are interpreted statistically across groups rather than as absolute proof for one individual.\n\nA useful distinction to keep in mind is: Adoption studies estimate contributions; they do not create perfectly controlled environments or eliminate all prenatal/shared influences.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 203
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 24,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 4
         }
       ],
-      "description": "Connect behaviour with the biological systems that make it possible. Study the organisation and functioning of the nervous system, brain structures and processes, sensory systems, endocrine influences, and genetic contributions, then use these foundations to explain links with cognition, emotion, motivation, and behaviour. The unit is designed to help you move between biological mechanisms and psychological outcomes rather than memorising structures in isolation."
+      "description": "Connect behaviour with the biological systems that make it possible. Study the organisation and functioning of the nervous system, brain structures and processes, sensory systems, endocrine influences, and genetic contributions, then use these foundations to explain links with cognition, emotion, motivation, and behaviour. The unit is designed to help you move between biological mechanisms and psychological outcomes rather than memorising structures in isolation.",
+      "pyq_count": 137,
+      "pyq_mapped_microtopics": 20,
+      "pyq_frequency_band": "B"
     },
     {
       "id": 5,
@@ -6942,7 +8751,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in forms of attention is selective, sustained, divided and alternating forms of attention.",
+              "detailed_explanation": "The central idea in forms of attention is selective, sustained, divided and alternating forms of attention.selective, sustained, divided and alternating forms of attention.\n\nThe exam-relevant points are:\n• Selective\n• Sustained\n• Divided\n• Alternating\n\nA useful distinction to keep in mind is: Dividing attention often reduces performance on demanding tasks.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 94
             },
             {
               "id": 2,
@@ -6976,11 +8794,24 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 5 Models of Attention; Baron & Misra — selective/divided attention."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Attention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.",
+              "detailed_explanation": "Attention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.\n\nThe exam-relevant points are:\n• Selective attention allocates limited processing resources.\n• Early and late selection models differ in where selection is proposed to occur.\n• The cocktail-party phenomenon illustrates shifts in attention to meaningful information.\n• Attention can influence what reaches conscious processing.\n\nA useful distinction to keep in mind is: Attention models differ in the proposed stage and mechanism of selection; do not treat them as interchangeable.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 204
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 5,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -7030,11 +8861,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 5 Perception; Ciccarelli & White 6e; Baron & Misra."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Perception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.",
+              "detailed_explanation": "Perception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.\n\nThe exam-relevant points are:\n• Perception organizes sensory information.\n• Perceptual sets can bias how stimuli are interpreted.\n• Bottom-up processing begins with sensory features.\n• Top-down processing uses knowledge, expectations and concepts.\n\nA useful distinction to keep in mind is: Perception is not a passive copy of sensory input; interpretation is shaped by processing and prior knowledge.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 147
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 3,
@@ -7084,7 +8929,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Gestalt Approaches; Baron & Misra; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.",
+              "detailed_explanation": "The Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.\n\nThe exam-relevant points are:\n• Perception tends to form organized wholes.\n• Figure–ground segregation is a basic organizing process.\n• Similarity, proximity, closure and continuity are key Gestalt laws in the source.\n• The approach emphasizes organization rather than isolated sensory fragments.\n\nA useful distinction to keep in mind is: Gestalt laws describe principles of perceptual organization; they are not separate sensory receptors or neural structures.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 148
             },
             {
               "id": 2,
@@ -7118,11 +8973,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 5 Approaches to Perception and Unit 4 biological foundations."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.",
+              "detailed_explanation": "The physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.\n\nThe exam-relevant points are:\n• It emphasizes sensory receptors and neural mechanisms.\n• Physical stimulation is transformed into neural information.\n• Perception depends on biological processing as well as organization and interpretation.\n• The approach complements rather than simply duplicates Gestalt explanations.\n\nA useful distinction to keep in mind is: A physiological explanation focuses on mechanisms; a Gestalt explanation focuses on principles of perceptual organization.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 149
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 4,
@@ -7172,7 +9041,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Gestalt Approaches; Baron & Misra — Perceptual Organization."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Gestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.",
+              "detailed_explanation": "Gestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.\n\nThe exam-relevant points are:\n• Grouping converts separate elements into organized patterns.\n• Figure and ground are differentiated within the perceptual field.\n• Similarity and proximity encourage grouping.\n• Closure and continuity support completion and coherent pattern formation.\n\nA useful distinction to keep in mind is: Gestalt organization is broader than figure–ground alone; figure–ground is one organizing principle within the larger framework.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 2,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 119
             },
             {
               "id": 2,
@@ -7206,7 +9085,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Figure and Ground; PowerWithin Psychology — Gestalt Approach."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Figure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.",
+              "detailed_explanation": "Figure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.\n\nThe exam-relevant points are:\n• Figure is the focal, structured element.\n• Ground provides the background against which the figure is perceived.\n• The same sensory input can support different figure–ground interpretations.\n• Figure–ground organization helps illustrate the difference between sensation and perception.\n\nA useful distinction to keep in mind is: Figure and ground are relational roles within a perceptual organization, not fixed physical properties of every stimulus.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 205
             },
             {
               "id": 3,
@@ -7240,11 +9128,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Gestalt Laws of Perceptual Organization."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.",
+              "detailed_explanation": "The source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.\n\nThe exam-relevant points are:\n• Similarity → similar elements are grouped.\n• Proximity → nearby elements are grouped.\n• Closure → incomplete figures are perceptually completed.\n• Continuity → elements are linked into continuous patterns.\n\nA useful distinction to keep in mind is: The laws are organizing tendencies; they do not mean that every stimulus will always be perceived in exactly one way.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 150
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 5,
@@ -7294,7 +9196,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Size Constancy; PowerWithin Psychology — Perceptual Constancies; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Size constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.",
+              "detailed_explanation": "Size constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.\n\nThe exam-relevant points are:\n• Retinal image size changes with distance.\n• Perceived physical size remains relatively stable.\n• Distance information helps support constancy.\n• Constancy allows stable recognition of familiar objects.\n\nA useful distinction to keep in mind is: Size constancy concerns perceived physical size, not the literal size of the retinal image.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 151
             },
             {
               "id": 2,
@@ -7328,7 +9240,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Shape Constancy; PowerWithin Psychology — Perceptual Constancies."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Shape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.",
+              "detailed_explanation": "Shape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.\n\nThe exam-relevant points are:\n• Viewing angle changes the retinal image.\n• The perceived object's shape remains relatively stable.\n• Prior knowledge and contextual information support stable recognition.\n• Shape constancy contributes to object recognition.\n\nA useful distinction to keep in mind is: Shape constancy concerns stability of perceived form across viewing conditions; it is different from size constancy.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 206
             },
             {
               "id": 3,
@@ -7362,7 +9283,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Perceptual Constancies; Baron & Misra — Brightness Constancy."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Color or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.",
+              "detailed_explanation": "Color or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.\n\nThe exam-relevant points are:\n• Illumination can change the physical light reaching the eyes.\n• Perception can remain relatively stable across lighting conditions.\n• The surrounding context contributes to the perceived surface property.\n• Constancy supports stable recognition of objects.\n\nA useful distinction to keep in mind is: The source explicitly develops brightness constancy; do not substitute unrelated claims about color vision mechanisms.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 319
             },
             {
               "id": 4,
@@ -7399,7 +9327,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in illusions is systematic misperceptions in which an external stimulus is present but interpreted differently.",
+              "detailed_explanation": "The central idea in illusions is systematic misperceptions in which an external stimulus is present but interpreted differently.systematic misperceptions in which an external stimulus is present but interpreted differently.\n\nThe exam-relevant points are:\n• Context effects\n• Organization\n• Depth cues\n\nA useful distinction to keep in mind is: Illusion differs from hallucination because a stimulus is present.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 320
             },
             {
               "id": 5,
@@ -7433,7 +9368,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Perception of Form and Gestalt Approaches; Baron & Misra; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Perception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.",
+              "detailed_explanation": "Perception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.\n\nThe exam-relevant points are:\n• Form perception organizes features into objects or patterns.\n• Gestalt grouping contributes to coherent form.\n• Bottom-up processing uses stimulus features.\n• Top-down processing uses schemas and expectations.\n\nA useful distinction to keep in mind is: Form perception is not explained by a single Gestalt law; multiple organizing and interpretive processes contribute.",
+              "pyq_count": 11,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 7,
+                "assertion-reason": 2,
+                "match": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 38
             },
             {
               "id": 6,
@@ -7467,7 +9414,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Perception of Depth and Distance; Ciccarelli & White 6e."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Depth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.",
+              "detailed_explanation": "Depth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.\n\nThe exam-relevant points are:\n• Depth perception converts two-dimensional retinal information into three-dimensional experience.\n• Monocular cues can operate with one eye.\n• Binocular cues use information from both eyes.\n• Depth cues support judgments of distance and spatial arrangement.\n\nA useful distinction to keep in mind is: Monocular and binocular cues are different sources of depth information; do not classify every depth cue as binocular.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "assertion-reason": 3,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 53
             },
             {
               "id": 7,
@@ -7501,11 +9459,26 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Perception of Form, Depth and Movement; REVISATHON Part 7 — Phi phenomenon."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Perception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.",
+              "detailed_explanation": "Perception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.\n\nThe exam-relevant points are:\n• Movement perception depends on changing visual information over time.\n• Apparent movement can occur without a physically moving object.\n• Phi phenomenon is a classic example of perceived movement.\n• Movement perception is part of the broader organization of visual information.\n\nA useful distinction to keep in mind is: Apparent movement and actual physical movement are not the same phenomenon.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 120
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 25,
+          "pyq_mapped_microtopics": 5,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 6,
@@ -7555,7 +9528,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Role of Motivation and Learning in Perception."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Motivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.",
+              "detailed_explanation": "Motivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.\n\nThe exam-relevant points are:\n• Perception is not completely independent of current needs and goals.\n• Motivational states can contribute to perceptual set.\n• The effect is interpretive rather than a change in the physical stimulus itself.\n• Motivation interacts with prior experience and expectations.\n\nA useful distinction to keep in mind is: Motivation can bias perception, but this does not mean that motivation literally changes the external stimulus.",
+              "pyq_count": 12,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6,
+                "assertion-reason": 1,
+                "sequence": 2,
+                "statement-set": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 34
             },
             {
               "id": 2,
@@ -7589,11 +9574,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Role of Motivation and Learning in Perception; Baron & Misra; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Learning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.",
+              "detailed_explanation": "Learning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.\n\nThe exam-relevant points are:\n• Experience can improve recognition of familiar patterns.\n• Learned associations influence interpretation.\n• Schemas can guide top-down processing.\n• Perceptual learning can change how efficiently information is organized.\n\nA useful distinction to keep in mind is: Learning influences interpretation and recognition; it does not eliminate the sensory input itself.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 321
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 12,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 7,
@@ -7646,7 +9642,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in assumptions of signal detection theory is framework separating sensitivity to signals from decision criterion under uncertainty.",
+              "detailed_explanation": "The central idea in assumptions of signal detection theory is framework separating sensitivity to signals from decision criterion under uncertainty.framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe exam-relevant points are:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nA useful distinction to keep in mind is: A liberal criterion can raise both hits and false alarms.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 207
             },
             {
               "id": 2,
@@ -7683,11 +9688,22 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in applications of signal detection theory is framework separating sensitivity to signals from decision criterion under uncertainty.",
+              "detailed_explanation": "The central idea in applications of signal detection theory is framework separating sensitivity to signals from decision criterion under uncertainty.framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe exam-relevant points are:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nA useful distinction to keep in mind is: A liberal criterion can raise both hits and false alarms.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 322
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 8,
@@ -7738,7 +9754,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "REVISATHON Part 5 — Subliminal Perception; Baron & Misra — Perception."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Subliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.",
+              "detailed_explanation": "Subliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.\n\nThe exam-relevant points are:\n• Subliminal refers to stimulation below reported conscious awareness.\n• It is different from ordinary conscious perception.\n• Evidence and interpretation require careful experimental control.\n• The source does not support treating subliminal messages as a universal form of behavior control.\n\nA useful distinction to keep in mind is: Subliminal perception is not synonymous with signal detection; signal detection theory concerns how internal factors and criteria affect detection decisions.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 208
             },
             {
               "id": 2,
@@ -7773,7 +9798,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Subliminal Perception and Information Processing; Baron & Misra — Perception."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.",
+              "detailed_explanation": "The uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.\n\nThe exam-relevant points are:\n• Attention affects what information is processed.\n• Perceptual set and expectations influence interpretation.\n• Processing conditions determine what information reaches awareness.\n• Claims about subliminal influence require empirical support rather than assumption.\n\nA useful distinction to keep in mind is: Do not treat every unconscious influence as evidence of a subliminal message effect.",
+              "pyq_count": 10,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6,
+                "statement-set": 3,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 41
             },
             {
               "id": 3,
@@ -7808,7 +9844,20 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Information Processing Approach to Perception."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.",
+              "detailed_explanation": "The information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.\n\nThe exam-relevant points are:\n• Perception involves active processing of information.\n• Bottom-up processing begins with stimulus features.\n• Top-down processing uses existing knowledge and expectations.\n• Schemas provide mental representations that help classify and identify input.\n\nA useful distinction to keep in mind is: Bottom-up and top-down processing are complementary processes, not mutually exclusive explanations.",
+              "pyq_count": 27,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 13,
+                "match": 4,
+                "assertion-reason": 5,
+                "statement-set": 3,
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 8
             },
             {
               "id": 4,
@@ -7843,7 +9892,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Perception and culture; PowerWithin Psychology — Culture and Perception."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Culture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.",
+              "detailed_explanation": "Culture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.\n\nThe exam-relevant points are:\n• Perception has a subjective and experience-sensitive component.\n• Cultural experience can shape perceptual expectations.\n• Cross-cultural differences do not mean that sensory systems are completely different.\n• The effect concerns interpretation and perceptual habits.\n\nA useful distinction to keep in mind is: A cultural difference in perception should not be interpreted as proof that one culture has a fundamentally different sensory apparatus.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 323
             },
             {
               "id": 5,
@@ -7878,7 +9934,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 5 Advanced Topics in Perception; outline-level coverage."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Perceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.",
+              "detailed_explanation": "Perceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.\n\nThe exam-relevant points are:\n• The topic concerns individual differences in perceptual organization or interpretation.\n• Perceptual style can interact with experience and context.\n• The source places it within advanced perception rather than basic sensation.\n• Detailed classification is limited in the supplied material.\n\nA useful distinction to keep in mind is: Do not import an external classification system and present it as the source's own taxonomy.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 209
             },
             {
               "id": 6,
@@ -7913,7 +9978,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Pattern Recognition; PowerWithin Psychology — Information Processing Approach."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Pattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.",
+              "detailed_explanation": "Pattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.\n\nThe exam-relevant points are:\n• Bottom-up recognition combines simpler stimulus features.\n• Top-down recognition uses prior knowledge and expectations.\n• Pattern recognition supports identification of letters, objects and familiar forms.\n• Both stimulus information and prior knowledge can contribute.\n\nA useful distinction to keep in mind is: Pattern recognition is broader than simple feature detection; the key issue is how features are organized into meaningful patterns.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 121
             },
             {
               "id": 7,
@@ -7948,11 +10022,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 5 Ecological Perspective on Perception; outline-level coverage."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.",
+              "detailed_explanation": "The ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.\n\nThe exam-relevant points are:\n• Perception is considered in relation to the organism's environment.\n• The approach emphasizes useful information available in real-world settings.\n• It differs from approaches that treat perception only as internal reconstruction.\n• Detailed source coverage for this node is limited.\n\nA useful distinction to keep in mind is: Do not add a detailed Gibsonian taxonomy unless it is explicitly supported by the uploaded source set for this node.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 152
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5A"
+          "part_id": "5A",
+          "pyq_count": 44,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 9,
@@ -8002,11 +10090,27 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Kaplan AP Psychology Prep Plus — Principles of Learning; PowerWithin Psychology — Unit 5 Learning Process."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Learning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.",
+              "detailed_explanation": "Learning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.\n\nThe exam-relevant points are:\n• Learning is linked to experience.\n• It produces relatively lasting change rather than a temporary state.\n• Different theories explain learning through different mechanisms.\n• Classical, instrumental and cognitive approaches are distinct traditions.\n\nA useful distinction to keep in mind is: Temporary changes caused by fatigue, drugs or maturation are not automatically evidence of learning.",
+              "pyq_count": 10,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "match": 1,
+                "statement-set": 3,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 42
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 10,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 10,
@@ -8059,7 +10163,20 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Classical conditioning is a form of learning in which a previously neutral stimulus acquires the capacity to elicit a response after being paired with an unconditioned stimulus.",
+              "detailed_explanation": "The central idea in classical conditioning procedure is learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.\n\nThe exam-relevant points are:\n• UCS/UCR\n• CS/CR\n• Acquisition\n\nA useful distinction to keep in mind is: CS is learned; UCS naturally elicits the response.",
+              "pyq_count": 18,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 8,
+                "match": 2,
+                "sequence": 5,
+                "assertion-reason": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 19
             },
             {
               "id": 2,
@@ -8096,7 +10213,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in classical conditioning phenomena is acquisition, extinction, spontaneous recovery, generalization and discrimination.",
+              "detailed_explanation": "The central idea in classical conditioning phenomena is acquisition, extinction, spontaneous recovery, generalization and discrimination.acquisition, extinction, spontaneous recovery, generalization and discrimination.\n\nThe exam-relevant points are:\n• Acquisition\n• Extinction\n• Generalization\n• Discrimination\n\nA useful distinction to keep in mind is: Extinction does not necessarily erase all learning.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 210
             },
             {
               "id": 3,
@@ -8130,11 +10256,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Classical Conditioning; Self-Teaching Guide — conditioning phenomena; PowerWithin Psychology."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Related issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.",
+              "detailed_explanation": "Related issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.\n\nThe exam-relevant points are:\n• Acquisition is the development of a conditioned response.\n• Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus.\n• Generalization extends responding to similar stimuli.\n• Discrimination involves learning to respond differently to distinct stimuli; spontaneous recovery is the return of an extinguished response after a delay.\n\nA useful distinction to keep in mind is: Extinction reduces a conditioned response but does not necessarily erase all underlying learning.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 324
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 19,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 11,
@@ -8184,7 +10321,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Operant Conditioning; Ciccarelli & White 6e — Operant Conditioning."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Instrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.",
+              "detailed_explanation": "Instrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.\n\nThe exam-relevant points are:\n• Consequences influence future response frequency.\n• Extinction involves a decline when reinforcement is withheld.\n• Partial reinforcement can produce greater resistance to extinction.\n• Discriminative stimuli signal when a response is likely to be reinforced.\n\nA useful distinction to keep in mind is: Reinforcement increases the likelihood of behavior; punishment decreases it. They are not defined by whether a stimulus is pleasant or unpleasant alone.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 95
             },
             {
               "id": 2,
@@ -8218,12 +10365,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Operant Conditioning; Self-Teaching Guide — Instrumental Conditioning."
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "Instrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.",
+              "detailed_explanation": "Instrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.\n\nThe exam-relevant points are:\n• Reinforcement strengthens behavior.\n• Shaping reinforces successive approximations to a target response.\n• Discriminative stimuli signal reinforcement contingencies.\n• Continuous and partial schedules create different patterns of behavior.\n\nA useful distinction to keep in mind is: A paradigm describes the arrangement of responses and consequences; it is not simply another name for one reinforcement schedule.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 325
             },
             {
               "id": 3,
               "title": "Theoretical issues in instrumental learning",
-              "content_notes": "Theoretical issues in instrumental learning should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Reinforcement is defined by its effect on behavior, not by whether a consequence is pleasant.",
+              "content_notes": "Theoretical issues in instrumental learning concern how consequences change behaviour and what processes account for that change. Major questions involve reinforcement, expectancy, response–outcome relations and cognitive mediation.\n\nKEY POINTS\n\n• Behaviour–consequence relationship\n• Reinforcement and expectancy\n• Behavioural and cognitive explanations\n\nDISTINCTION / CAUTION\n\n• Instrumental learning is broader than simply giving rewards.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8254,11 +10408,22 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Theoretical issues in instrumental learning concern how consequences change behaviour and what processes account for that change. Major questions involve reinforcement, expectancy, response–outcome relations and cognitive mediation.\n\nThe exam-relevant points are:\n• Behaviour–consequence relationship\n• Reinforcement and expectancy\n• Behavioural and cognitive explanations\n\nA useful distinction to keep in mind is: Instrumental learning is broader than simply giving rewards.",
+              "expert_explanation": "Theoretical issues in instrumental learning concern how consequences change behaviour and what processes account for that change. Major questions involve reinforcement, expectancy, response–outcome relations and cognitive mediation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 326
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 9
         },
         {
           "id": 12,
@@ -8311,7 +10476,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons. Part 7: sampling and research-methodology PYQ revision."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons. Part 7: sampling and research-methodology PYQ revision.",
+              "expert_explanation": "The central idea in basic reinforcement variables is characteristics that can take different values and structure research designs.",
+              "detailed_explanation": "The central idea in basic reinforcement variables is characteristics that can take different values and structure research designs.characteristics that can take different values and structure research designs.\n\nThe exam-relevant points are:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nA useful distinction to keep in mind is: Confounding is an uncontrolled alternative explanation.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "match": 1,
+                "assertion-reason": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 54
             },
             {
               "id": 2,
@@ -8348,11 +10525,24 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in reinforcement schedules is fixed/variable and ratio/interval schedules that determine when reinforcement occurs.",
+              "detailed_explanation": "The central idea in reinforcement schedules is fixed/variable and ratio/interval schedules that determine when reinforcement occurs.fixed/variable and ratio/interval schedules that determine when reinforcement occurs.\n\nThe exam-relevant points are:\n• FR\n• FI\n• VR\n• VI\n• Variable ratio often resistant to extinction\n\nA useful distinction to keep in mind is: Variable ratio and variable interval are commonly confused.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 153
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 10,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 13,
@@ -8373,7 +10563,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Behavior modification",
-              "content_notes": "Behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a learning-based intervention, not simply advice or punishment.",
+              "content_notes": "Behaviour modification applies learning principles, especially reinforcement and conditioning, to increase desirable behaviour or reduce problematic behaviour. It begins with clearly defined behaviour and the contingencies maintaining it.\n\nKEY POINTS\n\n• Behavioural definition\n• Reinforcement and conditioning\n• Planned behaviour change\n\nDISTINCTION / CAUTION\n\n• Behaviour modification is not synonymous with punishment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8403,12 +10593,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Behaviour modification applies learning principles, especially reinforcement and conditioning, to increase desirable behaviour or reduce problematic behaviour. It begins with clearly defined behaviour and the contingencies maintaining it.\n\nThe exam-relevant points are:\n• Behavioural definition\n• Reinforcement and conditioning\n• Planned behaviour change\n\nA useful distinction to keep in mind is: Behaviour modification is not synonymous with punishment.",
+              "expert_explanation": "Behaviour modification applies learning principles, especially reinforcement and conditioning, to increase desirable behaviour or reduce problematic behaviour. It begins with clearly defined behaviour and the contingencies maintaining it.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 211
             },
             {
               "id": 2,
               "title": "Applications of behavior modification",
-              "content_notes": "Applications of behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Map each application to its learning principle.",
+              "content_notes": "Applications of behaviour modification translate learning principles into structured interventions in education, clinical work, parenting and organisations. The target behaviour is defined, changed and monitored systematically.\n\nKEY POINTS\n\n• Target behaviour\n• Antecedents and consequences\n• Behavioural measurement\n\nDISTINCTION / CAUTION\n\n• An intervention should target a defined behaviour rather than a vague label.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8438,11 +10637,22 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Applications of behaviour modification translate learning principles into structured interventions in education, clinical work, parenting and organisations. The target behaviour is defined, changed and monitored systematically.\n\nThe exam-relevant points are:\n• Target behaviour\n• Antecedents and consequences\n• Behavioural measurement\n\nA useful distinction to keep in mind is: An intervention should target a defined behaviour rather than a vague label.",
+              "expert_explanation": "Applications of behaviour modification translate learning principles into structured interventions in education, clinical work, parenting and organisations. The target behaviour is defined, changed and monitored systematically.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 327
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 13
         },
         {
           "id": 14,
@@ -8463,7 +10673,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Latent learning",
-              "content_notes": "Latent learning should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Latent learning is delayed expression of acquired knowledge, not absence of learning.",
+              "content_notes": "Latent learning refers to learning that occurs without an immediate change in observable performance and becomes evident when an opportunity or incentive for performance appears. Tolman's work demonstrated that learning cannot always be inferred from reinforcement alone.\n\nKEY POINTS\n\n• Learning without immediate reinforcement\n• Delayed performance\n• Cognitive maps and expectancy\n\nDISTINCTION / CAUTION\n\n• Learning and performance are not identical.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8494,7 +10704,17 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Latent learning refers to learning that occurs without an immediate change in observable performance and becomes evident when an opportunity or incentive for performance appears. Tolman's work demonstrated that learning cannot always be inferred from reinforcement alone.\n\nThe exam-relevant points are:\n• Learning without immediate reinforcement\n• Delayed performance\n• Cognitive maps and expectancy\n\nA useful distinction to keep in mind is: Learning and performance are not identical.",
+              "expert_explanation": "Latent learning refers to learning that occurs without an immediate change in observable performance and becomes evident when an opportunity or incentive for performance appears. Tolman's work demonstrated that learning cannot always be inferred from reinforcement alone.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 2,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 96
             },
             {
               "id": 2,
@@ -8531,11 +10751,28 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in observational learning is learning through models involving attention, retention, reproduction and motivation.",
+              "detailed_explanation": "The central idea in observational learning is learning through models involving attention, retention, reproduction and motivation.learning through models involving attention, retention, reproduction and motivation.\n\nThe exam-relevant points are:\n• Bandura\n• Modeling\n• Vicarious reinforcement\n\nA useful distinction to keep in mind is: Observation is not merely imitation; cognition and motivation matter.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "match": 2,
+                "assertion-reason": 1,
+                "sequence": 1,
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 73
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 10,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 15,
@@ -8556,7 +10793,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Verbal learning",
-              "content_notes": "Verbal learning should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a domain of learned material, not one single learning theory.",
+              "content_notes": "Verbal learning concerns the acquisition and retention of material represented through words, including lists, paired associates and meaningful verbal units. Association, organisation, meaning and rehearsal influence acquisition and recall.\n\nKEY POINTS\n\n• Verbal material\n• Association and organisation\n• Acquisition and retention\n\nDISTINCTION / CAUTION\n\n• Verbal learning is not limited to rote repetition.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8587,7 +10824,18 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Verbal learning concerns the acquisition and retention of material represented through words, including lists, paired associates and meaningful verbal units. Association, organisation, meaning and rehearsal influence acquisition and recall.\n\nThe exam-relevant points are:\n• Verbal material\n• Association and organisation\n• Acquisition and retention\n\nA useful distinction to keep in mind is: Verbal learning is not limited to rote repetition.",
+              "expert_explanation": "Verbal learning concerns the acquisition and retention of material represented through words, including lists, paired associates and meaningful verbal units. Association, organisation, meaning and rehearsal influence acquisition and recall.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "assertion-reason": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 62
             },
             {
               "id": 2,
@@ -8624,11 +10872,22 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in discrimination learning is differential treatment based on group membership or perceived group membership.",
+              "detailed_explanation": "The central idea in discrimination learning is differential treatment based on group membership or perceived group membership.differential treatment based on group membership or perceived group membership.\n\nThe exam-relevant points are:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nA useful distinction to keep in mind is: Keep the three concepts distinct.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 328
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 7,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 8
         },
         {
           "id": 16,
@@ -8649,7 +10908,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Neurophysiology of learning",
-              "content_notes": "Neurophysiology of learning should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• A neural correlate does not by itself constitute the full psychological definition of learning.",
+              "content_notes": "The neurophysiology of learning examines how experience produces relatively lasting changes in nervous-system functioning. Neural plasticity and changes in synaptic activity provide a biological basis for behavioural and cognitive change.\n\nKEY POINTS\n\n• Neural plasticity\n• Synaptic change\n• Experience-dependent modification\n\nDISTINCTION / CAUTION\n\n• Neural change is a biological basis of learning, not a complete psychological explanation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8679,11 +10938,22 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "The neurophysiology of learning examines how experience produces relatively lasting changes in nervous-system functioning. Neural plasticity and changes in synaptic activity provide a biological basis for behavioural and cognitive change.\n\nThe exam-relevant points are:\n• Neural plasticity\n• Synaptic change\n• Experience-dependent modification\n\nA useful distinction to keep in mind is: Neural change is a biological basis of learning, not a complete psychological explanation.",
+              "expert_explanation": "The neurophysiology of learning examines how experience produces relatively lasting changes in nervous-system functioning. Neural plasticity and changes in synaptic activity provide a biological basis for behavioural and cognitive change.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 329
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 16
         },
         {
           "id": 17,
@@ -8704,7 +10974,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Encoding",
-              "content_notes": "Encoding should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Encoding concerns entry/transformation; storage concerns retention.",
+              "content_notes": "Encoding is the process through which information is transformed into a form that can enter memory. Attention determines what receives processing, while meaning and connections with existing knowledge influence later retention.\n\nKEY POINTS\n\n• Transformation into a memory representation\n• Attention\n• Elaborative or deeper processing\n\nDISTINCTION / CAUTION\n\n• Encoding is the entry process; storage concerns retention and retrieval concerns access.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8734,12 +11004,25 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Encoding is the process through which information is transformed into a form that can enter memory. Attention determines what receives processing, while meaning and connections with existing knowledge influence later retention.\n\nThe exam-relevant points are:\n• Transformation into a memory representation\n• Attention\n• Elaborative or deeper processing\n\nA useful distinction to keep in mind is: Encoding is the entry process; storage concerns retention and retrieval concerns access.",
+              "expert_explanation": "Encoding is the process through which information is transformed into a form that can enter memory. Attention determines what receives processing, while meaning and connections with existing knowledge influence later retention.",
+              "pyq_count": 19,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 10,
+                "sequence": 3,
+                "assertion-reason": 3,
+                "match": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 17
             },
             {
               "id": 2,
               "title": "Storage",
-              "content_notes": "Storage should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Storage is the process; the memory systems are forms of retention in the model.",
+              "content_notes": "Storage refers to the retention of information after it has been encoded. Different memory systems retain information for different periods and differ in capacity and the type of information they maintain.\n\nKEY POINTS\n\n• Retention over time\n• Memory systems\n• Capacity and duration\n\nDISTINCTION / CAUTION\n\n• Storage should not be confused with retrieval.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8769,12 +11052,23 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Storage refers to the retention of information after it has been encoded. Different memory systems retain information for different periods and differ in capacity and the type of information they maintain.\n\nThe exam-relevant points are:\n• Retention over time\n• Memory systems\n• Capacity and duration\n\nA useful distinction to keep in mind is: Storage should not be confused with retrieval.",
+              "expert_explanation": "Storage refers to the retention of information after it has been encoded. Different memory systems retain information for different periods and differ in capacity and the type of information they maintain.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 97
             },
             {
               "id": 3,
               "title": "Retrieval",
-              "content_notes": "Retrieval should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Retrieval failure is distinct from encoding failure.",
+              "content_notes": "Retrieval is the process of locating and accessing information that has been stored in memory. Successful remembering depends on both the stored representation and the cues and context available at the time of recall.\n\nKEY POINTS\n\n• Access to stored information\n• Retrieval cues and context\n• Availability versus accessibility\n\nDISTINCTION / CAUTION\n\n• Failure to recall does not by itself prove that information was never stored.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8804,11 +11098,22 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Retrieval is the process of locating and accessing information that has been stored in memory. Successful remembering depends on both the stored representation and the cues and context available at the time of recall.\n\nThe exam-relevant points are:\n• Access to stored information\n• Retrieval cues and context\n• Availability versus accessibility\n\nA useful distinction to keep in mind is: Failure to recall does not by itself prove that information was never stored.",
+              "expert_explanation": "Retrieval is the process of locating and accessing information that has been stored in memory. Successful remembering depends on both the stored representation and the cues and context available at the time of recall.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 330
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 23,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 18,
@@ -8829,7 +11134,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Sensory memory",
-              "content_notes": "Sensory memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is brief sensory retention, not perception itself.",
+              "content_notes": "Sensory memory is the very brief retention of representations of sensory input. It preserves information momentarily, allowing attention to select what will receive further processing.\n\nKEY POINTS\n\n• Very brief duration\n• High initial capacity\n• Sensory-specific representations\n\nDISTINCTION / CAUTION\n\n• Its defining feature is brief persistence of sensory information.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8859,12 +11164,22 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Sensory memory is the very brief retention of representations of sensory input. It preserves information momentarily, allowing attention to select what will receive further processing.\n\nThe exam-relevant points are:\n• Very brief duration\n• High initial capacity\n• Sensory-specific representations\n\nA useful distinction to keep in mind is: Its defining feature is brief persistence of sensory information.",
+              "expert_explanation": "Sensory memory is the very brief retention of representations of sensory input. It preserves information momentarily, allowing attention to select what will receive further processing.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 98
             },
             {
               "id": 2,
               "title": "Short-term memory",
-              "content_notes": "Short-term memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Working memory is broader than the traditional passive short-term store.",
+              "content_notes": "Short-term memory refers to brief, limited-capacity retention of information currently being used. Working memory extends this idea by emphasising active processing as well as temporary storage.\n\nKEY POINTS\n\n• Limited capacity\n• Brief duration\n• Working memory relationship\n\nDISTINCTION / CAUTION\n\n• Short-term memory and working memory are related but not perfect synonyms.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8894,7 +11209,16 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Short-term memory refers to brief, limited-capacity retention of information currently being used. Working memory extends this idea by emphasising active processing as well as temporary storage.\n\nThe exam-relevant points are:\n• Limited capacity\n• Brief duration\n• Working memory relationship\n\nA useful distinction to keep in mind is: Short-term memory and working memory are related but not perfect synonyms.",
+              "expert_explanation": "Short-term memory refers to brief, limited-capacity retention of information currently being used. Working memory extends this idea by emphasising active processing as well as temporary storage.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 154
             },
             {
               "id": 3,
@@ -8931,12 +11255,24 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in working memory is limited system for temporarily holding and manipulating information.",
+              "detailed_explanation": "The central idea in working memory is limited system for temporarily holding and manipulating information.limited system for temporarily holding and manipulating information.\n\nThe exam-relevant points are:\n• Central executive\n• Phonological loop\n• Visuospatial sketchpad\n• Episodic buffer\n\nA useful distinction to keep in mind is: It is more than passive storage.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "assertion-reason": 2,
+                "statement-set": 2,
+                "sequence": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 63
             },
             {
               "id": 4,
               "title": "Long-term memory",
-              "content_notes": "Long-term memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is not one undifferentiated store.",
+              "content_notes": "Long-term memory permits information to be retained over extended periods and includes different forms of knowledge and experience. It is better understood as functionally differentiated memory systems than as one uniform store.\n\nKEY POINTS\n\n• Long-duration retention\n• Large capacity\n• Declarative and procedural forms\n\nDISTINCTION / CAUTION\n\n• Long-term memory is not a single undifferentiated system.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8966,12 +11302,19 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Long-term memory permits information to be retained over extended periods and includes different forms of knowledge and experience. It is better understood as functionally differentiated memory systems than as one uniform store.\n\nThe exam-relevant points are:\n• Long-duration retention\n• Large capacity\n• Declarative and procedural forms\n\nA useful distinction to keep in mind is: Long-term memory is not a single undifferentiated system.",
+              "expert_explanation": "Long-term memory permits information to be retained over extended periods and includes different forms of knowledge and experience. It is better understood as functionally differentiated memory systems than as one uniform store.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 331
             },
             {
               "id": 5,
               "title": "Declarative memory",
-              "content_notes": "Declarative memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Explicit memory concerns conscious accessibility, not short versus long duration.",
+              "content_notes": "Declarative memory is memory for information that can be consciously recollected and described. It includes episodic memory for events and semantic memory for facts and meanings.\n\nKEY POINTS\n\n• Conscious recollection\n• Episodic memory\n• Semantic memory\n\nDISTINCTION / CAUTION\n\n• It differs from procedural memory for skills and habits.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9001,12 +11344,23 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Declarative memory is memory for information that can be consciously recollected and described. It includes episodic memory for events and semantic memory for facts and meanings.\n\nThe exam-relevant points are:\n• Conscious recollection\n• Episodic memory\n• Semantic memory\n\nA useful distinction to keep in mind is: It differs from procedural memory for skills and habits.",
+              "expert_explanation": "Declarative memory is memory for information that can be consciously recollected and described. It includes episodic memory for events and semantic memory for facts and meanings.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "statement-set": 2,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 99
             },
             {
               "id": 6,
               "title": "Episodic memory",
-              "content_notes": "Episodic memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• The defining feature is personally experienced events.",
+              "content_notes": "Episodic memory is memory for personally experienced events, including information about when and where an event occurred. It contributes to remembering experiences as episodes in one's own life.\n\nKEY POINTS\n\n• Personally experienced events\n• Time and context\n• Autobiographical remembering\n\nDISTINCTION / CAUTION\n\n• It is not simply memory for facts.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9036,12 +11390,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Episodic memory is memory for personally experienced events, including information about when and where an event occurred. It contributes to remembering experiences as episodes in one's own life.\n\nThe exam-relevant points are:\n• Personally experienced events\n• Time and context\n• Autobiographical remembering\n\nA useful distinction to keep in mind is: It is not simply memory for facts.",
+              "expert_explanation": "Episodic memory is memory for personally experienced events, including information about when and where an event occurred. It contributes to remembering experiences as episodes in one's own life.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 3
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 122
             },
             {
               "id": 7,
               "title": "Semantic memory",
-              "content_notes": "Semantic memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Semantic differs from episodic even though both are declarative.",
+              "content_notes": "Semantic memory contains general knowledge, concepts, meanings and facts about the world. Remembering a fact does not require remembering the particular episode in which it was learned.\n\nKEY POINTS\n\n• General knowledge\n• Concepts and meanings\n• Facts\n\nDISTINCTION / CAUTION\n\n• It should be distinguished from episodic memory.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9071,12 +11434,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Semantic memory contains general knowledge, concepts, meanings and facts about the world. Remembering a fact does not require remembering the particular episode in which it was learned.\n\nThe exam-relevant points are:\n• General knowledge\n• Concepts and meanings\n• Facts\n\nA useful distinction to keep in mind is: It should be distinguished from episodic memory.",
+              "expert_explanation": "Semantic memory contains general knowledge, concepts, meanings and facts about the world. Remembering a fact does not require remembering the particular episode in which it was learned.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 212
             },
             {
               "id": 8,
               "title": "Procedural memory",
-              "content_notes": "Procedural memory should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Procedural memory concerns how to perform, not what can be consciously declared.",
+              "content_notes": "Procedural memory concerns learned skills, habits and procedures. Its contents are often demonstrated through performance rather than described verbally.\n\nKEY POINTS\n\n• Skills and habits\n• Procedural knowledge\n• Performance\n\nDISTINCTION / CAUTION\n\n• Its characteristic content is skill and procedure, not merely unconscious information.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9106,11 +11478,22 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Procedural memory concerns learned skills, habits and procedures. Its contents are often demonstrated through performance rather than described verbally.\n\nThe exam-relevant points are:\n• Skills and habits\n• Procedural knowledge\n• Performance\n\nA useful distinction to keep in mind is: Its characteristic content is skill and procedure, not merely unconscious information.",
+              "expert_explanation": "Procedural memory concerns learned skills, habits and procedures. Its contents are often demonstrated through performance rather than described verbally.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 332
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 21,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 19,
@@ -9163,12 +11546,24 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "expert_explanation": "The central idea in interference theory is forgetting through competition between memories.",
+              "detailed_explanation": "The central idea in interference theory is forgetting through competition between memories.forgetting through competition between memories.\n\nThe exam-relevant points are:\n• Proactive: old → new\n• Retroactive: new → old\n\nA useful distinction to keep in mind is: PRO = prior blocks new; RETRO = recent blocks old.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "assertion-reason": 2,
+                "direct": 3,
+                "statement-set": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 64
             },
             {
               "id": 2,
               "title": "Retrieval failure",
-              "content_notes": "Retrieval failure should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not confuse it with encoding failure, where information was not adequately entered.",
+              "content_notes": "Retrieval failure occurs when stored information cannot be accessed at a particular moment. Appropriate cues and the context of remembering can strongly influence whether information becomes available.\n\nKEY POINTS\n\n• Stored information\n• Retrieval cues\n• Context\n\nDISTINCTION / CAUTION\n\n• Temporary inability to recall is not equivalent to permanent loss.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9198,12 +11593,21 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Retrieval failure occurs when stored information cannot be accessed at a particular moment. Appropriate cues and the context of remembering can strongly influence whether information becomes available.\n\nThe exam-relevant points are:\n• Stored information\n• Retrieval cues\n• Context\n\nA useful distinction to keep in mind is: Temporary inability to recall is not equivalent to permanent loss.",
+              "expert_explanation": "Retrieval failure occurs when stored information cannot be accessed at a particular moment. Appropriate cues and the context of remembering can strongly influence whether information becomes available.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 155
             },
             {
               "id": 3,
               "title": "Decay",
-              "content_notes": "Decay should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Decay emphasizes time/disuse; interference emphasizes competing information.",
+              "content_notes": "Decay theory explains forgetting partly as weakening of memory traces with the passage of time when information is not sufficiently maintained or used. It is one explanation among several accounts of forgetting.\n\nKEY POINTS\n\n• Passage of time\n• Memory trace weakening\n• Comparison with interference\n\nDISTINCTION / CAUTION\n\n• Decay is not the only explanation of forgetting.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9233,12 +11637,19 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Decay theory explains forgetting partly as weakening of memory traces with the passage of time when information is not sufficiently maintained or used. It is one explanation among several accounts of forgetting.\n\nThe exam-relevant points are:\n• Passage of time\n• Memory trace weakening\n• Comparison with interference\n\nA useful distinction to keep in mind is: Decay is not the only explanation of forgetting.",
+              "expert_explanation": "Decay theory explains forgetting partly as weakening of memory traces with the passage of time when information is not sufficiently maintained or used. It is one explanation among several accounts of forgetting.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 333
             },
             {
               "id": 4,
               "title": "Motivated forgetting",
-              "content_notes": "Motivated forgetting should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not assume every forgotten memory is deliberately repressed.",
+              "content_notes": "Motivated forgetting refers to the proposed influence of motivational processes on what is remembered or kept outside awareness. It should be treated as a claim about motivation and memory, not proof that unwanted memories are simply erased.\n\nKEY POINTS\n\n• Motivation and memory\n• Repression as a debated concept\n• Memory accessibility\n\nDISTINCTION / CAUTION\n\n• Do not assume every forgotten unpleasant event has been repressed.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9268,11 +11679,22 @@ window.NETPSY_DATA = {
                 "Baron & Misra",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Motivated forgetting refers to the proposed influence of motivational processes on what is remembered or kept outside awareness. It should be treated as a claim about motivation and memory, not proof that unwanted memories are simply erased.\n\nThe exam-relevant points are:\n• Motivation and memory\n• Repression as a debated concept\n• Memory accessibility\n\nA useful distinction to keep in mind is: Do not assume every forgotten unpleasant event has been repressed.",
+              "expert_explanation": "Motivated forgetting refers to the proposed influence of motivational processes on what is remembered or kept outside awareness. It should be treated as a claim about motivation and memory, not proof that unwanted memories are simply erased.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 334
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "5B"
+          "part_id": "5B",
+          "pyq_count": 9,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 10
         }
       ],
       "description": "Follow the flow of information from attention and perception through learning, memory, and forgetting. First understand how people select, organise, and interpret incoming information, including perceptual organisation, constancy, illusions, and signal detection. Then connect this with how behaviour and knowledge change through learning, how information is encoded and stored in memory, and why remembering and forgetting take the forms they do across major theories and models.",
@@ -9310,7 +11732,10 @@ window.NETPSY_DATA = {
             19
           ]
         }
-      ]
+      ],
+      "pyq_count": 213,
+      "pyq_mapped_microtopics": 41,
+      "pyq_frequency_band": "A"
     },
     {
       "id": 6,
@@ -9365,7 +11790,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; historical associationist framing in the major psychology texts."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Associationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.",
+              "detailed_explanation": "Associationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.\n\nThe exam-relevant points are:\n• Thought can be analyzed in terms of associations.\n• Experience contributes to the formation of connections.\n• Associationist explanations emphasize learned links rather than holistic organization.\n• The perspective differs from Gestalt accounts that emphasize organized wholes.\n\nA useful distinction to keep in mind is: Associationism and Gestalt psychology offer contrasting ways of explaining how mental elements become organized.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 123
             },
             {
               "id": 2,
@@ -9400,7 +11835,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; Gestalt tradition in Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.",
+              "detailed_explanation": "The Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.\n\nThe exam-relevant points are:\n• Organization of relationships is central.\n• Problem solving can involve restructuring rather than only gradual association.\n• The whole can have properties not captured by isolated elements.\n• The approach contrasts with purely associationist explanations.\n\nA useful distinction to keep in mind is: Gestalt does not mean simply 'visual perception'; the organizing principle is also applied to thought and problem solving.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 335
             },
             {
               "id": 3,
@@ -9435,7 +11877,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Cognitive Psychology; Kaplan AP Psychology — cognition and problem solving."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.",
+              "detailed_explanation": "The information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.\n\nThe exam-relevant points are:\n• Mental activity is described in terms of information processing.\n• Attention selects or prioritizes information.\n• Memory provides stored representations used in thinking.\n• Problem solving and decision making involve multiple processing operations.\n\nA useful distinction to keep in mind is: Information processing is a framework for describing cognitive operations; it is not one single experiment or one single cognitive ability.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "match": 1,
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 100
             },
             {
               "id": 4,
@@ -9470,10 +11923,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Feature Integration Model and Unit 5 Attention/Perception."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.",
+              "detailed_explanation": "The feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.\n\nThe exam-relevant points are:\n• Features such as color, shape or orientation can initially be processed separately.\n• Attention helps bind features into an integrated object representation.\n• The model connects selective attention with perceptual organization.\n• It is concerned with how separate features become a coherent percept.\n\nA useful distinction to keep in mind is: Feature integration is about binding features into objects; it should not be confused with Gestalt grouping laws, although both address perceptual organization.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 4,
+                "direct": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 65
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 14,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -9523,7 +11991,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White — concepts and problem solving."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Concept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.",
+              "detailed_explanation": "Concept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.\n\nThe exam-relevant points are:\n• Concepts group related instances.\n• Categorization reduces the complexity of experience.\n• Rules or defining features can guide category membership.\n• Concepts support reasoning and problem solving.\n\nA useful distinction to keep in mind is: A concept is a mental category; a rule is a criterion or strategy used to form or apply that category.",
+              "pyq_count": 18,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 10,
+                "match": 7,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 20
             },
             {
               "id": 2,
@@ -9557,7 +12036,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Concepts and Problem Solving; PowerWithin Psychology — Concept Formation."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Concepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.",
+              "detailed_explanation": "Concepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.\n\nThe exam-relevant points are:\n• Concepts allow efficient categorization.\n• Some concepts can be defined by clear rules or features.\n• Other categories may be organized around typical examples or prototypes.\n• Concepts guide recognition, inference and communication.\n\nA useful distinction to keep in mind is: Do not assume every natural category has a perfectly sharp defining rule.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 3,
+                "match": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 83
             },
             {
               "id": 3,
@@ -9591,7 +12081,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Concept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.",
+              "detailed_explanation": "Concept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.\n\nThe exam-relevant points are:\n• People compare instances when forming categories.\n• Relevant similarities and differences help refine a concept.\n• Hypotheses about category membership can be tested against examples.\n• Experience can improve categorization efficiency.\n\nA useful distinction to keep in mind is: A concept-formation strategy is a cognitive procedure; it is not itself the final concept.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 336
             },
             {
               "id": 4,
@@ -9625,7 +12122,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Thinking and Concepts; PowerWithin Psychology — Role of Concepts in Thinking."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Concepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.",
+              "detailed_explanation": "Concepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.\n\nThe exam-relevant points are:\n• Concepts reduce cognitive complexity.\n• They support classification and inference.\n• They provide categories for communication and memory.\n• They are used in reasoning and problem solving.\n\nA useful distinction to keep in mind is: Concepts organize information; they do not guarantee that every inference based on a category is correct.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "assertion-reason": 1,
+                "statement-set": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 55
             },
             {
               "id": 5,
@@ -9659,10 +12168,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Psychology: A Self-Teaching Guide — inductive/deductive reasoning; PowerWithin Psychology — Types of Reasoning."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Reasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.",
+              "detailed_explanation": "Reasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.\n\nThe exam-relevant points are:\n• Inductive reasoning moves from particular observations toward broader conclusions.\n• Deductive reasoning applies general premises to specific conclusions.\n• Reasoning depends on the quality of the premises or evidence.\n• Different reasoning forms answer different kinds of questions.\n\nA useful distinction to keep in mind is: Inductive conclusions are typically probabilistic, whereas deductive validity depends on the relationship between premises and conclusion.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 337
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 31,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -9713,10 +12233,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Language and Thought; PowerWithin Psychology — Language and Thought."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.",
+              "detailed_explanation": "The relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.\n\nThe exam-relevant points are:\n• Language provides categories and symbols for representing experience.\n• The linguistic-relativity hypothesis proposes influence of language on thought.\n• Language and thought are related but not identical processes.\n• Cultural and linguistic experience can affect interpretation.\n\nA useful distinction to keep in mind is: The source presents language influence as a theoretical position; it should not be turned into the unsupported claim that language completely determines thought.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 101
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 4,
@@ -9766,7 +12299,20 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Problem Solving and Decision Making; PowerWithin Psychology — Problem Solving."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Problem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.",
+              "detailed_explanation": "Problem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.\n\nThe exam-relevant points are:\n• Trial-and-error tests possible responses.\n• Algorithms provide systematic step-by-step procedures.\n• Heuristics use efficient rules of thumb.\n• Different problems may require different strategies.\n\nA useful distinction to keep in mind is: A heuristic is efficient but does not guarantee a correct solution; an algorithm is more systematic.",
+              "pyq_count": 28,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 14,
+                "match": 5,
+                "assertion-reason": 4,
+                "sequence": 4,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 5
             },
             {
               "id": 2,
@@ -9800,7 +12346,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e; PowerWithin Psychology — Problem Solving and Decision Making."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Problem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.",
+              "detailed_explanation": "Problem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.\n\nThe exam-relevant points are:\n• Algorithms provide systematic procedures.\n• Heuristics reduce effort but can produce error.\n• Experts organize problem information differently from novices.\n• Practice can make parts of problem solving more automatic.\n\nA useful distinction to keep in mind is: A strategy is a procedure for solving a problem, not the same thing as the final solution.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 338
             },
             {
               "id": 3,
@@ -9834,7 +12387,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Problems with Problem Solving and Decision Making; PowerWithin Psychology."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Obstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.",
+              "detailed_explanation": "Obstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.\n\nThe exam-relevant points are:\n• Poor problem representation can block solution search.\n• Fixation can keep a person tied to an ineffective approach.\n• False assumptions can restrict possible solutions.\n• Changing the representation can sometimes reveal a solution.\n\nA useful distinction to keep in mind is: Difficulty solving a problem does not necessarily mean lack of ability; the representation and strategy can be the limiting factors.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 339
             },
             {
               "id": 4,
@@ -9868,7 +12428,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Decision Making: Types and Models; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Decision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.",
+              "detailed_explanation": "Decision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.\n\nThe exam-relevant points are:\n• Decision making requires alternatives and a choice.\n• Choices may be made under different levels of information and uncertainty.\n• Cognitive biases can affect decisions.\n• Decision-making models describe how alternatives are evaluated.\n\nA useful distinction to keep in mind is: Decision making is not identical to problem solving: problem solving seeks a route to a goal, whereas decision making selects among alternatives.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 213
             },
             {
               "id": 5,
@@ -9902,10 +12471,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Decision Making: Types and Models; Kaplan AP Psychology — cognition and decision making."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Decision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.",
+              "detailed_explanation": "Decision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.\n\nThe exam-relevant points are:\n• Models specify how alternatives are represented and evaluated.\n• Information availability affects choice.\n• People may use simplifying strategies rather than exhaustive analysis.\n• A model is useful for identifying the process assumed by a question.\n\nA useful distinction to keep in mind is: Do not treat every choice as fully rational or exhaustive; cognitive psychology recognizes limits on information processing.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 214
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 30,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 5,
@@ -9955,7 +12537,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "REVISATHON Part 1 — Metacognitive Knowledge; PowerWithin Psychology — Metacognition."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Metacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.",
+              "detailed_explanation": "Metacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.\n\nThe exam-relevant points are:\n• It includes knowledge about one's own cognition.\n• It includes knowledge of strategies.\n• It includes knowing when and why to use a strategy.\n• It supports deliberate control of learning.\n\nA useful distinction to keep in mind is: Knowing a strategy is metacognitive knowledge; actually planning, monitoring and changing its use belongs to metacognitive regulation.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 156
             },
             {
               "id": 2,
@@ -9989,10 +12581,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "REVISATHON Part 1 — Metacognitive Regulation; PowerWithin Psychology — Metacognition."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Metacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.",
+              "detailed_explanation": "Metacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.\n\nThe exam-relevant points are:\n• Planning sets goals and chooses strategies.\n• Monitoring checks progress during the task.\n• Evaluation judges the effectiveness of the strategy or outcome.\n• Regulation can involve changing the strategy when needed.\n\nA useful distinction to keep in mind is: Metacognitive regulation is action on cognition; it is more than simply knowing that a strategy exists.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 215
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 6,
@@ -10045,7 +12650,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Spearman's two-factor theory proposes that intellectual performance reflects a general factor (g) together with specific factors (s).",
+              "detailed_explanation": "Spearman's central proposition is two-factor theory of intelligence: general factor g plus specific factors s.two-factor theory of intelligence: general factor g plus specific factors s.\n\nThe exam-relevant points are:\n• G\n• S\n• Factor analysis\n\nA useful distinction to keep in mind is: Not Gardner's multiple intelligences.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1,
+                "match": 1,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 102
             },
             {
               "id": 2,
@@ -10082,7 +12699,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Thurstone's central proposition is primary mental abilities approach to intelligence.",
+              "detailed_explanation": "Thurstone's central proposition is primary mental abilities approach to intelligence.primary mental abilities approach to intelligence.\n\nThe exam-relevant points are:\n• Seven primary abilities\n• Verbal comprehension\n• Reasoning\n• Number/space\n\nA useful distinction to keep in mind is: Not the same as Spearman's g.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 157
             },
             {
               "id": 3,
@@ -10116,7 +12743,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Theories of Intelligence; outline-level Jensen coverage in the supplied extract."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.",
+              "detailed_explanation": "The uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.\n\nThe exam-relevant points are:\n• Jensen is included in the NET intelligence-theory sequence.\n• The topic belongs to theories of intelligence rather than intelligence testing alone.\n• Use the source's specific model and terminology when revising Jensen.\n• The supplied extract is not sufficient for a longer source-specific treatment here.\n\nA useful distinction to keep in mind is: Do not substitute Spearman's or Cattell's model for Jensen's simply because all are psychometric approaches.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 124
             },
             {
               "id": 4,
@@ -10153,7 +12790,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Cattell's central proposition is distinction between fluid and crystallized intelligence.",
+              "detailed_explanation": "Cattell's central proposition is distinction between fluid and crystallized intelligence.distinction between fluid and crystallized intelligence.\n\nThe exam-relevant points are:\n• Fluid\n• Crystallized\n• Developmental change\n\nA useful distinction to keep in mind is: Fluid and crystallized abilities are related but distinct.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 340
             },
             {
               "id": 5,
@@ -10190,7 +12834,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Gardner's central proposition is multiple intelligences framework proposing several relatively distinct capacities.",
+              "detailed_explanation": "Gardner's central proposition is multiple intelligences framework proposing several relatively distinct capacities.multiple intelligences framework proposing several relatively distinct capacities.\n\nThe exam-relevant points are:\n• Linguistic\n• Logical-mathematical\n• Spatial\n• Musical\n• Interpersonal/intrapersonal\n• Naturalistic\n\nA useful distinction to keep in mind is: Not the same as g.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 158
             },
             {
               "id": 6,
@@ -10227,7 +12881,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Stenberg's central proposition is syllabus spelling refers to Sternberg's triarchic theory.",
+              "detailed_explanation": "Stenberg's central proposition is syllabus spelling refers to Sternberg's triarchic theory.syllabus spelling refers to Sternberg's triarchic theory.\n\nThe exam-relevant points are:\n• Analytical\n• Creative\n• Practical\n\nA useful distinction to keep in mind is: Do not confuse with Gardner.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 341
             },
             {
               "id": 7,
@@ -10264,7 +12925,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Goleman's central proposition is emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.",
+              "detailed_explanation": "Goleman's central proposition is emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.\n\nThe exam-relevant points are:\n• Self-awareness\n• Self-regulation\n• Empathy\n• Social skills\n\nA useful distinction to keep in mind is: Emotional intelligence is not simply emotional expression.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 159
             },
             {
               "id": 8,
@@ -10298,10 +12969,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — PASS Theory of Intelligence (Das, Naglieri & Kirby); PowerWithin Psychology — Das, Kar & Parrila."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Das, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.",
+              "detailed_explanation": "Das, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.\n\nThe exam-relevant points are:\n• P = Planning: goal setting, problem solving and monitoring.\n• A = Attention/Arousal: selective attention, resistance to distraction and vigilance.\n• S = Simultaneous: integrates elements into a whole.\n• S = Successive: integrates elements in a serial order.\n\nA useful distinction to keep in mind is: PASS describes cognitive processes rather than reducing intelligence to one general score.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 342
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 13,
+          "pyq_mapped_microtopics": 5,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 7,
@@ -10354,7 +13036,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Torrance's central proposition is creativity assessment emphasizing divergent production.",
+              "detailed_explanation": "Torrance's central proposition is creativity assessment emphasizing divergent production.creativity assessment emphasizing divergent production.\n\nThe exam-relevant points are:\n• Fluency\n• Flexibility\n• Originality\n• Elaboration\n\nA useful distinction to keep in mind is: Creativity testing is not identical to IQ testing.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 216
             },
             {
               "id": 2,
@@ -10388,7 +13079,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Creativity; Getzels & Jackson material."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Getzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.",
+              "detailed_explanation": "Getzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.\n\nThe exam-relevant points are:\n• Creativity and intelligence can be distinguished conceptually.\n• Getzels and Jackson compared groups using creativity and intelligence measures.\n• Their work is relevant to the debate about whether creativity is reducible to intelligence.\n• The source places their work within creativity theory/testing.\n\nA useful distinction to keep in mind is: The existence of a creativity–intelligence relationship does not mean the constructs are identical.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 343
             },
             {
               "id": 3,
@@ -10422,7 +13120,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Guilford's Model of Structure of Intellect and Creativity."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Guilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.",
+              "detailed_explanation": "Guilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.\n\nThe exam-relevant points are:\n• Guilford emphasized divergent production.\n• His Structure of Intellect model organizes abilities by operations, contents and products.\n• Divergent production concerns generating multiple possibilities.\n• Fluency, flexibility and originality are central creativity-related abilities in the source tradition.\n\nA useful distinction to keep in mind is: Divergent production is not the same as convergent production, which focuses on arriving at a single appropriate answer.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 344
             },
             {
               "id": 4,
@@ -10456,10 +13161,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 6 Theories of Creativity; Wallach & Kogan coverage."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "Wallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.",
+              "detailed_explanation": "Wallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.\n\nThe exam-relevant points are:\n• Wallach and Kogan are associated with creativity assessment.\n• Their work is used in discussions distinguishing creativity from conventional intelligence.\n• Open-ended performance can be important when assessing creative production.\n• The source places them within the creativity-theory sequence.\n\nA useful distinction to keep in mind is: Do not substitute Guilford's Structure of Intellect model for Wallach and Kogan's specific contribution.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 345
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 8,
@@ -10509,13 +13225,33 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Creativity: A Confluence Approach; PowerWithin Psychology — Relationship between Intelligence and Creativity."
               ],
-              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision."
+              "revisathon_focus": "Part 5: intelligence and psychological-testing PYQ revision.",
+              "expert_explanation": "The uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.",
+              "detailed_explanation": "The uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.\n\nThe exam-relevant points are:\n• Intelligence can contribute to creativity but is not sufficient by itself.\n• Creativity involves multiple interacting conditions.\n• Domain knowledge and intrinsic motivation can support creative performance.\n• Creativity can vary across domains.\n\nA useful distinction to keep in mind is: Do not reduce creativity to IQ; the source explicitly presents a multi-factor/confluence account.",
+              "pyq_count": 20,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "assertion-reason": 3,
+                "direct": 9,
+                "match": 3,
+                "statement-set": 4,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 16
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 20,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 3
         }
       ],
-      "description": "Understand thinking as a set of related processes involved in representing information, using concepts and language, solving problems, and making decisions. Then connect these processes with major approaches to intelligence and the study of creativity. The unit emphasises distinctions among theories while also showing how thinking, intelligence, and creativity can be applied to everyday situations and exam-style problems."
+      "description": "Understand thinking as a set of related processes involved in representing information, using concepts and language, solving problems, and making decisions. Then connect these processes with major approaches to intelligence and the study of creativity. The unit emphasises distinctions among theories while also showing how thinking, intelligence, and creativity can be applied to everyday situations and exam-style problems.",
+      "pyq_count": 116,
+      "pyq_mapped_microtopics": 19,
+      "pyq_frequency_band": "B"
     },
     {
       "id": 7,
@@ -10569,7 +13305,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Biology of Personality and Behavioral Genetics; Baron & Misra."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Biological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.",
+              "detailed_explanation": "Biological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.\n\nThe exam-relevant points are:\n• Genes contribute to individual differences.\n• Biological systems can influence temperament and behavior.\n• Twin/adoption evidence is relevant to behavioral-genetic questions.\n• Biological influence does not imply complete determinism.\n\nA useful distinction to keep in mind is: Biological determinants are one part of personality explanation; they do not exclude learning, culture or social experience.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 160
             },
             {
               "id": 2,
@@ -10603,11 +13348,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Personality and Social Context; Baron & Misra — personality and culture."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Socio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.",
+              "detailed_explanation": "Socio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.\n\nThe exam-relevant points are:\n• Family and socialization provide important developmental contexts.\n• Culture shapes expectations, roles and patterns of behavior.\n• Social learning contributes to personality development.\n• Biological and sociocultural influences interact.\n\nA useful distinction to keep in mind is: Socio-cultural influence is not equivalent to a single environmental event; it includes sustained social and cultural contexts.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 346
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7A"
+          "part_id": "7A",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -10657,7 +13413,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Psychodynamic Perspectives; Baron & Misra — Psychoanalytic approach."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.",
+              "detailed_explanation": "The psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.\n\nThe exam-relevant points are:\n• Freud proposed conscious, preconscious and unconscious processes.\n• Id follows the pleasure principle.\n• Ego follows the reality principle.\n• Superego represents moral standards; defense mechanisms manage anxiety.\n\nA useful distinction to keep in mind is: Psychoanalytic explanations emphasize unconscious conflict and development, unlike trait approaches that focus on measurable patterns of characteristics.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 217
             },
             {
               "id": 2,
@@ -10694,7 +13459,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in neo-freudian approach is psychoanalysis and psychodynamic explanations centered on unconscious processes.",
+              "detailed_explanation": "The central idea in neo-freudian approach is psychoanalysis and psychodynamic explanations centered on unconscious processes.psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe exam-relevant points are:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nA useful distinction to keep in mind is: Freud is not the founder of behaviorism.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 347
             },
             {
               "id": 3,
@@ -10728,7 +13500,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Behavioral and Social Cognitive View of Personality; Baron & Misra."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 4: classical/operant conditioning and learning comparisons. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 4: classical/operant conditioning and learning comparisons. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.",
+              "detailed_explanation": "The social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.\n\nThe exam-relevant points are:\n• Behavior can be learned through observation and consequences.\n• Social context influences behavior.\n• Expectations and perceived consequences affect action.\n• Personality can reflect learned patterns rather than fixed traits alone.\n\nA useful distinction to keep in mind is: Social learning is broader than simple conditioning because observational and cognitive processes also matter.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 103
             },
             {
               "id": 4,
@@ -10762,7 +13545,20 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Personality: Individuals, Unique and Relatively Stable Patterns; Ciccarelli & White — Trait Theories."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Trait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.",
+              "detailed_explanation": "Trait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.\n\nThe exam-relevant points are:\n• Traits are relatively stable characteristics.\n• Type approaches classify people into broader categories.\n• Trait approaches allow dimensions and degrees of a characteristic.\n• Measurement and consistency across situations are important issues.\n\nA useful distinction to keep in mind is: Trait stability is not absolute; Baron & Misra discuss the debate over person–situation consistency.",
+              "pyq_count": 16,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "sequence": 2,
+                "assertion-reason": 2,
+                "match": 7,
+                "direct": 3,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 25
             },
             {
               "id": 5,
@@ -10796,7 +13592,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Behavioral/Social Cognitive and Cognitive influences on Personality; PowerWithin Psychology."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.",
+              "detailed_explanation": "The cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.\n\nThe exam-relevant points are:\n• Interpretation of events influences behavior.\n• Expectancies and beliefs affect action.\n• Cognitive patterns can show individual differences.\n• Personality is understood partly through information processing and meaning-making.\n\nA useful distinction to keep in mind is: The cognitive approach is not the same as the information-processing account of basic perception; here the focus is personality-related cognition.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 218
             },
             {
               "id": 6,
@@ -10830,7 +13635,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Humanistic Perspectives; Self-Teaching Guide — Humanistic Viewpoint and Self-Actualization."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.",
+              "detailed_explanation": "The humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.\n\nThe exam-relevant points are:\n• The person is viewed as an active agent.\n• Self-concept and subjective experience are important.\n• Growth and self-actualization are central themes.\n• The approach emphasizes meaning and personal potential.\n\nA useful distinction to keep in mind is: Humanistic psychology does not define personality primarily through unconscious conflict or learned responses.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 161
             },
             {
               "id": 7,
@@ -10864,7 +13679,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Existential approaches and Frankl's Logotherapy; Self-Teaching Guide — Existentialism."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.",
+              "detailed_explanation": "The existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.\n\nThe exam-relevant points are:\n• Meaning is a central concern.\n• Choice and responsibility are emphasized.\n• Human beings confront uncertainty and limitations.\n• Personal meaning can guide action and growth.\n\nA useful distinction to keep in mind is: Existential psychology is not simply another trait model; it is concerned with meaning and lived existence.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 348
             },
             {
               "id": 8,
@@ -10901,11 +13723,22 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in transpersonal psychology is experiences beyond ordinary ego boundaries and self-transcendence.",
+              "detailed_explanation": "The central idea in transpersonal psychology is experiences beyond ordinary ego boundaries and self-transcendence.experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe exam-relevant points are:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nA useful distinction to keep in mind is: It is not identical to any single religion.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 349
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7A"
+          "part_id": "7A",
+          "pyq_count": 24,
+          "pyq_mapped_microtopics": 5,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -10958,7 +13791,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in rotter's locus of control is expectancy that outcomes are controlled internally or externally.",
+              "detailed_explanation": "The central idea in rotter's locus of control is expectancy that outcomes are controlled internally or externally.expectancy that outcomes are controlled internally or externally.\n\nThe exam-relevant points are:\n• Internal locus\n• External locus\n• Expectancy\n\nA useful distinction to keep in mind is: Internal locus does not mean total control.",
+              "pyq_count": 23,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 4,
+                "match": 4,
+                "assertion-reason": 10,
+                "statement-set": 5
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 13
             },
             {
               "id": 2,
@@ -10992,7 +13837,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Seligman/optimism material; Ciccarelli & White on optimism and stress."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Seligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.",
+              "detailed_explanation": "Seligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.\n\nThe exam-relevant points are:\n• Explanations can differ in how permanent or temporary an outcome is seen.\n• Explanations can differ in how broadly an event is generalized.\n• Explanatory style is linked to expectations and coping.\n• The framework is relevant to learned optimism and pessimism.\n\nA useful distinction to keep in mind is: Explanatory style concerns habitual interpretation of events; it is not identical to a global personality trait score.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 162
             },
             {
               "id": 3,
@@ -11029,11 +13884,27 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in kohlberg’s theory of moral development is stages of moral reasoning across pre-conventional, conventional and post-conventional levels.",
+              "detailed_explanation": "The central idea in kohlberg’s theory of moral development is stages of moral reasoning across pre-conventional, conventional and post-conventional levels.stages of moral reasoning across pre-conventional, conventional and post-conventional levels.\n\nThe exam-relevant points are:\n• Three levels\n• Moral reasoning\n• Stage sequence\n\nA useful distinction to keep in mind is: Reasoning stage is not identical to behavior.",
+              "pyq_count": 25,
+              "pyq_frequency_band": "A",
+              "pyq_formats": {
+                "direct": 9,
+                "sequence": 6,
+                "assertion-reason": 7,
+                "match": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 10
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7A"
+          "part_id": "7A",
+          "pyq_count": 50,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "A",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 4,
@@ -11083,7 +13954,18 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Psychology: A Self-Teaching Guide — Motivation; PowerWithin Psychology — Approaches to Motivation."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Instincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.",
+              "detailed_explanation": "Instincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.\n\nThe exam-relevant points are:\n• Instincts are biologically based.\n• They do not require the same kind of learning as acquired motives.\n• Evolutionary explanations can be used to understand adaptive behavior.\n• Human motivation is not explained by instincts alone in modern psychology.\n\nA useful distinction to keep in mind is: Instinct and drive are related biological concepts but are not interchangeable: a drive is a motivational state, while an instinct refers to an innate behavioral tendency.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 2,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 104
             },
             {
               "id": 2,
@@ -11117,7 +13999,20 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Motivation and Biological/Acquired Motives; Ciccarelli & White — Motivation."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Needs are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.",
+              "detailed_explanation": "Needs are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.\n\nThe exam-relevant points are:\n• Physiological needs include states such as hunger and thirst.\n• Psychological needs can involve achievement, affiliation or power.\n• Needs can activate goal-directed behavior.\n• Different theories organize needs differently.\n\nA useful distinction to keep in mind is: A need is not identical to a drive: a need refers to a requirement or deficiency, whereas a drive is the motivational state that can arise from it.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "assertion-reason": 1,
+                "statement-set": 1,
+                "match": 1,
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 66
             },
             {
               "id": 3,
@@ -11151,7 +14046,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Psychology: A Self-Teaching Guide — Motivation; Ciccarelli & White — Drive-Reduction Theory."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "A drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.",
+              "detailed_explanation": "A drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.\n\nThe exam-relevant points are:\n• Drives can arise from physiological states.\n• Drive reduction theory links motivation with restoring homeostasis.\n• Drives energize and direct behavior.\n• Psychological motives can also influence behavior.\n\nA useful distinction to keep in mind is: Drive is not the same as incentive: a drive originates in an internal motivational state, whereas an incentive is an external or learned attraction/reward.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 219
             },
             {
               "id": 4,
@@ -11185,7 +14089,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Arousal Theory; PowerWithin Psychology — Motivation."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Arousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.",
+              "detailed_explanation": "Arousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.\n\nThe exam-relevant points are:\n• People may seek an optimal level of stimulation.\n• Underarousal can motivate exploration or stimulation.\n• Overarousal can motivate reduction of stimulation.\n• Individual differences occur in desired arousal levels.\n\nA useful distinction to keep in mind is: Arousal theory differs from drive reduction: it concerns an optimal level of stimulation rather than simply correcting a physiological deficit.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 2
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 163
             },
             {
               "id": 5,
@@ -11219,7 +14132,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Incentive Approach; Self-Teaching Guide — acquired motives."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Incentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.",
+              "detailed_explanation": "Incentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.\n\nThe exam-relevant points are:\n• Incentives can attract behavior.\n• They may be learned rather than biologically necessary.\n• The same incentive can have different value for different people.\n• Incentives complement internal motivational states.\n\nA useful distinction to keep in mind is: An incentive is not the same as a drive; incentives are external/learned attractions, whereas drives involve internal motivational states.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 220
             },
             {
               "id": 6,
@@ -11253,11 +14175,24 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Motivation; PowerWithin Psychology — Basic Motivational Concepts."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.",
+              "detailed_explanation": "The motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.\n\nThe exam-relevant points are:\n• A need or motive initiates motivational activity.\n• Arousal energizes goal-directed behavior.\n• Behavior is directed toward an objective or incentive.\n• Goal attainment can reduce or change the motivational state.\n\nA useful distinction to keep in mind is: The cycle is a conceptual model; not every human motive follows a simple linear sequence.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 164
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 17,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 5,
@@ -11307,7 +14242,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Unconscious Motives and Psychoanalytic Theory; PowerWithin Psychology."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.",
+              "detailed_explanation": "The psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.\n\nThe exam-relevant points are:\n• Unconscious motives can influence behavior.\n• Instinctual drives are central in Freud's model.\n• Conflict can create motivational tension.\n• Behavior may express motives indirectly.\n\nA useful distinction to keep in mind is: Psychoanalytic motivation is not equivalent to conscious goal setting; unconscious processes are central to the approach.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 350
             },
             {
               "id": 2,
@@ -11341,7 +14283,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Ethological Approach to Motivation; evolutionary/biological material in Baron & Misra."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.",
+              "detailed_explanation": "The ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.\n\nThe exam-relevant points are:\n• Behavior can have evolutionary functions.\n• Innate tendencies are considered in relation to environmental conditions.\n• The approach emphasizes adaptation and species-typical behavior.\n• It differs from purely learned accounts of motivation.\n\nA useful distinction to keep in mind is: An evolutionary explanation is not a claim that every behavior is fixed; behavior can still be influenced by learning and context.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 221
             },
             {
               "id": 3,
@@ -11375,7 +14326,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — S-R Cognitive Approach to Motivation; cognitive approaches to motivation."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.",
+              "detailed_explanation": "The S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.\n\nThe exam-relevant points are:\n• Stimulus conditions can influence behavior.\n• Cognitive interpretation mediates responses.\n• Expectancies and goals can influence motivated action.\n• The approach goes beyond a simple stimulus-response chain.\n\nA useful distinction to keep in mind is: The cognitive component is essential; do not reduce this approach to simple behaviorism.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 351
             },
             {
               "id": 4,
@@ -11409,11 +14367,24 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Self-Actualization; Ciccarelli & White — Humanistic Motivation."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.",
+              "detailed_explanation": "The humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.\n\nThe exam-relevant points are:\n• Growth and self-actualization are central.\n• Motivation includes psychological as well as biological needs.\n• Intrinsic motivation can arise from interest and mastery.\n• The person is treated as an active agent rather than a passive responder.\n\nA useful distinction to keep in mind is: Humanistic motivation differs from drive reduction because the goal is not simply restoration of physiological balance.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 222
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 6,
@@ -11463,7 +14434,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Arousal and Incentive Approaches; PowerWithin Psychology — Exploratory Behaviour."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Exploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.",
+              "detailed_explanation": "Exploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.\n\nThe exam-relevant points are:\n• Exploration can increase stimulation or information.\n• It can occur without deprivation of a basic physiological need.\n• Novelty and curiosity can energize behavior.\n• Exploration has adaptive and learning-related value.\n\nA useful distinction to keep in mind is: Exploratory behavior is not necessarily goal-free; it can serve information gathering and environmental mastery.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 352
             },
             {
               "id": 2,
@@ -11497,11 +14475,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Stimulus Motives; PowerWithin Psychology — Curiosity."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Curiosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.",
+              "detailed_explanation": "Curiosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.\n\nThe exam-relevant points are:\n• Curiosity can motivate information seeking.\n• It can be triggered by novelty or uncertainty.\n• Curiosity can support learning and exploration.\n• It can occur even without a physiological deficit.\n\nA useful distinction to keep in mind is: Curiosity is a motivational process, not simply a personality label.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 353
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 7,
@@ -11551,11 +14540,26 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Arousal Theory and Zuckerman's Sensation Seeking; Baron & Misra."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Zuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.",
+              "detailed_explanation": "Zuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.\n\nThe exam-relevant points are:\n• Sensation seeking reflects a preference for stimulation.\n• People differ in their desired arousal levels.\n• Novel or intense activities can satisfy higher stimulation needs.\n• The construct is linked with arousal theory.\n\nA useful distinction to keep in mind is: Sensation seeking is an individual-difference construct, not simply a synonym for risk-taking; risk may be one possible expression.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 125
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 8,
@@ -11605,7 +14609,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Self-Teaching Guide — Acquired Motives; Ciccarelli & White — McClelland's Needs."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Achievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.",
+              "detailed_explanation": "Achievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.\n\nThe exam-relevant points are:\n• Achievement involves striving for success or mastery.\n• Goals and standards influence achievement behavior.\n• Feedback can be important to achievement motivation.\n• It is distinct from affiliation and power motives.\n\nA useful distinction to keep in mind is: Achievement motivation is not simply high intelligence; it concerns motivation toward accomplishment.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 223
             },
             {
               "id": 2,
@@ -11639,7 +14652,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Affiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.",
+              "detailed_explanation": "Affiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.\n\nThe exam-relevant points are:\n• Affiliation involves desire for interpersonal connection.\n• Acceptance and belonging can motivate behavior.\n• Affiliation can influence choices and persistence in social settings.\n• It differs from achievement and power motives.\n\nA useful distinction to keep in mind is: Affiliation is about relationship and belonging needs, not merely social activity frequency.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 354
             },
             {
               "id": 3,
@@ -11673,11 +14693,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Power motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.",
+              "detailed_explanation": "Power motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.\n\nThe exam-relevant points are:\n• Power involves influence or impact.\n• It can be expressed in interpersonal or organizational contexts.\n• Power motivation is one of McClelland's acquired needs.\n• Its expression depends on context and behavior.\n\nA useful distinction to keep in mind is: Power motivation is not identical to aggression; influence can be expressed through leadership, control or responsibility.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 355
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 9,
@@ -11727,11 +14758,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 7 Motivation, Motivational Competence; outline-level coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Motivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.",
+              "detailed_explanation": "Motivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.\n\nThe exam-relevant points are:\n• It concerns effective use and regulation of motivation.\n• Goal direction is central.\n• Self-regulation is closely related.\n• Detailed source-specific classification is limited in the supplied extract.\n\nA useful distinction to keep in mind is: Do not substitute a general self-efficacy definition for motivational competence without source support.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 356
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 9
         },
         {
           "id": 10,
@@ -11782,11 +14824,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Self-Regulation; REVISATHON Part 1 — Metacognitive Regulation; Ciccarelli & White."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Self-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.",
+              "detailed_explanation": "Self-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.\n\nThe exam-relevant points are:\n• Goals provide standards for regulation.\n• Monitoring tracks progress and internal states.\n• Regulation can involve changing strategies or behavior.\n• Self-regulation supports persistence and goal pursuit.\n\nA useful distinction to keep in mind is: Self-regulation is broader than willpower; it includes monitoring, evaluation and strategic adjustment.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 357
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 10
         },
         {
           "id": 11,
@@ -11839,11 +14892,24 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in flow is deep absorption associated with clear goals, feedback and a balance between challenge and skill.",
+              "detailed_explanation": "The central idea in flow is deep absorption associated with clear goals, feedback and a balance between challenge and skill.deep absorption associated with clear goals, feedback and a balance between challenge and skill.\n\nThe exam-relevant points are:\n• Challenge-skill balance\n• Absorption\n• Clear goals\n• Feedback\n\nA useful distinction to keep in mind is: Flow is not simply relaxation.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 224
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 8
         },
         {
           "id": 12,
@@ -11893,11 +14959,25 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Emotion; PowerWithin Psychology — Physiological Correlates."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Emotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.",
+              "detailed_explanation": "Emotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.\n\nThe exam-relevant points are:\n• Emotion involves physiological arousal.\n• The autonomic nervous system contributes to bodily changes.\n• Brain structures such as the amygdala are involved in emotional processing.\n• Different theories assign different causal roles to physiological arousal.\n\nA useful distinction to keep in mind is: Physiological arousal is one component of emotion, not a complete definition of emotion.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 165
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 13,
@@ -11950,7 +15030,18 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in james-lange theory is emotion involves perception of bodily changes following an emotional stimulus.",
+              "detailed_explanation": "The central idea in james-lange theory is emotion involves perception of bodily changes following an emotional stimulus.emotion involves perception of bodily changes following an emotional stimulus.\n\nThe exam-relevant points are:\n• Stimulus → bodily response → emotion\n• Peripheral feedback\n\nA useful distinction to keep in mind is: Differs from Cannon-Bard.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "sequence": 1,
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 105
             },
             {
               "id": 2,
@@ -11987,7 +15078,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in canon-bard theory is emotional experience and physiological arousal occur in parallel.",
+              "detailed_explanation": "The central idea in canon-bard theory is emotional experience and physiological arousal occur in parallel.emotional experience and physiological arousal occur in parallel.\n\nThe exam-relevant points are:\n• Simultaneous arousal and feeling\n• Central processing\n\nA useful distinction to keep in mind is: Not body-first.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 358
             },
             {
               "id": 3,
@@ -12024,7 +15122,18 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in schachter and singer theory is emotion depends on physiological arousal plus cognitive interpretation/label.",
+              "detailed_explanation": "The central idea in schachter and singer theory is emotion depends on physiological arousal plus cognitive interpretation/label.emotion depends on physiological arousal plus cognitive interpretation/label.\n\nThe exam-relevant points are:\n• Arousal\n• Label\n• Context\n\nA useful distinction to keep in mind is: Arousal alone does not specify emotion.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 2,
+                "direct": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 84
             },
             {
               "id": 4,
@@ -12058,7 +15167,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Lazarus's Cognitive-Mediational Theory; PowerWithin Psychology — Lazarus Theory."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Lazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.",
+              "detailed_explanation": "Lazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.\n\nThe exam-relevant points are:\n• Appraisal is central to emotion.\n• The interpretation of the stimulus comes before the emotional response in the model.\n• Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options.\n• Reappraisal can change how a situation is experienced.\n\nA useful distinction to keep in mind is: Lazarus's theory is cognitive-mediational; it differs from James–Lange and Cannon–Bard in the proposed role and timing of appraisal.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 359
             },
             {
               "id": 5,
@@ -12092,11 +15208,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 7 Theories of Emotion; outline-level Lindsley coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.",
+              "detailed_explanation": "The uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.\n\nThe exam-relevant points are:\n• Lindsley is included in the NET theory sequence.\n• The topic belongs to physiological theories of emotion.\n• Use the source's exact formulation when answering a theorist-matching question.\n• The supplied extract is not sufficient for a longer independent explanation.\n\nA useful distinction to keep in mind is: Do not substitute the James–Lange or Cannon–Bard formulation for Lindsley's theory.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 360
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 9,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 14,
@@ -12146,11 +15273,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Emotion Regulation; Ciccarelli & White — Coping and cognitive reappraisal."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Emotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.",
+              "detailed_explanation": "Emotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.\n\nThe exam-relevant points are:\n• Regulation can occur through changing interpretation or behavior.\n• Coping strategies can influence emotional responses.\n• Regulation does not mean eliminating all emotion.\n• Successful regulation depends on context and goals.\n\nA useful distinction to keep in mind is: Emotion regulation is broader than suppression; it can involve reappraisal, coping and other strategies.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 361
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 14
         },
         {
           "id": 15,
@@ -12200,7 +15338,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White — Conflict and Frustration; Self-Teaching Guide — Psychological Conflict."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Conflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.",
+              "detailed_explanation": "Conflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.\n\nThe exam-relevant points are:\n• Incompatible goals can create conflict.\n• Conflict may involve internal motives or external demands.\n• Frustration and conflict can increase emotional arousal.\n• The type of conflict depends on the valence of the alternatives.\n\nA useful distinction to keep in mind is: A source of conflict is the incompatibility producing the tension; a type of conflict classifies the pattern of alternatives.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 166
             },
             {
               "id": 2,
@@ -12234,11 +15381,24 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Psychology: A Self-Teaching Guide — Psychological Conflict; Ciccarelli & White — Conflict."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.",
+              "detailed_explanation": "The uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.\n\nThe exam-relevant points are:\n• Approach–approach: choose between two desirable alternatives.\n• Avoidance–avoidance: choose between two undesirable alternatives.\n• Approach–avoidance: one goal has both positive and negative features.\n• Double approach–avoidance: multiple alternatives each have positive and negative features.\n\nA useful distinction to keep in mind is: Identify the valence of each alternative before naming the conflict type.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 225
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 6
         },
         {
           "id": 16,
@@ -12291,7 +15451,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in concept of stress and coping is stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.",
+              "detailed_explanation": "The central idea in concept of stress and coping is stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.\n\nThe exam-relevant points are:\n• Stressor\n• Appraisal\n• Problem-focused\n• Emotion-focused\n\nA useful distinction to keep in mind is: Stress is not defined only by the event.",
+              "pyq_count": 8,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "match": 2,
+                "sequence": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 56
             },
             {
               "id": 2,
@@ -12325,7 +15497,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Stress and Health; PowerWithin Psychology — Stress and Coping."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.",
+              "detailed_explanation": "The uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.\n\nThe exam-relevant points are:\n• Stress depends on both demands and appraisal.\n• Cognitive appraisal influences whether an event is experienced as stressful.\n• Coping can be problem-focused or emotion-focused.\n• Reappraisal can change the experience of a stressor.\n\nA useful distinction to keep in mind is: A stressor is the event or demand; stress is the psychological/physiological response to it.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 362
             },
             {
               "id": 3,
@@ -12359,7 +15538,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Type A Behavior Pattern; Ciccarelli & White — Personality and Stress."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Type A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.",
+              "detailed_explanation": "Type A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.\n\nThe exam-relevant points are:\n• Competitiveness is a characteristic of the pattern.\n• Impatience and time urgency are common features.\n• Hostility is especially relevant in the health literature discussed by Baron & Misra.\n• The pattern can be modified through behavior change.\n\nA useful distinction to keep in mind is: Type A is a behavior pattern, not a diagnosis; the source specifically discusses components rather than treating the label as a single cause of disease.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 363
             },
             {
               "id": 4,
@@ -12393,7 +15579,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Type A/Type B comparison; Ciccarelli & White — Personality and Stress."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Type B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.",
+              "detailed_explanation": "Type B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.\n\nThe exam-relevant points are:\n• Less time urgency than Type A.\n• Less competitiveness and irritability in the source comparison.\n• Used as a comparison pattern in stress/personality research.\n• It is not a clinical diagnosis.\n\nA useful distinction to keep in mind is: Type B should not be treated as simply 'no stress'; it is a behavioral pattern contrasted with Type A characteristics.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 364
             },
             {
               "id": 5,
@@ -12427,7 +15620,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 7 Stress and Coping, Type C behavior; outline-level coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Type C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.",
+              "detailed_explanation": "Type C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.\n\nThe exam-relevant points are:\n• Type C is listed as a stress/personality pattern.\n• It is distinct from Type A and Type B classifications.\n• Use the source's exact features when answering a matching question.\n• The supplied extract provides limited detailed coverage.\n\nA useful distinction to keep in mind is: Do not import a detailed Type C disease-causation claim unless the uploaded source explicitly provides it.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 365
             },
             {
               "id": 6,
@@ -12461,11 +15661,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 7 Stress and Coping, Type D behavior; outline-level coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Type D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.",
+              "detailed_explanation": "Type D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.\n\nThe exam-relevant points are:\n• Type D is included among stress-related personality patterns.\n• It is distinct from Type A, B and C classifications.\n• Use source-specific descriptors if a PYQ asks for the pattern.\n• Detailed source coverage is limited in the supplied extract.\n\nA useful distinction to keep in mind is: Do not fill this node with an external Type D description unless supported by the uploaded source.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 366
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 8,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 17,
@@ -12515,7 +15726,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies; Self-Teaching Guide/Ciccarelli & White on biofeedback."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Biofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.",
+              "detailed_explanation": "Biofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.\n\nThe exam-relevant points are:\n• Physiological information is measured and fed back.\n• The person learns voluntary control over a physiological response.\n• It is used as a self-regulation technique.\n• It differs from relaxation alone because feedback about bodily activity is central.\n\nA useful distinction to keep in mind is: Biofeedback is a training procedure using physiological feedback; it is not simply another name for meditation or relaxation.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 226
             },
             {
               "id": 2,
@@ -12549,7 +15769,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies, Music Therapy; outline-level coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Music therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.",
+              "detailed_explanation": "Music therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.\n\nThe exam-relevant points are:\n• It is included as a stress-management strategy.\n• Music can be used within structured therapeutic or relaxation contexts.\n• The source does not provide a detailed protocol in the supplied extract.\n• Use source-specific examples when available.\n\nA useful distinction to keep in mind is: Do not assume that every use of music is automatically 'music therapy'; therapy is a structured professional application.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 367
             },
             {
               "id": 3,
@@ -12583,7 +15810,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies, Breathing Exercises."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Breathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.",
+              "detailed_explanation": "Breathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.\n\nThe exam-relevant points are:\n• Breathing exercises can be used to manage arousal.\n• They are listed among stress-management techniques.\n• They can be combined with other relaxation approaches.\n• Detailed dosage/protocol is not provided in the supplied extract.\n\nA useful distinction to keep in mind is: Do not attach an unsupported clinical claim to a generic breathing exercise.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 368
             },
             {
               "id": 4,
@@ -12617,7 +15851,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies; Baron & Misra — progressive muscular relaxation reference."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Progressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.",
+              "detailed_explanation": "Progressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.\n\nThe exam-relevant points are:\n• Attention is directed to muscle tension and relaxation.\n• The technique aims to reduce physical tension and arousal.\n• It is commonly grouped with relaxation-based coping strategies.\n• It differs from guided imagery because the primary target is muscular tension.\n\nA useful distinction to keep in mind is: Progressive muscular relaxation is not simply general physical exercise; its defining feature is systematic tension–release practice.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 227
             },
             {
               "id": 5,
@@ -12651,7 +15894,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies; Ciccarelli & White — guided visualization and coping."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Guided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.",
+              "detailed_explanation": "Guided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.\n\nThe exam-relevant points are:\n• Mental imagery is used deliberately.\n• It can be used to promote relaxation or coping.\n• It is generally classified as an emotion-focused/relaxation strategy in the source material.\n• It differs from progressive muscular relaxation in its primary technique.\n\nA useful distinction to keep in mind is: Guided imagery is a coping/relaxation procedure, not the same as perceptual imagery in ordinary cognition.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 369
             },
             {
               "id": 6,
@@ -12688,7 +15938,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "The central idea in mindfulness is purposeful, present-moment and nonjudgmental attention to experience.",
+              "detailed_explanation": "The central idea in mindfulness is purposeful, present-moment and nonjudgmental attention to experience.purposeful, present-moment and nonjudgmental attention to experience.\n\nThe exam-relevant points are:\n• Present moment\n• Nonjudgment\n• Decentering\n\nA useful distinction to keep in mind is: Not simply relaxation or emptying the mind.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 228
             },
             {
               "id": 7,
@@ -12722,7 +15981,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Ciccarelli & White 6e — Coping with Stress; PowerWithin Psychology — Stress Management Strategies."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Meditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.",
+              "detailed_explanation": "Meditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.\n\nThe exam-relevant points are:\n• Meditation can promote relaxation.\n• It can be used to reduce anxiety/arousal.\n• It is one of several coping strategies.\n• Different forms of meditation may use different attentional procedures.\n\nA useful distinction to keep in mind is: Meditation is a broad family of practices; do not treat every meditation technique as identical.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 370
             },
             {
               "id": 8,
@@ -12756,7 +16022,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Stress Management Strategies and Indian Paradigms of Psychological Knowledge."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Yogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.",
+              "detailed_explanation": "Yogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.\n\nThe exam-relevant points are:\n• Yogasana is included among stress-management strategies.\n• Yoga has a broader conceptual context in Indian psychology.\n• The technique is distinct from meditation, although they may be practiced together.\n• Do not reduce Yoga to a single physical posture.\n\nA useful distinction to keep in mind is: For NET preparation, distinguish the stress-management application of yogasana from the broader Indian-psychology paradigm of Yoga.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 371
             },
             {
               "id": 9,
@@ -12790,11 +16063,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Kaplan AP Psychology Prep Plus — Stress Inoculation Training; PowerWithin Psychology — Stress Management Strategies."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision. Part 3: stress, flow and applied/statistical PYQ revision. Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Stress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.",
+              "detailed_explanation": "Stress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.\n\nThe exam-relevant points are:\n• It is a structured stress-management approach.\n• It emphasizes coping skills and preparation.\n• It is associated with cognitive-behavioral methods.\n• Training is intended to improve responses to future stressors.\n\nA useful distinction to keep in mind is: Stress inoculation training is not the same as exposure therapy; the emphasis is on coping skills and preparation for stress.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 372
             }
           ],
           "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
-          "part_id": "7B"
+          "part_id": "7B",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 8
         }
       ],
       "description": "Examine the person as an organised system of personality, motives, emotions, and responses to demands. Compare major approaches to personality and then connect motivation and emotion with goals, self-regulation, achievement, curiosity, sensation seeking, and flow. Finally, understand stress and coping as processes shaped by appraisal, resources, and responses, so you can integrate the unit instead of studying each topic as a separate list of theories.",
@@ -12830,7 +16114,10 @@ window.NETPSY_DATA = {
             17
           ]
         }
-      ]
+      ],
+      "pyq_count": 125,
+      "pyq_mapped_microtopics": 29,
+      "pyq_frequency_band": "B"
     },
     {
       "id": 8,
@@ -12883,7 +16170,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 8 What is Social Psychology?; Kaplan AP Psychology — Social Psychology."
-              ]
+              ],
+              "expert_explanation": "Social psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.",
+              "detailed_explanation": "Social psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.\n\nThe exam-relevant points are:\n• Social context is central to explanation.\n• The field examines cognition, affect and behavior in social situations.\n• Individuals and groups are both relevant levels of analysis.\n• Social psychology connects individual processes with interpersonal and group contexts.\n\nA useful distinction to keep in mind is: Social psychology is not simply the study of groups; many social-psychological processes occur at the individual level in social contexts.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 373
             },
             {
               "id": 2,
@@ -12916,7 +16210,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 8 Social Psychology outline."
-              ]
+              ],
+              "expert_explanation": "The scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.",
+              "detailed_explanation": "The scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.\n\nThe exam-relevant points are:\n• Social cognition and perception are core areas.\n• Attitudes and their change are studied.\n• Groups and social influence are major domains.\n• Intergroup relations and applied social psychology extend the field.\n\nA useful distinction to keep in mind is: Scope is broader than one topic such as conformity; the NET outline treats social psychology as a wide set of interacting domains.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 374
             },
             {
               "id": 3,
@@ -12949,10 +16250,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Unit 8 Nature and History; Kaplan AP Psychology — Social Psychology."
-              ]
+              ],
+              "expert_explanation": "The history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.",
+              "detailed_explanation": "The history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.\n\nThe exam-relevant points are:\n• The field developed around systematic study of social behavior.\n• Attitudes, group influence and interpersonal processes became major areas.\n• Social psychology draws from multiple theoretical traditions.\n• Historical development led to both basic and applied research.\n\nA useful distinction to keep in mind is: Do not reduce the history of social psychology to a single founder or experiment; the field developed through several traditions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 375
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -13002,7 +16314,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Theoretical Perspectives in Social Psychology; Lewinian field-theory coverage."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Field theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.",
+              "detailed_explanation": "Field theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.\n\nThe exam-relevant points are:\n• Lewin is the key theorist.\n• Behavior is considered in relation to person and environment.\n• The psychological field contains interacting forces.\n• The approach is dynamic and situational.\n\nA useful distinction to keep in mind is: Field theory is not simply an environmental theory; the person and environment are considered together.",
+              "pyq_count": 7,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 1,
+                "direct": 3,
+                "statement-set": 2,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 67
             },
             {
               "id": 2,
@@ -13038,7 +16362,17 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in cognitive dissonance is discomfort arising from inconsistency among cognitions or between cognition and behavior.",
+              "detailed_explanation": "The central idea in cognitive dissonance is discomfort arising from inconsistency among cognitions or between cognition and behavior.discomfort arising from inconsistency among cognitions or between cognition and behavior.\n\nThe exam-relevant points are:\n• Festinger\n• Inconsistency\n• Dissonance reduction\n\nA useful distinction to keep in mind is: Not simply disagreement.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 3,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 106
             },
             {
               "id": 3,
@@ -13071,7 +16405,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Sociobiology."
-              ]
+              ],
+              "expert_explanation": "Sociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.",
+              "detailed_explanation": "Sociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.\n\nThe exam-relevant points are:\n• Social behavior can be examined through evolutionary principles.\n• Adaptive consequences are relevant to explanation.\n• The approach complements rather than replaces social and cultural explanations.\n• Genetic influence does not imply fixed behavior in every context.\n\nA useful distinction to keep in mind is: Sociobiological explanations concern evolutionary function; they should not be treated as proof that a behavior is genetically predetermined.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 376
             },
             {
               "id": 4,
@@ -13104,7 +16445,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Psychodynamic Approaches."
-              ]
+              ],
+              "expert_explanation": "Psychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.",
+              "detailed_explanation": "Psychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.\n\nThe exam-relevant points are:\n• Unconscious processes can influence social behavior.\n• Early relationships may shape later interpersonal patterns.\n• Internal conflict can affect social interaction.\n• The approach differs from purely situational accounts.\n\nA useful distinction to keep in mind is: Psychodynamic social psychology is not identical to Freud's complete personality theory; it applies psychodynamic concepts to social behavior.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 377
             },
             {
               "id": 5,
@@ -13141,10 +16489,21 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in social cognition is how people notice, interpret, remember and use information about social others and situations.",
+              "detailed_explanation": "The central idea in social cognition is how people notice, interpret, remember and use information about social others and situations.how people notice, interpret, remember and use information about social others and situations.\n\nThe exam-relevant points are:\n• Schemas\n• Heuristics\n• Attribution\n• Impression formation\n\nA useful distinction to keep in mind is: It is broader than simply 'thinking about society'.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 378
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 11,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -13194,7 +16553,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 8 Social Perception, Communication and Attributions; Ciccarelli & White social cognition."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Social perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.",
+              "detailed_explanation": "Social perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.\n\nThe exam-relevant points are:\n• People form impressions from social information.\n• Interpretation is influenced by expectations and prior knowledge.\n• Social perception can involve bias and stereotypes.\n• Attributions are one important component of social interpretation.\n\nA useful distinction to keep in mind is: Social perception is broader than attribution; attribution concerns explaining causes, while social perception includes impression formation more generally.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 4,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 74
             },
             {
               "id": 2,
@@ -13228,7 +16597,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Unit 8 Social Perception/Communication; Kaplan AP Psychology — Social Psychology."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Communication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.",
+              "detailed_explanation": "Communication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.\n\nThe exam-relevant points are:\n• Communication can be verbal and nonverbal.\n• Meaning depends partly on context and interpretation.\n• Communication affects interpersonal relationships.\n• Misinterpretation can contribute to social conflict.\n\nA useful distinction to keep in mind is: Communication is the process of exchanging information; persuasion is a specific social-influence process aimed at changing attitudes or behavior.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 229
             },
             {
               "id": 3,
@@ -13262,7 +16640,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Attribution and Social Cognition; Kaplan AP Psychology — Attributions."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Attribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.",
+              "detailed_explanation": "Attribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.\n\nThe exam-relevant points are:\n• Internal attributions locate causes in the person.\n• External attributions locate causes in the situation.\n• Attributions influence judgments of self and others.\n• Self-serving bias can affect explanations of outcomes.\n\nA useful distinction to keep in mind is: An attribution is an explanation of cause, not merely an observation of behavior.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 230
             },
             {
               "id": 4,
@@ -13296,7 +16683,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Social Psychology; PowerWithin Psychology — Attitude and Attitude Change."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "An attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.",
+              "detailed_explanation": "An attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.\n\nThe exam-relevant points are:\n• Attitudes have an evaluative component.\n• They can be positive, negative or mixed.\n• Attitudes can influence behavior under appropriate conditions.\n• Attitudes are shaped by social experience and information.\n\nA useful distinction to keep in mind is: An attitude is an evaluation, not simply knowledge or a belief; beliefs may contribute to an attitude.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 231
             },
             {
               "id": 5,
@@ -13330,7 +16726,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Attitude Change and Cognitive Dissonance; Kaplan AP Psychology."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Attitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.",
+              "detailed_explanation": "Attitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.\n\nThe exam-relevant points are:\n• Persuasive communication can change attitudes.\n• Cognitive dissonance can motivate attitude change.\n• The direction and durability of change depend on context and processing.\n• Attitude change is distinct from simple exposure to information.\n\nA useful distinction to keep in mind is: Cognitive dissonance is one mechanism of attitude change, not a synonym for all attitude change.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "direct": 3,
+                "match": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 75
             },
             {
               "id": 6,
@@ -13364,7 +16772,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology — Attitude and Cultural Context; Baron & Misra — culture and social behavior."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Attitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.",
+              "detailed_explanation": "Attitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.\n\nThe exam-relevant points are:\n• Culture provides norms and values relevant to evaluation.\n• The same behavior can be evaluated differently across cultural contexts.\n• Attitude expression is influenced by social expectations.\n• Cross-cultural interpretation requires attention to context.\n\nA useful distinction to keep in mind is: Cultural context influences attitudes but does not make every individual within a culture identical.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 3
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 107
             },
             {
               "id": 7,
@@ -13398,10 +16816,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Kaplan AP Psychology — Prosocial Behavior; Baron & Misra — Prosocial Behavior."
               ],
-              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons."
+              "revisathon_focus": "Part 6: attitude measurement and personality-inventory comparisons.",
+              "expert_explanation": "Prosocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.",
+              "detailed_explanation": "Prosocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.\n\nThe exam-relevant points are:\n• The intended outcome benefits another person.\n• Helping and altruism are common examples.\n• Empathy and social context can influence prosocial behavior.\n• Costs and benefits can affect helping decisions.\n\nA useful distinction to keep in mind is: Prosocial behavior is broader than altruism; altruism usually emphasizes helping without direct self-benefit.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 379
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 19,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "B",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 4,
@@ -13450,7 +16879,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Kaplan AP Psychology — Social Facilitation; Baron & Misra — Social Facilitation."
-              ]
+              ],
+              "expert_explanation": "Social facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.",
+              "detailed_explanation": "Social facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.\n\nThe exam-relevant points are:\n• Audience presence can affect performance.\n• Well-learned tasks may show improved performance.\n• Difficult or novel tasks can show impaired performance.\n• The effect is distinct from social loafing, which concerns reduced effort in groups.\n\nA useful distinction to keep in mind is: Social facilitation is about performance in the presence of others; social loafing is about effort in group tasks.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 167
             },
             {
               "id": 2,
@@ -13483,7 +16922,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Kaplan AP Psychology — Social Loafing; PowerWithin Psychology — Group and Social Influence."
-              ]
+              ],
+              "expert_explanation": "Social loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.",
+              "detailed_explanation": "Social loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.\n\nThe exam-relevant points are:\n• Effort can decline in group tasks.\n• Individual contribution may be less identifiable.\n• The effect differs from social facilitation.\n• Group size and accountability can influence the effect.\n\nA useful distinction to keep in mind is: Social loafing concerns reduced effort; it is not simply any decline in performance caused by being in a group.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 232
             },
             {
               "id": 3,
@@ -13519,7 +16967,14 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in conformity is adjustment of behavior or judgment toward group norms.",
+              "detailed_explanation": "The central idea in conformity is adjustment of behavior or judgment toward group norms.adjustment of behavior or judgment toward group norms.\n\nThe exam-relevant points are:\n• Asch\n• Normative influence\n• Informational influence\n\nA useful distinction to keep in mind is: Different from obedience.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 380
             },
             {
               "id": 4,
@@ -13552,7 +17007,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Social Influence, Peer Pressure and Conformity; Kaplan AP Psychology."
-              ]
+              ],
+              "expert_explanation": "Peer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.",
+              "detailed_explanation": "Peer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.\n\nThe exam-relevant points are:\n• Peers can influence behavior directly or indirectly.\n• Conformity and group norms are related processes.\n• The influence can be positive or negative depending on the behavior.\n• Individual responses depend on context and perceived norms.\n\nA useful distinction to keep in mind is: Peer pressure is a context of social influence; conformity is the broader process of adjusting behavior or judgments toward group norms.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 381
             },
             {
               "id": 5,
@@ -13585,7 +17047,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Social Influence and Persuasion; Kaplan AP Psychology."
-              ]
+              ],
+              "expert_explanation": "Persuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.",
+              "detailed_explanation": "Persuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.\n\nThe exam-relevant points are:\n• Persuasion involves communication.\n• Messages can influence attitudes and behavior.\n• Source, message and audience factors can affect effectiveness.\n• Persuasion differs from coercion because influence is attempted through communication rather than direct force.\n\nA useful distinction to keep in mind is: Persuasion aims at change; compliance concerns behavior following a request, which may occur with or without an attitude change.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 233
             },
             {
               "id": 6,
@@ -13618,7 +17089,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Social Influence; Kaplan AP Psychology."
-              ]
+              ],
+              "expert_explanation": "Compliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.",
+              "detailed_explanation": "Compliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.\n\nThe exam-relevant points are:\n• Compliance involves responding to a request.\n• It differs from obedience, which typically involves an authority.\n• Compliance can occur without private attitude change.\n• Social influence techniques can increase or decrease compliance.\n\nA useful distinction to keep in mind is: Compliance is request-based influence; obedience is typically authority-based influence.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 168
             },
             {
               "id": 7,
@@ -13654,7 +17134,16 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in obedience is behavior change in response to an authority's command.",
+              "detailed_explanation": "The central idea in obedience is behavior change in response to an authority's command.behavior change in response to an authority's command.\n\nThe exam-relevant points are:\n• Milgram\n• Authority\n• Situational factors\n\nA useful distinction to keep in mind is: Different from conformity.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 234
             },
             {
               "id": 8,
@@ -13687,7 +17176,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Social Influence and Social Power."
-              ]
+              ],
+              "expert_explanation": "Social power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.",
+              "detailed_explanation": "Social power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.\n\nThe exam-relevant points are:\n• Power concerns influence over others or outcomes.\n• Power can operate through different social relationships and resources.\n• The use of power is context dependent.\n• Power is related to but not identical with authority.\n\nA useful distinction to keep in mind is: Having power does not necessarily mean using coercion; influence can occur through multiple forms of social control or resources.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 235
             },
             {
               "id": 9,
@@ -13720,10 +17218,21 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Social Influence/Reactance; P2 Environment & Population Psychology — perceived control and crowding."
-              ]
+              ],
+              "expert_explanation": "Psychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.",
+              "detailed_explanation": "Psychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.\n\nThe exam-relevant points are:\n• Reactance follows perceived restriction of freedom.\n• People may resist or restore the threatened choice.\n• The response depends on how freedom is perceived.\n• It differs from ordinary disagreement because threatened freedom is central.\n\nA useful distinction to keep in mind is: Reactance is not simply stubbornness; the key condition is perceived restriction of freedom.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 382
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 8,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 5,
@@ -13775,10 +17284,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in aggression is behavior intended to harm another person who wants to avoid the harm.",
+              "detailed_explanation": "The central idea in aggression is behavior intended to harm another person who wants to avoid the harm.behavior intended to harm another person who wants to avoid the harm.\n\nThe exam-relevant points are:\n• Hostile/instrumental\n• Learning\n• Social and biological influences\n\nA useful distinction to keep in mind is: Anger is an emotion; aggression is behavior.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 383
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 6,
@@ -13827,7 +17347,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Group Dynamics and Leadership; Kaplan AP Psychology — Groups."
-              ]
+              ],
+              "expert_explanation": "Group dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.",
+              "detailed_explanation": "Group dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.\n\nThe exam-relevant points are:\n• Groups develop norms and roles.\n• Cohesion can affect interaction and performance.\n• Members influence one another.\n• Group processes can facilitate or hinder decision making.\n\nA useful distinction to keep in mind is: Group dynamics is broader than group size; it concerns interaction patterns and processes within the group.",
+              "pyq_count": 4,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 4
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 108
             },
             {
               "id": 2,
@@ -13860,7 +17389,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "REVISATHON Part 2 — Leadership Styles; Ciccarelli & White — Blake–Mouton Leadership Grid."
-              ]
+              ],
+              "expert_explanation": "Leadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.",
+              "detailed_explanation": "Leadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.\n\nThe exam-relevant points are:\n• Autocratic leadership emphasizes leader control.\n• Democratic leadership involves greater participation.\n• Laissez-faire leadership provides greater autonomy.\n• Blake–Mouton organizes styles around concern for people and results.\n\nA useful distinction to keep in mind is: A leadership style is a behavioral pattern; effectiveness depends partly on the situation rather than one style being universally effective.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 384
             },
             {
               "id": 3,
@@ -13893,10 +17429,23 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "REVISATHON Part 2 — Fiedler Contingency Approach and Path-Goal Theory."
-              ]
+              ],
+              "expert_explanation": "Leadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.",
+              "detailed_explanation": "Leadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.\n\nThe exam-relevant points are:\n• Leadership effectiveness is context dependent.\n• Fiedler distinguishes task- and relationship-oriented styles.\n• Situational favorability affects the fit between style and context.\n• Other models such as path-goal theory focus on clarifying routes to goals.\n\nA useful distinction to keep in mind is: The contingency approach does not claim one style is always superior; it emphasizes person–situation fit.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 169
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 4
         },
         {
           "id": 7,
@@ -13945,7 +17494,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Theories of Intergroup Relations, Minimal Group Experiment and Social Identity Theory."
-              ]
+              ],
+              "expert_explanation": "The minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.",
+              "detailed_explanation": "The minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.\n\nThe exam-relevant points are:\n• Minimal categorization can create meaningful group distinctions.\n• In-group favoritism can emerge with minimal group formation.\n• The paradigm supports the importance of social categorization.\n• It is relevant to Social Identity Theory.\n\nA useful distinction to keep in mind is: Minimal-group findings do not require a history of real conflict between groups; the point is that categorization itself can matter.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 6
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 76
             },
             {
               "id": 2,
@@ -13982,7 +17540,18 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in social identity theory is intergroup behavior through categorization, identification and social comparison.",
+              "detailed_explanation": "The central idea in social identity theory is intergroup behavior through categorization, identification and social comparison.intergroup behavior through categorization, identification and social comparison.\n\nThe exam-relevant points are:\n• Tajfel & Turner\n• Ingroup/outgroup\n• Social comparison\n\nA useful distinction to keep in mind is: Identity processes do not require deep hostility.",
+              "pyq_count": 5,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 2,
+                "statement-set": 1,
+                "match": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 85
             },
             {
               "id": 3,
@@ -14016,7 +17585,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra — Relative Deprivation and Intergroup Attitudes; PowerWithin Psychology — Intergroup Relations."
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "Relative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.",
+              "detailed_explanation": "Relative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.\n\nThe exam-relevant points are:\n• Perceived comparison is central.\n• People can feel deprived even when basic needs are met.\n• Relative deprivation can influence group attitudes and conflict.\n• The reference group or standard of comparison matters.\n\nA useful distinction to keep in mind is: Relative deprivation is a perception of disadvantage; it is not identical to objective poverty.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 385
             },
             {
               "id": 4,
@@ -14053,7 +17629,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in realistic conflict theory is intergroup hostility partly through competition over scarce resources.",
+              "detailed_explanation": "The central idea in realistic conflict theory is intergroup hostility partly through competition over scarce resources.intergroup hostility partly through competition over scarce resources.\n\nThe exam-relevant points are:\n• Sherif\n• Competition\n• Superordinate goals\n\nA useful distinction to keep in mind is: Not all prejudice requires resource competition.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 2
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 170
             },
             {
               "id": 5,
@@ -14086,7 +17671,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Theories of Intergroup Relations, Balance Theories."
-              ]
+              ],
+              "expert_explanation": "Balance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.",
+              "detailed_explanation": "Balance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.\n\nThe exam-relevant points are:\n• Relations among attitudes can be balanced or imbalanced.\n• People may be motivated to reduce inconsistency.\n• The framework examines triadic relationships among persons and objects.\n• Balance is a consistency principle rather than a simple positive/negative attitude score.\n\nA useful distinction to keep in mind is: Balance theory is about patterns of relationships among attitudes, not merely whether one attitude is positive or negative.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 386
             },
             {
               "id": 6,
@@ -14123,7 +17715,14 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in equity theory is perceived fairness of input–outcome ratios in relationships.",
+              "detailed_explanation": "The central idea in equity theory is perceived fairness of input–outcome ratios in relationships.perceived fairness of input–outcome ratios in relationships.\n\nThe exam-relevant points are:\n• Inputs\n• Outcomes\n• Comparison others\n\nA useful distinction to keep in mind is: Equity is not always identical to equality.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 387
             },
             {
               "id": 7,
@@ -14160,10 +17759,23 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "expert_explanation": "The central idea in social exchange theory is relationships partly evaluated through rewards, costs, comparison levels and alternatives.",
+              "detailed_explanation": "The central idea in social exchange theory is relationships partly evaluated through rewards, costs, comparison levels and alternatives.relationships partly evaluated through rewards, costs, comparison levels and alternatives.\n\nThe exam-relevant points are:\n• Rewards\n• Costs\n• Comparison level\n• Alternatives\n\nA useful distinction to keep in mind is: It is a model, not literal money accounting.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 236
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 14,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 8,
@@ -14212,7 +17824,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Applied Social Psychology: Health; Baron & Misra — Social Psychology and Health."
-              ]
+              ],
+              "expert_explanation": "Applied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.",
+              "detailed_explanation": "Applied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.\n\nThe exam-relevant points are:\n• Health behavior is influenced by social context.\n• Attitudes and norms can affect health decisions.\n• Social support can influence coping and wellbeing.\n• Interventions can use social-psychological principles.\n\nA useful distinction to keep in mind is: Health applications are not limited to individual counseling; social norms, communication and group processes can also be intervention targets.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 388
             },
             {
               "id": 2,
@@ -14245,7 +17864,16 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Applied Social Psychology: Environment; Ciccarelli & White — Environmental/Social Psychology."
-              ]
+              ],
+              "expert_explanation": "Environmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.",
+              "detailed_explanation": "Environmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.\n\nThe exam-relevant points are:\n• Physical settings can influence stress and interaction.\n• Crowding concerns perceived density and its psychological effects.\n• Personal space regulates interpersonal distance.\n• Environmental design can influence behavior.\n\nA useful distinction to keep in mind is: Environmental application is broader than pollution; it includes the psychological relationship between people and physical settings.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 237
             },
             {
               "id": 3,
@@ -14278,7 +17906,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Applied Social Psychology: Law; outline-level coverage."
-              ]
+              ],
+              "expert_explanation": "Applied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.",
+              "detailed_explanation": "Applied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.\n\nThe exam-relevant points are:\n• Social psychological principles can inform legal contexts.\n• Perception and judgment can affect legal decisions.\n• Communication and social influence are relevant to legal processes.\n• Detailed source-specific legal applications are limited in the supplied extract.\n\nA useful distinction to keep in mind is: Do not import unsupported forensic procedures into this node; retain the social-psychological focus.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 389
             },
             {
               "id": 4,
@@ -14311,7 +17946,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "Ciccarelli & White 6e — Personal Space; PowerWithin Psychology — Applied Social Psychology."
-              ]
+              ],
+              "expert_explanation": "Personal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.",
+              "detailed_explanation": "Personal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.\n\nThe exam-relevant points are:\n• Personal space varies across people and situations.\n• It regulates interpersonal distance.\n• Crowding can occur when desired space is reduced.\n• Cultural context can influence norms for interpersonal distance.\n\nA useful distinction to keep in mind is: Personal space is not the same as territoriality: personal space is the interpersonal distance around the person, whereas territoriality concerns control of a physical area.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 171
             },
             {
               "id": 5,
@@ -14344,7 +17989,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Applied Social Psychology; P2 Environment & Population Psychology — Crowding and perceived control."
-              ]
+              ],
+              "expert_explanation": "Crowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.",
+              "detailed_explanation": "Crowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.\n\nThe exam-relevant points are:\n• Density is a physical condition; crowding is a psychological experience.\n• Perceived control can influence stress responses to crowding.\n• The meaning of the setting affects the experience.\n• Crowding can influence interpersonal behavior and wellbeing.\n\nA useful distinction to keep in mind is: High density does not always produce crowding; crowding depends partly on perceived control and context.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 390
             },
             {
               "id": 6,
@@ -14377,13 +18029,27 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology — Applied Social Psychology; Ciccarelli & White — Territoriality and Personal Space."
-              ]
+              ],
+              "expert_explanation": "Territoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.",
+              "detailed_explanation": "Territoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.\n\nThe exam-relevant points are:\n• Territories are physical areas associated with control or ownership.\n• Territorial behavior can regulate access and social interaction.\n• Territoriality can occur in homes, workplaces and other settings.\n• It differs from personal space because it concerns an area rather than an interpersonal radius.\n\nA useful distinction to keep in mind is: Territoriality is not simply the amount of personal space a person prefers.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 391
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 6
         }
       ],
-      "description": "Understand social behaviour by examining how people perceive others, form and change attitudes, influence one another, function in groups, and relate across social and intergroup boundaries. Connect individual-level processes such as social cognition and attitude formation with influence, group processes, interpersonal relationships, and intergroup relations. The goal is to build a coherent explanation of how social context shapes thought, feeling, and behaviour."
+      "description": "Understand social behaviour by examining how people perceive others, form and change attitudes, influence one another, function in groups, and relate across social and intergroup boundaries. Connect individual-level processes such as social cognition and attitude formation with influence, group processes, interpersonal relationships, and intergroup relations. The goal is to build a coherent explanation of how social context shapes thought, feeling, and behaviour.",
+      "pyq_count": 61,
+      "pyq_mapped_microtopics": 22,
+      "pyq_frequency_band": "C"
     },
     {
       "id": 9,
@@ -14440,7 +18106,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in nature of development is systematic change across the lifespan in biological, cognitive, emotional and social domains.",
+              "detailed_explanation": "The central idea in nature of development is systematic change across the lifespan in biological, cognitive, emotional and social domains.systematic change across the lifespan in biological, cognitive, emotional and social domains.\n\nThe exam-relevant points are:\n• Lifespan\n• Multidimensionality\n• Plasticity\n\nA useful distinction to keep in mind is: Development is not limited to childhood.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 172
             },
             {
               "id": 2,
@@ -14477,12 +18153,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in principles of development is organized patterns such as cephalocaudal and proximodistal development alongside individual differences.",
+              "detailed_explanation": "The central idea in principles of development is organized patterns such as cephalocaudal and proximodistal development alongside individual differences.organized patterns such as cephalocaudal and proximodistal development alongside individual differences.\n\nThe exam-relevant points are:\n• Cephalocaudal: head → toe\n• Proximodistal: centre → outward\n• Individual differences\n\nA useful distinction to keep in mind is: Do not reverse the two sequences.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 392
             },
             {
               "id": 3,
               "title": "Factors in development",
-              "content_notes": "Factors in development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Avoid a simple heredity-versus-environment split; the source treatment emphasizes interaction.",
+              "content_notes": "Development reflects the interaction of biological maturation, learning, relationships, culture and the individual's engagement with the environment. The relative contribution of these influences changes across developmental periods.\n\nKEY POINTS\n\n• Biological influences\n• Environmental experience\n• Person–context interaction\n\nDISTINCTION / CAUTION\n\n• Development should not be reduced to a simple nature-versus-nurture choice.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14513,12 +18196,21 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Development reflects the interaction of biological maturation, learning, relationships, culture and the individual's engagement with the environment. The relative contribution of these influences changes across developmental periods.\n\nThe exam-relevant points are:\n• Biological influences\n• Environmental experience\n• Person–context interaction\n\nA useful distinction to keep in mind is: Development should not be reduced to a simple nature-versus-nurture choice.",
+              "expert_explanation": "Development reflects the interaction of biological maturation, learning, relationships, culture and the individual's engagement with the environment. The relative contribution of these influences changes across developmental periods.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 238
             },
             {
               "id": 4,
               "title": "Stages of development",
-              "content_notes": "Stages of development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not mix stages from different theories as one universal sequence.",
+              "content_notes": "Stage theories organise development into qualitatively distinguishable periods with characteristic patterns of functioning. The sequence and defining features depend on the theory being used.\n\nKEY POINTS\n\n• Qualitative change\n• Ordered periods\n• Theory-specific criteria\n\nDISTINCTION / CAUTION\n\n• A stage sequence proposed by one theorist is not a universal description.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14548,10 +18240,24 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Stage theories organise development into qualitatively distinguishable periods with characteristic patterns of functioning. The sequence and defining features depend on the theory being used.\n\nThe exam-relevant points are:\n• Qualitative change\n• Ordered periods\n• Theory-specific criteria\n\nA useful distinction to keep in mind is: A stage sequence proposed by one theorist is not a universal description.",
+              "expert_explanation": "Stage theories organise development into qualitatively distinguishable periods with characteristic patterns of functioning. The sequence and defining features depend on the theory being used.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "sequence": 5,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 77
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 9,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -14604,10 +18310,21 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in successful aging is maintaining health, function, engagement and wellbeing while adapting to age-related change.",
+              "detailed_explanation": "The central idea in successful aging is maintaining health, function, engagement and wellbeing while adapting to age-related change.maintaining health, function, engagement and wellbeing while adapting to age-related change.\n\nThe exam-relevant points are:\n• Function\n• Engagement\n• Adaptation\n• Meaning\n\nA useful distinction to keep in mind is: It does not mean absence of every disease.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 393
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 3,
@@ -14628,7 +18345,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalytical theories",
-              "content_notes": "Psychoanalytical theories should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Freud's stages and Erikson's stages are different systems with different organizing constructs.",
+              "content_notes": "Psychoanalytical theories explain development through unconscious processes, early relationships and psychological conflict. Later theorists revised and expanded Freud's original account.\n\nKEY POINTS\n\n• Unconscious processes\n• Early experience\n• Psychological conflict\n\nDISTINCTION / CAUTION\n\n• Do not collapse all psychoanalytical theories into Freud's original model.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14658,12 +18375,19 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Psychoanalytical theories explain development through unconscious processes, early relationships and psychological conflict. Later theorists revised and expanded Freud's original account.\n\nThe exam-relevant points are:\n• Unconscious processes\n• Early experience\n• Psychological conflict\n\nA useful distinction to keep in mind is: Do not collapse all psychoanalytical theories into Freud's original model.",
+              "expert_explanation": "Psychoanalytical theories explain development through unconscious processes, early relationships and psychological conflict. Later theorists revised and expanded Freud's original account.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 394
             },
             {
               "id": 2,
               "title": "Behavioristic theories",
-              "content_notes": "Behavioristic theories should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The behavioristic account does not use developmental stages as its primary explanatory unit.",
+              "content_notes": "Behavioristic theories explain development through conditioning, reinforcement and environmental feedback. Development is understood partly as accumulated changes in behaviour shaped by experience.\n\nKEY POINTS\n\n• Conditioning and reinforcement\n• Environmental influence\n• Observable behaviour\n\nDISTINCTION / CAUTION\n\n• Behaviouristic accounts do not by themselves capture every cognitive or biological influence.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14693,12 +18417,19 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Behavioristic theories explain development through conditioning, reinforcement and environmental feedback. Development is understood partly as accumulated changes in behaviour shaped by experience.\n\nThe exam-relevant points are:\n• Conditioning and reinforcement\n• Environmental influence\n• Observable behaviour\n\nA useful distinction to keep in mind is: Behaviouristic accounts do not by themselves capture every cognitive or biological influence.",
+              "expert_explanation": "Behavioristic theories explain development through conditioning, reinforcement and environmental feedback. Development is understood partly as accumulated changes in behaviour shaped by experience.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 395
             },
             {
               "id": 3,
               "title": "Cognitive theories",
-              "content_notes": "Cognitive theories should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse cognitive stages with psychosocial or psychosexual stages.",
+              "content_notes": "Cognitive theories explain development through changes in mental representation, reasoning, memory and problem solving. Piagetian and information-processing approaches differ in their models but both emphasise cognitive change.\n\nKEY POINTS\n\n• Mental representation\n• Reasoning and problem solving\n• Cognitive change\n\nDISTINCTION / CAUTION\n\n• Cognitive development is broader than any single theorist.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14728,10 +18459,23 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Cognitive theories explain development through changes in mental representation, reasoning, memory and problem solving. Piagetian and information-processing approaches differ in their models but both emphasise cognitive change.\n\nThe exam-relevant points are:\n• Mental representation\n• Reasoning and problem solving\n• Cognitive change\n\nA useful distinction to keep in mind is: Cognitive development is broader than any single theorist.",
+              "expert_explanation": "Cognitive theories explain development through changes in mental representation, reasoning, memory and problem solving. Piagetian and information-processing approaches differ in their models but both emphasise cognitive change.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 239
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 4,
@@ -14752,7 +18496,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Sensory-motor development",
-              "content_notes": "Sensory-motor development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• This domain is broader than Piaget's specific sensorimotor stage.",
+              "content_notes": "Sensory-motor development concerns the growing coordination of perception and action during early life. In Piaget's account, infants increasingly organise sensory experience and motor action and develop more complex representations of objects.\n\nKEY POINTS\n\n• Perception–action coordination\n• Action-based learning\n• Object permanence\n\nDISTINCTION / CAUTION\n\n• Piaget's stage description is a theoretical framework, not a complete account of infant abilities.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14782,12 +18526,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Sensory-motor development concerns the growing coordination of perception and action during early life. In Piaget's account, infants increasingly organise sensory experience and motor action and develop more complex representations of objects.\n\nThe exam-relevant points are:\n• Perception–action coordination\n• Action-based learning\n• Object permanence\n\nA useful distinction to keep in mind is: Piaget's stage description is a theoretical framework, not a complete account of infant abilities.",
+              "expert_explanation": "Sensory-motor development concerns the growing coordination of perception and action during early life. In Piaget's account, infants increasingly organise sensory experience and motor action and develop more complex representations of objects.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 240
             },
             {
               "id": 2,
               "title": "Cognitive development",
-              "content_notes": "Cognitive development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Cognitive development is broader than Piaget alone; information-processing approaches are also relevant.",
+              "content_notes": "Cognitive development refers to age-related changes in thinking, memory, reasoning, representation and problem solving. Major theories explain these changes through different mechanisms.\n\nKEY POINTS\n\n• Thinking and representation\n• Reasoning and problem solving\n• Major theoretical approaches\n\nDISTINCTION / CAUTION\n\n• Cognitive development is broader than Piaget alone.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14817,12 +18570,19 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Cognitive development refers to age-related changes in thinking, memory, reasoning, representation and problem solving. Major theories explain these changes through different mechanisms.\n\nThe exam-relevant points are:\n• Thinking and representation\n• Reasoning and problem solving\n• Major theoretical approaches\n\nA useful distinction to keep in mind is: Cognitive development is broader than Piaget alone.",
+              "expert_explanation": "Cognitive development refers to age-related changes in thinking, memory, reasoning, representation and problem solving. Major theories explain these changes through different mechanisms.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 396
             },
             {
               "id": 3,
               "title": "Language development",
-              "content_notes": "Language development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Language development is broader than vocabulary alone.",
+              "content_notes": "Language development involves the progressive acquisition of understanding and producing meaningful communication. Vocabulary, grammar, comprehension and social use develop through biological capacities and experience.\n\nKEY POINTS\n\n• Vocabulary and grammar\n• Comprehension and production\n• Biological and social influences\n\nDISTINCTION / CAUTION\n\n• Language development cannot be explained by imitation alone.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14852,12 +18612,22 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Language development involves the progressive acquisition of understanding and producing meaningful communication. Vocabulary, grammar, comprehension and social use develop through biological capacities and experience.\n\nThe exam-relevant points are:\n• Vocabulary and grammar\n• Comprehension and production\n• Biological and social influences\n\nA useful distinction to keep in mind is: Language development cannot be explained by imitation alone.",
+              "expert_explanation": "Language development involves the progressive acquisition of understanding and producing meaningful communication. Vocabulary, grammar, comprehension and social use develop through biological capacities and experience.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "sequence": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 173
             },
             {
               "id": 4,
               "title": "Emotional development",
-              "content_notes": "Emotional development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Emotion as a developmental domain should not be confused with psychopathology or personality traits.",
+              "content_notes": "Emotional development involves changes in emotional experience, expression, understanding and regulation. Relationships and growing cognitive capacities contribute to increasingly differentiated emotional functioning.\n\nKEY POINTS\n\n• Expression and understanding\n• Emotion regulation\n• Relationships\n\nDISTINCTION / CAUTION\n\n• Emotional development is not simply a reduction in emotionality.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14887,12 +18657,22 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Baron & Misra"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision.",
+              "detailed_explanation": "Emotional development involves changes in emotional experience, expression, understanding and regulation. Relationships and growing cognitive capacities contribute to increasingly differentiated emotional functioning.\n\nThe exam-relevant points are:\n• Expression and understanding\n• Emotion regulation\n• Relationships\n\nA useful distinction to keep in mind is: Emotional development is not simply a reduction in emotionality.",
+              "expert_explanation": "Emotional development involves changes in emotional experience, expression, understanding and regulation. Relationships and growing cognitive capacities contribute to increasingly differentiated emotional functioning.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "sequence": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 126
             },
             {
               "id": 5,
               "title": "Social development",
-              "content_notes": "Social development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Social development is broader than parent-child socialization alone.",
+              "content_notes": "Social development concerns changes in relationships, social understanding, group participation and regulation of behaviour in social settings. Attachment, family, peers and culture contribute to these changes.\n\nKEY POINTS\n\n• Relationships\n• Socialisation\n• Context and culture\n\nDISTINCTION / CAUTION\n\n• Social development is multidimensional.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14922,12 +18702,19 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Social development concerns changes in relationships, social understanding, group participation and regulation of behaviour in social settings. Attachment, family, peers and culture contribute to these changes.\n\nThe exam-relevant points are:\n• Relationships\n• Socialisation\n• Context and culture\n\nA useful distinction to keep in mind is: Social development is multidimensional.",
+              "expert_explanation": "Social development concerns changes in relationships, social understanding, group participation and regulation of behaviour in social settings. Attachment, family, peers and culture contribute to these changes.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 397
             },
             {
               "id": 6,
               "title": "Moral development",
-              "content_notes": "Moral development should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Kohlberg's stages describe moral reasoning, not a complete measure of moral behavior.",
+              "content_notes": "Moral development concerns changes in how people understand rules, responsibility, justice and reasons for judging actions as right or wrong. Theories differ in their emphasis on reasoning, social learning, emotion and culture.\n\nKEY POINTS\n\n• Moral judgment\n• Rules and principles\n• Major theoretical approaches\n\nDISTINCTION / CAUTION\n\n• Moral reasoning and moral behaviour can diverge.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14957,10 +18744,21 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Moral development concerns changes in how people understand rules, responsibility, justice and reasons for judging actions as right or wrong. Theories differ in their emphasis on reasoning, social learning, emotion and culture.\n\nThe exam-relevant points are:\n• Moral judgment\n• Rules and principles\n• Major theoretical approaches\n\nA useful distinction to keep in mind is: Moral reasoning and moral behaviour can diverge.",
+              "expert_explanation": "Moral development concerns changes in how people understand rules, responsibility, justice and reasons for judging actions as right or wrong. Theories differ in their emphasis on reasoning, social learning, emotion and culture.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 398
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 5,
@@ -14981,7 +18779,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Concept of psychopathology",
-              "content_notes": "Concept of psychopathology should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Unusual behavior alone is not sufficient to establish psychopathology.",
+              "content_notes": "Psychopathology refers to the study and description of psychological dysfunction, distress and clinically significant patterns of behaviour or experience. Its meaning depends on impairment, distress and context.\n\nKEY POINTS\n\n• Dysfunction and distress\n• Impairment and context\n• Definitions of abnormality\n\nDISTINCTION / CAUTION\n\n• Unusual behaviour is not automatically psychopathological.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15011,7 +18809,14 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Psychopathology refers to the study and description of psychological dysfunction, distress and clinically significant patterns of behaviour or experience. Its meaning depends on impairment, distress and context.\n\nThe exam-relevant points are:\n• Dysfunction and distress\n• Impairment and context\n• Definitions of abnormality\n\nA useful distinction to keep in mind is: Unusual behaviour is not automatically psychopathological.",
+              "expert_explanation": "Psychopathology refers to the study and description of psychological dysfunction, distress and clinically significant patterns of behaviour or experience. Its meaning depends on impairment, distress and context.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 399
             },
             {
               "id": 2,
@@ -15048,12 +18853,22 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in mental status examination is structured assessment of current mental functioning.",
+              "detailed_explanation": "The central idea in mental status examination is structured assessment of current mental functioning.structured assessment of current mental functioning.\n\nThe exam-relevant points are:\n• Appearance/behavior\n• Speech\n• Mood/affect\n• Thought\n• Perception\n• Cognition\n• Insight/judgment\n\nA useful distinction to keep in mind is: MSE is not itself a complete diagnosis.",
+              "pyq_count": 6,
+              "pyq_frequency_band": "B",
+              "pyq_formats": {
+                "direct": 5,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 78
             },
             {
               "id": 3,
               "title": "Classification",
-              "content_notes": "Classification should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Classification and etiology are different questions.",
+              "content_notes": "Classification in psychopathology organises symptoms and behaviour into diagnostic categories or dimensions. It supports communication and treatment planning while raising questions about reliability, validity and cultural context.\n\nKEY POINTS\n\n• Categories and dimensions\n• Reliability and validity\n• Clinical communication\n\nDISTINCTION / CAUTION\n\n• Classification organises clinical information; it does not by itself explain causation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15083,7 +18898,14 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Classification in psychopathology organises symptoms and behaviour into diagnostic categories or dimensions. It supports communication and treatment planning while raising questions about reliability, validity and cultural context.\n\nThe exam-relevant points are:\n• Categories and dimensions\n• Reliability and validity\n• Clinical communication\n\nA useful distinction to keep in mind is: Classification organises clinical information; it does not by itself explain causation.",
+              "expert_explanation": "Classification in psychopathology organises symptoms and behaviour into diagnostic categories or dimensions. It supports communication and treatment planning while raising questions about reliability, validity and cultural context.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 400
             },
             {
               "id": 4,
@@ -15120,10 +18942,21 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in causes of psychopathology is psychopathology understood through interacting biological, psychological and social influences.",
+              "detailed_explanation": "The central idea in causes of psychopathology is psychopathology understood through interacting biological, psychological and social influences.psychopathology understood through interacting biological, psychological and social influences.\n\nThe exam-relevant points are:\n• Genetic vulnerability\n• Learning\n• Stress\n• Context\n\nA useful distinction to keep in mind is: Avoid single-cause explanations.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 401
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 6,
@@ -15144,7 +18977,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Psychoanalysis",
-              "content_notes": "Psychoanalysis should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Psychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central.",
+              "content_notes": "Psychoanalysis explores unconscious processes, psychological conflict, early experience and meanings attached to thoughts and behaviour.\n\nKEY POINTS\n\n• Unconscious processes\n• Psychodynamic conflict\n• Free association and interpretation\n\nDISTINCTION / CAUTION\n\n• Classical psychoanalysis is not identical to all contemporary psychodynamic therapies.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15174,7 +19007,14 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Psychoanalysis explores unconscious processes, psychological conflict, early experience and meanings attached to thoughts and behaviour.\n\nThe exam-relevant points are:\n• Unconscious processes\n• Psychodynamic conflict\n• Free association and interpretation\n\nA useful distinction to keep in mind is: Classical psychoanalysis is not identical to all contemporary psychodynamic therapies.",
+              "expert_explanation": "Psychoanalysis explores unconscious processes, psychological conflict, early experience and meanings attached to thoughts and behaviour.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 402
             },
             {
               "id": 2,
@@ -15211,12 +19051,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in person-centered therapy is Rogers' approach emphasizing empathy, congruence and unconditional positive regard.",
+              "detailed_explanation": "The central idea in person-centered therapy is Rogers' approach emphasizing empathy, congruence and unconditional positive regard.Rogers' approach emphasizing empathy, congruence and unconditional positive regard.\n\nThe exam-relevant points are:\n• Client autonomy\n• Empathy\n• Congruence\n• Unconditional positive regard\n\nA useful distinction to keep in mind is: It is not advice-giving.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 403
             },
             {
               "id": 3,
               "title": "Gestalt therapy",
-              "content_notes": "Gestalt therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse Gestalt therapy with Gestalt principles of perceptual organization.",
+              "content_notes": "Gestalt therapy emphasises present-moment awareness, direct experience and integration of thoughts, feelings and actions.\n\nKEY POINTS\n\n• Here-and-now awareness\n• Contact and integration\n• Experiential methods\n\nDISTINCTION / CAUTION\n\n• It is an experiential approach, not simply positive thinking.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15246,12 +19093,22 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Gestalt therapy emphasises present-moment awareness, direct experience and integration of thoughts, feelings and actions.\n\nThe exam-relevant points are:\n• Here-and-now awareness\n• Contact and integration\n• Experiential methods\n\nA useful distinction to keep in mind is: It is an experiential approach, not simply positive thinking.",
+              "expert_explanation": "Gestalt therapy emphasises present-moment awareness, direct experience and integration of thoughts, feelings and actions.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 174
             },
             {
               "id": 4,
               "title": "Existential therapy",
-              "content_notes": "Existential therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It is an experiential/philosophical approach rather than a single symptom protocol.",
+              "content_notes": "Existential therapy examines meaning, freedom, responsibility, choice, isolation and mortality and helps clients examine these concerns in their own lives.\n\nKEY POINTS\n\n• Meaning and responsibility\n• Freedom and choice\n• Authenticity\n\nDISTINCTION / CAUTION\n\n• The therapist does not prescribe a single meaning of life.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15280,7 +19137,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Existential therapy examines meaning, freedom, responsibility, choice, isolation and mortality and helps clients examine these concerns in their own lives.\n\nThe exam-relevant points are:\n• Meaning and responsibility\n• Freedom and choice\n• Authenticity\n\nA useful distinction to keep in mind is: The therapist does not prescribe a single meaning of life.",
+              "expert_explanation": "Existential therapy examines meaning, freedom, responsibility, choice, isolation and mortality and helps clients examine these concerns in their own lives.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 404
             },
             {
               "id": 5,
@@ -15317,12 +19181,21 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in acceptance commitment therapy is ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.",
+              "detailed_explanation": "The central idea in acceptance commitment therapy is ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.\n\nThe exam-relevant points are:\n• Acceptance\n• Defusion\n• Values\n• Committed action\n\nA useful distinction to keep in mind is: Acceptance is not resignation.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 241
             },
             {
               "id": 6,
               "title": "Behavior therapy",
-              "content_notes": "Behavior therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Identify the conditioning principle before naming a technique.",
+              "content_notes": "Behavior therapy applies learning principles to psychological problems by identifying behaviours and environmental conditions that maintain them.\n\nKEY POINTS\n\n• Learning principles\n• Maintaining conditions\n• Behavioural techniques\n\nDISTINCTION / CAUTION\n\n• Behaviour therapy is not synonymous with punishment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15352,7 +19225,14 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Behavior therapy applies learning principles to psychological problems by identifying behaviours and environmental conditions that maintain them.\n\nThe exam-relevant points are:\n• Learning principles\n• Maintaining conditions\n• Behavioural techniques\n\nA useful distinction to keep in mind is: Behaviour therapy is not synonymous with punishment.",
+              "expert_explanation": "Behavior therapy applies learning principles to psychological problems by identifying behaviours and environmental conditions that maintain them.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 10,
+              "pyq_global_rank": 405
             },
             {
               "id": 7,
@@ -15389,7 +19269,16 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "REBT is a structured approach centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.",
+              "detailed_explanation": "REBT is a structured approach centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.\n\nThe exam-relevant points are:\n• Albert Ellis\n• A-B-C\n• Disputation\n• Adaptive beliefs\n\nA useful distinction to keep in mind is: Beliefs mediate the consequences.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 175
             },
             {
               "id": 8,
@@ -15426,12 +19315,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "Cognitive behavioural therapy (CBT) is a structured approach that works with the reciprocal relationships among thoughts, emotions and behaviour.",
+              "detailed_explanation": "CBT is a structured approach centred on structured approach targeting reciprocal links among thoughts, emotions and behavior.structured approach targeting reciprocal links among thoughts, emotions and behavior.\n\nThe exam-relevant points are:\n• Cognitive restructuring\n• Behavioral experiments\n• Skills\n• Homework\n\nA useful distinction to keep in mind is: Not simply positive thinking.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 11,
+              "pyq_global_rank": 406
             },
             {
               "id": 9,
               "title": "MBCT",
-              "content_notes": "MBCT should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• MBCT is not merely relaxation training; the cognitive relationship to thoughts is central.",
+              "content_notes": "Mindfulness-Based Cognitive Therapy combines mindfulness practice with cognitive approaches to help people relate differently to recurring negative thoughts and emotions.\n\nKEY POINTS\n\n• Mindfulness\n• Cognitive patterns\n• Relapse prevention\n\nDISTINCTION / CAUTION\n\n• MBCT is not simply relaxation training.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15461,12 +19357,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Mindfulness-Based Cognitive Therapy combines mindfulness practice with cognitive approaches to help people relate differently to recurring negative thoughts and emotions.\n\nThe exam-relevant points are:\n• Mindfulness\n• Cognitive patterns\n• Relapse prevention\n\nA useful distinction to keep in mind is: MBCT is not simply relaxation training.",
+              "expert_explanation": "Mindfulness-Based Cognitive Therapy combines mindfulness practice with cognitive approaches to help people relate differently to recurring negative thoughts and emotions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 12,
+              "pyq_global_rank": 407
             },
             {
               "id": 10,
               "title": "Play therapy",
-              "content_notes": "Play therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Therapeutic play is not simply recreational play.",
+              "content_notes": "Play therapy uses play as a developmentally appropriate medium for communication, emotional expression and coping. The therapeutic process is structured around clinical goals.\n\nKEY POINTS\n\n• Play as communication\n• Developmental appropriateness\n• Emotional expression\n\nDISTINCTION / CAUTION\n\n• Therapeutic play is purposeful and clinically guided.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15496,12 +19399,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Play therapy uses play as a developmentally appropriate medium for communication, emotional expression and coping. The therapeutic process is structured around clinical goals.\n\nThe exam-relevant points are:\n• Play as communication\n• Developmental appropriateness\n• Emotional expression\n\nA useful distinction to keep in mind is: Therapeutic play is purposeful and clinically guided.",
+              "expert_explanation": "Play therapy uses play as a developmentally appropriate medium for communication, emotional expression and coping. The therapeutic process is structured around clinical goals.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 176
             },
             {
               "id": 11,
               "title": "Positive psychotherapy",
-              "content_notes": "Positive psychotherapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It does not mean ignoring symptoms or suffering.",
+              "content_notes": "Positive psychotherapy gives systematic attention to strengths, meaning, positive emotions, relationships and resources while acknowledging psychological difficulties.\n\nKEY POINTS\n\n• Strengths and resources\n• Meaning and positive functioning\n• Growth alongside distress\n\nDISTINCTION / CAUTION\n\n• It does not mean ignoring negative emotions.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15530,12 +19442,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Positive psychotherapy gives systematic attention to strengths, meaning, positive emotions, relationships and resources while acknowledging psychological difficulties.\n\nThe exam-relevant points are:\n• Strengths and resources\n• Meaning and positive functioning\n• Growth alongside distress\n\nA useful distinction to keep in mind is: It does not mean ignoring negative emotions.",
+              "expert_explanation": "Positive psychotherapy gives systematic attention to strengths, meaning, positive emotions, relationships and resources while acknowledging psychological difficulties.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 13,
+              "pyq_global_rank": 408
             },
             {
               "id": 12,
               "title": "Transactional Analysis",
-              "content_notes": "Transactional Analysis should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• TA ego states should not be equated directly with Freud's id, ego and superego.",
+              "content_notes": "Transactional Analysis explains interpersonal behaviour through ego states, transactions, life scripts and recurring interactional patterns.\n\nKEY POINTS\n\n• Parent, Adult and Child ego states\n• Transactions\n• Life scripts\n\nDISTINCTION / CAUTION\n\n• It is a theory of interpersonal functioning, not merely a communication exercise.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15565,7 +19484,17 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Transactional Analysis explains interpersonal behaviour through ego states, transactions, life scripts and recurring interactional patterns.\n\nThe exam-relevant points are:\n• Parent, Adult and Child ego states\n• Transactions\n• Life scripts\n\nA useful distinction to keep in mind is: It is a theory of interpersonal functioning, not merely a communication exercise.",
+              "expert_explanation": "Transactional Analysis explains interpersonal behaviour through ego states, transactions, life scripts and recurring interactional patterns.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 127
             },
             {
               "id": 13,
@@ -15602,12 +19531,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in dialectic behavior therapy is acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.",
+              "detailed_explanation": "The central idea in dialectic behavior therapy is acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.\n\nThe exam-relevant points are:\n• Marsha Linehan\n• Four skills domains\n• Validation + change\n\nA useful distinction to keep in mind is: It is broader than one emotion technique.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 14,
+              "pyq_global_rank": 409
             },
             {
               "id": 14,
               "title": "Art therapy",
-              "content_notes": "Art therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not treat every drawing as a fixed diagnostic symbol.",
+              "content_notes": "Art therapy uses creative activity within a therapeutic relationship to support expression, exploration and psychological processing.\n\nKEY POINTS\n\n• Creative expression\n• Symbolic exploration\n• Therapeutic relationship\n\nDISTINCTION / CAUTION\n\n• Artwork should not be treated as a diagnostic test without appropriate assessment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15636,12 +19572,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Art therapy uses creative activity within a therapeutic relationship to support expression, exploration and psychological processing.\n\nThe exam-relevant points are:\n• Creative expression\n• Symbolic exploration\n• Therapeutic relationship\n\nA useful distinction to keep in mind is: Artwork should not be treated as a diagnostic test without appropriate assessment.",
+              "expert_explanation": "Art therapy uses creative activity within a therapeutic relationship to support expression, exploration and psychological processing.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 15,
+              "pyq_global_rank": 410
             },
             {
               "id": 15,
               "title": "Performing Art Therapy",
-              "content_notes": "Performing Art Therapy should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The therapeutic medium distinguishes performing-art therapy from other expressive therapies.",
+              "content_notes": "Performing art therapy uses drama, movement, music or performance to facilitate emotional expression, interpersonal exploration and therapeutic change.\n\nKEY POINTS\n\n• Embodied expression\n• Emotional exploration\n• Experiential process\n\nDISTINCTION / CAUTION\n\n• A performance activity becomes therapy through therapeutic intent, structure and professional practice.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15670,7 +19613,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Performing art therapy uses drama, movement, music or performance to facilitate emotional expression, interpersonal exploration and therapeutic change.\n\nThe exam-relevant points are:\n• Embodied expression\n• Emotional exploration\n• Experiential process\n\nA useful distinction to keep in mind is: A performance activity becomes therapy through therapeutic intent, structure and professional practice.",
+              "expert_explanation": "Performing art therapy uses drama, movement, music or performance to facilitate emotional expression, interpersonal exploration and therapeutic change.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 16,
+              "pyq_global_rank": 411
             },
             {
               "id": 16,
@@ -15707,10 +19657,23 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in family therapy is systemic approach focusing on relationship patterns, communication and family interaction.",
+              "detailed_explanation": "The central idea in family therapy is systemic approach focusing on relationship patterns, communication and family interaction.systemic approach focusing on relationship patterns, communication and family interaction.\n\nThe exam-relevant points are:\n• Systems\n• Boundaries\n• Interaction patterns\n• Communication\n\nA useful distinction to keep in mind is: Not every family member must attend every session.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "match": 1
+              },
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 242
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 11,
+          "pyq_mapped_microtopics": 6,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 7,
@@ -15731,7 +19694,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Applications of motivation theories in school",
-              "content_notes": "Applications of motivation theories in school should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• An application should identify the theory and its mechanism rather than merely stating that motivation improves learning.",
+              "content_notes": "Motivation theories can be applied by shaping goals, feedback, autonomy, expectations and classroom climate so that students can initiate and sustain learning.\n\nKEY POINTS\n\n• Motivation\n• Goals and feedback\n• Autonomy\n\nDISTINCTION / CAUTION\n\n• Motivation is not simply a matter of rewards.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15762,12 +19725,22 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Motivation theories can be applied by shaping goals, feedback, autonomy, expectations and classroom climate so that students can initiate and sustain learning.\n\nThe exam-relevant points are:\n• Motivation\n• Goals and feedback\n• Autonomy\n\nA useful distinction to keep in mind is: Motivation is not simply a matter of rewards.",
+              "expert_explanation": "Motivation theories can be applied by shaping goals, feedback, autonomy, expectations and classroom climate so that students can initiate and sustain learning.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1,
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 177
             },
             {
               "id": 2,
               "title": "Applications of learning theories in school",
-              "content_notes": "Applications of learning theories in school should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not reduce all classroom learning to operant conditioning.",
+              "content_notes": "Learning theories guide classroom practice by showing how reinforcement, observation, attention, prior knowledge and cognitive strategies influence learning.\n\nKEY POINTS\n\n• Conditioning and reinforcement\n• Observational learning\n• Practice and feedback\n\nDISTINCTION / CAUTION\n\n• No single learning theory explains every classroom outcome.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15798,10 +19771,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "Psychology: A Self-Teaching Guide"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision. Part 2: theory, emotion and Theory of Mind PYQ revision. Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Learning theories guide classroom practice by showing how reinforcement, observation, attention, prior knowledge and cognitive strategies influence learning.\n\nThe exam-relevant points are:\n• Conditioning and reinforcement\n• Observational learning\n• Practice and feedback\n\nA useful distinction to keep in mind is: No single learning theory explains every classroom outcome.",
+              "expert_explanation": "Learning theories guide classroom practice by showing how reinforcement, observation, attention, prior knowledge and cognitive strategies influence learning.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 412
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 2,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 5
         },
         {
           "id": 8,
@@ -15822,7 +19806,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Factors in educational achievement",
-              "content_notes": "Factors in educational achievement should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Achievement is an outcome and is not identical to intelligence.",
+              "content_notes": "Educational achievement reflects cognitive, motivational, instructional, family, peer and socioeconomic influences and the opportunities available for learning.\n\nKEY POINTS\n\n• Cognitive and motivational factors\n• Teaching conditions\n• Social context\n\nDISTINCTION / CAUTION\n\n• Achievement should not be attributed entirely to intelligence or effort.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15852,10 +19836,21 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Educational achievement reflects cognitive, motivational, instructional, family, peer and socioeconomic influences and the opportunities available for learning.\n\nThe exam-relevant points are:\n• Cognitive and motivational factors\n• Teaching conditions\n• Social context\n\nA useful distinction to keep in mind is: Achievement should not be attributed entirely to intelligence or effort.",
+              "expert_explanation": "Educational achievement reflects cognitive, motivational, instructional, family, peer and socioeconomic influences and the opportunities available for learning.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 413
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 8
         },
         {
           "id": 9,
@@ -15876,7 +19871,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Teacher effectiveness",
-              "content_notes": "Teacher effectiveness should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Effectiveness is not synonymous with popularity or authority; educational impact is central.",
+              "content_notes": "Teacher effectiveness concerns teaching practices that facilitate learning, engagement and development, including instructional clarity, classroom management, feedback and teacher–student relationships.\n\nKEY POINTS\n\n• Instructional competence\n• Classroom management\n• Feedback and relationships\n\nDISTINCTION / CAUTION\n\n• Teacher effectiveness is broader than examination scores.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15906,10 +19901,23 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Teacher effectiveness concerns teaching practices that facilitate learning, engagement and development, including instructional clarity, classroom management, feedback and teacher–student relationships.\n\nThe exam-relevant points are:\n• Instructional competence\n• Classroom management\n• Feedback and relationships\n\nA useful distinction to keep in mind is: Teacher effectiveness is broader than examination scores.",
+              "expert_explanation": "Teacher effectiveness concerns teaching practices that facilitate learning, engagement and development, including instructional clarity, classroom management, feedback and teacher–student relationships.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 243
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 7
         },
         {
           "id": 10,
@@ -15930,7 +19938,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Needs for school guidance",
-              "content_notes": "Needs for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Guidance is broader than counselling; counselling is one service within a guidance programme.",
+              "content_notes": "School guidance supports educational, vocational, personal and social development, especially during transitions, decisions and difficulties affecting adjustment or learning.\n\nKEY POINTS\n\n• Educational and vocational needs\n• Personal-social adjustment\n• Decision making\n\nDISTINCTION / CAUTION\n\n• Guidance is developmental and preventive as well as remedial.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15960,12 +19968,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "School guidance supports educational, vocational, personal and social development, especially during transitions, decisions and difficulties affecting adjustment or learning.\n\nThe exam-relevant points are:\n• Educational and vocational needs\n• Personal-social adjustment\n• Decision making\n\nA useful distinction to keep in mind is: Guidance is developmental and preventive as well as remedial.",
+              "expert_explanation": "School guidance supports educational, vocational, personal and social development, especially during transitions, decisions and difficulties affecting adjustment or learning.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 414
             },
             {
               "id": 2,
               "title": "Organizational setup for school guidance",
-              "content_notes": "Organizational setup for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Programme structure is different from the needs that guidance addresses.",
+              "content_notes": "An effective school guidance programme requires clear roles, coordination, referral pathways, confidentiality and collaboration among counsellors, teachers, administrators, families and services.\n\nKEY POINTS\n\n• Programme structure\n• Referral and collaboration\n• Confidentiality\n\nDISTINCTION / CAUTION\n\n• Guidance works best as a coordinated service.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15995,12 +20010,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "An effective school guidance programme requires clear roles, coordination, referral pathways, confidentiality and collaboration among counsellors, teachers, administrators, families and services.\n\nThe exam-relevant points are:\n• Programme structure\n• Referral and collaboration\n• Confidentiality\n\nA useful distinction to keep in mind is: Guidance works best as a coordinated service.",
+              "expert_explanation": "An effective school guidance programme requires clear roles, coordination, referral pathways, confidentiality and collaboration among counsellors, teachers, administrators, families and services.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 415
             },
             {
               "id": 3,
               "title": "School guidance techniques",
-              "content_notes": "School guidance techniques should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse placement with follow-up or referral.",
+              "content_notes": "School guidance may use individual and group guidance, interviews, observation, information services, orientation, career activities and referral.\n\nKEY POINTS\n\n• Individual and group methods\n• Information and career guidance\n• Interview and observation\n\nDISTINCTION / CAUTION\n\n• The technique should match the student's need and purpose.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16030,10 +20052,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "School guidance may use individual and group guidance, interviews, observation, information services, orientation, career activities and referral.\n\nThe exam-relevant points are:\n• Individual and group methods\n• Information and career guidance\n• Interview and observation\n\nA useful distinction to keep in mind is: The technique should match the student's need and purpose.",
+              "expert_explanation": "School guidance may use individual and group guidance, interviews, observation, information services, orientation, career activities and referral.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 416
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 0,
+          "pyq_mapped_microtopics": 0,
+          "pyq_frequency_band": "E",
+          "pyq_rank_within_unit": 10
         },
         {
           "id": 11,
@@ -16086,7 +20119,17 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in counselling process is structured helping process involving rapport, assessment, goals, intervention and follow-up.",
+              "detailed_explanation": "The central idea in counselling process is structured helping process involving rapport, assessment, goals, intervention and follow-up.structured helping process involving rapport, assessment, goals, intervention and follow-up.\n\nThe exam-relevant points are:\n• Rapport\n• Assessment\n• Goals\n• Intervention\n• Follow-up\n\nA useful distinction to keep in mind is: Counselling is not simply advice.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "statement-set": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 128
             },
             {
               "id": 2,
@@ -16123,12 +20166,19 @@ window.NETPSY_DATA = {
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "expert_explanation": "The central idea in counselling skills is active listening, empathy, reflection, questioning, summarizing and appropriate silence.",
+              "detailed_explanation": "The central idea in counselling skills is active listening, empathy, reflection, questioning, summarizing and appropriate silence.active listening, empathy, reflection, questioning, summarizing and appropriate silence.\n\nThe exam-relevant points are:\n• Attending\n• Empathy\n• Reflection\n• Open questions\n• Summary\n\nA useful distinction to keep in mind is: Questioning should not become interrogation.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 417
             },
             {
               "id": 3,
               "title": "Counselling techniques",
-              "content_notes": "Counselling techniques should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Technique must be interpreted within its counselling model and purpose.",
+              "content_notes": "Counselling techniques are deliberate ways of facilitating communication, self-exploration and change within the counselling relationship, including listening, reflection, clarification, questioning and summarising.\n\nKEY POINTS\n\n• Listening and communication\n• Self-exploration\n• Technique and timing\n\nDISTINCTION / CAUTION\n\n• A technique is not a substitute for the therapeutic relationship.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16158,13 +20208,27 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision."
+              "revisathon_focus": "Part 1: development, wellbeing and emerging-area PYQ revision.",
+              "detailed_explanation": "Counselling techniques are deliberate ways of facilitating communication, self-exploration and change within the counselling relationship, including listening, reflection, clarification, questioning and summarising.\n\nThe exam-relevant points are:\n• Listening and communication\n• Self-exploration\n• Technique and timing\n\nA useful distinction to keep in mind is: A technique is not a substitute for the therapeutic relationship.",
+              "expert_explanation": "Counselling techniques are deliberate ways of facilitating communication, self-exploration and change within the counselling relationship, including listening, reflection, clarification, questioning and summarising.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 418
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 5
         }
       ],
-      "description": "Trace psychological development across the lifespan and use that developmental perspective to understand major areas of psychological intervention. Connect developmental changes with psychopathology, psychotherapy, education, guidance, and counselling, while keeping the person’s age, context, and needs in view. This unit helps you distinguish developmental concepts from intervention approaches and understand where each becomes relevant."
+      "description": "Trace psychological development across the lifespan and use that developmental perspective to understand major areas of psychological intervention. Connect developmental changes with psychopathology, psychotherapy, education, guidance, and counselling, while keeping the person’s age, context, and needs in view. This unit helps you distinguish developmental concepts from intervention approaches and understand where each becomes relevant.",
+      "pyq_count": 39,
+      "pyq_mapped_microtopics": 17,
+      "pyq_frequency_band": "C"
     },
     {
       "id": 10,
@@ -16220,12 +20284,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in gender is social and psychological dimension shaped by identity, roles, norms and context.",
+              "detailed_explanation": "The central idea in gender is social and psychological dimension shaped by identity, roles, norms and context.social and psychological dimension shaped by identity, roles, norms and context.\n\nThe exam-relevant points are:\n• Gender identity\n• Roles\n• Norms\n• Intersectionality\n\nA useful distinction to keep in mind is: Gender should not be reduced to biological sex alone.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 178
             },
             {
               "id": 2,
               "title": "Poverty",
-              "content_notes": "Poverty should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Poverty is a social condition and should not be reduced to individual motivation or personal failure.",
+              "content_notes": "Poverty involves inadequate access to resources and opportunities needed for health, participation and development. Psychological consequences may arise through chronic stress, insecurity and social exclusion.\n\nKEY POINTS\n\n• Material deprivation\n• Stress and insecurity\n• Social consequences\n\nDISTINCTION / CAUTION\n\n• Poverty should not be explained as an individual psychological deficit.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16253,12 +20326,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Poverty involves inadequate access to resources and opportunities needed for health, participation and development. Psychological consequences may arise through chronic stress, insecurity and social exclusion.\n\nThe exam-relevant points are:\n• Material deprivation\n• Stress and insecurity\n• Social consequences\n\nA useful distinction to keep in mind is: Poverty should not be explained as an individual psychological deficit.",
+              "expert_explanation": "Poverty involves inadequate access to resources and opportunities needed for health, participation and development. Psychological consequences may arise through chronic stress, insecurity and social exclusion.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 419
             },
             {
               "id": 3,
               "title": "Disability",
-              "content_notes": "Disability should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid defining disability only through deficit.",
+              "content_notes": "Disability is shaped by the interaction between health conditions and environmental or social barriers, so psychological analysis must consider functioning, accessibility, participation and support.\n\nKEY POINTS\n\n• Functioning and participation\n• Environmental barriers\n• Inclusion\n\nDISTINCTION / CAUTION\n\n• Disability is not synonymous with impairment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16287,12 +20367,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Disability is shaped by the interaction between health conditions and environmental or social barriers, so psychological analysis must consider functioning, accessibility, participation and support.\n\nThe exam-relevant points are:\n• Functioning and participation\n• Environmental barriers\n• Inclusion\n\nA useful distinction to keep in mind is: Disability is not synonymous with impairment.",
+              "expert_explanation": "Disability is shaped by the interaction between health conditions and environmental or social barriers, so psychological analysis must consider functioning, accessibility, participation and support.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 420
             },
             {
               "id": 4,
               "title": "Migration",
-              "content_notes": "Migration should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Migration itself is not a disorder; psychological outcomes depend on context.",
+              "content_notes": "Migration often requires adjustment to changes in language, culture, work, identity and social networks. Psychological experience varies with reasons for migration, resources and social reception.\n\nKEY POINTS\n\n• Acculturation and adjustment\n• Identity and social networks\n• Stress and support\n\nDISTINCTION / CAUTION\n\n• Migration is not a single psychological experience.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16320,12 +20407,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Migration often requires adjustment to changes in language, culture, work, identity and social networks. Psychological experience varies with reasons for migration, resources and social reception.\n\nThe exam-relevant points are:\n• Acculturation and adjustment\n• Identity and social networks\n• Stress and support\n\nA useful distinction to keep in mind is: Migration is not a single psychological experience.",
+              "expert_explanation": "Migration often requires adjustment to changes in language, culture, work, identity and social networks. Psychological experience varies with reasons for migration, resources and social reception.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 421
             },
             {
               "id": 5,
               "title": "Cultural bias",
-              "content_notes": "Cultural bias should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Cultural difference is not itself bias; unjustified universalization is the issue.",
+              "content_notes": "Cultural bias occurs when psychological concepts, tests or practices reflect assumptions from one cultural context and are treated as universally valid.\n\nKEY POINTS\n\n• Culture-bound assumptions\n• Assessment and interpretation\n• Cultural validity\n\nDISTINCTION / CAUTION\n\n• Difference from a dominant cultural norm is not automatically psychopathology.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16354,7 +20448,16 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Cultural bias occurs when psychological concepts, tests or practices reflect assumptions from one cultural context and are treated as universally valid.\n\nThe exam-relevant points are:\n• Culture-bound assumptions\n• Assessment and interpretation\n• Cultural validity\n\nA useful distinction to keep in mind is: Difference from a dominant cultural norm is not automatically psychopathology.",
+              "expert_explanation": "Cultural bias occurs when psychological concepts, tests or practices reflect assumptions from one cultural context and are treated as universally valid.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 244
             },
             {
               "id": 6,
@@ -16390,10 +20493,21 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in discrimination is differential treatment based on group membership or perceived group membership.",
+              "detailed_explanation": "The central idea in discrimination is differential treatment based on group membership or perceived group membership.differential treatment based on group membership or perceived group membership.\n\nThe exam-relevant points are:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nA useful distinction to keep in mind is: Keep the three concepts distinct.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 422
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 3,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 2,
@@ -16445,12 +20559,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in stigma is social devaluation or negative labeling associated with a characteristic or condition.",
+              "detailed_explanation": "The central idea in stigma is social devaluation or negative labeling associated with a characteristic or condition.social devaluation or negative labeling associated with a characteristic or condition.\n\nThe exam-relevant points are:\n• Labeling\n• Stereotyping\n• Status loss\n• Discrimination\n\nA useful distinction to keep in mind is: Stigma is social/relational, not just personal feeling.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 423
             },
             {
               "id": 2,
               "title": "Marginalization",
-              "content_notes": "Marginalization should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Marginalization is a social process, not a personality characteristic.",
+              "content_notes": "Marginalization is a social process in which individuals or groups are pushed toward the social, economic or institutional periphery and have reduced access to resources, participation or voice.\n\nKEY POINTS\n\n• Social exclusion\n• Reduced access\n• Identity and wellbeing\n\nDISTINCTION / CAUTION\n\n• Marginalization is not an inherent characteristic of the marginalized person.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16478,12 +20599,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Marginalization is a social process in which individuals or groups are pushed toward the social, economic or institutional periphery and have reduced access to resources, participation or voice.\n\nThe exam-relevant points are:\n• Social exclusion\n• Reduced access\n• Identity and wellbeing\n\nA useful distinction to keep in mind is: Marginalization is not an inherent characteristic of the marginalized person.",
+              "expert_explanation": "Marginalization is a social process in which individuals or groups are pushed toward the social, economic or institutional periphery and have reduced access to resources, participation or voice.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 424
             },
             {
               "id": 3,
               "title": "Social suffering",
-              "content_notes": "Social suffering should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It does not deny individual processes; it adds social context.",
+              "content_notes": "Social suffering describes distress and harm produced or intensified by social, political and economic conditions, connecting individual experience with wider structures.\n\nKEY POINTS\n\n• Social determinants\n• Individual and structural levels\n• Collective suffering\n\nDISTINCTION / CAUTION\n\n• Individual symptoms should not be examined without considering context.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16511,12 +20639,22 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Social suffering describes distress and harm produced or intensified by social, political and economic conditions, connecting individual experience with wider structures.\n\nThe exam-relevant points are:\n• Social determinants\n• Individual and structural levels\n• Collective suffering\n\nA useful distinction to keep in mind is: Individual symptoms should not be examined without considering context.",
+              "expert_explanation": "Social suffering describes distress and harm produced or intensified by social, political and economic conditions, connecting individual experience with wider structures.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "match": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 179
             },
             {
               "id": 4,
               "title": "Child abuse",
-              "content_notes": "Child abuse should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Do not frame abuse as the child's problem; responsibility and context are central.",
+              "content_notes": "Child abuse includes acts or failures of care that cause or risk physical, emotional or sexual harm, including neglect. Assessment must consider safety and development.\n\nKEY POINTS\n\n• Physical, emotional and sexual abuse\n• Neglect\n• Safety and developmental impact\n\nDISTINCTION / CAUTION\n\n• Neglect is also maltreatment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16545,12 +20683,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Child abuse includes acts or failures of care that cause or risk physical, emotional or sexual harm, including neglect. Assessment must consider safety and development.\n\nThe exam-relevant points are:\n• Physical, emotional and sexual abuse\n• Neglect\n• Safety and developmental impact\n\nA useful distinction to keep in mind is: Neglect is also maltreatment.",
+              "expert_explanation": "Child abuse includes acts or failures of care that cause or risk physical, emotional or sexual harm, including neglect. Assessment must consider safety and development.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 2
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 180
             },
             {
               "id": 5,
               "title": "Domestic violence",
-              "content_notes": "Domestic violence should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Ordinary disagreement is not automatically domestic violence; abuse and coercion are central considerations.",
+              "content_notes": "Domestic violence refers to patterns of abusive or coercive behaviour within intimate or family relationships and may be physical, sexual, psychological or economic.\n\nKEY POINTS\n\n• Multiple forms of abuse\n• Coercive control\n• Psychological consequences\n\nDISTINCTION / CAUTION\n\n• It is broader than isolated physical assault.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16579,10 +20726,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Baron & Misra"
-              ]
+              ],
+              "detailed_explanation": "Domestic violence refers to patterns of abusive or coercive behaviour within intimate or family relationships and may be physical, sexual, psychological or economic.\n\nThe exam-relevant points are:\n• Multiple forms of abuse\n• Coercive control\n• Psychological consequences\n\nA useful distinction to keep in mind is: It is broader than isolated physical assault.",
+              "expert_explanation": "Domestic violence refers to patterns of abusive or coercive behaviour within intimate or family relationships and may be physical, sexual, psychological or economic.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 425
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 3,
@@ -16603,7 +20761,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Violence",
-              "content_notes": "Violence should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Aggression and violence overlap but are not identical concepts.",
+              "content_notes": "Violence involves the intentional use or threat of force or power that can result in injury, psychological harm, deprivation or death.\n\nKEY POINTS\n\n• Force and power\n• Individual and social determinants\n• Physical and psychological harm\n\nDISTINCTION / CAUTION\n\n• Aggression and violence overlap but are not identical.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16632,12 +20790,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Baron & Misra"
-              ]
+              ],
+              "detailed_explanation": "Violence involves the intentional use or threat of force or power that can result in injury, psychological harm, deprivation or death.\n\nThe exam-relevant points are:\n• Force and power\n• Individual and social determinants\n• Physical and psychological harm\n\nA useful distinction to keep in mind is: Aggression and violence overlap but are not identical.",
+              "expert_explanation": "Violence involves the intentional use or threat of force or power that can result in injury, psychological harm, deprivation or death.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 426
             },
             {
               "id": 2,
               "title": "Non-violence",
-              "content_notes": "Non-violence should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Non-violence is not identical to passivity.",
+              "content_notes": "Non-violence rejects violence as a means of achieving social or interpersonal goals and emphasises dialogue, reconciliation and organised peaceful resistance.\n\nKEY POINTS\n\n• Non-violent means\n• Dialogue and reconciliation\n• Active resistance\n\nDISTINCTION / CAUTION\n\n• Non-violence is not passivity.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16665,12 +20830,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Non-violence rejects violence as a means of achieving social or interpersonal goals and emphasises dialogue, reconciliation and organised peaceful resistance.\n\nThe exam-relevant points are:\n• Non-violent means\n• Dialogue and reconciliation\n• Active resistance\n\nA useful distinction to keep in mind is: Non-violence is not passivity.",
+              "expert_explanation": "Non-violence rejects violence as a means of achieving social or interpersonal goals and emphasises dialogue, reconciliation and organised peaceful resistance.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 427
             },
             {
               "id": 3,
               "title": "Conflict resolution at macro level",
-              "content_notes": "Conflict resolution at macro level should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Resolution is broader than suppressing visible disagreement.",
+              "content_notes": "Macro-level conflict resolution addresses conflicts between groups, communities, institutions or states through processes such as negotiation, mediation, reconciliation and structural change.\n\nKEY POINTS\n\n• Intergroup conflict\n• Negotiation and reconciliation\n• Structural conditions\n\nDISTINCTION / CAUTION\n\n• Ending open violence is not necessarily resolving the underlying conflict.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16698,12 +20870,22 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Macro-level conflict resolution addresses conflicts between groups, communities, institutions or states through processes such as negotiation, mediation, reconciliation and structural change.\n\nThe exam-relevant points are:\n• Intergroup conflict\n• Negotiation and reconciliation\n• Structural conditions\n\nA useful distinction to keep in mind is: Ending open violence is not necessarily resolving the underlying conflict.",
+              "expert_explanation": "Macro-level conflict resolution addresses conflicts between groups, communities, institutions or states through processes such as negotiation, mediation, reconciliation and structural change.",
+              "pyq_count": 3,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1,
+                "sequence": 2
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 129
             },
             {
               "id": 4,
               "title": "Role of media in conflict resolution",
-              "content_notes": "Role of media in conflict resolution should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Media influence is not automatically peaceful or violent.",
+              "content_notes": "Media can shape conflict by influencing which events are noticed, how groups are represented and which explanations become socially available. Constructive reporting can support dialogue; inflammatory framing can intensify hostility.\n\nKEY POINTS\n\n• Framing and representation\n• Public opinion\n• Escalation or reconciliation\n\nDISTINCTION / CAUTION\n\n• Media selection and framing are not automatically neutral.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16732,10 +20914,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Baron & Misra"
-              ]
+              ],
+              "detailed_explanation": "Media can shape conflict by influencing which events are noticed, how groups are represented and which explanations become socially available. Constructive reporting can support dialogue; inflammatory framing can intensify hostility.\n\nThe exam-relevant points are:\n• Framing and representation\n• Public opinion\n• Escalation or reconciliation\n\nA useful distinction to keep in mind is: Media selection and framing are not automatically neutral.",
+              "expert_explanation": "Media can shape conflict by influencing which events are noticed, how groups are represented and which explanations become socially available. Constructive reporting can support dialogue; inflammatory framing can intensify hostility.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "assertion-reason": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 245
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 2,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 2
         },
         {
           "id": 4,
@@ -16756,7 +20951,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Types of wellbeing",
-              "content_notes": "Types of wellbeing should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Wellbeing should not be equated with momentary happiness alone.",
+              "content_notes": "Wellbeing is multidimensional and includes how people feel, function and experience their lives as meaningful. Psychological approaches therefore distinguish different forms of wellbeing.\n\nKEY POINTS\n\n• Hedonic and eudaimonic dimensions\n• Functioning and meaning\n• Positive functioning\n\nDISTINCTION / CAUTION\n\n• Wellbeing is broader than momentary pleasure.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16786,7 +20981,14 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "PowerWithin Psychology",
                 "Baron & Misra"
-              ]
+              ],
+              "detailed_explanation": "Wellbeing is multidimensional and includes how people feel, function and experience their lives as meaningful. Psychological approaches therefore distinguish different forms of wellbeing.\n\nThe exam-relevant points are:\n• Hedonic and eudaimonic dimensions\n• Functioning and meaning\n• Positive functioning\n\nA useful distinction to keep in mind is: Wellbeing is broader than momentary pleasure.",
+              "expert_explanation": "Wellbeing is multidimensional and includes how people feel, function and experience their lives as meaningful. Psychological approaches therefore distinguish different forms of wellbeing.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 428
             },
             {
               "id": 2,
@@ -16824,7 +21026,14 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology",
                 "Psychology by Ciccarelli & White (6th ed.)"
-              ]
+              ],
+              "expert_explanation": "The central idea in hedonic wellbeing is wellbeing emphasizing pleasure, positive affect and life satisfaction.",
+              "detailed_explanation": "The central idea in hedonic wellbeing is wellbeing emphasizing pleasure, positive affect and life satisfaction.wellbeing emphasizing pleasure, positive affect and life satisfaction.\n\nThe exam-relevant points are:\n• Positive affect\n• Low negative affect\n• Life satisfaction\n\nA useful distinction to keep in mind is: Not identical to short-term pleasure.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 429
             },
             {
               "id": 3,
@@ -16862,12 +21071,19 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology",
                 "Psychology by Ciccarelli & White (6th ed.)"
-              ]
+              ],
+              "expert_explanation": "The central idea in eudemonic wellbeing is wellbeing emphasizing meaning, purpose, growth and realizing capacities.",
+              "detailed_explanation": "The central idea in eudemonic wellbeing is wellbeing emphasizing meaning, purpose, growth and realizing capacities.wellbeing emphasizing meaning, purpose, growth and realizing capacities.\n\nThe exam-relevant points are:\n• Meaning\n• Purpose\n• Growth\n• Self-realization\n\nA useful distinction to keep in mind is: Not simply happiness.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 430
             },
             {
               "id": 4,
               "title": "Character strengths",
-              "content_notes": "Character strengths should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Strengths are not simply skills or the absence of weaknesses.",
+              "content_notes": "Character strengths are positively valued traits that can support effective functioning and valued goals. Positive psychology studies strengths such as perseverance, kindness, curiosity, fairness and self-regulation.\n\nKEY POINTS\n\n• Positive traits\n• Strength use\n• Flourishing\n\nDISTINCTION / CAUTION\n\n• A strength is not automatically beneficial in every context.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16896,7 +21112,17 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Character strengths are positively valued traits that can support effective functioning and valued goals. Positive psychology studies strengths such as perseverance, kindness, curiosity, fairness and self-regulation.\n\nThe exam-relevant points are:\n• Positive traits\n• Strength use\n• Flourishing\n\nA useful distinction to keep in mind is: A strength is not automatically beneficial in every context.",
+              "expert_explanation": "Character strengths are positively valued traits that can support effective functioning and valued goals. Positive psychology studies strengths such as perseverance, kindness, curiosity, fairness and self-regulation.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 181
             },
             {
               "id": 5,
@@ -16934,7 +21160,16 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology",
                 "Psychology by Ciccarelli & White (6th ed.)"
-              ]
+              ],
+              "expert_explanation": "The central idea in resilience is capacity to adapt, recover or maintain functioning in adversity.",
+              "detailed_explanation": "The central idea in resilience is capacity to adapt, recover or maintain functioning in adversity.capacity to adapt, recover or maintain functioning in adversity.\n\nThe exam-relevant points are:\n• Adaptation\n• Protective factors\n• Recovery/growth\n\nA useful distinction to keep in mind is: Resilience does not mean no distress.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 246
             },
             {
               "id": 6,
@@ -16972,10 +21207,23 @@ window.NETPSY_DATA = {
                 "Psychology: A Self-Teaching Guide",
                 "Baron & Misra — Psychology",
                 "Psychology by Ciccarelli & White (6th ed.)"
-              ]
+              ],
+              "expert_explanation": "The central idea in post-traumatic growth is positive changes in self, relationships or priorities reported following major adversity.",
+              "detailed_explanation": "The central idea in post-traumatic growth is positive changes in self, relationships or priorities reported following major adversity.positive changes in self, relationships or priorities reported following major adversity.\n\nThe exam-relevant points are:\n• Meaning\n• Relationships\n• Appreciation of life\n• Personal strength\n\nA useful distinction to keep in mind is: Growth does not imply trauma was beneficial.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 247
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 4,
+          "pyq_mapped_microtopics": 3,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 3
         },
         {
           "id": 5,
@@ -16996,7 +21244,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Health-promoting behaviors",
-              "content_notes": "Health-promoting behaviors should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Define the behavior by its health function, not merely social approval.",
+              "content_notes": "Health-promoting behaviours support health and reduce risk through actions such as physical activity, balanced nutrition, adequate sleep and preventive care.\n\nKEY POINTS\n\n• Prevention\n• Lifestyle behaviours\n• Self-regulation\n\nDISTINCTION / CAUTION\n\n• A behaviour is health-promoting because of its contribution to health.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17025,12 +21273,22 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Health-promoting behaviours support health and reduce risk through actions such as physical activity, balanced nutrition, adequate sleep and preventive care.\n\nThe exam-relevant points are:\n• Prevention\n• Lifestyle behaviours\n• Self-regulation\n\nA useful distinction to keep in mind is: A behaviour is health-promoting because of its contribution to health.",
+              "expert_explanation": "Health-promoting behaviours support health and reduce risk through actions such as physical activity, balanced nutrition, adequate sleep and preventive care.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 182
             },
             {
               "id": 2,
               "title": "Health-compromising behaviors",
-              "content_notes": "Health-compromising behaviors should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Risk behavior does not make a disease outcome inevitable.",
+              "content_notes": "Health-compromising behaviours increase risk to physical or psychological health, especially when repeated or sustained. Examples include tobacco use, harmful substance use, inactivity and poor sleep.\n\nKEY POINTS\n\n• Behavioural risk factors\n• Short- and long-term consequences\n• Prevention\n\nDISTINCTION / CAUTION\n\n• Risk depends on pattern, dose and context.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17059,12 +21317,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Health-compromising behaviours increase risk to physical or psychological health, especially when repeated or sustained. Examples include tobacco use, harmful substance use, inactivity and poor sleep.\n\nThe exam-relevant points are:\n• Behavioural risk factors\n• Short- and long-term consequences\n• Prevention\n\nA useful distinction to keep in mind is: Risk depends on pattern, dose and context.",
+              "expert_explanation": "Health-compromising behaviours increase risk to physical or psychological health, especially when repeated or sustained. Examples include tobacco use, harmful substance use, inactivity and poor sleep.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 431
             },
             {
               "id": 3,
               "title": "Lifestyle",
-              "content_notes": "Lifestyle should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Lifestyle is not purely individual choice; environments influence available choices.",
+              "content_notes": "Lifestyle refers to the relatively stable pattern of behaviours, routines and choices through which everyday life is organised, shaped by personal and social conditions.\n\nKEY POINTS\n\n• Daily routines\n• Health-related habits\n• Social conditions\n\nDISTINCTION / CAUTION\n\n• Lifestyle should not be treated as purely individual choice.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17093,12 +21358,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Lifestyle refers to the relatively stable pattern of behaviours, routines and choices through which everyday life is organised, shaped by personal and social conditions.\n\nThe exam-relevant points are:\n• Daily routines\n• Health-related habits\n• Social conditions\n\nA useful distinction to keep in mind is: Lifestyle should not be treated as purely individual choice.",
+              "expert_explanation": "Lifestyle refers to the relatively stable pattern of behaviours, routines and choices through which everyday life is organised, shaped by personal and social conditions.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 432
             },
             {
               "id": 4,
               "title": "Diabetes",
-              "content_notes": "Diabetes should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological factors can influence management without being treated as the sole cause.",
+              "content_notes": "Diabetes is a chronic metabolic condition involving abnormal regulation of blood glucose. Psychology is relevant to health behaviour, treatment adherence, stress management and adjustment.\n\nKEY POINTS\n\n• Blood-glucose regulation\n• Chronic illness management\n• Behaviour and adjustment\n\nDISTINCTION / CAUTION\n\n• Psychological factors are not a simple sole cause of diabetes.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17127,12 +21399,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Diabetes is a chronic metabolic condition involving abnormal regulation of blood glucose. Psychology is relevant to health behaviour, treatment adherence, stress management and adjustment.\n\nThe exam-relevant points are:\n• Blood-glucose regulation\n• Chronic illness management\n• Behaviour and adjustment\n\nA useful distinction to keep in mind is: Psychological factors are not a simple sole cause of diabetes.",
+              "expert_explanation": "Diabetes is a chronic metabolic condition involving abnormal regulation of blood glucose. Psychology is relevant to health behaviour, treatment adherence, stress management and adjustment.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 7,
+              "pyq_global_rank": 433
             },
             {
               "id": 5,
               "title": "Hypertension",
-              "content_notes": "Hypertension should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Stress is one factor among several; it should not be presented as the sole cause.",
+              "content_notes": "Hypertension is persistently elevated blood pressure and an important risk factor for cardiovascular and other health problems. Psychology is relevant to stress, health behaviour and adherence.\n\nKEY POINTS\n\n• Elevated blood pressure\n• Cardiovascular risk\n• Stress and health behaviour\n\nDISTINCTION / CAUTION\n\n• Hypertension is a medical condition; psychological factors influence management and adjustment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17161,12 +21440,19 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Hypertension is persistently elevated blood pressure and an important risk factor for cardiovascular and other health problems. Psychology is relevant to stress, health behaviour and adherence.\n\nThe exam-relevant points are:\n• Elevated blood pressure\n• Cardiovascular risk\n• Stress and health behaviour\n\nA useful distinction to keep in mind is: Hypertension is a medical condition; psychological factors influence management and adjustment.",
+              "expert_explanation": "Hypertension is persistently elevated blood pressure and an important risk factor for cardiovascular and other health problems. Psychology is relevant to stress, health behaviour and adherence.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 8,
+              "pyq_global_rank": 434
             },
             {
               "id": 6,
               "title": "Coronary Heart Disease",
-              "content_notes": "Coronary Heart Disease should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Use a multifactorial risk framework rather than a single-cause explanation.",
+              "content_notes": "Coronary heart disease involves disease of the coronary arteries and can affect the heart's blood supply. Psychological research examines behavioural risk, stress, coping and adherence.\n\nKEY POINTS\n\n• Coronary circulation\n• Behavioural and psychosocial risk\n• Prevention\n\nDISTINCTION / CAUTION\n\n• Psychological risk factors interact with biological and behavioural factors.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17195,7 +21481,17 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Coronary heart disease involves disease of the coronary arteries and can affect the heart's blood supply. Psychological research examines behavioural risk, stress, coping and adherence.\n\nThe exam-relevant points are:\n• Coronary circulation\n• Behavioural and psychosocial risk\n• Prevention\n\nA useful distinction to keep in mind is: Psychological risk factors interact with biological and behavioural factors.",
+              "expert_explanation": "Coronary heart disease involves disease of the coronary arteries and can affect the heart's blood supply. Psychological research examines behavioural risk, stress, coping and adherence.",
+              "pyq_count": 2,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "statement-set": 1,
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 183
             },
             {
               "id": 7,
@@ -17231,12 +21527,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in psychoneuroimmunology is study of interactions among psychological processes, nervous, endocrine and immune systems.",
+              "detailed_explanation": "The central idea in psychoneuroimmunology is study of interactions among psychological processes, nervous, endocrine and immune systems.study of interactions among psychological processes, nervous, endocrine and immune systems.\n\nThe exam-relevant points are:\n• Stress\n• Neuroendocrine pathways\n• Immune function\n\nA useful distinction to keep in mind is: It does not mean thoughts directly cause every disease.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 9,
+              "pyq_global_rank": 435
             },
             {
               "id": 8,
               "title": "Cancer",
-              "content_notes": "Cancer should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological stress should not be presented as a single direct cause of cancer.",
+              "content_notes": "Cancer is a broad group of diseases involving abnormal cell growth and possible invasion or spread. Psychology contributes to prevention behaviour, coping, adherence, communication and quality of life.\n\nKEY POINTS\n\n• Abnormal cell growth\n• Health behaviour\n• Coping and quality of life\n\nDISTINCTION / CAUTION\n\n• Psychological factors should not be presented as a simple cause of cancer.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17265,12 +21568,21 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "Cancer is a broad group of diseases involving abnormal cell growth and possible invasion or spread. Psychology contributes to prevention behaviour, coping, adherence, communication and quality of life.\n\nThe exam-relevant points are:\n• Abnormal cell growth\n• Health behaviour\n• Coping and quality of life\n\nA useful distinction to keep in mind is: Psychological factors should not be presented as a simple cause of cancer.",
+              "expert_explanation": "Cancer is a broad group of diseases involving abnormal cell growth and possible invasion or spread. Psychology contributes to prevention behaviour, coping, adherence, communication and quality of life.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 248
             },
             {
               "id": 9,
               "title": "HIV/AIDS",
-              "content_notes": "HIV/AIDS should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• HIV infection and AIDS are related but not identical terms.",
+              "content_notes": "HIV is a viral infection that can progressively damage immune functioning; AIDS refers to advanced HIV disease with severe immune compromise. Psychology is relevant to prevention, adherence, stigma and adjustment.\n\nKEY POINTS\n\n• HIV and immune functioning\n• Prevention and adherence\n• Stigma and adjustment\n\nDISTINCTION / CAUTION\n\n• HIV infection and AIDS are not interchangeable terms.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17299,10 +21611,23 @@ window.NETPSY_DATA = {
               "source_focus": [
                 "Baron & Misra",
                 "Ciccarelli & White"
-              ]
+              ],
+              "detailed_explanation": "HIV is a viral infection that can progressively damage immune functioning; AIDS refers to advanced HIV disease with severe immune compromise. Psychology is relevant to prevention, adherence, stigma and adjustment.\n\nThe exam-relevant points are:\n• HIV and immune functioning\n• Prevention and adherence\n• Stigma and adjustment\n\nA useful distinction to keep in mind is: HIV infection and AIDS are not interchangeable terms.",
+              "expert_explanation": "HIV is a viral infection that can progressively damage immune functioning; AIDS refers to advanced HIV disease with severe immune compromise. Psychology is relevant to prevention, adherence, stigma and adjustment.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 249
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 6,
+          "pyq_mapped_microtopics": 4,
+          "pyq_frequency_band": "C",
+          "pyq_rank_within_unit": 1
         },
         {
           "id": 6,
@@ -17323,7 +21648,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Digital learning",
-              "content_notes": "Digital learning should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Technology use is not automatically equivalent to improved learning.",
+              "content_notes": "Digital learning uses digital technologies to support information access, instruction, practice, communication and assessment. Its effectiveness depends on instructional design, engagement and accessibility.\n\nKEY POINTS\n\n• Technology-supported learning\n• Engagement\n• Instructional design\n\nDISTINCTION / CAUTION\n\n• Technology does not automatically improve learning.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17353,12 +21678,19 @@ window.NETPSY_DATA = {
                 "Ciccarelli & White",
                 "PowerWithin Psychology"
               ],
-              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons."
+              "revisathon_focus": "Part 4: classical/operant conditioning and learning comparisons.",
+              "detailed_explanation": "Digital learning uses digital technologies to support information access, instruction, practice, communication and assessment. Its effectiveness depends on instructional design, engagement and accessibility.\n\nThe exam-relevant points are:\n• Technology-supported learning\n• Engagement\n• Instructional design\n\nA useful distinction to keep in mind is: Technology does not automatically improve learning.",
+              "expert_explanation": "Digital learning uses digital technologies to support information access, instruction, practice, communication and assessment. Its effectiveness depends on instructional design, engagement and accessibility.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 2,
+              "pyq_global_rank": 436
             },
             {
               "id": 2,
               "title": "Digital etiquette",
-              "content_notes": "Digital etiquette should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It is a social-behavioral framework, not a technical cybersecurity procedure.",
+              "content_notes": "Digital etiquette refers to norms for respectful and responsible behaviour online, including privacy, consent, attribution and consideration of the audience.\n\nKEY POINTS\n\n• Respectful communication\n• Privacy and consent\n• Responsible participation\n\nDISTINCTION / CAUTION\n\n• Digital etiquette is broader than politeness.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17386,7 +21718,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Digital etiquette refers to norms for respectful and responsible behaviour online, including privacy, consent, attribution and consideration of the audience.\n\nThe exam-relevant points are:\n• Respectful communication\n• Privacy and consent\n• Responsible participation\n\nA useful distinction to keep in mind is: Digital etiquette is broader than politeness.",
+              "expert_explanation": "Digital etiquette refers to norms for respectful and responsible behaviour online, including privacy, consent, attribution and consideration of the audience.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 3,
+              "pyq_global_rank": 437
             },
             {
               "id": 3,
@@ -17422,12 +21761,19 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in cyberbullying is harmful online behavior involving harassment, humiliation, threats or exclusion.",
+              "detailed_explanation": "The central idea in cyberbullying is harmful online behavior involving harassment, humiliation, threats or exclusion.harmful online behavior involving harassment, humiliation, threats or exclusion.\n\nThe exam-relevant points are:\n• Digital context\n• Persistence/audience\n• Reporting/support\n\nA useful distinction to keep in mind is: Not every online disagreement is cyberbullying.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 4,
+              "pyq_global_rank": 438
             },
             {
               "id": 4,
               "title": "Cyber pornography: consumption",
-              "content_notes": "Cyber pornography: consumption should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Exposure alone should not be equated with addiction or disorder.",
+              "content_notes": "Consumption of cyber pornography refers to accessing sexually explicit material through digital technologies. Psychological analysis considers motivation, pattern of use, context and individual differences.\n\nKEY POINTS\n\n• Consumption patterns\n• Motivations\n• Individual differences\n\nDISTINCTION / CAUTION\n\n• Consumption alone should not be equated with disorder.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17455,12 +21801,19 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "Consumption of cyber pornography refers to accessing sexually explicit material through digital technologies. Psychological analysis considers motivation, pattern of use, context and individual differences.\n\nThe exam-relevant points are:\n• Consumption patterns\n• Motivations\n• Individual differences\n\nA useful distinction to keep in mind is: Consumption alone should not be equated with disorder.",
+              "expert_explanation": "Consumption of cyber pornography refers to accessing sexually explicit material through digital technologies. Psychological analysis considers motivation, pattern of use, context and individual differences.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 5,
+              "pyq_global_rank": 439
             },
             {
               "id": 5,
               "title": "Cyber pornography: implications",
-              "content_notes": "Cyber pornography: implications should be learned through the defining features and distinctions identified in the study material.\n\nKEY POINTS\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid deterministic claims that exposure produces one inevitable outcome.",
+              "content_notes": "The implications of cyber pornography use depend on the pattern of use, developmental and relational context and individual differences. Research considers possible associations with attitudes, relationships, expectations and problematic use.\n\nKEY POINTS\n\n• Attitudes and expectations\n• Relationships\n• Problematic use\n\nDISTINCTION / CAUTION\n\n• A single psychological effect should not be assumed for every user.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17488,7 +21841,14 @@ window.NETPSY_DATA = {
               ],
               "source_focus": [
                 "PowerWithin Psychology"
-              ]
+              ],
+              "detailed_explanation": "The implications of cyber pornography use depend on the pattern of use, developmental and relational context and individual differences. Research considers possible associations with attitudes, relationships, expectations and problematic use.\n\nThe exam-relevant points are:\n• Attitudes and expectations\n• Relationships\n• Problematic use\n\nA useful distinction to keep in mind is: A single psychological effect should not be assumed for every user.",
+              "expert_explanation": "The implications of cyber pornography use depend on the pattern of use, developmental and relational context and individual differences. Research considers possible associations with attitudes, relationships, expectations and problematic use.",
+              "pyq_count": 0,
+              "pyq_frequency_band": "D",
+              "pyq_formats": {},
+              "pyq_rank_within_topic": 6,
+              "pyq_global_rank": 440
             },
             {
               "id": 6,
@@ -17524,13 +21884,29 @@ window.NETPSY_DATA = {
                 "PowerWithin Psychology — UGC NET/JRF/SLET compilation",
                 "Psychology by Ciccarelli & White (6th ed.)",
                 "Baron & Misra — Psychology"
-              ]
+              ],
+              "expert_explanation": "The central idea in parental mediation of digital usage is parental strategies for guiding children's digital use and meaning-making.",
+              "detailed_explanation": "The central idea in parental mediation of digital usage is parental strategies for guiding children's digital use and meaning-making.parental strategies for guiding children's digital use and meaning-making.\n\nThe exam-relevant points are:\n• Active mediation\n• Restrictive mediation\n• Co-use\n• Digital literacy\n\nA useful distinction to keep in mind is: Restriction alone does not build self-regulation.",
+              "pyq_count": 1,
+              "pyq_frequency_band": "C",
+              "pyq_formats": {
+                "direct": 1
+              },
+              "pyq_rank_within_topic": 1,
+              "pyq_global_rank": 250
             }
           ],
-          "learning_focus": "Build the topic map first; then work through one micro-topic at a time."
+          "learning_focus": "Build the topic map first; then work through one micro-topic at a time.",
+          "pyq_count": 1,
+          "pyq_mapped_microtopics": 1,
+          "pyq_frequency_band": "D",
+          "pyq_rank_within_unit": 6
         }
       ],
-      "description": "Explore areas in which psychology responds to changing social, cultural, health, environmental, and digital realities. Examine diversity and inequality alongside wellbeing, health, peace, and the psychological consequences of contemporary and digital life. Use the unit to connect established psychological principles with emerging problems and applications, while recognising how context changes the questions psychologists ask and the interventions they design."
+      "description": "Explore areas in which psychology responds to changing social, cultural, health, environmental, and digital realities. Examine diversity and inequality alongside wellbeing, health, peace, and the psychological consequences of contemporary and digital life. Use the unit to connect established psychological principles with emerging problems and applications, while recognising how context changes the questions psychologists ask and the interventions they design.",
+      "pyq_count": 22,
+      "pyq_mapped_microtopics": 14,
+      "pyq_frequency_band": "D"
     }
   ],
   "content_sources": [
@@ -17754,17 +22130,695 @@ window.NETPSY_DATA = {
           "7B Motivation, Emotion, Stress and Coping"
         ]
       }
+    },
+    "v1Stabilization": {
+      "version": "2026-10-03-v1",
+      "status": "PYQ-informed internal organization + code stabilization",
+      "pyqQuestionCount": 1583,
+      "mappedPYQCount": 1411,
+      "microTopicCount": 440,
+      "terminology": "Learner-facing Retrieve wording standardized to Recall; source/domain terminology such as retrieval remains unchanged."
     }
   },
   "learning_design": {
     "method": [
       "Understand",
-      "Retrieve",
+      "Recall",
       "Apply",
       "Practice",
       "Space"
     ],
-    "note": "Each topic is organised from a big picture into small learning nodes. Each micro-topic asks the learner to understand the core idea, close the notes and retrieve it, apply it to a new situation, practise a mapped question when available, and return later through spaced revision.",
+    "note": "Each topic is organised from a big picture into small learning nodes. Each micro-topic asks the learner to understand the core idea, close the notes and recall it, apply it to a new situation, practise a mapped question when available, and return later through spaced revision.",
     "source_use": "Baron & Misra, Ciccarelli & White, Self-Teaching Guide and PowerWithin provide the main conceptual spine. REVISATHON and Kaplan add exam/application practice. The remaining uploaded unit notes are used where their specialised coverage fits the micro-topic."
+  },
+  "pyq_intelligence": {
+    "version": "2026-10-03-v1",
+    "source": "practice_questions.json — mapped UGC NET Psychology PYQs",
+    "total_questions": 1583,
+    "mapped_questions": 1411,
+    "unmapped_questions": 172,
+    "mapping_coverage_percent": 89.13,
+    "question_type_counts": {
+      "direct": 889,
+      "match": 197,
+      "assertion-reason": 175,
+      "sequence": 129,
+      "statement-set": 193
+    },
+    "band_definition": {
+      "micro": "A=15+; B=5–14; C=1–4; D=0 mapped PYQs",
+      "topic": "A=30+; B=15–29; C=5–14; D=1–4; E=0 mapped PYQs"
+    },
+    "top_microtopics": [
+      {
+        "unit": 1,
+        "topic": 1,
+        "micro": 1,
+        "title": "Bhagavad Gita",
+        "count": 44,
+        "formats": {
+          "direct": 26,
+          "match": 5,
+          "assertion-reason": 7,
+          "statement-set": 6
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 8,
+        "micro": 4,
+        "title": "Sign test",
+        "count": 40,
+        "formats": {
+          "direct": 26,
+          "assertion-reason": 1,
+          "match": 8,
+          "statement-set": 5
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 5,
+        "micro": 10,
+        "title": "Grounded theory",
+        "count": 30,
+        "formats": {
+          "sequence": 2,
+          "assertion-reason": 4,
+          "direct": 17,
+          "statement-set": 3,
+          "match": 4
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 2,
+        "micro": 1,
+        "title": "Research problems",
+        "count": 28,
+        "formats": {
+          "direct": 13,
+          "statement-set": 7,
+          "assertion-reason": 4,
+          "match": 4
+        }
+      },
+      {
+        "unit": 6,
+        "topic": 4,
+        "micro": 1,
+        "title": "Types of problem solving",
+        "count": 28,
+        "formats": {
+          "direct": 14,
+          "match": 5,
+          "assertion-reason": 4,
+          "sequence": 4,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 3,
+        "topic": 4,
+        "micro": 1,
+        "title": "Intelligence tests",
+        "count": 27,
+        "formats": {
+          "direct": 20,
+          "assertion-reason": 2,
+          "sequence": 1,
+          "statement-set": 1,
+          "match": 3
+        }
+      },
+      {
+        "unit": 4,
+        "topic": 4,
+        "micro": 1,
+        "title": "Central nervous system",
+        "count": 27,
+        "formats": {
+          "direct": 18,
+          "assertion-reason": 1,
+          "match": 4,
+          "statement-set": 3,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 8,
+        "micro": 3,
+        "title": "Information processing approach to perception",
+        "count": 27,
+        "formats": {
+          "direct": 13,
+          "match": 4,
+          "assertion-reason": 5,
+          "statement-set": 3,
+          "sequence": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 2,
+        "micro": 4,
+        "title": "Hypothesis",
+        "count": 25,
+        "formats": {
+          "direct": 22,
+          "match": 2,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 7,
+        "topic": 3,
+        "micro": 3,
+        "title": "Kohlberg’s theory of Moral development",
+        "count": 25,
+        "formats": {
+          "direct": 9,
+          "sequence": 6,
+          "assertion-reason": 7,
+          "match": 3
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 14,
+        "micro": 1,
+        "title": "Assumptions of factor analysis",
+        "count": 23,
+        "formats": {
+          "direct": 16,
+          "assertion-reason": 1,
+          "statement-set": 2,
+          "sequence": 4
+        }
+      },
+      {
+        "unit": 3,
+        "topic": 5,
+        "micro": 1,
+        "title": "Semantic differential scale",
+        "count": 23,
+        "formats": {
+          "direct": 17,
+          "match": 2,
+          "statement-set": 1,
+          "sequence": 2,
+          "assertion-reason": 1
+        }
+      },
+      {
+        "unit": 7,
+        "topic": 3,
+        "micro": 1,
+        "title": "Rotter's Locus of Control",
+        "count": 23,
+        "formats": {
+          "direct": 4,
+          "match": 4,
+          "assertion-reason": 10,
+          "statement-set": 5
+        }
+      },
+      {
+        "unit": 4,
+        "topic": 9,
+        "micro": 1,
+        "title": "Chromosomal anomalies",
+        "count": 22,
+        "formats": {
+          "match": 2,
+          "assertion-reason": 3,
+          "direct": 14,
+          "sequence": 1,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 4,
+        "topic": 2,
+        "micro": 1,
+        "title": "Neuron structure",
+        "count": 20,
+        "formats": {
+          "assertion-reason": 7,
+          "direct": 9,
+          "match": 3,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 6,
+        "topic": 8,
+        "micro": 1,
+        "title": "Relationship between intelligence and creativity",
+        "count": 20,
+        "formats": {
+          "assertion-reason": 3,
+          "direct": 9,
+          "match": 3,
+          "statement-set": 4,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 17,
+        "micro": 1,
+        "title": "Encoding",
+        "count": 19,
+        "formats": {
+          "direct": 10,
+          "sequence": 3,
+          "assertion-reason": 3,
+          "match": 2,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 10,
+        "micro": 1,
+        "title": "Effect size",
+        "count": 18,
+        "formats": {
+          "direct": 11,
+          "assertion-reason": 1,
+          "statement-set": 3,
+          "match": 2,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 10,
+        "micro": 1,
+        "title": "Classical conditioning procedure",
+        "count": 18,
+        "formats": {
+          "direct": 8,
+          "match": 2,
+          "sequence": 5,
+          "assertion-reason": 1,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 6,
+        "topic": 2,
+        "micro": 1,
+        "title": "Rules of concept formation",
+        "count": 18,
+        "formats": {
+          "direct": 10,
+          "match": 7,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 5,
+        "micro": 5,
+        "title": "Experimental method",
+        "count": 17,
+        "formats": {
+          "direct": 7,
+          "assertion-reason": 4,
+          "statement-set": 6
+        }
+      },
+      {
+        "unit": 1,
+        "topic": 2,
+        "micro": 3,
+        "title": "1970s social issues",
+        "count": 16,
+        "formats": {
+          "match": 2,
+          "direct": 8,
+          "assertion-reason": 3,
+          "statement-set": 2,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 4,
+        "micro": 3,
+        "title": "Mixed methods approach",
+        "count": 16,
+        "formats": {
+          "direct": 11,
+          "statement-set": 3,
+          "assertion-reason": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 6,
+        "micro": 1,
+        "title": "Measures of central tendency",
+        "count": 16,
+        "formats": {
+          "direct": 11,
+          "assertion-reason": 1,
+          "match": 3,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 7,
+        "topic": 2,
+        "micro": 4,
+        "title": "Trait and Type approach",
+        "count": 16,
+        "formats": {
+          "sequence": 2,
+          "assertion-reason": 2,
+          "match": 7,
+          "direct": 3,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 11,
+        "micro": 3,
+        "title": "Rank Order correlation",
+        "count": 15,
+        "formats": {
+          "direct": 3,
+          "sequence": 8,
+          "match": 1,
+          "assertion-reason": 1,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 15,
+        "micro": 8,
+        "title": "Time series",
+        "count": 15,
+        "formats": {
+          "match": 6,
+          "statement-set": 2,
+          "assertion-reason": 2,
+          "direct": 5
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 15,
+        "micro": 5,
+        "title": "Repeated Measures Design",
+        "count": 14,
+        "formats": {
+          "direct": 12,
+          "sequence": 1,
+          "match": 1
+        }
+      },
+      {
+        "unit": 1,
+        "topic": 5,
+        "micro": 8,
+        "title": "Cognitive revolution",
+        "count": 13,
+        "formats": {
+          "direct": 6,
+          "match": 3,
+          "assertion-reason": 1,
+          "statement-set": 1,
+          "sequence": 2
+        }
+      },
+      {
+        "unit": 1,
+        "topic": 10,
+        "micro": 3,
+        "title": "Critical perspective",
+        "count": 13,
+        "formats": {
+          "match": 4,
+          "assertion-reason": 3,
+          "direct": 3,
+          "statement-set": 2,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 1,
+        "micro": 1,
+        "title": "Meaning of research",
+        "count": 12,
+        "formats": {
+          "direct": 8,
+          "assertion-reason": 2,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 3,
+        "topic": 3,
+        "micro": 2,
+        "title": "Reliability",
+        "count": 12,
+        "formats": {
+          "direct": 8,
+          "assertion-reason": 2,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 3,
+        "topic": 4,
+        "micro": 5,
+        "title": "Personality assessment",
+        "count": 12,
+        "formats": {
+          "match": 4,
+          "direct": 7,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 6,
+        "micro": 1,
+        "title": "Motivation in perception",
+        "count": 12,
+        "formats": {
+          "direct": 6,
+          "assertion-reason": 1,
+          "sequence": 2,
+          "statement-set": 3
+        }
+      },
+      {
+        "unit": 1,
+        "topic": 12,
+        "micro": 1,
+        "title": "Yoga",
+        "count": 11,
+        "formats": {
+          "direct": 3,
+          "assertion-reason": 3,
+          "match": 2,
+          "statement-set": 3
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 5,
+        "micro": 7,
+        "title": "Field studies",
+        "count": 11,
+        "formats": {
+          "direct": 3,
+          "sequence": 5,
+          "assertion-reason": 1,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 8,
+        "micro": 5,
+        "title": "Wilcoxon Signed rank test",
+        "count": 11,
+        "formats": {
+          "direct": 10,
+          "match": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 5,
+        "micro": 5,
+        "title": "Perception of form",
+        "count": 11,
+        "formats": {
+          "direct": 7,
+          "assertion-reason": 2,
+          "match": 1,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 1,
+        "topic": 2,
+        "micro": 6,
+        "title": "1990s disciplinary identity crisis",
+        "count": 10,
+        "formats": {
+          "direct": 2,
+          "match": 1,
+          "assertion-reason": 1,
+          "statement-set": 4,
+          "sequence": 2
+        }
+      },
+      {
+        "unit": 4,
+        "topic": 1,
+        "micro": 1,
+        "title": "General sensations",
+        "count": 10,
+        "formats": {
+          "direct": 5,
+          "assertion-reason": 1,
+          "match": 3,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 8,
+        "micro": 2,
+        "title": "Factors related to subliminal perception",
+        "count": 10,
+        "formats": {
+          "direct": 6,
+          "statement-set": 3,
+          "assertion-reason": 1
+        }
+      },
+      {
+        "unit": 5,
+        "topic": 9,
+        "micro": 1,
+        "title": "Learning process",
+        "count": 10,
+        "formats": {
+          "direct": 5,
+          "match": 1,
+          "statement-set": 3,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 8,
+        "micro": 1,
+        "title": "Parametric tests",
+        "count": 9,
+        "formats": {
+          "direct": 6,
+          "assertion-reason": 2,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 9,
+        "micro": 1,
+        "title": "Power analysis",
+        "count": 9,
+        "formats": {
+          "match": 4,
+          "direct": 4,
+          "sequence": 1
+        }
+      },
+      {
+        "unit": 4,
+        "topic": 8,
+        "micro": 1,
+        "title": "Limbic system",
+        "count": 9,
+        "formats": {
+          "match": 2,
+          "direct": 6,
+          "assertion-reason": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 5,
+        "micro": 1,
+        "title": "Observation",
+        "count": 8,
+        "formats": {
+          "assertion-reason": 3,
+          "direct": 3,
+          "sequence": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 5,
+        "micro": 11,
+        "title": "Focus groups",
+        "count": 8,
+        "formats": {
+          "match": 2,
+          "direct": 1,
+          "assertion-reason": 3,
+          "statement-set": 2
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 11,
+        "micro": 1,
+        "title": "Correlation",
+        "count": 8,
+        "formats": {
+          "direct": 5,
+          "match": 1,
+          "assertion-reason": 1,
+          "statement-set": 1
+        }
+      },
+      {
+        "unit": 2,
+        "topic": 12,
+        "micro": 4,
+        "title": "Phi coefficient",
+        "count": 8,
+        "formats": {
+          "direct": 8
+        }
+      },
+      {
+        "unit": 3,
+        "topic": 2,
+        "micro": 1,
+        "title": "Item writing",
+        "count": 8,
+        "formats": {
+          "sequence": 1,
+          "direct": 5,
+          "assertion-reason": 2
+        }
+      }
+    ]
   }
-};
+}
+;
