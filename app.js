@@ -496,7 +496,7 @@ function practice(){
     const partOptions=unitParts(u).map(part=>`<label class="practice-unit-option practice-part-option"><input type="checkbox" data-scope="part" data-unit="${esc(u.id)}" value="${esc(part.id)}"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></label>`).join('');
     return unit+partOptions;
   }).join('');
-  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-trigger-title">Choose</span><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span><span class="practice-unit-trigger-icon" aria-hidden="true">⌄</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div>`;
+  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-trigger-title">Select unit</span><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span><span class="practice-unit-trigger-icon" aria-hidden="true">⌄</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div>`;
   box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Set up your practice session, then follow the questions from start to finish with feedback along the way.</p></div></div><div class="practice-toolbar"><div class="practice-choice-field"><span class="practice-field-label">Practice mode</span><div class="practice-choice-group" id="practiceModeChoices" role="group" aria-label="Practice mode"><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="self-paced" aria-pressed="false">SELF-PACED</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="timed" aria-pressed="false">TIMED</button></div></div><div class="practice-choice-field"><span class="practice-field-label">Questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">You can select one or both.</small></div><div class="practice-choice-field"><span class="practice-field-label">Number of questions</span><div class="practice-choice-group practice-size-group" id="practiceSizeChoices" role="group" aria-label="Number of questions"><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="10" aria-pressed="false">10</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="25" aria-pressed="false">25</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="50" aria-pressed="false">50</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="100" aria-pressed="false">100</button></div><small class="practice-choice-help" id="practiceSizeHelp">Choose 100 for an NTA UGC NET styled full-length test.</small></div><div class="practice-unit-field"><span class="practice-field-label">Units</span>${scopeHTML}</div></div><section class="practice-expect"><div class="eyebrow">WHAT TO EXPECT</div><p id="practiceExpectation">Choose your settings to see how your session will work.</p></section><div class="practice-start"><button class="btn primary" id="startSet" type="button" disabled>START PRACTICE →</button></div></section><div id="practiceSet"></div>`;
   const unitTrigger=$('#practiceUnitTrigger');
   const unitList=$('#practiceUnitList');
@@ -526,13 +526,56 @@ function practice(){
   const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"].selected')).map(x=>x.dataset.value);
   const selectedPracticeChoice=group=>selectedPracticeChoices(group)[0]||'';
   const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{const on=values.includes(btn.dataset.value);btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on))});
+  const getPracticePool=(types,selected)=>{
+    let qs=PRACTICE_QUESTIONS.slice();
+    if(types.length===1){
+      qs=qs.filter(q=>{
+        const tags=(q.source_tags||[]).map(x=>String(x).toLowerCase());
+        const isPyq=tags.some(x=>x.includes('pyq')||x.includes('previous'));
+        return types[0]==='pyq'?isPyq:!isPyq;
+      });
+    }
+    const allUnits=selected.length===0||selected.some(x=>x.dataset.scope==='all');
+    if(allUnits)return qs;
+    const unitIds=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.value)));
+    const partKeys=new Set(selected.filter(x=>x.dataset.scope==='part').map(x=>`${x.dataset.unit}:${x.value}`));
+    return qs.filter(q=>{
+      if(unitIds.has(String(q.unit)))return true;
+      const u=units().find(x=>String(x.id)===String(q.unit));
+      const t=u?.topics.find(x=>String(x.id)===String(q.topic));
+      return [...partKeys].some(k=>{
+        const [uid,pid]=k.split(':');
+        const part=units().find(x=>String(x.id)===uid)?.parts?.find(x=>String(x.id)===pid);
+        return String(q.unit)===uid&&!!part?.topic_ids?.map(String).includes(String(t?.id));
+      });
+    });
+  };
   const syncPracticeSetup=()=>{
     const size=selectedPracticeChoice('size'),types=selectedPracticeChoices('type'),mode=selectedPracticeChoice('mode'),selected=scopeInputs().filter(x=>x.checked);
-    const start=$('#startSet');start.disabled=!Boolean(size&&types.length&&mode&&selected.length);
+    const pool=getPracticePool(types,selected),available=pool.length;
+    const sizeButtons=Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="size"]'));
+    sizeButtons.forEach(btn=>{
+      const n=Number(btn.dataset.value),enabled=available>=n;
+      btn.disabled=!enabled;
+      btn.setAttribute('aria-disabled',String(!enabled));
+      if(!enabled&&btn.classList.contains('selected')){btn.classList.remove('selected');btn.setAttribute('aria-pressed','false');}
+    });
+    const activeSize=selectedPracticeChoice('size');
+    const start=$('#startSet');start.disabled=!Boolean(activeSize&&types.length&&mode&&selected.length&&available>=Number(activeSize));
+    const typeLabel=types.length===2?'MCQs and PYQs':types[0]==='pyq'?'PYQs':types[0]==='mcq'?'MCQs':'question types';
+    const scopeLabel=selected.some(x=>x.dataset.scope==='all')?'all units':selected.filter(x=>x.dataset.scope!=='all').map(x=>x.dataset.scope==='unit'?'Unit '+x.value:'Part '+x.dataset.unit+x.value).join(', ');
     const expectation=$('#practiceExpectation');
-    if(expectation)expectation.textContent=mode==='timed'?'A countdown will run throughout the session. Answer each question without stopping to read explanations; your review appears after you finish.':mode==='self-paced'?'There is no countdown, so you can concentrate on understanding each question and use the feedback as you go.':'Choose a practice mode to see how your session will work.';
+    if(expectation){
+      if(!types.length||!mode||!selected.length) expectation.textContent='Choose a practice mode, question type, and unit scope to see what is available.';
+      else if(!available) expectation.textContent='No '+typeLabel+' are currently available for '+scopeLabel+'. Try another unit or question type.';
+      else if(!activeSize) expectation.textContent=available+' '+typeLabel+' '+(available===1?'question is':'questions are')+' available for '+scopeLabel+'. Select a question count to continue.';
+      else expectation.textContent=activeSize+' '+typeLabel+' '+(Number(activeSize)===1?'question':'questions')+' will be drawn from '+scopeLabel+'. '+(mode==='timed'?'The session is timed, and explanations appear after you finish.':'The session is self-paced, with feedback as you work through each question.');
+    }
     const sizeHelp=$('#practiceSizeHelp');
-    if(sizeHelp)sizeHelp.textContent=size==='100'?(mode==='timed'?'NTA UGC NET styled full-length test.':'NTA UGC NET styled full-length test with unlimited time.'):'Choose the number of questions for your session.';
+    if(sizeHelp){
+      if(!available) sizeHelp.textContent='No questions are available for this selection.';
+      else sizeHelp.textContent=available+' '+(available===1?'question is':'questions are')+' available for the selected scope and question types.';
+    }
   };
   $$('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
     const group=btn.dataset.choiceGroup;
@@ -566,31 +609,7 @@ function practice(){
     const selectedSize=selectedPracticeChoice('size'),selectedMode=selectedPracticeChoice('mode');
     if(!selectedSize||!selectedPracticeChoices('type').length||!selectedMode||!scopeInputs().some(x=>x.checked))return;
     stopTimer();
-    let qs=PRACTICE_QUESTIONS.slice();
-    const selectedTypes=selectedPracticeChoices('type');
-    const unitScope=scopeInputs().filter(x=>x.checked);
-    const allUnits=unitScope.length===0||unitScope.some(x=>x.dataset.scope==='all');
-    if(selectedTypes.length===1){
-      qs=qs.filter(q=>{
-        const tags=(q.source_tags||[]).map(x=>String(x).toLowerCase());
-        const isPyq=tags.some(x=>x.includes('pyq')||x.includes('previous'));
-        return selectedTypes[0]==='pyq'?isPyq:!isPyq;
-      });
-    }
-    if(!allUnits){
-      const unitIds=new Set(unitScope.filter(x=>x.dataset.scope==='unit').map(x=>String(x.value)));
-      const partKeys=new Set(unitScope.filter(x=>x.dataset.scope==='part').map(x=>`${x.dataset.unit}:${x.value}`));
-      qs=qs.filter(q=>{
-        if(unitIds.has(String(q.unit)))return true;
-        const u=units().find(x=>String(x.id)===String(q.unit));
-        const t=u?.topics.find(x=>String(x.id)===String(q.topic));
-        return [...partKeys].some(k=>{
-          const [uid,pid]=k.split(':');
-          const part=units().find(x=>String(x.id)===uid)?.parts?.find(x=>String(x.id)===pid);
-          return String(q.unit)===uid&&!!part?.topic_ids?.map(String).includes(String(t?.id));
-        });
-      });
-    }
+    let qs=getPracticePool(selectedPracticeChoices('type'),scopeInputs().filter(x=>x.checked));
     const limit=+selectedSize;
     const groupingKey=allUnits?'unit':unitScope.some(x=>x.dataset.scope==='part')?'topic':'random';
     let seen=[];try{seen=JSON.parse(localStorage.getItem('netPsychPracticeSeen')||'[]')}catch{}
