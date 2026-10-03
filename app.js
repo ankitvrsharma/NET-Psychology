@@ -615,10 +615,7 @@ function practice(){
     }else setPracticeChoices(group,[btn.dataset.value]);
     syncPracticeSetup();
   }));
-  unitList.addEventListener('click',e=>{
-    const option=e.target.closest('button.practice-unit-option');
-    if(!option||!unitList.contains(option))return;
-    e.preventDefault();
+  const activateScopeOption=option=>{
     const key=scopeKey(option);
     const alreadySelected=selectedScopeKeys.includes(key);
     if(option.dataset.scope==='all'){
@@ -633,6 +630,24 @@ function practice(){
     syncScopeUI();
     updateScopeSummary();
     syncPracticeSetup();
+  };
+  // Use direct pointer activation for touch devices. The click fallback keeps
+  // keyboard and non-pointer activation accessible without double-toggling.
+  scopeInputs().forEach(option=>{
+    option.addEventListener('pointerup',e=>{
+      if(e.pointerType==='mouse'&&e.button!==0)return;
+      e.preventDefault();
+      option.dataset.pointerActivatedAt=String(Date.now());
+      activateScopeOption(option);
+    });
+    option.addEventListener('click',e=>{
+      const last=Number(option.dataset.pointerActivatedAt||0);
+      if(Date.now()-last<600){
+        e.preventDefault();
+        return;
+      }
+      activateScopeOption(option);
+    });
   });
   updateScopeSummary();
   syncPracticeSetup();
