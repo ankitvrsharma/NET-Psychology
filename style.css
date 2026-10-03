@@ -1120,6 +1120,24 @@ body[data-page="home"] .hero-cta b{display:none}
 .practice-choice:hover{background:#f7f9fd}
 .practice-choice:focus-visible{z-index:1;outline:3px solid rgba(62,103,215,.18)}
 .practice-choice.selected,.practice-choice[aria-pressed="true"]{background:#eef3ff;color:var(--navy);box-shadow:inset 0 -3px 0 var(--navy)}
+.practice-toolbar .practice-type-option{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  min-height:50px;
+  height:50px;
+  padding:0;
+}
+.practice-toolbar .practice-type-option span{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:50px;
+  min-height:50px;
+  padding:0 12px;
+}
 .practice-type-option{
   position:relative;flex:1;min-width:0;min-height:50px;margin:0;padding:0;border:0;border-right:1px solid var(--line);
   border-radius:0;background:#fff;color:var(--navy);font:inherit;font-size:13px;font-weight:750;letter-spacing:.01em;
