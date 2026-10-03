@@ -22137,7 +22137,8 @@ window.NETPSY_DATA = {
       "pyqQuestionCount": 1583,
       "mappedPYQCount": 1411,
       "microTopicCount": 440,
-      "terminology": "Learner-facing Retrieve wording standardized to Recall; source/domain terminology such as retrieval remains unchanged."
+      "terminology": "Learner-facing Retrieve wording standardized to Recall; source/domain terminology such as retrieval remains unchanged.",
+      "generatedBundleCheck": "2026-10-03"
     }
   },
   "learning_design": {
