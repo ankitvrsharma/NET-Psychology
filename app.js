@@ -883,6 +883,14 @@ function progressInterpretation(s){
   if(s.mastery>=s.coverage*0.75 && s.retention<50) return {title:'Your concepts are being mastered, but spaced return is still developing.',note:'Your mastery signal is relatively strong compared with your coverage, while fewer started concepts have a scheduled revision checkpoint. Keep returning to older concepts rather than only adding new ones.',focus:['Use scheduled revision','Mix older and newer concepts','Check recall before reviewing']};
   return {title:'Your learning is building across the main stages.',note:'Your signals show activity across learning, mastery, questions, and revision. Keep using the full cycle rather than relying on one study method alone.',focus:['Continue learning new concepts','Test recall and application','Return through spaced revision']};
 }
+function render(){
+  const page=document.body?.dataset?.page||'';
+  document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
+  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const fn=routes[page];
+  if(typeof fn==='function') fn();
+  else console.warn('No renderer registered for page:',page);
+}
 function safeRender(){
   try{render()}catch(err){
     console.error('NET Psychology page render failed:',err);
