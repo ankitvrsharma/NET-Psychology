@@ -7,6 +7,8 @@ function initMobileNavigation(){
   const nav=document.querySelector('#site-navigation');
   if(!toggle||!nav||toggle.dataset.menuReady==='1') return;
   toggle.dataset.menuReady='1';
+  // Older page markup contained an inline toggle handler. Remove it so navigation has one source of truth.
+  if(toggle.hasAttribute('onclick')) toggle.removeAttribute('onclick');
   const close=()=>{document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')};
   const open=()=>{document.body.classList.add('menu-open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close navigation')};
   toggle.addEventListener('click',()=>document.body.classList.contains('menu-open')?close():open());
@@ -15,7 +17,17 @@ function initMobileNavigation(){
   window.addEventListener('resize',()=>{if(window.innerWidth>820)close()},{passive:true});
 }
 
-if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMobileNavigation,{once:true}); else initMobileNavigation();
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>{initMobileNavigation();initDataActions()},{once:true}); else {initMobileNavigation();initDataActions();}
+function initDataActions(){
+  if(document.documentElement.dataset.actionHandlersReady==='1') return;
+  document.documentElement.dataset.actionHandlersReady='1';
+  document.addEventListener('click',event=>{
+    const action=event.target.closest('[data-action]');
+    if(!action) return;
+    if(action.dataset.action==='reload') location.reload();
+  });
+}
+
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const KEY='netPsychProgress';
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
@@ -1030,7 +1042,7 @@ function safeRender(){
   try{render()}catch(err){
     console.error('NET Psychology page render failed:',err);
     const root=document.querySelector('#practiceApp,#practiceSessionApp,#startPage,#homeHero,#revisionApp');
-    if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
+    if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
@@ -1038,10 +1050,10 @@ loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
     const pageRoot=document.querySelector('#practiceApp,#startPage,#homeHero,#revisionApp');
-    if(pageRoot&&!pageRoot.innerHTML.trim()) pageRoot.innerHTML='<section class="panel empty"><h1>This section could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
+    if(pageRoot&&!pageRoot.innerHTML.trim()) pageRoot.innerHTML='<section class="panel empty"><h1>This section could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
     return;
   }
   const shell=document.querySelector('main.shell');
-  if(shell) shell.innerHTML='<section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" onclick="location.reload()">Retry</button></section>';
+  if(shell) shell.innerHTML='<section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
 });
 })();

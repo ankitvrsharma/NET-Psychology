@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v44-site-repair';
+const CACHE='netpsych-shell-v45-v1-stabilization';
 const SHELL=[
   './',
   './index.html',
