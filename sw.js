@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v34-practice-unit4';
+const CACHE='netpsych-shell-v35-learning-architecture';
 const SHELL=[
   './',
   './index.html',
@@ -6,6 +6,7 @@ const SHELL=[
   './practice.html',
   './practice-session.html',
   './microtopic.html',
+  './active-recall.html',
   './topic.html',
   './unit.html',
   './start.html',
