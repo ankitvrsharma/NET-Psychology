@@ -586,7 +586,7 @@ function practice(){
       else expectation.textContent='You’ll practise '+size+' questions from '+scopeLabel+'. '+(mode==='timed'?'The session is timed, and explanations appear after you finish.':'The session is self-paced, with feedback as you work through each question.');
     }
   };
-  $('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+  qsa('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
     const group=btn.dataset.choiceGroup;
     if(group==='scope'){
       const isAll=btn.dataset.scope==='all';
