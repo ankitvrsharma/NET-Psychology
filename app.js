@@ -354,7 +354,7 @@ function splitLabelledItems(value){
 }
 function extractBeforeCodes(value){
   const text=cleanPracticeText(value);
-  const i=text.search(/\s+\d*\s*Codes?\s*:/i);
+  const i=text.search(/\s+\d+\s*[.)]?\s*Codes?\s*:/i);
   return i>=0?text.slice(0,i).trim():text;
 }
 function listItems(value,kind){
@@ -375,7 +375,7 @@ function kindLabel(kind){
   })[kind]||"QUESTION";
 }
 function practiceListHTML(items){
-  return items.map(x=>"<li><span class=\"structured-item-label\">"+esc(x.label)+".</span><span>"+esc(x.text)+"</span></li>").join("");
+  return items.map(x=>"<div class=\"structured-item\"><span class=\"structured-item-label\">"+esc(x.label)+".</span><span>"+esc(x.text)+"</span></div>").join("");
 }
 function matchListsHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
@@ -404,8 +404,8 @@ function matchListsHTML(q){
   const stem=stripQuestionTail(raw).replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b/i,"").trim();
   const cleanedStem=(left.length>=2&&right.length>=2)?"":stem.replace(/List\s*[-–—]?\s*I\b[\s\S]*$/i,"").trim();
   return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+((left.length||right.length)?("<div class=\"matching-lists\">"+
-    "<section><div class=\"matching-label\">LIST I</div><ol>"+practiceListHTML(left)+"</ol></section>"+
-    "<section><div class=\"matching-label\">LIST II</div><ol>"+practiceListHTML(right)+"</ol></section>"+
+    "<section><div class=\"matching-label\">LIST I</div><div class=\"matching-items\">"+practiceListHTML(left)+"</div></section>"+
+    "<section><div class=\"matching-label\">LIST II</div><div class=\"matching-items\">"+practiceListHTML(right)+"</div></section>"+
     "</div>"):"<p>"+esc(stripQuestionTail(raw))+"</p>")+"</div>";
 }
 function assertionReasonHTML(q){
@@ -430,7 +430,13 @@ function structuredQuestionHTML(q){
     const items=splitLabelledItems(body);
     const hasNumeric=items.filter(x=>/^\d+$/.test(x.label)).length>=2;
     const preferred=hasNumeric?items.filter(x=>/^\d+$/.test(x.label)):items.filter(x=>/^(?:[a-d]|i{1,3}|iv|v|vi|vii|viii)$/i.test(x.label));
-    const stem=preferred.length?body.slice(0,body.indexOf(preferred[0].label+'.')>=0?body.indexOf(preferred[0].label+'.'):body.indexOf(preferred[0].label+')')).trim():body;
+    let stem=body;
+    if(preferred.length){
+      const firstLabel=preferred[0].label;
+      const markerRe=new RegExp("(?<!\\S)"+firstLabel+"\\s*[.)]+\\s+","i");
+      const markerIndex=body.search(markerRe);
+      if(markerIndex>=0)stem=body.slice(0,markerIndex);
+    }
     const optionMarker=stem.search(/\s(?:\([a-d]\)|[a-d]\.)\s+/i);
     const cleanStem=(optionMarker>=0?stem.slice(0,optionMarker):stem).replace(/\s*:\s*$/,"").trim();
     return "<div class=\"question-stem structured-stem\">"+
