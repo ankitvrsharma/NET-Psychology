@@ -896,7 +896,7 @@ function dailyRevision(){
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
   if(!root)return;
-  const todayKey=new Date().toISOString().slice(0,10);
+  const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
   const allQuestions=PRACTICE_QUESTIONS.slice();
   let stored=null;
   try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
