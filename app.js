@@ -412,7 +412,7 @@ function assertionReasonHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
   const assertion=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Reason\s*\(R\)|\s+Reason\s*\(R\)\s*:)/i)||[])[1]||"";
   const reason=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]||"";
-  const stem=raw.split(/Assertion\s*\(A\)\s*:/i)[0].replace(/[\s:–-]+$/,"").trim();
+  const stem=raw.split(/Assertion\s*\(A\)\s*:/i)[0].replace(/[\s:–-]+$/,"").replace(/\s+\d+\s*\.?\s*$/,"").trim();
   return "<div class=\"question-stem assertion-stem\">"+
     (stem?"<p>"+esc(stem)+"</p>":"")+
     "<div class=\"assertion-reason-grid\">"+
@@ -441,7 +441,7 @@ function structuredQuestionHTML(q){
     const cleanStem=(optionMarker>=0?stem.slice(0,optionMarker):stem).replace(/\s*:\s*$/,"").trim();
     return "<div class=\"question-stem structured-stem\">"+
       (cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+
-      (preferred.length?"<ol class=\"question-items\">"+practiceListHTML(preferred)+"</ol>":"")+
+      (preferred.length?"<div class=\"question-items\">"+practiceListHTML(preferred)+"</div>":"")+
       "</div>";
   }
   return "<div class=\"question-stem direct-stem\"><p>"+esc(stripQuestionTail(raw))+"</p></div>";
