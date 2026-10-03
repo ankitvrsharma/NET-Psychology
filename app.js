@@ -515,10 +515,21 @@ function practice(){
     unitList.hidden=true;
     unitTrigger.setAttribute('aria-expanded','false');
   });
+  // Unit selection has one source of truth: selectedScopeKeys.
+  // UI buttons are only a visual representation of this state.
+  let selectedScopeKeys=[];
   const scopeInputs=()=>Array.from(document.querySelectorAll('#practiceUnitList [data-scope]'));
-  const isScopeSelected=x=>x.getAttribute('aria-pressed')==='true';
+  const scopeKey=x=>`${x.dataset.scope}:${x.dataset.unit||''}:${x.dataset.value}`;
+  const selectedScope=()=>scopeInputs().filter(x=>selectedScopeKeys.includes(scopeKey(x)));
+  const syncScopeUI=()=>{
+    scopeInputs().forEach(x=>{
+      const on=selectedScopeKeys.includes(scopeKey(x));
+      x.setAttribute('aria-pressed',String(on));
+      x.classList.toggle('selected',on);
+    });
+  };
   const updateScopeSummary=()=>{
-    const selected=scopeInputs().filter(isScopeSelected);
+    const selected=selectedScope();
     const allSelected=selected.some(x=>x.dataset.scope==='all');
     const summary=$('#practiceUnitSummary');
     if(!summary)return;
@@ -563,7 +574,7 @@ function practice(){
     });
   };
   const syncPracticeSetup=()=>{
-    const selectedTypes=selectedPracticeChoices('type'),mode=selectedPracticeChoice('mode'),selected=scopeInputs().filter(isScopeSelected);
+    const selectedTypes=selectedPracticeChoices('type'),mode=selectedPracticeChoice('mode'),selected=selectedScope();
     const pool=getPracticePool(selectedTypes,selected);
     const unitCount=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
     const hasAll=selected.some(x=>x.dataset.scope==='all');
@@ -587,7 +598,7 @@ function practice(){
   $$('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
     const group=btn.dataset.choiceGroup;
     if(group==='size'){
-      const selected=scopeInputs().filter(isScopeSelected),types=selectedPracticeChoices('type'),pool=getPracticePool(types,selected),n=Number(btn.dataset.value);
+      const selected=selectedScope(),types=selectedPracticeChoices('type'),pool=getPracticePool(types,selected),n=Number(btn.dataset.value);
       const unitCount=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
       const hasAll=selected.some(x=>x.dataset.scope==='all');
       const hideSize=!hasAll&&((types.length===1&&unitCount>0&&unitCount<=5)||(types.length===2&&unitCount>0&&unitCount<=3));
@@ -605,25 +616,23 @@ function practice(){
     syncPracticeSetup();
   }));
   unitList.addEventListener('click',e=>{
-    const option=e.target.closest('.practice-unit-option');
-    if(!option)return;
+    const option=e.target.closest('button.practice-unit-option');
+    if(!option||!unitList.contains(option))return;
     e.preventDefault();
-    const selected=!isScopeSelected(option);
-    const inputs=scopeInputs();
-    if(option.dataset.scope==='all'&&selected){
-      inputs.forEach(x=>x.setAttribute('aria-pressed',String(x===option)));
-    }else{
-      const allInput=inputs.find(x=>x.dataset.scope==='all');
-      if(allInput)allInput.setAttribute('aria-pressed','false');
-      option.setAttribute('aria-pressed',String(selected));
-    }
-    inputs.forEach(x=>x.classList.toggle('selected',isScopeSelected(x)));
-    updateScopeSummary();
-    syncPracticeSetup();
-    if(option.dataset.scope==='all'&&selected){
+    const key=scopeKey(option);
+    const alreadySelected=selectedScopeKeys.includes(key);
+    if(option.dataset.scope==='all'){
+      selectedScopeKeys=alreadySelected?[]:['all::all'];
       unitList.hidden=true;
       unitTrigger.setAttribute('aria-expanded','false');
+    }else{
+      selectedScopeKeys=alreadySelected
+        ? selectedScopeKeys.filter(k=>k!==key)
+        : [...selectedScopeKeys.filter(k=>!k.startsWith('all:')),key];
     }
+    syncScopeUI();
+    updateScopeSummary();
+    syncPracticeSetup();
   });
   updateScopeSummary();
   syncPracticeSetup();
@@ -636,7 +645,7 @@ function practice(){
   function draw(){
     unitList.hidden=true;
     unitTrigger.setAttribute('aria-expanded','false');
-    const selectedMode=selectedPracticeChoice('mode'),selectedTypes=selectedPracticeChoices('type'),selectedScope=scopeInputs().filter(isScopeSelected);
+    const selectedMode=selectedPracticeChoice('mode'),selectedTypes=selectedPracticeChoices('type'),selectedScope=selectedScope();
     const unitCount=new Set(selectedScope.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
     const hasAll=selectedScope.some(x=>x.dataset.scope==='all');
     const hideSize=!hasAll&&((selectedTypes.length===1&&unitCount>0&&unitCount<=5)||(selectedTypes.length===2&&unitCount>0&&unitCount<=3));
@@ -647,7 +656,7 @@ function practice(){
       return;
     }
     stopTimer();
-    let qs=getPracticePool(selectedPracticeChoices('type'),scopeInputs().filter(isScopeSelected));
+    let qs=getPracticePool(selectedPracticeChoices('type'),selectedScope());
     const limit=+selectedSize;
     const allUnits=selectedScope.length===0||selectedScope.some(x=>x.dataset.scope==='all');
     const unitScope=selectedScope;
@@ -738,7 +747,7 @@ function practice(){
     }
   }
   $('#startSet').onclick=()=>{
-    const selected=scopeInputs().filter(isScopeSelected),session={size:selectedPracticeChoice('size'),type:selectedPracticeChoices('type').join(','),mode:selectedPracticeChoice('mode'),units:selected.map(x=>({scope:x.dataset.scope,value:x.dataset.value,unit:x.dataset.unit||''}))};
+    const selected=selectedScope(),session={size:selectedPracticeChoice('size'),type:selectedPracticeChoices('type').join(','),mode:selectedPracticeChoice('mode'),units:selected.map(x=>({scope:x.dataset.scope,value:x.dataset.value,unit:x.dataset.unit||''}))};
     sessionStorage.setItem('netPsychPracticeSetup',JSON.stringify(session));
     location.href='practice-session.html';
   };
@@ -746,11 +755,8 @@ function practice(){
     const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch{return null}})();
     if(saved){
       setPracticeChoices('size',[String(saved.size||'')]);setPracticeChoices('type',String(saved.type||'').split(',').filter(Boolean));setPracticeChoices('mode',[String(saved.mode||'')]);
-      scopeInputs().forEach(x=>{
-        const on=(saved.units||[]).some(u=>u.scope===x.dataset.scope&&String(u.value)===String(x.dataset.value)&&String(u.unit||'')===String(x.dataset.unit||''));
-        x.setAttribute('aria-pressed',String(on));
-        x.classList.toggle('selected',on);
-      });
+      selectedScopeKeys=(saved.units||[]).map(u=>`${u.scope}:${u.unit||''}:${u.value}`);
+      syncScopeUI();
       updateScopeSummary();syncPracticeSetup();
       $('.practice-config').classList.add('session-hidden');
       draw();
