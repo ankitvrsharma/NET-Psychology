@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v35-learning-architecture';
+const CACHE='netpsych-shell-v36-micro-learning';
 const SHELL=[
   './',
   './index.html',
