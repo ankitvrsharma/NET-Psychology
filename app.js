@@ -644,21 +644,21 @@ function practice(){
   function draw(){
     unitList.hidden=true;
     unitTrigger.setAttribute('aria-expanded','false');
-    const selectedMode=selectedPracticeChoice('mode'),selectedTypes=selectedPracticeChoices('type'),selectedScope=selectedScope();
-    const unitCount=new Set(selectedScope.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
-    const hasAll=selectedScope.some(x=>x.dataset.scope==='all');
+    const selectedMode=selectedPracticeChoice('mode'),selectedTypes=selectedPracticeChoices('type'),selectedScopes=selectedScope();
+    const unitCount=new Set(selectedScopes.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value))).size;
+    const hasAll=selectedScopes.some(x=>x.dataset.scope==='all');
     const hideSize=!hasAll&&((selectedTypes.length===1&&unitCount>0&&unitCount<=5)||(selectedTypes.length===2&&unitCount>0&&unitCount<=3));
     const selectedSize=hideSize?'10':selectedPracticeChoice('size');
-    if(!selectedSize||!selectedTypes.length||!selectedMode||!selectedScope.length)return;
-    if(getPracticePool(selectedTypes,selectedScope).length<Number(selectedSize)){
+    if(!selectedSize||!selectedTypes.length||!selectedMode||!selectedScopes.length)return;
+    if(getPracticePool(selectedTypes,selectedScopes).length<Number(selectedSize)){
       $('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>Not enough questions available.</h2><p>Try another question type or choose more units, then start again.</p></section>';
       return;
     }
     stopTimer();
-    let qs=getPracticePool(selectedPracticeChoices('type'),selectedScope());
+    let qs=getPracticePool(selectedPracticeChoices('type'),selectedScopes);
     const limit=+selectedSize;
-    const allUnits=selectedScope.length===0||selectedScope.some(x=>x.dataset.scope==='all');
-    const unitScope=selectedScope;
+    const allUnits=selectedScopes.length===0||selectedScopes.some(x=>x.dataset.scope==='all');
+    const unitScope=selectedScopes;
     const groupingKey=allUnits?'unit':unitScope.some(x=>x.dataset.scope==='part')?'topic':'random';
     let seen=[];try{seen=JSON.parse(localStorage.getItem('netPsychPracticeSeen')||'[]')}catch{}
     const idOf=q=>String(q.id??q.question??'').trim();
