@@ -520,6 +520,8 @@ function practice(){
     const selected=scopeInputs().filter(x=>x.checked);
     const allSelected=selected.some(x=>x.dataset.scope==='all');
     const summary=$('#practiceUnitSummary');
+    const trigger=$('#practiceUnitTrigger');
+    if(trigger)trigger.classList.toggle('has-selection',selected.length>0);
     if(!summary)return;
     if(allSelected){summary.textContent='All units selected';return}
     if(!selected.length){summary.textContent='No units selected';return}
