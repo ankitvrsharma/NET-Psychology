@@ -986,7 +986,7 @@ function progress(){
       <div class="measure"><span>Spaced Revision</span><strong>${s.retention}%</strong><div class="bar"><i style="width:${s.retention}%"></i></div><small>${s.revisionScheduled} of ${s.learned} learned concepts scheduled for revision</small></div>
     </div>
   </section>
-  <section class="progress-analysis panel"><div class="eyebrow">WHAT YOUR PROGRESS TELLS YOU</div><h2>${interpretation.title}</h2><p>${interpretation.note}</p><ul>${interpretation.focus.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul></section>  <section class="progress-next card"><div><div class="eyebrow">WHAT SHOULD YOU DO NEXT?</div><h2>${nextAction.label}</h2><p>${nextAction.note}</p></div><a class="btn primary" href="${nextAction.href}">${nextAction.label} <span>→</span></a></section>`;
+  <section class="progress-analysis panel"><div class="eyebrow">WHAT YOUR PROGRESS TELLS YOU</div><h2>${interpretation.title}</h2><p>${interpretation.note}</p><ul>${interpretation.focus.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul></section>  <section class="progress-next card"><div><div class="eyebrow">WHAT SHOULD YOU DO NEXT?</div><p>${nextAction.note}</p></div><a class="btn primary" href="${nextAction.href}">${nextAction.label} <span>→</span></a></section>`;
 }
 function progressInterpretation(s){
   if(!s.started) return {title:'Start with understanding, then build recall.',note:'You have not started any micro-topics yet. Use Learn to build your foundation, then use recall and practice to turn new understanding into something you can recall.',focus:['Build syllabus coverage','Use active recall after learning','Schedule revision after completing a concept']};
