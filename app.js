@@ -108,7 +108,6 @@ async function loadStudyData(){
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
-const validBackup=x=>{if(!x||typeof x!=='object'||x.version!==1||!x.progress||typeof x.progress!=='object'||Array.isArray(x.progress))return false;const allowed=new Set(['NEW','LEARNING','RETENTION','MASTERED']);return Object.entries(x.progress).every(([k,v])=>{if(k==='_practiceHistory'||k==='_practiceStats')return Array.isArray(v)||typeof v==='object';if(!/^\\d+-\\d+-\\d+$/.test(k)||!v||typeof v!=='object'||Array.isArray(v))return false;if(v.status&&!allowed.has(v.status))return false;return true})};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
 const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
@@ -118,7 +117,6 @@ const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.map(m=>({u,t,
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
-const stripLegacy=s=>String(s||'').replace(/\nPYQ-STYLE PATTERN[\s\S]*?(?=\nCOMMON TRAP|\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\nCOMMON TRAP[\s\S]*?(?=\n5-MINUTE TEACHING FOCUS|\nMEMORY HOOK|$)/,'').replace(/\n5-MINUTE TEACHING FOCUS[\s\S]*?(?=\nMEMORY HOOK|$)/,'').replace(/\nMEMORY HOOK[\s\S]*?$/,'').trim();
 const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
   const explicit=Array.isArray(m.study_notes)?m.study_notes:[];
   if(explicit.length)return explicit.map((b)=>({
@@ -884,47 +882,6 @@ function progressInterpretation(s){
   if(s.started>=10 && s.revisionScheduled<s.started*0.5) return {title:'Your learning needs more scheduled revision.',note:'You have started learning several concepts, but fewer than half have a revision checkpoint recorded. Use spaced revision so important ideas return after you have had time away from them.',focus:['Schedule revision after learning','Recall before checking explanations','Keep returning to concepts over time']};
   if(s.mastery>=s.coverage*0.75 && s.retention<50) return {title:'Your concepts are being mastered, but spaced return is still developing.',note:'Your mastery signal is relatively strong compared with your coverage, while fewer started concepts have a scheduled revision checkpoint. Keep returning to older concepts rather than only adding new ones.',focus:['Use scheduled revision','Mix older and newer concepts','Check recall before reviewing']};
   return {title:'Your learning is building across the main stages.',note:'Your signals show activity across learning, mastery, questions, and revision. Keep using the full cycle rather than relying on one study method alone.',focus:['Continue learning new concepts','Test recall and application','Return through spaced revision']};
-}
-function readiness(s){if(s.coverage>=80&&s.mastery>=70&&s.accuracy>=70&&s.retention>=60)return {label:'Strong study profile',note:'Your learning record shows broad coverage, strong mastery signals, question performance, and delayed recall. Use mixed practice and spaced revision to maintain these gains; this is a study indicator, not a guarantee of exam performance.',focus:['Maintain delayed recall across older concepts','Mix MCQs and PYQs across units','Keep revising concepts before they become due'],action:'Open Mixed Practice',href:'practice.html'};if(s.coverage>=60&&s.mastery>=45&&s.accuracy>=60)return {label:'Ready for Exam Practice',note:'You have built a substantial base. The next step is to strengthen retrieval, application, and delayed recall while continuing to expand coverage.',focus:['Strengthen concept mastery','Use recall before checking notes','Practice across different units'],action:'Practice Questions',href:'practice.html'};if(s.coverage>=25)return {label:'Developing',note:'You are building the foundation. Keep moving through the syllabus while turning each new concept into something you can recall and apply.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Continue Learning',href:'unit.html?id=1'};return {label:'Building',note:'You are still establishing your foundation. Start with one concept at a time and move through understanding, recall, and application.',focus:['Build syllabus coverage','Strengthen concept mastery','Use recall before checking notes'],action:'Start Learning',href:'unit.html?id=1'}}
-initMobileNavigation();
-function setupMobileNavigation(){
-  const toggle=document.querySelector('.menu-toggle');
-  const nav=document.querySelector('#site-navigation');
-  if(!toggle||!nav)return;
-  const close=()=>{
-    document.body.classList.remove('menu-open');
-    toggle.setAttribute('aria-expanded','false');
-    toggle.setAttribute('aria-label','Open navigation');
-  };
-  const open=()=>{
-    document.body.classList.add('menu-open');
-    toggle.setAttribute('aria-expanded','true');
-    toggle.setAttribute('aria-label','Close navigation');
-  };
-  toggle.addEventListener('click',e=>{
-    e.preventDefault();
-    e.stopPropagation();
-    document.body.classList.contains('menu-open')?close():open();
-  });
-  nav.addEventListener('click',e=>{
-    if(e.target.closest('a'))close();
-  });
-  document.addEventListener('click',e=>{
-    if(!document.body.classList.contains('menu-open'))return;
-    if(!e.target.closest('.nav-wrap'))close();
-  });
-  document.addEventListener('keydown',e=>{
-    if(e.key==='Escape')close();
-  });
-}
-setupMobileNavigation();
-function render(){
-  const page=document.body?.dataset?.page||'';
-  document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
-  const fn=routes[page];
-  if(typeof fn==='function') fn();
-  else console.warn('No renderer registered for page:',page);
 }
 function safeRender(){
   try{render()}catch(err){
