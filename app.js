@@ -923,7 +923,7 @@ function dailyPractice(){
       $('#dailyPracticeScore').textContent=correctCount+' of 10 correct · '+Math.round(correctCount/10*100)+'%';
       $('#dailyPracticeComplete').hidden=false;
     }
-  }));
+  })));
 }
 function revision(){
   const root=$('#revisionApp');
