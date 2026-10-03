@@ -631,10 +631,24 @@ function practice(){
     updateScopeSummary();
     syncPracticeSetup();
   };
-  // Native button click is the single activation path. Native buttons
-  // translate touch, mouse and keyboard activation into click events.
+  // Keep the earlier pointer activation as a touch fallback, while the
+  // native click path remains available for keyboard/mouse activation.
+  // The guard prevents a single touch from toggling twice.
   scopeInputs().forEach(option=>{
-    option.onclick=()=>activateScopeOption(option);
+    let pointerActivatedAt=0;
+    option.addEventListener('pointerup',e=>{
+      if(e.pointerType==='mouse'&&e.button!==0)return;
+      e.preventDefault();
+      pointerActivatedAt=Date.now();
+      activateScopeOption(option);
+    });
+    option.addEventListener('click',e=>{
+      if(Date.now()-pointerActivatedAt<700){
+        e.preventDefault();
+        return;
+      }
+      activateScopeOption(option);
+    });
   });
   updateScopeSummary();
   syncPracticeSetup();
