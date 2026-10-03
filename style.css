@@ -1537,3 +1537,46 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .mcq-option{grid-template-columns:30px minmax(0,1fr);font-size:13.5px}
   .option-letter{width:28px;height:28px}
 }
+
+
+/* Structured item rows — no browser list markers competing with the designed labels */
+.question-items{
+  display:grid;
+  gap:0;
+  margin:0;
+  padding:8px 14px;
+  list-style:none;
+}
+.question-items li{
+  list-style:none;
+  padding:0;
+}
+.structured-item{
+  display:grid;
+  grid-template-columns:32px minmax(0,1fr);
+  gap:9px;
+  align-items:start;
+  padding:10px 5px;
+  color:var(--ink);
+  line-height:1.55;
+}
+.structured-item+.structured-item{border-top:1px solid #eef1f6}
+.structured-item-label{
+  display:grid;
+  place-items:center;
+  width:28px;
+  min-height:28px;
+  padding:2px 4px;
+  border-radius:8px;
+  background:#eef2ff;
+  color:var(--blue);
+  font-size:10px;
+  font-weight:900;
+}
+.matching-items{display:grid;gap:0}
+.matching-items .structured-item{padding:8px 0}
+.matching-items .structured-item+.structured-item{border-top:1px solid #eef1f6}
+@media(max-width:620px){
+  .question-items{padding:7px 11px}
+  .structured-item{grid-template-columns:30px minmax(0,1fr);gap:8px;padding:9px 3px}
+}
