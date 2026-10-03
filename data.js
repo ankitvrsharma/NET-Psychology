@@ -25,7 +25,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Bhagavad Gita",
-              "content_notes": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nKEY POINTS\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nDISTINCTION / CAUTION\nDo not reduce it to a single religious slogan.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nKEY POINTS\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nDISTINCTION / CAUTION\nDo not reduce it to a single religious slogan.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -35,7 +35,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe concept is best retained as a connected set of features:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nA useful exam distinction is this: Do not reduce it to a single religious slogan.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe important features are:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nThe exam distinction is worth remembering: Do not reduce it to a single religious slogan.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Bhagavad Gita”.",
                 "List the key points associated with “Bhagavad Gita” in the uploaded study material.",
@@ -61,7 +61,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Buddhism",
-              "content_notes": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nKEY POINTS\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nDISTINCTION / CAUTION\nNon-self is not the same as saying nothing exists.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nKEY POINTS\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nDISTINCTION / CAUTION\nNon-self is not the same as saying nothing exists.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -71,7 +71,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe concept is best retained as a connected set of features:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nA useful exam distinction is this: Non-self is not the same as saying nothing exists.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe important features are:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nThe exam distinction is worth remembering: Non-self is not the same as saying nothing exists.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Buddhism”.",
                 "List the key points associated with “Buddhism” in the uploaded study material.",
@@ -97,7 +97,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Sufism",
-              "content_notes": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nKEY POINTS\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nDISTINCTION / CAUTION\nDo not treat Sufism only as a social identity.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nKEY POINTS\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nDISTINCTION / CAUTION\nDo not treat Sufism only as a social identity.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -107,7 +107,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nThe concept is best retained as a connected set of features:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nA useful exam distinction is this: Do not treat Sufism only as a social identity.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nThe important features are:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nThe exam distinction is worth remembering: Do not treat Sufism only as a social identity.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Sufism”.",
                 "List the key points associated with “Sufism” in the uploaded study material.",
@@ -133,7 +133,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Integral Yoga",
-              "content_notes": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nKEY POINTS\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nDISTINCTION / CAUTION\nIt is broader than physical postures.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nKEY POINTS\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nDISTINCTION / CAUTION\nIt is broader than physical postures.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -143,7 +143,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe concept is best retained as a connected set of features:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nA useful exam distinction is this: It is broader than physical postures.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe important features are:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nThe exam distinction is worth remembering: It is broader than physical postures.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Integral Yoga”.",
                 "List the key points associated with “Integral Yoga” in the uploaded study material.",
@@ -198,7 +198,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Formal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.\n\nThe concept is best retained as a connected set of features:\n• Early formal education developed during the colonial period.\n• Calcutta University is presented as a major early institutional centre.\n• The early programme emphasized experimental psychology and laboratory research.\n• 1923, 1924 and 1925 mark important institutional milestones in the source account.\n\nA useful exam distinction is this: Do not confuse the early institutional history of psychology in India with the later indigenization movement; the latter is presented as a response to limitations of imported Western models.\n\nSource grounding: PowerWithin Psychology — Unit 1, Academic Psychology in India; the source discusses Calcutta University, Experimental Psychology and the 1923–1925 milestones.",
+              "deep_learning": "Formal psychology education in India began in the early 20th century within a colonial education system. The uploaded NET material traces an important institutional beginning to Calcutta University: Sir Asutosh Mukherjee promoted Experimental Psychology in the postgraduate curriculum; Brojendra Nath Seal prepared the 1905 syllabus and established a laboratory. The laboratory was later upgraded into the first Department of Experimental Psychology. Research there included depth perception, psychophysics and attention. Psychology was included as a separate section of the Indian Science Congress in 1923; the Indian Psychological Association was founded in 1924 and the Indian Journal of Psychology appeared in 1925.\n\nThe important features are:\n• Early formal education developed during the colonial period.\n• Calcutta University is presented as a major early institutional centre.\n• The early programme emphasized experimental psychology and laboratory research.\n• 1923, 1924 and 1925 mark important institutional milestones in the source account.\n\nThe exam distinction is worth remembering: Do not confuse the early institutional history of psychology in India with the later indigenization movement; the latter is presented as a response to limitations of imported Western models.",
               "retrieval_questions": [
                 "State the source-based core idea of “Pre-independence era” without looking at your notes.",
                 "List the main points the uploaded source gives for “Pre-independence era”.",
@@ -231,7 +231,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.\n\nThe concept is best retained as a connected set of features:\n• Post-1947 expansion occurred through universities, applied centres and professional training.\n• The UGC was established in 1956 and supported university psychology departments.\n• Clinical and applied psychology developed alongside academic psychology.\n• The source links institutional growth with continuing philosophical and Western methodological influences.\n\nA useful exam distinction is this: Institutional expansion after independence is not the same thing as indigenization; the source treats the latter as a later response to concerns about cultural relevance.\n\nSource grounding: PowerWithin Psychology — Unit 1, Post-independence section.",
+              "deep_learning": "The source describes post-independence psychology as expanding institutionally while remaining strongly influenced by its philosophical and Western scientific inheritance. After 1947, psychology was linked with nation-building and research. Departments expanded in universities such as Mysore and Patna; the University Grants Commission, established in 1956, supported university development. Applied and clinical psychology also expanded through institutions including NCERT and mental-health centres. The source notes that many psychology departments had emerged from philosophy departments, creating a continuing tension between philosophical roots and the aspiration to establish psychology as an experimental science.\n\nThe important features are:\n• Post-1947 expansion occurred through universities, applied centres and professional training.\n• The UGC was established in 1956 and supported university psychology departments.\n• Clinical and applied psychology developed alongside academic psychology.\n• The source links institutional growth with continuing philosophical and Western methodological influences.\n\nThe exam distinction is worth remembering: Institutional expansion after independence is not the same thing as indigenization; the source treats the latter as a later response to concerns about cultural relevance.",
               "retrieval_questions": [
                 "State the source-based core idea of “Post-independence era” without looking at your notes.",
                 "List the main points the uploaded source gives for “Post-independence era”.",
@@ -264,7 +264,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "During the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.\n\nThe concept is best retained as a connected set of features:\n• The period is associated with stronger concern for socially relevant problems.\n• Communal violence became an important research concern.\n• The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached.\n• The movement prepared the ground for later debates about indigenous psychology.\n\nA useful exam distinction is this: The source's chronology distinguishes the 1970s move toward social issues from the 1980s focus on indigenization.\n\nSource grounding: PowerWithin Psychology — Unit 1, historical discussion of social issues and the identity crisis; Baron & Misra, Social Psychology of Prejudice: An Indian Perspective.",
+              "deep_learning": "During the 1970s, the source describes a shift toward socially relevant psychological research. Concerns included communal violence, social conflict and problems that were difficult to understand through culturally neutral laboratory approaches alone. The UNESCO-supported work associated with Gardner Murphy investigated communal violence and culminated in the 1953 volume In the Minds of Men; the later historical account presents this tradition as part of psychology's growing engagement with Indian social problems. The period also contributed to criticism that psychology should address the realities of Indian society rather than simply reproduce Western research.\n\nThe important features are:\n• The period is associated with stronger concern for socially relevant problems.\n• Communal violence became an important research concern.\n• The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached.\n• The movement prepared the ground for later debates about indigenous psychology.\n\nThe exam distinction is worth remembering: The source's chronology distinguishes the 1970s move toward social issues from the 1980s focus on indigenization.",
               "retrieval_questions": [
                 "State the source-based core idea of “1970s social issues” without looking at your notes.",
                 "List the main points the uploaded source gives for “1970s social issues”.",
@@ -297,7 +297,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Indigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.\n\nThe concept is best retained as a connected set of features:\n• Indigenization treats knowledge as rooted in a community's world-view and sociocultural history.\n• One facet is endogenous/culture-produced concepts and categories.\n• Another involves adapting or interacting with imported concepts, theories and methods.\n• The movement seeks greater relevance to Indian social and cultural realities.\n\nA useful exam distinction is this: Indigenization does not simply mean rejecting Western psychology; the source explicitly describes gradual processes of interaction between imported and indigenous knowledge.\n\nSource grounding: PowerWithin Psychology — Unit 1, 1980s: Indigenization; examples include D. Sinha and J. B. P. Sinha.",
+              "deep_learning": "Indigenization is presented as a move toward developing psychology that is sensitive to the cultural and historical conditions of the society in which it is practiced. D. Sinha's account distinguishes two facets: culture-bound concepts and categories, and the interaction of cultural variables with concepts, theories and methods introduced from outside. J. B. P. Sinha later described these as endogenous and exogenous indigenization. The source also gives examples of Indian psychologists developing or studying culturally grounded concepts and practices.\n\nThe important features are:\n• Indigenization treats knowledge as rooted in a community's world-view and sociocultural history.\n• One facet is endogenous/culture-produced concepts and categories.\n• Another involves adapting or interacting with imported concepts, theories and methods.\n• The movement seeks greater relevance to Indian social and cultural realities.\n\nThe exam distinction is worth remembering: Indigenization does not simply mean rejecting Western psychology; the source explicitly describes gradual processes of interaction between imported and indigenous knowledge.",
               "retrieval_questions": [
                 "State the source-based core idea of “1980s indigenization” without looking at your notes.",
                 "List the main points the uploaded source gives for “1980s indigenization”.",
@@ -330,7 +330,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.\n\nThe concept is best retained as a connected set of features:\n• Paradigms involve assumptions about reality, knowledge and methods of inquiry.\n• The source contrasts positivism with several alternative approaches.\n• The Indian debate is connected to cultural relevance and disciplinary identity.\n• The issue is methodological as well as philosophical.\n\nA useful exam distinction is this: A paradigm is broader than a research method: it includes assumptions about what can be known and how knowledge is produced.\n\nSource grounding: PowerWithin Psychology — knowledge paradigms and the Unit 1 discussion of Indian psychology's identity crisis.",
+              "deep_learning": "The uploaded NET material places the 1990s within a broader debate about paradigms and the assumptions underlying psychological knowledge. It highlights ontology, epistemology and methodology as essential aspects of a knowledge paradigm, and contrasts positivist assumptions with post-positivist, critical, social-constructionist and phenomenological approaches. In the Indian context, these debates connect with the question of whether psychology should remain tied to imported experimental-analytical assumptions or develop culturally situated approaches.\n\nThe important features are:\n• Paradigms involve assumptions about reality, knowledge and methods of inquiry.\n• The source contrasts positivism with several alternative approaches.\n• The Indian debate is connected to cultural relevance and disciplinary identity.\n• The issue is methodological as well as philosophical.\n\nThe exam distinction is worth remembering: A paradigm is broader than a research method: it includes assumptions about what can be known and how knowledge is produced.",
               "retrieval_questions": [
                 "State the source-based core idea of “1990s paradigmatic concerns” without looking at your notes.",
                 "List the main points the uploaded source gives for “1990s paradigmatic concerns”.",
@@ -363,7 +363,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.\n\nThe concept is best retained as a connected set of features:\n• The crisis concerned relevance, identity and dependence on imported models.\n• Western theories were criticized when transferred without adequate cultural consideration.\n• Indigenous concepts and Indian social realities became more explicit research concerns.\n• The source describes uneven change rather than a complete replacement of Western psychology.\n\nA useful exam distinction is this: The identity crisis is a historical critique of disciplinary direction; it should not be treated as a claim that all Indian psychological research was identical or uniformly Western.\n\nSource grounding: PowerWithin Psychology — Unit 1, Crisis of Identity; Nandy (1974), K. G. Agrawal (1973), D. Sinha (1977), J. B. P. Sinha (1993).",
+              "deep_learning": "The source describes a disciplinary identity crisis in Indian psychology emerging strongly in the 1970s–1990s debate. Review of Indian research led scholars to question whether psychology had become largely imitative of Western research and insufficiently responsive to Indian social reality. Nandy and Agrawal are cited in this criticism, while D. Sinha called for indigenous psychology using Indian concepts and theories. J. B. P. Sinha's distinction between the 'bulk' and 'front' of research captures the uneven response: much research remained imitative, while some psychologists increasingly took indigenous psychology seriously.\n\nThe important features are:\n• The crisis concerned relevance, identity and dependence on imported models.\n• Western theories were criticized when transferred without adequate cultural consideration.\n• Indigenous concepts and Indian social realities became more explicit research concerns.\n• The source describes uneven change rather than a complete replacement of Western psychology.\n\nThe exam distinction is worth remembering: The identity crisis is a historical critique of disciplinary direction; it should not be treated as a claim that all Indian psychological research was identical or uniformly Western.",
               "retrieval_questions": [
                 "State the source-based core idea of “1990s disciplinary identity crisis” without looking at your notes.",
                 "List the main points the uploaded source gives for “1990s disciplinary identity crisis”.",
@@ -396,7 +396,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.\n\nThe concept is best retained as a connected set of features:\n• The 2000s are presented as a period of greater academic articulation of Indian psychology.\n• The 2002 Pondicherry conference is a key source example.\n• The Manifesto on Indian Psychology is an important landmark in the source account.\n• Indian psychology is presented through multiple traditions rather than a single doctrine.\n\nA useful exam distinction is this: The source describes emergence and academic articulation; it does not imply that Indian psychology replaced mainstream experimental psychology.\n\nSource grounding: PowerWithin Psychology — Unit 1, Significant Indian Paradigms on Psychological Knowledge and discussion of the 2002 Manifesto on Indian Psychology.",
+              "deep_learning": "The source marks the 2000s as a period in which Indian psychology became more explicitly articulated within academic discussion. A major source example is the 2002 National Conference on Yoga and Indian Approaches to Psychology in Pondicherry, where participants issued the Manifesto on Indian Psychology. The manifesto emphasized the content, methods and applied possibilities of Indian psychology. The source also describes Indian approaches such as Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga as significant paradigms for psychological knowledge.\n\nThe important features are:\n• The 2000s are presented as a period of greater academic articulation of Indian psychology.\n• The 2002 Pondicherry conference is a key source example.\n• The Manifesto on Indian Psychology is an important landmark in the source account.\n• Indian psychology is presented through multiple traditions rather than a single doctrine.\n\nThe exam distinction is worth remembering: The source describes emergence and academic articulation; it does not imply that Indian psychology replaced mainstream experimental psychology.",
               "retrieval_questions": [
                 "State the source-based core idea of “2000s Indian psychology in academia” without looking at your notes.",
                 "List the main points the uploaded source gives for “2000s Indian psychology in academia”.",
@@ -448,7 +448,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.\n\nThe concept is best retained as a connected set of features:\n• Colonial education structures influenced the institutional entry of psychology.\n• Western experimental psychology became an important model for Indian academic psychology.\n• The encounter created a long-term question of cultural fit and disciplinary identity.\n• The later indigenization debate can be understood against this historical background.\n\nA useful exam distinction is this: The source treats the colonial encounter as a historical condition, not as a single psychological theory or method.\n\nSource grounding: PowerWithin Psychology — Unit 1, Pre-independence history and identity-crisis discussion.",
+              "deep_learning": "The colonial encounter shaped the institutional and intellectual development of psychology in India. The source notes that formal psychology education developed within an education system modeled on British institutions. This introduced Western academic psychology and experimental methods into Indian universities. The later identity debate arose partly because psychologists trained in Western models were working within a society with different historical and cultural conditions.\n\nThe important features are:\n• Colonial education structures influenced the institutional entry of psychology.\n• Western experimental psychology became an important model for Indian academic psychology.\n• The encounter created a long-term question of cultural fit and disciplinary identity.\n• The later indigenization debate can be understood against this historical background.\n\nThe exam distinction is worth remembering: The source treats the colonial encounter as a historical condition, not as a single psychological theory or method.",
               "retrieval_questions": [
                 "State the source-based core idea of “Colonial encounter” without looking at your notes.",
                 "List the main points the uploaded source gives for “Colonial encounter”.",
@@ -481,7 +481,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "In the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nThe concept is best retained as a connected set of features:\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n\nA useful exam distinction is this: The uploaded source provides a broad historical framing rather than a separate, fully developed postcolonial theory of psychology.\n\nSource grounding: PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections.",
+              "deep_learning": "In the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nThe important features are:\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n\nThe exam distinction is worth remembering: The uploaded source provides a broad historical framing rather than a separate, fully developed postcolonial theory of psychology.",
               "retrieval_questions": [
                 "State the source-based core idea of “Postcolonialism and psychology” without looking at your notes.",
                 "List the main points the uploaded source gives for “Postcolonialism and psychology”.",
@@ -514,7 +514,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.\n\nThe concept is best retained as a connected set of features:\n• Psychology inherited a philosophical background but sought scientific status.\n• Western methods became influential in research and training.\n• Cultural relevance became a central identity question.\n• Indigenization was proposed as one route toward a more distinctive psychology.\n\nA useful exam distinction is this: A lack of distinct identity does not mean that no psychological institutions or research existed; the source is discussing the character and direction of the discipline.\n\nSource grounding: PowerWithin Psychology — Unit 1, post-independence and crisis-of-identity discussion.",
+              "deep_learning": "The source describes a lack of distinct disciplinary identity when Indian psychology was caught between philosophical inheritance, Western scientific models and the demands of Indian social reality. Many departments developed from philosophy departments, while researchers increasingly adopted experimental and statistical methods associated with Western psychology. This produced concern that psychology was becoming imitative rather than developing concepts and research agendas suited to India.\n\nThe important features are:\n• Psychology inherited a philosophical background but sought scientific status.\n• Western methods became influential in research and training.\n• Cultural relevance became a central identity question.\n• Indigenization was proposed as one route toward a more distinctive psychology.\n\nThe exam distinction is worth remembering: A lack of distinct identity does not mean that no psychological institutions or research existed; the source is discussing the character and direction of the discipline.",
               "retrieval_questions": [
                 "State the source-based core idea of “Lack of distinct disciplinary identity” without looking at your notes.",
                 "List the main points the uploaded source gives for “Lack of distinct disciplinary identity”.",
@@ -566,7 +566,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nThe concept is best retained as a connected set of features:\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n\nA useful exam distinction is this: These are philosophical foundations rather than modern psychological schools; do not equate Greek philosophy directly with experimental psychology.\n\nSource grounding: PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective.",
+              "deep_learning": "The uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nThe important features are:\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n\nThe exam distinction is worth remembering: These are philosophical foundations rather than modern psychological schools; do not equate Greek philosophy directly with experimental psychology.",
               "retrieval_questions": [
                 "State the source-based core idea of “Greek heritage” without looking at your notes.",
                 "List the main points the uploaded source gives for “Greek heritage”.",
@@ -599,7 +599,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nThe concept is best retained as a connected set of features:\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n\nA useful exam distinction is this: Do not import a generic history-of-medieval-psychology narrative into this node when it is not supported by the uploaded material.\n\nSource grounding: PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic.",
+              "deep_learning": "The uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nThe important features are:\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n\nThe exam distinction is worth remembering: Do not import a generic history-of-medieval-psychology narrative into this node when it is not supported by the uploaded material.",
               "retrieval_questions": [
                 "State the source-based core idea of “Medieval period” without looking at your notes.",
                 "List the main points the uploaded source gives for “Medieval period”.",
@@ -632,7 +632,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.\n\nThe concept is best retained as a connected set of features:\n• Modern psychology is presented as developing through several distinct intellectual paths.\n• Major schools should be learned as separate traditions rather than collapsed into one model.\n• The source identifies Wundt, Freud, James and Dilthey as four founding paths.\n• The historical sequence leads toward debates about the experimental-analytical paradigm.\n\nA useful exam distinction is this: The modern period is a historical umbrella; Structuralism, Functionalism and the other schools are distinct traditions within the later development.\n\nSource grounding: PowerWithin Psychology — Unit 1 Western Psychology outline and four founding paths.",
+              "deep_learning": "The uploaded NET material places the modern period as the bridge toward the emergence of academic psychology and its major schools. It then identifies Structuralism, Functionalism, Psychoanalysis, Gestalt, Behaviorism, Humanistic-Existential, Transpersonal, the Cognitive revolution and Multiculturalism as major developments. The four founding paths are associated with Wundt, Freud, James and Dilthey.\n\nThe important features are:\n• Modern psychology is presented as developing through several distinct intellectual paths.\n• Major schools should be learned as separate traditions rather than collapsed into one model.\n• The source identifies Wundt, Freud, James and Dilthey as four founding paths.\n• The historical sequence leads toward debates about the experimental-analytical paradigm.\n\nThe exam distinction is worth remembering: The modern period is a historical umbrella; Structuralism, Functionalism and the other schools are distinct traditions within the later development.",
               "retrieval_questions": [
                 "State the source-based core idea of “Modern period” without looking at your notes.",
                 "List the main points the uploaded source gives for “Modern period”.",
@@ -674,7 +674,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Structuralism",
-              "content_notes": "Structuralism is centred on analysis of the structure of conscious experience.\n\nKEY POINTS\n• Introspection\n• Elements of consciousness\n• Titchener\n\nDISTINCTION / CAUTION\nWundt and Titchener are not identical in every respect.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Structuralism is centred on analysis of the structure of conscious experience.\n\nKEY POINTS\n• Introspection\n• Elements of consciousness\n• Titchener\n\nDISTINCTION / CAUTION\nWundt and Titchener are not identical in every respect.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -684,7 +684,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Structuralism is centred on analysis of the structure of conscious experience.\n\nThe concept is best retained as a connected set of features:\n• Introspection\n• Elements of consciousness\n• Titchener\n\nA useful exam distinction is this: Wundt and Titchener are not identical in every respect.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Structuralism is centred on analysis of the structure of conscious experience.\n\nThe important features are:\n• Introspection\n• Elements of consciousness\n• Titchener\n\nThe exam distinction is worth remembering: Wundt and Titchener are not identical in every respect.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Structuralism”.",
                 "List the key points associated with “Structuralism” in the uploaded study material.",
@@ -710,7 +710,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Functionalism",
-              "content_notes": "Functionalism is centred on study of what mental processes and behavior do, especially their adaptive functions.\n\nKEY POINTS\n• William James\n• Adaptation\n• Stream of consciousness\n\nDISTINCTION / CAUTION\nFunctionalism asks about function, not just elements.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Functionalism is centred on study of what mental processes and behavior do, especially their adaptive functions.\n\nKEY POINTS\n• William James\n• Adaptation\n• Stream of consciousness\n\nDISTINCTION / CAUTION\nFunctionalism asks about function, not just elements.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -720,7 +720,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Functionalism is centred on study of what mental processes and behavior do, especially their adaptive functions.\n\nThe concept is best retained as a connected set of features:\n• William James\n• Adaptation\n• Stream of consciousness\n\nA useful exam distinction is this: Functionalism asks about function, not just elements.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Functionalism is centred on study of what mental processes and behavior do, especially their adaptive functions.\n\nThe important features are:\n• William James\n• Adaptation\n• Stream of consciousness\n\nThe exam distinction is worth remembering: Functionalism asks about function, not just elements.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Functionalism”.",
                 "List the key points associated with “Functionalism” in the uploaded study material.",
@@ -746,7 +746,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Psychoanalytical psychology",
-              "content_notes": "Psychoanalytical psychology is centred on unconscious processes, conflict and dynamic personality structure.\n\nKEY POINTS\n• Freud\n• Unconscious\n• Psychosexual development\n• Defense mechanisms\n\nDISTINCTION / CAUTION\nDo not reduce psychoanalysis to one motive.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Psychoanalytical psychology is centred on unconscious processes, conflict and dynamic personality structure.\n\nKEY POINTS\n• Freud\n• Unconscious\n• Psychosexual development\n• Defense mechanisms\n\nDISTINCTION / CAUTION\nDo not reduce psychoanalysis to one motive.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -756,7 +756,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Psychoanalytical psychology is centred on unconscious processes, conflict and dynamic personality structure.\n\nThe concept is best retained as a connected set of features:\n• Freud\n• Unconscious\n• Psychosexual development\n• Defense mechanisms\n\nA useful exam distinction is this: Do not reduce psychoanalysis to one motive.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Psychoanalytical psychology is centred on unconscious processes, conflict and dynamic personality structure.\n\nThe important features are:\n• Freud\n• Unconscious\n• Psychosexual development\n• Defense mechanisms\n\nThe exam distinction is worth remembering: Do not reduce psychoanalysis to one motive.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Psychoanalytical psychology”.",
                 "List the key points associated with “Psychoanalytical psychology” in the uploaded study material.",
@@ -782,7 +782,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Gestalt psychology",
-              "content_notes": "Gestalt psychology is centred on organized wholes and principles of perceptual organization.\n\nKEY POINTS\n• Wertheimer, Köhler, Koffka\n• Figure-ground\n• Grouping laws\n• Insight\n\nDISTINCTION / CAUTION\nGestalt is broader than insight learning.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Gestalt psychology is centred on organized wholes and principles of perceptual organization.\n\nKEY POINTS\n• Wertheimer, Köhler, Koffka\n• Figure-ground\n• Grouping laws\n• Insight\n\nDISTINCTION / CAUTION\nGestalt is broader than insight learning.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -792,7 +792,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Gestalt psychology is centred on organized wholes and principles of perceptual organization.\n\nThe concept is best retained as a connected set of features:\n• Wertheimer, Köhler, Koffka\n• Figure-ground\n• Grouping laws\n• Insight\n\nA useful exam distinction is this: Gestalt is broader than insight learning.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Gestalt psychology is centred on organized wholes and principles of perceptual organization.\n\nThe important features are:\n• Wertheimer, Köhler, Koffka\n• Figure-ground\n• Grouping laws\n• Insight\n\nThe exam distinction is worth remembering: Gestalt is broader than insight learning.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Gestalt psychology”.",
                 "List the key points associated with “Gestalt psychology” in the uploaded study material.",
@@ -818,7 +818,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Behaviorism",
-              "content_notes": "Behaviorism is centred on observable behavior and learning through environmental contingencies.\n\nKEY POINTS\n• Watson\n• Skinner\n• Conditioning\n• Reinforcement\n\nDISTINCTION / CAUTION\nNegative reinforcement increases behavior.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Behaviorism is centred on observable behavior and learning through environmental contingencies.\n\nKEY POINTS\n• Watson\n• Skinner\n• Conditioning\n• Reinforcement\n\nDISTINCTION / CAUTION\nNegative reinforcement increases behavior.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -828,7 +828,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Behaviorism is centred on observable behavior and learning through environmental contingencies.\n\nThe concept is best retained as a connected set of features:\n• Watson\n• Skinner\n• Conditioning\n• Reinforcement\n\nA useful exam distinction is this: Negative reinforcement increases behavior.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Behaviorism is centred on observable behavior and learning through environmental contingencies.\n\nThe important features are:\n• Watson\n• Skinner\n• Conditioning\n• Reinforcement\n\nThe exam distinction is worth remembering: Negative reinforcement increases behavior.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Behaviorism”.",
                 "List the key points associated with “Behaviorism” in the uploaded study material.",
@@ -854,7 +854,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Humanistic-Existential psychology",
-              "content_notes": "Humanistic-Existential psychology is centred on growth, meaning, freedom, choice, authenticity and agency.\n\nKEY POINTS\n• Rogers\n• Maslow\n• Meaning\n• Self-actualization\n\nDISTINCTION / CAUTION\nHumanistic psychology is not merely positive thinking.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Humanistic-Existential psychology is centred on growth, meaning, freedom, choice, authenticity and agency.\n\nKEY POINTS\n• Rogers\n• Maslow\n• Meaning\n• Self-actualization\n\nDISTINCTION / CAUTION\nHumanistic psychology is not merely positive thinking.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -864,7 +864,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Humanistic-Existential psychology is centred on growth, meaning, freedom, choice, authenticity and agency.\n\nThe concept is best retained as a connected set of features:\n• Rogers\n• Maslow\n• Meaning\n• Self-actualization\n\nA useful exam distinction is this: Humanistic psychology is not merely positive thinking.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Humanistic-Existential psychology is centred on growth, meaning, freedom, choice, authenticity and agency.\n\nThe important features are:\n• Rogers\n• Maslow\n• Meaning\n• Self-actualization\n\nThe exam distinction is worth remembering: Humanistic psychology is not merely positive thinking.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Humanistic-Existential psychology”.",
                 "List the key points associated with “Humanistic-Existential psychology” in the uploaded study material.",
@@ -890,7 +890,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Transpersonal psychology",
-              "content_notes": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nKEY POINTS\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nDISTINCTION / CAUTION\nIt is not identical to any single religion.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nKEY POINTS\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nDISTINCTION / CAUTION\nIt is not identical to any single religion.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -900,7 +900,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe concept is best retained as a connected set of features:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nA useful exam distinction is this: It is not identical to any single religion.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe important features are:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nThe exam distinction is worth remembering: It is not identical to any single religion.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Transpersonal psychology”.",
                 "List the key points associated with “Transpersonal psychology” in the uploaded study material.",
@@ -926,7 +926,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Cognitive revolution",
-              "content_notes": "Cognitive revolution is centred on renewed scientific study of internal mental processes.\n\nKEY POINTS\n• Attention\n• Memory\n• Language\n• Problem solving\n• Information processing\n\nDISTINCTION / CAUTION\nIt did not simply erase behaviorism overnight.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Cognitive revolution is centred on renewed scientific study of internal mental processes.\n\nKEY POINTS\n• Attention\n• Memory\n• Language\n• Problem solving\n• Information processing\n\nDISTINCTION / CAUTION\nIt did not simply erase behaviorism overnight.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -936,7 +936,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Cognitive revolution is centred on renewed scientific study of internal mental processes.\n\nThe concept is best retained as a connected set of features:\n• Attention\n• Memory\n• Language\n• Problem solving\n• Information processing\n\nA useful exam distinction is this: It did not simply erase behaviorism overnight.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Cognitive revolution is centred on renewed scientific study of internal mental processes.\n\nThe important features are:\n• Attention\n• Memory\n• Language\n• Problem solving\n• Information processing\n\nThe exam distinction is worth remembering: It did not simply erase behaviorism overnight.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Cognitive revolution”.",
                 "List the key points associated with “Cognitive revolution” in the uploaded study material.",
@@ -962,7 +962,7 @@ window.NETPSY_DATA = {
             {
               "id": 9,
               "title": "Multiculturalism",
-              "content_notes": "Multiculturalism is centred on how culture, identity and context shape psychological processes and practice.\n\nKEY POINTS\n• Diversity\n• Cultural context\n• Assessment bias\n\nDISTINCTION / CAUTION\nCulture is not just a demographic label.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Multiculturalism is centred on how culture, identity and context shape psychological processes and practice.\n\nKEY POINTS\n• Diversity\n• Cultural context\n• Assessment bias\n\nDISTINCTION / CAUTION\nCulture is not just a demographic label.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -972,7 +972,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Multiculturalism is centred on how culture, identity and context shape psychological processes and practice.\n\nThe concept is best retained as a connected set of features:\n• Diversity\n• Cultural context\n• Assessment bias\n\nA useful exam distinction is this: Culture is not just a demographic label.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Multiculturalism is centred on how culture, identity and context shape psychological processes and practice.\n\nThe important features are:\n• Diversity\n• Cultural context\n• Assessment bias\n\nThe exam distinction is worth remembering: Culture is not just a demographic label.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Multiculturalism”.",
                 "List the key points associated with “Multiculturalism” in the uploaded study material.",
@@ -1017,7 +1017,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Wundt",
-              "content_notes": "Wundt is centred on institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.\n\nKEY POINTS\n• Experimental psychology\n• Leipzig\n• 1879\n\nDISTINCTION / CAUTION\nDo not equate Wundt automatically with Titchener.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Wundt is centred on institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.\n\nKEY POINTS\n• Experimental psychology\n• Leipzig\n• 1879\n\nDISTINCTION / CAUTION\nDo not equate Wundt automatically with Titchener.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1027,7 +1027,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Wundt is centred on institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.\n\nThe concept is best retained as a connected set of features:\n• Experimental psychology\n• Leipzig\n• 1879\n\nA useful exam distinction is this: Do not equate Wundt automatically with Titchener.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Wundt is centred on institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory.\n\nThe important features are:\n• Experimental psychology\n• Leipzig\n• 1879\n\nThe exam distinction is worth remembering: Do not equate Wundt automatically with Titchener.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Wundt”.",
                 "List the key points associated with “Wundt” in the uploaded study material.",
@@ -1053,7 +1053,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Freud",
-              "content_notes": "Freud is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nKEY POINTS\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nDISTINCTION / CAUTION\nFreud is not the founder of behaviorism.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Freud is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nKEY POINTS\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nDISTINCTION / CAUTION\nFreud is not the founder of behaviorism.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1063,7 +1063,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Freud is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe concept is best retained as a connected set of features:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nA useful exam distinction is this: Freud is not the founder of behaviorism.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Freud is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe important features are:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nThe exam distinction is worth remembering: Freud is not the founder of behaviorism.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Freud”.",
                 "List the key points associated with “Freud” in the uploaded study material.",
@@ -1089,7 +1089,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "James",
-              "content_notes": "James is centred on functionalism and the adaptive functions of consciousness.\n\nKEY POINTS\n• William James\n• Functionalism\n• Stream of consciousness\n\nDISTINCTION / CAUTION\nJames is associated with function rather than structural analysis.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "James is centred on functionalism and the adaptive functions of consciousness.\n\nKEY POINTS\n• William James\n• Functionalism\n• Stream of consciousness\n\nDISTINCTION / CAUTION\nJames is associated with function rather than structural analysis.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1099,7 +1099,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "James is centred on functionalism and the adaptive functions of consciousness.\n\nThe concept is best retained as a connected set of features:\n• William James\n• Functionalism\n• Stream of consciousness\n\nA useful exam distinction is this: James is associated with function rather than structural analysis.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "James is centred on functionalism and the adaptive functions of consciousness.\n\nThe important features are:\n• William James\n• Functionalism\n• Stream of consciousness\n\nThe exam distinction is worth remembering: James is associated with function rather than structural analysis.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “James”.",
                 "List the key points associated with “James” in the uploaded study material.",
@@ -1125,7 +1125,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Dilthey",
-              "content_notes": "Dilthey is centred on understanding lived human experience through the human sciences.\n\nKEY POINTS\n• Verstehen\n• Meaning\n• Human sciences\n\nDISTINCTION / CAUTION\nHe should not be reduced to experimental psychology.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Dilthey is centred on understanding lived human experience through the human sciences.\n\nKEY POINTS\n• Verstehen\n• Meaning\n• Human sciences\n\nDISTINCTION / CAUTION\nHe should not be reduced to experimental psychology.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1135,7 +1135,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Dilthey is centred on understanding lived human experience through the human sciences.\n\nThe concept is best retained as a connected set of features:\n• Verstehen\n• Meaning\n• Human sciences\n\nA useful exam distinction is this: He should not be reduced to experimental psychology.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Dilthey is centred on understanding lived human experience through the human sciences.\n\nThe important features are:\n• Verstehen\n• Meaning\n• Human sciences\n\nThe exam distinction is worth remembering: He should not be reduced to experimental psychology.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Dilthey”.",
                 "List the key points associated with “Dilthey” in the uploaded study material.",
@@ -1190,7 +1190,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "The source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.\n\nThe concept is best retained as a connected set of features:\n• The paradigm emphasizes experimental and analytic inquiry.\n• Positivist assumptions include realism and an objectivist approach to knowledge.\n• Variables, measurement and controlled methods are central to the model.\n• The later critique focuses on context, meaning and the limits of purely objectivist assumptions.\n\nA useful exam distinction is this: Do not treat 'experimental-analytical' as synonymous with all experimental research; the source is discussing a broader paradigm of knowledge.\n\nSource grounding: PowerWithin Psychology — Unit 1, knowledge paradigms and disenchantment with positivism.",
+              "deep_learning": "The source associates the experimental-analytical paradigm with a strong commitment to systematic experimentation, objectivity and analytic methods. In its positivist form, reality is treated as existing independently of the observer, knowledge is approached through an objective stance, and experimental/manipulative methodology is emphasized. The source later describes dissatisfaction with this model when it strips research from social context and meaning.\n\nThe important features are:\n• The paradigm emphasizes experimental and analytic inquiry.\n• Positivist assumptions include realism and an objectivist approach to knowledge.\n• Variables, measurement and controlled methods are central to the model.\n• The later critique focuses on context, meaning and the limits of purely objectivist assumptions.\n\nThe exam distinction is worth remembering: Do not treat 'experimental-analytical' as synonymous with all experimental research; the source is discussing a broader paradigm of knowledge.",
               "retrieval_questions": [
                 "State the source-based core idea of “Experimental-analytical paradigm” without looking at your notes.",
                 "List the main points the uploaded source gives for “Experimental-analytical paradigm”.",
@@ -1223,7 +1223,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "In the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.\n\nThe concept is best retained as a connected set of features:\n• Ontology: realism is identified in the source's positivist formulation.\n• Epistemology: dualist and objectivist assumptions are emphasized.\n• Methodology: experimental and manipulative procedures are central.\n• Critiques focus on meaning, context, representation and the limits of generalization.\n\nA useful exam distinction is this: Logical empiricism is a paradigm-level position in this material, not simply a synonym for using statistics or conducting an experiment.\n\nSource grounding: PowerWithin Psychology — Unit 1, Logical Empiricism, Positivism and Disenchantment with Positivism.",
+              "deep_learning": "In the uploaded material, logical empiricism is linked to the experimental-analytical paradigm and to positivist assumptions about knowledge. The source lists realism as an ontological position, a dualist/objectivist epistemology and experimental/manipulative methodology. Critiques include context stripping, exclusion of meaning, theory-ladenness, the crisis of representation and difficulty applying general findings to individual cases.\n\nThe important features are:\n• Ontology: realism is identified in the source's positivist formulation.\n• Epistemology: dualist and objectivist assumptions are emphasized.\n• Methodology: experimental and manipulative procedures are central.\n• Critiques focus on meaning, context, representation and the limits of generalization.\n\nThe exam distinction is worth remembering: Logical empiricism is a paradigm-level position in this material, not simply a synonym for using statistics or conducting an experiment.",
               "retrieval_questions": [
                 "State the source-based core idea of “Logical empiricism” without looking at your notes.",
                 "List the main points the uploaded source gives for “Logical empiricism”.",
@@ -1256,7 +1256,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "The source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.\n\nThe concept is best retained as a connected set of features:\n• Strict paradigm adherence can narrow the kinds of questions psychology asks.\n• The source highlights meaning, context and representation as neglected concerns.\n• The etic–emic issue challenges simple transfer of general findings to culturally specific cases.\n• Alternative paradigms broaden the conception of psychological knowledge.\n\nA useful exam distinction is this: The source describes a crisis of assumptions and representation, not the disappearance of experimental psychology.\n\nSource grounding: PowerWithin Psychology — Unit 1, crisis in psychology, post-positivism and critical perspective.",
+              "deep_learning": "The source describes a crisis arising when psychology adhered too rigidly to the experimental-analytical paradigm. Concerns included the loss of meaning and human context, overreliance on statistical manipulation, the crisis of representation and the etic–emic problem. Post-positivist and critical perspectives are presented as responses that recognize context, values and multiple ways of producing knowledge.\n\nThe important features are:\n• Strict paradigm adherence can narrow the kinds of questions psychology asks.\n• The source highlights meaning, context and representation as neglected concerns.\n• The etic–emic issue challenges simple transfer of general findings to culturally specific cases.\n• Alternative paradigms broaden the conception of psychological knowledge.\n\nThe exam distinction is worth remembering: The source describes a crisis of assumptions and representation, not the disappearance of experimental psychology.",
               "retrieval_questions": [
                 "State the source-based core idea of “Crisis in psychology” without looking at your notes.",
                 "List the main points the uploaded source gives for “Crisis in psychology”.",
@@ -1308,7 +1308,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.\n\nThe concept is best retained as a connected set of features:\n• Consciousness is given a central place in the source's account of Indian psychology.\n• The traditions focus strongly on inner experience and transformation.\n• Yoga and meditation are described as methods for psychological/spiritual development.\n• Indian approaches are presented as distinct paradigms rather than a single homogeneous system.\n\nA useful exam distinction is this: Indic influence should not be reduced to a single technique such as meditation; the source presents a wider set of philosophical and psychological assumptions.\n\nSource grounding: PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.",
+              "deep_learning": "The uploaded material treats Indian psychological traditions as sources of concepts concerning consciousness, self-knowledge, suffering and transformation. It describes Indian psychology as primarily concerned with inner states and consciousness, with Yoga and meditation presented as methods for developing higher states of awareness. Significant Indian paradigms listed by the source include Yoga, Bhagavad Gita, Buddhism, Sufism and Integral Yoga.\n\nThe important features are:\n• Consciousness is given a central place in the source's account of Indian psychology.\n• The traditions focus strongly on inner experience and transformation.\n• Yoga and meditation are described as methods for psychological/spiritual development.\n• Indian approaches are presented as distinct paradigms rather than a single homogeneous system.\n\nThe exam distinction is worth remembering: Indic influence should not be reduced to a single technique such as meditation; the source presents a wider set of philosophical and psychological assumptions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Indic influences on modern psychology” without looking at your notes.",
                 "List the main points the uploaded source gives for “Indic influences on modern psychology”.",
@@ -1350,7 +1350,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Ontology",
-              "content_notes": "Ontology is centred on assumptions about what exists or the nature of reality.\n\nKEY POINTS\n• Being\n• Reality\n• Objects of inquiry\n\nDISTINCTION / CAUTION\nOntology is not epistemology.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Ontology is centred on assumptions about what exists or the nature of reality.\n\nKEY POINTS\n• Being\n• Reality\n• Objects of inquiry\n\nDISTINCTION / CAUTION\nOntology is not epistemology.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1360,7 +1360,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Ontology is centred on assumptions about what exists or the nature of reality.\n\nThe concept is best retained as a connected set of features:\n• Being\n• Reality\n• Objects of inquiry\n\nA useful exam distinction is this: Ontology is not epistemology.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Ontology is centred on assumptions about what exists or the nature of reality.\n\nThe important features are:\n• Being\n• Reality\n• Objects of inquiry\n\nThe exam distinction is worth remembering: Ontology is not epistemology.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Ontology”.",
                 "List the key points associated with “Ontology” in the uploaded study material.",
@@ -1386,7 +1386,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Epistemology",
-              "content_notes": "Epistemology is centred on how knowledge is produced, justified and known.\n\nKEY POINTS\n• Sources of knowledge\n• Justification\n• Knower-known relationship\n\nDISTINCTION / CAUTION\nIt asks how we know, not primarily what exists.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Epistemology is centred on how knowledge is produced, justified and known.\n\nKEY POINTS\n• Sources of knowledge\n• Justification\n• Knower-known relationship\n\nDISTINCTION / CAUTION\nIt asks how we know, not primarily what exists.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1396,7 +1396,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Epistemology is centred on how knowledge is produced, justified and known.\n\nThe concept is best retained as a connected set of features:\n• Sources of knowledge\n• Justification\n• Knower-known relationship\n\nA useful exam distinction is this: It asks how we know, not primarily what exists.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Epistemology is centred on how knowledge is produced, justified and known.\n\nThe important features are:\n• Sources of knowledge\n• Justification\n• Knower-known relationship\n\nThe exam distinction is worth remembering: It asks how we know, not primarily what exists.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Epistemology”.",
                 "List the key points associated with “Epistemology” in the uploaded study material.",
@@ -1422,7 +1422,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Methodology",
-              "content_notes": "Methodology is centred on the overall logic and rationale for investigating a research question.\n\nKEY POINTS\n• Research strategy\n• Paradigm-method link\n• Design choices\n\nDISTINCTION / CAUTION\nMethodology is broader than one method.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Methodology is centred on the overall logic and rationale for investigating a research question.\n\nKEY POINTS\n• Research strategy\n• Paradigm-method link\n• Design choices\n\nDISTINCTION / CAUTION\nMethodology is broader than one method.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1432,7 +1432,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Methodology is centred on the overall logic and rationale for investigating a research question.\n\nThe concept is best retained as a connected set of features:\n• Research strategy\n• Paradigm-method link\n• Design choices\n\nA useful exam distinction is this: Methodology is broader than one method.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Methodology is centred on the overall logic and rationale for investigating a research question.\n\nThe important features are:\n• Research strategy\n• Paradigm-method link\n• Design choices\n\nThe exam distinction is worth remembering: Methodology is broader than one method.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Methodology”.",
                 "List the key points associated with “Methodology” in the uploaded study material.",
@@ -1477,7 +1477,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Positivism",
-              "content_notes": "Positivism is centred on empirical observation, measurement and regularities in phenomena.\n\nKEY POINTS\n• Objectivity\n• Measurement\n• Empirical evidence\n\nDISTINCTION / CAUTION\nNot every quantitative study is automatically positivist.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Positivism is centred on empirical observation, measurement and regularities in phenomena.\n\nKEY POINTS\n• Objectivity\n• Measurement\n• Empirical evidence\n\nDISTINCTION / CAUTION\nNot every quantitative study is automatically positivist.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1487,7 +1487,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Positivism is centred on empirical observation, measurement and regularities in phenomena.\n\nThe concept is best retained as a connected set of features:\n• Objectivity\n• Measurement\n• Empirical evidence\n\nA useful exam distinction is this: Not every quantitative study is automatically positivist.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Positivism is centred on empirical observation, measurement and regularities in phenomena.\n\nThe important features are:\n• Objectivity\n• Measurement\n• Empirical evidence\n\nThe exam distinction is worth remembering: Not every quantitative study is automatically positivist.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Positivism”.",
                 "List the key points associated with “Positivism” in the uploaded study material.",
@@ -1513,7 +1513,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Post-Positivism",
-              "content_notes": "Post-Positivism is centred on empirical inquiry combined with recognition of fallibility and limits of certainty.\n\nKEY POINTS\n• Tentative knowledge\n• Critical scrutiny\n• Multiple methods\n\nDISTINCTION / CAUTION\nIt does not reject evidence.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Post-Positivism is centred on empirical inquiry combined with recognition of fallibility and limits of certainty.\n\nKEY POINTS\n• Tentative knowledge\n• Critical scrutiny\n• Multiple methods\n\nDISTINCTION / CAUTION\nIt does not reject evidence.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1523,7 +1523,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Post-Positivism is centred on empirical inquiry combined with recognition of fallibility and limits of certainty.\n\nThe concept is best retained as a connected set of features:\n• Tentative knowledge\n• Critical scrutiny\n• Multiple methods\n\nA useful exam distinction is this: It does not reject evidence.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Post-Positivism is centred on empirical inquiry combined with recognition of fallibility and limits of certainty.\n\nThe important features are:\n• Tentative knowledge\n• Critical scrutiny\n• Multiple methods\n\nThe exam distinction is worth remembering: It does not reject evidence.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Post-Positivism”.",
                 "List the key points associated with “Post-Positivism” in the uploaded study material.",
@@ -1559,7 +1559,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.\n\nThe concept is best retained as a connected set of features:\n• Knowledge is treated as value-mediated rather than completely value-free.\n• Social and historical forces are part of the account of reality.\n• Critical inquiry examines assumptions and conventional structures.\n• The perspective connects understanding with effective action.\n\nA useful exam distinction is this: The critical perspective differs from positivism in its treatment of values, social context and the status of the researcher and participant.\n\nSource grounding: PowerWithin Psychology — Unit 1, Critical Perspective.",
+              "deep_learning": "The critical perspective in the uploaded material treats knowledge as value-mediated and reality as shaped by social, political, cultural, economic, gender and ethnic forces. It questions taken-for-granted assumptions and conventional social structures. The aim is not only description but a reflexive examination of values and the possibility of action in relation to unjust social systems.\n\nThe important features are:\n• Knowledge is treated as value-mediated rather than completely value-free.\n• Social and historical forces are part of the account of reality.\n• Critical inquiry examines assumptions and conventional structures.\n• The perspective connects understanding with effective action.\n\nThe exam distinction is worth remembering: The critical perspective differs from positivism in its treatment of values, social context and the status of the researcher and participant.",
               "retrieval_questions": [
                 "State the source-based core idea of “Critical perspective” without looking at your notes.",
                 "List the main points the uploaded source gives for “Critical perspective”.",
@@ -1582,7 +1582,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Social Constructionism",
-              "content_notes": "Social Constructionism is centred on how meanings and categories are produced through language, interaction and history.\n\nKEY POINTS\n• Language\n• Social interaction\n• Context\n\nDISTINCTION / CAUTION\nIt does not mean material reality is imaginary.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Social Constructionism is centred on how meanings and categories are produced through language, interaction and history.\n\nKEY POINTS\n• Language\n• Social interaction\n• Context\n\nDISTINCTION / CAUTION\nIt does not mean material reality is imaginary.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1592,7 +1592,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social Constructionism is centred on how meanings and categories are produced through language, interaction and history.\n\nThe concept is best retained as a connected set of features:\n• Language\n• Social interaction\n• Context\n\nA useful exam distinction is this: It does not mean material reality is imaginary.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Social Constructionism is centred on how meanings and categories are produced through language, interaction and history.\n\nThe important features are:\n• Language\n• Social interaction\n• Context\n\nThe exam distinction is worth remembering: It does not mean material reality is imaginary.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Social Constructionism”.",
                 "List the key points associated with “Social Constructionism” in the uploaded study material.",
@@ -1618,7 +1618,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Existential Phenomenology",
-              "content_notes": "Existential Phenomenology is centred on lived experience, meaning, freedom and situated existence.\n\nKEY POINTS\n• First-person experience\n• Meaning\n• Lived world\n\nDISTINCTION / CAUTION\nIt is not simply casual introspection.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Existential Phenomenology is centred on lived experience, meaning, freedom and situated existence.\n\nKEY POINTS\n• First-person experience\n• Meaning\n• Lived world\n\nDISTINCTION / CAUTION\nIt is not simply casual introspection.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1628,7 +1628,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Existential Phenomenology is centred on lived experience, meaning, freedom and situated existence.\n\nThe concept is best retained as a connected set of features:\n• First-person experience\n• Meaning\n• Lived world\n\nA useful exam distinction is this: It is not simply casual introspection.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Existential Phenomenology is centred on lived experience, meaning, freedom and situated existence.\n\nThe important features are:\n• First-person experience\n• Meaning\n• Lived world\n\nThe exam distinction is worth remembering: It is not simply casual introspection.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Existential Phenomenology”.",
                 "List the key points associated with “Existential Phenomenology” in the uploaded study material.",
@@ -1654,7 +1654,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Co-operative Enquiry",
-              "content_notes": "Co-operative Enquiry is centred on participatory research in which participants contribute as co-researchers.\n\nKEY POINTS\n• Participation\n• Reflection/action\n• Collaboration\n\nDISTINCTION / CAUTION\nParticipants are not passive subjects.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Co-operative Enquiry is centred on participatory research in which participants contribute as co-researchers.\n\nKEY POINTS\n• Participation\n• Reflection/action\n• Collaboration\n\nDISTINCTION / CAUTION\nParticipants are not passive subjects.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1664,7 +1664,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Co-operative Enquiry is centred on participatory research in which participants contribute as co-researchers.\n\nThe concept is best retained as a connected set of features:\n• Participation\n• Reflection/action\n• Collaboration\n\nA useful exam distinction is this: Participants are not passive subjects.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Co-operative Enquiry is centred on participatory research in which participants contribute as co-researchers.\n\nThe important features are:\n• Participation\n• Reflection/action\n• Collaboration\n\nThe exam distinction is worth remembering: Participants are not passive subjects.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Co-operative Enquiry”.",
                 "List the key points associated with “Co-operative Enquiry” in the uploaded study material.",
@@ -1719,7 +1719,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Paradigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.\n\nThe concept is best retained as a connected set of features:\n• Ontology concerns assumptions about reality and what exists.\n• Epistemology concerns assumptions about knowledge and knowing.\n• Methodology concerns how inquiry should be conducted.\n• Different paradigms can generate different interpretations of the same psychological phenomenon.\n\nA useful exam distinction is this: A paradigm is broader than a method; two researchers can use similar techniques while working from different philosophical assumptions.\n\nSource grounding: PowerWithin Psychology — Unit 1, Essential Aspects of Knowledge Paradigms and Paradigmatic Controversies.",
+              "deep_learning": "Paradigmatic controversies concern competing assumptions about what counts as reality, knowledge and appropriate method in psychology. The source organizes these assumptions through ontology, epistemology and methodology and contrasts positivism with post-positivist, critical, social-constructionist, existential-phenomenological and cooperative-enquiry approaches. The controversy therefore extends beyond choosing a statistical technique.\n\nThe important features are:\n• Ontology concerns assumptions about reality and what exists.\n• Epistemology concerns assumptions about knowledge and knowing.\n• Methodology concerns how inquiry should be conducted.\n• Different paradigms can generate different interpretations of the same psychological phenomenon.\n\nThe exam distinction is worth remembering: A paradigm is broader than a method; two researchers can use similar techniques while working from different philosophical assumptions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Paradigmatic controversies” without looking at your notes.",
                 "List the main points the uploaded source gives for “Paradigmatic controversies”.",
@@ -1771,7 +1771,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Yoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.\n\nThe concept is best retained as a connected set of features:\n• Yoga is treated as a knowledge tradition, not merely a physical exercise system.\n• Consciousness and the inner life are central concerns.\n• Yoga and meditation are presented as methods of psychological transformation.\n• The source connects these practices with self-realization and liberation from suffering.\n\nA useful exam distinction is this: For this NET node, do not reduce Yoga to postures; the source's psychological framing emphasizes consciousness, discipline and transformation.\n\nSource grounding: PowerWithin Psychology — Unit 1, Indian Psychology and Significant Indian Paradigms.",
+              "deep_learning": "Yoga is listed by the source as a significant Indian paradigm of psychological knowledge. In the source's account of Indian psychology, the central concern is the inner state of the person and the development of consciousness. Yoga and meditation are described as tools for attaining higher or transcendental states of consciousness, with the broader goal of self-realization and freedom from suffering.\n\nThe important features are:\n• Yoga is treated as a knowledge tradition, not merely a physical exercise system.\n• Consciousness and the inner life are central concerns.\n• Yoga and meditation are presented as methods of psychological transformation.\n• The source connects these practices with self-realization and liberation from suffering.\n\nThe exam distinction is worth remembering: For this NET node, do not reduce Yoga to postures; the source's psychological framing emphasizes consciousness, discipline and transformation.",
               "retrieval_questions": [
                 "State the source-based core idea of “Yoga” without looking at your notes.",
                 "List the main points the uploaded source gives for “Yoga”.",
@@ -1794,7 +1794,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Bhagavad Gita",
-              "content_notes": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nKEY POINTS\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nDISTINCTION / CAUTION\nDo not reduce it to a single religious slogan.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nKEY POINTS\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nDISTINCTION / CAUTION\nDo not reduce it to a single religious slogan.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1804,7 +1804,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe concept is best retained as a connected set of features:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nA useful exam distinction is this: Do not reduce it to a single religious slogan.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Bhagavad Gita is centred on psychological themes of disciplined action, equanimity, duty and self-knowledge.\n\nThe important features are:\n• Karma Yoga\n• Equanimity toward outcomes\n• Self-knowledge\n• Discipline of action\n\nThe exam distinction is worth remembering: Do not reduce it to a single religious slogan.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Bhagavad Gita”.",
                 "List the key points associated with “Bhagavad Gita” in the uploaded study material.",
@@ -1830,7 +1830,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Buddhism",
-              "content_notes": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nKEY POINTS\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nDISTINCTION / CAUTION\nNon-self is not the same as saying nothing exists.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nKEY POINTS\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nDISTINCTION / CAUTION\nNon-self is not the same as saying nothing exists.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1840,7 +1840,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe concept is best retained as a connected set of features:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nA useful exam distinction is this: Non-self is not the same as saying nothing exists.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Buddhism is centred on psychological ideas around suffering, its causes, cessation and a path of transformation.\n\nThe important features are:\n• Four Noble Truths\n• Eightfold Path\n• Impermanence\n• Non-self\n• Mindfulness\n\nThe exam distinction is worth remembering: Non-self is not the same as saying nothing exists.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Buddhism”.",
                 "List the key points associated with “Buddhism” in the uploaded study material.",
@@ -1866,7 +1866,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Sufism",
-              "content_notes": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nKEY POINTS\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nDISTINCTION / CAUTION\nDo not treat Sufism only as a social identity.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nKEY POINTS\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nDISTINCTION / CAUTION\nDo not treat Sufism only as a social identity.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1876,7 +1876,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nThe concept is best retained as a connected set of features:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nA useful exam distinction is this: Do not treat Sufism only as a social identity.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Sufism is centred on inner purification, remembrance and transformation of the self.\n\nThe important features are:\n• Dhikr/remembrance\n• Love/devotion\n• Inner purification\n\nThe exam distinction is worth remembering: Do not treat Sufism only as a social identity.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Sufism”.",
                 "List the key points associated with “Sufism” in the uploaded study material.",
@@ -1902,7 +1902,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Integral Yoga",
-              "content_notes": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nKEY POINTS\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nDISTINCTION / CAUTION\nIt is broader than physical postures.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nKEY POINTS\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nDISTINCTION / CAUTION\nIt is broader than physical postures.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -1912,7 +1912,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe concept is best retained as a connected set of features:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nA useful exam distinction is this: It is broader than physical postures.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology",
+              "deep_learning": "Integral Yoga is centred on Sri Aurobindo’s integrative view of physical, mental and spiritual transformation.\n\nThe important features are:\n• Integration\n• Transformation of consciousness\n• Sri Aurobindo\n\nThe exam distinction is worth remembering: It is broader than physical postures.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Integral Yoga”.",
                 "List the key points associated with “Integral Yoga” in the uploaded study material.",
@@ -1967,7 +1967,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Science and spirituality should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not collapse spirituality into religion or assume the source treats science and spirituality as identical.\n\nSource grounding: • PowerWithin Psychology — Unit 1",
+              "deep_learning": "Science and spirituality should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not collapse spirituality into religion or assume the source treats science and spirituality as identical.",
               "retrieval_questions": [
                 "Define Science and spirituality in the source's terminology.",
                 "State its role or relationship in the Indian-psychology framework.",
@@ -2000,7 +2000,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Avidya should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Avidya is not simply lack of factual information; the source uses it in a broader epistemic/spiritual sense.\n\nSource grounding: • PowerWithin Psychology — Unit 1",
+              "deep_learning": "Avidya should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Avidya is not simply lack of factual information; the source uses it in a broader epistemic/spiritual sense.",
               "retrieval_questions": [
                 "Define Avidya in the source's terminology.",
                 "State its role or relationship in the Indian-psychology framework.",
@@ -2033,7 +2033,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Vidya should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Keep vidya/avidya as a source-defined conceptual pair rather than translating them into generic education terms.\n\nSource grounding: • PowerWithin Psychology — Unit 1",
+              "deep_learning": "Vidya should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Keep vidya/avidya as a source-defined conceptual pair rather than translating them into generic education terms.",
               "retrieval_questions": [
                 "Define Vidya in the source's terminology.",
                 "State its role or relationship in the Indian-psychology framework.",
@@ -2085,7 +2085,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Primacy of self-knowledge should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Self-knowledge is a central orientation of Indian psychology, not merely introspection in the structuralist sense.\n\nSource grounding: • PowerWithin Psychology — Indian Psychology",
+              "deep_learning": "Primacy of self-knowledge should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Self-knowledge is a central orientation of Indian psychology, not merely introspection in the structuralist sense.",
               "retrieval_questions": [
                 "Define Primacy of self-knowledge in the source's terminology.",
                 "State its role or relationship in the Indian-psychology framework.",
@@ -2118,7 +2118,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Self-knowledge in Indian psychology should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not reduce Indian self-knowledge to ordinary autobiographical self-awareness; the source places it within a broader theory of consciousness and liberation.\n\nSource grounding: • PowerWithin Psychology — Indian Psychology",
+              "deep_learning": "Self-knowledge in Indian psychology should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Central definition/relationship\n• Role in the source framework\n• Closest distinction\n• DISTINCTION / CAUTION\n• Do not reduce Indian self-knowledge to ordinary autobiographical self-awareness; the source places it within a broader theory of consciousness and liberation.",
               "retrieval_questions": [
                 "Define Self-knowledge in Indian psychology in the source's terminology.",
                 "State its role or relationship in the Indian-psychology framework.",
@@ -2167,7 +2167,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Meaning of research",
-              "content_notes": "Meaning of research is centred on systematic, objective and empirical inquiry used to generate or test knowledge.\n\nKEY POINTS\n• Systematic\n• Objective\n• Empirical\n• Replicable where appropriate\n\nDISTINCTION / CAUTION\nResearch is not merely collecting information.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Meaning of research is centred on systematic, objective and empirical inquiry used to generate or test knowledge.\n\nKEY POINTS\n• Systematic\n• Objective\n• Empirical\n• Replicable where appropriate\n\nDISTINCTION / CAUTION\nResearch is not merely collecting information.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2175,7 +2175,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Meaning of research is centred on systematic, objective and empirical inquiry used to generate or test knowledge.\n\nThe concept is best retained as a connected set of features:\n• Systematic\n• Objective\n• Empirical\n• Replicable where appropriate\n\nA useful exam distinction is this: Research is not merely collecting information.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Meaning of research is centred on systematic, objective and empirical inquiry used to generate or test knowledge.\n\nThe important features are:\n• Systematic\n• Objective\n• Empirical\n• Replicable where appropriate\n\nThe exam distinction is worth remembering: Research is not merely collecting information.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Meaning of research”.",
                 "List the key points associated with “Meaning of research” in the uploaded study material.",
@@ -2200,7 +2200,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Purpose of research",
-              "content_notes": "Purpose of research is centred on description, explanation, prediction and application/improvement.\n\nKEY POINTS\n• Describe\n• Explain\n• Predict\n• Apply\n\nDISTINCTION / CAUTION\nNot every design establishes causation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Purpose of research is centred on description, explanation, prediction and application/improvement.\n\nKEY POINTS\n• Describe\n• Explain\n• Predict\n• Apply\n\nDISTINCTION / CAUTION\nNot every design establishes causation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2208,7 +2208,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Purpose of research is centred on description, explanation, prediction and application/improvement.\n\nThe concept is best retained as a connected set of features:\n• Describe\n• Explain\n• Predict\n• Apply\n\nA useful exam distinction is this: Not every design establishes causation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Purpose of research is centred on description, explanation, prediction and application/improvement.\n\nThe important features are:\n• Describe\n• Explain\n• Predict\n• Apply\n\nThe exam distinction is worth remembering: Not every design establishes causation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Purpose of research”.",
                 "List the key points associated with “Purpose of research” in the uploaded study material.",
@@ -2241,7 +2241,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nThe concept is best retained as a connected set of features:\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n\nA useful exam distinction is this: Do not confuse a dimension of research with a single method or statistical test.\n\nSource grounding: PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics.",
+              "deep_learning": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nThe important features are:\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n\nThe exam distinction is worth remembering: Do not confuse a dimension of research with a single method or statistical test.",
               "retrieval_questions": [
                 "State the source-based core idea of “Dimensions of research” without looking at your notes.",
                 "List the main source-supported points for “Dimensions of research”.",
@@ -2293,7 +2293,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nThe concept is best retained as a connected set of features:\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n\nA useful exam distinction is this: A research problem is broader than a hypothesis; the hypothesis states a testable proposition about expected relationships.\n\nSource grounding: PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling.",
+              "deep_learning": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nThe important features are:\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n\nThe exam distinction is worth remembering: A research problem is broader than a hypothesis; the hypothesis states a testable proposition about expected relationships.",
               "retrieval_questions": [
                 "State the source-based core idea of “Research problems” without looking at your notes.",
                 "List the main source-supported points for “Research problems”.",
@@ -2317,7 +2317,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Variables",
-              "content_notes": "Variables is centred on characteristics that can take different values and structure research designs.\n\nKEY POINTS\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nDISTINCTION / CAUTION\nConfounding is an uncontrolled alternative explanation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Variables is centred on characteristics that can take different values and structure research designs.\n\nKEY POINTS\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nDISTINCTION / CAUTION\nConfounding is an uncontrolled alternative explanation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2325,7 +2325,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Variables is centred on characteristics that can take different values and structure research designs.\n\nThe concept is best retained as a connected set of features:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nA useful exam distinction is this: Confounding is an uncontrolled alternative explanation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Variables is centred on characteristics that can take different values and structure research designs.\n\nThe important features are:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nThe exam distinction is worth remembering: Confounding is an uncontrolled alternative explanation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Variables”.",
                 "List the key points associated with “Variables” in the uploaded study material.",
@@ -2350,7 +2350,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Operational definitions",
-              "content_notes": "Operational definitions is centred on specifying exactly how an abstract construct will be observed or measured.\n\nKEY POINTS\n• Measurable indicator\n• Replicable procedure\n• Construct → measure\n\nDISTINCTION / CAUTION\nIt is not the same as a philosophical definition.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Operational definitions is centred on specifying exactly how an abstract construct will be observed or measured.\n\nKEY POINTS\n• Measurable indicator\n• Replicable procedure\n• Construct → measure\n\nDISTINCTION / CAUTION\nIt is not the same as a philosophical definition.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2358,7 +2358,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Operational definitions is centred on specifying exactly how an abstract construct will be observed or measured.\n\nThe concept is best retained as a connected set of features:\n• Measurable indicator\n• Replicable procedure\n• Construct → measure\n\nA useful exam distinction is this: It is not the same as a philosophical definition.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Operational definitions is centred on specifying exactly how an abstract construct will be observed or measured.\n\nThe important features are:\n• Measurable indicator\n• Replicable procedure\n• Construct → measure\n\nThe exam distinction is worth remembering: It is not the same as a philosophical definition.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Operational definitions”.",
                 "List the key points associated with “Operational definitions” in the uploaded study material.",
@@ -2383,7 +2383,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Hypothesis",
-              "content_notes": "Hypothesis is centred on a tentative, specific and testable statement about a relationship or difference.\n\nKEY POINTS\n• Null/alternative\n• Directional/non-directional\n• Testability\n\nDISTINCTION / CAUTION\nA vague prediction is not a good hypothesis.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Hypothesis is centred on a tentative, specific and testable statement about a relationship or difference.\n\nKEY POINTS\n• Null/alternative\n• Directional/non-directional\n• Testability\n\nDISTINCTION / CAUTION\nA vague prediction is not a good hypothesis.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2391,7 +2391,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Hypothesis is centred on a tentative, specific and testable statement about a relationship or difference.\n\nThe concept is best retained as a connected set of features:\n• Null/alternative\n• Directional/non-directional\n• Testability\n\nA useful exam distinction is this: A vague prediction is not a good hypothesis.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Hypothesis is centred on a tentative, specific and testable statement about a relationship or difference.\n\nThe important features are:\n• Null/alternative\n• Directional/non-directional\n• Testability\n\nThe exam distinction is worth remembering: A vague prediction is not a good hypothesis.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Hypothesis”.",
                 "List the key points associated with “Hypothesis” in the uploaded study material.",
@@ -2416,7 +2416,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Sampling",
-              "content_notes": "Sampling is centred on selecting a subset of a population for study.\n\nKEY POINTS\n• Probability sampling\n• Non-probability sampling\n• Random sampling ≠ random assignment\n\nDISTINCTION / CAUTION\nDo not confuse sampling with assignment.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Sampling is centred on selecting a subset of a population for study.\n\nKEY POINTS\n• Probability sampling\n• Non-probability sampling\n• Random sampling ≠ random assignment\n\nDISTINCTION / CAUTION\nDo not confuse sampling with assignment.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2424,7 +2424,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Sampling is centred on selecting a subset of a population for study.\n\nThe concept is best retained as a connected set of features:\n• Probability sampling\n• Non-probability sampling\n• Random sampling ≠ random assignment\n\nA useful exam distinction is this: Do not confuse sampling with assignment.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Sampling is centred on selecting a subset of a population for study.\n\nThe important features are:\n• Probability sampling\n• Non-probability sampling\n• Random sampling ≠ random assignment\n\nThe exam distinction is worth remembering: Do not confuse sampling with assignment.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Sampling”.",
                 "List the key points associated with “Sampling” in the uploaded study material.",
@@ -2477,7 +2477,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nThe concept is best retained as a connected set of features:\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n\nA useful exam distinction is this: Ethics is part of the research process itself, not something added only when results are written.\n\nSource grounding: PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable.",
+              "deep_learning": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nThe important features are:\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n\nThe exam distinction is worth remembering: Ethics is part of the research process itself, not something added only when results are written.",
               "retrieval_questions": [
                 "State the source-based core idea of “Ethics in conducting research” without looking at your notes.",
                 "List the main source-supported points for “Ethics in conducting research”.",
@@ -2509,7 +2509,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nThe concept is best retained as a connected set of features:\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n\nA useful exam distinction is this: A statistically significant finding does not justify conclusions that the design cannot support.\n\nSource grounding: PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research.",
+              "deep_learning": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nThe important features are:\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n\nThe exam distinction is worth remembering: A statistically significant finding does not justify conclusions that the design cannot support.",
               "retrieval_questions": [
                 "State the source-based core idea of “Ethics in reporting research” without looking at your notes.",
                 "List the main source-supported points for “Ethics in reporting research”.",
@@ -2553,7 +2553,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Quantitative research",
-              "content_notes": "Quantitative research is centred on numerical measurement and statistical analysis of variables and relationships.\n\nKEY POINTS\n• Measurement\n• Numbers\n• Statistical analysis\n\nDISTINCTION / CAUTION\nQuantitative does not automatically mean experimental.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Quantitative research is centred on numerical measurement and statistical analysis of variables and relationships.\n\nKEY POINTS\n• Measurement\n• Numbers\n• Statistical analysis\n\nDISTINCTION / CAUTION\nQuantitative does not automatically mean experimental.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2561,7 +2561,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Quantitative research is centred on numerical measurement and statistical analysis of variables and relationships.\n\nThe concept is best retained as a connected set of features:\n• Measurement\n• Numbers\n• Statistical analysis\n\nA useful exam distinction is this: Quantitative does not automatically mean experimental.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Quantitative research is centred on numerical measurement and statistical analysis of variables and relationships.\n\nThe important features are:\n• Measurement\n• Numbers\n• Statistical analysis\n\nThe exam distinction is worth remembering: Quantitative does not automatically mean experimental.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Quantitative research”.",
                 "List the key points associated with “Quantitative research” in the uploaded study material.",
@@ -2586,7 +2586,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Qualitative research",
-              "content_notes": "Qualitative research is centred on study of meanings, experiences, processes and contexts using rich non-numerical data.\n\nKEY POINTS\n• Interviews/observations\n• Meaning\n• Context\n• Interpretive analysis\n\nDISTINCTION / CAUTION\nQualitative is not synonymous with unscientific.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Qualitative research is centred on study of meanings, experiences, processes and contexts using rich non-numerical data.\n\nKEY POINTS\n• Interviews/observations\n• Meaning\n• Context\n• Interpretive analysis\n\nDISTINCTION / CAUTION\nQualitative is not synonymous with unscientific.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2594,7 +2594,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Qualitative research is centred on study of meanings, experiences, processes and contexts using rich non-numerical data.\n\nThe concept is best retained as a connected set of features:\n• Interviews/observations\n• Meaning\n• Context\n• Interpretive analysis\n\nA useful exam distinction is this: Qualitative is not synonymous with unscientific.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Qualitative research is centred on study of meanings, experiences, processes and contexts using rich non-numerical data.\n\nThe important features are:\n• Interviews/observations\n• Meaning\n• Context\n• Interpretive analysis\n\nThe exam distinction is worth remembering: Qualitative is not synonymous with unscientific.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Qualitative research”.",
                 "List the key points associated with “Qualitative research” in the uploaded study material.",
@@ -2619,7 +2619,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Mixed methods approach",
-              "content_notes": "Mixed methods approach is centred on intentional integration of quantitative and qualitative approaches.\n\nKEY POINTS\n• Integration\n• Complementarity\n• Triangulation\n• Sequential/concurrent designs\n\nDISTINCTION / CAUTION\nTwo methods without integration are not automatically mixed methods.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Mixed methods approach is centred on intentional integration of quantitative and qualitative approaches.\n\nKEY POINTS\n• Integration\n• Complementarity\n• Triangulation\n• Sequential/concurrent designs\n\nDISTINCTION / CAUTION\nTwo methods without integration are not automatically mixed methods.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2627,7 +2627,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Mixed methods approach is centred on intentional integration of quantitative and qualitative approaches.\n\nThe concept is best retained as a connected set of features:\n• Integration\n• Complementarity\n• Triangulation\n• Sequential/concurrent designs\n\nA useful exam distinction is this: Two methods without integration are not automatically mixed methods.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Mixed methods approach is centred on intentional integration of quantitative and qualitative approaches.\n\nThe important features are:\n• Integration\n• Complementarity\n• Triangulation\n• Sequential/concurrent designs\n\nThe exam distinction is worth remembering: Two methods without integration are not automatically mixed methods.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Mixed methods approach”.",
                 "List the key points associated with “Mixed methods approach” in the uploaded study material.",
@@ -2680,7 +2680,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nThe concept is best retained as a connected set of features:\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n\nA useful exam distinction is this: Observation is not automatically objective; what is noticed and recorded can be influenced by the observer and the recording system.\n\nSource grounding: PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation.",
+              "deep_learning": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nThe important features are:\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n\nThe exam distinction is worth remembering: Observation is not automatically objective; what is noticed and recorded can be influenced by the observer and the recording system.",
               "retrieval_questions": [
                 "State the source-based core idea of “Observation” without looking at your notes.",
                 "List the main source-supported points for “Observation”.",
@@ -2712,7 +2712,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nThe concept is best retained as a connected set of features:\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n\nA useful exam distinction is this: A large survey sample does not by itself guarantee valid conclusions; sampling and measurement quality remain important.\n\nSource grounding: Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method.",
+              "deep_learning": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nThe important features are:\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n\nThe exam distinction is worth remembering: A large survey sample does not by itself guarantee valid conclusions; sampling and measurement quality remain important.",
               "retrieval_questions": [
                 "State the source-based core idea of “Survey” without looking at your notes.",
                 "List the main source-supported points for “Survey”.",
@@ -2744,7 +2744,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nThe concept is best retained as a connected set of features:\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n\nA useful exam distinction is this: Structured and unstructured interviews should not be treated as interchangeable: they differ in flexibility, data type and standardization.\n\nSource grounding: PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews.",
+              "deep_learning": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nThe important features are:\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n\nThe exam distinction is worth remembering: Structured and unstructured interviews should not be treated as interchangeable: they differ in flexibility, data type and standardization.",
               "retrieval_questions": [
                 "State the source-based core idea of “Interview” without looking at your notes.",
                 "List the main source-supported points for “Interview”.",
@@ -2776,7 +2776,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nThe concept is best retained as a connected set of features:\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n\nA useful exam distinction is this: A questionnaire is a data-collection instrument; 'survey' is the broader research method or strategy in which questionnaires may be used.\n\nSource grounding: Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires.",
+              "deep_learning": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nThe important features are:\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n\nThe exam distinction is worth remembering: A questionnaire is a data-collection instrument; 'survey' is the broader research method or strategy in which questionnaires may be used.",
               "retrieval_questions": [
                 "State the source-based core idea of “Questionnaires” without looking at your notes.",
                 "List the main source-supported points for “Questionnaires”.",
@@ -2800,7 +2800,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Experimental method",
-              "content_notes": "Experimental method is centred on manipulation of an independent variable under controlled conditions to observe effects.\n\nKEY POINTS\n• IV manipulation\n• Control\n• Comparison\n• Random assignment where possible\n\nDISTINCTION / CAUTION\nRandom assignment is not random sampling.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Experimental method is centred on manipulation of an independent variable under controlled conditions to observe effects.\n\nKEY POINTS\n• IV manipulation\n• Control\n• Comparison\n• Random assignment where possible\n\nDISTINCTION / CAUTION\nRandom assignment is not random sampling.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2808,7 +2808,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Experimental method is centred on manipulation of an independent variable under controlled conditions to observe effects.\n\nThe concept is best retained as a connected set of features:\n• IV manipulation\n• Control\n• Comparison\n• Random assignment where possible\n\nA useful exam distinction is this: Random assignment is not random sampling.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Experimental method is centred on manipulation of an independent variable under controlled conditions to observe effects.\n\nThe important features are:\n• IV manipulation\n• Control\n• Comparison\n• Random assignment where possible\n\nThe exam distinction is worth remembering: Random assignment is not random sampling.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Experimental method”.",
                 "List the key points associated with “Experimental method” in the uploaded study material.",
@@ -2833,7 +2833,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Quasi-experimental method",
-              "content_notes": "Quasi-experimental method is centred on intervention research without full random assignment.\n\nKEY POINTS\n• Intervention\n• Comparison\n• No full random assignment\n\nDISTINCTION / CAUTION\nIt is not correlational research.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Quasi-experimental method is centred on intervention research without full random assignment.\n\nKEY POINTS\n• Intervention\n• Comparison\n• No full random assignment\n\nDISTINCTION / CAUTION\nIt is not correlational research.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2841,7 +2841,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Quasi-experimental method is centred on intervention research without full random assignment.\n\nThe concept is best retained as a connected set of features:\n• Intervention\n• Comparison\n• No full random assignment\n\nA useful exam distinction is this: It is not correlational research.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Quasi-experimental method is centred on intervention research without full random assignment.\n\nThe important features are:\n• Intervention\n• Comparison\n• No full random assignment\n\nThe exam distinction is worth remembering: It is not correlational research.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Quasi-experimental method”.",
                 "List the key points associated with “Quasi-experimental method” in the uploaded study material.",
@@ -2874,7 +2874,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nThe concept is best retained as a connected set of features:\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n\nA useful exam distinction is this: Field study does not automatically mean qualitative research; field research can use different kinds of data and designs.\n\nSource grounding: PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples.",
+              "deep_learning": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nThe important features are:\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n\nThe exam distinction is worth remembering: Field study does not automatically mean qualitative research; field research can use different kinds of data and designs.",
               "retrieval_questions": [
                 "State the source-based core idea of “Field studies” without looking at your notes.",
                 "List the main source-supported points for “Field studies”.",
@@ -2906,7 +2906,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nThe concept is best retained as a connected set of features:\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n\nA useful exam distinction is this: Finding a cultural difference does not by itself establish its cause; cultural groups differ on many correlated conditions.\n\nSource grounding: PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development.",
+              "deep_learning": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nThe important features are:\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n\nThe exam distinction is worth remembering: Finding a cultural difference does not by itself establish its cause; cultural groups differ on many correlated conditions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Cross-cultural studies” without looking at your notes.",
                 "List the main source-supported points for “Cross-cultural studies”.",
@@ -2930,7 +2930,7 @@ window.NETPSY_DATA = {
             {
               "id": 9,
               "title": "Phenomenology",
-              "content_notes": "Phenomenology is centred on systematic study of the meaning and structure of lived experience.\n\nKEY POINTS\n• Lived experience\n• Meaning\n• First-person perspective\n\nDISTINCTION / CAUTION\nNot just asking for opinions.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Phenomenology is centred on systematic study of the meaning and structure of lived experience.\n\nKEY POINTS\n• Lived experience\n• Meaning\n• First-person perspective\n\nDISTINCTION / CAUTION\nNot just asking for opinions.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2938,7 +2938,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Phenomenology is centred on systematic study of the meaning and structure of lived experience.\n\nThe concept is best retained as a connected set of features:\n• Lived experience\n• Meaning\n• First-person perspective\n\nA useful exam distinction is this: Not just asking for opinions.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Phenomenology is centred on systematic study of the meaning and structure of lived experience.\n\nThe important features are:\n• Lived experience\n• Meaning\n• First-person perspective\n\nThe exam distinction is worth remembering: Not just asking for opinions.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Phenomenology”.",
                 "List the key points associated with “Phenomenology” in the uploaded study material.",
@@ -2963,7 +2963,7 @@ window.NETPSY_DATA = {
             {
               "id": 10,
               "title": "Grounded theory",
-              "content_notes": "Grounded theory is centred on development of concepts and theory from systematically analyzed qualitative data.\n\nKEY POINTS\n• Coding\n• Categories\n• Constant comparison\n• Theory generation\n\nDISTINCTION / CAUTION\nIt is not a preselected theory imposed on the data.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Grounded theory is centred on development of concepts and theory from systematically analyzed qualitative data.\n\nKEY POINTS\n• Coding\n• Categories\n• Constant comparison\n• Theory generation\n\nDISTINCTION / CAUTION\nIt is not a preselected theory imposed on the data.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -2971,7 +2971,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Grounded theory is centred on development of concepts and theory from systematically analyzed qualitative data.\n\nThe concept is best retained as a connected set of features:\n• Coding\n• Categories\n• Constant comparison\n• Theory generation\n\nA useful exam distinction is this: It is not a preselected theory imposed on the data.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Grounded theory is centred on development of concepts and theory from systematically analyzed qualitative data.\n\nThe important features are:\n• Coding\n• Categories\n• Constant comparison\n• Theory generation\n\nThe exam distinction is worth remembering: It is not a preselected theory imposed on the data.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Grounded theory”.",
                 "List the key points associated with “Grounded theory” in the uploaded study material.",
@@ -2996,7 +2996,7 @@ window.NETPSY_DATA = {
             {
               "id": 11,
               "title": "Focus groups",
-              "content_notes": "Focus groups is centred on guided group discussion in which interaction itself becomes data.\n\nKEY POINTS\n• Moderator\n• Group interaction\n• Shared/divergent views\n\nDISTINCTION / CAUTION\nIt is not just several individual interviews at once.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Focus groups is centred on guided group discussion in which interaction itself becomes data.\n\nKEY POINTS\n• Moderator\n• Group interaction\n• Shared/divergent views\n\nDISTINCTION / CAUTION\nIt is not just several individual interviews at once.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3004,7 +3004,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Focus groups is centred on guided group discussion in which interaction itself becomes data.\n\nThe concept is best retained as a connected set of features:\n• Moderator\n• Group interaction\n• Shared/divergent views\n\nA useful exam distinction is this: It is not just several individual interviews at once.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Focus groups is centred on guided group discussion in which interaction itself becomes data.\n\nThe important features are:\n• Moderator\n• Group interaction\n• Shared/divergent views\n\nThe exam distinction is worth remembering: It is not just several individual interviews at once.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Focus groups”.",
                 "List the key points associated with “Focus groups” in the uploaded study material.",
@@ -3037,7 +3037,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nThe concept is best retained as a connected set of features:\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n\nA useful exam distinction is this: Narrative data are not simply unstructured anecdotes; they can be systematically collected and analyzed.\n\nSource grounding: PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives.",
+              "deep_learning": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nThe important features are:\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n\nThe exam distinction is worth remembering: Narrative data are not simply unstructured anecdotes; they can be systematically collected and analyzed.",
               "retrieval_questions": [
                 "State the source-based core idea of “Narratives” without looking at your notes.",
                 "List the main source-supported points for “Narratives”.",
@@ -3069,7 +3069,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nThe concept is best retained as a connected set of features:\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n\nA useful exam distinction is this: Case study depth is not the same as experimental control; the two methods answer different kinds of questions.\n\nSource grounding: PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion.",
+              "deep_learning": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nThe important features are:\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n\nThe exam distinction is worth remembering: Case study depth is not the same as experimental control; the two methods answer different kinds of questions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Case studies” without looking at your notes.",
                 "List the main source-supported points for “Case studies”.",
@@ -3093,7 +3093,7 @@ window.NETPSY_DATA = {
             {
               "id": 14,
               "title": "Ethnography",
-              "content_notes": "Ethnography is centred on sustained study of people and practices in cultural context.\n\nKEY POINTS\n• Culture\n• Fieldwork\n• Participant observation\n\nDISTINCTION / CAUTION\nA brief field visit is not full ethnography.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Ethnography is centred on sustained study of people and practices in cultural context.\n\nKEY POINTS\n• Culture\n• Fieldwork\n• Participant observation\n\nDISTINCTION / CAUTION\nA brief field visit is not full ethnography.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3101,7 +3101,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Ethnography is centred on sustained study of people and practices in cultural context.\n\nThe concept is best retained as a connected set of features:\n• Culture\n• Fieldwork\n• Participant observation\n\nA useful exam distinction is this: A brief field visit is not full ethnography.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Ethnography is centred on sustained study of people and practices in cultural context.\n\nThe important features are:\n• Culture\n• Fieldwork\n• Participant observation\n\nThe exam distinction is worth remembering: A brief field visit is not full ethnography.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Ethnography”.",
                 "List the key points associated with “Ethnography” in the uploaded study material.",
@@ -3146,7 +3146,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Measures of central tendency",
-              "content_notes": "Measures of central tendency is centred on summary of the central location of a distribution.\n\nKEY POINTS\n• Mean\n• Median\n• Mode\n\nDISTINCTION / CAUTION\nMean is sensitive to extreme scores.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Measures of central tendency is centred on summary of the central location of a distribution.\n\nKEY POINTS\n• Mean\n• Median\n• Mode\n\nDISTINCTION / CAUTION\nMean is sensitive to extreme scores.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3154,7 +3154,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Measures of central tendency is centred on summary of the central location of a distribution.\n\nThe concept is best retained as a connected set of features:\n• Mean\n• Median\n• Mode\n\nA useful exam distinction is this: Mean is sensitive to extreme scores.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Measures of central tendency is centred on summary of the central location of a distribution.\n\nThe important features are:\n• Mean\n• Median\n• Mode\n\nThe exam distinction is worth remembering: Mean is sensitive to extreme scores.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Measures of central tendency”.",
                 "List the key points associated with “Measures of central tendency” in the uploaded study material.",
@@ -3179,7 +3179,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Measures of dispersion",
-              "content_notes": "Measures of dispersion is centred on summary of how spread out scores are.\n\nKEY POINTS\n• Range\n• Variance\n• Standard deviation\n\nDISTINCTION / CAUTION\nSpread and central tendency answer different questions.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Measures of dispersion is centred on summary of how spread out scores are.\n\nKEY POINTS\n• Range\n• Variance\n• Standard deviation\n\nDISTINCTION / CAUTION\nSpread and central tendency answer different questions.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3187,7 +3187,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Measures of dispersion is centred on summary of how spread out scores are.\n\nThe concept is best retained as a connected set of features:\n• Range\n• Variance\n• Standard deviation\n\nA useful exam distinction is this: Spread and central tendency answer different questions.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Measures of dispersion is centred on summary of how spread out scores are.\n\nThe important features are:\n• Range\n• Variance\n• Standard deviation\n\nThe exam distinction is worth remembering: Spread and central tendency answer different questions.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Measures of dispersion”.",
                 "List the key points associated with “Measures of dispersion” in the uploaded study material.",
@@ -3232,7 +3232,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Normal probability curve",
-              "content_notes": "Normal probability curve is centred on symmetric bell-shaped distribution where mean, median and mode coincide.\n\nKEY POINTS\n• Symmetry\n• Mean = median = mode\n• 68–95–99.7% rule approximately\n\nDISTINCTION / CAUTION\nNot every psychological distribution is perfectly normal.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Normal probability curve is centred on symmetric bell-shaped distribution where mean, median and mode coincide.\n\nKEY POINTS\n• Symmetry\n• Mean = median = mode\n• 68–95–99.7% rule approximately\n\nDISTINCTION / CAUTION\nNot every psychological distribution is perfectly normal.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3240,7 +3240,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Normal probability curve is centred on symmetric bell-shaped distribution where mean, median and mode coincide.\n\nThe concept is best retained as a connected set of features:\n• Symmetry\n• Mean = median = mode\n• 68–95–99.7% rule approximately\n\nA useful exam distinction is this: Not every psychological distribution is perfectly normal.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Normal probability curve is centred on symmetric bell-shaped distribution where mean, median and mode coincide.\n\nThe important features are:\n• Symmetry\n• Mean = median = mode\n• 68–95–99.7% rule approximately\n\nThe exam distinction is worth remembering: Not every psychological distribution is perfectly normal.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Normal probability curve”.",
                 "List the key points associated with “Normal probability curve” in the uploaded study material.",
@@ -3293,7 +3293,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nThe concept is best retained as a connected set of features:\n• T-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n\nA useful exam distinction is this: Do not select a test only from the number of groups; design, measurement level and assumptions also matter.\n\nSource grounding: PowerWithin Psychology — Unit 2 Statistics in Psychology.",
+              "deep_learning": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nThe important features are:\n• T-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n\nThe exam distinction is worth remembering: Do not select a test only from the number of groups; design, measurement level and assumptions also matter.",
               "retrieval_questions": [
                 "State the source-based core idea of “Parametric tests” without looking at your notes.",
                 "List the main source-supported points for “Parametric tests”.",
@@ -3317,7 +3317,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "t-test",
-              "content_notes": "t-test is centred on comparison of means using one-sample, independent-samples or paired-samples variants.\n\nKEY POINTS\n• Compare means\n• Independent vs paired\n• T statistic\n\nDISTINCTION / CAUTION\nPaired t is for related observations.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "t-test is centred on comparison of means using one-sample, independent-samples or paired-samples variants.\n\nKEY POINTS\n• Compare means\n• Independent vs paired\n• T statistic\n\nDISTINCTION / CAUTION\nPaired t is for related observations.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3325,7 +3325,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "t-test is centred on comparison of means using one-sample, independent-samples or paired-samples variants.\n\nThe concept is best retained as a connected set of features:\n• Compare means\n• Independent vs paired\n• T statistic\n\nA useful exam distinction is this: Paired t is for related observations.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "t-test is centred on comparison of means using one-sample, independent-samples or paired-samples variants.\n\nThe important features are:\n• Compare means\n• Independent vs paired\n• T statistic\n\nThe exam distinction is worth remembering: Paired t is for related observations.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “t-test”.",
                 "List the key points associated with “t-test” in the uploaded study material.",
@@ -3350,7 +3350,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Non-parametric tests",
-              "content_notes": "Non-parametric tests is centred on tests with fewer distributional assumptions, often useful for ordinal/rank data.\n\nKEY POINTS\n• Rank-based methods\n• Fewer assumptions\n• Small/non-normal samples\n\nDISTINCTION / CAUTION\nNon-parametric does not mean assumption-free.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Non-parametric tests is centred on tests with fewer distributional assumptions, often useful for ordinal/rank data.\n\nKEY POINTS\n• Rank-based methods\n• Fewer assumptions\n• Small/non-normal samples\n\nDISTINCTION / CAUTION\nNon-parametric does not mean assumption-free.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3358,7 +3358,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Non-parametric tests is centred on tests with fewer distributional assumptions, often useful for ordinal/rank data.\n\nThe concept is best retained as a connected set of features:\n• Rank-based methods\n• Fewer assumptions\n• Small/non-normal samples\n\nA useful exam distinction is this: Non-parametric does not mean assumption-free.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Non-parametric tests is centred on tests with fewer distributional assumptions, often useful for ordinal/rank data.\n\nThe important features are:\n• Rank-based methods\n• Fewer assumptions\n• Small/non-normal samples\n\nThe exam distinction is worth remembering: Non-parametric does not mean assumption-free.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Non-parametric tests”.",
                 "List the key points associated with “Non-parametric tests” in the uploaded study material.",
@@ -3383,7 +3383,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Sign test",
-              "content_notes": "Sign test is centred on non-parametric test using only the direction of paired differences.\n\nKEY POINTS\n• Paired data\n• Plus/minus direction\n• Binomial logic\n\nDISTINCTION / CAUTION\nIt ignores magnitude and ranks.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Sign test is centred on non-parametric test using only the direction of paired differences.\n\nKEY POINTS\n• Paired data\n• Plus/minus direction\n• Binomial logic\n\nDISTINCTION / CAUTION\nIt ignores magnitude and ranks.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3391,7 +3391,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Sign test is centred on non-parametric test using only the direction of paired differences.\n\nThe concept is best retained as a connected set of features:\n• Paired data\n• Plus/minus direction\n• Binomial logic\n\nA useful exam distinction is this: It ignores magnitude and ranks.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Sign test is centred on non-parametric test using only the direction of paired differences.\n\nThe important features are:\n• Paired data\n• Plus/minus direction\n• Binomial logic\n\nThe exam distinction is worth remembering: It ignores magnitude and ranks.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Sign test”.",
                 "List the key points associated with “Sign test” in the uploaded study material.",
@@ -3416,7 +3416,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Wilcoxon Signed rank test",
-              "content_notes": "Wilcoxon Signed rank test is centred on rank-based test for paired or related observations.\n\nKEY POINTS\n• Related samples\n• Ranked differences\n• Alternative to paired t\n\nDISTINCTION / CAUTION\nDo not confuse with Mann–Whitney for independent groups.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Wilcoxon Signed rank test is centred on rank-based test for paired or related observations.\n\nKEY POINTS\n• Related samples\n• Ranked differences\n• Alternative to paired t\n\nDISTINCTION / CAUTION\nDo not confuse with Mann–Whitney for independent groups.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3424,7 +3424,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Wilcoxon Signed rank test is centred on rank-based test for paired or related observations.\n\nThe concept is best retained as a connected set of features:\n• Related samples\n• Ranked differences\n• Alternative to paired t\n\nA useful exam distinction is this: Do not confuse with Mann–Whitney for independent groups.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Wilcoxon Signed rank test is centred on rank-based test for paired or related observations.\n\nThe important features are:\n• Related samples\n• Ranked differences\n• Alternative to paired t\n\nThe exam distinction is worth remembering: Do not confuse with Mann–Whitney for independent groups.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Wilcoxon Signed rank test”.",
                 "List the key points associated with “Wilcoxon Signed rank test” in the uploaded study material.",
@@ -3449,7 +3449,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Mann-Whitney test",
-              "content_notes": "Mann-Whitney test is centred on rank-based comparison of two independent groups.\n\nKEY POINTS\n• Independent groups\n• Ordinal/rank data\n• Alternative to independent t\n\nDISTINCTION / CAUTION\nIt is not for paired data.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Mann-Whitney test is centred on rank-based comparison of two independent groups.\n\nKEY POINTS\n• Independent groups\n• Ordinal/rank data\n• Alternative to independent t\n\nDISTINCTION / CAUTION\nIt is not for paired data.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3457,7 +3457,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Mann-Whitney test is centred on rank-based comparison of two independent groups.\n\nThe concept is best retained as a connected set of features:\n• Independent groups\n• Ordinal/rank data\n• Alternative to independent t\n\nA useful exam distinction is this: It is not for paired data.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Mann-Whitney test is centred on rank-based comparison of two independent groups.\n\nThe important features are:\n• Independent groups\n• Ordinal/rank data\n• Alternative to independent t\n\nThe exam distinction is worth remembering: It is not for paired data.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Mann-Whitney test”.",
                 "List the key points associated with “Mann-Whitney test” in the uploaded study material.",
@@ -3482,7 +3482,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Kruskal-Wallis test",
-              "content_notes": "Kruskal-Wallis test is centred on rank-based comparison of more than two independent groups.\n\nKEY POINTS\n• 3+ independent groups\n• Ranks\n• Alternative to one-way ANOVA\n\nDISTINCTION / CAUTION\nA significant result does not identify every pairwise difference.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Kruskal-Wallis test is centred on rank-based comparison of more than two independent groups.\n\nKEY POINTS\n• 3+ independent groups\n• Ranks\n• Alternative to one-way ANOVA\n\nDISTINCTION / CAUTION\nA significant result does not identify every pairwise difference.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3490,7 +3490,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Kruskal-Wallis test is centred on rank-based comparison of more than two independent groups.\n\nThe concept is best retained as a connected set of features:\n• 3+ independent groups\n• Ranks\n• Alternative to one-way ANOVA\n\nA useful exam distinction is this: A significant result does not identify every pairwise difference.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Kruskal-Wallis test is centred on rank-based comparison of more than two independent groups.\n\nThe important features are:\n• 3+ independent groups\n• Ranks\n• Alternative to one-way ANOVA\n\nThe exam distinction is worth remembering: A significant result does not identify every pairwise difference.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Kruskal-Wallis test”.",
                 "List the key points associated with “Kruskal-Wallis test” in the uploaded study material.",
@@ -3515,7 +3515,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Friedman test",
-              "content_notes": "Friedman test is centred on rank-based comparison of three or more related conditions.\n\nKEY POINTS\n• 3+ related conditions\n• Repeated measures\n• Alternative to repeated-measures ANOVA\n\nDISTINCTION / CAUTION\nNot for independent groups.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Friedman test is centred on rank-based comparison of three or more related conditions.\n\nKEY POINTS\n• 3+ related conditions\n• Repeated measures\n• Alternative to repeated-measures ANOVA\n\nDISTINCTION / CAUTION\nNot for independent groups.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3523,7 +3523,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Friedman test is centred on rank-based comparison of three or more related conditions.\n\nThe concept is best retained as a connected set of features:\n• 3+ related conditions\n• Repeated measures\n• Alternative to repeated-measures ANOVA\n\nA useful exam distinction is this: Not for independent groups.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Friedman test is centred on rank-based comparison of three or more related conditions.\n\nThe important features are:\n• 3+ related conditions\n• Repeated measures\n• Alternative to repeated-measures ANOVA\n\nThe exam distinction is worth remembering: Not for independent groups.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Friedman test”.",
                 "List the key points associated with “Friedman test” in the uploaded study material.",
@@ -3568,7 +3568,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Power analysis",
-              "content_notes": "Power analysis is centred on analysis of the probability of detecting an effect when it exists.\n\nKEY POINTS\n• Power = 1 − beta\n• Sample size\n• Effect size\n• Alpha\n\nDISTINCTION / CAUTION\nHigh power does not guarantee a true effect.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Power analysis is centred on analysis of the probability of detecting an effect when it exists.\n\nKEY POINTS\n• Power = 1 − beta\n• Sample size\n• Effect size\n• Alpha\n\nDISTINCTION / CAUTION\nHigh power does not guarantee a true effect.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3576,7 +3576,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Power analysis is centred on analysis of the probability of detecting an effect when it exists.\n\nThe concept is best retained as a connected set of features:\n• Power = 1 − beta\n• Sample size\n• Effect size\n• Alpha\n\nA useful exam distinction is this: High power does not guarantee a true effect.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Power analysis is centred on analysis of the probability of detecting an effect when it exists.\n\nThe important features are:\n• Power = 1 − beta\n• Sample size\n• Effect size\n• Alpha\n\nThe exam distinction is worth remembering: High power does not guarantee a true effect.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Power analysis”.",
                 "List the key points associated with “Power analysis” in the uploaded study material.",
@@ -3621,7 +3621,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Effect size",
-              "content_notes": "Effect size is centred on quantification of the magnitude of a difference or relationship.\n\nKEY POINTS\n• Cohen's d\n• R\n• Eta-squared\n\nDISTINCTION / CAUTION\nStatistical significance and effect size answer different questions.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Effect size is centred on quantification of the magnitude of a difference or relationship.\n\nKEY POINTS\n• Cohen's d\n• R\n• Eta-squared\n\nDISTINCTION / CAUTION\nStatistical significance and effect size answer different questions.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3629,7 +3629,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Effect size is centred on quantification of the magnitude of a difference or relationship.\n\nThe concept is best retained as a connected set of features:\n• Cohen's d\n• R\n• Eta-squared\n\nA useful exam distinction is this: Statistical significance and effect size answer different questions.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Effect size is centred on quantification of the magnitude of a difference or relationship.\n\nThe important features are:\n• Cohen's d\n• R\n• Eta-squared\n\nThe exam distinction is worth remembering: Statistical significance and effect size answer different questions.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Effect size”.",
                 "List the key points associated with “Effect size” in the uploaded study material.",
@@ -3674,7 +3674,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Correlation",
-              "content_notes": "Correlation is centred on direction and strength of association between variables.\n\nKEY POINTS\n• Positive/negative/zero\n• Pearson r −1 to +1\n• Association ≠ causation\n\nDISTINCTION / CAUTION\nCorrelation alone does not establish causation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Correlation is centred on direction and strength of association between variables.\n\nKEY POINTS\n• Positive/negative/zero\n• Pearson r −1 to +1\n• Association ≠ causation\n\nDISTINCTION / CAUTION\nCorrelation alone does not establish causation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3682,7 +3682,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Correlation is centred on direction and strength of association between variables.\n\nThe concept is best retained as a connected set of features:\n• Positive/negative/zero\n• Pearson r −1 to +1\n• Association ≠ causation\n\nA useful exam distinction is this: Correlation alone does not establish causation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Correlation is centred on direction and strength of association between variables.\n\nThe important features are:\n• Positive/negative/zero\n• Pearson r −1 to +1\n• Association ≠ causation\n\nThe exam distinction is worth remembering: Correlation alone does not establish causation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Correlation”.",
                 "List the key points associated with “Correlation” in the uploaded study material.",
@@ -3707,7 +3707,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Product Moment correlation",
-              "content_notes": "Product Moment correlation is centred on Pearson correlation for linear association between quantitative variables.\n\nKEY POINTS\n• Pearson r\n• Linear relation\n• −1 to +1\n\nDISTINCTION / CAUTION\nHigh r does not prove causality.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Product Moment correlation is centred on Pearson correlation for linear association between quantitative variables.\n\nKEY POINTS\n• Pearson r\n• Linear relation\n• −1 to +1\n\nDISTINCTION / CAUTION\nHigh r does not prove causality.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3715,7 +3715,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Product Moment correlation is centred on Pearson correlation for linear association between quantitative variables.\n\nThe concept is best retained as a connected set of features:\n• Pearson r\n• Linear relation\n• −1 to +1\n\nA useful exam distinction is this: High r does not prove causality.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Product Moment correlation is centred on Pearson correlation for linear association between quantitative variables.\n\nThe important features are:\n• Pearson r\n• Linear relation\n• −1 to +1\n\nThe exam distinction is worth remembering: High r does not prove causality.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Product Moment correlation”.",
                 "List the key points associated with “Product Moment correlation” in the uploaded study material.",
@@ -3740,7 +3740,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Rank Order correlation",
-              "content_notes": "Rank Order correlation is centred on correlation based on ranks, commonly Spearman rho.\n\nKEY POINTS\n• Ordinal/rank data\n• Monotonic association\n• Spearman\n\nDISTINCTION / CAUTION\nDo not confuse with Pearson.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Rank Order correlation is centred on correlation based on ranks, commonly Spearman rho.\n\nKEY POINTS\n• Ordinal/rank data\n• Monotonic association\n• Spearman\n\nDISTINCTION / CAUTION\nDo not confuse with Pearson.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3748,7 +3748,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Rank Order correlation is centred on correlation based on ranks, commonly Spearman rho.\n\nThe concept is best retained as a connected set of features:\n• Ordinal/rank data\n• Monotonic association\n• Spearman\n\nA useful exam distinction is this: Do not confuse with Pearson.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Rank Order correlation is centred on correlation based on ranks, commonly Spearman rho.\n\nThe important features are:\n• Ordinal/rank data\n• Monotonic association\n• Spearman\n\nThe exam distinction is worth remembering: Do not confuse with Pearson.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Rank Order correlation”.",
                 "List the key points associated with “Rank Order correlation” in the uploaded study material.",
@@ -3773,7 +3773,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Partial correlation",
-              "content_notes": "Partial correlation is centred on association between two variables after statistically controlling other variable(s).\n\nKEY POINTS\n• Control third variable\n• Conditional association\n\nDISTINCTION / CAUTION\nControlling a variable can change the observed association.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Partial correlation is centred on association between two variables after statistically controlling other variable(s).\n\nKEY POINTS\n• Control third variable\n• Conditional association\n\nDISTINCTION / CAUTION\nControlling a variable can change the observed association.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3781,7 +3781,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Partial correlation is centred on association between two variables after statistically controlling other variable(s).\n\nThe concept is best retained as a connected set of features:\n• Control third variable\n• Conditional association\n\nA useful exam distinction is this: Controlling a variable can change the observed association.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Partial correlation is centred on association between two variables after statistically controlling other variable(s).\n\nThe important features are:\n• Control third variable\n• Conditional association\n\nThe exam distinction is worth remembering: Controlling a variable can change the observed association.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Partial correlation”.",
                 "List the key points associated with “Partial correlation” in the uploaded study material.",
@@ -3806,7 +3806,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Multiple correlation",
-              "content_notes": "Multiple correlation is centred on relationship between one criterion and a set of predictors.\n\nKEY POINTS\n• Multiple predictors\n• Multiple R\n• Prediction\n\nDISTINCTION / CAUTION\nIt is related to but not identical with multiple regression.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Multiple correlation is centred on relationship between one criterion and a set of predictors.\n\nKEY POINTS\n• Multiple predictors\n• Multiple R\n• Prediction\n\nDISTINCTION / CAUTION\nIt is related to but not identical with multiple regression.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3814,7 +3814,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Multiple correlation is centred on relationship between one criterion and a set of predictors.\n\nThe concept is best retained as a connected set of features:\n• Multiple predictors\n• Multiple R\n• Prediction\n\nA useful exam distinction is this: It is related to but not identical with multiple regression.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Multiple correlation is centred on relationship between one criterion and a set of predictors.\n\nThe important features are:\n• Multiple predictors\n• Multiple R\n• Prediction\n\nThe exam distinction is worth remembering: It is related to but not identical with multiple regression.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Multiple correlation”.",
                 "List the key points associated with “Multiple correlation” in the uploaded study material.",
@@ -3859,7 +3859,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Biserial correlation",
-              "content_notes": "Biserial correlation is centred on association between a continuous variable and an artificially dichotomized variable.\n\nKEY POINTS\n• Continuous + artificial dichotomy\n• Distinguish from point-biserial\n\nDISTINCTION / CAUTION\nArtificial versus natural dichotomy is the key distinction.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Biserial correlation is centred on association between a continuous variable and an artificially dichotomized variable.\n\nKEY POINTS\n• Continuous + artificial dichotomy\n• Distinguish from point-biserial\n\nDISTINCTION / CAUTION\nArtificial versus natural dichotomy is the key distinction.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3867,7 +3867,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Biserial correlation is centred on association between a continuous variable and an artificially dichotomized variable.\n\nThe concept is best retained as a connected set of features:\n• Continuous + artificial dichotomy\n• Distinguish from point-biserial\n\nA useful exam distinction is this: Artificial versus natural dichotomy is the key distinction.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Biserial correlation is centred on association between a continuous variable and an artificially dichotomized variable.\n\nThe important features are:\n• Continuous + artificial dichotomy\n• Distinguish from point-biserial\n\nThe exam distinction is worth remembering: Artificial versus natural dichotomy is the key distinction.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Biserial correlation”.",
                 "List the key points associated with “Biserial correlation” in the uploaded study material.",
@@ -3892,7 +3892,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Point biserial correlation",
-              "content_notes": "Point biserial correlation is centred on association between a continuous variable and a genuinely dichotomous variable.\n\nKEY POINTS\n• Continuous + true dichotomy\n• Special Pearson case\n\nDISTINCTION / CAUTION\nDo not confuse with biserial.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Point biserial correlation is centred on association between a continuous variable and a genuinely dichotomous variable.\n\nKEY POINTS\n• Continuous + true dichotomy\n• Special Pearson case\n\nDISTINCTION / CAUTION\nDo not confuse with biserial.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3900,7 +3900,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Point biserial correlation is centred on association between a continuous variable and a genuinely dichotomous variable.\n\nThe concept is best retained as a connected set of features:\n• Continuous + true dichotomy\n• Special Pearson case\n\nA useful exam distinction is this: Do not confuse with biserial.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Point biserial correlation is centred on association between a continuous variable and a genuinely dichotomous variable.\n\nThe important features are:\n• Continuous + true dichotomy\n• Special Pearson case\n\nThe exam distinction is worth remembering: Do not confuse with biserial.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Point biserial correlation”.",
                 "List the key points associated with “Point biserial correlation” in the uploaded study material.",
@@ -3925,7 +3925,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Tetrachoric correlation",
-              "content_notes": "Tetrachoric correlation is centred on estimated association between two dichotomized variables assumed to reflect underlying continuous traits.\n\nKEY POINTS\n• Two dichotomies\n• Latent continuity\n\nDISTINCTION / CAUTION\nNot simply the same as phi.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Tetrachoric correlation is centred on estimated association between two dichotomized variables assumed to reflect underlying continuous traits.\n\nKEY POINTS\n• Two dichotomies\n• Latent continuity\n\nDISTINCTION / CAUTION\nNot simply the same as phi.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3933,7 +3933,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Tetrachoric correlation is centred on estimated association between two dichotomized variables assumed to reflect underlying continuous traits.\n\nThe concept is best retained as a connected set of features:\n• Two dichotomies\n• Latent continuity\n\nA useful exam distinction is this: Not simply the same as phi.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Tetrachoric correlation is centred on estimated association between two dichotomized variables assumed to reflect underlying continuous traits.\n\nThe important features are:\n• Two dichotomies\n• Latent continuity\n\nThe exam distinction is worth remembering: Not simply the same as phi.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Tetrachoric correlation”.",
                 "List the key points associated with “Tetrachoric correlation” in the uploaded study material.",
@@ -3958,7 +3958,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Phi coefficient",
-              "content_notes": "Phi coefficient is centred on association between two genuinely dichotomous variables.\n\nKEY POINTS\n• 2×2 table\n• Two binary variables\n\nDISTINCTION / CAUTION\nNot for continuous variables.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Phi coefficient is centred on association between two genuinely dichotomous variables.\n\nKEY POINTS\n• 2×2 table\n• Two binary variables\n\nDISTINCTION / CAUTION\nNot for continuous variables.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -3966,7 +3966,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Phi coefficient is centred on association between two genuinely dichotomous variables.\n\nThe concept is best retained as a connected set of features:\n• 2×2 table\n• Two binary variables\n\nA useful exam distinction is this: Not for continuous variables.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Phi coefficient is centred on association between two genuinely dichotomous variables.\n\nThe important features are:\n• 2×2 table\n• Two binary variables\n\nThe exam distinction is worth remembering: Not for continuous variables.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Phi coefficient”.",
                 "List the key points associated with “Phi coefficient” in the uploaded study material.",
@@ -4011,7 +4011,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Simple linear regression",
-              "content_notes": "Simple linear regression is centred on prediction of one criterion from one predictor.\n\nKEY POINTS\n• Slope\n• Intercept\n• Prediction\n\nDISTINCTION / CAUTION\nPrediction does not prove causation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Simple linear regression is centred on prediction of one criterion from one predictor.\n\nKEY POINTS\n• Slope\n• Intercept\n• Prediction\n\nDISTINCTION / CAUTION\nPrediction does not prove causation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4019,7 +4019,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Simple linear regression is centred on prediction of one criterion from one predictor.\n\nThe concept is best retained as a connected set of features:\n• Slope\n• Intercept\n• Prediction\n\nA useful exam distinction is this: Prediction does not prove causation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Simple linear regression is centred on prediction of one criterion from one predictor.\n\nThe important features are:\n• Slope\n• Intercept\n• Prediction\n\nThe exam distinction is worth remembering: Prediction does not prove causation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Simple linear regression”.",
                 "List the key points associated with “Simple linear regression” in the uploaded study material.",
@@ -4044,7 +4044,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Multiple regression",
-              "content_notes": "Multiple regression is centred on prediction of one criterion from several predictors.\n\nKEY POINTS\n• Multiple predictors\n• Coefficients\n• Unique contribution\n\nDISTINCTION / CAUTION\nA predictor may lose unique contribution after controls.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Multiple regression is centred on prediction of one criterion from several predictors.\n\nKEY POINTS\n• Multiple predictors\n• Coefficients\n• Unique contribution\n\nDISTINCTION / CAUTION\nA predictor may lose unique contribution after controls.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4052,7 +4052,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Multiple regression is centred on prediction of one criterion from several predictors.\n\nThe concept is best retained as a connected set of features:\n• Multiple predictors\n• Coefficients\n• Unique contribution\n\nA useful exam distinction is this: A predictor may lose unique contribution after controls.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Multiple regression is centred on prediction of one criterion from several predictors.\n\nThe important features are:\n• Multiple predictors\n• Coefficients\n• Unique contribution\n\nThe exam distinction is worth remembering: A predictor may lose unique contribution after controls.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Multiple regression”.",
                 "List the key points associated with “Multiple regression” in the uploaded study material.",
@@ -4097,7 +4097,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Assumptions of factor analysis",
-              "content_notes": "Assumptions of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nKEY POINTS\n• Factors\n• Loadings\n• Common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Assumptions of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nKEY POINTS\n• Factors\n• Loadings\n• Common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4105,7 +4105,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Assumptions of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nThe concept is best retained as a connected set of features:\n• Factors\n• Loadings\n• Common variance\n\nA useful exam distinction is this: A factor is not automatically causal.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Assumptions of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nThe important features are:\n• Factors\n• Loadings\n• Common variance\n\nThe exam distinction is worth remembering: A factor is not automatically causal.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Assumptions of factor analysis”.",
                 "List the key points associated with “Assumptions of factor analysis” in the uploaded study material.",
@@ -4130,7 +4130,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Methods of factor analysis",
-              "content_notes": "Methods of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nKEY POINTS\n• Factors\n• Loadings\n• Common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Methods of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nKEY POINTS\n• Factors\n• Loadings\n• Common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4138,7 +4138,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Methods of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nThe concept is best retained as a connected set of features:\n• Factors\n• Loadings\n• Common variance\n\nA useful exam distinction is this: A factor is not automatically causal.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Methods of factor analysis is centred on identification of latent dimensions underlying correlations among observed variables.\n\nThe important features are:\n• Factors\n• Loadings\n• Common variance\n\nThe exam distinction is worth remembering: A factor is not automatically causal.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Methods of factor analysis”.",
                 "List the key points associated with “Methods of factor analysis” in the uploaded study material.",
@@ -4163,7 +4163,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Rotation",
-              "content_notes": "Rotation is centred on re-expression of extracted factors to make loading patterns easier to interpret.\n\nKEY POINTS\n• Orthogonal\n• Oblique\n• Interpretability\n\nDISTINCTION / CAUTION\nRotation does not create new variables.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Rotation is centred on re-expression of extracted factors to make loading patterns easier to interpret.\n\nKEY POINTS\n• Orthogonal\n• Oblique\n• Interpretability\n\nDISTINCTION / CAUTION\nRotation does not create new variables.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4171,7 +4171,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Rotation is centred on re-expression of extracted factors to make loading patterns easier to interpret.\n\nThe concept is best retained as a connected set of features:\n• Orthogonal\n• Oblique\n• Interpretability\n\nA useful exam distinction is this: Rotation does not create new variables.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Rotation is centred on re-expression of extracted factors to make loading patterns easier to interpret.\n\nThe important features are:\n• Orthogonal\n• Oblique\n• Interpretability\n\nThe exam distinction is worth remembering: Rotation does not create new variables.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Rotation”.",
                 "List the key points associated with “Rotation” in the uploaded study material.",
@@ -4204,7 +4204,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nThe concept is best retained as a connected set of features:\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n\nA useful exam distinction is this: A factor loading is not itself a factor; it indicates how strongly a measured variable is associated with a factor.\n\nSource grounding: PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation.",
+              "deep_learning": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nThe important features are:\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n\nThe exam distinction is worth remembering: A factor loading is not itself a factor; it indicates how strongly a measured variable is associated with a factor.",
               "retrieval_questions": [
                 "State the source-based core idea of “Interpretation” without looking at your notes.",
                 "List the main source-supported points for “Interpretation”.",
@@ -4248,7 +4248,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "ANOVA",
-              "content_notes": "ANOVA is centred on test of mean differences through comparison of between- and within-group variability.\n\nKEY POINTS\n• F ratio\n• Between vs within\n• Post-hoc follow-up\n\nDISTINCTION / CAUTION\nANOVA alone does not locate every pairwise difference.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "ANOVA is centred on test of mean differences through comparison of between- and within-group variability.\n\nKEY POINTS\n• F ratio\n• Between vs within\n• Post-hoc follow-up\n\nDISTINCTION / CAUTION\nANOVA alone does not locate every pairwise difference.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4256,7 +4256,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ANOVA is centred on test of mean differences through comparison of between- and within-group variability.\n\nThe concept is best retained as a connected set of features:\n• F ratio\n• Between vs within\n• Post-hoc follow-up\n\nA useful exam distinction is this: ANOVA alone does not locate every pairwise difference.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "ANOVA is centred on test of mean differences through comparison of between- and within-group variability.\n\nThe important features are:\n• F ratio\n• Between vs within\n• Post-hoc follow-up\n\nThe exam distinction is worth remembering: ANOVA alone does not locate every pairwise difference.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “ANOVA”.",
                 "List the key points associated with “ANOVA” in the uploaded study material.",
@@ -4281,7 +4281,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "One-way ANOVA",
-              "content_notes": "One-way ANOVA is centred on comparison of three or more group means on one factor.\n\nKEY POINTS\n• One factor\n• 3+ groups\n• F test\n\nDISTINCTION / CAUTION\nFor two groups, a t-test may be equivalent under assumptions.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "One-way ANOVA is centred on comparison of three or more group means on one factor.\n\nKEY POINTS\n• One factor\n• 3+ groups\n• F test\n\nDISTINCTION / CAUTION\nFor two groups, a t-test may be equivalent under assumptions.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4289,7 +4289,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "One-way ANOVA is centred on comparison of three or more group means on one factor.\n\nThe concept is best retained as a connected set of features:\n• One factor\n• 3+ groups\n• F test\n\nA useful exam distinction is this: For two groups, a t-test may be equivalent under assumptions.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "One-way ANOVA is centred on comparison of three or more group means on one factor.\n\nThe important features are:\n• One factor\n• 3+ groups\n• F test\n\nThe exam distinction is worth remembering: For two groups, a t-test may be equivalent under assumptions.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “One-way ANOVA”.",
                 "List the key points associated with “One-way ANOVA” in the uploaded study material.",
@@ -4314,7 +4314,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Factorial ANOVA",
-              "content_notes": "Factorial ANOVA is centred on analysis with two or more factors, including main effects and interactions.\n\nKEY POINTS\n• Main effect\n• Interaction\n• Multiple factors\n\nDISTINCTION / CAUTION\nInteraction is not another name for a main effect.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Factorial ANOVA is centred on analysis with two or more factors, including main effects and interactions.\n\nKEY POINTS\n• Main effect\n• Interaction\n• Multiple factors\n\nDISTINCTION / CAUTION\nInteraction is not another name for a main effect.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4322,7 +4322,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Factorial ANOVA is centred on analysis with two or more factors, including main effects and interactions.\n\nThe concept is best retained as a connected set of features:\n• Main effect\n• Interaction\n• Multiple factors\n\nA useful exam distinction is this: Interaction is not another name for a main effect.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Factorial ANOVA is centred on analysis with two or more factors, including main effects and interactions.\n\nThe important features are:\n• Main effect\n• Interaction\n• Multiple factors\n\nThe exam distinction is worth remembering: Interaction is not another name for a main effect.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Factorial ANOVA”.",
                 "List the key points associated with “Factorial ANOVA” in the uploaded study material.",
@@ -4355,7 +4355,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nThe concept is best retained as a connected set of features:\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n\nA useful exam distinction is this: Blocking is not the same as matching every participant individually; the block is the design structure within which randomization occurs.\n\nSource grounding: PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material.",
+              "deep_learning": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nThe important features are:\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n\nThe exam distinction is worth remembering: Blocking is not the same as matching every participant individually; the block is the design structure within which randomization occurs.",
               "retrieval_questions": [
                 "State the source-based core idea of “Randomized Block Designs” without looking at your notes.",
                 "List the main source-supported points for “Randomized Block Designs”.",
@@ -4379,7 +4379,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Repeated Measures Design",
-              "content_notes": "Repeated Measures Design is centred on same participants measured across conditions or times.\n\nKEY POINTS\n• Within-subjects\n• Individual differences controlled\n• Order effects\n\nDISTINCTION / CAUTION\nCarryover/order effects matter.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Repeated Measures Design is centred on same participants measured across conditions or times.\n\nKEY POINTS\n• Within-subjects\n• Individual differences controlled\n• Order effects\n\nDISTINCTION / CAUTION\nCarryover/order effects matter.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4387,7 +4387,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Repeated Measures Design is centred on same participants measured across conditions or times.\n\nThe concept is best retained as a connected set of features:\n• Within-subjects\n• Individual differences controlled\n• Order effects\n\nA useful exam distinction is this: Carryover/order effects matter.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Repeated Measures Design is centred on same participants measured across conditions or times.\n\nThe important features are:\n• Within-subjects\n• Individual differences controlled\n• Order effects\n\nThe exam distinction is worth remembering: Carryover/order effects matter.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Repeated Measures Design”.",
                 "List the key points associated with “Repeated Measures Design” in the uploaded study material.",
@@ -4420,7 +4420,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nThe concept is best retained as a connected set of features:\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n\nA useful exam distinction is this: Latin square is a balanced blocking design; it is not simply a four-or-more-group version of a randomized block design.\n\nSource grounding: PowerWithin Psychology — Unit 2 Latin Square Design.",
+              "deep_learning": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nThe important features are:\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n\nThe exam distinction is worth remembering: Latin square is a balanced blocking design; it is not simply a four-or-more-group version of a randomized block design.",
               "retrieval_questions": [
                 "State the source-based core idea of “Latin Square” without looking at your notes.",
                 "List the main source-supported points for “Latin Square”.",
@@ -4452,7 +4452,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nThe concept is best retained as a connected set of features:\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n\nA useful exam distinction is this: Do not automatically label every longitudinal study a cohort study; the defining feature is the cohort-based grouping of participants.\n\nSource grounding: PowerWithin Psychology — Unit 2 Experimental Designs outline.",
+              "deep_learning": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nThe important features are:\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n\nThe exam distinction is worth remembering: Do not automatically label every longitudinal study a cohort study; the defining feature is the cohort-based grouping of participants.",
               "retrieval_questions": [
                 "State the source-based core idea of “Cohort studies” without looking at your notes.",
                 "List the main source-supported points for “Cohort studies”.",
@@ -4484,7 +4484,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nThe concept is best retained as a connected set of features:\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n\nA useful exam distinction is this: Repeated measurement alone does not establish causality; alternative explanations for changes over time must still be considered.\n\nSource grounding: PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design.",
+              "deep_learning": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nThe important features are:\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n\nThe exam distinction is worth remembering: Repeated measurement alone does not establish causality; alternative explanations for changes over time must still be considered.",
               "retrieval_questions": [
                 "State the source-based core idea of “Time series” without looking at your notes.",
                 "List the main source-supported points for “Time series”.",
@@ -4508,7 +4508,7 @@ window.NETPSY_DATA = {
             {
               "id": 9,
               "title": "MANOVA",
-              "content_notes": "MANOVA is centred on multivariate comparison involving multiple dependent variables.\n\nKEY POINTS\n• Multiple DVs\n• Multivariate F\n\nDISTINCTION / CAUTION\nIt is not multiple regression.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "MANOVA is centred on multivariate comparison involving multiple dependent variables.\n\nKEY POINTS\n• Multiple DVs\n• Multivariate F\n\nDISTINCTION / CAUTION\nIt is not multiple regression.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4516,7 +4516,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "MANOVA is centred on multivariate comparison involving multiple dependent variables.\n\nThe concept is best retained as a connected set of features:\n• Multiple DVs\n• Multivariate F\n\nA useful exam distinction is this: It is not multiple regression.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "MANOVA is centred on multivariate comparison involving multiple dependent variables.\n\nThe important features are:\n• Multiple DVs\n• Multivariate F\n\nThe exam distinction is worth remembering: It is not multiple regression.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “MANOVA”.",
                 "List the key points associated with “MANOVA” in the uploaded study material.",
@@ -4541,7 +4541,7 @@ window.NETPSY_DATA = {
             {
               "id": 10,
               "title": "ANCOVA",
-              "content_notes": "ANCOVA is centred on comparison of group means while statistically adjusting for a covariate.\n\nKEY POINTS\n• ANOVA + covariate\n• Adjusted means\n\nDISTINCTION / CAUTION\nThe covariate must be appropriate.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "ANCOVA is centred on comparison of group means while statistically adjusting for a covariate.\n\nKEY POINTS\n• ANOVA + covariate\n• Adjusted means\n\nDISTINCTION / CAUTION\nThe covariate must be appropriate.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4549,7 +4549,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "ANCOVA is centred on comparison of group means while statistically adjusting for a covariate.\n\nThe concept is best retained as a connected set of features:\n• ANOVA + covariate\n• Adjusted means\n\nA useful exam distinction is this: The covariate must be appropriate.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "ANCOVA is centred on comparison of group means while statistically adjusting for a covariate.\n\nThe important features are:\n• ANOVA + covariate\n• Adjusted means\n\nThe exam distinction is worth remembering: The covariate must be appropriate.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “ANCOVA”.",
                 "List the key points associated with “ANCOVA” in the uploaded study material.",
@@ -4574,7 +4574,7 @@ window.NETPSY_DATA = {
             {
               "id": 11,
               "title": "Single-subject designs",
-              "content_notes": "Single-subject designs is centred on repeated measurement of one person or a small number of cases across baseline/intervention phases.\n\nKEY POINTS\n• AB/ABA/ABAB\n• Baseline\n• Repeated measures\n\nDISTINCTION / CAUTION\nSmall N does not mean no experimental control.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Single-subject designs is centred on repeated measurement of one person or a small number of cases across baseline/intervention phases.\n\nKEY POINTS\n• AB/ABA/ABAB\n• Baseline\n• Repeated measures\n\nDISTINCTION / CAUTION\nSmall N does not mean no experimental control.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4582,7 +4582,7 @@ window.NETPSY_DATA = {
                 "powerwithin"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Single-subject designs is centred on repeated measurement of one person or a small number of cases across baseline/intervention phases.\n\nThe concept is best retained as a connected set of features:\n• AB/ABA/ABAB\n• Baseline\n• Repeated measures\n\nA useful exam distinction is this: Small N does not mean no experimental control.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation",
+              "deep_learning": "Single-subject designs is centred on repeated measurement of one person or a small number of cases across baseline/intervention phases.\n\nThe important features are:\n• AB/ABA/ABAB\n• Baseline\n• Repeated measures\n\nThe exam distinction is worth remembering: Small N does not mean no experimental control.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Single-subject designs”.",
                 "List the key points associated with “Single-subject designs” in the uploaded study material.",
@@ -4674,7 +4674,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Psychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.\n\nThe concept is best retained as a connected set of features:\n• Tests use specified administration and scoring procedures.\n• They measure attributes, traits, abilities or other psychological characteristics.\n• Assessment is broader than testing.\n• Psychometric quality is part of test evaluation.\n\nA useful exam distinction is this: Do not use psychological test, psychological assessment and measurement as exact synonyms.\n\nSource grounding: PowerWithin Psychology — Unit 3 Psychological Testing; Baron & Misra and Ciccarelli & White on assessment methods.",
+              "deep_learning": "Psychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process.\n\nThe important features are:\n• Tests use specified administration and scoring procedures.\n• They measure attributes, traits, abilities or other psychological characteristics.\n• Assessment is broader than testing.\n• Psychometric quality is part of test evaluation.\n\nThe exam distinction is worth remembering: Do not use psychological test, psychological assessment and measurement as exact synonyms.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of psychological tests”.",
                 "List the main source-supported points for “Types of psychological tests”.",
@@ -4727,7 +4727,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Item writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.\n\nThe concept is best retained as a connected set of features:\n• Items should represent the intended content or construct.\n• Wording and response format affect how an item functions.\n• Items are evaluated after administration through item analysis.\n• Good item construction supports reliability and validity.\n\nA useful exam distinction is this: Item writing creates the item; item analysis evaluates how the item performed in the test data.\n\nSource grounding: PowerWithin Psychology — Unit 3 Test Construction: Item Writing and Item Analysis.",
+              "deep_learning": "Item writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically.\n\nThe important features are:\n• Items should represent the intended content or construct.\n• Wording and response format affect how an item functions.\n• Items are evaluated after administration through item analysis.\n• Good item construction supports reliability and validity.\n\nThe exam distinction is worth remembering: Item writing creates the item; item analysis evaluates how the item performed in the test data.",
               "retrieval_questions": [
                 "State the source-based core idea of “Item writing”.",
                 "List the main source-supported points for “Item writing”.",
@@ -4761,7 +4761,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Item analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.\n\nThe concept is best retained as a connected set of features:\n• Item analysis evaluates individual items empirically.\n• Item–total relationships can indicate whether an item fits the test.\n• Upper/lower group comparisons can help identify discriminating items.\n• Poorly functioning items may be revised or removed.\n\nA useful exam distinction is this: Item analysis is not the same as calculating the final test score; it is a quality-control step at the item level.\n\nSource grounding: PowerWithin Psychology — Unit 3 Test Construction and validity/item-analysis discussion.",
+              "deep_learning": "Item analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test.\n\nThe important features are:\n• Item analysis evaluates individual items empirically.\n• Item–total relationships can indicate whether an item fits the test.\n• Upper/lower group comparisons can help identify discriminating items.\n• Poorly functioning items may be revised or removed.\n\nThe exam distinction is worth remembering: Item analysis is not the same as calculating the final test score; it is a quality-control step at the item level.",
               "retrieval_questions": [
                 "State the source-based core idea of “Item analysis”.",
                 "List the main source-supported points for “Item analysis”.",
@@ -4814,7 +4814,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Standardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.\n\nThe concept is best retained as a connected set of features:\n• Administration and scoring should be consistent.\n• A standardization sample provides the reference distribution.\n• Norms are derived from the standardization group.\n• Interpretation depends on the population represented by the norms.\n\nA useful exam distinction is this: Standardization is broader than norms alone; it includes standardized administration, scoring and the empirical reference framework.\n\nSource grounding: PowerWithin Psychology — Unit 3 Test Standardization, Reliability, Validity and Norms; Psychology: A Self-Teaching Guide.",
+              "deep_learning": "Standardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group.\n\nThe important features are:\n• Administration and scoring should be consistent.\n• A standardization sample provides the reference distribution.\n• Norms are derived from the standardization group.\n• Interpretation depends on the population represented by the norms.\n\nThe exam distinction is worth remembering: Standardization is broader than norms alone; it includes standardized administration, scoring and the empirical reference framework.",
               "retrieval_questions": [
                 "State the source-based core idea of “Standardization”.",
                 "List the main source-supported points for “Standardization”.",
@@ -4838,7 +4838,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Reliability",
-              "content_notes": "Reliability is centred on consistency or dependability of measurement.\n\nKEY POINTS\n• Test-retest\n• Internal consistency\n• Inter-rater\n• Split-half\n\nDISTINCTION / CAUTION\nReliability is necessary but not sufficient for validity.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Reliability is centred on consistency or dependability of measurement.\n\nKEY POINTS\n• Test-retest\n• Internal consistency\n• Inter-rater\n• Split-half\n\nDISTINCTION / CAUTION\nReliability is necessary but not sufficient for validity.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4848,7 +4848,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Reliability is centred on consistency or dependability of measurement.\n\nThe concept is best retained as a connected set of features:\n• Test-retest\n• Internal consistency\n• Inter-rater\n• Split-half\n\nA useful exam distinction is this: Reliability is necessary but not sufficient for validity.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Reliability is centred on consistency or dependability of measurement.\n\nThe important features are:\n• Test-retest\n• Internal consistency\n• Inter-rater\n• Split-half\n\nThe exam distinction is worth remembering: Reliability is necessary but not sufficient for validity.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Reliability”.",
                 "List the key points associated with “Reliability” in the uploaded study material.",
@@ -4875,7 +4875,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Validity",
-              "content_notes": "Validity is centred on evidence supporting the intended interpretation and use of test scores.\n\nKEY POINTS\n• Content\n• Criterion-related\n• Construct\n\nDISTINCTION / CAUTION\nValidity is not simply one number.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Validity is centred on evidence supporting the intended interpretation and use of test scores.\n\nKEY POINTS\n• Content\n• Criterion-related\n• Construct\n\nDISTINCTION / CAUTION\nValidity is not simply one number.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4885,7 +4885,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Validity is centred on evidence supporting the intended interpretation and use of test scores.\n\nThe concept is best retained as a connected set of features:\n• Content\n• Criterion-related\n• Construct\n\nA useful exam distinction is this: Validity is not simply one number.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Validity is centred on evidence supporting the intended interpretation and use of test scores.\n\nThe important features are:\n• Content\n• Criterion-related\n• Construct\n\nThe exam distinction is worth remembering: Validity is not simply one number.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Validity”.",
                 "List the key points associated with “Validity” in the uploaded study material.",
@@ -4912,7 +4912,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Norms",
-              "content_notes": "Norms is centred on reference information for interpreting scores relative to a defined population.\n\nKEY POINTS\n• Percentiles\n• Age/grade norms\n• Standard scores\n\nDISTINCTION / CAUTION\nNorms are not the same as cutoffs.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Norms is centred on reference information for interpreting scores relative to a defined population.\n\nKEY POINTS\n• Percentiles\n• Age/grade norms\n• Standard scores\n\nDISTINCTION / CAUTION\nNorms are not the same as cutoffs.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -4922,7 +4922,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Norms is centred on reference information for interpreting scores relative to a defined population.\n\nThe concept is best retained as a connected set of features:\n• Percentiles\n• Age/grade norms\n• Standard scores\n\nA useful exam distinction is this: Norms are not the same as cutoffs.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Norms is centred on reference information for interpreting scores relative to a defined population.\n\nThe important features are:\n• Percentiles\n• Age/grade norms\n• Standard scores\n\nThe exam distinction is worth remembering: Norms are not the same as cutoffs.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Norms”.",
                 "List the key points associated with “Norms” in the uploaded study material.",
@@ -4978,7 +4978,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Intelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.\n\nThe concept is best retained as a connected set of features:\n• Binet and Simon published the Binet–Simon Scale in 1905.\n• Terman adapted it into the Stanford–Binet in 1916.\n• Wechsler scales are major individually administered intelligence tests.\n• Intelligence testing can involve multiple cognitive abilities rather than a single simple capacity.\n\nA useful exam distinction is this: An intelligence test is not identical to a general measure of all human competence; what is assessed depends on the test's design and construct.\n\nSource grounding: PowerWithin Psychology — Unit 3 Intelligence Tests; Baron & Misra; REVISATHON Part 5 on Wechsler tests.",
+              "deep_learning": "Intelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence.\n\nThe important features are:\n• Binet and Simon published the Binet–Simon Scale in 1905.\n• Terman adapted it into the Stanford–Binet in 1916.\n• Wechsler scales are major individually administered intelligence tests.\n• Intelligence testing can involve multiple cognitive abilities rather than a single simple capacity.\n\nThe exam distinction is worth remembering: An intelligence test is not identical to a general measure of all human competence; what is assessed depends on the test's design and construct.",
               "retrieval_questions": [
                 "State the source-based core idea of “Intelligence tests”.",
                 "List the main source-supported points for “Intelligence tests”.",
@@ -5012,7 +5012,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Creativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.\n\nThe concept is best retained as a connected set of features:\n• Creativity testing often emphasizes divergent production.\n• Guilford is a major source figure in the creativity-testing tradition.\n• Getzels and Jackson compared creativity and intelligence groups.\n• TTCT is an example of a creativity-testing approach.\n\nA useful exam distinction is this: Creativity and intelligence are related constructs but are not treated as identical in the source material.\n\nSource grounding: PowerWithin Psychology — Unit 3 creativity-testing material; Baron & Misra; P2 Educational Psychology.",
+              "deep_learning": "Creativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking.\n\nThe important features are:\n• Creativity testing often emphasizes divergent production.\n• Guilford is a major source figure in the creativity-testing tradition.\n• Getzels and Jackson compared creativity and intelligence groups.\n• TTCT is an example of a creativity-testing approach.\n\nThe exam distinction is worth remembering: Creativity and intelligence are related constructs but are not treated as identical in the source material.",
               "retrieval_questions": [
                 "State the source-based core idea of “Creativity tests”.",
                 "List the main source-supported points for “Creativity tests”.",
@@ -5046,7 +5046,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Neuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.\n\nThe concept is best retained as a connected set of features:\n• They focus on cognitive/behavioral functions related to the nervous system.\n• They can help assess possible brain dysfunction or damage.\n• Attention and memory are examples of assessed functions.\n• They form one component of broader psychological assessment.\n\nA useful exam distinction is this: A neuropsychological test is not simply an intelligence test; its purpose is tied to brain-related cognitive functioning.\n\nSource grounding: PowerWithin Psychology — Unit 3; Baron & Misra on neuropsychological tests; P2 Educational Psychology.",
+              "deep_learning": "Neuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material.\n\nThe important features are:\n• They focus on cognitive/behavioral functions related to the nervous system.\n• They can help assess possible brain dysfunction or damage.\n• Attention and memory are examples of assessed functions.\n• They form one component of broader psychological assessment.\n\nThe exam distinction is worth remembering: A neuropsychological test is not simply an intelligence test; its purpose is tied to brain-related cognitive functioning.",
               "retrieval_questions": [
                 "State the source-based core idea of “Neuropsychological tests”.",
                 "List the main source-supported points for “Neuropsychological tests”.",
@@ -5080,7 +5080,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Aptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.\n\nThe concept is best retained as a connected set of features:\n• Aptitude concerns potential or ability to learn/perform in a domain.\n• Batteries may contain several subtests.\n• Examples of domains include verbal, numerical and spatial reasoning.\n• Aptitude testing is used in selection and educational/career contexts.\n\nA useful exam distinction is this: Aptitude is not the same as achievement: aptitude concerns capacity or potential, whereas achievement reflects learned knowledge or skill.\n\nSource grounding: Baron & Misra — Aptitude Tests; PowerWithin Psychology — Unit 3 and military testing.",
+              "deep_learning": "Aptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning.\n\nThe important features are:\n• Aptitude concerns potential or ability to learn/perform in a domain.\n• Batteries may contain several subtests.\n• Examples of domains include verbal, numerical and spatial reasoning.\n• Aptitude testing is used in selection and educational/career contexts.\n\nThe exam distinction is worth remembering: Aptitude is not the same as achievement: aptitude concerns capacity or potential, whereas achievement reflects learned knowledge or skill.",
               "retrieval_questions": [
                 "State the source-based core idea of “Aptitude tests”.",
                 "List the main source-supported points for “Aptitude tests”.",
@@ -5114,7 +5114,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Personality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.\n\nThe concept is best retained as a connected set of features:\n• Interviews can provide self-report information.\n• Behavioral assessment uses direct observation, rating scales or frequency counts.\n• Projective tests use ambiguous stimuli and require interpretive judgment.\n• Personality inventories use standardized item formats and can include validity scales.\n\nA useful exam distinction is this: Psychological assessment is broader than any one personality test; professionals may combine several methods.\n\nSource grounding: Ciccarelli & White 6e — Personality Assessment; PowerWithin Psychology — Personality Assessment.",
+              "deep_learning": "Personality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required.\n\nThe important features are:\n• Interviews can provide self-report information.\n• Behavioral assessment uses direct observation, rating scales or frequency counts.\n• Projective tests use ambiguous stimuli and require interpretive judgment.\n• Personality inventories use standardized item formats and can include validity scales.\n\nThe exam distinction is worth remembering: Psychological assessment is broader than any one personality test; professionals may combine several methods.",
               "retrieval_questions": [
                 "State the source-based core idea of “Personality assessment”.",
                 "List the main source-supported points for “Personality assessment”.",
@@ -5148,7 +5148,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Interest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.\n\nThe concept is best retained as a connected set of features:\n• They measure patterns of interests rather than intelligence or achievement.\n• They are useful for educational and career guidance.\n• Interpretation depends on the inventory and its normative framework.\n• Interests are one source of information in career decision-making, not a complete decision by themselves.\n\nA useful exam distinction is this: Interest is different from aptitude: liking or preference for an activity is not the same construct as demonstrated or potential ability.\n\nSource grounding: PowerWithin Psychology — Unit 3 Areas of Testing and Career Guidance; P2 Educational Psychology.",
+              "deep_learning": "Interest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration.\n\nThe important features are:\n• They measure patterns of interests rather than intelligence or achievement.\n• They are useful for educational and career guidance.\n• Interpretation depends on the inventory and its normative framework.\n• Interests are one source of information in career decision-making, not a complete decision by themselves.\n\nThe exam distinction is worth remembering: Interest is different from aptitude: liking or preference for an activity is not the same construct as demonstrated or potential ability.",
               "retrieval_questions": [
                 "State the source-based core idea of “Interest inventories”.",
                 "List the main source-supported points for “Interest inventories”.",
@@ -5191,7 +5191,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Semantic differential scale",
-              "content_notes": "Semantic differential scale is centred on measurement of connotative meaning using bipolar adjective dimensions.\n\nKEY POINTS\n• Bipolar adjectives\n• Osgood\n• Attitude/meaning\n\nDISTINCTION / CAUTION\nNot the same as Likert.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Semantic differential scale is centred on measurement of connotative meaning using bipolar adjective dimensions.\n\nKEY POINTS\n• Bipolar adjectives\n• Osgood\n• Attitude/meaning\n\nDISTINCTION / CAUTION\nNot the same as Likert.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5201,7 +5201,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Semantic differential scale is centred on measurement of connotative meaning using bipolar adjective dimensions.\n\nThe concept is best retained as a connected set of features:\n• Bipolar adjectives\n• Osgood\n• Attitude/meaning\n\nA useful exam distinction is this: Not the same as Likert.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Semantic differential scale is centred on measurement of connotative meaning using bipolar adjective dimensions.\n\nThe important features are:\n• Bipolar adjectives\n• Osgood\n• Attitude/meaning\n\nThe exam distinction is worth remembering: Not the same as Likert.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Semantic differential scale”.",
                 "List the key points associated with “Semantic differential scale” in the uploaded study material.",
@@ -5238,7 +5238,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.\n\nThe concept is best retained as a connected set of features:\n• It is listed as an attitude-scale technique in the NET material.\n• It belongs to the measurement of attitudes rather than cognitive ability testing.\n• The source groups it with semantic differential and Likert scales.\n• Detailed source treatment is limited in the supplied material.\n\nA useful exam distinction is this: Do not import features of another attitude scale and label them as Staples-scale properties when the source does not provide them.\n\nSource grounding: PowerWithin Psychology — Unit 3 Attitude Scales: Semantic Differential, Staples and Likert.",
+              "deep_learning": "The Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details.\n\nThe important features are:\n• It is listed as an attitude-scale technique in the NET material.\n• It belongs to the measurement of attitudes rather than cognitive ability testing.\n• The source groups it with semantic differential and Likert scales.\n• Detailed source treatment is limited in the supplied material.\n\nThe exam distinction is worth remembering: Do not import features of another attitude scale and label them as Staples-scale properties when the source does not provide them.",
               "retrieval_questions": [
                 "State the source-based core idea of “Staples scale”.",
                 "List the main source-supported points for “Staples scale”.",
@@ -5262,7 +5262,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Likert scale",
-              "content_notes": "Likert scale is centred on summated agreement scale using ordered response categories.\n\nKEY POINTS\n• Strongly agree/disagree\n• Ordered categories\n• Summated ratings\n\nDISTINCTION / CAUTION\nA single Likert item is not the same as a whole Likert scale.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Likert scale is centred on summated agreement scale using ordered response categories.\n\nKEY POINTS\n• Strongly agree/disagree\n• Ordered categories\n• Summated ratings\n\nDISTINCTION / CAUTION\nA single Likert item is not the same as a whole Likert scale.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5272,7 +5272,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Likert scale is centred on summated agreement scale using ordered response categories.\n\nThe concept is best retained as a connected set of features:\n• Strongly agree/disagree\n• Ordered categories\n• Summated ratings\n\nA useful exam distinction is this: A single Likert item is not the same as a whole Likert scale.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Likert scale is centred on summated agreement scale using ordered response categories.\n\nThe important features are:\n• Strongly agree/disagree\n• Ordered categories\n• Summated ratings\n\nThe exam distinction is worth remembering: A single Likert item is not the same as a whole Likert scale.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Likert scale”.",
                 "List the key points associated with “Likert scale” in the uploaded study material.",
@@ -5309,7 +5309,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Computer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.\n\nThe concept is best retained as a connected set of features:\n• Administration and scoring are computerized.\n• Standardization and psychometric quality remain necessary.\n• Computer delivery changes the mode of administration, not the construct itself.\n• Technical and accessibility conditions can affect administration.\n\nA useful exam distinction is this: Computerized administration does not automatically make a test more valid or reliable; psychometric quality still has to be established.\n\nSource grounding: PowerWithin Psychology — Unit 3, Computer-based Psychological Testing.",
+              "deep_learning": "Computer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity.\n\nThe important features are:\n• Administration and scoring are computerized.\n• Standardization and psychometric quality remain necessary.\n• Computer delivery changes the mode of administration, not the construct itself.\n• Technical and accessibility conditions can affect administration.\n\nThe exam distinction is worth remembering: Computerized administration does not automatically make a test more valid or reliable; psychometric quality still has to be established.",
               "retrieval_questions": [
                 "State the source-based core idea of “Computer-based psychological testing”.",
                 "List the main source-supported points for “Computer-based psychological testing”.",
@@ -5362,7 +5362,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "In clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.\n\nThe concept is best retained as a connected set of features:\n• Testing is one component of clinical assessment.\n• Interviews and other information sources may be combined with tests.\n• Neuropsychological tests may be used when brain functioning is relevant.\n• Interpretation should be integrated with the person's broader history and presentation.\n\nA useful exam distinction is this: A test score alone is not equivalent to a clinical diagnosis; assessment integrates multiple sources of evidence.\n\nSource grounding: Baron & Misra — Psychological Assessment and Research Methods; PowerWithin Psychology — clinical application of testing.",
+              "deep_learning": "In clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning.\n\nThe important features are:\n• Testing is one component of clinical assessment.\n• Interviews and other information sources may be combined with tests.\n• Neuropsychological tests may be used when brain functioning is relevant.\n• Interpretation should be integrated with the person's broader history and presentation.\n\nThe exam distinction is worth remembering: A test score alone is not equivalent to a clinical diagnosis; assessment integrates multiple sources of evidence.",
               "retrieval_questions": [
                 "State the source-based core idea of “Clinical settings”.",
                 "List the main source-supported points for “Clinical settings”.",
@@ -5396,7 +5396,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "Organizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.\n\nThe concept is best retained as a connected set of features:\n• Testing can support selection and placement decisions.\n• Aptitude and personality measures may be relevant to occupational requirements.\n• Standardized administration and interpretation are important for comparability.\n• Test use should match the attribute and decision being assessed.\n\nA useful exam distinction is this: A test should not be treated as a general predictor of every aspect of job performance; its relevance depends on the construct and context.\n\nSource grounding: PowerWithin Psychology — Unit 3 Applications of Psychological Testing; organizational/business testing coverage.",
+              "deep_learning": "Organizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment.\n\nThe important features are:\n• Testing can support selection and placement decisions.\n• Aptitude and personality measures may be relevant to occupational requirements.\n• Standardized administration and interpretation are important for comparability.\n• Test use should match the attribute and decision being assessed.\n\nThe exam distinction is worth remembering: A test should not be treated as a general predictor of every aspect of job performance; its relevance depends on the construct and context.",
               "retrieval_questions": [
                 "State the source-based core idea of “Organizational and business settings”.",
                 "List the main source-supported points for “Organizational and business settings”.",
@@ -5430,7 +5430,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "Educational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.\n\nThe concept is best retained as a connected set of features:\n• Testing can inform educational decisions and support planning.\n• Intelligence and achievement measures assess different constructs.\n• Aptitude and interest information can support educational/career guidance.\n• Interpretation should consider the student's broader context.\n\nA useful exam distinction is this: Educational testing is broader than an IQ score; different tests answer different educational questions.\n\nSource grounding: PowerWithin Psychology — Unit 3 Applications; P2 Educational Psychology.",
+              "deep_learning": "Educational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area.\n\nThe important features are:\n• Testing can inform educational decisions and support planning.\n• Intelligence and achievement measures assess different constructs.\n• Aptitude and interest information can support educational/career guidance.\n• Interpretation should consider the student's broader context.\n\nThe exam distinction is worth remembering: Educational testing is broader than an IQ score; different tests answer different educational questions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Educational settings”.",
                 "List the main source-supported points for “Educational settings”.",
@@ -5464,7 +5464,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "In counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.\n\nThe concept is best retained as a connected set of features:\n• Tests can structure information relevant to counseling goals.\n• Interest and aptitude measures are especially relevant to career guidance.\n• Personality information can contribute to self-understanding.\n• Results require appropriate interpretation and discussion with the client.\n\nA useful exam distinction is this: A counseling test result is an aid to formulation and decision-making, not a substitute for the counseling process.\n\nSource grounding: PowerWithin Psychology — Unit 3 Applications of Psychological Testing and Career Guidance.",
+              "deep_learning": "In counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment.\n\nThe important features are:\n• Tests can structure information relevant to counseling goals.\n• Interest and aptitude measures are especially relevant to career guidance.\n• Personality information can contribute to self-understanding.\n• Results require appropriate interpretation and discussion with the client.\n\nThe exam distinction is worth remembering: A counseling test result is an aid to formulation and decision-making, not a substitute for the counseling process.",
               "retrieval_questions": [
                 "State the source-based core idea of “Counseling settings”.",
                 "List the main source-supported points for “Counseling settings”.",
@@ -5498,7 +5498,7 @@ window.NETPSY_DATA = {
                 "selfteaching"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "The uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.\n\nThe concept is best retained as a connected set of features:\n• Military testing begins in recruitment and can continue through service.\n• Aptitude tests may assess verbal, numerical, spatial and related abilities.\n• Army Alpha and Army Beta are historical examples in the source.\n• Selection formats can be uniform, diversified or mixed.\n\nA useful exam distinction is this: Military testing is not limited to one intelligence test; the source describes a broader assessment system tied to specific competencies and roles.\n\nSource grounding: PowerWithin Psychology — Unit 3 Application of Psychological Testing in the Military.",
+              "deep_learning": "The uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats.\n\nThe important features are:\n• Military testing begins in recruitment and can continue through service.\n• Aptitude tests may assess verbal, numerical, spatial and related abilities.\n• Army Alpha and Army Beta are historical examples in the source.\n• Selection formats can be uniform, diversified or mixed.\n\nThe exam distinction is worth remembering: Military testing is not limited to one intelligence test; the source describes a broader assessment system tied to specific competencies and roles.",
               "retrieval_questions": [
                 "State the source-based core idea of “Military settings”.",
                 "List the main source-supported points for “Military settings”.",
@@ -5541,7 +5541,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Career guidance",
-              "content_notes": "Career guidance is centred on support for career decisions using self-understanding, occupational information and planning.\n\nKEY POINTS\n• Interests\n• Abilities\n• Values\n• Options\n\nDISTINCTION / CAUTION\nIt is broader than one interest inventory.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Career guidance is centred on support for career decisions using self-understanding, occupational information and planning.\n\nKEY POINTS\n• Interests\n• Abilities\n• Values\n• Options\n\nDISTINCTION / CAUTION\nIt is broader than one interest inventory.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5550,7 +5550,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Career guidance is centred on support for career decisions using self-understanding, occupational information and planning.\n\nThe concept is best retained as a connected set of features:\n• Interests\n• Abilities\n• Values\n• Options\n\nA useful exam distinction is this: It is broader than one interest inventory.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.)",
+              "deep_learning": "Career guidance is centred on support for career decisions using self-understanding, occupational information and planning.\n\nThe important features are:\n• Interests\n• Abilities\n• Values\n• Options\n\nThe exam distinction is worth remembering: It is broader than one interest inventory.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Career guidance”.",
                 "List the key points associated with “Career guidance” in the uploaded study material.",
@@ -5612,7 +5612,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.\n\nThe concept is best retained as a connected set of features:\n• General sensations arise from bodily sensory systems.\n• Specific sensations involve specialized sensory organs/pathways.\n• Both depend on receptors and neural processing.\n• The distinction is about sensory-system organization, not about whether a sensation is psychologically important.\n\nA useful exam distinction is this: Do not treat 'general' as meaning vague or nonspecific; it refers to a class of bodily sensory modalities.\n\nSource grounding: PowerWithin Psychology — Unit 4 Sensory Systems; Baron & Misra — Sensory Processes.",
+              "deep_learning": "The uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell.\n\nThe important features are:\n• General sensations arise from bodily sensory systems.\n• Specific sensations involve specialized sensory organs/pathways.\n• Both depend on receptors and neural processing.\n• The distinction is about sensory-system organization, not about whether a sensation is psychologically important.\n\nThe exam distinction is worth remembering: Do not treat 'general' as meaning vague or nonspecific; it refers to a class of bodily sensory modalities.",
               "retrieval_questions": [
                 "State the source-based core idea of “General sensations”.",
                 "List the key source-supported points for “General sensations”.",
@@ -5645,7 +5645,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Specific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.\n\nThe concept is best retained as a connected set of features:\n• Vision, hearing, taste and smell are specialized sensory systems.\n• Each system has characteristic receptors and pathways.\n• Sensory transduction converts physical stimulation into neural signals.\n• Perception involves further processing beyond receptor activation.\n\nA useful exam distinction is this: Sensation and perception are related but not identical: sensation concerns detection/transduction, while perception involves organizing and interpreting sensory information.\n\nSource grounding: PowerWithin Psychology — Unit 4; Ciccarelli & White 6e; Baron & Misra.",
+              "deep_learning": "Specific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation.\n\nThe important features are:\n• Vision, hearing, taste and smell are specialized sensory systems.\n• Each system has characteristic receptors and pathways.\n• Sensory transduction converts physical stimulation into neural signals.\n• Perception involves further processing beyond receptor activation.\n\nThe exam distinction is worth remembering: Sensation and perception are related but not identical: sensation concerns detection/transduction, while perception involves organizing and interpreting sensory information.",
               "retrieval_questions": [
                 "State the source-based core idea of “Specific sensations”.",
                 "List the key source-supported points for “Specific sensations”.",
@@ -5678,7 +5678,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Sensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.\n\nThe concept is best retained as a connected set of features:\n• Receptors are specialized for particular kinds of stimulation.\n• They initiate neural signals when appropriate stimulation occurs.\n• Different sensory modalities use different receptor systems.\n• Receptor activity is an early stage of sensory processing.\n\nA useful exam distinction is this: A receptor detects stimulation; it is not the same thing as the entire sensory pathway or perceptual experience.\n\nSource grounding: PowerWithin Psychology — Unit 4 Sensory Systems; Ciccarelli & White and Baron & Misra on sensation.",
+              "deep_learning": "Sensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes.\n\nThe important features are:\n• Receptors are specialized for particular kinds of stimulation.\n• They initiate neural signals when appropriate stimulation occurs.\n• Different sensory modalities use different receptor systems.\n• Receptor activity is an early stage of sensory processing.\n\nThe exam distinction is worth remembering: A receptor detects stimulation; it is not the same thing as the entire sensory pathway or perceptual experience.",
               "retrieval_questions": [
                 "State the source-based core idea of “Receptors”.",
                 "List the key source-supported points for “Receptors”.",
@@ -5711,7 +5711,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Sensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.\n\nThe concept is best retained as a connected set of features:\n• Physical stimulation provides the input.\n• Receptors detect relevant stimulation.\n• Transduction converts stimulation into neural signals.\n• Subsequent neural processing contributes to sensory experience.\n\nA useful exam distinction is this: The minimum detectable stimulation and the interpretation of a stimulus are different questions; detection is not identical to perception.\n\nSource grounding: Baron & Misra — Sensory Processes; PowerWithin Psychology — Unit 4 Sensory Systems.",
+              "deep_learning": "Sensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission.\n\nThe important features are:\n• Physical stimulation provides the input.\n• Receptors detect relevant stimulation.\n• Transduction converts stimulation into neural signals.\n• Subsequent neural processing contributes to sensory experience.\n\nThe exam distinction is worth remembering: The minimum detectable stimulation and the interpretation of a stimulus are different questions; detection is not identical to perception.",
               "retrieval_questions": [
                 "State the source-based core idea of “Sensory processes”.",
                 "List the key source-supported points for “Sensory processes”.",
@@ -5753,7 +5753,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Neuron structure",
-              "content_notes": "Neuron structure is centred on organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.\n\nKEY POINTS\n• Dendrites receive\n• Soma integrates\n• Axon conducts\n• Terminals communicate\n\nDISTINCTION / CAUTION\nDendrites and axons have different typical roles.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Neuron structure is centred on organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.\n\nKEY POINTS\n• Dendrites receive\n• Soma integrates\n• Axon conducts\n• Terminals communicate\n\nDISTINCTION / CAUTION\nDendrites and axons have different typical roles.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5763,7 +5763,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Neuron structure is centred on organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.\n\nThe concept is best retained as a connected set of features:\n• Dendrites receive\n• Soma integrates\n• Axon conducts\n• Terminals communicate\n\nA useful exam distinction is this: Dendrites and axons have different typical roles.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Neuron structure is centred on organization of dendrites, soma, axon and terminal regions for receiving and transmitting information.\n\nThe important features are:\n• Dendrites receive\n• Soma integrates\n• Axon conducts\n• Terminals communicate\n\nThe exam distinction is worth remembering: Dendrites and axons have different typical roles.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Neuron structure”.",
                 "List the key points associated with “Neuron structure” in the uploaded study material.",
@@ -5799,7 +5799,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Neurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.\n\nThe concept is best retained as a connected set of features:\n• Neurons receive and transmit information.\n• Neural impulses travel along the neuron.\n• Communication between neurons occurs at synapses.\n• Neurotransmitters participate in synaptic communication.\n\nA useful exam distinction is this: A neural impulse within a neuron and synaptic transmission between neurons are related but distinct stages of neural communication.\n\nSource grounding: PowerWithin Psychology — Unit 4 Neurons and Neural Transmission; Self-Teaching Guide and Ciccarelli & White.",
+              "deep_learning": "Neurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters.\n\nThe important features are:\n• Neurons receive and transmit information.\n• Neural impulses travel along the neuron.\n• Communication between neurons occurs at synapses.\n• Neurotransmitters participate in synaptic communication.\n\nThe exam distinction is worth remembering: A neural impulse within a neuron and synaptic transmission between neurons are related but distinct stages of neural communication.",
               "retrieval_questions": [
                 "State the source-based core idea of “Neuron functions”.",
                 "List the key source-supported points for “Neuron functions”.",
@@ -5822,7 +5822,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Types of neurons",
-              "content_notes": "Types of neurons is centred on functional classification into sensory, motor and interneurons.\n\nKEY POINTS\n• Afferent/sensory\n• Efferent/motor\n• Interneurons\n\nDISTINCTION / CAUTION\nAfferent/efferent are defined relative to the CNS.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Types of neurons is centred on functional classification into sensory, motor and interneurons.\n\nKEY POINTS\n• Afferent/sensory\n• Efferent/motor\n• Interneurons\n\nDISTINCTION / CAUTION\nAfferent/efferent are defined relative to the CNS.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5832,7 +5832,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Types of neurons is centred on functional classification into sensory, motor and interneurons.\n\nThe concept is best retained as a connected set of features:\n• Afferent/sensory\n• Efferent/motor\n• Interneurons\n\nA useful exam distinction is this: Afferent/efferent are defined relative to the CNS.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Types of neurons is centred on functional classification into sensory, motor and interneurons.\n\nThe important features are:\n• Afferent/sensory\n• Efferent/motor\n• Interneurons\n\nThe exam distinction is worth remembering: Afferent/efferent are defined relative to the CNS.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Types of neurons”.",
                 "List the key points associated with “Types of neurons” in the uploaded study material.",
@@ -5858,7 +5858,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Neural impulse",
-              "content_notes": "Neural impulse is centred on action potential as a rapid, all-or-none change in membrane potential.\n\nKEY POINTS\n• Threshold\n• Depolarization\n• Repolarization\n• All-or-none\n\nDISTINCTION / CAUTION\nStimulus intensity is not coded by larger action potentials.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Neural impulse is centred on action potential as a rapid, all-or-none change in membrane potential.\n\nKEY POINTS\n• Threshold\n• Depolarization\n• Repolarization\n• All-or-none\n\nDISTINCTION / CAUTION\nStimulus intensity is not coded by larger action potentials.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5868,7 +5868,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Neural impulse is centred on action potential as a rapid, all-or-none change in membrane potential.\n\nThe concept is best retained as a connected set of features:\n• Threshold\n• Depolarization\n• Repolarization\n• All-or-none\n\nA useful exam distinction is this: Stimulus intensity is not coded by larger action potentials.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Neural impulse is centred on action potential as a rapid, all-or-none change in membrane potential.\n\nThe important features are:\n• Threshold\n• Depolarization\n• Repolarization\n• All-or-none\n\nThe exam distinction is worth remembering: Stimulus intensity is not coded by larger action potentials.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Neural impulse”.",
                 "List the key points associated with “Neural impulse” in the uploaded study material.",
@@ -5894,7 +5894,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Synaptic transmission",
-              "content_notes": "Synaptic transmission is centred on communication from a presynaptic neuron to a postsynaptic cell.\n\nKEY POINTS\n• Neurotransmitter release\n• Receptors\n• Excitatory/inhibitory effects\n\nDISTINCTION / CAUTION\nA neurotransmitter's effect depends on its receptor/context.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Synaptic transmission is centred on communication from a presynaptic neuron to a postsynaptic cell.\n\nKEY POINTS\n• Neurotransmitter release\n• Receptors\n• Excitatory/inhibitory effects\n\nDISTINCTION / CAUTION\nA neurotransmitter's effect depends on its receptor/context.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5904,7 +5904,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Synaptic transmission is centred on communication from a presynaptic neuron to a postsynaptic cell.\n\nThe concept is best retained as a connected set of features:\n• Neurotransmitter release\n• Receptors\n• Excitatory/inhibitory effects\n\nA useful exam distinction is this: A neurotransmitter's effect depends on its receptor/context.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Synaptic transmission is centred on communication from a presynaptic neuron to a postsynaptic cell.\n\nThe important features are:\n• Neurotransmitter release\n• Receptors\n• Excitatory/inhibitory effects\n\nThe exam distinction is worth remembering: A neurotransmitter's effect depends on its receptor/context.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Synaptic transmission”.",
                 "List the key points associated with “Synaptic transmission” in the uploaded study material.",
@@ -5949,7 +5949,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Neurotransmitters",
-              "content_notes": "Neurotransmitters is centred on chemical messengers that influence postsynaptic activity.\n\nKEY POINTS\n• Dopamine\n• Serotonin\n• GABA\n• Glutamate\n• Acetylcholine\n\nDISTINCTION / CAUTION\nNo single neurotransmitter causes one behavior alone.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Neurotransmitters is centred on chemical messengers that influence postsynaptic activity.\n\nKEY POINTS\n• Dopamine\n• Serotonin\n• GABA\n• Glutamate\n• Acetylcholine\n\nDISTINCTION / CAUTION\nNo single neurotransmitter causes one behavior alone.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -5959,7 +5959,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Neurotransmitters is centred on chemical messengers that influence postsynaptic activity.\n\nThe concept is best retained as a connected set of features:\n• Dopamine\n• Serotonin\n• GABA\n• Glutamate\n• Acetylcholine\n\nA useful exam distinction is this: No single neurotransmitter causes one behavior alone.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Neurotransmitters is centred on chemical messengers that influence postsynaptic activity.\n\nThe important features are:\n• Dopamine\n• Serotonin\n• GABA\n• Glutamate\n• Acetylcholine\n\nThe exam distinction is worth remembering: No single neurotransmitter causes one behavior alone.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Neurotransmitters”.",
                 "List the key points associated with “Neurotransmitters” in the uploaded study material.",
@@ -6004,7 +6004,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Central nervous system",
-              "content_notes": "Central nervous system is centred on brain and spinal cord as the major integrative center.\n\nKEY POINTS\n• Brain\n• Spinal cord\n• Integration\n\nDISTINCTION / CAUTION\nCNS is not the autonomic nervous system.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Central nervous system is centred on brain and spinal cord as the major integrative center.\n\nKEY POINTS\n• Brain\n• Spinal cord\n• Integration\n\nDISTINCTION / CAUTION\nCNS is not the autonomic nervous system.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6014,7 +6014,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Central nervous system is centred on brain and spinal cord as the major integrative center.\n\nThe concept is best retained as a connected set of features:\n• Brain\n• Spinal cord\n• Integration\n\nA useful exam distinction is this: CNS is not the autonomic nervous system.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Central nervous system is centred on brain and spinal cord as the major integrative center.\n\nThe important features are:\n• Brain\n• Spinal cord\n• Integration\n\nThe exam distinction is worth remembering: CNS is not the autonomic nervous system.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Central nervous system”.",
                 "List the key points associated with “Central nervous system” in the uploaded study material.",
@@ -6040,7 +6040,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Peripheral nervous system",
-              "content_notes": "Peripheral nervous system is centred on neural structures outside brain/spinal cord connecting CNS with the body.\n\nKEY POINTS\n• Somatic\n• Autonomic\n• Afferent/efferent\n\nDISTINCTION / CAUTION\nPNS includes voluntary and autonomic pathways.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Peripheral nervous system is centred on neural structures outside brain/spinal cord connecting CNS with the body.\n\nKEY POINTS\n• Somatic\n• Autonomic\n• Afferent/efferent\n\nDISTINCTION / CAUTION\nPNS includes voluntary and autonomic pathways.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6050,7 +6050,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Peripheral nervous system is centred on neural structures outside brain/spinal cord connecting CNS with the body.\n\nThe concept is best retained as a connected set of features:\n• Somatic\n• Autonomic\n• Afferent/efferent\n\nA useful exam distinction is this: PNS includes voluntary and autonomic pathways.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Peripheral nervous system is centred on neural structures outside brain/spinal cord connecting CNS with the body.\n\nThe important features are:\n• Somatic\n• Autonomic\n• Afferent/efferent\n\nThe exam distinction is worth remembering: PNS includes voluntary and autonomic pathways.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Peripheral nervous system”.",
                 "List the key points associated with “Peripheral nervous system” in the uploaded study material.",
@@ -6086,7 +6086,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.\n\nThe concept is best retained as a connected set of features:\n• CNS = brain and spinal cord.\n• PNS connects the CNS with sensory receptors and effectors.\n• Somatic functions involve skeletal-muscle control.\n• Autonomic functions regulate internal bodily processes.\n\nA useful exam distinction is this: CNS and PNS are structural divisions; sympathetic/parasympathetic are divisions within the autonomic branch of the PNS.\n\nSource grounding: PowerWithin Psychology — Unit 4 CNS/PNS; Ciccarelli & White 6e; Kaplan AP Psychology.",
+              "deep_learning": "The nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed.\n\nThe important features are:\n• CNS = brain and spinal cord.\n• PNS connects the CNS with sensory receptors and effectors.\n• Somatic functions involve skeletal-muscle control.\n• Autonomic functions regulate internal bodily processes.\n\nThe exam distinction is worth remembering: CNS and PNS are structural divisions; sympathetic/parasympathetic are divisions within the autonomic branch of the PNS.",
               "retrieval_questions": [
                 "State the source-based core idea of “Structure and functions”.",
                 "List the key source-supported points for “Structure and functions”.",
@@ -6128,7 +6128,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Neuroplasticity",
-              "content_notes": "Neuroplasticity is centred on capacity of nervous systems to change structure or function with experience, learning or injury.\n\nKEY POINTS\n• Synaptic change\n• Experience-dependent plasticity\n• Reorganization\n\nDISTINCTION / CAUTION\nPlasticity does not mean unlimited recovery.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Neuroplasticity is centred on capacity of nervous systems to change structure or function with experience, learning or injury.\n\nKEY POINTS\n• Synaptic change\n• Experience-dependent plasticity\n• Reorganization\n\nDISTINCTION / CAUTION\nPlasticity does not mean unlimited recovery.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6138,7 +6138,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Neuroplasticity is centred on capacity of nervous systems to change structure or function with experience, learning or injury.\n\nThe concept is best retained as a connected set of features:\n• Synaptic change\n• Experience-dependent plasticity\n• Reorganization\n\nA useful exam distinction is this: Plasticity does not mean unlimited recovery.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Neuroplasticity is centred on capacity of nervous systems to change structure or function with experience, learning or injury.\n\nThe important features are:\n• Synaptic change\n• Experience-dependent plasticity\n• Reorganization\n\nThe exam distinction is worth remembering: Plasticity does not mean unlimited recovery.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Neuroplasticity”.",
                 "List the key points associated with “Neuroplasticity” in the uploaded study material.",
@@ -6193,7 +6193,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Anatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.\n\nThe concept is best retained as a connected set of features:\n• The focus is neural structure and organization.\n• They are concerned with locating or describing anatomical structures.\n• The source classifies them under physiological-psychology research methods.\n• They differ from functional methods that focus on activity or responses.\n\nA useful exam distinction is this: Anatomical methods are about structure; they should not be treated as interchangeable with methods that record moment-to-moment neural activity.\n\nSource grounding: PowerWithin Psychology — Unit 4 Methods of Physiological Psychology.",
+              "deep_learning": "Anatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques.\n\nThe important features are:\n• The focus is neural structure and organization.\n• They are concerned with locating or describing anatomical structures.\n• The source classifies them under physiological-psychology research methods.\n• They differ from functional methods that focus on activity or responses.\n\nThe exam distinction is worth remembering: Anatomical methods are about structure; they should not be treated as interchangeable with methods that record moment-to-moment neural activity.",
               "retrieval_questions": [
                 "State the source-based core idea of “Anatomical methods”.",
                 "List the key source-supported points for “Anatomical methods”.",
@@ -6226,7 +6226,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Degeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.\n\nThe concept is best retained as a connected set of features:\n• They are used to study brain–behavior relationships.\n• Neural damage or degeneration provides information about function.\n• They are invasive research techniques.\n• Interpretation depends on linking the affected structure/pathway with behavioral change.\n\nA useful exam distinction is this: Evidence from degeneration is inferential; a behavioral change following damage does not mean the damaged area was the only structure involved.\n\nSource grounding: PowerWithin Psychology — Unit 4 Invasive Methods; Baron & Misra — physiological research methods.",
+              "deep_learning": "Degeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures.\n\nThe important features are:\n• They are used to study brain–behavior relationships.\n• Neural damage or degeneration provides information about function.\n• They are invasive research techniques.\n• Interpretation depends on linking the affected structure/pathway with behavioral change.\n\nThe exam distinction is worth remembering: Evidence from degeneration is inferential; a behavioral change following damage does not mean the damaged area was the only structure involved.",
               "retrieval_questions": [
                 "State the source-based core idea of “Degeneration techniques”.",
                 "List the key source-supported points for “Degeneration techniques”.",
@@ -6259,7 +6259,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Lesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.\n\nThe concept is best retained as a connected set of features:\n• A lesion is damage to neural tissue.\n• Behavioral changes after a lesion can provide functional evidence.\n• The method is invasive.\n• Interpretation requires attention to the exact location and extent of damage.\n\nA useful exam distinction is this: A lesion does not prove that a structure works alone; connected neural systems can also contribute to the observed effect.\n\nSource grounding: Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Lesion Techniques.",
+              "deep_learning": "Lesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions.\n\nThe important features are:\n• A lesion is damage to neural tissue.\n• Behavioral changes after a lesion can provide functional evidence.\n• The method is invasive.\n• Interpretation requires attention to the exact location and extent of damage.\n\nThe exam distinction is worth remembering: A lesion does not prove that a structure works alone; connected neural systems can also contribute to the observed effect.",
               "retrieval_questions": [
                 "State the source-based core idea of “Lesion techniques”.",
                 "List the key source-supported points for “Lesion techniques”.",
@@ -6292,7 +6292,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Chemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.\n\nThe concept is best retained as a connected set of features:\n• Chemical methods investigate neurochemical influences on behavior.\n• They may involve altering or examining chemical signaling.\n• They complement anatomical and electrophysiological methods.\n• Interpretation links chemical changes with neural or behavioral outcomes.\n\nA useful exam distinction is this: Chemical methods are not identical to recording electrical neural activity; they target a different level of biological explanation.\n\nSource grounding: PowerWithin Psychology — Unit 4 Methods of Physiological Psychology and biological basis of behavior.",
+              "deep_learning": "Chemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior.\n\nThe important features are:\n• Chemical methods investigate neurochemical influences on behavior.\n• They may involve altering or examining chemical signaling.\n• They complement anatomical and electrophysiological methods.\n• Interpretation links chemical changes with neural or behavioral outcomes.\n\nThe exam distinction is worth remembering: Chemical methods are not identical to recording electrical neural activity; they target a different level of biological explanation.",
               "retrieval_questions": [
                 "State the source-based core idea of “Chemical methods”.",
                 "List the key source-supported points for “Chemical methods”.",
@@ -6325,7 +6325,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Microelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.\n\nThe concept is best retained as a connected set of features:\n• Microelectrodes permit fine-grained neural recording.\n• They can link neural activity with stimuli or behavior.\n• The technique is invasive when electrodes are implanted.\n• It provides functional information rather than only anatomical description.\n\nA useful exam distinction is this: Microelectrode recording is a method for measuring neural activity; it should not be confused with lesioning, which changes tissue to study consequences.\n\nSource grounding: Baron & Misra — Methods of Physiological Psychology; PowerWithin Psychology — Microelectrode Studies.",
+              "deep_learning": "Microelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities.\n\nThe important features are:\n• Microelectrodes permit fine-grained neural recording.\n• They can link neural activity with stimuli or behavior.\n• The technique is invasive when electrodes are implanted.\n• It provides functional information rather than only anatomical description.\n\nThe exam distinction is worth remembering: Microelectrode recording is a method for measuring neural activity; it should not be confused with lesioning, which changes tissue to study consequences.",
               "retrieval_questions": [
                 "State the source-based core idea of “Microelectrode studies”.",
                 "List the key source-supported points for “Microelectrode studies”.",
@@ -6348,7 +6348,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "EEG",
-              "content_notes": "EEG is centred on recording of scalp electrical activity, especially useful for temporal dynamics.\n\nKEY POINTS\n• Electrodes\n• High temporal resolution\n• ERP applications\n\nDISTINCTION / CAUTION\nSpatial resolution is relatively limited.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "EEG is centred on recording of scalp electrical activity, especially useful for temporal dynamics.\n\nKEY POINTS\n• Electrodes\n• High temporal resolution\n• ERP applications\n\nDISTINCTION / CAUTION\nSpatial resolution is relatively limited.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6358,7 +6358,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "EEG is centred on recording of scalp electrical activity, especially useful for temporal dynamics.\n\nThe concept is best retained as a connected set of features:\n• Electrodes\n• High temporal resolution\n• ERP applications\n\nA useful exam distinction is this: Spatial resolution is relatively limited.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "EEG is centred on recording of scalp electrical activity, especially useful for temporal dynamics.\n\nThe important features are:\n• Electrodes\n• High temporal resolution\n• ERP applications\n\nThe exam distinction is worth remembering: Spatial resolution is relatively limited.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “EEG”.",
                 "List the key points associated with “EEG” in the uploaded study material.",
@@ -6394,7 +6394,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Scanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.\n\nThe concept is best retained as a connected set of features:\n• Scanning methods are categorized as non-invasive in the source.\n• They allow researchers to examine brain-related structure or activity.\n• They differ from lesion or implanted-electrode techniques.\n• Interpretation depends on what the particular scanning method measures.\n\nA useful exam distinction is this: 'Scanning' is a broad category; different imaging techniques answer different structural or functional questions.\n\nSource grounding: PowerWithin Psychology — Unit 4 Methods of Physiological Psychology.",
+              "deep_learning": "Scanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods.\n\nThe important features are:\n• Scanning methods are categorized as non-invasive in the source.\n• They allow researchers to examine brain-related structure or activity.\n• They differ from lesion or implanted-electrode techniques.\n• Interpretation depends on what the particular scanning method measures.\n\nThe exam distinction is worth remembering: 'Scanning' is a broad category; different imaging techniques answer different structural or functional questions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Scanning methods”.",
                 "List the key source-supported points for “Scanning methods”.",
@@ -6446,7 +6446,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.\n\nThe concept is best retained as a connected set of features:\n• Muscles execute movement in response to neural control.\n• Muscular activity is an important output of the nervous system.\n• Skeletal-muscle control is associated with somatic functions.\n• Muscular activity can be studied as a physiological correlate of behavior.\n\nA useful exam distinction is this: Muscular activity is an output system; it should not be confused with the glandular/endocrine system, which communicates through hormones.\n\nSource grounding: PowerWithin Psychology — Unit 4 Muscular and Glandular Systems; Ciccarelli & White.",
+              "deep_learning": "The muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action.\n\nThe important features are:\n• Muscles execute movement in response to neural control.\n• Muscular activity is an important output of the nervous system.\n• Skeletal-muscle control is associated with somatic functions.\n• Muscular activity can be studied as a physiological correlate of behavior.\n\nThe exam distinction is worth remembering: Muscular activity is an output system; it should not be confused with the glandular/endocrine system, which communicates through hormones.",
               "retrieval_questions": [
                 "State the source-based core idea of “Muscular system”.",
                 "List the key source-supported points for “Muscular system”.",
@@ -6480,7 +6480,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.\n\nThe concept is best retained as a connected set of features:\n• Endocrine glands release hormones into the bloodstream.\n• Hormones can influence behavior and physiological states.\n• The hypothalamus and pituitary are important regulators in the endocrine system.\n• Hormonal effects interact with nervous-system processes.\n\nA useful exam distinction is this: Hormones are chemical messengers; glands are structures that produce/release them. Do not use the terms as exact synonyms.\n\nSource grounding: PowerWithin Psychology — Unit 4 Glandular/Hormonal Regulation; Self-Teaching Guide and Kaplan.",
+              "deep_learning": "The glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation.\n\nThe important features are:\n• Endocrine glands release hormones into the bloodstream.\n• Hormones can influence behavior and physiological states.\n• The hypothalamus and pituitary are important regulators in the endocrine system.\n• Hormonal effects interact with nervous-system processes.\n\nThe exam distinction is worth remembering: Hormones are chemical messengers; glands are structures that produce/release them. Do not use the terms as exact synonyms.",
               "retrieval_questions": [
                 "State the source-based core idea of “Glandular system”.",
                 "List the key source-supported points for “Glandular system”.",
@@ -6514,7 +6514,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Hunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.\n\nThe concept is best retained as a connected set of features:\n• Hunger is linked to energy regulation and homeostasis.\n• The hypothalamus is involved in the regulation of hunger and related drives.\n• Internal physiological signals influence eating behavior.\n• Motivation is produced through interaction between bodily states and psychological processes.\n\nA useful exam distinction is this: Hunger is not explained only by an empty stomach; the source framework treats motivation as involving multiple physiological and psychological processes.\n\nSource grounding: Baron & Misra — Biological Bases of Motivation; PowerWithin Psychology — Hunger; Kaplan AP Psychology.",
+              "deep_learning": "Hunger is a biologically based motivational state that helps regulate energy intake. The uploaded sources link hunger with homeostatic regulation and hypothalamic processes. Baron & Misra discuss neural systems involved in monitoring bodily needs and the initiation of eating behavior.\n\nThe important features are:\n• Hunger is linked to energy regulation and homeostasis.\n• The hypothalamus is involved in the regulation of hunger and related drives.\n• Internal physiological signals influence eating behavior.\n• Motivation is produced through interaction between bodily states and psychological processes.\n\nThe exam distinction is worth remembering: Hunger is not explained only by an empty stomach; the source framework treats motivation as involving multiple physiological and psychological processes.",
               "retrieval_questions": [
                 "State the source-based core idea of “Hunger”.",
                 "List the key source-supported points for “Hunger”.",
@@ -6548,7 +6548,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Thirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.\n\nThe concept is best retained as a connected set of features:\n• Thirst helps maintain fluid balance.\n• Physiological changes provide signals related to drinking.\n• Hypothalamic mechanisms contribute to regulation.\n• Thirst, like hunger, illustrates homeostatic motivation.\n\nA useful exam distinction is this: Thirst is not simply a subjective feeling; it is linked to physiological regulation of fluid balance.\n\nSource grounding: PowerWithin Psychology — Unit 4 Biological Basis of Motivation; Baron & Misra; Kaplan AP Psychology.",
+              "deep_learning": "Thirst is a biologically based motivational state associated with regulation of body-fluid balance. The uploaded sources identify hypothalamic involvement in monitoring physiological needs and include thirst within the biological basis of motivation.\n\nThe important features are:\n• Thirst helps maintain fluid balance.\n• Physiological changes provide signals related to drinking.\n• Hypothalamic mechanisms contribute to regulation.\n• Thirst, like hunger, illustrates homeostatic motivation.\n\nThe exam distinction is worth remembering: Thirst is not simply a subjective feeling; it is linked to physiological regulation of fluid balance.",
               "retrieval_questions": [
                 "State the source-based core idea of “Thirst”.",
                 "List the key source-supported points for “Thirst”.",
@@ -6572,7 +6572,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Sleep",
-              "content_notes": "Sleep is centred on biologically regulated state with distinct stages and circadian/homeostatic regulation.\n\nKEY POINTS\n• Circadian rhythm\n• NREM/REM\n• Sleep pressure\n\nDISTINCTION / CAUTION\nREM and NREM are not interchangeable.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Sleep is centred on biologically regulated state with distinct stages and circadian/homeostatic regulation.\n\nKEY POINTS\n• Circadian rhythm\n• NREM/REM\n• Sleep pressure\n\nDISTINCTION / CAUTION\nREM and NREM are not interchangeable.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6582,7 +6582,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Sleep is centred on biologically regulated state with distinct stages and circadian/homeostatic regulation.\n\nThe concept is best retained as a connected set of features:\n• Circadian rhythm\n• NREM/REM\n• Sleep pressure\n\nA useful exam distinction is this: REM and NREM are not interchangeable.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Sleep is centred on biologically regulated state with distinct stages and circadian/homeostatic regulation.\n\nThe important features are:\n• Circadian rhythm\n• NREM/REM\n• Sleep pressure\n\nThe exam distinction is worth remembering: REM and NREM are not interchangeable.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Sleep”.",
                 "List the key points associated with “Sleep” in the uploaded study material.",
@@ -6619,7 +6619,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Sexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.\n\nThe concept is best retained as a connected set of features:\n• Sexual behavior has biological and hormonal influences.\n• Neural and endocrine systems interact in sexual motivation.\n• Psychological and social context also affects behavior.\n• The source treats sex as one component of biological motivation.\n\nA useful exam distinction is this: A biological basis does not imply that sexual behavior is determined only by biology; the source framework is broader than a single-factor explanation.\n\nSource grounding: PowerWithin Psychology — Unit 4 Biological Basis of Motivation and Hormonal Regulation of Behavior; Self-Teaching Guide.",
+              "deep_learning": "Sexual motivation has biological bases involving hormones, neural systems and reproductive processes, while psychological and social factors also influence sexual behavior. The uploaded NET material places sex with hunger, thirst and sleep under the biological basis of motivation.\n\nThe important features are:\n• Sexual behavior has biological and hormonal influences.\n• Neural and endocrine systems interact in sexual motivation.\n• Psychological and social context also affects behavior.\n• The source treats sex as one component of biological motivation.\n\nThe exam distinction is worth remembering: A biological basis does not imply that sexual behavior is determined only by biology; the source framework is broader than a single-factor explanation.",
               "retrieval_questions": [
                 "State the source-based core idea of “Sex”.",
                 "List the key source-supported points for “Sex”.",
@@ -6672,7 +6672,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.\n\nThe concept is best retained as a connected set of features:\n• The limbic system is associated with emotion and motivation.\n• The amygdala is especially important in fear and other emotional responses.\n• The hypothalamus contributes to motivated and physiological regulation.\n• Emotion involves distributed neural systems rather than one isolated structure.\n\nA useful exam distinction is this: Do not treat the limbic system as a single brain structure; it is a network/system of structures.\n\nSource grounding: PowerWithin Psychology — Unit 4 Biological Basis of Emotion; Baron & Misra; Kaplan AP Psychology.",
+              "deep_learning": "The limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes.\n\nThe important features are:\n• The limbic system is associated with emotion and motivation.\n• The amygdala is especially important in fear and other emotional responses.\n• The hypothalamus contributes to motivated and physiological regulation.\n• Emotion involves distributed neural systems rather than one isolated structure.\n\nThe exam distinction is worth remembering: Do not treat the limbic system as a single brain structure; it is a network/system of structures.",
               "retrieval_questions": [
                 "State the source-based core idea of “Limbic system”.",
                 "List the key source-supported points for “Limbic system”.",
@@ -6706,7 +6706,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Hormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.\n\nThe concept is best retained as a connected set of features:\n• Hormones are chemical messengers released by endocrine glands.\n• The endocrine system interacts with neural regulation.\n• Hypothalamic–pituitary processes are important in endocrine control.\n• Hormonal influences can affect motivation, emotion and other behaviors.\n\nA useful exam distinction is this: Hormonal regulation is one biological mechanism; it does not replace neural explanations of behavior.\n\nSource grounding: PowerWithin Psychology — Unit 4 Hormonal Regulation of Behavior; Self-Teaching Guide and Kaplan.",
+              "deep_learning": "Hormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior.\n\nThe important features are:\n• Hormones are chemical messengers released by endocrine glands.\n• The endocrine system interacts with neural regulation.\n• Hypothalamic–pituitary processes are important in endocrine control.\n• Hormonal influences can affect motivation, emotion and other behaviors.\n\nThe exam distinction is worth remembering: Hormonal regulation is one biological mechanism; it does not replace neural explanations of behavior.",
               "retrieval_questions": [
                 "State the source-based core idea of “Hormonal regulation of behavior”.",
                 "List the key source-supported points for “Hormonal regulation of behavior”.",
@@ -6759,7 +6759,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Chromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.\n\nThe concept is best retained as a connected set of features:\n• Chromosomes carry genetic information.\n• Anomalies can alter developmental processes.\n• Behavioral and cognitive effects depend on the specific anomaly.\n• Genetic explanations should distinguish biological contribution from environmental influence.\n\nA useful exam distinction is this: A chromosomal anomaly is a biological condition, not a complete explanation of an individual's psychological functioning.\n\nSource grounding: PowerWithin Psychology — Unit 4 Genetics and Behaviour.",
+              "deep_learning": "Chromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics.\n\nThe important features are:\n• Chromosomes carry genetic information.\n• Anomalies can alter developmental processes.\n• Behavioral and cognitive effects depend on the specific anomaly.\n• Genetic explanations should distinguish biological contribution from environmental influence.\n\nThe exam distinction is worth remembering: A chromosomal anomaly is a biological condition, not a complete explanation of an individual's psychological functioning.",
               "retrieval_questions": [
                 "State the source-based core idea of “Chromosomal anomalies”.",
                 "List the key source-supported points for “Chromosomal anomalies”.",
@@ -6792,7 +6792,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.\n\nThe concept is best retained as a connected set of features:\n• Nature refers broadly to inherited/genetic influences.\n• Nurture refers broadly to environmental and experiential influences.\n• Twin and adoption studies help estimate relative contributions.\n• Heritability concerns variation within a population, not how fixed a trait is in an individual.\n\nA useful exam distinction is this: Heritability does not mean that a trait is genetically predetermined or unchangeable.\n\nSource grounding: Baron & Misra — Heredity and Environment; PowerWithin Psychology — Nature-Nurture Controversy.",
+              "deep_learning": "The nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy.\n\nThe important features are:\n• Nature refers broadly to inherited/genetic influences.\n• Nurture refers broadly to environmental and experiential influences.\n• Twin and adoption studies help estimate relative contributions.\n• Heritability concerns variation within a population, not how fixed a trait is in an individual.\n\nThe exam distinction is worth remembering: Heritability does not mean that a trait is genetically predetermined or unchangeable.",
               "retrieval_questions": [
                 "State the source-based core idea of “Nature-Nurture controversy”.",
                 "List the key source-supported points for “Nature-Nurture controversy”.",
@@ -6815,7 +6815,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Twin studies",
-              "content_notes": "Twin studies is centred on comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.\n\nKEY POINTS\n• MZ vs DZ\n• Heritability\n• Environmental assumptions\n\nDISTINCTION / CAUTION\nHeritability is a population statistic, not an individual destiny.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Twin studies is centred on comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.\n\nKEY POINTS\n• MZ vs DZ\n• Heritability\n• Environmental assumptions\n\nDISTINCTION / CAUTION\nHeritability is a population statistic, not an individual destiny.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6825,7 +6825,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Twin studies is centred on comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.\n\nThe concept is best retained as a connected set of features:\n• MZ vs DZ\n• Heritability\n• Environmental assumptions\n\nA useful exam distinction is this: Heritability is a population statistic, not an individual destiny.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Twin studies is centred on comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions.\n\nThe important features are:\n• MZ vs DZ\n• Heritability\n• Environmental assumptions\n\nThe exam distinction is worth remembering: Heritability is a population statistic, not an individual destiny.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Twin studies”.",
                 "List the key points associated with “Twin studies” in the uploaded study material.",
@@ -6861,7 +6861,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Adoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.\n\nThe concept is best retained as a connected set of features:\n• Adoption separates some aspects of biological and rearing environments.\n• Similarity with biological relatives can provide evidence relevant to genetic influence.\n• Similarity with adoptive relatives can provide evidence relevant to environmental influence.\n• Findings are interpreted statistically across groups rather than as absolute proof for one individual.\n\nA useful exam distinction is this: Adoption studies estimate contributions; they do not create perfectly controlled environments or eliminate all prenatal/shared influences.\n\nSource grounding: Baron & Misra — Heredity, Environment and Adoption Studies; PowerWithin Psychology — Nature-Nurture Controversy.",
+              "deep_learning": "Adoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions.\n\nThe important features are:\n• Adoption separates some aspects of biological and rearing environments.\n• Similarity with biological relatives can provide evidence relevant to genetic influence.\n• Similarity with adoptive relatives can provide evidence relevant to environmental influence.\n• Findings are interpreted statistically across groups rather than as absolute proof for one individual.\n\nThe exam distinction is worth remembering: Adoption studies estimate contributions; they do not create perfectly controlled environments or eliminate all prenatal/shared influences.",
               "retrieval_questions": [
                 "State the source-based core idea of “Adoption studies”.",
                 "List the key source-supported points for “Adoption studies”.",
@@ -6910,7 +6910,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Forms of attention",
-              "content_notes": "Forms of attention is centred on selective, sustained, divided and alternating forms of attention.\n\nKEY POINTS\n• Selective\n• Sustained\n• Divided\n• Alternating\n\nDISTINCTION / CAUTION\nDividing attention often reduces performance on demanding tasks.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Forms of attention is centred on selective, sustained, divided and alternating forms of attention.\n\nKEY POINTS\n• Selective\n• Sustained\n• Divided\n• Alternating\n\nDISTINCTION / CAUTION\nDividing attention often reduces performance on demanding tasks.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -6920,7 +6920,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Forms of attention is centred on selective, sustained, divided and alternating forms of attention.\n\nThe concept is best retained as a connected set of features:\n• Selective\n• Sustained\n• Divided\n• Alternating\n\nA useful exam distinction is this: Dividing attention often reduces performance on demanding tasks.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Forms of attention is centred on selective, sustained, divided and alternating forms of attention.\n\nThe important features are:\n• Selective\n• Sustained\n• Divided\n• Alternating\n\nThe exam distinction is worth remembering: Dividing attention often reduces performance on demanding tasks.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Forms of attention”.",
                 "List the key points associated with “Forms of attention” in the uploaded study material.",
@@ -6957,7 +6957,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Attention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.\n\nThe concept is best retained as a connected set of features:\n• Selective attention allocates limited processing resources.\n• Early and late selection models differ in where selection is proposed to occur.\n• The cocktail-party phenomenon illustrates shifts in attention to meaningful information.\n• Attention can influence what reaches conscious processing.\n\nA useful exam distinction is this: Attention models differ in the proposed stage and mechanism of selection; do not treat them as interchangeable.\n\nSource grounding: PowerWithin Psychology — Unit 5 Models of Attention; Baron & Misra — selective/divided attention.",
+              "deep_learning": "Attention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus.\n\nThe important features are:\n• Selective attention allocates limited processing resources.\n• Early and late selection models differ in where selection is proposed to occur.\n• The cocktail-party phenomenon illustrates shifts in attention to meaningful information.\n• Attention can influence what reaches conscious processing.\n\nThe exam distinction is worth remembering: Attention models differ in the proposed stage and mechanism of selection; do not treat them as interchangeable.",
               "retrieval_questions": [
                 "State the source-based core idea of “Models of attention”.",
                 "List the key source-supported points for “Models of attention”.",
@@ -7011,7 +7011,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Perception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.\n\nThe concept is best retained as a connected set of features:\n• Perception organizes sensory information.\n• Perceptual sets can bias how stimuli are interpreted.\n• Bottom-up processing begins with sensory features.\n• Top-down processing uses knowledge, expectations and concepts.\n\nA useful exam distinction is this: Perception is not a passive copy of sensory input; interpretation is shaped by processing and prior knowledge.\n\nSource grounding: PowerWithin Psychology — Unit 5 Perception; Ciccarelli & White 6e; Baron & Misra.",
+              "deep_learning": "Perception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation.\n\nThe important features are:\n• Perception organizes sensory information.\n• Perceptual sets can bias how stimuli are interpreted.\n• Bottom-up processing begins with sensory features.\n• Top-down processing uses knowledge, expectations and concepts.\n\nThe exam distinction is worth remembering: Perception is not a passive copy of sensory input; interpretation is shaped by processing and prior knowledge.",
               "retrieval_questions": [
                 "State the source-based core idea of “Perception”.",
                 "List the key source-supported points for “Perception”.",
@@ -7065,7 +7065,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.\n\nThe concept is best retained as a connected set of features:\n• Perception tends to form organized wholes.\n• Figure–ground segregation is a basic organizing process.\n• Similarity, proximity, closure and continuity are key Gestalt laws in the source.\n• The approach emphasizes organization rather than isolated sensory fragments.\n\nA useful exam distinction is this: Gestalt laws describe principles of perceptual organization; they are not separate sensory receptors or neural structures.\n\nSource grounding: PowerWithin Psychology — Gestalt Approaches; Baron & Misra; Ciccarelli & White.",
+              "deep_learning": "The Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms.\n\nThe important features are:\n• Perception tends to form organized wholes.\n• Figure–ground segregation is a basic organizing process.\n• Similarity, proximity, closure and continuity are key Gestalt laws in the source.\n• The approach emphasizes organization rather than isolated sensory fragments.\n\nThe exam distinction is worth remembering: Gestalt laws describe principles of perceptual organization; they are not separate sensory receptors or neural structures.",
               "retrieval_questions": [
                 "State the source-based core idea of “Gestalt approach”.",
                 "List the key source-supported points for “Gestalt approach”.",
@@ -7099,7 +7099,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.\n\nThe concept is best retained as a connected set of features:\n• It emphasizes sensory receptors and neural mechanisms.\n• Physical stimulation is transformed into neural information.\n• Perception depends on biological processing as well as organization and interpretation.\n• The approach complements rather than simply duplicates Gestalt explanations.\n\nA useful exam distinction is this: A physiological explanation focuses on mechanisms; a Gestalt explanation focuses on principles of perceptual organization.\n\nSource grounding: PowerWithin Psychology — Unit 5 Approaches to Perception and Unit 4 biological foundations.",
+              "deep_learning": "The physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing.\n\nThe important features are:\n• It emphasizes sensory receptors and neural mechanisms.\n• Physical stimulation is transformed into neural information.\n• Perception depends on biological processing as well as organization and interpretation.\n• The approach complements rather than simply duplicates Gestalt explanations.\n\nThe exam distinction is worth remembering: A physiological explanation focuses on mechanisms; a Gestalt explanation focuses on principles of perceptual organization.",
               "retrieval_questions": [
                 "State the source-based core idea of “Physiological approach”.",
                 "List the key source-supported points for “Physiological approach”.",
@@ -7153,7 +7153,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Gestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.\n\nThe concept is best retained as a connected set of features:\n• Grouping converts separate elements into organized patterns.\n• Figure and ground are differentiated within the perceptual field.\n• Similarity and proximity encourage grouping.\n• Closure and continuity support completion and coherent pattern formation.\n\nA useful exam distinction is this: Gestalt organization is broader than figure–ground alone; figure–ground is one organizing principle within the larger framework.\n\nSource grounding: PowerWithin Psychology — Gestalt Approaches; Baron & Misra — Perceptual Organization.",
+              "deep_learning": "Gestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous.\n\nThe important features are:\n• Grouping converts separate elements into organized patterns.\n• Figure and ground are differentiated within the perceptual field.\n• Similarity and proximity encourage grouping.\n• Closure and continuity support completion and coherent pattern formation.\n\nThe exam distinction is worth remembering: Gestalt organization is broader than figure–ground alone; figure–ground is one organizing principle within the larger framework.",
               "retrieval_questions": [
                 "State the source-based core idea of “Gestalt organization”.",
                 "List the key source-supported points for “Gestalt organization”.",
@@ -7187,7 +7187,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Figure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.\n\nThe concept is best retained as a connected set of features:\n• Figure is the focal, structured element.\n• Ground provides the background against which the figure is perceived.\n• The same sensory input can support different figure–ground interpretations.\n• Figure–ground organization helps illustrate the difference between sensation and perception.\n\nA useful exam distinction is this: Figure and ground are relational roles within a perceptual organization, not fixed physical properties of every stimulus.\n\nSource grounding: Baron & Misra — Figure and Ground; PowerWithin Psychology — Gestalt Approach.",
+              "deep_learning": "Figure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations.\n\nThe important features are:\n• Figure is the focal, structured element.\n• Ground provides the background against which the figure is perceived.\n• The same sensory input can support different figure–ground interpretations.\n• Figure–ground organization helps illustrate the difference between sensation and perception.\n\nThe exam distinction is worth remembering: Figure and ground are relational roles within a perceptual organization, not fixed physical properties of every stimulus.",
               "retrieval_questions": [
                 "State the source-based core idea of “Figure and ground”.",
                 "List the key source-supported points for “Figure and ground”.",
@@ -7221,7 +7221,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.\n\nThe concept is best retained as a connected set of features:\n• Similarity → similar elements are grouped.\n• Proximity → nearby elements are grouped.\n• Closure → incomplete figures are perceptually completed.\n• Continuity → elements are linked into continuous patterns.\n\nA useful exam distinction is this: The laws are organizing tendencies; they do not mean that every stimulus will always be perceived in exactly one way.\n\nSource grounding: PowerWithin Psychology — Gestalt Laws of Perceptual Organization.",
+              "deep_learning": "The source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns.\n\nThe important features are:\n• Similarity → similar elements are grouped.\n• Proximity → nearby elements are grouped.\n• Closure → incomplete figures are perceptually completed.\n• Continuity → elements are linked into continuous patterns.\n\nThe exam distinction is worth remembering: The laws are organizing tendencies; they do not mean that every stimulus will always be perceived in exactly one way.",
               "retrieval_questions": [
                 "State the source-based core idea of “Laws of organization”.",
                 "List the key source-supported points for “Laws of organization”.",
@@ -7275,7 +7275,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Size constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.\n\nThe concept is best retained as a connected set of features:\n• Retinal image size changes with distance.\n• Perceived physical size remains relatively stable.\n• Distance information helps support constancy.\n• Constancy allows stable recognition of familiar objects.\n\nA useful exam distinction is this: Size constancy concerns perceived physical size, not the literal size of the retinal image.\n\nSource grounding: Baron & Misra — Size Constancy; PowerWithin Psychology — Perceptual Constancies; Ciccarelli & White.",
+              "deep_learning": "Size constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size.\n\nThe important features are:\n• Retinal image size changes with distance.\n• Perceived physical size remains relatively stable.\n• Distance information helps support constancy.\n• Constancy allows stable recognition of familiar objects.\n\nThe exam distinction is worth remembering: Size constancy concerns perceived physical size, not the literal size of the retinal image.",
               "retrieval_questions": [
                 "State the source-based core idea of “Size constancy”.",
                 "List the key source-supported points for “Size constancy”.",
@@ -7309,7 +7309,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Shape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.\n\nThe concept is best retained as a connected set of features:\n• Viewing angle changes the retinal image.\n• The perceived object's shape remains relatively stable.\n• Prior knowledge and contextual information support stable recognition.\n• Shape constancy contributes to object recognition.\n\nA useful exam distinction is this: Shape constancy concerns stability of perceived form across viewing conditions; it is different from size constancy.\n\nSource grounding: Baron & Misra — Shape Constancy; PowerWithin Psychology — Perceptual Constancies.",
+              "deep_learning": "Shape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates.\n\nThe important features are:\n• Viewing angle changes the retinal image.\n• The perceived object's shape remains relatively stable.\n• Prior knowledge and contextual information support stable recognition.\n• Shape constancy contributes to object recognition.\n\nThe exam distinction is worth remembering: Shape constancy concerns stability of perceived form across viewing conditions; it is different from size constancy.",
               "retrieval_questions": [
                 "State the source-based core idea of “Shape constancy”.",
                 "List the key source-supported points for “Shape constancy”.",
@@ -7343,7 +7343,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Color or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.\n\nThe concept is best retained as a connected set of features:\n• Illumination can change the physical light reaching the eyes.\n• Perception can remain relatively stable across lighting conditions.\n• The surrounding context contributes to the perceived surface property.\n• Constancy supports stable recognition of objects.\n\nA useful exam distinction is this: The source explicitly develops brightness constancy; do not substitute unrelated claims about color vision mechanisms.\n\nSource grounding: PowerWithin Psychology — Perceptual Constancies; Baron & Misra — Brightness Constancy.",
+              "deep_learning": "Color or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings.\n\nThe important features are:\n• Illumination can change the physical light reaching the eyes.\n• Perception can remain relatively stable across lighting conditions.\n• The surrounding context contributes to the perceived surface property.\n• Constancy supports stable recognition of objects.\n\nThe exam distinction is worth remembering: The source explicitly develops brightness constancy; do not substitute unrelated claims about color vision mechanisms.",
               "retrieval_questions": [
                 "State the source-based core idea of “Color constancy”.",
                 "List the key source-supported points for “Color constancy”.",
@@ -7367,7 +7367,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Illusions",
-              "content_notes": "Illusions is centred on systematic misperceptions in which an external stimulus is present but interpreted differently.\n\nKEY POINTS\n• Context effects\n• Organization\n• Depth cues\n\nDISTINCTION / CAUTION\nIllusion differs from hallucination because a stimulus is present.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Illusions is centred on systematic misperceptions in which an external stimulus is present but interpreted differently.\n\nKEY POINTS\n• Context effects\n• Organization\n• Depth cues\n\nDISTINCTION / CAUTION\nIllusion differs from hallucination because a stimulus is present.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7377,7 +7377,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Illusions is centred on systematic misperceptions in which an external stimulus is present but interpreted differently.\n\nThe concept is best retained as a connected set of features:\n• Context effects\n• Organization\n• Depth cues\n\nA useful exam distinction is this: Illusion differs from hallucination because a stimulus is present.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Illusions is centred on systematic misperceptions in which an external stimulus is present but interpreted differently.\n\nThe important features are:\n• Context effects\n• Organization\n• Depth cues\n\nThe exam distinction is worth remembering: Illusion differs from hallucination because a stimulus is present.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Illusions”.",
                 "List the key points associated with “Illusions” in the uploaded study material.",
@@ -7414,7 +7414,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Perception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.\n\nThe concept is best retained as a connected set of features:\n• Form perception organizes features into objects or patterns.\n• Gestalt grouping contributes to coherent form.\n• Bottom-up processing uses stimulus features.\n• Top-down processing uses schemas and expectations.\n\nA useful exam distinction is this: Form perception is not explained by a single Gestalt law; multiple organizing and interpretive processes contribute.\n\nSource grounding: PowerWithin Psychology — Perception of Form and Gestalt Approaches; Baron & Misra; Ciccarelli & White.",
+              "deep_learning": "Perception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing.\n\nThe important features are:\n• Form perception organizes features into objects or patterns.\n• Gestalt grouping contributes to coherent form.\n• Bottom-up processing uses stimulus features.\n• Top-down processing uses schemas and expectations.\n\nThe exam distinction is worth remembering: Form perception is not explained by a single Gestalt law; multiple organizing and interpretive processes contribute.",
               "retrieval_questions": [
                 "State the source-based core idea of “Perception of form”.",
                 "List the key source-supported points for “Perception of form”.",
@@ -7448,7 +7448,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Depth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.\n\nThe concept is best retained as a connected set of features:\n• Depth perception converts two-dimensional retinal information into three-dimensional experience.\n• Monocular cues can operate with one eye.\n• Binocular cues use information from both eyes.\n• Depth cues support judgments of distance and spatial arrangement.\n\nA useful exam distinction is this: Monocular and binocular cues are different sources of depth information; do not classify every depth cue as binocular.\n\nSource grounding: PowerWithin Psychology — Perception of Depth and Distance; Ciccarelli & White 6e.",
+              "deep_learning": "Depth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes.\n\nThe important features are:\n• Depth perception converts two-dimensional retinal information into three-dimensional experience.\n• Monocular cues can operate with one eye.\n• Binocular cues use information from both eyes.\n• Depth cues support judgments of distance and spatial arrangement.\n\nThe exam distinction is worth remembering: Monocular and binocular cues are different sources of depth information; do not classify every depth cue as binocular.",
               "retrieval_questions": [
                 "State the source-based core idea of “Perception of depth”.",
                 "List the key source-supported points for “Perception of depth”.",
@@ -7482,7 +7482,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Perception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.\n\nThe concept is best retained as a connected set of features:\n• Movement perception depends on changing visual information over time.\n• Apparent movement can occur without a physically moving object.\n• Phi phenomenon is a classic example of perceived movement.\n• Movement perception is part of the broader organization of visual information.\n\nA useful exam distinction is this: Apparent movement and actual physical movement are not the same phenomenon.\n\nSource grounding: PowerWithin Psychology — Perception of Form, Depth and Movement; REVISATHON Part 7 — Phi phenomenon.",
+              "deep_learning": "Perception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement.\n\nThe important features are:\n• Movement perception depends on changing visual information over time.\n• Apparent movement can occur without a physically moving object.\n• Phi phenomenon is a classic example of perceived movement.\n• Movement perception is part of the broader organization of visual information.\n\nThe exam distinction is worth remembering: Apparent movement and actual physical movement are not the same phenomenon.",
               "retrieval_questions": [
                 "State the source-based core idea of “Perception of movement”.",
                 "List the key source-supported points for “Perception of movement”.",
@@ -7536,7 +7536,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Motivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.\n\nThe concept is best retained as a connected set of features:\n• Perception is not completely independent of current needs and goals.\n• Motivational states can contribute to perceptual set.\n• The effect is interpretive rather than a change in the physical stimulus itself.\n• Motivation interacts with prior experience and expectations.\n\nA useful exam distinction is this: Motivation can bias perception, but this does not mean that motivation literally changes the external stimulus.\n\nSource grounding: PowerWithin Psychology — Role of Motivation and Learning in Perception.",
+              "deep_learning": "Motivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception.\n\nThe important features are:\n• Perception is not completely independent of current needs and goals.\n• Motivational states can contribute to perceptual set.\n• The effect is interpretive rather than a change in the physical stimulus itself.\n• Motivation interacts with prior experience and expectations.\n\nThe exam distinction is worth remembering: Motivation can bias perception, but this does not mean that motivation literally changes the external stimulus.",
               "retrieval_questions": [
                 "State the source-based core idea of “Motivation in perception”.",
                 "List the key source-supported points for “Motivation in perception”.",
@@ -7570,7 +7570,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Learning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.\n\nThe concept is best retained as a connected set of features:\n• Experience can improve recognition of familiar patterns.\n• Learned associations influence interpretation.\n• Schemas can guide top-down processing.\n• Perceptual learning can change how efficiently information is organized.\n\nA useful exam distinction is this: Learning influences interpretation and recognition; it does not eliminate the sensory input itself.\n\nSource grounding: PowerWithin Psychology — Role of Motivation and Learning in Perception; Baron & Misra; Ciccarelli & White.",
+              "deep_learning": "Learning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition.\n\nThe important features are:\n• Experience can improve recognition of familiar patterns.\n• Learned associations influence interpretation.\n• Schemas can guide top-down processing.\n• Perceptual learning can change how efficiently information is organized.\n\nThe exam distinction is worth remembering: Learning influences interpretation and recognition; it does not eliminate the sensory input itself.",
               "retrieval_questions": [
                 "State the source-based core idea of “Learning in perception”.",
                 "List the key source-supported points for “Learning in perception”.",
@@ -7614,7 +7614,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Assumptions of signal detection theory",
-              "content_notes": "Assumptions of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nKEY POINTS\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nDISTINCTION / CAUTION\nA liberal criterion can raise both hits and false alarms.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Assumptions of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nKEY POINTS\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nDISTINCTION / CAUTION\nA liberal criterion can raise both hits and false alarms.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7624,7 +7624,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Assumptions of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe concept is best retained as a connected set of features:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nA useful exam distinction is this: A liberal criterion can raise both hits and false alarms.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Assumptions of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe important features are:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nThe exam distinction is worth remembering: A liberal criterion can raise both hits and false alarms.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Assumptions of signal detection theory”.",
                 "List the key points associated with “Assumptions of signal detection theory” in the uploaded study material.",
@@ -7651,7 +7651,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Applications of signal detection theory",
-              "content_notes": "Applications of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nKEY POINTS\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nDISTINCTION / CAUTION\nA liberal criterion can raise both hits and false alarms.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Applications of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nKEY POINTS\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nDISTINCTION / CAUTION\nA liberal criterion can raise both hits and false alarms.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -7661,7 +7661,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Applications of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe concept is best retained as a connected set of features:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nA useful exam distinction is this: A liberal criterion can raise both hits and false alarms.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Applications of signal detection theory is centred on framework separating sensitivity to signals from decision criterion under uncertainty.\n\nThe important features are:\n• Hit\n• Miss\n• False alarm\n• Correct rejection\n\nThe exam distinction is worth remembering: A liberal criterion can raise both hits and false alarms.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Applications of signal detection theory”.",
                 "List the key points associated with “Applications of signal detection theory” in the uploaded study material.",
@@ -7719,7 +7719,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Subliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.\n\nThe concept is best retained as a connected set of features:\n• Subliminal refers to stimulation below reported conscious awareness.\n• It is different from ordinary conscious perception.\n• Evidence and interpretation require careful experimental control.\n• The source does not support treating subliminal messages as a universal form of behavior control.\n\nA useful exam distinction is this: Subliminal perception is not synonymous with signal detection; signal detection theory concerns how internal factors and criteria affect detection decisions.\n\nSource grounding: REVISATHON Part 5 — Subliminal Perception; Baron & Misra — Perception.",
+              "deep_learning": "Subliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing.\n\nThe important features are:\n• Subliminal refers to stimulation below reported conscious awareness.\n• It is different from ordinary conscious perception.\n• Evidence and interpretation require careful experimental control.\n• The source does not support treating subliminal messages as a universal form of behavior control.\n\nThe exam distinction is worth remembering: Subliminal perception is not synonymous with signal detection; signal detection theory concerns how internal factors and criteria affect detection decisions.",
               "retrieval_questions": [
                 "State the source-based core idea of “Subliminal perception”.",
                 "List the key source-supported points for “Subliminal perception”.",
@@ -7754,7 +7754,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.\n\nThe concept is best retained as a connected set of features:\n• Attention affects what information is processed.\n• Perceptual set and expectations influence interpretation.\n• Processing conditions determine what information reaches awareness.\n• Claims about subliminal influence require empirical support rather than assumption.\n\nA useful exam distinction is this: Do not treat every unconscious influence as evidence of a subliminal message effect.\n\nSource grounding: PowerWithin Psychology — Subliminal Perception and Information Processing; Baron & Misra — Perception.",
+              "deep_learning": "The uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences.\n\nThe important features are:\n• Attention affects what information is processed.\n• Perceptual set and expectations influence interpretation.\n• Processing conditions determine what information reaches awareness.\n• Claims about subliminal influence require empirical support rather than assumption.\n\nThe exam distinction is worth remembering: Do not treat every unconscious influence as evidence of a subliminal message effect.",
               "retrieval_questions": [
                 "State the source-based core idea of “Factors related to subliminal perception”.",
                 "List the key source-supported points for “Factors related to subliminal perception”.",
@@ -7789,7 +7789,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.\n\nThe concept is best retained as a connected set of features:\n• Perception involves active processing of information.\n• Bottom-up processing begins with stimulus features.\n• Top-down processing uses existing knowledge and expectations.\n• Schemas provide mental representations that help classify and identify input.\n\nA useful exam distinction is this: Bottom-up and top-down processing are complementary processes, not mutually exclusive explanations.\n\nSource grounding: PowerWithin Psychology — Information Processing Approach to Perception.",
+              "deep_learning": "The information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations.\n\nThe important features are:\n• Perception involves active processing of information.\n• Bottom-up processing begins with stimulus features.\n• Top-down processing uses existing knowledge and expectations.\n• Schemas provide mental representations that help classify and identify input.\n\nThe exam distinction is worth remembering: Bottom-up and top-down processing are complementary processes, not mutually exclusive explanations.",
               "retrieval_questions": [
                 "State the source-based core idea of “Information processing approach to perception”.",
                 "List the key source-supported points for “Information processing approach to perception”.",
@@ -7824,7 +7824,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Culture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.\n\nThe concept is best retained as a connected set of features:\n• Perception has a subjective and experience-sensitive component.\n• Cultural experience can shape perceptual expectations.\n• Cross-cultural differences do not mean that sensory systems are completely different.\n• The effect concerns interpretation and perceptual habits.\n\nA useful exam distinction is this: A cultural difference in perception should not be interpreted as proof that one culture has a fundamentally different sensory apparatus.\n\nSource grounding: Ciccarelli & White 6e — Perception and culture; PowerWithin Psychology — Culture and Perception.",
+              "deep_learning": "Culture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations.\n\nThe important features are:\n• Perception has a subjective and experience-sensitive component.\n• Cultural experience can shape perceptual expectations.\n• Cross-cultural differences do not mean that sensory systems are completely different.\n• The effect concerns interpretation and perceptual habits.\n\nThe exam distinction is worth remembering: A cultural difference in perception should not be interpreted as proof that one culture has a fundamentally different sensory apparatus.",
               "retrieval_questions": [
                 "State the source-based core idea of “Culture and perception”.",
                 "List the key source-supported points for “Culture and perception”.",
@@ -7859,7 +7859,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Perceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.\n\nThe concept is best retained as a connected set of features:\n• The topic concerns individual differences in perceptual organization or interpretation.\n• Perceptual style can interact with experience and context.\n• The source places it within advanced perception rather than basic sensation.\n• Detailed classification is limited in the supplied material.\n\nA useful exam distinction is this: Do not import an external classification system and present it as the source's own taxonomy.\n\nSource grounding: PowerWithin Psychology — Unit 5 Advanced Topics in Perception; outline-level coverage.",
+              "deep_learning": "Perceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract.\n\nThe important features are:\n• The topic concerns individual differences in perceptual organization or interpretation.\n• Perceptual style can interact with experience and context.\n• The source places it within advanced perception rather than basic sensation.\n• Detailed classification is limited in the supplied material.\n\nThe exam distinction is worth remembering: Do not import an external classification system and present it as the source's own taxonomy.",
               "retrieval_questions": [
                 "State the source-based core idea of “Perceptual styles”.",
                 "List the key source-supported points for “Perceptual styles”.",
@@ -7894,7 +7894,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Pattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.\n\nThe concept is best retained as a connected set of features:\n• Bottom-up recognition combines simpler stimulus features.\n• Top-down recognition uses prior knowledge and expectations.\n• Pattern recognition supports identification of letters, objects and familiar forms.\n• Both stimulus information and prior knowledge can contribute.\n\nA useful exam distinction is this: Pattern recognition is broader than simple feature detection; the key issue is how features are organized into meaningful patterns.\n\nSource grounding: Baron & Misra — Pattern Recognition; PowerWithin Psychology — Information Processing Approach.",
+              "deep_learning": "Pattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge.\n\nThe important features are:\n• Bottom-up recognition combines simpler stimulus features.\n• Top-down recognition uses prior knowledge and expectations.\n• Pattern recognition supports identification of letters, objects and familiar forms.\n• Both stimulus information and prior knowledge can contribute.\n\nThe exam distinction is worth remembering: Pattern recognition is broader than simple feature detection; the key issue is how features are organized into meaningful patterns.",
               "retrieval_questions": [
                 "State the source-based core idea of “Pattern recognition”.",
                 "List the key source-supported points for “Pattern recognition”.",
@@ -7929,7 +7929,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "The ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.\n\nThe concept is best retained as a connected set of features:\n• Perception is considered in relation to the organism's environment.\n• The approach emphasizes useful information available in real-world settings.\n• It differs from approaches that treat perception only as internal reconstruction.\n• Detailed source coverage for this node is limited.\n\nA useful exam distinction is this: Do not add a detailed Gibsonian taxonomy unless it is explicitly supported by the uploaded source set for this node.\n\nSource grounding: PowerWithin Psychology — Unit 5 Ecological Perspective on Perception; outline-level coverage.",
+              "deep_learning": "The ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract.\n\nThe important features are:\n• Perception is considered in relation to the organism's environment.\n• The approach emphasizes useful information available in real-world settings.\n• It differs from approaches that treat perception only as internal reconstruction.\n• Detailed source coverage for this node is limited.\n\nThe exam distinction is worth remembering: Do not add a detailed Gibsonian taxonomy unless it is explicitly supported by the uploaded source set for this node.",
               "retrieval_questions": [
                 "State the source-based core idea of “Ecological perspective on perception”.",
                 "List the key source-supported points for “Ecological perspective on perception”.",
@@ -7983,7 +7983,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Learning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.\n\nThe concept is best retained as a connected set of features:\n• Learning is linked to experience.\n• It produces relatively lasting change rather than a temporary state.\n• Different theories explain learning through different mechanisms.\n• Classical, instrumental and cognitive approaches are distinct traditions.\n\nA useful exam distinction is this: Temporary changes caused by fatigue, drugs or maturation are not automatically evidence of learning.\n\nSource grounding: Kaplan AP Psychology Prep Plus — Principles of Learning; PowerWithin Psychology — Unit 5 Learning Process.",
+              "deep_learning": "Learning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches.\n\nThe important features are:\n• Learning is linked to experience.\n• It produces relatively lasting change rather than a temporary state.\n• Different theories explain learning through different mechanisms.\n• Classical, instrumental and cognitive approaches are distinct traditions.\n\nThe exam distinction is worth remembering: Temporary changes caused by fatigue, drugs or maturation are not automatically evidence of learning.",
               "retrieval_questions": [
                 "State the source-based core idea of “Learning process”.",
                 "List the key source-supported points for “Learning process”.",
@@ -8027,7 +8027,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Classical conditioning procedure",
-              "content_notes": "Classical conditioning procedure is centred on learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.\n\nKEY POINTS\n• UCS/UCR\n• CS/CR\n• Acquisition\n\nDISTINCTION / CAUTION\nCS is learned; UCS naturally elicits the response.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Classical conditioning procedure is centred on learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.\n\nKEY POINTS\n• UCS/UCR\n• CS/CR\n• Acquisition\n\nDISTINCTION / CAUTION\nCS is learned; UCS naturally elicits the response.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8037,7 +8037,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Classical conditioning procedure is centred on learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.\n\nThe concept is best retained as a connected set of features:\n• UCS/UCR\n• CS/CR\n• Acquisition\n\nA useful exam distinction is this: CS is learned; UCS naturally elicits the response.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Classical conditioning procedure is centred on learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus.\n\nThe important features are:\n• UCS/UCR\n• CS/CR\n• Acquisition\n\nThe exam distinction is worth remembering: CS is learned; UCS naturally elicits the response.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Classical conditioning procedure”.",
                 "List the key points associated with “Classical conditioning procedure” in the uploaded study material.",
@@ -8064,7 +8064,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Classical conditioning phenomena",
-              "content_notes": "Classical conditioning phenomena is centred on acquisition, extinction, spontaneous recovery, generalization and discrimination.\n\nKEY POINTS\n• Acquisition\n• Extinction\n• Generalization\n• Discrimination\n\nDISTINCTION / CAUTION\nExtinction does not necessarily erase all learning.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Classical conditioning phenomena is centred on acquisition, extinction, spontaneous recovery, generalization and discrimination.\n\nKEY POINTS\n• Acquisition\n• Extinction\n• Generalization\n• Discrimination\n\nDISTINCTION / CAUTION\nExtinction does not necessarily erase all learning.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8074,7 +8074,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Classical conditioning phenomena is centred on acquisition, extinction, spontaneous recovery, generalization and discrimination.\n\nThe concept is best retained as a connected set of features:\n• Acquisition\n• Extinction\n• Generalization\n• Discrimination\n\nA useful exam distinction is this: Extinction does not necessarily erase all learning.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Classical conditioning phenomena is centred on acquisition, extinction, spontaneous recovery, generalization and discrimination.\n\nThe important features are:\n• Acquisition\n• Extinction\n• Generalization\n• Discrimination\n\nThe exam distinction is worth remembering: Extinction does not necessarily erase all learning.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Classical conditioning phenomena”.",
                 "List the key points associated with “Classical conditioning phenomena” in the uploaded study material.",
@@ -8111,7 +8111,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Related issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.\n\nThe concept is best retained as a connected set of features:\n• Acquisition is the development of a conditioned response.\n• Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus.\n• Generalization extends responding to similar stimuli.\n• Discrimination involves learning to respond differently to distinct stimuli; spontaneous recovery is the return of an extinguished response after a delay.\n\nA useful exam distinction is this: Extinction reduces a conditioned response but does not necessarily erase all underlying learning.\n\nSource grounding: Ciccarelli & White 6e — Classical Conditioning; Self-Teaching Guide — conditioning phenomena; PowerWithin Psychology.",
+              "deep_learning": "Related issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time.\n\nThe important features are:\n• Acquisition is the development of a conditioned response.\n• Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus.\n• Generalization extends responding to similar stimuli.\n• Discrimination involves learning to respond differently to distinct stimuli; spontaneous recovery is the return of an extinguished response after a delay.\n\nThe exam distinction is worth remembering: Extinction reduces a conditioned response but does not necessarily erase all underlying learning.",
               "retrieval_questions": [
                 "State the source-based core idea of “Related issues in classical conditioning”.",
                 "List the key source-supported points for “Related issues in classical conditioning”.",
@@ -8165,7 +8165,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Instrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.\n\nThe concept is best retained as a connected set of features:\n• Consequences influence future response frequency.\n• Extinction involves a decline when reinforcement is withheld.\n• Partial reinforcement can produce greater resistance to extinction.\n• Discriminative stimuli signal when a response is likely to be reinforced.\n\nA useful exam distinction is this: Reinforcement increases the likelihood of behavior; punishment decreases it. They are not defined by whether a stimulus is pleasant or unpleasant alone.\n\nSource grounding: Self-Teaching Guide — Operant Conditioning; Ciccarelli & White 6e — Operant Conditioning.",
+              "deep_learning": "Instrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction.\n\nThe important features are:\n• Consequences influence future response frequency.\n• Extinction involves a decline when reinforcement is withheld.\n• Partial reinforcement can produce greater resistance to extinction.\n• Discriminative stimuli signal when a response is likely to be reinforced.\n\nThe exam distinction is worth remembering: Reinforcement increases the likelihood of behavior; punishment decreases it. They are not defined by whether a stimulus is pleasant or unpleasant alone.",
               "retrieval_questions": [
                 "State the source-based core idea of “Instrumental learning phenomena”.",
                 "List the key source-supported points for “Instrumental learning phenomena”.",
@@ -8199,7 +8199,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Instrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.\n\nThe concept is best retained as a connected set of features:\n• Reinforcement strengthens behavior.\n• Shaping reinforces successive approximations to a target response.\n• Discriminative stimuli signal reinforcement contingencies.\n• Continuous and partial schedules create different patterns of behavior.\n\nA useful exam distinction is this: A paradigm describes the arrangement of responses and consequences; it is not simply another name for one reinforcement schedule.\n\nSource grounding: Ciccarelli & White 6e — Operant Conditioning; Self-Teaching Guide — Instrumental Conditioning.",
+              "deep_learning": "Instrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures.\n\nThe important features are:\n• Reinforcement strengthens behavior.\n• Shaping reinforces successive approximations to a target response.\n• Discriminative stimuli signal reinforcement contingencies.\n• Continuous and partial schedules create different patterns of behavior.\n\nThe exam distinction is worth remembering: A paradigm describes the arrangement of responses and consequences; it is not simply another name for one reinforcement schedule.",
               "retrieval_questions": [
                 "State the source-based core idea of “Instrumental learning paradigms”.",
                 "List the key source-supported points for “Instrumental learning paradigms”.",
@@ -8233,7 +8233,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Theoretical issues in instrumental learning should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Reinforcement is defined by its effect on behavior, not by whether a consequence is pleasant.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide • Baron & Misra",
+              "deep_learning": "Theoretical issues in instrumental learning should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Reinforcement is defined by its effect on behavior, not by whether a consequence is pleasant.",
               "retrieval_questions": [
                 "Define Theoretical issues in instrumental learning using the source terminology.",
                 "State the main mechanism or features of Theoretical issues in instrumental learning.",
@@ -8279,7 +8279,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Basic reinforcement variables",
-              "content_notes": "Basic reinforcement variables is centred on characteristics that can take different values and structure research designs.\n\nKEY POINTS\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nDISTINCTION / CAUTION\nConfounding is an uncontrolled alternative explanation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Basic reinforcement variables is centred on characteristics that can take different values and structure research designs.\n\nKEY POINTS\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nDISTINCTION / CAUTION\nConfounding is an uncontrolled alternative explanation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8289,7 +8289,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Basic reinforcement variables is centred on characteristics that can take different values and structure research designs.\n\nThe concept is best retained as a connected set of features:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nA useful exam distinction is this: Confounding is an uncontrolled alternative explanation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Basic reinforcement variables is centred on characteristics that can take different values and structure research designs.\n\nThe important features are:\n• Independent\n• Dependent\n• Extraneous\n• Control\n• Moderator/mediator\n\nThe exam distinction is worth remembering: Confounding is an uncontrolled alternative explanation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Basic reinforcement variables”.",
                 "List the key points associated with “Basic reinforcement variables” in the uploaded study material.",
@@ -8316,7 +8316,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Reinforcement schedules",
-              "content_notes": "Reinforcement schedules is centred on fixed/variable and ratio/interval schedules that determine when reinforcement occurs.\n\nKEY POINTS\n• FR\n• FI\n• VR\n• VI\n• Variable ratio often resistant to extinction\n\nDISTINCTION / CAUTION\nVariable ratio and variable interval are commonly confused.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Reinforcement schedules is centred on fixed/variable and ratio/interval schedules that determine when reinforcement occurs.\n\nKEY POINTS\n• FR\n• FI\n• VR\n• VI\n• Variable ratio often resistant to extinction\n\nDISTINCTION / CAUTION\nVariable ratio and variable interval are commonly confused.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8326,7 +8326,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: identify the research question, variables, design, measurement and interpretation, while keeping correlation, causation, reliability and validity distinct.",
-              "deep_learning": "Reinforcement schedules is centred on fixed/variable and ratio/interval schedules that determine when reinforcement occurs.\n\nThe concept is best retained as a connected set of features:\n• FR\n• FI\n• VR\n• VI\n• Variable ratio often resistant to extinction\n\nA useful exam distinction is this: Variable ratio and variable interval are commonly confused.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Reinforcement schedules is centred on fixed/variable and ratio/interval schedules that determine when reinforcement occurs.\n\nThe important features are:\n• FR\n• FI\n• VR\n• VI\n• Variable ratio often resistant to extinction\n\nThe exam distinction is worth remembering: Variable ratio and variable interval are commonly confused.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Reinforcement schedules”.",
                 "List the key points associated with “Reinforcement schedules” in the uploaded study material.",
@@ -8383,7 +8383,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a learning-based intervention, not simply advice or punishment.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a learning-based intervention, not simply advice or punishment.",
               "retrieval_questions": [
                 "Define Behavior modification using the source terminology.",
                 "State the main mechanism or features of Behavior modification.",
@@ -8418,7 +8418,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Applications of behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Map each application to its learning principle.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Applications of behavior modification should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Map each application to its learning principle.",
               "retrieval_questions": [
                 "Define Applications of behavior modification using the source terminology.",
                 "State the main mechanism or features of Applications of behavior modification.",
@@ -8473,7 +8473,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Latent learning should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Latent learning is delayed expression of acquired knowledge, not absence of learning.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide • Baron & Misra",
+              "deep_learning": "Latent learning should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Latent learning is delayed expression of acquired knowledge, not absence of learning.",
               "retrieval_questions": [
                 "Define Latent learning using the source terminology.",
                 "State the main mechanism or features of Latent learning.",
@@ -8499,7 +8499,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Observational learning",
-              "content_notes": "Observational learning is centred on learning through models involving attention, retention, reproduction and motivation.\n\nKEY POINTS\n• Bandura\n• Modeling\n• Vicarious reinforcement\n\nDISTINCTION / CAUTION\nObservation is not merely imitation; cognition and motivation matter.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Observational learning is centred on learning through models involving attention, retention, reproduction and motivation.\n\nKEY POINTS\n• Bandura\n• Modeling\n• Vicarious reinforcement\n\nDISTINCTION / CAUTION\nObservation is not merely imitation; cognition and motivation matter.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8509,7 +8509,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Observational learning is centred on learning through models involving attention, retention, reproduction and motivation.\n\nThe concept is best retained as a connected set of features:\n• Bandura\n• Modeling\n• Vicarious reinforcement\n\nA useful exam distinction is this: Observation is not merely imitation; cognition and motivation matter.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Observational learning is centred on learning through models involving attention, retention, reproduction and motivation.\n\nThe important features are:\n• Bandura\n• Modeling\n• Vicarious reinforcement\n\nThe exam distinction is worth remembering: Observation is not merely imitation; cognition and motivation matter.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Observational learning”.",
                 "List the key points associated with “Observational learning” in the uploaded study material.",
@@ -8566,7 +8566,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Verbal learning should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a domain of learned material, not one single learning theory.\n\nSource grounding: • Baron & Misra • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Verbal learning should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is a domain of learned material, not one single learning theory.",
               "retrieval_questions": [
                 "Define Verbal learning using the source terminology.",
                 "State the main mechanism or features of Verbal learning.",
@@ -8592,7 +8592,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Discrimination learning",
-              "content_notes": "Discrimination learning is centred on differential treatment based on group membership or perceived group membership.\n\nKEY POINTS\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nDISTINCTION / CAUTION\nKeep the three concepts distinct.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Discrimination learning is centred on differential treatment based on group membership or perceived group membership.\n\nKEY POINTS\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nDISTINCTION / CAUTION\nKeep the three concepts distinct.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8602,7 +8602,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Discrimination learning is centred on differential treatment based on group membership or perceived group membership.\n\nThe concept is best retained as a connected set of features:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nA useful exam distinction is this: Keep the three concepts distinct.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Discrimination learning is centred on differential treatment based on group membership or perceived group membership.\n\nThe important features are:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nThe exam distinction is worth remembering: Keep the three concepts distinct.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Discrimination learning”.",
                 "List the key points associated with “Discrimination learning” in the uploaded study material.",
@@ -8659,7 +8659,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Neurophysiology of learning should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• A neural correlate does not by itself constitute the full psychological definition of learning.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Neurophysiology of learning should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• A neural correlate does not by itself constitute the full psychological definition of learning.",
               "retrieval_questions": [
                 "Define Neurophysiology of learning using the source terminology.",
                 "State the main mechanism or features of Neurophysiology of learning.",
@@ -8714,7 +8714,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Encoding should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Encoding concerns entry/transformation; storage concerns retention.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Encoding should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Encoding concerns entry/transformation; storage concerns retention.",
               "retrieval_questions": [
                 "Define Encoding using the source terminology.",
                 "State the main mechanism or features of Encoding.",
@@ -8749,7 +8749,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Storage should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Storage is the process; the memory systems are forms of retention in the model.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Storage should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Storage is the process; the memory systems are forms of retention in the model.",
               "retrieval_questions": [
                 "Define Storage using the source terminology.",
                 "State the main mechanism or features of Storage.",
@@ -8784,7 +8784,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Retrieval should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Retrieval failure is distinct from encoding failure.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Retrieval should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Retrieval failure is distinct from encoding failure.",
               "retrieval_questions": [
                 "Define Retrieval using the source terminology.",
                 "State the main mechanism or features of Retrieval.",
@@ -8839,7 +8839,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Sensory memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is brief sensory retention, not perception itself.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Sensory memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is brief sensory retention, not perception itself.",
               "retrieval_questions": [
                 "Define Sensory memory using the source terminology.",
                 "State the main mechanism or features of Sensory memory.",
@@ -8874,7 +8874,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Short-term memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Working memory is broader than the traditional passive short-term store.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Short-term memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Working memory is broader than the traditional passive short-term store.",
               "retrieval_questions": [
                 "Define Short-term memory using the source terminology.",
                 "State the main mechanism or features of Short-term memory.",
@@ -8899,7 +8899,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Working memory",
-              "content_notes": "Working memory is centred on limited system for temporarily holding and manipulating information.\n\nKEY POINTS\n• Central executive\n• Phonological loop\n• Visuospatial sketchpad\n• Episodic buffer\n\nDISTINCTION / CAUTION\nIt is more than passive storage.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Working memory is centred on limited system for temporarily holding and manipulating information.\n\nKEY POINTS\n• Central executive\n• Phonological loop\n• Visuospatial sketchpad\n• Episodic buffer\n\nDISTINCTION / CAUTION\nIt is more than passive storage.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -8909,7 +8909,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Working memory is centred on limited system for temporarily holding and manipulating information.\n\nThe concept is best retained as a connected set of features:\n• Central executive\n• Phonological loop\n• Visuospatial sketchpad\n• Episodic buffer\n\nA useful exam distinction is this: It is more than passive storage.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Working memory is centred on limited system for temporarily holding and manipulating information.\n\nThe important features are:\n• Central executive\n• Phonological loop\n• Visuospatial sketchpad\n• Episodic buffer\n\nThe exam distinction is worth remembering: It is more than passive storage.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Working memory”.",
                 "List the key points associated with “Working memory” in the uploaded study material.",
@@ -8946,7 +8946,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Long-term memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is not one undifferentiated store.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Long-term memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• It is not one undifferentiated store.",
               "retrieval_questions": [
                 "Define Long-term memory using the source terminology.",
                 "State the main mechanism or features of Long-term memory.",
@@ -8981,7 +8981,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Declarative memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Explicit memory concerns conscious accessibility, not short versus long duration.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Declarative memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Explicit memory concerns conscious accessibility, not short versus long duration.",
               "retrieval_questions": [
                 "Define Declarative memory using the source terminology.",
                 "State the main mechanism or features of Declarative memory.",
@@ -9016,7 +9016,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Episodic memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• The defining feature is personally experienced events.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Episodic memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• The defining feature is personally experienced events.",
               "retrieval_questions": [
                 "Define Episodic memory using the source terminology.",
                 "State the main mechanism or features of Episodic memory.",
@@ -9051,7 +9051,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Semantic memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Semantic differs from episodic even though both are declarative.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Semantic memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Semantic differs from episodic even though both are declarative.",
               "retrieval_questions": [
                 "Define Semantic memory using the source terminology.",
                 "State the main mechanism or features of Semantic memory.",
@@ -9086,7 +9086,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Procedural memory should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Procedural memory concerns how to perform, not what can be consciously declared.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Procedural memory should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Procedural memory concerns how to perform, not what can be consciously declared.",
               "retrieval_questions": [
                 "Define Procedural memory using the source terminology.",
                 "State the main mechanism or features of Procedural memory.",
@@ -9131,7 +9131,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Interference theory",
-              "content_notes": "Interference theory is centred on forgetting through competition between memories.\n\nKEY POINTS\n• Proactive: old → new\n• Retroactive: new → old\n\nDISTINCTION / CAUTION\nPRO = prior blocks new; RETRO = recent blocks old.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Interference theory is centred on forgetting through competition between memories.\n\nKEY POINTS\n• Proactive: old → new\n• Retroactive: new → old\n\nDISTINCTION / CAUTION\nPRO = prior blocks new; RETRO = recent blocks old.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -9141,7 +9141,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Interference theory is centred on forgetting through competition between memories.\n\nThe concept is best retained as a connected set of features:\n• Proactive: old → new\n• Retroactive: new → old\n\nA useful exam distinction is this: PRO = prior blocks new; RETRO = recent blocks old.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Interference theory is centred on forgetting through competition between memories.\n\nThe important features are:\n• Proactive: old → new\n• Retroactive: new → old\n\nThe exam distinction is worth remembering: PRO = prior blocks new; RETRO = recent blocks old.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Interference theory”.",
                 "List the key points associated with “Interference theory” in the uploaded study material.",
@@ -9178,7 +9178,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Retrieval failure should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not confuse it with encoding failure, where information was not adequately entered.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Retrieval failure should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not confuse it with encoding failure, where information was not adequately entered.",
               "retrieval_questions": [
                 "Define Retrieval failure using the source terminology.",
                 "State the main mechanism or features of Retrieval failure.",
@@ -9213,7 +9213,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Decay should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Decay emphasizes time/disuse; interference emphasizes competing information.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Decay should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Decay emphasizes time/disuse; interference emphasizes competing information.",
               "retrieval_questions": [
                 "Define Decay using the source terminology.",
                 "State the main mechanism or features of Decay.",
@@ -9248,7 +9248,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: organise the concept around encoding, storage and retrieval, then distinguish the relevant memory system or explanation of forgetting.",
-              "deep_learning": "Motivated forgetting should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not assume every forgotten memory is deliberately repressed.\n\nSource grounding: • Baron & Misra • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Motivated forgetting should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Core definition and mechanism\n• Closest distinction or comparison\n• Relevant learning/memory framework\n• DISTINCTION / CAUTION\n• Do not assume every forgotten memory is deliberately repressed.",
               "retrieval_questions": [
                 "Define Motivated forgetting using the source terminology.",
                 "State the main mechanism or features of Motivated forgetting.",
@@ -9346,7 +9346,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Associationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.\n\nThe concept is best retained as a connected set of features:\n• Thought can be analyzed in terms of associations.\n• Experience contributes to the formation of connections.\n• Associationist explanations emphasize learned links rather than holistic organization.\n• The perspective differs from Gestalt accounts that emphasize organized wholes.\n\nA useful exam distinction is this: Associationism and Gestalt psychology offer contrasting ways of explaining how mental elements become organized.\n\nSource grounding: PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; historical associationist framing in the major psychology texts.",
+              "deep_learning": "Associationism explains thought through connections among ideas or mental elements. In the historical development of psychology, it emphasizes how repeated experience can establish links between events or ideas, providing a precursor to later learning-based accounts of thought.\n\nThe important features are:\n• Thought can be analyzed in terms of associations.\n• Experience contributes to the formation of connections.\n• Associationist explanations emphasize learned links rather than holistic organization.\n• The perspective differs from Gestalt accounts that emphasize organized wholes.\n\nThe exam distinction is worth remembering: Associationism and Gestalt psychology offer contrasting ways of explaining how mental elements become organized.",
               "retrieval_questions": [
                 "State the source-based core idea of “Associationism”.",
                 "List the key source-supported points for “Associationism”.",
@@ -9381,7 +9381,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.\n\nThe concept is best retained as a connected set of features:\n• Organization of relationships is central.\n• Problem solving can involve restructuring rather than only gradual association.\n• The whole can have properties not captured by isolated elements.\n• The approach contrasts with purely associationist explanations.\n\nA useful exam distinction is this: Gestalt does not mean simply 'visual perception'; the organizing principle is also applied to thought and problem solving.\n\nSource grounding: PowerWithin Psychology — Unit 6 Perspectives on Thought Processes; Gestalt tradition in Ciccarelli & White.",
+              "deep_learning": "The Gestalt perspective treats thinking as involving organization and restructuring of relationships among elements. It is consistent with the broader Gestalt principle that psychological phenomena should be understood as organized wholes rather than isolated parts.\n\nThe important features are:\n• Organization of relationships is central.\n• Problem solving can involve restructuring rather than only gradual association.\n• The whole can have properties not captured by isolated elements.\n• The approach contrasts with purely associationist explanations.\n\nThe exam distinction is worth remembering: Gestalt does not mean simply 'visual perception'; the organizing principle is also applied to thought and problem solving.",
               "retrieval_questions": [
                 "State the source-based core idea of “Gestalt perspective”.",
                 "List the key source-supported points for “Gestalt perspective”.",
@@ -9416,7 +9416,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.\n\nThe concept is best retained as a connected set of features:\n• Mental activity is described in terms of information processing.\n• Attention selects or prioritizes information.\n• Memory provides stored representations used in thinking.\n• Problem solving and decision making involve multiple processing operations.\n\nA useful exam distinction is this: Information processing is a framework for describing cognitive operations; it is not one single experiment or one single cognitive ability.\n\nSource grounding: PowerWithin Psychology — Unit 6 Cognitive Psychology; Kaplan AP Psychology — cognition and problem solving.",
+              "deep_learning": "The information-processing perspective explains thought as a set of processes through which information is received, represented, stored, transformed and used. The uploaded material links this perspective with attention, memory, problem solving and decision making.\n\nThe important features are:\n• Mental activity is described in terms of information processing.\n• Attention selects or prioritizes information.\n• Memory provides stored representations used in thinking.\n• Problem solving and decision making involve multiple processing operations.\n\nThe exam distinction is worth remembering: Information processing is a framework for describing cognitive operations; it is not one single experiment or one single cognitive ability.",
               "retrieval_questions": [
                 "State the source-based core idea of “Information processing perspective”.",
                 "List the key source-supported points for “Information processing perspective”.",
@@ -9451,7 +9451,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.\n\nThe concept is best retained as a connected set of features:\n• Features such as color, shape or orientation can initially be processed separately.\n• Attention helps bind features into an integrated object representation.\n• The model connects selective attention with perceptual organization.\n• It is concerned with how separate features become a coherent percept.\n\nA useful exam distinction is this: Feature integration is about binding features into objects; it should not be confused with Gestalt grouping laws, although both address perceptual organization.\n\nSource grounding: PowerWithin Psychology — Unit 6 Feature Integration Model and Unit 5 Attention/Perception.",
+              "deep_learning": "The feature integration model explains how separate visual features can be combined into coherent object representations. The uploaded NET material explicitly lists the feature integration model within perspectives on thought processes, linking it with attention and perception.\n\nThe important features are:\n• Features such as color, shape or orientation can initially be processed separately.\n• Attention helps bind features into an integrated object representation.\n• The model connects selective attention with perceptual organization.\n• It is concerned with how separate features become a coherent percept.\n\nThe exam distinction is worth remembering: Feature integration is about binding features into objects; it should not be confused with Gestalt grouping laws, although both address perceptual organization.",
               "retrieval_questions": [
                 "State the source-based core idea of “Feature integration model”.",
                 "List the key source-supported points for “Feature integration model”.",
@@ -9504,7 +9504,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.\n\nThe concept is best retained as a connected set of features:\n• Concepts group related instances.\n• Categorization reduces the complexity of experience.\n• Rules or defining features can guide category membership.\n• Concepts support reasoning and problem solving.\n\nA useful exam distinction is this: A concept is a mental category; a rule is a criterion or strategy used to form or apply that category.\n\nSource grounding: PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White — concepts and problem solving.",
+              "deep_learning": "Concept formation involves organizing experiences into categories that allow people to identify, classify and reason about objects or events. The uploaded sources emphasize concepts as tools for organizing everyday experience and thinking.\n\nThe important features are:\n• Concepts group related instances.\n• Categorization reduces the complexity of experience.\n• Rules or defining features can guide category membership.\n• Concepts support reasoning and problem solving.\n\nThe exam distinction is worth remembering: A concept is a mental category; a rule is a criterion or strategy used to form or apply that category.",
               "retrieval_questions": [
                 "State the source-based core idea of “Rules of concept formation”.",
                 "List the key source-supported points for “Rules of concept formation”.",
@@ -9538,7 +9538,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.\n\nThe concept is best retained as a connected set of features:\n• Concepts allow efficient categorization.\n• Some concepts can be defined by clear rules or features.\n• Other categories may be organized around typical examples or prototypes.\n• Concepts guide recognition, inference and communication.\n\nA useful exam distinction is this: Do not assume every natural category has a perfectly sharp defining rule.\n\nSource grounding: Ciccarelli & White 6e — Concepts and Problem Solving; PowerWithin Psychology — Concept Formation.",
+              "deep_learning": "Concepts are mental categories used to organize experiences. The uploaded material treats concept formation as a central part of thinking and distinguishes different ways people can represent categories and relationships.\n\nThe important features are:\n• Concepts allow efficient categorization.\n• Some concepts can be defined by clear rules or features.\n• Other categories may be organized around typical examples or prototypes.\n• Concepts guide recognition, inference and communication.\n\nThe exam distinction is worth remembering: Do not assume every natural category has a perfectly sharp defining rule.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of concepts”.",
                 "List the key source-supported points for “Types of concepts”.",
@@ -9572,7 +9572,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.\n\nThe concept is best retained as a connected set of features:\n• People compare instances when forming categories.\n• Relevant similarities and differences help refine a concept.\n• Hypotheses about category membership can be tested against examples.\n• Experience can improve categorization efficiency.\n\nA useful exam distinction is this: A concept-formation strategy is a cognitive procedure; it is not itself the final concept.\n\nSource grounding: PowerWithin Psychology — Unit 6 Concept Formation and Reasoning; Ciccarelli & White.",
+              "deep_learning": "Concept formation can use strategies that compare examples, identify common features and test possible rules. The uploaded material places strategies of concept formation within the broader study of thinking and reasoning.\n\nThe important features are:\n• People compare instances when forming categories.\n• Relevant similarities and differences help refine a concept.\n• Hypotheses about category membership can be tested against examples.\n• Experience can improve categorization efficiency.\n\nThe exam distinction is worth remembering: A concept-formation strategy is a cognitive procedure; it is not itself the final concept.",
               "retrieval_questions": [
                 "State the source-based core idea of “Strategies of concept formation”.",
                 "List the key source-supported points for “Strategies of concept formation”.",
@@ -9606,7 +9606,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.\n\nThe concept is best retained as a connected set of features:\n• Concepts reduce cognitive complexity.\n• They support classification and inference.\n• They provide categories for communication and memory.\n• They are used in reasoning and problem solving.\n\nA useful exam distinction is this: Concepts organize information; they do not guarantee that every inference based on a category is correct.\n\nSource grounding: Ciccarelli & White 6e — Thinking and Concepts; PowerWithin Psychology — Role of Concepts in Thinking.",
+              "deep_learning": "Concepts make thinking more efficient by organizing large amounts of information into usable categories. The uploaded Ciccarelli & White material explicitly describes concepts as tools for organizing events of daily life, while the NET material links concepts with reasoning and problem solving.\n\nThe important features are:\n• Concepts reduce cognitive complexity.\n• They support classification and inference.\n• They provide categories for communication and memory.\n• They are used in reasoning and problem solving.\n\nThe exam distinction is worth remembering: Concepts organize information; they do not guarantee that every inference based on a category is correct.",
               "retrieval_questions": [
                 "State the source-based core idea of “Role of concepts in thinking”.",
                 "List the key source-supported points for “Role of concepts in thinking”.",
@@ -9640,7 +9640,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Reasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.\n\nThe concept is best retained as a connected set of features:\n• Inductive reasoning moves from particular observations toward broader conclusions.\n• Deductive reasoning applies general premises to specific conclusions.\n• Reasoning depends on the quality of the premises or evidence.\n• Different reasoning forms answer different kinds of questions.\n\nA useful exam distinction is this: Inductive conclusions are typically probabilistic, whereas deductive validity depends on the relationship between premises and conclusion.\n\nSource grounding: Psychology: A Self-Teaching Guide — inductive/deductive reasoning; PowerWithin Psychology — Types of Reasoning.",
+              "deep_learning": "Reasoning involves drawing conclusions from information. The uploaded Self-Teaching Guide identifies inductive and deductive reasoning among cognitive abilities, while the NET material lists types of reasoning as a core thinking topic.\n\nThe important features are:\n• Inductive reasoning moves from particular observations toward broader conclusions.\n• Deductive reasoning applies general premises to specific conclusions.\n• Reasoning depends on the quality of the premises or evidence.\n• Different reasoning forms answer different kinds of questions.\n\nThe exam distinction is worth remembering: Inductive conclusions are typically probabilistic, whereas deductive validity depends on the relationship between premises and conclusion.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of reasoning”.",
                 "List the key source-supported points for “Types of reasoning”.",
@@ -9694,7 +9694,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.\n\nThe concept is best retained as a connected set of features:\n• Language provides categories and symbols for representing experience.\n• The linguistic-relativity hypothesis proposes influence of language on thought.\n• Language and thought are related but not identical processes.\n• Cultural and linguistic experience can affect interpretation.\n\nA useful exam distinction is this: The source presents language influence as a theoretical position; it should not be turned into the unsupported claim that language completely determines thought.\n\nSource grounding: Baron & Misra — Language and Thought; PowerWithin Psychology — Language and Thought.",
+              "deep_learning": "The relationship between language and thought concerns whether language merely expresses thought or also influences how people perceive and organize experience. Baron & Misra discuss the linguistic-relativity position associated with Whorf, according to which the language available to a person can influence aspects of thinking.\n\nThe important features are:\n• Language provides categories and symbols for representing experience.\n• The linguistic-relativity hypothesis proposes influence of language on thought.\n• Language and thought are related but not identical processes.\n• Cultural and linguistic experience can affect interpretation.\n\nThe exam distinction is worth remembering: The source presents language influence as a theoretical position; it should not be turned into the unsupported claim that language completely determines thought.",
               "retrieval_questions": [
                 "State the source-based core idea of “Language and thought”.",
                 "List the key source-supported points for “Language and thought”.",
@@ -9747,7 +9747,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Problem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.\n\nThe concept is best retained as a connected set of features:\n• Trial-and-error tests possible responses.\n• Algorithms provide systematic step-by-step procedures.\n• Heuristics use efficient rules of thumb.\n• Different problems may require different strategies.\n\nA useful exam distinction is this: A heuristic is efficient but does not guarantee a correct solution; an algorithm is more systematic.\n\nSource grounding: Ciccarelli & White 6e — Problem Solving and Decision Making; PowerWithin Psychology — Problem Solving.",
+              "deep_learning": "Problem solving involves using thinking processes to move from a current state toward a goal state. Ciccarelli & White describe trial-and-error, algorithms and heuristics as tools for solving different types of problems.\n\nThe important features are:\n• Trial-and-error tests possible responses.\n• Algorithms provide systematic step-by-step procedures.\n• Heuristics use efficient rules of thumb.\n• Different problems may require different strategies.\n\nThe exam distinction is worth remembering: A heuristic is efficient but does not guarantee a correct solution; an algorithm is more systematic.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of problem solving”.",
                 "List the key source-supported points for “Types of problem solving”.",
@@ -9781,7 +9781,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Problem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.\n\nThe concept is best retained as a connected set of features:\n• Algorithms provide systematic procedures.\n• Heuristics reduce effort but can produce error.\n• Experts organize problem information differently from novices.\n• Practice can make parts of problem solving more automatic.\n\nA useful exam distinction is this: A strategy is a procedure for solving a problem, not the same thing as the final solution.\n\nSource grounding: Ciccarelli & White 6e; PowerWithin Psychology — Problem Solving and Decision Making.",
+              "deep_learning": "Problem-solving strategies are organized procedures used to reach a solution. The uploaded sources include algorithms, heuristics and expert strategies; PowerWithin also notes that practice can improve performance through automaticity and more efficient sequencing of steps.\n\nThe important features are:\n• Algorithms provide systematic procedures.\n• Heuristics reduce effort but can produce error.\n• Experts organize problem information differently from novices.\n• Practice can make parts of problem solving more automatic.\n\nThe exam distinction is worth remembering: A strategy is a procedure for solving a problem, not the same thing as the final solution.",
               "retrieval_questions": [
                 "State the source-based core idea of “Problem-solving strategies”.",
                 "List the key source-supported points for “Problem-solving strategies”.",
@@ -9815,7 +9815,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Obstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.\n\nThe concept is best retained as a connected set of features:\n• Poor problem representation can block solution search.\n• Fixation can keep a person tied to an ineffective approach.\n• False assumptions can restrict possible solutions.\n• Changing the representation can sometimes reveal a solution.\n\nA useful exam distinction is this: Difficulty solving a problem does not necessarily mean lack of ability; the representation and strategy can be the limiting factors.\n\nSource grounding: Ciccarelli & White 6e — Problems with Problem Solving and Decision Making; PowerWithin Psychology.",
+              "deep_learning": "Obstacles to problem solving arise when people represent a problem poorly, become fixed on an ineffective strategy or use assumptions that block restructuring. The uploaded cognitive material emphasizes that problem solving can be hindered by inappropriate strategies and limitations in how the problem is represented.\n\nThe important features are:\n• Poor problem representation can block solution search.\n• Fixation can keep a person tied to an ineffective approach.\n• False assumptions can restrict possible solutions.\n• Changing the representation can sometimes reveal a solution.\n\nThe exam distinction is worth remembering: Difficulty solving a problem does not necessarily mean lack of ability; the representation and strategy can be the limiting factors.",
               "retrieval_questions": [
                 "State the source-based core idea of “Obstacles to problem solving”.",
                 "List the key source-supported points for “Obstacles to problem solving”.",
@@ -9849,7 +9849,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Decision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.\n\nThe concept is best retained as a connected set of features:\n• Decision making requires alternatives and a choice.\n• Choices may be made under different levels of information and uncertainty.\n• Cognitive biases can affect decisions.\n• Decision-making models describe how alternatives are evaluated.\n\nA useful exam distinction is this: Decision making is not identical to problem solving: problem solving seeks a route to a goal, whereas decision making selects among alternatives.\n\nSource grounding: PowerWithin Psychology — Decision Making: Types and Models; Ciccarelli & White.",
+              "deep_learning": "Decision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic.\n\nThe important features are:\n• Decision making requires alternatives and a choice.\n• Choices may be made under different levels of information and uncertainty.\n• Cognitive biases can affect decisions.\n• Decision-making models describe how alternatives are evaluated.\n\nThe exam distinction is worth remembering: Decision making is not identical to problem solving: problem solving seeks a route to a goal, whereas decision making selects among alternatives.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of decision-making”.",
                 "List the key source-supported points for “Types of decision-making”.",
@@ -9883,7 +9883,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Decision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.\n\nThe concept is best retained as a connected set of features:\n• Models specify how alternatives are represented and evaluated.\n• Information availability affects choice.\n• People may use simplifying strategies rather than exhaustive analysis.\n• A model is useful for identifying the process assumed by a question.\n\nA useful exam distinction is this: Do not treat every choice as fully rational or exhaustive; cognitive psychology recognizes limits on information processing.\n\nSource grounding: PowerWithin Psychology — Decision Making: Types and Models; Kaplan AP Psychology — cognition and decision making.",
+              "deep_learning": "Decision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared.\n\nThe important features are:\n• Models specify how alternatives are represented and evaluated.\n• Information availability affects choice.\n• People may use simplifying strategies rather than exhaustive analysis.\n• A model is useful for identifying the process assumed by a question.\n\nThe exam distinction is worth remembering: Do not treat every choice as fully rational or exhaustive; cognitive psychology recognizes limits on information processing.",
               "retrieval_questions": [
                 "State the source-based core idea of “Decision-making models”.",
                 "List the key source-supported points for “Decision-making models”.",
@@ -9936,7 +9936,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Metacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.\n\nThe concept is best retained as a connected set of features:\n• It includes knowledge about one's own cognition.\n• It includes knowledge of strategies.\n• It includes knowing when and why to use a strategy.\n• It supports deliberate control of learning.\n\nA useful exam distinction is this: Knowing a strategy is metacognitive knowledge; actually planning, monitoring and changing its use belongs to metacognitive regulation.\n\nSource grounding: REVISATHON Part 1 — Metacognitive Knowledge; PowerWithin Psychology — Metacognition.",
+              "deep_learning": "Metacognitive knowledge is knowledge about one's own cognitive processes and the strategies that can support learning or problem solving. The uploaded Revisathon material describes awareness of one's strengths and weaknesses, knowledge of strategies and understanding when a strategy should be used.\n\nThe important features are:\n• It includes knowledge about one's own cognition.\n• It includes knowledge of strategies.\n• It includes knowing when and why to use a strategy.\n• It supports deliberate control of learning.\n\nThe exam distinction is worth remembering: Knowing a strategy is metacognitive knowledge; actually planning, monitoring and changing its use belongs to metacognitive regulation.",
               "retrieval_questions": [
                 "State the source-based core idea of “Metacognitive knowledge”.",
                 "List the key source-supported points for “Metacognitive knowledge”.",
@@ -9970,7 +9970,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Metacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.\n\nThe concept is best retained as a connected set of features:\n• Planning sets goals and chooses strategies.\n• Monitoring checks progress during the task.\n• Evaluation judges the effectiveness of the strategy or outcome.\n• Regulation can involve changing the strategy when needed.\n\nA useful exam distinction is this: Metacognitive regulation is action on cognition; it is more than simply knowing that a strategy exists.\n\nSource grounding: REVISATHON Part 1 — Metacognitive Regulation; PowerWithin Psychology — Metacognition.",
+              "deep_learning": "Metacognitive regulation involves actively controlling cognitive activity through planning, monitoring and evaluating. The uploaded Revisathon material explicitly identifies these processes and gives the example of setting learning goals, monitoring progress and adjusting strategies when progress is insufficient.\n\nThe important features are:\n• Planning sets goals and chooses strategies.\n• Monitoring checks progress during the task.\n• Evaluation judges the effectiveness of the strategy or outcome.\n• Regulation can involve changing the strategy when needed.\n\nThe exam distinction is worth remembering: Metacognitive regulation is action on cognition; it is more than simply knowing that a strategy exists.",
               "retrieval_questions": [
                 "State the source-based core idea of “Metacognitive regulation”.",
                 "List the key source-supported points for “Metacognitive regulation”.",
@@ -10013,7 +10013,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Spearman",
-              "content_notes": "Spearman is centred on two-factor theory of intelligence: general factor g plus specific factors s.\n\nKEY POINTS\n• G\n• S\n• Factor analysis\n\nDISTINCTION / CAUTION\nNot Gardner's multiple intelligences.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Spearman is centred on two-factor theory of intelligence: general factor g plus specific factors s.\n\nKEY POINTS\n• G\n• S\n• Factor analysis\n\nDISTINCTION / CAUTION\nNot Gardner's multiple intelligences.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10023,7 +10023,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Spearman is centred on two-factor theory of intelligence: general factor g plus specific factors s.\n\nThe concept is best retained as a connected set of features:\n• G\n• S\n• Factor analysis\n\nA useful exam distinction is this: Not Gardner's multiple intelligences.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Spearman is centred on two-factor theory of intelligence: general factor g plus specific factors s.\n\nThe important features are:\n• G\n• S\n• Factor analysis\n\nThe exam distinction is worth remembering: Not Gardner's multiple intelligences.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Spearman”.",
                 "List the key points associated with “Spearman” in the uploaded study material.",
@@ -10050,7 +10050,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Thurstone",
-              "content_notes": "Thurstone is centred on primary mental abilities approach to intelligence.\n\nKEY POINTS\n• Seven primary abilities\n• Verbal comprehension\n• Reasoning\n• Number/space\n\nDISTINCTION / CAUTION\nNot the same as Spearman's g.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Thurstone is centred on primary mental abilities approach to intelligence.\n\nKEY POINTS\n• Seven primary abilities\n• Verbal comprehension\n• Reasoning\n• Number/space\n\nDISTINCTION / CAUTION\nNot the same as Spearman's g.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10060,7 +10060,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Thurstone is centred on primary mental abilities approach to intelligence.\n\nThe concept is best retained as a connected set of features:\n• Seven primary abilities\n• Verbal comprehension\n• Reasoning\n• Number/space\n\nA useful exam distinction is this: Not the same as Spearman's g.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Thurstone is centred on primary mental abilities approach to intelligence.\n\nThe important features are:\n• Seven primary abilities\n• Verbal comprehension\n• Reasoning\n• Number/space\n\nThe exam distinction is worth remembering: Not the same as Spearman's g.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Thurstone”.",
                 "List the key points associated with “Thurstone” in the uploaded study material.",
@@ -10097,7 +10097,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.\n\nThe concept is best retained as a connected set of features:\n• Jensen is included in the NET intelligence-theory sequence.\n• The topic belongs to theories of intelligence rather than intelligence testing alone.\n• Use the source's specific model and terminology when revising Jensen.\n• The supplied extract is not sufficient for a longer source-specific treatment here.\n\nA useful exam distinction is this: Do not substitute Spearman's or Cattell's model for Jensen's simply because all are psychometric approaches.\n\nSource grounding: PowerWithin Psychology — Unit 6 Theories of Intelligence; outline-level Jensen coverage in the supplied extract.",
+              "deep_learning": "The uploaded NET material includes Jensen among major theories of intelligence, but the supplied extract gives limited standalone detail for this micro-topic. Retain Jensen as a named intelligence theorist and study his model from the source section rather than importing unrelated claims.\n\nThe important features are:\n• Jensen is included in the NET intelligence-theory sequence.\n• The topic belongs to theories of intelligence rather than intelligence testing alone.\n• Use the source's specific model and terminology when revising Jensen.\n• The supplied extract is not sufficient for a longer source-specific treatment here.\n\nThe exam distinction is worth remembering: Do not substitute Spearman's or Cattell's model for Jensen's simply because all are psychometric approaches.",
               "retrieval_questions": [
                 "State the source-based core idea of “Jensen”.",
                 "List the key source-supported points for “Jensen”.",
@@ -10121,7 +10121,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Cattell",
-              "content_notes": "Cattell is centred on distinction between fluid and crystallized intelligence.\n\nKEY POINTS\n• Fluid\n• Crystallized\n• Developmental change\n\nDISTINCTION / CAUTION\nFluid and crystallized abilities are related but distinct.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Cattell is centred on distinction between fluid and crystallized intelligence.\n\nKEY POINTS\n• Fluid\n• Crystallized\n• Developmental change\n\nDISTINCTION / CAUTION\nFluid and crystallized abilities are related but distinct.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10131,7 +10131,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Cattell is centred on distinction between fluid and crystallized intelligence.\n\nThe concept is best retained as a connected set of features:\n• Fluid\n• Crystallized\n• Developmental change\n\nA useful exam distinction is this: Fluid and crystallized abilities are related but distinct.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Cattell is centred on distinction between fluid and crystallized intelligence.\n\nThe important features are:\n• Fluid\n• Crystallized\n• Developmental change\n\nThe exam distinction is worth remembering: Fluid and crystallized abilities are related but distinct.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Cattell”.",
                 "List the key points associated with “Cattell” in the uploaded study material.",
@@ -10158,7 +10158,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Gardner",
-              "content_notes": "Gardner is centred on multiple intelligences framework proposing several relatively distinct capacities.\n\nKEY POINTS\n• Linguistic\n• Logical-mathematical\n• Spatial\n• Musical\n• Interpersonal/intrapersonal\n• Naturalistic\n\nDISTINCTION / CAUTION\nNot the same as g.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Gardner is centred on multiple intelligences framework proposing several relatively distinct capacities.\n\nKEY POINTS\n• Linguistic\n• Logical-mathematical\n• Spatial\n• Musical\n• Interpersonal/intrapersonal\n• Naturalistic\n\nDISTINCTION / CAUTION\nNot the same as g.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10168,7 +10168,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Gardner is centred on multiple intelligences framework proposing several relatively distinct capacities.\n\nThe concept is best retained as a connected set of features:\n• Linguistic\n• Logical-mathematical\n• Spatial\n• Musical\n• Interpersonal/intrapersonal\n• Naturalistic\n\nA useful exam distinction is this: Not the same as g.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Gardner is centred on multiple intelligences framework proposing several relatively distinct capacities.\n\nThe important features are:\n• Linguistic\n• Logical-mathematical\n• Spatial\n• Musical\n• Interpersonal/intrapersonal\n• Naturalistic\n\nThe exam distinction is worth remembering: Not the same as g.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Gardner”.",
                 "List the key points associated with “Gardner” in the uploaded study material.",
@@ -10195,7 +10195,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Stenberg",
-              "content_notes": "Stenberg is centred on syllabus spelling refers to Sternberg's triarchic theory.\n\nKEY POINTS\n• Analytical\n• Creative\n• Practical\n\nDISTINCTION / CAUTION\nDo not confuse with Gardner.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Stenberg is centred on syllabus spelling refers to Sternberg's triarchic theory.\n\nKEY POINTS\n• Analytical\n• Creative\n• Practical\n\nDISTINCTION / CAUTION\nDo not confuse with Gardner.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10205,7 +10205,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Stenberg is centred on syllabus spelling refers to Sternberg's triarchic theory.\n\nThe concept is best retained as a connected set of features:\n• Analytical\n• Creative\n• Practical\n\nA useful exam distinction is this: Do not confuse with Gardner.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Stenberg is centred on syllabus spelling refers to Sternberg's triarchic theory.\n\nThe important features are:\n• Analytical\n• Creative\n• Practical\n\nThe exam distinction is worth remembering: Do not confuse with Gardner.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Stenberg”.",
                 "List the key points associated with “Stenberg” in the uploaded study material.",
@@ -10232,7 +10232,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Goleman",
-              "content_notes": "Goleman is centred on emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.\n\nKEY POINTS\n• Self-awareness\n• Self-regulation\n• Empathy\n• Social skills\n\nDISTINCTION / CAUTION\nEmotional intelligence is not simply emotional expression.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Goleman is centred on emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.\n\nKEY POINTS\n• Self-awareness\n• Self-regulation\n• Empathy\n• Social skills\n\nDISTINCTION / CAUTION\nEmotional intelligence is not simply emotional expression.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10242,7 +10242,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Goleman is centred on emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.\n\nThe concept is best retained as a connected set of features:\n• Self-awareness\n• Self-regulation\n• Empathy\n• Social skills\n\nA useful exam distinction is this: Emotional intelligence is not simply emotional expression.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Goleman is centred on emotional intelligence framework involving awareness, regulation, motivation, empathy and social skills.\n\nThe important features are:\n• Self-awareness\n• Self-regulation\n• Empathy\n• Social skills\n\nThe exam distinction is worth remembering: Emotional intelligence is not simply emotional expression.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Goleman”.",
                 "List the key points associated with “Goleman” in the uploaded study material.",
@@ -10279,7 +10279,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Das, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.\n\nThe concept is best retained as a connected set of features:\n• P = Planning: goal setting, problem solving and monitoring.\n• A = Attention/Arousal: selective attention, resistance to distraction and vigilance.\n• S = Simultaneous: integrates elements into a whole.\n• S = Successive: integrates elements in a serial order.\n\nA useful exam distinction is this: PASS describes cognitive processes rather than reducing intelligence to one general score.\n\nSource grounding: Baron & Misra — PASS Theory of Intelligence (Das, Naglieri & Kirby); PowerWithin Psychology — Das, Kar & Parrila.",
+              "deep_learning": "Das, Kar and Parrila are associated with the PASS framework of cognitive processing: Planning, Attention–Arousal, Simultaneous processing and Successive processing. Baron & Misra explain that planning involves goal setting and monitoring, attention involves selective attention and vigilance, simultaneous processing integrates stimuli into wholes, and successive processing integrates information in a specific serial order.\n\nThe important features are:\n• P = Planning: goal setting, problem solving and monitoring.\n• A = Attention/Arousal: selective attention, resistance to distraction and vigilance.\n• S = Simultaneous: integrates elements into a whole.\n• S = Successive: integrates elements in a serial order.\n\nThe exam distinction is worth remembering: PASS describes cognitive processes rather than reducing intelligence to one general score.",
               "retrieval_questions": [
                 "State the source-based core idea of “Das, Kar & Parrila”.",
                 "List the key source-supported points for “Das, Kar & Parrila”.",
@@ -10322,7 +10322,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Torrance",
-              "content_notes": "Torrance is centred on creativity assessment emphasizing divergent production.\n\nKEY POINTS\n• Fluency\n• Flexibility\n• Originality\n• Elaboration\n\nDISTINCTION / CAUTION\nCreativity testing is not identical to IQ testing.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Torrance is centred on creativity assessment emphasizing divergent production.\n\nKEY POINTS\n• Fluency\n• Flexibility\n• Originality\n• Elaboration\n\nDISTINCTION / CAUTION\nCreativity testing is not identical to IQ testing.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10332,7 +10332,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Torrance is centred on creativity assessment emphasizing divergent production.\n\nThe concept is best retained as a connected set of features:\n• Fluency\n• Flexibility\n• Originality\n• Elaboration\n\nA useful exam distinction is this: Creativity testing is not identical to IQ testing.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Torrance is centred on creativity assessment emphasizing divergent production.\n\nThe important features are:\n• Fluency\n• Flexibility\n• Originality\n• Elaboration\n\nThe exam distinction is worth remembering: Creativity testing is not identical to IQ testing.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Torrance”.",
                 "List the key points associated with “Torrance” in the uploaded study material.",
@@ -10369,7 +10369,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Getzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.\n\nThe concept is best retained as a connected set of features:\n• Creativity and intelligence can be distinguished conceptually.\n• Getzels and Jackson compared groups using creativity and intelligence measures.\n• Their work is relevant to the debate about whether creativity is reducible to intelligence.\n• The source places their work within creativity theory/testing.\n\nA useful exam distinction is this: The existence of a creativity–intelligence relationship does not mean the constructs are identical.\n\nSource grounding: PowerWithin Psychology — Unit 6 Creativity; Getzels & Jackson material.",
+              "deep_learning": "Getzels and Jackson are associated with research examining the relationship between creativity and intelligence. The uploaded PowerWithin material describes comparisons between students identified through creativity tests and intelligence measures, illustrating that high creativity and high intelligence need not be identical groupings.\n\nThe important features are:\n• Creativity and intelligence can be distinguished conceptually.\n• Getzels and Jackson compared groups using creativity and intelligence measures.\n• Their work is relevant to the debate about whether creativity is reducible to intelligence.\n• The source places their work within creativity theory/testing.\n\nThe exam distinction is worth remembering: The existence of a creativity–intelligence relationship does not mean the constructs are identical.",
               "retrieval_questions": [
                 "State the source-based core idea of “Getzels & Jackson”.",
                 "List the key source-supported points for “Getzels & Jackson”.",
@@ -10403,7 +10403,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Guilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.\n\nThe concept is best retained as a connected set of features:\n• Guilford emphasized divergent production.\n• His Structure of Intellect model organizes abilities by operations, contents and products.\n• Divergent production concerns generating multiple possibilities.\n• Fluency, flexibility and originality are central creativity-related abilities in the source tradition.\n\nA useful exam distinction is this: Divergent production is not the same as convergent production, which focuses on arriving at a single appropriate answer.\n\nSource grounding: PowerWithin Psychology — Guilford's Model of Structure of Intellect and Creativity.",
+              "deep_learning": "Guilford developed a major framework for creativity and proposed the Structure of Intellect model. The uploaded PowerWithin material describes intellectual operations, contents and products, with divergent production among the operations. Creativity is associated with generating varied and original possibilities.\n\nThe important features are:\n• Guilford emphasized divergent production.\n• His Structure of Intellect model organizes abilities by operations, contents and products.\n• Divergent production concerns generating multiple possibilities.\n• Fluency, flexibility and originality are central creativity-related abilities in the source tradition.\n\nThe exam distinction is worth remembering: Divergent production is not the same as convergent production, which focuses on arriving at a single appropriate answer.",
               "retrieval_questions": [
                 "State the source-based core idea of “Guilford”.",
                 "List the key source-supported points for “Guilford”.",
@@ -10437,7 +10437,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Wallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.\n\nThe concept is best retained as a connected set of features:\n• Wallach and Kogan are associated with creativity assessment.\n• Their work is used in discussions distinguishing creativity from conventional intelligence.\n• Open-ended performance can be important when assessing creative production.\n• The source places them within the creativity-theory sequence.\n\nA useful exam distinction is this: Do not substitute Guilford's Structure of Intellect model for Wallach and Kogan's specific contribution.\n\nSource grounding: PowerWithin Psychology — Unit 6 Theories of Creativity; Wallach & Kogan coverage.",
+              "deep_learning": "Wallach and Kogan are included in the uploaded NET material among major creativity theorists. Their work is relevant to the distinction between creativity and conventional intelligence testing and to the use of more open-ended methods for assessing creative thinking.\n\nThe important features are:\n• Wallach and Kogan are associated with creativity assessment.\n• Their work is used in discussions distinguishing creativity from conventional intelligence.\n• Open-ended performance can be important when assessing creative production.\n• The source places them within the creativity-theory sequence.\n\nThe exam distinction is worth remembering: Do not substitute Guilford's Structure of Intellect model for Wallach and Kogan's specific contribution.",
               "retrieval_questions": [
                 "State the source-based core idea of “Wallach & Kogan”.",
                 "List the key source-supported points for “Wallach & Kogan”.",
@@ -10490,7 +10490,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.\n\nThe concept is best retained as a connected set of features:\n• Intelligence can contribute to creativity but is not sufficient by itself.\n• Creativity involves multiple interacting conditions.\n• Domain knowledge and intrinsic motivation can support creative performance.\n• Creativity can vary across domains.\n\nA useful exam distinction is this: Do not reduce creativity to IQ; the source explicitly presents a multi-factor/confluence account.\n\nSource grounding: Baron & Misra — Creativity: A Confluence Approach; PowerWithin Psychology — Relationship between Intelligence and Creativity.",
+              "deep_learning": "The uploaded sources treat intelligence and creativity as related but distinguishable constructs. Baron & Misra's confluence approach describes creativity as emerging from the convergence of intellectual abilities, thinking styles, personality traits, supportive environments, intrinsic motivation and knowledge. Their cited evidence found intellectual ability, thinking style and personality related to creativity, while creativity across domains was only moderately related.\n\nThe important features are:\n• Intelligence can contribute to creativity but is not sufficient by itself.\n• Creativity involves multiple interacting conditions.\n• Domain knowledge and intrinsic motivation can support creative performance.\n• Creativity can vary across domains.\n\nThe exam distinction is worth remembering: Do not reduce creativity to IQ; the source explicitly presents a multi-factor/confluence account.",
               "retrieval_questions": [
                 "State the source-based core idea of “Relationship between intelligence and creativity”.",
                 "List the key source-supported points for “Relationship between intelligence and creativity”.",
@@ -10550,7 +10550,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Biological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.\n\nThe concept is best retained as a connected set of features:\n• Genes contribute to individual differences.\n• Biological systems can influence temperament and behavior.\n• Twin/adoption evidence is relevant to behavioral-genetic questions.\n• Biological influence does not imply complete determinism.\n\nA useful exam distinction is this: Biological determinants are one part of personality explanation; they do not exclude learning, culture or social experience.\n\nSource grounding: Ciccarelli & White 6e — Biology of Personality and Behavioral Genetics; Baron & Misra.",
+              "deep_learning": "Biological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience.\n\nThe important features are:\n• Genes contribute to individual differences.\n• Biological systems can influence temperament and behavior.\n• Twin/adoption evidence is relevant to behavioral-genetic questions.\n• Biological influence does not imply complete determinism.\n\nThe exam distinction is worth remembering: Biological determinants are one part of personality explanation; they do not exclude learning, culture or social experience.",
               "retrieval_questions": [
                 "State the source-based core idea of “Biological determinants”.",
                 "List the key source-supported points for “Biological determinants”.",
@@ -10584,7 +10584,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Socio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.\n\nThe concept is best retained as a connected set of features:\n• Family and socialization provide important developmental contexts.\n• Culture shapes expectations, roles and patterns of behavior.\n• Social learning contributes to personality development.\n• Biological and sociocultural influences interact.\n\nA useful exam distinction is this: Socio-cultural influence is not equivalent to a single environmental event; it includes sustained social and cultural contexts.\n\nSource grounding: Ciccarelli & White 6e — Personality and Social Context; Baron & Misra — personality and culture.",
+              "deep_learning": "Socio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context.\n\nThe important features are:\n• Family and socialization provide important developmental contexts.\n• Culture shapes expectations, roles and patterns of behavior.\n• Social learning contributes to personality development.\n• Biological and sociocultural influences interact.\n\nThe exam distinction is worth remembering: Socio-cultural influence is not equivalent to a single environmental event; it includes sustained social and cultural contexts.",
               "retrieval_questions": [
                 "State the source-based core idea of “Socio-cultural determinants”.",
                 "List the key source-supported points for “Socio-cultural determinants”.",
@@ -10638,7 +10638,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "The psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.\n\nThe concept is best retained as a connected set of features:\n• Freud proposed conscious, preconscious and unconscious processes.\n• Id follows the pleasure principle.\n• Ego follows the reality principle.\n• Superego represents moral standards; defense mechanisms manage anxiety.\n\nA useful exam distinction is this: Psychoanalytic explanations emphasize unconscious conflict and development, unlike trait approaches that focus on measurable patterns of characteristics.\n\nSource grounding: Ciccarelli & White 6e — Psychodynamic Perspectives; Baron & Misra — Psychoanalytic approach.",
+              "deep_learning": "The psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety.\n\nThe important features are:\n• Freud proposed conscious, preconscious and unconscious processes.\n• Id follows the pleasure principle.\n• Ego follows the reality principle.\n• Superego represents moral standards; defense mechanisms manage anxiety.\n\nThe exam distinction is worth remembering: Psychoanalytic explanations emphasize unconscious conflict and development, unlike trait approaches that focus on measurable patterns of characteristics.",
               "retrieval_questions": [
                 "State the source-based core idea of “Psychoanalytical approach”.",
                 "List the key source-supported points for “Psychoanalytical approach”.",
@@ -10662,7 +10662,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Neo-Freudian approach",
-              "content_notes": "Neo-Freudian approach is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nKEY POINTS\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nDISTINCTION / CAUTION\nFreud is not the founder of behaviorism.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Neo-Freudian approach is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nKEY POINTS\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nDISTINCTION / CAUTION\nFreud is not the founder of behaviorism.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10672,7 +10672,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Neo-Freudian approach is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe concept is best retained as a connected set of features:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nA useful exam distinction is this: Freud is not the founder of behaviorism.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Neo-Freudian approach is centred on psychoanalysis and psychodynamic explanations centered on unconscious processes.\n\nThe important features are:\n• Id, ego, superego\n• Defense mechanisms\n• Psychosexual development\n\nThe exam distinction is worth remembering: Freud is not the founder of behaviorism.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Neo-Freudian approach”.",
                 "List the key points associated with “Neo-Freudian approach” in the uploaded study material.",
@@ -10709,7 +10709,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "The social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.\n\nThe concept is best retained as a connected set of features:\n• Behavior can be learned through observation and consequences.\n• Social context influences behavior.\n• Expectations and perceived consequences affect action.\n• Personality can reflect learned patterns rather than fixed traits alone.\n\nA useful exam distinction is this: Social learning is broader than simple conditioning because observational and cognitive processes also matter.\n\nSource grounding: Ciccarelli & White 6e — Behavioral and Social Cognitive View of Personality; Baron & Misra.",
+              "deep_learning": "The social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience.\n\nThe important features are:\n• Behavior can be learned through observation and consequences.\n• Social context influences behavior.\n• Expectations and perceived consequences affect action.\n• Personality can reflect learned patterns rather than fixed traits alone.\n\nThe exam distinction is worth remembering: Social learning is broader than simple conditioning because observational and cognitive processes also matter.",
               "retrieval_questions": [
                 "State the source-based core idea of “Social learning approach”.",
                 "List the key source-supported points for “Social learning approach”.",
@@ -10743,7 +10743,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Trait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.\n\nThe concept is best retained as a connected set of features:\n• Traits are relatively stable characteristics.\n• Type approaches classify people into broader categories.\n• Trait approaches allow dimensions and degrees of a characteristic.\n• Measurement and consistency across situations are important issues.\n\nA useful exam distinction is this: Trait stability is not absolute; Baron & Misra discuss the debate over person–situation consistency.\n\nSource grounding: Baron & Misra — Personality: Individuals, Unique and Relatively Stable Patterns; Ciccarelli & White — Trait Theories.",
+              "deep_learning": "Trait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies.\n\nThe important features are:\n• Traits are relatively stable characteristics.\n• Type approaches classify people into broader categories.\n• Trait approaches allow dimensions and degrees of a characteristic.\n• Measurement and consistency across situations are important issues.\n\nThe exam distinction is worth remembering: Trait stability is not absolute; Baron & Misra discuss the debate over person–situation consistency.",
               "retrieval_questions": [
                 "State the source-based core idea of “Trait and Type approach”.",
                 "List the key source-supported points for “Trait and Type approach”.",
@@ -10777,7 +10777,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "The cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.\n\nThe concept is best retained as a connected set of features:\n• Interpretation of events influences behavior.\n• Expectancies and beliefs affect action.\n• Cognitive patterns can show individual differences.\n• Personality is understood partly through information processing and meaning-making.\n\nA useful exam distinction is this: The cognitive approach is not the same as the information-processing account of basic perception; here the focus is personality-related cognition.\n\nSource grounding: Ciccarelli & White 6e — Behavioral/Social Cognitive and Cognitive influences on Personality; PowerWithin Psychology.",
+              "deep_learning": "The cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations.\n\nThe important features are:\n• Interpretation of events influences behavior.\n• Expectancies and beliefs affect action.\n• Cognitive patterns can show individual differences.\n• Personality is understood partly through information processing and meaning-making.\n\nThe exam distinction is worth remembering: The cognitive approach is not the same as the information-processing account of basic perception; here the focus is personality-related cognition.",
               "retrieval_questions": [
                 "State the source-based core idea of “Cognitive approach”.",
                 "List the key source-supported points for “Cognitive approach”.",
@@ -10811,7 +10811,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "The humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.\n\nThe concept is best retained as a connected set of features:\n• The person is viewed as an active agent.\n• Self-concept and subjective experience are important.\n• Growth and self-actualization are central themes.\n• The approach emphasizes meaning and personal potential.\n\nA useful exam distinction is this: Humanistic psychology does not define personality primarily through unconscious conflict or learned responses.\n\nSource grounding: Ciccarelli & White 6e — Humanistic Perspectives; Self-Teaching Guide — Humanistic Viewpoint and Self-Actualization.",
+              "deep_learning": "The humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth.\n\nThe important features are:\n• The person is viewed as an active agent.\n• Self-concept and subjective experience are important.\n• Growth and self-actualization are central themes.\n• The approach emphasizes meaning and personal potential.\n\nThe exam distinction is worth remembering: Humanistic psychology does not define personality primarily through unconscious conflict or learned responses.",
               "retrieval_questions": [
                 "State the source-based core idea of “Humanistic approach”.",
                 "List the key source-supported points for “Humanistic approach”.",
@@ -10845,7 +10845,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "The existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.\n\nThe concept is best retained as a connected set of features:\n• Meaning is a central concern.\n• Choice and responsibility are emphasized.\n• Human beings confront uncertainty and limitations.\n• Personal meaning can guide action and growth.\n\nA useful exam distinction is this: Existential psychology is not simply another trait model; it is concerned with meaning and lived existence.\n\nSource grounding: PowerWithin Psychology — Existential approaches and Frankl's Logotherapy; Self-Teaching Guide — Existentialism.",
+              "deep_learning": "The existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy.\n\nThe important features are:\n• Meaning is a central concern.\n• Choice and responsibility are emphasized.\n• Human beings confront uncertainty and limitations.\n• Personal meaning can guide action and growth.\n\nThe exam distinction is worth remembering: Existential psychology is not simply another trait model; it is concerned with meaning and lived existence.",
               "retrieval_questions": [
                 "State the source-based core idea of “Existential approach”.",
                 "List the key source-supported points for “Existential approach”.",
@@ -10869,7 +10869,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "Transpersonal psychology",
-              "content_notes": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nKEY POINTS\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nDISTINCTION / CAUTION\nIt is not identical to any single religion.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nKEY POINTS\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nDISTINCTION / CAUTION\nIt is not identical to any single religion.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10879,7 +10879,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe concept is best retained as a connected set of features:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nA useful exam distinction is this: It is not identical to any single religion.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Transpersonal psychology is centred on experiences beyond ordinary ego boundaries and self-transcendence.\n\nThe important features are:\n• Expanded consciousness\n• Spiritual/peak experience\n• Self-transcendence\n\nThe exam distinction is worth remembering: It is not identical to any single religion.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Transpersonal psychology”.",
                 "List the key points associated with “Transpersonal psychology” in the uploaded study material.",
@@ -10926,7 +10926,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Rotter's Locus of Control",
-              "content_notes": "Rotter's Locus of Control is centred on expectancy that outcomes are controlled internally or externally.\n\nKEY POINTS\n• Internal locus\n• External locus\n• Expectancy\n\nDISTINCTION / CAUTION\nInternal locus does not mean total control.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Rotter's Locus of Control is centred on expectancy that outcomes are controlled internally or externally.\n\nKEY POINTS\n• Internal locus\n• External locus\n• Expectancy\n\nDISTINCTION / CAUTION\nInternal locus does not mean total control.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -10936,7 +10936,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Rotter's Locus of Control is centred on expectancy that outcomes are controlled internally or externally.\n\nThe concept is best retained as a connected set of features:\n• Internal locus\n• External locus\n• Expectancy\n\nA useful exam distinction is this: Internal locus does not mean total control.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Rotter's Locus of Control is centred on expectancy that outcomes are controlled internally or externally.\n\nThe important features are:\n• Internal locus\n• External locus\n• Expectancy\n\nThe exam distinction is worth remembering: Internal locus does not mean total control.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Rotter's Locus of Control”.",
                 "List the key points associated with “Rotter's Locus of Control” in the uploaded study material.",
@@ -10973,7 +10973,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Seligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.\n\nThe concept is best retained as a connected set of features:\n• Explanations can differ in how permanent or temporary an outcome is seen.\n• Explanations can differ in how broadly an event is generalized.\n• Explanatory style is linked to expectations and coping.\n• The framework is relevant to learned optimism and pessimism.\n\nA useful exam distinction is this: Explanatory style concerns habitual interpretation of events; it is not identical to a global personality trait score.\n\nSource grounding: PowerWithin Psychology — Seligman/optimism material; Ciccarelli & White on optimism and stress.",
+              "deep_learning": "Seligman's explanatory-style framework concerns habitual ways of explaining positive and negative events. The broader optimism literature in the uploaded sources contrasts optimistic and pessimistic patterns in how people explain outcomes, with implications for persistence and coping.\n\nThe important features are:\n• Explanations can differ in how permanent or temporary an outcome is seen.\n• Explanations can differ in how broadly an event is generalized.\n• Explanatory style is linked to expectations and coping.\n• The framework is relevant to learned optimism and pessimism.\n\nThe exam distinction is worth remembering: Explanatory style concerns habitual interpretation of events; it is not identical to a global personality trait score.",
               "retrieval_questions": [
                 "State the source-based core idea of “Seligman's Explanatory styles”.",
                 "List the key source-supported points for “Seligman's Explanatory styles”.",
@@ -10997,7 +10997,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Kohlberg’s theory of Moral development",
-              "content_notes": "Kohlberg’s theory of Moral development is centred on stages of moral reasoning across pre-conventional, conventional and post-conventional levels.\n\nKEY POINTS\n• Three levels\n• Moral reasoning\n• Stage sequence\n\nDISTINCTION / CAUTION\nReasoning stage is not identical to behavior.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Kohlberg’s theory of Moral development is centred on stages of moral reasoning across pre-conventional, conventional and post-conventional levels.\n\nKEY POINTS\n• Three levels\n• Moral reasoning\n• Stage sequence\n\nDISTINCTION / CAUTION\nReasoning stage is not identical to behavior.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11007,7 +11007,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Kohlberg’s theory of Moral development is centred on stages of moral reasoning across pre-conventional, conventional and post-conventional levels.\n\nThe concept is best retained as a connected set of features:\n• Three levels\n• Moral reasoning\n• Stage sequence\n\nA useful exam distinction is this: Reasoning stage is not identical to behavior.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Kohlberg’s theory of Moral development is centred on stages of moral reasoning across pre-conventional, conventional and post-conventional levels.\n\nThe important features are:\n• Three levels\n• Moral reasoning\n• Stage sequence\n\nThe exam distinction is worth remembering: Reasoning stage is not identical to behavior.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Kohlberg’s theory of Moral development”.",
                 "List the key points associated with “Kohlberg’s theory of Moral development” in the uploaded study material.",
@@ -11064,7 +11064,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Instincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.\n\nThe concept is best retained as a connected set of features:\n• Instincts are biologically based.\n• They do not require the same kind of learning as acquired motives.\n• Evolutionary explanations can be used to understand adaptive behavior.\n• Human motivation is not explained by instincts alone in modern psychology.\n\nA useful exam distinction is this: Instinct and drive are related biological concepts but are not interchangeable: a drive is a motivational state, while an instinct refers to an innate behavioral tendency.\n\nSource grounding: Psychology: A Self-Teaching Guide — Motivation; PowerWithin Psychology — Approaches to Motivation.",
+              "deep_learning": "Instincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation.\n\nThe important features are:\n• Instincts are biologically based.\n• They do not require the same kind of learning as acquired motives.\n• Evolutionary explanations can be used to understand adaptive behavior.\n• Human motivation is not explained by instincts alone in modern psychology.\n\nThe exam distinction is worth remembering: Instinct and drive are related biological concepts but are not interchangeable: a drive is a motivational state, while an instinct refers to an innate behavioral tendency.",
               "retrieval_questions": [
                 "State the source-based core idea of “Instincts”.",
                 "List the key source-supported points for “Instincts”.",
@@ -11098,7 +11098,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Needs are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.\n\nThe concept is best retained as a connected set of features:\n• Physiological needs include states such as hunger and thirst.\n• Psychological needs can involve achievement, affiliation or power.\n• Needs can activate goal-directed behavior.\n• Different theories organize needs differently.\n\nA useful exam distinction is this: A need is not identical to a drive: a need refers to a requirement or deficiency, whereas a drive is the motivational state that can arise from it.\n\nSource grounding: Self-Teaching Guide — Motivation and Biological/Acquired Motives; Ciccarelli & White — Motivation.",
+              "deep_learning": "Needs are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories.\n\nThe important features are:\n• Physiological needs include states such as hunger and thirst.\n• Psychological needs can involve achievement, affiliation or power.\n• Needs can activate goal-directed behavior.\n• Different theories organize needs differently.\n\nThe exam distinction is worth remembering: A need is not identical to a drive: a need refers to a requirement or deficiency, whereas a drive is the motivational state that can arise from it.",
               "retrieval_questions": [
                 "State the source-based core idea of “Needs”.",
                 "List the key source-supported points for “Needs”.",
@@ -11132,7 +11132,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "A drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.\n\nThe concept is best retained as a connected set of features:\n• Drives can arise from physiological states.\n• Drive reduction theory links motivation with restoring homeostasis.\n• Drives energize and direct behavior.\n• Psychological motives can also influence behavior.\n\nA useful exam distinction is this: Drive is not the same as incentive: a drive originates in an internal motivational state, whereas an incentive is an external or learned attraction/reward.\n\nSource grounding: Psychology: A Self-Teaching Guide — Motivation; Ciccarelli & White — Drive-Reduction Theory.",
+              "deep_learning": "A drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst.\n\nThe important features are:\n• Drives can arise from physiological states.\n• Drive reduction theory links motivation with restoring homeostasis.\n• Drives energize and direct behavior.\n• Psychological motives can also influence behavior.\n\nThe exam distinction is worth remembering: Drive is not the same as incentive: a drive originates in an internal motivational state, whereas an incentive is an external or learned attraction/reward.",
               "retrieval_questions": [
                 "State the source-based core idea of “Drives”.",
                 "List the key source-supported points for “Drives”.",
@@ -11166,7 +11166,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Arousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.\n\nThe concept is best retained as a connected set of features:\n• People may seek an optimal level of stimulation.\n• Underarousal can motivate exploration or stimulation.\n• Overarousal can motivate reduction of stimulation.\n• Individual differences occur in desired arousal levels.\n\nA useful exam distinction is this: Arousal theory differs from drive reduction: it concerns an optimal level of stimulation rather than simply correcting a physiological deficit.\n\nSource grounding: Ciccarelli & White 6e — Arousal Theory; PowerWithin Psychology — Motivation.",
+              "deep_learning": "Arousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused.\n\nThe important features are:\n• People may seek an optimal level of stimulation.\n• Underarousal can motivate exploration or stimulation.\n• Overarousal can motivate reduction of stimulation.\n• Individual differences occur in desired arousal levels.\n\nThe exam distinction is worth remembering: Arousal theory differs from drive reduction: it concerns an optimal level of stimulation rather than simply correcting a physiological deficit.",
               "retrieval_questions": [
                 "State the source-based core idea of “Arousal”.",
                 "List the key source-supported points for “Arousal”.",
@@ -11200,7 +11200,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Incentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.\n\nThe concept is best retained as a connected set of features:\n• Incentives can attract behavior.\n• They may be learned rather than biologically necessary.\n• The same incentive can have different value for different people.\n• Incentives complement internal motivational states.\n\nA useful exam distinction is this: An incentive is not the same as a drive; incentives are external/learned attractions, whereas drives involve internal motivational states.\n\nSource grounding: Ciccarelli & White 6e — Incentive Approach; Self-Teaching Guide — acquired motives.",
+              "deep_learning": "Incentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong.\n\nThe important features are:\n• Incentives can attract behavior.\n• They may be learned rather than biologically necessary.\n• The same incentive can have different value for different people.\n• Incentives complement internal motivational states.\n\nThe exam distinction is worth remembering: An incentive is not the same as a drive; incentives are external/learned attractions, whereas drives involve internal motivational states.",
               "retrieval_questions": [
                 "State the source-based core idea of “Incentives”.",
                 "List the key source-supported points for “Incentives”.",
@@ -11234,7 +11234,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.\n\nThe concept is best retained as a connected set of features:\n• A need or motive initiates motivational activity.\n• Arousal energizes goal-directed behavior.\n• Behavior is directed toward an objective or incentive.\n• Goal attainment can reduce or change the motivational state.\n\nA useful exam distinction is this: The cycle is a conceptual model; not every human motive follows a simple linear sequence.\n\nSource grounding: Self-Teaching Guide — Motivation; PowerWithin Psychology — Basic Motivational Concepts.",
+              "deep_learning": "The motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action.\n\nThe important features are:\n• A need or motive initiates motivational activity.\n• Arousal energizes goal-directed behavior.\n• Behavior is directed toward an objective or incentive.\n• Goal attainment can reduce or change the motivational state.\n\nThe exam distinction is worth remembering: The cycle is a conceptual model; not every human motive follows a simple linear sequence.",
               "retrieval_questions": [
                 "State the source-based core idea of “Motivational cycle”.",
                 "List the key source-supported points for “Motivational cycle”.",
@@ -11288,7 +11288,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "The psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.\n\nThe concept is best retained as a connected set of features:\n• Unconscious motives can influence behavior.\n• Instinctual drives are central in Freud's model.\n• Conflict can create motivational tension.\n• Behavior may express motives indirectly.\n\nA useful exam distinction is this: Psychoanalytic motivation is not equivalent to conscious goal setting; unconscious processes are central to the approach.\n\nSource grounding: Self-Teaching Guide — Unconscious Motives and Psychoanalytic Theory; PowerWithin Psychology.",
+              "deep_learning": "The psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition.\n\nThe important features are:\n• Unconscious motives can influence behavior.\n• Instinctual drives are central in Freud's model.\n• Conflict can create motivational tension.\n• Behavior may express motives indirectly.\n\nThe exam distinction is worth remembering: Psychoanalytic motivation is not equivalent to conscious goal setting; unconscious processes are central to the approach.",
               "retrieval_questions": [
                 "State the source-based core idea of “Psychoanalytical approach”.",
                 "List the key source-supported points for “Psychoanalytical approach”.",
@@ -11322,7 +11322,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "The ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.\n\nThe concept is best retained as a connected set of features:\n• Behavior can have evolutionary functions.\n• Innate tendencies are considered in relation to environmental conditions.\n• The approach emphasizes adaptation and species-typical behavior.\n• It differs from purely learned accounts of motivation.\n\nA useful exam distinction is this: An evolutionary explanation is not a claim that every behavior is fixed; behavior can still be influenced by learning and context.\n\nSource grounding: PowerWithin Psychology — Ethological Approach to Motivation; evolutionary/biological material in Baron & Misra.",
+              "deep_learning": "The ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed.\n\nThe important features are:\n• Behavior can have evolutionary functions.\n• Innate tendencies are considered in relation to environmental conditions.\n• The approach emphasizes adaptation and species-typical behavior.\n• It differs from purely learned accounts of motivation.\n\nThe exam distinction is worth remembering: An evolutionary explanation is not a claim that every behavior is fixed; behavior can still be influenced by learning and context.",
               "retrieval_questions": [
                 "State the source-based core idea of “Ethological approach”.",
                 "List the key source-supported points for “Ethological approach”.",
@@ -11356,7 +11356,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "The S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.\n\nThe concept is best retained as a connected set of features:\n• Stimulus conditions can influence behavior.\n• Cognitive interpretation mediates responses.\n• Expectancies and goals can influence motivated action.\n• The approach goes beyond a simple stimulus-response chain.\n\nA useful exam distinction is this: The cognitive component is essential; do not reduce this approach to simple behaviorism.\n\nSource grounding: PowerWithin Psychology — S-R Cognitive Approach to Motivation; cognitive approaches to motivation.",
+              "deep_learning": "The S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli.\n\nThe important features are:\n• Stimulus conditions can influence behavior.\n• Cognitive interpretation mediates responses.\n• Expectancies and goals can influence motivated action.\n• The approach goes beyond a simple stimulus-response chain.\n\nThe exam distinction is worth remembering: The cognitive component is essential; do not reduce this approach to simple behaviorism.",
               "retrieval_questions": [
                 "State the source-based core idea of “S-R Cognitive approach”.",
                 "List the key source-supported points for “S-R Cognitive approach”.",
@@ -11390,7 +11390,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "The humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.\n\nThe concept is best retained as a connected set of features:\n• Growth and self-actualization are central.\n• Motivation includes psychological as well as biological needs.\n• Intrinsic motivation can arise from interest and mastery.\n• The person is treated as an active agent rather than a passive responder.\n\nA useful exam distinction is this: Humanistic motivation differs from drive reduction because the goal is not simply restoration of physiological balance.\n\nSource grounding: Self-Teaching Guide — Self-Actualization; Ciccarelli & White — Humanistic Motivation.",
+              "deep_learning": "The humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation.\n\nThe important features are:\n• Growth and self-actualization are central.\n• Motivation includes psychological as well as biological needs.\n• Intrinsic motivation can arise from interest and mastery.\n• The person is treated as an active agent rather than a passive responder.\n\nThe exam distinction is worth remembering: Humanistic motivation differs from drive reduction because the goal is not simply restoration of physiological balance.",
               "retrieval_questions": [
                 "State the source-based core idea of “Humanistic approach”.",
                 "List the key source-supported points for “Humanistic approach”.",
@@ -11444,7 +11444,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Exploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.\n\nThe concept is best retained as a connected set of features:\n• Exploration can increase stimulation or information.\n• It can occur without deprivation of a basic physiological need.\n• Novelty and curiosity can energize behavior.\n• Exploration has adaptive and learning-related value.\n\nA useful exam distinction is this: Exploratory behavior is not necessarily goal-free; it can serve information gathering and environmental mastery.\n\nSource grounding: Ciccarelli & White 6e — Arousal and Incentive Approaches; PowerWithin Psychology — Exploratory Behaviour.",
+              "deep_learning": "Exploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit.\n\nThe important features are:\n• Exploration can increase stimulation or information.\n• It can occur without deprivation of a basic physiological need.\n• Novelty and curiosity can energize behavior.\n• Exploration has adaptive and learning-related value.\n\nThe exam distinction is worth remembering: Exploratory behavior is not necessarily goal-free; it can serve information gathering and environmental mastery.",
               "retrieval_questions": [
                 "State the source-based core idea of “Exploratory behavior”.",
                 "List the key source-supported points for “Exploratory behavior”.",
@@ -11478,7 +11478,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Curiosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.\n\nThe concept is best retained as a connected set of features:\n• Curiosity can motivate information seeking.\n• It can be triggered by novelty or uncertainty.\n• Curiosity can support learning and exploration.\n• It can occur even without a physiological deficit.\n\nA useful exam distinction is this: Curiosity is a motivational process, not simply a personality label.\n\nSource grounding: Ciccarelli & White 6e — Stimulus Motives; PowerWithin Psychology — Curiosity.",
+              "deep_learning": "Curiosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior.\n\nThe important features are:\n• Curiosity can motivate information seeking.\n• It can be triggered by novelty or uncertainty.\n• Curiosity can support learning and exploration.\n• It can occur even without a physiological deficit.\n\nThe exam distinction is worth remembering: Curiosity is a motivational process, not simply a personality label.",
               "retrieval_questions": [
                 "State the source-based core idea of “Curiosity”.",
                 "List the key source-supported points for “Curiosity”.",
@@ -11532,7 +11532,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Zuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.\n\nThe concept is best retained as a connected set of features:\n• Sensation seeking reflects a preference for stimulation.\n• People differ in their desired arousal levels.\n• Novel or intense activities can satisfy higher stimulation needs.\n• The construct is linked with arousal theory.\n\nA useful exam distinction is this: Sensation seeking is an individual-difference construct, not simply a synonym for risk-taking; risk may be one possible expression.\n\nSource grounding: Ciccarelli & White 6e — Arousal Theory and Zuckerman's Sensation Seeking; Baron & Misra.",
+              "deep_learning": "Zuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average.\n\nThe important features are:\n• Sensation seeking reflects a preference for stimulation.\n• People differ in their desired arousal levels.\n• Novel or intense activities can satisfy higher stimulation needs.\n• The construct is linked with arousal theory.\n\nThe exam distinction is worth remembering: Sensation seeking is an individual-difference construct, not simply a synonym for risk-taking; risk may be one possible expression.",
               "retrieval_questions": [
                 "State the source-based core idea of “Zuckerman’s Sensation seeking”.",
                 "List the key source-supported points for “Zuckerman’s Sensation seeking”.",
@@ -11586,7 +11586,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Achievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.\n\nThe concept is best retained as a connected set of features:\n• Achievement involves striving for success or mastery.\n• Goals and standards influence achievement behavior.\n• Feedback can be important to achievement motivation.\n• It is distinct from affiliation and power motives.\n\nA useful exam distinction is this: Achievement motivation is not simply high intelligence; it concerns motivation toward accomplishment.\n\nSource grounding: Self-Teaching Guide — Acquired Motives; Ciccarelli & White — McClelland's Needs.",
+              "deep_learning": "Achievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach.\n\nThe important features are:\n• Achievement involves striving for success or mastery.\n• Goals and standards influence achievement behavior.\n• Feedback can be important to achievement motivation.\n• It is distinct from affiliation and power motives.\n\nThe exam distinction is worth remembering: Achievement motivation is not simply high intelligence; it concerns motivation toward accomplishment.",
               "retrieval_questions": [
                 "State the source-based core idea of “Achievement”.",
                 "List the key source-supported points for “Achievement”.",
@@ -11620,7 +11620,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Affiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.\n\nThe concept is best retained as a connected set of features:\n• Affiliation involves desire for interpersonal connection.\n• Acceptance and belonging can motivate behavior.\n• Affiliation can influence choices and persistence in social settings.\n• It differs from achievement and power motives.\n\nA useful exam distinction is this: Affiliation is about relationship and belonging needs, not merely social activity frequency.\n\nSource grounding: Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.",
+              "deep_learning": "Affiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs.\n\nThe important features are:\n• Affiliation involves desire for interpersonal connection.\n• Acceptance and belonging can motivate behavior.\n• Affiliation can influence choices and persistence in social settings.\n• It differs from achievement and power motives.\n\nThe exam distinction is worth remembering: Affiliation is about relationship and belonging needs, not merely social activity frequency.",
               "retrieval_questions": [
                 "State the source-based core idea of “Affiliation”.",
                 "List the key source-supported points for “Affiliation”.",
@@ -11654,7 +11654,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Power motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.\n\nThe concept is best retained as a connected set of features:\n• Power involves influence or impact.\n• It can be expressed in interpersonal or organizational contexts.\n• Power motivation is one of McClelland's acquired needs.\n• Its expression depends on context and behavior.\n\nA useful exam distinction is this: Power motivation is not identical to aggression; influence can be expressed through leadership, control or responsibility.\n\nSource grounding: Ciccarelli & White — McClelland's Needs; Self-Teaching Guide — Acquired Motives.",
+              "deep_learning": "Power motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs.\n\nThe important features are:\n• Power involves influence or impact.\n• It can be expressed in interpersonal or organizational contexts.\n• Power motivation is one of McClelland's acquired needs.\n• Its expression depends on context and behavior.\n\nThe exam distinction is worth remembering: Power motivation is not identical to aggression; influence can be expressed through leadership, control or responsibility.",
               "retrieval_questions": [
                 "State the source-based core idea of “Power”.",
                 "List the key source-supported points for “Power”.",
@@ -11708,7 +11708,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Motivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.\n\nThe concept is best retained as a connected set of features:\n• It concerns effective use and regulation of motivation.\n• Goal direction is central.\n• Self-regulation is closely related.\n• Detailed source-specific classification is limited in the supplied extract.\n\nA useful exam distinction is this: Do not substitute a general self-efficacy definition for motivational competence without source support.\n\nSource grounding: PowerWithin Psychology — Unit 7 Motivation, Motivational Competence; outline-level coverage.",
+              "deep_learning": "Motivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes.\n\nThe important features are:\n• It concerns effective use and regulation of motivation.\n• Goal direction is central.\n• Self-regulation is closely related.\n• Detailed source-specific classification is limited in the supplied extract.\n\nThe exam distinction is worth remembering: Do not substitute a general self-efficacy definition for motivational competence without source support.",
               "retrieval_questions": [
                 "State the source-based core idea of “Motivational competence”.",
                 "List the key source-supported points for “Motivational competence”.",
@@ -11763,7 +11763,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Self-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.\n\nThe concept is best retained as a connected set of features:\n• Goals provide standards for regulation.\n• Monitoring tracks progress and internal states.\n• Regulation can involve changing strategies or behavior.\n• Self-regulation supports persistence and goal pursuit.\n\nA useful exam distinction is this: Self-regulation is broader than willpower; it includes monitoring, evaluation and strategic adjustment.\n\nSource grounding: PowerWithin Psychology — Self-Regulation; REVISATHON Part 1 — Metacognitive Regulation; Ciccarelli & White.",
+              "deep_learning": "Self-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change.\n\nThe important features are:\n• Goals provide standards for regulation.\n• Monitoring tracks progress and internal states.\n• Regulation can involve changing strategies or behavior.\n• Self-regulation supports persistence and goal pursuit.\n\nThe exam distinction is worth remembering: Self-regulation is broader than willpower; it includes monitoring, evaluation and strategic adjustment.",
               "retrieval_questions": [
                 "State the source-based core idea of “Self-regulation”.",
                 "List the key source-supported points for “Self-regulation”.",
@@ -11807,7 +11807,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Flow",
-              "content_notes": "Flow is centred on deep absorption associated with clear goals, feedback and a balance between challenge and skill.\n\nKEY POINTS\n• Challenge-skill balance\n• Absorption\n• Clear goals\n• Feedback\n\nDISTINCTION / CAUTION\nFlow is not simply relaxation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Flow is centred on deep absorption associated with clear goals, feedback and a balance between challenge and skill.\n\nKEY POINTS\n• Challenge-skill balance\n• Absorption\n• Clear goals\n• Feedback\n\nDISTINCTION / CAUTION\nFlow is not simply relaxation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11817,7 +11817,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Flow is centred on deep absorption associated with clear goals, feedback and a balance between challenge and skill.\n\nThe concept is best retained as a connected set of features:\n• Challenge-skill balance\n• Absorption\n• Clear goals\n• Feedback\n\nA useful exam distinction is this: Flow is not simply relaxation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Flow is centred on deep absorption associated with clear goals, feedback and a balance between challenge and skill.\n\nThe important features are:\n• Challenge-skill balance\n• Absorption\n• Clear goals\n• Feedback\n\nThe exam distinction is worth remembering: Flow is not simply relaxation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Flow”.",
                 "List the key points associated with “Flow” in the uploaded study material.",
@@ -11874,7 +11874,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Emotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.\n\nThe concept is best retained as a connected set of features:\n• Emotion involves physiological arousal.\n• The autonomic nervous system contributes to bodily changes.\n• Brain structures such as the amygdala are involved in emotional processing.\n• Different theories assign different causal roles to physiological arousal.\n\nA useful exam distinction is this: Physiological arousal is one component of emotion, not a complete definition of emotion.\n\nSource grounding: Ciccarelli & White 6e — Emotion; PowerWithin Psychology — Physiological Correlates.",
+              "deep_learning": "Emotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience.\n\nThe important features are:\n• Emotion involves physiological arousal.\n• The autonomic nervous system contributes to bodily changes.\n• Brain structures such as the amygdala are involved in emotional processing.\n• Different theories assign different causal roles to physiological arousal.\n\nThe exam distinction is worth remembering: Physiological arousal is one component of emotion, not a complete definition of emotion.",
               "retrieval_questions": [
                 "State the source-based core idea of “Physiological correlates of emotion”.",
                 "List the key source-supported points for “Physiological correlates of emotion”.",
@@ -11918,7 +11918,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "James-Lange theory",
-              "content_notes": "James-Lange theory is centred on emotion involves perception of bodily changes following an emotional stimulus.\n\nKEY POINTS\n• Stimulus → bodily response → emotion\n• Peripheral feedback\n\nDISTINCTION / CAUTION\nDiffers from Cannon-Bard.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "James-Lange theory is centred on emotion involves perception of bodily changes following an emotional stimulus.\n\nKEY POINTS\n• Stimulus → bodily response → emotion\n• Peripheral feedback\n\nDISTINCTION / CAUTION\nDiffers from Cannon-Bard.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11928,7 +11928,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "James-Lange theory is centred on emotion involves perception of bodily changes following an emotional stimulus.\n\nThe concept is best retained as a connected set of features:\n• Stimulus → bodily response → emotion\n• Peripheral feedback\n\nA useful exam distinction is this: Differs from Cannon-Bard.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "James-Lange theory is centred on emotion involves perception of bodily changes following an emotional stimulus.\n\nThe important features are:\n• Stimulus → bodily response → emotion\n• Peripheral feedback\n\nThe exam distinction is worth remembering: Differs from Cannon-Bard.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “James-Lange theory”.",
                 "List the key points associated with “James-Lange theory” in the uploaded study material.",
@@ -11955,7 +11955,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Canon-Bard theory",
-              "content_notes": "Canon-Bard theory is centred on emotional experience and physiological arousal occur in parallel.\n\nKEY POINTS\n• Simultaneous arousal and feeling\n• Central processing\n\nDISTINCTION / CAUTION\nNot body-first.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Canon-Bard theory is centred on emotional experience and physiological arousal occur in parallel.\n\nKEY POINTS\n• Simultaneous arousal and feeling\n• Central processing\n\nDISTINCTION / CAUTION\nNot body-first.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -11965,7 +11965,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Canon-Bard theory is centred on emotional experience and physiological arousal occur in parallel.\n\nThe concept is best retained as a connected set of features:\n• Simultaneous arousal and feeling\n• Central processing\n\nA useful exam distinction is this: Not body-first.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Canon-Bard theory is centred on emotional experience and physiological arousal occur in parallel.\n\nThe important features are:\n• Simultaneous arousal and feeling\n• Central processing\n\nThe exam distinction is worth remembering: Not body-first.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Canon-Bard theory”.",
                 "List the key points associated with “Canon-Bard theory” in the uploaded study material.",
@@ -11992,7 +11992,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Schachter and Singer theory",
-              "content_notes": "Schachter and Singer theory is centred on emotion depends on physiological arousal plus cognitive interpretation/label.\n\nKEY POINTS\n• Arousal\n• Label\n• Context\n\nDISTINCTION / CAUTION\nArousal alone does not specify emotion.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Schachter and Singer theory is centred on emotion depends on physiological arousal plus cognitive interpretation/label.\n\nKEY POINTS\n• Arousal\n• Label\n• Context\n\nDISTINCTION / CAUTION\nArousal alone does not specify emotion.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12002,7 +12002,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Schachter and Singer theory is centred on emotion depends on physiological arousal plus cognitive interpretation/label.\n\nThe concept is best retained as a connected set of features:\n• Arousal\n• Label\n• Context\n\nA useful exam distinction is this: Arousal alone does not specify emotion.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Schachter and Singer theory is centred on emotion depends on physiological arousal plus cognitive interpretation/label.\n\nThe important features are:\n• Arousal\n• Label\n• Context\n\nThe exam distinction is worth remembering: Arousal alone does not specify emotion.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Schachter and Singer theory”.",
                 "List the key points associated with “Schachter and Singer theory” in the uploaded study material.",
@@ -12039,7 +12039,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Lazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.\n\nThe concept is best retained as a connected set of features:\n• Appraisal is central to emotion.\n• The interpretation of the stimulus comes before the emotional response in the model.\n• Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options.\n• Reappraisal can change how a situation is experienced.\n\nA useful exam distinction is this: Lazarus's theory is cognitive-mediational; it differs from James–Lange and Cannon–Bard in the proposed role and timing of appraisal.\n\nSource grounding: Ciccarelli & White 6e — Lazarus's Cognitive-Mediational Theory; PowerWithin Psychology — Lazarus Theory.",
+              "deep_learning": "Lazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response.\n\nThe important features are:\n• Appraisal is central to emotion.\n• The interpretation of the stimulus comes before the emotional response in the model.\n• Primary appraisal concerns significance/threat; secondary appraisal concerns coping resources/options.\n• Reappraisal can change how a situation is experienced.\n\nThe exam distinction is worth remembering: Lazarus's theory is cognitive-mediational; it differs from James–Lange and Cannon–Bard in the proposed role and timing of appraisal.",
               "retrieval_questions": [
                 "State the source-based core idea of “Lazarus theory”.",
                 "List the key source-supported points for “Lazarus theory”.",
@@ -12073,7 +12073,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "The uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.\n\nThe concept is best retained as a connected set of features:\n• Lindsley is included in the NET theory sequence.\n• The topic belongs to physiological theories of emotion.\n• Use the source's exact formulation when answering a theorist-matching question.\n• The supplied extract is not sufficient for a longer independent explanation.\n\nA useful exam distinction is this: Do not substitute the James–Lange or Cannon–Bard formulation for Lindsley's theory.\n\nSource grounding: PowerWithin Psychology — Unit 7 Theories of Emotion; outline-level Lindsley coverage.",
+              "deep_learning": "The uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation.\n\nThe important features are:\n• Lindsley is included in the NET theory sequence.\n• The topic belongs to physiological theories of emotion.\n• Use the source's exact formulation when answering a theorist-matching question.\n• The supplied extract is not sufficient for a longer independent explanation.\n\nThe exam distinction is worth remembering: Do not substitute the James–Lange or Cannon–Bard formulation for Lindsley's theory.",
               "retrieval_questions": [
                 "State the source-based core idea of “Lindsley theory”.",
                 "List the key source-supported points for “Lindsley theory”.",
@@ -12127,7 +12127,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Emotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.\n\nThe concept is best retained as a connected set of features:\n• Regulation can occur through changing interpretation or behavior.\n• Coping strategies can influence emotional responses.\n• Regulation does not mean eliminating all emotion.\n• Successful regulation depends on context and goals.\n\nA useful exam distinction is this: Emotion regulation is broader than suppression; it can involve reappraisal, coping and other strategies.\n\nSource grounding: PowerWithin Psychology — Emotion Regulation; Ciccarelli & White — Coping and cognitive reappraisal.",
+              "deep_learning": "Emotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation.\n\nThe important features are:\n• Regulation can occur through changing interpretation or behavior.\n• Coping strategies can influence emotional responses.\n• Regulation does not mean eliminating all emotion.\n• Successful regulation depends on context and goals.\n\nThe exam distinction is worth remembering: Emotion regulation is broader than suppression; it can involve reappraisal, coping and other strategies.",
               "retrieval_questions": [
                 "State the source-based core idea of “Emotion regulation”.",
                 "List the key source-supported points for “Emotion regulation”.",
@@ -12181,7 +12181,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Conflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.\n\nThe concept is best retained as a connected set of features:\n• Incompatible goals can create conflict.\n• Conflict may involve internal motives or external demands.\n• Frustration and conflict can increase emotional arousal.\n• The type of conflict depends on the valence of the alternatives.\n\nA useful exam distinction is this: A source of conflict is the incompatibility producing the tension; a type of conflict classifies the pattern of alternatives.\n\nSource grounding: Ciccarelli & White — Conflict and Frustration; Self-Teaching Guide — Psychological Conflict.",
+              "deep_learning": "Conflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands.\n\nThe important features are:\n• Incompatible goals can create conflict.\n• Conflict may involve internal motives or external demands.\n• Frustration and conflict can increase emotional arousal.\n• The type of conflict depends on the valence of the alternatives.\n\nThe exam distinction is worth remembering: A source of conflict is the incompatibility producing the tension; a type of conflict classifies the pattern of alternatives.",
               "retrieval_questions": [
                 "State the source-based core idea of “Sources of conflict”.",
                 "List the key source-supported points for “Sources of conflict”.",
@@ -12215,7 +12215,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "The uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.\n\nThe concept is best retained as a connected set of features:\n• Approach–approach: choose between two desirable alternatives.\n• Avoidance–avoidance: choose between two undesirable alternatives.\n• Approach–avoidance: one goal has both positive and negative features.\n• Double approach–avoidance: multiple alternatives each have positive and negative features.\n\nA useful exam distinction is this: Identify the valence of each alternative before naming the conflict type.\n\nSource grounding: Psychology: A Self-Teaching Guide — Psychological Conflict; Ciccarelli & White — Conflict.",
+              "deep_learning": "The uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed.\n\nThe important features are:\n• Approach–approach: choose between two desirable alternatives.\n• Avoidance–avoidance: choose between two undesirable alternatives.\n• Approach–avoidance: one goal has both positive and negative features.\n• Double approach–avoidance: multiple alternatives each have positive and negative features.\n\nThe exam distinction is worth remembering: Identify the valence of each alternative before naming the conflict type.",
               "retrieval_questions": [
                 "State the source-based core idea of “Types of conflict”.",
                 "List the key source-supported points for “Types of conflict”.",
@@ -12259,7 +12259,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Concept of stress and coping",
-              "content_notes": "Concept of stress and coping is centred on stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.\n\nKEY POINTS\n• Stressor\n• Appraisal\n• Problem-focused\n• Emotion-focused\n\nDISTINCTION / CAUTION\nStress is not defined only by the event.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Concept of stress and coping is centred on stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.\n\nKEY POINTS\n• Stressor\n• Appraisal\n• Problem-focused\n• Emotion-focused\n\nDISTINCTION / CAUTION\nStress is not defined only by the event.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12269,7 +12269,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concept of stress and coping is centred on stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.\n\nThe concept is best retained as a connected set of features:\n• Stressor\n• Appraisal\n• Problem-focused\n• Emotion-focused\n\nA useful exam distinction is this: Stress is not defined only by the event.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Concept of stress and coping is centred on stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions.\n\nThe important features are:\n• Stressor\n• Appraisal\n• Problem-focused\n• Emotion-focused\n\nThe exam distinction is worth remembering: Stress is not defined only by the event.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Concept of stress and coping”.",
                 "List the key points associated with “Concept of stress and coping” in the uploaded study material.",
@@ -12306,7 +12306,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "The uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.\n\nThe concept is best retained as a connected set of features:\n• Stress depends on both demands and appraisal.\n• Cognitive appraisal influences whether an event is experienced as stressful.\n• Coping can be problem-focused or emotion-focused.\n• Reappraisal can change the experience of a stressor.\n\nA useful exam distinction is this: A stressor is the event or demand; stress is the psychological/physiological response to it.\n\nSource grounding: Ciccarelli & White 6e — Stress and Health; PowerWithin Psychology — Stress and Coping.",
+              "deep_learning": "The uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options.\n\nThe important features are:\n• Stress depends on both demands and appraisal.\n• Cognitive appraisal influences whether an event is experienced as stressful.\n• Coping can be problem-focused or emotion-focused.\n• Reappraisal can change the experience of a stressor.\n\nThe exam distinction is worth remembering: A stressor is the event or demand; stress is the psychological/physiological response to it.",
               "retrieval_questions": [
                 "State the source-based core idea of “Models of stress and coping”.",
                 "List the key source-supported points for “Models of stress and coping”.",
@@ -12340,7 +12340,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Type A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.\n\nThe concept is best retained as a connected set of features:\n• Competitiveness is a characteristic of the pattern.\n• Impatience and time urgency are common features.\n• Hostility is especially relevant in the health literature discussed by Baron & Misra.\n• The pattern can be modified through behavior change.\n\nA useful exam distinction is this: Type A is a behavior pattern, not a diagnosis; the source specifically discusses components rather than treating the label as a single cause of disease.\n\nSource grounding: Baron & Misra — Type A Behavior Pattern; Ciccarelli & White — Personality and Stress.",
+              "deep_learning": "Type A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk.\n\nThe important features are:\n• Competitiveness is a characteristic of the pattern.\n• Impatience and time urgency are common features.\n• Hostility is especially relevant in the health literature discussed by Baron & Misra.\n• The pattern can be modified through behavior change.\n\nThe exam distinction is worth remembering: Type A is a behavior pattern, not a diagnosis; the source specifically discusses components rather than treating the label as a single cause of disease.",
               "retrieval_questions": [
                 "State the source-based core idea of “Type A behavior”.",
                 "List the key source-supported points for “Type A behavior”.",
@@ -12374,7 +12374,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Type B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.\n\nThe concept is best retained as a connected set of features:\n• Less time urgency than Type A.\n• Less competitiveness and irritability in the source comparison.\n• Used as a comparison pattern in stress/personality research.\n• It is not a clinical diagnosis.\n\nA useful exam distinction is this: Type B should not be treated as simply 'no stress'; it is a behavioral pattern contrasted with Type A characteristics.\n\nSource grounding: Baron & Misra — Type A/Type B comparison; Ciccarelli & White — Personality and Stress.",
+              "deep_learning": "Type B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress.\n\nThe important features are:\n• Less time urgency than Type A.\n• Less competitiveness and irritability in the source comparison.\n• Used as a comparison pattern in stress/personality research.\n• It is not a clinical diagnosis.\n\nThe exam distinction is worth remembering: Type B should not be treated as simply 'no stress'; it is a behavioral pattern contrasted with Type A characteristics.",
               "retrieval_questions": [
                 "State the source-based core idea of “Type B behavior”.",
                 "List the key source-supported points for “Type B behavior”.",
@@ -12408,7 +12408,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Type C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.\n\nThe concept is best retained as a connected set of features:\n• Type C is listed as a stress/personality pattern.\n• It is distinct from Type A and Type B classifications.\n• Use the source's exact features when answering a matching question.\n• The supplied extract provides limited detailed coverage.\n\nA useful exam distinction is this: Do not import a detailed Type C disease-causation claim unless the uploaded source explicitly provides it.\n\nSource grounding: PowerWithin Psychology — Unit 7 Stress and Coping, Type C behavior; outline-level coverage.",
+              "deep_learning": "Type C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims.\n\nThe important features are:\n• Type C is listed as a stress/personality pattern.\n• It is distinct from Type A and Type B classifications.\n• Use the source's exact features when answering a matching question.\n• The supplied extract provides limited detailed coverage.\n\nThe exam distinction is worth remembering: Do not import a detailed Type C disease-causation claim unless the uploaded source explicitly provides it.",
               "retrieval_questions": [
                 "State the source-based core idea of “Type C behavior”.",
                 "List the key source-supported points for “Type C behavior”.",
@@ -12442,7 +12442,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Type D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.\n\nThe concept is best retained as a connected set of features:\n• Type D is included among stress-related personality patterns.\n• It is distinct from Type A, B and C classifications.\n• Use source-specific descriptors if a PYQ asks for the pattern.\n• Detailed source coverage is limited in the supplied extract.\n\nA useful exam distinction is this: Do not fill this node with an external Type D description unless supported by the uploaded source.\n\nSource grounding: PowerWithin Psychology — Unit 7 Stress and Coping, Type D behavior; outline-level coverage.",
+              "deep_learning": "Type D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile.\n\nThe important features are:\n• Type D is included among stress-related personality patterns.\n• It is distinct from Type A, B and C classifications.\n• Use source-specific descriptors if a PYQ asks for the pattern.\n• Detailed source coverage is limited in the supplied extract.\n\nThe exam distinction is worth remembering: Do not fill this node with an external Type D description unless supported by the uploaded source.",
               "retrieval_questions": [
                 "State the source-based core idea of “Type D behavior”.",
                 "List the key source-supported points for “Type D behavior”.",
@@ -12496,7 +12496,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Biofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.\n\nThe concept is best retained as a connected set of features:\n• Physiological information is measured and fed back.\n• The person learns voluntary control over a physiological response.\n• It is used as a self-regulation technique.\n• It differs from relaxation alone because feedback about bodily activity is central.\n\nA useful exam distinction is this: Biofeedback is a training procedure using physiological feedback; it is not simply another name for meditation or relaxation.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies; Self-Teaching Guide/Ciccarelli & White on biofeedback.",
+              "deep_learning": "Biofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses.\n\nThe important features are:\n• Physiological information is measured and fed back.\n• The person learns voluntary control over a physiological response.\n• It is used as a self-regulation technique.\n• It differs from relaxation alone because feedback about bodily activity is central.\n\nThe exam distinction is worth remembering: Biofeedback is a training procedure using physiological feedback; it is not simply another name for meditation or relaxation.",
               "retrieval_questions": [
                 "State the source-based core idea of “Biofeedback”.",
                 "List the key source-supported points for “Biofeedback”.",
@@ -12530,7 +12530,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Music therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.\n\nThe concept is best retained as a connected set of features:\n• It is included as a stress-management strategy.\n• Music can be used within structured therapeutic or relaxation contexts.\n• The source does not provide a detailed protocol in the supplied extract.\n• Use source-specific examples when available.\n\nA useful exam distinction is this: Do not assume that every use of music is automatically 'music therapy'; therapy is a structured professional application.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies, Music Therapy; outline-level coverage.",
+              "deep_learning": "Music therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect.\n\nThe important features are:\n• It is included as a stress-management strategy.\n• Music can be used within structured therapeutic or relaxation contexts.\n• The source does not provide a detailed protocol in the supplied extract.\n• Use source-specific examples when available.\n\nThe exam distinction is worth remembering: Do not assume that every use of music is automatically 'music therapy'; therapy is a structured professional application.",
               "retrieval_questions": [
                 "State the source-based core idea of “Music therapy”.",
                 "List the key source-supported points for “Music therapy”.",
@@ -12564,7 +12564,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Breathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.\n\nThe concept is best retained as a connected set of features:\n• Breathing exercises can be used to manage arousal.\n• They are listed among stress-management techniques.\n• They can be combined with other relaxation approaches.\n• Detailed dosage/protocol is not provided in the supplied extract.\n\nA useful exam distinction is this: Do not attach an unsupported clinical claim to a generic breathing exercise.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies, Breathing Exercises.",
+              "deep_learning": "Breathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail.\n\nThe important features are:\n• Breathing exercises can be used to manage arousal.\n• They are listed among stress-management techniques.\n• They can be combined with other relaxation approaches.\n• Detailed dosage/protocol is not provided in the supplied extract.\n\nThe exam distinction is worth remembering: Do not attach an unsupported clinical claim to a generic breathing exercise.",
               "retrieval_questions": [
                 "State the source-based core idea of “Breathing exercises”.",
                 "List the key source-supported points for “Breathing exercises”.",
@@ -12598,7 +12598,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Progressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.\n\nThe concept is best retained as a connected set of features:\n• Attention is directed to muscle tension and relaxation.\n• The technique aims to reduce physical tension and arousal.\n• It is commonly grouped with relaxation-based coping strategies.\n• It differs from guided imagery because the primary target is muscular tension.\n\nA useful exam distinction is this: Progressive muscular relaxation is not simply general physical exercise; its defining feature is systematic tension–release practice.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies; Baron & Misra — progressive muscular relaxation reference.",
+              "deep_learning": "Progressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health.\n\nThe important features are:\n• Attention is directed to muscle tension and relaxation.\n• The technique aims to reduce physical tension and arousal.\n• It is commonly grouped with relaxation-based coping strategies.\n• It differs from guided imagery because the primary target is muscular tension.\n\nThe exam distinction is worth remembering: Progressive muscular relaxation is not simply general physical exercise; its defining feature is systematic tension–release practice.",
               "retrieval_questions": [
                 "State the source-based core idea of “Progressive Muscular Relaxation”.",
                 "List the key source-supported points for “Progressive Muscular Relaxation”.",
@@ -12632,7 +12632,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Guided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.\n\nThe concept is best retained as a connected set of features:\n• Mental imagery is used deliberately.\n• It can be used to promote relaxation or coping.\n• It is generally classified as an emotion-focused/relaxation strategy in the source material.\n• It differs from progressive muscular relaxation in its primary technique.\n\nA useful exam distinction is this: Guided imagery is a coping/relaxation procedure, not the same as perceptual imagery in ordinary cognition.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies; Ciccarelli & White — guided visualization and coping.",
+              "deep_learning": "Guided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping.\n\nThe important features are:\n• Mental imagery is used deliberately.\n• It can be used to promote relaxation or coping.\n• It is generally classified as an emotion-focused/relaxation strategy in the source material.\n• It differs from progressive muscular relaxation in its primary technique.\n\nThe exam distinction is worth remembering: Guided imagery is a coping/relaxation procedure, not the same as perceptual imagery in ordinary cognition.",
               "retrieval_questions": [
                 "State the source-based core idea of “Guided Imagery”.",
                 "List the key source-supported points for “Guided Imagery”.",
@@ -12656,7 +12656,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Mindfulness",
-              "content_notes": "Mindfulness is centred on purposeful, present-moment and nonjudgmental attention to experience.\n\nKEY POINTS\n• Present moment\n• Nonjudgment\n• Decentering\n\nDISTINCTION / CAUTION\nNot simply relaxation or emptying the mind.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Mindfulness is centred on purposeful, present-moment and nonjudgmental attention to experience.\n\nKEY POINTS\n• Present moment\n• Nonjudgment\n• Decentering\n\nDISTINCTION / CAUTION\nNot simply relaxation or emptying the mind.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -12666,7 +12666,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Mindfulness is centred on purposeful, present-moment and nonjudgmental attention to experience.\n\nThe concept is best retained as a connected set of features:\n• Present moment\n• Nonjudgment\n• Decentering\n\nA useful exam distinction is this: Not simply relaxation or emptying the mind.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Mindfulness is centred on purposeful, present-moment and nonjudgmental attention to experience.\n\nThe important features are:\n• Present moment\n• Nonjudgment\n• Decentering\n\nThe exam distinction is worth remembering: Not simply relaxation or emptying the mind.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Mindfulness”.",
                 "List the key points associated with “Mindfulness” in the uploaded study material.",
@@ -12703,7 +12703,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Meditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.\n\nThe concept is best retained as a connected set of features:\n• Meditation can promote relaxation.\n• It can be used to reduce anxiety/arousal.\n• It is one of several coping strategies.\n• Different forms of meditation may use different attentional procedures.\n\nA useful exam distinction is this: Meditation is a broad family of practices; do not treat every meditation technique as identical.\n\nSource grounding: Ciccarelli & White 6e — Coping with Stress; PowerWithin Psychology — Stress Management Strategies.",
+              "deep_learning": "Meditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques.\n\nThe important features are:\n• Meditation can promote relaxation.\n• It can be used to reduce anxiety/arousal.\n• It is one of several coping strategies.\n• Different forms of meditation may use different attentional procedures.\n\nThe exam distinction is worth remembering: Meditation is a broad family of practices; do not treat every meditation technique as identical.",
               "retrieval_questions": [
                 "State the source-based core idea of “Meditation”.",
                 "List the key source-supported points for “Meditation”.",
@@ -12737,7 +12737,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Yogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.\n\nThe concept is best retained as a connected set of features:\n• Yogasana is included among stress-management strategies.\n• Yoga has a broader conceptual context in Indian psychology.\n• The technique is distinct from meditation, although they may be practiced together.\n• Do not reduce Yoga to a single physical posture.\n\nA useful exam distinction is this: For NET preparation, distinguish the stress-management application of yogasana from the broader Indian-psychology paradigm of Yoga.\n\nSource grounding: PowerWithin Psychology — Stress Management Strategies and Indian Paradigms of Psychological Knowledge.",
+              "deep_learning": "Yogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition.\n\nThe important features are:\n• Yogasana is included among stress-management strategies.\n• Yoga has a broader conceptual context in Indian psychology.\n• The technique is distinct from meditation, although they may be practiced together.\n• Do not reduce Yoga to a single physical posture.\n\nThe exam distinction is worth remembering: For NET preparation, distinguish the stress-management application of yogasana from the broader Indian-psychology paradigm of Yoga.",
               "retrieval_questions": [
                 "State the source-based core idea of “Yogasana”.",
                 "List the key source-supported points for “Yogasana”.",
@@ -12771,7 +12771,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Stress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.\n\nThe concept is best retained as a connected set of features:\n• It is a structured stress-management approach.\n• It emphasizes coping skills and preparation.\n• It is associated with cognitive-behavioral methods.\n• Training is intended to improve responses to future stressors.\n\nA useful exam distinction is this: Stress inoculation training is not the same as exposure therapy; the emphasis is on coping skills and preparation for stress.\n\nSource grounding: Kaplan AP Psychology Prep Plus — Stress Inoculation Training; PowerWithin Psychology — Stress Management Strategies.",
+              "deep_learning": "Stress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors.\n\nThe important features are:\n• It is a structured stress-management approach.\n• It emphasizes coping skills and preparation.\n• It is associated with cognitive-behavioral methods.\n• Training is intended to improve responses to future stressors.\n\nThe exam distinction is worth remembering: Stress inoculation training is not the same as exposure therapy; the emphasis is on coping skills and preparation for stress.",
               "retrieval_questions": [
                 "State the source-based core idea of “Stress Inoculation Training”.",
                 "List the key source-supported points for “Stress Inoculation Training”.",
@@ -12865,7 +12865,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.\n\nThe concept is best retained as a connected set of features:\n• Social context is central to explanation.\n• The field examines cognition, affect and behavior in social situations.\n• Individuals and groups are both relevant levels of analysis.\n• Social psychology connects individual processes with interpersonal and group contexts.\n\nA useful exam distinction is this: Social psychology is not simply the study of groups; many social-psychological processes occur at the individual level in social contexts.\n\nSource grounding: PowerWithin Psychology — Unit 8 What is Social Psychology?; Kaplan AP Psychology — Social Psychology.",
+              "deep_learning": "Social psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence.\n\nThe important features are:\n• Social context is central to explanation.\n• The field examines cognition, affect and behavior in social situations.\n• Individuals and groups are both relevant levels of analysis.\n• Social psychology connects individual processes with interpersonal and group contexts.\n\nThe exam distinction is worth remembering: Social psychology is not simply the study of groups; many social-psychological processes occur at the individual level in social contexts.",
               "retrieval_questions": [
                 "State the source-based core idea of “Nature of social psychology”.",
                 "List the key source-supported points for “Nature of social psychology”.",
@@ -12898,7 +12898,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.\n\nThe concept is best retained as a connected set of features:\n• Social cognition and perception are core areas.\n• Attitudes and their change are studied.\n• Groups and social influence are major domains.\n• Intergroup relations and applied social psychology extend the field.\n\nA useful exam distinction is this: Scope is broader than one topic such as conformity; the NET outline treats social psychology as a wide set of interacting domains.\n\nSource grounding: PowerWithin Psychology — Unit 8 Social Psychology outline.",
+              "deep_learning": "The scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains.\n\nThe important features are:\n• Social cognition and perception are core areas.\n• Attitudes and their change are studied.\n• Groups and social influence are major domains.\n• Intergroup relations and applied social psychology extend the field.\n\nThe exam distinction is worth remembering: Scope is broader than one topic such as conformity; the NET outline treats social psychology as a wide set of interacting domains.",
               "retrieval_questions": [
                 "State the source-based core idea of “Scope of social psychology”.",
                 "List the key source-supported points for “Scope of social psychology”.",
@@ -12931,7 +12931,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.\n\nThe concept is best retained as a connected set of features:\n• The field developed around systematic study of social behavior.\n• Attitudes, group influence and interpersonal processes became major areas.\n• Social psychology draws from multiple theoretical traditions.\n• Historical development led to both basic and applied research.\n\nA useful exam distinction is this: Do not reduce the history of social psychology to a single founder or experiment; the field developed through several traditions.\n\nSource grounding: PowerWithin Psychology — Unit 8 Nature and History; Kaplan AP Psychology — Social Psychology.",
+              "deep_learning": "The history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context.\n\nThe important features are:\n• The field developed around systematic study of social behavior.\n• Attitudes, group influence and interpersonal processes became major areas.\n• Social psychology draws from multiple theoretical traditions.\n• Historical development led to both basic and applied research.\n\nThe exam distinction is worth remembering: Do not reduce the history of social psychology to a single founder or experiment; the field developed through several traditions.",
               "retrieval_questions": [
                 "State the source-based core idea of “History of social psychology”.",
                 "List the key source-supported points for “History of social psychology”.",
@@ -12983,7 +12983,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Field theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.\n\nThe concept is best retained as a connected set of features:\n• Lewin is the key theorist.\n• Behavior is considered in relation to person and environment.\n• The psychological field contains interacting forces.\n• The approach is dynamic and situational.\n\nA useful exam distinction is this: Field theory is not simply an environmental theory; the person and environment are considered together.\n\nSource grounding: PowerWithin Psychology — Theoretical Perspectives in Social Psychology; Lewinian field-theory coverage.",
+              "deep_learning": "Field theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone.\n\nThe important features are:\n• Lewin is the key theorist.\n• Behavior is considered in relation to person and environment.\n• The psychological field contains interacting forces.\n• The approach is dynamic and situational.\n\nThe exam distinction is worth remembering: Field theory is not simply an environmental theory; the person and environment are considered together.",
               "retrieval_questions": [
                 "State the source-based core idea of “Field theory”.",
                 "List the key source-supported points for “Field theory”.",
@@ -13007,7 +13007,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Cognitive Dissonance",
-              "content_notes": "Cognitive Dissonance is centred on discomfort arising from inconsistency among cognitions or between cognition and behavior.\n\nKEY POINTS\n• Festinger\n• Inconsistency\n• Dissonance reduction\n\nDISTINCTION / CAUTION\nNot simply disagreement.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Cognitive Dissonance is centred on discomfort arising from inconsistency among cognitions or between cognition and behavior.\n\nKEY POINTS\n• Festinger\n• Inconsistency\n• Dissonance reduction\n\nDISTINCTION / CAUTION\nNot simply disagreement.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13017,7 +13017,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Cognitive Dissonance is centred on discomfort arising from inconsistency among cognitions or between cognition and behavior.\n\nThe concept is best retained as a connected set of features:\n• Festinger\n• Inconsistency\n• Dissonance reduction\n\nA useful exam distinction is this: Not simply disagreement.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Cognitive Dissonance is centred on discomfort arising from inconsistency among cognitions or between cognition and behavior.\n\nThe important features are:\n• Festinger\n• Inconsistency\n• Dissonance reduction\n\nThe exam distinction is worth remembering: Not simply disagreement.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Cognitive Dissonance”.",
                 "List the key points associated with “Cognitive Dissonance” in the uploaded study material.",
@@ -13053,7 +13053,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Sociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.\n\nThe concept is best retained as a connected set of features:\n• Social behavior can be examined through evolutionary principles.\n• Adaptive consequences are relevant to explanation.\n• The approach complements rather than replaces social and cultural explanations.\n• Genetic influence does not imply fixed behavior in every context.\n\nA useful exam distinction is this: Sociobiological explanations concern evolutionary function; they should not be treated as proof that a behavior is genetically predetermined.\n\nSource grounding: PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Sociobiology.",
+              "deep_learning": "Sociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology.\n\nThe important features are:\n• Social behavior can be examined through evolutionary principles.\n• Adaptive consequences are relevant to explanation.\n• The approach complements rather than replaces social and cultural explanations.\n• Genetic influence does not imply fixed behavior in every context.\n\nThe exam distinction is worth remembering: Sociobiological explanations concern evolutionary function; they should not be treated as proof that a behavior is genetically predetermined.",
               "retrieval_questions": [
                 "State the source-based core idea of “Sociobiology”.",
                 "List the key source-supported points for “Sociobiology”.",
@@ -13086,7 +13086,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Psychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.\n\nThe concept is best retained as a connected set of features:\n• Unconscious processes can influence social behavior.\n• Early relationships may shape later interpersonal patterns.\n• Internal conflict can affect social interaction.\n• The approach differs from purely situational accounts.\n\nA useful exam distinction is this: Psychodynamic social psychology is not identical to Freud's complete personality theory; it applies psychodynamic concepts to social behavior.\n\nSource grounding: PowerWithin Psychology — Theoretical Perspectives in Social Psychology, Psychodynamic Approaches.",
+              "deep_learning": "Psychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology.\n\nThe important features are:\n• Unconscious processes can influence social behavior.\n• Early relationships may shape later interpersonal patterns.\n• Internal conflict can affect social interaction.\n• The approach differs from purely situational accounts.\n\nThe exam distinction is worth remembering: Psychodynamic social psychology is not identical to Freud's complete personality theory; it applies psychodynamic concepts to social behavior.",
               "retrieval_questions": [
                 "State the source-based core idea of “Psychodynamic approaches”.",
                 "List the key source-supported points for “Psychodynamic approaches”.",
@@ -13109,7 +13109,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Social Cognition",
-              "content_notes": "Social Cognition is centred on how people notice, interpret, remember and use information about social others and situations.\n\nKEY POINTS\n• Schemas\n• Heuristics\n• Attribution\n• Impression formation\n\nDISTINCTION / CAUTION\nIt is broader than simply 'thinking about society'.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Social Cognition is centred on how people notice, interpret, remember and use information about social others and situations.\n\nKEY POINTS\n• Schemas\n• Heuristics\n• Attribution\n• Impression formation\n\nDISTINCTION / CAUTION\nIt is broader than simply 'thinking about society'.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13119,7 +13119,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social Cognition is centred on how people notice, interpret, remember and use information about social others and situations.\n\nThe concept is best retained as a connected set of features:\n• Schemas\n• Heuristics\n• Attribution\n• Impression formation\n\nA useful exam distinction is this: It is broader than simply 'thinking about society'.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Social Cognition is centred on how people notice, interpret, remember and use information about social others and situations.\n\nThe important features are:\n• Schemas\n• Heuristics\n• Attribution\n• Impression formation\n\nThe exam distinction is worth remembering: It is broader than simply 'thinking about society'.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Social Cognition”.",
                 "List the key points associated with “Social Cognition” in the uploaded study material.",
@@ -13175,7 +13175,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.\n\nThe concept is best retained as a connected set of features:\n• People form impressions from social information.\n• Interpretation is influenced by expectations and prior knowledge.\n• Social perception can involve bias and stereotypes.\n• Attributions are one important component of social interpretation.\n\nA useful exam distinction is this: Social perception is broader than attribution; attribution concerns explaining causes, while social perception includes impression formation more generally.\n\nSource grounding: PowerWithin Psychology — Unit 8 Social Perception, Communication and Attributions; Ciccarelli & White social cognition.",
+              "deep_learning": "Social perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution.\n\nThe important features are:\n• People form impressions from social information.\n• Interpretation is influenced by expectations and prior knowledge.\n• Social perception can involve bias and stereotypes.\n• Attributions are one important component of social interpretation.\n\nThe exam distinction is worth remembering: Social perception is broader than attribution; attribution concerns explaining causes, while social perception includes impression formation more generally.",
               "retrieval_questions": [
                 "State the source-based core idea of “Social perception”.",
                 "List the key source-supported points for “Social perception”.",
@@ -13209,7 +13209,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Communication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.\n\nThe concept is best retained as a connected set of features:\n• Communication can be verbal and nonverbal.\n• Meaning depends partly on context and interpretation.\n• Communication affects interpersonal relationships.\n• Misinterpretation can contribute to social conflict.\n\nA useful exam distinction is this: Communication is the process of exchanging information; persuasion is a specific social-influence process aimed at changing attitudes or behavior.\n\nSource grounding: PowerWithin Psychology — Unit 8 Social Perception/Communication; Kaplan AP Psychology — Social Psychology.",
+              "deep_learning": "Communication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior.\n\nThe important features are:\n• Communication can be verbal and nonverbal.\n• Meaning depends partly on context and interpretation.\n• Communication affects interpersonal relationships.\n• Misinterpretation can contribute to social conflict.\n\nThe exam distinction is worth remembering: Communication is the process of exchanging information; persuasion is a specific social-influence process aimed at changing attitudes or behavior.",
               "retrieval_questions": [
                 "State the source-based core idea of “Communication”.",
                 "List the key source-supported points for “Communication”.",
@@ -13243,7 +13243,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Attribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.\n\nThe concept is best retained as a connected set of features:\n• Internal attributions locate causes in the person.\n• External attributions locate causes in the situation.\n• Attributions influence judgments of self and others.\n• Self-serving bias can affect explanations of outcomes.\n\nA useful exam distinction is this: An attribution is an explanation of cause, not merely an observation of behavior.\n\nSource grounding: Baron & Misra — Attribution and Social Cognition; Kaplan AP Psychology — Attributions.",
+              "deep_learning": "Attribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally.\n\nThe important features are:\n• Internal attributions locate causes in the person.\n• External attributions locate causes in the situation.\n• Attributions influence judgments of self and others.\n• Self-serving bias can affect explanations of outcomes.\n\nThe exam distinction is worth remembering: An attribution is an explanation of cause, not merely an observation of behavior.",
               "retrieval_questions": [
                 "State the source-based core idea of “Attributions”.",
                 "List the key source-supported points for “Attributions”.",
@@ -13277,7 +13277,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "An attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.\n\nThe concept is best retained as a connected set of features:\n• Attitudes have an evaluative component.\n• They can be positive, negative or mixed.\n• Attitudes can influence behavior under appropriate conditions.\n• Attitudes are shaped by social experience and information.\n\nA useful exam distinction is this: An attitude is an evaluation, not simply knowledge or a belief; beliefs may contribute to an attitude.\n\nSource grounding: Baron & Misra — Social Psychology; PowerWithin Psychology — Attitude and Attitude Change.",
+              "deep_learning": "An attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion.\n\nThe important features are:\n• Attitudes have an evaluative component.\n• They can be positive, negative or mixed.\n• Attitudes can influence behavior under appropriate conditions.\n• Attitudes are shaped by social experience and information.\n\nThe exam distinction is worth remembering: An attitude is an evaluation, not simply knowledge or a belief; beliefs may contribute to an attitude.",
               "retrieval_questions": [
                 "State the source-based core idea of “Attitude”.",
                 "List the key source-supported points for “Attitude”.",
@@ -13311,7 +13311,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Attitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.\n\nThe concept is best retained as a connected set of features:\n• Persuasive communication can change attitudes.\n• Cognitive dissonance can motivate attitude change.\n• The direction and durability of change depend on context and processing.\n• Attitude change is distinct from simple exposure to information.\n\nA useful exam distinction is this: Cognitive dissonance is one mechanism of attitude change, not a synonym for all attitude change.\n\nSource grounding: Baron & Misra — Attitude Change and Cognitive Dissonance; Kaplan AP Psychology.",
+              "deep_learning": "Attitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency.\n\nThe important features are:\n• Persuasive communication can change attitudes.\n• Cognitive dissonance can motivate attitude change.\n• The direction and durability of change depend on context and processing.\n• Attitude change is distinct from simple exposure to information.\n\nThe exam distinction is worth remembering: Cognitive dissonance is one mechanism of attitude change, not a synonym for all attitude change.",
               "retrieval_questions": [
                 "State the source-based core idea of “Attitude change”.",
                 "List the key source-supported points for “Attitude change”.",
@@ -13345,7 +13345,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Attitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.\n\nThe concept is best retained as a connected set of features:\n• Culture provides norms and values relevant to evaluation.\n• The same behavior can be evaluated differently across cultural contexts.\n• Attitude expression is influenced by social expectations.\n• Cross-cultural interpretation requires attention to context.\n\nA useful exam distinction is this: Cultural context influences attitudes but does not make every individual within a culture identical.\n\nSource grounding: PowerWithin Psychology — Attitude and Cultural Context; Baron & Misra — culture and social behavior.",
+              "deep_learning": "Attitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior.\n\nThe important features are:\n• Culture provides norms and values relevant to evaluation.\n• The same behavior can be evaluated differently across cultural contexts.\n• Attitude expression is influenced by social expectations.\n• Cross-cultural interpretation requires attention to context.\n\nThe exam distinction is worth remembering: Cultural context influences attitudes but does not make every individual within a culture identical.",
               "retrieval_questions": [
                 "State the source-based core idea of “Cultural context of attitudes”.",
                 "List the key source-supported points for “Cultural context of attitudes”.",
@@ -13379,7 +13379,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Prosocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.\n\nThe concept is best retained as a connected set of features:\n• The intended outcome benefits another person.\n• Helping and altruism are common examples.\n• Empathy and social context can influence prosocial behavior.\n• Costs and benefits can affect helping decisions.\n\nA useful exam distinction is this: Prosocial behavior is broader than altruism; altruism usually emphasizes helping without direct self-benefit.\n\nSource grounding: Kaplan AP Psychology — Prosocial Behavior; Baron & Misra — Prosocial Behavior.",
+              "deep_learning": "Prosocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping.\n\nThe important features are:\n• The intended outcome benefits another person.\n• Helping and altruism are common examples.\n• Empathy and social context can influence prosocial behavior.\n• Costs and benefits can affect helping decisions.\n\nThe exam distinction is worth remembering: Prosocial behavior is broader than altruism; altruism usually emphasizes helping without direct self-benefit.",
               "retrieval_questions": [
                 "State the source-based core idea of “Prosocial behavior”.",
                 "List the key source-supported points for “Prosocial behavior”.",
@@ -13432,7 +13432,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.\n\nThe concept is best retained as a connected set of features:\n• Audience presence can affect performance.\n• Well-learned tasks may show improved performance.\n• Difficult or novel tasks can show impaired performance.\n• The effect is distinct from social loafing, which concerns reduced effort in groups.\n\nA useful exam distinction is this: Social facilitation is about performance in the presence of others; social loafing is about effort in group tasks.\n\nSource grounding: Kaplan AP Psychology — Social Facilitation; Baron & Misra — Social Facilitation.",
+              "deep_learning": "Social facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks.\n\nThe important features are:\n• Audience presence can affect performance.\n• Well-learned tasks may show improved performance.\n• Difficult or novel tasks can show impaired performance.\n• The effect is distinct from social loafing, which concerns reduced effort in groups.\n\nThe exam distinction is worth remembering: Social facilitation is about performance in the presence of others; social loafing is about effort in group tasks.",
               "retrieval_questions": [
                 "State the source-based core idea of “Social Facilitation”.",
                 "List the key source-supported points for “Social Facilitation”.",
@@ -13465,7 +13465,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.\n\nThe concept is best retained as a connected set of features:\n• Effort can decline in group tasks.\n• Individual contribution may be less identifiable.\n• The effect differs from social facilitation.\n• Group size and accountability can influence the effect.\n\nA useful exam distinction is this: Social loafing concerns reduced effort; it is not simply any decline in performance caused by being in a group.\n\nSource grounding: Kaplan AP Psychology — Social Loafing; PowerWithin Psychology — Group and Social Influence.",
+              "deep_learning": "Social loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur.\n\nThe important features are:\n• Effort can decline in group tasks.\n• Individual contribution may be less identifiable.\n• The effect differs from social facilitation.\n• Group size and accountability can influence the effect.\n\nThe exam distinction is worth remembering: Social loafing concerns reduced effort; it is not simply any decline in performance caused by being in a group.",
               "retrieval_questions": [
                 "State the source-based core idea of “Social loafing”.",
                 "List the key source-supported points for “Social loafing”.",
@@ -13488,7 +13488,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Conformity",
-              "content_notes": "Conformity is centred on adjustment of behavior or judgment toward group norms.\n\nKEY POINTS\n• Asch\n• Normative influence\n• Informational influence\n\nDISTINCTION / CAUTION\nDifferent from obedience.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Conformity is centred on adjustment of behavior or judgment toward group norms.\n\nKEY POINTS\n• Asch\n• Normative influence\n• Informational influence\n\nDISTINCTION / CAUTION\nDifferent from obedience.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13498,7 +13498,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Conformity is centred on adjustment of behavior or judgment toward group norms.\n\nThe concept is best retained as a connected set of features:\n• Asch\n• Normative influence\n• Informational influence\n\nA useful exam distinction is this: Different from obedience.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Conformity is centred on adjustment of behavior or judgment toward group norms.\n\nThe important features are:\n• Asch\n• Normative influence\n• Informational influence\n\nThe exam distinction is worth remembering: Different from obedience.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Conformity”.",
                 "List the key points associated with “Conformity” in the uploaded study material.",
@@ -13534,7 +13534,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Peer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.\n\nThe concept is best retained as a connected set of features:\n• Peers can influence behavior directly or indirectly.\n• Conformity and group norms are related processes.\n• The influence can be positive or negative depending on the behavior.\n• Individual responses depend on context and perceived norms.\n\nA useful exam distinction is this: Peer pressure is a context of social influence; conformity is the broader process of adjusting behavior or judgments toward group norms.\n\nSource grounding: PowerWithin Psychology — Social Influence, Peer Pressure and Conformity; Kaplan AP Psychology.",
+              "deep_learning": "Peer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong.\n\nThe important features are:\n• Peers can influence behavior directly or indirectly.\n• Conformity and group norms are related processes.\n• The influence can be positive or negative depending on the behavior.\n• Individual responses depend on context and perceived norms.\n\nThe exam distinction is worth remembering: Peer pressure is a context of social influence; conformity is the broader process of adjusting behavior or judgments toward group norms.",
               "retrieval_questions": [
                 "State the source-based core idea of “Peer Pressure”.",
                 "List the key source-supported points for “Peer Pressure”.",
@@ -13567,7 +13567,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Persuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.\n\nThe concept is best retained as a connected set of features:\n• Persuasion involves communication.\n• Messages can influence attitudes and behavior.\n• Source, message and audience factors can affect effectiveness.\n• Persuasion differs from coercion because influence is attempted through communication rather than direct force.\n\nA useful exam distinction is this: Persuasion aims at change; compliance concerns behavior following a request, which may occur with or without an attitude change.\n\nSource grounding: PowerWithin Psychology — Social Influence and Persuasion; Kaplan AP Psychology.",
+              "deep_learning": "Persuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence.\n\nThe important features are:\n• Persuasion involves communication.\n• Messages can influence attitudes and behavior.\n• Source, message and audience factors can affect effectiveness.\n• Persuasion differs from coercion because influence is attempted through communication rather than direct force.\n\nThe exam distinction is worth remembering: Persuasion aims at change; compliance concerns behavior following a request, which may occur with or without an attitude change.",
               "retrieval_questions": [
                 "State the source-based core idea of “Persuasion”.",
                 "List the key source-supported points for “Persuasion”.",
@@ -13600,7 +13600,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Compliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.\n\nThe concept is best retained as a connected set of features:\n• Compliance involves responding to a request.\n• It differs from obedience, which typically involves an authority.\n• Compliance can occur without private attitude change.\n• Social influence techniques can increase or decrease compliance.\n\nA useful exam distinction is this: Compliance is request-based influence; obedience is typically authority-based influence.\n\nSource grounding: PowerWithin Psychology — Social Influence; Kaplan AP Psychology.",
+              "deep_learning": "Compliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance.\n\nThe important features are:\n• Compliance involves responding to a request.\n• It differs from obedience, which typically involves an authority.\n• Compliance can occur without private attitude change.\n• Social influence techniques can increase or decrease compliance.\n\nThe exam distinction is worth remembering: Compliance is request-based influence; obedience is typically authority-based influence.",
               "retrieval_questions": [
                 "State the source-based core idea of “Compliance”.",
                 "List the key source-supported points for “Compliance”.",
@@ -13623,7 +13623,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Obedience",
-              "content_notes": "Obedience is centred on behavior change in response to an authority's command.\n\nKEY POINTS\n• Milgram\n• Authority\n• Situational factors\n\nDISTINCTION / CAUTION\nDifferent from conformity.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Obedience is centred on behavior change in response to an authority's command.\n\nKEY POINTS\n• Milgram\n• Authority\n• Situational factors\n\nDISTINCTION / CAUTION\nDifferent from conformity.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13633,7 +13633,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Obedience is centred on behavior change in response to an authority's command.\n\nThe concept is best retained as a connected set of features:\n• Milgram\n• Authority\n• Situational factors\n\nA useful exam distinction is this: Different from conformity.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Obedience is centred on behavior change in response to an authority's command.\n\nThe important features are:\n• Milgram\n• Authority\n• Situational factors\n\nThe exam distinction is worth remembering: Different from conformity.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Obedience”.",
                 "List the key points associated with “Obedience” in the uploaded study material.",
@@ -13669,7 +13669,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.\n\nThe concept is best retained as a connected set of features:\n• Power concerns influence over others or outcomes.\n• Power can operate through different social relationships and resources.\n• The use of power is context dependent.\n• Power is related to but not identical with authority.\n\nA useful exam distinction is this: Having power does not necessarily mean using coercion; influence can occur through multiple forms of social control or resources.\n\nSource grounding: PowerWithin Psychology — Social Influence and Social Power.",
+              "deep_learning": "Social power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence.\n\nThe important features are:\n• Power concerns influence over others or outcomes.\n• Power can operate through different social relationships and resources.\n• The use of power is context dependent.\n• Power is related to but not identical with authority.\n\nThe exam distinction is worth remembering: Having power does not necessarily mean using coercion; influence can occur through multiple forms of social control or resources.",
               "retrieval_questions": [
                 "State the source-based core idea of “Social Power”.",
                 "List the key source-supported points for “Social Power”.",
@@ -13702,7 +13702,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Psychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.\n\nThe concept is best retained as a connected set of features:\n• Reactance follows perceived restriction of freedom.\n• People may resist or restore the threatened choice.\n• The response depends on how freedom is perceived.\n• It differs from ordinary disagreement because threatened freedom is central.\n\nA useful exam distinction is this: Reactance is not simply stubbornness; the key condition is perceived restriction of freedom.\n\nSource grounding: PowerWithin Psychology — Social Influence/Reactance; P2 Environment & Population Psychology — perceived control and crowding.",
+              "deep_learning": "Psychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions.\n\nThe important features are:\n• Reactance follows perceived restriction of freedom.\n• People may resist or restore the threatened choice.\n• The response depends on how freedom is perceived.\n• It differs from ordinary disagreement because threatened freedom is central.\n\nThe exam distinction is worth remembering: Reactance is not simply stubbornness; the key condition is perceived restriction of freedom.",
               "retrieval_questions": [
                 "State the source-based core idea of “Reactance”.",
                 "List the key source-supported points for “Reactance”.",
@@ -13744,7 +13744,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Aggression",
-              "content_notes": "Aggression is centred on behavior intended to harm another person who wants to avoid the harm.\n\nKEY POINTS\n• Hostile/instrumental\n• Learning\n• Social and biological influences\n\nDISTINCTION / CAUTION\nAnger is an emotion; aggression is behavior.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Aggression is centred on behavior intended to harm another person who wants to avoid the harm.\n\nKEY POINTS\n• Hostile/instrumental\n• Learning\n• Social and biological influences\n\nDISTINCTION / CAUTION\nAnger is an emotion; aggression is behavior.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13754,7 +13754,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Aggression is centred on behavior intended to harm another person who wants to avoid the harm.\n\nThe concept is best retained as a connected set of features:\n• Hostile/instrumental\n• Learning\n• Social and biological influences\n\nA useful exam distinction is this: Anger is an emotion; aggression is behavior.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Aggression is centred on behavior intended to harm another person who wants to avoid the harm.\n\nThe important features are:\n• Hostile/instrumental\n• Learning\n• Social and biological influences\n\nThe exam distinction is worth remembering: Anger is an emotion; aggression is behavior.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Aggression”.",
                 "List the key points associated with “Aggression” in the uploaded study material.",
@@ -13809,7 +13809,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Group dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.\n\nThe concept is best retained as a connected set of features:\n• Groups develop norms and roles.\n• Cohesion can affect interaction and performance.\n• Members influence one another.\n• Group processes can facilitate or hinder decision making.\n\nA useful exam distinction is this: Group dynamics is broader than group size; it concerns interaction patterns and processes within the group.\n\nSource grounding: PowerWithin Psychology — Group Dynamics and Leadership; Kaplan AP Psychology — Groups.",
+              "deep_learning": "Group dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence.\n\nThe important features are:\n• Groups develop norms and roles.\n• Cohesion can affect interaction and performance.\n• Members influence one another.\n• Group processes can facilitate or hinder decision making.\n\nThe exam distinction is worth remembering: Group dynamics is broader than group size; it concerns interaction patterns and processes within the group.",
               "retrieval_questions": [
                 "State the source-based core idea of “Group dynamics”.",
                 "List the key source-supported points for “Group dynamics”.",
@@ -13842,7 +13842,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Leadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.\n\nThe concept is best retained as a connected set of features:\n• Autocratic leadership emphasizes leader control.\n• Democratic leadership involves greater participation.\n• Laissez-faire leadership provides greater autonomy.\n• Blake–Mouton organizes styles around concern for people and results.\n\nA useful exam distinction is this: A leadership style is a behavioral pattern; effectiveness depends partly on the situation rather than one style being universally effective.\n\nSource grounding: REVISATHON Part 2 — Leadership Styles; Ciccarelli & White — Blake–Mouton Leadership Grid.",
+              "deep_learning": "Leadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results.\n\nThe important features are:\n• Autocratic leadership emphasizes leader control.\n• Democratic leadership involves greater participation.\n• Laissez-faire leadership provides greater autonomy.\n• Blake–Mouton organizes styles around concern for people and results.\n\nThe exam distinction is worth remembering: A leadership style is a behavioral pattern; effectiveness depends partly on the situation rather than one style being universally effective.",
               "retrieval_questions": [
                 "State the source-based core idea of “Leadership styles”.",
                 "List the key source-supported points for “Leadership styles”.",
@@ -13875,7 +13875,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Leadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.\n\nThe concept is best retained as a connected set of features:\n• Leadership effectiveness is context dependent.\n• Fiedler distinguishes task- and relationship-oriented styles.\n• Situational favorability affects the fit between style and context.\n• Other models such as path-goal theory focus on clarifying routes to goals.\n\nA useful exam distinction is this: The contingency approach does not claim one style is always superior; it emphasizes person–situation fit.\n\nSource grounding: REVISATHON Part 2 — Fiedler Contingency Approach and Path-Goal Theory.",
+              "deep_learning": "Leadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability.\n\nThe important features are:\n• Leadership effectiveness is context dependent.\n• Fiedler distinguishes task- and relationship-oriented styles.\n• Situational favorability affects the fit between style and context.\n• Other models such as path-goal theory focus on clarifying routes to goals.\n\nThe exam distinction is worth remembering: The contingency approach does not claim one style is always superior; it emphasizes person–situation fit.",
               "retrieval_questions": [
                 "State the source-based core idea of “Leadership effectiveness”.",
                 "List the key source-supported points for “Leadership effectiveness”.",
@@ -13927,7 +13927,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "The minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.\n\nThe concept is best retained as a connected set of features:\n• Minimal categorization can create meaningful group distinctions.\n• In-group favoritism can emerge with minimal group formation.\n• The paradigm supports the importance of social categorization.\n• It is relevant to Social Identity Theory.\n\nA useful exam distinction is this: Minimal-group findings do not require a history of real conflict between groups; the point is that categorization itself can matter.\n\nSource grounding: PowerWithin Psychology — Theories of Intergroup Relations, Minimal Group Experiment and Social Identity Theory.",
+              "deep_learning": "The minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic.\n\nThe important features are:\n• Minimal categorization can create meaningful group distinctions.\n• In-group favoritism can emerge with minimal group formation.\n• The paradigm supports the importance of social categorization.\n• It is relevant to Social Identity Theory.\n\nThe exam distinction is worth remembering: Minimal-group findings do not require a history of real conflict between groups; the point is that categorization itself can matter.",
               "retrieval_questions": [
                 "State the source-based core idea of “Minimal Group Experiment”.",
                 "List the key source-supported points for “Minimal Group Experiment”.",
@@ -13950,7 +13950,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Social Identity Theory",
-              "content_notes": "Social Identity Theory is centred on intergroup behavior through categorization, identification and social comparison.\n\nKEY POINTS\n• Tajfel & Turner\n• Ingroup/outgroup\n• Social comparison\n\nDISTINCTION / CAUTION\nIdentity processes do not require deep hostility.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Social Identity Theory is centred on intergroup behavior through categorization, identification and social comparison.\n\nKEY POINTS\n• Tajfel & Turner\n• Ingroup/outgroup\n• Social comparison\n\nDISTINCTION / CAUTION\nIdentity processes do not require deep hostility.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -13960,7 +13960,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social Identity Theory is centred on intergroup behavior through categorization, identification and social comparison.\n\nThe concept is best retained as a connected set of features:\n• Tajfel & Turner\n• Ingroup/outgroup\n• Social comparison\n\nA useful exam distinction is this: Identity processes do not require deep hostility.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Social Identity Theory is centred on intergroup behavior through categorization, identification and social comparison.\n\nThe important features are:\n• Tajfel & Turner\n• Ingroup/outgroup\n• Social comparison\n\nThe exam distinction is worth remembering: Identity processes do not require deep hostility.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Social Identity Theory”.",
                 "List the key points associated with “Social Identity Theory” in the uploaded study material.",
@@ -13997,7 +13997,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Relative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.\n\nThe concept is best retained as a connected set of features:\n• Perceived comparison is central.\n• People can feel deprived even when basic needs are met.\n• Relative deprivation can influence group attitudes and conflict.\n• The reference group or standard of comparison matters.\n\nA useful exam distinction is this: Relative deprivation is a perception of disadvantage; it is not identical to objective poverty.\n\nSource grounding: Baron & Misra — Relative Deprivation and Intergroup Attitudes; PowerWithin Psychology — Intergroup Relations.",
+              "deep_learning": "Relative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice.\n\nThe important features are:\n• Perceived comparison is central.\n• People can feel deprived even when basic needs are met.\n• Relative deprivation can influence group attitudes and conflict.\n• The reference group or standard of comparison matters.\n\nThe exam distinction is worth remembering: Relative deprivation is a perception of disadvantage; it is not identical to objective poverty.",
               "retrieval_questions": [
                 "State the source-based core idea of “Relative Deprivation Theory”.",
                 "List the key source-supported points for “Relative Deprivation Theory”.",
@@ -14021,7 +14021,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Realistic Conflict Theory",
-              "content_notes": "Realistic Conflict Theory is centred on intergroup hostility partly through competition over scarce resources.\n\nKEY POINTS\n• Sherif\n• Competition\n• Superordinate goals\n\nDISTINCTION / CAUTION\nNot all prejudice requires resource competition.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Realistic Conflict Theory is centred on intergroup hostility partly through competition over scarce resources.\n\nKEY POINTS\n• Sherif\n• Competition\n• Superordinate goals\n\nDISTINCTION / CAUTION\nNot all prejudice requires resource competition.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14031,7 +14031,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Realistic Conflict Theory is centred on intergroup hostility partly through competition over scarce resources.\n\nThe concept is best retained as a connected set of features:\n• Sherif\n• Competition\n• Superordinate goals\n\nA useful exam distinction is this: Not all prejudice requires resource competition.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Realistic Conflict Theory is centred on intergroup hostility partly through competition over scarce resources.\n\nThe important features are:\n• Sherif\n• Competition\n• Superordinate goals\n\nThe exam distinction is worth remembering: Not all prejudice requires resource competition.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Realistic Conflict Theory”.",
                 "List the key points associated with “Realistic Conflict Theory” in the uploaded study material.",
@@ -14068,7 +14068,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Balance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.\n\nThe concept is best retained as a connected set of features:\n• Relations among attitudes can be balanced or imbalanced.\n• People may be motivated to reduce inconsistency.\n• The framework examines triadic relationships among persons and objects.\n• Balance is a consistency principle rather than a simple positive/negative attitude score.\n\nA useful exam distinction is this: Balance theory is about patterns of relationships among attitudes, not merely whether one attitude is positive or negative.\n\nSource grounding: PowerWithin Psychology — Theories of Intergroup Relations, Balance Theories.",
+              "deep_learning": "Balance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition.\n\nThe important features are:\n• Relations among attitudes can be balanced or imbalanced.\n• People may be motivated to reduce inconsistency.\n• The framework examines triadic relationships among persons and objects.\n• Balance is a consistency principle rather than a simple positive/negative attitude score.\n\nThe exam distinction is worth remembering: Balance theory is about patterns of relationships among attitudes, not merely whether one attitude is positive or negative.",
               "retrieval_questions": [
                 "State the source-based core idea of “Balance Theories”.",
                 "List the key source-supported points for “Balance Theories”.",
@@ -14091,7 +14091,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Equity Theory",
-              "content_notes": "Equity Theory is centred on perceived fairness of input–outcome ratios in relationships.\n\nKEY POINTS\n• Inputs\n• Outcomes\n• Comparison others\n\nDISTINCTION / CAUTION\nEquity is not always identical to equality.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Equity Theory is centred on perceived fairness of input–outcome ratios in relationships.\n\nKEY POINTS\n• Inputs\n• Outcomes\n• Comparison others\n\nDISTINCTION / CAUTION\nEquity is not always identical to equality.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14101,7 +14101,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Equity Theory is centred on perceived fairness of input–outcome ratios in relationships.\n\nThe concept is best retained as a connected set of features:\n• Inputs\n• Outcomes\n• Comparison others\n\nA useful exam distinction is this: Equity is not always identical to equality.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Equity Theory is centred on perceived fairness of input–outcome ratios in relationships.\n\nThe important features are:\n• Inputs\n• Outcomes\n• Comparison others\n\nThe exam distinction is worth remembering: Equity is not always identical to equality.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Equity Theory”.",
                 "List the key points associated with “Equity Theory” in the uploaded study material.",
@@ -14128,7 +14128,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Social Exchange Theory",
-              "content_notes": "Social Exchange Theory is centred on relationships partly evaluated through rewards, costs, comparison levels and alternatives.\n\nKEY POINTS\n• Rewards\n• Costs\n• Comparison level\n• Alternatives\n\nDISTINCTION / CAUTION\nIt is a model, not literal money accounting.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Social Exchange Theory is centred on relationships partly evaluated through rewards, costs, comparison levels and alternatives.\n\nKEY POINTS\n• Rewards\n• Costs\n• Comparison level\n• Alternatives\n\nDISTINCTION / CAUTION\nIt is a model, not literal money accounting.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14138,7 +14138,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social Exchange Theory is centred on relationships partly evaluated through rewards, costs, comparison levels and alternatives.\n\nThe concept is best retained as a connected set of features:\n• Rewards\n• Costs\n• Comparison level\n• Alternatives\n\nA useful exam distinction is this: It is a model, not literal money accounting.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Social Exchange Theory is centred on relationships partly evaluated through rewards, costs, comparison levels and alternatives.\n\nThe important features are:\n• Rewards\n• Costs\n• Comparison level\n• Alternatives\n\nThe exam distinction is worth remembering: It is a model, not literal money accounting.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Social Exchange Theory”.",
                 "List the key points associated with “Social Exchange Theory” in the uploaded study material.",
@@ -14194,7 +14194,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Applied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.\n\nThe concept is best retained as a connected set of features:\n• Health behavior is influenced by social context.\n• Attitudes and norms can affect health decisions.\n• Social support can influence coping and wellbeing.\n• Interventions can use social-psychological principles.\n\nA useful exam distinction is this: Health applications are not limited to individual counseling; social norms, communication and group processes can also be intervention targets.\n\nSource grounding: PowerWithin Psychology — Applied Social Psychology: Health; Baron & Misra — Social Psychology and Health.",
+              "deep_learning": "Applied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior.\n\nThe important features are:\n• Health behavior is influenced by social context.\n• Attitudes and norms can affect health decisions.\n• Social support can influence coping and wellbeing.\n• Interventions can use social-psychological principles.\n\nThe exam distinction is worth remembering: Health applications are not limited to individual counseling; social norms, communication and group processes can also be intervention targets.",
               "retrieval_questions": [
                 "State the source-based core idea of “Health applications”.",
                 "List the key source-supported points for “Health applications”.",
@@ -14227,7 +14227,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Environmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.\n\nThe concept is best retained as a connected set of features:\n• Physical settings can influence stress and interaction.\n• Crowding concerns perceived density and its psychological effects.\n• Personal space regulates interpersonal distance.\n• Environmental design can influence behavior.\n\nA useful exam distinction is this: Environmental application is broader than pollution; it includes the psychological relationship between people and physical settings.\n\nSource grounding: PowerWithin Psychology — Applied Social Psychology: Environment; Ciccarelli & White — Environmental/Social Psychology.",
+              "deep_learning": "Environmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality.\n\nThe important features are:\n• Physical settings can influence stress and interaction.\n• Crowding concerns perceived density and its psychological effects.\n• Personal space regulates interpersonal distance.\n• Environmental design can influence behavior.\n\nThe exam distinction is worth remembering: Environmental application is broader than pollution; it includes the psychological relationship between people and physical settings.",
               "retrieval_questions": [
                 "State the source-based core idea of “Environmental applications”.",
                 "List the key source-supported points for “Environmental applications”.",
@@ -14260,7 +14260,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Applied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.\n\nThe concept is best retained as a connected set of features:\n• Social psychological principles can inform legal contexts.\n• Perception and judgment can affect legal decisions.\n• Communication and social influence are relevant to legal processes.\n• Detailed source-specific legal applications are limited in the supplied extract.\n\nA useful exam distinction is this: Do not import unsupported forensic procedures into this node; retain the social-psychological focus.\n\nSource grounding: PowerWithin Psychology — Applied Social Psychology: Law; outline-level coverage.",
+              "deep_learning": "Applied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract.\n\nThe important features are:\n• Social psychological principles can inform legal contexts.\n• Perception and judgment can affect legal decisions.\n• Communication and social influence are relevant to legal processes.\n• Detailed source-specific legal applications are limited in the supplied extract.\n\nThe exam distinction is worth remembering: Do not import unsupported forensic procedures into this node; retain the social-psychological focus.",
               "retrieval_questions": [
                 "State the source-based core idea of “Law applications”.",
                 "List the key source-supported points for “Law applications”.",
@@ -14293,7 +14293,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Personal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.\n\nThe concept is best retained as a connected set of features:\n• Personal space varies across people and situations.\n• It regulates interpersonal distance.\n• Crowding can occur when desired space is reduced.\n• Cultural context can influence norms for interpersonal distance.\n\nA useful exam distinction is this: Personal space is not the same as territoriality: personal space is the interpersonal distance around the person, whereas territoriality concerns control of a physical area.\n\nSource grounding: Ciccarelli & White 6e — Personal Space; PowerWithin Psychology — Applied Social Psychology.",
+              "deep_learning": "Personal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors.\n\nThe important features are:\n• Personal space varies across people and situations.\n• It regulates interpersonal distance.\n• Crowding can occur when desired space is reduced.\n• Cultural context can influence norms for interpersonal distance.\n\nThe exam distinction is worth remembering: Personal space is not the same as territoriality: personal space is the interpersonal distance around the person, whereas territoriality concerns control of a physical area.",
               "retrieval_questions": [
                 "State the source-based core idea of “Personal space”.",
                 "List the key source-supported points for “Personal space”.",
@@ -14326,7 +14326,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Crowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.\n\nThe concept is best retained as a connected set of features:\n• Density is a physical condition; crowding is a psychological experience.\n• Perceived control can influence stress responses to crowding.\n• The meaning of the setting affects the experience.\n• Crowding can influence interpersonal behavior and wellbeing.\n\nA useful exam distinction is this: High density does not always produce crowding; crowding depends partly on perceived control and context.\n\nSource grounding: PowerWithin Psychology — Applied Social Psychology; P2 Environment & Population Psychology — Crowding and perceived control.",
+              "deep_learning": "Crowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions.\n\nThe important features are:\n• Density is a physical condition; crowding is a psychological experience.\n• Perceived control can influence stress responses to crowding.\n• The meaning of the setting affects the experience.\n• Crowding can influence interpersonal behavior and wellbeing.\n\nThe exam distinction is worth remembering: High density does not always produce crowding; crowding depends partly on perceived control and context.",
               "retrieval_questions": [
                 "State the source-based core idea of “Crowding”.",
                 "List the key source-supported points for “Crowding”.",
@@ -14359,7 +14359,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Territoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.\n\nThe concept is best retained as a connected set of features:\n• Territories are physical areas associated with control or ownership.\n• Territorial behavior can regulate access and social interaction.\n• Territoriality can occur in homes, workplaces and other settings.\n• It differs from personal space because it concerns an area rather than an interpersonal radius.\n\nA useful exam distinction is this: Territoriality is not simply the amount of personal space a person prefers.\n\nSource grounding: PowerWithin Psychology — Applied Social Psychology; Ciccarelli & White — Territoriality and Personal Space.",
+              "deep_learning": "Territoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology.\n\nThe important features are:\n• Territories are physical areas associated with control or ownership.\n• Territorial behavior can regulate access and social interaction.\n• Territoriality can occur in homes, workplaces and other settings.\n• It differs from personal space because it concerns an area rather than an interpersonal radius.\n\nThe exam distinction is worth remembering: Territoriality is not simply the amount of personal space a person prefers.",
               "retrieval_questions": [
                 "State the source-based core idea of “Territoriality”.",
                 "List the key source-supported points for “Territoriality”.",
@@ -14408,7 +14408,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Nature of development",
-              "content_notes": "Nature of development is centred on systematic change across the lifespan in biological, cognitive, emotional and social domains.\n\nKEY POINTS\n• Lifespan\n• Multidimensionality\n• Plasticity\n\nDISTINCTION / CAUTION\nDevelopment is not limited to childhood.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Nature of development is centred on systematic change across the lifespan in biological, cognitive, emotional and social domains.\n\nKEY POINTS\n• Lifespan\n• Multidimensionality\n• Plasticity\n\nDISTINCTION / CAUTION\nDevelopment is not limited to childhood.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14418,7 +14418,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Nature of development is centred on systematic change across the lifespan in biological, cognitive, emotional and social domains.\n\nThe concept is best retained as a connected set of features:\n• Lifespan\n• Multidimensionality\n• Plasticity\n\nA useful exam distinction is this: Development is not limited to childhood.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Nature of development is centred on systematic change across the lifespan in biological, cognitive, emotional and social domains.\n\nThe important features are:\n• Lifespan\n• Multidimensionality\n• Plasticity\n\nThe exam distinction is worth remembering: Development is not limited to childhood.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Nature of development”.",
                 "List the key points associated with “Nature of development” in the uploaded study material.",
@@ -14445,7 +14445,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Principles of development",
-              "content_notes": "Principles of development is centred on organized patterns such as cephalocaudal and proximodistal development alongside individual differences.\n\nKEY POINTS\n• Cephalocaudal: head → toe\n• Proximodistal: centre → outward\n• Individual differences\n\nDISTINCTION / CAUTION\nDo not reverse the two sequences.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Principles of development is centred on organized patterns such as cephalocaudal and proximodistal development alongside individual differences.\n\nKEY POINTS\n• Cephalocaudal: head → toe\n• Proximodistal: centre → outward\n• Individual differences\n\nDISTINCTION / CAUTION\nDo not reverse the two sequences.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14455,7 +14455,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Principles of development is centred on organized patterns such as cephalocaudal and proximodistal development alongside individual differences.\n\nThe concept is best retained as a connected set of features:\n• Cephalocaudal: head → toe\n• Proximodistal: centre → outward\n• Individual differences\n\nA useful exam distinction is this: Do not reverse the two sequences.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Principles of development is centred on organized patterns such as cephalocaudal and proximodistal development alongside individual differences.\n\nThe important features are:\n• Cephalocaudal: head → toe\n• Proximodistal: centre → outward\n• Individual differences\n\nThe exam distinction is worth remembering: Do not reverse the two sequences.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Principles of development”.",
                 "List the key points associated with “Principles of development” in the uploaded study material.",
@@ -14492,7 +14492,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Factors in development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Avoid a simple heredity-versus-environment split; the source treatment emphasizes interaction.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide • Baron & Misra",
+              "deep_learning": "Factors in development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Avoid a simple heredity-versus-environment split; the source treatment emphasizes interaction.",
               "retrieval_questions": [
                 "Define Factors in development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14528,7 +14528,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Stages of development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not mix stages from different theories as one universal sequence.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Stages of development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not mix stages from different theories as one universal sequence.",
               "retrieval_questions": [
                 "Define Stages of development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14572,7 +14572,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Successful aging",
-              "content_notes": "Successful aging is centred on maintaining health, function, engagement and wellbeing while adapting to age-related change.\n\nKEY POINTS\n• Function\n• Engagement\n• Adaptation\n• Meaning\n\nDISTINCTION / CAUTION\nIt does not mean absence of every disease.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Successful aging is centred on maintaining health, function, engagement and wellbeing while adapting to age-related change.\n\nKEY POINTS\n• Function\n• Engagement\n• Adaptation\n• Meaning\n\nDISTINCTION / CAUTION\nIt does not mean absence of every disease.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -14582,7 +14582,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: place the concept in developmental sequence, identify the mechanism or stage, and distinguish it from neighbouring developmental explanations.",
-              "deep_learning": "Successful aging is centred on maintaining health, function, engagement and wellbeing while adapting to age-related change.\n\nThe concept is best retained as a connected set of features:\n• Function\n• Engagement\n• Adaptation\n• Meaning\n\nA useful exam distinction is this: It does not mean absence of every disease.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Successful aging is centred on maintaining health, function, engagement and wellbeing while adapting to age-related change.\n\nThe important features are:\n• Function\n• Engagement\n• Adaptation\n• Meaning\n\nThe exam distinction is worth remembering: It does not mean absence of every disease.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Successful aging”.",
                 "List the key points associated with “Successful aging” in the uploaded study material.",
@@ -14638,7 +14638,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Psychoanalytical theories should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Freud's stages and Erikson's stages are different systems with different organizing constructs.\n\nSource grounding: • Psychology: A Self-Teaching Guide • Ciccarelli & White",
+              "deep_learning": "Psychoanalytical theories should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Freud's stages and Erikson's stages are different systems with different organizing constructs.",
               "retrieval_questions": [
                 "Define Psychoanalytical theories using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14673,7 +14673,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Behavioristic theories should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The behavioristic account does not use developmental stages as its primary explanatory unit.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Behavioristic theories should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The behavioristic account does not use developmental stages as its primary explanatory unit.",
               "retrieval_questions": [
                 "Define Behavioristic theories using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14708,7 +14708,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Cognitive theories should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse cognitive stages with psychosocial or psychosexual stages.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Cognitive theories should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse cognitive stages with psychosocial or psychosexual stages.",
               "retrieval_questions": [
                 "Define Cognitive theories using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14762,7 +14762,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Sensory-motor development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• This domain is broader than Piaget's specific sensorimotor stage.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Sensory-motor development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• This domain is broader than Piaget's specific sensorimotor stage.",
               "retrieval_questions": [
                 "Define Sensory-motor development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14797,7 +14797,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Cognitive development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Cognitive development is broader than Piaget alone; information-processing approaches are also relevant.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Cognitive development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Cognitive development is broader than Piaget alone; information-processing approaches are also relevant.",
               "retrieval_questions": [
                 "Define Cognitive development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14832,7 +14832,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Language development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Language development is broader than vocabulary alone.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Language development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Language development is broader than vocabulary alone.",
               "retrieval_questions": [
                 "Define Language development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14867,7 +14867,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Emotional development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Emotion as a developmental domain should not be confused with psychopathology or personality traits.\n\nSource grounding: • Ciccarelli & White • Baron & Misra",
+              "deep_learning": "Emotional development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Emotion as a developmental domain should not be confused with psychopathology or personality traits.",
               "retrieval_questions": [
                 "Define Emotional development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14902,7 +14902,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Social development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Social development is broader than parent-child socialization alone.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Social development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Social development is broader than parent-child socialization alone.",
               "retrieval_questions": [
                 "Define Social development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14937,7 +14937,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Moral development should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Kohlberg's stages describe moral reasoning, not a complete measure of moral behavior.\n\nSource grounding: • Psychology: A Self-Teaching Guide • Ciccarelli & White",
+              "deep_learning": "Moral development should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Kohlberg's stages describe moral reasoning, not a complete measure of moral behavior.",
               "retrieval_questions": [
                 "Define Moral development using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -14991,7 +14991,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Concept of psychopathology should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Unusual behavior alone is not sufficient to establish psychopathology.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Concept of psychopathology should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Unusual behavior alone is not sufficient to establish psychopathology.",
               "retrieval_questions": [
                 "Define Concept of psychopathology using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15016,7 +15016,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Mental Status Examination",
-              "content_notes": "Mental Status Examination is centred on structured assessment of current mental functioning.\n\nKEY POINTS\n• Appearance/behavior\n• Speech\n• Mood/affect\n• Thought\n• Perception\n• Cognition\n• Insight/judgment\n\nDISTINCTION / CAUTION\nMSE is not itself a complete diagnosis.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Mental Status Examination is centred on structured assessment of current mental functioning.\n\nKEY POINTS\n• Appearance/behavior\n• Speech\n• Mood/affect\n• Thought\n• Perception\n• Cognition\n• Insight/judgment\n\nDISTINCTION / CAUTION\nMSE is not itself a complete diagnosis.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15026,7 +15026,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Mental Status Examination is centred on structured assessment of current mental functioning.\n\nThe concept is best retained as a connected set of features:\n• Appearance/behavior\n• Speech\n• Mood/affect\n• Thought\n• Perception\n• Cognition\n• Insight/judgment\n\nA useful exam distinction is this: MSE is not itself a complete diagnosis.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Mental Status Examination is centred on structured assessment of current mental functioning.\n\nThe important features are:\n• Appearance/behavior\n• Speech\n• Mood/affect\n• Thought\n• Perception\n• Cognition\n• Insight/judgment\n\nThe exam distinction is worth remembering: MSE is not itself a complete diagnosis.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Mental Status Examination”.",
                 "List the key points associated with “Mental Status Examination” in the uploaded study material.",
@@ -15063,7 +15063,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Classification should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Classification and etiology are different questions.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Classification should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Classification and etiology are different questions.",
               "retrieval_questions": [
                 "Define Classification using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15088,7 +15088,7 @@ window.NETPSY_DATA = {
             {
               "id": 4,
               "title": "Causes of psychopathology",
-              "content_notes": "Causes of psychopathology is centred on psychopathology understood through interacting biological, psychological and social influences.\n\nKEY POINTS\n• Genetic vulnerability\n• Learning\n• Stress\n• Context\n\nDISTINCTION / CAUTION\nAvoid single-cause explanations.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Causes of psychopathology is centred on psychopathology understood through interacting biological, psychological and social influences.\n\nKEY POINTS\n• Genetic vulnerability\n• Learning\n• Stress\n• Context\n\nDISTINCTION / CAUTION\nAvoid single-cause explanations.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15098,7 +15098,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: define the construct, identify the model or process, compare competing explanations and connect the concept to measurement or application.",
-              "deep_learning": "Causes of psychopathology is centred on psychopathology understood through interacting biological, psychological and social influences.\n\nThe concept is best retained as a connected set of features:\n• Genetic vulnerability\n• Learning\n• Stress\n• Context\n\nA useful exam distinction is this: Avoid single-cause explanations.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Causes of psychopathology is centred on psychopathology understood through interacting biological, psychological and social influences.\n\nThe important features are:\n• Genetic vulnerability\n• Learning\n• Stress\n• Context\n\nThe exam distinction is worth remembering: Avoid single-cause explanations.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Causes of psychopathology”.",
                 "List the key points associated with “Causes of psychopathology” in the uploaded study material.",
@@ -15154,7 +15154,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Psychoanalysis should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Psychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central.\n\nSource grounding: • Psychology: A Self-Teaching Guide • Ciccarelli & White",
+              "deep_learning": "Psychoanalysis should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Psychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central.",
               "retrieval_questions": [
                 "Define Psychoanalysis using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15179,7 +15179,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Person-centered therapy",
-              "content_notes": "Person-centered therapy is centred on Rogers' approach emphasizing empathy, congruence and unconditional positive regard.\n\nKEY POINTS\n• Client autonomy\n• Empathy\n• Congruence\n• Unconditional positive regard\n\nDISTINCTION / CAUTION\nIt is not advice-giving.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Person-centered therapy is centred on Rogers' approach emphasizing empathy, congruence and unconditional positive regard.\n\nKEY POINTS\n• Client autonomy\n• Empathy\n• Congruence\n• Unconditional positive regard\n\nDISTINCTION / CAUTION\nIt is not advice-giving.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15189,7 +15189,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Person-centered therapy is centred on Rogers' approach emphasizing empathy, congruence and unconditional positive regard.\n\nThe concept is best retained as a connected set of features:\n• Client autonomy\n• Empathy\n• Congruence\n• Unconditional positive regard\n\nA useful exam distinction is this: It is not advice-giving.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Person-centered therapy is centred on Rogers' approach emphasizing empathy, congruence and unconditional positive regard.\n\nThe important features are:\n• Client autonomy\n• Empathy\n• Congruence\n• Unconditional positive regard\n\nThe exam distinction is worth remembering: It is not advice-giving.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Person-centered therapy”.",
                 "List the key points associated with “Person-centered therapy” in the uploaded study material.",
@@ -15226,7 +15226,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Gestalt therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse Gestalt therapy with Gestalt principles of perceptual organization.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Gestalt therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse Gestalt therapy with Gestalt principles of perceptual organization.",
               "retrieval_questions": [
                 "Define Gestalt therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15261,7 +15261,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Existential therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It is an experiential/philosophical approach rather than a single symptom protocol.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Existential therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It is an experiential/philosophical approach rather than a single symptom protocol.",
               "retrieval_questions": [
                 "Define Existential therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15285,7 +15285,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Acceptance Commitment Therapy",
-              "content_notes": "Acceptance Commitment Therapy is centred on ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.\n\nKEY POINTS\n• Acceptance\n• Defusion\n• Values\n• Committed action\n\nDISTINCTION / CAUTION\nAcceptance is not resignation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Acceptance Commitment Therapy is centred on ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.\n\nKEY POINTS\n• Acceptance\n• Defusion\n• Values\n• Committed action\n\nDISTINCTION / CAUTION\nAcceptance is not resignation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15295,7 +15295,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Acceptance Commitment Therapy is centred on ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.\n\nThe concept is best retained as a connected set of features:\n• Acceptance\n• Defusion\n• Values\n• Committed action\n\nA useful exam distinction is this: Acceptance is not resignation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Acceptance Commitment Therapy is centred on ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility.\n\nThe important features are:\n• Acceptance\n• Defusion\n• Values\n• Committed action\n\nThe exam distinction is worth remembering: Acceptance is not resignation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Acceptance Commitment Therapy”.",
                 "List the key points associated with “Acceptance Commitment Therapy” in the uploaded study material.",
@@ -15332,7 +15332,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Behavior therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Identify the conditioning principle before naming a technique.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Behavior therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Identify the conditioning principle before naming a technique.",
               "retrieval_questions": [
                 "Define Behavior therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15357,7 +15357,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "REBT",
-              "content_notes": "REBT is centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.\n\nKEY POINTS\n• Albert Ellis\n• A-B-C\n• Disputation\n• Adaptive beliefs\n\nDISTINCTION / CAUTION\nBeliefs mediate the consequences.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "REBT is centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.\n\nKEY POINTS\n• Albert Ellis\n• A-B-C\n• Disputation\n• Adaptive beliefs\n\nDISTINCTION / CAUTION\nBeliefs mediate the consequences.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15367,7 +15367,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "REBT is centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.\n\nThe concept is best retained as a connected set of features:\n• Albert Ellis\n• A-B-C\n• Disputation\n• Adaptive beliefs\n\nA useful exam distinction is this: Beliefs mediate the consequences.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "REBT is centred on Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation.\n\nThe important features are:\n• Albert Ellis\n• A-B-C\n• Disputation\n• Adaptive beliefs\n\nThe exam distinction is worth remembering: Beliefs mediate the consequences.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “REBT”.",
                 "List the key points associated with “REBT” in the uploaded study material.",
@@ -15394,7 +15394,7 @@ window.NETPSY_DATA = {
             {
               "id": 8,
               "title": "CBT",
-              "content_notes": "CBT is centred on structured approach targeting reciprocal links among thoughts, emotions and behavior.\n\nKEY POINTS\n• Cognitive restructuring\n• Behavioral experiments\n• Skills\n• Homework\n\nDISTINCTION / CAUTION\nNot simply positive thinking.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "CBT is centred on structured approach targeting reciprocal links among thoughts, emotions and behavior.\n\nKEY POINTS\n• Cognitive restructuring\n• Behavioral experiments\n• Skills\n• Homework\n\nDISTINCTION / CAUTION\nNot simply positive thinking.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15404,7 +15404,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "CBT is centred on structured approach targeting reciprocal links among thoughts, emotions and behavior.\n\nThe concept is best retained as a connected set of features:\n• Cognitive restructuring\n• Behavioral experiments\n• Skills\n• Homework\n\nA useful exam distinction is this: Not simply positive thinking.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "CBT is centred on structured approach targeting reciprocal links among thoughts, emotions and behavior.\n\nThe important features are:\n• Cognitive restructuring\n• Behavioral experiments\n• Skills\n• Homework\n\nThe exam distinction is worth remembering: Not simply positive thinking.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “CBT”.",
                 "List the key points associated with “CBT” in the uploaded study material.",
@@ -15441,7 +15441,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "MBCT should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• MBCT is not merely relaxation training; the cognitive relationship to thoughts is central.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "MBCT should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• MBCT is not merely relaxation training; the cognitive relationship to thoughts is central.",
               "retrieval_questions": [
                 "Define MBCT using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15476,7 +15476,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Play therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Therapeutic play is not simply recreational play.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Play therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Therapeutic play is not simply recreational play.",
               "retrieval_questions": [
                 "Define Play therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15511,7 +15511,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Positive psychotherapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It does not mean ignoring symptoms or suffering.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Positive psychotherapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• It does not mean ignoring symptoms or suffering.",
               "retrieval_questions": [
                 "Define Positive psychotherapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15545,7 +15545,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Transactional Analysis should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• TA ego states should not be equated directly with Freud's id, ego and superego.\n\nSource grounding: • PowerWithin Psychology • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Transactional Analysis should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• TA ego states should not be equated directly with Freud's id, ego and superego.",
               "retrieval_questions": [
                 "Define Transactional Analysis using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15570,7 +15570,7 @@ window.NETPSY_DATA = {
             {
               "id": 13,
               "title": "Dialectic behavior therapy",
-              "content_notes": "Dialectic behavior therapy is centred on acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.\n\nKEY POINTS\n• Marsha Linehan\n• Four skills domains\n• Validation + change\n\nDISTINCTION / CAUTION\nIt is broader than one emotion technique.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Dialectic behavior therapy is centred on acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.\n\nKEY POINTS\n• Marsha Linehan\n• Four skills domains\n• Validation + change\n\nDISTINCTION / CAUTION\nIt is broader than one emotion technique.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15580,7 +15580,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Dialectic behavior therapy is centred on acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.\n\nThe concept is best retained as a connected set of features:\n• Marsha Linehan\n• Four skills domains\n• Validation + change\n\nA useful exam distinction is this: It is broader than one emotion technique.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Dialectic behavior therapy is centred on acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.\n\nThe important features are:\n• Marsha Linehan\n• Four skills domains\n• Validation + change\n\nThe exam distinction is worth remembering: It is broader than one emotion technique.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Dialectic behavior therapy”.",
                 "List the key points associated with “Dialectic behavior therapy” in the uploaded study material.",
@@ -15617,7 +15617,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Art therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not treat every drawing as a fixed diagnostic symbol.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Art therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not treat every drawing as a fixed diagnostic symbol.",
               "retrieval_questions": [
                 "Define Art therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15651,7 +15651,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Performing Art Therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The therapeutic medium distinguishes performing-art therapy from other expressive therapies.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Performing Art Therapy should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• The therapeutic medium distinguishes performing-art therapy from other expressive therapies.",
               "retrieval_questions": [
                 "Define Performing Art Therapy using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15675,7 +15675,7 @@ window.NETPSY_DATA = {
             {
               "id": 16,
               "title": "Family therapy",
-              "content_notes": "Family therapy is centred on systemic approach focusing on relationship patterns, communication and family interaction.\n\nKEY POINTS\n• Systems\n• Boundaries\n• Interaction patterns\n• Communication\n\nDISTINCTION / CAUTION\nNot every family member must attend every session.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Family therapy is centred on systemic approach focusing on relationship patterns, communication and family interaction.\n\nKEY POINTS\n• Systems\n• Boundaries\n• Interaction patterns\n• Communication\n\nDISTINCTION / CAUTION\nNot every family member must attend every session.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -15685,7 +15685,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the theory to its assumptions about personality, determinants, development, assessment and characteristic constructs.",
-              "deep_learning": "Family therapy is centred on systemic approach focusing on relationship patterns, communication and family interaction.\n\nThe concept is best retained as a connected set of features:\n• Systems\n• Boundaries\n• Interaction patterns\n• Communication\n\nA useful exam distinction is this: Not every family member must attend every session.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Family therapy is centred on systemic approach focusing on relationship patterns, communication and family interaction.\n\nThe important features are:\n• Systems\n• Boundaries\n• Interaction patterns\n• Communication\n\nThe exam distinction is worth remembering: Not every family member must attend every session.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Family therapy”.",
                 "List the key points associated with “Family therapy” in the uploaded study material.",
@@ -15742,7 +15742,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Applications of motivation theories in school should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• An application should identify the theory and its mechanism rather than merely stating that motivation improves learning.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Applications of motivation theories in school should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• An application should identify the theory and its mechanism rather than merely stating that motivation improves learning.",
               "retrieval_questions": [
                 "Define Applications of motivation theories in school using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15778,7 +15778,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Applications of learning theories in school should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not reduce all classroom learning to operant conditioning.\n\nSource grounding: • Ciccarelli & White • Psychology: A Self-Teaching Guide",
+              "deep_learning": "Applications of learning theories in school should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not reduce all classroom learning to operant conditioning.",
               "retrieval_questions": [
                 "Define Applications of learning theories in school using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15832,7 +15832,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Factors in educational achievement should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Achievement is an outcome and is not identical to intelligence.\n\nSource grounding: • Ciccarelli & White • PowerWithin Psychology",
+              "deep_learning": "Factors in educational achievement should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Achievement is an outcome and is not identical to intelligence.",
               "retrieval_questions": [
                 "Define Factors in educational achievement using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15886,7 +15886,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Teacher effectiveness should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Effectiveness is not synonymous with popularity or authority; educational impact is central.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Teacher effectiveness should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Effectiveness is not synonymous with popularity or authority; educational impact is central.",
               "retrieval_questions": [
                 "Define Teacher effectiveness using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15941,7 +15941,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Needs for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Guidance is broader than counselling; counselling is one service within a guidance programme.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Needs for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Guidance is broader than counselling; counselling is one service within a guidance programme.",
               "retrieval_questions": [
                 "Define Needs for school guidance using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -15976,7 +15976,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Organizational setup for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Programme structure is different from the needs that guidance addresses.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Organizational setup for school guidance should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Programme structure is different from the needs that guidance addresses.",
               "retrieval_questions": [
                 "Define Organizational setup for school guidance using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -16011,7 +16011,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "School guidance techniques should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse placement with follow-up or referral.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "School guidance techniques should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Do not confuse placement with follow-up or referral.",
               "retrieval_questions": [
                 "Define School guidance techniques using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -16054,7 +16054,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Counselling process",
-              "content_notes": "Counselling process is centred on structured helping process involving rapport, assessment, goals, intervention and follow-up.\n\nKEY POINTS\n• Rapport\n• Assessment\n• Goals\n• Intervention\n• Follow-up\n\nDISTINCTION / CAUTION\nCounselling is not simply advice.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Counselling process is centred on structured helping process involving rapport, assessment, goals, intervention and follow-up.\n\nKEY POINTS\n• Rapport\n• Assessment\n• Goals\n• Intervention\n• Follow-up\n\nDISTINCTION / CAUTION\nCounselling is not simply advice.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16064,7 +16064,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "Counselling process is centred on structured helping process involving rapport, assessment, goals, intervention and follow-up.\n\nThe concept is best retained as a connected set of features:\n• Rapport\n• Assessment\n• Goals\n• Intervention\n• Follow-up\n\nA useful exam distinction is this: Counselling is not simply advice.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Counselling process is centred on structured helping process involving rapport, assessment, goals, intervention and follow-up.\n\nThe important features are:\n• Rapport\n• Assessment\n• Goals\n• Intervention\n• Follow-up\n\nThe exam distinction is worth remembering: Counselling is not simply advice.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Counselling process”.",
                 "List the key points associated with “Counselling process” in the uploaded study material.",
@@ -16091,7 +16091,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Counselling skills",
-              "content_notes": "Counselling skills is centred on active listening, empathy, reflection, questioning, summarizing and appropriate silence.\n\nKEY POINTS\n• Attending\n• Empathy\n• Reflection\n• Open questions\n• Summary\n\nDISTINCTION / CAUTION\nQuestioning should not become interrogation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Counselling skills is centred on active listening, empathy, reflection, questioning, summarizing and appropriate silence.\n\nKEY POINTS\n• Attending\n• Empathy\n• Reflection\n• Open questions\n• Summary\n\nDISTINCTION / CAUTION\nQuestioning should not become interrogation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16101,7 +16101,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "Counselling skills is centred on active listening, empathy, reflection, questioning, summarizing and appropriate silence.\n\nThe concept is best retained as a connected set of features:\n• Attending\n• Empathy\n• Reflection\n• Open questions\n• Summary\n\nA useful exam distinction is this: Questioning should not become interrogation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Counselling skills is centred on active listening, empathy, reflection, questioning, summarizing and appropriate silence.\n\nThe important features are:\n• Attending\n• Empathy\n• Reflection\n• Open questions\n• Summary\n\nThe exam distinction is worth remembering: Questioning should not become interrogation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Counselling skills”.",
                 "List the key points associated with “Counselling skills” in the uploaded study material.",
@@ -16138,7 +16138,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the defining features or clinical process, explanatory model and intervention approach without collapsing different diagnostic or therapeutic frameworks.",
-              "deep_learning": "Counselling techniques should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Technique must be interpreted within its counselling model and purpose.\n\nSource grounding: • Ciccarelli & White • PowerWithin Psychology",
+              "deep_learning": "Counselling techniques should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central mechanism\n• Major named construct/stage/process where supported\n• Relationship to the neighbouring concept\n• DISTINCTION / CAUTION\n• Technique must be interpreted within its counselling model and purpose.",
               "retrieval_questions": [
                 "Define Counselling techniques using the source terminology.",
                 "State its central mechanism, stages or functions.",
@@ -16189,7 +16189,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Gender",
-              "content_notes": "Gender is centred on social and psychological dimension shaped by identity, roles, norms and context.\n\nKEY POINTS\n• Gender identity\n• Roles\n• Norms\n• Intersectionality\n\nDISTINCTION / CAUTION\nGender should not be reduced to biological sex alone.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Gender is centred on social and psychological dimension shaped by identity, roles, norms and context.\n\nKEY POINTS\n• Gender identity\n• Roles\n• Norms\n• Intersectionality\n\nDISTINCTION / CAUTION\nGender should not be reduced to biological sex alone.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16199,7 +16199,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Gender is centred on social and psychological dimension shaped by identity, roles, norms and context.\n\nThe concept is best retained as a connected set of features:\n• Gender identity\n• Roles\n• Norms\n• Intersectionality\n\nA useful exam distinction is this: Gender should not be reduced to biological sex alone.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Gender is centred on social and psychological dimension shaped by identity, roles, norms and context.\n\nThe important features are:\n• Gender identity\n• Roles\n• Norms\n• Intersectionality\n\nThe exam distinction is worth remembering: Gender should not be reduced to biological sex alone.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Gender”.",
                 "List the key points associated with “Gender” in the uploaded study material.",
@@ -16235,7 +16235,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Poverty should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Poverty is a social condition and should not be reduced to individual motivation or personal failure.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Poverty should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Poverty is a social condition and should not be reduced to individual motivation or personal failure.",
               "retrieval_questions": [
                 "Define Poverty using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16268,7 +16268,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Disability should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid defining disability only through deficit.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Disability should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid defining disability only through deficit.",
               "retrieval_questions": [
                 "Define Disability using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16302,7 +16302,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Migration should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Migration itself is not a disorder; psychological outcomes depend on context.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Migration should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Migration itself is not a disorder; psychological outcomes depend on context.",
               "retrieval_questions": [
                 "Define Migration using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16335,7 +16335,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Cultural bias should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Cultural difference is not itself bias; unjustified universalization is the issue.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Cultural bias should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Cultural difference is not itself bias; unjustified universalization is the issue.",
               "retrieval_questions": [
                 "Define Cultural bias using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16359,7 +16359,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Discrimination",
-              "content_notes": "Discrimination is centred on differential treatment based on group membership or perceived group membership.\n\nKEY POINTS\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nDISTINCTION / CAUTION\nKeep the three concepts distinct.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Discrimination is centred on differential treatment based on group membership or perceived group membership.\n\nKEY POINTS\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nDISTINCTION / CAUTION\nKeep the three concepts distinct.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16369,7 +16369,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Discrimination is centred on differential treatment based on group membership or perceived group membership.\n\nThe concept is best retained as a connected set of features:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nA useful exam distinction is this: Keep the three concepts distinct.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Discrimination is centred on differential treatment based on group membership or perceived group membership.\n\nThe important features are:\n• Stereotype = belief\n• Prejudice = evaluation\n• Discrimination = behavior\n\nThe exam distinction is worth remembering: Keep the three concepts distinct.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Discrimination”.",
                 "List the key points associated with “Discrimination” in the uploaded study material.",
@@ -16414,7 +16414,7 @@ window.NETPSY_DATA = {
             {
               "id": 1,
               "title": "Stigma",
-              "content_notes": "Stigma is centred on social devaluation or negative labeling associated with a characteristic or condition.\n\nKEY POINTS\n• Labeling\n• Stereotyping\n• Status loss\n• Discrimination\n\nDISTINCTION / CAUTION\nStigma is social/relational, not just personal feeling.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Stigma is centred on social devaluation or negative labeling associated with a characteristic or condition.\n\nKEY POINTS\n• Labeling\n• Stereotyping\n• Status loss\n• Discrimination\n\nDISTINCTION / CAUTION\nStigma is social/relational, not just personal feeling.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16424,7 +16424,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Stigma is centred on social devaluation or negative labeling associated with a characteristic or condition.\n\nThe concept is best retained as a connected set of features:\n• Labeling\n• Stereotyping\n• Status loss\n• Discrimination\n\nA useful exam distinction is this: Stigma is social/relational, not just personal feeling.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Stigma is centred on social devaluation or negative labeling associated with a characteristic or condition.\n\nThe important features are:\n• Labeling\n• Stereotyping\n• Status loss\n• Discrimination\n\nThe exam distinction is worth remembering: Stigma is social/relational, not just personal feeling.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Stigma”.",
                 "List the key points associated with “Stigma” in the uploaded study material.",
@@ -16460,7 +16460,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Marginalization should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Marginalization is a social process, not a personality characteristic.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Marginalization should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Marginalization is a social process, not a personality characteristic.",
               "retrieval_questions": [
                 "Define Marginalization using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16493,7 +16493,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Social suffering should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It does not deny individual processes; it adds social context.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Social suffering should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It does not deny individual processes; it adds social context.",
               "retrieval_questions": [
                 "Define Social suffering using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16526,7 +16526,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Child abuse should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Do not frame abuse as the child's problem; responsibility and context are central.\n\nSource grounding: • PowerWithin Psychology • Ciccarelli & White",
+              "deep_learning": "Child abuse should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Do not frame abuse as the child's problem; responsibility and context are central.",
               "retrieval_questions": [
                 "Define Child abuse using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16560,7 +16560,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: analyse the interaction between person, situation, cognition and social context, using the relevant classic experiment, theory or process where applicable.",
-              "deep_learning": "Domestic violence should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Ordinary disagreement is not automatically domestic violence; abuse and coercion are central considerations.\n\nSource grounding: • PowerWithin Psychology • Baron & Misra",
+              "deep_learning": "Domestic violence should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Ordinary disagreement is not automatically domestic violence; abuse and coercion are central considerations.",
               "retrieval_questions": [
                 "Define Domestic violence using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16613,7 +16613,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Violence should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Aggression and violence overlap but are not identical concepts.\n\nSource grounding: • PowerWithin Psychology • Baron & Misra",
+              "deep_learning": "Violence should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Aggression and violence overlap but are not identical concepts.",
               "retrieval_questions": [
                 "Define Violence using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16647,7 +16647,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Non-violence should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Non-violence is not identical to passivity.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Non-violence should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Non-violence is not identical to passivity.",
               "retrieval_questions": [
                 "Define Non-violence using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16680,7 +16680,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Conflict resolution at macro level should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Resolution is broader than suppressing visible disagreement.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Conflict resolution at macro level should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Resolution is broader than suppressing visible disagreement.",
               "retrieval_questions": [
                 "Define Conflict resolution at macro level using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16713,7 +16713,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: learn the defining concept, its key components, one close distinction and one application before moving to retrieval practice.",
-              "deep_learning": "Role of media in conflict resolution should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Media influence is not automatically peaceful or violent.\n\nSource grounding: • PowerWithin Psychology • Baron & Misra",
+              "deep_learning": "Role of media in conflict resolution should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Media influence is not automatically peaceful or violent.",
               "retrieval_questions": [
                 "Define Role of media in conflict resolution using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16767,7 +16767,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Types of wellbeing should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Wellbeing should not be equated with momentary happiness alone.\n\nSource grounding: • PowerWithin Psychology • Baron & Misra",
+              "deep_learning": "Types of wellbeing should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Wellbeing should not be equated with momentary happiness alone.",
               "retrieval_questions": [
                 "Define Types of wellbeing using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16791,7 +16791,7 @@ window.NETPSY_DATA = {
             {
               "id": 2,
               "title": "Hedonic wellbeing",
-              "content_notes": "Hedonic wellbeing is centred on wellbeing emphasizing pleasure, positive affect and life satisfaction.\n\nKEY POINTS\n• Positive affect\n• Low negative affect\n• Life satisfaction\n\nDISTINCTION / CAUTION\nNot identical to short-term pleasure.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Hedonic wellbeing is centred on wellbeing emphasizing pleasure, positive affect and life satisfaction.\n\nKEY POINTS\n• Positive affect\n• Low negative affect\n• Life satisfaction\n\nDISTINCTION / CAUTION\nNot identical to short-term pleasure.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16802,7 +16802,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Hedonic wellbeing is centred on wellbeing emphasizing pleasure, positive affect and life satisfaction.\n\nThe concept is best retained as a connected set of features:\n• Positive affect\n• Low negative affect\n• Life satisfaction\n\nA useful exam distinction is this: Not identical to short-term pleasure.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology • Psychology by Ciccarelli & White (6th ed.)",
+              "deep_learning": "Hedonic wellbeing is centred on wellbeing emphasizing pleasure, positive affect and life satisfaction.\n\nThe important features are:\n• Positive affect\n• Low negative affect\n• Life satisfaction\n\nThe exam distinction is worth remembering: Not identical to short-term pleasure.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Hedonic wellbeing”.",
                 "List the key points associated with “Hedonic wellbeing” in the uploaded study material.",
@@ -16829,7 +16829,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Eudemonic wellbeing",
-              "content_notes": "Eudemonic wellbeing is centred on wellbeing emphasizing meaning, purpose, growth and realizing capacities.\n\nKEY POINTS\n• Meaning\n• Purpose\n• Growth\n• Self-realization\n\nDISTINCTION / CAUTION\nNot simply happiness.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Eudemonic wellbeing is centred on wellbeing emphasizing meaning, purpose, growth and realizing capacities.\n\nKEY POINTS\n• Meaning\n• Purpose\n• Growth\n• Self-realization\n\nDISTINCTION / CAUTION\nNot simply happiness.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16840,7 +16840,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Eudemonic wellbeing is centred on wellbeing emphasizing meaning, purpose, growth and realizing capacities.\n\nThe concept is best retained as a connected set of features:\n• Meaning\n• Purpose\n• Growth\n• Self-realization\n\nA useful exam distinction is this: Not simply happiness.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology • Psychology by Ciccarelli & White (6th ed.)",
+              "deep_learning": "Eudemonic wellbeing is centred on wellbeing emphasizing meaning, purpose, growth and realizing capacities.\n\nThe important features are:\n• Meaning\n• Purpose\n• Growth\n• Self-realization\n\nThe exam distinction is worth remembering: Not simply happiness.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Eudemonic wellbeing”.",
                 "List the key points associated with “Eudemonic wellbeing” in the uploaded study material.",
@@ -16878,7 +16878,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Character strengths should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Strengths are not simply skills or the absence of weaknesses.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Character strengths should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Strengths are not simply skills or the absence of weaknesses.",
               "retrieval_questions": [
                 "Define Character strengths using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -16901,7 +16901,7 @@ window.NETPSY_DATA = {
             {
               "id": 5,
               "title": "Resilience",
-              "content_notes": "Resilience is centred on capacity to adapt, recover or maintain functioning in adversity.\n\nKEY POINTS\n• Adaptation\n• Protective factors\n• Recovery/growth\n\nDISTINCTION / CAUTION\nResilience does not mean no distress.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Resilience is centred on capacity to adapt, recover or maintain functioning in adversity.\n\nKEY POINTS\n• Adaptation\n• Protective factors\n• Recovery/growth\n\nDISTINCTION / CAUTION\nResilience does not mean no distress.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16912,7 +16912,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Resilience is centred on capacity to adapt, recover or maintain functioning in adversity.\n\nThe concept is best retained as a connected set of features:\n• Adaptation\n• Protective factors\n• Recovery/growth\n\nA useful exam distinction is this: Resilience does not mean no distress.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology • Psychology by Ciccarelli & White (6th ed.)",
+              "deep_learning": "Resilience is centred on capacity to adapt, recover or maintain functioning in adversity.\n\nThe important features are:\n• Adaptation\n• Protective factors\n• Recovery/growth\n\nThe exam distinction is worth remembering: Resilience does not mean no distress.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Resilience”.",
                 "List the key points associated with “Resilience” in the uploaded study material.",
@@ -16939,7 +16939,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Post-Traumatic Growth",
-              "content_notes": "Post-Traumatic Growth is centred on positive changes in self, relationships or priorities reported following major adversity.\n\nKEY POINTS\n• Meaning\n• Relationships\n• Appreciation of life\n• Personal strength\n\nDISTINCTION / CAUTION\nGrowth does not imply trauma was beneficial.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Post-Traumatic Growth is centred on positive changes in self, relationships or priorities reported following major adversity.\n\nKEY POINTS\n• Meaning\n• Relationships\n• Appreciation of life\n• Personal strength\n\nDISTINCTION / CAUTION\nGrowth does not imply trauma was beneficial.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -16950,7 +16950,7 @@ window.NETPSY_DATA = {
                 "ciccarelli"
               ],
               "source_lens": "Textbook lens: connect the construct to its determinants, process or theory, observable consequences and regulation/coping where relevant.",
-              "deep_learning": "Post-Traumatic Growth is centred on positive changes in self, relationships or priorities reported following major adversity.\n\nThe concept is best retained as a connected set of features:\n• Meaning\n• Relationships\n• Appreciation of life\n• Personal strength\n\nA useful exam distinction is this: Growth does not imply trauma was beneficial.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology: A Self-Teaching Guide • Baron & Misra — Psychology • Psychology by Ciccarelli & White (6th ed.)",
+              "deep_learning": "Post-Traumatic Growth is centred on positive changes in self, relationships or priorities reported following major adversity.\n\nThe important features are:\n• Meaning\n• Relationships\n• Appreciation of life\n• Personal strength\n\nThe exam distinction is worth remembering: Growth does not imply trauma was beneficial.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Post-Traumatic Growth”.",
                 "List the key points associated with “Post-Traumatic Growth” in the uploaded study material.",
@@ -17006,7 +17006,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Health-promoting behaviors should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Define the behavior by its health function, not merely social approval.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Health-promoting behaviors should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Define the behavior by its health function, not merely social approval.",
               "retrieval_questions": [
                 "Define Health-promoting behaviors using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17040,7 +17040,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Health-compromising behaviors should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Risk behavior does not make a disease outcome inevitable.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Health-compromising behaviors should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Risk behavior does not make a disease outcome inevitable.",
               "retrieval_questions": [
                 "Define Health-compromising behaviors using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17074,7 +17074,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Lifestyle should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Lifestyle is not purely individual choice; environments influence available choices.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Lifestyle should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Lifestyle is not purely individual choice; environments influence available choices.",
               "retrieval_questions": [
                 "Define Lifestyle using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17108,7 +17108,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Diabetes should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological factors can influence management without being treated as the sole cause.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Diabetes should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological factors can influence management without being treated as the sole cause.",
               "retrieval_questions": [
                 "Define Diabetes using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17142,7 +17142,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Hypertension should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Stress is one factor among several; it should not be presented as the sole cause.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Hypertension should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Stress is one factor among several; it should not be presented as the sole cause.",
               "retrieval_questions": [
                 "Define Hypertension using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17176,7 +17176,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Coronary Heart Disease should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Use a multifactorial risk framework rather than a single-cause explanation.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Coronary Heart Disease should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Use a multifactorial risk framework rather than a single-cause explanation.",
               "retrieval_questions": [
                 "Define Coronary Heart Disease using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17200,7 +17200,7 @@ window.NETPSY_DATA = {
             {
               "id": 7,
               "title": "Psychoneuroimmunology",
-              "content_notes": "Psychoneuroimmunology is centred on study of interactions among psychological processes, nervous, endocrine and immune systems.\n\nKEY POINTS\n• Stress\n• Neuroendocrine pathways\n• Immune function\n\nDISTINCTION / CAUTION\nIt does not mean thoughts directly cause every disease.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Psychoneuroimmunology is centred on study of interactions among psychological processes, nervous, endocrine and immune systems.\n\nKEY POINTS\n• Stress\n• Neuroendocrine pathways\n• Immune function\n\nDISTINCTION / CAUTION\nIt does not mean thoughts directly cause every disease.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide (attached source)",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17210,7 +17210,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Psychoneuroimmunology is centred on study of interactions among psychological processes, nervous, endocrine and immune systems.\n\nThe concept is best retained as a connected set of features:\n• Stress\n• Neuroendocrine pathways\n• Immune function\n\nA useful exam distinction is this: It does not mean thoughts directly cause every disease.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Psychoneuroimmunology is centred on study of interactions among psychological processes, nervous, endocrine and immune systems.\n\nThe important features are:\n• Stress\n• Neuroendocrine pathways\n• Immune function\n\nThe exam distinction is worth remembering: It does not mean thoughts directly cause every disease.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Psychoneuroimmunology”.",
                 "List the key points associated with “Psychoneuroimmunology” in the uploaded study material.",
@@ -17246,7 +17246,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "Cancer should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological stress should not be presented as a single direct cause of cancer.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "Cancer should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Psychological stress should not be presented as a single direct cause of cancer.",
               "retrieval_questions": [
                 "Define Cancer using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17280,7 +17280,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: connect the psychological phenomenon to its biological or perceptual mechanism, processing stage and behavioural consequence.",
-              "deep_learning": "HIV/AIDS should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• HIV infection and AIDS are related but not identical terms.\n\nSource grounding: • Baron & Misra • Ciccarelli & White",
+              "deep_learning": "HIV/AIDS should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• HIV infection and AIDS are related but not identical terms.",
               "retrieval_questions": [
                 "Define HIV/AIDS using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17333,7 +17333,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Digital learning should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Technology use is not automatically equivalent to improved learning.\n\nSource grounding: • Ciccarelli & White • PowerWithin Psychology",
+              "deep_learning": "Digital learning should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Technology use is not automatically equivalent to improved learning.",
               "retrieval_questions": [
                 "Define Digital learning using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17368,7 +17368,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Digital etiquette should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It is a social-behavioral framework, not a technical cybersecurity procedure.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Digital etiquette should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• It is a social-behavioral framework, not a technical cybersecurity procedure.",
               "retrieval_questions": [
                 "Define Digital etiquette using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17391,7 +17391,7 @@ window.NETPSY_DATA = {
             {
               "id": 3,
               "title": "Cyberbullying",
-              "content_notes": "Cyberbullying is centred on harmful online behavior involving harassment, humiliation, threats or exclusion.\n\nKEY POINTS\n• Digital context\n• Persistence/audience\n• Reporting/support\n\nDISTINCTION / CAUTION\nNot every online disagreement is cyberbullying.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Cyberbullying is centred on harmful online behavior involving harassment, humiliation, threats or exclusion.\n\nKEY POINTS\n• Digital context\n• Persistence/audience\n• Reporting/support\n\nDISTINCTION / CAUTION\nNot every online disagreement is cyberbullying.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17401,7 +17401,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Cyberbullying is centred on harmful online behavior involving harassment, humiliation, threats or exclusion.\n\nThe concept is best retained as a connected set of features:\n• Digital context\n• Persistence/audience\n• Reporting/support\n\nA useful exam distinction is this: Not every online disagreement is cyberbullying.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Cyberbullying is centred on harmful online behavior involving harassment, humiliation, threats or exclusion.\n\nThe important features are:\n• Digital context\n• Persistence/audience\n• Reporting/support\n\nThe exam distinction is worth remembering: Not every online disagreement is cyberbullying.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Cyberbullying”.",
                 "List the key points associated with “Cyberbullying” in the uploaded study material.",
@@ -17437,7 +17437,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Cyber pornography: consumption should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Exposure alone should not be equated with addiction or disorder.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Cyber pornography: consumption should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Exposure alone should not be equated with addiction or disorder.",
               "retrieval_questions": [
                 "Define Cyber pornography: consumption using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17470,7 +17470,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Cyber pornography: implications should be learned through the defining features and distinctions identified in the study material.\n\nThe concept is best retained as a connected set of features:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid deterministic claims that exposure produces one inevitable outcome.\n\nSource grounding: • PowerWithin Psychology",
+              "deep_learning": "Cyber pornography: implications should be learned through the defining features and distinctions identified in the study material.\n\nThe important features are:\n• Definition and central psychological/social mechanism\n• Relevant distinction or contextual factor\n• Applied implication supported by the source\n• DISTINCTION / CAUTION\n• Avoid deterministic claims that exposure produces one inevitable outcome.",
               "retrieval_questions": [
                 "Define Cyber pornography: implications using the source terminology.",
                 "State its main mechanism, distinction or contextual feature.",
@@ -17493,7 +17493,7 @@ window.NETPSY_DATA = {
             {
               "id": 6,
               "title": "Parental mediation of digital usage",
-              "content_notes": "Parental mediation of digital usage is centred on parental strategies for guiding children's digital use and meaning-making.\n\nKEY POINTS\n• Active mediation\n• Restrictive mediation\n• Co-use\n• Digital literacy\n\nDISTINCTION / CAUTION\nRestriction alone does not build self-regulation.\n\nEXAM FOCUS\nThe source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.",
+              "content_notes": "Parental mediation of digital usage is centred on parental strategies for guiding children's digital use and meaning-making.\n\nKEY POINTS\n• Active mediation\n• Restrictive mediation\n• Co-use\n• Digital literacy\n\nDISTINCTION / CAUTION\nRestriction alone does not build self-regulation.",
               "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus",
               "content_level": "Source-grounded study note",
               "sources": [
@@ -17503,7 +17503,7 @@ window.NETPSY_DATA = {
                 "baronmisra"
               ],
               "source_lens": "Textbook lens: distinguish the learning mechanism, key variables, predicted change in behaviour and the kind of evidence used to demonstrate learning.",
-              "deep_learning": "Parental mediation of digital usage is centred on parental strategies for guiding children's digital use and meaning-making.\n\nThe concept is best retained as a connected set of features:\n• Active mediation\n• Restrictive mediation\n• Co-use\n• Digital literacy\n\nA useful exam distinction is this: Restriction alone does not build self-regulation.\n\nQuestion approach: The source framework emphasizes identification, comparison, application and statement-based questions. Practise one short scenario and one confusion pair.\n\nSource grounding: • UGC NET/JRF/SLET Psychology — PowerWithin syllabus material • PowerWithin Psychology — UGC NET/JRF/SLET compilation • Psychology by Ciccarelli & White (6th ed.) • Baron & Misra — Psychology",
+              "deep_learning": "Parental mediation of digital usage is centred on parental strategies for guiding children's digital use and meaning-making.\n\nThe important features are:\n• Active mediation\n• Restrictive mediation\n• Co-use\n• Digital literacy\n\nThe exam distinction is worth remembering: Restriction alone does not build self-regulation.",
               "retrieval_questions": [
                 "Without looking at the notes, state the source-based definition/core idea of “Parental mediation of digital usage”.",
                 "List the key points associated with “Parental mediation of digital usage” in the uploaded study material.",
