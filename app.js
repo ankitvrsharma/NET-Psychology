@@ -526,7 +526,10 @@ function practice(){
     const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.value}`);
     const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.value}`);
     const labels=[...unitsSelected,...partsSelected];
-    summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
+    if(unitsSelected.length>1&&partsSelected.length===0)summary.textContent=`${unitsSelected.length} units selected`;
+    else if(partsSelected.length>1&&unitsSelected.length===0)summary.textContent=`${partsSelected.length} parts selected`;
+    else if(labels.length===1)summary.textContent=labels[0];
+    else summary.textContent=`${labels.length} selections`;
   };
   const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"].selected')).map(x=>x.dataset.value);
   const selectedPracticeChoice=group=>selectedPracticeChoices(group)[0]||'';
@@ -597,13 +600,24 @@ function practice(){
     }else setPracticeChoices(group,[btn.dataset.value]);
     syncPracticeSetup();
   }));
-  scopeInputs().forEach(input=>input.addEventListener('change',()=>{
-    if(input.dataset.scope==='all'&&input.checked)scopeInputs().forEach(x=>{if(x!==input)x.checked=false});
-    if(input.dataset.scope!=='all'&&input.checked)$('#practiceUnitList input[data-scope="all"]').checked=false;
+  unitList.addEventListener('change',e=>{
+    const input=e.target.closest('input[type="checkbox"][data-scope]');
+    if(!input)return;
+    const inputs=scopeInputs();
+    if(input.dataset.scope==='all'&&input.checked){
+      inputs.forEach(x=>{if(x!==input)x.checked=false});
+    }else if(input.checked){
+      const allInput=inputs.find(x=>x.dataset.scope==='all');
+      if(allInput)allInput.checked=false;
+    }
+    inputs.forEach(x=>{
+      const label=x.closest('.practice-unit-option');
+      if(label)label.classList.toggle('selected',x.checked);
+    });
     updateScopeSummary();
     syncPracticeSetup();
-  }));
-  /* Practice setup choices are wired above; unit scope changes also resync the start button. */
+  });
+  /* Unit changes are handled by one delegated change listener so native checkbox state is never overwritten. */
   updateScopeSummary();
   syncPracticeSetup();
   let timerId=null;
