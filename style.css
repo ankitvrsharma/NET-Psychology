@@ -1685,3 +1685,16 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .learning-summary-grid{grid-template-columns:1fr}
   .learning-summary-grid>div{padding:8px 0 0;border-left:0;border-top:1px solid var(--line)}
 }
+/* Micro-topic learning action bar */
+.micro-learning-actions{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:stretch}
+.micro-learning-actions .micro-action{min-height:58px;border:0;border-right:1px solid var(--line);border-bottom:0;justify-content:center;text-align:center}
+.micro-learning-actions .micro-action:last-of-type{border-right:0}
+.micro-learning-actions .micro-action:first-child{justify-content:flex-start;text-align:left}
+.micro-learning-actions .micro-action:last-child{justify-content:flex-end;text-align:right}
+@media(max-width:620px){
+  .micro-learning-actions{grid-template-columns:1fr}
+  .micro-learning-actions .micro-action,
+  .micro-learning-actions .micro-action:first-child,
+  .micro-learning-actions .micro-action:last-child{border-right:0;border-bottom:1px solid var(--line);justify-content:space-between;text-align:left}
+  .micro-learning-actions .micro-action:last-child{border-bottom:0}
+}

@@ -619,7 +619,7 @@ function micro(){
     '<section class="micro-learning-actions">'+
     '<button type="button" class="micro-action" id="microDeepDive" aria-expanded="false"><span>DEEP DIVE</span></button>'+
     '<div class="micro-deep-dive-panel" id="microDeepDivePanel" hidden><div class="micro-deep-copy">'+esc(deep)+'</div></div>'+
-    '<a class="micro-action" href="'+recallHref+'"><span>ACTIVELY RECALL WHAT YOU LEARNED</span></a>'+
+    '<a class="micro-action" href="'+recallHref+'"><span>CHECK YOUR RECALL</span></a>'+
     '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
     '</section></section>';
   const deepBtn=$('#microDeepDive'),deepPanel=$('#microDeepDivePanel');
