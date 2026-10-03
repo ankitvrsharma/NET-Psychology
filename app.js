@@ -499,7 +499,7 @@ function practice(){
   const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div>`;
   box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Build exam-ready confidence by applying what you know, identifying gaps, and learning from each question.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose your units, question type, and practice mode to set up your session.</p></div></div><div class="practice-toolbar">
 <div class="practice-unit-field"><span class="practice-field-label">Select unit</span>${scopeHTML}</div>
-<div class="practice-choice-field"><span class="practice-field-label">Type of questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">Select one or both.</small></div>
+<div class="practice-choice-field"><span class="practice-field-label">Type of questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><label class="practice-choice practice-type-option"><input type="checkbox" data-practice-choice data-choice-group="type" data-value="mcq" aria-pressed="false"><span>MCQs</span></label><label class="practice-choice practice-type-option"><input type="checkbox" data-practice-choice data-choice-group="type" data-value="pyq" aria-pressed="false"><span>PYQs</span></label></div><small class="practice-choice-help">Select one or both.</small></div>
 <div class="practice-choice-field"><span class="practice-field-label">Practice mode</span><div class="practice-choice-group" id="practiceModeChoices" role="group" aria-label="Practice mode"><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="self-paced" aria-pressed="false">SELF-PACED</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="timed" aria-pressed="false">TIMED</button></div></div>
 <div class="practice-choice-field" id="practiceSizeField"><span class="practice-field-label">Number of questions</span><div class="practice-choice-group practice-size-group" id="practiceSizeChoices" role="group" aria-label="Number of questions"><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="10" aria-pressed="false">10</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="25" aria-pressed="false">25</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="50" aria-pressed="false">50</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="100" aria-pressed="false">100</button></div></div>
 </div></div><section class="practice-expect"><div class="eyebrow">WHAT TO EXPECT</div><p id="practiceExpectation">Choose your settings to see how your session will work.</p></section><div class="practice-start"><button class="btn primary" id="startSet" type="button" disabled>START PRACTICE →</button></div></section><div id="practiceSet"></div>`;
@@ -528,9 +528,18 @@ function practice(){
     const labels=[...unitsSelected,...partsSelected];
     summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
   };
-  const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"][aria-pressed="true"]')).map(x=>x.dataset.value);
+  const selectedPracticeChoices=group=>{
+    const selector='[data-practice-choice][data-choice-group="'+group+'"]';
+    const nodes=Array.from(document.querySelectorAll(selector));
+    return nodes.filter(x=>group==='type'?x.checked:x.getAttribute('aria-pressed')==='true').map(x=>x.dataset.value);
+  };
   const selectedPracticeChoice=group=>selectedPracticeChoices(group)[0]||'';
-  const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{const on=values.includes(btn.dataset.value);btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on))});
+  const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{
+    const on=values.includes(btn.dataset.value);
+    if(group==='type')btn.checked=on;
+    btn.classList.toggle('selected',on);
+    btn.setAttribute('aria-pressed',String(on));
+  });
   const getPracticePool=(types,selected)=>{
     let qs=PRACTICE_QUESTIONS.slice();
     if(types.length===1){
@@ -591,15 +600,19 @@ function practice(){
       }
     }
     if(group==='type'){
-      /* MCQs and PYQs are independent toggles: selecting one must never clear the other. */
-      const on=btn.getAttribute('aria-pressed')!=='true';
-      btn.classList.toggle('selected',on);
-      btn.setAttribute('aria-pressed',String(on));
+      /* Type selection uses native checkboxes; the change handler below owns the state. */
+      return;
     }else if(btn.dataset.multi==='true'){
       const on=!btn.classList.contains('selected');
       btn.classList.toggle('selected',on);
       btn.setAttribute('aria-pressed',String(on));
     }else setPracticeChoices(group,[btn.dataset.value]);
+    syncPracticeSetup();
+  }));
+  document.querySelectorAll('#practiceTypeChoices input[type="checkbox"]').forEach(input=>input.addEventListener('change',()=>{
+    const on=input.checked;
+    input.classList.toggle('selected',on);
+    input.setAttribute('aria-pressed',String(on));
     syncPracticeSetup();
   }));
   /* Keep scope interaction isolated from the document-level outside-click handler.
