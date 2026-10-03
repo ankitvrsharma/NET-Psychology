@@ -521,6 +521,8 @@ function practice(){
     const allSelected=selected.some(x=>x.dataset.scope==='all');
     const summary=$('#practiceUnitSummary');
     if(!summary)return;
+    const trigger=$('#practiceUnitTrigger');
+    if(trigger)trigger.classList.toggle('has-selection',selected.length>0);
     if(allSelected){summary.textContent='All units selected';return}
     if(!selected.length){summary.textContent='No units selected';return}
     const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.value}`);
@@ -621,6 +623,16 @@ function practice(){
         unitTrigger.setAttribute('aria-expanded','false');
       }
     });
+  });
+  unitList.addEventListener('click',e=>{
+    if(e.target.matches('input[type="checkbox"]'))return;
+    const option=e.target.closest('.practice-unit-option');
+    if(!option)return;
+    const input=option.querySelector('input[type="checkbox"]');
+    if(!input)return;
+    e.preventDefault();
+    input.checked=!input.checked;
+    input.dispatchEvent(new Event('change',{bubbles:true}));
   });
   /* Unit changes are handled by one delegated change listener so native checkbox state is never overwritten. */
   updateScopeSummary();
