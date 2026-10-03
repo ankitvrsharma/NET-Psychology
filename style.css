@@ -1050,7 +1050,7 @@ body[data-page="home"] .hero-cta b{display:none}
 /* Practice session v2 — focused setup, multi-unit scope, timed mode */
 .practice-unit-field{display:grid;gap:6px;min-width:min(100%,280px);flex:1 1 280px}
 .practice-field-label{color:var(--muted);font-size:12px;font-weight:700}
-.practice-unit-list{display:grid;max-height:210px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff;padding:5px}
+.practice-unit-list[hidden]{display:none!important}.practice-unit-list{display:grid;max-height:210px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff;padding:5px}
 .practice-unit-option{display:flex!important;align-items:flex-start;gap:9px;padding:9px 10px;border-radius:8px;color:var(--ink)!important;font-size:12px!important;font-weight:650!important;cursor:pointer}
 .practice-unit-option:hover{background:#f5f7fb}
 .practice-unit-option input{width:16px;height:16px;flex:0 0 16px;margin:1px 0 0;accent-color:var(--blue)}
