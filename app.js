@@ -323,6 +323,12 @@ function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
   const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
   const allItems=all(),keyName='netPsychDailyLearning';
+  let existingToday=null;
+  try{const storedToday=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');if(storedToday?.date===todayKey&&Array.isArray(storedToday.items))existingToday=storedToday.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean)}catch(e){}
+  if(existingToday?.length){
+    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Your daily concepts follow a syllabus rotation. Regular visits keep moving into new micro-topics instead of repeatedly drawing the same small set.</p></section><section class="daily3-list">'+existingToday.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT →</a></article>').join('')+'</section><section class="panel daily3-note"><b>Today’s set is fixed.</b><span>Return tomorrow for the next syllabus set. Scheduled revision remains handled by the separate Revision system.</span></section>';
+    return;
+  }
   let rotation={served:[],cycle:0,lastDate:null};
   try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.served))rotation={served:stored.served,cycle:Number(stored.cycle)||0,lastDate:stored.lastDate||null}}catch(e){}
   const validKeys=new Set(allItems.map(x=>x.k)); let served=rotation.served.filter(k=>validKeys.has(k));
