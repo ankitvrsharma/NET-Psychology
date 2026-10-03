@@ -207,10 +207,10 @@ function activeRecall(){
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
   document.title='Active Recall — '+m.title+' — UGC NET Psychology';
   const qs=practiceFor(u.id,t.id,m.id),groups={};
-  qs.forEach(q=>{const kind=q.kind||'direct';(groups[kind]||(groups[kind]=[])).push(q)});
+  qs.forEach((q,index)=>{const kind=q.kind||'direct';(groups[kind]||(groups[kind]=[])).push({q,index})});
   const labels={direct:'MULTIPLE CHOICE',match:'MATCH THE COLUMNS','assertion-reason':'ASSERTION · REASON',sequence:'SEQUENCE','statement-set':'STATEMENT SET'};
   const ordered=['direct','match','assertion-reason','sequence','statement-set'];
-  const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map((q,i)=>mcqHTML(q,i,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
+  const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map(item=>mcqHTML(item.q,item.index,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
   root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Actively recall what you learned.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Retrieve the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
     (cards||'<section class="panel empty"><h2>No mapped recall questions yet.</h2><p>This micro-topic does not have mapped questions in the current question pool.</p></section>')+
     '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>You rehearsed this concept.</h2><p>Return to the learning page when you want to continue with the next concept.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">BACK TO LEARNING →</a><a class="btn" href="learn.html">LEARNING JOURNEY</a></div></section>';
