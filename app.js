@@ -243,16 +243,21 @@ function activeRecall(){
   const {u,t,m,k}=find(),root=$('#activeRecallPage');
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
-  document.title='Active Recall — '+m.title+' — UGC NET Psychology';
+  const revisionMode=Q.get('mode')==='revision';
+  document.title=(revisionMode?'Revision — ':'Active Recall — ')+m.title+' — UGC NET Psychology';
   const qs=practiceFor(u.id,t.id,m.id),groups={};
   qs.forEach((q,index)=>{const kind=q.kind||'direct';(groups[kind]||(groups[kind]=[])).push({q,index})});
   const labels={direct:'MULTIPLE CHOICE',match:'MATCH THE COLUMNS','assertion-reason':'ASSERTION · REASON',sequence:'SEQUENCE','statement-set':'STATEMENT SET'};
   const ordered=['direct','match','assertion-reason','sequence','statement-set'];
   const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map(item=>mcqHTML(item.q,item.index,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
-  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Actively recall what you learned.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Retrieve the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
+  const completionCopy=revisionMode
+    ? '<div class="eyebrow">REVISION COMPLETE</div><h2>You completed this revision.</h2><p>Rate how well you remembered it to schedule the next review.</p><div class="revision-rating-box" id="revisionRatingBox" hidden><div class="rating-grid"><button class="rating" type="button" data-revision-rating="Again"><strong>Again</strong><small>I could not recall it.</small></button><button class="rating" type="button" data-revision-rating="Hard"><strong>Hard</strong><small>I recalled it with effort.</small></button><button class="rating" type="button" data-revision-rating="Good"><strong>Good</strong><small>I recalled it successfully.</small></button><button class="rating" type="button" data-revision-rating="Easy"><strong>Easy</strong><small>I recalled it quickly.</small></button></div><div class="schedule-result" id="revisionRatingResult"></div></div>'
+    : '<div class="eyebrow">RECALL COMPLETE</div><h2>You rehearsed this concept.</h2><p>Return to the learning page when you want to continue with the next concept.</p>';
+  const backHref=revisionMode?'daily-revision.html':'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
+  const backLabel=revisionMode?'BACK TO TODAY\'S REVISION →':'BACK TO LEARNING →';
+  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">'+(revisionMode?'REVISION':'ACTIVE RECALL')+'</div><h1>'+ (revisionMode?'Recall what you have learned.':'Actively recall what you learned.') +'</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Retrieve the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
     (cards||'<section class="panel empty"><h2>No mapped recall questions yet.</h2><p>This micro-topic does not have mapped questions in the current question pool.</p></section>')+
-    '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>'+ (Q.get('mode')==='revision' ? 'You completed this revision.' : 'You rehearsed this concept.') +'</h2><p>'+ (Q.get('mode')==='revision' ? 'Rate how well you remembered it to schedule the next review.' : 'Return to the learning page when you want to continue with the next concept.') +'</p>'+ (Q.get('mode')==='revision' ? '<div class="revision-rating-box" id="revisionRatingBox" hidden><div class="rating-grid"><button class="rating" type="button" data-revision-rating="Again"><strong>Again</strong><small>I could not recall it.</small></button><button class="rating" type="button" data-revision-rating="Hard"><strong>Hard</strong><small>I recalled it with effort.</small></button><button class="rating" type="button" data-revision-rating="Good"><strong>Good</strong><small>I recalled it successfully.</small></button><button class="rating" type="button" data-revision-rating="Easy"><strong>Easy</strong><small>I recalled it quickly.</small></button></div><div class="schedule-result" id="revisionRatingResult"></div></div>' : '') +'<div class="complete-actions"><a class="btn primary" href="'+(Q.get('mode')==='revision'?'daily-revision.html':'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id))+'">'+(Q.get('mode')==='revision'?'BACK TO TODAY\'S REVISION':'BACK TO LEARNING →')+'</a><a class="btn" href="learner.html">MY LEARNING</a></div></section>';
-  const revisionMode=Q.get('mode')==='revision';
+    '<section class="active-recall-complete card" id="activeRecallComplete" hidden>'+completionCopy+'<div class="complete-actions"><a class="btn primary" href="'+backHref+'">'+backLabel+'</a><a class="btn" href="learner.html">MY LEARNING</a></div></section>';
   const cardsAll=Array.from(root.querySelectorAll('.mcq'));
   wireMCQ(root,k,qs);
   cardsAll.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
@@ -279,13 +284,7 @@ function activeRecall(){
       const days={Again:1,Hard:3,Good:7,Easy:14}[rating]||7;
       const next=new Date(now.getTime()+days*86400000);
       const entry={at:now.toISOString(),rating,next:next.toISOString()};
-      setP(k,{
-        lastRevision:now.toISOString(),
-        revisionCount:count,
-        rating,
-        next:next.toISOString(),
-        revisionHistory:[...(p.revisionHistory||[]),entry].slice(-100)
-      });
+      setP(k,{lastRevision:now.toISOString(),revisionCount:count,rating,next:next.toISOString(),revisionHistory:[...(p.revisionHistory||[]),entry].slice(-100)});
       ratingButtons.forEach(x=>{x.disabled=true;x.classList.toggle('selected',x===btn)});
       const result=$('#revisionRatingResult');
       if(result)result.innerHTML='<b>'+esc(rating)+'</b> recorded. Next review: <b>'+esc(date(next.toISOString()))+'</b>.';
@@ -968,7 +967,7 @@ function progressInterpretation(s){
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,dailyRevision:dailyRevision,dailyPractice:dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice,'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,'daily-revision':dailyRevision,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice,'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
