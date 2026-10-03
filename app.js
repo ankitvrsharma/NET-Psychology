@@ -500,35 +500,27 @@ function micro(){
   document.title=m.title+' — UGC NET Psychology';
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
-  const conceptRaw=section(notes,'CORE CONCEPT','\n\nKEY POINTS');
-  const kp=bullets(section(notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
-  const distinction=section(notes,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')||section(notes,'DISTINCTION / CAUTION','\n\nSTUDY RULE');
-  const examPattern=section(notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS');
-  const isEncoding=String(m.title).trim().toLowerCase()==='encoding';
-  const expertLead=isEncoding
-    ? 'Encoding is the process through which incoming information is transformed into a form that the memory system can use. It is the entry process of memory: information from the environment is not simply received; it is selected, interpreted, and represented in a usable form before it can be retained and later retrieved.'
-    : (String(m.detailed_explanation||'').trim().split(/\n\s*\n/)[0]||String(conceptRaw||'').trim()||String(m.title));
-  const lead=expertLead.trim().toLowerCase()===String(m.title).trim().toLowerCase()
-    ? 'The concept refers to the psychological process described by the term and should be understood in relation to the surrounding processes, mechanisms, and distinctions identified in the study material.'
-    : expertLead.trim();
-  const deep=isEncoding
-    ? 'Ciccarelli and White describe encoding as a set of mental operations that converts sensory information into a form usable by the brain’s storage systems. This is broader than sensory transduction: encoding concerns how information is represented for memory. The form of encoding can differ across memory systems; for example, information may be maintained through rehearsal in one system, while meaning and elaboration become especially important for longer-term retention.\n\nBaron and Misra place encoding alongside storage and retrieval in the information-processing view of memory. Encoding therefore answers the question, “How does information get into memory?”, whereas storage concerns retaining it and retrieval concerns locating and accessing it later. A useful exam distinction is that a failure to encode is different from having encoded information that cannot subsequently be retrieved.\n\nFor examination purposes, remember the sequence without treating it as three completely independent events: encoding creates a usable representation, storage maintains information over time, and retrieval brings stored information back into use. Ciccarelli and White also emphasise that information processed more deeply, particularly in terms of meaning, is generally retained and retrieved more effectively.'
-    : (String(m.detailed_explanation||'').trim()||String(m.deep||'').trim()||String(conceptRaw||'').trim()||String(m.title));
+  const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
+  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN'));
+  const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
+  const deep=String(m.detailed_explanation||m.deep||concept).trim();
   const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
   const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
-  $('#microPage').innerHTML='<section class="micro-learn-page"><div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">LEARN</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · Unit '+esc(u.id)+'</p></header>'+
-    '<article class="micro-exam-content card"><div class="eyebrow">EXAM-READY EXPLANATION</div><div class="micro-exam-copy">'+
-    '<h2>'+esc(m.title)+'</h2><p class="lead">'+esc(lead)+'</p>'+
+  $('#microPage').innerHTML='<section class="micro-learn-page">'+
+    '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
+    '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
+    '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
+    '<p class="micro-expert-explanation">'+esc(concept)+'</p>'+
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
-    (distinction?'<section class="micro-exam-section"><h3>DISTINCTION / CAUTION</h3><p>'+esc(distinction)+'</p></section>':'')+
-    (examPattern?'<section class="micro-exam-section"><h3>EXAM FOCUS</h3><p>'+esc(examPattern)+'</p></section>':'')+
+    (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
     '</div></article>'+
-    '<section class="micro-learn-actions"><button type="button" class="micro-deep-dive-btn" id="microDeepDive" aria-expanded="false"><span>DEEP DIVE</span></button>'+
-    '<div class="micro-deep-dive-panel" id="microDeepDivePanel" hidden><div class="eyebrow">DEEP DIVE</div><h2>Go deeper into '+esc(m.title)+'.</h2><div class="micro-deep-copy">'+esc(deep)+'</div></div>'+
-    '<a class="micro-recall-cta" href="'+recallHref+'"><span><small>AFTER LEARNING</small><strong>ACTIVELY RECALL WHAT YOU LEARNED</strong></span></a>'+
-    '<a class="micro-next-cta" href="'+nextHref+'"><span>NEXT</span></a></section></section>';
+    '<section class="micro-learning-actions">'+
+    '<button type="button" class="micro-action" id="microDeepDive" aria-expanded="false"><span>DEEP DIVE</span></button>'+
+    '<div class="micro-deep-dive-panel" id="microDeepDivePanel" hidden><div class="micro-deep-copy">'+esc(deep)+'</div></div>'+
+    '<a class="micro-action" href="'+recallHref+'"><span>ACTIVELY RECALL WHAT YOU LEARNED</span></a>'+
+    '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
+    '</section></section>';
   const deepBtn=$('#microDeepDive'),deepPanel=$('#microDeepDivePanel');
   if(deepBtn&&deepPanel)deepBtn.onclick=()=>{const open=deepPanel.hidden;deepPanel.hidden=!open;deepBtn.setAttribute('aria-expanded',String(open));if(open)requestAnimationFrame(()=>deepPanel.scrollIntoView({behavior:'smooth',block:'start'}))};
 }
