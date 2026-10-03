@@ -1102,12 +1102,11 @@ body[data-page="home"] .hero-cta b{display:none}
   position:relative;
   width:100%;
   min-height:50px;
-  display:grid;
-  grid-template-columns:1fr auto;
-  grid-template-areas:"title icon" "summary icon";
+  display:flex;
   align-items:center;
-  text-align:left;
-  padding:9px 42px 9px 14px;
+  justify-content:center;
+  text-align:center;
+  padding:9px 14px;
   border:1px solid var(--line);
   border-radius:12px;
   background:#fff;
@@ -1117,10 +1116,7 @@ body[data-page="home"] .hero-cta b{display:none}
 }
 .practice-unit-trigger:hover{border-color:#b8c5dc}
 .practice-unit-trigger:focus-visible{outline:3px solid rgba(62,103,215,.18);border-color:var(--blue)}
-.practice-unit-trigger-title{grid-area:title;font-size:15px;font-weight:850}
-.practice-unit-summary{grid-area:summary;margin:1px 0 0;color:var(--muted);font-size:11px;line-height:1.35}
-.practice-unit-trigger-icon{grid-area:icon;font-size:19px;line-height:1;transition:transform .15s ease}
-.practice-unit-trigger[aria-expanded="true"] .practice-unit-trigger-icon{transform:rotate(180deg)}
+.practice-unit-summary{margin:0;color:var(--muted);font-size:13px;line-height:1.4;font-weight:650}
 .practice-unit-list[hidden]{display:none}
 .practice-unit-list{grid-template-columns:1fr 1fr;margin-top:7px}
 @media(max-width:820px){
