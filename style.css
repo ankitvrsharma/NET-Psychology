@@ -1055,11 +1055,11 @@ body[data-page="home"] .hero-cta b{display:none}
 .practice-unit-option{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .practice-unit-option:focus{outline:none!important;box-shadow:none}
 .practice-unit-option:focus-visible{outline:2px solid rgba(62,103,215,.18)!important;outline-offset:-2px}
-.practice-unit-option.selected:focus,.practice-unit-option.selected:focus-visible{outline:none!important;box-shadow:inset 0 -3px 0 var(--navy)}
+.practice-unit-option.selected:focus,.practice-unit-option.selected:focus-visible{outline:none!important;box-shadow:none}
 @media (hover:hover) and (pointer:fine){
   .practice-unit-option:hover{background:#f5f7fb}
 }
-.practice-unit-option.selected{background:#eef3ff;color:var(--navy)!important;box-shadow:inset 0 -3px 0 var(--navy)}
+.practice-unit-option.selected{background:#eef3ff;color:var(--navy)!important;border-radius:12px;box-shadow:inset 0 0 0 1px #d7e0f7}
 .practice-unit-option.selected span{color:var(--navy)!important}
 .practice-unit-option input{width:16px;height:16px;flex:0 0 16px;margin:1px 0 0;accent-color:var(--blue)}
 .practice-part-option{padding-left:31px;color:var(--muted)!important;font-weight:600!important}
