@@ -60,6 +60,19 @@ async function loadStudyData(){
     const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
     if(sr.ok) json.study_source_config=await sr.json();
   }catch(e){console.warn('Study source configuration could not be loaded:',e)}
+  try{
+    const sp=await fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'});
+    if(sp.ok){
+      const cfg=await sp.json();
+      const entries=Array.isArray(cfg?.topics)?cfg.topics:[];
+      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+        const title=String(m.title||'').toLowerCase();
+        const match=entries.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));
+        if(match?.notes) m.simply_psychology_enrichment={source:cfg.source?.title||'Simply Psychology',role:cfg.source?.role||'Selective web-based explanation and example layer',notes:match.notes};
+      }
+      json.simply_psychology_enrichment_meta=cfg.source||null;
+    }
+  }catch(e){console.warn('Simply Psychology enrichment could not be loaded:',e)}
   for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
     m.study_source_config=json.study_source_config||null;
   }
@@ -127,6 +140,7 @@ const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
   add('Teaching focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK'),'teaching');
   add('Memory cue',hook,'memory');
   if(m.kaplan_enrichment?.notes)add(m.kaplan_enrichment.source||'Kaplan source note',m.kaplan_enrichment.notes,'source',m.kaplan_enrichment.source||'Kaplan');
+  if(m.simply_psychology_enrichment?.notes)add(m.simply_psychology_enrichment.source||'Simply Psychology',m.simply_psychology_enrichment.notes,'source',m.simply_psychology_enrichment.source||'Simply Psychology');
   return blocks;
 };
 const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{
