@@ -230,9 +230,11 @@ function startPage(){
   }
   const p=getP(current.k), currentIndex=all().findIndex(x=>x.k===current.k);
   const upcoming=all().slice(Math.max(0,currentIndex+1),Math.max(0,currentIndex+1)+3);
-  const progress=progressSummary().coverage;
+  const summary=progressSummary();
+  const learned=summary.learned||0, mastered=summary.mastered||0, scheduled=summary.revisionScheduled||0;
+  const progress=summary.coverage;
   root.innerHTML=
-    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Your dedicated learning space keeps your personal journey moving. Open the current micro-topic, study the exam-ready explanation, and continue when you are ready.</p></section>'+
+    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Your dedicated learning space keeps your personal journey moving. Open the current micro-topic, study the exam-ready explanation, and continue when you are ready.</p></section>'+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
     '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
 
     '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+

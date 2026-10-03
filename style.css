@@ -1662,3 +1662,26 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .daily-practice-list .mcq{padding:16px}
   .daily-practice-list .mcq-options{grid-template-columns:1fr}
 }
+
+/* My Learning summary and full-width tablet layout */
+.learning-summary{max-width:none;margin:0 0 14px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.learning-summary h2{margin:4px 0 0;color:var(--navy);font-size:20px}
+.learning-summary-grid{display:grid;grid-template-columns:repeat(3,minmax(120px,1fr));gap:26px;flex:1;max-width:620px}
+.learning-summary-grid>div{display:grid;gap:1px;padding-left:20px;border-left:1px solid var(--line)}
+.learning-summary-grid strong{font-size:25px;line-height:1.1;color:var(--navy)}
+.learning-summary-grid span{font-size:11px;color:var(--muted);font-weight:700}
+@media (min-width:621px){
+  body[data-page="learner"] .learn-journey-hero,
+  body[data-page="learner"] .learn-current,
+  body[data-page="learner"] .learn-up-next{max-width:none;width:100%}
+}
+@media(max-width:620px){
+  .learning-summary{display:grid;padding:20px}
+  .learning-summary-grid{max-width:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .learning-summary-grid>div{padding-left:10px}
+  .learning-summary-grid strong{font-size:22px}
+}
+@media(max-width:420px){
+  .learning-summary-grid{grid-template-columns:1fr}
+  .learning-summary-grid>div{padding:8px 0 0;border-left:0;border-top:1px solid var(--line)}
+}
