@@ -496,8 +496,8 @@ function practice(){
     const partOptions=unitParts(u).map(part=>`<label class="practice-unit-option practice-part-option"><input type="checkbox" data-scope="part" data-unit="${esc(u.id)}" value="${esc(part.id)}"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></label>`).join('');
     return unit+partOptions;
   }).join('');
-  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-trigger-title">Choose</span><span class="practice-unit-trigger-icon" aria-hidden="true">⌄</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div>`;
-  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Set up your practice session, then follow the questions from start to finish with feedback along the way.</p></div></div><div class="practice-toolbar"><label>Number of questions<select id="setSize"><option value="" disabled selected>Choose</option><option value="10">10 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="100">100 questions — Full Paper 2</option></select></label><label>Questions from<select id="practiceType"><option value="" disabled selected>Choose</option><option value="all">PYQs + Practice MCQs</option><option value="pyq">Previous Year Questions (PYQs)</option><option value="mcq">Practice MCQs</option></select></label><label>Practice mode<select id="practiceMode"><option value="" disabled selected>Choose</option><option value="timed">Timed Practice</option><option value="self-paced">Self-Paced Practice</option></select></label><div class="practice-unit-field"><span class="practice-field-label">Units</span>${scopeHTML}</div></div><section class="practice-expect"><div class="eyebrow">WHAT TO EXPECT</div><p id="practiceExpectation">Choose your settings to see how your session will work.</p></section><div class="practice-start"><button class="btn primary" id="startSet" type="button" disabled>START PRACTICE →</button></div></section><div id="practiceSet"></div>`;
+  const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-trigger-title">Choose</span><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span><span class="practice-unit-trigger-icon" aria-hidden="true">⌄</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><label class="practice-unit-option practice-all-option"><input type="checkbox" data-scope="all" value="all"><span><b>All Units</b></span></label>${unitOptions}</div>`;
+  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Test yourself with UGC NET Psychology questions in a focused practice session. Choose your scope, work through the questions one at a time, and see how you perform.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Set up your practice session, then follow the questions from start to finish with feedback along the way.</p></div></div><div class="practice-toolbar"><div class="practice-choice-field"><span class="practice-field-label">Practice mode</span><div class="practice-choice-group" id="practiceModeChoices" role="group" aria-label="Practice mode"><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="self-paced" aria-pressed="false">SELF-PACED</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="timed" aria-pressed="false">TIMED</button></div></div><div class="practice-choice-field"><span class="practice-field-label">Questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">You can select one or both.</small></div><div class="practice-choice-field"><span class="practice-field-label">Number of questions</span><div class="practice-choice-group practice-size-group" id="practiceSizeChoices" role="group" aria-label="Number of questions"><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="10" aria-pressed="false">10</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="25" aria-pressed="false">25</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="50" aria-pressed="false">50</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="size" data-value="100" aria-pressed="false">100</button></div><small class="practice-choice-help">100 = full Paper 2 practice set when enough questions are available.</small></div><div class="practice-unit-field"><span class="practice-field-label">Units</span>__SCOPE__</div></div><section class="practice-expect"><div class="eyebrow">WHAT TO EXPECT</div><p id="practiceExpectation">Choose your settings to see how your session will work.</p></section><div class="practice-start"><button class="btn primary" id="startSet" type="button" disabled>START PRACTICE →</button></div></section><div id="practiceSet"></div>`;
   const unitTrigger=$('#practiceUnitTrigger');
   const unitList=$('#practiceUnitList');
   unitTrigger.addEventListener('click',()=>{
@@ -523,30 +523,28 @@ function practice(){
     const labels=[...unitsSelected,...partsSelected];
     summary.textContent=labels.length===1?labels[0]:`${labels.length} selections`;
   };
+  const selectedPracticeChoices=group=>Array.from(document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"].selected')).map(x=>x.dataset.value);
+  const selectedPracticeChoice=group=>selectedPracticeChoices(group)[0]||'';
+  const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{const on=values.includes(btn.dataset.value);btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on))});
   const syncPracticeSetup=()=>{
-    const size=$('#setSize').value;
-    const type=$('#practiceType').value;
-    const mode=$('#practiceMode').value;
-    const selected=scopeInputs().filter(x=>x.checked);
-    const ready=Boolean(size&&type&&mode&&selected.length);
-    const start=$('#startSet');
-    start.disabled=!ready;
+    const size=selectedPracticeChoice('size'),types=selectedPracticeChoices('type'),mode=selectedPracticeChoice('mode'),selected=scopeInputs().filter(x=>x.checked);
+    const start=$('#startSet');start.disabled=!Boolean(size&&types.length&&mode&&selected.length);
     const expectation=$('#practiceExpectation');
-    if(expectation){
-      expectation.textContent=mode==='timed'
-        ?'A countdown will run throughout the session, helping you keep a steady exam-like pace. You’ll answer one question at a time, see feedback after each response, and receive your final score when you finish.'
-        :mode==='self-paced'
-          ?'There is no countdown, so you can concentrate on understanding each question. You’ll answer one question at a time, see feedback after each response, and receive your final score when you finish.'
-          :'Choose a practice mode to see how your session will work.';
-    }
+    if(expectation)expectation.textContent=mode==='timed'?'A countdown will run throughout the session. Answer each question without stopping to read explanations; your review appears after you finish.':mode==='self-paced'?'There is no countdown, so you can concentrate on understanding each question and use the feedback as you go.':'Choose a practice mode to see how your session will work.';
   };
+  $$('[data-practice-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+    const group=btn.dataset.choiceGroup;
+    if(btn.dataset.multi==='true'){const on=!btn.classList.contains('selected');btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on));}
+    else setPracticeChoices(group,[btn.dataset.value]);
+    syncPracticeSetup();
+  }));
   scopeInputs().forEach(input=>input.addEventListener('change',()=>{
     if(input.dataset.scope==='all'&&input.checked)scopeInputs().forEach(x=>{if(x!==input)x.checked=false});
     if(input.dataset.scope!=='all'&&input.checked)$('#practiceUnitList input[data-scope="all"]').checked=false;
     updateScopeSummary();
     syncPracticeSetup();
   }));
-  ['#setSize','#practiceType','#practiceMode'].forEach(selector=>$(selector).addEventListener('change',syncPracticeSetup));
+  /* Practice setup choices are wired above; unit scope changes also resync the start button. */
   updateScopeSummary();
   syncPracticeSetup();
   let timerId=null;
@@ -558,17 +556,18 @@ function practice(){
   function draw(){
     unitList.hidden=true;
     unitTrigger.setAttribute('aria-expanded','false');
-    if(!$('#setSize').value||!$('#practiceType').value||!$('#practiceMode').value||!scopeInputs().some(x=>x.checked))return;
+    const selectedSize=selectedPracticeChoice('size'),selectedMode=selectedPracticeChoice('mode');
+    if(!selectedSize||!selectedPracticeChoices('type').length||!selectedMode||!scopeInputs().some(x=>x.checked))return;
     stopTimer();
     let qs=PRACTICE_QUESTIONS.slice();
-    const type=$('#practiceType').value;
+    const selectedTypes=selectedPracticeChoices('type');
     const unitScope=scopeInputs().filter(x=>x.checked);
     const allUnits=unitScope.length===0||unitScope.some(x=>x.dataset.scope==='all');
-    if(type!=='all'){
+    if(selectedTypes.length===1){
       qs=qs.filter(q=>{
         const tags=(q.source_tags||[]).map(x=>String(x).toLowerCase());
         const isPyq=tags.some(x=>x.includes('pyq')||x.includes('previous'));
-        return type==='pyq'?isPyq:!isPyq;
+        return selectedTypes[0]==='pyq'?isPyq:!isPyq;
       });
     }
     if(!allUnits){
@@ -585,7 +584,7 @@ function practice(){
         });
       });
     }
-    const limit=+$('#setSize').value;
+    const limit=+selectedSize;
     const groupingKey=allUnits?'unit':unitScope.some(x=>x.dataset.scope==='part')?'topic':'random';
     let seen=[];try{seen=JSON.parse(localStorage.getItem('netPsychPracticeSeen')||'[]')}catch{}
     const idOf=q=>String(q.id??q.question??'').trim();
@@ -597,7 +596,7 @@ function practice(){
       $('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>We couldn’t find questions for this selection.</h2><p>Try another question type or choose more units, then start again.</p></section>';
       return;
     }
-    const mode=$('#practiceMode').value,timed=mode==='timed';
+    const mode=selectedMode,timed=mode==='timed';
     const totalSeconds=timed?Math.round(qs.length*(180*60/100)):0;
     let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false,answers={};
     const recordPracticeAnswer=wasCorrect=>{
@@ -605,11 +604,24 @@ function practice(){
       s._practiceHistory=[...(s._practiceHistory||[]),{correct:wasCorrect,at:new Date().toISOString()}].slice(-200);
       save(s);
     };
+    const learningHrefForQuestion=q=>{
+      const u=units().find(x=>String(x.id)===String(q?.unit)),t=u?.topics.find(x=>String(x.id)===String(q?.topic)),m=t?.microtopics.find(x=>String(x.id)===String(q?.micro));
+      return u&&t&&m?'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id):'learn.html';
+    };
     const renderComplete=(timeUp=false)=>{
       stopTimer();
       const percent=Math.round(correct/qs.length*100);
-      const resultText=timeUp?'The unanswered questions were left unanswered. Review the explanations to see what to work on next.':correct===qs.length?'You answered every question correctly.':qs.length-correct+' question'+(qs.length-correct===1?'':'s')+' may need another look. Review the explanations to see what to work on next.';
-      $('#practiceSet').innerHTML=`<section class="practice-complete card"><div class="eyebrow">${timeUp?'TIME UP':'PRACTICE COMPLETE'}</div><h2>${timeUp?'Your practice time has ended.':'You completed the practice set.'}</h2><p class="practice-score">${correct} of ${qs.length} correct · ${percent}%</p><p>${resultText}</p><div class="complete-actions"><a class="btn primary" href="practice.html">TRY ANOTHER SET →</a></div></section>`;
+      const resultText=timeUp?'The unanswered questions were left unanswered. Review the explanations now that the timed session has ended.':correct===qs.length?'You answered every question correctly.':'Some questions may need another look. Use the review below to understand the answer and explanation.';
+      const review=timed?qs.map((q,i)=>{
+        const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?record.chosen:null;
+        const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
+        const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
+        const status=record?.correct?'correct':'incorrect';
+        return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
+      }).join(''):'';
+      const continueHref=learningHrefForQuestion(qs[0]);
+      const reviewSection=timed?'<section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Read the explanation only after finishing the test. Focus on why the correct answer fits and why your response needs another look.</p></div>'+review+'</section>':'';
+      $('#practiceSet').innerHTML='<section class="practice-complete card"><div class="eyebrow">'+(timeUp?'TIME UP':'PRACTICE COMPLETE')+'</div><h2>'+(timeUp?'Your practice time has ended.':'You completed the practice set.')+'</h2><p class="practice-score">'+correct+' of '+qs.length+' correct · '+percent+'%</p><p>'+resultText+'</p><div class="complete-actions"><a class="btn primary" href="practice.html">PRACTICE MORE →</a><a class="btn" href="'+continueHref+'">CONTINUE LEARNING →</a></div></section>'+reviewSection;
     };
     const finishForTime=()=>{
       if(ended)return;
@@ -634,7 +646,7 @@ function practice(){
       $('#practiceSet').innerHTML=`<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2 id="sessionTitle">Question ${current+1} of ${qs.length}</h2></div><div class="session-head-actions">${timed?`<span class="practice-timer" id="practiceTimer" aria-live="polite">${formatTime(remaining)}</span>`:''}<a class="text-link" href="practice.html">Start over</a></div></div><div class="session-progress"><i id="sessionProgress" style="width:${((current+1)/qs.length)*100}%"></i></div><div class="session-questions">${mcqHTML(q,0,'PYQ',false)}</div><div class="session-navigation"><button class="btn" id="prevQuestion" type="button"${current===0?' disabled':''}>← PREVIOUS</button><button class="btn primary" id="nextQuestion" type="button"${answered?'':' disabled'}>${current===qs.length-1?'FINISH PRACTICE →':'NEXT QUESTION →'}</button></div></section>`;
       const card=$('#practiceSet .mcq');
       const prevBtn=$('#prevQuestion'),nextBtn=$('#nextQuestion');
-      if(answered){card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const fb=card.querySelector('.mcq-feedback'),a=+card.dataset.answer;fb.hidden=false;fb.innerHTML=answers[current].correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+a)}. ${esc((q.options||q.o)[a])}</b><br>${esc(contextualExplanation(q))}`}
+      if(answered){card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);if(!timed){const fb=card.querySelector('.mcq-feedback'),a=+card.dataset.answer;fb.hidden=false;fb.innerHTML=answers[current].correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+a)}. ${esc((q.options||q.o)[a])}</b><br>${esc(contextualExplanation(q))}`}}
       card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
         if(answered||ended)return;
         answered=true;
@@ -643,10 +655,7 @@ function practice(){
         if(wasCorrect)correct++;
         recordPracticeAnswer(wasCorrect);
         card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-        const fb=card.querySelector('.mcq-feedback');
-        fb.hidden=false;
-        fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;
-        nextBtn.disabled=false;
+        if(!timed){const fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`}nextBtn.disabled=false;
       });
       prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
       nextBtn.onclick=()=>{if(ended||!answers[current])return;if(current<qs.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else renderComplete(false)};
@@ -663,15 +672,15 @@ function practice(){
     }
   }
   $('#startSet').onclick=()=>{
-    const selected=scopeInputs().filter(x=>x.checked),session={size:$('#setSize').value,type:$('#practiceType').value,mode:$('#practiceMode').value,units:selected.map(x=>({scope:x.dataset.scope,value:x.value,unit:x.dataset.unit||''}))};
+    const selected=scopeInputs().filter(x=>x.checked),session={size:selectedPracticeChoice('size'),type:selectedPracticeChoices('type').join(','),mode:selectedPracticeChoice('mode'),units:selected.map(x=>({scope:x.dataset.scope,value:x.value,unit:x.dataset.unit||''}))};
     sessionStorage.setItem('netPsychPracticeSetup',JSON.stringify(session));
     location.href='practice-session.html';
   };
   if(document.body.dataset.page==='practice-session'){
     const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch{return null}})();
     if(saved){
-      $('#setSize').value=saved.size||'';$('#practiceType').value=saved.type||'';$('#practiceMode').value=saved.mode||'';
-      scopeInputs().forEach(x=>x.checked=saved.units.some(u=>u.scope===x.dataset.scope&&u.value===x.value&&String(u.unit||'')===String(x.dataset.unit||'')));
+      setPracticeChoices('size',[String(saved.size||'')]);setPracticeChoices('type',String(saved.type||'').split(',').filter(Boolean));setPracticeChoices('mode',[String(saved.mode||'')]);
+      scopeInputs().forEach(x=>x.checked=(saved.units||[]).some(u=>u.scope===x.dataset.scope&&u.value===x.value&&String(u.unit||'')===String(x.dataset.unit||'')));
       updateScopeSummary();syncPracticeSetup();
       $('.practice-config').classList.add('session-hidden');
       draw();
