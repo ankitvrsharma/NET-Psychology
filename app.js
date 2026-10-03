@@ -66,7 +66,7 @@ async function loadStudyData(){
   D=json;
   // Render core UI immediately; optional enrichment must never block a usable page.
   if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
-  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'){
+  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
@@ -157,7 +157,7 @@ function startPage(){
   let existing=null;
   try{existing=JSON.parse(localStorage.getItem('netPsychStartProfile')||'null')}catch{existing=null}
   if(existing&&existing.experience){
-    const target=existing.experience==='revision'?'revision.html':(existing.experience==='prepared'||existing.experience==='appeared')?'practice.html':'learn.html';
+    const target='learn.html';
     root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING PROFILE</div><h1>Welcome back.</h1><p>Your learner profile is already saved on this device. Your starting path is ready.</p><div class="start-profile-actions"><a class="btn primary" href="'+target+'">CONTINUE MY LEARNING →</a><button class="btn" type="button" id="editStartProfile">EDIT PROFILE</button></div></section>';
     $('#editStartProfile').onclick=()=>{localStorage.removeItem('netPsychStartProfile');startPage()};
     return;
@@ -175,38 +175,53 @@ function startPage(){
     if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
     const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
     localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
-    const startTarget=((data.experience==='revision')?'revision.html':(data.experience==='prepared'||data.experience==='appeared')?'practice.html':'learn.html');
+    const startTarget='learn.html';
     root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you understand concepts, strengthen recall, practise what you know, and return to important ideas at the right time.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
   });
   back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
   update();
 }function learnPage(){
   document.title='Learn — UGC NET Psychology';
-  const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
-  const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
-  const stats=u=>{
-    const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));
-    const started=items.filter(p=>p.status&&p.status!=='NEW').length;
-    const mastered=items.filter(p=>p.status==='MASTERED').length;
-    const due=items.filter(p=>p.next&&new Date(p.next)<=new Date()).length;
-    return {started,mastered,due,total:items.length,percent:items.length?Math.round(started/items.length*100):0};
-  };
-  const draw=q=>{
-    q=(q||'').trim().toLowerCase();
-    const list=units().filter(u=>!q||JSON.stringify({title:u.title,description:u.description,topics:u.topics.map(t=>({title:t.title,explanation:t.explanation}))}).toLowerCase().includes(q));
-    $('#learnUnits').innerHTML=list.map(u=>{
-      const s=stats(u);
-      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span><div class="learn-unit-meta"><span>${u.topics.length} topics</span><span>${countMicro(u)} micro-topics</span>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}${s.due?'<span class="learn-due">'+s.due+' due</span>':''}</div></div><h2>${esc(u.title)}</h2><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
-    }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
-  };
-  const r=document.querySelector('#learnResume');
-  if(r&&resume){
-    r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;
-    r.hidden=false;
-  }else if(r) r.hidden=true;
-  draw('');
-  $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
-}function cycleForFallback(date){
+  const root=$('#learnJourney');
+  if(!root)return;
+  const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).startedAt||0));
+  const current=started[0]||all()[0];
+  if(!current){
+    root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Study data is not available yet.</p></section>';
+    return;
+  }
+  const p=getP(current.k), currentIndex=all().findIndex(x=>x.k===current.k);
+  const upcoming=all().slice(Math.max(0,currentIndex+1),Math.max(0,currentIndex+1)+3);
+  const progress=all().length?Math.round(((currentIndex+1)/all().length)*100):0;
+  root.innerHTML=
+    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>The Learn page keeps your journey moving. Open the current micro-topic, study the exam-ready explanation, and continue when you are ready.</p></section>'+
+    '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
+    '<section class="learn-journey-actions card"><div><div class="eyebrow">AFTER LEARNING</div><h2>Rehearse what you just learned.</h2><p>Active Recall is separate from learning. Use it after the concept page to retrieve the content through the available question formats.</p></div><a class="btn" href="active-recall.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">ACTIVELY RECALL WHAT YOU LEARNED →</a></section>'+
+    '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+
+    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
+    '</section><a class="learn-syllabus-link" href="unit.html?id='+encodeURIComponent(current.u.id)+'">Browse this unit →</a>';
+}
+function activeRecall(){
+  const {u,t,m,k}=find(),root=$('#activeRecallPage');
+  if(!root)return;
+  if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
+  document.title='Active Recall — '+m.title+' — UGC NET Psychology';
+  const qs=practiceFor(u.id,t.id,m.id),groups={};
+  qs.forEach(q=>{const kind=q.kind||'direct';(groups[kind]||(groups[kind]=[])).push(q)});
+  const labels={direct:'MULTIPLE CHOICE',match:'MATCH THE COLUMNS','assertion-reason':'ASSERTION · REASON',sequence:'SEQUENCE','statement-set':'STATEMENT SET'};
+  const ordered=['direct','match','assertion-reason','sequence','statement-set'];
+  const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map((q,i)=>mcqHTML(q,i,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
+  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Actively recall what you learned.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Retrieve the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
+    (cards||'<section class="panel empty"><h2>No mapped recall questions yet.</h2><p>This micro-topic does not have mapped questions in the current question pool.</p></section>')+
+    '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>You rehearsed this concept.</h2><p>Return to the learning page when you want to continue with the next concept.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">BACK TO LEARNING →</a><a class="btn" href="learn.html">LEARNING JOURNEY</a></div></section>';
+  const cardsAll=Array.from(root.querySelectorAll('.mcq'));
+  wireMCQ(root,k,qs);
+  cardsAll.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
+    const done=cardsAll.every(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled));
+    if(done){setP(k,{retrieval:true,status:'LEARNING',last:new Date().toISOString()});const complete=$('#activeRecallComplete');if(complete)complete.hidden=false}
+  })));
+}
+function cycleForFallback(date){
   const july=date.getMonth()===6;
   return {label:'July '+date.getFullYear()+' cycle',dateLabel:july?'1 July '+date.getFullYear():'1 December '+date.getFullYear()};
 }
@@ -252,7 +267,7 @@ function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)retur
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
   const hasStarted=started.length>0||practiceActivity,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
-  const continueHref=resume?'microtopic.html?unit='+encodeURIComponent(resume.u.id)+'&topic='+encodeURIComponent(resume.t.id)+'&micro='+encodeURIComponent(resume.m.id):'learn.html';
+  const continueHref='learn.html';
   if(hasStarted){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">YOUR NEXT STEP</div></div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="hero-cta" href="'+continueHref+'"><span>CONTINUE LEARNING</span><b>→</b></a></div>';
   }else{
@@ -482,125 +497,26 @@ function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
   const p=getP(k);
-  document.title=`${m.title} — UGC NET Psychology`;
-  const items=all(),idx=items.findIndex(x=>x.k===k),prev=items[idx-1],next=items[idx+1];
+  document.title=m.title+' — UGC NET Psychology';
+  const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title;
   const kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
-  const core=stripLegacy(m.content_notes);
-  const trap=section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS');
-  const hook=section(m.content_notes,'MEMORY HOOK');
-  const deep=[m.detailed_explanation,m.deep,m.deep_learning,m.source_lens&&'Study lens: '+m.source_lens,trap&&'Distinction to check: '+trap,hook&&'Memory cue: '+hook].filter(Boolean).join('\n\n')||core;
-  const sources=sourceNames(m),qs=practiceFor(u.id,t.id,m.id);
-
-  $('#microPage').innerHTML=`<div class="breadcrumbs"><span>${esc(m.title)}</span></div>
-  <section class="micro-hero">
-    <div><div class="eyebrow">MICRO-TOPIC ${m.id}</div><h1>${esc(m.title)}</h1><p>${esc(t.title)}</p></div>
-    <div class="status-box"><span class="status ${p.status.toLowerCase()}">${p.status}</span><strong>${p.next?'Next revision '+date(p.next):'Ready to learn'}</strong><small>${p.rating?`Last rating: ${p.rating}`:'No revision scheduled yet'}</small></div>
-  </section>
-  <div class="session-shell">
-    <div class="learning-path"><span class="step active">1 Understand</span><span class="step">2 Recall</span><span class="step">3 Apply</span><span class="step">4 Practice</span><span class="step">5 Schedule Revision</span></div>
-    <div class="content-layout">
-      <main class="content-stack">
-        <section class="card stage" data-stage="understand">
-          <div class="stage-label">UNDERSTAND</div>
-          <h2>Understand the concept</h2>
-          <p class="lead micro-main-explanation">${esc(concept)}</p>
-          ${kp.length?`<ul class="key-points">${kp.slice(0,5).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
-          <div class="micro-resource-actions" aria-label="Concept resources">
-            <button type="button" class="micro-resource-btn" data-resource-target="microShortNotes"><span>SHORT NOTES</span><b>→</b></button>
-            <button type="button" class="micro-resource-btn primary-action next-stage" data-next="recall"><span>I UNDERSTAND</span><b>→</b></button>
-            <button type="button" class="micro-resource-btn" data-resource-target="microDetailedExplanation"><span>DETAILED EXPLANATION</span><b>→</b></button>
-          </div>
-          <section class="micro-resource-panel hidden" id="microShortNotes" aria-labelledby="microShortNotesTitle">
-            <div class="micro-resource-panel-head"><div><div class="eyebrow">SHORT NOTES</div><h3 id="microShortNotesTitle">${esc(m.title)}</h3></div><span class="micro-resource-hint">Quick revision view</span></div>
-            ${studyNotesHTML(m,concept,kp,core,trap,hook)}
-          </section>
-          <section class="micro-resource-panel hidden" id="microDetailedExplanation" aria-labelledby="microDetailedExplanationTitle">
-            <div class="micro-resource-panel-head"><div><div class="eyebrow">DETAILED EXPLANATION</div><h3 id="microDetailedExplanationTitle">${esc(m.title)}</h3></div><span class="micro-resource-hint">Deeper conceptual view</span></div>
-            <div class="notes micro-detailed-copy">${esc(deep)}</div>
-          </section>
-        </section>
-
-        <section class="card stage hidden" data-stage="recall">
-          <div class="stage-label">RECALL</div><h2>Close the notes. Reconstruct it.</h2>
-          ${(m.retrieval_questions||[`Define ${m.title} from memory.`,`State one distinction or example.`]).map((q,i)=>`<label class="retrieval-item"><b>Recall ${i+1}</b><span>${esc(q)}</span><textarea class="recall-box" placeholder="Write from memory…"></textarea></label>`).join('')}
-          <div class="confidence"><span>Before revealing feedback, rate your confidence.</span><button class="btn" data-confidence="low">Low</button><button class="btn" data-confidence="medium">Medium</button><button class="btn" data-confidence="high">High</button></div>
-          <button class="btn primary next-stage" data-next="apply" disabled id="recallNext">I recalled it — continue →</button>
-        </section>
-
-        <section class="card stage hidden" data-stage="apply">
-          <div class="stage-label">APPLY</div><h2>Transfer the idea</h2><p>${esc(m.application_question||'Apply the concept to an unfamiliar situation and explain why it fits.')}</p>
-          <textarea class="recall-box" placeholder="Explain your reasoning…"></textarea>
-          <button class="btn primary next-stage" data-next="practice">I applied it — continue →</button>
-        </section>
-
-        <section class="card stage hidden" data-stage="practice">
-          <div class="stage-label">PRACTICE · PYQ</div><h2>Answer before the explanation</h2>
-          <div id="microQuestions">${qs.length?qs.map((q,i)=>mcqHTML(q,i,'PYQ')).join(''):'<div class="panel empty"><h3>No PYQ mapped here yet</h3><p>This concept can still be completed. Use the application task, then continue directly to revision scheduling.</p></div>'}</div>
-          <button class="btn primary next-stage" data-next="schedule">${qs.length?'Finish practice →':'Continue to revision scheduling →'}</button>
-        </section>
-
-        <section class="card stage hidden" data-stage="schedule">
-          <div class="stage-label">SCHEDULE REVISION</div><h2>How well could you recall it?</h2><p class="muted">Your rating changes the next interval. Forgetting brings the next return closer; it does not erase your learning.</p>
-          <div class="rating-grid">${[['again','Again','I could not recall it'],['hard','Hard','I recalled it with effort'],['good','Good','Normal successful recall'],['easy','Easy','Easy successful recall']].map(x=>`<button class="rating" data-rating="${x[0]}"><strong>${x[1]}</strong><small>${x[2]}</small></button>`).join('')}</div>
-          <div id="scheduleResult" class="schedule-result">Choose a rating to schedule your next revision.</div>
-        </section>
-      </main>
-
-      <aside class="content-stack">
-        <section class="card source-card"><div class="eyebrow">SOURCE-GROUNDED LEARNING</div><h2>Use the right source for the right job</h2><div class="source-details">${(m.study_source_config?.notes_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary notes source</span></div>`).join("")}${(m.study_source_config?.mcq_primary||[]).map(s=>`<div class="source-detail"><b>${esc(s)}</b><span>Primary practice source</span></div>`).join("")}</div><p class="source-note">Notes teach the concept; practice tests retrieval and application. The page does not force every source into every micro-topic.</p></section>
-        <section class="card"><div class="eyebrow">KEEP IT WITH YOU</div><h2>Check it after some time</h2><p class="muted">A concept is becoming secure when you can understand it, recall it, use it, and still bring it back later.</p><button class="btn" id="master">Mark delayed retention demonstrated</button><div id="masterResult" class="schedule-result"></div></section>
-        <section class="card"><div class="eyebrow">NEXT</div><div class="side-list">${prev?`<a href="microtopic.html?unit=${prev.u.id}&topic=${prev.t.id}&micro=${prev.m.id}">← Previous</a>`:''}${next?`<a href="microtopic.html?unit=${next.u.id}&topic=${next.t.id}&micro=${next.m.id}">Next →</a>`:''}<a href="topic.html?unit=${u.id}&topic=${t.id}">Back to topic</a></div></section>
-      </aside>
-    </div>
-  </div>`;
-
-  const stages=qsa('.stage'),show=s=>stages.forEach(x=>x.classList.toggle('hidden',x.dataset.stage!==s));
-  qsa('.next-stage').forEach(b=>b.onclick=()=>{
-    const target=b.dataset.next;
-    if(target==='recall'){setP(k,{understanding:true,status:'LEARNING',last:new Date().toISOString()});show(target);return}
-    if(target==='apply'){
-      const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
-      if(boxes.some(x=>!x.value.trim())){alert('Write at least a short response to each recall prompt before continuing.');return}
-      show(target);return
-    }
-    if(target==='practice'){
-      const box=document.querySelector('[data-stage="apply"] .recall-box');
-      if(!box?.value.trim()){alert('Write your application reasoning before continuing.');return}
-      setP(k,{application:true,status:'RETENTION',last:new Date().toISOString()});show(target);return
-    }
-    show(target)
-  });
-
-  qsa('.micro-resource-btn[data-resource-target]').forEach(b=>b.onclick=()=>{
-    const target=document.getElementById(b.dataset.resourceTarget);
-    if(!target)return;
-    qsa('.micro-resource-panel').forEach(panel=>panel.classList.add('hidden'));
-    target.classList.remove('hidden');
-    requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));
-  });
-
-  qsa('[data-confidence]').forEach(b=>b.onclick=()=>{
-    const boxes=Array.from(document.querySelectorAll('[data-stage="recall"] .recall-box'));
-    if(boxes.some(x=>!x.value.trim())){alert('Complete the recall prompts before rating your confidence.');return}
-    qsa('[data-confidence]').forEach(x=>x.classList.toggle('selected',x===b));
-    $('#recallNext').disabled=false;
-    setP(k,{confidence:b.dataset.confidence,retrieval:true,status:'LEARNING',last:new Date().toISOString()})
-  });
-
-  wireMCQ($('#microQuestions'),k,qs);
-  qsa('[data-rating]').forEach(b=>b.onclick=()=>{
-    const patch=setDue(k,b.dataset.rating);setP(k,patch);
-    $('#scheduleResult').innerHTML=patch.lateReset?`<b>Revision reset to your last successful checkpoint.</b> Next revision: ${date(patch.next)}`:`<b>Next revision scheduled.</b> ${patch.next?date(patch.next):'today'}`;
-  });
-  const masterBtn=$('#master');
-  if(!(p.understanding&&p.retrieval&&p.application&&p.revisionCount>0))masterBtn.disabled=true;
-  masterBtn.onclick=()=>{
-    const current=getP(k);
-    if(!(current.understanding&&current.retrieval&&current.application&&current.revisionCount>0))return;
-    setP(k,{status:'MASTERED',delayedRetention:true,masteredAt:new Date().toISOString()});
-    $('#masterResult').textContent='Delayed retention recorded. You can still revisit this concept whenever it needs more work.'
-  }
+  const examReady=stripLegacy(m.content_notes)||[concept,...kp].filter(Boolean).join('\n');
+  const deep=[m.detailed_explanation,m.deep,m.deep_learning,m.source_lens&&'Study lens: '+m.source_lens].filter(Boolean).join('\n\n')||examReady;
+  const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
+  setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
+  $('#microPage').innerHTML='<section class="micro-learn-page"><div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
+    '<header class="micro-learn-header"><div class="eyebrow">LEARN</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · Unit '+esc(u.id)+'</p></header>'+
+    '<article class="micro-exam-content card"><div class="eyebrow">EXAM-READY EXPLANATION</div><div class="micro-exam-copy"><h2>'+esc(m.title)+'</h2><p class="lead">'+esc(concept)+'</p>'+
+    (kp.length?'<ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+
+    '<div class="micro-exam-detail">'+esc(examReady)+'</div></div></article>'+
+    '<section class="micro-learn-actions"><button type="button" class="micro-deep-dive-btn" id="microDeepDive" aria-expanded="false"><span>DEEP DIVE</span><b>＋</b></button>'+
+    '<div class="micro-deep-dive-panel" id="microDeepDivePanel" hidden><div class="eyebrow">DEEP DIVE</div><h2>Go deeper into '+esc(m.title)+'.</h2><div class="micro-deep-copy">'+esc(deep)+'</div></div>'+
+    '<a class="micro-recall-cta" href="'+recallHref+'"><span><small>AFTER LEARNING</small><strong>ACTIVELY RECALL WHAT YOU LEARNED</strong></span><b>→</b></a>'+
+    '<a class="micro-next-cta" href="'+nextHref+'"><span>NEXT</span><b>→</b></a></section></section>';
+  const deepBtn=$('#microDeepDive'),deepPanel=$('#microDeepDivePanel');
+  if(deepBtn&&deepPanel)deepBtn.onclick=()=>{const open=deepPanel.hidden;deepPanel.hidden=!open;deepBtn.setAttribute('aria-expanded',String(open));deepBtn.querySelector('b').textContent=open?'−':'＋';if(open)requestAnimationFrame(()=>deepPanel.scrollIntoView({behavior:'smooth',block:'start'}))};
 }
 function practice(){
   const box=$('#practiceApp');
@@ -959,7 +875,7 @@ setupMobileNavigation();
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,'active-recall':activeRecall,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
