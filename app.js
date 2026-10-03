@@ -251,13 +251,46 @@ function activeRecall(){
   const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map(item=>mcqHTML(item.q,item.index,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
   root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Actively recall what you learned.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Retrieve the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
     (cards||'<section class="panel empty"><h2>No mapped recall questions yet.</h2><p>This micro-topic does not have mapped questions in the current question pool.</p></section>')+
-    '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>You rehearsed this concept.</h2><p>Return to the learning page when you want to continue with the next concept.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">BACK TO LEARNING →</a><a class="btn" href="learner.html">MY LEARNING</a></div></section>';
+    '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>'+ (Q.get('mode')==='revision' ? 'You completed this revision.' : 'You rehearsed this concept.') +'</h2><p>'+ (Q.get('mode')==='revision' ? 'Rate how well you remembered it to schedule the next review.' : 'Return to the learning page when you want to continue with the next concept.') +'</p>'+ (Q.get('mode')==='revision' ? '<div class="revision-rating-box" id="revisionRatingBox" hidden><div class="rating-grid"><button class="rating" type="button" data-revision-rating="Again"><strong>Again</strong><small>I could not recall it.</small></button><button class="rating" type="button" data-revision-rating="Hard"><strong>Hard</strong><small>I recalled it with effort.</small></button><button class="rating" type="button" data-revision-rating="Good"><strong>Good</strong><small>I recalled it successfully.</small></button><button class="rating" type="button" data-revision-rating="Easy"><strong>Easy</strong><small>I recalled it quickly.</small></button></div><div class="schedule-result" id="revisionRatingResult"></div></div>' : '') +'<div class="complete-actions"><a class="btn primary" href="'+(Q.get('mode')==='revision'?'daily-revision.html':'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id))+'">'+(Q.get('mode')==='revision'?'BACK TO TODAY\'S REVISION':'BACK TO LEARNING →')+'</a><a class="btn" href="learner.html">MY LEARNING</a></div></section>';
+  const revisionMode=Q.get('mode')==='revision';
   const cardsAll=Array.from(root.querySelectorAll('.mcq'));
   wireMCQ(root,k,qs);
   cardsAll.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
     const done=cardsAll.every(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled));
-    if(done){setP(k,{retrieval:true,status:'LEARNING',last:new Date().toISOString()});const complete=$('#activeRecallComplete');if(complete)complete.hidden=false}
+    if(done){
+      setP(k,{retrieval:true,status:'LEARNING',last:new Date().toISOString()});
+      const complete=$('#activeRecallComplete');
+      if(complete){
+        complete.hidden=false;
+        if(revisionMode){
+          const ratingBox=$('#revisionRatingBox');
+          if(ratingBox)ratingBox.hidden=false;
+        }
+      }
+    }
   })));
+  if(revisionMode){
+    const ratingButtons=Array.from(root.querySelectorAll('[data-revision-rating]'));
+    ratingButtons.forEach(btn=>btn.addEventListener('click',()=>{
+      const rating=btn.dataset.revisionRating;
+      const now=new Date();
+      const p=getP(k);
+      const count=Number(p.revisionCount||0)+1;
+      const days={Again:1,Hard:3,Good:7,Easy:14}[rating]||7;
+      const next=new Date(now.getTime()+days*86400000);
+      const entry={at:now.toISOString(),rating,next:next.toISOString()};
+      setP(k,{
+        lastRevision:now.toISOString(),
+        revisionCount:count,
+        rating,
+        next:next.toISOString(),
+        revisionHistory:[...(p.revisionHistory||[]),entry].slice(-100)
+      });
+      ratingButtons.forEach(x=>{x.disabled=true;x.classList.toggle('selected',x===btn)});
+      const result=$('#revisionRatingResult');
+      if(result)result.innerHTML='<b>'+esc(rating)+'</b> recorded. Next review: <b>'+esc(date(next.toISOString()))+'</b>.';
+    }));
+  }
 }
 function cycleForFallback(date){
   const july=date.getMonth()===6;
@@ -312,8 +345,8 @@ function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)retur
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
-  const sequence=hasStarted?[cards.revise,cards.learn,cards.practice]:[cards.learn,cards.revise,cards.practice];
+  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',revise:'<a class="daily-focus-card" href="daily-revision.html"><strong>REVISE</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
+  const sequence=[cards.learn,cards.revise,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a purpose: learn a concept, strengthen your recall, or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
@@ -836,34 +869,83 @@ function practice(){
       draw();
     }
   }
-}function revision(){
+}function revisionScheduleStats(){
+  const now=new Date();
+  const startToday=new Date(now.getFullYear(),now.getMonth(),now.getDate()).getTime();
+  const startYesterday=startToday-86400000;
+  const endToday=startToday+86400000;
+  const history=[];
+  all().forEach(x=>{
+    const p=getP(x.k);
+    (p.revisionHistory||[]).forEach(h=>history.push({...h,item:x}));
+  });
+  const yesterday=history.filter(h=>{const t=Date.parse(h.at);return t>=startYesterday&&t<startToday}).sort((a,b)=>Date.parse(b.at)-Date.parse(a.at));
+  const today=history.filter(h=>{const t=Date.parse(h.at);return t>=startToday&&t<endToday}).sort((a,b)=>Date.parse(b.at)-Date.parse(a.at));
+  const upcoming=all().filter(x=>{const n=Date.parse(getP(x.k).next||'');return Number.isFinite(n)&&n>now.getTime()}).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next));
+  const revisedConcepts=new Set(history.map(h=>h.item.k)).size;
+  const started=all().filter(x=>isStartedProgress(getP(x.k))).length;
+  return {history,yesterday,today,upcoming,revisedConcepts,started};
+}
+function dailyRevision(){
+  const root=$('#dailyRevisionApp');
+  if(!root)return;
+  const items=dueItems();
+  const rows=items.map((x,i)=>'<article class="revision-item"><div><span class="eyebrow">DUE '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+(getP(x.k).lastRevision?'Previously revised · '+esc(date(getP(x.k).lastRevision)):'Ready for first revision')+'</small></div><a class="btn primary" href="active-recall.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&mode=revision">START RECALL →</a></article>').join('');
+  root.innerHTML='<section class="page-hero revision-hero"><div class="eyebrow">TODAY\'S REVISION</div><h1>Revise what is due today.</h1><p>Only concepts that have reached their scheduled revision point appear here. Recall first, then rate how well you remembered it.</p></section>'+
+    (items.length?'<section class="revision-list">'+rows+'</section>':'<section class="panel empty"><h2>You’re caught up.</h2><p>Nothing is due for revision today. Your next scheduled review will appear in the Revision tracker.</p><a class="btn primary" href="revision.html">VIEW REVISION STATUS →</a></section>');
+}
+function dailyPractice(){
+  const root=$('#dailyPracticeApp');
+  if(!root)return;
+  const todayKey=new Date().toISOString().slice(0,10);
+  const allQuestions=PRACTICE_QUESTIONS.slice();
+  let stored=null;
+  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
+  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
+  if(questions.length!==10){
+    const shuffled=allQuestions.slice().sort(()=>Math.random()-0.5);
+    questions=shuffled.slice(0,10);
+    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}));
+  }
+  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Your daily practice set is selected automatically. Answer all 10, read the feedback, and use missed questions to decide what to revisit.</p></section><section class="daily-practice-list">'+questions.map((q,i)=>mcqHTML(q,i,'DAILY PRACTICE',true)).join('')+'</section><section class="daily-practice-complete panel" id="dailyPracticeComplete" hidden><div class="eyebrow">SET COMPLETE</div><h2>Daily practice complete.</h2><p id="dailyPracticeScore"></p><a class="btn primary" href="practice.html">OPEN FULL PRACTICE →</a></section>';
+  const cards=Array.from(root.querySelectorAll('.mcq'));
+  cards.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
+    const q=questions[+card.dataset.i],chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;
+    card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+    const fb=card.querySelector('.mcq-feedback');
+    fb.hidden=false;
+    fb.innerHTML=correct?'<b class="correct">✓ Correct</b> '+esc(contextualExplanation(q)):'<b class="incorrect">✕ Not quite.</b> Correct answer: <b>'+String.fromCharCode(65+answer)+'. '+esc((q.options||q.o)[answer])+'</b><br>'+esc(contextualExplanation(q));
+    const s=state();
+    s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString(),source:'daily'}].slice(-200);
+    save(s);
+    const answered=cards.filter(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled)).length;
+    if(answered===10){
+      const correctCount=cards.filter(x=>x.querySelector('.mcq-feedback')?.textContent?.startsWith('✓')).length;
+      $('#dailyPracticeScore').textContent=correctCount+' of 10 correct · '+Math.round(correctCount/10*100)+'%';
+      $('#dailyPracticeComplete').hidden=false;
+    }
+  }));
+}
+function revision(){
   const root=$('#revisionApp');
   if(!root)return;
-  const items=dueItems(),shown=items.slice(0,5);
-  const rows=shown.map(x=>{
-    const p=getP(x.k);
-    const nextAt=Date.parse(p.next||'');
-    const late=Number.isFinite(nextAt)?(Date.now()-nextAt)/86400000:0;
-    const overdue=late>0?'Overdue by '+Math.floor(late)+' day'+(Math.floor(late)===1?'':'s'):'Due today';
-    const last=p.rating?' · Last: '+esc(p.rating):'';
-    return '<article class="revision-item"><div><span class="status '+esc(String(p.status||'NEW').toLowerCase())+'">'+esc(p.status||'NEW')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+overdue+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'">Start Recall →</a></article>';
-  }).join('');
-  const first=items[0];
-  const startHref=first?'microtopic.html?unit='+encodeURIComponent(first.u.id)+'&topic='+encodeURIComponent(first.t.id)+'&micro='+encodeURIComponent(first.m.id):'unit.html?id=1';
-  const stateBlock=items.length
-    ? '<section class="panel empty"><h2>'+items.length+' concept'+(items.length===1?' is':'s are')+' ready to revise</h2><p>These are your scheduled revisions. Recall first, then check the explanation.</p><a class="btn primary" href="'+startHref+'">START REVISION →</a></section>'
-    : '<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
-  const queue=rows?'<section class="revision-list">'+rows+'</section>':'';
-  root.innerHTML='<section class="page-hero revision-hero"><h1>Strengthen what you’ve already learned.</h1><p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p></section>'+
-    stateBlock+
-    queue+
-    '<section class="panel revision-rules"><h2>How to use revision</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating sets the next scheduled revision.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
+  const s=revisionScheduleStats();
+  const completion=s.started?Math.round(s.revisedConcepts/s.started*100):0;
+  const yesterdayRows=s.yesterday.slice(0,10).map(h=>'<article class="revision-item"><div><span class="eyebrow">YESTERDAY · '+esc(h.rating)+'</span><h3>'+esc(h.item.m.title)+'</h3><p>'+esc(h.item.t.title)+' · Unit '+esc(h.item.u.id)+'</p><small>Next review: '+esc(date(h.next))+'</small></div></article>').join('');
+  const today=dueItems();
+  const todayRows=today.slice(0,10).map(x=>'<article class="revision-item"><div><span class="eyebrow">DUE TODAY</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p></div><a class="btn primary" href="active-recall.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&mode=revision">START RECALL →</a></article>').join('');
+  const upcomingRows=s.upcoming.slice(0,10).map(x=>'<article class="revision-item"><div><span class="eyebrow">'+esc(date(getP(x.k).next))+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p></div></article>').join('');
+  root.innerHTML='<section class="page-hero revision-hero"><div class="eyebrow">REVISION TRACKER</div><h1>See your revision rhythm.</h1><p>Track what you revised, what is due now, what is coming next, and how much of your started learning has entered spaced revision.</p></section>'+
+    '<section class="revision-summary"><div><span>REVISION COMPLETION</span><strong>'+completion+'%</strong><span>'+s.revisedConcepts+' of '+s.started+' started concepts revised</span></div><div><span>REVISED SESSIONS</span><strong>'+s.history.length+'</strong><span>Recorded revision sessions</span></div><div><span>DUE TODAY</span><strong>'+today.length+'</strong><span>Concepts ready now</span></div></section>'+
+    '<section class="panel"><div class="eyebrow">YESTERDAY</div><h2>What you revised yesterday</h2>'+(yesterdayRows||'<p class="page-guidance">No revision sessions were recorded yesterday.</p>')+'</section>'+
+    '<section class="panel"><div class="eyebrow">TODAY</div><h2>What is due today</h2>'+(todayRows||'<p class="page-guidance">Nothing is due today.</p>')+'</section>'+
+    '<section class="panel"><div class="eyebrow">UPCOMING</div><h2>What is scheduled next</h2>'+(upcomingRows||'<p class="page-guidance">No future revision is scheduled yet.</p>')+'</section>';
 }
 function progress(){
   const s=progressSummary(),ps=state(),due=dueItems().length;
   const started=s.started,total=s.total;
   const interpretation=progressInterpretation(s);
-  const nextAction=due?{label:'Start Revision',href:'revision.html',note:`${due} concept${due===1?'':'s'} ready for another pass.`}:started<total?{label:'Continue Learning',href:'unit.html?id=1',note:'Keep building your understanding one concept at a time.'}:{label:'Practice Questions',href:'practice.html',note:'Use recall and application to test what you know.'};
+  const nextAction=due?{label:'Start Revision',href:'daily-revision.html',note:`${due} concept${due===1?'':'s'} ready for another pass.`}:started<total?{label:'Continue Learning',href:'unit.html?id=1',note:'Keep building your understanding one concept at a time.'}:{label:'Practice Questions',href:'practice.html',note:'Use recall and application to test what you know.'};
   $('#progressApp').innerHTML=`<section class="page-hero progress-hero"><div class="eyebrow">PROGRESS</div><h1>See how your learning is building.</h1><p>See what you have explored, what you can recall, how you are performing in questions, and how consistently you are returning to what you have learned.</p></section>
   <section class="progress-signals"><div class="section-head"><div><div class="eyebrow">YOUR LEARNING SIGNALS</div><h2>Look at the pattern, not just the numbers.</h2><p class="page-guidance">These signals show different parts of your learning process. Use them together to understand where your learning is becoming secure and where it needs more work.</p></div></div>
     <div class="measure-grid">
@@ -886,7 +968,7 @@ function progressInterpretation(s){
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,dailyRevision:dailyRevision,dailyPractice:dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice,'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
