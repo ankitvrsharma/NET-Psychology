@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v37-all-microtopics';
+const CACHE='netpsych-shell-v38-all-microtopics-content';
 const SHELL=[
   './',
   './index.html',
