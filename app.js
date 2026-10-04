@@ -577,16 +577,15 @@ function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item o
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
   if(!root)return;
-  const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+  const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
   const allQuestions=PRACTICE_QUESTIONS.slice();
-  let stored=null;
-  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
+  let stored=null;try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
   let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
   if(questions.length!==10){
-    const shuffled=allQuestions.slice().sort(()=>Math.random()-0.5);
-    questions=shuffled.slice(0,10);
-    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}));
+    questions=allQuestions.slice().sort(()=>Math.random()-.5).slice(0,10);
+    try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}))}catch{}
   }
+  if(questions.length<1){root.innerHTML='<section class="panel empty"><h2>Daily Practice is temporarily unavailable.</h2><p>No published practice questions are available yet.</p></section>';return}
   root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
   let current=0,ended=false,correctCount=0,answers={};
   const renderComplete=()=>{
@@ -603,32 +602,40 @@ function dailyPractice(){
   };
   const renderQuestion=()=>{
     if(ended)return;
-    const q=questions[current],answered=Boolean(answers[current]);
+    const q=questions[current],answered=Object.prototype.hasOwnProperty.call(answers,current);
     $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
-    const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');
-    if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-    card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
-      if(answered||ended)return;
-      answered=true;
-      const chosen=Number(btn.dataset.a),answer=Number(card.dataset.answer),wasCorrect=chosen===answer;
-      answers[current]={chosen,correct:wasCorrect};
-      if(wasCorrect)correctCount++;
-      card.querySelectorAll('.mcq-option').forEach(b=>{b.disabled=true;b.setAttribute('aria-pressed',b===btn?'true':'false')});
-      btn.classList.add(wasCorrect?'selected-correct':'selected-incorrect');
-      nextBtn.disabled=false;
-      nextBtn.focus({preventScroll:true});
-    },{passive:true}));
-    prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
-    nextBtn.onclick=()=>{
-      if(ended||!answers[current])return;
-      if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
-      else{
-        const s=state();
-        questions.forEach((q,i)=>s._practiceHistory=[...(s._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
-        save(s);
-        renderComplete();
-        window.scrollTo({top:0,behavior:'smooth'});
+    const session=$('#dailyPracticeSession'),card=session.querySelector('.mcq'),nextBtn=session.querySelector('#dailyNext'),prevBtn=session.querySelector('#dailyPrev');
+    if(answered){
+      card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+      nextBtn.disabled=false;nextBtn.removeAttribute('disabled');nextBtn.setAttribute('aria-disabled','false');
+    }else nextBtn.setAttribute('aria-disabled','true');
+    session.onclick=e=>{
+      const option=e.target.closest('.mcq-option');
+      if(option&&session.contains(option)){
+        if(Object.prototype.hasOwnProperty.call(answers,current)||ended)return;
+        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),wasCorrect=chosen===answer;
+        answers[current]={chosen,correct:wasCorrect};
+        if(wasCorrect)correctCount++;
+        card.querySelectorAll('.mcq-option').forEach(b=>{b.disabled=true;b.setAttribute('aria-pressed',b===option?'true':'false')});
+        option.classList.add(wasCorrect?'selected-correct':'selected-incorrect');
+        nextBtn.disabled=false;
+        nextBtn.removeAttribute('disabled');
+        nextBtn.setAttribute('aria-disabled','false');
+        return;
       }
+      const next=e.target.closest('#dailyNext');
+      if(next){
+        if(ended||!Object.prototype.hasOwnProperty.call(answers,current))return;
+        if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+        else{
+          const st=state();
+          questions.forEach((q,i)=>st._practiceHistory=[...(st._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
+          save(st);renderComplete();window.scrollTo({top:0,behavior:'smooth'});
+        }
+        return;
+      }
+      const prev=e.target.closest('#dailyPrev');
+      if(prev&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
     };
   };
   renderQuestion();
