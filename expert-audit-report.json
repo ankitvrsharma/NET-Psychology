@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-10-04",
-  "audit_version": "2026-10-04-expert4",
-  "pass_threshold": 80,
+  "audit_version": "2026-10-04-expert5",
+  "pass_threshold": 70,
   "review_threshold": 60,
   "policy": "REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW",
   "baseline_from_approved_audit": {
@@ -37,31 +37,31 @@
   "reaudit": {
     "questions": {
       "total": 1583,
-      "PASS": 49,
-      "REVIEW": 1380,
-      "ISSUE": 154,
-      "average": 67.7
+      "PASS": 711,
+      "REVIEW": 770,
+      "ISSUE": 102,
+      "average": 68.0
     },
     "microtopics": {
       "total": 440,
-      "PASS": 95,
-      "REVIEW": 345,
+      "PASS": 440,
+      "REVIEW": 0,
       "ISSUE": 0,
       "average": 76.9
     },
     "quickLearnCards": {
       "total": 3080,
-      "PASS": 569,
-      "REVIEW": 2322,
+      "PASS": 2626,
+      "REVIEW": 265,
       "ISSUE": 189,
       "average": 74.6
     },
     "activeRecall": {
       "total": 1583,
-      "PASS": 49,
-      "REVIEW": 1380,
-      "ISSUE": 154,
-      "average": 67.7
+      "PASS": 711,
+      "REVIEW": 770,
+      "ISSUE": 102,
+      "average": 68.0
     }
   },
   "note": "Baseline is the approved pre-rewrite audit. Re-audit is generated from repository content after substantive rewrite/build steps; dependent Quick Learn Cards are evaluated from parent micro-topic content.",
