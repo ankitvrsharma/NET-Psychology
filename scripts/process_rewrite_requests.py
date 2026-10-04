@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parents[1]
 REQUESTS=ROOT/"rewrite-requests.json"; DATA=ROOT/"data.json"; DATAJS=ROOT/"data.js"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
 DEFAULT_MODEL="gemini-3.8-flash"
+DEFAULT_FALLBACK_MODELS=["gemini-3.7-flash","gemini-3.6-flash","gemini-3.5-flash"]
 
 def now(): return datetime.now(timezone.utc).isoformat()
 def load(p,d): return json.loads(p.read_text(encoding="utf-8")) if p.exists() else d
@@ -49,44 +50,67 @@ def schema_for(allowed):
 def api(prompt, schema):
     key=os.environ.get("GEMINI_API_KEY")
     if not key: raise RuntimeError("GEMINI_API_KEY GitHub secret is not configured.")
-    model=os.environ.get("GEMINI_REWRITE_MODEL") or DEFAULT_MODEL
-    body={
-        "model":model,
-        "input":prompt,
-        "response_format":{
-            "type":"text",
-            "mime_type":"application/json",
-            "schema":schema
-        }
-    }
-    delays=[2,5,12,20]
-    for attempt in range(len(delays)+1):
-        req=urllib.request.Request(
-            "https://generativelanguage.googleapis.com/v1beta/interactions",
-            data=json.dumps(body,ensure_ascii=False).encode(),
-            headers={"x-goog-api-key":key,"Content-Type":"application/json"}
-        )
-        try:
-            with urllib.request.urlopen(req,timeout=180) as r: out=json.load(r)
-            break
-        except urllib.error.HTTPError as e:
-            detail=""
-            try: detail=e.read().decode("utf-8",errors="replace")
-            except Exception: pass
-            try:
-                parsed=json.loads(detail)
-                message=parsed.get("error",{}).get("message") or parsed.get("message") or detail
-            except Exception:
-                message=detail
-            retryable=e.code in [429,500,502,503,504]
-            if retryable and attempt < len(delays):
-                wait=delays[attempt]
-                print("Gemini API error "+str(e.code)+"; retrying in "+str(wait)+"s (attempt "+str(attempt+2)+"/"+str(len(delays)+1)+")")
-                time.sleep(wait)
-                continue
-            raise RuntimeError("Gemini API error "+str(e.code)+": "+message[:800])
+
+    configured=os.environ.get("GEMINI_REWRITE_MODELS","").strip()
+    if configured:
+        models=[m.strip() for m in configured.split(",") if m.strip()]
     else:
-        raise RuntimeError("Gemini API request failed after retries.")
+        first=os.environ.get("GEMINI_REWRITE_MODEL","").strip() or DEFAULT_MODEL
+        models=[first]+[m for m in DEFAULT_FALLBACK_MODELS if m != first]
+
+    transient_codes=[429,500,502,503,504]
+    delays=[2,5]
+    last_error=None
+
+    for model_index, model in enumerate(models):
+        body={
+            "model":model,
+            "input":prompt,
+            "response_format":{
+                "type":"text",
+                "mime_type":"application/json",
+                "schema":schema
+            }
+        }
+        for attempt in range(len(delays)+1):
+            req=urllib.request.Request(
+                "https://generativelanguage.googleapis.com/v1beta/interactions",
+                data=json.dumps(body,ensure_ascii=False).encode(),
+                headers={"x-goog-api-key":key,"Content-Type":"application/json"}
+            )
+            try:
+                with urllib.request.urlopen(req,timeout=180) as r: out=json.load(r)
+                print("Gemini rewrite succeeded with model "+model)
+                break
+            except urllib.error.HTTPError as e:
+                detail=""
+                try: detail=e.read().decode("utf-8",errors="replace")
+                except Exception: pass
+                try:
+                    parsed=json.loads(detail)
+                    message=parsed.get("error",{}).get("message") or parsed.get("message") or detail
+                except Exception:
+                    message=detail
+                retryable=e.code in transient_codes
+                last_error=RuntimeError("Gemini API error "+str(e.code)+": "+message[:800])
+                if retryable and attempt < len(delays):
+                    wait=delays[attempt]
+                    print("Gemini model "+model+" returned "+str(e.code)+"; retrying in "+str(wait)+"s (attempt "+str(attempt+2)+"/"+str(len(delays)+1)+")")
+                    time.sleep(wait)
+                    continue
+                if retryable and model_index < len(models)-1:
+                    next_model=models[model_index+1]
+                    print("Gemini model "+model+" remained unavailable ("+str(e.code)+"); falling back to "+next_model)
+                    break
+                raise last_error
+        else:
+            continue
+
+        if 'out' in locals():
+            break
+    else:
+        raise last_error or RuntimeError("Gemini API request failed after model fallback.")
+
     text=out.get("output_text","")
     if not text:
         text="".join(
