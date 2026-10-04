@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "audit_version": "2026-10-04-expert4",
+  "pass_threshold": 80,
+  "max_automatic_rewrite_cycles": 2,
+  "status": "rewrite-cycle-1-pending",
+  "pools": {
+    "questions": {
+      "total": 1583
+    },
+    "microtopics": {
+      "total": 440
+    },
+    "quickLearnCards": {
+      "total": 3080
+    },
+    "activeRecall": {
+      "total": 1583
+    }
+  },
+  "note": "Persistent tracking shell. The content-quality workflow replaces this with item-level rewrite/re-audit results."
+}

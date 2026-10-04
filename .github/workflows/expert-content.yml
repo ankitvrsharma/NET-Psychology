@@ -1,0 +1,38 @@
+name: Expert content rewrite and audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data.json
+      - practice_questions.json
+      - practice_explanations.json
+      - scripts/rewrite_microtopic_notes.py
+      - scripts/expert_audit.py
+      - .github/workflows/expert-content.yml
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite-reaudit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rewrite source-grounded micro-topic notes
+        run: python scripts/rewrite_microtopic_notes.py
+      - name: Rebuild PYQ bank and mappings
+        run: python scripts/build_practice.py
+      - name: Validate content
+        run: python scripts/validate_content.py
+      - name: Run deterministic re-audit
+        run: python scripts/expert_audit.py
+      - name: Commit rewritten content and audit artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json data.js content-version.js practice_questions.json practice-build-report.json expert-audit-report.json rewrite-reaudit-tracking.json
+          if git diff --cached --quiet; then echo "No generated changes to commit"; exit 0; fi
+          git commit -m "Rewrite and re-audit expert learning content"
+          git push

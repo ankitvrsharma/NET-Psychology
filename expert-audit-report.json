@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-10-04",
+  "audit_version": "2026-10-04-expert4",
+  "pass_threshold": 80,
+  "review_threshold": 60,
+  "phase": "baseline-approved",
+  "policy": "REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW",
+  "summary": {
+    "questions": {
+      "total": 1583,
+      "PASS": 74,
+      "REVIEW": 1356,
+      "ISSUE": 153,
+      "average": 68
+    },
+    "microtopics": {
+      "total": 440,
+      "PASS": 133,
+      "REVIEW": 307,
+      "ISSUE": 0,
+      "average": 77
+    },
+    "quickLearnCards": {
+      "total": 3080,
+      "PASS": 478,
+      "REVIEW": 2091,
+      "ISSUE": 511,
+      "average": 69
+    },
+    "activeRecall": {
+      "total": 1583,
+      "PASS": 74,
+      "REVIEW": 1356,
+      "ISSUE": 153,
+      "average": 68
+    },
+    "total": {
+      "total": 6686,
+      "PASS": 759,
+      "REVIEW": 5110,
+      "ISSUE": 817
+    }
+  },
+  "rewrite_policy": {
+    "automatic_cycles": 2,
+    "owner_review_after_cycles": 2,
+    "priority_order": [
+      "ISSUE",
+      "lowest-scoring REVIEW",
+      "parent microtopic before dependent Quick Learn Cards"
+    ]
+  },
+  "note": "Approved baseline audit. The re-audit section is populated by the GitHub content-quality workflow after substantive rewriting and rebuild."
+}
