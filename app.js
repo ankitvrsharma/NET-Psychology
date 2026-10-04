@@ -29,7 +29,40 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
+let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
 const KEY='netPsychProgress';
+async function loadContentGate(){
+  try{
+    const [cfgRes,manifestRes,ownerRes]=await Promise.all([
+      fetch('./content-publish-config.json?v=20261004-audit1',{cache:'default'}),
+      fetch('./content-publish-manifest.json?v=20261004-audit1',{cache:'default'}),
+      fetch('./content-owner-overrides.json?v=20261004-audit1',{cache:'default'})
+    ]);
+    if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
+    const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
+    CONTENT_GATE={
+      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'ai_or_owner',
+      ai:manifest.ai_pass||{questions:{pass:[]},microtopics:{pass:[]},quickLearnCards:{pass:[]},activeRecall:{pass:[]}},
+      owner:{
+        approved:owner.owner_approved||{},
+        rejected:owner.owner_rejected||{}
+      }
+    };
+  }catch(e){
+    console.error('Content publishing gate failed:',e);
+    CONTENT_GATE={ready:false,failClosed:true,mode:'owner_only',ai:{},owner:{approved:{},rejected:{}}};
+  }
+}
+function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
+function contentIsPublished(type,id){
+  if(!CONTENT_GATE.ready) return false;
+  const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);
+  if(rejected.has(String(id))) return false;
+  if(approved.has(String(id))) return true;
+  if(CONTENT_GATE.mode==='owner_only') return false;
+  return gateSet(CONTENT_GATE.ai,type).has(String(id));
+}
+
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
@@ -89,6 +122,7 @@ async function loadStudyData(){
     m.study_source_config=json.study_source_config||null;
   }
   D=json;
+  await loadContentGate();
   // Render core UI immediately; optional enrichment must never block a usable page.
   if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
   if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
@@ -113,6 +147,7 @@ async function loadStudyData(){
         json.mcq_mapping=map;
       }
     }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
+    PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(q=>contentIsPublished('questions',q.id));
   }
   safeRender();
   return true;
@@ -125,7 +160,7 @@ const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
-const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
+const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
@@ -360,7 +395,7 @@ function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.conte
 function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
 function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
 function quickVisual(m,k,p){const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
-function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const e=quickClean(a[1](p));if(e)bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
 function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;const keyName='netPsychQuickLearnCycle';let cycle={seen:[],cycle:0};try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.seen))cycle={seen:stored.seen,cycle:Number(stored.cycle)||0}}catch(e){}const validIds=new Set(bank.map(x=>x.id));let seen=cycle.seen.filter(id=>validIds.has(id));let unseen=bank.filter(x=>!seen.includes(x.id));if(!unseen.length){cycle={seen:[],cycle:cycle.cycle+1};seen=[];unseen=bank.slice()}const last=seen[seen.length-1];let pool=unseen;if(pool.length>1&&last)pool=pool.filter(x=>x.id!==last);if(!pool.length)pool=unseen;const item=pool[Math.floor(Math.random()*pool.length)];seen=[...seen,item.id];try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
@@ -665,6 +700,10 @@ function micro(){
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
   const p=getP(k);
   document.title=m.title+' — UGC NET Psychology';
+  if(!contentIsPublished('microtopics',k)){
+    $('#microPage').innerHTML='<section class="panel empty"><div class="eyebrow">CONTENT UNDER REVIEW</div><h1>This concept is temporarily unavailable.</h1><p>The learning content is being quality-checked before it is served.</p><a class="btn primary" href="learn.html">BACK TO LEARN</a></section>';
+    return;
+  }
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
   const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
