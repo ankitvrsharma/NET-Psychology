@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v48-split-data';
+const CACHE='netpsych-shell-v49-home-learning';
 const SHELL=[
   './',
   './index.html',
