@@ -181,6 +181,7 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  try{await loadScript('./question-renderer.js?v=20261004-structural1')}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
   D=json;
   const page=document.body?.dataset?.page||'';
   const practicePage=page==='practice'||page==='practice-session'||page==='daily-practice';
@@ -825,6 +826,7 @@ function assertionReasonHTML(q){
     "</div></div>";
 }
 function structuredQuestionHTML(q){
+  if(window.NETPSYQuestionRenderer?.structuredQuestionHTML)return window.NETPSYQuestionRenderer.structuredQuestionHTML(q);
   const kind=q?.kind||"direct";
   const raw=cleanPracticeText(q?.question||q?.q||"");
   if(kind==="match")return matchListsHTML(q);
@@ -843,10 +845,7 @@ function structuredQuestionHTML(q){
     }
     const optionMarker=stem.search(/\s(?:\([a-d]\)|[a-d]\.)\s+/i);
     const cleanStem=(optionMarker>=0?stem.slice(0,optionMarker):stem).replace(/\s*:\s*$/,"").trim();
-    return "<div class=\"question-stem structured-stem\">"+
-      (cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+
-      (preferred.length?"<div class=\"question-items\">"+practiceListHTML(preferred)+"</div>":"")+
-      "</div>";
+    return "<div class=\"question-stem structured-stem\">"+(cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+(preferred.length?"<div class=\"question-items\">"+practiceListHTML(preferred)+"</div>":"")+"</div>";
   }
   return "<div class=\"question-stem direct-stem\"><p>"+esc(stripQuestionTail(raw))+"</p></div>";
 }
