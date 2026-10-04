@@ -31,12 +31,17 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
 const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null};
-async function loadCanonicalContentLayer(json){
-  const names=['practice_questions','microtopic_explanations','quick_learn_cards','deep_dive_explanations','active_recall'];
+async function loadCanonicalContentLayer(json,mode='all'){
+  const page=document.body?.dataset?.page||'';
+  const names=mode==='practice'
+    ? ['practice_questions']
+    : mode==='micro'
+      ? ['microtopic_explanations','deep_dive_explanations','active_recall','quick_learn_cards']
+      : ['practice_questions','microtopic_explanations','quick_learn_cards','deep_dive_explanations','active_recall'];
   const results=await Promise.all(names.map(async name=>{
-    try{const r=await fetch('./content/'+name+'.json?v=20261004-content1',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
+    try{const r=await fetch('./content/'+name+'.json?v=20261004-content2',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
   }));
-  [CANONICAL_CONTENT.practiceQuestions,CANONICAL_CONTENT.microtopics,CANONICAL_CONTENT.quickLearnCards,CANONICAL_CONTENT.deepDive,CANONICAL_CONTENT.activeRecall]=results;
+  names.forEach((name,i)=>{if(name==='practice_questions')CANONICAL_CONTENT.practiceQuestions=results[i];if(name==='microtopic_explanations')CANONICAL_CONTENT.microtopics=results[i];if(name==='quick_learn_cards')CANONICAL_CONTENT.quickLearnCards=results[i];if(name==='deep_dive_explanations')CANONICAL_CONTENT.deepDive=results[i];if(name==='active_recall')CANONICAL_CONTENT.activeRecall=results[i];});
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
@@ -108,52 +113,27 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
-  try{
-    const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
-    if(kr.ok){
-      const kp=await kr.json();
-      const map=kp&&kp.microtopics&&typeof kp.microtopics==='object'?kp.microtopics:{};
-      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-        if(map[m.title]) m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:map[m.title]};
-      }
-      json.kaplan_enrichment_meta=kp.source||null;
-    }
-  }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
-  try{
-    const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
-    if(sr.ok) json.study_source_config=await sr.json();
-  }catch(e){console.warn('Study source configuration could not be loaded:',e)}
-  try{
-    const sp=await fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'});
-    if(sp.ok){
-      const cfg=await sp.json();
-      const entries=Array.isArray(cfg?.topics)?cfg.topics:[];
-      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-        const title=String(m.title||'').toLowerCase();
-        const match=entries.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));
-        if(match?.notes) m.simply_psychology_enrichment={source:cfg.source?.title||'Simply Psychology',role:cfg.source?.role||'Selective web-based explanation and example layer',notes:match.notes};
-      }
-      json.simply_psychology_enrichment_meta=cfg.source||null;
-    }
-  }catch(e){console.warn('Simply Psychology enrichment could not be loaded:',e)}
-  for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-    m.study_source_config=json.study_source_config||null;
-  }
   D=json;
-  await loadCanonicalContentLayer(json);
+  const page=document.body?.dataset?.page||'';
+  const practicePage=page==='practice'||page==='practice-session'||page==='daily-practice';
+  const microPage=page==='microtopic'||page==='deep-dive'||page==='active-recall'||page==='learner'||page==='learn'||page==='unit'||page==='topic'||page==='daily3'||page==='revision'||page==='progress';
+
+  // Render the core page as soon as the essential study structure is available.
+  // Large enrichment/canonical files are loaded only when the current page needs them.
+  if(practicePage) await loadCanonicalContentLayer(json,'practice');
+  else if(microPage) await loadCanonicalContentLayer(json,'micro');
+
+  // Publishing state is small and required for learner-facing filtering.
   await loadContentGate();
-  // Render core UI immediately; optional enrichment must never block a usable page.
-  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
-  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
+
+  if(practicePage){
     try{
       if(Array.isArray(CANONICAL_CONTENT.practiceQuestions))PRACTICE_QUESTIONS=CANONICAL_CONTENT.practiceQuestions.slice();
       if(!PRACTICE_QUESTIONS.length){
         const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
         if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
       }
-      if(PRACTICE_QUESTIONS.length){
-        PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
-      }
+      if(PRACTICE_QUESTIONS.length)PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
     try{
       const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
@@ -173,10 +153,22 @@ async function loadStudyData(){
     }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
     PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(q=>contentIsPublished('questions',q.id));
   }
+
+  // Optional source enrichments never block the first usable render.
+  Promise.all([
+    fetch('./kaplan_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null)
+  ]).then(([kp,study,sp])=>{
+    if(kp?.microtopics)for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[])if(kp.microtopics[m.title])m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:kp.microtopics[m.title]};
+    if(study)json.study_source_config=study;
+    if(sp?.topics)for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){const title=String(m.title||'').toLowerCase(),match=sp.topics.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));if(match?.notes)m.simply_psychology_enrichment={source:sp.source?.title||'Simply Psychology',role:sp.source?.role||'Selective web-based explanation and example layer',notes:match.notes};}
+    for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[])m.study_source_config=json.study_source_config||null;
+  }).catch(e=>console.warn('Optional source enrichment failed:',e));
+
   safeRender();
   return true;
 }
-
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
@@ -615,15 +607,17 @@ function dailyPractice(){
     $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
     const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');
     if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-    card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
+    card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
       if(answered||ended)return;
       answered=true;
-      const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
+      const chosen=Number(btn.dataset.a),answer=Number(card.dataset.answer),wasCorrect=chosen===answer;
       answers[current]={chosen,correct:wasCorrect};
       if(wasCorrect)correctCount++;
-      card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+      card.querySelectorAll('.mcq-option').forEach(b=>{b.disabled=true;b.setAttribute('aria-pressed',b===btn?'true':'false')});
+      btn.classList.add(wasCorrect?'selected-correct':'selected-incorrect');
       nextBtn.disabled=false;
-    });
+      nextBtn.focus({preventScroll:true});
+    },{passive:true}));
     prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
     nextBtn.onclick=()=>{
       if(ended||!answers[current])return;
