@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "intake_folder": "sources/inbox",
+  "supported_extensions": [
+    ".pdf",
+    ".docx",
+    ".pptx",
+    ".txt",
+    ".md",
+    ".csv",
+    ".tsv",
+    ".json"
+  ],
+  "learner_publishing": false,
+  "pipeline": [
+    "extract",
+    "map",
+    "synthesize",
+    "teach",
+    "expert_audit",
+    "serve"
+  ],
+  "provenance_required": true,
+  "duplicate_information_policy": "Repeat source information only when it serves a different learner decision.",
+  "source_truth_policy": "Source material is evidence and must not be treated as automatically correct."
+}
