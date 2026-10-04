@@ -1,4 +1,4 @@
-import json, os, re, urllib.request, urllib.error
+import json, os, re, time, urllib.request, urllib.error
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -59,23 +59,34 @@ def api(prompt, schema):
             "schema":schema
         }
     }
-    req=urllib.request.Request(
-        "https://generativelanguage.googleapis.com/v1beta/interactions",
-        data=json.dumps(body,ensure_ascii=False).encode(),
-        headers={"x-goog-api-key":key,"Content-Type":"application/json"}
-    )
-    try:
-        with urllib.request.urlopen(req,timeout=180) as r: out=json.load(r)
-    except urllib.error.HTTPError as e:
-        detail=""
-        try: detail=e.read().decode("utf-8",errors="replace")
-        except Exception: pass
+    delays=[2,5,12,20]
+    for attempt in range(len(delays)+1):
+        req=urllib.request.Request(
+            "https://generativelanguage.googleapis.com/v1beta/interactions",
+            data=json.dumps(body,ensure_ascii=False).encode(),
+            headers={"x-goog-api-key":key,"Content-Type":"application/json"}
+        )
         try:
-            parsed=json.loads(detail)
-            message=parsed.get("error",{}).get("message") or parsed.get("message") or detail
-        except Exception:
-            message=detail
-        raise RuntimeError("Gemini API error "+str(e.code)+": "+message[:800])
+            with urllib.request.urlopen(req,timeout=180) as r: out=json.load(r)
+            break
+        except urllib.error.HTTPError as e:
+            detail=""
+            try: detail=e.read().decode("utf-8",errors="replace")
+            except Exception: pass
+            try:
+                parsed=json.loads(detail)
+                message=parsed.get("error",{}).get("message") or parsed.get("message") or detail
+            except Exception:
+                message=detail
+            retryable=e.code in [429,500,502,503,504]
+            if retryable and attempt < len(delays):
+                wait=delays[attempt]
+                print("Gemini API error "+str(e.code)+"; retrying in "+str(wait)+"s (attempt "+str(attempt+2)+"/"+str(len(delays)+1)+")")
+                time.sleep(wait)
+                continue
+            raise RuntimeError("Gemini API error "+str(e.code)+": "+message[:800])
+    else:
+        raise RuntimeError("Gemini API request failed after retries.")
     text=out.get("output_text","")
     if not text:
         text="".join(
