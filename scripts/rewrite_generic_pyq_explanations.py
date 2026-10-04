@@ -131,3 +131,5 @@ def main():
     print("Generic PYQ explanation rewrite completed successfully.")
 
 if __name__=="__main__": main()
+
+# Generic PYQ rewrite phase: source-grounded, type-specific, validated batch processing.
