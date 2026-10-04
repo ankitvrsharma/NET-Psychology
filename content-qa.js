@@ -35,7 +35,7 @@ function previewHTML(x){
     const o=Array.isArray(m.options)?m.options:[];
     const opts=o.map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');
     const answer=Number.isInteger(m.answer)&&o[m.answer]!==undefined?esc(String.fromCharCode(65+m.answer)+'. '+o[m.answer]):'Not available';
-    return '<div class="qa-preview learner-preview"><h4>'+esc(m.question||x.title||'')+'</h4><ol class="qa-options">'+opts+'</ol><details><summary>Post-answer feedback · audit view</summary><p><strong>Correct answer:</strong> '+answer+'</p><p>'+esc(m.explanation||'No explanation available.')+'</p></details></div>';
+    return '<div class="qa-preview learner-preview"><h4>'+esc(m.question||x.title||'')+'</h4><ol class="qa-options">'+opts+'</ol><div class="qa-question-explanation"><p><strong>Correct answer:</strong> '+answer+'</p><p>'+esc(m.explanation||'No explanation available.')+'</p></div></div>';
   }
   if(x.type==='microtopics'){
     const n=String(m.content_notes||'');
