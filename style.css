@@ -1793,3 +1793,15 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .active-recall-card .btn{width:100%}
   .active-recall-feedback .text-link{display:inline-block;padding:6px 0}
 }
+
+/* Structured Quick Learn card layouts generated from approved rewrite requests. */
+.quick-design-card{display:grid;gap:10px;margin-top:14px;padding:14px;border:1px solid rgba(49,91,214,.16);border-radius:14px;background:linear-gradient(135deg,rgba(49,91,214,.06),rgba(255,255,255,.96));}
+.quick-design-card>div,.quick-design-card.quick-cue,.quick-design-card.quick-definition{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.8);border:1px solid rgba(49,91,214,.10)}
+.quick-design-card b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:#315bd6;margin-bottom:4px}
+.quick-design-card span{display:block;line-height:1.5;color:#34445f}
+.quick-design-card.quick-flow{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.quick-design-card.quick-flow>div{position:relative}
+.quick-design-card.quick-comparison{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quick-design-card.quick-comparison>div:first-child{grid-column:1/-1}
+.quick-design-card.quick-cue,.quick-design-card.quick-definition{grid-template-columns:1fr}
+@media(max-width:600px){.quick-design-card.quick-flow,.quick-design-card.quick-comparison{grid-template-columns:1fr}.quick-design-card.quick-comparison>div:first-child{grid-column:auto}}
