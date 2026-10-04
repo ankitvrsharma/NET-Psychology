@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "mode": "expert_or_owner",
-  "audit_version": "2026-10-04-expert4",
+  "audit_version": "2026-10-04-expert5",
   "ai_pass": {
     "questions": {
       "pass": []
@@ -30,5 +30,5 @@
   },
   "policy": "REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW",
   "max_automatic_rewrite_cycles": 2,
-  "note": "80+ is eligible to serve. 60–79 is REVIEW and requires substantive rewriting; below 60 is ISSUE and is priority rewrite. PASS is an expert-likeness gate, not a guarantee of factual correctness."
+  "note": "70+ is eligible to serve. 60–69 is REVIEW. Below 60 is ISSUE and is automatically rewritten and re-audited; unresolved items after two automatic cycles require owner review. PASS is an expert-likeness gate, not a guarantee of factual correctness."
 }
