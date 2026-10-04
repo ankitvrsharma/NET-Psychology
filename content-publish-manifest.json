@@ -1,10 +1,34 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "mode": "expert_or_owner",
-  "audit_version": "2026-10-04-expert1",
-  "ai_pass": {"questions":{"pass":[]},"microtopics":{"pass":[]},"quickLearnCards":{"pass":[]},"activeRecall":{"pass":[]}},
-  "owner_approved": {"questions":[],"microtopics":[],"quickLearnCards":[],"activeRecall":[]},
-  "owner_rejected": {"questions":[],"microtopics":[],"quickLearnCards":[],"activeRecall":[]},
-  "policy": "EXPERT_LIKENESS_PASS_OR_OWNER_APPROVED",
-  "note": "PASS means deterministic expert-likeness signals meet threshold. It does not prove human authorship or guarantee factual correctness; source-grounded expert review remains the gold standard."
+  "audit_version": "2026-10-04-expert2",
+  "ai_pass": {
+    "questions": {
+      "pass": []
+    },
+    "microtopics": {
+      "pass": []
+    },
+    "quickLearnCards": {
+      "pass": []
+    },
+    "activeRecall": {
+      "pass": []
+    }
+  },
+  "owner_approved": {
+    "questions": [],
+    "microtopics": [],
+    "quickLearnCards": [],
+    "activeRecall": []
+  },
+  "owner_rejected": {
+    "questions": [],
+    "microtopics": [],
+    "quickLearnCards": [],
+    "activeRecall": []
+  },
+  "policy": "REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW",
+  "max_automatic_rewrite_cycles": 2,
+  "note": "Content below the 85 PASS threshold is not published by default. It must be substantively rewritten and re-audited; after two unsuccessful rewrite cycles it is presented for owner review. PASS does not prove human authorship or guarantee factual correctness."
 }

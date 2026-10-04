@@ -1,10 +1,12 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "mode": "expert_or_owner",
-  "description": "Serve only deterministic expert-likeness PASS content or explicitly owner-approved content. Human authorship is not inferred; source grounding, psychological specificity, explanation quality, NET relevance, learning value, and AI-generic risk are scored.",
-  "expert_audit_version": "2026-10-04-expert1",
+  "description": "Serve only final deterministic expert-likeness PASS content or explicitly owner-approved content. Content below PASS enters a rewrite-and-re-audit workflow; after two unsuccessful automatic rewrite cycles it is held for owner review.",
+  "expert_audit_version": "2026-10-04-expert2",
   "expert_pass_threshold": 85,
   "expert_review_threshold": 60,
+  "max_automatic_rewrite_cycles": 2,
+  "rewrite_policy": "REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW",
   "manifest": "content-publish-manifest.json",
   "owner_overrides": "content-owner-overrides.json"
 }
