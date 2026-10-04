@@ -1,91 +1,216 @@
 (()=>{'use strict';
-const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])),KEY='netPsychOwnerContentQA',MAX_REWRITE_CYCLES=2,EXPERT_PASS_THRESHOLD=70,EXPERT_REVIEW_THRESHOLD=60;
-let audit=null,rows=[],activeFilters={type:'all',audit:'all',owner:'all',workflow:'all',ownerReview:'pending'};
-const store=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return{}}},save=x=>{try{localStorage.setItem(KEY,JSON.stringify(x))}catch{}};
-const GITHUB_OWNER='ankitvrsharma',GITHUB_REPO='NET-Psychology',GITHUB_BRANCH='main',OWNER_FILE='content-owner-overrides.json',GITHUB_API='https://api.github.com';
-function mergeRemoteOwnerState(remote){if(!remote||typeof remote!=='object')return;const s=store();s.approved=remote.owner_approved||s.approved||{};s.rejected=remote.owner_rejected||s.rejected||{};s.rejectionReasons=remote.notes||s.rejectionReasons||{};s.rewriteQueue=remote.rewrite_queue||s.rewriteQueue||[];save(s)}
-async function loadRemoteOwnerState(){try{const r=await fetch(GITHUB_API+'/repos/'+GITHUB_OWNER+'/'+GITHUB_REPO+'/contents/'+OWNER_FILE+'?ref='+GITHUB_BRANCH+'&v='+Date.now(),{headers:{Accept:'application/vnd.github+json'}});if(r.status===404)return null;if(!r.ok)throw Error('Could not load '+OWNER_FILE+' ('+r.status+')');const x=await r.json(),raw=atob(String(x.content||'').replace(/\n/g,''));return JSON.parse(decodeURIComponent(escape(raw)))}catch(e){console.warn('Owner decision file could not be loaded:',e.message);return null}}
-function utf8Base64(text){const bytes=new TextEncoder().encode(text);let bin='';for(let i=0;i<bytes.length;i+=0x8000)bin+=String.fromCharCode(...bytes.subarray(i,i+0x8000));return btoa(bin)}
-async function githubFileSha(token){const r=await fetch(GITHUB_API+'/repos/'+GITHUB_OWNER+'/'+GITHUB_REPO+'/contents/'+OWNER_FILE+'?ref='+GITHUB_BRANCH,{headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token}});if(r.status===404)return null;if(!r.ok)throw Error('GitHub could not read the owner decision file ('+r.status+')');return (await r.json()).sha||null}
-async function commitOwnerDecisions(token){const sha=await githubFileSha(token),payload=ownerDecisionPayload(),body={message:'Update owner content decisions',content:utf8Base64(JSON.stringify(payload,null,2)+'\n'),branch:GITHUB_BRANCH};if(sha)body.sha=sha;const r=await fetch(GITHUB_API+'/repos/'+GITHUB_OWNER+'/'+GITHUB_REPO+'/contents/'+OWNER_FILE,{method:'PUT',headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw Error('GitHub commit failed ('+r.status+')');return r.json()}
-const REWRITE_REQUEST_FILE='rewrite-requests.json';
-async function rewriteFileState(token){const r=await fetch(GITHUB_API+'/repos/'+GITHUB_OWNER+'/'+GITHUB_REPO+'/contents/'+REWRITE_REQUEST_FILE+'?ref='+GITHUB_BRANCH,{headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token}});if(!r.ok)throw Error('GitHub could not read '+REWRITE_REQUEST_FILE+' ('+r.status+')');const x=await r.json(),raw=atob(String(x.content||'').replace(/\n/g,''));return{sha:x.sha,data:JSON.parse(decodeURIComponent(escape(raw)))}}
-async function commitRewriteRequest(token,type,id,instruction){const state=await rewriteFileState(token);const data=state.data&&typeof state.data==='object'?state.data:{schema_version:1,requests:[]};data.requests=Array.isArray(data.requests)?data.requests:[];data.requests.push({id:'RR-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7),type,target_id:id,instruction,status:'PENDING',requested_at:new Date().toISOString()});data.updated_at=new Date().toISOString();const body={message:'Request content rewrite: '+type+' '+id,content:utf8Base64(JSON.stringify(data,null,2)+'\n'),branch:GITHUB_BRANCH,sha:state.sha};const r=await fetch(GITHUB_API+'/repos/'+GITHUB_OWNER+'/'+GITHUB_REPO+'/contents/'+REWRITE_REQUEST_FILE,{method:'PUT',headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw Error('Rewrite request commit failed ('+r.status+')');return r.json()}
-function rewriteQueuePayload(){const s=store(),queue=[];for(const type of Object.keys(s.rejected||{})){for(const id of (s.rejected[type]||[])){queue.push({type,id,rejection_comment:String(s.rejectionReasons?.[type]?.[id]||'').trim(),status:'REWRITE_REQUIRED',instruction:'Rewrite this content using the owner rejection comment, then re-audit it before learner use.'})}}return queue}
-function ownerDecisionPayload(){const s=store();return{schema_version:7,owner_approved:s.approved||{},owner_rejected:s.rejected||{},notes:s.rejectionReasons||{},rewrite_queue:rewriteQueuePayload(),updated_at:new Date().toISOString()}}
-const statusFor=(type,id)=>{const s=store();if((s.rejected?.[type]||[]).includes(id))return'REJECTED';if((s.approved?.[type]||[]).includes(id))return'APPROVED';return'AUTO'};
-const revisionFor=(type,id)=>{const s=store();return s.revisions?.[type]?.[id]||{cycles:0,history:[],ownerReviewRequired:false}};
-const saveRevision=(type,id,entry)=>{const s=store();s.revisions=s.revisions||{};s.revisions[type]=s.revisions[type]||{};s.revisions[type][id]=entry;save(s)};
-const setStatus=(type,id,status,reason='')=>{const s=store();s.approved=s.approved||{};s.rejected=s.rejected||{};s.rejectionReasons=s.rejectionReasons||{};for(const k of ['approved','rejected'])s[k][type]=(s[k][type]||[]).filter(x=>x!==id);s.rejectionReasons[type]=s.rejectionReasons[type]||{};if(status==='APPROVED')s.approved[type].push(id);if(status==='REJECTED'){const note=String(reason||'').trim();s.rejected[type].push(id);s.rejectionReasons[type][id]=note;s.rewriteQueue=s.rewriteQueue||[];s.rewriteQueue=s.rewriteQueue.filter(x=>!(x.type===type&&x.id===id));s.rewriteQueue.push({type,id,rejection_comment:note,status:'REWRITE_REQUIRED',instruction:'Rewrite this content using the owner rejection comment, then re-audit it before learner use.'})}else{delete s.rejectionReasons[type][id];s.rewriteQueue=(s.rewriteQueue||[]).filter(x=>!(x.type===type&&x.id===id))}save(s);render()};
-const queueRewrite=(type,id)=>{const r=revisionFor(type,id);if(r.cycles>=MAX_REWRITE_CYCLES){r.history.push({action:'REWRITE_LIMIT_REACHED',at:new Date().toISOString(),reason:'Content remains blocked until a rewritten version is re-audited successfully'});saveRevision(type,id,r);render();return}r.cycles+=1;r.history.push({action:'REWRITE_REQUESTED',cycle:r.cycles,at:new Date().toISOString()});saveRevision(type,id,r);render()};
-async function get(path){
-  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
-  try{
-    const r=await fetch('./'+path+'?v=20261004-expert9',{signal:controller.signal,cache:'no-store'});
-    if(!r.ok)throw Error(path+' '+r.status);
-    return await r.json();
-  }catch(e){
-    if(e.name==='AbortError')throw Error(path+' timed out after 15 seconds');
-    throw e;
-  }finally{clearTimeout(timer)}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const OWNER='ankitvrsharma',REPO='NET-Psychology',BRANCH='main',API='https://api.github.com',OWNER_FILE='content-owner-overrides.json',REWRITE_FILE='rewrite-requests.json';
+const MAX_REWRITE_CYCLES=2,PASS=70,REVIEW=60,PAGE_SIZE=40;
+let audit=null,rows=[],visibleRows=[],pageSize=PAGE_SIZE;
+let filters={type:'all',audit:'all',owner:'all',workflow:'all',ownerReview:'pending'};
+const store=()=>{try{return JSON.parse(localStorage.getItem('netPsychOwnerContentQA')||'{}')}catch{return{}}};
+const save=x=>{try{localStorage.setItem('netPsychOwnerContentQA',JSON.stringify(x))}catch{}};
+const statusFor=(type,id)=>{const s=store();if((s.rejected?.[type]||[]).map(String).includes(String(id)))return'REJECTED';if((s.approved?.[type]||[]).map(String).includes(String(id)))return'APPROVED';return'AUTO'};
+const revisionFor=(type,id)=>{const s=store();return s.revisions?.[type]?.[id]||{cycles:0,history:[]}};
+const setStatus=(type,id,status,reason)=>{
+  const s=store();s.approved=s.approved||{};s.rejected=s.rejected||{};s.rejectionReasons=s.rejectionReasons||{};
+  for(const k of ['approved','rejected'])s[k][type]=(s[k][type]||[]).filter(x=>String(x)!==String(id));
+  s.rejectionReasons[type]=s.rejectionReasons[type]||{};
+  if(status==='APPROVED')s.approved[type].push(String(id));
+  if(status==='REJECTED'){s.rejected[type].push(String(id));s.rejectionReasons[type][id]=String(reason||'').trim()}
+  else delete s.rejectionReasons[type][id];
+  save(s);renderRows();
+};
+const queueRewrite=(type,id)=>{
+  const s=store();s.revisions=s.revisions||{};s.revisions[type]=s.revisions[type]||{};
+  const r=revisionFor(type,id);
+  if(r.cycles>=MAX_REWRITE_CYCLES){r.history.push({action:'REWRITE_LIMIT_REACHED',at:new Date().toISOString()});s.revisions[type][id]=r;save(s);renderRows();return}
+  r.cycles+=1;r.history.push({action:'REWRITE_REQUESTED',cycle:r.cycles,at:new Date().toISOString()});s.revisions[type][id]=r;save(s);renderRows();
+};
+const ownerPayload=()=>{
+  const s=store(),queue=[];
+  for(const type of Object.keys(s.rejected||{}))for(const id of s.rejected[type]||[])queue.push({type,id,rejection_comment:String(s.rejectionReasons?.[type]?.[id]||''),status:'REWRITE_REQUIRED',instruction:'Rewrite this content using the owner rejection comment, then re-audit it before learner use.'});
+  return{schema_version:7,owner_approved:s.approved||{},owner_rejected:s.rejected||{},notes:s.rejectionReasons||{},rewrite_queue:queue,updated_at:new Date().toISOString()};
+};
+function signals(values){
+  const text=(Array.isArray(values)?values:[values]).map(v=>typeof v==='object'&&v!==null?JSON.stringify(v):String(v??'')).join(' ').replace(/\s+/g,' ').trim();
+  const low=text.toLowerCase();
+  const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand'];
+  const domain=['mechanism','construct','process','theory','model','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','assessment','experiment','correlation','causal','development','memory','perception','motivation','personality','attitude','learning','stress'];
+  const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic','distinguish'];
+  return{text,length:text.length,generic:generic.filter(x=>low.includes(x)).length,domain:domain.filter(x=>low.includes(x)).length,teaching:teaching.filter(x=>low.includes(x)).length,mechanism:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length,contrast:(low.match(/\b(distinguish|whereas|contrast|however|not the same as)\b/g)||[]).length};
 }
-function signals(v){const s=Array.isArray(v)?v.map(x=>signals(x).text).join(' '):v&&typeof v==='object'?Object.values(v).map(x=>signals(x).text).join(' '):String(v??''),t=s.replace(/\s+/g,' ').trim(),low=t.toLowerCase();const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand','is very important'];const domain=['mechanism','distinguish','contrast','whereas','condition','evidence','study','research','theory','model','construct','process','predict','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','assessment','experiment','correlation','causal'];const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic'];return{text:t,length:t.length,generic:generic.filter(x=>low.includes(x)).length,domain:domain.filter(x=>low.includes(x)).length,teaching:teaching.filter(x=>low.includes(x)).length,contrast:(low.match(/\b(distinguish|whereas|contrast|not the same as|however)\b/g)||[]).length,mechanism:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length}};
-function microAudit(m){const x=signals([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.kaplan_enrichment?.notes,m.simply_psychology_enrichment?.notes]),issues=[];if(!m.title)issues.push('missing_title');if(x.length<220)issues.push('too_thin');if(!m.sources?.length)issues.push('no_explicit_source_mapping');if(x.generic>=3)issues.push('generic_ai_style');if(x.domain<3)issues.push('low_psychology_specificity');if(x.mechanism<1&&x.contrast<1)issues.push('weak_explanation_structure');let score=(m.sources?.length?15:0)+(m.kaplan_enrichment?.notes||m.simply_psychology_enrichment?.notes||m.source_notes?5:0)+Math.min(25,10+x.domain*2+x.mechanism*2+x.contrast*2)+Math.min(20,8+(x.length>=500?5:0)+(x.domain>=6?4:0))+Math.min(15,6+x.teaching*2+(String(m.content_notes||'').toLowerCase().includes('pyq')?3:0))+Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(x.contrast?2:0))+Math.max(0,10-x.generic*3-(x.length<180?4:0));if(x.generic>=3)score-=8;if(!m.sources?.length)score-=10;score=Math.max(0,Math.min(100,Math.round(score)));return{score,status:(!m.title||!m.sources?.length||score<EXPERT_REVIEW_THRESHOLD)?'ISSUE':score>=EXPERT_PASS_THRESHOLD?'PASS':'REVIEW',issues}};
-function questionAudit(q){const x=signals([q.question,q.explanation,q.session,q.type,q.kind]),issues=[];if(!q.question)issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!q.explanation)issues.push('missing_explanation');if(x.generic>=2)issues.push('generic_explanation_style');if(x.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,x.domain*1.5);score+=Math.min(10,x.contrast*2+x.mechanism*2);score+=(q.kind?5:0);score-=Math.min(15,x.generic*4);score=Math.max(0,Math.min(100,Math.round(score)));return{score,status:issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=EXPERT_PASS_THRESHOLD?'PASS':score>=EXPERT_REVIEW_THRESHOLD?'REVIEW':'ISSUE',issues}} 
-function cardAudit(id,data){const [mid,angle]=String(id).split('|'),p=mid.split('-').map(Number),m=data.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!m)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const b=microAudit(m),txt=signals([m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook]).text.toLowerCase(),req={'CORE IDEA':/core|definition|means|refers|concept|theor/,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/,'SOURCE DETAIL':/source|study|research|author|model|theory/,'RECALL CUE':/recall|cue|memory|mnemonic/,'CONNECTION':/connect|relationship|link|related|contrast|compare/},missing=req[angle]&&!req[angle].test(txt),issues=b.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,b.score-(missing?15:0));return{score,status:score>=EXPERT_PASS_THRESHOLD?'PASS':score>=EXPERT_REVIEW_THRESHOLD?'REVIEW':'ISSUE',issues}};
-function section(text,label,next){const s=String(text||'');const i=s.indexOf(label);if(i<0)return '';const start=i+label.length;const j=next?s.indexOf(next,start):-1;return s.slice(start,j<0?s.length:j).replace(/^[:\-–—\s]+/,'').trim()}
-function bullets(text){return String(text||'').split(/\n+/).map(x=>x.replace(/^\s*(?:[-•*]|\d+[.)])\s*/,'').trim()).filter(Boolean)}
-function findMicro(data,id){const p=String(id).split('-').map(Number);return data.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2])||null}
-function recallContent(m){const n=String(m.content_notes||'');return{core:String(m.expert_explanation||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim(),points:bullets(section(n,'KEY POINTS','\n\nDISTINCTION / CAUTION')).filter(Boolean),distinction:String(m.distinction||section(n,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim(),pattern:String(section(n,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(n,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS')||'').trim(),application:String(m.application_question||'').trim(),deep:String(m.detailed_explanation||m.deep_learning||m.deep||'').trim()}}
-function buildRecallPrompts(m,qs){const c=recallContent(m),title=String(m.title||'this concept').trim(),p=[],mapped=Array.isArray(qs)&&qs.length>0;if(c.core)p.push({type:'FREE RECALL',prompt:'Without looking at your notes, what is '+title+'? State its meaning and central idea in your own words.',answer:c.core});c.points.slice(0,2).forEach(x=>p.push({type:'KEY IDEA',prompt:'What key idea about '+title+' can you recall that explains or qualifies the concept? Give the point in your own words.',answer:x}));if(c.distinction)p.push({type:'DISTINCTION',prompt:'What distinction or caution must you keep clear for '+title+'? State the difference and why it matters.',answer:c.distinction});if(c.application)p.push({type:'APPLICATION',prompt:'How would you use '+title+' to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.',answer:c.application});if(mapped&&c.pattern&&p.length<5)p.push({type:'EXAM REASONING',prompt:'A related NET question may test this concept through its mechanism, finding, or distinction. Without looking, what part of '+title+' would you retrieve to answer it correctly, and why?',answer:c.pattern});else if(c.pattern&&p.length<5)p.push({type:'EXAM REASONING',prompt:'What feature, mechanism, finding, or distinction of '+title+' would you need to retrieve to solve a related NET question correctly? Explain it without looking.',answer:c.pattern});else if(c.deep&&p.length<3)p.push({type:'EXPLAIN',prompt:'What is the most important mechanism or relationship within '+title+' that you should be able to explain without notes?',answer:c.deep.slice(0,1200)});const seen=new Set();return p.filter(x=>{const answer=String(x.answer||'').replace(/\s+/g,' ').trim(),prompt=String(x.prompt||'').replace(/\s+/g,' ').trim(),k=prompt+'|'+answer;if(!answer||answer.length<12||seen.has(k))return false;seen.add(k);x.answer=answer;return true}).slice(0,5)}
-function quickTextQA(m,a){const d=String(m.deep_learning||''),n=String(m.content_notes||''),core=String(section(d,'ACADEMIC CORE','\n\nKEY POINTS')||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim(),pts=bullets(section(d,'KEY POINTS','\n\nDISTINCTION / CAUTION')||section(n,'KEY POINTS','\n\nPYQ-STYLE PATTERN')),dist=String(section(d,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')||section(n,'COMMON EXAM TRAP','\n\nMEMORY CUE')||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim(),exam=String(m.exam_takeaway||'').trim(),hook=String(section(n,'MEMORY CUE')||'').trim();return String({'CORE IDEA':core,'KEY FEATURES':[core,pts.slice(0,3).join(' ')].filter(Boolean).join(' '),'PYQ FOCUS':dist?'In questions, watch this distinction: '+dist:(exam||core),'EXAM TRAP':dist||core,'SOURCE DETAIL':[core,pts.slice(0,2).join(' ')].filter(Boolean).join(' '),'RECALL CUE':[hook,core].filter(Boolean).join(' — '),'CONNECTION':[core,dist].filter(Boolean).join(' ')}[a]||'').trim().slice(0,900)}
-function build(data,qs,ex){const out={questions:[],microtopics:[],quickLearnCards:[],deepDive:[],activeRecall:[]};for(const q of qs){const x={...q,explanation:ex[q.id]||q.explanation},a=questionAudit(x);out.questions.push({id:q.id,title:q.question,score:a.score,status:a.status,issues:a.issues,content:x})}for(const u of data.units)for(const t of u.topics)for(const m of t.microtopics){const id=u.id+'-'+t.id+'-'+m.id,a=microAudit(m);out.microtopics.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m});out.deepDive.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m});for(const angle of ['CORE IDEA','KEY FEATURES','PYQ FOCUS','EXAM TRAP','SOURCE DETAIL','RECALL CUE','CONNECTION']){const c=cardAudit(id+'|'+angle,data);out.quickLearnCards.push({id:id+'|'+angle,title:m.title+' — '+angle,score:c.score,status:c.status,issues:c.issues,content:m,angle})}out.activeRecall.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m,prompts:buildRecallPrompts(m,qs.filter(q=>String(q.unit)===String(u.id)&&String(q.topic)===String(t.id)&&String(q.micro)===String(m.id)))})}return out}
-function workflow(x){const r=revisionFor(x.type,x.id),owner=statusFor(x.type,x.id);if(owner==='REJECTED')return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles};if(owner==='APPROVED')return{label:'OWNER APPROVED',cls:'pass',cycles:r.cycles};if(x.status==='PASS')return{label:'PASS',cls:'pass',cycles:r.cycles};return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles}}
-function filterButtonState(){document.querySelectorAll('.qa-filter').forEach(b=>b.classList.toggle('active',activeFilters[b.dataset.filterGroup]===b.dataset.filterValue));document.querySelectorAll('.qa-stat').forEach(b=>b.classList.toggle('active-filter',b.dataset.summaryType===activeFilters.type));}function setFilter(group,value){activeFilters[group]=value;filterButtonState();filterRows()}function render(){const sets=[['Questions',audit.questions],['Micro-topic explanations',audit.microtopics],['Quick Learn Cards',audit.quickLearnCards],['Deep Dive Explanations',audit.deepDive],['Active Recall exercises',audit.activeRecall]];$('#summary').innerHTML=sets.map(([n,a])=>{const p=a.filter(x=>x.status==='PASS').length,r=a.filter(x=>x.status==='REVIEW').length,i=a.filter(x=>x.status==='ISSUE').length;return '<article class="qa-stat" data-summary-type="'+esc(n==='Questions'?'questions':n==='Micro-topic explanations'?'microtopics':n==='Quick Learn Cards'?'quickLearnCards':n==='Deep Dive Explanations'?'deepDive':'activeRecall')+'" role="button" tabindex="0"><div class="qa-stat-title">'+esc(n==='Questions'?'Practice Questions':n)+'</div><div class="qa-stat-total"><span class="qa-stat-total-label">Total</span><strong class="qa-stat-total-value">'+a.length+'</strong></div><div class="qa-stat-row pass"><span class="qa-stat-row-label">Passed</span><strong class="qa-stat-row-value">'+p+'</strong></div><div class="qa-stat-row review"><span class="qa-stat-row-label">Need Review</span><strong class="qa-stat-row-value">'+r+'</strong></div><div class="qa-stat-row issue"><span class="qa-stat-row-label">Issue</span><strong class="qa-stat-row-value">'+i+'</strong></div></article>'}).join('');const total=sets.reduce((n,[,a])=>n+a.length,0),pass=sets.reduce((n,[,a])=>n+a.filter(x=>x.status==='PASS').length,0),needs=total-pass;$('#gate').innerHTML='<div class="qa-gate"><div class="qa-gate-title">Audit &amp; Publishing Workflow</div><div class="qa-gate-copy"><strong>PASS:</strong> content that meets the expert-likeness threshold can be used by learners. <strong>REWRITE → RE-AUDIT:</strong> content that needs improvement is held, rewritten, and checked again. <strong>OWNER REVIEW:</strong> content that still does not pass after the allowed rewrite cycles remains held for your manual decision.</div><div class="qa-gate-status">'+pass+' pass now · '+needs+' currently held · Maximum automatic rewrites: '+MAX_REWRITE_CYCLES+'</div></div>';rows=[...audit.questions.map(x=>({...x,type:'questions',pool:'Question Pool'})),...audit.microtopics.map(x=>({...x,type:'microtopics',pool:'Micro-topic Explanation Pool'})),...audit.quickLearnCards.map(x=>({...x,type:'quickLearnCards',pool:'Quick Learn Card Pool'})),...audit.deepDive.map(x=>({...x,type:'deepDive',pool:'Deep Dive Explanations Pool'})),...audit.activeRecall.map(x=>({...x,type:'activeRecall',pool:'Active Recall Pool'}))];filterRows()}
-function previewHTML(x){
+function microAudit(m){
+  const x=signals([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.source_notes]);
+  const issues=[];
+  if(!String(m.title||'').trim())issues.push('missing_title');
+  if(!Array.isArray(m.sources)||!m.sources.length)issues.push('no_explicit_source_mapping');
+  if(x.length<220)issues.push('too_thin');
+  if(x.generic>=3)issues.push('generic_ai_style');
+  if(x.domain<3)issues.push('low_psychology_specificity');
+  if(!x.mechanism&&!x.contrast)issues.push('weak_explanation_structure');
+  let score=(m.sources?.length?15:0)+Math.min(25,10+x.domain*2+x.mechanism*2+x.contrast*2)+Math.min(20,8+(x.length>=500?5:0)+(x.domain>=6?4:0))+Math.min(15,6+x.teaching*2)+Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(x.contrast?2:0))+Math.max(0,10-x.generic*3-(x.length<180?4:0));
+  if(!m.sources?.length)score-=10;if(x.generic>=3)score-=8;
+  score=Math.max(0,Math.min(100,Math.round(score)));
+  return{score,status:(!m.title||!m.sources?.length||score<REVIEW)?'ISSUE':score>=PASS?'PASS':'REVIEW',issues};
+}
+function questionAudit(q){
+  const x=signals([q.question,q.explanation,q.session,q.type,q.kind]),issues=[];
+  if(!q.question)issues.push('missing_question');
+  if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');
+  if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');
+  if(q.unit==null||q.topic==null||q.micro==null)issues.push('unmapped');
+  if(!q.explanation)issues.push('missing_explanation');
+  if(x.generic>=2)issues.push('generic_explanation_style');
+  if(x.length<180)issues.push('thin_explanation');
+  if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');
+  let score=(q.session&&q.type==='PYQ'?20:0)+(Array.isArray(q.options)&&q.options.length===4?15:0)+(q.unit!=null&&q.topic!=null&&q.micro!=null?15:0)+Math.min(20,x.length>=300?20:x.length>=220?16:x.length>=180?12:6)+Math.min(15,x.domain*1.5)+Math.min(10,x.contrast*2+x.mechanism*2)+(q.kind?5:0)-Math.min(15,x.generic*4);
+  score=Math.max(0,Math.min(100,Math.round(score)));
+  return{score,status:issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=PASS?'PASS':score>=REVIEW?'REVIEW':'ISSUE',issues};
+}
+function findMicro(data,id){const p=String(id).split('-').map(Number);return data.units?.find(u=>u.id===p[0])?.topics?.find(t=>t.id===p[1])?.microtopics?.find(m=>m.id===p[2])||null}
+function microText(m){return [m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook].filter(Boolean).join(' ')}
+function cardAudit(id,data){
+  const parts=String(id).split('|'),base=parts[0],angle=parts[1]||'',m=findMicro(data,base);
+  if(!m)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};
+  const a=microAudit(m),text=microText(m).toLowerCase();
+  const req={'CORE IDEA':/core|definition|means|concept|theor/,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/,'EXAM TRAP':/trap|distinguish|whereas|common error/,'SOURCE DETAIL':/source|study|research|author|model|theory/,'RECALL CUE':/recall|cue|memory|mnemonic/,'CONNECTION':/connect|relationship|link|related|contrast|compare/};
+  const missing=req[angle]&&!req[angle].test(text),score=Math.max(0,a.score-(missing?15:0)),issues=a.issues.slice();if(missing)issues.push('weak_angle_specific_support');
+  return{score,status:score>=PASS?'PASS':score>=REVIEW?'REVIEW':'ISSUE',issues};
+}
+function recallPrompts(m){
+  const core=String(m.expert_explanation||'').trim(),n=String(m.content_notes||''),dist=String(m.distinction||'').trim(),app=String(m.application_question||'').trim(),p=[];
+  if(core)p.push({type:'FREE RECALL',prompt:'Without looking at your notes, what is '+m.title+'? State its meaning and central idea.',answer:core});
+  if(dist)p.push({type:'DISTINCTION',prompt:'What distinction or exam caution must you keep clear for '+m.title+'?',answer:dist});
+  if(app)p.push({type:'APPLICATION',prompt:'How would you apply '+m.title+' to a psychology situation or NET question?',answer:app});
+  if(n)p.push({type:'SOURCE RECALL',prompt:'What source-grounded point about '+m.title+' should you be able to retrieve without notes?',answer:n.slice(0,1000)});
+  return p.slice(0,5);
+}
+function build(data,qs,ex){
+  const out={questions:[],microtopics:[],quickLearnCards:[],deepDive:[],activeRecall:[]};
+  for(const q of qs){const content={...q,explanation:ex[q.id]||q.explanation},a=questionAudit(content);out.questions.push({id:q.id,title:q.question,score:a.score,status:a.status,issues:a.issues,content})}
+  for(const u of data.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
+    const id=u.id+'-'+t.id+'-'+m.id,a=microAudit(m);
+    out.microtopics.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m});
+    out.deepDive.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m});
+    for(const angle of ['CORE IDEA','KEY FEATURES','PYQ FOCUS','EXAM TRAP','SOURCE DETAIL','RECALL CUE','CONNECTION']){const c=cardAudit(id+'|'+angle,data);out.quickLearnCards.push({id:id+'|'+angle,title:m.title+' — '+angle,score:c.score,status:c.status,issues:c.issues,content:m,angle})}
+    out.activeRecall.push({id,title:m.title,score:a.score,status:a.status,issues:a.issues,content:m,prompts:recallPrompts(m)});
+  }
+  return out;
+}
+function workflow(x){const o=statusFor(x.type,x.id),r=revisionFor(x.type,x.id);if(o==='REJECTED')return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles};if(o==='APPROVED')return{label:'OWNER APPROVED',cls:'pass',cycles:r.cycles};if(x.status==='PASS')return{label:'OWNER REVIEW',cls:'pass',cycles:r.cycles};return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles}}
+function preview(x){
   const m=x.content||{};
-  if(x.type==='questions'){
-    const o=Array.isArray(m.options)?m.options:[];
-    const opts=o.map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');
-    const answer=Number.isInteger(m.answer)&&o[m.answer]!==undefined?esc(String.fromCharCode(65+m.answer)+'. '+o[m.answer]):'Not available';
-    return '<div class="qa-preview learner-preview"><h4>'+esc(m.question||x.title||'')+'</h4><ol class="qa-options">'+opts+'</ol><div class="qa-question-explanation"><p><strong>Correct answer:</strong> '+answer+'</p><p>'+esc(m.explanation||'No explanation available.')+'</p></div></div>';
-  }
-  if(x.type==='microtopics'){
-    const n=String(m.content_notes||'');
-    const c=String(m.expert_explanation||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title||'').trim();
-    const p=bullets(section(n,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
-    const d=String(m.distinction||section(n,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||'').trim();
-    return '<div class="qa-preview learner-preview"><h4>'+esc(m.title||x.title)+'</h4><p>'+esc(c)+'</p>'+(p.length?'<h5>KEY POINTS</h5><ul>'+p.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ul>':'')+(d?'<h5>DISTINCTION</h5><p>'+esc(d)+'</p>':'')+'</div>';
-  }
-  if(x.type==='deepDive'){
-    const n=String(m.content_notes||'');
-    const d=String(m.detailed_explanation||m.deep||m.content_notes||m.title||'').trim();
-    const p=bullets(section(n,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
-    const c=String(m.distinction||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
-    return '<div class="qa-preview learner-preview"><h4>'+esc(m.title||x.title)+'</h4><div class="qa-deep-copy">'+esc(d)+'</div>'+(p.length?'<h5>KEY POINTS</h5><ul>'+p.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ul>':'')+(c?'<h5>EXAM CAUTION</h5><p>'+esc(c)+'</p>':'')+'</div>';
-  }
-  if(x.type==='quickLearnCards'){
-    return '<div class="qa-preview learner-preview"><div class="qa-angle">'+esc(x.angle)+'</div><h4>'+esc(m.title||x.title)+'</h4><p>'+esc(quickTextQA(m,x.angle))+'</p></div>';
-  }
-  if(x.type==='activeRecall'){
-    const prompts=Array.isArray(x.prompts)?x.prompts:[];
-    return '<div class="qa-preview learner-preview"><h4>Bring this idea back from memory.</h4>'+prompts.map((p,i)=>'<section class="qa-recall-item"><span>'+esc(p.type)+'</span><p><strong>'+String(i+1).padStart(2,'0')+'.</strong> '+esc(p.prompt)+'</p><details><summary>Expected answer · owner audit</summary><p>'+esc(p.answer)+'</p></details></section>').join('')+'</div>';
-  }
-  return '';
+  if(x.type==='questions'){const opts=(m.options||[]).map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');return '<div class="qa-preview learner-preview"><h4>'+esc(m.question||x.title)+'</h4><ol class="qa-options">'+opts+'</ol><p><strong>Explanation:</strong> '+esc(m.explanation||'No explanation available.')+'</p></div>'}
+  if(x.type==='activeRecall'){return '<div class="qa-preview learner-preview"><h4>Bring this idea back from memory.</h4>'+((x.prompts||[]).map((p,i)=>'<section class="qa-recall-item"><span>'+esc(p.type)+'</span><p><strong>'+String(i+1)+'.</strong> '+esc(p.prompt)+'</p><details><summary>Expected answer</summary><p>'+esc(p.answer)+'</p></details></section>').join(''))+'</div>'}
+  const text=m.detailed_explanation||m.expert_explanation||m.content_notes||'';
+  const dist=m.distinction||'';
+  return '<div class="qa-preview learner-preview"><div class="qa-angle">'+esc(x.angle||x.type)+'</div><h4>'+esc(m.title||x.title)+'</h4><p class="qa-deep-copy">'+esc(text)+'</p>'+(dist?'<h5>EXAM CAUTION</h5><p>'+esc(dist)+'</p>':'')+'</div>';
 }
-function filterRows(){const term=($('#search').value||'').toLowerCase(),f=activeFilters;const v=rows.filter(x=>{const owner=statusFor(x.type,x.id),w=workflow(x);const ownerReviewOK=f.ownerReview==='all'||(f.ownerReview==='pending'&&owner==='AUTO'&&x.status==='PASS')||(f.ownerReview==='reviewed'&&owner!=='AUTO');const typeOK=f.type==='all'||x.type===f.type;const auditOK=f.audit==='all'||(f.audit==='pass'&&x.status==='PASS')||(f.audit==='review'&&x.status==='REVIEW')||(f.audit==='issue'&&x.status==='ISSUE');const ownerOK=f.owner==='all'||(f.owner==='approved'&&owner==='APPROVED')||(f.owner==='rejected'&&owner==='REJECTED')||(f.owner==='auto'&&owner==='AUTO');const workflowOK=f.workflow==='all'||(f.workflow==='rewrite'&&w.label==='REWRITE REQUIRED')||(f.workflow==='owner-review'&&owner==='AUTO'&&x.status==='PASS')||(f.workflow==='pass'&&(w.label==='PASS'||w.label==='OWNER APPROVED'));return ownerReviewOK&&typeOK&&auditOK&&ownerOK&&workflowOK&&(!term||String(x.id+' '+x.title+' '+x.pool).toLowerCase().includes(term))}).slice(0,250);$('#rows').innerHTML=v.length?v.map(x=>{const o=statusFor(x.type,x.id),w=workflow(x);return '<article class="qa-row"><div class="qa-content"><div class="qa-row-head"><div><span class="pool-badge pool-'+esc(x.type)+'">'+esc(x.pool)+'</span></div><span class="pill '+x.status.toLowerCase()+' audit-status">AUDIT '+x.status+'</span></div>'+previewHTML(x)+'<div class="qa-decision"><div class="qa-decision-top"><div><div class="qa-decision-label">Audit decision</div><div class="qa-decision-status '+x.status.toLowerCase()+'">AUDIT '+esc(x.status)+'</div><p class="qa-decision-copy">'+(x.status==='PASS'?'Content meets the expert-likeness threshold.':x.status==='REVIEW'?'Content needs review before learners use it.':'Content has blocking issues and needs rewriting.')+'</p></div><div class="qa-score">Score '+x.score+'/100</div></div><div class="qa-decision-grid"><div class="qa-decision-metric"><span>Rewrite cycle</span><strong>'+w.cycles+' of '+MAX_REWRITE_CYCLES+'</strong></div><div class="qa-decision-metric"><span>Blocking issues</span><strong>'+(x.issues.length?esc(x.issues.length+' found'):'None detected')+'</strong></div></div><div class="qa-actions qa-actions-bottom"><span class="pill '+w.cls+'">'+esc(w.label)+'</span><span class="pill '+o.toLowerCase()+'">Decision source · '+(o==='AUTO'?'Automatic':o==='APPROVED'?'Owner approved':'Owner rejected')+'</span><button class="qa-owner-action qa-rewrite-request" data-request-rewrite="1" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Request Rewrite</button>'+(x.status==='PASS'?'':(w.cycles>=MAX_REWRITE_CYCLES?'<span class="pill rewrite">BLOCKED — EXPERT INTERVENTION</span>':'<button class="qa-owner-action" data-rewrite="1" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Queue rewrite '+(w.cycles+1)+'</button>'))+(x.status==='PASS'?'<button class="qa-owner-action qa-approve" data-set="APPROVED" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Approve</button><button class="qa-owner-action qa-reject" data-set="REJECTED" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Reject</button><button class="qa-owner-action qa-clear" data-set="AUTO" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Clear</button>':'')</div></div></div></article>'}).join(''):'<div class="empty">No matching audit items.</div>';filterButtonState()}function download(name,obj){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
+function ownerActions(x){
+  const w=workflow(x),o=statusFor(x.type,x.id);
+  return '<div class="qa-actions qa-actions-bottom"><span class="pill '+w.cls+'">'+esc(w.label)+'</span><span class="pill '+o.toLowerCase()+'">Decision · '+esc(o)+'</span><button class="qa-owner-action qa-rewrite-request" data-request-rewrite="1" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Request Rewrite</button>'+(x.status!=='PASS'?'<button class="qa-owner-action" data-rewrite="1" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Queue rewrite</button>':'<button class="qa-owner-action qa-approve" data-set="APPROVED" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Approve</button><button class="qa-owner-action qa-reject" data-set="REJECTED" data-type="'+esc(x.type)+'">Reject</button><button class="qa-owner-action qa-clear" data-set="AUTO" data-type="'+esc(x.type)+'" data-id="'+esc(x.id)+'">Clear</button>')+'</div>';
+}
+function renderSummary(){
+  const sets=[['Practice Questions',audit.questions,'questions'],['Micro-topic Explanations',audit.microtopics,'microtopics'],['Quick Learn Cards',audit.quickLearnCards,'quickLearnCards'],['Deep Dive Explanations',audit.deepDive,'deepDive'],['Active Recall',audit.activeRecall,'activeRecall']];
+  $('#summary').innerHTML=sets.map(([name,a,type])=>{const p=a.filter(x=>x.status==='PASS').length,r=a.filter(x=>x.status==='REVIEW').length,i=a.filter(x=>x.status==='ISSUE').length;return '<article class="qa-stat" data-summary-type="'+type+'" role="button" tabindex="0"><div class="qa-stat-title">'+esc(name)+'</div><div class="qa-stat-total"><span class="qa-stat-total-label">Total</span><strong class="qa-stat-total-value">'+a.length+'</strong></div><div class="qa-stat-row pass"><span class="qa-stat-row-label">Passed</span><strong class="qa-stat-row-value">'+p+'</strong></div><div class="qa-stat-row review"><span class="qa-stat-row-label">Need Review</span><strong class="qa-stat-row-value">'+r+'</strong></div><div class="qa-stat-row issue"><span class="qa-stat-row-label">Issue</span><strong class="qa-stat-row-value">'+i+'</strong></div></article>'}).join('');
+  const total=sets.reduce((n,x)=>n+x[1].length,0),passCount=sets.reduce((n,x)=>n+x[1].filter(y=>y.status==='PASS').length,0);
+  $('#gate').innerHTML='<div class="qa-gate"><div class="qa-gate-title">Audit &amp; Publishing Workflow</div><div class="qa-gate-copy"><strong>PASS:</strong> content can enter owner review. <strong>REWRITE → RE-AUDIT:</strong> REVIEW/ISSUE content is held until improved. <strong>OWNER EDIT:</strong> your manual correction is authoritative and does not require re-audit.</div><div class="qa-gate-status">'+passCount+' pass now · '+(total-passCount)+' currently held · Maximum automatic rewrites: '+MAX_REWRITE_CYCLES+'</div></div>';
+}
+function matches(x){
+  const q=String($('#search')?.value||'').toLowerCase().trim(),o=statusFor(x.type,x.id),w=workflow(x);
+  if(q&&!JSON.stringify([x.id,x.title,x.content]).toLowerCase().includes(q))return false;
+  if(filters.type!=='all'&&filters.type!==x.type)return false;
+  if(filters.audit!=='all'&&filters.audit!==x.status.toLowerCase())return false;
+  if(filters.owner==='approved'&&o!=='APPROVED')return false;
+  if(filters.owner==='rejected'&&o!=='REJECTED')return false;
+  if(filters.owner==='auto'&&o!=='AUTO')return false;
+  if(filters.workflow==='rewrite'&&w.label!=='REWRITE REQUIRED')return false;
+  if(filters.workflow==='owner-review'&&!(x.status==='PASS'&&o==='AUTO'))return false;
+  if(filters.workflow==='pass'&&x.status!=='PASS')return false;
+  if(filters.ownerReview==='pending'&&!(x.status==='PASS'&&o==='AUTO'))return false;
+  if(filters.ownerReview==='reviewed'&&o==='AUTO')return false;
+  return true;
+}
+function rowHTML(x){
+  const w=workflow(x),o=statusFor(x.type,x.id);
+  return '<article class="qa-row"><div class="qa-content"><div class="qa-row-head"><div><h3>'+esc(x.title)+'</h3><small>'+esc(x.id)+'</small></div><span class="audit-status '+w.cls+'">'+esc(x.status)+' · '+x.score+'/100</span></div>'+preview(x)+'<div class="qa-audit-meta"><p class="qa-issues">'+(x.issues.length?'Issues: '+esc(x.issues.join(', ')):'No blocking issues detected.')+'</p></div>'+ownerActions(x)+'</div></article>';
+}
+function renderRows(){
+  if(!audit)return;
+  rows=[...audit.questions.map(x=>({...x,type:'questions',pool:'Practice Questions'})),...audit.microtopics.map(x=>({...x,type:'microtopics',pool:'Micro-topic Explanations'})),...audit.quickLearnCards.map(x=>({...x,type:'quickLearnCards',pool:'Quick Learn Cards'})),...audit.deepDive.map(x=>({...x,type:'deepDive',pool:'Deep Dive Explanations'})),...audit.activeRecall.map(x=>({...x,type:'activeRecall',pool:'Active Recall'}))];
+  visibleRows=rows.filter(matches);pageSize=PAGE_SIZE;
+  paintRows();
+}
+function paintRows(){
+  const shown=visibleRows.slice(0,pageSize);
+  $('#rows').innerHTML=shown.length?shown.map(rowHTML).join(''):'<div class="empty">No matching audit items.</div>';
+  if(visibleRows.length>pageSize)$('#rows').insertAdjacentHTML('beforeend','<div class="empty"><button class="qa-owner-action" id="qa-load-more">Load next '+Math.min(PAGE_SIZE,visibleRows.length-pageSize)+' items</button><p>'+pageSize+' of '+visibleRows.length+' shown</p></div>');
+}
+function applyFilters(){renderRows()}
+async function jsonFetch(path){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
+  try{const r=await fetch('./'+path+'?v=20261004-qa1',{signal:controller.signal,cache:'default'});if(!r.ok)throw Error(path+' returned '+r.status);return await r.json()}
+  catch(e){if(e.name==='AbortError')throw Error(path+' timed out after 45 seconds');throw e}
+  finally{clearTimeout(timer)}
+}
+async function ownerState(){
+  try{const r=await fetch(API+'/repos/'+OWNER+'/'+REPO+'/contents/'+OWNER_FILE+'?ref='+BRANCH+'&v='+Date.now(),{headers:{Accept:'application/vnd.github+json'}});if(!r.ok)return;const x=await r.json(),bin=atob(String(x.content||'').replace(/\n/g,'')),data=JSON.parse(new TextDecoder().decode(Uint8Array.from(bin,c=>c.charCodeAt(0))));const s=store();s.approved=data.owner_approved||s.approved||{};s.rejected=data.owner_rejected||s.rejected||{};s.rejectionReasons=data.notes||s.rejectionReasons||{};save(s);renderRows()}catch(e){console.warn('Owner state refresh failed',e)}}
+function b64(text){const bytes=new TextEncoder().encode(text);let bin='';for(let i=0;i<bytes.length;i+=0x8000)bin+=String.fromCharCode(...bytes.subarray(i,i+0x8000));return btoa(bin)}
+async function commitFile(path,data,token,message){
+  const r=await fetch(API+'/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref='+BRANCH,{headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token}});
+  if(!r.ok)throw Error('GitHub could not read '+path+' ('+r.status+')');
+  const x=await r.json(),body={message,content:b64(JSON.stringify(data,null,2)+'\n'),branch:BRANCH,sha:x.sha};
+  const put=await fetch(API+'/repos/'+OWNER+'/'+REPO+'/contents/'+path,{method:'PUT',headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!put.ok)throw Error('GitHub commit failed ('+put.status+')');return put.json();
+}
+async function commitOwner(){
+  const token=prompt('Enter your GitHub fine-grained token (Contents: Read and write). It is used only for this commit and is not saved.');
+  if(!token)return;
+  try{const result=await commitFile(OWNER_FILE,ownerPayload(),token,'Update owner content decisions');alert('Owner decisions committed: '+String(result.commit?.sha||'').slice(0,12));}catch(e){alert('Commit failed: '+e.message)}
+}
+async function requestRewrite(type,id){
+  const instruction=prompt('Describe the rewrite you want for '+type+' · '+id);
+  if(!instruction?.trim())return;
+  const token=prompt('Enter GitHub fine-grained token (Contents: Read and write).');
+  if(!token)return;
+  try{
+    const r=await fetch(API+'/repos/'+OWNER+'/'+REPO+'/contents/'+REWRITE_FILE+'?ref='+BRANCH,{headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token}});
+    if(!r.ok)throw Error('Could not read '+REWRITE_FILE+' ('+r.status+')');
+    const x=await r.json(),bin=atob(String(x.content||'').replace(/\n/g,'')),data=JSON.parse(new TextDecoder().decode(Uint8Array.from(bin,c=>c.charCodeAt(0))));
+    data.requests=Array.isArray(data.requests)?data.requests:[];data.requests.push({id:'RR-'+Date.now().toString(36),type,target_id:id,instruction:instruction.trim(),status:'PENDING',requested_at:new Date().toISOString()});data.updated_at=new Date().toISOString();
+    const result=await commitFile(REWRITE_FILE,data,token,'Request content rewrite: '+type+' '+id);alert('Rewrite request queued: '+String(result.commit?.sha||'').slice(0,12));
+  }catch(e){alert('Rewrite request failed: '+e.message)}
+}
+function bind(){
+  $('#search').addEventListener('input',()=>renderRows());
+  $('#open-filters').addEventListener('click',()=>$('#filter-panel').classList.add('open'));
+  $('#close-filters').addEventListener('click',()=>$('#filter-panel').classList.remove('open'));
+  $('#apply-filters').addEventListener('click',()=>{$('#filter-panel').classList.remove('open');applyFilters()});
+  $('#clear-filters').addEventListener('click',()=>{filters={type:'all',audit:'all',owner:'all',workflow:'all',ownerReview:'pending'};document.querySelectorAll('.qa-filter').forEach(b=>b.classList.toggle('active',b.dataset.filterValue===filters[b.dataset.filterGroup]));applyFilters()});
+  document.addEventListener('click',e=>{
+    const f=e.target.closest('.qa-filter');if(f){filters[f.dataset.filterGroup]=f.dataset.filterValue;document.querySelectorAll('.qa-filter').forEach(b=>b.classList.toggle('active',b.dataset.filterValue===filters[b.dataset.filterGroup]));return}
+    const stat=e.target.closest('.qa-stat[data-summary-type]');if(stat){filters.type=stat.dataset.summaryType;applyFilters();return}
+    const more=e.target.closest('#qa-load-more');if(more){pageSize+=PAGE_SIZE;paintRows();return}
+    const set=e.target.closest('[data-set]');if(set){if(set.dataset.set==='REJECTED'){const reason=prompt('Reason for rejection:');if(reason?.trim())setStatus(set.dataset.type,set.dataset.id,'REJECTED',reason);return}setStatus(set.dataset.type,set.dataset.id,set.dataset.set);return}
+    const rw=e.target.closest('[data-rewrite]');if(rw){queueRewrite(rw.dataset.type,rw.dataset.id);return}
+    const rr=e.target.closest('[data-request-rewrite]');if(rr){requestRewrite(rr.dataset.type,rr.dataset.id);return}
+    if(e.target.closest('#commit-owner-decisions')){commitOwner();return}
+    if(e.target.closest('#export'))download('content-owner-overrides.json',ownerPayload());
+    if(e.target.closest('#export-revisions'))download('content-qa-revision-log.json',store().revisions||{});
+    if(e.target.closest('#export-report'))download('content-audit-report.json',{generated_at:new Date().toISOString(),audit});
+  });
+}
+function download(name,obj){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 async function boot(){
   try{
-    initCommitDialog();
-    const [d,q,e]=await Promise.all([get('data.json'),get('practice_questions.json'),get('practice_explanations.json')]);
-    audit=build(d,q,e);
-    render();
-    // Owner state is supplemental; never let GitHub API latency keep the audit center blank.
-    loadRemoteOwnerState().then(remote=>{
-      if(remote){mergeRemoteOwnerState(remote);render();}
-    }).catch(err=>console.warn('Owner state refresh failed:',err));
+    bind();
+    const [data,qs,ex]=await Promise.all([jsonFetch('data.json'),jsonFetch('practice_questions.json'),jsonFetch('practice_explanations.json')]);
+    audit=build(data,Array.isArray(qs)?qs:[],ex&&typeof ex==='object'?ex:{});
+    renderSummary();
+    renderRows();
+    ownerState();
   }catch(e){
-    $('#rows').innerHTML='<div class="empty"><h3>Audit could not load.</h3><p>'+esc(e.message)+'</p><button class="qa-owner-action" type="button" onclick="location.reload()">Retry Audit</button></div>';
+    $('#summary').innerHTML='<div class="empty"><h3>Audit could not load.</h3><p>'+esc(e.message)+'</p><button class="qa-owner-action" type="button" onclick="location.reload()">Retry Audit</button></div>';
+    $('#gate').innerHTML='<div class="qa-gate"><strong>Audit is waiting for the required content files.</strong><p>'+esc(e.message)+'</p></div>';
   }
 }
-let modal,tokenInput,commitStatus,rejectModal,rejectReason,rejectMessage,rewriteModal,rewriteInstruction,rewriteToken,rewriteTarget,rewriteMessage,pendingReject=null,pendingRewrite=null;function initCommitDialog(){modal=$('#commit-modal');tokenInput=$('#github-token');commitStatus=$('#commit-message');rejectModal=$('#reject-modal');rejectReason=$('#reject-reason');rejectMessage=$('#reject-message');rewriteModal=$('#rewrite-modal');rewriteInstruction=$('#rewrite-instruction');rewriteToken=$('#rewrite-token');rewriteTarget=$('#rewrite-target');rewriteMessage=$('#rewrite-message')}function openCommitModal(){if(!modal)initCommitDialog();if(!modal||!tokenInput||!commitStatus)return;commitStatus.textContent='';tokenInput.value='';modal.hidden=false;setTimeout(()=>tokenInput.focus(),50)}function closeCommitModal(){if(!modal)return;modal.hidden=true;if(tokenInput)tokenInput.value='';if(commitStatus)commitStatus.textContent=''}function openRejectModal(type,id){if(!rejectModal)initCommitDialog();pendingReject={type,id};rejectReason.value='';rejectMessage.textContent='';rejectModal.hidden=false;setTimeout(()=>rejectReason.focus(),50)}function closeRejectModal(){if(!rejectModal)return;rejectModal.hidden=true;rejectReason.value='';rejectMessage.textContent='';pendingReject=null}function openRewriteModal(type,id){if(!rewriteModal)initCommitDialog();pendingRewrite={type,id};rewriteInstruction.value='';rewriteToken.value='';rewriteTarget.textContent='Target: '+type+' · '+id;rewriteMessage.textContent='';rewriteModal.hidden=false;setTimeout(()=>rewriteInstruction.focus(),50)}function closeRewriteModal(){if(!rewriteModal)return;rewriteModal.hidden=true;rewriteInstruction.value='';rewriteToken.value='';rewriteTarget.textContent='';rewriteMessage.textContent='';pendingRewrite=null}async function doRewriteRequest(){const instruction=String(rewriteInstruction.value||'').trim();if(!instruction){rewriteMessage.textContent='Describe the change you want.';return}const token=rewriteToken.value.trim();if(!token){rewriteMessage.textContent='Enter a GitHub fine-grained token to submit this request.';return}const btn=$('#rewrite-confirm');btn.disabled=true;rewriteMessage.textContent='Submitting rewrite request…';try{const result=await commitRewriteRequest(token,pendingRewrite.type,pendingRewrite.id,instruction);rewriteMessage.textContent='✓ Rewrite request queued. Commit: '+String(result.commit?.sha||'').slice(0,12);setTimeout(closeRewriteModal,1800)}catch(err){rewriteMessage.textContent='Request failed: '+err.message}finally{btn.disabled=false}}function confirmReject(){const reason=String(rejectReason.value||'').trim();if(!reason){rejectMessage.textContent='Please enter a reason for rejection.';rejectReason.focus();return}if(!pendingReject)return;setStatus(pendingReject.type,pendingReject.id,'REJECTED',reason);closeRejectModal()}async function doCommit(){const token=tokenInput.value.trim();if(!token){commitStatus.textContent='Enter a GitHub fine-grained token to continue.';return}const btn=$('#commit-confirm');btn.disabled=true;commitStatus.textContent='Committing owner decisions…';try{const result=await commitOwnerDecisions(token);commitStatus.textContent='✓ Owner decisions committed. Commit: '+String(result.commit?.sha||'').slice(0,12);setTimeout(closeCommitModal,1800)}catch(err){commitStatus.textContent='Commit failed: '+err.message}finally{btn.disabled=false}}document.addEventListener('click',e=>{const b=e.target.closest('button[data-set]');if(b){if(b.dataset.set==='REJECTED'){openRejectModal(b.dataset.type,b.dataset.id);return}setStatus(b.dataset.type,b.dataset.id,b.dataset.set);return}const rw=e.target.closest('button[data-rewrite]');if(rw){queueRewrite(rw.dataset.type,rw.dataset.id);return}const requestRewriteButton=e.target.closest('button[data-request-rewrite]');if(requestRewriteButton){openRewriteModal(requestRewriteButton.dataset.type,requestRewriteButton.dataset.id);return}if(e.target.closest('#rewrite-confirm')){doRewriteRequest();return}if(e.target.closest('#rewrite-cancel')||e.target.closest('#rewrite-close')){closeRewriteModal();return}if(e.target.closest('#reject-confirm')){confirmReject();return}if(e.target.closest('#reject-cancel')||e.target.closest('#reject-close')){closeRejectModal();return}if(e.target.closest('#commit-owner-decisions')){openCommitModal();return}if(e.target.closest('#commit-confirm')){doCommit();return}if(e.target.closest('#commit-cancel')||e.target.closest('#commit-close')){closeCommitModal();return}if(e.target.closest('#export')){const s=store();download('content-owner-overrides.json',{schema_version:6,owner_approved:s.approved||{},owner_rejected:s.rejected||{},notes:s.rejectionReasons||{},updated_at:new Date().toISOString()})}if(e.target.closest('#export-revisions')){const s=store();download('content-qa-revision-log.json',{schema_version:2,max_automatic_rewrite_cycles:MAX_REWRITE_CYCLES,revisions:s.revisions||{},rewrite_queue:s.rewriteQueue||[],updated_at:new Date().toISOString()})}if(e.target.closest('#export-report'))download('content-audit-report.json',{generated_at:new Date().toISOString(),audit_version:'2026-10-04-expert8',policy:'REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW',pass_threshold:EXPERT_PASS_THRESHOLD,review_threshold:EXPERT_REVIEW_THRESHOLD,max_automatic_rewrite_cycles:MAX_REWRITE_CYCLES,note:'Content below PASS is held. Rewriting must improve the actual content; score manipulation or cosmetic keyword stuffing is not sufficient.',audit,revisions:store().revisions||{}})});$('#search').addEventListener('input',filterRows);$('#open-filters').addEventListener('click',()=>$('#filter-panel').classList.add('open'));$('#close-filters').addEventListener('click',()=>$('#filter-panel').classList.remove('open'));$('#apply-filters').addEventListener('click',()=>{$('#filter-panel').classList.remove('open');filterRows()});$('#clear-filters').addEventListener('click',()=>{activeFilters={type:'all',audit:'all',owner:'all',workflow:'all',ownerReview:'pending'};filterButtonState();filterRows()});document.addEventListener('click',e=>{const b=e.target.closest('.qa-filter');if(b){activeFilters[b.dataset.filterGroup]=b.dataset.filterValue;filterButtonState();return}const card=e.target.closest('.qa-stat[data-summary-type]');if(card){setFilter('type',card.dataset.summaryType);return}});document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.qa-stat[data-summary-type]')){e.preventDefault();setFilter('type',e.target.dataset.summaryType)}});$('#commit-modal').addEventListener('click',e=>{if(e.target===modal)closeCommitModal()});$('#reject-modal').addEventListener('click',e=>{if(e.target===rejectModal)closeRejectModal()});$('#rewrite-modal').addEventListener('click',e=>{if(e.target===rewriteModal)closeRewriteModal()});boot()})();
+boot();
+})();
