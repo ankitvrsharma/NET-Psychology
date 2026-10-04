@@ -55,7 +55,7 @@ def api(prompt):
 def main():
     reqs=load(REQUESTS,{"schema_version":1,"requests":[]})
     data=load(DATA,{}); track=load(TRACK,{"schema_version":1,"items":{}}); track.setdefault("items",{})
-    processed=[]; errors=[]
+    processed=[]; errors=[]; error_details=[]
     for r in reqs.get("requests",[]):
         if r.get("status") not in ["PENDING","RETRY"]: continue
         rid=str(r.get("id")); typ=str(r.get("type")); ident=str(r.get("target_id")); obj=target(data,typ,ident)
@@ -82,11 +82,12 @@ def main():
             track["items"]["request:"+rid]=result
             processed.append(rid)
         except Exception as e:
-            r.update({"status":"ERROR","error":str(e),"updated_at":now()}); errors.append(rid)
+            msg=str(e)
+            r.update({"status":"ERROR","error":msg,"updated_at":now()}); errors.append(rid); error_details.append({"id":rid,"error":msg})
     raw=json.dumps(data,ensure_ascii=False,separators=(",",":"))+"\n"
     DATA.write_text(raw,encoding="utf-8"); DATAJS.write_text("window.NETPSY_DATA = "+raw+";\n",encoding="utf-8")
     reqs["updated_at"]=now(); save(REQUESTS,reqs); track["updated_at"]=now(); save(TRACK,track)
-    print(json.dumps({"processed":len(processed),"errors":len(errors),"processed_ids":processed,"error_ids":errors}))
+    print(json.dumps({"processed":len(processed),"errors":len(errors),"processed_ids":processed,"error_ids":errors,"error_details":error_details},ensure_ascii=False))
     if errors: raise SystemExit(1 if not processed else 0)
 
 if __name__=="__main__": main()
