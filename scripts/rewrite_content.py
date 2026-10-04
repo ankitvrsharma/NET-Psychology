@@ -75,22 +75,32 @@ def main():
             original={k:obj.get(k) for k in allowed}; rejection=str(owner.get("notes",{}).get(typ,{}).get(key,"")).strip() or "Improve specificity, conceptual clarity, source grounding and exam usefulness."
             prompt=json.dumps({"original":original,"owner_rejection":rejection,"content_type":typ,"focus":key.split("|",1)[1] if "|" in key else "whole content","approved_source_library":sources,"cycle":cycle,"allowed_fields":allowed},ensure_ascii=False)
             try:
-                patch=api(prompt)
-                if not isinstance(patch,dict) or set(patch)-set(allowed): raise RuntimeError("Invalid or protected rewrite fields.")
-                before=json.dumps(original,sort_keys=True,ensure_ascii=False)
-                for k,v in patch.items():
-                    if v is not None: obj[k]=v
-                after=json.dumps({k:obj.get(k) for k in allowed},sort_keys=True,ensure_ascii=False)
-                if before==after: raise RuntimeError("Rewrite did not change content.")
-                result=q_audit(obj) if typ=="questions" else audit(obj)
-                state.update({"cycles":cycle,"last_attempt_at":now(),"last_audit":result,"owner_rejection":rejection,"re_audited":True})
-                if result["status"]=="PASS":
-                    state.update({"status":"READY_FOR_OWNER_REVIEW","ready_at":now()})
-                    owner.setdefault("owner_rejected",{}).setdefault(typ,[]); owner["owner_rejected"][typ]=[x for x in owner["owner_rejected"][typ] if str(x)!=key]
-                    owner.setdefault("notes",{}).setdefault(typ,{}); owner["notes"][typ].pop(key,None); changed+=1
-                else: state["status"]="BLOCKED_EXPERT_INTERVENTION" if cycle==MAX else "BLOCKED"
-                track["items"][ident]=state
-            except Exception as e: track["items"][ident]=dict(state,cycles=cycle,status="REWRITE_ERROR",last_error=str(e),updated_at=now())
+                result=None
+                for attempt in range(cycle, MAX+1):
+                    allowed=["question","options","answer","explanation"] if typ=="questions" else ["title","content_notes","deep_learning","expert_explanation","detailed_explanation","application_question","exam_takeaway","retrieval_questions","source_lens"]
+                    original={k:obj.get(k) for k in allowed}
+                    prompt=json.dumps({"original":original,"owner_rejection":rejection,"content_type":typ,"focus":key.split("|",1)[1] if "|" in key else "whole content","approved_source_library":sources,"cycle":attempt,"allowed_fields":allowed},ensure_ascii=False)
+                    patch=api(prompt)
+                    if not isinstance(patch,dict) or set(patch)-set(allowed): raise RuntimeError("Invalid or protected rewrite fields.")
+                    before=json.dumps(original,sort_keys=True,ensure_ascii=False)
+                    for k,v in patch.items():
+                        if v is not None: obj[k]=v
+                    after=json.dumps({k:obj.get(k) for k in allowed},sort_keys=True,ensure_ascii=False)
+                    if before==after: raise RuntimeError("Rewrite did not change content.")
+                    result=q_audit(obj) if typ=="questions" else audit(obj)
+                    state.update({"cycles":attempt,"last_attempt_at":now(),"last_audit":result,"owner_rejection":rejection,"re_audited":True})
+                    if result["status"]=="PASS":
+                        state.update({"status":"READY_FOR_OWNER_REVIEW","ready_at":now()})
+                        owner.setdefault("owner_rejected",{}).setdefault(typ,[]); owner["owner_rejected"][typ]=[x for x in owner["owner_rejected"][typ] if str(x)!=key]
+                        owner.setdefault("notes",{}).setdefault(typ,{}); owner["notes"][typ].pop(key,None); changed+=1
+                        track["items"][ident]=state
+                        break
+                    state["status"]="BLOCKED_EXPERT_INTERVENTION" if attempt==MAX else "BLOCKED"
+                    track["items"][ident]=state
+                if result and result["status"]!="PASS":
+                    track["items"][ident]=state
+            except Exception as e:
+                track["items"][ident]=dict(state,cycles=cycle,status="REWRITE_ERROR",last_error=str(e),updated_at=now())
     owner["schema_version"]=max(int(owner.get("schema_version",4)),8); owner["updated_at"]=now(); track["updated_at"]=now(); track["max_automatic_rewrite_cycles"]=MAX
     DATAJS.write_text("window.NETPSY_DATA = "+json.dumps(data,ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
     save(DATA,data); save(OWNER,owner); save(TRACK,track); print("Released "+str(changed)+" rewritten item(s) after re-audit.")
