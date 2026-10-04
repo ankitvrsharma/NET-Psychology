@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v47-learner-qa';
+const CACHE='netpsych-shell-v48-split-data';
 const SHELL=[
   './',
   './index.html',
@@ -16,7 +16,7 @@ const SHELL=[
   './daily-practice.html',
   './style.css',
   './app.js',
-  './data.json',
+  './syllabus-index.json',
   './content-version.js',
   './manifest.webmanifest'
 ];
@@ -26,7 +26,8 @@ const RUNTIME_DATA=new Set([
   'simply_psychology_enrichment.json',
   'mcq_mapping.json',
   'practice_questions.json',
-  'practice_explanations.json'
+  'practice_explanations.json',
+  'home_quick_learn.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
