@@ -20,10 +20,10 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@v4
-      - name: Rewrite requested content
+      - name: Rewrite requested content with Gemini
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_REWRITE_MODEL: ${{ vars.OPENAI_REWRITE_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_REWRITE_MODEL: ${{ vars.GEMINI_REWRITE_MODEL }}
         run: python scripts/process_rewrite_requests.py
       - name: Validate generated content
         run: python scripts/validate_content.py
