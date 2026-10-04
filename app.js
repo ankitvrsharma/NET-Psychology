@@ -82,7 +82,75 @@ const EXPERT_THRESHOLDS={pass:70,review:60};
 function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
 function expertSignals(text){const s=expertText(text).replace(/\s+/g,' ').trim(),low=s.toLowerCase();const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand','is very important'];const domain=['mechanism','distinguish','contrast','whereas','condition','evidence','study','research','theory','model','construct','process','predict','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','individual difference','development','assessment','experiment','correlation','causal'];const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic'];return{length:s.length,genericHits:generic.filter(x=>low.includes(x)).length,domainHits:domain.filter(x=>low.includes(x)).length,teachingHits:teaching.filter(x=>low.includes(x)).length,contrastHits:(low.match(/\b(distinguish|different from|whereas|unlike|contrast|not the same as|however)\b/g)||[]).length,mechanismHits:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length,names:(s.match(/\b[A-Z][a-z]+(?:[- ][A-Z][a-z]+)?\b/g)||[]).length};}
 function expertMicroAudit(m){const core=expertText([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.kaplan_enrichment?.notes,m.simply_psychology_enrichment?.notes]),sig=expertSignals(core),issues=[];if(!String(m.title||'').trim())issues.push('missing_title');if(sig.length<220)issues.push('too_thin');if(!Array.isArray(m.sources)||!m.sources.length)issues.push('no_explicit_source_mapping');if(sig.genericHits>=3)issues.push('generic_ai_style');if(sig.domainHits<3)issues.push('low_psychology_specificity');if(sig.mechanismHits<1&&sig.contrastHits<1)issues.push('weak_explanation_structure');let source=Array.isArray(m.sources)&&m.sources.length?15:0;if(m.kaplan_enrichment?.notes||m.simply_psychology_enrichment?.notes||m.source_notes)source+=5;const accuracy=Math.min(25,10+(sig.domainHits*2)+(sig.mechanismHits*2)+(sig.contrastHits*2));const expert=Math.min(20,8+(sig.length>=500?5:0)+(sig.domainHits>=6?4:0)+(sig.names>=2?3:0));const net=Math.min(15,6+(sig.teachingHits*2)+(String(m.content_notes||'').toLowerCase().includes('pyq')?3:0));const learning=Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(sig.contrastHits?2:0));const originality=Math.max(0,10-(sig.genericHits*3)-(sig.length<180?4:0));let score=source+accuracy+expert+net+learning+originality;if(sig.genericHits>=3)score-=8;if(!m.sources?.length)score-=10;score=Math.max(0,Math.min(100,Math.round(score)));const critical=issues.some(x=>['missing_title','no_explicit_source_mapping'].includes(x));const status=critical||score<EXPERT_THRESHOLDS.review?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':'REVIEW';return{score,status,issues,signals:sig};}
-function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const status=issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues,signals:sig};}
+const STRUCTURAL_AUDIT_VERSION='2026-10-04-structural1';
+const STRUCTURAL_BLOCKERS=new Set([
+  'missing_list_headers','missing_list_i','missing_list_ii','invalid_list_i_count','invalid_list_ii_count',
+  'list_count_mismatch','list_instruction_swallowed','list_header_swallowed','invalid_assertion_reason',
+  'invalid_structured_items','renderer_contract_failed','answerability_failed','ocr_corruption_signal'
+]);
+function structuralAuditText(value){return cleanPracticeText(value).replace(/\s+/g,' ').trim();}
+function parseStructuredMarkers(value,kind='generic'){
+  const text=structuralAuditText(value),hits=[],re=/(?<!\S)([a-d]|[1-4]|i{1,3}|iv|v)s*[.)]+\s+/gi;
+  let m;
+  while((m=re.exec(text)))hits.push({label:m[1].toLowerCase(),start:m.index,end:re.lastIndex});
+  return hits.map((h,i)=>({label:h.label,text:text.slice(h.end,i+1<hits.length?hits[i+1].start:text.length).trim()})).filter(x=>x.text);
+}
+function parseMatchLists(value){
+  const raw=structuralAuditText(value);
+  const leftHeader=/\bList\s*[-–—]?\s*I\b/i.exec(raw);
+  const rightHeader=/\bList\s*[-–—]?\s*II\b/i.exec(raw);
+  if(!leftHeader||!rightHeader||rightHeader.index<=leftHeader.index)return{raw,left:[],right:[],hasLeftHeader:!!leftHeader,hasRightHeader:!!rightHeader};
+  const leftBody=raw.slice(leftHeader.index+leftHeader[0].length,rightHeader.index).replace(/^\s*[:\-–—]?\s*/,'').trim();
+  const rightBody=raw.slice(rightHeader.index+rightHeader[0].length).replace(/^\s*[:\-–—]?\s*/,'').trim();
+  const cutInstruction=x=>x.split(/\bChoose\s+the\s+correct\s+answer\b/i)[0].split(/\bCodes?\s*:/i)[0].trim();
+  return{raw,left:parseStructuredMarkers(cutInstruction(leftBody),'match'),right:parseStructuredMarkers(cutInstruction(rightBody),'match'),hasLeftHeader:true,hasRightHeader:true};
+}
+function structuralQuestionAudit(q){
+  const kind=String(q?.kind||'direct').toLowerCase(),raw=structuralAuditText(q?.question||q?.q||''),issues=[],details={kind};
+  if(!raw)issues.push('missing_question');
+  if(kind==='match'){
+    const parsed=parseMatchLists(raw);details.listI=parsed.left;details.listII=parsed.right;
+    if(!parsed.hasLeftHeader)issues.push('missing_list_i');
+    if(!parsed.hasRightHeader)issues.push('missing_list_ii');
+    if(parsed.hasLeftHeader&&parsed.hasRightHeader){
+      if(parsed.right.length===0)issues.push('missing_list_ii');
+      if(parsed.left.length===0)issues.push('missing_list_i');
+      if(parsed.left.length>0&&parsed.left.length<4)issues.push('invalid_list_i_count');
+      if(parsed.right.length>0&&parsed.right.length<4)issues.push('invalid_list_ii_count');
+      if(parsed.left.length&&parsed.right.length&&parsed.left.length!==parsed.right.length)issues.push('list_count_mismatch');
+      const all=[...parsed.left,...parsed.right];
+      if(all.some(x=>/\b(?:List\s*[-–—]?\s*[IV]+|Choose\s+the\s+correct\s+answer|Codes?\s*:)/i.test(x.text)))issues.push('list_instruction_swallowed');
+      if(/\bChoose\s+the\s+correct\s+answer\b/i.test(raw.match(/List\s*[-–—]?\s*II\b[\s\S]*$/i)?.[0]||'')&&parsed.right.some(x=>/Choose\s+the\s+correct/i.test(x.text)))issues.push('list_instruction_swallowed');
+      if(/\b(?:List\s*[-–—]?\s*I|List\s*[-–—]?\s*II)\b/i.test(parsed.left.map(x=>x.text).join(' ')))issues.push('list_header_swallowed');
+      const digitRuns=(raw.match(/\b\d{3,}\b/g)||[]).length;
+      if(digitRuns>0)issues.push('ocr_corruption_signal');
+    }
+    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
+    const renderedListCount=(rendered.match(/class=\"structured-item\"/g)||[]).length;
+    if(!rendered.includes('class=\"matching-lists\"')||renderedListCount<8)issues.push('renderer_contract_failed');
+  }else if(kind==='assertion-reason'){
+    const assertion=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+Reason\s*\(R\)|\s+\d+\s*\.?\s*Reason\s*\(R\))/i)||[])[1]?.trim()||'';
+    const reason=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]?.trim()||'';
+    if(!assertion||!reason||assertion==='Assertion statement'||reason==='Reason statement')issues.push('invalid_assertion_reason');
+    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
+    if(!rendered.includes('assertion-reason-grid')||rendered.includes('Assertion statement')||rendered.includes('Reason statement'))issues.push('renderer_contract_failed');
+  }else if(kind==='sequence'||kind==='statement-set'){
+    const items=parseStructuredMarkers(extractBeforeCodes(raw),kind);
+    details.items=items;
+    if(items.length<2)issues.push('invalid_structured_items');
+    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
+    if(items.length<2||!rendered.includes('question-items'))issues.push('renderer_contract_failed');
+  }else{
+    const stem=stripQuestionTail(raw);
+    if(stem.length<20)issues.push('invalid_structured_items');
+    if(/\bChoose\s+the\s+correct\s+answer\b/i.test(stem)&&/\bCodes?\s*:/i.test(stem))issues.push('ocr_corruption_signal');
+  }
+  const optionsOk=Array.isArray(q?.options)&&q.options.length===4&&Number.isInteger(q?.answer)&&q.answer>=0&&q.answer<4;
+  if(!optionsOk)issues.push('answerability_failed');
+  return{status:issues.length?'ISSUE':'PASS',issues,details,version:STRUCTURAL_AUDIT_VERSION};
+}
+
+function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');const structural=structuralQuestionAudit(q);issues.push(...structural.issues);let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const structuralFailure=structural.issues.length>0;const status=structuralFailure||issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer','answerability_failed'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues:[...new Set(issues)],signals:sig,structural};}
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
 function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);if(rejected.has(String(id)))return false;if(approved.has(String(id)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id));}
@@ -736,34 +804,13 @@ function practiceListHTML(items){
 }
 function matchListsHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
-  const headerMatch=raw.match(/List\s*[-–—]?\s*I\b[\s\S]*?List\s*[-–—]?\s*II\b(?:\s*\([^)]*\))?/i);
-  const body=headerMatch?raw.slice(headerMatch.index+headerMatch[0].length):raw;
-  const beforeCodes=extractBeforeCodes(body);
-  const letterHits=[];
-  const letterRe=/(?<!\S)([a-d])\s*[.)]+\s+/gi;
-  let m;
-  while((m=letterRe.exec(beforeCodes))) letterHits.push({label:m[1].toLowerCase(),start:m.index,end:letterRe.lastIndex});
-  const left=letterHits.slice(0,4).map((hit,i)=>{
-    const end=i+1<letterHits.length?letterHits[i+1].start:beforeCodes.length;
-    let value=beforeCodes.slice(hit.end,end).trim();
-    value=value.split(/(?<!\S)[1-4]\s*[.)]+\s+/)[0].trim();
-    return {label:hit.label,text:value};
-  }).filter(x=>x.text);
-  const numHits=[];
-  const numRe=/(?<!\S)([1-4])\s*[.)]+\s+/g;
-  while((m=numRe.exec(beforeCodes))) numHits.push({label:m[1],start:m.index,end:numRe.lastIndex});
-  const right=numHits.slice(0,4).map((hit,i)=>{
-    const end=i+1<numHits.length?numHits[i+1].start:beforeCodes.length;
-    let value=beforeCodes.slice(hit.end,end).trim();
-    value=value.split(/(?<!\S)[a-d]\s*[.)]+\s+/i)[0].trim();
-    return {label:hit.label,text:value};
-  }).filter(x=>x.text);
-  const stem=stripQuestionTail(raw).replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b/i,"").trim();
-  const cleanedStem=(left.length>=2&&right.length>=2)?"":stem.replace(/List\s*[-–—]?\s*I\b[\s\S]*$/i,"").trim();
-  return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+((left.length||right.length)?("<div class=\"matching-lists\">"+
-    "<section><div class=\"matching-label\">LIST I</div><div class=\"matching-items\">"+practiceListHTML(left)+"</div></section>"+
-    "<section><div class=\"matching-label\">LIST II</div><div class=\"matching-items\">"+practiceListHTML(right)+"</div></section>"+
-    "</div>"):"<p>"+esc(stripQuestionTail(raw))+"</p>")+"</div>";
+  const parsed=parseMatchLists(raw);
+  const stem=stripQuestionTail(raw);
+  if(!parsed.hasLeftHeader||!parsed.hasRightHeader||parsed.left.length<4||parsed.right.length<4){
+    return "<div class=\"question-stem match-stem\"><p>"+esc(stem)+"</p></div>";
+  }
+  const cleanedStem=stem.replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b[\s\S]*?List\s*[-–—]?\s*II\b/i,"").trim();
+  return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+"<div class=\"matching-lists\"><section><div class=\"matching-label\">LIST I</div><div class=\"matching-items\">"+practiceListHTML(parsed.left)+"</div></section><section><div class=\"matching-label\">LIST II</div><div class=\"matching-items\">"+practiceListHTML(parsed.right)+"</div></section></div></div>";
 }
 function assertionReasonHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
