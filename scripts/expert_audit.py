@@ -1,5 +1,5 @@
 # expert_audit.py
-# Deterministic expert-likeness audit. Thresholds are intentionally aligned with the publishing gate.\n# Rewrite cycle: source-grounded substantive notes first; dependent cards are re-audited afterward.
+# Deterministic expert-likeness audit. Thresholds are intentionally aligned with the publishing gate.\n# Rewrite cycle: source-grounded substantive notes first; dependent cards are re-audited afterward.\n# External PYQ rebuild is intentionally not part of this workflow.
 import json,re,statistics
 from pathlib import Path
 THRESHOLD=80; REVIEW=60; VERSION='2026-10-04-expert4'
