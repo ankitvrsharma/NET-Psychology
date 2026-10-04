@@ -50,7 +50,7 @@ def apply_override(q):
         return {**q,'unit':int(parts[0]),'topic':int(parts[1]),'micro':int(parts[2]),'source_topic':o.get('topic',''),'source_tags':o.get('sources',q.get('source_tags',['PYQ']))}
     return q
 qs=[apply_override(q) for q in qs]
-rows={'questions':[],'microtopics':[],'quickLearnCards':[],'activeRecall':[]} rows={'questions':[],'microtopics':[],'quickLearnCards':[],'activeRecall':[]}
+rows={'questions':[],'microtopics':[],'quickLearnCards':[],'activeRecall':[]}
 for q in qs:
     qq=dict(q); qq['explanation']=ex.get(str(q.get('id')),q.get('explanation','')); score,status,issues=qaudit(qq); rows['questions'].append({'id':q.get('id'),'score':score,'status':status,'issues':issues})
 for u in data['units']:
