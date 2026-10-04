@@ -10,6 +10,7 @@ on:
       - practice_explanations.json
       - scripts/rewrite_microtopic_notes.py
       - scripts/expert_audit.py
+      - scripts/rewrite_issue_content.py
       - .github/workflows/expert-content.yml
 
 permissions:
@@ -20,12 +21,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rewrite source-grounded micro-topic notes
-        run: python scripts/rewrite_microtopic_notes.py
+      - name: Audit and rewrite every ISSUE
+        run: python scripts/rewrite_issue_content.py
       - name: Validate content
         run: python scripts/validate_content.py
-      - name: Run deterministic re-audit
+      - name: Re-audit after ISSUE rewrite
         run: python scripts/expert_audit.py
+      - name: Rebuild browser content version
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          raw=open('data.json','rb').read()
+          version=hashlib.sha256(raw).hexdigest()[:16]
+          open('content-version.js','w',encoding='utf-8').write('window.NETPSY_DATA_VERSION = '+json.dumps(version)+';\\n')
+          PY
       - name: Commit rewritten content and audit artifacts
         env:
           GH_TOKEN: ${{ github.token }}
@@ -33,8 +42,8 @@ jobs:
         run: |
           python - <<'PY'
           import base64, json, os, urllib.request
-          repo=os.environ['REPO']; token=os.environ['GH_TOKEN']; branch='expert-rewrite'
-          files=['data.json','data.js','content-version.js','expert-audit-report.json','rewrite-reaudit-tracking.json']
+          repo=os.environ['REPO']; token=os.environ['GH_TOKEN']; branch='expert-rewrite-70'
+          files=['data.json','data.js','content-version.js','practice_explanations.json','expert-audit-report.json','rewrite-reaudit-tracking.json']
           def api(method,path,payload=None):
               url='https://api.github.com'+path
               body=None if payload is None else json.dumps(payload).encode()
