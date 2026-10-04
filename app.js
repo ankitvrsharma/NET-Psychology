@@ -30,6 +30,24 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
+const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null};
+async function loadCanonicalContentLayer(json){
+  const names=['practice_questions','microtopic_explanations','quick_learn_cards','deep_dive_explanations','active_recall'];
+  const results=await Promise.all(names.map(async name=>{
+    try{const r=await fetch('./content/'+name+'.json?v=20261004-content1',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
+  }));
+  [CANONICAL_CONTENT.practiceQuestions,CANONICAL_CONTENT.microtopics,CANONICAL_CONTENT.quickLearnCards,CANONICAL_CONTENT.deepDive,CANONICAL_CONTENT.activeRecall]=results;
+  const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
+  for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
+    const k=key(u.id,t.id,m.id);
+    if(micro[k]&&typeof micro[k]==='object')Object.assign(m,micro[k]);
+    const d=CANONICAL_CONTENT.deepDive?.[k];
+    if(d&&typeof d==='object')Object.assign(m,d);
+    const a=CANONICAL_CONTENT.activeRecall?.[k];
+    if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
+  }
+  return CANONICAL_CONTENT;
+}
 const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
@@ -122,14 +140,20 @@ async function loadStudyData(){
     m.study_source_config=json.study_source_config||null;
   }
   D=json;
+  await loadCanonicalContentLayer(json);
   await loadContentGate();
   // Render core UI immediately; optional enrichment must never block a usable page.
   if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
   if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
     try{
-      const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
-      if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
-      try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
+      if(Array.isArray(CANONICAL_CONTENT.practiceQuestions))PRACTICE_QUESTIONS=CANONICAL_CONTENT.practiceQuestions.slice();
+      if(!PRACTICE_QUESTIONS.length){
+        const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
+        if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
+      }
+      if(PRACTICE_QUESTIONS.length){
+        PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
+      }
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
     try{
       const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
@@ -344,6 +368,7 @@ function recallContent(m){
   return {core,points,distinction,pattern,application,deep};
 }
 function buildRecallPrompts(m,qs){
+  if(Array.isArray(m.active_recall)&&m.active_recall.length)return m.active_recall;
   const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[],hasMappedQuestions=Array.isArray(qs)&&qs.length>0;
   if(c.core){
     prompts.push({
@@ -509,7 +534,7 @@ function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.conte
 function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
 function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
 function quickVisual(m,k,p){const cfg=m.quick_card&&typeof m.quick_card==='object'?m.quick_card:null;if(cfg&&cfg.layout){const title=esc(cfg.headline||m.title||'');const body=esc(cfg.body||'');const support=Array.isArray(cfg.support)?cfg.support.slice(0,4):[];if(cfg.layout==='comparison')return'<div class="quick-visual quick-design-card quick-comparison"><div><b>'+title+'</b><span>'+body+'</span></div>'+support.map((x,i)=>'<div><b>'+(i===0?'DISTINGUISH':('POINT '+(i+1)))+'</b><span>'+esc(x)+'</span></div>').join('')+'</div>';if(cfg.layout==='steps'||cfg.layout==='flow')return'<div class="quick-visual quick-design-card quick-flow">'+support.map((x,i)=>'<div><b>'+(i+1)+'</b><span>'+esc(x)+'</span></div>').join('')+'</div>';if(cfg.layout==='cue')return'<div class="quick-visual quick-design-card quick-cue"><b>'+title+'</b><span>'+body+'</span></div>';return'<div class="quick-visual quick-design-card quick-definition"><b>'+title+'</b><span>'+body+'</span></div>'}const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
-function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))(()=>{const edited=CANONICAL_CONTENT.quickLearnCards?.[cardKey];bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:String(edited?.explanation||e).slice(0,900),secondary:String(edited?.secondary||''),visual:edited?.quick_card?quickVisual({...m,quick_card:edited.quick_card},cat,p.points):quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})()})})));QUICK_BANK_CACHE=bank;return bank}
 function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;const keyName='netPsychQuickLearnCycle';let cycle={seen:[],cycle:0};try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.seen))cycle={seen:stored.seen,cycle:Number(stored.cycle)||0}}catch(e){}const validIds=new Set(bank.map(x=>x.id));let seen=cycle.seen.filter(id=>validIds.has(id));let unseen=bank.filter(x=>!seen.includes(x.id));if(!unseen.length){cycle={seen:[],cycle:cycle.cycle+1};seen=[];unseen=bank.slice()}const last=seen[seen.length-1];let pool=unseen;if(pool.length>1&&last)pool=pool.filter(x=>x.id!==last);if(!pool.length)pool=unseen;const item=pool[Math.floor(Math.random()*pool.length)];seen=[...seen,item.id];try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
