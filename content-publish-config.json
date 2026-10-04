@@ -2,7 +2,7 @@
   "schema_version": 3,
   "mode": "expert_or_owner",
   "description": "Serve only final deterministic expert-likeness PASS content or explicitly owner-approved content. Content below PASS enters a rewrite-and-re-audit workflow; after two unsuccessful automatic rewrite cycles it is held for owner review.",
-  "expert_audit_version": "2026-10-04-expert2",
+  "expert_audit_version": "2026-10-04-expert3",
   "expert_pass_threshold": 85,
   "expert_review_threshold": 60,
   "max_automatic_rewrite_cycles": 2,
