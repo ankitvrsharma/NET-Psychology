@@ -1,0 +1,45 @@
+name: Process Content Rewrite Requests
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - rewrite-requests.json
+      - scripts/process_rewrite_requests.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-rewrite-requests
+  cancel-in-progress: false
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rewrite requested content
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_REWRITE_MODEL: ${{ vars.OPENAI_REWRITE_MODEL }}
+        run: python scripts/process_rewrite_requests.py
+      - name: Validate generated content
+        run: python scripts/validate_content.py
+      - name: Rebuild content version
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          raw=open('data.json','rb').read()
+          version=hashlib.sha256(raw).hexdigest()[:16]
+          open('content-version.js','w',encoding='utf-8').write('window.NETPSY_DATA_VERSION = '+json.dumps(version)+';\n')
+          PY
+      - name: Commit rewritten content
+        run: |
+          git config user.name "net-psychology-rewrite[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json data.js content-version.js rewrite-requests.json rewrite-reaudit-tracking.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Apply requested content rewrite"
+          git push
