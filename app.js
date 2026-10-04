@@ -34,9 +34,9 @@ const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
     const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./content-publish-config.json?v=20261004-expert1',{cache:'default'}),
-      fetch('./content-publish-manifest.json?v=20261004-expert1',{cache:'default'}),
-      fetch('./content-owner-overrides.json?v=20261004-expert1',{cache:'default'})
+      fetch('./content-publish-config.json?v=20261004-expert3',{cache:'default'}),
+      fetch('./content-publish-manifest.json?v=20261004-expert3',{cache:'default'}),
+      fetch('./content-owner-overrides.json?v=20261004-expert3',{cache:'default'})
     ]);
     if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
     const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
