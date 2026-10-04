@@ -22,8 +22,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Rewrite source-grounded micro-topic notes
         run: python scripts/rewrite_microtopic_notes.py
-      - name: Rebuild PYQ bank and mappings
-        run: python scripts/build_practice.py
       - name: Validate content
         run: python scripts/validate_content.py
       - name: Run deterministic re-audit
