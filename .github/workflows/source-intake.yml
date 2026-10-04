@@ -1,0 +1,40 @@
+name: Source intake validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sources/inbox/**"
+      - "sources/source-policy.json"
+      - "scripts/source_intake.py"
+      - ".github/workflows/source-intake.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "sources/inbox/**"
+      - "sources/source-policy.json"
+      - "scripts/source_intake.py"
+
+permissions:
+  contents: read
+
+jobs:
+  source-intake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install PDF metadata tooling
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Validate and inventory source library
+        run: |
+          python scripts/source_intake.py > source-intake-report.json
+          cat source-intake-report.json
+
+      - name: Upload source intake report
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-intake-report
+          path: source-intake-report.json
