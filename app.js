@@ -316,6 +316,23 @@ function deepDive(){
     '</article>'+
     '<section class="deep-dive-next card"><div><div class="eyebrow">NEXT STEP</div><h2>Check what you can recall.</h2><p>Close the explanation, then test the concept with its mapped recall questions.</p></div><a class="btn primary" href="'+recallHref+'">CHECK YOUR RECALL →</a></section>';
 }
+function dailySessionNext(currentKey){
+  try{
+    const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');
+    const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+    if(stored?.date!==todayKey||!Array.isArray(stored.items))return null;
+    const currentIndex=stored.items.indexOf(currentKey);
+    const candidates=currentIndex>=0?stored.items.slice(currentIndex+1):stored.items;
+    for(const itemKey of candidates){
+      const p=getP(itemKey);
+      if(!p.recallCompletedAt&&p.status!=='MASTERED'){
+        const item=all().find(x=>x.k===itemKey);
+        if(item)return item;
+      }
+    }
+  }catch(e){}
+  return null;
+}
 function activeRecall(){
   const {u,t,m,k}=find(),root=$('#activeRecallPage');
   const fromRevision=Q.get('from')==='revision';
@@ -327,31 +344,40 @@ function activeRecall(){
   const labels={direct:'MULTIPLE CHOICE',match:'MATCH THE COLUMNS','assertion-reason':'ASSERTION · REASON',sequence:'SEQUENCE','statement-set':'STATEMENT SET'};
   const ordered=['direct','match','assertion-reason','sequence','statement-set'];
   const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map(item=>mcqHTML(item.q,item.index,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
-  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Actively recall what you learned.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close the explanation first. Recall the idea, distinguish similar concepts, and answer before checking feedback.</div></section>'+
-    (cards||'<section class="panel empty"><h2>No mapped recall questions yet.</h2><p>This micro-topic does not have mapped questions in the current question pool.</p><button class="btn primary" type="button" id="confirmRecall">I RECALLED THIS CONCEPT</button></section>')+
-    '<section class="active-recall-complete card" id="activeRecallComplete" hidden><div class="eyebrow">RECALL COMPLETE</div><h2>You rehearsed this concept.</h2><p>'+ (fromRevision?'Rate how well you recalled it. Your rating sets the next revision date.':'Your first revision has been scheduled for tomorrow.') +'</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">BACK TO LEARNING →</a><a class="btn" href="learner.html">MY LEARNING</a></div></section>'+
-    '<section class="revision-rating panel" id="revisionRating" hidden><div class="eyebrow">HOW WELL DID YOU RECALL IT?</div><div class="revision-rating-actions"><button class="btn" type="button" data-revision-rating="again">AGAIN</button><button class="btn" type="button" data-revision-rating="hard">HARD</button><button class="btn" type="button" data-revision-rating="good">GOOD</button><button class="btn primary" type="button" data-revision-rating="easy">EASY</button></div></section>';
+  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Bring this idea back from memory.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close your notes and bring the idea back from memory. Answer what you can, then use the feedback to strengthen your understanding.</div></section>'+
+    (cards||'<section class="panel empty"><h2>Recall this concept from memory.</h2><p>Think through the idea before checking your notes.</p><button class="btn primary" type="button" id="confirmRecall">I RECALLED THIS CONCEPT</button></section>')+
+    '<section class="revision-rating panel" id="revisionRating" hidden><div class="eyebrow">HOW WELL DID YOU RECALL IT?</div><p>Rate how well you brought the idea back from memory. Your rating determines when you will revisit it.</p><div class="revision-rating-actions"><button class="btn" type="button" data-revision-rating="again">AGAIN</button><button class="btn" type="button" data-revision-rating="hard">HARD</button><button class="btn" type="button" data-revision-rating="good">GOOD</button><button class="btn primary" type="button" data-revision-rating="easy">EASY</button></div></section>'+
+    '<section class="active-recall-complete card" id="activeRecallComplete" hidden></section>';
   const cardsAll=Array.from(root.querySelectorAll('.mcq'));
   wireMCQ(root,k,qs);
   const finishRecall=()=>{
     const pNow=getP(k);
     setP(k,{recallCompletedAt:new Date().toISOString(),learnedAt:pNow.learnedAt||new Date().toISOString(),status:pNow.status==='MASTERED'?'MASTERED':'LEARNING',last:new Date().toISOString()});
-    if(!fromRevision&&!pNow.next)scheduleRevision(k,'initial');
-    const complete=$('#activeRecallComplete');if(complete)complete.hidden=false;
-    const ratingBox=$('#revisionRating');if(ratingBox)ratingBox.hidden=!fromRevision;
+    const ratingBox=$('#revisionRating');if(ratingBox)ratingBox.hidden=false;
+    ratingBox?.scrollIntoView({behavior:'smooth',block:'center'});
   };
   if(cardsAll.length){
     cardsAll.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
       const done=cardsAll.every(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled));
       if(done)finishRecall();
     })));
-  }else{
-    $('#confirmRecall')?.addEventListener('click',finishRecall);
-  }
+  }else $('#confirmRecall')?.addEventListener('click',finishRecall);
   root.querySelectorAll('[data-revision-rating]').forEach(btn=>btn.addEventListener('click',()=>{
     const rating=btn.dataset.revisionRating,next=scheduleRevision(k,rating);
     const days=Math.max(1,Math.round((Date.parse(next)-Date.now())/86400000));
-    const box=$('#revisionRating');if(box)box.innerHTML='<div class="eyebrow">NEXT REVISION SCHEDULED</div><h3>'+esc(rating[0].toUpperCase()+rating.slice(1))+' — next in '+days+' day'+(days===1?'':'s')+'</h3><p>This concept will return according to your rating.</p><a class="btn primary" href="revision.html">BACK TO REVISION →</a>';
+    const nextItem=fromRevision?null:dailySessionNext(k);
+    const box=$('#revisionRating');
+    if(box)box.innerHTML='<div class="eyebrow">RECALL RATED</div><h3>'+esc(rating[0].toUpperCase()+rating.slice(1))+' · next revision in '+days+' day'+(days===1?'':'s')+'</h3>';
+    const complete=$('#activeRecallComplete');if(!complete)return;
+    if(fromRevision){
+      complete.innerHTML='<div class="eyebrow">REVISION COMPLETE</div><h2>You’ve finished this revision.</h2><p>This concept has been scheduled according to your rating.</p><div class="complete-actions"><a class="btn primary" href="revision.html">FINISH REVISION →</a></div>';
+    }else if(nextItem){
+      complete.innerHTML='<div class="eyebrow">KEEP GOING</div><h2>Ready for the next concept?</h2><p>Move straight to the next incomplete concept in today’s learning set.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(nextItem.u.id)+'&topic='+encodeURIComponent(nextItem.t.id)+'&micro='+encodeURIComponent(nextItem.m.id)+'">NEXT TOPIC →</a></div>';
+    }else{
+      complete.innerHTML='<div class="eyebrow">TODAY’S LEARNING COMPLETE</div><h2>You’ve completed all three concepts.</h2><p>Your concepts are now in your revision cycle. Would you like to keep learning?</p><div class="complete-actions"><a class="btn" href="index.html">FINISH LEARNING</a><a class="btn primary" href="learner.html">CONTINUE LEARNING →</a></div>';
+    }
+    complete.hidden=false;
+    complete.scrollIntoView({behavior:'smooth',block:'center'});
   }));
 }
 function cycleForFallback(date){
@@ -1013,54 +1039,25 @@ function practice(){
 }function revision(){
   const root=$('#revisionApp');
   if(!root)return;
-  const allScheduled=all().filter(x=>{
-    const p=getP(x.k);
-    return p.next&&Number.isFinite(Date.parse(p.next));
-  }).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next));
-  const now=Date.now();
-  const due=allScheduled.filter(x=>Date.parse(getP(x.k).next)<=now);
-  const upcoming=allScheduled.filter(x=>Date.parse(getP(x.k).next)>now);
-  const shownDue=due.slice(0,5);
-  const shownUpcoming=upcoming.slice(0,5);
-
-  const revisionRow=x=>{
-    const p=getP(x.k);
-    const nextAt=Date.parse(p.next||'');
-    const late=Number.isFinite(nextAt)?(now-nextAt)/86400000:0;
-    const isDue=nextAt<=now;
-    const dateText=isDue
-      ? (late>0?'Overdue by '+Math.max(1,Math.floor(late))+' day'+(Math.floor(late)===1?'':'s'):'Due today')
-      : 'Due '+new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(nextAt));
-    const last=p.rating?' · Last: '+esc(p.rating):'';
-    return '<article class="revision-item"><div><span class="status '+esc(String(isDue?'DUE':'SCHEDULED').toLowerCase())+'">'+(isDue?'DUE NOW':'SCHEDULED')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">'+(isDue?'START RECALL →':'VIEW CONCEPT →')+'</a></article>';
+  const allScheduled=all().filter(x=>{const p=getP(x.k);return p.next&&Number.isFinite(Date.parse(p.next))}).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next));
+  const now=Date.now(),due=allScheduled.filter(x=>Date.parse(getP(x.k).next)<=now),upcoming=allScheduled.filter(x=>Date.parse(getP(x.k).next)>now);
+  const dueRow=x=>{
+    const p=getP(x.k),nextAt=Date.parse(p.next||''),late=Number.isFinite(nextAt)?(now-nextAt)/86400000:0;
+    const dateText=late>0?'Overdue by '+Math.max(1,Math.floor(late))+' day'+(Math.floor(late)===1?'':'s'):'Due today',last=p.rating?' · Last: '+esc(p.rating):'';
+    return '<article class="revision-item"><div><span class="status due">DUE NOW</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">REVISE →</a></article>';
   };
-
-  const dueRows=shownDue.map(revisionRow).join('');
-  const upcomingRows=shownUpcoming.map(revisionRow).join('');
-  const firstDue=due[0];
-  const firstScheduled=allScheduled[0];
-  const startHref=firstDue
-    ? 'microtopic.html?unit='+encodeURIComponent(firstDue.u.id)+'&topic='+encodeURIComponent(firstDue.t.id)+'&micro='+encodeURIComponent(firstDue.m.id)+'&from=revision'
-    : firstScheduled
-      ? 'microtopic.html?unit='+encodeURIComponent(firstScheduled.u.id)+'&topic='+encodeURIComponent(firstScheduled.t.id)+'&micro='+encodeURIComponent(firstScheduled.m.id)+'&from=revision'
-      : 'unit.html?id=1';
-
+  const upcomingRow=x=>{
+    const p=getP(x.k),nextAt=Date.parse(p.next||''),dateText='Due '+new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(nextAt)),last=p.rating?' · Last: '+esc(p.rating):'';
+    return '<article class="revision-item"><div><span class="status scheduled">SCHEDULED</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div></article>';
+  };
+  const dueRows=due.slice(0,5).map(dueRow).join(''),upcomingRows=upcoming.slice(0,5).map(upcomingRow).join('');
   const stateBlock=allScheduled.length
-    ? '<section class="panel empty"><h2>'+allScheduled.length+' concept'+(allScheduled.length===1?' is':'s are')+' in your revision cycle</h2><p>'+(due.length?due.length+' '+(due.length===1?'concept is':'concepts are')+' ready for recall now. '+upcoming.length+' '+(upcoming.length===1?'concept is':'concepts are')+' scheduled for later.':'Your completed concepts are now scheduled. They will become actionable when their revision date arrives.')+'</p><a class="btn primary" href="'+startHref+'">'+(firstDue?'START REVISION →':'VIEW SCHEDULE →')+'</a></section>'
-    : '<section class="panel empty"><h2>You’re caught up.</h2><p>Complete a concept and its first spaced revision will appear here. Nothing is currently scheduled.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
-
-  const dueSection=dueRows
-    ? '<section class="revision-section"><div class="section-head"><div><div class="eyebrow">DUE NOW</div><h2>Recall these concepts.</h2><p>These revisions are ready. Try to recall the idea before opening the concept.</p></div></div><div class="revision-list">'+dueRows+'</div></section>'
-    : '';
-  const upcomingSection=upcomingRows
-    ? '<section class="revision-section"><div class="section-head"><div><div class="eyebrow">UPCOMING</div><h2>Already scheduled for later.</h2><p>Your completed concepts stay in the revision cycle and become actionable on their scheduled date.</p></div></div><div class="revision-list">'+upcomingRows+'</div></section>'
-    : '';
-
-  root.innerHTML='<section class="page-hero revision-hero"><h1>Strengthen what you’ve already learned.</h1><p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p></section>'+
-    stateBlock+
-    dueSection+
-    upcomingSection+
-    '<section class="panel revision-rules"><h2>How to use revision</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating sets the next scheduled revision.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
+    ? '<section class="panel empty"><h2>'+allScheduled.length+' concept'+(allScheduled.length===1?' is':'s are')+' in your revision cycle</h2><p>'+(due.length?due.length+' '+(due.length===1?'concept is':'concepts are')+' ready to revise now. '+upcoming.length+' '+(upcoming.length===1?'concept is':'concepts are')+' scheduled for later.':'Your completed concepts are scheduled. They will become ready to revise when their revision date arrives.')+'</p>'+(due[0]?'<a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(due[0].u.id)+'&topic='+encodeURIComponent(due[0].t.id)+'&micro='+encodeURIComponent(due[0].m.id)+'&from=revision">REVISE →</a>':'')+'</section>'
+    : '<section class="panel empty"><h2>You’re caught up.</h2><p>Complete a concept and its first spaced revision will appear here when it is scheduled.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
+  const dueSection=dueRows?'<section class="revision-section"><div class="section-head"><div><div class="eyebrow">DUE NOW</div><h2>Strengthen these concepts.</h2><p>Bring each idea back from memory before looking at it again.</p></div></div><div class="revision-list">'+dueRows+'</div></section>':'';
+  const upcomingSection=upcomingRows?'<section class="revision-section"><div class="section-head"><div><div class="eyebrow">UPCOMING</div><h2>These will be ready later.</h2><p>Nothing is required from you yet. Return when the scheduled date arrives.</p></div></div><div class="revision-list">'+upcomingRows+'</div></section>':'';
+  root.innerHTML='<section class="page-hero revision-hero"><h1>Bring back what you’ve learned.</h1><p>Try to remember the idea before looking at it again. Strengthen what feels uncertain, notice what you’ve forgotten, and make important concepts easier to retrieve next time.</p></section>'+stateBlock+dueSection+upcomingSection+
+    '<section class="panel revision-rules"><h2>When you revise</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating determines when you will meet the concept again.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
 }
 function progress(){
   const s=progressSummary(),topics=progressTopicSummary();
