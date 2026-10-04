@@ -1013,24 +1013,53 @@ function practice(){
 }function revision(){
   const root=$('#revisionApp');
   if(!root)return;
-  const items=dueItems(),shown=items.slice(0,5);
-  const rows=shown.map(x=>{
+  const allScheduled=all().filter(x=>{
+    const p=getP(x.k);
+    return p.next&&Number.isFinite(Date.parse(p.next));
+  }).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next));
+  const now=Date.now();
+  const due=allScheduled.filter(x=>Date.parse(getP(x.k).next)<=now);
+  const upcoming=allScheduled.filter(x=>Date.parse(getP(x.k).next)>now);
+  const shownDue=due.slice(0,5);
+  const shownUpcoming=upcoming.slice(0,5);
+
+  const revisionRow=x=>{
     const p=getP(x.k);
     const nextAt=Date.parse(p.next||'');
-    const late=Number.isFinite(nextAt)?(Date.now()-nextAt)/86400000:0;
-    const overdue=late>0?'Overdue by '+Math.floor(late)+' day'+(Math.floor(late)===1?'':'s'):'Due today';
+    const late=Number.isFinite(nextAt)?(now-nextAt)/86400000:0;
+    const isDue=nextAt<=now;
+    const dateText=isDue
+      ? (late>0?'Overdue by '+Math.max(1,Math.floor(late))+' day'+(Math.floor(late)===1?'':'s'):'Due today')
+      : 'Due '+new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(nextAt));
     const last=p.rating?' · Last: '+esc(p.rating):'';
-    return '<article class="revision-item"><div><span class="status '+esc(String(p.status||'NEW').toLowerCase())+'">'+esc(p.status||'NEW')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+overdue+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">Start Recall →</a></article>';
-  }).join('');
-  const first=items[0];
-  const startHref=first?'microtopic.html?unit='+encodeURIComponent(first.u.id)+'&topic='+encodeURIComponent(first.t.id)+'&micro='+encodeURIComponent(first.m.id)+'&from=revision':'unit.html?id=1';
-  const stateBlock=items.length
-    ? '<section class="panel empty"><h2>'+items.length+' concept'+(items.length===1?' is':'s are')+' ready to revise</h2><p>These are your scheduled revisions. Recall first, then check the explanation.</p><a class="btn primary" href="'+startHref+'">START REVISION →</a></section>'
-    : '<section class="panel empty"><h2>You’re caught up.</h2><p>There is nothing waiting for revision right now. Your next scheduled revision will appear here.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
-  const queue=rows?'<section class="revision-list">'+rows+'</section>':'';
+    return '<article class="revision-item"><div><span class="status '+esc(String(isDue?'DUE':'SCHEDULED').toLowerCase())+'">'+(isDue?'DUE NOW':'SCHEDULED')+'</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">'+(isDue?'START RECALL →':'VIEW CONCEPT →')+'</a></article>';
+  };
+
+  const dueRows=shownDue.map(revisionRow).join('');
+  const upcomingRows=shownUpcoming.map(revisionRow).join('');
+  const firstDue=due[0];
+  const firstScheduled=allScheduled[0];
+  const startHref=firstDue
+    ? 'microtopic.html?unit='+encodeURIComponent(firstDue.u.id)+'&topic='+encodeURIComponent(firstDue.t.id)+'&micro='+encodeURIComponent(firstDue.m.id)+'&from=revision'
+    : firstScheduled
+      ? 'microtopic.html?unit='+encodeURIComponent(firstScheduled.u.id)+'&topic='+encodeURIComponent(firstScheduled.t.id)+'&micro='+encodeURIComponent(firstScheduled.m.id)+'&from=revision'
+      : 'unit.html?id=1';
+
+  const stateBlock=allScheduled.length
+    ? '<section class="panel empty"><h2>'+allScheduled.length+' concept'+(allScheduled.length===1?' is':'s are')+' in your revision cycle</h2><p>'+(due.length?due.length+' '+(due.length===1?'concept is':'concepts are')+' ready for recall now. '+upcoming.length+' '+(upcoming.length===1?'concept is':'concepts are')+' scheduled for later.':'Your completed concepts are now scheduled. They will become actionable when their revision date arrives.')+'</p><a class="btn primary" href="'+startHref+'">'+(firstDue?'START REVISION →':'VIEW SCHEDULE →')+'</a></section>'
+    : '<section class="panel empty"><h2>You’re caught up.</h2><p>Complete a concept and its first spaced revision will appear here. Nothing is currently scheduled.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
+
+  const dueSection=dueRows
+    ? '<section class="revision-section"><div class="section-head"><div><div class="eyebrow">DUE NOW</div><h2>Recall these concepts.</h2><p>These revisions are ready. Try to recall the idea before opening the concept.</p></div></div><div class="revision-list">'+dueRows+'</div></section>'
+    : '';
+  const upcomingSection=upcomingRows
+    ? '<section class="revision-section"><div class="section-head"><div><div class="eyebrow">UPCOMING</div><h2>Already scheduled for later.</h2><p>Your completed concepts stay in the revision cycle and become actionable on their scheduled date.</p></div></div><div class="revision-list">'+upcomingRows+'</div></section>'
+    : '';
+
   root.innerHTML='<section class="page-hero revision-hero"><h1>Strengthen what you’ve already learned.</h1><p>Try to recall a concept before looking back. Revisit what was difficult, strengthen what is fading, and build memories that last.</p></section>'+
     stateBlock+
-    queue+
+    dueSection+
+    upcomingSection+
     '<section class="panel revision-rules"><h2>How to use revision</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating sets the next scheduled revision.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
 }
 function progress(){
