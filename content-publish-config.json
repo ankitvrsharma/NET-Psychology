@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "mode": "ai_or_owner",
+  "description": "Initial publishing mode: serve AI-audit PASS content plus owner-approved content. Later switch to owner_only after sufficient owner verification.",
+  "manifest": "content-publish-manifest.json",
+  "owner_overrides": "content-owner-overrides.json"
+}
