@@ -1,7 +1,10 @@
 {
-  "schema_version": 1,
-  "mode": "ai_or_owner",
-  "description": "Initial publishing mode: serve AI-audit PASS content plus owner-approved content. Later switch to owner_only after sufficient owner verification.",
+  "schema_version": 2,
+  "mode": "expert_or_owner",
+  "description": "Serve only deterministic expert-likeness PASS content or explicitly owner-approved content. Human authorship is not inferred; source grounding, psychological specificity, explanation quality, NET relevance, learning value, and AI-generic risk are scored.",
+  "expert_audit_version": "2026-10-04-expert1",
+  "expert_pass_threshold": 85,
+  "expert_review_threshold": 60,
   "manifest": "content-publish-manifest.json",
   "owner_overrides": "content-owner-overrides.json"
 }
