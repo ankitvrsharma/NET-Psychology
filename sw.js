@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v45-v1-stabilization';
+const CACHE='netpsych-shell-v46-expert-audit';
 const SHELL=[
   './',
   './index.html',
