@@ -333,35 +333,123 @@ function dailySessionNext(currentKey){
   }catch(e){}
   return null;
 }
+function recallContent(m){
+  const notes=String(m.content_notes||'');
+  const core=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
+  const points=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION')).filter(Boolean);
+  const distinction=String(m.distinction||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||section(notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
+  const pattern=String(section(notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
+  const application=String(m.application_question||'').trim();
+  const deep=String(m.detailed_explanation||m.deep_learning||m.deep||'').trim();
+  return {core,points,distinction,pattern,application,deep};
+}
+function buildRecallPrompts(m,qs){
+  const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[],hasMappedQuestions=Array.isArray(qs)&&qs.length>0;
+  if(c.core){
+    prompts.push({
+      type:'FREE RECALL',
+      prompt:'Without looking at your notes, what is '+title+'? State its meaning and central idea in your own words.',
+      answer:c.core
+    });
+  }
+  c.points.slice(0,2).forEach((point,index)=>{
+    prompts.push({
+      type:'KEY IDEA',
+      prompt:'What key idea about '+title+' can you recall that explains or qualifies the concept? Give the point in your own words.',
+      answer:point
+    });
+  });
+  if(c.distinction){
+    prompts.push({
+      type:'DISTINCTION',
+      prompt:'What distinction or caution must you keep clear for '+title+'? State the difference and why it matters.',
+      answer:c.distinction
+    });
+  }
+  if(c.application){
+    prompts.push({
+      type:'APPLICATION',
+      prompt:'How would you use '+title+' to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.',
+      answer:c.application
+    });
+  }
+  if(hasMappedQuestions&&c.pattern&&prompts.length<5){
+    prompts.push({
+      type:'EXAM REASONING',
+      prompt:'A related NET question may test this concept through its mechanism, finding, or distinction. Without looking, what part of '+title+' would you retrieve to answer it correctly, and why?',
+      answer:c.pattern
+    });
+  }else if(c.pattern&&prompts.length<5){
+    prompts.push({
+      type:'EXAM REASONING',
+      prompt:'What feature, mechanism, finding, or distinction of '+title+' would you need to retrieve to solve a related NET question correctly? Explain it without looking.',
+      answer:c.pattern
+    });
+  }else if(c.deep && prompts.length<3){
+    prompts.push({
+      type:'EXPLAIN',
+      prompt:'What is the most important mechanism or relationship within '+title+' that you should be able to explain without notes?',
+      answer:c.deep.slice(0,1200)
+    });
+  }
+  const seen=new Set();
+  return prompts.filter(p=>{
+    const answer=String(p.answer||'').replace(/\s+/g,' ').trim();
+    const prompt=String(p.prompt||'').replace(/\s+/g,' ').trim();
+    const keyName=prompt+'|'+answer;
+    if(!answer||answer.length<12||seen.has(keyName))return false;
+    seen.add(keyName);
+    p.answer=answer;
+    return true;
+  }).slice(0,5);
+}
 function activeRecall(){
   const {u,t,m,k}=find(),root=$('#activeRecallPage');
   const fromRevision=Q.get('from')==='revision';
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
   document.title='Active Recall — '+m.title+' — UGC NET Psychology';
-  const qs=practiceFor(u.id,t.id,m.id),groups={};
-  qs.forEach((q,index)=>{const kind=q.kind||'direct';(groups[kind]||(groups[kind]=[])).push({q,index})});
-  const labels={direct:'MULTIPLE CHOICE',match:'MATCH THE COLUMNS','assertion-reason':'ASSERTION · REASON',sequence:'SEQUENCE','statement-set':'STATEMENT SET'};
-  const ordered=['direct','match','assertion-reason','sequence','statement-set'];
-  const cards=ordered.filter(kind=>groups[kind]?.length).map(kind=>'<section class="active-recall-group"><div class="eyebrow">'+esc(labels[kind]||kind.toUpperCase())+'</div><div class="active-recall-questions">'+groups[kind].map(item=>mcqHTML(item.q,item.index,'ACTIVE RECALL',false)).join('')+'</div></section>').join('');
-  root.innerHTML='<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Bring this idea back from memory.</h1><p>'+esc(m.title)+' · '+esc(t.title)+' · Unit '+esc(u.id)+'</p><div class="active-recall-rule">Close your notes and bring the idea back from memory. Answer what you can, then use the feedback to strengthen your understanding.</div></section>'+
-    (cards||'<section class="panel empty"><h2>Recall this concept from memory.</h2><p>Think through the idea before checking your notes.</p><button class="btn primary" type="button" id="confirmRecall">I RECALLED THIS CONCEPT</button></section>')+
+  const qs=practiceFor(u.id,t.id,m.id);
+  const prompts=buildRecallPrompts(m,qs);
+  const promptCards=prompts.map((item,index)=>
+    '<article class="active-recall-card card" data-recall-card="'+index+'">'+
+      '<div class="active-recall-card-head"><span class="eyebrow">'+esc(item.type)+'</span><span class="active-recall-number">'+String(index+1).padStart(2,'0')+'</span></div>'+
+      '<h2>'+esc(item.prompt)+'</h2>'+
+      '<label class="active-recall-response"><span>WRITE OR SAY YOUR ANSWER BEFORE CHECKING</span><textarea rows="4" data-recall-input placeholder="Recall it in your own words..."></textarea></label>'+
+      '<button class="btn" type="button" data-recall-check="'+index+'">CHECK MY RECALL →</button>'+
+      '<div class="active-recall-feedback" data-recall-feedback hidden><div class="eyebrow">CHECK</div><p>'+esc(item.answer)+'</p><button class="text-link" type="button" data-recall-done="'+index+'">I’VE CHECKED IT →</button></div>'+
+    '</article>'
+  ).join('');
+  root.innerHTML=
+    '<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Bring this idea back from memory.</h1><p>Close your notes and retrieve the idea before you look again. Explain it, distinguish it, or apply it — then check your answer against the concept you just learned.</p></section>'+
+    (promptCards||'<section class="panel empty"><h2>Recall this concept from memory.</h2><p>This concept needs a little more source material before a recall set can be built.</p><button class="btn primary" type="button" id="confirmRecall">I RECALLED THIS CONCEPT</button></section>')+
     '<section class="revision-rating panel" id="revisionRating" hidden><div class="eyebrow">HOW WELL DID YOU RECALL IT?</div><p>Rate how well you brought the idea back from memory. Your rating determines when you will revisit it.</p><div class="revision-rating-actions"><button class="btn" type="button" data-revision-rating="again">AGAIN</button><button class="btn" type="button" data-revision-rating="hard">HARD</button><button class="btn" type="button" data-revision-rating="good">GOOD</button><button class="btn primary" type="button" data-revision-rating="easy">EASY</button></div></section>'+
     '<section class="active-recall-complete card" id="activeRecallComplete" hidden></section>';
-  const cardsAll=Array.from(root.querySelectorAll('.mcq'));
-  wireMCQ(root,k,qs);
+  const recallCards=Array.from(root.querySelectorAll('[data-recall-card]'));
   const finishRecall=()=>{
     const pNow=getP(k);
     setP(k,{recallCompletedAt:new Date().toISOString(),learnedAt:pNow.learnedAt||new Date().toISOString(),status:pNow.status==='MASTERED'?'MASTERED':'LEARNING',last:new Date().toISOString()});
     const ratingBox=$('#revisionRating');if(ratingBox)ratingBox.hidden=false;
     ratingBox?.scrollIntoView({behavior:'smooth',block:'center'});
   };
-  if(cardsAll.length){
-    cardsAll.forEach(card=>card.querySelectorAll('.mcq-option').forEach(btn=>btn.addEventListener('click',()=>{
-      const done=cardsAll.every(x=>Array.from(x.querySelectorAll('.mcq-option')).every(b=>b.disabled));
-      if(done)finishRecall();
-    })));
-  }else $('#confirmRecall')?.addEventListener('click',finishRecall);
+  const checked=new Set();
+  const maybeFinish=()=>{if(recallCards.length&&checked.size===recallCards.length)finishRecall()};
+  recallCards.forEach(card=>{
+    const index=Number(card.dataset.recallCard),check=card.querySelector('[data-recall-check]'),feedback=card.querySelector('[data-recall-feedback]'),done=card.querySelector('[data-recall-done]'),input=card.querySelector('[data-recall-input]');
+    check?.addEventListener('click',()=>{
+      if(feedback)feedback.hidden=false;
+      if(check)check.hidden=true;
+      input?.setAttribute('readonly','true');
+      feedback?.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+    done?.addEventListener('click',()=>{
+      checked.add(index);
+      if(done)done.textContent='✓ CHECKED';
+      if(done)done.disabled=true;
+      maybeFinish();
+    });
+  });
+  if(!recallCards.length)$('#confirmRecall')?.addEventListener('click',finishRecall);
   root.querySelectorAll('[data-revision-rating]').forEach(btn=>btn.addEventListener('click',()=>{
     const rating=btn.dataset.revisionRating,next=scheduleRevision(k,rating);
     const days=Math.max(1,Math.round((Date.parse(next)-Date.now())/86400000));
