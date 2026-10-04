@@ -156,7 +156,7 @@ function preview(x){
   const m=x.content||{};
   if(x.type==='questions'){
     const opts=(m.options||[]).map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');
-    const learner=qaStructuredPreview(m);
+    const learner=window.NETPSYQuestionRenderer?.structuredQuestionHTML ? window.NETPSYQuestionRenderer.structuredQuestionHTML(m) : qaStructuredPreview(m);
     return '<div class="qa-preview learner-preview">'+learner+'<div class="qa-option-block"><h5>ANSWER OPTIONS</h5><ol class="qa-options">'+opts+'</ol></div><p><strong>Explanation:</strong> '+esc(m.explanation||'No explanation available.')+'</p></div>';
   }
   if(x.type==='activeRecall'){return '<div class="qa-preview learner-preview"><h4>Bring this idea back from memory.</h4>'+((x.prompts||[]).map((p,i)=>'<section class="qa-recall-item"><span>'+esc(p.type)+'</span><p><strong>'+String(i+1)+'.</strong> '+esc(p.prompt)+'</p><details><summary>Expected answer</summary><p>'+esc(p.answer)+'</p></details></section>').join(''))+'</div>'}
