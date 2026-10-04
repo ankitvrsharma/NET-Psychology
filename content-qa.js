@@ -51,6 +51,61 @@ function microAudit(m){
   score=Math.max(0,Math.min(100,Math.round(score)));
   return{score,status:(!m.title||!m.sources?.length||score<REVIEW)?'ISSUE':score>=PASS?'PASS':'REVIEW',issues};
 }
+const STRUCTURAL_AUDIT_VERSION='2026-10-04-structural1';
+function qaClean(value){return String(value??'').replace(/\r/g,'').replace(/<br\s*\/?\s*>/gi,'\n').replace(/&nbsp;/gi,' ').replace(/\s+/g,' ').trim()}
+function qaMarkers(value){
+  const text=qaClean(value),hits=[],re=/(?<!\S)([a-d]|[1-4]|i{1,3}|iv|v)\s*[.)]+\s+/gi;let m;
+  while((m=re.exec(text)))hits.push({label:m[1].toLowerCase(),start:m.index,end:re.lastIndex});
+  return hits.map((h,i)=>({label:h.label,text:text.slice(h.end,i+1<hits.length?hits[i+1].start:text.length).trim()})).filter(x=>x.text);
+}
+function qaMatchLists(value){
+  const raw=qaClean(value),lh=/\bList\s*[-–—]?\s*I\b/i.exec(raw),rh=/\bList\s*[-–—]?\s*II\b/i.exec(raw);
+  if(!lh||!rh||rh.index<=lh.index)return{left:[],right:[],hasLeft:!!lh,hasRight:!!rh};
+  const cut=x=>x.split(/\bChoose\s+the\s+correct\s+answer\b/i)[0].split(/\bCodes?\s*:/i)[0].trim();
+  return{left:qaMarkers(cut(raw.slice(lh.index+lh[0].length,rh.index))),right:qaMarkers(cut(raw.slice(rh.index+rh[0].length))),hasLeft:true,hasRight:true};
+}
+function qaStructuredPreview(q){
+  const kind=String(q?.kind||'direct').toLowerCase(),raw=qaClean(q?.question||q?.q||'');
+  if(kind==='match'){
+    const p=qaMatchLists(raw);
+    if(p.hasLeft&&p.hasRight&&p.left.length>=4&&p.right.length>=4){
+      return '<div class="qa-structured-question"><p class="qa-structure-label">MATCH THE COLUMNS · LEARNER RENDER</p><div class="qa-matching-grid"><section><strong>LIST I</strong>'+p.left.map(x=>'<div class="qa-structured-item"><b>'+esc(x.label.toUpperCase())+'.</b> '+esc(x.text)+'</div>').join('')+'</section><section><strong>LIST II</strong>'+p.right.map(x=>'<div class="qa-structured-item"><b>'+esc(x.label.toUpperCase())+'.</b> '+esc(x.text)+'</div>').join('')+'</section></div></div>';
+    }
+    return '<div class="qa-structured-invalid"><strong>BLOCKED · MATCH STRUCTURE INVALID</strong><p>List I: '+p.left.length+' items · List II: '+p.right.length+' items · separate headers: '+(p.hasLeft&&p.hasRight?'yes':'no')+'</p></div>';
+  }
+  if(kind==='assertion-reason'){
+    const a=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+Reason\s*\(R\)|\s+\d+\s*\.?\s*Reason\s*\(R\))/i)||[])[1]||'';
+    const r=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]||'';
+    return '<div class="qa-structured-question"><p class="qa-structure-label">ASSERTION · REASON · LEARNER RENDER</p><div class="qa-ar"><section><b>A · Assertion</b><p>'+esc(a||'MISSING')+'</p></section><section><b>R · Reason</b><p>'+esc(r||'MISSING')+'</p></section></div></div>';
+  }
+  if(kind==='sequence'||kind==='statement-set'){
+    const items=qaMarkers(raw.split(/\bCodes?\s*:/i)[0]);
+    return '<div class="qa-structured-question"><p class="qa-structure-label">'+esc(kind.toUpperCase())+' · LEARNER RENDER</p><div class="qa-structured-items">'+items.map(x=>'<div class="qa-structured-item"><b>'+esc(x.label)+'.</b> '+esc(x.text)+'</div>').join('')+'</div></div>';
+  }
+  return '<div class="qa-structured-question"><p class="qa-structure-label">MULTIPLE CHOICE · LEARNER RENDER</p><p>'+esc(raw)+'</p></div>';
+}
+function structuralQuestionAudit(q){
+  const kind=String(q?.kind||'direct').toLowerCase(),raw=qaClean(q?.question||q?.q||''),issues=[];
+  if(!raw)issues.push('missing_question');
+  if(kind==='match'){
+    const p=qaMatchLists(raw);
+    if(!p.hasLeft)issues.push('missing_list_i');
+    if(!p.hasRight)issues.push('missing_list_ii');
+    if(p.left.length<4)issues.push('invalid_list_i_count');
+    if(p.right.length<4)issues.push('invalid_list_ii_count');
+    if(p.left.length&&p.right.length&&p.left.length!==p.right.length)issues.push('list_count_mismatch');
+    if([...p.left,...p.right].some(x=>/\b(?:List\s*[-–—]?\s*[IV]+|Choose\s+the\s+correct\s+answer|Codes?\s*:)/i.test(x.text)))issues.push('list_instruction_swallowed');
+    if((raw.match(/\b\d{3,}\b/g)||[]).length)issues.push('ocr_corruption_signal');
+  }else if(kind==='assertion-reason'){
+    const a=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+Reason\s*\(R\))/i)||[])[1]||'',r=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]||'';
+    if(!a.trim()||!r.trim())issues.push('invalid_assertion_reason');
+  }else if(kind==='sequence'||kind==='statement-set'){
+    if(qaMarkers(raw.split(/\bCodes?\s*:/i)[0]).length<2)issues.push('invalid_structured_items');
+  }else if(raw.length<20)issues.push('invalid_structured_items');
+  if(!Array.isArray(q?.options)||q.options.length!==4||!Number.isInteger(q?.answer)||q.answer<0||q.answer>3)issues.push('answerability_failed');
+  return{issues,status:issues.length?'ISSUE':'PASS',version:STRUCTURAL_AUDIT_VERSION};
+}
+
 function questionAudit(q){
   const x=signals([q.question,q.explanation,q.session,q.type,q.kind]),issues=[];
   if(!q.question)issues.push('missing_question');
@@ -61,9 +116,10 @@ function questionAudit(q){
   if(x.generic>=2)issues.push('generic_explanation_style');
   if(x.length<180)issues.push('thin_explanation');
   if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');
+  const structural=structuralQuestionAudit(q);issues.push(...structural.issues);
   let score=(q.session&&q.type==='PYQ'?20:0)+(Array.isArray(q.options)&&q.options.length===4?15:0)+(q.unit!=null&&q.topic!=null&&q.micro!=null?15:0)+Math.min(20,x.length>=300?20:x.length>=220?16:x.length>=180?12:6)+Math.min(15,x.domain*1.5)+Math.min(10,x.contrast*2+x.mechanism*2)+(q.kind?5:0)-Math.min(15,x.generic*4);
   score=Math.max(0,Math.min(100,Math.round(score)));
-  return{score,status:issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=PASS?'PASS':score>=REVIEW?'REVIEW':'ISSUE',issues};
+  return{score,status:structural.issues.length||issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer','answerability_failed'].includes(i))?'ISSUE':score>=PASS?'PASS':score>=REVIEW?'REVIEW':'ISSUE',issues:[...new Set(issues)],structural};
 }
 function findMicro(data,id){const p=String(id).split('-').map(Number);return data.units?.find(u=>u.id===p[0])?.topics?.find(t=>t.id===p[1])?.microtopics?.find(m=>m.id===p[2])||null}
 function microText(m){return [m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook].filter(Boolean).join(' ')}
@@ -98,7 +154,11 @@ function build(data,qs,ex){
 function workflow(x){const o=statusFor(x.type,x.id),r=revisionFor(x.type,x.id);if(o==='REJECTED')return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles};if(o==='APPROVED')return{label:'OWNER APPROVED',cls:'pass',cycles:r.cycles};if(x.status==='PASS')return{label:'OWNER REVIEW',cls:'pass',cycles:r.cycles};return{label:'REWRITE REQUIRED',cls:'rewrite',cycles:r.cycles}}
 function preview(x){
   const m=x.content||{};
-  if(x.type==='questions'){const opts=(m.options||[]).map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');return '<div class="qa-preview learner-preview"><h4>'+esc(m.question||x.title)+'</h4><ol class="qa-options">'+opts+'</ol><p><strong>Explanation:</strong> '+esc(m.explanation||'No explanation available.')+'</p></div>'}
+  if(x.type==='questions'){
+    const opts=(m.options||[]).map((v,i)=>'<li><span>'+String.fromCharCode(65+i)+'</span>'+esc(v)+'</li>').join('');
+    const learner=qaStructuredPreview(m);
+    return '<div class="qa-preview learner-preview">'+learner+'<div class="qa-option-block"><h5>ANSWER OPTIONS</h5><ol class="qa-options">'+opts+'</ol></div><p><strong>Explanation:</strong> '+esc(m.explanation||'No explanation available.')+'</p></div>';
+  }
   if(x.type==='activeRecall'){return '<div class="qa-preview learner-preview"><h4>Bring this idea back from memory.</h4>'+((x.prompts||[]).map((p,i)=>'<section class="qa-recall-item"><span>'+esc(p.type)+'</span><p><strong>'+String(i+1)+'.</strong> '+esc(p.prompt)+'</p><details><summary>Expected answer</summary><p>'+esc(p.answer)+'</p></details></section>').join(''))+'</div>'}
   const text=m.detailed_explanation||m.expert_explanation||m.content_notes||'';
   const dist=m.distinction||'';
