@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "mode": "expert_or_owner",
-  "audit_version": "2026-10-04-expert2",
+  "audit_version": "2026-10-04-expert3",
   "ai_pass": {
     "questions": {
       "pass": []
