@@ -27,7 +27,7 @@ const RUNTIME_DATA=new Set([
   'mcq_mapping.json',
   'practice_questions.json',
   'practice_explanations.json',
-  'home_quick_learn.json'
+  'home-learning.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
