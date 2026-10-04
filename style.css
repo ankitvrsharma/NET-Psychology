@@ -1771,3 +1771,25 @@ body[data-page="practice-session"] .practice-hero{display:none}
   .practice-unit-trigger{min-height:64px}
   .practice-size-group .practice-choice{min-height:64px}
 }
+
+
+/* Active Recall — retrieval-first learner interface */
+.active-recall-card{max-width:900px;margin:0 auto 16px;padding:22px 24px}
+.active-recall-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.active-recall-number{font-size:12px;font-weight:850;color:var(--muted);letter-spacing:.08em}
+.active-recall-card h2{font-size:clamp(20px,3vw,27px);line-height:1.35;margin:0 0 18px;color:var(--navy)}
+.active-recall-response{display:grid;gap:8px;margin-bottom:12px}
+.active-recall-response>span{font-size:10px;font-weight:850;letter-spacing:.09em;color:var(--muted)}
+.active-recall-response textarea{width:100%;min-height:110px;resize:vertical;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit;line-height:1.6;box-sizing:border-box}
+.active-recall-response textarea:focus{outline:2px solid rgba(55,91,214,.18);border-color:var(--blue)}
+.active-recall-feedback{margin-top:16px;padding:16px;border-radius:12px;background:var(--soft);border:1px solid var(--line)}
+.active-recall-feedback p{margin:7px 0 12px;white-space:pre-line;line-height:1.7;color:var(--ink)}
+.active-recall-feedback .text-link{border:0;background:transparent;padding:0;color:var(--blue);font:inherit;font-weight:850;cursor:pointer}
+.active-recall-complete{max-width:900px;margin:20px auto 40px;padding:24px}
+@media(max-width:620px){
+  .active-recall-card{padding:18px 16px;margin-bottom:12px}
+  .active-recall-card h2{font-size:20px;line-height:1.4}
+  .active-recall-response textarea{min-height:100px;font-size:15px}
+  .active-recall-card .btn{width:100%}
+  .active-recall-feedback .text-link{display:inline-block;padding:6px 0}
+}
