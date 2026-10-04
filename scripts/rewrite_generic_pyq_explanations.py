@@ -91,18 +91,46 @@ def make_prompt(batch,micros):
       "items":items
     },ensure_ascii=False)
 
-def validate_patch(patch,batch):
-    if not isinstance(patch,dict) or not isinstance(patch.get("items"),list): raise RuntimeError("Gemini response missing items.")
-    expected={str(q["id"]) for q in batch}; got={str(x.get("id")) for x in patch["items"] if isinstance(x,dict)}
-    if got!=expected: raise RuntimeError(f"Patch ID mismatch; missing={sorted(expected-got)[:10]}, extra={sorted(got-expected)[:10]}")
+def validate_items(items, expected_ids):
+    if not isinstance(items,list): raise RuntimeError("Gemini response missing items.")
     result={}
-    for x in patch["items"]:
-        qid=str(x.get("id")); exp=str(x.get("explanation","")).strip()
+    for x in items:
+        if not isinstance(x,dict): continue
+        qid=str(x.get("id",""))
+        if qid not in expected_ids: continue
+        exp=str(x.get("explanation","")).strip()
         if not exp: raise RuntimeError(f"Empty explanation for {qid}")
         if any(m in exp for m in MARKERS): raise RuntimeError(f"Generic template remains for {qid}")
         if len(exp)<45: raise RuntimeError(f"Explanation too short for {qid}")
         result[qid]=exp
     return result
+
+def rewrite_batch(batch,micros):
+    if not batch: return {}
+    expected={str(q["id"]) for q in batch}
+    patch=call_gemini(make_prompt(batch,micros),len(batch))
+    got=validate_items(patch.get("items") if isinstance(patch,dict) else None,expected)
+    missing=expected-set(got)
+    if not missing:
+        return got
+    print(f"Gemini returned {len(got)}/{len(batch)} items; retrying missing={sorted(missing)}")
+    missing_batch=[q for q in batch if str(q["id"]) in missing]
+    try:
+        retry=call_gemini(make_prompt(missing_batch,micros),len(missing_batch))
+        retry_items=validate_items(retry.get("items") if isinstance(retry,dict) else None,{str(q["id"]) for q in missing_batch})
+        got.update(retry_items)
+        missing={str(q["id"]) for q in missing_batch}-set(retry_items)
+    except Exception as e:
+        print(f"Missing-item retry failed: {e}")
+    if missing and len(batch)>1:
+        print(f"Splitting unresolved batch of {len(batch)} into smaller chunks.")
+        remaining=[q for q in batch if str(q["id"]) in missing]
+        mid=max(1,len(remaining)//2)
+        for sub in (remaining[:mid],remaining[mid:]):
+            if sub: got.update(rewrite_batch(sub,micros))
+    if set(got)!=expected:
+        raise RuntimeError(f"Patch ID mismatch after recovery; missing={sorted(expected-set(got))[:10]}")
+    return got
 
 def main():
     questions=load(PYQS,[]); data=load(DATA,{})
@@ -118,7 +146,7 @@ def main():
     for n,batch in enumerate(batches,1):
         ids=[str(q["id"]) for q in batch]
         try:
-            rewritten=validate_patch(call_gemini(make_prompt(batch,micros),len(batch)),batch)
+            rewritten=rewrite_batch(batch,micros)
             for qid,exp in rewritten.items(): by_id[qid]["explanation"]=exp; completed.add(qid)
             save(PYQS,questions); progress.update({"updated_at":now(),"completed_ids":sorted(completed),"total_target":len(generic)}); save(PROGRESS,progress)
             log["batches"].append({"batch":n,"count":len(batch),"ids":ids,"status":"DONE","at":now()}); save(LOG,log)
