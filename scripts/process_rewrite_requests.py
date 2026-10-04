@@ -33,7 +33,18 @@ def api(prompt):
     req=urllib.request.Request("https://api.openai.com/v1/responses",data=json.dumps(body).encode(),headers={"Authorization":"Bearer "+key,"Content-Type":"application/json"})
     try:
         with urllib.request.urlopen(req,timeout=180) as r: out=json.load(r)
-    except urllib.error.HTTPError as e:\n        detail = ""\n        try:\n            detail = e.read().decode("utf-8", errors="replace")\n        except Exception:\n            pass\n        try:\n            parsed = json.loads(detail)\n            message = parsed.get("error", {}).get("message") or parsed.get("message") or detail\n        except Exception:\n            message = detail\n        raise RuntimeError("OpenAI API error "+str(e.code)+": "+message[:800])
+    except urllib.error.HTTPError as e:
+        detail = ""
+        try:
+            detail = e.read().decode("utf-8", errors="replace")
+        except Exception:
+            pass
+        try:
+            parsed = json.loads(detail)
+            message = parsed.get("error", {}).get("message") or parsed.get("message") or detail
+        except Exception:
+            message = detail
+        raise RuntimeError("OpenAI API error "+str(e.code)+": "+message[:800])
     text=out.get("output_text","")
     if not text:text="".join(c.get("text","") for i in out.get("output",[]) for c in i.get("content",[]) if c.get("type") in ["output_text","text"])
     text=text.strip(); fence=chr(96)*3
