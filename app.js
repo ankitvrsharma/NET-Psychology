@@ -344,7 +344,7 @@ function recallContent(m){
   return {core,points,distinction,pattern,application,deep};
 }
 function buildRecallPrompts(m,qs){
-  const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[];
+  const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[],hasMappedQuestions=Array.isArray(qs)&&qs.length>0;
   if(c.core){
     prompts.push({
       type:'FREE RECALL',
@@ -372,7 +372,14 @@ function buildRecallPrompts(m,qs){
       prompt:'How would you use '+title+' to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.',
       answer:c.application
     });
-  }else if(c.pattern){
+  }
+  if(hasMappedQuestions&&c.pattern&&prompts.length<5){
+    prompts.push({
+      type:'EXAM REASONING',
+      prompt:'A related NET question may test this concept through its mechanism, finding, or distinction. Without looking, what part of '+title+' would you retrieve to answer it correctly, and why?',
+      answer:c.pattern
+    });
+  }else if(c.pattern&&prompts.length<5){
     prompts.push({
       type:'EXAM REASONING',
       prompt:'What feature, mechanism, finding, or distinction of '+title+' would you need to retrieve to solve a related NET question correctly? Explain it without looking.',
