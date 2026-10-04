@@ -28,10 +28,10 @@ jobs:
     timeout-minutes: 360
     if: github.actor != 'github-actions[bot]'
     env:
-      GEMINI_API_KEY: \${{ secrets.GEMINI_API_KEY }}
-      GEMINI_REWRITE_MODEL: \${{ vars.GEMINI_REWRITE_MODEL }}
-      PYQ_BATCH_SIZE: \${{ inputs.batch_size || '30' }}
-      PYQ_MAX_BATCHES: \${{ inputs.max_batches || '0' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_REWRITE_MODEL: ${{ vars.GEMINI_REWRITE_MODEL }}
+      PYQ_BATCH_SIZE: ${{ inputs.batch_size || '30' }}
+      PYQ_MAX_BATCHES: ${{ inputs.max_batches || '0' }}
     steps:
       - uses: actions/checkout@v4
       - name: Rewrite generic PYQ explanations
