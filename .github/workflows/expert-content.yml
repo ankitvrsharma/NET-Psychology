@@ -35,4 +35,4 @@ jobs:
           git add data.json data.js content-version.js practice_questions.json practice-build-report.json expert-audit-report.json rewrite-reaudit-tracking.json
           if git diff --cached --quiet; then echo "No generated changes to commit"; exit 0; fi
           git commit -m "Rewrite and re-audit expert learning content"
-          git push origin HEAD:main
+          git push origin HEAD:expert-rewrite
