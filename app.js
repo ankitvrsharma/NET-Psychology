@@ -77,9 +77,9 @@ const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
     const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./content-publish-config.json?v=20261004-expert5',{cache:'default'}),
-      fetch('./content-publish-manifest.json?v=20261004-expert5',{cache:'default'}),
-      fetch('./content-owner-overrides.json?v=20261004-expert6',{cache:'default'})
+      fetch('./content-publish-config.json?v=1.0.0',{cache:'default'}),
+      fetch('./content-publish-manifest.json?v=1.0.0',{cache:'default'}),
+      fetch('./content-owner-overrides.json?v=1.0.0',{cache:'default'})
     ]);
     if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
     const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
@@ -97,12 +97,12 @@ async function loadContentGate(){
   }
 }
 function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
-const EXPERT_AUDIT_VERSION='2026-10-04-expert6';
+const EXPERT_AUDIT_VERSION='1.0.0';
 const EXPERT_THRESHOLDS={pass:70,review:60};
 function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
 function expertSignals(text){const s=expertText(text).replace(/\s+/g,' ').trim(),low=s.toLowerCase();const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand','is very important'];const domain=['mechanism','distinguish','contrast','whereas','condition','evidence','study','research','theory','model','construct','process','predict','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','individual difference','development','assessment','experiment','correlation','causal'];const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic'];return{length:s.length,genericHits:generic.filter(x=>low.includes(x)).length,domainHits:domain.filter(x=>low.includes(x)).length,teachingHits:teaching.filter(x=>low.includes(x)).length,contrastHits:(low.match(/\b(distinguish|different from|whereas|unlike|contrast|not the same as|however)\b/g)||[]).length,mechanismHits:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length,names:(s.match(/\b[A-Z][a-z]+(?:[- ][A-Z][a-z]+)?\b/g)||[]).length};}
 function expertMicroAudit(m){const core=expertText([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.kaplan_enrichment?.notes,m.simply_psychology_enrichment?.notes]),sig=expertSignals(core),issues=[];if(!String(m.title||'').trim())issues.push('missing_title');if(sig.length<220)issues.push('too_thin');if(!Array.isArray(m.sources)||!m.sources.length)issues.push('no_explicit_source_mapping');if(sig.genericHits>=3)issues.push('generic_ai_style');if(sig.domainHits<3)issues.push('low_psychology_specificity');if(sig.mechanismHits<1&&sig.contrastHits<1)issues.push('weak_explanation_structure');let source=Array.isArray(m.sources)&&m.sources.length?15:0;if(m.kaplan_enrichment?.notes||m.simply_psychology_enrichment?.notes||m.source_notes)source+=5;const accuracy=Math.min(25,10+(sig.domainHits*2)+(sig.mechanismHits*2)+(sig.contrastHits*2));const expert=Math.min(20,8+(sig.length>=500?5:0)+(sig.domainHits>=6?4:0)+(sig.names>=2?3:0));const net=Math.min(15,6+(sig.teachingHits*2)+(String(m.content_notes||'').toLowerCase().includes('pyq')?3:0));const learning=Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(sig.contrastHits?2:0));const originality=Math.max(0,10-(sig.genericHits*3)-(sig.length<180?4:0));let score=source+accuracy+expert+net+learning+originality;if(sig.genericHits>=3)score-=8;if(!m.sources?.length)score-=10;score=Math.max(0,Math.min(100,Math.round(score)));const critical=issues.some(x=>['missing_title','no_explicit_source_mapping'].includes(x));const status=critical||score<EXPERT_THRESHOLDS.review?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':'REVIEW';return{score,status,issues,signals:sig};}
-const STRUCTURAL_AUDIT_VERSION='2026-10-04-structural1';
+const STRUCTURAL_AUDIT_VERSION='1.0.0';
 const STRUCTURAL_BLOCKERS=new Set([
   'missing_list_headers','missing_list_i','missing_list_ii','invalid_list_i_count','invalid_list_ii_count',
   'list_count_mismatch','list_instruction_swallowed','list_header_swallowed','invalid_assertion_reason',
@@ -203,7 +203,7 @@ async function loadStudyData(){
   let json=window.NETPSY_DATA||null;
   if(!json){
     try{
-      const response=await fetch('./syllabus-index.json?v=20261004-split1',{cache:'default'});
+      const response=await fetch('./syllabus-index.json?v=1.0.0',{cache:'default'});
       if(!response.ok) throw new Error('Syllabus index request failed: '+response.status);
       json=await response.json();
     }catch(fetchError){
@@ -212,7 +212,7 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Syllabus index has an invalid structure');
-  try{await loadScript('./question-renderer.js?v=20261004-structural1')}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
+  try{await loadScript('./question-renderer.js?v=1.0.0')}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
   D=json;
   const page=document.body?.dataset?.page||'';
   const practicePage=page==='practice'||page==='practice-session'||page==='daily-practice';
