@@ -667,14 +667,14 @@ function initLearningJourney(){
   const tour=document.querySelector('#journeyTour'); if(!tour)return;
   let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
   const steps=[
-    {eyebrow:'START HERE',title:'Start Learning',body:'Start here if you are new to the Study Hub. Your answers help the system choose an appropriate starting route and emphasis for your learning. When you return later, your learning progress stays on this device, so you can continue from where your learning left off rather than starting over.',target:()=>document.querySelector('#homeHero .hero-cta'),preview:'start'},
-    {eyebrow:'NAVIGATION · 1 OF 4',title:'Learn',body:'Learn takes you through the UGC NET Psychology syllabus, from units to topics and micro-topics where concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]'),preview:'learn'},
-    {eyebrow:'NAVIGATION · 2 OF 4',title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions, helping you test understanding rather than only read it.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]'),preview:'practice'},
-    {eyebrow:'NAVIGATION · 3 OF 4',title:'Revision',body:'Revision brings back concepts when they are due for spaced review. The aim is to strengthen retrieval over time, not simply reread notes.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]'),preview:'revision'},
-    {eyebrow:'NAVIGATION · 4 OF 4',title:'Progress',body:'Progress shows how your learning is developing across concept learning, mastery, practice performance, and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]'),preview:'progress'},
-    {eyebrow:'EXAM READINESS',title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown'),preview:'readiness'},
-    {eyebrow:'YOUR MINIMUM TARGET',title:'Daily Learning',body:'Your daily target has two actions: Learn first, then Practice. Both are part of the same daily learning session.',target:()=>[document.querySelector('#today .daily-focus-card[data-daily-preview="learn"]'),document.querySelector('#today .daily-focus-card[data-daily-preview="practice"]')],preview:'daily'},
-    {eyebrow:'QUICK CONCEPT HELP',title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:'quick'}
+    {title:'Start Learning',body:'Start here if you are new to the Study Hub. Your answers help the system choose an appropriate starting route and emphasis for your learning. When you return later, your learning progress stays on this device, so you can continue from where your learning left off rather than starting over.',target:()=>document.querySelector('#homeHero .hero-cta'),preview:'start'},
+    {title:'Learn',body:'Learn takes you through the UGC NET Psychology syllabus, from units to topics and micro-topics where concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]'),preview:'learn'},
+    {title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions, helping you test understanding rather than only read it.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]'),preview:'practice'},
+    {title:'Revision',body:'Revision brings back concepts when they are due for spaced review. The aim is to strengthen retrieval over time, not simply reread notes.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]'),preview:'revision'},
+    {title:'Progress',body:'Progress shows how your learning is developing across concept learning, mastery, practice performance, and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]'),preview:'progress'},
+    {title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown'),preview:'readiness'},
+    {title:'Daily Learning',body:'Your daily target has two actions: Learn first, then Practice. Both are part of the same daily learning session.',target:()=>[document.querySelector('#today .daily-focus-card[data-daily-preview="learn"]'),document.querySelector('#today .daily-focus-card[data-daily-preview="practice"]')],preview:'daily'},
+    {title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:'quick'}
   ];
   const previews={
     start:{label:'WHAT YOU’LL SEE',title:'A short learner setup',items:['A few questions help choose your starting route.','Your learning activity is saved on this device.','When you return, the Study Hub can guide you back to your current learning.']},
@@ -689,22 +689,30 @@ function initLearningJourney(){
   let step=0,activeTargets=[];
   const clearTargets=()=>{activeTargets.forEach(t=>{if(t){t.classList.remove('journey-highlight');t.removeAttribute('data-journey-target')}});activeTargets=[]};
   const close=()=>{clearTargets();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
+  const updateSpotlight=targets=>{
+    const backdrop=tour.querySelector('.journey-backdrop'); if(!backdrop)return;
+    const rects=targets.filter(Boolean).map(t=>t.getBoundingClientRect()).filter(r=>r.width&&r.height);
+    if(!rects.length){backdrop.innerHTML='';return}
+    const pad=5;
+    const holes=rects.map((r,i)=>'<rect x="'+Math.max(0,r.left-pad)+'" y="'+Math.max(0,r.top-pad)+'" width="'+Math.min(window.innerWidth-r.left+pad,r.width+pad*2)+'" height="'+Math.min(window.innerHeight-r.top+pad,r.height+pad*2)+'" rx="12" fill="black" key="'+i+'"></rect>').join('');
+    backdrop.innerHTML='<svg class="journey-spotlight-svg" viewBox="0 0 '+window.innerWidth+' '+window.innerHeight+'" preserveAspectRatio="none" aria-hidden="true"><defs><mask id="journeySpotlightMask"><rect width="100%" height="100%" fill="white"></rect>'+holes+'</mask></defs><rect width="100%" height="100%" fill="rgba(16,36,73,.48)" mask="url(#journeySpotlightMask)"></rect></svg>';
+  };
   const placeDialog=(targets)=>{
     const dialog=tour.querySelector('.journey-dialog'); if(!dialog)return;
     const margin=16,arr=targets.filter(Boolean),rect=arr[0]?.getBoundingClientRect();
-    if(!rect){dialog.style.left='50%';dialog.style.top='50%';dialog.style.transform='translate(-50%,-50%)';return}
+    if(!rect){dialog.style.left='50%';dialog.style.top='50%';dialog.style.transform='translate(-50%,-50%)';updateSpotlight(targets);return}
     dialog.style.transform='none'; const width=Math.min(560,window.innerWidth-margin*2); dialog.style.width=width+'px';
     const dialogHeight=dialog.offsetHeight; let left=Math.max(margin,Math.min(window.innerWidth-width-margin,rect.left+(rect.width/2)-(width/2))); let top=rect.bottom+18;
     if(top+dialogHeight>window.innerHeight-margin)top=rect.top-dialogHeight-18; if(top<margin)top=margin;
-    dialog.style.left=left+'px';dialog.style.top=top+'px';
+    dialog.style.left=left+'px';dialog.style.top=top+'px';updateSpotlight(targets);
   };
   const previewMarkup=kind=>{const p=previews[kind];if(!p)return '';return '<div class="journey-preview" aria-label="'+p.label+'"><div class="journey-preview-label">'+p.label+'</div><div class="journey-preview-title">'+p.title+'</div><div class="journey-preview-list">'+p.items.map(x=>'<div><span>✓</span>'+x+'</div>').join('')+'</div></div>'};
   const render=()=>{
     clearTargets(); const s=steps[step],raw=s.target?.(),targets=Array.isArray(raw)?raw.filter(Boolean):[raw].filter(Boolean);
-    tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
+    tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
     tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open'); activeTargets=targets;
     targets.forEach(t=>{t.classList.add('journey-highlight');t.setAttribute('data-journey-target','true')});
-    requestAnimationFrame(()=>{if(targets.length)targets[0].scrollIntoView({behavior:'smooth',block:'center',inline:'nearest'});setTimeout(()=>placeDialog(targets),220)});
+    requestAnimationFrame(()=>{if(targets.length)targets[0].scrollIntoView({behavior:'smooth',block:'center',inline:'nearest'});setTimeout(()=>placeDialog(targets),260)});
   };
   const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
   window.__openLearningJourney=()=>{step=0;render()};
@@ -722,7 +730,8 @@ function initLearningJourney(){
     const slot=tour.querySelector('.journey-preview-slot');
     if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
   },true);
-  window.addEventListener('resize',()=>{if(!tour.hidden&&activeTargets.length)placeDialog(activeTargets)});
+  const refresh=()=>{if(!tour.hidden&&activeTargets.length)placeDialog(activeTargets)};
+  window.addEventListener('resize',refresh); window.addEventListener('scroll',refresh,{passive:true});
   if(!seen)setTimeout(render,700);
 }
 let deferredInstallPrompt=null;
