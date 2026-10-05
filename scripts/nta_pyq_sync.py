@@ -22,6 +22,8 @@ PAGES=[
     "archive.html",
 ]
 OUT=Path("data/nta_pyq_registry.json")
+PRACTICE=Path("practice_questions.json")
+MAPPING=Path("mcq_mapping.json")
 TIMEOUT=30
 UA="NET-Psychology-NTA-Sync/1.0 (+https://github.com/ankitvrsharma/NET-Psychology)"
 

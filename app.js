@@ -29,218 +29,41 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}},publishedMicrotopics:new Set()};
-const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,deepDiveEnrichment:null,activeRecall:null,revisionGuidance:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
-const CONTENT_REGISTRY={ready:false,failClosed:true,version:null,pools:{}};
-async function loadContentRegistry(){
-  if(CONTENT_REGISTRY.ready)return CONTENT_REGISTRY;
-  try{
-    const r=await fetch('./content-pools/registry.json?v='+DATA_VERSION,{cache:'default'});
-    if(!r.ok)throw new Error('Content pool registry request failed: '+r.status);
-    const registry=await r.json();
-    if(!registry||!registry.pools||typeof registry.pools!=='object')throw new Error('Invalid content pool registry');
-    CONTENT_REGISTRY.ready=true; CONTENT_REGISTRY.failClosed=false;
-    CONTENT_REGISTRY.version=registry.version||DATA_VERSION; CONTENT_REGISTRY.pools=registry.pools;
-  }catch(e){console.error('Content pool registry failed:',e);CONTENT_REGISTRY.ready=false;CONTENT_REGISTRY.failClosed=true;CONTENT_REGISTRY.pools={};}
-  return CONTENT_REGISTRY;
-}
-async function loadContentPool(id){
-  await loadContentRegistry();
-  const meta=CONTENT_REGISTRY.pools[id];
-  if(!meta||meta.enabled===false)return null;
-  try{
-    const r=await fetch('./'+String(meta.path).replace(/^\.\//,'')+'?v='+DATA_VERSION,{cache:'default'});
-    if(!r.ok)throw new Error('Content pool request failed: '+id+' '+r.status);
-    return await r.json();
-  }catch(e){console.warn('Content pool unavailable:',id,e);return null;}
-}
-async function loadCanonicalContentLayer(json,mode='all'){
-  const page=document.body?.dataset?.page||'';
-  let ids=mode==='practice'?['questions']:mode==='micro'?
-    (page==='microtopic'?['microtopics','quickLearn']:page==='deep-dive'?['microtopics','deepDive','deepDiveEnrichment']:page==='active-recall'?['microtopics','activeRecall']:['microtopics','quickLearn']):
-    ['microtopics','quickLearn','deepDive','activeRecall','questions'];
-  if(mode!=='practice') ids=[...new Set([...ids,'sourceSynthesis'])];
-  const loaded=await Promise.all(ids.map(loadContentPool)); const byId={}; ids.forEach((id,i)=>byId[id]=loaded[i]);
-  const qpool=byId.questions;
-  CANONICAL_CONTENT.practiceQuestions=Array.isArray(qpool)?qpool:(qpool&&typeof qpool==='object'?[...(Array.isArray(qpool.pyq)?qpool.pyq:[]),...(Array.isArray(qpool.practice)?qpool.practice:[])]:null);
-  CANONICAL_CONTENT.microtopics=byId.microtopics||null; CANONICAL_CONTENT.quickLearnCards=byId.quickLearn||null;
-  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.deepDiveEnrichment=byId.deepDiveEnrichment||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.revisionGuidance=byId.revisionGuidance||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
-  const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
-  for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
-    const k=key(u.id,t.id,m.id);
-    const md=aliasedContent(micro,k); if(md&&typeof md==='object')Object.assign(m,md);
-    const d=aliasedContent(CANONICAL_CONTENT.deepDive,k); if(d&&typeof d==='object')Object.assign(m,d); const de=aliasedContent(CANONICAL_CONTENT.deepDiveEnrichment,k); if(de&&typeof de==='object')Object.assign(m,de);
-    const a=aliasedContent(CANONICAL_CONTENT.activeRecall,k); if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
-    const ss=aliasedContent(CANONICAL_CONTENT.sourceSynthesis,k);
-    if(ss&&typeof ss==='object'){
-      m.source_synthesis=ss;
-      m.source_policy=ss.source_policy||'all-candidate';
-      const existingSources=Array.isArray(m.sources)?m.sources:[];
-      const evidenceSources=(Array.isArray(ss.evidence)?ss.evidence:[]).map(e=>e.source_id).filter(Boolean);
-      m.sources=[...new Set([...existingSources,...evidenceSources])];
-      m.source_focus=[];
-      const integrated=String(ss.integrated_note||'').trim();
-      if(integrated){
-        const base=String(m.detailed_explanation||m.deep_learning||m.deep||'').trim();
-        const marker='INTEGRATED SOURCE SYNTHESIS';
-        if(!base.includes(marker))m.detailed_explanation=(base?base+'\\n\\n':'')+marker+'\\n'+integrated;
-      }
-    }
-  }
-  return CANONICAL_CONTENT;
-}
+let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
 const KEY='netPsychProgress';
 async function loadContentGate(){
-  // The release manifest is authoritative when available. If it is temporarily
-  // unreachable, do not turn a valid learner build into an empty application:
-  // the same deterministic expert audit used by the publication rule can act
-  // as the local release decision. Owner overrides remain optional.
-  let cfg={}, manifest=null, owner={};
   try{
-    const r=await fetch('./config/content-publish-config.json?v='+DATA_VERSION,{cache:'no-store'});
-    if(r.ok) cfg=await r.json()||{};
-  }catch(e){ console.warn('Publication config unavailable; using manifest/default mode.',e); }
-  try{
-    const r=await fetch('./config/content-publish-manifest.json?v='+DATA_VERSION,{cache:'no-store'});
-    if(r.ok) manifest=await r.json();
-  }catch(e){ console.warn('Publication manifest unavailable; using deterministic audit fallback.',e); }
-  try{
-    const r=await fetch('./config/content-owner-overrides.json?v='+DATA_VERSION,{cache:'no-store'});
-    if(r.ok) owner=await r.json()||{};
-  }catch(e){ console.warn('Owner overrides unavailable; continuing without overrides.',e); }
-  if(manifest&&typeof manifest==='object'&&manifest.ai_pass&&typeof manifest.ai_pass==='object'){
-    const publishedMicrotopics=Array.isArray(manifest.ai_pass.microtopics)?manifest.ai_pass.microtopics.map(String):[];
-    CONTENT_GATE={ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'expert_or_owner',ai:manifest.ai_pass,owner:{approved:owner.owner_approved||{},rejected:owner.owner_rejected||{}},publishedMicrotopics:new Set(publishedMicrotopics)};
-    return;
+    const [cfgRes,manifestRes,ownerRes]=await Promise.all([
+      fetch('./content-publish-config.json?v=20261004-expert5',{cache:'default'}),
+      fetch('./content-publish-manifest.json?v=20261004-expert5',{cache:'default'}),
+      fetch('./content-owner-overrides.json?v=20261004-expert5',{cache:'default'})
+    ]);
+    if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
+    const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
+    CONTENT_GATE={
+      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'ai_or_owner',
+      ai:manifest.ai_pass||{questions:{pass:[]},microtopics:{pass:[]},quickLearnCards:{pass:[]},activeRecall:{pass:[]}},
+      owner:{
+        approved:owner.owner_approved||{},
+        rejected:owner.owner_rejected||{}
+      }
+    };
+  }catch(e){
+    console.error('Content publishing gate failed:',e);
+    CONTENT_GATE={ready:false,failClosed:true,mode:'owner_only',ai:{},owner:{approved:{},rejected:{}}};
   }
-  CONTENT_GATE={ready:true,failClosed:false,mode:cfg.mode||'expert_or_owner',ai:{},owner:{approved:owner.owner_approved||{},rejected:owner.owner_rejected||{}},publishedMicrotopics:new Set()};
-  console.warn('Using deterministic expert publication fallback because the release manifest is unavailable.');
 }
-function normalizeMicrotopicId(id){
-  const raw=String(id??'').trim();
-  const parts=raw.split('-').map(x=>x.trim());
-  if(parts.length!==3)return raw;
-  return parts.map(part=>{
-    const n=Number(part);
-    return Number.isFinite(n)?String(n):part;
-  }).join('-');
-}
-function normalizeIdSet(values,type){
-  const list=Array.isArray(values)?values:[];
-  return new Set(list.map(v=>type==='microtopics'?normalizeMicrotopicId(v):String(v).trim()).filter(Boolean));
-}
-function gateSet(obj,key){return normalizeIdSet(obj?.[key],key)}
-const EXPERT_AUDIT_VERSION='1.0.0';
+function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
+const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
 const EXPERT_THRESHOLDS={pass:70,review:60};
 function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
 function expertSignals(text){const s=expertText(text).replace(/\s+/g,' ').trim(),low=s.toLowerCase();const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand','is very important'];const domain=['mechanism','distinguish','contrast','whereas','condition','evidence','study','research','theory','model','construct','process','predict','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','individual difference','development','assessment','experiment','correlation','causal'];const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic'];return{length:s.length,genericHits:generic.filter(x=>low.includes(x)).length,domainHits:domain.filter(x=>low.includes(x)).length,teachingHits:teaching.filter(x=>low.includes(x)).length,contrastHits:(low.match(/\b(distinguish|different from|whereas|unlike|contrast|not the same as|however)\b/g)||[]).length,mechanismHits:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length,names:(s.match(/\b[A-Z][a-z]+(?:[- ][A-Z][a-z]+)?\b/g)||[]).length};}
 function expertMicroAudit(m){const core=expertText([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.kaplan_enrichment?.notes,m.simply_psychology_enrichment?.notes]),sig=expertSignals(core),issues=[];if(!String(m.title||'').trim())issues.push('missing_title');if(sig.length<220)issues.push('too_thin');if(!Array.isArray(m.sources)||!m.sources.length)issues.push('no_explicit_source_mapping');if(sig.genericHits>=3)issues.push('generic_ai_style');if(sig.domainHits<3)issues.push('low_psychology_specificity');if(sig.mechanismHits<1&&sig.contrastHits<1)issues.push('weak_explanation_structure');let source=Array.isArray(m.sources)&&m.sources.length?15:0;if(m.kaplan_enrichment?.notes||m.simply_psychology_enrichment?.notes||m.source_notes)source+=5;const accuracy=Math.min(25,10+(sig.domainHits*2)+(sig.mechanismHits*2)+(sig.contrastHits*2));const expert=Math.min(20,8+(sig.length>=500?5:0)+(sig.domainHits>=6?4:0)+(sig.names>=2?3:0));const net=Math.min(15,6+(sig.teachingHits*2)+(String(m.content_notes||'').toLowerCase().includes('pyq')?3:0));const learning=Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(sig.contrastHits?2:0));const originality=Math.max(0,10-(sig.genericHits*3)-(sig.length<180?4:0));let score=source+accuracy+expert+net+learning+originality;if(sig.genericHits>=3)score-=8;if(!m.sources?.length)score-=10;score=Math.max(0,Math.min(100,Math.round(score)));const critical=issues.some(x=>['missing_title','no_explicit_source_mapping'].includes(x));const status=critical||score<EXPERT_THRESHOLDS.review?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':'REVIEW';return{score,status,issues,signals:sig};}
-const STRUCTURAL_AUDIT_VERSION='1.0.0';
-const STRUCTURAL_BLOCKERS=new Set([
-  'missing_list_headers','missing_list_i','missing_list_ii','invalid_list_i_count','invalid_list_ii_count',
-  'list_count_mismatch','list_instruction_swallowed','list_header_swallowed','invalid_assertion_reason',
-  'invalid_structured_items','renderer_contract_failed','answerability_failed','ocr_corruption_signal'
-]);
-function structuralAuditText(value){return cleanPracticeText(value).replace(/\s+/g,' ').trim();}
-function parseStructuredMarkers(value,kind='generic'){
-  const text=structuralAuditText(value),hits=[],re=/(?<!\S)([a-d]|[1-4]|i{1,3}|iv|v)s*[.)]+\s+/gi;
-  let m;
-  while((m=re.exec(text)))hits.push({label:m[1].toLowerCase(),start:m.index,end:re.lastIndex});
-  return hits.map((h,i)=>({label:h.label,text:text.slice(h.end,i+1<hits.length?hits[i+1].start:text.length).trim()})).filter(x=>x.text);
-}
-function parseMatchLists(value){
-  const raw=structuralAuditText(value);
-  const leftHeader=/\bList\s*[-–—]?\s*I\b/i.exec(raw);
-  const rightHeader=/\bList\s*[-–—]?\s*II\b/i.exec(raw);
-  if(!leftHeader||!rightHeader||rightHeader.index<=leftHeader.index)return{raw,left:[],right:[],hasLeftHeader:!!leftHeader,hasRightHeader:!!rightHeader};
-  const leftBody=raw.slice(leftHeader.index+leftHeader[0].length,rightHeader.index).replace(/^\s*[:\-–—]?\s*/,'').trim();
-  const rightBody=raw.slice(rightHeader.index+rightHeader[0].length).replace(/^\s*[:\-–—]?\s*/,'').trim();
-  const cutInstruction=x=>x.split(/\bChoose\s+the\s+correct\s+answer\b/i)[0].split(/\bCodes?\s*:/i)[0].trim();
-  return{raw,left:parseStructuredMarkers(cutInstruction(leftBody),'match'),right:parseStructuredMarkers(cutInstruction(rightBody),'match'),hasLeftHeader:true,hasRightHeader:true};
-}
-function structuralQuestionAudit(q){
-  const kind=String(q?.kind||'direct').toLowerCase(),raw=structuralAuditText(q?.question||q?.q||''),issues=[],details={kind};
-  if(!raw)issues.push('missing_question');
-  if(kind==='match'){
-    const parsed=parseMatchLists(raw);details.listI=parsed.left;details.listII=parsed.right;
-    if(!parsed.hasLeftHeader)issues.push('missing_list_i');
-    if(!parsed.hasRightHeader)issues.push('missing_list_ii');
-    if(parsed.hasLeftHeader&&parsed.hasRightHeader){
-      if(parsed.right.length===0)issues.push('missing_list_ii');
-      if(parsed.left.length===0)issues.push('missing_list_i');
-      if(parsed.left.length>0&&parsed.left.length<4)issues.push('invalid_list_i_count');
-      if(parsed.right.length>0&&parsed.right.length<4)issues.push('invalid_list_ii_count');
-      if(parsed.left.length&&parsed.right.length&&parsed.left.length!==parsed.right.length)issues.push('list_count_mismatch');
-      const all=[...parsed.left,...parsed.right];
-      if(all.some(x=>/\b(?:List\s*[-–—]?\s*[IV]+|Choose\s+the\s+correct\s+answer|Codes?\s*:)/i.test(x.text)))issues.push('list_instruction_swallowed');
-      if(/\bChoose\s+the\s+correct\s+answer\b/i.test(raw.match(/List\s*[-–—]?\s*II\b[\s\S]*$/i)?.[0]||'')&&parsed.right.some(x=>/Choose\s+the\s+correct/i.test(x.text)))issues.push('list_instruction_swallowed');
-      if(/\b(?:List\s*[-–—]?\s*I|List\s*[-–—]?\s*II)\b/i.test(parsed.left.map(x=>x.text).join(' ')))issues.push('list_header_swallowed');
-      const digitRuns=(raw.match(/\b\d{3,}\b/g)||[]).length;
-      if(digitRuns>0)issues.push('ocr_corruption_signal');
-    }
-    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
-    const renderedListCount=(rendered.match(/class=\"structured-item\"/g)||[]).length;
-    if(!rendered.includes('class=\"matching-lists\"')||renderedListCount<8)issues.push('renderer_contract_failed');
-  }else if(kind==='assertion-reason'){
-    const assertion=(raw.match(/Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+Reason\s*\(R\)|\s+\d+\s*\.?\s*Reason\s*\(R\))/i)||[])[1]?.trim()||'';
-    const reason=(raw.match(/Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)/i)||[])[1]?.trim()||'';
-    if(!assertion||!reason||assertion==='Assertion statement'||reason==='Reason statement')issues.push('invalid_assertion_reason');
-    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
-    if(!rendered.includes('assertion-reason-grid')||rendered.includes('Assertion statement')||rendered.includes('Reason statement'))issues.push('renderer_contract_failed');
-  }else if(kind==='sequence'||kind==='statement-set'){
-    const items=parseStructuredMarkers(extractBeforeCodes(raw),kind);
-    details.items=items;
-    if(items.length<2)issues.push('invalid_structured_items');
-    const rendered=typeof structuredQuestionHTML==='function'?structuredQuestionHTML(q):'';
-    if(items.length<2||!rendered.includes('question-items'))issues.push('renderer_contract_failed');
-  }else{
-    const stem=stripQuestionTail(raw);
-    if(stem.length<20)issues.push('invalid_structured_items');
-    if(/\bChoose\s+the\s+correct\s+answer\b/i.test(stem)&&/\bCodes?\s*:/i.test(stem))issues.push('ocr_corruption_signal');
-  }
-  const optionsOk=Array.isArray(q?.options)&&q.options.length===4&&Number.isInteger(q?.answer)&&q.answer>=0&&q.answer<4;
-  if(!optionsOk)issues.push('answerability_failed');
-  return{status:issues.length?'ISSUE':'PASS',issues,details,version:STRUCTURAL_AUDIT_VERSION};
-}
-
-function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');const structural=structuralQuestionAudit(q);issues.push(...structural.issues);let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const structuralFailure=structural.issues.length>0;const status=structuralFailure||issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer','answerability_failed'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues:[...new Set(issues)],signals:sig,structural};}
+function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const status=issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues,signals:sig};}
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
-function contentIsPublished(type,id){
-  if(!CONTENT_GATE.ready)return false;
-  const idString=type==='microtopics'?normalizeMicrotopicId(id):String(id??'').trim();
-  const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type),legacy=legacyKeysFor(idString);
-  if(rejected.has(idString))return false;
-  if(approved.has(idString)||legacy.some(k=>approved.has(k)))return true;
-  if(type==='microtopics'){
-    const published=CONTENT_GATE.publishedMicrotopics instanceof Set
-      ?new Set([...CONTENT_GATE.publishedMicrotopics].map(normalizeMicrotopicId))
-      :normalizeIdSet([],type);
-    if(published.has(idString)||legacy.some(k=>published.has(normalizeMicrotopicId(k))))return true;
-  }
-  if(CONTENT_GATE.mode==='owner_only')return false;
-  if(CONTENT_GATE.mode==='expert_or_owner'){
-    const aiPass=gateSet(CONTENT_GATE.ai,type);
-    if(aiPass.has(idString)||legacy.some(k=>aiPass.has(k)))return true;
-    return expertAudit(type,idString).status==='PASS';
-  }
-  return gateSet(CONTENT_GATE.ai,type).has(idString)||legacy.some(k=>gateSet(CONTENT_GATE.ai,type).has(k));
-}
-const KEY_MIGRATIONS=Object.freeze({
-  "2-15-1":"2-16-1","2-15-2":"2-16-2","2-15-3":"2-16-3",
-  "3-7-1":"3-6-7","4-5-1":"4-4-7","4-7-3":"4-10-1","4-7-4":"4-10-2","4-7-5":"4-10-3","4-7-6":"4-10-4",
-  "6-4-4":"6-9-1","6-4-5":"6-9-2","7-3-2":"7-18-1","7-3-3":"7-19-1"
-});
-const legacyKeysFor=(current)=>Object.keys(KEY_MIGRATIONS).filter(old=>KEY_MIGRATIONS[old]===current);
-function aliasedContent(obj,id){
-  if(!obj||typeof obj!=='object')return null;
-  if(obj[id]!=null)return obj[id];
-  for(const old of legacyKeysFor(id)){if(obj[old]!=null)return obj[old];}
-  const sep=String(id).indexOf('|');
-  if(sep>0){const base=String(id).slice(0,sep),suffix=String(id).slice(sep);for(const old of legacyKeysFor(base)){if(obj[old+suffix]!=null)return obj[old+suffix];}}
-  return null;
-}
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.1.0';
+function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);if(rejected.has(String(id)))return false;if(approved.has(String(id)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id));}
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
   return new Promise((resolve,reject)=>{
@@ -253,56 +76,63 @@ function loadScript(src){
   });
 }
 
-async function loadHomeLearning(){
-  const pool=await loadContentPool('homeLearning');
-  CANONICAL_CONTENT.homeLearning=pool;
-  return pool;
-}
-function renderHomeLearning(){
-  const quick=quickLearnItem(),quickBox=$('#quickLearn');
-  if(quickBox&&quick){
-    quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category||'CONCEPT')+'</span></div><div class="quick-learn-body"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
-  }
-}
-
 async function loadStudyData(){
   let json=window.NETPSY_DATA||null;
   if(!json){
     try{
-      const response=await fetch('./data/syllabus-index.json?v='+DATA_VERSION,{cache:'no-store'});
-      if(!response.ok) throw new Error('Syllabus index request failed: '+response.status);
+      const response=await fetch('./data.json?v='+DATA_VERSION+'',{cache:'default'});
+      if(!response.ok) throw new Error('Study data request failed: '+response.status);
       json=await response.json();
     }catch(fetchError){
-      console.error('Syllabus index could not be loaded.',fetchError);
-      throw fetchError;
+      console.warn('Study data JSON fetch failed; falling back to browser bundle.',fetchError);
+      await loadScript('./data.js?v='+DATA_VERSION+'');
+      json=window.NETPSY_DATA||null;
     }
   }
-  if(!json || !Array.isArray(json.units)) throw new Error('Syllabus index has an invalid structure');
-  try{await loadScript('./question-renderer.js?v='+DATA_VERSION)}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
-  D=json;
-  const page=document.body?.dataset?.page||'';
-  const practicePage=page==='practice'||page==='practice-session'||page==='daily-practice';
-  const microPage=page==='microtopic'||page==='deep-dive'||page==='active-recall'||page==='learner'||page==='learn'||page==='unit'||page==='topic'||page==='daily3'||page==='revision'||page==='progress';
-
-  // Render the core page as soon as the essential study structure is available.
-  // Large enrichment/canonical files are loaded only when the current page needs them.
-  if(practicePage) await loadCanonicalContentLayer(json,'practice');
-  else if(microPage) await loadCanonicalContentLayer(json,'micro');
-
-  // Publishing state is small and required for learner-facing filtering.
-  await loadContentGate();
-
-  if(practicePage){
-    try{
-      if(Array.isArray(CANONICAL_CONTENT.practiceQuestions))PRACTICE_QUESTIONS=CANONICAL_CONTENT.practiceQuestions.slice();
-      if(!PRACTICE_QUESTIONS.length){
-        const pq=await fetch('./content/questions/questions.json?v='+DATA_VERSION,{cache:'default'});
-        if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;else if(parsed&&typeof parsed==='object')PRACTICE_QUESTIONS=[...(Array.isArray(parsed.pyq)?parsed.pyq:[]),...(Array.isArray(parsed.practice)?parsed.practice:[])];}
+  if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  try{
+    const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
+    if(kr.ok){
+      const kp=await kr.json();
+      const map=kp&&kp.microtopics&&typeof kp.microtopics==='object'?kp.microtopics:{};
+      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+        if(map[m.title]) m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:map[m.title]};
       }
-      if(PRACTICE_QUESTIONS.length)PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
+      json.kaplan_enrichment_meta=kp.source||null;
+    }
+  }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
+  try{
+    const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
+    if(sr.ok) json.study_source_config=await sr.json();
+  }catch(e){console.warn('Study source configuration could not be loaded:',e)}
+  try{
+    const sp=await fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'});
+    if(sp.ok){
+      const cfg=await sp.json();
+      const entries=Array.isArray(cfg?.topics)?cfg.topics:[];
+      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+        const title=String(m.title||'').toLowerCase();
+        const match=entries.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));
+        if(match?.notes) m.simply_psychology_enrichment={source:cfg.source?.title||'Simply Psychology',role:cfg.source?.role||'Selective web-based explanation and example layer',notes:match.notes};
+      }
+      json.simply_psychology_enrichment_meta=cfg.source||null;
+    }
+  }catch(e){console.warn('Simply Psychology enrichment could not be loaded:',e)}
+  for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
+    m.study_source_config=json.study_source_config||null;
+  }
+  D=json;
+  await loadContentGate();
+  // Render core UI immediately; optional enrichment must never block a usable page.
+  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
+  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
+    try{
+      const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
+      if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
+      try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
     try{
-      const mm=await fetch('./data/mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
+      const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
       if(mm.ok){
         const map=await mm.json();
         const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
@@ -319,87 +149,19 @@ async function loadStudyData(){
     }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
     PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(q=>contentIsPublished('questions',q.id));
   }
-
-  // Optional source enrichments never block the first usable render.
-  Promise.all([
-    fetch('./content/source-synthesis/kaplan_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./content/source-synthesis/study_sources.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./content/source-synthesis/simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null)
-  ]).then(([kp,study,sp])=>{
-    if(kp?.microtopics)for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[])if(kp.microtopics[m.title])m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:kp.microtopics[m.title]};
-    if(study)json.study_source_config=study;
-    if(sp?.topics)for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){const title=String(m.title||'').toLowerCase(),match=sp.topics.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));if(match?.notes)m.simply_psychology_enrichment={source:sp.source?.title||'Simply Psychology',role:sp.source?.role||'Selective web-based explanation and example layer',notes:match.notes};}
-    for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[])m.study_source_config=json.study_source_config||null;
-  }).catch(e=>console.warn('Optional source enrichment failed:',e));
-
   safeRender();
-
-  // Home-first loading: render the page before fetching the small daily-learning payload.
-  if(page==='home'){
-    loadHomeLearning().then(()=>renderHomeLearning());
-  }else if(page==='daily3'||page==='daily-practice'){
-    await loadHomeLearning();
-    safeRender();
-  }
   return true;
 }
+
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
 const key=(u,t,m)=>`${u}-${t}-${m}`;
-const getP=k=>{const s=state();if(s[k])return s[k];for(const old of legacyKeysFor(k)){if(s[old]){s[k]=s[old];delete s[old];save(s);return s[k];}}return {status:'NEW',stage:0,lastCompletedStage:-1};};
+const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
-function resolvePublishedMicrotopics(){
-  const syllabus=units();
-  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set?CONTENT_GATE.publishedMicrotopics:new Set();
-  const normalizedPublished=new Set([...publishedSet].map(normalizeMicrotopicId).filter(Boolean));
-  const items=[];
-  const seen=new Set();
-  let syllabusMicrotopics=0;
-  let manifestIntersection=0;
-  const runtimeSamples={syllabus:[],published:[...normalizedPublished].slice(0,5)};
-  for(const u of syllabus){
-    for(const t of (u.topics||[])){
-      for(const m of (t.microtopics||[])){
-        syllabusMicrotopics++;
-        const k=key(u.id,t.id,m.id),normalizedKey=normalizeMicrotopicId(k);
-        if(runtimeSamples.syllabus.length<5)runtimeSamples.syllabus.push(normalizedKey);
-        if(normalizedPublished.has(normalizedKey)){
-          manifestIntersection++;
-          if(!seen.has(normalizedKey)){seen.add(normalizedKey);items.push({u,t,m,k});}
-        }
-      }
-    }
-  }
-  // A publication manifest is an allow-list of actual syllabus IDs. If the
-  // normalized intersection is unexpectedly empty, do not manufacture content;
-  // expose the exact runtime samples so the mismatch can be diagnosed from the
-  // learner page without developer tools.
-  const diagnostic={
-    syllabusMicrotopics,
-    publishedMicrotopics:normalizedPublished.size,
-    manifestIntersection,
-    resolvedMicrotopics:items.length,
-    gateReady:!!CONTENT_GATE.ready,
-    manifestBacked:normalizedPublished.size>0,
-    publicationResolution:'runtime-syllabus-index',
-    runtimeSamples
-  };
-  window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
-  window.__NETPSY_RUNTIME.publishedResolver=diagnostic;
-  return {items,diagnostic};
-}
-const all=()=>resolvePublishedMicrotopics().items;
-const find=()=>{
-  const u=units().find(x=>String(x.id)===String(Q.get('unit')));
-  const t=u?.topics?.find(x=>String(x.id)===String(Q.get('topic')));
-  const m=t?.microtopics?.find(x=>String(x.id)===String(Q.get('micro')));
-  const k=u&&t&&m?key(u.id,t.id,m.id):null;
-  if(!u||!t||!m)return {u,t,m,k:null};
-  const resolved=resolvePublishedMicrotopics().items.some(x=>x.k===k);
-  return resolved?{u,t,m,k}:{u,t,m:null,k:null};
-};
+const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
+const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
@@ -456,28 +218,6 @@ function progressTopicSummary(){
   const notRevision=topics.filter(x=>x.microtopics.every(m=>{const p=getP(key(x.u.id,x.t.id,m.id));return !(p.revisionCount>0||p.next||p.lastRevision)}));
   return {total:topics.length,touched:touched.length,mastered:mastered.length,untouched:topics.length-touched.length,revised:revised.length,pending:pending.length,notRevision:notRevision.length};
 }
-function getStartProfile(){try{const p=JSON.parse(localStorage.getItem('netPsychStartProfile')||'null');return p&&p.experience?p:null}catch{return null}}
-function journeyPlan(p){
-  p=p||getStartProfile(); if(!p)return null;
-  const route={experience:p.experience,confidence:Number(p.confidence||3),challenges:p.challenges||[],priorities:p.learningPriorities||[],studyTime:p.studyTime||'30-60'};
-  let first='Learn', reason='Build your understanding before moving into retrieval and practice.';
-  if(route.experience==='revision'){first='Revision + Practice';reason='You said your main need is revision and practice, so the journey starts with retention and exam application.'}
-  else if(route.experience==='appeared'){first='Practice + PYQs';reason='Because you have appeared in NET, the journey emphasizes exam application and then targets the concepts behind your errors.'}
-  else if(route.experience==='prepared'){first='Learn + Targeted Practice';reason='You have prepared before, so the journey can rebuild weak areas without treating you as a complete beginner.'}
-  if(route.challenges.includes('memory'))reason+=' Extra emphasis is placed on active recall and spaced revision.';
-  if(route.challenges.includes('comparison'))reason+=' Similar concepts will be surfaced together for deliberate comparison.';
-  if(route.challenges.includes('application')||route.challenges.includes('practice'))reason+=' More application and question practice will reinforce the learning.';
-  if(route.priorities.includes('pyq'))reason+=' PYQs are a priority in your practice mix.';
-  if(route.priorities.includes('weak'))reason+=' Mistakes will be used to guide weak-area practice.';
-  const timePlan={
-    '15-30':'Complete the 3 concepts + 10-question Daily Learning target; stop there if time is tight.',
-    '30-60':'Complete Daily Learning, then use remaining time for due revision.',
-    '60-120':'Complete Daily Learning, due revision, then add targeted PYQ/weak-area practice.',
-    '120-180':'Complete Daily Learning, revision and a focused PYQ/weak-area block.',
-    '180+':'Complete Daily Learning, revision and deeper practice; use remaining time for difficult or high-value topics.'
-  };
-  return {...route,first,reason,timePlan:timePlan[route.studyTime]||timePlan['30-60']};
-}
 function startPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
@@ -490,40 +230,50 @@ function startPage(){
     $('#editStartProfile').onclick=()=>{localStorage.removeItem('netPsychStartProfile');startPage()};
     return;
   }
-  root.innerHTML="<section class=\"start-hero\"><div class=\"eyebrow\">START YOUR LEARNING JOURNEY</div><h1>Let’s build a learning journey that fits you.</h1><p>These answers set your starting route and priorities. They are not labels or fixed learning styles; your actual practice and recall performance will refine the journey over time.</p></section>\n  <form class=\"start-form\" id=\"startForm\">\n    <div class=\"start-progress\"><span>1 of 5</span><i><b style=\"width:20%\"></b></i></div>\n    <div class=\"start-step active\" data-step=\"1\"><fieldset><legend>1. Where are you starting from?</legend>\n      <label><input type=\"radio\" name=\"experience\" value=\"new-net\" required><span>I’m new to UGC NET Psychology</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"prepared\" required><span>I’ve prepared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"appeared\"><span>I’ve appeared in NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"revision\"><span>I mainly need revision and practice</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"2\"><fieldset><legend>2. How well can you currently work with Psychology concepts?</legend><p class=\"start-help\">Think about what you can do without looking at your notes.</p>\n      <label><input type=\"radio\" name=\"confidence\" value=\"1\" required><span>I often need explanations to understand concepts</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"2\"><span>I understand basic ideas but struggle with details</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"3\"><span>I understand most topics but need stronger recall</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"4\"><span>I can usually explain concepts without notes</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"5\"><span>I can explain, compare and apply most concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"3\"><fieldset><legend>3. What most gets in the way of your NET preparation?</legend><p class=\"start-help\">Choose up to 2. Your choices determine where the system puts extra support.</p>\n      <label><input type=\"checkbox\" name=\"challenge\" value=\"understanding\"><span>Understanding difficult concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"memory\"><span>I understand it today but forget it later</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"comparison\"><span>Similar theories or concepts get mixed up</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"application\"><span>I understand theory but struggle to apply it</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"practice\"><span>I struggle with MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"revision\"><span>I struggle to revise consistently</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"planning\"><span>I don’t know what to study next</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"syllabus\"><span>The syllabus feels too large to manage</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"4\"><fieldset><legend>4. What should the system help you do more of?</legend><p class=\"start-help\">Choose up to 3. These are priorities, not fixed learning styles.</p>\n      <label><input type=\"checkbox\" name=\"preference\" value=\"understand\"><span>Understand — clearer explanations and examples</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"remember\"><span>Remember — active recall and spaced revision</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"apply\"><span>Apply — application-based questions</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"pyq\"><span>Master PYQs — previous-year question practice</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"weak\"><span>Fix weak areas — targeted practice from mistakes</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"compare\"><span>Compare concepts — distinctions between similar theories</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"consistency\"><span>Build consistency — manageable daily targets</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"5\"><fieldset><legend>5. How much time can you realistically give NET Psychology on a normal day?</legend><p class=\"start-help\">Choose what you can sustain on most days, not your best day.</p>\n      <label><input type=\"radio\" name=\"studyTime\" value=\"15-30\" required><span>15–30 minutes</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"30-60\"><span>30–60 minutes</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"60-120\"><span>1–2 hours</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"120-180\"><span>2–3 hours</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"180+\"><span>3+ hours</span></label>\n    </fieldset></div>\n    <div class=\"start-actions\"><button class=\"btn\" type=\"button\" id=\"startBack\" hidden>← Back</button><button class=\"btn primary\" type=\"button\" id=\"startNext\">Next →</button></div>\n  </form>";
+  root.innerHTML="<section class=\"start-hero\"><div class=\"eyebrow\">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>Tell us where you are starting and what you want help with, so your first learning steps feel relevant to you. You can change your answers later.</p></section>\n  <form class=\"start-form\" id=\"startForm\">\n    <div class=\"start-progress\"><span>1 of 4</span><i><b style=\"width:25%\"></b></i></div>\n    <div class=\"start-step active\" data-step=\"1\"><fieldset><legend>1. Where are you starting from?</legend>\n      <label><input type=\"radio\" name=\"experience\" value=\"new-net\" required><span>I’m new to UGC NET Psychology</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"psych-new-net\"><span>I know Psychology but I’m new to NET preparation</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"prepared\"><span>I’ve prepared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"appeared\"><span>I’ve appeared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"revision\"><span>I mainly need revision and practice</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"2\"><fieldset><legend>2. How confident do you currently feel?</legend>\n      <label><input type=\"radio\" name=\"confidence\" value=\"1\" required><span>I struggle with most concepts</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"2\"><span>I know some basics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"3\"><span>I understand many topics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"4\"><span>I’m fairly confident</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"5\"><span>I can explain and apply most concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"3\"><fieldset><legend>3. What are your biggest challenges?</legend><p class=\"start-help\">Choose up to 2.</p>\n      <label><input type=\"checkbox\" name=\"challenge\" value=\"0\"><span>Understanding difficult concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"1\"><span>Remembering what I study</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"2\"><span>Confusing similar theories or concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"3\"><span>Applying concepts to situations</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"4\"><span>Solving MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"5\"><span>Revising consistently</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"6\"><span>Knowing what to study next</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"7\"><span>Managing the large syllabus</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"4\"><fieldset><legend>4. What helps you learn best?</legend><p class=\"start-help\">Choose up to 3. These are preferences, not fixed learning styles.</p>\n      <label><input type=\"checkbox\" name=\"preference\" value=\"0\"><span>Clear explanations</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"1\"><span>Examples and applications</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"2\"><span>Active-recall questions</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"3\"><span>MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"4\"><span>Visual summaries</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"5\"><span>Short revision notes</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"6\"><span>Comparisons between similar concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-actions\"><button class=\"btn\" type=\"button\" id=\"startBack\" hidden>← Back</button><button class=\"btn primary\" type=\"button\" id=\"startNext\">Next →</button></div>\n";
   const form=$('#startForm'),steps=Array.from(form.querySelectorAll('.start-step')),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
   const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
   form.addEventListener('change',e=>{
     if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
     if(e.target.name==='preference' && form.querySelectorAll('input[name="preference"]:checked').length>3)e.target.checked=false;
   });
-  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;if(current===3)return form.querySelectorAll('input[name="preference"]:checked').length>0;return !!form.querySelector('input[name="studyTime"]:checked');};
+  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;return form.querySelectorAll('input[name="preference"]:checked').length>0;};
   next.addEventListener('click',()=>{
-    if(!valid()){alert(current===2?'Choose up to 2 challenges, with at least one selected.':current===3?'Choose up to 3 priorities, with at least one selected.':'Please select an answer to continue.');return;}
+    if(!valid()){alert(current===2?'Choose at least one challenge.':current===3?'Choose at least one preference.':'Please select an answer to continue.');return;}
     if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
-    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:Number(form.querySelector('[name="confidence"]:checked').value),challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPriorities:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),studyTime:form.querySelector('[name="studyTime"]:checked').value,created:new Date().toISOString(),updated:new Date().toISOString()};
+    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
     localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
     const startTarget='learner.html';
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>Your starting plan is ready.</h1><p>Your answers will guide the emphasis of your first learning steps. As you practise and recall, your actual performance can become more important than this initial self-assessment.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you understand concepts, strengthen recall, practise what you know, and return to important ideas at the right time.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
   });
   back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
   update();
 }function learnPage(){
   document.title='Learn — UGC NET Psychology';
-  const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).last||getP(b.k).lastRevision||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).lastRevision||getP(a.k).startedAt||0))[0];
+  const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
   const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
-  const stats=u=>{const available=u.topics.flatMap(t=>(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>getP(key(u.id,t.id,m.id))));const started=available.filter(p=>p.status&&p.status!=='NEW').length;const mastered=available.filter(p=>p.status==='MASTERED').length;const due=available.filter(p=>p.next&&new Date(p.next)<=new Date()).length;return {started,mastered,due,total:available.length,percent:available.length?Math.round(started/available.length*100):0};};
+  const stats=u=>{
+    const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));
+    const started=items.filter(p=>p.status&&p.status!=='NEW').length;
+    const mastered=items.filter(p=>p.status==='MASTERED').length;
+    const due=items.filter(p=>p.next&&new Date(p.next)<=new Date()).length;
+    return {started,mastered,due,total:items.length,percent:items.length?Math.round(started/items.length*100):0};
+  };
   const draw=q=>{
     q=(q||'').trim().toLowerCase();
     const list=units().filter(u=>!q||JSON.stringify({title:u.title,description:u.description,topics:u.topics.map(t=>({title:t.title,explanation:t.explanation}))}).toLowerCase().includes(q));
     $('#learnUnits').innerHTML=list.map(u=>{
-      const s=stats(u),partCount=(u.parts||[]).length,topicCount=u.topics.length,microCount=s.total;
-      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-meta"><span>${partCount} ${partCount===1?'part':'parts'}</span><span>${topicCount} topics</span><span>${microCount} micro-topics</span></div><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
+      const s=stats(u);
+      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
     }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
   };
   const r=document.querySelector('#learnResume');
-  if(r&&resume){r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;r.hidden=false;}else if(r)r.hidden=true;
-  draw('');$('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
+  if(r&&resume){
+    r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;
+    r.hidden=false;
+  }else if(r) r.hidden=true;
+  draw('');
+  $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
 }function learnerPage(){
   document.title='My Learning — UGC NET Psychology';
   const root=$('#learnJourney');
@@ -531,24 +281,20 @@ function startPage(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).startedAt||0));
   const current=started[0]||all()[0];
   if(!current){
-    const gateState=CONTENT_GATE.ready?'no_published_content':'publication_gate_unavailable';
-    root.innerHTML=gateState==='no_published_content'
-      ? '<section class="panel empty"><h2>Your learning path is ready.</h2><p>There is no published learning content available for your current syllabus yet.</p><a class="btn primary" href="learn.html">OPEN LEARN →</a></section>'
-      : '<section class="panel empty"><h2>Your learning path is ready.</h2><p>Your study structure loaded, but the latest learning content could not be verified. Refresh once to reconnect to the publication system.</p><button class="btn primary" type="button" data-action="reload">RETRY →</button></section>';
+    root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Study data is not available yet.</p></section>';
     return;
   }
-  const journey=journeyPlan(getStartProfile());
   const p=getP(current.k), currentIndex=all().findIndex(x=>x.k===current.k);
   const upcoming=all().slice(Math.max(0,currentIndex+1),Math.max(0,currentIndex+1)+3);
   const summary=progressSummary();
   const learned=summary.learned||0, mastered=summary.mastered||0, scheduled=summary.revisionScheduled||0;
   const progress=summary.coverage;
   root.innerHTML=
-    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>'+(journey?esc(journey.first):'Learn one concept at a time.')+'</h1><p>'+(journey?esc(journey.reason):'Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.')+'</p></section>'+(journey?'<section class="learning-profile card"><div class="eyebrow">YOUR STARTING PLAN</div><h2>What we’ll emphasize first</h2><div class="learning-profile-grid"><div><strong>'+esc(journey.first)+'</strong><span>Starting route</span></div><div><strong>'+esc(journey.studyTime)+'</strong><span>Realistic daily time</span></div><div><strong>'+esc(journey.priorities.slice(0,2).join(' · ')||'Core learning')+'</strong><span>Priority support</span></div></div><a class="text-button" href="start.html">Edit my learning profile →</a></section>':'')+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
+    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.</p></section>'+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
     '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
 
     '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+
-    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+'</small><strong class="up-next-unit">'+esc(x.u.title)+'</strong><em class="up-next-micro">'+esc(x.m.title)+'</em></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
+    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
     '</section><a class="learn-syllabus-link" href="learn.html">Browse the syllabus →</a>';
 }
 function deepDive(){
@@ -598,7 +344,6 @@ function recallContent(m){
   return {core,points,distinction,pattern,application,deep};
 }
 function buildRecallPrompts(m,qs){
-  if(Array.isArray(m.active_recall)&&m.active_recall.length)return m.active_recall;
   const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[],hasMappedQuestions=Array.isArray(qs)&&qs.length>0;
   if(c.core){
     prompts.push({
@@ -731,7 +476,7 @@ function renderNetCountdown(summary=progressSummary()){
   const root=$('#netCountdown');
   if(!root)return;
   const coverage=summary.coverage||0,total=summary.total||0,started=summary.started||0;
-  fetch('./data/exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
+  fetch('./exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
     const configured=cfg?.next_exam||{},now=new Date();
     let exam={...configured};
     let target=exam.start_date?new Date(exam.start_date+'T00:00:00+05:30'):null;
@@ -763,123 +508,9 @@ function quickClean(x){return String(x||'').replace(/^[-•*]\s*/,'').replace(/\
 function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.content_notes||''),core=quickClean(section(d,'ACADEMIC CORE','\n\nKEY POINTS')||section(n,'CORE CONCEPT','\n\nKEY POINTS')||m.title),points=bullets(section(d,'KEY POINTS','\n\nDISTINCTION / CAUTION')||section(n,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).map(quickClean).filter(Boolean),dist=quickClean(section(d,'DISTINCTION / CAUTION','\n\nSOURCE BASIS')||section(n,'COMMON EXAM TRAP','\n\nMEMORY CUE')||section(n,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')),exam=quickClean(m.exam_takeaway||''),hook=quickClean(section(n,'MEMORY CUE')||'');return{core,points,dist,exam,hook}}
 function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
 function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
-function quickVisual(m,k,p){const cfg=m.quick_card&&typeof m.quick_card==='object'?m.quick_card:null;if(cfg&&cfg.layout){const title=esc(cfg.headline||m.title||'');const body=esc(cfg.body||'');const support=Array.isArray(cfg.support)?cfg.support.slice(0,4):[];if(cfg.layout==='comparison')return'<div class="quick-visual quick-design-card quick-comparison"><div><b>'+title+'</b><span>'+body+'</span></div>'+support.map((x,i)=>'<div><b>'+(i===0?'DISTINGUISH':('POINT '+(i+1)))+'</b><span>'+esc(x)+'</span></div>').join('')+'</div>';if(cfg.layout==='steps'||cfg.layout==='flow')return'<div class="quick-visual quick-design-card quick-flow">'+support.map((x,i)=>'<div><b>'+(i+1)+'</b><span>'+esc(x)+'</span></div>').join('')+'</div>';if(cfg.layout==='cue')return'<div class="quick-visual quick-design-card quick-cue"><b>'+title+'</b><span>'+body+'</span></div>';return'<div class="quick-visual quick-design-card quick-definition"><b>'+title+'</b><span>'+body+'</span></div>'}const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
-function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))(()=>{const edited=CANONICAL_CONTENT.quickLearnCards?.[cardKey];bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:String(edited?.explanation||e).slice(0,900),secondary:String(edited?.secondary||''),visual:edited?.quick_card?quickVisual({...m,quick_card:edited.quick_card},cat,p.points):quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})()})})));QUICK_BANK_CACHE=bank;return bank}
-function quickLearnItem(){
-  const item=CANONICAL_CONTENT.homeLearning?.quick_learn;
-  if(!item)return null;
-  return {...item,category:item.category||'CONCEPT',href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
-}
-function initLearningJourney(){
-  const tour=document.querySelector('#journeyTour'); if(!tour)return;
-  const phoneTourMedia=window.matchMedia('(max-width:820px)');
-  const disableTourOnPhone=()=>{
-    if(!phoneTourMedia.matches)return;
-    tour.hidden=true;
-    tour.setAttribute('aria-hidden','true');
-    document.body.classList.remove('tour-open','menu-open');
-  };
-  if(phoneTourMedia.matches){disableTourOnPhone();return;}
-  phoneTourMedia.addEventListener?.('change',e=>{
-    if(e.matches)disableTourOnPhone();
-  });
-  let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
-  const steps=[
-    {title:'Start Learning',body:'Start here if you are new to the Study Hub. Your answers help the system choose an appropriate starting route and emphasis for your learning. When you return later, your learning progress stays on this device, so you can continue from where your learning left off rather than starting over.',target:()=>document.querySelector('#homeHero .hero-cta'),preview:'start'},
-    {title:'Learn',body:'Learn takes you through the UGC NET Psychology syllabus, from units to topics and micro-topics where concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]'),preview:'learn'},
-    {title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions, helping you test understanding rather than only read it.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]'),preview:'practice'},
-    {title:'Revision',body:'Revision brings back concepts when they are due for spaced review. The aim is to strengthen retrieval over time, not simply reread notes.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]'),preview:'revision'},
-    {title:'Progress',body:'Progress shows how your learning is developing across concept learning, mastery, practice performance, and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]'),preview:'progress'},
-    {title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown'),preview:null},
-    {title:'Daily Learning',body:'Your daily target has two actions: Learn first, then Practice. Both are part of the same daily learning session.',target:()=>[document.querySelector('#today .daily-focus-card[data-daily-preview="learn"]'),document.querySelector('#today .daily-focus-card[data-daily-preview="practice"]')],preview:'daily'},
-    {title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:null}
-  ];
-  const previewMarkup=href=>{
-    if(!href)return '';
-    const safe=String(href).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    return '<div class="journey-preview" aria-label="Page preview"><div class="journey-preview-label">PAGE PREVIEW · SCROLL TO EXPLORE</div><div class="journey-preview-frame"><iframe src="'+safe+'" title="Scrollable preview of '+safe+'" loading="eager" scrolling="yes" sandbox="allow-scripts"></iframe></div></div>';
-  };
-  let step=0,activeTargets=[];
-  let tourOpenedMobileMenu=false;
-  const isMobileTour=()=>window.matchMedia('(max-width:820px)').matches;
-  const isNavStep=()=>step>=1&&step<=4;
-  const syncMobileNavigation=()=>{
-    if(!isMobileTour())return;
-    const shouldOpen=isNavStep();
-    const menuOpen=document.body.classList.contains('menu-open');
-    if(shouldOpen&&!menuOpen){document.body.classList.add('menu-open');tourOpenedMobileMenu=true;}
-    if(!shouldOpen&&tourOpenedMobileMenu){document.body.classList.remove('menu-open');tourOpenedMobileMenu=false;}
-  };
-  const clearTargets=()=>{activeTargets.forEach(t=>{if(t){t.classList.remove('journey-highlight');t.removeAttribute('data-journey-target')}});activeTargets=[]};
-  const close=()=>{clearTargets();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open');if(tourOpenedMobileMenu){document.body.classList.remove('menu-open');tourOpenedMobileMenu=false;}};
-  const updateSpotlight=targets=>{
-    const backdrop=tour.querySelector('.journey-backdrop'); if(!backdrop)return;
-    const rects=targets.filter(Boolean).map(t=>t.getBoundingClientRect()).filter(r=>r.width&&r.height).map(r=>({left:Math.max(0,r.left-5),top:Math.max(0,r.top-5),right:Math.min(window.innerWidth,r.right+5),bottom:Math.min(window.innerHeight,r.bottom+5)}));
-    if(!rects.length){backdrop.innerHTML='';return}
-    const ys=[0,...rects.flatMap(r=>[r.top,r.bottom]),window.innerHeight].filter((v,i,a)=>i===0||v!==a[i-1]).sort((a,b)=>a-b);
-    const pieces=[];
-    for(let yi=0;yi<ys.length-1;yi++){
-      const y1=ys[yi],y2=ys[yi+1];
-      const covered=rects.filter(r=>r.top<y2&&r.bottom>y1);
-      const xs=[0,window.innerWidth,...covered.flatMap(r=>[r.left,r.right])].filter((v,i,a)=>i===0||v!==a[i-1]).sort((a,b)=>a-b);
-      for(let xi=0;xi<xs.length-1;xi++){
-        const x1=xs[xi],x2=xs[xi+1];
-        const inside=covered.some(r=>r.left<=x1&&r.right>=x2&&r.top<=y1&&r.bottom>=y2);
-        if(!inside&&x2>x1&&y2>y1) pieces.push('<div class="journey-dim-piece" style="left:'+x1+'px;top:'+y1+'px;width:'+(x2-x1)+'px;height:'+(y2-y1)+'px"></div>');
-      }
-    }
-    backdrop.innerHTML=pieces.join('');
-  };
-  const placeDialog=(targets)=>{
-    const dialog=tour.querySelector('.journey-dialog'); if(!dialog)return;
-    const margin=16,arr=targets.filter(Boolean),rect=arr[0]?.getBoundingClientRect();
-    if(!rect){dialog.style.left='50%';dialog.style.top='50%';dialog.style.transform='translate(-50%,-50%)';updateSpotlight(targets);return}
-    dialog.style.transform='none'; const width=Math.min(560,window.innerWidth-margin*2); dialog.style.width=width+'px';
-    const dialogHeight=dialog.offsetHeight; let left=Math.max(margin,Math.min(window.innerWidth-width-margin,rect.left+(rect.width/2)-(width/2))); let top=rect.bottom+18;
-    if(top+dialogHeight>window.innerHeight-margin)top=rect.top-dialogHeight-18; if(top<margin)top=margin;
-    dialog.style.left=left+'px';dialog.style.top=top+'px';updateSpotlight(targets);
-  };
-  const render=()=>{
-    clearTargets(); syncMobileNavigation(); const s=steps[step],raw=s.target?.(),targets=Array.isArray(raw)?raw.filter(Boolean):[raw].filter(Boolean);
-    tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
-    tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open'); activeTargets=targets;
-    targets.forEach(t=>{t.classList.add('journey-highlight');t.setAttribute('data-journey-target','true')});
-    requestAnimationFrame(()=>{if(targets.length&&!isMobileTour())targets[0].scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});requestAnimationFrame(()=>requestAnimationFrame(()=>{placeDialog(targets);tour.querySelector('.journey-dialog')?.classList.add('journey-ready')}))});
-  };
-  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
-  window.__openLearningJourney=()=>{step=0;render()};
-  tour.addEventListener('click',e=>{
-    const action=e.target.closest('[data-journey]');
-    if(action){const act=action.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render();return}
-    const target=e.target.closest('[data-journey-target]');
-    if(target&&steps[step].preview){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');const href=target.getAttribute('href');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(href);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
-  });
-  document.addEventListener('click',e=>{
-    if(!document.body.classList.contains('tour-open'))return;
-    const target=e.target.closest('[data-journey-target]');
-    if(!target||!steps[step].preview)return;
-    e.preventDefault();e.stopPropagation();
-    const slot=tour.querySelector('.journey-preview-slot');const href=target.getAttribute('href');
-    if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(href);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
-  },true);
-  const refresh=()=>{if(!tour.hidden&&activeTargets.length)placeDialog(activeTargets)};
-  window.addEventListener('resize',refresh); window.addEventListener('scroll',refresh,{passive:true});
-  if(!seen)setTimeout(render,700);
-}
-let deferredInstallPrompt=null;
-function initPwaInstallPrompt(){
-  const box=document.querySelector('#installPrompt'); if(!box)return;
-  window.addEventListener('beforeinstallprompt',event=>{
-    event.preventDefault(); deferredInstallPrompt=event;
-    let dismissed=false; try{dismissed=localStorage.getItem('netPsychInstallDismissed')==='1'}catch(e){}
-    if(dismissed||window.matchMedia('(display-mode: standalone)').matches)return;
-    box.innerHTML='<div><strong>Make NET Psychology your study app</strong><span>Install this Study Hub for quicker access and an app-like study experience.</span></div><div class="install-actions"><button class="btn" data-install="dismiss">Not now</button><button class="btn primary" data-install="install">Install App</button></div>';
-    box.hidden=false;box.setAttribute('aria-hidden','false');
-  });
-  box.addEventListener('click',async e=>{const b=e.target.closest('[data-install]');if(!b)return;if(b.dataset.install==='dismiss'){try{localStorage.setItem('netPsychInstallDismissed','1')}catch(e){}box.hidden=true;return}if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;box.hidden=true;}});
-  window.addEventListener('appinstalled',()=>{box.hidden=true;deferredInstallPrompt=null});
-}
-function home(){
+function quickVisual(m,k,p){const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;const keyName='netPsychQuickLearnCycle';let cycle={seen:[],cycle:0};try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.seen))cycle={seen:stored.seen,cycle:Number(stored.cycle)||0}}catch(e){}const validIds=new Set(bank.map(x=>x.id));let seen=cycle.seen.filter(id=>validIds.has(id));let unseen=bank.filter(x=>!seen.includes(x.id));if(!unseen.length){cycle={seen:[],cycle:cycle.cycle+1};seen=[];unseen=bank.slice()}const last=seen[seen.length-1];let pool=unseen;if(pool.length>1&&last)pool=pool.filter(x=>x.id!==last);if(!pool.length)pool=unseen;const item=pool[Math.floor(Math.random()*pool.length)];seen=[...seen,item.id];try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
   const hasStarted=started.length>0||practiceActivity,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
@@ -890,36 +521,21 @@ function home(){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" data-daily-preview="learn" href="daily-learn.html" aria-label="Learn"><strong>LEARN</strong></a>',practice:'<a class="daily-focus-card" data-daily-preview="practice" href="daily-practice.html" aria-label="Practice"><strong>PRACTICE</strong></a>'};
+  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
   const sequence=[cards.learn,cards.practice];
-  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><h2>Your minimum study target for today</h2><p>Daily Learning is the day’s complete study target: <strong>3 focused concepts followed by a 10-question practice test</strong>. Finish both parts to complete today’s learning session. Scheduled revision is handled separately when concepts become due.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
-  // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
+  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a clear purpose: learn a new concept or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
-  if(quickBox&&quick) renderHomeLearning();
-  document.querySelectorAll('.learning-approach').forEach(el=>el.remove());
-  }
-function dailyPracticeReadyFor(items){return Array.isArray(items)&&items.length===3&&items.every(x=>{const p=getP(x.k);return !!p.recallCompletedAt||p.status==='MASTERED'})}
+  if(quickBox&&quick) quickBox.innerHTML='<section class="quick-learn-card"><div class="quick-learn-top"><div class="eyebrow">QUICK LEARN</div><span class="quick-learn-type">'+esc(quick.category)+'</span></div><div class="quick-learn-body"><h3>'+esc(quick.title)+'</h3><p>'+esc(quick.explanation)+'</p>'+(quick.visual||'')+'</div><a class="quick-learn-link" href="'+quick.href+'">Explore this concept →</a></section>';
+  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Break the topic into smaller, meaningful chunks.</span></div><div><b>Recall</b><span>Use active recall: recall the concept without looking at the notes.</span></div><div><b>Practice</b><span>Practise with normal MCQs and previous-year questions (PYQs).</span></div><div><b>Revise</b><span>Use spaced revision by returning to the concept at spaced intervals.</span></div></div>`;
+}
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
   const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
   const allItems=all(),keyName='netPsychDailyLearning';
-  window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
-  const resolver=resolvePublishedMicrotopics().diagnostic;
-  window.__NETPSY_RUNTIME.dailyLearning={syllabusMicrotopics:resolver.syllabusMicrotopics,publishedMicrotopics:resolver.publishedMicrotopics,availableMicrotopics:resolver.resolvedMicrotopics,gateReady:resolver.gateReady,manifestBacked:resolver.manifestBacked};
-  console.info('[NET Psychology] Daily Learning runtime',window.__NETPSY_RUNTIME.dailyLearning);
   let existingToday=null;
   try{const storedToday=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');if(storedToday?.date===todayKey&&Array.isArray(storedToday.items))existingToday=storedToday.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean)}catch(e){}
   if(existingToday?.length){
-    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Today’s learning target has two parts: <strong>3 focused concepts</strong>, followed by a <strong>10-question practice test</strong>. Complete both to finish today’s Daily Learning.</p></section><section class="daily3-list">'+existingToday.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div>'+(()=>{const p=getP(key(x.u.id,x.t.id,x.m.id));const done=!!p.recallCompletedAt||p.status==='MASTERED';return done?'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">COMPLETED ✓</a>':'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a>'})()+'</article>').join('')+'</section>'+(dailyPracticeReadyFor(existingToday)?'<section class="panel daily3-note"><b>Part 2 of today’s learning.</b><span>Complete the 10-question practice test, then review your answers and explanations to strengthen your exam readiness.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">START PRACTICE TEST</a></div></section>':'');
-    return;
-  }
-  let firstLearner=false;
-  try{firstLearner=!localStorage.getItem('netPsychDailyLearning');}catch(e){}
-  const predefined=firstLearner?(CANONICAL_CONTENT.homeLearning?.daily_concepts||[]).map(c=>allItems.find(x=>x.k===String(c.unit)+'-'+String(c.topic)+'-'+String(c.micro))).filter(Boolean):[];
-  if(firstLearner&&predefined.length===3){
-    const session=predefined;
-    try{localStorage.setItem('netPsychDailyLearning','1');localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}))}catch(e){}
-    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Part 1 of today’s target: complete these 3 concepts. Then take the 10-question practice test to finish Daily Learning.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section>'+(dailyPracticeReadyFor(session)?'<section class="panel daily3-note"><b>Part 2 of today’s learning.</b><span>Complete the 10-question practice test, then review your answers and explanations to strengthen your exam readiness.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">START PRACTICE TEST</a></div></section>':'');
+    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+existingToday.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div>'+(()=>{const p=getP(key(x.u.id,x.t.id,x.m.id));const done=!!p.recallCompletedAt||p.status==='MASTERED';return done?'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">COMPLETED ✓</a>':'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a>'})()+'</article>').join('')+'</section><section class="panel daily3-note"><b>Today’s set is fixed.</b><span>Return tomorrow for the next syllabus set. Scheduled revision remains handled by the separate Revision system.</span></section>';
     return;
   }
   let rotation={served:[],cycle:0,lastDate:null};
@@ -932,14 +548,10 @@ function daily3(){
   addUnique(dueItems());
   addUnique(allItems);
   const session=interleaveBy(chosen,x=>x.u.id,3);
-  if(!session.length){
-    const d=resolvePublishedMicrotopics().diagnostic;
-    $('#daily3App').innerHTML='<section class="panel empty"><h2>No concepts available</h2><p>Daily Learning could not resolve published concepts right now.</p><p class="muted">Syllabus: '+d.syllabusMicrotopics+' · Published: '+d.publishedMicrotopics+' · Resolved: '+d.resolvedMicrotopics+'</p><a class="btn primary" href="learn.html">OPEN LEARN</a></section>';
-    return;
-  }
+  if(!session.length){$('#daily3App').innerHTML='<section class="panel empty"><h2>No concepts available</h2><p>Choose a topic from Learn when you are ready to continue.</p></section>';return}
   const nextServed=[...served,...session.map(x=>x.k)],completedCycle=nextServed.length>=allItems.length;
   try{localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));localStorage.setItem(keyName,JSON.stringify({served:completedCycle?[]:nextServed,cycle:completedCycle?rotation.cycle+1:rotation.cycle,lastDate:todayKey}))}catch(e){}
-  $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section>'+(dailyPracticeReadyFor(session)?'<section class="panel daily3-note"><b>Part 2 of today’s learning.</b><span>Complete the 10-question practice test, then review your answers and explanations to strengthen your exam readiness.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">START PRACTICE TEST</a></div></section>':'');
+  $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Why three?</b><span>Three concepts give you a manageable study load while helping you keep moving through the syllabus. Your scheduled revisions remain available separately when concepts are due.</span></section>';
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
@@ -948,98 +560,80 @@ function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item o
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
   if(!root)return;
-  const today=new Date(),todayKey=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');
-  const allQuestions=Array.isArray(PRACTICE_QUESTIONS)?PRACTICE_QUESTIONS.filter(Boolean):[];
-  const configured=Number(CANONICAL_CONTENT.homeLearning?.daily_practice?.count)||10;
-  const setSize=Math.max(1,Math.min(10,configured));
+  const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+  const allQuestions=PRACTICE_QUESTIONS.slice();
   let stored=null;
-  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{}
-  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)
-    ?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean)
-    :[];
-  if(questions.length!==setSize){
-    questions=allQuestions.slice().sort(()=>Math.random()-.5).slice(0,setSize);
-    try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}))}catch{}
+  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
+  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
+  if(questions.length!==10){
+    const shuffled=allQuestions.slice().sort(()=>Math.random()-0.5);
+    questions=shuffled.slice(0,10);
+    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}));
   }
-  if(!questions.length){
-    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY LEARNING</div><h1>Today’s practice is not available yet.</h1><p>The 10-question practice bank could not be loaded. Please refresh once the content connection is available.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
-    return;
-  }
-  let current=0,correctCount=0,answers={};
+  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
+  let current=0,ended=false,correctCount=0,answers={};
   const renderComplete=()=>{
+    ended=true;
     const percent=Math.round(correctCount/questions.length*100);
     const review=questions.map((q,i)=>{
       const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen;
-      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+(opts[chosen]??'');
-      const correctText=String.fromCharCode(65+answer)+'. '+(opts[answer]??'');
+      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
+      const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
       const status=record?.correct?'correct':'incorrect';
-      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+mcqHTML(q,i,'DAILY PRACTICE',false)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
+      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
     }).join('');
-    root.innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h1>You completed today’s 10-question check.</h1><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>This completes the practice part of today’s Daily Learning target. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div class="actions"><a class="btn primary" href="daily-learn.html">BACK TO DAILY LEARNING</a><a class="btn" href="practice.html">MORE PRACTICE</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Learn from your answers</h2><p>Use the explanations to identify what needs another look.</p></div>'+review+'</section>';
-    window.scrollTo({top:0,behavior:'smooth'});
+    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
   };
   const renderQuestion=()=>{
-    const q=questions[current],answered=Object.prototype.hasOwnProperty.call(answers,current);
-    root.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE · DAILY LEARNING</div><h1 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h1><p>Answer from memory. Feedback appears after you choose.</p></div><a class="text-link" href="daily-learn.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
-    const session=root.querySelector('.practice-session'),card=session?.querySelector('.mcq'),nextBtn=session?.querySelector('#dailyNext');
-    if(!session||!card||!nextBtn)return;
-    if(answered){
+    if(ended)return;
+    const q=questions[current],answered=Boolean(answers[current]);
+    $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');
+    if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+    card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
+      if(answered||ended)return;
+      answered=true;
+      const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
+      answers[current]={chosen,correct:wasCorrect};
+      if(wasCorrect)correctCount++;
       card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
       nextBtn.disabled=false;
-    }
-    session.onclick=event=>{
-      const option=event.target.closest('.mcq-option');
-      if(option&&session.contains(option)&&!Object.prototype.hasOwnProperty.call(answers,current)){
-        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),correct=chosen===answer;
-        answers[current]={chosen,correct}; if(correct)correctCount++;
-        card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-        option.classList.add(correct?'selected-correct':'selected-incorrect');
-        nextBtn.disabled=false; return;
+    });
+    prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
+    nextBtn.onclick=()=>{
+      if(ended||!answers[current])return;
+      if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+      else{
+        const s=state();
+        questions.forEach((q,i)=>s._practiceHistory=[...(s._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
+        save(s);
+        renderComplete();
+        window.scrollTo({top:0,behavior:'smooth'});
       }
-      if(event.target.closest('#dailyNext')&&Object.prototype.hasOwnProperty.call(answers,current)){
-        if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
-        else{
-          const st=state();
-          questions.forEach((q,i)=>st._practiceHistory=[...(st._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
-          save(st);renderComplete();
-        }
-      }
-      if(event.target.closest('#dailyPrev')&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
     };
   };
-  try{renderQuestion()}catch(err){
-    console.error('Daily Practice render failed:',err);
-    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY PRACTICE</div><h1>We could not start today’s practice.</h1><p>Please refresh and try again.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
-  }
-}
-function topicPyqFrequency(u,t){
-  return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u.id)&&Number(q.topic)===Number(t.id)).length;
+  renderQuestion();
 }
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
   if(!u)return $('#unitPage').innerHTML='<div class="panel empty">Unit not found.</div>';
   document.title=`${u.title} — UGC NET Psychology`;
   const pos=units().findIndex(x=>String(x.id)===String(u.id)),prev=units()[pos-1],next=units()[pos+1];
-  const publishedMicrotopics=u.topics.flatMap(t=>(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))));
-  const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{if(!contentIsPublished('microtopics',key(u.id,t.id,m.id)))return false;const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
+  const prevLink=prev?`<a href="unit.html?id=${prev.id}">← Previous</a>`:'<span class="disabled">← Previous</span>';
+  const nextLink=next?`<a href="unit.html?id=${next.id}">Next →</a>`:'<span class="disabled">Next →</span>';
+  const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
   const topicCard=t=>{
-    const published=t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))),total=published.length,done=published.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length,pyq=topicPyqFrequency(u,t);
-    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id} · ${pyq} PYQs</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
+    const total=t.microtopics.length,done=t.microtopics.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
+    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id}</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
   };
-  const sortTopics=(topics,sort)=>sort==='frequency'?topics.slice().sort((a,b)=>topicPyqFrequency(u,b)-topicPyqFrequency(u,a)||a.id-b.id):topics.slice();
-  const render=sort=>{
-    const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${sortTopics(u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))),sort).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${sortTopics(u.topics,sort).map(topicCard).join('')}</div>`;
-    const sortControls=`<div class="unit-topic-sort-row"><span class="topic-sort-label">Topic order</span><button class="topic-sort ${sort==='natural'?'active':''}" data-sort="natural" type="button">Natural learning</button><button class="topic-sort ${sort==='frequency'?'active':''}" data-sort="frequency" type="button">PYQ frequency</button></div>`;
-    const prevHref=prev?'unit.html?id='+prev.id:'#',nextHref=next?'unit.html?id='+next.id:'#';
-    $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p><div class="unit-progress"><strong>${explored} of ${publishedMicrotopics.length} concepts learned</strong>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}</div></section><div class="unit-navigation"><a class="unit-nav-prev" href="${prevHref}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${nextHref}">Next →</a></div>${sortControls}${topicContent}`;
-    qsa('.topic-sort').forEach(b=>b.onclick=()=>render(b.dataset.sort));
-  };
-  render(Q.get('sort')==='frequency'?'frequency':'natural');
-}function topicPage(){
+  const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${u.topics.map(topicCard).join('')}</div>`;
+  $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p><div class="unit-progress"><strong>${explored} of ${countMicro(u)} concepts learned</strong>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}</div></section><div class="unit-navigation"><a class="unit-nav-prev" href="${prev?`unit.html?id=${prev.id}`:'#'}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${next?`unit.html?id=${next.id}`:'#'}">Next →</a></div>${topicContent}`;
+}
+function topicPage(){
   const {u,t}=find();
   if(!u||!t)return $('#topicPage').innerHTML='<div class="panel empty">Topic not found.</div>';
   document.title=`${t.title} — UGC NET Psychology`;
-  const topicItems=(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id)));
+  const topicItems=t.microtopics||[];
   const progress=()=>{const ps=topicItems.map(m=>getP(key(u.id,t.id,m.id))),learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,due=ps.filter(p=>p.next&&Date.parse(p.next)<=Date.now()).length;return {started:learned,mastered,due,total:topicItems.length,percent:topicItems.length?Math.round(learned/topicItems.length*100):0}};
   const firstOpen=()=>{const ps=topicItems.map(m=>getP(key(u.id,t.id,m.id)));return topicItems.find((m,i)=>ps[i].status==='NEW'||(ps[i].next&&new Date(ps[i].next)<=new Date()))||topicItems[0]};
   const render=filter=>{
@@ -1116,13 +710,34 @@ function practiceListHTML(items){
 }
 function matchListsHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
-  const parsed=parseMatchLists(raw);
-  const stem=stripQuestionTail(raw);
-  if(!parsed.hasLeftHeader||!parsed.hasRightHeader||parsed.left.length<4||parsed.right.length<4){
-    return "<div class=\"question-stem match-stem\"><p>"+esc(stem)+"</p></div>";
-  }
-  const cleanedStem=stem.replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b[\s\S]*?List\s*[-–—]?\s*II\b/i,"").trim();
-  return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+"<div class=\"matching-lists\"><section><div class=\"matching-label\">LIST I</div><div class=\"matching-items\">"+practiceListHTML(parsed.left)+"</div></section><section><div class=\"matching-label\">LIST II</div><div class=\"matching-items\">"+practiceListHTML(parsed.right)+"</div></section></div></div>";
+  const headerMatch=raw.match(/List\s*[-–—]?\s*I\b[\s\S]*?List\s*[-–—]?\s*II\b(?:\s*\([^)]*\))?/i);
+  const body=headerMatch?raw.slice(headerMatch.index+headerMatch[0].length):raw;
+  const beforeCodes=extractBeforeCodes(body);
+  const letterHits=[];
+  const letterRe=/(?<!\S)([a-d])\s*[.)]+\s+/gi;
+  let m;
+  while((m=letterRe.exec(beforeCodes))) letterHits.push({label:m[1].toLowerCase(),start:m.index,end:letterRe.lastIndex});
+  const left=letterHits.slice(0,4).map((hit,i)=>{
+    const end=i+1<letterHits.length?letterHits[i+1].start:beforeCodes.length;
+    let value=beforeCodes.slice(hit.end,end).trim();
+    value=value.split(/(?<!\S)[1-4]\s*[.)]+\s+/)[0].trim();
+    return {label:hit.label,text:value};
+  }).filter(x=>x.text);
+  const numHits=[];
+  const numRe=/(?<!\S)([1-4])\s*[.)]+\s+/g;
+  while((m=numRe.exec(beforeCodes))) numHits.push({label:m[1],start:m.index,end:numRe.lastIndex});
+  const right=numHits.slice(0,4).map((hit,i)=>{
+    const end=i+1<numHits.length?numHits[i+1].start:beforeCodes.length;
+    let value=beforeCodes.slice(hit.end,end).trim();
+    value=value.split(/(?<!\S)[a-d]\s*[.)]+\s+/i)[0].trim();
+    return {label:hit.label,text:value};
+  }).filter(x=>x.text);
+  const stem=stripQuestionTail(raw).replace(/^[\s\S]*?(?:match(?:\s+the\s+following)?|match)\s+list\s*[-–—]?\s*i\b/i,"").trim();
+  const cleanedStem=(left.length>=2&&right.length>=2)?"":stem.replace(/List\s*[-–—]?\s*I\b[\s\S]*$/i,"").trim();
+  return "<div class=\"question-stem match-stem\">"+(cleanedStem?"<p>"+esc(cleanedStem)+"</p>":"")+((left.length||right.length)?("<div class=\"matching-lists\">"+
+    "<section><div class=\"matching-label\">LIST I</div><div class=\"matching-items\">"+practiceListHTML(left)+"</div></section>"+
+    "<section><div class=\"matching-label\">LIST II</div><div class=\"matching-items\">"+practiceListHTML(right)+"</div></section>"+
+    "</div>"):"<p>"+esc(stripQuestionTail(raw))+"</p>")+"</div>";
 }
 function assertionReasonHTML(q){
   const raw=cleanPracticeText(q?.question||q?.q||"");
@@ -1137,7 +752,6 @@ function assertionReasonHTML(q){
     "</div></div>";
 }
 function structuredQuestionHTML(q){
-  if(window.NETPSYQuestionRenderer?.structuredQuestionHTML)return window.NETPSYQuestionRenderer.structuredQuestionHTML(q);
   const kind=q?.kind||"direct";
   const raw=cleanPracticeText(q?.question||q?.q||"");
   if(kind==="match")return matchListsHTML(q);
@@ -1156,7 +770,10 @@ function structuredQuestionHTML(q){
     }
     const optionMarker=stem.search(/\s(?:\([a-d]\)|[a-d]\.)\s+/i);
     const cleanStem=(optionMarker>=0?stem.slice(0,optionMarker):stem).replace(/\s*:\s*$/,"").trim();
-    return "<div class=\"question-stem structured-stem\">"+(cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+(preferred.length?"<div class=\"question-items\">"+practiceListHTML(preferred)+"</div>":"")+"</div>";
+    return "<div class=\"question-stem structured-stem\">"+
+      (cleanStem?"<p>"+esc(cleanStem)+"</p>":"")+
+      (preferred.length?"<div class=\"question-items\">"+practiceListHTML(preferred)+"</div>":"")+
+      "</div>";
   }
   return "<div class=\"question-stem direct-stem\"><p>"+esc(stripQuestionTail(raw))+"</p></div>";
 }
@@ -1192,26 +809,6 @@ function contextualExplanation(q){
   return detail?base+' Study link — '+c.title+': '+detail:base;
 }
 function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s)}})})}
-function inlineLearningMarkup(value,importantTerms=[]){
-  let text=String(value??'').replace(/\r/g,'').trim();
-  if(!text)return '';
-  const escaped=esc(text);
-  const terms=[...new Set(importantTerms.map(x=>String(x||'').trim()).filter(x=>x.length>=3))].sort((a,b)=>b.length-a.length);
-  let marked=escaped;
-  for(const term of terms){
-    const safe=esc(term).replace(/[.*+?^\${}()|[\]\\]/g,'\\$&');
-    if(!safe)continue;
-    marked=marked.replace(new RegExp('(?<![\\w-])'+safe+'(?![\\w-])','gi'),m=>'@@BOLD@@'+m+'@@/BOLD@@');
-  }
-  marked=marked.replace(/\*\*([^*]+)\*\*/g,'@@BOLD@@$1@@/BOLD@@');
-  marked=marked.replace(/@@BOLD@@/g,'<strong>').replace(/@@\/BOLD@@/g,'</strong>');
-  return marked.replace(/\n\s*\n/g,'<br><br>').replace(/\n/g,'<br>');
-}
-function inlineLearningNote(label,value,kind='note'){
-  const text=String(value??'').trim();
-  if(!text)return '';
-  return '<span class="micro-inline-note '+esc(kind)+'"><b>'+esc(label)+'</b> '+inlineLearningMarkup(text)+'</span>';
-}
 function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
@@ -1221,41 +818,22 @@ function micro(){
     $('#microPage').innerHTML='<section class="panel empty"><div class="eyebrow">CONTENT UNDER REVIEW</div><h1>This concept is temporarily unavailable.</h1><p>The learning content is being quality-checked before it is served.</p><a class="btn primary" href="learn.html">BACK TO LEARN</a></section>';
     return;
   }
-
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
-  const concept=String(m.explanation||m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const kp=Array.isArray(m.key_points)?m.key_points:bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
-  const inlineNudges=Array.isArray(m.inline_nudges)?m.inline_nudges:[];
-  const fallbackNudge=String(m.nudge||m.inline_nudge||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||'').trim();
-  const pyqContext=String(m.pyq_context||'').trim();
-
-  // Explanation stays intentionally lean. Supporting material is routed to the
-  // dedicated Deep Dive, Active Recall, Revision and Practice flows.
-  const explanationParts=[concept];
-  if(kp.length){
-    const compact=kp.slice(0,6).map(x=>String(x).trim()).filter(Boolean);
-    if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
-  }
-  const explanation=explanationParts.join('\n\n');
-  const importantTerms=kp.slice(0,6).map(x=>String(x).split(/→|:|—|–|,/)[0].replace(/^[•\s]+/,'').trim()).filter(x=>x.length>=3&&x.length<=45);
-  const explanationHtml=inlineLearningMarkup(explanation,importantTerms);
-  const notesHtml=[
-    ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
-    fallbackNudge&&!inlineNudges.length?inlineLearningNote('Nudge',fallbackNudge,'nudge'):'',
-    pyqContext?inlineLearningNote('PYQ cue',pyqContext,'pyq'):''
-  ].filter(Boolean).join('');
-
+  const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
+  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
+  const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
+  const deep=String(m.detailed_explanation||m.deep||concept).trim();
   const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
-  const fromRevision=Q.get('from')==='revision';
-  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
+  const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
-
   $('#microPage').innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="micro-explanation">'+explanationHtml+notesHtml+'</div>'+
+    '<p class="micro-expert-explanation">'+esc(concept)+'</p>'+
+    (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
+    (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
     '</div></article>'+
     '<section class="micro-learning-actions">'+
     '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
@@ -1263,7 +841,6 @@ function micro(){
     '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
     '</section></section>';
 }
-
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{
@@ -1555,7 +1132,7 @@ function practice(){
   const dueRow=x=>{
     const p=getP(x.k),nextAt=Date.parse(p.next||''),late=Number.isFinite(nextAt)?(now-nextAt)/86400000:0;
     const dateText=late>0?'Overdue by '+Math.max(1,Math.floor(late))+' day'+(Math.floor(late)===1?'':'s'):'Due today',last=p.rating?' · Last: '+esc(p.rating):'';
-    return '<article class="revision-item"><div><span class="status due">DUE NOW</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small>'+((rg.recall_before_review||rg.self_check)?'<div class="revision-guidance"><b>Recall first</b><span>'+esc(rg.recall_before_review||'')+'</span><span>'+esc(rg.self_check||'')+'</span></div>':'')+'</div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">REVISE →</a></article>';
+    return '<article class="revision-item"><div><span class="status due">DUE NOW</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">REVISE →</a></article>';
   };
   const upcomingRow=x=>{
     const p=getP(x.k),nextAt=Date.parse(p.next||''),dateText='Due '+new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(nextAt)),last=p.rating?' · Last: '+esc(p.rating):'';
@@ -1621,8 +1198,7 @@ function safeRender(){
     if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
   }
 }
-if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const registration=await navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'});await registration.update();}catch(e){console.warn('Service worker update unavailable:',e);}});}
-window.addEventListener('DOMContentLoaded',()=>{const mobileTour=window.matchMedia('(max-width:820px)').matches;if(!mobileTour)initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(mobileTour)return;if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
