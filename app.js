@@ -7,7 +7,7 @@ function initMobileNavigation(){
   const nav=document.querySelector('#site-navigation');
   if(!toggle||!nav||toggle.dataset.menuReady==='1') return;
   toggle.dataset.menuReady='1';
-  // Older page markup contained an inline toggle handler. Remove it so navigation has one source of truth.
+  // Navigation is controlled here so every page shares one interaction path.
   if(toggle.hasAttribute('onclick')) toggle.removeAttribute('onclick');
   const close=()=>{document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')};
   const open=()=>{document.body.classList.add('menu-open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close navigation')};
@@ -29,31 +29,6 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
-const KEY='netPsychProgress';
-async function loadContentGate(){
-  try{
-    const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./content-publish-config.json?v=20261004-expert5',{cache:'default'}),
-      fetch('./content-publish-manifest.json?v=20261004-expert5',{cache:'default'}),
-      fetch('./content-owner-overrides.json?v=20261004-expert5',{cache:'default'})
-    ]);
-    if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
-    const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
-    CONTENT_GATE={
-      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'ai_or_owner',
-      ai:manifest.ai_pass||{questions:{pass:[]},microtopics:{pass:[]},quickLearnCards:{pass:[]},activeRecall:{pass:[]}},
-      owner:{
-        approved:owner.owner_approved||{},
-        rejected:owner.owner_rejected||{}
-      }
-    };
-  }catch(e){
-    console.error('Content publishing gate failed:',e);
-    CONTENT_GATE={ready:false,failClosed:true,mode:'owner_only',ai:{},owner:{approved:{},rejected:{}}};
-  }
-}
-function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
 const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
 const EXPERT_THRESHOLDS={pass:70,review:60};
 function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
@@ -62,34 +37,15 @@ function expertMicroAudit(m){const core=expertText([m.title,m.expert_explanation
 function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const status=issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues,signals:sig};}
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
-function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);if(rejected.has(String(id)))return false;if(approved.has(String(id)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id));}
+function contentIsPublished(type,id){
+  return expertAudit(type,id).status==='PASS';
+}
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
-function loadScript(src){
-  return new Promise((resolve,reject)=>{
-    const s=document.createElement('script');
-    s.src=src;
-    s.async=true;
-    s.onload=resolve;
-    s.onerror=()=>reject(new Error('Could not load '+src));
-    document.head.appendChild(s);
-  });
-}
-
 async function loadStudyData(){
-  let json=window.NETPSY_DATA||null;
-  if(!json){
-    try{
-      const response=await fetch('./data.json?v='+DATA_VERSION+'',{cache:'default'});
-      if(!response.ok) throw new Error('Study data request failed: '+response.status);
-      json=await response.json();
-    }catch(fetchError){
-      console.warn('Study data JSON fetch failed; falling back to browser bundle.',fetchError);
-      await loadScript('./data.js?v='+DATA_VERSION+'');
-      json=window.NETPSY_DATA||null;
-    }
-  }
-  if(!json || !Array.isArray(json.units)) throw new Error('Study data has an invalid structure');
+  const response=await fetch('./data.json?v='+DATA_VERSION,{cache:'default'});
+  if(!response.ok) throw new Error('Study data request failed: '+response.status);
+  const json=await response.json();
   try{
     const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
     if(kr.ok){
@@ -122,7 +78,6 @@ async function loadStudyData(){
     m.study_source_config=json.study_source_config||null;
   }
   D=json;
-  await loadContentGate();
   // Render core UI immediately; optional enrichment must never block a usable page.
   if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
   if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
