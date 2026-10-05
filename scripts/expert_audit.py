@@ -39,8 +39,8 @@ def question_audit(q):
     status="ISSUE" if any(i in issues for i in ["missing_question","missing_explanation","invalid_options","invalid_answer"]) else "PASS" if score>=THRESHOLD else "REVIEW" if score>=REVIEW else "ISSUE"
     return score,status,issues
 
-micro=load("content/microtopics/microtopic_explanations.json")
-quick=load("content/quick-learn/quick_learn_cards.json")
+micro=load("content/microtopics/micro_topics.json")
+quick=load("content/quick-learn/quick_cards.json")
 questions=load("content/questions/questions.json")
 rows={"microtopics":[],"quickLearnCards":[],"questions":[]}
 for mid,m in micro.items():
@@ -51,5 +51,9 @@ for cid,c in quick.items():
     parent=cid.rsplit("|",1)[0]; base=next((x for x in rows["microtopics"] if x["id"]==parent),None); score=(base or {}).get("score",0)
     rows["quickLearnCards"].append({"id":cid,"title":c.get("title"),"score":score,"status":"PASS" if score>=THRESHOLD else "REVIEW" if score>=REVIEW else "ISSUE","issues":[] if score>=THRESHOLD else ["depends_on_microtopic"]})
 summary={k:{"total":len(a),"PASS":sum(x["status"]=="PASS" for x in a),"REVIEW":sum(x["status"]=="REVIEW" for x in a),"ISSUE":sum(x["status"]=="ISSUE" for x in a),"average":round(statistics.mean(x["score"] for x in a),1) if a else 0} for k,a in rows.items()}
-(ROOT/"expert-audit-report.json").write_text(json.dumps({"generated_at":"1.0.0","audit_version":VERSION,"pass_threshold":THRESHOLD,"review_threshold":REVIEW,"reaudit":summary,"source_pools":["content/microtopics/microtopic_explanations.json","content/questions/questions.json"]},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+manifest_path=ROOT/"content-publish-manifest.json"
+existing=load("content-publish-manifest.json") if manifest_path.exists() else {}
+manifest={"schema_version":existing.get("schema_version",4),"mode":existing.get("mode","expert_or_owner"),"audit_version":VERSION,"ai_pass":{"questions":[x["id"] for x in rows["questions"] if x["status"]=="PASS"],"microtopics":[x["id"] for x in rows["microtopics"] if x["status"]=="PASS"],"quickLearnCards":[x["id"] for x in rows["quickLearnCards"] if x["status"]=="PASS"],"activeRecall":existing.get("ai_pass",{}).get("activeRecall",[])}, "owner_approved":existing.get("owner_approved",{}),"owner_rejected":existing.get("owner_rejected",{}),"policy":existing.get("policy","REWRITE_AND_REAUDIT_UNTIL_PASS_THEN_OWNER_REVIEW"),"max_automatic_rewrite_cycles":existing.get("max_automatic_rewrite_cycles",2),"note":"PASS content is published automatically; REVIEW and ISSUE content remains held unless explicitly owner-approved."}
+manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+(ROOT/"expert-audit-report.json").write_text(json.dumps({"generated_at":"1.0.0","audit_version":VERSION,"pass_threshold":THRESHOLD,"review_threshold":REVIEW,"reaudit":summary,"source_pools":["content/microtopics/micro_topics.json","content/questions/questions.json"]},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps(summary,indent=2))

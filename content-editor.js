@@ -1,6 +1,6 @@
 (()=>{'use strict';
 const OWNER='ankitvrsharma',REPO='NET-Psychology',BRANCH='main',API='https://api.github.com';
-const FILES={questions:'content/questions/questions.json',microtopics:'content/microtopics/microtopic_explanations.json',quickLearnCards:'content/quick-learn/quick_learn_cards.json',deepDive:'content/deep-dive/deep_dive_explanations.json',activeRecall:'content/active-recall/active_recall.json'};
+const FILES={questions:'content/questions/questions.json',microtopics:'content/microtopics/micro_topics.json',quickLearnCards:'content/quick-learn/quick_cards.json',deepDive:'content/deep-dive/deep_dive.json',activeRecall:'content/active-recall/active_recall.json'};
 const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 let modal=null,current=null,cache=new Map();
 

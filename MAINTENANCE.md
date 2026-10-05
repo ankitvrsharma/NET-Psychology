@@ -16,12 +16,16 @@ Learner progress belongs on the learner's device and must not be committed to Gi
 
 - `app.js` — application behaviour, learning flow and progress logic.
 - `style.css` — responsive presentation.
-- `data.json` — canonical syllabus/content data.
-- `data.js` — generated browser bundle.
-- `practice_questions.json` / `practice_explanations.json` — generated practice data.
+- `syllabus-index.json` — canonical syllabus structure.
+- `content-pools/registry.json` — stable registry of learner-facing content pools.
+- `content/questions/questions.json` — canonical practice/PYQ question pool.
 - `scripts/build_practice.py` — practice-bank build and validation.
 - `sw.js` — PWA caching.
 - `manifest.webmanifest` — install metadata.
+
+## Stable file naming
+
+Production content paths are canonical contracts. Do not rename a content file when its contents change. Use these permanent names: `content/microtopics/micro_topics.json`, `content/quick-learn/quick_cards.json`, and `content/deep-dive/deep_dive.json`. Update the existing file in place when content changes.
 
 ## Publishing content
 

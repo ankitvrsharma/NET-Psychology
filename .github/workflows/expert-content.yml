@@ -2,17 +2,40 @@ name: Expert content audit
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - content/**
+      - content-pools/**
+      - content-publish-config.json
+      - content-publish-manifest.json
+      - content-owner-overrides.json
+      - scripts/expert_audit.py
+      - scripts/validate_content_pools.py
+      - .github/workflows/expert-content.yml
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
       - name: Validate content pools
         run: python scripts/validate_content_pools.py
-      - name: Run deterministic expert audit
+      - name: Run deterministic expert audit and rebuild publication manifest
         run: python scripts/expert_audit.py
+      - name: Commit generated audit and publication state
+        run: |
+          if git diff --quiet -- expert-audit-report.json content-publish-manifest.json; then
+            echo "No generated publication changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add expert-audit-report.json content-publish-manifest.json
+          git commit -m "chore: refresh audited content publication state"
+          git push
