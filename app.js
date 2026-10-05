@@ -45,7 +45,7 @@ async function loadCanonicalContentLayer(json,mode='all'){
             : ['microtopic_explanations'])
       : ['practice_questions','microtopic_explanations','deep_dive_explanations','active_recall'];
   const results=await Promise.all(names.map(async name=>{
-    try{const r=await fetch('./content/'+name+'.json?v=20261004-content2',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
+    try{const r=await fetch('./content/'+name+'.json?v=20261005-content3',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
   }));
   names.forEach((name,i)=>{if(name==='practice_questions')CANONICAL_CONTENT.practiceQuestions=results[i];if(name==='microtopic_explanations')CANONICAL_CONTENT.microtopics=results[i];if(name==='quick_learn_cards')CANONICAL_CONTENT.quickLearnCards=results[i];if(name==='deep_dive_explanations')CANONICAL_CONTENT.deepDive=results[i];if(name==='active_recall')CANONICAL_CONTENT.activeRecall=results[i];});
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
@@ -277,7 +277,7 @@ const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
 const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
-const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
+const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));if(u&&t&&m&&!contentIsPublished('microtopics',key(u.id,t.id,m.id)))return {u,t,m:null,k:null};return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
@@ -766,7 +766,7 @@ function unitPage(){
   const nextLink=next?`<a href="unit.html?id=${next.id}">Next →</a>`:'<span class="disabled">Next →</span>';
   const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
   const topicCard=t=>{
-    const total=t.microtopics.length,done=t.microtopics.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
+    const published=t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))),total=published.length,done=published.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
     return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id}</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
   };
   const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${u.topics.map(topicCard).join('')}</div>`;
@@ -776,7 +776,7 @@ function topicPage(){
   const {u,t}=find();
   if(!u||!t)return $('#topicPage').innerHTML='<div class="panel empty">Topic not found.</div>';
   document.title=`${t.title} — UGC NET Psychology`;
-  const topicItems=t.microtopics||[];
+  const topicItems=(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id)));
   const progress=()=>{const ps=topicItems.map(m=>getP(key(u.id,t.id,m.id))),learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,due=ps.filter(p=>p.next&&Date.parse(p.next)<=Date.now()).length;return {started:learned,mastered,due,total:topicItems.length,percent:topicItems.length?Math.round(learned/topicItems.length*100):0}};
   const firstOpen=()=>{const ps=topicItems.map(m=>getP(key(u.id,t.id,m.id)));return topicItems.find((m,i)=>ps[i].status==='NEW'||(ps[i].next&&new Date(ps[i].next)<=new Date()))||topicItems[0]};
   const render=filter=>{

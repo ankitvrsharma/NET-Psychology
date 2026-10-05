@@ -1,70 +1,25 @@
-name: Expert content rewrite and audit
+name: Expert content audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - data.json
-      - practice_questions.json
-      - practice_explanations.json
-      - scripts/rewrite_microtopic_notes.py
-      - scripts/expert_audit.py
-      - scripts/rewrite_issue_content.py
-      - .github/workflows/expert-content.yml
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  rewrite-reaudit:
+  audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Audit and rewrite every ISSUE
-        run: python scripts/rewrite_issue_content.py
-      - name: Validate content
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate source and generated content
         run: python scripts/validate_content.py
-      - name: Re-audit after ISSUE rewrite
+
+      - name: Run deterministic expert audit
         run: python scripts/expert_audit.py
-      - name: Rebuild browser content version
+
+      - name: Verify canonical source is the audit input
         run: |
-          python - <<'PY'
-          import hashlib,json
-          raw=open('data.json','rb').read()
-          version=hashlib.sha256(raw).hexdigest()[:16]
-          open('content-version.js','w',encoding='utf-8').write('window.NETPSY_DATA_VERSION = '+json.dumps(version)+';\\n')
-          PY
-      - name: Commit rewritten content and audit artifacts
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: |
-          python - <<'PY'
-          import base64, json, os, urllib.request
-          repo=os.environ['REPO']; token=os.environ['GH_TOKEN']; branch='expert-rewrite-70'
-          files=['data.json','data.js','content-version.js','practice_explanations.json','expert-audit-report.json','rewrite-reaudit-tracking.json']
-          def api(method,path,payload=None):
-              url='https://api.github.com'+path
-              body=None if payload is None else json.dumps(payload).encode()
-              req=urllib.request.Request(url,data=body,method=method,headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'})
-              with urllib.request.urlopen(req) as r: return json.load(r)
-          ref=api('GET',f'/repos/{repo}/git/ref/heads/main')['object']['sha']
-          commit=api('GET',f'/repos/{repo}/git/commits/{ref}')
-          base_tree=commit['tree']['sha']
-          elements=[]
-          for path in files:
-              if not os.path.exists(path): continue
-              content=open(path,'rb').read().decode('utf-8')
-              blob=api('POST',f'/repos/{repo}/git/blobs',{'content':content,'encoding':'utf-8'})
-              elements.append({'path':path,'mode':'100644','type':'blob','sha':blob['sha']})
-          tree=api('POST',f'/repos/{repo}/git/trees',{'base_tree':base_tree,'tree':elements})
-          new_commit=api('POST',f'/repos/{repo}/git/commits',{'message':'Rewrite and re-audit expert learning content','tree':tree['sha'],'parents':[ref]})
-          # Create the staging branch if absent; otherwise move it to the new generated commit.
-          try:
-              api('GET',f'/repos/{repo}/git/ref/heads/{branch}')
-              api('PATCH',f'/repos/{repo}/git/refs/heads/{branch}',{'sha':new_commit['sha'],'force':True})
-          except Exception:
-              api('POST',f'/repos/{repo}/git/refs',{'ref':'refs/heads/'+branch,'sha':new_commit['sha']})
-          print('Generated commit:',new_commit['sha'],'on branch:',branch)
-          PY
+          grep -q "content-source.json" scripts/expert_audit.py
+          echo "Expert audit is using content-source.json."
