@@ -669,6 +669,17 @@ function quickLearnItem(){
 }
 function initLearningJourney(){
   const tour=document.querySelector('#journeyTour'); if(!tour)return;
+  const phoneTourMedia=window.matchMedia('(max-width:820px)');
+  const disableTourOnPhone=()=>{
+    if(!phoneTourMedia.matches)return;
+    tour.hidden=true;
+    tour.setAttribute('aria-hidden','true');
+    document.body.classList.remove('tour-open','menu-open');
+  };
+  if(phoneTourMedia.matches){disableTourOnPhone();return;}
+  phoneTourMedia.addEventListener?.('change',e=>{
+    if(e.matches)disableTourOnPhone();
+  });
   let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
   const steps=[
     {title:'Start Learning',body:'Start here if you are new to the Study Hub. Your answers help the system choose an appropriate starting route and emphasis for your learning. When you return later, your learning progress stays on this device, so you can continue from where your learning left off rather than starting over.',target:()=>document.querySelector('#homeHero .hero-cta'),preview:'start'},
