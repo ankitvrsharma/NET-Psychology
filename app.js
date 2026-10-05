@@ -676,15 +676,10 @@ function initLearningJourney(){
     {title:'Daily Learning',body:'Your daily target has two actions: Learn first, then Practice. Both are part of the same daily learning session.',target:()=>[document.querySelector('#today .daily-focus-card[data-daily-preview="learn"]'),document.querySelector('#today .daily-focus-card[data-daily-preview="practice"]')],preview:'daily'},
     {title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:null}
   ];
-  const previews={
-    start:{label:'WHAT YOU’LL SEE',title:'A short learner setup',items:['A few questions help choose your starting route.','Your learning activity is saved on this device.','When you return, the Study Hub can guide you back to your current learning.']},
-    learn:{label:'WHAT YOU’LL SEE',title:'Learn',items:['UGC NET Psychology units','Topics within each unit','Micro-topics where concept learning happens']},
-    practice:{label:'WHAT YOU’LL SEE',title:'Practice',items:['Practice setup','MCQs and previous-year questions','Answer, check, and learn from performance']},
-    revision:{label:'WHAT YOU’LL SEE',title:'Revision',items:['Concepts that are due for review','Spaced retrieval at the appropriate time','A focused route back to concepts needing attention']},
-    progress:{label:'WHAT YOU’LL SEE',title:'Progress',items:['Learning progress','Mastery and practice performance','Revision activity and overall development']},
-    readiness:{label:'WHAT YOU’LL SEE',title:'Exam Readiness',items:['A visible NET-focused readiness signal','Your exam timeline','A reminder that learning activity is connected to the exam goal']},
-    daily:{label:'WHAT YOU’LL SEE',title:'Your Daily Learning',items:['LEARN — your focused concept-learning activity','PRACTICE — your 10-question application/test activity','Both actions belong to the same daily target']},
-    quick:{label:'WHAT YOU’LL SEE',title:'Quick Learn',items:['A short concept preview or refresher','Focused help when you need it','A supplement to—not a replacement for—Daily Learning']}
+  const previewMarkup=href=>{
+    if(!href)return '';
+    const safe=String(href).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return '<div class="journey-preview" aria-label="Page preview"><div class="journey-preview-label">PAGE PREVIEW</div><div class="journey-preview-frame"><iframe src="'+safe+'" title="Preview of '+safe+'" loading="eager"></iframe></div></div>';
   };
   let step=0,activeTargets=[];
   const clearTargets=()=>{activeTargets.forEach(t=>{if(t){t.classList.remove('journey-highlight');t.removeAttribute('data-journey-target')}});activeTargets=[]};
@@ -722,7 +717,7 @@ function initLearningJourney(){
     tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
     tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open'); activeTargets=targets;
     targets.forEach(t=>{t.classList.add('journey-highlight');t.setAttribute('data-journey-target','true')});
-    requestAnimationFrame(()=>{if(targets.length)targets[0].scrollIntoView({behavior:'smooth',block:'center',inline:'nearest'});setTimeout(()=>placeDialog(targets),260)});
+    requestAnimationFrame(()=>{if(targets.length)targets[0].scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});requestAnimationFrame(()=>requestAnimationFrame(()=>{placeDialog(targets);tour.querySelector('.journey-dialog')?.classList.add('journey-ready')}))});
   };
   const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
   window.__openLearningJourney=()=>{step=0;render()};
@@ -730,15 +725,15 @@ function initLearningJourney(){
     const action=e.target.closest('[data-journey]');
     if(action){const act=action.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render();return}
     const target=e.target.closest('[data-journey-target]');
-    if(target&&steps[step].preview){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
+    if(target&&steps[step].preview){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');const href=target.getAttribute('href');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(href);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
   });
   document.addEventListener('click',e=>{
     if(!document.body.classList.contains('tour-open'))return;
     const target=e.target.closest('[data-journey-target]');
     if(!target||!steps[step].preview)return;
     e.preventDefault();e.stopPropagation();
-    const slot=tour.querySelector('.journey-preview-slot');
-    if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
+    const slot=tour.querySelector('.journey-preview-slot');const href=target.getAttribute('href');
+    if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(href);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
   },true);
   const refresh=()=>{if(!tour.hidden&&activeTargets.length)placeDialog(activeTargets)};
   window.addEventListener('resize',refresh); window.addEventListener('scroll',refresh,{passive:true});
