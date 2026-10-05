@@ -1142,7 +1142,7 @@ function micro(){
     if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
   }
   const explanation=explanationParts.join('\n\n');
-  const importantTerms=kp.slice(0,6).flatMap(x=>String(x).split(/[,:;()–—-]/).map(s=>s.trim())).filter(x=>x.length>=3&&x.length<=70);
+  const importantTerms=kp.slice(0,6).map(x=>String(x).split(/→|:|—|–|,/)[0].replace(/^[•\s]+/,'').trim()).filter(x=>x.length>=3&&x.length<=45);
   const explanationHtml=inlineLearningMarkup(explanation,importantTerms);
   const notesHtml=[
     ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
