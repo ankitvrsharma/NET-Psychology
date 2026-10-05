@@ -754,7 +754,7 @@ function home(){
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) renderHomeLearning();
-  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>Learn → Recall → Practice → Revise</h2><p>A compact view of the study loop. Open <button class="text-button" type="button" data-open-journey>Know Your Learning Journey</button> for the full walkthrough.</p></div><div class="learning-steps compact"><div><b>01 · Learn</b><span>Understand the concept.</span></div><div><b>02 · Recall</b><span>Retrieve without notes.</span></div><div><b>03 · Practice</b><span>Apply with MCQs & PYQs.</span></div><div><b>04 · Revise</b><span>Return through spacing.</span></div></div>`;
+  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-path-bar"><div class="learning-path-label"><span class="eyebrow">LEARNING PATH</span><button class="text-button" type="button" data-open-journey>Know Your Learning Journey</button></div><div class="learning-path-sequence" aria-label="Learning sequence"><span class="learning-step active"><b>01</b>Learn</span><i aria-hidden="true">→</i><span class="learning-step"><b>02</b>Recall</span><i aria-hidden="true">→</i><span class="learning-step"><b>03</b>Revise</span><i aria-hidden="true">→</i><span class="learning-step"><b>04</b>Practice</span></div></div>`;
 }
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
