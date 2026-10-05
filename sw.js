@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v48-facade-split';
+const CACHE='netpsych-shell-v49-runtime-modules';
 const SHELL=[
   './',
   './index.html',
