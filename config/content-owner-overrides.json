@@ -1,0 +1,19 @@
+{
+  "schema_version": 4,
+  "owner_approved": {
+    "questions": [],
+    "microtopics": [],
+    "quickLearnCards": [],
+    "deepDive": [],
+    "activeRecall": []
+  },
+  "owner_rejected": {
+    "questions": [],
+    "microtopics": [],
+    "quickLearnCards": [],
+    "deepDive": [],
+    "activeRecall": []
+  },
+  "notes": {},
+  "updated_at": ""
+}

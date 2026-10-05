@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "requests": [
+    {
+      "id": "RR-TEST-QUICKCARD-mutonauf",
+      "type": "quickLearnCards",
+      "target_id": "1-1-1|CORE IDEA",
+      "instruction": "Redesign this Quick Learn Card for rapid UGC NET revision. Make it visually scannable and learner-friendly using the structured Quick Learn Card system: a clear definition first, 3 concise key points, and one exam-focused cue. Keep the psychology meaning source-grounded, remove generic filler, and do not invent facts. Use the structured card layout rather than HTML/CSS.",
+      "status": "DONE",
+      "requested_at": "2026-10-04T10:33:17.223Z",
+      "result": {
+        "status": "REWRITTEN",
+        "at": "2026-10-04T12:27:43.747216+00:00",
+        "instruction": "Redesign this Quick Learn Card for rapid UGC NET revision. Make it visually scannable and learner-friendly using the structured Quick Learn Card system: a clear definition first, 3 concise key points, and one exam-focused cue. Keep the psychology meaning source-grounded, remove generic filler, and do not invent facts. Use the structured card layout rather than HTML/CSS.",
+        "target": "1-1-1|CORE IDEA"
+      },
+      "updated_at": "2026-10-04T12:27:43.747236+00:00"
+    }
+  ],
+  "updated_at": "2026-10-05T02:25:03.632351+00:00"
+}

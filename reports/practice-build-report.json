@@ -1,0 +1,92 @@
+{
+  "questions": 1583,
+  "dropped": [
+    [
+      "December 2012",
+      3,
+      "X"
+    ],
+    [
+      "December 2012",
+      4,
+      "X"
+    ],
+    [
+      "September 2013",
+      27,
+      "incomplete-options"
+    ],
+    [
+      "June 2019",
+      6,
+      "3 & 4"
+    ],
+    [
+      "June 2019",
+      36,
+      "N/F"
+    ],
+    [
+      "June 2019",
+      38,
+      "N/F"
+    ],
+    [
+      "September 2020",
+      56,
+      "incomplete-options"
+    ],
+    [
+      "September 2020",
+      59,
+      "S"
+    ],
+    [
+      "September 2020",
+      69,
+      "S"
+    ],
+    [
+      "September 2020",
+      91,
+      "1,3"
+    ],
+    [
+      "September 2020",
+      96,
+      "S"
+    ],
+    [
+      "June 2021",
+      37,
+      "1,2,3"
+    ],
+    [
+      "June 2021",
+      72,
+      "*"
+    ],
+    [
+      "March 2023",
+      18,
+      "1 &3"
+    ],
+    [
+      "March 2023",
+      53,
+      "1 & 4"
+    ],
+    [
+      "June 2023",
+      31,
+      "*"
+    ],
+    [
+      "June 2023",
+      63,
+      "Dropped"
+    ]
+  ],
+  "source": "https://www.psycourse.in/upload/1/Pdf/Question%20Bank/UGC_NET_JRF_Psychology_Question_Paper.pdf",
+  "source_sha256": "6a68178656b7b8122e3d034439f872202ee2ba0daf68376b77c04fd419a7ad69"
+}
