@@ -1835,7 +1835,7 @@ body.tour-open{overflow:auto}
 .install-prompt strong,.install-prompt span{display:block}.install-prompt strong{color:var(--navy);font-size:14px}.install-prompt span{color:var(--muted);font-size:12px;margin-top:2px}.install-actions{display:flex;gap:7px;flex-shrink:0}
 body.tour-open{overflow:hidden}
 @media(max-width:820px){.learning-steps.compact{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.learning-approach{margin-top:28px!important}.learning-steps.compact{grid-template-columns:1fr 1fr}.learning-steps.compact>div{padding:11px}.journey-dialog{margin:8vh auto 0;padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}.install-prompt{align-items:flex-start;flex-direction:column}.install-actions{width:100%}.install-actions .btn{flex:1}}
+@media(max-width:520px){.learning-approach{margin-top:28px!important}.learning-steps.compact{grid-template-columns:1fr 1fr}.learning-steps.compact>div{padding:11px}.journey-dialog{padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}.install-prompt{align-items:flex-start;flex-direction:column}.install-actions{width:100%}.install-actions .btn{flex:1}}
 
 
 /* Learner-profile onboarding */
