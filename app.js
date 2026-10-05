@@ -318,8 +318,38 @@ const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>{const s=state();if(s[k])return s[k];for(const old of legacyKeysFor(k)){if(s[old]){s[k]=s[old];delete s[old];save(s);return s[k];}}return {status:'NEW',stage:0,lastCompletedStage:-1};};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
-const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
-const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));if(u&&t&&m&&!contentIsPublished('microtopics',key(u.id,t.id,m.id)))return {u,t,m:null,k:null};return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
+function resolvePublishedMicrotopics(){
+  const syllabus=units();
+  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set?CONTENT_GATE.publishedMicrotopics:new Set();
+  const items=[];
+  let syllabusMicrotopics=0;
+  for(const u of syllabus)for(const t of (u.topics||[]))for(const m of (t.microtopics||[])){
+    syllabusMicrotopics++;
+    const k=key(u.id,t.id,m.id);
+    const published=publishedSet.size?publishedSet.has(k):contentIsPublished('microtopics',k);
+    if(published)items.push({u,t,m,k});
+  }
+  const diagnostic={
+    syllabusMicrotopics,
+    publishedMicrotopics:publishedSet.size,
+    resolvedMicrotopics:items.length,
+    gateReady:!!CONTENT_GATE.ready,
+    manifestBacked:publishedSet.size>0
+  };
+  window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
+  window.__NETPSY_RUNTIME.publishedResolver=diagnostic;
+  return {items,diagnostic};
+}
+const all=()=>resolvePublishedMicrotopics().items;
+const find=()=>{
+  const u=units().find(x=>String(x.id)===String(Q.get('unit')));
+  const t=u?.topics?.find(x=>String(x.id)===String(Q.get('topic')));
+  const m=t?.microtopics?.find(x=>String(x.id)===String(Q.get('micro')));
+  const k=u&&t&&m?key(u.id,t.id,m.id):null;
+  if(!u||!t||!m)return {u,t,m,k:null};
+  const resolved=resolvePublishedMicrotopics().items.some(x=>x.k===k);
+  return resolved?{u,t,m,k}:{u,t,m:null,k:null};
+};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
@@ -824,7 +854,8 @@ function daily3(){
   const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
   const allItems=all(),keyName='netPsychDailyLearning';
   window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
-  window.__NETPSY_RUNTIME.dailyLearning={syllabusMicrotopics:units().reduce((n,u)=>n+u.topics.reduce((m,t)=>m+(t.microtopics||[]).length,0),0),publishedMicrotopics:CONTENT_GATE.publishedMicrotopics.size,availableMicrotopics:allItems.length,gateReady:CONTENT_GATE.ready};
+  const resolver=resolvePublishedMicrotopics().diagnostic;
+  window.__NETPSY_RUNTIME.dailyLearning={syllabusMicrotopics:resolver.syllabusMicrotopics,publishedMicrotopics:resolver.publishedMicrotopics,availableMicrotopics:resolver.resolvedMicrotopics,gateReady:resolver.gateReady,manifestBacked:resolver.manifestBacked};
   console.info('[NET Psychology] Daily Learning runtime',window.__NETPSY_RUNTIME.dailyLearning);
   let existingToday=null;
   try{const storedToday=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');if(storedToday?.date===todayKey&&Array.isArray(storedToday.items))existingToday=storedToday.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean)}catch(e){}
@@ -851,7 +882,11 @@ function daily3(){
   addUnique(dueItems());
   addUnique(allItems);
   const session=interleaveBy(chosen,x=>x.u.id,3);
-  if(!session.length){$('#daily3App').innerHTML='<section class="panel empty"><h2>No concepts available</h2><p>Choose a topic from Learn when you are ready to continue.</p></section>';return}
+  if(!session.length){
+    const d=resolvePublishedMicrotopics().diagnostic;
+    $('#daily3App').innerHTML='<section class="panel empty"><h2>No concepts available</h2><p>Daily Learning could not resolve published concepts right now.</p><p class="muted">Syllabus: '+d.syllabusMicrotopics+' · Published: '+d.publishedMicrotopics+' · Resolved: '+d.resolvedMicrotopics+'</p><a class="btn primary" href="learn.html">OPEN LEARN</a></section>';
+    return;
+  }
   const nextServed=[...served,...session.map(x=>x.k)],completedCycle=nextServed.length>=allItems.length;
   try{localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));localStorage.setItem(keyName,JSON.stringify({served:completedCycle?[]:nextServed,cycle:completedCycle?rotation.cycle+1:rotation.cycle,lastDate:todayKey}))}catch(e){}
   $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section>'+(dailyPracticeReadyFor(session)?'<section class="panel daily3-note"><b>Part 2 of today’s learning.</b><span>Practice with 10 UGC NET Psychology previous-year questions (PYQs), then review your answers and explanations to strengthen your exam readiness.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">START PRACTICE TEST</a></div></section>':'');
