@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.2.0';
+const CACHE='netpsych-shell-v2.0.0';
 const SHELL=[
   './',
   './index.html',
@@ -34,11 +34,13 @@ const RUNTIME_DATA=new Set([
   'microtopic_explanations.json',
   'quick_learn_cards.json',
   'deep_dive_explanations.json',
+  'deep_dive_enrichment.json',
   'active_recall.json',
   'source_synthesis.json',
   'content-publish-config.json',
   'content-publish-manifest.json',
-  'content-owner-overrides.json'
+  'content-owner-overrides.json',
+  'revision_guidance.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
