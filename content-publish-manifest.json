@@ -3,18 +3,10 @@
   "mode": "expert_or_owner",
   "audit_version": "2026-10-04-structural1",
   "ai_pass": {
-    "questions": {
-      "pass": []
-    },
-    "microtopics": {
-      "pass": []
-    },
-    "quickLearnCards": {
-      "pass": []
-    },
-    "activeRecall": {
-      "pass": []
-    }
+    "questions": [],
+    "microtopics": [],
+    "quickLearnCards": [],
+    "activeRecall": []
   },
   "owner_approved": {
     "questions": [],
@@ -27,7 +19,8 @@
       "2-2-6|PYQ FOCUS",
       "2-2-6|EXAM TRAP",
       "2-2-6|SOURCE DETAIL",
-      "2-2-6|RECALL CUE"
+      "2-2-6|RECALL CUE",
+      "2-2-6|CONNECTION"
     ],
     "activeRecall": []
   },
