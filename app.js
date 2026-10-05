@@ -1109,7 +1109,7 @@ function inlineLearningMarkup(value,importantTerms=[]){
   }
   marked=marked.replace(/\*\*([^*]+)\*\*/g,'@@BOLD@@$1@@/BOLD@@');
   marked=marked.replace(/@@BOLD@@/g,'<strong>').replace(/@@\/BOLD@@/g,'</strong>');
-  return marked.replace(/\n\s*\n/g,'</p><p>').replace(/\n/g,'<br>');
+  return marked.replace(/\n\s*\n/g,'<br><br>').replace(/\n/g,'<br>');
 }
 function inlineLearningNote(label,value,kind='note'){
   const text=String(value??'').trim();
