@@ -9,30 +9,30 @@
       "parts": [
         {
           "id": "1A",
-          "title": "Historical Emergence and Traditions",
-          "description": "Trace psychology from Eastern and Western intellectual traditions through the emergence of academic psychology and its major schools.",
+          "title": "Indian Psychology",
+          "description": "Study Indian psychological thought, traditions and their distinctive approaches to self, mind, knowledge and transformation.",
           "topic_ids": [
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            8,
+            12,
+            13,
+            14
           ]
         },
         {
           "id": "1B",
-          "title": "Knowledge Paradigms and Indian Psychology",
-          "description": "Move from foundations of knowledge and paradigms to Indian approaches, paradigmatic controversies, science, spirituality and self-knowledge.",
+          "title": "Western Psychology and Foundations",
+          "description": "Trace the emergence of Western psychology, major schools, founding paths, knowledge foundations, paradigms and paradigmatic controversies.",
           "topic_ids": [
+            4,
+            5,
+            6,
+            7,
             9,
             10,
-            11,
-            12,
-            13,
-            14
+            11
           ]
         }
       ],
@@ -377,31 +377,26 @@
         {
           "id": "2A",
           "title": "Research Methodology",
-          "description": "Research questions, variables, hypotheses, sampling, ethics, paradigms, methods and experimental designs.",
+          "description": "Build the research process from research problems and variables through hypotheses, sampling, designs, methods, ethics and research paradigms.",
           "topic_ids": [
             1,
             2,
             3,
             4,
-            5,
-            15
+            5
           ]
         },
         {
           "id": "2B",
-          "title": "Statistics",
-          "description": "Statistical foundations, probability, tests, power, effect size, ANOVA, correlation, regression and factor analysis.",
+          "title": "Statistics and Data Analysis",
+          "description": "Develop the statistical toolkit used in psychological research, including descriptive statistics, probability, testing, ANOVA, correlation, regression and multivariate methods.",
           "topic_ids": [
             6,
             7,
             8,
             9,
             10,
-            11,
-            12,
-            13,
-            14,
-            16
+            11
           ]
         }
       ],
@@ -862,28 +857,7 @@
       "id": 3,
       "title": "Psychological Testing",
       "description": "Understand psychological testing as a systematic process rather than a collection of test names. Follow the path from test construction and standardisation through reliability, validity, norms, administration, scoring, and interpretation. Then connect these foundations with major types and applications of psychological assessment so you can distinguish what a test measures, how confidently it measures it, and how its results should be interpreted.",
-      "parts": [
-        {
-          "id": "3A",
-          "title": "Foundations of Psychological Testing",
-          "description": "Build the measurement foundation: test types, construction, standardisation, psychometric properties, and major areas of testing.",
-          "topic_ids": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ]
-        },
-        {
-          "id": "3B",
-          "title": "Applications of Psychological Testing",
-          "description": "Apply psychological testing across clinical, organizational, educational, counselling, military and career-guidance settings.",
-          "topic_ids": [
-            6
-          ]
-        }
-      ],
+      "parts": [],
       "pyq_count": 110,
       "pyq_frequency_band": "B",
       "topics": [
@@ -1073,32 +1047,7 @@
       "id": 4,
       "title": "Biological Basis of Behavior",
       "description": "Connect behaviour with the biological systems that make it possible. Study the organisation and functioning of the nervous system, brain structures and processes, sensory systems, endocrine influences, and genetic contributions, then use these foundations to explain links with cognition, emotion, motivation, and behaviour. The unit is designed to help you move between biological mechanisms and psychological outcomes rather than memorising structures in isolation.",
-      "parts": [
-        {
-          "id": "4A",
-          "title": "Neural and Physiological Foundations",
-          "description": "Build the biological foundation from sensory systems and neural transmission to the nervous system, neurotransmitters and physiological methods.",
-          "topic_ids": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            9
-          ]
-        },
-        {
-          "id": "4B",
-          "title": "Biological Bases of Emotion and Motivation",
-          "description": "Connect biological systems with emotion, motivation, and the muscular and glandular systems.",
-          "topic_ids": [
-            7,
-            8,
-            10
-          ]
-        }
-      ],
+      "parts": [],
       "pyq_count": 137,
       "pyq_frequency_band": "B",
       "topics": [
@@ -1338,7 +1287,7 @@
         {
           "id": "5A",
           "title": "Attention and Perception",
-          "description": "Attention, perception, perceptual organisation, constancy, illusions, signal detection and advanced perception.",
+          "description": "Build the foundations of attention and perception, from selective processing and signal detection to perceptual organization and higher-order perception.",
           "topic_ids": [
             1,
             2,
@@ -1347,16 +1296,16 @@
             5,
             6,
             7,
-            8
+            8,
+            9,
+            10
           ]
         },
         {
           "id": "5B",
           "title": "Learning, Memory and Forgetting",
-          "description": "Learning processes, conditioning, reinforcement, cognitive learning, memory processes, stages and forgetting.",
+          "description": "Move from major learning theories and conditioning to memory systems, retrieval, forgetting and applied behaviour change.",
           "topic_ids": [
-            9,
-            10,
             11,
             12,
             13,
@@ -1813,25 +1762,25 @@
       "parts": [
         {
           "id": "6A",
-          "title": "Thinking, Reasoning and Problem Solving",
-          "description": "Build the cognitive foundations of thought, concepts, reasoning, language, problem solving and metacognition before moving to decision making.",
+          "title": "Thinking, Reasoning, Problem Solving and Decision Making",
+          "description": "Study the cognitive processes used to represent problems, reason, solve problems and make decisions.",
           "topic_ids": [
             1,
             2,
             3,
             4,
-            5,
-            9
+            5
           ]
         },
         {
           "id": "6B",
           "title": "Intelligence and Creativity",
-          "description": "Compare major theories of intelligence and creativity and understand their relationship.",
+          "description": "Compare major approaches to intelligence and creativity, including their models, assessment and applications.",
           "topic_ids": [
             6,
             7,
-            8
+            8,
+            9
           ]
         }
       ],
@@ -2078,32 +2027,34 @@
         {
           "id": "7A",
           "title": "Personality",
-          "description": "Determinants, major approaches and other personality theories.",
+          "description": "Compare major approaches to personality, including trait, psychoanalytic, social-cognitive, humanistic and related perspectives.",
           "topic_ids": [
             1,
             2,
-            3
-          ]
-        },
-        {
-          "id": "7B",
-          "title": "Motivation, Emotion, Stress and Coping",
-          "description": "Motivation, curiosity, sensation seeking, achievement, self-regulation, flow, emotion, conflict, stress and coping.",
-          "topic_ids": [
+            3,
             4,
             5,
             6,
             7,
             8,
             9,
-            10,
+            10
+          ]
+        },
+        {
+          "id": "7B",
+          "title": "Motivation, Emotion, Stress and Coping",
+          "description": "Connect motivational processes with emotion, stress, coping and psychological adaptation.",
+          "topic_ids": [
             11,
             12,
             13,
             14,
             15,
             16,
-            17
+            17,
+            18,
+            19
           ]
         }
       ],
@@ -2532,37 +2483,7 @@
       "id": 8,
       "title": "Social Psychology",
       "description": "Understand social behaviour by examining how people perceive others, form and change attitudes, influence one another, function in groups, and relate across social and intergroup boundaries. Connect individual-level processes such as social cognition and attitude formation with influence, group processes, interpersonal relationships, and intergroup relations. The goal is to build a coherent explanation of how social context shapes thought, feeling, and behaviour.",
-      "parts": [
-        {
-          "id": "8A",
-          "title": "Foundations and Social Cognition",
-          "description": "Build the foundations of social psychology and understand social perception, attitudes and prosocial behaviour.",
-          "topic_ids": [
-            1,
-            2,
-            3
-          ]
-        },
-        {
-          "id": "8B",
-          "title": "Social Influence, Groups and Leadership",
-          "description": "Study conformity, compliance, obedience, group processes, dynamics and leadership.",
-          "topic_ids": [
-            4,
-            5,
-            6
-          ]
-        },
-        {
-          "id": "8C",
-          "title": "Intergroup Relations and Applications",
-          "description": "Move from intergroup theories to applied social psychology.",
-          "topic_ids": [
-            7,
-            8
-          ]
-        }
-      ],
+      "parts": [],
       "pyq_count": 61,
       "pyq_frequency_band": "C",
       "topics": [
@@ -2868,7 +2789,7 @@
         {
           "id": "9A",
           "title": "Human Development",
-          "description": "Build developmental processes, aging, developmental theories and domains of development.",
+          "description": "Study development across the lifespan, including major theories, domains and developmental processes.",
           "topic_ids": [
             1,
             2,
@@ -2879,7 +2800,7 @@
         {
           "id": "9B",
           "title": "Psychopathology and Psychotherapy",
-          "description": "Move from classification and assessment of psychological disorders to major psychotherapies.",
+          "description": "Understand classification, assessment and major psychological disorders alongside the principal psychotherapeutic approaches in the syllabus.",
           "topic_ids": [
             5,
             6
@@ -2888,7 +2809,7 @@
         {
           "id": "9C",
           "title": "Educational and Counselling Applications",
-          "description": "Apply psychology to learning, achievement, teacher effectiveness, school guidance and counselling.",
+          "description": "Apply developmental and psychological principles to learning, achievement, guidance and counselling contexts.",
           "topic_ids": [
             7,
             8,
