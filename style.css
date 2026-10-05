@@ -1939,3 +1939,98 @@ main{flex:1}
   .micro-inline-notes{margin-top:15px}
   .micro-inline-note{font-size:12px;padding:8px 10px}
 }
+
+
+/* Micro-topic v3 — three-card learning choice architecture */
+.micro-learning-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:16px;
+  align-items:stretch;
+}
+.micro-learning-card{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.micro-learning-card h2{
+  margin:5px 0 12px;
+  color:var(--navy);
+  font-size:19px;
+  line-height:1.25;
+}
+.micro-card-eyebrow{
+  color:var(--blue);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.micro-short-list{
+  margin:0;
+  padding-left:20px;
+  color:var(--ink);
+  line-height:1.65;
+}
+.micro-short-list li+li{margin-top:8px}
+.micro-learning-card .micro-inline-notes{
+  margin-top:16px;
+  max-width:none;
+}
+.micro-recall-prompt{
+  margin:0;
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.65;
+  font-weight:700;
+}
+.micro-card-answer-guide{
+  margin:12px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+}
+.micro-detailed-copy{
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.7;
+  max-height:360px;
+  overflow:auto;
+  padding-right:4px;
+}
+.micro-detailed-copy>p{margin:0 0 12px}
+.micro-detailed-copy>p:last-child{margin-bottom:0}
+.micro-card-empty{color:var(--muted);font-size:13px;line-height:1.6}
+.micro-card-action{
+  width:100%;
+  justify-content:center;
+  margin-top:auto;
+  padding-top:11px;
+  padding-bottom:11px;
+}
+.micro-next-bar{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:16px;
+}
+.micro-next-bar .text-link{
+  color:var(--blue);
+  font-weight:850;
+  text-decoration:none;
+}
+@media(max-width:900px){
+  .micro-learning-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .micro-learning-card{padding:18px}
+  .micro-learning-card h2{font-size:17px}
+}
+@media(max-width:700px){
+  .micro-learning-cards{grid-template-columns:1fr}
+  .micro-learning-card{padding:20px}
+  .micro-detailed-copy{max-height:none;overflow:visible}
+  .micro-next-bar{justify-content:center;margin-top:18px}
+}

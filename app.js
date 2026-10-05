@@ -1215,7 +1215,6 @@ function inlineLearningNote(label,value,kind='note'){
 function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
-  const p=getP(k);
   document.title=m.title+' — UGC NET Psychology';
   if(!contentIsPublished('microtopics',k)){
     $('#microPage').innerHTML='<section class="panel empty"><div class="eyebrow">CONTENT UNDER REVIEW</div><h1>This concept is temporarily unavailable.</h1><p>The learning content is being quality-checked before it is served.</p><a class="btn primary" href="learn.html">BACK TO LEARN</a></section>';
@@ -1224,46 +1223,58 @@ function micro(){
 
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
-  const concept=String(m.explanation||m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const kp=Array.isArray(m.key_points)?m.key_points:bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
+  const recall=recallContent(m);
+  const concept=String(m.explanation||m.expert_explanation||recall.core||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
+  const shortPoints=(Array.isArray(m.key_points)?m.key_points:recall.points).map(x=>String(x||'').trim()).filter(Boolean).slice(0,5);
+  const detailed=String(recall.deep||m.detailed_explanation||m.deep_learning||m.deep||'').trim();
   const inlineNudges=Array.isArray(m.inline_nudges)?m.inline_nudges:[];
-  const fallbackNudge=String(m.nudge||m.inline_nudge||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||'').trim();
-  const pyqContext=String(m.pyq_context||'').trim();
-
-  // Explanation stays intentionally lean. Supporting material is routed to the
-  // dedicated Deep Dive, Active Recall, Revision and Practice flows.
-  const explanationParts=[concept];
-  if(kp.length){
-    const compact=kp.slice(0,6).map(x=>String(x).trim()).filter(Boolean);
-    if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
-  }
-  const explanation=explanationParts.join('\n\n');
-  const importantTerms=kp.slice(0,6).map(x=>String(x).split(/→|:|—|–|,/)[0].replace(/^[•\s]+/,'').trim()).filter(x=>x.length>=3&&x.length<=45);
-  const explanationHtml=inlineLearningMarkup(explanation,importantTerms);
-  const notesHtml=[
-    ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
-    fallbackNudge&&!inlineNudges.length?inlineLearningNote('Nudge',fallbackNudge,'nudge'):'',
-    pyqContext?inlineLearningNote('PYQ cue',pyqContext,'pyq'):''
-  ].filter(Boolean).join('');
-
+  const fallbackNudge=String(m.nudge||m.inline_nudge||recall.distinction||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||'').trim();
+  const pyqContext=String(m.pyq_context||recall.pattern||'').trim();
+  const prompts=buildRecallPrompts(m,practiceFor(u.id,t.id,m.id));
+  const primaryRecall=prompts[0];
   const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
   const fromRevision=Q.get('from')==='revision';
   const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
-  setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
+  const deepHref='deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
+  setP(k,{started:true,status:getP(k).status==='NEW'?'LEARNING':getP(k).status,last:new Date().toISOString()});
+
+  const explanationHtml=inlineLearningMarkup(concept,shortPoints.slice(0,6));
+  const notesList=shortPoints.map(x=>'<li>'+esc(x)+'</li>').join('');
+  const notesNudges=[
+    ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
+    !inlineNudges.length&&fallbackNudge?inlineLearningNote('Distinguish',fallbackNudge,'nudge'):'',
+    pyqContext?inlineLearningNote('PYQ cue',pyqContext,'pyq'):''
+  ].filter(Boolean).join('');
+  const recallPrompt=primaryRecall?esc(primaryRecall.prompt):'Can you explain this concept in your own words without looking at your notes?';
+  const recallSupport=primaryRecall?'<p class="micro-card-answer-guide">'+esc(primaryRecall.type||'FREE RECALL')+' · Retrieve the idea first, then check it in Active Recall.</p>':'<p class="micro-card-answer-guide">Close your notes, explain the concept aloud, then check your retrieval.</p>';
+  const detailedHtml=detailed?inlineLearningMarkup(detailed):'<p class="micro-card-empty">A fuller explanation is available in Deep Dive for this concept.</p>';
 
   $('#microPage').innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC</div><h1>'+esc(m.title)+'</h1></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="micro-explanation">'+explanationHtml+notesHtml+'</div>'+
+    '<div class="micro-explanation">'+explanationHtml+'</div>'+
     '</div></article>'+
-    '<section class="micro-learning-actions">'+
-    '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
-    '<a class="micro-action" href="'+recallHref+'"><span>CHECK YOUR RECALL</span></a>'+
-    '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
-    '</section></section>';
+    '<section class="micro-learning-cards" aria-label="Choose how to work with this concept">'+
+      '<article class="micro-learning-card micro-short-notes">'+
+        '<div class="micro-card-eyebrow">SHORT NOTES</div><h2>Quick review</h2>'+
+        (notesList?'<ul class="micro-short-list">'+notesList+'</ul>':'<p class="micro-card-empty">Short notes are not available for this concept yet.</p>')+
+        notesNudges+
+      '</article>'+
+      '<article class="micro-learning-card micro-understand-card">'+
+        '<div class="micro-card-eyebrow">I UNDERSTAND</div><h2>Prove it to yourself</h2>'+
+        '<p class="micro-recall-prompt">'+recallPrompt+'</p>'+recallSupport+
+        '<a class="btn primary micro-card-action" href="'+recallHref+'">CHECK YOUR RECALL →</a>'+
+      '</article>'+
+      '<article class="micro-learning-card micro-detailed-card">'+
+        '<div class="micro-card-eyebrow">DETAILED EXPLANATION</div><h2>Go deeper</h2>'+
+        '<div class="micro-detailed-copy">'+detailedHtml+'</div>'+
+        '<a class="btn micro-card-action" href="'+deepHref+'">OPEN DEEP DIVE →</a>'+
+      '</article>'+
+    '</section>'+
+    '<nav class="micro-next-bar" aria-label="Micro-topic navigation"><a class="text-link" href="'+nextHref+'">'+(next?'NEXT CONCEPT →':'BACK TO LEARN →')+'</a></nav>'+
+    '</section>';
 }
-
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{
