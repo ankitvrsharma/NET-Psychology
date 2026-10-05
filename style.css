@@ -1888,3 +1888,53 @@ main{flex:1}
 .topic-sort.active{background:#edf2ff;border-color:#d6def7;color:var(--blue)}
 .topic-card-meta .eyebrow{white-space:nowrap}
 @media(max-width:620px){.unit-topic-sort-row{justify-content:flex-start;overflow-x:auto;max-width:100%;padding-bottom:2px}.unit-topic-sort-row .topic-sort{flex:0 0 auto}}
+
+
+/* Micro-topic v2 — clean explanation with inline emphasis and nudges */
+.micro-explanation{
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.78;
+  max-width:900px;
+}
+.micro-explanation>p{margin:0 0 14px}
+.micro-explanation>p:last-child{margin-bottom:0}
+.micro-explanation>br + br{display:block;content:"";margin-top:8px}
+.micro-explanation strong{
+  color:var(--navy);
+  font-weight:850;
+}
+.micro-inline-notes{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  margin-top:18px;
+  max-width:900px;
+}
+.micro-inline-note{
+  display:block;
+  padding:8px 11px;
+  border-left:3px solid #c9d3e8;
+  color:var(--muted);
+  background:#f8faff;
+  border-radius:0 9px 9px 0;
+  font-size:12.5px;
+  line-height:1.55;
+}
+.micro-inline-note b{
+  color:var(--navy);
+  font-weight:850;
+}
+.micro-inline-note.pyq{
+  border-left-color:var(--blue);
+  background:#f5f7ff;
+}
+.micro-inline-note.pyq b{color:var(--blue)}
+.micro-inline-note.nudge{
+  border-left-color:#b8c4d9;
+}
+@media(max-width:620px){
+  .micro-explanation{font-size:15px;line-height:1.72}
+  .micro-inline-notes{margin-top:15px}
+  .micro-inline-note{font-size:12px;padding:8px 10px}
+}
