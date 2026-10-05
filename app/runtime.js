@@ -47,6 +47,9 @@ const loadStudyData=window.NETPsychologyDataLoader.create({
   set data(v){D=v},
   get questions(){return PRACTICE_QUESTIONS},
   set questions(v){PRACTICE_QUESTIONS=v},
+  get explanations(){return PRACTICE_EXPLANATIONS},
+  set explanations(v){PRACTICE_EXPLANATIONS=v},
+  dataVersion:DATA_VERSION,
   render:()=>safeRender(),
   isPublished:(type,id)=>contentIsPublished(type,id)
 });
