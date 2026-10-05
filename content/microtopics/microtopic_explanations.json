@@ -15146,26 +15146,26 @@
   "2-2-6": {
     "id": 6,
     "title": "Types of variables",
-    "content_notes": "CORE CONCEPT\nVariables are characteristics or conditions that can take different values and help structure psychological research.\n\nKEY POINTS\n• independent variable — manipulated by the researcher\n• dependent variable — measured outcome\n• extraneous/control variables — possible influences on the outcome that are controlled where possible\n• quantitative vs qualitative\n• active vs attribute\n• continuous vs discrete\n\nNET-RELEVANT TERMINOLOGY\n• IV = independent variable\n• DV = dependent variable\n• EV = extraneous variable\n• control variable = a potential influence deliberately held constant\n• active variable = can be manipulated experimentally\n• attribute variable = pre-existing characteristic\n• continuous variable = values across a range\n• discrete variable = distinct/countable values\n• operational definition = specifies the measurement or manipulation procedure\n\nCOMMON CONFUSION TRAPS\n• IV is not simply “the variable mentioned first”; identify its role in the design.\n• DV is the measured outcome, not the presumed cause.\n• An extraneous variable can become a control variable when it is deliberately held constant.\n• Attribute variables are pre-existing characteristics and are not ordinarily manipulated experimentally.\n• Continuous and discrete describe possible values; they are not interchangeable with IV/DV roles.\n\nACTIVE RECALL\n1. What is the difference between an IV and a DV?\n2. What makes an extraneous variable different from a control variable?\n3. Distinguish active and attribute variables.\n4. What is the difference between continuous and discrete variables?\n5. Why is an operational definition important when studying a variable?\n\nREVISION CUES\nIV → manipulate\nDV → measure\nEV → may interfere\nControl → hold constant\nActive → manipulate\nAttribute → pre-existing\nContinuous → range\nDiscrete → distinct values\n\nPYQ-STYLE PATTERN\nExpect identification, classification, statement-based comparison and short research-scenario questions.\n\nMEMORY HOOK\nChange the IV → measure the DV → control the EV.",
-    "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; UGC NET/JRF/SLET Psychology — PowerWithin syllabus material; Psychology: A Self-Teaching Guide; Psychology by Ciccarelli & White (6th ed.)",
+    "content_notes": "CORE CONCEPT\nVariables are properties that take on different values and are measurable. In research, the role of a variable depends on how it is used in the design.\n\nKEY POINTS\n• Independent variable → manipulated by the experimenter.\n• Dependent variable → observed/measured outcome.\n• Control variable → a potential independent variable held constant during an experiment.\n• Quantitative variables → numerical; qualitative variables → qualities/categories.\n• Active variables → can be manipulated, changed or controlled experimentally.\n• Attribute variables → pre-existing characteristics of the study population.\n• Continuous variables → values across a range.\n• Discrete variables → distinct values; the source further distinguishes constant, dichotomous and polytomous forms.\n\nNET-RELEVANT TERMINOLOGY\nIV, DV, control/extraneous variable, quantitative vs qualitative, active vs attribute, continuous vs discrete.\n\nCOMMON TRAP\nDo not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling.\n\n5-MINUTE TEACHING FOCUS\nStart with IV → DV, then classify variables using the source's four contrasts: control/extraneous, quantitative/qualitative, active/attribute, continuous/discrete.\n\nMEMORY HOOK\nIV = manipulated • DV = measured • Control = held constant • Active = manipulable • Attribute = pre-existing • Continuous = range • Discrete = distinct",
+    "source": "Prompts for notes.docx + authoritative UGC NET Psychology syllabus; Psychology: A Self-Teaching Guide; Psychology by Ciccarelli & White (6th ed.); PowerWithin Psychology (attached sources)",
     "content_level": "Source-grounded study note",
     "sources": [
       "nta",
       "powerwithin",
-      "selfteaching",
-      "ciccarelli"
+      "ciccarelli_white",
+      "self_teaching_guide"
     ],
-    "source_lens": "Research-methods lens: identify the variable's role, how it is measured or manipulated, and how other variables may affect interpretation.",
-    "deep_learning": "ACADEMIC CORE\nA variable is a characteristic or condition that can vary across observations. In experimental research, the independent variable is manipulated and the dependent variable is measured as the outcome.\n\nCLASSIFICATIONS TO KNOW\n1. Independent vs dependent vs extraneous/control — based on the variable's role in the research design.\n2. Quantitative vs qualitative — based on the nature of the values or categories represented.\n3. Active vs attribute — based on whether the variable can be experimentally manipulated.\n4. Continuous vs discrete — based on the possible values the variable can take.\n\nNET DISTINCTIONS\nIndependent variable → manipulated.\nDependent variable → measured.\nExtraneous variable → another factor that could affect the dependent variable.\nControl variable → a potential influence deliberately kept constant.\nActive variable → experimentally manipulable.\nAttribute variable → pre-existing characteristic.\n\nSOURCE BASIS\n• UGC NET/JRF/SLET Psychology — PowerWithin syllabus material\n• Psychology: A Self-Teaching Guide\n• Psychology by Ciccarelli & White (6th ed.)\n\nSTUDY RULE\nAlways identify a variable from its role in the particular research design. Do not assign labels mechanically from the name of the variable alone.",
+    "source_lens": "Research-methods lens: identify the variable's role in the design, then distinguish manipulation, measurement and control from classification by type.",
+    "deep_learning": "ACADEMIC CORE\nVariables are properties that take on different values and are measurable. The supplied PowerWithin material classifies variables through several contrasts.\n\nINDEPENDENT VS DEPENDENT\nThe independent variable is manipulated by the experimenter. The dependent variable is observed and recorded; its behaviour is treated as depending on the independent variable.\n\nCONTROL / EXTRANEOUS\nA control variable is a potential independent variable held constant during an experiment. The source gives temperature and time of day as examples. Ciccarelli & White also emphasizes control of extraneous/confounding variables in experimental research.\n\nQUANTITATIVE VS QUALITATIVE\nThe PowerWithin source describes quantitative variables in numerical terms and qualitative variables in terms of qualities/categories.\n\nACTIVE VS ATTRIBUTE\nActive variables can be manipulated, changed or controlled experimentally. Attribute variables cannot ordinarily be manipulated or controlled in this way; they reflect pre-existing characteristics of the study population, with age, gender and level of motivation given as examples.\n\nCONTINUOUS VS DISCRETE\nContinuous variables exist across a range of values. Discrete variables take distinct values; the source divides these into constant, dichotomous and polytomous forms.\n\nDISTINCTION / CAUTION\nA variable's label must be interpreted in the context of the research design. Do not treat “independent” as simply meaning “first” or “dependent” as meaning “less important.” The operational definition of a variable is a separate issue: Ciccarelli & White describes operationalization as specifying the procedures used to control or measure variables.\n\nSOURCE BASIS\n• PowerWithin Psychology — Unit 2 Research Methodology and Statistics, identifying variables and types of variables.\n• Psychology by Ciccarelli & White (6th ed.) — scientific research and experimental method.\n• Psychology: A Self-Teaching Guide — research-methods terminology including independent variable, dependent variable and operational definition.\n\nSTUDY RULE\nPreserve the source-supported classifications and distinctions. Do not add a classification that is not supported by the supplied material.",
     "retrieval_questions": [
-      "Without looking at the notes, define a variable and state the main research-role classifications.",
-      "In a study of the effect of sleep duration on memory performance, identify the IV and DV.",
-      "Distinguish an extraneous variable from a control variable.",
+      "Without looking at the notes, state the source-based meaning of a variable.",
+      "What is the difference between an independent variable and a dependent variable?",
+      "What is a control variable, and why is it held constant?",
       "How do active and attribute variables differ?",
       "How do continuous and discrete variables differ?"
     ],
-    "application_question": "A researcher changes room temperature and measures test performance while keeping the time of testing constant. Identify the IV, DV and control variable, and explain why each receives that label.",
-    "exam_takeaway": "IV → manipulate | DV → measure | EV → control where possible",
+    "application_question": "A researcher changes study duration and records test performance while keeping the testing time constant. Identify the independent variable, dependent variable and control variable, then classify the manipulated variable as active or attribute.",
+    "exam_takeaway": "IV = manipulated • DV = measured • Control = held constant",
     "learning_time": "8–12 min first pass",
     "learning_sequence": [
       "Understand the core",
@@ -15175,10 +15175,10 @@
       "Schedule spaced revision"
     ],
     "source_focus": [
-      "UGC NET/JRF/SLET Psychology — PowerWithin syllabus material",
-      "Psychology: A Self-Teaching Guide",
-      "Psychology by Ciccarelli & White (6th ed.)"
+      "PowerWithin Psychology — Unit 2: identifying variables and types of variables",
+      "Psychology by Ciccarelli & White (6th ed.) — scientific research and experimental method",
+      "Psychology: A Self-Teaching Guide — research-methods terminology"
     ],
-    "revisathon_focus": "Research-methods revision: identify the variable role before interpreting the research result."
+    "revisathon_focus": "Part 7: sampling and research-methodology PYQ revision."
   }
 }

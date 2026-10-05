@@ -30806,7 +30806,7 @@
     "micro": 6,
     "angle": "CORE IDEA",
     "title": "Types of variables",
-    "explanation": "Variables are characteristics or conditions that can vary; identify them by their role in the research design.",
+    "explanation": "Variables are measurable properties that can take different values.",
     "quick_card": null
   },
   "2-2-6|KEY FEATURES": {
@@ -30816,7 +30816,7 @@
     "micro": 6,
     "angle": "KEY FEATURES",
     "title": "Types of variables",
-    "explanation": "Independent → manipulated; dependent → measured; extraneous/control → possible influence controlled where possible; active/attribute and continuous/discrete are additional classifications.",
+    "explanation": "IV is manipulated; DV is observed/measured; control variables are held constant.",
     "quick_card": null
   },
   "2-2-6|PYQ FOCUS": {
@@ -30826,7 +30826,7 @@
     "micro": 6,
     "angle": "PYQ FOCUS",
     "title": "Types of variables",
-    "explanation": "Expect identification, classification and research-scenario questions asking which variable plays which role.",
+    "explanation": "Compare IV, DV and control/extraneous variables before moving to secondary classifications.",
     "quick_card": null
   },
   "2-2-6|EXAM TRAP": {
@@ -30836,7 +30836,7 @@
     "micro": 6,
     "angle": "EXAM TRAP",
     "title": "Types of variables",
-    "explanation": "Do not confuse research role (IV/DV) with manipulability (active/attribute) or value structure (continuous/discrete).",
+    "explanation": "Do not confuse a variable's research role (IV/DV) with classifications such as active/attribute or continuous/discrete.",
     "quick_card": null
   },
   "2-2-6|SOURCE DETAIL": {
@@ -30846,7 +30846,7 @@
     "micro": 6,
     "angle": "SOURCE DETAIL",
     "title": "Types of variables",
-    "explanation": "PowerWithin distinguishes independent/dependent/control, quantitative/qualitative, active/attribute and continuous/discrete variables.",
+    "explanation": "PowerWithin distinguishes quantitative/qualitative, active/attribute and continuous/discrete variables.",
     "quick_card": null
   },
   "2-2-6|RECALL CUE": {
@@ -30856,7 +30856,7 @@
     "micro": 6,
     "angle": "RECALL CUE",
     "title": "Types of variables",
-    "explanation": "IV → manipulate | DV → measure | EV → may interfere | Control → hold constant",
+    "explanation": "IV = manipulated; DV = measured; Control = held constant.",
     "quick_card": null
   },
   "2-2-6|CONNECTION": {
