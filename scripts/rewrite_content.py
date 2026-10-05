@@ -2,20 +2,13 @@ import json, os, re, sys, urllib.request, urllib.error
 from pathlib import Path
 from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parents[1]
-OWNER=ROOT/"content-owner-overrides.json"; DATA=ROOT/"data.json"; DATAJS=ROOT/"data.js"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
+OWNER=ROOT/"content-owner-overrides.json"; DATA=ROOT/"content/microtopics/microtopic_explanations.json"; QUESTIONS=ROOT/"content/questions/questions.json"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
 MAX=2; PASS=70
 def now(): return datetime.now(timezone.utc).isoformat()
 def load(p,d): return json.loads(p.read_text(encoding="utf-8")) if p.exists() else d
 def save(p,x): p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 def find_micro(data,key):
-    try: u,t,m=map(int,str(key).split("-")[:3])
-    except: return None
-    for a in data.get("units",[]):
-        if a.get("id")==u:
-            for b in a.get("topics",[]):
-                if b.get("id")==t:
-                    for c in b.get("microtopics",[]):
-                        if c.get("id")==m: return c
+    return data.get(str(key)) if isinstance(data,dict) else None
 def find_question(qs,key): return next((q for q in qs if str(q.get("id"))==str(key)),None)
 def target(data,qs,typ,key): return find_question(qs,key) if typ=="questions" else find_micro(data,str(key).split("|",1)[0])
 def terms(x):
@@ -62,7 +55,7 @@ def api(prompt):
         text=re.sub(r"^"+re.escape(fence)+r"(?:json)?\s*","",text); text=re.sub(r"\s*"+re.escape(fence)+r"$","",text)
     return json.loads(text)
 def main():
-    owner=load(OWNER,{}); data=load(DATA,{}); qs=load(ROOT/"practice_questions.json",[]); sources=load(ROOT/"study_sources.json",{}).get("source_library",[])
+    owner=load(OWNER,{}); data=load(DATA,{}); qp=load(QUESTIONS,{"pyq":[],"practice":[]}); qs=list(qp.get("pyq",[]))+list(qp.get("practice",[])); sources=load(ROOT/"study_sources.json",{}).get("source_library",[])
     track=load(TRACK,{"schema_version":1,"items":{}}); track.setdefault("items",{}); changed=0
     for typ,ids in owner.get("owner_rejected",{}).items():
         for raw in ids or []:
@@ -102,6 +95,5 @@ def main():
             except Exception as e:
                 track["items"][ident]=dict(state,cycles=cycle,status="REWRITE_ERROR",last_error=str(e),updated_at=now())
     owner["schema_version"]=max(int(owner.get("schema_version",4)),8); owner["updated_at"]=now(); track["updated_at"]=now(); track["max_automatic_rewrite_cycles"]=MAX
-    DATAJS.write_text("window.NETPSY_DATA = "+json.dumps(data,ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
     save(DATA,data); save(OWNER,owner); save(TRACK,track); print("Released "+str(changed)+" rewritten item(s) after re-audit.")
 if __name__=="__main__": main()

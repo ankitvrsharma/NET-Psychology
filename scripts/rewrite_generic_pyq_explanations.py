@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
-PYQS=ROOT/"practice_questions.json"; DATA=ROOT/"data.json"
+QUESTIONS=ROOT/"content/questions/questions.json"; DATA=ROOT/"syllabus-index.json"
 PROGRESS=ROOT/"generic-pyq-rewrite-progress.json"; LOG=ROOT/"generic-pyq-rewrite-log.json"
 MARKERS=(
  "The stem describes the concept or relationship represented by",
@@ -133,7 +133,7 @@ def rewrite_batch(batch,micros):
     return got
 
 def main():
-    questions=load(PYQS,[]); data=load(DATA,{})
+    pool=load(QUESTIONS,{"pyq":[],"practice":[]}); questions=list(pool.get("pyq",[])); data=load(DATA,{})
     micros=micro_index(data); generic=[q for q in questions if is_generic(q)]
     progress=load(PROGRESS,{"schema_version":1,"completed_ids":[],"started_at":now()})
     completed=set(map(str,progress.get("completed_ids",[])))
@@ -148,7 +148,7 @@ def main():
         try:
             rewritten=rewrite_batch(batch,micros)
             for qid,exp in rewritten.items(): by_id[qid]["explanation"]=exp; completed.add(qid)
-            save(PYQS,questions); progress.update({"updated_at":now(),"completed_ids":sorted(completed),"total_target":len(generic)}); save(PROGRESS,progress)
+            pool["pyq"]=questions; save(QUESTIONS,pool); progress.update({"updated_at":now(),"completed_ids":sorted(completed),"total_target":len(generic)}); save(PROGRESS,progress)
             log["batches"].append({"batch":n,"count":len(batch),"ids":ids,"status":"DONE","at":now()}); save(LOG,log)
             print(f"Batch {n}/{len(batches)} complete.")
         except Exception as e:

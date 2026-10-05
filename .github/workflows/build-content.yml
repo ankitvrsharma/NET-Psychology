@@ -4,20 +4,18 @@ on:
   push:
     branches: [main]
     paths:
-      - content-source.json
-      - practice_questions.json
-      - practice_explanations.json
-      - scripts/build_content_category_files.py
-      - scripts/validate_content.py
+      - syllabus-index.json
+      - content-pools/**
+      - content/**
+      - scripts/validate_content_pools.py
       - .github/workflows/build-content.yml
   pull_request:
     branches: [main]
     paths:
-      - content-source.json
-      - practice_questions.json
-      - practice_explanations.json
-      - scripts/build_content_category_files.py
-      - scripts/validate_content.py
+      - syllabus-index.json
+      - content-pools/**
+      - content/**
+      - scripts/validate_content_pools.py
       - .github/workflows/build-content.yml
 
 permissions:
@@ -27,14 +25,6 @@ jobs:
   validate-content:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Rebuild canonical browser content
-        run: python scripts/build_content_category_files.py
-
-      - name: Validate source, mappings and generated content
-        run: python scripts/validate_content.py
-
-      - name: Ensure committed generated content is current
-        run: git diff --exit-code -- content/
+      - uses: actions/checkout@v4
+      - name: Validate every content pool independently
+        run: python scripts/validate_content_pools.py

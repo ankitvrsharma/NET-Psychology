@@ -31,31 +31,45 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
 const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,homeLearning:null};
+const CONTENT_REGISTRY={ready:false,failClosed:true,version:null,pools:{}};
+async function loadContentRegistry(){
+  if(CONTENT_REGISTRY.ready)return CONTENT_REGISTRY;
+  try{
+    const r=await fetch('./content-pools/registry.json?v='+DATA_VERSION,{cache:'default'});
+    if(!r.ok)throw new Error('Content pool registry request failed: '+r.status);
+    const registry=await r.json();
+    if(!registry||!registry.pools||typeof registry.pools!=='object')throw new Error('Invalid content pool registry');
+    CONTENT_REGISTRY.ready=true; CONTENT_REGISTRY.failClosed=false;
+    CONTENT_REGISTRY.version=registry.version||DATA_VERSION; CONTENT_REGISTRY.pools=registry.pools;
+  }catch(e){console.error('Content pool registry failed:',e);CONTENT_REGISTRY.ready=false;CONTENT_REGISTRY.failClosed=true;CONTENT_REGISTRY.pools={};}
+  return CONTENT_REGISTRY;
+}
+async function loadContentPool(id){
+  await loadContentRegistry();
+  const meta=CONTENT_REGISTRY.pools[id];
+  if(!meta||meta.enabled===false)return null;
+  try{
+    const r=await fetch('./'+String(meta.path).replace(/^\.\//,'')+'?v='+DATA_VERSION,{cache:'default'});
+    if(!r.ok)throw new Error('Content pool request failed: '+id+' '+r.status);
+    return await r.json();
+  }catch(e){console.warn('Content pool unavailable:',id,e);return null;}
+}
 async function loadCanonicalContentLayer(json,mode='all'){
   const page=document.body?.dataset?.page||'';
-  const names=mode==='practice'
-    ? ['practice_questions']
-    : mode==='micro'
-      ? (page==='microtopic'
-        ? ['microtopic_explanations']
-        : page==='deep-dive'
-          ? ['microtopic_explanations','deep_dive_explanations']
-          : page==='active-recall'
-            ? ['microtopic_explanations','active_recall']
-            : ['microtopic_explanations'])
-      : ['practice_questions','microtopic_explanations','deep_dive_explanations','active_recall'];
-  const results=await Promise.all(names.map(async name=>{
-    try{const r=await fetch('./content/'+name+'.json?v=20261005-content3',{cache:'default'});if(!r.ok)return null;return await r.json()}catch(e){console.warn('Canonical content file unavailable:',name,e);return null}
-  }));
-  names.forEach((name,i)=>{if(name==='practice_questions')CANONICAL_CONTENT.practiceQuestions=results[i];if(name==='microtopic_explanations')CANONICAL_CONTENT.microtopics=results[i];if(name==='quick_learn_cards')CANONICAL_CONTENT.quickLearnCards=results[i];if(name==='deep_dive_explanations')CANONICAL_CONTENT.deepDive=results[i];if(name==='active_recall')CANONICAL_CONTENT.activeRecall=results[i];});
+  let ids=mode==='practice'?['questions']:mode==='micro'?
+    (page==='microtopic'?['microtopics','quickLearn']:page==='deep-dive'?['microtopics','deepDive']:page==='active-recall'?['microtopics','activeRecall']:['microtopics','quickLearn']):
+    ['microtopics','quickLearn','deepDive','activeRecall','questions'];
+  const loaded=await Promise.all(ids.map(loadContentPool)); const byId={}; ids.forEach((id,i)=>byId[id]=loaded[i]);
+  const qpool=byId.questions;
+  CANONICAL_CONTENT.practiceQuestions=Array.isArray(qpool)?qpool:(qpool&&typeof qpool==='object'?[...(Array.isArray(qpool.pyq)?qpool.pyq:[]),...(Array.isArray(qpool.practice)?qpool.practice:[])]:null);
+  CANONICAL_CONTENT.microtopics=byId.microtopics||null; CANONICAL_CONTENT.quickLearnCards=byId.quickLearn||null;
+  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null;
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
     if(micro[k]&&typeof micro[k]==='object')Object.assign(m,micro[k]);
-    const d=CANONICAL_CONTENT.deepDive?.[k];
-    if(d&&typeof d==='object')Object.assign(m,d);
-    const a=CANONICAL_CONTENT.activeRecall?.[k];
-    if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
+    const d=CANONICAL_CONTENT.deepDive?.[k]; if(d&&typeof d==='object')Object.assign(m,d);
+    const a=CANONICAL_CONTENT.activeRecall?.[k]; if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
   }
   return CANONICAL_CONTENT;
 }
@@ -160,7 +174,7 @@ function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
 function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);if(rejected.has(String(id)))return false;if(approved.has(String(id)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id));}
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-04-home-learning1';
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.0.0';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
   return new Promise((resolve,reject)=>{
@@ -174,15 +188,9 @@ function loadScript(src){
 }
 
 async function loadHomeLearning(){
-  try{
-    const r=await fetch('./home-learning.json?v=20261004-home-learning1',{cache:'default'});
-    if(!r.ok) throw new Error('Home learning request failed: '+r.status);
-    CANONICAL_CONTENT.homeLearning=await r.json();
-    return CANONICAL_CONTENT.homeLearning;
-  }catch(e){
-    console.warn('Home learning data unavailable:',e);
-    return null;
-  }
+  const pool=await loadContentPool('homeLearning');
+  CANONICAL_CONTENT.homeLearning=pool;
+  return pool;
 }
 function renderHomeLearning(){
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
@@ -222,8 +230,8 @@ async function loadStudyData(){
     try{
       if(Array.isArray(CANONICAL_CONTENT.practiceQuestions))PRACTICE_QUESTIONS=CANONICAL_CONTENT.practiceQuestions.slice();
       if(!PRACTICE_QUESTIONS.length){
-        const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
-        if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
+        const pq=await fetch('./content/questions/questions.json?v='+DATA_VERSION,{cache:'default'});
+        if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;else if(parsed&&typeof parsed==='object')PRACTICE_QUESTIONS=[...(Array.isArray(parsed.pyq)?parsed.pyq:[]),...(Array.isArray(parsed.practice)?parsed.practice:[])];}
       }
       if(PRACTICE_QUESTIONS.length)PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
