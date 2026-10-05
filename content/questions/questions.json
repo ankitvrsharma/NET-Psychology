@@ -35,9 +35,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: C. Interposition. The stem describes the concept or relationship represented by Interposition; the alternatives refer to different concepts or conditions. Interposition is a monocular depth cue: when one object blocks part of another, the blocking object is perceived as closer.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 4,
+      "micro": 2,
+      "source_topic": "Figure and ground",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "June-2012-3",
@@ -2714,9 +2718,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: A. 3.24. The stem describes the concept or relationship represented by 3.24; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 2,
+      "topic": 8,
+      "micro": 9,
+      "source_topic": "Chi-square test",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "June-2013-46",
@@ -4253,9 +4261,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: B. Generalization. The stem describes the concept or relationship represented by Generalization; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 10,
+      "micro": 6,
+      "source_topic": "Generalization and discrimination",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "December-2013-28",
@@ -7065,9 +7077,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: B. the brain and sacral region of the spinal cord. The stem describes the concept or relationship represented by the brain and sacral region of the spinal cord; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 4,
+      "topic": 4,
+      "micro": 6,
+      "source_topic": "Spinal cord and autonomic nervous system",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "June-2015-26",
@@ -7521,9 +7537,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: D. ethnographic research. The stem describes the concept or relationship represented by ethnographic research; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 2,
+      "topic": 5,
+      "micro": 8,
+      "source_topic": "Cross-cultural studies",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "June-2015-50",
@@ -10903,9 +10923,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: C. Somatic Nervous System. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 4,
+      "topic": 4,
+      "micro": 2,
+      "source_topic": "Peripheral nervous system",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "November-2017-28",
@@ -21486,9 +21510,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: B. Greater the number of witnesses to an emergency, the less likely the victims are to receive help. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 8,
+      "topic": 3,
+      "micro": 15,
+      "source_topic": "Bystander effect and diffusion of responsibility",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "June-2021-44",
@@ -23728,9 +23756,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: A. Genetic endowment to obedience. The stem describes the concept or relationship represented by Genetic endowment to obedience; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 8,
+      "topic": 4,
+      "micro": 7,
+      "source_topic": "Obedience",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "July-2022-63",
@@ -28668,9 +28700,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: D. Attention to thinking activities. The stem describes the concept or relationship represented by Attention to thinking activities; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 1,
+      "topic": 5,
+      "micro": 5,
+      "source_topic": "Behaviorism",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "December-2023-27",
@@ -29903,9 +29939,13 @@
       "type": "PYQ",
       "explanation": "Correct answer: A. Discrimination. The stem describes the concept or relationship represented by Discrimination; the alternatives refer to different concepts or conditions.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 15,
+      "micro": 2,
+      "source_topic": "Discrimination learning",
+      "source_tags": [
+        "PYQ"
+      ]
     },
     {
       "id": "December-2023-92",

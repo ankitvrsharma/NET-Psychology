@@ -421,11 +421,12 @@
   "1-5-1": {
     "id": "1-5-1",
     "title": "Structuralism",
-    "explanation": "analysis of the structure of conscious experience introspection; elements of consciousness; Titchener.",
+    "explanation": "Structuralism treated conscious experience as something that could be analysed into basic elements, using introspection as its central method. Edward Titchener is the key NET association; he brought structuralism to the United States.",
     "key_points": [
+      "Titchener",
       "introspection",
-      "elements of consciousness",
-      "Titchener"
+      "elements of conscious experience",
+      "analysis of mental structure"
     ],
     "inline_nudges": [
       {
@@ -435,24 +436,31 @@
     ],
     "sources": [
       "powerwithin",
-      "self-teaching-guide",
-      "ciccarelli-white"
+      "ciccarelli-white",
+      "self-teaching-guide"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nanalysis of the structure of conscious experience\n\nKEY POINTS\n• introspection\n• elements of consciousness\n• Titchener\n\nDISTINCTION / CAUTION\nWundt and Titchener are not identical in every respect.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nStructuralism → structure",
-    "distinction": "Wundt and Titchener are not identical in every respect.",
-    "exam_takeaway": "Structuralism → structure",
+    "source_notes": "Source-grounded synthesis from powerwithin, ciccarelli-white, self-teaching-guide.",
+    "content_notes": "CORE IDEA\nStructuralism treated conscious experience as something that could be analysed into basic elements, using introspection as its central method. Edward Titchener is the key NET association; he brought structuralism to the United States.\n\nKEY POINTS\n• Titchener\n• introspection\n• elements of conscious experience\n• analysis of mental structure\n\nDISTINCTION / CAUTION\nStructuralism asks what conscious experience is made of; functionalism asks what mental processes do and how they help adaptation. Wundt's work and Titchener's structuralism should not be treated as identical.\n\nHOW TO APPLY\nA question describes analysing conscious experience into elementary components through introspection. Identify the school and theorist before looking at the options.\n\nMEMORY HOOK\nStructuralism → structure of consciousness → Titchener → introspection\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • self-teaching-guide",
+    "distinction": "Structuralism asks what conscious experience is made of; functionalism asks what mental processes do and how they help adaptation. Wundt's work and Titchener's structuralism should not be treated as identical.",
+    "exam_takeaway": "Structuralism → structure of consciousness → Titchener → introspection",
     "revision_cue": "Structuralism → structure",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Wundt and Titchener are not identical in every respect."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Wundt and Titchener are not identical in every respect.",
+    "expert_explanation": "Structuralism treated conscious experience as something that could be analysed into basic elements, using introspection as its central method. Edward Titchener is the key NET association; he brought structuralism to the United States.\n\nExam distinction: Structuralism asks what conscious experience is made of; functionalism asks what mental processes do and how they help adaptation. Wundt's work and Titchener's structuralism should not be treated as identical.\n\nApplication cue: A question describes analysing conscious experience into elementary components through introspection. Identify the school and theorist before looking at the options.",
+    "detailed_explanation": "CORE IDEA\nStructuralism treated conscious experience as something that could be analysed into basic elements, using introspection as its central method. Edward Titchener is the key NET association; he brought structuralism to the United States.\n\nWHAT TO HOLD IN MEMORY\n• Titchener\n• introspection\n• elements of conscious experience\n• analysis of mental structure\n\nWHAT NOT TO CONFUSE\nStructuralism asks what conscious experience is made of; functionalism asks what mental processes do and how they help adaptation. Wundt's work and Titchener's structuralism should not be treated as identical.\n\nAPPLICATION\nA question describes analysing conscious experience into elementary components through introspection. Identify the school and theorist before looking at the options.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • self-teaching-guide",
+    "deep_learning": "ACADEMIC CORE\nStructuralism treated conscious experience as something that could be analysed into basic elements, using introspection as its central method. Edward Titchener is the key NET association; he brought structuralism to the United States.\n\nKEY RELATIONSHIPS\n• Titchener\n• introspection\n• elements of conscious experience\n• analysis of mental structure\n\nDISTINCTION\nStructuralism asks what conscious experience is made of; functionalism asks what mental processes do and how they help adaptation. Wundt's work and Titchener's structuralism should not be treated as identical.\n\nEXAM APPLICATION\nA question describes analysing conscious experience into elementary components through introspection. Identify the school and theorist before looking at the options.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • self-teaching-guide",
+    "application_question": "A question describes analysing conscious experience into elementary components through introspection. Identify the school and theorist before looking at the options.",
+    "recall_cue": "Structuralism → structure of consciousness → Titchener → introspection",
+    "memory_hook": "Structuralism → structure of consciousness → Titchener → introspection"
   },
   "1-5-2": {
     "id": "1-5-2",
     "title": "Functionalism",
-    "explanation": "study of what mental processes and behavior do, especially their adaptive functions William James; adaptation; stream of consciousness.",
+    "explanation": "Functionalism shifted attention from analysing the contents of consciousness to the functions of mental activity and behaviour. William James is the central association. The approach asks how mind and behaviour help people function, adapt and respond to their surroundings.",
     "key_points": [
       "William James",
       "adaptation",
-      "stream of consciousness"
+      "functions of mind",
+      "everyday functioning"
     ],
     "inline_nudges": [
       {
@@ -461,16 +469,22 @@
       }
     ],
     "sources": [
-      "powerwithin",
+      "ciccarelli-white",
       "self-teaching-guide",
-      "ciccarelli-white"
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nstudy of what mental processes and behavior do, especially their adaptive functions\n\nKEY POINTS\n• William James\n• adaptation\n• stream of consciousness\n\nDISTINCTION / CAUTION\nFunctionalism asks about function, not just elements.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nFunction → what does it do?",
-    "distinction": "Functionalism asks about function, not just elements.",
-    "exam_takeaway": "Function → what does it do?",
+    "source_notes": "Source-grounded synthesis from ciccarelli-white, self-teaching-guide, powerwithin.",
+    "content_notes": "CORE IDEA\nFunctionalism shifted attention from analysing the contents of consciousness to the functions of mental activity and behaviour. William James is the central association. The approach asks how mind and behaviour help people function, adapt and respond to their surroundings.\n\nKEY POINTS\n• William James\n• adaptation\n• functions of mind\n• everyday functioning\n\nDISTINCTION / CAUTION\nFunctionalism is not the search for the elements of consciousness. That emphasis belongs to structuralism. James was interested in how consciousness operates in real life and in adaptation.\n\nHOW TO APPLY\nIf a PYQ asks which school is concerned with how the mind helps a person adapt, think William James and functionalism as the first retrieval cue.\n\nMEMORY HOOK\nJames → function → adaptation\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "distinction": "Functionalism is not the search for the elements of consciousness. That emphasis belongs to structuralism. James was interested in how consciousness operates in real life and in adaptation.",
+    "exam_takeaway": "James → function → adaptation",
     "revision_cue": "Function → what does it do?",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Functionalism asks about function, not just elements."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Functionalism asks about function, not just elements.",
+    "expert_explanation": "Functionalism shifted attention from analysing the contents of consciousness to the functions of mental activity and behaviour. William James is the central association. The approach asks how mind and behaviour help people function, adapt and respond to their surroundings.\n\nExam distinction: Functionalism is not the search for the elements of consciousness. That emphasis belongs to structuralism. James was interested in how consciousness operates in real life and in adaptation.\n\nApplication cue: If a PYQ asks which school is concerned with how the mind helps a person adapt, think William James and functionalism as the first retrieval cue.",
+    "detailed_explanation": "CORE IDEA\nFunctionalism shifted attention from analysing the contents of consciousness to the functions of mental activity and behaviour. William James is the central association. The approach asks how mind and behaviour help people function, adapt and respond to their surroundings.\n\nWHAT TO HOLD IN MEMORY\n• William James\n• adaptation\n• functions of mind\n• everyday functioning\n\nWHAT NOT TO CONFUSE\nFunctionalism is not the search for the elements of consciousness. That emphasis belongs to structuralism. James was interested in how consciousness operates in real life and in adaptation.\n\nAPPLICATION\nIf a PYQ asks which school is concerned with how the mind helps a person adapt, think William James and functionalism as the first retrieval cue.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nFunctionalism shifted attention from analysing the contents of consciousness to the functions of mental activity and behaviour. William James is the central association. The approach asks how mind and behaviour help people function, adapt and respond to their surroundings.\n\nKEY RELATIONSHIPS\n• William James\n• adaptation\n• functions of mind\n• everyday functioning\n\nDISTINCTION\nFunctionalism is not the search for the elements of consciousness. That emphasis belongs to structuralism. James was interested in how consciousness operates in real life and in adaptation.\n\nEXAM APPLICATION\nIf a PYQ asks which school is concerned with how the mind helps a person adapt, think William James and functionalism as the first retrieval cue.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "application_question": "If a PYQ asks which school is concerned with how the mind helps a person adapt, think William James and functionalism as the first retrieval cue.",
+    "recall_cue": "James → function → adaptation",
+    "memory_hook": "James → function → adaptation"
   },
   "1-5-3": {
     "id": "1-5-3",
@@ -503,12 +517,13 @@
   "1-5-4": {
     "id": "1-5-4",
     "title": "Gestalt psychology",
-    "explanation": "organized wholes and principles of perceptual organization Wertheimer, Köhler, Koffka; figure-ground; grouping laws; insight.",
+    "explanation": "Gestalt psychology argues that psychological experience, especially perception, cannot always be understood by simply adding isolated sensory elements. The organised pattern or whole matters. Wertheimer, Koffka and Köhler are central figures.",
     "key_points": [
-      "Wertheimer, Köhler, Koffka",
-      "figure-ground",
-      "grouping laws",
-      "insight"
+      "organized whole",
+      "pattern/configuration",
+      "Wertheimer",
+      "perception",
+      "insight learning"
     ],
     "inline_nudges": [
       {
@@ -517,26 +532,32 @@
       }
     ],
     "sources": [
-      "powerwithin",
+      "ciccarelli-white",
       "self-teaching-guide",
-      "ciccarelli-white"
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\norganized wholes and principles of perceptual organization\n\nKEY POINTS\n• Wertheimer, Köhler, Koffka\n• figure-ground\n• grouping laws\n• insight\n\nDISTINCTION / CAUTION\nGestalt is broader than insight learning.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nGestalt → whole",
-    "distinction": "Gestalt is broader than insight learning.",
-    "exam_takeaway": "Gestalt → whole",
+    "source_notes": "Source-grounded synthesis from ciccarelli-white, self-teaching-guide, powerwithin.",
+    "content_notes": "CORE IDEA\nGestalt psychology argues that psychological experience, especially perception, cannot always be understood by simply adding isolated sensory elements. The organised pattern or whole matters. Wertheimer, Koffka and Köhler are central figures.\n\nKEY POINTS\n• organized whole\n• pattern/configuration\n• Wertheimer\n• perception\n• insight learning\n\nDISTINCTION / CAUTION\nThe key contrast is whole versus isolated elements. Structuralism analyses elements; Gestalt psychology emphasizes the organisation and pattern in which those elements are experienced.\n\nHOW TO APPLY\nWhen a question describes a melody, visual pattern or apparent movement whose experience depends on the relationship among parts, identify the Gestalt principle rather than an element-by-element analysis.\n\nMEMORY HOOK\nGestalt → organized whole → pattern\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "distinction": "The key contrast is whole versus isolated elements. Structuralism analyses elements; Gestalt psychology emphasizes the organisation and pattern in which those elements are experienced.",
+    "exam_takeaway": "Gestalt → organized whole → pattern",
     "revision_cue": "Gestalt → whole",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Gestalt is broader than insight learning."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Gestalt is broader than insight learning.",
+    "expert_explanation": "Gestalt psychology argues that psychological experience, especially perception, cannot always be understood by simply adding isolated sensory elements. The organised pattern or whole matters. Wertheimer, Koffka and Köhler are central figures.\n\nExam distinction: The key contrast is whole versus isolated elements. Structuralism analyses elements; Gestalt psychology emphasizes the organisation and pattern in which those elements are experienced.\n\nApplication cue: When a question describes a melody, visual pattern or apparent movement whose experience depends on the relationship among parts, identify the Gestalt principle rather than an element-by-element analysis.",
+    "detailed_explanation": "CORE IDEA\nGestalt psychology argues that psychological experience, especially perception, cannot always be understood by simply adding isolated sensory elements. The organised pattern or whole matters. Wertheimer, Koffka and Köhler are central figures.\n\nWHAT TO HOLD IN MEMORY\n• organized whole\n• pattern/configuration\n• Wertheimer\n• perception\n• insight learning\n\nWHAT NOT TO CONFUSE\nThe key contrast is whole versus isolated elements. Structuralism analyses elements; Gestalt psychology emphasizes the organisation and pattern in which those elements are experienced.\n\nAPPLICATION\nWhen a question describes a melody, visual pattern or apparent movement whose experience depends on the relationship among parts, identify the Gestalt principle rather than an element-by-element analysis.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nGestalt psychology argues that psychological experience, especially perception, cannot always be understood by simply adding isolated sensory elements. The organised pattern or whole matters. Wertheimer, Koffka and Köhler are central figures.\n\nKEY RELATIONSHIPS\n• organized whole\n• pattern/configuration\n• Wertheimer\n• perception\n• insight learning\n\nDISTINCTION\nThe key contrast is whole versus isolated elements. Structuralism analyses elements; Gestalt psychology emphasizes the organisation and pattern in which those elements are experienced.\n\nEXAM APPLICATION\nWhen a question describes a melody, visual pattern or apparent movement whose experience depends on the relationship among parts, identify the Gestalt principle rather than an element-by-element analysis.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide • powerwithin",
+    "application_question": "When a question describes a melody, visual pattern or apparent movement whose experience depends on the relationship among parts, identify the Gestalt principle rather than an element-by-element analysis.",
+    "recall_cue": "Gestalt → organized whole → pattern",
+    "memory_hook": "Gestalt → organized whole → pattern"
   },
   "1-5-5": {
     "id": "1-5-5",
     "title": "Behaviorism",
-    "explanation": "observable behavior and learning through environmental contingencies Watson; Skinner; conditioning; reinforcement.",
+    "explanation": "Behaviorism redirected psychology toward observable behaviour and away from treating private consciousness as the primary scientific object. John B. Watson is the central founding figure in the classical school; later behaviourism developed conditioning and reinforcement traditions.",
     "key_points": [
-      "Watson",
-      "Skinner",
-      "conditioning",
-      "reinforcement"
+      "John B. Watson",
+      "observable behaviour",
+      "stimulus-response",
+      "conditioning"
     ],
     "inline_nudges": [
       {
@@ -545,16 +566,22 @@
       }
     ],
     "sources": [
-      "powerwithin",
       "self-teaching-guide",
-      "ciccarelli-white"
+      "ciccarelli-white",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nobservable behavior and learning through environmental contingencies\n\nKEY POINTS\n• Watson\n• Skinner\n• conditioning\n• reinforcement\n\nDISTINCTION / CAUTION\nNegative reinforcement increases behavior.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nBehaviorism → behavior + learning",
-    "distinction": "Negative reinforcement increases behavior.",
-    "exam_takeaway": "Behaviorism → behavior + learning",
+    "source_notes": "Source-grounded synthesis from self-teaching-guide, ciccarelli-white, powerwithin.",
+    "content_notes": "CORE IDEA\nBehaviorism redirected psychology toward observable behaviour and away from treating private consciousness as the primary scientific object. John B. Watson is the central founding figure in the classical school; later behaviourism developed conditioning and reinforcement traditions.\n\nKEY POINTS\n• John B. Watson\n• observable behaviour\n• stimulus-response\n• conditioning\n\nDISTINCTION / CAUTION\nBehaviorism is not structuralism's analysis of conscious experience. Watson argued that psychology should study behaviour itself rather than an unobservable mind or consciousness.\n\nHOW TO APPLY\nA stem says psychology should focus on observable behaviour rather than consciousness. The defining cue points to Watsonian behaviorism.\n\nMEMORY HOOK\nWatson → observable behaviour\n\nSOURCE BASIS\nself-teaching-guide • ciccarelli-white • powerwithin",
+    "distinction": "Behaviorism is not structuralism's analysis of conscious experience. Watson argued that psychology should study behaviour itself rather than an unobservable mind or consciousness.",
+    "exam_takeaway": "Watson → observable behaviour",
     "revision_cue": "Behaviorism → behavior + learning",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Negative reinforcement increases behavior."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Negative reinforcement increases behavior.",
+    "expert_explanation": "Behaviorism redirected psychology toward observable behaviour and away from treating private consciousness as the primary scientific object. John B. Watson is the central founding figure in the classical school; later behaviourism developed conditioning and reinforcement traditions.\n\nExam distinction: Behaviorism is not structuralism's analysis of conscious experience. Watson argued that psychology should study behaviour itself rather than an unobservable mind or consciousness.\n\nApplication cue: A stem says psychology should focus on observable behaviour rather than consciousness. The defining cue points to Watsonian behaviorism.",
+    "detailed_explanation": "CORE IDEA\nBehaviorism redirected psychology toward observable behaviour and away from treating private consciousness as the primary scientific object. John B. Watson is the central founding figure in the classical school; later behaviourism developed conditioning and reinforcement traditions.\n\nWHAT TO HOLD IN MEMORY\n• John B. Watson\n• observable behaviour\n• stimulus-response\n• conditioning\n\nWHAT NOT TO CONFUSE\nBehaviorism is not structuralism's analysis of conscious experience. Watson argued that psychology should study behaviour itself rather than an unobservable mind or consciousness.\n\nAPPLICATION\nA stem says psychology should focus on observable behaviour rather than consciousness. The defining cue points to Watsonian behaviorism.\n\nSOURCE BASIS\nself-teaching-guide • ciccarelli-white • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nBehaviorism redirected psychology toward observable behaviour and away from treating private consciousness as the primary scientific object. John B. Watson is the central founding figure in the classical school; later behaviourism developed conditioning and reinforcement traditions.\n\nKEY RELATIONSHIPS\n• John B. Watson\n• observable behaviour\n• stimulus-response\n• conditioning\n\nDISTINCTION\nBehaviorism is not structuralism's analysis of conscious experience. Watson argued that psychology should study behaviour itself rather than an unobservable mind or consciousness.\n\nEXAM APPLICATION\nA stem says psychology should focus on observable behaviour rather than consciousness. The defining cue points to Watsonian behaviorism.\n\nSOURCE BASIS\nself-teaching-guide • ciccarelli-white • powerwithin",
+    "application_question": "A stem says psychology should focus on observable behaviour rather than consciousness. The defining cue points to Watsonian behaviorism.",
+    "recall_cue": "Watson → observable behaviour",
+    "memory_hook": "Watson → observable behaviour"
   },
   "1-5-6": {
     "id": "1-5-6",
@@ -670,11 +697,13 @@
   "1-6-1": {
     "id": "1-6-1",
     "title": "Wundt",
-    "explanation": "institutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory experimental psychology; Leipzig; 1879.",
+    "explanation": "Wilhelm Wundt is associated with the establishment of psychology as a distinct experimental science in Germany. Ciccarelli & White dates the beginning of psychology as a science to 1879 with Wundt's laboratory and describes his use of objective introspection.",
     "key_points": [
-      "experimental psychology",
-      "Leipzig",
-      "1879"
+      "1879",
+      "psychology laboratory",
+      "Germany",
+      "objective introspection",
+      "early experimental psychology"
     ],
     "inline_nudges": [
       {
@@ -683,16 +712,21 @@
       }
     ],
     "sources": [
-      "powerwithin",
-      "self-teaching-guide",
-      "ciccarelli-white"
+      "ciccarelli-white",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\ninstitutional emergence of experimental psychology, conventionally linked with the 1879 Leipzig laboratory\n\nKEY POINTS\n• experimental psychology\n• Leipzig\n• 1879\n\nDISTINCTION / CAUTION\nDo not equate Wundt automatically with Titchener.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nWundt → 1879",
-    "distinction": "Do not equate Wundt automatically with Titchener.",
-    "exam_takeaway": "Wundt → 1879",
+    "source_notes": "Source-grounded synthesis from ciccarelli-white, powerwithin.",
+    "content_notes": "CORE IDEA\nWilhelm Wundt is associated with the establishment of psychology as a distinct experimental science in Germany. Ciccarelli & White dates the beginning of psychology as a science to 1879 with Wundt's laboratory and describes his use of objective introspection.\n\nKEY POINTS\n• 1879\n• psychology laboratory\n• Germany\n• objective introspection\n• early experimental psychology\n\nDISTINCTION / CAUTION\nWundt is a founding figure in experimental psychology, while Titchener is the major association for structuralism in America. Do not collapse the two labels into one.\n\nHOW TO APPLY\nIf a PYQ asks for the founding laboratory or the 1879 institutional beginning of psychology as a science, Wundt is the key cue.\n\nMEMORY HOOK\nWundt → 1879 → laboratory → experimental psychology\n\nSOURCE BASIS\nciccarelli-white • powerwithin",
+    "distinction": "Wundt is a founding figure in experimental psychology, while Titchener is the major association for structuralism in America. Do not collapse the two labels into one.",
+    "exam_takeaway": "Wundt → 1879 → laboratory → experimental psychology",
     "revision_cue": "Wundt → 1879",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not equate Wundt automatically with Titchener."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not equate Wundt automatically with Titchener.",
+    "expert_explanation": "Wilhelm Wundt is associated with the establishment of psychology as a distinct experimental science in Germany. Ciccarelli & White dates the beginning of psychology as a science to 1879 with Wundt's laboratory and describes his use of objective introspection.\n\nExam distinction: Wundt is a founding figure in experimental psychology, while Titchener is the major association for structuralism in America. Do not collapse the two labels into one.\n\nApplication cue: If a PYQ asks for the founding laboratory or the 1879 institutional beginning of psychology as a science, Wundt is the key cue.",
+    "detailed_explanation": "CORE IDEA\nWilhelm Wundt is associated with the establishment of psychology as a distinct experimental science in Germany. Ciccarelli & White dates the beginning of psychology as a science to 1879 with Wundt's laboratory and describes his use of objective introspection.\n\nWHAT TO HOLD IN MEMORY\n• 1879\n• psychology laboratory\n• Germany\n• objective introspection\n• early experimental psychology\n\nWHAT NOT TO CONFUSE\nWundt is a founding figure in experimental psychology, while Titchener is the major association for structuralism in America. Do not collapse the two labels into one.\n\nAPPLICATION\nIf a PYQ asks for the founding laboratory or the 1879 institutional beginning of psychology as a science, Wundt is the key cue.\n\nSOURCE BASIS\nciccarelli-white • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nWilhelm Wundt is associated with the establishment of psychology as a distinct experimental science in Germany. Ciccarelli & White dates the beginning of psychology as a science to 1879 with Wundt's laboratory and describes his use of objective introspection.\n\nKEY RELATIONSHIPS\n• 1879\n• psychology laboratory\n• Germany\n• objective introspection\n• early experimental psychology\n\nDISTINCTION\nWundt is a founding figure in experimental psychology, while Titchener is the major association for structuralism in America. Do not collapse the two labels into one.\n\nEXAM APPLICATION\nIf a PYQ asks for the founding laboratory or the 1879 institutional beginning of psychology as a science, Wundt is the key cue.\n\nSOURCE BASIS\nciccarelli-white • powerwithin",
+    "application_question": "If a PYQ asks for the founding laboratory or the 1879 institutional beginning of psychology as a science, Wundt is the key cue.",
+    "recall_cue": "Wundt → 1879 → laboratory → experimental psychology",
+    "memory_hook": "Wundt → 1879 → laboratory → experimental psychology"
   },
   "1-6-2": {
     "id": "1-6-2",
@@ -724,11 +758,13 @@
   "1-6-3": {
     "id": "1-6-3",
     "title": "James",
-    "explanation": "functionalism and the adaptive functions of consciousness William James; functionalism; stream of consciousness.",
+    "explanation": "William James is the major figure associated with functionalism. He was more interested in the importance of consciousness for everyday life and in how mental activity helps people function and adapt than in analysing consciousness into elementary parts.",
     "key_points": [
-      "William James",
       "functionalism",
-      "stream of consciousness"
+      "adaptation",
+      "everyday functioning",
+      "stream of consciousness",
+      "William James"
     ],
     "inline_nudges": [
       {
@@ -737,16 +773,21 @@
       }
     ],
     "sources": [
-      "powerwithin",
-      "self-teaching-guide",
-      "ciccarelli-white"
+      "ciccarelli-white",
+      "self-teaching-guide"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nfunctionalism and the adaptive functions of consciousness\n\nKEY POINTS\n• William James\n• functionalism\n• stream of consciousness\n\nDISTINCTION / CAUTION\nJames is associated with function rather than structural analysis.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nJames → function",
-    "distinction": "James is associated with function rather than structural analysis.",
-    "exam_takeaway": "James → function",
+    "source_notes": "Source-grounded synthesis from ciccarelli-white, self-teaching-guide.",
+    "content_notes": "CORE IDEA\nWilliam James is the major figure associated with functionalism. He was more interested in the importance of consciousness for everyday life and in how mental activity helps people function and adapt than in analysing consciousness into elementary parts.\n\nKEY POINTS\n• functionalism\n• adaptation\n• everyday functioning\n• stream of consciousness\n• William James\n\nDISTINCTION / CAUTION\nJames's functionalism differs from Titchener's structuralism. The former asks about function and adaptation; the latter analyses the structure or elements of conscious experience.\n\nHOW TO APPLY\nA stem emphasizes adaptation, real-world functioning or the usefulness of mental processes. Use James and functionalism as the first retrieval cue.\n\nMEMORY HOOK\nJames → functionalism → adaptation\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide",
+    "distinction": "James's functionalism differs from Titchener's structuralism. The former asks about function and adaptation; the latter analyses the structure or elements of conscious experience.",
+    "exam_takeaway": "James → functionalism → adaptation",
     "revision_cue": "James → function",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: James is associated with function rather than structural analysis."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: James is associated with function rather than structural analysis.",
+    "expert_explanation": "William James is the major figure associated with functionalism. He was more interested in the importance of consciousness for everyday life and in how mental activity helps people function and adapt than in analysing consciousness into elementary parts.\n\nExam distinction: James's functionalism differs from Titchener's structuralism. The former asks about function and adaptation; the latter analyses the structure or elements of conscious experience.\n\nApplication cue: A stem emphasizes adaptation, real-world functioning or the usefulness of mental processes. Use James and functionalism as the first retrieval cue.",
+    "detailed_explanation": "CORE IDEA\nWilliam James is the major figure associated with functionalism. He was more interested in the importance of consciousness for everyday life and in how mental activity helps people function and adapt than in analysing consciousness into elementary parts.\n\nWHAT TO HOLD IN MEMORY\n• functionalism\n• adaptation\n• everyday functioning\n• stream of consciousness\n• William James\n\nWHAT NOT TO CONFUSE\nJames's functionalism differs from Titchener's structuralism. The former asks about function and adaptation; the latter analyses the structure or elements of conscious experience.\n\nAPPLICATION\nA stem emphasizes adaptation, real-world functioning or the usefulness of mental processes. Use James and functionalism as the first retrieval cue.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide",
+    "deep_learning": "ACADEMIC CORE\nWilliam James is the major figure associated with functionalism. He was more interested in the importance of consciousness for everyday life and in how mental activity helps people function and adapt than in analysing consciousness into elementary parts.\n\nKEY RELATIONSHIPS\n• functionalism\n• adaptation\n• everyday functioning\n• stream of consciousness\n• William James\n\nDISTINCTION\nJames's functionalism differs from Titchener's structuralism. The former asks about function and adaptation; the latter analyses the structure or elements of conscious experience.\n\nEXAM APPLICATION\nA stem emphasizes adaptation, real-world functioning or the usefulness of mental processes. Use James and functionalism as the first retrieval cue.\n\nSOURCE BASIS\nciccarelli-white • self-teaching-guide",
+    "application_question": "A stem emphasizes adaptation, real-world functioning or the usefulness of mental processes. Use James and functionalism as the first retrieval cue.",
+    "recall_cue": "James → functionalism → adaptation",
+    "memory_hook": "James → functionalism → adaptation"
   },
   "1-6-4": {
     "id": "1-6-4",
@@ -945,11 +986,12 @@
   "1-10-1": {
     "id": "1-10-1",
     "title": "Positivism",
-    "explanation": "empirical observation, measurement and regularities in phenomena objectivity; measurement; empirical evidence.",
+    "explanation": "Positivism treats knowledge as grounded in an objective reality that can be investigated systematically. In the NET-oriented framework, logical positivism is linked with realist ontology, an objectivist/dualist epistemology and experimental-manipulative methodology.",
     "key_points": [
-      "objectivity",
-      "measurement",
-      "empirical evidence"
+      "realist ontology",
+      "objectivist epistemology",
+      "experimental/manipulative methodology",
+      "cause-and-effect"
     ],
     "inline_nudges": [
       {
@@ -960,21 +1002,29 @@
     "sources": [
       "powerwithin"
     ],
-    "source_notes": "PowerWithin is the controlling source for the paradigm framework in this batch; the rewrite keeps ontology, epistemology and methodology linked rather than adding unsupported philosophical claims.",
-    "content_notes": "CORE CONCEPT\nempirical observation, measurement and regularities in phenomena\n\nKEY POINTS\n• objectivity\n• measurement\n• empirical evidence\n\nDISTINCTION / CAUTION\nNot every quantitative study is automatically positivist.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin is the controlling source for the paradigm framework in this batch; the rewrite keeps ontology, epistemology and methodology linked rather than adding unsupported philosophical claims.\n\nMEMORY HOOK\nPositivism → observe + measure",
-    "distinction": "Not every quantitative study is automatically positivist.",
-    "exam_takeaway": "Positivism → observe + measure",
+    "source_notes": "Source-grounded synthesis from powerwithin.",
+    "content_notes": "CORE IDEA\nPositivism treats knowledge as grounded in an objective reality that can be investigated systematically. In the NET-oriented framework, logical positivism is linked with realist ontology, an objectivist/dualist epistemology and experimental-manipulative methodology.\n\nKEY POINTS\n• realist ontology\n• objectivist epistemology\n• experimental/manipulative methodology\n• cause-and-effect\n\nDISTINCTION / CAUTION\nThe key exam distinction is the relationship among ontology, epistemology and methodology. Positivism privileges an objective reality and controlled inquiry; later paradigms challenge the assumption that this model is sufficient for human meaning and context.\n\nHOW TO APPLY\nWhen a question links realism, objectivism and experimental manipulation, retrieve the positivist paradigm rather than post-positivist or critical perspectives.\n\nMEMORY HOOK\nPositivism → realism + objectivism + experimental control\n\nSOURCE BASIS\npowerwithin",
+    "distinction": "The key exam distinction is the relationship among ontology, epistemology and methodology. Positivism privileges an objective reality and controlled inquiry; later paradigms challenge the assumption that this model is sufficient for human meaning and context.",
+    "exam_takeaway": "Positivism → realism + objectivism + experimental control",
     "revision_cue": "Positivism → observe + measure",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Not every quantitative study is automatically positivist."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Not every quantitative study is automatically positivist.",
+    "expert_explanation": "Positivism treats knowledge as grounded in an objective reality that can be investigated systematically. In the NET-oriented framework, logical positivism is linked with realist ontology, an objectivist/dualist epistemology and experimental-manipulative methodology.\n\nExam distinction: The key exam distinction is the relationship among ontology, epistemology and methodology. Positivism privileges an objective reality and controlled inquiry; later paradigms challenge the assumption that this model is sufficient for human meaning and context.\n\nApplication cue: When a question links realism, objectivism and experimental manipulation, retrieve the positivist paradigm rather than post-positivist or critical perspectives.",
+    "detailed_explanation": "CORE IDEA\nPositivism treats knowledge as grounded in an objective reality that can be investigated systematically. In the NET-oriented framework, logical positivism is linked with realist ontology, an objectivist/dualist epistemology and experimental-manipulative methodology.\n\nWHAT TO HOLD IN MEMORY\n• realist ontology\n• objectivist epistemology\n• experimental/manipulative methodology\n• cause-and-effect\n\nWHAT NOT TO CONFUSE\nThe key exam distinction is the relationship among ontology, epistemology and methodology. Positivism privileges an objective reality and controlled inquiry; later paradigms challenge the assumption that this model is sufficient for human meaning and context.\n\nAPPLICATION\nWhen a question links realism, objectivism and experimental manipulation, retrieve the positivist paradigm rather than post-positivist or critical perspectives.\n\nSOURCE BASIS\npowerwithin",
+    "deep_learning": "ACADEMIC CORE\nPositivism treats knowledge as grounded in an objective reality that can be investigated systematically. In the NET-oriented framework, logical positivism is linked with realist ontology, an objectivist/dualist epistemology and experimental-manipulative methodology.\n\nKEY RELATIONSHIPS\n• realist ontology\n• objectivist epistemology\n• experimental/manipulative methodology\n• cause-and-effect\n\nDISTINCTION\nThe key exam distinction is the relationship among ontology, epistemology and methodology. Positivism privileges an objective reality and controlled inquiry; later paradigms challenge the assumption that this model is sufficient for human meaning and context.\n\nEXAM APPLICATION\nWhen a question links realism, objectivism and experimental manipulation, retrieve the positivist paradigm rather than post-positivist or critical perspectives.\n\nSOURCE BASIS\npowerwithin",
+    "application_question": "When a question links realism, objectivism and experimental manipulation, retrieve the positivist paradigm rather than post-positivist or critical perspectives.",
+    "recall_cue": "Positivism → realism + objectivism + experimental control",
+    "memory_hook": "Positivism → realism + objectivism + experimental control"
   },
   "1-10-2": {
     "id": "1-10-2",
     "title": "Post-Positivism",
-    "explanation": "empirical inquiry combined with recognition of fallibility and limits of certainty tentative knowledge; critical scrutiny; multiple methods.",
+    "explanation": "Post-positivist thinking emerges from dissatisfaction with a simple objectivist model of knowledge. The NET-oriented material highlights the limits of positivism, including context stripping, exclusion of meaning, theory-ladenness and the difficulty of applying general findings to individual cases.",
     "key_points": [
-      "tentative knowledge",
-      "critical scrutiny",
-      "multiple methods"
+      "limits of positivism",
+      "context",
+      "meaning",
+      "theory-ladenness",
+      "etic-emic dilemma"
     ],
     "inline_nudges": [
       {
@@ -985,12 +1035,18 @@
     "sources": [
       "powerwithin"
     ],
-    "source_notes": "PowerWithin is the controlling source for the paradigm framework in this batch; the rewrite keeps ontology, epistemology and methodology linked rather than adding unsupported philosophical claims.",
-    "content_notes": "CORE CONCEPT\nempirical inquiry combined with recognition of fallibility and limits of certainty\n\nKEY POINTS\n• tentative knowledge\n• critical scrutiny\n• multiple methods\n\nDISTINCTION / CAUTION\nIt does not reject evidence.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin is the controlling source for the paradigm framework in this batch; the rewrite keeps ontology, epistemology and methodology linked rather than adding unsupported philosophical claims.\n\nMEMORY HOOK\nPost → evidence + humility",
-    "distinction": "It does not reject evidence.",
-    "exam_takeaway": "Post → evidence + humility",
+    "source_notes": "Source-grounded synthesis from powerwithin.",
+    "content_notes": "CORE IDEA\nPost-positivist thinking emerges from dissatisfaction with a simple objectivist model of knowledge. The NET-oriented material highlights the limits of positivism, including context stripping, exclusion of meaning, theory-ladenness and the difficulty of applying general findings to individual cases.\n\nKEY POINTS\n• limits of positivism\n• context\n• meaning\n• theory-ladenness\n• etic-emic dilemma\n\nDISTINCTION / CAUTION\nPost-positivism should not be reduced to 'anything goes'. Its exam relevance lies in recognising limits to a purely objectivist, context-free model of inquiry and the need to account for complexity and situated knowledge.\n\nHOW TO APPLY\nIf a question highlights context, meaning, theory-ladenness or the limits of generalising laboratory-style findings to individual cases, consider post-positivist critique.\n\nMEMORY HOOK\nPost-positivism → critique the limits of simple objectivism\n\nSOURCE BASIS\npowerwithin",
+    "distinction": "Post-positivism should not be reduced to 'anything goes'. Its exam relevance lies in recognising limits to a purely objectivist, context-free model of inquiry and the need to account for complexity and situated knowledge.",
+    "exam_takeaway": "Post-positivism → critique the limits of simple objectivism",
     "revision_cue": "Post → evidence + humility",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: It does not reject evidence."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: It does not reject evidence.",
+    "expert_explanation": "Post-positivist thinking emerges from dissatisfaction with a simple objectivist model of knowledge. The NET-oriented material highlights the limits of positivism, including context stripping, exclusion of meaning, theory-ladenness and the difficulty of applying general findings to individual cases.\n\nExam distinction: Post-positivism should not be reduced to 'anything goes'. Its exam relevance lies in recognising limits to a purely objectivist, context-free model of inquiry and the need to account for complexity and situated knowledge.\n\nApplication cue: If a question highlights context, meaning, theory-ladenness or the limits of generalising laboratory-style findings to individual cases, consider post-positivist critique.",
+    "detailed_explanation": "CORE IDEA\nPost-positivist thinking emerges from dissatisfaction with a simple objectivist model of knowledge. The NET-oriented material highlights the limits of positivism, including context stripping, exclusion of meaning, theory-ladenness and the difficulty of applying general findings to individual cases.\n\nWHAT TO HOLD IN MEMORY\n• limits of positivism\n• context\n• meaning\n• theory-ladenness\n• etic-emic dilemma\n\nWHAT NOT TO CONFUSE\nPost-positivism should not be reduced to 'anything goes'. Its exam relevance lies in recognising limits to a purely objectivist, context-free model of inquiry and the need to account for complexity and situated knowledge.\n\nAPPLICATION\nIf a question highlights context, meaning, theory-ladenness or the limits of generalising laboratory-style findings to individual cases, consider post-positivist critique.\n\nSOURCE BASIS\npowerwithin",
+    "deep_learning": "ACADEMIC CORE\nPost-positivist thinking emerges from dissatisfaction with a simple objectivist model of knowledge. The NET-oriented material highlights the limits of positivism, including context stripping, exclusion of meaning, theory-ladenness and the difficulty of applying general findings to individual cases.\n\nKEY RELATIONSHIPS\n• limits of positivism\n• context\n• meaning\n• theory-ladenness\n• etic-emic dilemma\n\nDISTINCTION\nPost-positivism should not be reduced to 'anything goes'. Its exam relevance lies in recognising limits to a purely objectivist, context-free model of inquiry and the need to account for complexity and situated knowledge.\n\nEXAM APPLICATION\nIf a question highlights context, meaning, theory-ladenness or the limits of generalising laboratory-style findings to individual cases, consider post-positivist critique.\n\nSOURCE BASIS\npowerwithin",
+    "application_question": "If a question highlights context, meaning, theory-ladenness or the limits of generalising laboratory-style findings to individual cases, consider post-positivist critique.",
+    "recall_cue": "Post-positivism → critique the limits of simple objectivism",
+    "memory_hook": "Post-positivism → critique the limits of simple objectivism"
   },
   "1-10-3": {
     "id": "1-10-3",
@@ -3915,12 +3971,13 @@
   "4-2-1": {
     "id": "4-2-1",
     "title": "Neuron structure",
-    "explanation": "organization of dendrites, soma, axon and terminal regions for receiving and transmitting information dendrites receive; soma integrates; axon conducts; terminals communicate.",
+    "explanation": "A neuron is a specialised information-processing and information-transmitting cell. Its major structural regions are the soma (cell body), dendrites, axon and terminal buttons. Dendrites generally receive incoming information, the soma maintains the cell and integrates inputs, and the axon carries the neural message toward terminal regions.",
     "key_points": [
-      "dendrites receive",
-      "soma integrates",
-      "axon conducts",
-      "terminals communicate"
+      "soma",
+      "dendrites",
+      "axon",
+      "axon terminals",
+      "myelin"
     ],
     "inline_nudges": [
       {
@@ -3931,14 +3988,20 @@
     "sources": [
       "powerwithin",
       "ciccarelli-white",
-      "self-teaching-guide"
+      "baron-misra"
     ],
-    "source_notes": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.",
-    "content_notes": "CORE CONCEPT\norganization of dendrites, soma, axon and terminal regions for receiving and transmitting information\n\nKEY POINTS\n• dendrites receive\n• soma integrates\n• axon conducts\n• terminals communicate\n\nDISTINCTION / CAUTION\nDendrites and axons have different typical roles.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.\n\nMEMORY HOOK\nDendrite in → axon out",
-    "distinction": "Dendrites and axons have different typical roles.",
-    "exam_takeaway": "Dendrite in → axon out",
+    "source_notes": "Source-grounded synthesis from powerwithin, ciccarelli-white, baron-misra.",
+    "content_notes": "CORE IDEA\nA neuron is a specialised information-processing and information-transmitting cell. Its major structural regions are the soma (cell body), dendrites, axon and terminal buttons. Dendrites generally receive incoming information, the soma maintains the cell and integrates inputs, and the axon carries the neural message toward terminal regions.\n\nKEY POINTS\n• soma\n• dendrites\n• axon\n• axon terminals\n• myelin\n\nDISTINCTION / CAUTION\nDendrites and axons have different typical directions of information flow: dendrites receive toward the cell body, whereas the axon carries the neural message away toward terminals. Myelin insulates axons and can increase conduction speed.\n\nHOW TO APPLY\nFor a structure-function question, map the part to its role: dendrite = receiving, soma = cell body, axon = conducting, terminal = communicating with the next cell.\n\nMEMORY HOOK\nDendrite in → soma integrates → axon out → terminal communicates\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "distinction": "Dendrites and axons have different typical directions of information flow: dendrites receive toward the cell body, whereas the axon carries the neural message away toward terminals. Myelin insulates axons and can increase conduction speed.",
+    "exam_takeaway": "Dendrite in → soma integrates → axon out → terminal communicates",
     "revision_cue": "Dendrite in → axon out",
-    "revision_check": "Recall Neuron structure first, then explain the following caution in your own words: Dendrites and axons have different typical roles."
+    "revision_check": "Recall Neuron structure first, then explain the following caution in your own words: Dendrites and axons have different typical roles.",
+    "expert_explanation": "A neuron is a specialised information-processing and information-transmitting cell. Its major structural regions are the soma (cell body), dendrites, axon and terminal buttons. Dendrites generally receive incoming information, the soma maintains the cell and integrates inputs, and the axon carries the neural message toward terminal regions.\n\nExam distinction: Dendrites and axons have different typical directions of information flow: dendrites receive toward the cell body, whereas the axon carries the neural message away toward terminals. Myelin insulates axons and can increase conduction speed.\n\nApplication cue: For a structure-function question, map the part to its role: dendrite = receiving, soma = cell body, axon = conducting, terminal = communicating with the next cell.",
+    "detailed_explanation": "CORE IDEA\nA neuron is a specialised information-processing and information-transmitting cell. Its major structural regions are the soma (cell body), dendrites, axon and terminal buttons. Dendrites generally receive incoming information, the soma maintains the cell and integrates inputs, and the axon carries the neural message toward terminal regions.\n\nWHAT TO HOLD IN MEMORY\n• soma\n• dendrites\n• axon\n• axon terminals\n• myelin\n\nWHAT NOT TO CONFUSE\nDendrites and axons have different typical directions of information flow: dendrites receive toward the cell body, whereas the axon carries the neural message away toward terminals. Myelin insulates axons and can increase conduction speed.\n\nAPPLICATION\nFor a structure-function question, map the part to its role: dendrite = receiving, soma = cell body, axon = conducting, terminal = communicating with the next cell.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nA neuron is a specialised information-processing and information-transmitting cell. Its major structural regions are the soma (cell body), dendrites, axon and terminal buttons. Dendrites generally receive incoming information, the soma maintains the cell and integrates inputs, and the axon carries the neural message toward terminal regions.\n\nKEY RELATIONSHIPS\n• soma\n• dendrites\n• axon\n• axon terminals\n• myelin\n\nDISTINCTION\nDendrites and axons have different typical directions of information flow: dendrites receive toward the cell body, whereas the axon carries the neural message away toward terminals. Myelin insulates axons and can increase conduction speed.\n\nEXAM APPLICATION\nFor a structure-function question, map the part to its role: dendrite = receiving, soma = cell body, axon = conducting, terminal = communicating with the next cell.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "application_question": "For a structure-function question, map the part to its role: dendrite = receiving, soma = cell body, axon = conducting, terminal = communicating with the next cell.",
+    "recall_cue": "Dendrite in → soma integrates → axon out → terminal communicates",
+    "memory_hook": "Dendrite in → soma integrates → axon out → terminal communicates"
   },
   "4-2-2": {
     "id": "4-2-2",
@@ -3968,11 +4031,12 @@
   "4-2-3": {
     "id": "4-2-3",
     "title": "Types of neurons",
-    "explanation": "functional classification into sensory, motor and interneurons afferent/sensory; efferent/motor; interneurons.",
+    "explanation": "Neurons can be distinguished by their role in information flow. Sensory (afferent) neurons carry information toward the central nervous system, motor (efferent) neurons carry commands away from the CNS to effectors, and interneurons connect neural pathways within the CNS.",
     "key_points": [
-      "afferent/sensory",
-      "efferent/motor",
-      "interneurons"
+      "sensory/afferent",
+      "motor/efferent",
+      "interneurons",
+      "direction of information flow"
     ],
     "inline_nudges": [
       {
@@ -3983,23 +4047,31 @@
     "sources": [
       "powerwithin",
       "ciccarelli-white",
-      "self-teaching-guide"
+      "baron-misra"
     ],
-    "source_notes": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.",
-    "content_notes": "CORE CONCEPT\nfunctional classification into sensory, motor and interneurons\n\nKEY POINTS\n• afferent/sensory\n• efferent/motor\n• interneurons\n\nDISTINCTION / CAUTION\nAfferent/efferent are defined relative to the CNS.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.\n\nMEMORY HOOK\nAfferent arrives; efferent exits",
-    "distinction": "Afferent/efferent are defined relative to the CNS.",
-    "exam_takeaway": "Afferent arrives; efferent exits",
+    "source_notes": "Source-grounded synthesis from powerwithin, ciccarelli-white, baron-misra.",
+    "content_notes": "CORE IDEA\nNeurons can be distinguished by their role in information flow. Sensory (afferent) neurons carry information toward the central nervous system, motor (efferent) neurons carry commands away from the CNS to effectors, and interneurons connect neural pathways within the CNS.\n\nKEY POINTS\n• sensory/afferent\n• motor/efferent\n• interneurons\n• direction of information flow\n\nDISTINCTION / CAUTION\nAfferent means toward the CNS; efferent means away from the CNS. The distinction is about direction of information flow, not whether a neuron is physically located in the brain or spinal cord.\n\nHOW TO APPLY\nIf a PYQ asks whether a pathway carries sensory information toward the CNS or motor commands away from it, use the afferent/efferent direction rule first.\n\nMEMORY HOOK\nAfferent → arrives; Efferent → exits\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "distinction": "Afferent means toward the CNS; efferent means away from the CNS. The distinction is about direction of information flow, not whether a neuron is physically located in the brain or spinal cord.",
+    "exam_takeaway": "Afferent → arrives; Efferent → exits",
     "revision_cue": "Afferent arrives; efferent exits",
-    "revision_check": "Recall Types of neurons first, then explain the following caution in your own words: Afferent/efferent are defined relative to the CNS."
+    "revision_check": "Recall Types of neurons first, then explain the following caution in your own words: Afferent/efferent are defined relative to the CNS.",
+    "expert_explanation": "Neurons can be distinguished by their role in information flow. Sensory (afferent) neurons carry information toward the central nervous system, motor (efferent) neurons carry commands away from the CNS to effectors, and interneurons connect neural pathways within the CNS.\n\nExam distinction: Afferent means toward the CNS; efferent means away from the CNS. The distinction is about direction of information flow, not whether a neuron is physically located in the brain or spinal cord.\n\nApplication cue: If a PYQ asks whether a pathway carries sensory information toward the CNS or motor commands away from it, use the afferent/efferent direction rule first.",
+    "detailed_explanation": "CORE IDEA\nNeurons can be distinguished by their role in information flow. Sensory (afferent) neurons carry information toward the central nervous system, motor (efferent) neurons carry commands away from the CNS to effectors, and interneurons connect neural pathways within the CNS.\n\nWHAT TO HOLD IN MEMORY\n• sensory/afferent\n• motor/efferent\n• interneurons\n• direction of information flow\n\nWHAT NOT TO CONFUSE\nAfferent means toward the CNS; efferent means away from the CNS. The distinction is about direction of information flow, not whether a neuron is physically located in the brain or spinal cord.\n\nAPPLICATION\nIf a PYQ asks whether a pathway carries sensory information toward the CNS or motor commands away from it, use the afferent/efferent direction rule first.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nNeurons can be distinguished by their role in information flow. Sensory (afferent) neurons carry information toward the central nervous system, motor (efferent) neurons carry commands away from the CNS to effectors, and interneurons connect neural pathways within the CNS.\n\nKEY RELATIONSHIPS\n• sensory/afferent\n• motor/efferent\n• interneurons\n• direction of information flow\n\nDISTINCTION\nAfferent means toward the CNS; efferent means away from the CNS. The distinction is about direction of information flow, not whether a neuron is physically located in the brain or spinal cord.\n\nEXAM APPLICATION\nIf a PYQ asks whether a pathway carries sensory information toward the CNS or motor commands away from it, use the afferent/efferent direction rule first.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra",
+    "application_question": "If a PYQ asks whether a pathway carries sensory information toward the CNS or motor commands away from it, use the afferent/efferent direction rule first.",
+    "recall_cue": "Afferent → arrives; Efferent → exits",
+    "memory_hook": "Afferent → arrives; Efferent → exits"
   },
   "4-2-4": {
     "id": "4-2-4",
     "title": "Neural impulse",
-    "explanation": "action potential as a rapid, all-or-none change in membrane potential threshold; depolarization; repolarization; all-or-none.",
+    "explanation": "Neural signalling within an axon depends on changes in membrane potential. At rest the neuron maintains a resting potential; sufficient stimulation reaches threshold and initiates an action potential. Depolarization is followed by repolarization and a refractory phase.",
     "key_points": [
+      "resting potential",
       "threshold",
       "depolarization",
       "repolarization",
+      "refractory phase",
       "all-or-none"
     ],
     "inline_nudges": [
@@ -4010,24 +4082,32 @@
     ],
     "sources": [
       "powerwithin",
-      "ciccarelli-white",
-      "self-teaching-guide"
+      "baron-misra",
+      "ciccarelli-white"
     ],
-    "source_notes": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.",
-    "content_notes": "CORE CONCEPT\naction potential as a rapid, all-or-none change in membrane potential\n\nKEY POINTS\n• threshold\n• depolarization\n• repolarization\n• all-or-none\n\nDISTINCTION / CAUTION\nStimulus intensity is not coded by larger action potentials.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.\n\nMEMORY HOOK\nAction potential → all-or-none",
-    "distinction": "Stimulus intensity is not coded by larger action potentials.",
-    "exam_takeaway": "Action potential → all-or-none",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra, ciccarelli-white.",
+    "content_notes": "CORE IDEA\nNeural signalling within an axon depends on changes in membrane potential. At rest the neuron maintains a resting potential; sufficient stimulation reaches threshold and initiates an action potential. Depolarization is followed by repolarization and a refractory phase.\n\nKEY POINTS\n• resting potential\n• threshold\n• depolarization\n• repolarization\n• refractory phase\n• all-or-none\n\nDISTINCTION / CAUTION\nAn action potential is not graded in amplitude: once threshold is reached, the action potential follows an all-or-none pattern. In myelinated axons, saltatory conduction makes the signal appear to jump between nodes of Ranvier.\n\nHOW TO APPLY\nWhen a question asks what happens after threshold, retrieve the sequence: depolarization → repolarization → refractory period.\n\nMEMORY HOOK\nThreshold → depolarize → repolarize → refractory\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "distinction": "An action potential is not graded in amplitude: once threshold is reached, the action potential follows an all-or-none pattern. In myelinated axons, saltatory conduction makes the signal appear to jump between nodes of Ranvier.",
+    "exam_takeaway": "Threshold → depolarize → repolarize → refractory",
     "revision_cue": "Action potential → all-or-none",
-    "revision_check": "Recall Neural impulse first, then explain the following caution in your own words: Stimulus intensity is not coded by larger action potentials."
+    "revision_check": "Recall Neural impulse first, then explain the following caution in your own words: Stimulus intensity is not coded by larger action potentials.",
+    "expert_explanation": "Neural signalling within an axon depends on changes in membrane potential. At rest the neuron maintains a resting potential; sufficient stimulation reaches threshold and initiates an action potential. Depolarization is followed by repolarization and a refractory phase.\n\nExam distinction: An action potential is not graded in amplitude: once threshold is reached, the action potential follows an all-or-none pattern. In myelinated axons, saltatory conduction makes the signal appear to jump between nodes of Ranvier.\n\nApplication cue: When a question asks what happens after threshold, retrieve the sequence: depolarization → repolarization → refractory period.",
+    "detailed_explanation": "CORE IDEA\nNeural signalling within an axon depends on changes in membrane potential. At rest the neuron maintains a resting potential; sufficient stimulation reaches threshold and initiates an action potential. Depolarization is followed by repolarization and a refractory phase.\n\nWHAT TO HOLD IN MEMORY\n• resting potential\n• threshold\n• depolarization\n• repolarization\n• refractory phase\n• all-or-none\n\nWHAT NOT TO CONFUSE\nAn action potential is not graded in amplitude: once threshold is reached, the action potential follows an all-or-none pattern. In myelinated axons, saltatory conduction makes the signal appear to jump between nodes of Ranvier.\n\nAPPLICATION\nWhen a question asks what happens after threshold, retrieve the sequence: depolarization → repolarization → refractory period.\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "deep_learning": "ACADEMIC CORE\nNeural signalling within an axon depends on changes in membrane potential. At rest the neuron maintains a resting potential; sufficient stimulation reaches threshold and initiates an action potential. Depolarization is followed by repolarization and a refractory phase.\n\nKEY RELATIONSHIPS\n• resting potential\n• threshold\n• depolarization\n• repolarization\n• refractory phase\n• all-or-none\n\nDISTINCTION\nAn action potential is not graded in amplitude: once threshold is reached, the action potential follows an all-or-none pattern. In myelinated axons, saltatory conduction makes the signal appear to jump between nodes of Ranvier.\n\nEXAM APPLICATION\nWhen a question asks what happens after threshold, retrieve the sequence: depolarization → repolarization → refractory period.\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "application_question": "When a question asks what happens after threshold, retrieve the sequence: depolarization → repolarization → refractory period.",
+    "recall_cue": "Threshold → depolarize → repolarize → refractory",
+    "memory_hook": "Threshold → depolarize → repolarize → refractory"
   },
   "4-2-5": {
     "id": "4-2-5",
     "title": "Synaptic transmission",
-    "explanation": "communication from a presynaptic neuron to a postsynaptic cell neurotransmitter release; receptors; excitatory/inhibitory effects.",
+    "explanation": "Communication between neurons occurs across a synapse rather than by direct physical continuity. An action potential reaching the axon terminal triggers processes that allow neurotransmitter substances to be released into the synaptic cleft and influence the receiving cell.",
     "key_points": [
-      "neurotransmitter release",
-      "receptors",
-      "excitatory/inhibitory effects"
+      "axon terminal",
+      "synapse",
+      "synaptic cleft",
+      "neurotransmitter",
+      "receiving cell"
     ],
     "inline_nudges": [
       {
@@ -4037,15 +4117,21 @@
     ],
     "sources": [
       "powerwithin",
-      "ciccarelli-white",
-      "self-teaching-guide"
+      "baron-misra",
+      "ciccarelli-white"
     ],
-    "source_notes": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.",
-    "content_notes": "CORE CONCEPT\ncommunication from a presynaptic neuron to a postsynaptic cell\n\nKEY POINTS\n• neurotransmitter release\n• receptors\n• excitatory/inhibitory effects\n\nDISTINCTION / CAUTION\nA neurotransmitter's effect depends on its receptor/context.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour.\n\nMEMORY HOOK\nSynapse → release + receptor",
-    "distinction": "A neurotransmitter's effect depends on its receptor/context.",
-    "exam_takeaway": "Synapse → release + receptor",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra, ciccarelli-white.",
+    "content_notes": "CORE IDEA\nCommunication between neurons occurs across a synapse rather than by direct physical continuity. An action potential reaching the axon terminal triggers processes that allow neurotransmitter substances to be released into the synaptic cleft and influence the receiving cell.\n\nKEY POINTS\n• axon terminal\n• synapse\n• synaptic cleft\n• neurotransmitter\n• receiving cell\n\nDISTINCTION / CAUTION\nNeural impulse refers to electrical signalling within the neuron; synaptic transmission concerns communication from one cell to another across the synaptic gap. Do not treat these as identical processes.\n\nHOW TO APPLY\nIf a stem moves from an action potential at the terminal to release of a chemical messenger and its effect on another cell, the tested concept is synaptic transmission.\n\nMEMORY HOOK\nTerminal → neurotransmitter → synaptic cleft → next cell\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "distinction": "Neural impulse refers to electrical signalling within the neuron; synaptic transmission concerns communication from one cell to another across the synaptic gap. Do not treat these as identical processes.",
+    "exam_takeaway": "Terminal → neurotransmitter → synaptic cleft → next cell",
     "revision_cue": "Synapse → release + receptor",
-    "revision_check": "Recall Synaptic transmission first, then explain the following caution in your own words: A neurotransmitter's effect depends on its receptor/context."
+    "revision_check": "Recall Synaptic transmission first, then explain the following caution in your own words: A neurotransmitter's effect depends on its receptor/context.",
+    "expert_explanation": "Communication between neurons occurs across a synapse rather than by direct physical continuity. An action potential reaching the axon terminal triggers processes that allow neurotransmitter substances to be released into the synaptic cleft and influence the receiving cell.\n\nExam distinction: Neural impulse refers to electrical signalling within the neuron; synaptic transmission concerns communication from one cell to another across the synaptic gap. Do not treat these as identical processes.\n\nApplication cue: If a stem moves from an action potential at the terminal to release of a chemical messenger and its effect on another cell, the tested concept is synaptic transmission.",
+    "detailed_explanation": "CORE IDEA\nCommunication between neurons occurs across a synapse rather than by direct physical continuity. An action potential reaching the axon terminal triggers processes that allow neurotransmitter substances to be released into the synaptic cleft and influence the receiving cell.\n\nWHAT TO HOLD IN MEMORY\n• axon terminal\n• synapse\n• synaptic cleft\n• neurotransmitter\n• receiving cell\n\nWHAT NOT TO CONFUSE\nNeural impulse refers to electrical signalling within the neuron; synaptic transmission concerns communication from one cell to another across the synaptic gap. Do not treat these as identical processes.\n\nAPPLICATION\nIf a stem moves from an action potential at the terminal to release of a chemical messenger and its effect on another cell, the tested concept is synaptic transmission.\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "deep_learning": "ACADEMIC CORE\nCommunication between neurons occurs across a synapse rather than by direct physical continuity. An action potential reaching the axon terminal triggers processes that allow neurotransmitter substances to be released into the synaptic cleft and influence the receiving cell.\n\nKEY RELATIONSHIPS\n• axon terminal\n• synapse\n• synaptic cleft\n• neurotransmitter\n• receiving cell\n\nDISTINCTION\nNeural impulse refers to electrical signalling within the neuron; synaptic transmission concerns communication from one cell to another across the synaptic gap. Do not treat these as identical processes.\n\nEXAM APPLICATION\nIf a stem moves from an action potential at the terminal to release of a chemical messenger and its effect on another cell, the tested concept is synaptic transmission.\n\nSOURCE BASIS\npowerwithin • baron-misra • ciccarelli-white",
+    "application_question": "If a stem moves from an action potential at the terminal to release of a chemical messenger and its effect on another cell, the tested concept is synaptic transmission.",
+    "recall_cue": "Terminal → neurotransmitter → synaptic cleft → next cell",
+    "memory_hook": "Terminal → neurotransmitter → synaptic cleft → next cell"
   },
   "4-3-1": {
     "id": "4-3-1",
