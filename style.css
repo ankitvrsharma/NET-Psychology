@@ -1822,7 +1822,7 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .journey-tour[hidden],.install-prompt[hidden]{display:none!important}
 .journey-tour{position:fixed;inset:0;z-index:1000;pointer-events:none}
 .journey-backdrop{position:fixed;inset:0;z-index:1000;background:transparent;pointer-events:auto}
-.journey-spotlight-svg{position:fixed;inset:0;width:100vw;height:100vh;display:block;pointer-events:none}
+.journey-dim-piece{position:fixed;background:rgba(16,36,73,.48);pointer-events:none;z-index:1000}
 .journey-dialog{position:fixed;z-index:1002;width:min(560px,calc(100% - 32px));background:#fff!important;opacity:1!important;filter:none!important;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 24px 70px rgba(16,36,73,.28);pointer-events:auto;isolation:isolate}
 .journey-progress{display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em;margin-bottom:24px}
 .journey-progress b{color:var(--blue)}
