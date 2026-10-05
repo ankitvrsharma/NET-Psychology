@@ -93,9 +93,9 @@ const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
     const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./config/content-publish-config.json?v=1.0.0',{cache:'default'}),
-      fetch('./config/content-publish-manifest.json?v=1.0.0',{cache:'default'}),
-      fetch('./config/content-owner-overrides.json?v=1.0.0',{cache:'default'})
+      fetch('./config/content-publish-config.json?v='+DATA_VERSION,{cache:'no-store'}),
+      fetch('./config/content-publish-manifest.json?v='+DATA_VERSION,{cache:'no-store'}),
+      fetch('./config/content-owner-overrides.json?v='+DATA_VERSION,{cache:'no-store'})
     ]);
     if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
     const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
@@ -447,7 +447,10 @@ function startPage(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).startedAt||0));
   const current=started[0]||all()[0];
   if(!current){
-    root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Study data is not available yet.</p></section>';
+    const gateState=CONTENT_GATE.ready?'no_published_content':'publication_gate_unavailable';
+    root.innerHTML=gateState==='no_published_content'
+      ? '<section class="panel empty"><h2>Your learning path is ready.</h2><p>There is no published learning content available for your current syllabus yet.</p><a class="btn primary" href="learn.html">OPEN LEARN →</a></section>'
+      : '<section class="panel empty"><h2>Your learning path is ready.</h2><p>Your study structure loaded, but the latest learning content could not be verified. Refresh once to reconnect to the publication system.</p><button class="btn primary" type="button" data-action="reload">RETRY →</button></section>';
     return;
   }
   const journey=journeyPlan(getStartProfile());
