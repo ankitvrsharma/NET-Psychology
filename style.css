@@ -1851,3 +1851,14 @@ body.tour-open{overflow:hidden}
 /* Up Next hierarchy: unit context first, micro-topic second */
 .learn-up-next-item .up-next-unit{display:block;font-size:15px;line-height:1.35;font-weight:700;color:var(--navy)}
 .learn-up-next-item .up-next-micro{display:block;margin-top:5px;font-size:13px;line-height:1.4;font-style:normal;font-weight:500;color:var(--muted)}
+
+/* Compact learning path: Learn → Recall → Revise → Practice */
+.learning-approach{margin-top:28px!important;padding:0 0 4px}
+.learning-approach-head{display:none}
+.learning-steps.compact{display:flex;align-items:center;justify-content:center;gap:10px;background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 4px}
+.learning-steps.compact>div{min-height:0;padding:0;background:transparent;border:0;border-radius:0;display:inline-flex;align-items:center;gap:7px}
+.learning-steps.compact>div b{margin:0;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#edf2ff;color:var(--blue);font-size:10px}
+.learning-steps.compact>div span{display:inline;color:var(--navy);font-size:14px;font-weight:750;line-height:1}
+.learning-steps.compact>div:nth-of-type(1) b{background:var(--blue);color:#fff}
+.learning-steps.compact>div:not(:last-of-type):after{content:"→";margin-left:10px;color:#a2aec1;font-size:14px}
+@media(max-width:520px){.learning-approach{margin-top:22px!important}.learning-steps.compact{gap:7px;justify-content:flex-start;overflow:hidden;white-space:nowrap}.learning-steps.compact>div{gap:5px}.learning-steps.compact>div span{font-size:12px}.learning-steps.compact>div:not(:last-of-type):after{margin-left:7px}.learning-steps.compact>div b{width:19px;height:19px;font-size:9px}}
