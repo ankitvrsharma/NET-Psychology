@@ -1879,3 +1879,12 @@ main{flex:1}
 
 /* Keep onboarding questions fully inside their cards */
 .start-form legend{display:block;width:100%;margin:0 0 12px;padding:0}
+
+/* Topic ordering and unit taxonomy metadata */
+.unit-topic-sort-row{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:nowrap;white-space:nowrap;margin:0 0 18px}
+.topic-sort-label{font-size:11px;font-weight:800;letter-spacing:.04em;color:var(--muted);padding:8px 4px;background:none;border:0}
+.topic-sort{border:1px solid var(--line);background:#fff;color:#637087;padding:8px 11px;border-radius:9px;font:inherit;font-size:12px;font-weight:750;cursor:pointer}
+.topic-sort:hover{border-color:#cbd5e8;color:var(--navy)}
+.topic-sort.active{background:#edf2ff;border-color:#d6def7;color:var(--blue)}
+.topic-card-meta .eyebrow{white-space:nowrap}
+@media(max-width:620px){.unit-topic-sort-row{justify-content:flex-start;overflow-x:auto;max-width:100%;padding-bottom:2px}.unit-topic-sort-row .topic-sort{flex:0 0 auto}}
