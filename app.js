@@ -57,7 +57,7 @@ async function loadContentPool(id){
 async function loadCanonicalContentLayer(json,mode='all'){
   const page=document.body?.dataset?.page||'';
   let ids=mode==='practice'?['questions']:mode==='micro'?
-    (page==='microtopic'?['microtopics','quickLearn']:page==='deep-dive'?['microtopics','deepDive']:page==='active-recall'?['microtopics','activeRecall']:['microtopics','quickLearn']):
+    (page==='microtopic'?['microtopics','quickLearn']:page==='deep-dive'?['microtopics','deepDive','deepDiveEnrichment']:page==='active-recall'?['microtopics','activeRecall']:['microtopics','quickLearn']):
     ['microtopics','quickLearn','deepDive','activeRecall','questions'];
   if(mode!=='practice') ids=[...new Set([...ids,'sourceSynthesis'])];
   const loaded=await Promise.all(ids.map(loadContentPool)); const byId={}; ids.forEach((id,i)=>byId[id]=loaded[i]);
