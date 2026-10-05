@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "1.0.0";
+window.NETPSY_DATA_VERSION = "2.0.0";
