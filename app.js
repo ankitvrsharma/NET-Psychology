@@ -91,44 +91,29 @@ async function loadCanonicalContentLayer(json,mode='all'){
 }
 const KEY='netPsychProgress';
 async function loadContentGate(){
+  // The release manifest is authoritative when available. If it is temporarily
+  // unreachable, do not turn a valid learner build into an empty application:
+  // the same deterministic expert audit used by the publication rule can act
+  // as the local release decision. Owner overrides remain optional.
+  let cfg={}, manifest=null, owner={};
   try{
-    // The publication manifest is the authoritative release list. Config and
-    // owner overrides are supporting layers and must not take down published
-    // learning content when either optional file is temporarily unavailable.
-    const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./config/content-publish-config.json?v='+DATA_VERSION,{cache:'no-store'}),
-      fetch('./config/content-publish-manifest.json?v='+DATA_VERSION,{cache:'no-store'}),
-      fetch('./config/content-owner-overrides.json?v='+DATA_VERSION,{cache:'no-store'})
-    ]);
-    if(!manifestRes.ok) throw new Error('Content publication manifest unavailable: '+manifestRes.status);
-    const manifest=await manifestRes.json();
-    if(!manifest||typeof manifest!=='object'||!manifest.ai_pass||typeof manifest.ai_pass!=='object'){
-      throw new Error('Content publication manifest has an invalid structure');
-    }
-    let cfg={};
-    if(cfgRes.ok){
-      try{cfg=await cfgRes.json()||{};}catch(e){console.warn('Publication config could not be parsed; using manifest mode.',e);}
-    }else{
-      console.warn('Publication config unavailable; using manifest mode:',cfgRes.status);
-    }
-    let owner={};
-    if(ownerRes.ok){
-      try{owner=await ownerRes.json()||{};}catch(e){console.warn('Owner overrides could not be parsed; continuing without overrides.',e);}
-    }else{
-      console.warn('Owner overrides unavailable; continuing without overrides:',ownerRes.status);
-    }
-    CONTENT_GATE={
-      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'expert_or_owner',
-      ai:manifest.ai_pass||{},
-      owner:{
-        approved:owner.owner_approved||{},
-        rejected:owner.owner_rejected||{}
-      }
-    };
-  }catch(e){
-    console.error('Content publishing gate failed:',e);
-    CONTENT_GATE={ready:false,failClosed:true,mode:'owner_only',ai:{},owner:{approved:{},rejected:{}}};
+    const r=await fetch('./config/content-publish-config.json?v='+DATA_VERSION,{cache:'no-store'});
+    if(r.ok) cfg=await r.json()||{};
+  }catch(e){ console.warn('Publication config unavailable; using manifest/default mode.',e); }
+  try{
+    const r=await fetch('./config/content-publish-manifest.json?v='+DATA_VERSION,{cache:'no-store'});
+    if(r.ok) manifest=await r.json();
+  }catch(e){ console.warn('Publication manifest unavailable; using deterministic audit fallback.',e); }
+  try{
+    const r=await fetch('./config/content-owner-overrides.json?v='+DATA_VERSION,{cache:'no-store'});
+    if(r.ok) owner=await r.json()||{};
+  }catch(e){ console.warn('Owner overrides unavailable; continuing without overrides.',e); }
+  if(manifest&&typeof manifest==='object'&&manifest.ai_pass&&typeof manifest.ai_pass==='object'){
+    CONTENT_GATE={ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'expert_or_owner',ai:manifest.ai_pass,owner:{approved:owner.owner_approved||{},rejected:owner.owner_rejected||{}}};
+    return;
   }
+  CONTENT_GATE={ready:true,failClosed:false,mode:cfg.mode||'expert_or_owner',ai:{},owner:{approved:owner.owner_approved||{},rejected:owner.owner_rejected||{}}};
+  console.warn('Using deterministic expert publication fallback because the release manifest is unavailable.');
 }
 function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
 const EXPERT_AUDIT_VERSION='1.0.0';
@@ -1546,7 +1531,7 @@ function safeRender(){
     if(root&&!root.innerHTML.trim()) root.innerHTML='<section class="panel empty"><h1>This section could not be rendered.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
   }
 }
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const registration=await navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'});await registration.update();}catch(e){console.warn('Service worker update unavailable:',e);}});}
 window.addEventListener('DOMContentLoaded',()=>{const mobileTour=window.matchMedia('(max-width:820px)').matches;if(!mobileTour)initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(mobileTour)return;if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
