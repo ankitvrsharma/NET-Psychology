@@ -640,6 +640,38 @@ function quickLearnItem(){
   if(!item)return null;
   return {...item,category:item.category||'CONCEPT',href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
 }
+function initLearningJourney(){
+  const tour=document.querySelector('#journeyTour');
+  if(!tour)return;
+  let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
+  const steps=[
+    {eyebrow:'WELCOME',title:'Know Your Learning Journey',body:'This Study Hub is built around a simple idea: learning should lead to durable recall, not just familiar-looking notes.',target:null},
+    {eyebrow:'01 · LEARN',title:'Understand the micro-topic',body:'Start with a focused concept. Read the explanation, connect the ideas, and build understanding before testing yourself.',target:'#today'},
+    {eyebrow:'02 · RECALL',title:'Retrieve without looking',body:'Use Active Recall to bring the concept back from memory. Retrieval is part of learning—not just a test at the end.',target:'#learningApproach'},
+    {eyebrow:'03 · PRACTICE',title:'Apply what you know',body:'Use MCQs and previous-year questions to check whether you can recognise, distinguish and apply the concept in exam conditions.',target:'#today'},
+    {eyebrow:'04 · REVISE',title:'Return at the right time',body:'Scheduled revision brings concepts back after spacing. Your revision schedule is separate from today’s new-learning session.',target:'#learningApproach'},
+    {eyebrow:'YOUR LOOP',title:'Understand → Recall → Practice → Revise',body:'Move through the loop repeatedly. Progress comes from completing the learning process, not simply opening more pages.',target:null}
+  ];
+  let step=0;
+  const close=()=>{tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
+  const render=()=>{const s=steps[step];tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Start Learning':'Next')+'</button></div></section>';tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');};
+  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
+  tour.addEventListener('click',e=>{const a=e.target.closest('[data-journey]');if(!a)return;const act=a.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render()});
+  if(!seen) setTimeout(render,700);
+}
+let deferredInstallPrompt=null;
+function initPwaInstallPrompt(){
+  const box=document.querySelector('#installPrompt'); if(!box)return;
+  window.addEventListener('beforeinstallprompt',event=>{
+    event.preventDefault(); deferredInstallPrompt=event;
+    let dismissed=false; try{dismissed=localStorage.getItem('netPsychInstallDismissed')==='1'}catch(e){}
+    if(dismissed||window.matchMedia('(display-mode: standalone)').matches)return;
+    box.innerHTML='<div><strong>Make NET Psychology your study app</strong><span>Install this Study Hub for quicker access and an app-like study experience.</span></div><div class="install-actions"><button class="btn" data-install="dismiss">Not now</button><button class="btn primary" data-install="install">Install App</button></div>';
+    box.hidden=false;box.setAttribute('aria-hidden','false');
+  });
+  box.addEventListener('click',async e=>{const b=e.target.closest('[data-install]');if(!b)return;if(b.dataset.install==='dismiss'){try{localStorage.setItem('netPsychInstallDismissed','1')}catch(e){}box.hidden=true;return}if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;box.hidden=true;}});
+  window.addEventListener('appinstalled',()=>{box.hidden=true;deferredInstallPrompt=null});
+}
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
@@ -651,13 +683,13 @@ function home(){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
+  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>DAILY LEARNING</strong><span>→</span><small>Three focused concepts for today</small></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span><small>Test with MCQs and PYQs</small></a>'};
   const sequence=[cards.learn,cards.practice];
-  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a clear purpose: learn a new concept or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
+  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><h2>What should I do today?</h2><p>Daily Learning gives you a small, focused set of new concepts. Practice checks application. Scheduled revision is handled separately when concepts become due.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) renderHomeLearning();
-  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Break the topic into smaller, meaningful chunks.</span></div><div><b>Recall</b><span>Use active recall: recall the concept without looking at the notes.</span></div><div><b>Practice</b><span>Practise with normal MCQs and previous-year questions (PYQs).</span></div><div><b>Revise</b><span>Use spaced revision by returning to the concept at spaced intervals.</span></div></div>`;
+  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>Learn → Recall → Practice → Revise</h2><p>A compact view of the study loop. Open <button class="text-button" type="button" data-open-journey>Know Your Learning Journey</button> for the full walkthrough.</p></div><div class="learning-steps compact"><div><b>01 · Learn</b><span>Understand the concept.</span></div><div><b>02 · Recall</b><span>Retrieve without notes.</span></div><div><b>03 · Practice</b><span>Apply with MCQs & PYQs.</span></div><div><b>04 · Revise</b><span>Return through spacing.</span></div></div>`;
 }
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
@@ -1327,6 +1359,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+window.addEventListener('DOMContentLoaded',()=>{initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(e.target.closest('[data-open-journey]')){try{localStorage.removeItem('netPsychJourneySeen')}catch(err){}const el=document.querySelector('#journeyTour');if(el){el.hidden=false;el.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');}}});});
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
