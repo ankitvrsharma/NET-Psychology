@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - content-owner-overrides.json
+      - config/content-owner-overrides.json
 
 permissions:
   contents: write
@@ -36,6 +36,6 @@ jobs:
           fi
           git config user.name "net-psychology-rewrite[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/microtopics/microtopic_explanations.json content/questions/questions.json content-owner-overrides.json rewrite-reaudit-tracking.json
+          git add content/microtopics/microtopic_explanations.json content/questions/questions.json config/content-owner-overrides.json operations/rewrite-reaudit-tracking.json
           git commit -m "Rewrite and re-audit blocked content"
           git push
