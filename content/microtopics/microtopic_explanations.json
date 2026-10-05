@@ -1,13 +1,16 @@
 {
   "1-1-1": {
     "id": "1-1-1",
-    "title": "Bhagavad Gita",
-    "explanation": "psychological themes of disciplined action, equanimity, duty and self-knowledge Karma Yoga; equanimity toward outcomes; self-knowledge; discipline of action.",
+    "title": "Bhagavad Gita: Karma Yoga and Equanimity",
+    "explanation": "The supplied NET source presents the Bhagavad Gita as a psychological-spiritual framework centred on action, self-knowledge and disciplined engagement with duty. Karma Yoga emphasises action without performance anxiety or attachment to the fruits of action; the broader Gita framework also links works, knowledge and devotion.",
     "key_points": [
       "Karma Yoga",
-      "equanimity toward outcomes",
-      "self-knowledge",
-      "discipline of action"
+      "Nishkama Karma",
+      "duty/action without attachment to fruits",
+      "Jnanayoga",
+      "Bhakti Yoga",
+      "equanimity and self-knowledge",
+      "The key NET distinction is not simply 'do your duty'. The source connects action with reduced attachment to outcomes and places Karma Yoga alongside knowledge and devotion as complementary paths."
     ],
     "inline_nudges": [
       {
@@ -19,23 +22,28 @@
       "powerwithin",
       "baron-misra"
     ],
-    "source_notes": "PowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.",
-    "content_notes": "CORE CONCEPT\npsychological themes of disciplined action, equanimity, duty and self-knowledge\n\nKEY POINTS\n• Karma Yoga\n• equanimity toward outcomes\n• self-knowledge\n• discipline of action\n\nDISTINCTION / CAUTION\nDo not reduce it to a single religious slogan.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.\n\nMEMORY HOOK\nGita → action + equanimity",
-    "distinction": "Do not reduce it to a single religious slogan.",
-    "exam_takeaway": "Gita → action + equanimity",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra.",
+    "content_notes": "CORE IDEA\nThe supplied NET source presents the Bhagavad Gita as a psychological-spiritual framework centred on action, self-knowledge and disciplined engagement with duty. Karma Yoga emphasises action without performance anxiety or attachment to the fruits of action; the broader Gita framework also links works, knowledge and devotion.\n\nKEY POINTS\n• Karma Yoga\n• Nishkama Karma\n• duty/action without attachment to fruits\n• Jnanayoga\n• Bhakti Yoga\n• equanimity and self-knowledge\n• The key NET distinction is not simply 'do your duty'. The source connects action with reduced attachment to outcomes and places Karma Yoga alongside knowledge and devotion as complementary paths.\n\nDISTINCTION / CAUTION\nIf a PYQ contrasts action performed without greed for its fruits with non-performance of duty, retrieve Nishkama Karma within Karma Yoga.\n\nHOW TO APPLY\nKarma Yoga → action + duty + non-attachment\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "distinction": "If a PYQ contrasts action performed without greed for its fruits with non-performance of duty, retrieve Nishkama Karma within Karma Yoga.",
     "revision_cue": "Gita → action + equanimity",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not reduce it to a single religious slogan."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not reduce it to a single religious slogan.",
+    "expert_explanation": "The supplied NET source presents the Bhagavad Gita as a psychological-spiritual framework centred on action, self-knowledge and disciplined engagement with duty. Karma Yoga emphasises action without performance anxiety or attachment to the fruits of action; the broader Gita framework also links works, knowledge and devotion.\n\nExam distinction: If a PYQ contrasts action performed without greed for its fruits with non-performance of duty, retrieve Nishkama Karma within Karma Yoga.\n\nApplication cue: Karma Yoga → action + duty + non-attachment",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET source presents the Bhagavad Gita as a psychological-spiritual framework centred on action, self-knowledge and disciplined engagement with duty. Karma Yoga emphasises action without performance anxiety or attachment to the fruits of action; the broader Gita framework also links works, knowledge and devotion.\n\nWHAT TO HOLD IN MEMORY\n• Karma Yoga\n• Nishkama Karma\n• duty/action without attachment to fruits\n• Jnanayoga\n• Bhakti Yoga\n• equanimity and self-knowledge\n• The key NET distinction is not simply 'do your duty'. The source connects action with reduced attachment to outcomes and places Karma Yoga alongside knowledge and devotion as complementary paths.\n\nWHAT NOT TO CONFUSE\nIf a PYQ contrasts action performed without greed for its fruits with non-performance of duty, retrieve Nishkama Karma within Karma Yoga.\n\nAPPLICATION\nKarma Yoga → action + duty + non-attachment\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET source presents the Bhagavad Gita as a psychological-spiritual framework centred on action, self-knowledge and disciplined engagement with duty. Karma Yoga emphasises action without performance anxiety or attachment to the fruits of action; the broader Gita framework also links works, knowledge and devotion.\n\nKEY RELATIONSHIPS\n• Karma Yoga\n• Nishkama Karma\n• duty/action without attachment to fruits\n• Jnanayoga\n• Bhakti Yoga\n• equanimity and self-knowledge\n• The key NET distinction is not simply 'do your duty'. The source connects action with reduced attachment to outcomes and places Karma Yoga alongside knowledge and devotion as complementary paths.\n\nDISTINCTION\nIf a PYQ contrasts action performed without greed for its fruits with non-performance of duty, retrieve Nishkama Karma within Karma Yoga.\n\nEXAM APPLICATION\nKarma Yoga → action + duty + non-attachment\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "application_question": "Karma Yoga → action + duty + non-attachment"
   },
   "1-1-2": {
     "id": "1-1-2",
     "title": "Buddhism",
-    "explanation": "psychological ideas around suffering, its causes, cessation and a path of transformation Four Noble Truths; Eightfold Path; impermanence; non-self; mindfulness.",
+    "explanation": "The supplied NET source presents Buddhism through the problem of suffering and the route toward its cessation. The Four Noble Truths identify suffering, its cause in craving/attachment, the possibility of cessation, and the path toward cessation; the Eightfold Path is described as a Middle Way between indulgence and severe asceticism.",
     "key_points": [
       "Four Noble Truths",
-      "Eightfold Path",
-      "impermanence",
-      "non-self",
-      "mindfulness"
+      "suffering",
+      "craving/attachment",
+      "cessation",
+      "Eightfold Path / Middle Way",
+      "nirvana",
+      "Do not reduce Buddhism in this syllabus to a list of moral rules. The exam-relevant structure is a causal sequence: suffering → its source → possibility of cessation → path."
     ],
     "inline_nudges": [
       {
@@ -47,21 +55,27 @@
       "powerwithin",
       "baron-misra"
     ],
-    "source_notes": "PowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.",
-    "content_notes": "CORE CONCEPT\npsychological ideas around suffering, its causes, cessation and a path of transformation\n\nKEY POINTS\n• Four Noble Truths\n• Eightfold Path\n• impermanence\n• non-self\n• mindfulness\n\nDISTINCTION / CAUTION\nNon-self is not the same as saying nothing exists.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.\n\nMEMORY HOOK\nBuddhism → suffering → path",
-    "distinction": "Non-self is not the same as saying nothing exists.",
-    "exam_takeaway": "Buddhism → suffering → path",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra.",
+    "content_notes": "CORE IDEA\nThe supplied NET source presents Buddhism through the problem of suffering and the route toward its cessation. The Four Noble Truths identify suffering, its cause in craving/attachment, the possibility of cessation, and the path toward cessation; the Eightfold Path is described as a Middle Way between indulgence and severe asceticism.\n\nKEY POINTS\n• Four Noble Truths\n• suffering\n• craving/attachment\n• cessation\n• Eightfold Path / Middle Way\n• nirvana\n• Do not reduce Buddhism in this syllabus to a list of moral rules. The exam-relevant structure is a causal sequence: suffering → its source → possibility of cessation → path.\n\nDISTINCTION / CAUTION\nWhen a stem asks for the truth concerning cessation or the path to cessation, distinguish Nirodha from Magga.\n\nHOW TO APPLY\nBuddhism → suffering → craving → cessation → Eightfold Path\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "distinction": "When a stem asks for the truth concerning cessation or the path to cessation, distinguish Nirodha from Magga.",
     "revision_cue": "Buddhism → suffering → path",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Non-self is not the same as saying nothing exists."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Non-self is not the same as saying nothing exists.",
+    "expert_explanation": "The supplied NET source presents Buddhism through the problem of suffering and the route toward its cessation. The Four Noble Truths identify suffering, its cause in craving/attachment, the possibility of cessation, and the path toward cessation; the Eightfold Path is described as a Middle Way between indulgence and severe asceticism.\n\nExam distinction: When a stem asks for the truth concerning cessation or the path to cessation, distinguish Nirodha from Magga.\n\nApplication cue: Buddhism → suffering → craving → cessation → Eightfold Path",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET source presents Buddhism through the problem of suffering and the route toward its cessation. The Four Noble Truths identify suffering, its cause in craving/attachment, the possibility of cessation, and the path toward cessation; the Eightfold Path is described as a Middle Way between indulgence and severe asceticism.\n\nWHAT TO HOLD IN MEMORY\n• Four Noble Truths\n• suffering\n• craving/attachment\n• cessation\n• Eightfold Path / Middle Way\n• nirvana\n• Do not reduce Buddhism in this syllabus to a list of moral rules. The exam-relevant structure is a causal sequence: suffering → its source → possibility of cessation → path.\n\nWHAT NOT TO CONFUSE\nWhen a stem asks for the truth concerning cessation or the path to cessation, distinguish Nirodha from Magga.\n\nAPPLICATION\nBuddhism → suffering → craving → cessation → Eightfold Path\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET source presents Buddhism through the problem of suffering and the route toward its cessation. The Four Noble Truths identify suffering, its cause in craving/attachment, the possibility of cessation, and the path toward cessation; the Eightfold Path is described as a Middle Way between indulgence and severe asceticism.\n\nKEY RELATIONSHIPS\n• Four Noble Truths\n• suffering\n• craving/attachment\n• cessation\n• Eightfold Path / Middle Way\n• nirvana\n• Do not reduce Buddhism in this syllabus to a list of moral rules. The exam-relevant structure is a causal sequence: suffering → its source → possibility of cessation → path.\n\nDISTINCTION\nWhen a stem asks for the truth concerning cessation or the path to cessation, distinguish Nirodha from Magga.\n\nEXAM APPLICATION\nBuddhism → suffering → craving → cessation → Eightfold Path\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "application_question": "Buddhism → suffering → craving → cessation → Eightfold Path"
   },
   "1-1-3": {
     "id": "1-1-3",
     "title": "Sufism",
-    "explanation": "inner purification, remembrance and transformation of the self dhikr/remembrance; love/devotion; inner purification.",
+    "explanation": "The supplied NET source describes Sufism as the inner or esoteric dimension of Islam, with an emphasis on purification and direct experience. It distinguishes Shariah as the outer ethical/religious framework, Tariqah as the inner path and practice under guidance, and Haqiqah as direct experience of truth.",
     "key_points": [
-      "dhikr/remembrance",
-      "love/devotion",
-      "inner purification"
+      "inner dimension of Islam",
+      "nafs / self",
+      "Shariah",
+      "Tariqah",
+      "Haqiqah",
+      "purification and direct experience"
     ],
     "inline_nudges": [
       {
@@ -70,24 +84,29 @@
       }
     ],
     "sources": [
-      "powerwithin",
-      "baron-misra"
+      "Sufism → Shariah → Tariqah → Haqiqah",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.",
-    "content_notes": "CORE CONCEPT\ninner purification, remembrance and transformation of the self\n\nKEY POINTS\n• dhikr/remembrance\n• love/devotion\n• inner purification\n\nDISTINCTION / CAUTION\nDo not treat Sufism only as a social identity.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.\n\nMEMORY HOOK\nSufism → purification + remembrance",
-    "distinction": "Do not treat Sufism only as a social identity.",
-    "exam_takeaway": "Sufism → purification + remembrance",
+    "source_notes": "Source-grounded synthesis from Sufism → Shariah → Tariqah → Haqiqah, powerwithin.",
+    "content_notes": "CORE IDEA\nThe supplied NET source describes Sufism as the inner or esoteric dimension of Islam, with an emphasis on purification and direct experience. It distinguishes Shariah as the outer ethical/religious framework, Tariqah as the inner path and practice under guidance, and Haqiqah as direct experience of truth.\n\nKEY POINTS\n• inner dimension of Islam\n• nafs / self\n• Shariah\n• Tariqah\n• Haqiqah\n• purification and direct experience\n\nDISTINCTION / CAUTION\nThe useful NET distinction is outer practice versus inner transformation: Shariah provides the external framework, Tariqah the path/practice, and Haqiqah the direct realisation of truth.\n\nHOW TO APPLY\nIf a question asks which term refers to the inner path or direct mystical experience, retrieve Tariqah or Haqiqah respectively.\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\nSufism → Shariah → Tariqah → Haqiqah • powerwithin",
+    "distinction": "The useful NET distinction is outer practice versus inner transformation: Shariah provides the external framework, Tariqah the path/practice, and Haqiqah the direct realisation of truth.",
     "revision_cue": "Sufism → purification + remembrance",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not treat Sufism only as a social identity."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not treat Sufism only as a social identity.",
+    "expert_explanation": "The supplied NET source describes Sufism as the inner or esoteric dimension of Islam, with an emphasis on purification and direct experience. It distinguishes Shariah as the outer ethical/religious framework, Tariqah as the inner path and practice under guidance, and Haqiqah as direct experience of truth.\n\nExam distinction: The useful NET distinction is outer practice versus inner transformation: Shariah provides the external framework, Tariqah the path/practice, and Haqiqah the direct realisation of truth.\n\nApplication cue: If a question asks which term refers to the inner path or direct mystical experience, retrieve Tariqah or Haqiqah respectively.",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET source describes Sufism as the inner or esoteric dimension of Islam, with an emphasis on purification and direct experience. It distinguishes Shariah as the outer ethical/religious framework, Tariqah as the inner path and practice under guidance, and Haqiqah as direct experience of truth.\n\nWHAT TO HOLD IN MEMORY\n• inner dimension of Islam\n• nafs / self\n• Shariah\n• Tariqah\n• Haqiqah\n• purification and direct experience\n\nWHAT NOT TO CONFUSE\nThe useful NET distinction is outer practice versus inner transformation: Shariah provides the external framework, Tariqah the path/practice, and Haqiqah the direct realisation of truth.\n\nAPPLICATION\nIf a question asks which term refers to the inner path or direct mystical experience, retrieve Tariqah or Haqiqah respectively.\n\nSOURCE BASIS\nSufism → Shariah → Tariqah → Haqiqah • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET source describes Sufism as the inner or esoteric dimension of Islam, with an emphasis on purification and direct experience. It distinguishes Shariah as the outer ethical/religious framework, Tariqah as the inner path and practice under guidance, and Haqiqah as direct experience of truth.\n\nKEY RELATIONSHIPS\n• inner dimension of Islam\n• nafs / self\n• Shariah\n• Tariqah\n• Haqiqah\n• purification and direct experience\n\nDISTINCTION\nThe useful NET distinction is outer practice versus inner transformation: Shariah provides the external framework, Tariqah the path/practice, and Haqiqah the direct realisation of truth.\n\nEXAM APPLICATION\nIf a question asks which term refers to the inner path or direct mystical experience, retrieve Tariqah or Haqiqah respectively.\n\nSOURCE BASIS\nSufism → Shariah → Tariqah → Haqiqah • powerwithin",
+    "application_question": "If a question asks which term refers to the inner path or direct mystical experience, retrieve Tariqah or Haqiqah respectively."
   },
   "1-1-4": {
     "id": "1-1-4",
     "title": "Integral Yoga",
-    "explanation": "Sri Aurobindo’s integrative view of physical, mental and spiritual transformation integration; transformation of consciousness; Sri Aurobindo.",
+    "explanation": "The supplied NET source presents Sri Aurobindo's Integral Yoga as a synthesis directed toward transformation of the whole person rather than development of only one aspect of being. It describes physical, vital, mental, psychic and spiritual dimensions and treats yoga as a method of self-perfection and integrated development.",
     "key_points": [
-      "integration",
-      "transformation of consciousness",
-      "Sri Aurobindo"
+      "Sri Aurobindo",
+      "whole-person transformation",
+      "physical, vital, mental, psychic, spiritual",
+      "self-perfection",
+      "integrated consciousness"
     ],
     "inline_nudges": [
       {
@@ -96,15 +115,18 @@
       }
     ],
     "sources": [
-      "powerwithin",
-      "baron-misra"
+      "Integral Yoga → synthesis → whole-person transformation",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.",
-    "content_notes": "CORE CONCEPT\nSri Aurobindo’s integrative view of physical, mental and spiritual transformation\n\nKEY POINTS\n• integration\n• transformation of consciousness\n• Sri Aurobindo\n\nDISTINCTION / CAUTION\nIt is broader than physical postures.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-oriented treatment of the Indian tradition; Baron & Misra complements it with Indian psychological ideas about duty, self-knowledge, liberation and the socially situated person.\n\nMEMORY HOOK\nIntegral → whole-person transformation",
-    "distinction": "It is broader than physical postures.",
-    "exam_takeaway": "Integral → whole-person transformation",
+    "source_notes": "Source-grounded synthesis from Integral Yoga → synthesis → whole-person transformation, powerwithin.",
+    "content_notes": "CORE IDEA\nThe supplied NET source presents Sri Aurobindo's Integral Yoga as a synthesis directed toward transformation of the whole person rather than development of only one aspect of being. It describes physical, vital, mental, psychic and spiritual dimensions and treats yoga as a method of self-perfection and integrated development.\n\nKEY POINTS\n• Sri Aurobindo\n• whole-person transformation\n• physical, vital, mental, psychic, spiritual\n• self-perfection\n• integrated consciousness\n\nDISTINCTION / CAUTION\nDo not equate Integral Yoga with a single technique or a fixed meditation procedure. Its defining emphasis in the supplied source is synthesis and transformation of the entire being.\n\nHOW TO APPLY\nWhen the stem stresses harmonious development of all aspects of the person or transformation of ordinary consciousness, retrieve Integral Yoga.\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\nIntegral Yoga → synthesis → whole-person transformation • powerwithin",
+    "distinction": "Do not equate Integral Yoga with a single technique or a fixed meditation procedure. Its defining emphasis in the supplied source is synthesis and transformation of the entire being.",
     "revision_cue": "Integral → whole-person transformation",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: It is broader than physical postures."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: It is broader than physical postures.",
+    "expert_explanation": "The supplied NET source presents Sri Aurobindo's Integral Yoga as a synthesis directed toward transformation of the whole person rather than development of only one aspect of being. It describes physical, vital, mental, psychic and spiritual dimensions and treats yoga as a method of self-perfection and integrated development.\n\nExam distinction: Do not equate Integral Yoga with a single technique or a fixed meditation procedure. Its defining emphasis in the supplied source is synthesis and transformation of the entire being.\n\nApplication cue: When the stem stresses harmonious development of all aspects of the person or transformation of ordinary consciousness, retrieve Integral Yoga.",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET source presents Sri Aurobindo's Integral Yoga as a synthesis directed toward transformation of the whole person rather than development of only one aspect of being. It describes physical, vital, mental, psychic and spiritual dimensions and treats yoga as a method of self-perfection and integrated development.\n\nWHAT TO HOLD IN MEMORY\n• Sri Aurobindo\n• whole-person transformation\n• physical, vital, mental, psychic, spiritual\n• self-perfection\n• integrated consciousness\n\nWHAT NOT TO CONFUSE\nDo not equate Integral Yoga with a single technique or a fixed meditation procedure. Its defining emphasis in the supplied source is synthesis and transformation of the entire being.\n\nAPPLICATION\nWhen the stem stresses harmonious development of all aspects of the person or transformation of ordinary consciousness, retrieve Integral Yoga.\n\nSOURCE BASIS\nIntegral Yoga → synthesis → whole-person transformation • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET source presents Sri Aurobindo's Integral Yoga as a synthesis directed toward transformation of the whole person rather than development of only one aspect of being. It describes physical, vital, mental, psychic and spiritual dimensions and treats yoga as a method of self-perfection and integrated development.\n\nKEY RELATIONSHIPS\n• Sri Aurobindo\n• whole-person transformation\n• physical, vital, mental, psychic, spiritual\n• self-perfection\n• integrated consciousness\n\nDISTINCTION\nDo not equate Integral Yoga with a single technique or a fixed meditation procedure. Its defining emphasis in the supplied source is synthesis and transformation of the entire being.\n\nEXAM APPLICATION\nWhen the stem stresses harmonious development of all aspects of the person or transformation of ordinary consciousness, retrieve Integral Yoga.\n\nSOURCE BASIS\nIntegral Yoga → synthesis → whole-person transformation • powerwithin",
+    "application_question": "When the stem stresses harmonious development of all aspects of the person or transformation of ordinary consciousness, retrieve Integral Yoga."
   },
   "1-2-1": {
     "id": "1-2-1",
@@ -301,26 +323,29 @@
   "1-3-2": {
     "id": "1-3-2",
     "title": "Postcolonialism and psychology",
-    "explanation": "In the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue. Postcolonial analysis raises questions about the cultural location of psychological knowledge; Imported concepts may require cultural interpretation rather than mechanical transfer; Indigenization is one response to the problem of cultural fit; The debate concerns knowledge, methods and disciplinary identity; SOURCE BASIS; PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections.",
+    "explanation": "The supplied NET syllabus places postcolonialism within the critique of psychology's colonial encounter. The issue is not simply historical chronology: it concerns how inherited Western categories and assumptions can shape what counts as legitimate psychological knowledge and how local contexts and traditions are represented.",
     "key_points": [
-      "Postcolonial analysis raises questions about the cultural location of psychological knowledge.",
-      "Imported concepts may require cultural interpretation rather than mechanical transfer.",
-      "Indigenization is one response to the problem of cultural fit.",
-      "The debate concerns knowledge, methods and disciplinary identity.",
-      "SOURCE BASIS",
-      "PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections."
+      "colonial encounter",
+      "power and knowledge",
+      "cultural context",
+      "local/indigenous perspectives",
+      "critique of inherited categories",
+      "The exam distinction is between merely adding local examples to an existing framework and questioning the framework itself. A postcolonial lens asks how colonial histories influence knowledge production and disciplinary assumptions."
     ],
     "inline_nudges": [],
     "sources": [
       "powerwithin",
       "baron-misra"
     ],
-    "source_notes": "PowerWithin provides the historical chronology and disciplinary debate; Baron & Misra independently situates the development of Indian psychology and the later demand for cultural relevance.",
-    "content_notes": "CORE CONCEPT\nIn the uploaded material, postcolonial concerns are linked to the question of how psychology can represent people whose social and cultural contexts differ from those in which dominant theories were developed. The Indian identity debate focuses on the limits of simply importing Western concepts and on the need for culturally situated knowledge. The source's discussion of indigenization provides the clearest concrete treatment of this issue.\n\nKEY POINTS\n• Postcolonial analysis raises questions about the cultural location of psychological knowledge.\n• Imported concepts may require cultural interpretation rather than mechanical transfer.\n• Indigenization is one response to the problem of cultural fit.\n• The debate concerns knowledge, methods and disciplinary identity.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 1, colonial encounter, identity crisis and indigenization sections.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the historical chronology and disciplinary debate; Baron & Misra independently situates the development of Indian psychology and the later demand for cultural relevance.\n\nMEMORY HOOK\nPostcolonialism and psychology → Postcolonial analysis raises questions about the cultural location of psychological knowledge • Imported concepts may require cultural interpretation rather than mechanical transfer • Indigenization is one response to the problem of cultural fit",
-    "distinction": "",
-    "exam_takeaway": "Postcolonialism and psychology → Postcolonial analysis raises questions about the cultural location of psychological knowledge • Imported concepts may require cultural interpretation rather than mechanical transfer • Indigenization is one response to the problem of cultural fit",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra.",
+    "content_notes": "CORE IDEA\nThe supplied NET syllabus places postcolonialism within the critique of psychology's colonial encounter. The issue is not simply historical chronology: it concerns how inherited Western categories and assumptions can shape what counts as legitimate psychological knowledge and how local contexts and traditions are represented.\n\nKEY POINTS\n• colonial encounter\n• power and knowledge\n• cultural context\n• local/indigenous perspectives\n• critique of inherited categories\n• The exam distinction is between merely adding local examples to an existing framework and questioning the framework itself. A postcolonial lens asks how colonial histories influence knowledge production and disciplinary assumptions.\n\nDISTINCTION / CAUTION\nIf a question focuses on colonial power, the dominance of imported categories, or the need to interrogate knowledge production, consider the postcolonial perspective.\n\nHOW TO APPLY\nPostcolonialism → question inherited power/knowledge assumptions\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "distinction": "If a question focuses on colonial power, the dominance of imported categories, or the need to interrogate knowledge production, consider the postcolonial perspective.",
     "revision_cue": "Postcolonialism and psychology → Postcolonial analysis raises questions about the cultural location of psychological knowledge • Imported concepts may require cultural interpretation rather than mechanical transfer • Indigenization is one response to the problem of cultural fit",
-    "revision_check": "Recall the central idea and two supporting points before reopening the explanation."
+    "revision_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "expert_explanation": "The supplied NET syllabus places postcolonialism within the critique of psychology's colonial encounter. The issue is not simply historical chronology: it concerns how inherited Western categories and assumptions can shape what counts as legitimate psychological knowledge and how local contexts and traditions are represented.\n\nExam distinction: If a question focuses on colonial power, the dominance of imported categories, or the need to interrogate knowledge production, consider the postcolonial perspective.\n\nApplication cue: Postcolonialism → question inherited power/knowledge assumptions",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET syllabus places postcolonialism within the critique of psychology's colonial encounter. The issue is not simply historical chronology: it concerns how inherited Western categories and assumptions can shape what counts as legitimate psychological knowledge and how local contexts and traditions are represented.\n\nWHAT TO HOLD IN MEMORY\n• colonial encounter\n• power and knowledge\n• cultural context\n• local/indigenous perspectives\n• critique of inherited categories\n• The exam distinction is between merely adding local examples to an existing framework and questioning the framework itself. A postcolonial lens asks how colonial histories influence knowledge production and disciplinary assumptions.\n\nWHAT NOT TO CONFUSE\nIf a question focuses on colonial power, the dominance of imported categories, or the need to interrogate knowledge production, consider the postcolonial perspective.\n\nAPPLICATION\nPostcolonialism → question inherited power/knowledge assumptions\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET syllabus places postcolonialism within the critique of psychology's colonial encounter. The issue is not simply historical chronology: it concerns how inherited Western categories and assumptions can shape what counts as legitimate psychological knowledge and how local contexts and traditions are represented.\n\nKEY RELATIONSHIPS\n• colonial encounter\n• power and knowledge\n• cultural context\n• local/indigenous perspectives\n• critique of inherited categories\n• The exam distinction is between merely adding local examples to an existing framework and questioning the framework itself. A postcolonial lens asks how colonial histories influence knowledge production and disciplinary assumptions.\n\nDISTINCTION\nIf a question focuses on colonial power, the dominance of imported categories, or the need to interrogate knowledge production, consider the postcolonial perspective.\n\nEXAM APPLICATION\nPostcolonialism → question inherited power/knowledge assumptions\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "application_question": "Postcolonialism → question inherited power/knowledge assumptions"
   },
   "1-3-3": {
     "id": "1-3-3",
@@ -349,50 +374,54 @@
   "1-4-1": {
     "id": "1-4-1",
     "title": "Greek heritage",
-    "explanation": "The uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking. Metaphysics asks about the nature of reality; Epistemology asks how knowledge of reality is possible; Materialism and idealism provide contrasting accounts of reality; Empiricism and rationalism provide contrasting accounts of knowledge; SOURCE BASIS; PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective.",
+    "explanation": "The supplied NET material treats Greek thought as part of the philosophical heritage from which questions about mind, knowledge and human nature entered later intellectual traditions. For NET preparation, the important point is the historical continuity between philosophical inquiry and the later emergence of psychology as a distinct discipline.",
     "key_points": [
-      "Metaphysics asks about the nature of reality.",
-      "Epistemology asks how knowledge of reality is possible.",
-      "Materialism and idealism provide contrasting accounts of reality.",
-      "Empiricism and rationalism provide contrasting accounts of knowledge.",
-      "SOURCE BASIS",
-      "PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective."
+      "philosophical heritage",
+      "mind",
+      "knowledge",
+      "human nature",
+      "roots of psychology"
     ],
     "inline_nudges": [],
     "sources": [
-      "powerwithin",
-      "self-teaching-guide"
+      "Greek heritage → philosophical questions about mind and knowledge",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET historical sequence, while the Self-Teaching Guide provides a compact textbook account of psychology's intellectual foundations and the transition to scientific psychology.",
-    "content_notes": "CORE CONCEPT\nThe uploaded material presents ancient Greek thought as an intellectual background for later psychology. It highlights metaphysical questions about the nature of reality and epistemological questions about how knowledge is possible. Two contrasts emphasized are materialism versus idealism and empiricism versus rationalism. Greek philosophical inquiry therefore contributed categories and problems that later became relevant to psychological thinking.\n\nKEY POINTS\n• Metaphysics asks about the nature of reality.\n• Epistemology asks how knowledge of reality is possible.\n• Materialism and idealism provide contrasting accounts of reality.\n• Empiricism and rationalism provide contrasting accounts of knowledge.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 1, Greek Heritage: The Basics; Psychology: A Self-Teaching Guide, historical perspective.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET historical sequence, while the Self-Teaching Guide provides a compact textbook account of psychology's intellectual foundations and the transition to scientific psychology.\n\nMEMORY HOOK\nGreek heritage → Metaphysics asks about the nature of reality • Epistemology asks how knowledge of reality is possible • Materialism and idealism provide contrasting accounts of reality",
-    "distinction": "",
-    "exam_takeaway": "Greek heritage → Metaphysics asks about the nature of reality • Epistemology asks how knowledge of reality is possible • Materialism and idealism provide contrasting accounts of reality",
+    "source_notes": "Source-grounded synthesis from Greek heritage → philosophical questions about mind and knowledge, powerwithin.",
+    "content_notes": "CORE IDEA\nThe supplied NET material treats Greek thought as part of the philosophical heritage from which questions about mind, knowledge and human nature entered later intellectual traditions. For NET preparation, the important point is the historical continuity between philosophical inquiry and the later emergence of psychology as a distinct discipline.\n\nKEY POINTS\n• philosophical heritage\n• mind\n• knowledge\n• human nature\n• roots of psychology\n\nDISTINCTION / CAUTION\nDo not treat Greek heritage as experimental psychology. Its relevance here is historical: philosophical questions about mind and knowledge predate psychology's institutional emergence as an independent science.\n\nHOW TO APPLY\nWhen a question asks about the philosophical roots of psychology rather than laboratory psychology, retrieve the Greek heritage context.\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\nGreek heritage → philosophical questions about mind and knowledge • powerwithin",
+    "distinction": "Do not treat Greek heritage as experimental psychology. Its relevance here is historical: philosophical questions about mind and knowledge predate psychology's institutional emergence as an independent science.",
     "revision_cue": "Greek heritage → Metaphysics asks about the nature of reality • Epistemology asks how knowledge of reality is possible • Materialism and idealism provide contrasting accounts of reality",
-    "revision_check": "Recall the central idea and two supporting points before reopening the explanation."
+    "revision_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "expert_explanation": "The supplied NET material treats Greek thought as part of the philosophical heritage from which questions about mind, knowledge and human nature entered later intellectual traditions. For NET preparation, the important point is the historical continuity between philosophical inquiry and the later emergence of psychology as a distinct discipline.\n\nExam distinction: Do not treat Greek heritage as experimental psychology. Its relevance here is historical: philosophical questions about mind and knowledge predate psychology's institutional emergence as an independent science.\n\nApplication cue: When a question asks about the philosophical roots of psychology rather than laboratory psychology, retrieve the Greek heritage context.",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET material treats Greek thought as part of the philosophical heritage from which questions about mind, knowledge and human nature entered later intellectual traditions. For NET preparation, the important point is the historical continuity between philosophical inquiry and the later emergence of psychology as a distinct discipline.\n\nWHAT TO HOLD IN MEMORY\n• philosophical heritage\n• mind\n• knowledge\n• human nature\n• roots of psychology\n\nWHAT NOT TO CONFUSE\nDo not treat Greek heritage as experimental psychology. Its relevance here is historical: philosophical questions about mind and knowledge predate psychology's institutional emergence as an independent science.\n\nAPPLICATION\nWhen a question asks about the philosophical roots of psychology rather than laboratory psychology, retrieve the Greek heritage context.\n\nSOURCE BASIS\nGreek heritage → philosophical questions about mind and knowledge • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET material treats Greek thought as part of the philosophical heritage from which questions about mind, knowledge and human nature entered later intellectual traditions. For NET preparation, the important point is the historical continuity between philosophical inquiry and the later emergence of psychology as a distinct discipline.\n\nKEY RELATIONSHIPS\n• philosophical heritage\n• mind\n• knowledge\n• human nature\n• roots of psychology\n\nDISTINCTION\nDo not treat Greek heritage as experimental psychology. Its relevance here is historical: philosophical questions about mind and knowledge predate psychology's institutional emergence as an independent science.\n\nEXAM APPLICATION\nWhen a question asks about the philosophical roots of psychology rather than laboratory psychology, retrieve the Greek heritage context.\n\nSOURCE BASIS\nGreek heritage → philosophical questions about mind and knowledge • powerwithin",
+    "application_question": "When a question asks about the philosophical roots of psychology rather than laboratory psychology, retrieve the Greek heritage context."
   },
   "1-4-2": {
     "id": "1-4-2",
     "title": "Medieval period",
-    "explanation": "The uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node. It is a historical period in the source's Western intellectual sequence; It follows the Greek heritage in the syllabus structure; The supplied material gives limited detailed coverage here; Use the fuller source sections on specific historical thinkers when a question targets them; SOURCE BASIS; PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic.",
+    "explanation": "The supplied NET material places the medieval period within the longer intellectual history preceding modern psychology. The period is important for understanding how questions concerning soul, knowledge, morality and human nature continued to be treated within philosophical and religious frameworks before psychology became an independent experimental discipline.",
     "key_points": [
-      "It is a historical period in the source's Western intellectual sequence.",
-      "It follows the Greek heritage in the syllabus structure.",
-      "The supplied material gives limited detailed coverage here.",
-      "Use the fuller source sections on specific historical thinkers when a question targets them.",
-      "SOURCE BASIS",
-      "PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic."
+      "medieval intellectual history",
+      "soul and mind",
+      "knowledge",
+      "moral/religious frameworks",
+      "pre-scientific psychology"
     ],
     "inline_nudges": [],
     "sources": [
-      "powerwithin",
-      "self-teaching-guide"
+      "Medieval period → philosophical/religious inquiry before disciplinary psychology",
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET historical sequence, while the Self-Teaching Guide provides a compact textbook account of psychology's intellectual foundations and the transition to scientific psychology.",
-    "content_notes": "CORE CONCEPT\nThe uploaded NET material lists the medieval period as part of the historical sequence from Greek thought to modern psychology, but the supplied section provides little detailed treatment of medieval psychology as a separate micro-topic. For exam preparation, retain its chronological position and avoid adding unsupported theorists or doctrines to this node.\n\nKEY POINTS\n• It is a historical period in the source's Western intellectual sequence.\n• It follows the Greek heritage in the syllabus structure.\n• The supplied material gives limited detailed coverage here.\n• Use the fuller source sections on specific historical thinkers when a question targets them.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 1 syllabus/content outline; detailed source treatment is limited for this micro-topic.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET historical sequence, while the Self-Teaching Guide provides a compact textbook account of psychology's intellectual foundations and the transition to scientific psychology.\n\nMEMORY HOOK\nMedieval period → It is a historical period in the source's Western intellectual sequence • It follows the Greek heritage in the syllabus structure • The supplied material gives limited detailed coverage here",
-    "distinction": "",
-    "exam_takeaway": "Medieval period → It is a historical period in the source's Western intellectual sequence • It follows the Greek heritage in the syllabus structure • The supplied material gives limited detailed coverage here",
+    "source_notes": "Source-grounded synthesis from Medieval period → philosophical/religious inquiry before disciplinary psychology, powerwithin.",
+    "content_notes": "CORE IDEA\nThe supplied NET material places the medieval period within the longer intellectual history preceding modern psychology. The period is important for understanding how questions concerning soul, knowledge, morality and human nature continued to be treated within philosophical and religious frameworks before psychology became an independent experimental discipline.\n\nKEY POINTS\n• medieval intellectual history\n• soul and mind\n• knowledge\n• moral/religious frameworks\n• pre-scientific psychology\n\nDISTINCTION / CAUTION\nThe NET distinction is historical rather than methodological: medieval thought belongs to the pre-disciplinary history of ideas about mind and human nature, not to modern experimental psychology.\n\nHOW TO APPLY\nIf the question asks about psychology's intellectual development before its establishment as an independent science, place medieval thought in this historical sequence.\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\nMedieval period → philosophical/religious inquiry before disciplinary psychology • powerwithin",
+    "distinction": "The NET distinction is historical rather than methodological: medieval thought belongs to the pre-disciplinary history of ideas about mind and human nature, not to modern experimental psychology.",
     "revision_cue": "Medieval period → It is a historical period in the source's Western intellectual sequence • It follows the Greek heritage in the syllabus structure • The supplied material gives limited detailed coverage here",
-    "revision_check": "Recall the central idea and two supporting points before reopening the explanation."
+    "revision_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "expert_explanation": "The supplied NET material places the medieval period within the longer intellectual history preceding modern psychology. The period is important for understanding how questions concerning soul, knowledge, morality and human nature continued to be treated within philosophical and religious frameworks before psychology became an independent experimental discipline.\n\nExam distinction: The NET distinction is historical rather than methodological: medieval thought belongs to the pre-disciplinary history of ideas about mind and human nature, not to modern experimental psychology.\n\nApplication cue: If the question asks about psychology's intellectual development before its establishment as an independent science, place medieval thought in this historical sequence.",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET material places the medieval period within the longer intellectual history preceding modern psychology. The period is important for understanding how questions concerning soul, knowledge, morality and human nature continued to be treated within philosophical and religious frameworks before psychology became an independent experimental discipline.\n\nWHAT TO HOLD IN MEMORY\n• medieval intellectual history\n• soul and mind\n• knowledge\n• moral/religious frameworks\n• pre-scientific psychology\n\nWHAT NOT TO CONFUSE\nThe NET distinction is historical rather than methodological: medieval thought belongs to the pre-disciplinary history of ideas about mind and human nature, not to modern experimental psychology.\n\nAPPLICATION\nIf the question asks about psychology's intellectual development before its establishment as an independent science, place medieval thought in this historical sequence.\n\nSOURCE BASIS\nMedieval period → philosophical/religious inquiry before disciplinary psychology • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET material places the medieval period within the longer intellectual history preceding modern psychology. The period is important for understanding how questions concerning soul, knowledge, morality and human nature continued to be treated within philosophical and religious frameworks before psychology became an independent experimental discipline.\n\nKEY RELATIONSHIPS\n• medieval intellectual history\n• soul and mind\n• knowledge\n• moral/religious frameworks\n• pre-scientific psychology\n\nDISTINCTION\nThe NET distinction is historical rather than methodological: medieval thought belongs to the pre-disciplinary history of ideas about mind and human nature, not to modern experimental psychology.\n\nEXAM APPLICATION\nIf the question asks about psychology's intellectual development before its establishment as an independent science, place medieval thought in this historical sequence.\n\nSOURCE BASIS\nMedieval period → philosophical/religious inquiry before disciplinary psychology • powerwithin",
+    "application_question": "If the question asks about psychology's intellectual development before its establishment as an independent science, place medieval thought in this historical sequence."
   },
   "1-4-3": {
     "id": "1-4-3",
@@ -489,12 +518,16 @@
   "1-5-3": {
     "id": "1-5-3",
     "title": "Psychoanalytical psychology",
-    "explanation": "unconscious processes, conflict and dynamic personality structure Freud; unconscious; psychosexual development; defense mechanisms.",
+    "explanation": "Psychoanalytical psychology, as presented in the supplied sources, centres on unconscious processes, conflict and the influence of repressed wishes and experiences on behaviour. Freud's model includes id, ego and superego; psychoanalysis aims to bring repressed unconscious material into consciousness and develop insight.",
     "key_points": [
       "Freud",
-      "unconscious",
-      "psychosexual development",
-      "defense mechanisms"
+      "unconscious processes",
+      "repression",
+      "id, ego, superego",
+      "pleasure principle",
+      "insight",
+      "Do not confuse repression with rationalization. Repression removes threatening material from conscious awareness, whereas rationalization supplies a rational-sounding explanation for a failure or transgression.",
+      "If a stem describes symptoms as indirect expressions of repressed wishes or asks about bringing unconscious material into consciousness, retrieve the psychoanalytic framework."
     ],
     "inline_nudges": [
       {
@@ -503,16 +536,18 @@
       }
     ],
     "sources": [
-      "powerwithin",
       "self-teaching-guide",
-      "ciccarelli-white"
+      "powerwithin"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nunconscious processes, conflict and dynamic personality structure\n\nKEY POINTS\n• Freud\n• unconscious\n• psychosexual development\n• defense mechanisms\n\nDISTINCTION / CAUTION\nDo not reduce psychoanalysis to one motive.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nPsychoanalysis → unconscious conflict",
-    "distinction": "Do not reduce psychoanalysis to one motive.",
-    "exam_takeaway": "Psychoanalysis → unconscious conflict",
+    "source_notes": "Source-grounded synthesis from self-teaching-guide, powerwithin.",
+    "content_notes": "CORE IDEA\nPsychoanalytical psychology, as presented in the supplied sources, centres on unconscious processes, conflict and the influence of repressed wishes and experiences on behaviour. Freud's model includes id, ego and superego; psychoanalysis aims to bring repressed unconscious material into consciousness and develop insight.\n\nKEY POINTS\n• Freud\n• unconscious processes\n• repression\n• id, ego, superego\n• pleasure principle\n• insight\n• Do not confuse repression with rationalization. Repression removes threatening material from conscious awareness, whereas rationalization supplies a rational-sounding explanation for a failure or transgression.\n• If a stem describes symptoms as indirect expressions of repressed wishes or asks about bringing unconscious material into consciousness, retrieve the psychoanalytic framework.\n\nDISTINCTION / CAUTION\nPsychoanalysis → unconscious conflict → repression → insight\n\nHOW TO APPLY\nbaron-misra\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\nself-teaching-guide • powerwithin",
+    "distinction": "Psychoanalysis → unconscious conflict → repression → insight",
     "revision_cue": "Psychoanalysis → unconscious conflict",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not reduce psychoanalysis to one motive."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Do not reduce psychoanalysis to one motive.",
+    "expert_explanation": "Psychoanalytical psychology, as presented in the supplied sources, centres on unconscious processes, conflict and the influence of repressed wishes and experiences on behaviour. Freud's model includes id, ego and superego; psychoanalysis aims to bring repressed unconscious material into consciousness and develop insight.\n\nExam distinction: Psychoanalysis → unconscious conflict → repression → insight\n\nApplication cue: baron-misra",
+    "detailed_explanation": "CORE IDEA\nPsychoanalytical psychology, as presented in the supplied sources, centres on unconscious processes, conflict and the influence of repressed wishes and experiences on behaviour. Freud's model includes id, ego and superego; psychoanalysis aims to bring repressed unconscious material into consciousness and develop insight.\n\nWHAT TO HOLD IN MEMORY\n• Freud\n• unconscious processes\n• repression\n• id, ego, superego\n• pleasure principle\n• insight\n• Do not confuse repression with rationalization. Repression removes threatening material from conscious awareness, whereas rationalization supplies a rational-sounding explanation for a failure or transgression.\n• If a stem describes symptoms as indirect expressions of repressed wishes or asks about bringing unconscious material into consciousness, retrieve the psychoanalytic framework.\n\nWHAT NOT TO CONFUSE\nPsychoanalysis → unconscious conflict → repression → insight\n\nAPPLICATION\nbaron-misra\n\nSOURCE BASIS\nself-teaching-guide • powerwithin",
+    "deep_learning": "ACADEMIC CORE\nPsychoanalytical psychology, as presented in the supplied sources, centres on unconscious processes, conflict and the influence of repressed wishes and experiences on behaviour. Freud's model includes id, ego and superego; psychoanalysis aims to bring repressed unconscious material into consciousness and develop insight.\n\nKEY RELATIONSHIPS\n• Freud\n• unconscious processes\n• repression\n• id, ego, superego\n• pleasure principle\n• insight\n• Do not confuse repression with rationalization. Repression removes threatening material from conscious awareness, whereas rationalization supplies a rational-sounding explanation for a failure or transgression.\n• If a stem describes symptoms as indirect expressions of repressed wishes or asks about bringing unconscious material into consciousness, retrieve the psychoanalytic framework.\n\nDISTINCTION\nPsychoanalysis → unconscious conflict → repression → insight\n\nEXAM APPLICATION\nbaron-misra\n\nSOURCE BASIS\nself-teaching-guide • powerwithin",
+    "application_question": "baron-misra"
   },
   "1-5-4": {
     "id": "1-5-4",
@@ -586,12 +621,15 @@
   "1-5-6": {
     "id": "1-5-6",
     "title": "Humanistic-Existential psychology",
-    "explanation": "growth, meaning, freedom, choice, authenticity and agency Rogers; Maslow; meaning; self-actualization.",
+    "explanation": "The supplied NET framework treats Humanistic-Existential psychology as a major reaction against narrow accounts of people. Its emphasis is on subjective experience, meaning, agency, personal growth and the individual's relationship with existence rather than reducing behaviour to only observable responses or unconscious drives.",
     "key_points": [
-      "Rogers",
-      "Maslow",
+      "subjective experience",
+      "agency",
       "meaning",
-      "self-actualization"
+      "personal growth",
+      "existential choice",
+      "reaction against reductionism",
+      "The key contrast is emphasis: behaviorism foregrounds observable behaviour; psychoanalysis foregrounds unconscious conflict; humanistic-existential approaches foreground lived experience, agency, meaning and growth."
     ],
     "inline_nudges": [
       {
@@ -601,24 +639,29 @@
     ],
     "sources": [
       "powerwithin",
-      "self-teaching-guide",
-      "ciccarelli-white"
+      "baron-misra"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\ngrowth, meaning, freedom, choice, authenticity and agency\n\nKEY POINTS\n• Rogers\n• Maslow\n• meaning\n• self-actualization\n\nDISTINCTION / CAUTION\nHumanistic psychology is not merely positive thinking.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nHumanistic → growth; existential → meaning",
-    "distinction": "Humanistic psychology is not merely positive thinking.",
-    "exam_takeaway": "Humanistic → growth; existential → meaning",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra.",
+    "content_notes": "CORE IDEA\nThe supplied NET framework treats Humanistic-Existential psychology as a major reaction against narrow accounts of people. Its emphasis is on subjective experience, meaning, agency, personal growth and the individual's relationship with existence rather than reducing behaviour to only observable responses or unconscious drives.\n\nKEY POINTS\n• subjective experience\n• agency\n• meaning\n• personal growth\n• existential choice\n• reaction against reductionism\n• The key contrast is emphasis: behaviorism foregrounds observable behaviour; psychoanalysis foregrounds unconscious conflict; humanistic-existential approaches foreground lived experience, agency, meaning and growth.\n\nDISTINCTION / CAUTION\nWhen a question highlights authenticity, personal meaning, choice, self-development or lived experience, retrieve the humanistic-existential orientation.\n\nHOW TO APPLY\nHumanistic-Existential → meaning + agency + growth\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "distinction": "When a question highlights authenticity, personal meaning, choice, self-development or lived experience, retrieve the humanistic-existential orientation.",
     "revision_cue": "Humanistic → growth; existential → meaning",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: Humanistic psychology is not merely positive thinking."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: Humanistic psychology is not merely positive thinking.",
+    "expert_explanation": "The supplied NET framework treats Humanistic-Existential psychology as a major reaction against narrow accounts of people. Its emphasis is on subjective experience, meaning, agency, personal growth and the individual's relationship with existence rather than reducing behaviour to only observable responses or unconscious drives.\n\nExam distinction: When a question highlights authenticity, personal meaning, choice, self-development or lived experience, retrieve the humanistic-existential orientation.\n\nApplication cue: Humanistic-Existential → meaning + agency + growth",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET framework treats Humanistic-Existential psychology as a major reaction against narrow accounts of people. Its emphasis is on subjective experience, meaning, agency, personal growth and the individual's relationship with existence rather than reducing behaviour to only observable responses or unconscious drives.\n\nWHAT TO HOLD IN MEMORY\n• subjective experience\n• agency\n• meaning\n• personal growth\n• existential choice\n• reaction against reductionism\n• The key contrast is emphasis: behaviorism foregrounds observable behaviour; psychoanalysis foregrounds unconscious conflict; humanistic-existential approaches foreground lived experience, agency, meaning and growth.\n\nWHAT NOT TO CONFUSE\nWhen a question highlights authenticity, personal meaning, choice, self-development or lived experience, retrieve the humanistic-existential orientation.\n\nAPPLICATION\nHumanistic-Existential → meaning + agency + growth\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET framework treats Humanistic-Existential psychology as a major reaction against narrow accounts of people. Its emphasis is on subjective experience, meaning, agency, personal growth and the individual's relationship with existence rather than reducing behaviour to only observable responses or unconscious drives.\n\nKEY RELATIONSHIPS\n• subjective experience\n• agency\n• meaning\n• personal growth\n• existential choice\n• reaction against reductionism\n• The key contrast is emphasis: behaviorism foregrounds observable behaviour; psychoanalysis foregrounds unconscious conflict; humanistic-existential approaches foreground lived experience, agency, meaning and growth.\n\nDISTINCTION\nWhen a question highlights authenticity, personal meaning, choice, self-development or lived experience, retrieve the humanistic-existential orientation.\n\nEXAM APPLICATION\nHumanistic-Existential → meaning + agency + growth\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "application_question": "Humanistic-Existential → meaning + agency + growth"
   },
   "1-5-7": {
     "id": "1-5-7",
     "title": "Transpersonal psychology",
-    "explanation": "experiences beyond ordinary ego boundaries and self-transcendence expanded consciousness; spiritual/peak experience; self-transcendence.",
+    "explanation": "The supplied NET framework places Transpersonal psychology among approaches that extend psychological inquiry beyond ordinary personal identity and include altered or expanded states of consciousness and spiritual dimensions of experience. In the supplied Indian-psychology material, consciousness and self-knowledge are also central themes, making the distinction between transpersonal and mainstream personal-level accounts especially important.",
     "key_points": [
       "expanded consciousness",
-      "spiritual/peak experience",
-      "self-transcendence"
+      "transcendence",
+      "spiritual dimensions",
+      "self-knowledge",
+      "altered states",
+      "Do not collapse transpersonal psychology into religion. The psychological emphasis is on experiences and states that extend beyond ordinary personal identity and on their possible relation to consciousness and self-development."
     ],
     "inline_nudges": [
       {
@@ -628,15 +671,17 @@
     ],
     "sources": [
       "powerwithin",
-      "self-teaching-guide",
-      "ciccarelli-white"
+      "baron-misra"
     ],
-    "source_notes": "PowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.",
-    "content_notes": "CORE CONCEPT\nexperiences beyond ordinary ego boundaries and self-transcendence\n\nKEY POINTS\n• expanded consciousness\n• spiritual/peak experience\n• self-transcendence\n\nDISTINCTION / CAUTION\nIt is not identical to any single religion.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin supplies the NET school/theorist sequence; the Self-Teaching Guide gives a concise historical account, while Ciccarelli & White provides a broader introductory-textbook treatment of the corresponding traditions.\n\nMEMORY HOOK\nTranspersonal → beyond ego",
-    "distinction": "It is not identical to any single religion.",
-    "exam_takeaway": "Transpersonal → beyond ego",
+    "source_notes": "Source-grounded synthesis from powerwithin, baron-misra.",
+    "content_notes": "CORE IDEA\nThe supplied NET framework places Transpersonal psychology among approaches that extend psychological inquiry beyond ordinary personal identity and include altered or expanded states of consciousness and spiritual dimensions of experience. In the supplied Indian-psychology material, consciousness and self-knowledge are also central themes, making the distinction between transpersonal and mainstream personal-level accounts especially important.\n\nKEY POINTS\n• expanded consciousness\n• transcendence\n• spiritual dimensions\n• self-knowledge\n• altered states\n• Do not collapse transpersonal psychology into religion. The psychological emphasis is on experiences and states that extend beyond ordinary personal identity and on their possible relation to consciousness and self-development.\n\nDISTINCTION / CAUTION\nWhen a stem focuses on transcending ordinary identity or studying expanded states of consciousness, retrieve the transpersonal orientation.\n\nHOW TO APPLY\nTranspersonal → beyond ordinary personal identity → expanded consciousness\n\nMEMORY HOOK\nundefined\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "distinction": "When a stem focuses on transcending ordinary identity or studying expanded states of consciousness, retrieve the transpersonal orientation.",
     "revision_cue": "Transpersonal → beyond ego",
-    "revision_check": "Recall the central idea first, then explain why this caution matters: It is not identical to any single religion."
+    "revision_check": "Recall the central idea first, then explain why this caution matters: It is not identical to any single religion.",
+    "expert_explanation": "The supplied NET framework places Transpersonal psychology among approaches that extend psychological inquiry beyond ordinary personal identity and include altered or expanded states of consciousness and spiritual dimensions of experience. In the supplied Indian-psychology material, consciousness and self-knowledge are also central themes, making the distinction between transpersonal and mainstream personal-level accounts especially important.\n\nExam distinction: When a stem focuses on transcending ordinary identity or studying expanded states of consciousness, retrieve the transpersonal orientation.\n\nApplication cue: Transpersonal → beyond ordinary personal identity → expanded consciousness",
+    "detailed_explanation": "CORE IDEA\nThe supplied NET framework places Transpersonal psychology among approaches that extend psychological inquiry beyond ordinary personal identity and include altered or expanded states of consciousness and spiritual dimensions of experience. In the supplied Indian-psychology material, consciousness and self-knowledge are also central themes, making the distinction between transpersonal and mainstream personal-level accounts especially important.\n\nWHAT TO HOLD IN MEMORY\n• expanded consciousness\n• transcendence\n• spiritual dimensions\n• self-knowledge\n• altered states\n• Do not collapse transpersonal psychology into religion. The psychological emphasis is on experiences and states that extend beyond ordinary personal identity and on their possible relation to consciousness and self-development.\n\nWHAT NOT TO CONFUSE\nWhen a stem focuses on transcending ordinary identity or studying expanded states of consciousness, retrieve the transpersonal orientation.\n\nAPPLICATION\nTranspersonal → beyond ordinary personal identity → expanded consciousness\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "deep_learning": "ACADEMIC CORE\nThe supplied NET framework places Transpersonal psychology among approaches that extend psychological inquiry beyond ordinary personal identity and include altered or expanded states of consciousness and spiritual dimensions of experience. In the supplied Indian-psychology material, consciousness and self-knowledge are also central themes, making the distinction between transpersonal and mainstream personal-level accounts especially important.\n\nKEY RELATIONSHIPS\n• expanded consciousness\n• transcendence\n• spiritual dimensions\n• self-knowledge\n• altered states\n• Do not collapse transpersonal psychology into religion. The psychological emphasis is on experiences and states that extend beyond ordinary personal identity and on their possible relation to consciousness and self-development.\n\nDISTINCTION\nWhen a stem focuses on transcending ordinary identity or studying expanded states of consciousness, retrieve the transpersonal orientation.\n\nEXAM APPLICATION\nTranspersonal → beyond ordinary personal identity → expanded consciousness\n\nSOURCE BASIS\npowerwithin • baron-misra",
+    "application_question": "Transpersonal → beyond ordinary personal identity → expanded consciousness"
   },
   "1-5-8": {
     "id": "1-5-8",
