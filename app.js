@@ -682,8 +682,18 @@ function initLearningJourney(){
     return '<div class="journey-preview" aria-label="Page preview"><div class="journey-preview-label">PAGE PREVIEW · SCROLL TO EXPLORE</div><div class="journey-preview-frame"><iframe src="'+safe+'" title="Scrollable preview of '+safe+'" loading="eager" scrolling="yes" sandbox="allow-scripts"></iframe></div></div>';
   };
   let step=0,activeTargets=[];
+  let tourOpenedMobileMenu=false;
+  const isMobileTour=()=>window.matchMedia('(max-width:820px)').matches;
+  const isNavStep=()=>step>=1&&step<=4;
+  const syncMobileNavigation=()=>{
+    if(!isMobileTour())return;
+    const shouldOpen=isNavStep();
+    const menuOpen=document.body.classList.contains('menu-open');
+    if(shouldOpen&&!menuOpen){document.body.classList.add('menu-open');tourOpenedMobileMenu=true;}
+    if(!shouldOpen&&tourOpenedMobileMenu){document.body.classList.remove('menu-open');tourOpenedMobileMenu=false;}
+  };
   const clearTargets=()=>{activeTargets.forEach(t=>{if(t){t.classList.remove('journey-highlight');t.removeAttribute('data-journey-target')}});activeTargets=[]};
-  const close=()=>{clearTargets();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
+  const close=()=>{clearTargets();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open');if(tourOpenedMobileMenu){document.body.classList.remove('menu-open');tourOpenedMobileMenu=false;}};
   const updateSpotlight=targets=>{
     const backdrop=tour.querySelector('.journey-backdrop'); if(!backdrop)return;
     const rects=targets.filter(Boolean).map(t=>t.getBoundingClientRect()).filter(r=>r.width&&r.height).map(r=>({left:Math.max(0,r.left-5),top:Math.max(0,r.top-5),right:Math.min(window.innerWidth,r.right+5),bottom:Math.min(window.innerHeight,r.bottom+5)}));
@@ -712,11 +722,11 @@ function initLearningJourney(){
     dialog.style.left=left+'px';dialog.style.top=top+'px';updateSpotlight(targets);
   };
   const render=()=>{
-    clearTargets(); const s=steps[step],raw=s.target?.(),targets=Array.isArray(raw)?raw.filter(Boolean):[raw].filter(Boolean);
+    clearTargets(); syncMobileNavigation(); const s=steps[step],raw=s.target?.(),targets=Array.isArray(raw)?raw.filter(Boolean):[raw].filter(Boolean);
     tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
     tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open'); activeTargets=targets;
     targets.forEach(t=>{t.classList.add('journey-highlight');t.setAttribute('data-journey-target','true')});
-    requestAnimationFrame(()=>{if(targets.length)targets[0].scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});requestAnimationFrame(()=>requestAnimationFrame(()=>{placeDialog(targets);tour.querySelector('.journey-dialog')?.classList.add('journey-ready')}))});
+    requestAnimationFrame(()=>{if(targets.length&&!isMobileTour())targets[0].scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});requestAnimationFrame(()=>requestAnimationFrame(()=>{placeDialog(targets);tour.querySelector('.journey-dialog')?.classList.add('journey-ready')}))});
   };
   const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
   window.__openLearningJourney=()=>{step=0;render()};
