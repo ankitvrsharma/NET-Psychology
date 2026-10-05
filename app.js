@@ -668,14 +668,15 @@ function initLearningJourney(){
   if(!tour)return;
   let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
   const steps=[
-    {eyebrow:'START HERE',title:'Start Learning',body:'Begin here when you are ready to build your learning route. Your answers help the Study Hub set the right starting emphasis for you.',target:()=>document.querySelector('#homeHero .hero-cta')},
-    {eyebrow:'YOUR MINIMUM TARGET',title:'Daily Learning',body:'This is not a list of everything you should study today. It is your minimum target: complete 3 focused concepts and then take the 10-question practice test.',target:()=>document.querySelector('#today')},
-    {eyebrow:'QUICK CONCEPT HELP',title:'Quick Learn',body:'Use a Quick Learn card when you want a short, focused concept preview or review. It is useful alongside your learning—not a replacement for the Daily Learning target.',target:()=>document.querySelector('#quickLearn')},
-    {eyebrow:'NAVIGATION · 1 OF 5',title:'Home',body:'Home brings you back to your main study hub, where you can see your current learning focus and continue from where you left off.',target:()=>document.querySelector('#site-navigation a[data-nav="home"]')},
-    {eyebrow:'NAVIGATION · 2 OF 5',title:'Learn',body:'Learn takes you into the syllabus, units, topics and micro-topics where your concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]')},
-    {eyebrow:'NAVIGATION · 3 OF 5',title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]')},
-    {eyebrow:'NAVIGATION · 4 OF 5',title:'Revision',body:'Revision brings back concepts that are due for spaced review, so you return to them rather than relying on rereading alone.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]')},
-    {eyebrow:'NAVIGATION · 5 OF 5',title:'Progress',body:'Progress shows how your learning is developing across concepts, recall, practice and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]')}
+    {eyebrow:'START HERE',title:'Start Learning',body:'Start here if you are new to the Study Hub. Your answers help the system choose an appropriate starting route and emphasis for your learning.',target:()=>document.querySelector('#homeHero .hero-cta')},
+    {eyebrow:'NAVIGATION · 1 OF 5',title:'Home',body:'Home is your study hub. It brings together your current learning focus, your minimum daily target, and quick concept support.',target:()=>document.querySelector('#site-navigation a[data-nav="home"]')},
+    {eyebrow:'NAVIGATION · 2 OF 5',title:'Learn',body:'Learn takes you through the UGC NET Psychology syllabus, from units to topics and micro-topics where concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]')},
+    {eyebrow:'NAVIGATION · 3 OF 5',title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions, helping you test understanding rather than only read it.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]')},
+    {eyebrow:'NAVIGATION · 4 OF 5',title:'Revision',body:'Revision brings back concepts when they are due for spaced review. The aim is to strengthen retrieval over time, not simply reread notes.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]')},
+    {eyebrow:'NAVIGATION · 5 OF 5',title:'Progress',body:'Progress shows how your learning is developing across concept learning, mastery, practice performance, and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]')},
+    {eyebrow:'EXAM READINESS',title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown')},
+    {eyebrow:'YOUR MINIMUM TARGET',title:'Daily Learning',body:'Daily Learning is not a list of everything you should study today. It is the minimum you should complete: 3 focused concepts followed by a 10-question practice test.',target:()=>document.querySelector('#today .daily-focus-card[href="daily3.html"]')},
+    {eyebrow:'QUICK CONCEPT HELP',title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn')}
   ];
   let step=0,activeTarget=null;
   const clearTarget=()=>{
