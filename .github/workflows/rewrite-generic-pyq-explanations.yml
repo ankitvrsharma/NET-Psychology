@@ -48,7 +48,7 @@ jobs:
               "Arrange the items according to the established chronological, developmental, or logical order",
               "Check each List-I item against its specific person, concept, function, or description",
           )
-          qs=json.load(open("practice_questions.json",encoding="utf-8"))
+          qs=json.load(open("content/questions/questions.json",encoding="utf-8"))
           bad=[q["id"] for q in qs if any(m in str(q.get("explanation","")) for m in markers)]
           print("Generic explanation templates remaining:",len(bad))
           if bad:
