@@ -756,70 +756,69 @@ function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item o
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
   if(!root)return;
-  const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
-  const allQuestions=PRACTICE_QUESTIONS.slice();
-  const dailySet=CANONICAL_CONTENT.homeLearning?.daily_practice||{};
-  const setSize=10;
-  let stored=null;try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
-  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
+  const today=new Date(),todayKey=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');
+  const allQuestions=Array.isArray(PRACTICE_QUESTIONS)?PRACTICE_QUESTIONS.filter(Boolean):[];
+  const configured=Number(CANONICAL_CONTENT.homeLearning?.daily_practice?.count)||10;
+  const setSize=Math.max(1,Math.min(10,configured));
+  let stored=null;
+  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{}
+  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)
+    ?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean)
+    :[];
   if(questions.length!==setSize){
     questions=allQuestions.slice().sort(()=>Math.random()-.5).slice(0,setSize);
     try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}))}catch{}
   }
-  if(questions.length<1){root.innerHTML='<section class="panel empty"><h2>Daily Practice is temporarily unavailable.</h2><p>No published practice questions are available yet.</p></section>';return}
-  // Keep the active question flow focused. The large Daily Practice hero belongs to the entry context, not to each question state.
-  let current=0,ended=false,correctCount=0,answers={};
+  if(!questions.length){
+    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY LEARNING</div><h1>Today’s practice is not available yet.</h1><p>The 10-question practice bank could not be loaded. Please refresh once the content connection is available.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
+    return;
+  }
+  let current=0,correctCount=0,answers={};
   const renderComplete=()=>{
-    ended=true;
     const percent=Math.round(correctCount/questions.length*100);
     const review=questions.map((q,i)=>{
       const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen;
-      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
-      const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
+      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+(opts[chosen]??'');
+      const correctText=String.fromCharCode(65+answer)+'. '+(opts[answer]??'');
       const status=record?.correct?'correct':'incorrect';
-      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
+      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+mcqHTML(q,i,'DAILY PRACTICE',false)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
     }).join('');
-    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>You have completed the 10-question practice part of today’s Daily Learning. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div style="margin-top:14px"><a class="btn primary" href="daily3.html">BACK TO DAILY LEARNING</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
+    root.innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h1>You completed today’s 10-question check.</h1><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>This completes the practice part of today’s Daily Learning target. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div class="actions"><a class="btn primary" href="daily3.html">BACK TO DAILY LEARNING</a><a class="btn" href="practice.html">MORE PRACTICE</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Learn from your answers</h2><p>Use the explanations to identify what needs another look.</p></div>'+review+'</section>';
+    window.scrollTo({top:0,behavior:'smooth'});
   };
   const renderQuestion=()=>{
-    if(ended)return;
     const q=questions[current],answered=Object.prototype.hasOwnProperty.call(answers,current);
-    $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
-    const session=$('#dailyPracticeSession'),card=session.querySelector('.mcq'),nextBtn=session.querySelector('#dailyNext'),prevBtn=session.querySelector('#dailyPrev');
+    root.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE · DAILY LEARNING</div><h1 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h1><p>Answer from memory. Feedback appears after you choose.</p></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    const session=root.querySelector('.practice-session'),card=session?.querySelector('.mcq'),nextBtn=session?.querySelector('#dailyNext');
+    if(!session||!card||!nextBtn)return;
     if(answered){
       card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-      nextBtn.disabled=false;nextBtn.removeAttribute('disabled');nextBtn.setAttribute('aria-disabled','false');
-    }else nextBtn.setAttribute('aria-disabled','true');
-    session.onclick=e=>{
-      const option=e.target.closest('.mcq-option');
-      if(option&&session.contains(option)){
-        if(Object.prototype.hasOwnProperty.call(answers,current)||ended)return;
-        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),wasCorrect=chosen===answer;
-        answers[current]={chosen,correct:wasCorrect};
-        if(wasCorrect)correctCount++;
-        card.querySelectorAll('.mcq-option').forEach(b=>{b.disabled=true;b.setAttribute('aria-pressed',b===option?'true':'false')});
-        option.classList.add(wasCorrect?'selected-correct':'selected-incorrect');
-        nextBtn.disabled=false;
-        nextBtn.removeAttribute('disabled');
-        nextBtn.setAttribute('aria-disabled','false');
-        return;
+      nextBtn.disabled=false;
+    }
+    session.onclick=event=>{
+      const option=event.target.closest('.mcq-option');
+      if(option&&session.contains(option)&&!Object.prototype.hasOwnProperty.call(answers,current)){
+        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),correct=chosen===answer;
+        answers[current]={chosen,correct}; if(correct)correctCount++;
+        card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+        option.classList.add(correct?'selected-correct':'selected-incorrect');
+        nextBtn.disabled=false; return;
       }
-      const next=e.target.closest('#dailyNext');
-      if(next){
-        if(ended||!Object.prototype.hasOwnProperty.call(answers,current))return;
+      if(event.target.closest('#dailyNext')&&Object.prototype.hasOwnProperty.call(answers,current)){
         if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
         else{
           const st=state();
           questions.forEach((q,i)=>st._practiceHistory=[...(st._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
-          save(st);renderComplete();window.scrollTo({top:0,behavior:'smooth'});
+          save(st);renderComplete();
         }
-        return;
       }
-      const prev=e.target.closest('#dailyPrev');
-      if(prev&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+      if(event.target.closest('#dailyPrev')&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
     };
   };
-  renderQuestion();
+  try{renderQuestion()}catch(err){
+    console.error('Daily Practice render failed:',err);
+    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY PRACTICE</div><h1>We could not start today’s practice.</h1><p>Please refresh and try again.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
+  }
 }
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
