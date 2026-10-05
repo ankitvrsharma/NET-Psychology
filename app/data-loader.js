@@ -4,11 +4,11 @@
 window.NETPsychologyDataLoader={
   create:function(ctx){
 async function loadStudyData(){
-  const response=await fetch('./data.json?v='+DATA_VERSION,{cache:'default'});
+  const response=await fetch('./data.json?v='+ctx.dataVersion,{cache:'default'});
   if(!response.ok) throw new Error('Study data request failed: '+response.status);
   const json=await response.json();
   try{
-    const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
+    const kr=await fetch('./kaplan_enrichment.json?v='+ctx.dataVersion+'',{cache:'default'});
     if(kr.ok){
       const kp=await kr.json();
       const map=kp&&kp.microtopics&&typeof kp.microtopics==='object'?kp.microtopics:{};
@@ -19,11 +19,11 @@ async function loadStudyData(){
     }
   }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
   try{
-    const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
+    const sr=await fetch('./study_sources.json?v='+ctx.dataVersion,{cache:'default'});
     if(sr.ok) json.study_source_config=await sr.json();
   }catch(e){console.warn('Study source configuration could not be loaded:',e)}
   try{
-    const sp=await fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'});
+    const sp=await fetch('./simply_psychology_enrichment.json?v='+ctx.dataVersion,{cache:'default'});
     if(sp.ok){
       const cfg=await sp.json();
       const entries=Array.isArray(cfg?.topics)?cfg.topics:[];
@@ -45,10 +45,10 @@ async function loadStudyData(){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
       if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))ctx.questions=parsed;}
-      try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;ctx.questions=ctx.questions.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
+      try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){ctx.explanations=parsed;ctx.questions=ctx.questions.map(q=>({...q,explanation:ctx.explanations[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
     try{
-      const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
+      const mm=await fetch('./mcq_mapping.json?v='+ctx.dataVersion,{cache:'default'});
       if(mm.ok){
         const map=await mm.json();
         const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
