@@ -691,11 +691,21 @@ function initLearningJourney(){
   const close=()=>{clearTargets();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
   const updateSpotlight=targets=>{
     const backdrop=tour.querySelector('.journey-backdrop'); if(!backdrop)return;
-    const rects=targets.filter(Boolean).map(t=>t.getBoundingClientRect()).filter(r=>r.width&&r.height);
+    const rects=targets.filter(Boolean).map(t=>t.getBoundingClientRect()).filter(r=>r.width&&r.height).map(r=>({left:Math.max(0,r.left-5),top:Math.max(0,r.top-5),right:Math.min(window.innerWidth,r.right+5),bottom:Math.min(window.innerHeight,r.bottom+5)}));
     if(!rects.length){backdrop.innerHTML='';return}
-    const pad=5;
-    const holes=rects.map((r,i)=>'<rect x="'+Math.max(0,r.left-pad)+'" y="'+Math.max(0,r.top-pad)+'" width="'+Math.min(window.innerWidth-r.left+pad,r.width+pad*2)+'" height="'+Math.min(window.innerHeight-r.top+pad,r.height+pad*2)+'" rx="12" fill="black" key="'+i+'"></rect>').join('');
-    backdrop.innerHTML='<svg class="journey-spotlight-svg" viewBox="0 0 '+window.innerWidth+' '+window.innerHeight+'" preserveAspectRatio="none" aria-hidden="true"><defs><mask id="journeySpotlightMask"><rect width="100%" height="100%" fill="white"></rect>'+holes+'</mask></defs><rect width="100%" height="100%" fill="rgba(16,36,73,.48)" mask="url(#journeySpotlightMask)"></rect></svg>';
+    const ys=[0,...rects.flatMap(r=>[r.top,r.bottom]),window.innerHeight].filter((v,i,a)=>i===0||v!==a[i-1]).sort((a,b)=>a-b);
+    const pieces=[];
+    for(let yi=0;yi<ys.length-1;yi++){
+      const y1=ys[yi],y2=ys[yi+1];
+      const covered=rects.filter(r=>r.top<y2&&r.bottom>y1);
+      const xs=[0,window.innerWidth,...covered.flatMap(r=>[r.left,r.right])].filter((v,i,a)=>i===0||v!==a[i-1]).sort((a,b)=>a-b);
+      for(let xi=0;xi<xs.length-1;xi++){
+        const x1=xs[xi],x2=xs[xi+1];
+        const inside=covered.some(r=>r.left<=x1&&r.right>=x2&&r.top<=y1&&r.bottom>=y2);
+        if(!inside&&x2>x1&&y2>y1) pieces.push('<div class="journey-dim-piece" style="left:'+x1+'px;top:'+y1+'px;width:'+(x2-x1)+'px;height:'+(y2-y1)+'px"></div>');
+      }
+    }
+    backdrop.innerHTML=pieces.join('');
   };
   const placeDialog=(targets)=>{
     const dialog=tour.querySelector('.journey-dialog'); if(!dialog)return;
