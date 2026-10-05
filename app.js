@@ -1459,7 +1459,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
-window.addEventListener('DOMContentLoaded',()=>{initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
+window.addEventListener('DOMContentLoaded',()=>{const mobileTour=window.matchMedia('(max-width:820px)').matches;if(!mobileTour)initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(mobileTour)return;if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
