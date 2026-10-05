@@ -16,6 +16,10 @@ const SHELL=[
   './daily-practice.html',
   './style.css',
   './app.js',
+  './app/facade.js',
+  './app/content-audit.js',
+  './app/data-loader.js',
+  './app/runtime.js',
   './data.json',
   './content-version.js',
   './manifest.webmanifest'
