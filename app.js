@@ -672,9 +672,9 @@ function initLearningJourney(){
     {title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions, helping you test understanding rather than only read it.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]'),preview:'practice'},
     {title:'Revision',body:'Revision brings back concepts when they are due for spaced review. The aim is to strengthen retrieval over time, not simply reread notes.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]'),preview:'revision'},
     {title:'Progress',body:'Progress shows how your learning is developing across concept learning, mastery, practice performance, and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]'),preview:'progress'},
-    {title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown'),preview:'readiness'},
+    {title:'Exam Readiness',body:'This card keeps the exam in view while you learn. It gives you a visible readiness signal so your study is connected to the NET goal rather than becoming an endless syllabus checklist.',target:()=>document.querySelector('#netCountdown'),preview:null},
     {title:'Daily Learning',body:'Your daily target has two actions: Learn first, then Practice. Both are part of the same daily learning session.',target:()=>[document.querySelector('#today .daily-focus-card[data-daily-preview="learn"]'),document.querySelector('#today .daily-focus-card[data-daily-preview="practice"]')],preview:'daily'},
-    {title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:'quick'}
+    {title:'Quick Learn Card',body:'Quick Learn gives you a short, focused concept preview or review when you need a quick refresher. It supports your learning but does not replace the Daily Learning target.',target:()=>document.querySelector('#quickLearn'),preview:null}
   ];
   const previews={
     start:{label:'WHAT YOU’LL SEE',title:'A short learner setup',items:['A few questions help choose your starting route.','Your learning activity is saved on this device.','When you return, the Study Hub can guide you back to your current learning.']},
@@ -730,12 +730,12 @@ function initLearningJourney(){
     const action=e.target.closest('[data-journey]');
     if(action){const act=action.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render();return}
     const target=e.target.closest('[data-journey-target]');
-    if(target){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
+    if(target&&steps[step].preview){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
   });
   document.addEventListener('click',e=>{
     if(!document.body.classList.contains('tour-open'))return;
     const target=e.target.closest('[data-journey-target]');
-    if(!target)return;
+    if(!target||!steps[step].preview)return;
     e.preventDefault();e.stopPropagation();
     const slot=tour.querySelector('.journey-preview-slot');
     if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
@@ -768,7 +768,7 @@ function home(){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" data-daily-preview="learn" href="daily3.html" aria-label="Learn"><strong>LEARN</strong><span>→</span></a>',practice:'<a class="daily-focus-card" data-daily-preview="practice" href="daily-practice.html" aria-label="Practice"><strong>PRACTICE</strong><span>→</span></a>'};
+  const cards={learn:'<a class="daily-focus-card" data-daily-preview="learn" href="daily3.html" aria-label="Learn"><strong>LEARN</strong></a>',practice:'<a class="daily-focus-card" data-daily-preview="practice" href="daily-practice.html" aria-label="Practice"><strong>PRACTICE</strong></a>'};
   const sequence=[cards.learn,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><h2>Your minimum study target for today</h2><p>Daily Learning is the day’s complete study target: <strong>3 focused concepts followed by a 10-question practice test</strong>. Finish both parts to complete today’s learning session. Scheduled revision is handled separately when concepts become due.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
