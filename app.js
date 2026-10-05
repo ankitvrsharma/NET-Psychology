@@ -711,7 +711,7 @@ function dailyPractice(){
     try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}))}catch{}
   }
   if(questions.length<1){root.innerHTML='<section class="panel empty"><h2>Daily Practice is temporarily unavailable.</h2><p>No published practice questions are available yet.</p></section>';return}
-  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
+  // Keep the active question flow focused. The large Daily Practice hero belongs to the entry context, not to each question state.
   let current=0,ended=false,correctCount=0,answers={};
   const renderComplete=()=>{
     ended=true;
