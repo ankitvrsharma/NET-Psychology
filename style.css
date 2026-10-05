@@ -1821,14 +1821,14 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .daily-focus-card small{color:var(--muted);font-size:11px;font-weight:500;max-width:180px;line-height:1.35}
 .journey-tour[hidden],.install-prompt[hidden]{display:none!important}
 .journey-tour{position:fixed;inset:0;z-index:1000;pointer-events:none}
-.journey-backdrop{position:fixed;inset:0;background:rgba(16,36,73,.48);backdrop-filter:blur(2px);pointer-events:auto}
-.journey-dialog{position:fixed;z-index:1004;width:min(560px,calc(100% - 32px));background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 24px 70px rgba(16,36,73,.28);pointer-events:auto}
+.journey-backdrop{position:fixed;inset:0;z-index:1000;background:rgba(16,36,73,.48);backdrop-filter:blur(2px);pointer-events:auto}
+.journey-dialog{position:fixed;z-index:1002;width:min(560px,calc(100% - 32px));background:#fff!important;opacity:1!important;filter:none!important;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 24px 70px rgba(16,36,73,.28);pointer-events:auto;isolation:isolate}
 .journey-progress{display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em;margin-bottom:24px}
 .journey-progress b{color:var(--blue)}
 .journey-dialog h2{font-size:clamp(25px,5vw,34px);line-height:1.1;color:var(--navy);margin:7px 0 12px}
 .journey-dialog p{color:var(--muted);font-size:16px;line-height:1.65;margin:0;max-width:500px}
 .journey-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:25px}
-.journey-highlight{position:relative!important;z-index:1003!important;isolation:isolate!important;box-shadow:0 0 0 4px var(--blue),0 0 0 100vmax rgba(16,36,73,.48)!important;border-radius:12px!important;background-clip:padding-box!important}
+.journey-highlight{position:relative!important;z-index:1001!important;isolation:isolate!important;box-shadow:0 0 0 4px var(--blue),0 0 0 100vmax rgba(16,36,73,.48)!important;border-radius:12px!important;background-clip:padding-box!important}
 body.tour-open{overflow:auto}
 @media(max-width:520px){.journey-dialog{padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}}
 .install-prompt{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:900;width:min(720px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 16px 40px rgba(16,36,73,.18)}
