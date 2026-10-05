@@ -20,10 +20,10 @@
     },
     "questions": {
       "total": 1583,
-      "PASS": 0,
-      "REVIEW": 255,
-      "ISSUE": 1328,
-      "average": 54.1
+      "PASS": 312,
+      "REVIEW": 482,
+      "ISSUE": 789,
+      "average": 68.3
     }
   },
   "source_pools": [
