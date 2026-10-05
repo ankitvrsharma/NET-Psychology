@@ -711,7 +711,6 @@ function initLearningJourney(){
     if(top+dialogHeight>window.innerHeight-margin)top=rect.top-dialogHeight-18; if(top<margin)top=margin;
     dialog.style.left=left+'px';dialog.style.top=top+'px';updateSpotlight(targets);
   };
-  const previewMarkup=kind=>{const p=previews[kind];if(!p)return '';return '<div class="journey-preview" aria-label="'+p.label+'"><div class="journey-preview-label">'+p.label+'</div><div class="journey-preview-title">'+p.title+'</div><div class="journey-preview-list">'+p.items.map(x=>'<div><span>✓</span>'+x+'</div>').join('')+'</div></div>'};
   const render=()=>{
     clearTargets(); const s=steps[step],raw=s.target?.(),targets=Array.isArray(raw)?raw.filter(Boolean):[raw].filter(Boolean);
     tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-preview-slot" hidden></div><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
