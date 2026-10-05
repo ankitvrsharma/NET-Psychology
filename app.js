@@ -679,7 +679,7 @@ function initLearningJourney(){
   const previewMarkup=href=>{
     if(!href)return '';
     const safe=String(href).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    return '<div class="journey-preview" aria-label="Page preview"><div class="journey-preview-label">PAGE PREVIEW</div><div class="journey-preview-frame"><iframe src="'+safe+'" title="Preview of '+safe+'" loading="eager"></iframe></div></div>';
+    return '<div class="journey-preview" aria-label="Page preview"><div class="journey-preview-label">PAGE PREVIEW · SCROLL TO EXPLORE</div><div class="journey-preview-frame"><iframe src="'+safe+'" title="Scrollable preview of '+safe+'" loading="eager" scrolling="yes" sandbox="allow-scripts"></iframe></div></div>';
   };
   let step=0,activeTargets=[];
   const clearTargets=()=>{activeTargets.forEach(t=>{if(t){t.classList.remove('journey-highlight');t.removeAttribute('data-journey-target')}});activeTargets=[]};
