@@ -129,7 +129,7 @@ def question_audit(q):
 micro=load("content/microtopics/micro_topics.json")
 quick=load("content/quick-learn/quick_cards.json")
 questions=load("content/questions/questions.json")
-mapping=load("mcq_mapping.json")
+mapping=load("data/mcq_mapping.json")
 question_overrides=mapping.get("question_overrides",{})
 rows={"microtopics":[],"quickLearnCards":[],"questions":[]}
 for mid,m in micro.items():
