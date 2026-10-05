@@ -35,6 +35,7 @@ const RUNTIME_DATA=new Set([
   'quick_learn_cards.json',
   'deep_dive_explanations.json',
   'active_recall.json',
+  'source_synthesis.json',
   'content-publish-config.json',
   'content-publish-manifest.json',
   'content-owner-overrides.json'
