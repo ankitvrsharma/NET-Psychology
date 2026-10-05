@@ -1820,6 +1820,11 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .journey-highlight{position:relative!important;z-index:1001!important;box-shadow:0 0 0 4px var(--blue)!important;border-radius:12px!important;filter:none!important;opacity:1!important}
 body.tour-open{overflow:auto}
 @media(max-width:520px){.journey-dialog{padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}}
+@media(max-width:820px){
+  body.tour-open.menu-open .topbar{z-index:1001}
+  body.tour-open .journey-dialog{left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;width:min(560px,calc(100% - 24px));max-height:calc(100svh - 32px);overflow-y:auto;overscroll-behavior:contain}
+}
+
 .install-prompt{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:900;width:min(720px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 16px 40px rgba(16,36,73,.18)}
 .install-prompt strong,.install-prompt span{display:block}.install-prompt strong{color:var(--navy);font-size:14px}.install-prompt span{color:var(--muted);font-size:12px;margin-top:2px}.install-actions{display:flex;gap:7px;flex-shrink:0}
 body.tour-open{overflow:hidden}
