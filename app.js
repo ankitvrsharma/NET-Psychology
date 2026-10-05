@@ -93,9 +93,9 @@ const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
     const [cfgRes,manifestRes,ownerRes]=await Promise.all([
-      fetch('./content-publish-config.json?v=1.0.0',{cache:'default'}),
-      fetch('./content-publish-manifest.json?v=1.0.0',{cache:'default'}),
-      fetch('./content-owner-overrides.json?v=1.0.0',{cache:'default'})
+      fetch('./config/content-publish-config.json?v=1.0.0',{cache:'default'}),
+      fetch('./config/content-publish-manifest.json?v=1.0.0',{cache:'default'}),
+      fetch('./config/content-owner-overrides.json?v=1.0.0',{cache:'default'})
     ]);
     if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
     const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
@@ -233,7 +233,7 @@ async function loadStudyData(){
   let json=window.NETPSY_DATA||null;
   if(!json){
     try{
-      const response=await fetch('./syllabus-index.json?v=1.0.0',{cache:'default'});
+      const response=await fetch('./data/syllabus-index.json?v=1.0.0',{cache:'default'});
       if(!response.ok) throw new Error('Syllabus index request failed: '+response.status);
       json=await response.json();
     }catch(fetchError){
@@ -266,7 +266,7 @@ async function loadStudyData(){
       if(PRACTICE_QUESTIONS.length)PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));
     }catch(e){console.warn('PYQ bank could not be loaded:',e)}
     try{
-      const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
+      const mm=await fetch('./data/mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
       if(mm.ok){
         const map=await mm.json();
         const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
@@ -286,9 +286,9 @@ async function loadStudyData(){
 
   // Optional source enrichments never block the first usable render.
   Promise.all([
-    fetch('./kaplan_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null)
+    fetch('./content/source-synthesis/kaplan_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./content/source-synthesis/study_sources.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetch('./content/source-synthesis/simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'}).then(r=>r.ok?r.json():null).catch(()=>null)
   ]).then(([kp,study,sp])=>{
     if(kp?.microtopics)for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[])if(kp.microtopics[m.title])m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:kp.microtopics[m.title]};
     if(study)json.study_source_config=study;
@@ -644,7 +644,7 @@ function renderNetCountdown(summary=progressSummary()){
   const root=$('#netCountdown');
   if(!root)return;
   const coverage=summary.coverage||0,total=summary.total||0,started=summary.started||0;
-  fetch('./exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
+  fetch('./data/exam_schedule.json?v='+DATA_VERSION,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(cfg=>{
     const configured=cfg?.next_exam||{},now=new Date();
     let exam={...configured};
     let target=exam.start_date?new Date(exam.start_date+'T00:00:00+05:30'):null;
@@ -803,7 +803,7 @@ function home(){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" data-daily-preview="learn" href="daily3.html" aria-label="Learn"><strong>LEARN</strong></a>',practice:'<a class="daily-focus-card" data-daily-preview="practice" href="daily-practice.html" aria-label="Practice"><strong>PRACTICE</strong></a>'};
+  const cards={learn:'<a class="daily-focus-card" data-daily-preview="learn" href="daily-learn.html" aria-label="Learn"><strong>LEARN</strong></a>',practice:'<a class="daily-focus-card" data-daily-preview="practice" href="daily-practice.html" aria-label="Practice"><strong>PRACTICE</strong></a>'};
   const sequence=[cards.learn,cards.practice];
   $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><h2>Your minimum study target for today</h2><p>Daily Learning is the day’s complete study target: <strong>3 focused concepts followed by a 10-question practice test</strong>. Finish both parts to complete today’s learning session. Scheduled revision is handled separately when concepts become due.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
@@ -880,12 +880,12 @@ function dailyPractice(){
       const status=record?.correct?'correct':'incorrect';
       return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+mcqHTML(q,i,'DAILY PRACTICE',false)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
     }).join('');
-    root.innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h1>You completed today’s 10-question check.</h1><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>This completes the practice part of today’s Daily Learning target. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div class="actions"><a class="btn primary" href="daily3.html">BACK TO DAILY LEARNING</a><a class="btn" href="practice.html">MORE PRACTICE</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Learn from your answers</h2><p>Use the explanations to identify what needs another look.</p></div>'+review+'</section>';
+    root.innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h1>You completed today’s 10-question check.</h1><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>This completes the practice part of today’s Daily Learning target. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div class="actions"><a class="btn primary" href="daily-learn.html">BACK TO DAILY LEARNING</a><a class="btn" href="practice.html">MORE PRACTICE</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Learn from your answers</h2><p>Use the explanations to identify what needs another look.</p></div>'+review+'</section>';
     window.scrollTo({top:0,behavior:'smooth'});
   };
   const renderQuestion=()=>{
     const q=questions[current],answered=Object.prototype.hasOwnProperty.call(answers,current);
-    root.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE · DAILY LEARNING</div><h1 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h1><p>Answer from memory. Feedback appears after you choose.</p></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    root.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE · DAILY LEARNING</div><h1 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h1><p>Answer from memory. Feedback appears after you choose.</p></div><a class="text-link" href="daily-learn.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
     const session=root.querySelector('.practice-session'),card=session?.querySelector('.mcq'),nextBtn=session?.querySelector('#dailyNext');
     if(!session||!card||!nextBtn)return;
     if(answered){
