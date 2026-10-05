@@ -269,7 +269,7 @@ async function loadStudyData(){
   let json=window.NETPSY_DATA||null;
   if(!json){
     try{
-      const response=await fetch('./data/syllabus-index.json?v=1.0.0',{cache:'default'});
+      const response=await fetch('./data/syllabus-index.json?v='+DATA_VERSION,{cache:'no-store'});
       if(!response.ok) throw new Error('Syllabus index request failed: '+response.status);
       json=await response.json();
     }catch(fetchError){
@@ -278,7 +278,7 @@ async function loadStudyData(){
     }
   }
   if(!json || !Array.isArray(json.units)) throw new Error('Syllabus index has an invalid structure');
-  try{await loadScript('./question-renderer.js?v=1.0.0')}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
+  try{await loadScript('./question-renderer.js?v='+DATA_VERSION)}catch(e){console.warn('Shared question renderer unavailable; using local renderer fallback.',e)}
   D=json;
   const page=document.body?.dataset?.page||'';
   const practicePage=page==='practice'||page==='practice-session'||page==='daily-practice';
@@ -352,20 +352,30 @@ const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return
 const units=()=>D?.units||[];
 function resolvePublishedMicrotopics(){
   const syllabus=units();
-  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set
-    ?CONTENT_GATE.publishedMicrotopics
-    :new Set();
+  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set?CONTENT_GATE.publishedMicrotopics:new Set();
   const normalizedPublished=new Set([...publishedSet].map(normalizeMicrotopicId).filter(Boolean));
   const items=[];
+  const seen=new Set();
   let syllabusMicrotopics=0;
   let manifestIntersection=0;
-  for(const u of syllabus)for(const t of (u.topics||[]))for(const m of (t.microtopics||[])){
-    syllabusMicrotopics++;
-    const k=key(u.id,t.id,m.id),normalizedKey=normalizeMicrotopicId(k);
-    const published=normalizedPublished.has(normalizedKey)||contentIsPublished('microtopics',normalizedKey);
-    if(normalizedPublished.has(normalizedKey))manifestIntersection++;
-    if(published)items.push({u,t,m,k});
+  const runtimeSamples={syllabus:[],published:[...normalizedPublished].slice(0,5)};
+  for(const u of syllabus){
+    for(const t of (u.topics||[])){
+      for(const m of (t.microtopics||[])){
+        syllabusMicrotopics++;
+        const k=key(u.id,t.id,m.id),normalizedKey=normalizeMicrotopicId(k);
+        if(runtimeSamples.syllabus.length<5)runtimeSamples.syllabus.push(normalizedKey);
+        if(normalizedPublished.has(normalizedKey)){
+          manifestIntersection++;
+          if(!seen.has(normalizedKey)){seen.add(normalizedKey);items.push({u,t,m,k});}
+        }
+      }
+    }
   }
+  // A publication manifest is an allow-list of actual syllabus IDs. If the
+  // normalized intersection is unexpectedly empty, do not manufacture content;
+  // expose the exact runtime samples so the mismatch can be diagnosed from the
+  // learner page without developer tools.
   const diagnostic={
     syllabusMicrotopics,
     publishedMicrotopics:normalizedPublished.size,
@@ -373,7 +383,8 @@ function resolvePublishedMicrotopics(){
     resolvedMicrotopics:items.length,
     gateReady:!!CONTENT_GATE.ready,
     manifestBacked:normalizedPublished.size>0,
-    publicationResolution:'normalized-id'
+    publicationResolution:'runtime-syllabus-index',
+    runtimeSamples
   };
   window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
   window.__NETPSY_RUNTIME.publishedResolver=diagnostic;
