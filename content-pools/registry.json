@@ -56,11 +56,22 @@
     "sourceEnrichment": {
       "path": "content/source-enrichment/source_enrichment.json",
       "format": "json-map",
-      "enabled": true,
+      "enabled": false,
       "capabilities": [
         "source-lens",
         "kaplan",
         "simply-psychology"
+      ],
+      "deprecated": true
+    },
+    "sourceSynthesis": {
+      "path": "content/source-synthesis/source_synthesis.json",
+      "format": "json-map",
+      "enabled": true,
+      "capabilities": [
+        "multi-source-synthesis",
+        "provenance",
+        "integrated-explanation"
       ]
     }
   }
