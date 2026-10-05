@@ -1,0 +1,402 @@
+{
+  "1-1-1": {
+    "id": "1-1-1",
+    "title": "Bhagavad Gita",
+    "recall_before_review": "Gita → action + equanimity",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not reduce it to a single religious slogan.",
+    "weak_point_prompt": "What part of Bhagavad Gita is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-1-2": {
+    "id": "1-1-2",
+    "title": "Buddhism",
+    "recall_before_review": "Buddhism → suffering → path",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Non-self is not the same as saying nothing exists.",
+    "weak_point_prompt": "What part of Buddhism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-1-3": {
+    "id": "1-1-3",
+    "title": "Sufism",
+    "recall_before_review": "Sufism → purification + remembrance",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not treat Sufism only as a social identity.",
+    "weak_point_prompt": "What part of Sufism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-1-4": {
+    "id": "1-1-4",
+    "title": "Integral Yoga",
+    "recall_before_review": "Integral → whole-person transformation",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It is broader than physical postures.",
+    "weak_point_prompt": "What part of Integral Yoga is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-1": {
+    "id": "1-2-1",
+    "title": "Pre-independence era",
+    "recall_before_review": "Pre-independence era → Early formal education developed during the colonial period • Calcutta University is presented as a major early institutional centre • The early programme emphasized experimental psychology and laboratory research",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Pre-independence era is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-2": {
+    "id": "1-2-2",
+    "title": "Post-independence era",
+    "recall_before_review": "Post-independence era → Post-1947 expansion occurred through universities, applied centres and professional training • The UGC was established in 1956 and supported university psychology departments • Clinical and applied psychology developed alongside academic psychology",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Post-independence era is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-3": {
+    "id": "1-2-3",
+    "title": "1970s social issues",
+    "recall_before_review": "1970s social issues → The period is associated with stronger concern for socially relevant problems • Communal violence became an important research concern • The source contrasts socially relevant work with research that was methodologically sophisticated but socially detached",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of 1970s social issues is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-4": {
+    "id": "1-2-4",
+    "title": "1980s indigenization",
+    "recall_before_review": "1980s indigenization → Indigenization treats knowledge as rooted in a community's world-view and sociocultural history • One facet is endogenous/culture-produced concepts and categories • Another involves adapting or interacting with imported concepts, theories and methods",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of 1980s indigenization is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-5": {
+    "id": "1-2-5",
+    "title": "1990s paradigmatic concerns",
+    "recall_before_review": "1990s paradigmatic concerns → Paradigms involve assumptions about reality, knowledge and methods of inquiry • The source contrasts positivism with several alternative approaches • The Indian debate is connected to cultural relevance and disciplinary identity",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of 1990s paradigmatic concerns is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-6": {
+    "id": "1-2-6",
+    "title": "1990s disciplinary identity crisis",
+    "recall_before_review": "1990s disciplinary identity crisis → The crisis concerned relevance, identity and dependence on imported models • Western theories were criticized when transferred without adequate cultural consideration • Indigenous concepts and Indian social realities became more explicit research concerns",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of 1990s disciplinary identity crisis is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-2-7": {
+    "id": "1-2-7",
+    "title": "2000s Indian psychology in academia",
+    "recall_before_review": "2000s Indian psychology in academia → The 2000s are presented as a period of greater academic articulation of Indian psychology • The 2002 Pondicherry conference is a key source example • The Manifesto on Indian Psychology is an important landmark in the source account",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of 2000s Indian psychology in academia is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-3-1": {
+    "id": "1-3-1",
+    "title": "Colonial encounter",
+    "recall_before_review": "Colonial encounter → Colonial education structures influenced the institutional entry of psychology • Western experimental psychology became an important model for Indian academic psychology • The encounter created a long-term question of cultural fit and disciplinary identity",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Colonial encounter is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-3-2": {
+    "id": "1-3-2",
+    "title": "Postcolonialism and psychology",
+    "recall_before_review": "Postcolonialism and psychology → Postcolonial analysis raises questions about the cultural location of psychological knowledge • Imported concepts may require cultural interpretation rather than mechanical transfer • Indigenization is one response to the problem of cultural fit",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Postcolonialism and psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-3-3": {
+    "id": "1-3-3",
+    "title": "Lack of distinct disciplinary identity",
+    "recall_before_review": "Lack of distinct disciplinary identity → Psychology inherited a philosophical background but sought scientific status • Western methods became influential in research and training • Cultural relevance became a central identity question",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Lack of distinct disciplinary identity is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-4-1": {
+    "id": "1-4-1",
+    "title": "Greek heritage",
+    "recall_before_review": "Greek heritage → Metaphysics asks about the nature of reality • Epistemology asks how knowledge of reality is possible • Materialism and idealism provide contrasting accounts of reality",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Greek heritage is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-4-2": {
+    "id": "1-4-2",
+    "title": "Medieval period",
+    "recall_before_review": "Medieval period → It is a historical period in the source's Western intellectual sequence • It follows the Greek heritage in the syllabus structure • The supplied material gives limited detailed coverage here",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Medieval period is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-4-3": {
+    "id": "1-4-3",
+    "title": "Modern period",
+    "recall_before_review": "Modern period → Modern psychology is presented as developing through several distinct intellectual paths • Major schools should be learned as separate traditions rather than collapsed into one model • The source identifies Wundt, Freud, James and Dilthey as four founding paths",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Modern period is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-1": {
+    "id": "1-5-1",
+    "title": "Structuralism",
+    "recall_before_review": "Structuralism → structure",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Wundt and Titchener are not identical in every respect.",
+    "weak_point_prompt": "What part of Structuralism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-2": {
+    "id": "1-5-2",
+    "title": "Functionalism",
+    "recall_before_review": "Function → what does it do?",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Functionalism asks about function, not just elements.",
+    "weak_point_prompt": "What part of Functionalism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-3": {
+    "id": "1-5-3",
+    "title": "Psychoanalytical psychology",
+    "recall_before_review": "Psychoanalysis → unconscious conflict",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not reduce psychoanalysis to one motive.",
+    "weak_point_prompt": "What part of Psychoanalytical psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-4": {
+    "id": "1-5-4",
+    "title": "Gestalt psychology",
+    "recall_before_review": "Gestalt → whole",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Gestalt is broader than insight learning.",
+    "weak_point_prompt": "What part of Gestalt psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-5": {
+    "id": "1-5-5",
+    "title": "Behaviorism",
+    "recall_before_review": "Behaviorism → behavior + learning",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Negative reinforcement increases behavior.",
+    "weak_point_prompt": "What part of Behaviorism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-6": {
+    "id": "1-5-6",
+    "title": "Humanistic-Existential psychology",
+    "recall_before_review": "Humanistic → growth; existential → meaning",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Humanistic psychology is not merely positive thinking.",
+    "weak_point_prompt": "What part of Humanistic-Existential psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-7": {
+    "id": "1-5-7",
+    "title": "Transpersonal psychology",
+    "recall_before_review": "Transpersonal → beyond ego",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It is not identical to any single religion.",
+    "weak_point_prompt": "What part of Transpersonal psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-8": {
+    "id": "1-5-8",
+    "title": "Cognitive revolution",
+    "recall_before_review": "Cognitive revolution → mind returns",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It did not simply erase behaviorism overnight.",
+    "weak_point_prompt": "What part of Cognitive revolution is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-5-9": {
+    "id": "1-5-9",
+    "title": "Multiculturalism",
+    "recall_before_review": "Multicultural → context matters",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Culture is not just a demographic label.",
+    "weak_point_prompt": "What part of Multiculturalism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-6-1": {
+    "id": "1-6-1",
+    "title": "Wundt",
+    "recall_before_review": "Wundt → 1879",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not equate Wundt automatically with Titchener.",
+    "weak_point_prompt": "What part of Wundt is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-6-2": {
+    "id": "1-6-2",
+    "title": "Freud",
+    "recall_before_review": "Freud → unconscious",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Freud is not the founder of behaviorism.",
+    "weak_point_prompt": "What part of Freud is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-6-3": {
+    "id": "1-6-3",
+    "title": "James",
+    "recall_before_review": "James → function",
+    "self_check": "Recall the central idea first, then explain why this caution matters: James is associated with function rather than structural analysis.",
+    "weak_point_prompt": "What part of James is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-6-4": {
+    "id": "1-6-4",
+    "title": "Dilthey",
+    "recall_before_review": "Dilthey → understand meaning",
+    "self_check": "Recall the central idea first, then explain why this caution matters: He should not be reduced to experimental psychology.",
+    "weak_point_prompt": "What part of Dilthey is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-7-1": {
+    "id": "1-7-1",
+    "title": "Experimental-analytical paradigm",
+    "recall_before_review": "Experimental-analytical paradigm → The paradigm emphasizes experimental and analytic inquiry • Positivist assumptions include realism and an objectivist approach to knowledge • Variables, measurement and controlled methods are central to the model",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Experimental-analytical paradigm is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-7-2": {
+    "id": "1-7-2",
+    "title": "Logical empiricism",
+    "recall_before_review": "Logical empiricism → Ontology: realism is identified in the source's positivist formulation • Epistemology: dualist and objectivist assumptions are emphasized • Methodology: experimental and manipulative procedures are central",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Logical empiricism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-7-3": {
+    "id": "1-7-3",
+    "title": "Crisis in psychology",
+    "recall_before_review": "Crisis in psychology → Strict paradigm adherence can narrow the kinds of questions psychology asks • The source highlights meaning, context and representation as neglected concerns • The etic–emic issue challenges simple transfer of general findings to culturally specific cases",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Crisis in psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-8-1": {
+    "id": "1-8-1",
+    "title": "Indic influences on modern psychology",
+    "recall_before_review": "Indic influences on modern psychology → Consciousness is given a central place in the source's account of Indian psychology • The traditions focus strongly on inner experience and transformation • Yoga and meditation are described as methods for psychological/spiritual development",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Indic influences on modern psychology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-9-1": {
+    "id": "1-9-1",
+    "title": "Ontology",
+    "recall_before_review": "Ontology → what exists?",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Ontology is not epistemology.",
+    "weak_point_prompt": "What part of Ontology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-9-2": {
+    "id": "1-9-2",
+    "title": "Epistemology",
+    "recall_before_review": "Epistemology → how know?",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It asks how we know, not primarily what exists.",
+    "weak_point_prompt": "What part of Epistemology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-9-3": {
+    "id": "1-9-3",
+    "title": "Methodology",
+    "recall_before_review": "Methodology → how investigate?",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Methodology is broader than one method.",
+    "weak_point_prompt": "What part of Methodology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-1": {
+    "id": "1-10-1",
+    "title": "Positivism",
+    "recall_before_review": "Positivism → observe + measure",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Not every quantitative study is automatically positivist.",
+    "weak_point_prompt": "What part of Positivism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-2": {
+    "id": "1-10-2",
+    "title": "Post-Positivism",
+    "recall_before_review": "Post → evidence + humility",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It does not reject evidence.",
+    "weak_point_prompt": "What part of Post-Positivism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-3": {
+    "id": "1-10-3",
+    "title": "Critical perspective",
+    "recall_before_review": "Critical perspective → Knowledge is treated as value-mediated rather than completely value-free • Social and historical forces are part of the account of reality • Critical inquiry examines assumptions and conventional structures",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Critical perspective is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-4": {
+    "id": "1-10-4",
+    "title": "Social Constructionism",
+    "recall_before_review": "Constructionism → meaning is made",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It does not mean material reality is imaginary.",
+    "weak_point_prompt": "What part of Social Constructionism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-5": {
+    "id": "1-10-5",
+    "title": "Existential Phenomenology",
+    "recall_before_review": "Phenomenology → lived experience",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It is not simply casual introspection.",
+    "weak_point_prompt": "What part of Existential Phenomenology is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-10-6": {
+    "id": "1-10-6",
+    "title": "Co-operative Enquiry",
+    "recall_before_review": "Co-operative → research with people",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Participants are not passive subjects.",
+    "weak_point_prompt": "What part of Co-operative Enquiry is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-11-1": {
+    "id": "1-11-1",
+    "title": "Paradigmatic controversies",
+    "recall_before_review": "Paradigmatic controversies → Ontology concerns assumptions about reality and what exists • Epistemology concerns assumptions about knowledge and knowing • Methodology concerns how inquiry should be conducted",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Paradigmatic controversies is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-12-1": {
+    "id": "1-12-1",
+    "title": "Yoga",
+    "recall_before_review": "Yoga → Yoga is treated as a knowledge tradition, not merely a physical exercise system • Consciousness and the inner life are central concerns • Yoga and meditation are presented as methods of psychological transformation",
+    "self_check": "Recall the central idea and two supporting points before reopening the explanation.",
+    "weak_point_prompt": "What part of Yoga is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-12-2": {
+    "id": "1-12-2",
+    "title": "Bhagavad Gita",
+    "recall_before_review": "Gita → action + equanimity",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not reduce it to a single religious slogan.",
+    "weak_point_prompt": "What part of Bhagavad Gita is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-12-3": {
+    "id": "1-12-3",
+    "title": "Buddhism",
+    "recall_before_review": "Buddhism → suffering → path",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Non-self is not the same as saying nothing exists.",
+    "weak_point_prompt": "What part of Buddhism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-12-4": {
+    "id": "1-12-4",
+    "title": "Sufism",
+    "recall_before_review": "Sufism → purification + remembrance",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not treat Sufism only as a social identity.",
+    "weak_point_prompt": "What part of Sufism is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-12-5": {
+    "id": "1-12-5",
+    "title": "Integral Yoga",
+    "recall_before_review": "Integral → whole-person transformation",
+    "self_check": "Recall the central idea first, then explain why this caution matters: It is broader than physical postures.",
+    "weak_point_prompt": "What part of Integral Yoga is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  },
+  "1-13-1": {
+    "id": "1-13-1",
+    "title": "Science and spirituality",
+    "recall_before_review": "central definition/relationship → role in the source framework",
+    "self_check": "Recall the central idea first, then explain why this caution matters: Do not collapse spirituality into religion or assume the source treats science and spirituality as identical.",
+    "weak_point_prompt": "What part of Science and spirituality is easiest to confuse, oversimplify or forget? State it before reopening the note.",
+    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+  }
+}
