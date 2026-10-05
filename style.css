@@ -1583,9 +1583,9 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .micro-exam-section p{margin:0;color:var(--ink);font-size:15px;line-height:1.75}
 .micro-exam-section .key-points{margin:0;padding-left:21px;color:var(--ink);line-height:1.75}
 .micro-exam-section .key-points li{margin:7px 0}
-.micro-learning-actions{display:grid;gap:0;margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.micro-action{min-height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border:0;border-bottom:1px solid var(--line);background:#fff;color:var(--navy);font:inherit;font-weight:850;text-decoration:none;cursor:pointer;text-align:left}
-.micro-action:last-child{border-bottom:0}
+.micro-learning-actions{display:grid;grid-template-columns:1fr 2fr 1fr;gap:0;margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.micro-action{min-height:58px;display:flex;align-items:center;justify-content:center;padding:0 18px;border:0;border-right:1px solid var(--line);background:#fff;color:var(--navy);font:inherit;font-weight:850;text-decoration:none;cursor:pointer;text-align:center}
+.micro-action:last-child{border-right:0}
 .micro-action span{font-size:11px;letter-spacing:.08em}
 .micro-action:hover{background:#f7f9fc}
 .micro-action:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
@@ -1861,3 +1861,7 @@ body.tour-open{overflow:hidden}
 .journey-preview-frame{height:300px;overflow:hidden;background:#fff;touch-action:auto}
 .journey-preview-frame iframe{display:block;width:100%;height:100%;border:0;background:#fff;pointer-events:auto;touch-action:auto}
 @media(max-width:520px){.journey-preview-frame{height:260px}}
+
+/* Home journey path removed from the learner-facing home page. */
+.learning-approach{display:none!important}
+@media(max-width:620px){.micro-learning-actions{grid-template-columns:1fr 2fr 1fr}.micro-action{padding:0 8px}.micro-action span{font-size:10px}}
