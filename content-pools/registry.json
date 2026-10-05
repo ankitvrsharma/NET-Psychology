@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "pools": {
     "microtopics": {
-      "path": "content/microtopics/microtopic_explanations.json",
+      "path": "content/microtopics/micro_topics.json",
       "format": "json-map",
       "enabled": true,
       "capabilities": [
@@ -12,7 +12,7 @@
       ]
     },
     "quickLearn": {
-      "path": "content/quick-learn/quick_learn_cards.json",
+      "path": "content/quick-learn/quick_cards.json",
       "format": "json-map",
       "enabled": true,
       "capabilities": [
@@ -20,7 +20,7 @@
       ]
     },
     "deepDive": {
-      "path": "content/deep-dive/deep_dive_explanations.json",
+      "path": "content/deep-dive/deep_dive.json",
       "format": "json-map",
       "enabled": true,
       "capabilities": [
