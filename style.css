@@ -332,7 +332,7 @@ body[data-page="home"] .study-focus-main>p{margin:0;max-width:760px;color:var(--
 body[data-page="home"] .daily-focus-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 body[data-page="home"] .daily-focus-card{display:flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:13px 15px;border:1px solid var(--line);background:#fff;border-radius:12px;color:var(--navy);text-decoration:none;box-shadow:0 3px 10px rgba(37,57,100,.035);transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease}
 body[data-page="home"] .daily-focus-card:hover{transform:translateY(-1px);border-color:#ccd6e8;box-shadow:0 6px 16px rgba(37,57,100,.065)}
-body[data-page="home"] .daily-focus-card strong{font-size:12px;letter-spacing:.04em}
+body[data-page="home"] .daily-focus-card strong{font-size:16px;letter-spacing:.04em}
 body[data-page="home"] body[data-page="home"] .daily-focus-card:focus-visible{outline:3px solid rgba(63,103,217,.2);outline-offset:2px}
 
 /* Start-learning onboarding */
@@ -881,7 +881,7 @@ body[data-page="home"] .quick-flow>i{align-self:center;color:var(--blue);font-st
   body[data-page="home"] .study-focus-main{max-width:none}
   body[data-page="home"] .study-focus-main p{font-size:14px;line-height:1.55;margin:7px 0 0}
   body[data-page="home"] .daily-focus-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;margin-top:14px}
-  body[data-page="home"]   body[data-page="home"] .daily-focus-card strong{font-size:11px;letter-spacing:.03em}
+  body[data-page="home"] .daily-focus-card strong{font-size:15px;letter-spacing:.03em}
   body[data-page="home"]   body[data-page="home"] .quick-learn-section{margin-top:22px}
   body[data-page="home"] .quick-learn-card{min-height:0;padding:19px 18px 20px;border-radius:18px;grid-template-columns:1fr;grid-template-rows:auto auto auto;row-gap:9px}
   body[data-page="home"] .quick-learn-top{grid-column:1}
