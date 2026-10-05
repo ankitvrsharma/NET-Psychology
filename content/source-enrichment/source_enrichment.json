@@ -1,0 +1,268 @@
+{
+  "2-2-2": {
+    "kaplan": {
+      "chapter": "Scientific Foundations / Research Design",
+      "note": "Kaplan treats variables as the building blocks of research design and distinguishes independent, dependent, control and confounding variables. Its exam-oriented examples emphasize identifying each variable from the role it plays in a study."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology adds an operationalisation lens: the researcher must make a variable measurable so the study can be tested and replicated. It also distinguishes IV, DV and extraneous variables and explains how blinding and control reduce alternative explanations."
+    }
+  },
+  "2-2-5": {
+    "kaplan": {
+      "chapter": "Scientific Foundations / Research Design",
+      "note": "Kaplan separates random sampling from random assignment and treats sampling as selection from a population. Its study approach asks learners to identify the sampling method and distinguish it from how participants are allocated to conditions."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology distinguishes volunteer, opportunity, random, systematic, stratified, snowball and quota sampling and links sampling to representativeness and generalisability."
+    }
+  },
+  "2-5-5": {
+    "kaplan": {
+      "chapter": "Scientific Foundations / Research Design",
+      "note": "Kaplan contrasts controlled, field and natural/quasi-experimental approaches and frames experiments around manipulation, measurement and control. For exam reasoning, identify the IV, DV, allocation method and possible confound."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology distinguishes independent, matched and repeated-measures designs and explains why counterbalancing matters when the same participants experience more than one condition."
+    }
+  },
+  "2-11-1": {
+    "kaplan": {
+      "chapter": "Scientific Foundations / Statistics",
+      "note": "Kaplan uses correlation questions to test strength and direction without confusing association with causation. A coefficient near either end of −1 to +1 indicates a strong relationship, while the sign indicates direction."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology defines correlation as an association and stresses that correlation alone does not establish causation because another explanation or third variable may be involved."
+    }
+  },
+  "3-3-2": {
+    "kaplan": {
+      "chapter": "Psychological Testing",
+      "note": "Kaplan distinguishes reliability from validity and highlights test–retest, equivalent-form and split-half reliability. The exam decision is whether scores are consistent, not whether the test measures the intended construct."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology describes reliability as consistency and gives test–retest and inter-observer reliability as examples. Consistency should not be confused with accuracy."
+    }
+  },
+  "3-3-3": {
+    "kaplan": {
+      "chapter": "Psychological Testing",
+      "note": "Kaplan organises validity around whether a test supports the intended interpretation of scores, including content, criterion-related and construct validity. Its exam questions match the evidence to what the test is supposed to establish."
+    },
+    "simply_psychology": {
+      "title": "Research Methods in Psychology",
+      "url": "https://www.simplypsychology.org/research-methods.html",
+      "note": "Simply Psychology separates internal, construct and ecological validity and explains how design controls protect the interpretation of findings."
+    }
+  },
+  "3-4-1": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology / Intelligence",
+      "note": "Kaplan reviews intelligence testing through standardised measures such as Stanford–Binet and Wechsler scales, alongside norms, the normal curve, reliability, validity and cultural bias. Its exam style links a named test to what it measures and how scores are interpreted."
+    }
+  },
+  "3-4-5": {
+    "kaplan": {
+      "chapter": "Motivation, Emotion, and Personality / Psychological Testing",
+      "note": "Kaplan distinguishes objective personality inventories from projective methods and uses examples such as the MMPI and Thematic Apperception Test. The key decision is whether a method uses standardised items and scoring or ambiguous stimuli."
+    },
+    "simply_psychology": {
+      "title": "Theories of Personality",
+      "url": "https://www.simplypsychology.org/personality-theories.html",
+      "note": "Simply Psychology connects trait assessment with the nomothetic tradition, questionnaires and factor analysis, while contrasting it with more idiographic approaches."
+    }
+  },
+  "5-10-1": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan defines classical conditioning as learning an association between stimuli: a previously neutral cue becomes capable of eliciting a response after pairing with an unconditioned stimulus. Its exam method is to identify UCS, UCR, CS and CR from the sequence."
+    },
+    "simply_psychology": {
+      "title": "Classical Conditioning",
+      "url": "https://www.simplypsychology.org/classical-conditioning.html",
+      "note": "Simply Psychology presents the before–during–after sequence and stresses that the conditioned stimulus becomes a predictive cue for the unconditioned stimulus."
+    }
+  },
+  "5-10-2": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan treats acquisition, generalisation, discrimination, extinction, spontaneous recovery and higher-order conditioning as core classical-conditioning phenomena. Its practice questions ask which phenomenon best explains a change in the learned response."
+    },
+    "simply_psychology": {
+      "title": "Classical Conditioning",
+      "url": "https://www.simplypsychology.org/classical-conditioning.html",
+      "note": "Simply Psychology adds a useful mechanism distinction: extinction weakens the conditioned response when the predictive relationship is broken, while spontaneous recovery shows extinction does not simply erase original learning."
+    }
+  },
+  "5-10-3": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan extends classical conditioning beyond the basic Pavlovian sequence to expectancy, biological preparedness and taste aversion. These examples are useful for questions asking when conditioning is not a simple equal-pairing process."
+    },
+    "simply_psychology": {
+      "title": "Classical Conditioning",
+      "url": "https://www.simplypsychology.org/classical-conditioning.html",
+      "note": "Simply Psychology discusses predictive value, blocking and biological preparedness as qualifications to a purely mechanical pairing account. Use these after the basic CS/UCS sequence is secure."
+    }
+  },
+  "5-12-1": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan distinguishes reinforcement from punishment by their effect on behaviour: reinforcement increases behaviour and punishment decreases it. It also stresses the importance of clear and timely consequences."
+    },
+    "simply_psychology": {
+      "title": "Operant Conditioning",
+      "url": "https://www.simplypsychology.org/operant-conditioning.html",
+      "note": "Simply Psychology provides a complementary explanation of consequence-based operant conditioning. Keep the NET distinction precise: reinforcement strengthens behaviour; punishment is intended to reduce it."
+    }
+  },
+  "5-12-2": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan explicitly practises fixed-ratio, variable-ratio, fixed-interval and variable-interval schedules. Identify whether the requirement depends on number of responses or passage of time, and whether it is predictable or variable."
+    },
+    "simply_psychology": {
+      "title": "Operant Conditioning",
+      "url": "https://www.simplypsychology.org/operant-conditioning.html",
+      "note": "Simply Psychology provides a complementary explanation of reinforcement schedules and the relationship between behaviour and consequences."
+    }
+  },
+  "5-14-2": {
+    "kaplan": {
+      "chapter": "Learning",
+      "note": "Kaplan treats observational or social learning as learning through watching models and consequences. Bandura's Bobo-doll work is a key example, and the learner may reproduce or avoid behaviour depending on what was observed."
+    },
+    "simply_psychology": {
+      "title": "Approaches in Psychology",
+      "url": "https://www.simplypsychology.org/wp-content/uploads/approaches-notes.pdf",
+      "note": "Simply Psychology's learning-approach notes place social learning alongside classical and operant learning and emphasise imitation, identification, vicarious reinforcement and mediational processes."
+    }
+  },
+  "5-17-1": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology",
+      "note": "Kaplan frames memory around encoding, storage and retrieval and distinguishes visual, acoustic and semantic encoding. It also treats elaboration, self-reference, chunking and mnemonic strategies as ways of improving later access."
+    },
+    "simply_psychology": {
+      "title": "Memory: Encoding, Storage and Retrieval",
+      "url": "https://www.simplypsychology.org/memory.html",
+      "note": "Simply Psychology uses the same three-process framework and highlights that encoding changes information into a form that can be stored, with meaning-based encoding important for long-term memory."
+    }
+  },
+  "5-17-3": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology",
+      "note": "Kaplan treats retrieval as accessing stored information and distinguishes recall, recognition, relearning and priming. Its exam questions turn on whether information is difficult to access versus never adequately encoded."
+    },
+    "simply_psychology": {
+      "title": "Memory: Encoding, Storage and Retrieval",
+      "url": "https://www.simplypsychology.org/memory.html",
+      "note": "Simply Psychology presents retrieval as getting stored information back into active use, making a useful bridge to retrieval-practice learning."
+    }
+  },
+  "5-18-3": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology",
+      "note": "Kaplan treats working memory as an active short-term system and distinguishes it from sensory and long-term memory. It links working memory to rehearsal, manipulation and problem solving."
+    },
+    "simply_psychology": {
+      "title": "Working Memory Model",
+      "url": "https://www.simplypsychology.org/working-memory.html",
+      "note": "Simply Psychology explains Baddeley and Hitch's model as an active system involving a central executive, phonological loop and visuospatial sketchpad, with the episodic buffer added later."
+    }
+  },
+  "5-19-2": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology",
+      "note": "Kaplan distinguishes retrieval problems such as interference, decay and source-related errors from failures of initial encoding. Its exam preparation asks learners to identify the specific memory process involved rather than using forgetting as one explanation."
+    },
+    "simply_psychology": {
+      "title": "Memory: Encoding, Storage and Retrieval",
+      "url": "https://www.simplypsychology.org/memory.html",
+      "note": "Simply Psychology's encoding–storage–retrieval framework helps separate a failure to store information from a failure to access information that was stored."
+    }
+  },
+  "6-4-1": {
+    "kaplan": {
+      "chapter": "Cognitive Psychology",
+      "note": "Kaplan contrasts trial-and-error, algorithms, heuristics and insight as problem-solving strategies. Its exam questions reward identifying the strategy from how the person approaches the problem."
+    }
+  },
+  "7-2-3": {
+    "kaplan": {
+      "chapter": "Motivation, Emotion, and Personality",
+      "note": "Kaplan's social-cognitive treatment of personality links learned behaviour with modelling, expectations and reciprocal influence between person and environment."
+    },
+    "simply_psychology": {
+      "title": "Theories of Personality",
+      "url": "https://www.simplypsychology.org/personality-theories.html",
+      "note": "Simply Psychology contrasts trait approaches with social-learning accounts that place greater weight on environmental influence and learned behaviour."
+    }
+  },
+  "7-2-4": {
+    "kaplan": {
+      "chapter": "Motivation, Emotion, and Personality",
+      "note": "Kaplan presents trait approaches through dimensions such as Eysenck's PEN model and the Big Five, including OCEAN terminology. The exam emphasis is on identifying a stable personality dimension rather than a learned behaviour or situational state."
+    },
+    "simply_psychology": {
+      "title": "Theories of Personality",
+      "url": "https://www.simplypsychology.org/personality-theories.html",
+      "note": "Simply Psychology explains the idiographic–nomothetic distinction and connects nomothetic trait theories with questionnaires and factor analysis."
+    }
+  },
+  "7-16-1": {
+    "kaplan": {
+      "chapter": "Motivation, Emotion, and Personality",
+      "note": "Kaplan links stress to physiological arousal and coping to responses to stressors. Its exam material also connects arousal and performance through the Yerkes–Dodson relationship."
+    }
+  },
+  "8-4-3": {
+    "kaplan": {
+      "chapter": "Social Psychology",
+      "note": "Kaplan distinguishes conformity from other forms of social influence and uses Asch's line-judgement paradigm to illustrate majority pressure. Normative influence is associated with fitting in, while informational influence involves using others as information under uncertainty."
+    },
+    "simply_psychology": {
+      "title": "Asch Conformity Experiment",
+      "url": "https://www.simplypsychology.org/asch-conformity.html",
+      "note": "Simply Psychology distinguishes public yielding driven by normative pressure from genuine uncertainty driven by informational influence and emphasises the role of a unanimous majority."
+    }
+  },
+  "8-4-7": {
+    "kaplan": {
+      "chapter": "Social Psychology",
+      "note": "Kaplan treats obedience as following an authority's direct instruction and contrasts it with conformity. Milgram's work is used to show how situational authority can strongly shape behaviour."
+    },
+    "simply_psychology": {
+      "title": "Obedience in Social Psychology",
+      "url": "https://www.simplypsychology.org/obedience.html",
+      "note": "Simply Psychology defines obedience as responding to a direct order from an authority figure and distinguishes it from conformity. Legitimacy, proximity and diffusion of responsibility help interpret Milgram-type questions."
+    }
+  },
+  "9-1-1": {
+    "kaplan": {
+      "chapter": "Developmental Psychology",
+      "note": "Kaplan introduces development as systematic change across the lifespan and organises the area around physical, cognitive, social and emotional development. Its exam preparation asks learners to identify the developmental domain before selecting a theory or stage."
+    }
+  },
+  "9-4-2": {
+    "kaplan": {
+      "chapter": "Developmental Psychology / Cognitive Psychology",
+      "note": "Kaplan connects cognitive development with changes in reasoning, representation and problem solving and uses major developmental theories to organise those changes. For exam use, identify the child's cognitive capability or limitation before naming a stage or theory."
+    },
+    "simply_psychology": {
+      "title": "Perspectives in Psychology",
+      "url": "https://www.simplypsychology.org/perspective.html",
+      "note": "Simply Psychology provides a complementary theory-oriented way to compare explanatory perspectives. Use the developmental source material first for stage-specific claims and this source for broader conceptual framing."
+    }
+  }
+}

@@ -52,6 +52,16 @@
       "capabilities": [
         "home"
       ]
+    },
+    "sourceEnrichment": {
+      "path": "content/source-enrichment/source_enrichment.json",
+      "format": "json-map",
+      "enabled": true,
+      "capabilities": [
+        "source-lens",
+        "kaplan",
+        "simply-psychology"
+      ]
     }
   }
 }
