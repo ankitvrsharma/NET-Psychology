@@ -714,7 +714,14 @@ function initLearningJourney(){
     const target=e.target.closest('[data-journey-target]');
     if(target){e.preventDefault();e.stopPropagation();const slot=tour.querySelector('.journey-preview-slot');if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}}
   });
-  document.addEventListener('click',e=>{if(!document.body.classList.contains('tour-open'))return;const target=e.target.closest('[data-journey-target]');if(target){e.preventDefault();e.stopPropagation()}},true);
+  document.addEventListener('click',e=>{
+    if(!document.body.classList.contains('tour-open'))return;
+    const target=e.target.closest('[data-journey-target]');
+    if(!target)return;
+    e.preventDefault();e.stopPropagation();
+    const slot=tour.querySelector('.journey-preview-slot');
+    if(slot&&!slot.innerHTML){slot.innerHTML=previewMarkup(steps[step].preview);slot.hidden=false;requestAnimationFrame(()=>placeDialog(activeTargets))}
+  },true);
   window.addEventListener('resize',()=>{if(!tour.hidden&&activeTargets.length)placeDialog(activeTargets)});
   if(!seen)setTimeout(render,700);
 }
