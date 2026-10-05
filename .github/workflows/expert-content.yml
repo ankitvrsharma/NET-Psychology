@@ -7,11 +7,14 @@ on:
     paths:
       - content/**
       - content-pools/**
-      - content-publish-config.json
-      - content-publish-manifest.json
-      - content-owner-overrides.json
+      - config/content-publish-config.json
+      - config/content-publish-manifest.json
+      - config/content-owner-overrides.json
       - scripts/expert_audit.py
       - scripts/validate_content_pools.py
+      - reports/**
+      - config/**
+      - data/**
       - .github/workflows/expert-content.yml
 
 permissions:
@@ -30,12 +33,12 @@ jobs:
         run: python scripts/expert_audit.py
       - name: Commit generated audit and publication state
         run: |
-          if git diff --quiet -- expert-audit-report.json content-publish-manifest.json; then
+          if git diff --quiet -- reports/expert-audit-report.json config/content-publish-manifest.json; then
             echo "No generated publication changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add expert-audit-report.json content-publish-manifest.json
+          git add reports/expert-audit-report.json config/content-publish-manifest.json
           git commit -m "chore: refresh audited content publication state"
           git push
