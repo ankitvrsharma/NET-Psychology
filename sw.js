@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v47-lean-refactor';
+const CACHE='netpsych-shell-v48-facade-split';
 const SHELL=[
   './',
   './index.html',
