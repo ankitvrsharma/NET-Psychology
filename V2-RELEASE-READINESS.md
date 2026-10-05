@@ -4,7 +4,7 @@ Generated: 2026-10-05
 
 ## Status
 
-**NOT_READY_FOR_PUBLIC_RELEASE**
+**HARDENING PR IN PROGRESS — NOT_READY_FOR_PUBLIC_RELEASE**
 
 This branch contains release-safety and packaging fixes, but it must not be described as a complete V2 public release until the blockers below are resolved.
 
@@ -37,6 +37,9 @@ The existing publishing gate remains authoritative; this PR does not mark unreso
 ## V2 safety fixes in this branch
 
 - Learn-page unit cards now count only micro-topics that pass the learner-facing publishing gate, preventing incomplete syllabus entries from being presented as available study content.
+- Deep Dive now loads the dedicated `deepDiveEnrichment` pool instead of leaving the enrichment pool registered but unused.
+- The PWA service worker now caches the dedicated Deep Dive enrichment pool and revision guidance when requested.
+- The shell/data cache baseline is bumped to V2 so returning learners are less likely to retain stale V1 assets.
 - README syllabus counts are synchronized to the current 10-unit / 118-topic / 549-micro-topic taxonomy.
 - PWA manifest now declares 192px, 512px and maskable icon variants.
 - Offline application shell now includes learner.html, deep-dive.html and question-renderer.js.
@@ -49,3 +52,5 @@ The existing publishing gate remains authoritative; this PR does not mark unreso
 4. Run browser/device smoke tests on phone, tablet and laptop, including PWA installation and offline navigation.
 
 Home-page design is intentionally untouched by this readiness work.
+
+This PR is a release-hardening step, not a declaration that the remaining content/completeness blockers are resolved.
