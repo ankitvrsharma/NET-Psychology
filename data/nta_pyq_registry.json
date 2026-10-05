@@ -3,6 +3,34 @@
   "source": "NTA",
   "subject": "Psychology",
   "subject_code": "004",
-  "policy": "Only publicly accessible NTA assets are ingested. No question text is fabricated when the question paper is not publicly downloadable.",
-  "items": []
-}\n
+  "items": [
+    {
+      "session": "Unknown session",
+      "subject": "Psychology",
+      "subject_code": "004",
+      "answer_key_url": "https://ugcnet.nta.ac.in/images/KEY_PDF/004.PDF",
+      "discovered_from": "https://ugcnet.nta.ac.in/AnswerKey.html",
+      "status": "pending_question_paper",
+      "question_paper_url": null,
+      "question_paper_access": "not_publicly_discovered",
+      "answer_key_status": "final",
+      "last_checked": "2026-10-05T10:25:54.315322+00:00",
+      "sha256": "d683efe7b0459cd6d9827ed8725c596b98f9a70c10e8f4f945bebc38840075de",
+      "bytes": 6286
+    },
+    {
+      "session": "Unknown session",
+      "subject": "Psychology",
+      "subject_code": "004",
+      "answer_key_url": "https://ugcnet.nta.ac.in/images/UGC_JUNE_2025_FINALKEY/004.pdf",
+      "discovered_from": "https://ugcnet.nta.ac.in/AnswerKey_june2025.html",
+      "status": "pending_question_paper",
+      "question_paper_url": null,
+      "question_paper_access": "not_publicly_discovered",
+      "answer_key_status": "final",
+      "last_checked": "2026-10-05T10:25:53.506383+00:00",
+      "sha256": "7388c78781d8b0acb67c641ac57d02397b60751e9d5f159389b86e0cfbdb418b",
+      "bytes": 4915
+    }
+  ]
+}
