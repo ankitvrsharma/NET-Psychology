@@ -1805,3 +1805,31 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .quick-design-card.quick-comparison>div:first-child{grid-column:1/-1}
 .quick-design-card.quick-cue,.quick-design-card.quick-definition{grid-template-columns:1fr}
 @media(max-width:600px){.quick-design-card.quick-flow,.quick-design-card.quick-comparison{grid-template-columns:1fr}.quick-design-card.quick-comparison>div:first-child{grid-column:auto}}
+
+
+/* Compact learning path + Know Your Learning Journey */
+.learning-approach{margin-top:38px!important;padding:18px 0 8px}
+.learning-approach-head{max-width:760px;margin-bottom:14px}
+.learning-approach-head h2{font-size:23px;margin:4px 0}
+.learning-approach-head p{font-size:14px}
+.learning-steps.compact{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.learning-steps.compact>div{min-height:0;padding:13px 14px;border-radius:13px}
+.learning-steps.compact b{font-size:14px;margin-bottom:2px}
+.learning-steps.compact span{font-size:12px;line-height:1.4}
+.text-button{border:0;background:none;padding:0;color:var(--blue);font:inherit;font-weight:750;cursor:pointer}
+.daily-focus-card{position:relative;display:flex;flex-direction:column;gap:3px;text-decoration:none}
+.daily-focus-card small{color:var(--muted);font-size:11px;font-weight:500;max-width:180px;line-height:1.35}
+.journey-tour[hidden],.install-prompt[hidden]{display:none!important}
+.journey-tour{position:fixed;inset:0;z-index:1000}
+.journey-backdrop{position:absolute;inset:0;background:rgba(16,36,73,.48);backdrop-filter:blur(3px)}
+.journey-dialog{position:relative;width:min(560px,calc(100% - 32px));margin:12vh auto 0;background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 24px 70px rgba(16,36,73,.24)}
+.journey-progress{display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.08em;margin-bottom:24px}
+.journey-progress b{color:var(--blue)}
+.journey-dialog h2{font-size:clamp(25px,5vw,34px);line-height:1.1;color:var(--navy);margin:7px 0 12px}
+.journey-dialog p{color:var(--muted);font-size:16px;line-height:1.65;margin:0;max-width:500px}
+.journey-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:25px}
+.install-prompt{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:900;width:min(720px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:0 16px 40px rgba(16,36,73,.18)}
+.install-prompt strong,.install-prompt span{display:block}.install-prompt strong{color:var(--navy);font-size:14px}.install-prompt span{color:var(--muted);font-size:12px;margin-top:2px}.install-actions{display:flex;gap:7px;flex-shrink:0}
+body.tour-open{overflow:hidden}
+@media(max-width:820px){.learning-steps.compact{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.learning-approach{margin-top:28px!important}.learning-steps.compact{grid-template-columns:1fr 1fr}.learning-steps.compact>div{padding:11px}.journey-dialog{margin:8vh auto 0;padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}.install-prompt{align-items:flex-start;flex-direction:column}.install-actions{width:100%}.install-actions .btn{flex:1}}
