@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
-QUESTIONS=ROOT/"content/questions/questions.json"; DATA=ROOT/"syllabus-index.json"
+QUESTIONS=ROOT/"content/questions/questions.json"; DATA=ROOT/"data/syllabus-index.json"
 PROGRESS=ROOT/"generic-pyq-rewrite-progress.json"; LOG=ROOT/"generic-pyq-rewrite-log.json"
 MARKERS=(
  "The stem describes the concept or relationship represented by",
