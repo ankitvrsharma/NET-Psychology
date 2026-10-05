@@ -1159,8 +1159,7 @@ function micro(){
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="micro-explanation">'+explanationHtml+'</div>'+
-    (notesHtml?'<div class="micro-inline-notes">'+notesHtml+'</div>':'')+
+    '<div class="micro-explanation">'+explanationHtml+notesHtml+'</div>'+
     '</div></article>'+
     '<section class="micro-learning-actions">'+
     '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
