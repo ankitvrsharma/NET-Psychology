@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v49-home-learning';
+const CACHE='netpsych-shell-v50-canonical-content';
 const SHELL=[
   './',
   './index.html',
@@ -27,7 +27,14 @@ const RUNTIME_DATA=new Set([
   'mcq_mapping.json',
   'practice_questions.json',
   'practice_explanations.json',
-  'home-learning.json'
+  'home-learning.json',
+  'microtopic_explanations.json',
+  'quick_learn_cards.json',
+  'deep_dive_explanations.json',
+  'active_recall.json',
+  'content-publish-config.json',
+  'content-publish-manifest.json',
+  'content-owner-overrides.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
