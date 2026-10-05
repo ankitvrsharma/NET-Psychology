@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v46-expert-audit';
+const CACHE='netpsych-shell-v47-lean-refactor';
 const SHELL=[
   './',
   './index.html',
