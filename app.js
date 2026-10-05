@@ -342,6 +342,28 @@ function progressTopicSummary(){
   const notRevision=topics.filter(x=>x.microtopics.every(m=>{const p=getP(key(x.u.id,x.t.id,m.id));return !(p.revisionCount>0||p.next||p.lastRevision)}));
   return {total:topics.length,touched:touched.length,mastered:mastered.length,untouched:topics.length-touched.length,revised:revised.length,pending:pending.length,notRevision:notRevision.length};
 }
+function getStartProfile(){try{const p=JSON.parse(localStorage.getItem('netPsychStartProfile')||'null');return p&&p.experience?p:null}catch{return null}}
+function journeyPlan(p){
+  p=p||getStartProfile(); if(!p)return null;
+  const route={experience:p.experience,confidence:Number(p.confidence||3),challenges:p.challenges||[],priorities:p.learningPriorities||[],studyTime:p.studyTime||'30-60'};
+  let first='Learn', reason='Build your understanding before moving into retrieval and practice.';
+  if(route.experience==='revision'){first='Revision + Practice';reason='You said your main need is revision and practice, so the journey starts with retention and exam application.'}
+  else if(route.experience==='appeared'){first='Practice + PYQs';reason='Because you have appeared in NET, the journey emphasizes exam application and then targets the concepts behind your errors.'}
+  else if(route.experience==='prepared'){first='Learn + Targeted Practice';reason='You have prepared before, so the journey can rebuild weak areas without treating you as a complete beginner.'}
+  if(route.challenges.includes('memory'))reason+=' Extra emphasis is placed on active recall and spaced revision.';
+  if(route.challenges.includes('comparison'))reason+=' Similar concepts will be surfaced together for deliberate comparison.';
+  if(route.challenges.includes('application')||route.challenges.includes('practice'))reason+=' More application and question practice will reinforce the learning.';
+  if(route.priorities.includes('pyq'))reason+=' PYQs are a priority in your practice mix.';
+  if(route.priorities.includes('weak'))reason+=' Mistakes will be used to guide weak-area practice.';
+  const timePlan={
+    '15-30':'Complete the 3 concepts + 10-question Daily Learning target; stop there if time is tight.',
+    '30-60':'Complete Daily Learning, then use remaining time for due revision.',
+    '60-120':'Complete Daily Learning, due revision, then add targeted PYQ/weak-area practice.',
+    '120-180':'Complete Daily Learning, revision and a focused PYQ/weak-area block.',
+    '180+':'Complete Daily Learning, revision and deeper practice; use remaining time for difficult or high-value topics.'
+  };
+  return {...route,first,reason,timePlan:timePlan[route.studyTime]||timePlan['30-60']};
+}
 function startPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
@@ -354,21 +376,21 @@ function startPage(){
     $('#editStartProfile').onclick=()=>{localStorage.removeItem('netPsychStartProfile');startPage()};
     return;
   }
-  root.innerHTML="<section class=\"start-hero\"><div class=\"eyebrow\">START YOUR LEARNING JOURNEY</div><h1>Let’s understand how you learn best.</h1><p>Tell us where you are starting and what you want help with, so your first learning steps feel relevant to you. You can change your answers later.</p></section>\n  <form class=\"start-form\" id=\"startForm\">\n    <div class=\"start-progress\"><span>1 of 4</span><i><b style=\"width:25%\"></b></i></div>\n    <div class=\"start-step active\" data-step=\"1\"><fieldset><legend>1. Where are you starting from?</legend>\n      <label><input type=\"radio\" name=\"experience\" value=\"new-net\" required><span>I’m new to UGC NET Psychology</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"psych-new-net\"><span>I know Psychology but I’m new to NET preparation</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"prepared\"><span>I’ve prepared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"appeared\"><span>I’ve appeared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"revision\"><span>I mainly need revision and practice</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"2\"><fieldset><legend>2. How confident do you currently feel?</legend>\n      <label><input type=\"radio\" name=\"confidence\" value=\"1\" required><span>I struggle with most concepts</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"2\"><span>I know some basics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"3\"><span>I understand many topics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"4\"><span>I’m fairly confident</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"5\"><span>I can explain and apply most concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"3\"><fieldset><legend>3. What are your biggest challenges?</legend><p class=\"start-help\">Choose up to 2.</p>\n      <label><input type=\"checkbox\" name=\"challenge\" value=\"0\"><span>Understanding difficult concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"1\"><span>Remembering what I study</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"2\"><span>Confusing similar theories or concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"3\"><span>Applying concepts to situations</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"4\"><span>Solving MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"5\"><span>Revising consistently</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"6\"><span>Knowing what to study next</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"7\"><span>Managing the large syllabus</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"4\"><fieldset><legend>4. What helps you learn best?</legend><p class=\"start-help\">Choose up to 3. These are preferences, not fixed learning styles.</p>\n      <label><input type=\"checkbox\" name=\"preference\" value=\"0\"><span>Clear explanations</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"1\"><span>Examples and applications</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"2\"><span>Active-recall questions</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"3\"><span>MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"4\"><span>Visual summaries</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"5\"><span>Short revision notes</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"6\"><span>Comparisons between similar concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-actions\"><button class=\"btn\" type=\"button\" id=\"startBack\" hidden>← Back</button><button class=\"btn primary\" type=\"button\" id=\"startNext\">Next →</button></div>\n";
+  root.innerHTML="<section class=\"start-hero\"><div class=\"eyebrow\">START YOUR LEARNING JOURNEY</div><h1>Let’s build a learning journey that fits you.</h1><p>These answers set your starting route and priorities. They are not labels or fixed learning styles; your actual practice and recall performance will refine the journey over time.</p></section>\n  <form class=\"start-form\" id=\"startForm\">\n    <div class=\"start-progress\"><span>1 of 5</span><i><b style=\"width:20%\"></b></i></div>\n    <div class=\"start-step active\" data-step=\"1\"><fieldset><legend>1. Where are you starting from?</legend>\n      <label><input type=\"radio\" name=\"experience\" value=\"new-net\" required><span>I’m new to UGC NET Psychology</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"prepared\" required><span>I’ve prepared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"appeared\"><span>I’ve appeared in NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"revision\"><span>I mainly need revision and practice</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"2\"><fieldset><legend>2. How well can you currently work with Psychology concepts?</legend><p class=\"start-help\">Think about what you can do without looking at your notes.</p>\n      <label><input type=\"radio\" name=\"confidence\" value=\"1\" required><span>I often need explanations to understand concepts</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"2\"><span>I understand basic ideas but struggle with details</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"3\"><span>I understand most topics but need stronger recall</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"4\"><span>I can usually explain concepts without notes</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"5\"><span>I can explain, compare and apply most concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"3\"><fieldset><legend>3. What most gets in the way of your NET preparation?</legend><p class=\"start-help\">Choose up to 2. Your choices determine where the system puts extra support.</p>\n      <label><input type=\"checkbox\" name=\"challenge\" value=\"understanding\"><span>Understanding difficult concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"memory\"><span>I understand it today but forget it later</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"comparison\"><span>Similar theories or concepts get mixed up</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"application\"><span>I understand theory but struggle to apply it</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"practice\"><span>I struggle with MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"revision\"><span>I struggle to revise consistently</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"planning\"><span>I don’t know what to study next</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"syllabus\"><span>The syllabus feels too large to manage</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"4\"><fieldset><legend>4. What should the system help you do more of?</legend><p class=\"start-help\">Choose up to 3. These are priorities, not fixed learning styles.</p>\n      <label><input type=\"checkbox\" name=\"preference\" value=\"understand\"><span>Understand — clearer explanations and examples</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"remember\"><span>Remember — active recall and spaced revision</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"apply\"><span>Apply — application-based questions</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"pyq\"><span>Master PYQs — previous-year question practice</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"weak\"><span>Fix weak areas — targeted practice from mistakes</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"compare\"><span>Compare concepts — distinctions between similar theories</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"consistency\"><span>Build consistency — manageable daily targets</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"5\"><fieldset><legend>5. How much time can you realistically give NET Psychology on a normal day?</legend><p class=\"start-help\">Choose what you can sustain on most days, not your best day.</p>\n      <label><input type=\"radio\" name=\"studyTime\" value=\"15-30\" required><span>15–30 minutes</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"30-60\"><span>30–60 minutes</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"60-120\"><span>1–2 hours</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"120-180\"><span>2–3 hours</span></label><label><input type=\"radio\" name=\"studyTime\" value=\"180+\"><span>3+ hours</span></label>\n    </fieldset></div>\n    <div class=\"start-actions\"><button class=\"btn\" type=\"button\" id=\"startBack\" hidden>← Back</button><button class=\"btn primary\" type=\"button\" id=\"startNext\">Next →</button></div>\n  </form>";
   const form=$('#startForm'),steps=Array.from(form.querySelectorAll('.start-step')),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
   const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
   form.addEventListener('change',e=>{
     if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
     if(e.target.name==='preference' && form.querySelectorAll('input[name="preference"]:checked').length>3)e.target.checked=false;
   });
-  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;return form.querySelectorAll('input[name="preference"]:checked').length>0;};
+  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;if(current===3)return form.querySelectorAll('input[name="preference"]:checked').length>0;return !!form.querySelector('input[name="studyTime"]:checked');};
   next.addEventListener('click',()=>{
-    if(!valid()){alert(current===2?'Choose at least one challenge.':current===3?'Choose at least one preference.':'Please select an answer to continue.');return;}
+    if(!valid()){alert(current===2?'Choose up to 2 challenges, with at least one selected.':current===3?'Choose up to 3 priorities, with at least one selected.':'Please select an answer to continue.');return;}
     if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
-    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
+    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:Number(form.querySelector('[name="confidence"]:checked').value),challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPriorities:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),studyTime:form.querySelector('[name="studyTime"]:checked').value,created:new Date().toISOString(),updated:new Date().toISOString()};
     localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
     const startTarget='learner.html';
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you understand concepts, strengthen recall, practise what you know, and return to important ideas at the right time.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>Your starting plan is ready.</h1><p>Your answers will guide the emphasis of your first learning steps. As you practise and recall, your actual performance can become more important than this initial self-assessment.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
   });
   back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
   update();
@@ -408,17 +430,18 @@ function startPage(){
     root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Study data is not available yet.</p></section>';
     return;
   }
+  const journey=journeyPlan(getStartProfile());
   const p=getP(current.k), currentIndex=all().findIndex(x=>x.k===current.k);
   const upcoming=all().slice(Math.max(0,currentIndex+1),Math.max(0,currentIndex+1)+3);
   const summary=progressSummary();
   const learned=summary.learned||0, mastered=summary.mastered||0, scheduled=summary.revisionScheduled||0;
   const progress=summary.coverage;
   root.innerHTML=
-    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.</p></section>'+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
+    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>'+(journey?esc(journey.first):'Learn one concept at a time.')+'</h1><p>'+(journey?esc(journey.reason):'Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.')+'</p></section>'+(journey?'<section class="learning-profile card"><div class="eyebrow">YOUR STARTING PLAN</div><h2>What we’ll emphasize first</h2><div class="learning-profile-grid"><div><strong>'+esc(journey.first)+'</strong><span>Starting route</span></div><div><strong>'+esc(journey.studyTime)+'</strong><span>Realistic daily time</span></div><div><strong>'+esc(journey.priorities.slice(0,2).join(' · ')||'Core learning')+'</strong><span>Priority support</span></div></div><a class="text-button" href="start.html">Edit my learning profile →</a></section>':'')+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
     '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
 
     '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+
-    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
+    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+'</small><strong class="up-next-unit">'+esc(x.u.title)+'</strong><em class="up-next-micro">'+esc(x.m.title)+'</em></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
     '</section><a class="learn-syllabus-link" href="learn.html">Browse the syllabus →</a>';
 }
 function deepDive(){
@@ -640,6 +663,39 @@ function quickLearnItem(){
   if(!item)return null;
   return {...item,category:item.category||'CONCEPT',href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
 }
+function initLearningJourney(){
+  const tour=document.querySelector('#journeyTour');
+  if(!tour)return;
+  let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
+  const steps=[
+    {eyebrow:'WELCOME',title:'Know Your Learning Journey',body:'This Study Hub is built around a simple idea: learning should lead to durable recall, not just familiar-looking notes.',target:null},
+    {eyebrow:'01 · LEARN',title:'Understand the micro-topic',body:'Start with a focused concept. Read the explanation, connect the ideas, and build understanding before testing yourself.',target:'#today'},
+    {eyebrow:'02 · RECALL',title:'Retrieve without looking',body:'Use Active Recall to bring the concept back from memory. Retrieval is part of learning—not just a test at the end.',target:'#learningApproach'},
+    {eyebrow:'03 · PRACTICE',title:'Apply what you know',body:'Use MCQs and previous-year questions to check whether you can recognise, distinguish and apply the concept in exam conditions.',target:'#today'},
+    {eyebrow:'04 · REVISE',title:'Return at the right time',body:'Scheduled revision brings concepts back after spacing. Your revision schedule is separate from today’s new-learning session.',target:'#learningApproach'},
+    {eyebrow:'DAILY TARGET',title:'Know what “done for today” means',body:'Daily Learning is not a menu of things you might study. It is your minimum daily target: complete 3 concepts and then take the 10-question practice test. Quick Learn is separate—a short optional concept preview.',target:'#today'},
+    {eyebrow:'YOUR LOOP',title:'Understand → Recall → Practice → Revise',body:'Move through the loop repeatedly. Progress comes from completing the learning process, not simply opening more pages.',target:null}
+  ];
+  let step=0;
+  const close=()=>{tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
+  const render=()=>{const s=steps[step];tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Start Learning':'Next')+'</button></div></section>';tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');};
+  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()}; window.__openLearningJourney=()=>{step=0;render()};
+  tour.addEventListener('click',e=>{const a=e.target.closest('[data-journey]');if(!a)return;const act=a.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render()});
+  if(!seen) setTimeout(render,700);
+}
+let deferredInstallPrompt=null;
+function initPwaInstallPrompt(){
+  const box=document.querySelector('#installPrompt'); if(!box)return;
+  window.addEventListener('beforeinstallprompt',event=>{
+    event.preventDefault(); deferredInstallPrompt=event;
+    let dismissed=false; try{dismissed=localStorage.getItem('netPsychInstallDismissed')==='1'}catch(e){}
+    if(dismissed||window.matchMedia('(display-mode: standalone)').matches)return;
+    box.innerHTML='<div><strong>Make NET Psychology your study app</strong><span>Install this Study Hub for quicker access and an app-like study experience.</span></div><div class="install-actions"><button class="btn" data-install="dismiss">Not now</button><button class="btn primary" data-install="install">Install App</button></div>';
+    box.hidden=false;box.setAttribute('aria-hidden','false');
+  });
+  box.addEventListener('click',async e=>{const b=e.target.closest('[data-install]');if(!b)return;if(b.dataset.install==='dismiss'){try{localStorage.setItem('netPsychInstallDismissed','1')}catch(e){}box.hidden=true;return}if(deferredInstallPrompt){deferredInstallPrompt.prompt();try{await deferredInstallPrompt.userChoice}catch(e){}deferredInstallPrompt=null;box.hidden=true;}});
+  window.addEventListener('appinstalled',()=>{box.hidden=true;deferredInstallPrompt=null});
+}
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
@@ -651,13 +707,13 @@ function home(){
     hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
-  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
+  const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>DAILY LEARNING</strong><span>→</span><small>3 concepts + 10-question practice test</small></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span><small>Test with MCQs and PYQs</small></a>'};
   const sequence=[cards.learn,cards.practice];
-  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><p>Every study session has a clear purpose: learn a new concept or test what you know.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
+  $('#today').innerHTML='<section class="study-focus study-focus-enhanced"><div class="study-focus-main"><div class="eyebrow">YOUR DAILY LEARNING</div><h2>Your minimum study target for today</h2><p>Daily Learning is the day’s complete study target: <strong>3 focused concepts followed by a 10-question practice test</strong>. Finish both parts to complete today’s learning session. Scheduled revision is handled separately when concepts become due.</p></div><div class="study-focus-actions daily-focus-actions">'+sequence.join('')+'</div></section>';
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) renderHomeLearning();
-  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>A systematic approach to learning</h2><p>Move from learning to lasting recall through a simple, repeatable rhythm.</p></div><div class="learning-steps"><div><b>Learn</b><span>Break the topic into smaller, meaningful chunks.</span></div><div><b>Recall</b><span>Use active recall: recall the concept without looking at the notes.</span></div><div><b>Practice</b><span>Practise with normal MCQs and previous-year questions (PYQs).</span></div><div><b>Revise</b><span>Use spaced revision by returning to the concept at spaced intervals.</span></div></div>`;
+  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-approach-head"><div class="eyebrow">LEARNING PATH</div><h2>Learn → Recall → Practice → Revise</h2><p>A compact view of the study loop. Open <button class="text-button" type="button" data-open-journey>Know Your Learning Journey</button> for the full walkthrough.</p></div><div class="learning-steps compact"><div><b>01 · Learn</b><span>Understand the concept.</span></div><div><b>02 · Recall</b><span>Retrieve without notes.</span></div><div><b>03 · Practice</b><span>Apply with MCQs & PYQs.</span></div><div><b>04 · Revise</b><span>Return through spacing.</span></div></div>`;
 }
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
@@ -666,7 +722,7 @@ function daily3(){
   let existingToday=null;
   try{const storedToday=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');if(storedToday?.date===todayKey&&Array.isArray(storedToday.items))existingToday=storedToday.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean)}catch(e){}
   if(existingToday?.length){
-    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+existingToday.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div>'+(()=>{const p=getP(key(x.u.id,x.t.id,x.m.id));const done=!!p.recallCompletedAt||p.status==='MASTERED';return done?'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">COMPLETED ✓</a>':'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a>'})()+'</article>').join('')+'</section><section class="panel daily3-note"><b>Today’s set is fixed.</b><span>Return tomorrow for the next syllabus set. Scheduled revision remains handled by the separate Revision system.</span></section>';
+    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Today’s learning target has two parts: <strong>3 focused concepts</strong>, followed by a <strong>10-question practice test</strong>. Complete both to finish today’s Daily Learning.</p></section><section class="daily3-list">'+existingToday.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div>'+(()=>{const p=getP(key(x.u.id,x.t.id,x.m.id));const done=!!p.recallCompletedAt||p.status==='MASTERED';return done?'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">COMPLETED ✓</a>':'<a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a>'})()+'</article>').join('')+'</section><section class="panel daily3-note"><b>Part 1 of today’s target: 3 concepts.</b><span>After completing these concepts, take today’s 10-question practice test to complete Daily Learning.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">TAKE TODAY’S 10-QUESTION TEST →</a></div></section>';
     return;
   }
   let firstLearner=false;
@@ -675,7 +731,7 @@ function daily3(){
   if(firstLearner&&predefined.length===3){
     const session=predefined;
     try{localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}))}catch(e){}
-    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Today’s set is fixed.</b><span>This starter set is predefined for new learners. Scheduled revision remains handled by the separate Revision system.</span></section>';
+    $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Part 1 of today’s target: complete these 3 concepts. Then take the 10-question practice test to finish Daily Learning.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Part 1 of today’s target: 3 concepts.</b><span>This starter set is predefined for new learners. Then take the 10-question practice test to complete Daily Learning. Scheduled revision remains separate.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">TAKE TODAY’S 10-QUESTION TEST →</a></div></section>';
     return;
   }
   let rotation={served:[],cycle:0,lastDate:null};
@@ -691,7 +747,7 @@ function daily3(){
   if(!session.length){$('#daily3App').innerHTML='<section class="panel empty"><h2>No concepts available</h2><p>Choose a topic from Learn when you are ready to continue.</p></section>';return}
   const nextServed=[...served,...session.map(x=>x.k)],completedCycle=nextServed.length>=allItems.length;
   try{localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));localStorage.setItem(keyName,JSON.stringify({served:completedCycle?[]:nextServed,cycle:completedCycle?rotation.cycle+1:rotation.cycle,lastDate:todayKey}))}catch(e){}
-  $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Why three?</b><span>Three concepts give you a manageable study load while helping you keep moving through the syllabus. Your scheduled revisions remain available separately when concepts are due.</span></section>';
+  $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Part 1 of today’s target: 3 concepts.</b><span>Three concepts keep the learning load focused. Your Daily Learning session is completed by taking the 10-question practice test next. Scheduled revisions remain separate.</span><div style="margin-top:12px"><a class="btn primary" href="daily-practice.html">TAKE TODAY’S 10-QUESTION TEST →</a></div></section>';
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
@@ -700,70 +756,69 @@ function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item o
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
   if(!root)return;
-  const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
-  const allQuestions=PRACTICE_QUESTIONS.slice();
-  const dailySet=CANONICAL_CONTENT.homeLearning?.daily_practice||{};
-  const setSize=Math.max(1,Math.min(20,Number(dailySet.count)||10));
-  let stored=null;try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
-  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
+  const today=new Date(),todayKey=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');
+  const allQuestions=Array.isArray(PRACTICE_QUESTIONS)?PRACTICE_QUESTIONS.filter(Boolean):[];
+  const configured=Number(CANONICAL_CONTENT.homeLearning?.daily_practice?.count)||10;
+  const setSize=Math.max(1,Math.min(10,configured));
+  let stored=null;
+  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{}
+  let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)
+    ?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean)
+    :[];
   if(questions.length!==setSize){
     questions=allQuestions.slice().sort(()=>Math.random()-.5).slice(0,setSize);
     try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}))}catch{}
   }
-  if(questions.length<1){root.innerHTML='<section class="panel empty"><h2>Daily Practice is temporarily unavailable.</h2><p>No published practice questions are available yet.</p></section>';return}
-  // Keep the active question flow focused. The large Daily Practice hero belongs to the entry context, not to each question state.
-  let current=0,ended=false,correctCount=0,answers={};
+  if(!questions.length){
+    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY LEARNING</div><h1>Today’s practice is not available yet.</h1><p>The 10-question practice bank could not be loaded. Please refresh once the content connection is available.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
+    return;
+  }
+  let current=0,correctCount=0,answers={};
   const renderComplete=()=>{
-    ended=true;
     const percent=Math.round(correctCount/questions.length*100);
     const review=questions.map((q,i)=>{
       const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen;
-      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
-      const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
+      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+(opts[chosen]??'');
+      const correctText=String.fromCharCode(65+answer)+'. '+(opts[answer]??'');
       const status=record?.correct?'correct':'incorrect';
-      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
+      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+mcqHTML(q,i,'DAILY PRACTICE',false)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
     }).join('');
-    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
+    root.innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h1>You completed today’s 10-question check.</h1><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>This completes the practice part of today’s Daily Learning target. Review the explanations, especially the concepts behind questions you missed or found difficult.</p><div class="actions"><a class="btn primary" href="daily3.html">BACK TO DAILY LEARNING</a><a class="btn" href="practice.html">MORE PRACTICE</a></div></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Learn from your answers</h2><p>Use the explanations to identify what needs another look.</p></div>'+review+'</section>';
+    window.scrollTo({top:0,behavior:'smooth'});
   };
   const renderQuestion=()=>{
-    if(ended)return;
     const q=questions[current],answered=Object.prototype.hasOwnProperty.call(answers,current);
-    $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
-    const session=$('#dailyPracticeSession'),card=session.querySelector('.mcq'),nextBtn=session.querySelector('#dailyNext'),prevBtn=session.querySelector('#dailyPrev');
+    root.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE · DAILY LEARNING</div><h1 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h1><p>Answer from memory. Feedback appears after you choose.</p></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    const session=root.querySelector('.practice-session'),card=session?.querySelector('.mcq'),nextBtn=session?.querySelector('#dailyNext');
+    if(!session||!card||!nextBtn)return;
     if(answered){
       card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-      nextBtn.disabled=false;nextBtn.removeAttribute('disabled');nextBtn.setAttribute('aria-disabled','false');
-    }else nextBtn.setAttribute('aria-disabled','true');
-    session.onclick=e=>{
-      const option=e.target.closest('.mcq-option');
-      if(option&&session.contains(option)){
-        if(Object.prototype.hasOwnProperty.call(answers,current)||ended)return;
-        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),wasCorrect=chosen===answer;
-        answers[current]={chosen,correct:wasCorrect};
-        if(wasCorrect)correctCount++;
-        card.querySelectorAll('.mcq-option').forEach(b=>{b.disabled=true;b.setAttribute('aria-pressed',b===option?'true':'false')});
-        option.classList.add(wasCorrect?'selected-correct':'selected-incorrect');
-        nextBtn.disabled=false;
-        nextBtn.removeAttribute('disabled');
-        nextBtn.setAttribute('aria-disabled','false');
-        return;
+      nextBtn.disabled=false;
+    }
+    session.onclick=event=>{
+      const option=event.target.closest('.mcq-option');
+      if(option&&session.contains(option)&&!Object.prototype.hasOwnProperty.call(answers,current)){
+        const chosen=Number(option.dataset.a),answer=Number(card.dataset.answer),correct=chosen===answer;
+        answers[current]={chosen,correct}; if(correct)correctCount++;
+        card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+        option.classList.add(correct?'selected-correct':'selected-incorrect');
+        nextBtn.disabled=false; return;
       }
-      const next=e.target.closest('#dailyNext');
-      if(next){
-        if(ended||!Object.prototype.hasOwnProperty.call(answers,current))return;
+      if(event.target.closest('#dailyNext')&&Object.prototype.hasOwnProperty.call(answers,current)){
         if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
         else{
           const st=state();
           questions.forEach((q,i)=>st._practiceHistory=[...(st._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
-          save(st);renderComplete();window.scrollTo({top:0,behavior:'smooth'});
+          save(st);renderComplete();
         }
-        return;
       }
-      const prev=e.target.closest('#dailyPrev');
-      if(prev&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+      if(event.target.closest('#dailyPrev')&&current>0){current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
     };
   };
-  renderQuestion();
+  try{renderQuestion()}catch(err){
+    console.error('Daily Practice render failed:',err);
+    root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY PRACTICE</div><h1>We could not start today’s practice.</h1><p>Please refresh and try again.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
+  }
 }
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
@@ -1327,6 +1382,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+window.addEventListener('DOMContentLoaded',()=>{initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
