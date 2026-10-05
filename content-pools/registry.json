@@ -73,6 +73,15 @@
         "provenance",
         "integrated-explanation"
       ]
+    },
+    "revisionGuidance": {
+      "path": "content/revision/revision_guidance.json",
+      "format": "json-map",
+      "enabled": true,
+      "capabilities": [
+        "revision",
+        "retrieval-before-review"
+      ]
     }
   }
 }
