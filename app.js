@@ -116,7 +116,20 @@ async function loadContentGate(){
   CONTENT_GATE={ready:true,failClosed:false,mode:cfg.mode||'expert_or_owner',ai:{},owner:{approved:owner.owner_approved||{},rejected:owner.owner_rejected||{}},publishedMicrotopics:new Set()};
   console.warn('Using deterministic expert publication fallback because the release manifest is unavailable.');
 }
-function gateSet(obj,key){return new Set(Array.isArray(obj?.[key])?obj[key]:[])}
+function normalizeMicrotopicId(id){
+  const raw=String(id??'').trim();
+  const parts=raw.split('-').map(x=>x.trim());
+  if(parts.length!==3)return raw;
+  return parts.map(part=>{
+    const n=Number(part);
+    return Number.isFinite(n)?String(n):part;
+  }).join('-');
+}
+function normalizeIdSet(values,type){
+  const list=Array.isArray(values)?values:[];
+  return new Set(list.map(v=>type==='microtopics'?normalizeMicrotopicId(v):String(v).trim()).filter(Boolean));
+}
+function gateSet(obj,key){return normalizeIdSet(obj?.[key],key)}
 const EXPERT_AUDIT_VERSION='1.0.0';
 const EXPERT_THRESHOLDS={pass:70,review:60};
 function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
@@ -193,7 +206,26 @@ function structuralQuestionAudit(q){
 function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');const structural=structuralQuestionAudit(q);issues.push(...structural.issues);let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const structuralFailure=structural.issues.length>0;const status=structuralFailure||issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer','answerability_failed'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues:[...new Set(issues)],signals:sig,structural};}
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
-function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const idString=String(id),approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type),legacy=legacyKeysFor(idString);if(rejected.has(idString))return false;if(approved.has(idString)||legacy.some(k=>approved.has(k)))return true;if(type==='microtopics'){const published=CONTENT_GATE.publishedMicrotopics;if(published.has(idString)||legacy.some(k=>published.has(k)))return true;}if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner'){const aiPass=gateSet(CONTENT_GATE.ai,type);if(aiPass.has(idString)||legacy.some(k=>aiPass.has(k)))return true;return expertAudit(type,idString).status==='PASS';}return gateSet(CONTENT_GATE.ai,type).has(idString)||legacy.some(k=>gateSet(CONTENT_GATE.ai,type).has(k));}
+function contentIsPublished(type,id){
+  if(!CONTENT_GATE.ready)return false;
+  const idString=type==='microtopics'?normalizeMicrotopicId(id):String(id??'').trim();
+  const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type),legacy=legacyKeysFor(idString);
+  if(rejected.has(idString))return false;
+  if(approved.has(idString)||legacy.some(k=>approved.has(k)))return true;
+  if(type==='microtopics'){
+    const published=CONTENT_GATE.publishedMicrotopics instanceof Set
+      ?new Set([...CONTENT_GATE.publishedMicrotopics].map(normalizeMicrotopicId))
+      :normalizeIdSet([],type);
+    if(published.has(idString)||legacy.some(k=>published.has(normalizeMicrotopicId(k))))return true;
+  }
+  if(CONTENT_GATE.mode==='owner_only')return false;
+  if(CONTENT_GATE.mode==='expert_or_owner'){
+    const aiPass=gateSet(CONTENT_GATE.ai,type);
+    if(aiPass.has(idString)||legacy.some(k=>aiPass.has(k)))return true;
+    return expertAudit(type,idString).status==='PASS';
+  }
+  return gateSet(CONTENT_GATE.ai,type).has(idString)||legacy.some(k=>gateSet(CONTENT_GATE.ai,type).has(k));
+}
 const KEY_MIGRATIONS=Object.freeze({
   "2-15-1":"2-16-1","2-15-2":"2-16-2","2-15-3":"2-16-3",
   "3-7-1":"3-6-7","4-5-1":"4-4-7","4-7-3":"4-10-1","4-7-4":"4-10-2","4-7-5":"4-10-3","4-7-6":"4-10-4",
@@ -320,21 +352,28 @@ const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return
 const units=()=>D?.units||[];
 function resolvePublishedMicrotopics(){
   const syllabus=units();
-  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set?CONTENT_GATE.publishedMicrotopics:new Set();
+  const publishedSet=CONTENT_GATE.publishedMicrotopics instanceof Set
+    ?CONTENT_GATE.publishedMicrotopics
+    :new Set();
+  const normalizedPublished=new Set([...publishedSet].map(normalizeMicrotopicId).filter(Boolean));
   const items=[];
   let syllabusMicrotopics=0;
+  let manifestIntersection=0;
   for(const u of syllabus)for(const t of (u.topics||[]))for(const m of (t.microtopics||[])){
     syllabusMicrotopics++;
-    const k=key(u.id,t.id,m.id);
-    const published=publishedSet.size?publishedSet.has(k):contentIsPublished('microtopics',k);
+    const k=key(u.id,t.id,m.id),normalizedKey=normalizeMicrotopicId(k);
+    const published=normalizedPublished.has(normalizedKey)||contentIsPublished('microtopics',normalizedKey);
+    if(normalizedPublished.has(normalizedKey))manifestIntersection++;
     if(published)items.push({u,t,m,k});
   }
   const diagnostic={
     syllabusMicrotopics,
-    publishedMicrotopics:publishedSet.size,
+    publishedMicrotopics:normalizedPublished.size,
+    manifestIntersection,
     resolvedMicrotopics:items.length,
     gateReady:!!CONTENT_GATE.ready,
-    manifestBacked:publishedSet.size>0
+    manifestBacked:normalizedPublished.size>0,
+    publicationResolution:'normalized-id'
   };
   window.__NETPSY_RUNTIME=window.__NETPSY_RUNTIME||{};
   window.__NETPSY_RUNTIME.publishedResolver=diagnostic;
