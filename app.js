@@ -768,7 +768,7 @@ function home(){
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) renderHomeLearning();
-  const approach=$('#learningApproach');if(approach)approach.innerHTML=`<div class="learning-path-bar"><div class="learning-path-label"><span class="eyebrow">LEARNING PATH</span><button class="text-button" type="button" data-open-journey>Know Your Learning Journey</button></div><div class="learning-path-sequence" aria-label="Learning sequence"><span class="learning-step active"><b>01</b>Learn</span><i aria-hidden="true">→</i><span class="learning-step"><b>02</b>Recall</span><i aria-hidden="true">→</i><span class="learning-step"><b>03</b>Revise</span><i aria-hidden="true">→</i><span class="learning-step"><b>04</b>Practice</span></div></div>`;
+  // The learning journey is available through the onboarding tour; no duplicate learning-path card is rendered on Home.
 }
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
