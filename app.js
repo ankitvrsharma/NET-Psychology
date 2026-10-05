@@ -412,12 +412,12 @@ function startPage(){
   document.title='Learn — UGC NET Psychology';
   const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
   const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
-  const stats=u=>{const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));const started=items.filter(p=>p.status&&p.status!=='NEW').length;const mastered=items.filter(p=>p.status==='MASTERED').length;const due=items.filter(p=>p.next&&new Date(p.next)<=new Date()).length;return {started,mastered,due,total:items.length,percent:items.length?Math.round(started/items.length*100):0};};
+  const stats=u=>{const available=u.topics.flatMap(t=>(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>getP(key(u.id,t.id,m.id))));const started=available.filter(p=>p.status&&p.status!=='NEW').length;const mastered=available.filter(p=>p.status==='MASTERED').length;const due=available.filter(p=>p.next&&new Date(p.next)<=new Date()).length;return {started,mastered,due,total:available.length,percent:available.length?Math.round(started/available.length*100):0};};
   const draw=q=>{
     q=(q||'').trim().toLowerCase();
     const list=units().filter(u=>!q||JSON.stringify({title:u.title,description:u.description,topics:u.topics.map(t=>({title:t.title,explanation:t.explanation}))}).toLowerCase().includes(q));
     $('#learnUnits').innerHTML=list.map(u=>{
-      const s=stats(u),partCount=(u.parts||[]).length,topicCount=u.topics.length,microCount=u.topics.reduce((n,t)=>n+(t.microtopics||[]).length,0);
+      const s=stats(u),partCount=(u.parts||[]).length,topicCount=u.topics.length,microCount=s.total;
       return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-meta"><span>${partCount} ${partCount===1?'part':'parts'}</span><span>${topicCount} topics</span><span>${microCount} micro-topics</span></div><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
     }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
   };

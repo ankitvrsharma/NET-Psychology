@@ -11778,5 +11778,46 @@
         "answer": "Source-based check: Given a new question about “Parental mediation of digital usage”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
       }
     ]
+  },
+  "2-2-6": {
+    "id": 6,
+    "title": "Types of variables",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is a variable? State its source-based meaning.",
+        "answer": "A property that takes on different values and is measurable."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the independent variable?",
+        "answer": "The variable manipulated by the experimenter."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the dependent variable?",
+        "answer": "The variable observed and recorded as the outcome."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "How does a control variable differ from the dependent variable?",
+        "answer": "A control variable is a potential independent variable held constant; the dependent variable is the measured outcome."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "How do active and attribute variables differ?",
+        "answer": "Active variables can be manipulated or controlled experimentally; attribute variables reflect pre-existing characteristics of the study population."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "How do continuous and discrete variables differ?",
+        "answer": "Continuous variables exist across a range; discrete variables take distinct values."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "A researcher manipulates study duration, measures test performance and keeps testing time constant. Identify IV, DV and control variable.",
+        "answer": "IV = study duration; DV = test performance; control variable = testing time."
+      }
+    ]
   }
 }

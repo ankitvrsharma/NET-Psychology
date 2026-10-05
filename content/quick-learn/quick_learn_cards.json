@@ -30798,5 +30798,75 @@
     "title": "Parental mediation of digital usage",
     "explanation": "parental strategies for guiding children's digital use and meaning-making Restriction alone does not build self-regulation.",
     "quick_card": null
+  },
+  "2-2-6|CORE IDEA": {
+    "id": "2-2-6|CORE IDEA",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "CORE IDEA",
+    "title": "Types of variables",
+    "explanation": "Variables are measurable properties that can take different values.",
+    "quick_card": null
+  },
+  "2-2-6|KEY FEATURES": {
+    "id": "2-2-6|KEY FEATURES",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "KEY FEATURES",
+    "title": "Types of variables",
+    "explanation": "IV is manipulated; DV is observed/measured; control variables are held constant.",
+    "quick_card": null
+  },
+  "2-2-6|PYQ FOCUS": {
+    "id": "2-2-6|PYQ FOCUS",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "PYQ FOCUS",
+    "title": "Types of variables",
+    "explanation": "Compare IV, DV and control/extraneous variables before moving to secondary classifications.",
+    "quick_card": null
+  },
+  "2-2-6|EXAM TRAP": {
+    "id": "2-2-6|EXAM TRAP",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "EXAM TRAP",
+    "title": "Types of variables",
+    "explanation": "Do not confuse a variable's research role (IV/DV) with classifications such as active/attribute or continuous/discrete.",
+    "quick_card": null
+  },
+  "2-2-6|SOURCE DETAIL": {
+    "id": "2-2-6|SOURCE DETAIL",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "SOURCE DETAIL",
+    "title": "Types of variables",
+    "explanation": "PowerWithin distinguishes quantitative/qualitative, active/attribute and continuous/discrete variables.",
+    "quick_card": null
+  },
+  "2-2-6|RECALL CUE": {
+    "id": "2-2-6|RECALL CUE",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "RECALL CUE",
+    "title": "Types of variables",
+    "explanation": "IV = manipulated; DV = measured; Control = held constant.",
+    "quick_card": null
+  },
+  "2-2-6|CONNECTION": {
+    "id": "2-2-6|CONNECTION",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "CONNECTION",
+    "title": "Types of variables",
+    "explanation": "Connect variable type to the research design before interpreting the result.",
+    "quick_card": null
   }
 }
