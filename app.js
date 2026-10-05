@@ -768,6 +768,7 @@ function home(){
   // Quick Learn is injected after Home has rendered, from the compact home-learning payload.
   const quick=quickLearnItem(),quickBox=$('#quickLearn');
   if(quickBox&&quick) renderHomeLearning();
+  document.querySelectorAll('.learning-approach').forEach(el=>el.remove());
   }
 function dailyPracticeReadyFor(items){return Array.isArray(items)&&items.length===3&&items.every(x=>{const p=getP(x.k);return !!p.recallCompletedAt||p.status==='MASTERED'})}
 function daily3(){
