@@ -30,7 +30,7 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
-const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
+const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,revisionGuidance:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
 const CONTENT_REGISTRY={ready:false,failClosed:true,version:null,pools:{}};
 async function loadContentRegistry(){
   if(CONTENT_REGISTRY.ready)return CONTENT_REGISTRY;
@@ -64,7 +64,7 @@ async function loadCanonicalContentLayer(json,mode='all'){
   const qpool=byId.questions;
   CANONICAL_CONTENT.practiceQuestions=Array.isArray(qpool)?qpool:(qpool&&typeof qpool==='object'?[...(Array.isArray(qpool.pyq)?qpool.pyq:[]),...(Array.isArray(qpool.practice)?qpool.practice:[])]:null);
   CANONICAL_CONTENT.microtopics=byId.microtopics||null; CANONICAL_CONTENT.quickLearnCards=byId.quickLearn||null;
-  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
+  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.revisionGuidance=byId.revisionGuidance||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
@@ -1459,7 +1459,7 @@ function practice(){
   const dueRow=x=>{
     const p=getP(x.k),nextAt=Date.parse(p.next||''),late=Number.isFinite(nextAt)?(now-nextAt)/86400000:0;
     const dateText=late>0?'Overdue by '+Math.max(1,Math.floor(late))+' day'+(Math.floor(late)===1?'':'s'):'Due today',last=p.rating?' · Last: '+esc(p.rating):'';
-    return '<article class="revision-item"><div><span class="status due">DUE NOW</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small></div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">REVISE →</a></article>';
+    return '<article class="revision-item"><div><span class="status due">DUE NOW</span><h3>'+esc(x.m.title)+'</h3><p>'+esc(x.t.title)+' · Unit '+esc(x.u.id)+'</p><small>'+dateText+last+'</small>'+((rg.recall_before_review||rg.self_check)?'<div class="revision-guidance"><b>Recall first</b><span>'+esc(rg.recall_before_review||'')+'</span><span>'+esc(rg.self_check||'')+'</span></div>':'')+'</div><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'&from=revision">REVISE →</a></article>';
   };
   const upcomingRow=x=>{
     const p=getP(x.k),nextAt=Date.parse(p.next||''),dateText='Due '+new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(nextAt)),last=p.rating?' · Last: '+esc(p.rating):'';
