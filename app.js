@@ -204,7 +204,7 @@ function aliasedContent(obj,id){
   if(sep>0){const base=String(id).slice(0,sep),suffix=String(id).slice(sep);for(const old of legacyKeysFor(base)){if(obj[old+suffix]!=null)return obj[old+suffix];}}
   return null;
 }
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.0.0';
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.1.0';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
   return new Promise((resolve,reject)=>{
