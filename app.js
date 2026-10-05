@@ -67,9 +67,9 @@ async function loadCanonicalContentLayer(json,mode='all'){
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
-    if(micro[k]&&typeof micro[k]==='object')Object.assign(m,micro[k]);
-    const d=CANONICAL_CONTENT.deepDive?.[k]; if(d&&typeof d==='object')Object.assign(m,d);
-    const a=CANONICAL_CONTENT.activeRecall?.[k]; if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
+    const md=aliasedContent(micro,k); if(md&&typeof md==='object')Object.assign(m,md);
+    const d=aliasedContent(CANONICAL_CONTENT.deepDive,k); if(d&&typeof d==='object')Object.assign(m,d);
+    const a=aliasedContent(CANONICAL_CONTENT.activeRecall,k); if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
   }
   return CANONICAL_CONTENT;
 }
@@ -173,7 +173,21 @@ function structuralQuestionAudit(q){
 function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');const structural=structuralQuestionAudit(q);issues.push(...structural.issues);let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const structuralFailure=structural.issues.length>0;const status=structuralFailure||issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer','answerability_failed'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues:[...new Set(issues)],signals:sig,structural};}
 function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
 function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
-function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type);if(rejected.has(String(id)))return false;if(approved.has(String(id)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id));}
+function contentIsPublished(type,id){if(!CONTENT_GATE.ready)return false;const approved=gateSet(CONTENT_GATE.owner.approved,type),rejected=gateSet(CONTENT_GATE.owner.rejected,type),legacy=legacyKeysFor(String(id));if(rejected.has(String(id)))return false;if(approved.has(String(id))||legacy.some(k=>approved.has(k)))return true;if(CONTENT_GATE.mode==='owner_only')return false;if(CONTENT_GATE.mode==='expert_or_owner')return expertAudit(type,id).status==='PASS';return gateSet(CONTENT_GATE.ai,type).has(String(id))||legacy.some(k=>gateSet(CONTENT_GATE.ai,type).has(k));}
+const KEY_MIGRATIONS=Object.freeze({
+  "2-15-1":"2-16-1","2-15-2":"2-16-2","2-15-3":"2-16-3",
+  "3-7-1":"3-6-7","4-5-1":"4-4-7","4-7-3":"4-10-1","4-7-4":"4-10-2","4-7-5":"4-10-3","4-7-6":"4-10-4",
+  "6-4-4":"6-9-1","6-4-5":"6-9-2","7-3-2":"7-18-1","7-3-3":"7-19-1"
+});
+const legacyKeysFor=(current)=>Object.keys(KEY_MIGRATIONS).filter(old=>KEY_MIGRATIONS[old]===current);
+function aliasedContent(obj,id){
+  if(!obj||typeof obj!=='object')return null;
+  if(obj[id]!=null)return obj[id];
+  for(const old of legacyKeysFor(id)){if(obj[old]!=null)return obj[old];}
+  const sep=String(id).indexOf('|');
+  if(sep>0){const base=String(id).slice(0,sep),suffix=String(id).slice(sep);for(const old of legacyKeysFor(base)){if(obj[old+suffix]!=null)return obj[old+suffix];}}
+  return null;
+}
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.0.0';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 function loadScript(src){
@@ -281,7 +295,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
 const key=(u,t,m)=>`${u}-${t}-${m}`;
-const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
+const getP=k=>{const s=state();if(s[k])return s[k];for(const old of legacyKeysFor(k)){if(s[old]){s[k]=s[old];delete s[old];save(s);return s[k];}}return {status:'NEW',stage:0,lastCompletedStage:-1};};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
 const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
