@@ -16,16 +16,12 @@ Learner progress belongs on the learner's device and must not be committed to Gi
 
 - `app.js` — application behaviour, learning flow and progress logic.
 - `style.css` — responsive presentation.
-- `data/syllabus-index.json` — canonical syllabus structure.
-- `content-pools/registry.json` — stable registry of learner-facing content pools.
-- `content/questions/questions.json` — canonical practice/PYQ question pool.
+- `data.json` — canonical syllabus/content data.
+- `data.js` — generated browser bundle.
+- `practice_questions.json` / `practice_explanations.json` — generated practice data.
 - `scripts/build_practice.py` — practice-bank build and validation.
 - `sw.js` — PWA caching.
 - `manifest.webmanifest` — install metadata.
-
-## Stable file naming
-
-Production content paths are canonical contracts. Do not rename a content file when its contents change. Use these permanent names: `content/microtopics/micro_topics.json`, `content/quick-learn/quick_cards.json`, and `content/deep-dive/deep_dive.json`. Update the existing file in place when content changes.
 
 ## Publishing content
 
@@ -44,17 +40,3 @@ Before publishing:
 ## Learner data
 
 Progress, revision history and imported backups stay local to the learner. Do not place personal progress data in repository files.
-
-## Repository organization
-
-- `content/` contains canonical learner-facing Psychology content.
-- `content/source-synthesis/` contains the active source synthesis layer and its provenance/supporting source notes.
-- `data/` contains canonical syllabus, question mapping, exam schedule and NTA/PYQ reference data.
-- `config/` contains publication-gate configuration and generated publication state.
-- `reports/` contains generated audit/build reports.
-- `operations/` contains rewrite queues and re-audit workflow state.
-- `archive/legacy/` contains retired duplicates kept only for rollback/reference; it is not loaded by the website.
-
-The canonical registry is `content-pools/registry.json`. Add new learner-facing content there rather than creating parallel root-level JSON files.
-
-`daily-learn.html` is the canonical daily learning page. `daily3.html` is retained only as a compatibility redirect for older links.

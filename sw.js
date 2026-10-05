@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v2.3.0';
+const CACHE='netpsych-shell-v46-expert-audit';
 const SHELL=[
   './',
   './index.html',
@@ -12,35 +12,21 @@ const SHELL=[
   './start.html',
   './progress.html',
   './revision.html',
-  './daily-learn.html',
+  './daily3.html',
   './daily-practice.html',
-  './learner.html',
-  './deep-dive.html',
   './style.css',
   './app.js',
-  './data/syllabus-index.json',
+  './data.json',
   './content-version.js',
-  './manifest.webmanifest',
-  './content-pools/registry.json',
-  './question-renderer.js'
+  './manifest.webmanifest'
 ];
 const RUNTIME_DATA=new Set([
   'kaplan_enrichment.json',
   'study_sources.json',
   'simply_psychology_enrichment.json',
   'mcq_mapping.json',
-  'questions.json',
-  'home-learning.json',
-  'micro_topics.json',
-  'quick_cards.json',
-  'deep_dive.json',
-  'deep_dive_enrichment.json',
-  'active_recall.json',
-  'source_synthesis.json',
-  'content-publish-config.json',
-  'content-publish-manifest.json',
-  'content-owner-overrides.json',
-  'revision_guidance.json'
+  'practice_questions.json',
+  'practice_explanations.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
