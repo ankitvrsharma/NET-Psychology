@@ -17,7 +17,7 @@ assert set(micro)-legacy_micro_ids <= micro_ids, "Microtopic content contains un
 assert set(deep)-legacy_micro_ids <= micro_ids, "Deep-dive content contains unknown taxonomy keys"
 assert set(recall)-legacy_micro_ids <= micro_ids, "Active-recall content contains unknown taxonomy keys"
 assert all(k.rsplit("|",1)[0] in micro_ids|legacy_micro_ids for k in quick), "Quick-learn content contains unknown taxonomy keys"
-assert set(micro)|set(deep)|set(recall) <= micro_ids
+assert (set(micro)|set(deep)|set(recall))-legacy_micro_ids <= micro_ids
 assert isinstance(questions,dict) and isinstance(questions.get("pyq"),list) and isinstance(questions.get("practice"),list)
 pyq=questions["pyq"]; practice=questions["practice"]; allq=pyq+practice
 assert all(str(q.get("type"))=="PYQ" for q in pyq)
