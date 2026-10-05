@@ -1021,7 +1021,7 @@ function unitPage(){
   document.title=`${u.title} — UGC NET Psychology`;
   const pos=units().findIndex(x=>String(x.id)===String(u.id)),prev=units()[pos-1],next=units()[pos+1];
   const publishedMicrotopics=u.topics.flatMap(t=>(t.microtopics||[]).filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))));
-  const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))&&(()=>{const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt})()).length,0);
+  const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{if(!contentIsPublished('microtopics',key(u.id,t.id,m.id)))return false;const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
   const topicCard=t=>{
     const published=t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))),total=published.length,done=published.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length,pyq=topicPyqFrequency(u,t);
     return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id} · ${pyq} PYQs</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
