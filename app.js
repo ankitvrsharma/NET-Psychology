@@ -30,7 +30,7 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
-const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,revisionGuidance:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
+const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,deepDiveEnrichment:null,activeRecall:null,revisionGuidance:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
 const CONTENT_REGISTRY={ready:false,failClosed:true,version:null,pools:{}};
 async function loadContentRegistry(){
   if(CONTENT_REGISTRY.ready)return CONTENT_REGISTRY;
@@ -64,12 +64,12 @@ async function loadCanonicalContentLayer(json,mode='all'){
   const qpool=byId.questions;
   CANONICAL_CONTENT.practiceQuestions=Array.isArray(qpool)?qpool:(qpool&&typeof qpool==='object'?[...(Array.isArray(qpool.pyq)?qpool.pyq:[]),...(Array.isArray(qpool.practice)?qpool.practice:[])]:null);
   CANONICAL_CONTENT.microtopics=byId.microtopics||null; CANONICAL_CONTENT.quickLearnCards=byId.quickLearn||null;
-  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.revisionGuidance=byId.revisionGuidance||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
+  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.deepDiveEnrichment=byId.deepDiveEnrichment||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.revisionGuidance=byId.revisionGuidance||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
     const md=aliasedContent(micro,k); if(md&&typeof md==='object')Object.assign(m,md);
-    const d=aliasedContent(CANONICAL_CONTENT.deepDive,k); if(d&&typeof d==='object')Object.assign(m,d);
+    const d=aliasedContent(CANONICAL_CONTENT.deepDive,k); if(d&&typeof d==='object')Object.assign(m,d); const de=aliasedContent(CANONICAL_CONTENT.deepDiveEnrichment,k); if(de&&typeof de==='object')Object.assign(m,de);
     const a=aliasedContent(CANONICAL_CONTENT.activeRecall,k); if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
     const ss=aliasedContent(CANONICAL_CONTENT.sourceSynthesis,k);
     if(ss&&typeof ss==='object'){
