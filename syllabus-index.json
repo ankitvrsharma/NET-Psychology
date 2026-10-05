@@ -6,7 +6,36 @@
       "id": 1,
       "title": "Emergence of Psychology",
       "description": "Build the story of psychology as a discipline: where its questions came from, how Indian and Western intellectual traditions shaped them, and how major schools and paradigms changed the subject. Move from philosophical roots to the emergence of scientific psychology, then compare the assumptions, methods, and objects of study that distinguish major traditions. By the end of the unit, you should be able to place major thinkers and schools in context and explain why psychology developed in different directions.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "1A",
+          "title": "Historical Emergence and Traditions",
+          "description": "Trace psychology from Eastern and Western intellectual traditions through the emergence of academic psychology and its major schools.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "1B",
+          "title": "Knowledge Paradigms and Indian Psychology",
+          "description": "Move from foundations of knowledge and paradigms to Indian approaches, paradigmatic controversies, science, spirituality and self-knowledge.",
+          "topic_ids": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
       "pyq_count": 172,
       "pyq_frequency_band": "A",
       "topics": [
@@ -361,7 +390,7 @@
         {
           "id": "2B",
           "title": "Statistics",
-          "description": "Statistical foundations, probability, tests, power, effect size, correlation, regression and factor analysis.",
+          "description": "Statistical foundations, probability, tests, power, effect size, ANOVA, correlation, regression and factor analysis.",
           "topic_ids": [
             6,
             7,
@@ -384,7 +413,6 @@
           "title": "Research: Meaning, Purpose and Dimensions",
           "explanation": "Define research as systematic inquiry and organize its purposes and dimensions before studying specific designs and methods.",
           "notes": "ACADEMIC CORE\nDefine research as systematic inquiry and organize its purposes and dimensions before studying specific designs and methods.\n\nMICRO-TOPIC MAP\nMeaning of research • Purpose of research • Dimensions of research\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 1,
@@ -405,7 +433,6 @@
           "title": "Research Problems, Variables, Hypotheses and Sampling",
           "explanation": "Build the research sequence: problem → variables → operational definitions → hypothesis → sampling. Be able to distinguish conceptual variables from their operational definitions.",
           "notes": "ACADEMIC CORE\nBuild the research sequence: problem → variables → operational definitions → hypothesis → sampling. Be able to distinguish conceptual variables from their operational definitions.\n\nMICRO-TOPIC MAP\nResearch problems • Variables • Operational definitions • Hypothesis • Sampling\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 1,
@@ -454,7 +481,6 @@
           "title": "Research Ethics",
           "explanation": "Study ethical conduct during participation, data collection, analysis, authorship and reporting. Focus on integrity, participant protection and responsible reporting.",
           "notes": "ACADEMIC CORE\nStudy ethical conduct during participation, data collection, analysis, authorship and reporting. Focus on integrity, participant protection and responsible reporting.\n\nMICRO-TOPIC MAP\nEthics in conducting research • Ethics in reporting research\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 1,
@@ -471,7 +497,6 @@
           "title": "Research Paradigms",
           "explanation": "Compare quantitative, qualitative and mixed-methods approaches by their aims, kinds of data, logic of inquiry and integration of evidence.",
           "notes": "ACADEMIC CORE\nCompare quantitative, qualitative and mixed-methods approaches by their aims, kinds of data, logic of inquiry and integration of evidence.\n\nMICRO-TOPIC MAP\nQuantitative research • Qualitative research • Mixed methods approach\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 1,
@@ -492,7 +517,6 @@
           "title": "Methods of Research",
           "explanation": "Create a method matrix. For every named method, learn purpose, data source, typical procedure, strengths and limitations.",
           "notes": "ACADEMIC CORE\nCreate a method matrix. For every named method, learn purpose, data source, typical procedure, strengths and limitations.\n\nMICRO-TOPIC MAP\nObservation • Survey • Interview • Questionnaires • Experimental method • Quasi-experimental method • Field studies • Cross-cultural studies • Phenomenology • Grounded theory • Focus groups • Narratives • Case studies • Ethnography\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 1,
@@ -557,7 +581,6 @@
           "title": "Statistics in Psychology",
           "explanation": "Central tendency summarizes the typical location of scores; dispersion describes spread. Master mean, median, mode, range, variance and standard deviation.",
           "notes": "ACADEMIC CORE\nCentral tendency summarizes the typical location of scores; dispersion describes spread. Master mean, median, mode, range, variance and standard deviation.\n\nMICRO-TOPIC MAP\nMeasures of central tendency • Measures of dispersion\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -586,7 +609,6 @@
           "title": "Normal Probability Curve",
           "explanation": "Study the shape and properties of the normal distribution and its relationship with standard deviation and standardized scores.",
           "notes": "ACADEMIC CORE\nStudy the shape and properties of the normal distribution and its relationship with standard deviation and standardized scores.\n\nMICRO-TOPIC MAP\nNormal probability curve\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -599,7 +621,6 @@
           "title": "Parametric and Non-Parametric Tests",
           "explanation": "Make a decision table for the listed tests: independent/dependent structure, number of groups, measurement assumptions and whether the test is parametric or non-parametric.",
           "notes": "ACADEMIC CORE\nMake a decision table for the listed tests: independent/dependent structure, number of groups, measurement assumptions and whether the test is parametric or non-parametric.\n\nMICRO-TOPIC MAP\nParametric tests • t-test • Non-parametric tests • Sign test • Wilcoxon Signed rank test • Mann-Whitney test • Kruskal-Wallis test • Friedman test\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -644,7 +665,6 @@
           "title": "Power Analysis",
           "explanation": "Study statistical power as the probability of detecting an effect when an effect of the specified kind exists. Connect power with sample size, effect size and significance criteria.",
           "notes": "ACADEMIC CORE\nStudy statistical power as the probability of detecting an effect when an effect of the specified kind exists. Connect power with sample size, effect size and significance criteria.\n\nMICRO-TOPIC MAP\nPower analysis\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -657,7 +677,6 @@
           "title": "Effect Size",
           "explanation": "Study effect size as an index of the magnitude of an effect, complementing significance testing.",
           "notes": "ACADEMIC CORE\nStudy effect size as an index of the magnitude of an effect, complementing significance testing.\n\nMICRO-TOPIC MAP\nEffect size\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -670,7 +689,6 @@
           "title": "Correlational Analysis",
           "explanation": "Distinguish Pearson/Product Moment and Rank Order approaches, then learn how partial and multiple correlation extend correlation analysis.",
           "notes": "ACADEMIC CORE\nDistinguish Pearson/Product Moment and Rank Order approaches, then learn how partial and multiple correlation extend correlation analysis.\n\nMICRO-TOPIC MAP\nCorrelation • Product Moment correlation • Rank Order correlation • Partial correlation • Multiple correlation\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -699,7 +717,6 @@
           "title": "Special Correlation Methods",
           "explanation": "Learn which variable formats each special coefficient is designed for. Make a variable-type → coefficient table.",
           "notes": "ACADEMIC CORE\nLearn which variable formats each special coefficient is designed for. Make a variable-type → coefficient table.\n\nMICRO-TOPIC MAP\nBiserial correlation • Point biserial correlation • Tetrachoric correlation • Phi coefficient\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -724,7 +741,6 @@
           "title": "Regression",
           "explanation": "Study prediction using one predictor versus multiple predictors, including the meaning of regression coefficients and prediction.",
           "notes": "ACADEMIC CORE\nStudy prediction using one predictor versus multiple predictors, including the meaning of regression coefficients and prediction.\n\nMICRO-TOPIC MAP\nSimple linear regression • Multiple regression\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -741,7 +757,6 @@
           "title": "Factor Analysis",
           "explanation": "Organize factor analysis into assumptions → extraction/method → rotation → interpretation. Learn how observed variables are represented through underlying factors.",
           "notes": "ACADEMIC CORE\nOrganize factor analysis into assumptions → extraction/method → rotation → interpretation. Learn how observed variables are represented through underlying factors.\n\nMICRO-TOPIC MAP\nAssumptions of factor analysis • Methods of factor analysis • Rotation • Interpretation\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2B",
           "microtopics": [
             {
               "id": 1,
@@ -778,7 +793,6 @@
           "title": "Experimental Designs",
           "explanation": "Create a design-selection map. Match each design with number/type of variables, groups, repeated observations, control structure and purpose.",
           "notes": "ACADEMIC CORE\nCreate a design-selection map. Match each design with number/type of variables, groups, repeated observations, control structure and purpose.\n\nMICRO-TOPIC MAP\nANOVA • One-way ANOVA • Factorial ANOVA • Randomized Block Designs • Repeated Measures Design • Latin Square • Cohort studies • Time series • MANOVA • ANCOVA • Single-subject designs\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "2A",
           "microtopics": [
             {
               "id": 4,
@@ -848,7 +862,28 @@
       "id": 3,
       "title": "Psychological Testing",
       "description": "Understand psychological testing as a systematic process rather than a collection of test names. Follow the path from test construction and standardisation through reliability, validity, norms, administration, scoring, and interpretation. Then connect these foundations with major types and applications of psychological assessment so you can distinguish what a test measures, how confidently it measures it, and how its results should be interpreted.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "3A",
+          "title": "Foundations of Psychological Testing",
+          "description": "Build the measurement foundation: test types, construction, standardisation, psychometric properties, and major areas of testing.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "3B",
+          "title": "Applications of Psychological Testing",
+          "description": "Apply psychological testing across clinical, organizational, educational, counselling, military and career-guidance settings.",
+          "topic_ids": [
+            6
+          ]
+        }
+      ],
       "pyq_count": 110,
       "pyq_frequency_band": "B",
       "topics": [
@@ -1031,13 +1066,6 @@
               "title": "Career guidance"
             }
           ]
-        },
-        {
-          "id": 7,
-          "title": "Career Guidance",
-          "explanation": "Connect psychological assessment with career guidance, particularly the use of aptitude, interest and related assessment information.",
-          "notes": "ACADEMIC CORE\nConnect psychological assessment with career guidance, particularly the use of aptitude, interest and related assessment information.\n\nMICRO-TOPIC MAP\nCareer guidance\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "microtopics": []
         }
       ]
     },
@@ -1045,7 +1073,32 @@
       "id": 4,
       "title": "Biological Basis of Behavior",
       "description": "Connect behaviour with the biological systems that make it possible. Study the organisation and functioning of the nervous system, brain structures and processes, sensory systems, endocrine influences, and genetic contributions, then use these foundations to explain links with cognition, emotion, motivation, and behaviour. The unit is designed to help you move between biological mechanisms and psychological outcomes rather than memorising structures in isolation.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "4A",
+          "title": "Neural and Physiological Foundations",
+          "description": "Build the biological foundation from sensory systems and neural transmission to the nervous system, neurotransmitters and physiological methods.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9
+          ]
+        },
+        {
+          "id": "4B",
+          "title": "Biological Bases of Emotion and Motivation",
+          "description": "Connect biological systems with emotion, motivation, and the muscular and glandular systems.",
+          "topic_ids": [
+            7,
+            8,
+            10
+          ]
+        }
+      ],
       "pyq_count": 137,
       "pyq_frequency_band": "B",
       "topics": [
@@ -1324,7 +1377,6 @@
           "title": "Attention",
           "explanation": "Distinguish forms of attention and compare models according to how they explain selection and processing of information.",
           "notes": "ACADEMIC CORE\nDistinguish forms of attention and compare models according to how they explain selection and processing of information.\n\nMICRO-TOPIC MAP\nForms of attention • Models of attention\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1341,7 +1393,6 @@
           "title": "Perception",
           "explanation": "Use this as the umbrella topic for the perception subtopics that follow: organization, constancy, depth, movement and contextual influences.",
           "notes": "ACADEMIC CORE\nUse this as the umbrella topic for the perception subtopics that follow: organization, constancy, depth, movement and contextual influences.\n\nMICRO-TOPIC MAP\nPerception\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1354,7 +1405,6 @@
           "title": "Approaches to Perception",
           "explanation": "Compare Gestalt explanations with physiological approaches to perception.",
           "notes": "ACADEMIC CORE\nCompare Gestalt explanations with physiological approaches to perception.\n\nMICRO-TOPIC MAP\nGestalt approach • Physiological approach\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1371,7 +1421,6 @@
           "title": "Perceptual Organisation",
           "explanation": "Study how perceptual systems organize input, including figure-ground separation and Gestalt laws of organization.",
           "notes": "ACADEMIC CORE\nStudy how perceptual systems organize input, including figure-ground separation and Gestalt laws of organization.\n\nMICRO-TOPIC MAP\nGestalt organization • Figure and ground • Laws of organization\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1392,7 +1441,6 @@
           "title": "Perceptual Constancy and Illusions",
           "explanation": "Study constancies, illusions and the perception of form, depth and movement as distinct but related perceptual problems.",
           "notes": "ACADEMIC CORE\nStudy constancies, illusions and the perception of form, depth and movement as distinct but related perceptual problems.\n\nMICRO-TOPIC MAP\nSize constancy • Shape constancy • Color constancy • Illusions • Perception of form • Perception of depth • Perception of movement\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1429,7 +1477,6 @@
           "title": "Motivation and Learning in Perception",
           "explanation": "Study how prior learning and motivational factors can influence perceptual interpretation.",
           "notes": "ACADEMIC CORE\nStudy how prior learning and motivational factors can influence perceptual interpretation.\n\nMICRO-TOPIC MAP\nMotivation in perception • Learning in perception\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1446,7 +1493,6 @@
           "title": "Signal Detection Theory",
           "explanation": "Study detection as a decision process influenced by signal strength, noise and response criteria, and learn its applications.",
           "notes": "ACADEMIC CORE\nStudy detection as a decision process influenced by signal strength, noise and response criteria, and learn its applications.\n\nMICRO-TOPIC MAP\nAssumptions of signal detection theory • Applications of signal detection theory\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1463,7 +1509,6 @@
           "title": "Advanced Topics in Perception",
           "explanation": "Make a multi-part revision map covering subliminal perception, information processing, cultural influences, perceptual styles, pattern recognition and ecological approaches.",
           "notes": "ACADEMIC CORE\nMake a multi-part revision map covering subliminal perception, information processing, cultural influences, perceptual styles, pattern recognition and ecological approaches.\n\nMICRO-TOPIC MAP\nSubliminal perception • Factors related to subliminal perception • Information processing approach to perception • Culture and perception • Perceptual styles • Pattern recognition • Ecological perspective on perception\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5A",
           "microtopics": [
             {
               "id": 1,
@@ -1500,7 +1545,6 @@
           "title": "Learning Process",
           "explanation": "Build a clear understanding of Learning Process, then connect its key ideas, distinctions, and applications.",
           "notes": "ACADEMIC CORE\nBuild a clear understanding of Learning Process, then connect its key ideas, distinctions, and applications.\n\nMICRO-TOPIC MAP\nLearning process\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1525,7 +1569,6 @@
           "title": "Classical Conditioning",
           "explanation": "Study the conditioning procedure, terminology, major phenomena and theoretical issues associated with classical conditioning.",
           "notes": "ACADEMIC CORE\nStudy the conditioning procedure, terminology, major phenomena and theoretical issues associated with classical conditioning.\n\nMICRO-TOPIC MAP\nClassical conditioning procedure • Classical conditioning phenomena • Related issues in classical conditioning\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1566,7 +1609,6 @@
           "title": "Instrumental Learning",
           "explanation": "Study learning through consequences and compare major instrumental-learning paradigms and phenomena.",
           "notes": "ACADEMIC CORE\nStudy learning through consequences and compare major instrumental-learning paradigms and phenomena.\n\nMICRO-TOPIC MAP\nInstrumental learning phenomena • Instrumental learning paradigms • Theoretical issues in instrumental learning\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1595,7 +1637,6 @@
           "title": "Reinforcement",
           "explanation": "Study reinforcement variables and schedules and learn how schedule differences affect responding.",
           "notes": "ACADEMIC CORE\nStudy reinforcement variables and schedules and learn how schedule differences affect responding.\n\nMICRO-TOPIC MAP\nBasic reinforcement variables • Reinforcement schedules\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1612,7 +1653,6 @@
           "title": "Behaviour Modification",
           "explanation": "Connect learning principles with systematic behaviour modification and its applications.",
           "notes": "ACADEMIC CORE\nConnect learning principles with systematic behaviour modification and its applications.\n\nMICRO-TOPIC MAP\nBehavior modification • Applications of behavior modification\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1629,7 +1669,6 @@
           "title": "Cognitive Approaches to Learning",
           "explanation": "Study learning that involves cognitive representations and observational processes, including latent and observational learning.",
           "notes": "ACADEMIC CORE\nStudy learning that involves cognitive representations and observational processes, including latent and observational learning.\n\nMICRO-TOPIC MAP\nLatent learning • Observational learning\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1650,7 +1689,6 @@
           "title": "Verbal and Discrimination Learning",
           "explanation": "Study learning involving verbal material and the acquisition of discriminations between stimuli or response categories.",
           "notes": "ACADEMIC CORE\nStudy learning involving verbal material and the acquisition of discriminations between stimuli or response categories.\n\nMICRO-TOPIC MAP\nVerbal learning • Discrimination learning\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1667,7 +1705,6 @@
           "title": "Recent Trends in Learning",
           "explanation": "Connect learning with neurophysiological mechanisms and contemporary biological approaches to learning.",
           "notes": "ACADEMIC CORE\nConnect learning with neurophysiological mechanisms and contemporary biological approaches to learning.\n\nMICRO-TOPIC MAP\nNeurophysiology of learning\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1680,7 +1717,6 @@
           "title": "Memory Processes",
           "explanation": "Organize memory around encoding, storage and retrieval and understand their distinct roles.",
           "notes": "ACADEMIC CORE\nOrganize memory around encoding, storage and retrieval and understand their distinct roles.\n\nMICRO-TOPIC MAP\nEncoding • Storage • Retrieval\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1701,7 +1737,6 @@
           "title": "Stages of Memory",
           "explanation": "Compare the major memory stages/systems and distinguish episodic, semantic and procedural memory.",
           "notes": "ACADEMIC CORE\nCompare the major memory stages/systems and distinguish episodic, semantic and procedural memory.\n\nMICRO-TOPIC MAP\nSensory memory • Short-term memory • Working memory • Long-term memory • Declarative memory • Episodic memory • Semantic memory • Procedural memory\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1750,7 +1785,6 @@
           "title": "Theories of Forgetting",
           "explanation": "Compare the four named explanations for forgetting and identify the mechanism emphasized by each.",
           "notes": "ACADEMIC CORE\nCompare the four named explanations for forgetting and identify the mechanism emphasized by each.\n\nMICRO-TOPIC MAP\nInterference theory • Retrieval failure • Decay • Motivated forgetting\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "5B",
           "microtopics": [
             {
               "id": 1,
@@ -1776,7 +1810,31 @@
       "id": 6,
       "title": "Thinking, Intelligence and Creativity",
       "description": "Understand thinking as a set of related processes involved in representing information, using concepts and language, solving problems, and making decisions. Then connect these processes with major approaches to intelligence and the study of creativity. The unit emphasises distinctions among theories while also showing how thinking, intelligence, and creativity can be applied to everyday situations and exam-style problems.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "6A",
+          "title": "Thinking, Reasoning and Problem Solving",
+          "description": "Build the cognitive foundations of thought, concepts, reasoning, language, problem solving and metacognition before moving to decision making.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9
+          ]
+        },
+        {
+          "id": "6B",
+          "title": "Intelligence and Creativity",
+          "description": "Compare major theories of intelligence and creativity and understand their relationship.",
+          "topic_ids": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
       "pyq_count": 116,
       "pyq_frequency_band": "B",
       "topics": [
@@ -2057,7 +2115,6 @@
           "title": "Determinants of Personality",
           "explanation": "Compare biological and sociocultural influences on personality and consider their interaction.",
           "notes": "ACADEMIC CORE\nCompare biological and sociocultural influences on personality and consider their interaction.\n\nMICRO-TOPIC MAP\nBiological determinants • Socio-cultural determinants\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7A",
           "microtopics": [
             {
               "id": 1,
@@ -2074,7 +2131,6 @@
           "title": "Approaches to Personality",
           "explanation": "Build a master comparison of the eight named approaches using assumptions, core concepts and view of personality.",
           "notes": "ACADEMIC CORE\nBuild a master comparison of the eight named approaches using assumptions, core concepts and view of personality.\n\nMICRO-TOPIC MAP\nPsychoanalytical approach • Neo-Freudian approach • Social learning approach • Trait and Type approach • Cognitive approach • Humanistic approach • Existential approach • Transpersonal psychology\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7A",
           "microtopics": [
             {
               "id": 1,
@@ -2131,7 +2187,6 @@
           "title": "Rotter's Locus of Control",
           "explanation": "Study these as three distinct frameworks: locus of control, explanatory style and moral development.",
           "notes": "ACADEMIC CORE\nStudy these as three distinct frameworks: locus of control, explanatory style and moral development.\n\nMICRO-TOPIC MAP\nRotter's Locus of Control • Seligman's Explanatory styles • Kohlberg’s theory of Moral development\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7A",
           "microtopics": [
             {
               "id": 1,
@@ -2144,7 +2199,6 @@
           "title": "Basic Motivational Concepts",
           "explanation": "Create a concept chain and distinguish the six motivational terms.",
           "notes": "ACADEMIC CORE\nCreate a concept chain and distinguish the six motivational terms.\n\nMICRO-TOPIC MAP\nInstincts • Needs • Drives • Arousal • Incentives • Motivational cycle\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2185,7 +2239,6 @@
           "title": "Approaches to Motivation",
           "explanation": "Compare the four named approaches by their proposed sources and mechanisms of motivation.",
           "notes": "ACADEMIC CORE\nCompare the four named approaches by their proposed sources and mechanisms of motivation.\n\nMICRO-TOPIC MAP\nPsychoanalytical approach • Ethological approach • S-R Cognitive approach • Humanistic approach\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2210,7 +2263,6 @@
           "title": "Exploratory Behaviour and Curiosity",
           "explanation": "Study exploration and curiosity as motivational processes associated with seeking information or stimulation.",
           "notes": "ACADEMIC CORE\nStudy exploration and curiosity as motivational processes associated with seeking information or stimulation.\n\nMICRO-TOPIC MAP\nExploratory behavior • Curiosity\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2227,7 +2279,6 @@
           "title": "Sensation Seeking",
           "explanation": "Learn sensation seeking as a personality-motivation construct and associate it specifically with Zuckerman.",
           "notes": "ACADEMIC CORE\nLearn sensation seeking as a personality-motivation construct and associate it specifically with Zuckerman.\n\nMICRO-TOPIC MAP\nZuckerman’s Sensation seeking\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2240,7 +2291,6 @@
           "title": "McClelland's Needs: Achievement, Affiliation and Power",
           "explanation": "Compare the three social motives by the goals they orient behaviour toward.",
           "notes": "ACADEMIC CORE\nCompare the three social motives by the goals they orient behaviour toward.\n\nMICRO-TOPIC MAP\nAchievement • Affiliation • Power\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2261,7 +2311,6 @@
           "title": "Motivational Competence",
           "explanation": "Study this as the ability to mobilize and regulate motivation in relation to goals and behaviour, keeping the term within the syllabus context.",
           "notes": "ACADEMIC CORE\nStudy this as the ability to mobilize and regulate motivation in relation to goals and behaviour, keeping the term within the syllabus context.\n\nMICRO-TOPIC MAP\nMotivational competence\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2274,7 +2323,6 @@
           "title": "Self-Regulation",
           "explanation": "Study goal-directed monitoring and regulation of one's behaviour, cognition and motivation.",
           "notes": "ACADEMIC CORE\nStudy goal-directed monitoring and regulation of one's behaviour, cognition and motivation.\n\nMICRO-TOPIC MAP\nSelf-regulation\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2287,7 +2335,6 @@
           "title": "Flow",
           "explanation": "Study flow as a distinctive state of deep involvement/optimal experience associated with activity engagement.",
           "notes": "ACADEMIC CORE\nStudy flow as a distinctive state of deep involvement/optimal experience associated with activity engagement.\n\nMICRO-TOPIC MAP\nFlow\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2300,7 +2347,6 @@
           "title": "Physiological Correlates of Emotion",
           "explanation": "Study bodily and physiological changes associated with emotional states.",
           "notes": "ACADEMIC CORE\nStudy bodily and physiological changes associated with emotional states.\n\nMICRO-TOPIC MAP\nPhysiological correlates of emotion\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2313,7 +2359,6 @@
           "title": "Theories of Emotion",
           "explanation": "Make a comparison table of the five named theories, especially the role of physiological arousal and cognition.",
           "notes": "ACADEMIC CORE\nMake a comparison table of the five named theories, especially the role of physiological arousal and cognition.\n\nMICRO-TOPIC MAP\nJames-Lange theory • Canon-Bard theory • Schachter and Singer theory • Lazarus theory • Lindsley theory\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2346,7 +2391,6 @@
           "title": "Emotion Regulation",
           "explanation": "Study processes used to monitor, modify or manage emotional responses.",
           "notes": "ACADEMIC CORE\nStudy processes used to monitor, modify or manage emotional responses.\n\nMICRO-TOPIC MAP\nEmotion regulation\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2359,7 +2403,6 @@
           "title": "Conflicts",
           "explanation": "Study psychological conflict, its sources and major types as specified in the syllabus.",
           "notes": "ACADEMIC CORE\nStudy psychological conflict, its sources and major types as specified in the syllabus.\n\nMICRO-TOPIC MAP\nSources of conflict • Types of conflict\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2376,7 +2419,6 @@
           "title": "Stress and Coping",
           "explanation": "Build a clear understanding of Stress and Coping, then connect its key ideas, distinctions, and applications.",
           "notes": "ACADEMIC CORE\nBuild a clear understanding of Stress and Coping, then connect its key ideas, distinctions, and applications.\n\nMICRO-TOPIC MAP\nConcept of stress and coping • Models of stress and coping • Type A behavior • Type B behavior • Type C behavior • Type D behavior\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2425,7 +2467,6 @@
           "title": "Stress Management Strategies",
           "explanation": "Build a clear understanding of Stress Management Strategies, then connect its key ideas, distinctions, and applications.",
           "notes": "ACADEMIC CORE\nBuild a clear understanding of Stress Management Strategies, then connect its key ideas, distinctions, and applications.\n\nMICRO-TOPIC MAP\nBiofeedback • Music therapy • Breathing exercises • Progressive Muscular Relaxation • Guided Imagery • Mindfulness • Meditation • Yogasana • Stress Inoculation Training\n\nSOURCE BASIS\nThe topic is retained within the uploaded NET syllabus/material framework. Use the listed source books/notes below for the detailed treatment; the website should not substitute generic explanations where the source is silent.\n\nEXAM USE\nLearn the definitions, named theorists/models, classifications, mechanisms, distinctions and source-specific examples actually present in the material.",
-          "part_id": "7B",
           "microtopics": [
             {
               "id": 1,
@@ -2491,7 +2532,37 @@
       "id": 8,
       "title": "Social Psychology",
       "description": "Understand social behaviour by examining how people perceive others, form and change attitudes, influence one another, function in groups, and relate across social and intergroup boundaries. Connect individual-level processes such as social cognition and attitude formation with influence, group processes, interpersonal relationships, and intergroup relations. The goal is to build a coherent explanation of how social context shapes thought, feeling, and behaviour.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "8A",
+          "title": "Foundations and Social Cognition",
+          "description": "Build the foundations of social psychology and understand social perception, attitudes and prosocial behaviour.",
+          "topic_ids": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "8B",
+          "title": "Social Influence, Groups and Leadership",
+          "description": "Study conformity, compliance, obedience, group processes, dynamics and leadership.",
+          "topic_ids": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "8C",
+          "title": "Intergroup Relations and Applications",
+          "description": "Move from intergroup theories to applied social psychology.",
+          "topic_ids": [
+            7,
+            8
+          ]
+        }
+      ],
       "pyq_count": 61,
       "pyq_frequency_band": "C",
       "topics": [
@@ -2793,7 +2864,40 @@
       "id": 9,
       "title": "Human Development and Interventions",
       "description": "Trace psychological development across the lifespan and use that developmental perspective to understand major areas of psychological intervention. Connect developmental changes with psychopathology, psychotherapy, education, guidance, and counselling, while keeping the person’s age, context, and needs in view. This unit helps you distinguish developmental concepts from intervention approaches and understand where each becomes relevant.",
-      "parts": [],
+      "parts": [
+        {
+          "id": "9A",
+          "title": "Human Development",
+          "description": "Build developmental processes, aging, developmental theories and domains of development.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "9B",
+          "title": "Psychopathology and Psychotherapy",
+          "description": "Move from classification and assessment of psychological disorders to major psychotherapies.",
+          "topic_ids": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "9C",
+          "title": "Educational and Counselling Applications",
+          "description": "Apply psychology to learning, achievement, teacher effectiveness, school guidance and counselling.",
+          "topic_ids": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
       "pyq_count": 39,
       "pyq_frequency_band": "C",
       "topics": [

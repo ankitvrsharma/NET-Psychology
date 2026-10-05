@@ -412,28 +412,18 @@ function startPage(){
   document.title='Learn — UGC NET Psychology';
   const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
   const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
-  const stats=u=>{
-    const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));
-    const started=items.filter(p=>p.status&&p.status!=='NEW').length;
-    const mastered=items.filter(p=>p.status==='MASTERED').length;
-    const due=items.filter(p=>p.next&&new Date(p.next)<=new Date()).length;
-    return {started,mastered,due,total:items.length,percent:items.length?Math.round(started/items.length*100):0};
-  };
+  const stats=u=>{const items=u.topics.flatMap(t=>t.microtopics.map(m=>getP(key(u.id,t.id,m.id))));const started=items.filter(p=>p.status&&p.status!=='NEW').length;const mastered=items.filter(p=>p.status==='MASTERED').length;const due=items.filter(p=>p.next&&new Date(p.next)<=new Date()).length;return {started,mastered,due,total:items.length,percent:items.length?Math.round(started/items.length*100):0};};
   const draw=q=>{
     q=(q||'').trim().toLowerCase();
     const list=units().filter(u=>!q||JSON.stringify({title:u.title,description:u.description,topics:u.topics.map(t=>({title:t.title,explanation:t.explanation}))}).toLowerCase().includes(q));
     $('#learnUnits').innerHTML=list.map(u=>{
-      const s=stats(u);
-      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
+      const s=stats(u),partCount=(u.parts||[]).length,topicCount=u.topics.length,microCount=u.topics.reduce((n,t)=>n+(t.microtopics||[]).length,0);
+      return `<a class="learn-unit-card" href="unit.html?id=${u.id}"><div class="learn-unit-top"><span class="eyebrow">UNIT ${String(u.id).padStart(2,'0')}</span></div><h2>${esc(u.title)}</h2><div class="learn-unit-meta"><span>${partCount} ${partCount===1?'part':'parts'}</span><span>${topicCount} topics</span><span>${microCount} micro-topics</span></div><div class="learn-unit-progress"><div><span>${s.started} of ${s.total} concepts explored</span><b>${s.percent}%</b></div><div class="bar"><i style="width:${s.percent}%"></i></div></div></a>`;
     }).join('')||'<div class="panel empty"><h3>No units found</h3><p>Try a different search.</p></div>';
   };
   const r=document.querySelector('#learnResume');
-  if(r&&resume){
-    r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;
-    r.hidden=false;
-  }else if(r) r.hidden=true;
-  draw('');
-  $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
+  if(r&&resume){r.innerHTML=`<div><div class="eyebrow">YOUR CURRENT POSITION</div><strong>${esc(resume.m.title)}</strong><span>${esc(resume.t.title)} · Unit ${resume.u.id}</span></div><a class="btn primary" href="microtopic.html?unit=${resume.u.id}&topic=${resume.t.id}&micro=${resume.m.id}">Resume →</a>`;r.hidden=false;}else if(r)r.hidden=true;
+  draw('');$('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
 }function learnerPage(){
   document.title='My Learning — UGC NET Psychology';
   const root=$('#learnJourney');
@@ -900,22 +890,29 @@ function dailyPractice(){
     root.innerHTML='<section class="panel empty"><div class="eyebrow">DAILY PRACTICE</div><h1>We could not start today’s practice.</h1><p>Please refresh and try again.</p><button class="btn primary" type="button" data-action="reload">RETRY</button></section>';
   }
 }
+function topicPyqFrequency(u,t){
+  return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u.id)&&Number(q.topic)===Number(t.id)).length;
+}
 function unitPage(){
   const u=units().find(x=>String(x.id)===String(Q.get('id')||1));
   if(!u)return $('#unitPage').innerHTML='<div class="panel empty">Unit not found.</div>';
   document.title=`${u.title} — UGC NET Psychology`;
   const pos=units().findIndex(x=>String(x.id)===String(u.id)),prev=units()[pos-1],next=units()[pos+1];
-  const prevLink=prev?`<a href="unit.html?id=${prev.id}">← Previous</a>`:'<span class="disabled">← Previous</span>';
-  const nextLink=next?`<a href="unit.html?id=${next.id}">Next →</a>`:'<span class="disabled">Next →</span>';
   const explored=u.topics.reduce((n,t)=>n+t.microtopics.filter(m=>{const p=getP(key(u.id,t.id,m.id));return !!p.learnedAt||!!p.recallCompletedAt}).length,0);
   const topicCard=t=>{
-    const published=t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))),total=published.length,done=published.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
-    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id}</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
+    const published=t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))),total=published.length,done=published.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length,pyq=topicPyqFrequency(u,t);
+    return `<a class="topic-card" href="topic.html?unit=${u.id}&topic=${t.id}"><div class="topic-card-meta"><span class="eyebrow">TOPIC ${t.id} · ${pyq} PYQs</span><span class="topic-progress">${done} of ${total} explored</span></div><h3>${esc(t.title)}</h3><p>${esc(t.explanation||'Build your understanding of this topic.')}</p></a>`;
   };
-  const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${u.topics.map(topicCard).join('')}</div>`;
-  $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p><div class="unit-progress"><strong>${explored} of ${countMicro(u)} concepts learned</strong>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}</div></section><div class="unit-navigation"><a class="unit-nav-prev" href="${prev?`unit.html?id=${prev.id}`:'#'}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${next?`unit.html?id=${next.id}`:'#'}">Next →</a></div>${topicContent}`;
-}
-function topicPage(){
+  const sortTopics=(topics,sort)=>sort==='frequency'?topics.slice().sort((a,b)=>topicPyqFrequency(u,b)-topicPyqFrequency(u,a)||a.id-b.id):topics.slice();
+  const render=sort=>{
+    const topicContent=unitParts(u).length?unitParts(u).map(part=>`<section class="unit-part-section panel"><div class="eyebrow">PART ${esc(part.id)}</div><h2>${esc(part.title)}</h2><p>${esc(part.description||'Focused learning section within this unit.')}</p><div class="topic-grid">${sortTopics(u.topics.filter(t=>part.topic_ids?.map(String).includes(String(t.id))),sort).map(topicCard).join('')}</div></section>`).join(''):`<div class="topic-grid">${sortTopics(u.topics,sort).map(topicCard).join('')}</div>`;
+    const sortControls=`<div class="unit-topic-sort-row"><span class="topic-sort-label">Topic order</span><button class="topic-sort ${sort==='natural'?'active':''}" data-sort="natural" type="button">Natural learning</button><button class="topic-sort ${sort==='frequency'?'active':''}" data-sort="frequency" type="button">PYQ frequency</button></div>`;
+    const prevHref=prev?'unit.html?id='+prev.id:'#',nextHref=next?'unit.html?id='+next.id:'#';
+    $('#unitPage').innerHTML=`<div class="breadcrumbs"><a href="learn.html">Learning Path</a><span>›</span><span>Unit ${u.id}</span></div><section class="page-hero unit-hero"><h1>${esc(u.title)}</h1><p>${esc(u.description||'Build your understanding of this unit and connect its topics into a clear exam-ready framework.')}</p><div class="unit-progress"><strong>${explored} of ${countMicro(u)} concepts learned</strong>${unitParts(u).length?`<span>${unitParts(u).length} parts</span>`:''}</div></section><div class="unit-navigation"><a class="unit-nav-prev" href="${prevHref}">← Previous</a><a class="unit-nav-all" href="learn.html">All units</a><a class="unit-nav-next" href="${nextHref}">Next →</a></div>${sortControls}${topicContent}`;
+    qsa('.topic-sort').forEach(b=>b.onclick=()=>render(b.dataset.sort));
+  };
+  render(Q.get('sort')==='frequency'?'frequency':'natural');
+}function topicPage(){
   const {u,t}=find();
   if(!u||!t)return $('#topicPage').innerHTML='<div class="panel empty">Topic not found.</div>';
   document.title=`${t.title} — UGC NET Psychology`;
