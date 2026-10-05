@@ -20,9 +20,9 @@
     },
     "questions": {
       "total": 1583,
-      "PASS": 312,
-      "REVIEW": 482,
-      "ISSUE": 789,
+      "PASS": 525,
+      "REVIEW": 658,
+      "ISSUE": 400,
       "average": 68.3
     }
   },
