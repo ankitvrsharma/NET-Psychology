@@ -31,34 +31,34 @@ def micro_audit(m):
     return score,status,issues
 def clean_practice_text(v):
     t=str(v or "").replace("\r","")
-    t=re.sub(r"<br\\s*/?>","\\n",t,flags=re.I)
+    t=re.sub(r"<br\s*/?>","\n",t,flags=re.I)
     t=t.replace("&nbsp;"," ")
-    t=re.sub(r"Tap\\s+to\\s+check\\s+answer\\s+key"," ",t,flags=re.I)
-    t=re.sub(r"\\b\\d+\\s+UGC\\s+NET(?:\\s+JRF)?\\s+[A-Za-z]+\\s+\\d{4}\\s+Paper\\s*(?:II|2)\\b"," ",t,flags=re.I)
-    t=re.sub(r"\\bUGC\\s+NET(?:\\s+JRF)?\\s+[A-Za-z]+\\s+\\d{4}\\s+Paper\\s*(?:II|2)\\b"," ",t,flags=re.I)
-    t=re.sub(r"\\s+-\\s+","-",t)
-    t=re.sub(r"\\bchi-\\s+square\\b","chi-square",t,flags=re.I)
-    t=re.sub(r"\\s*\\*\\s*"," × ",t)
-    return re.sub(r"\\n{3,}","\\n\\n",re.sub(r"[ \\t]{2,}"," ",t)).strip()
+    t=re.sub(r"Tap\s+to\s+check\s+answer\s+key"," ",t,flags=re.I)
+    t=re.sub(r"\b\d+\s+UGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\b"," ",t,flags=re.I)
+    t=re.sub(r"\bUGC\s+NET(?:\s+JRF)?\s+[A-Za-z]+\s+\d{4}\s+Paper\s*(?:II|2)\b"," ",t,flags=re.I)
+    t=re.sub(r"\s+-\s+","-",t)
+    t=re.sub(r"\bchi-\s+square\b","chi-square",t,flags=re.I)
+    t=re.sub(r"\s*\*\s*"," × ",t)
+    return re.sub(r"\n{3,}","\n\n",re.sub(r"[ \t]{2,}"," ",t)).strip()
 
 def strip_question_tail(v):
     t=clean_practice_text(v)
-    t=re.sub(r"\\s+\\d+\\s*\\.?\\s*Codes?\\s*:\\s*[\\s\\S]*$","",t,flags=re.I)
-    t=re.sub(r"\\s+Codes?\\s*:\\s*[\\s\\S]*$","",t,flags=re.I)
+    t=re.sub(r"\s+\d+\s*\.?\s*Codes?\s*:\s*[\s\S]*$","",t,flags=re.I)
+    t=re.sub(r"\s+Codes?\s*:\s*[\s\S]*$","",t,flags=re.I)
     return t.strip()
 
 def structured_markers(v):
     t=clean_practice_text(v); hits=[]
-    for m in re.finditer(r"(?<!\\S)([a-d]|[1-4]|i{1,3}|iv|v)\\s*[.)]+\\s+",t,re.I):
+    for m in re.finditer(r"(?<!\S)([a-d]|[1-4]|i{1,3}|iv|v)\s*[.)]+\s+",t,re.I):
         hits.append((m.group(1).lower(),m.start(),m.end()))
     return [{"label":h[0],"text":t[h[2]:(hits[i+1][1] if i+1<len(hits) else len(t))].strip()} for i,h in enumerate(hits)]
 
 def parse_match_lists(v):
     raw=clean_practice_text(v)
-    lh=re.search(r"\\bList\\s*[-–—]?\\s*I\\b",raw,re.I); rh=re.search(r"\\bList\\s*[-–—]?\\s*II\\b",raw,re.I)
+    lh=re.search(r"\bList\s*[-–—]?\s*I\b",raw,re.I); rh=re.search(r"\bList\s*[-–—]?\s*II\b",raw,re.I)
     if not lh or not rh or rh.start()<=lh.start(): return raw,[],[],bool(lh),bool(rh)
     def cut(x):
-        return re.split(r"\\bChoose\\s+the\\s+correct\\s+answer\\b|\\bCodes?\\s*:",x,flags=re.I)[0].strip()
+        return re.split(r"\bChoose\s+the\s+correct\s+answer\b|\bCodes?\s*:",x,flags=re.I)[0].strip()
     left=structured_markers(cut(raw[lh.end():rh.start()]))
     right=structured_markers(cut(raw[rh.end():]))
     return raw,left,right,True,True
@@ -79,22 +79,22 @@ def structural_question_audit(q):
             if right and len(right)<4: issues.append("invalid_list_ii_count")
             if left and right and len(left)!=len(right): issues.append("list_count_mismatch")
             all_items=left+right
-            if any(re.search(r"\\b(?:List\\s*[-–—]?\\s*[IV]+|Choose\\s+the\\s+correct\\s+answer|Codes?\\s*:)",x["text"],re.I) for x in all_items): issues.append("list_instruction_swallowed")
-            if re.search(r"\\bChoose\\s+the\\s+correct\\s+answer\\b",raw,re.I) and any(re.search(r"Choose\\s+the\\s+correct",x["text"],re.I) for x in right): issues.append("list_instruction_swallowed")
-            if re.search(r"\\b(?:List\\s*[-–—]?\\s*I|List\\s*[-–—]?\\s*II)\\b"," ".join(x["text"] for x in left),re.I): issues.append("list_header_swallowed")
-            if len(re.findall(r"\\b\\d{3,}\\b",raw))>0: issues.append("ocr_corruption_signal")
+            if any(re.search(r"\b(?:List\s*[-–—]?\s*[IV]+|Choose\s+the\s+correct\s+answer|Codes?\s*:)",x["text"],re.I) for x in all_items): issues.append("list_instruction_swallowed")
+            if re.search(r"\bChoose\s+the\s+correct\s+answer\b",raw,re.I) and any(re.search(r"Choose\s+the\s+correct",x["text"],re.I) for x in right): issues.append("list_instruction_swallowed")
+            if re.search(r"\b(?:List\s*[-–—]?\s*I|List\s*[-–—]?\s*II)\b"," ".join(x["text"] for x in left),re.I): issues.append("list_header_swallowed")
+            if len(re.findall(r"\b\d{3,}\b",raw))>0: issues.append("ocr_corruption_signal")
             if not (len(left)>=4 and len(right)>=4): issues.append("renderer_contract_failed")
     elif kind=="assertion-reason":
-        a=(re.search(r"Assertion\\s*\\(A\\)\\s*:\\s*([\\s\\S]*?)(?=\\s+Reason\\s*\\(R\\)|\\s+\\d+\\s*\\.?\\s*Reason\\s*\\(R\\))",raw,re.I) or [None,""])[1].strip()
-        reason=(re.search(r"Reason\\s*\\(R\\)\\s*:\\s*([\\s\\S]*?)(?=\\s+\\d+\\s*\\.?\\s*Codes?\\s*:|\\s+Codes?\\s*:|$)",raw,re.I) or [None,""])[1].strip()
+        a=(re.search(r"Assertion\s*\(A\)\s*:\s*([\s\S]*?)(?=\s+Reason\s*\(R\)|\s+\d+\s*\.?\s*Reason\s*\(R\))",raw,re.I) or [None,""])[1].strip()
+        reason=(re.search(r"Reason\s*\(R\)\s*:\s*([\s\S]*?)(?=\s+\d+\s*\.?\s*Codes?\s*:|\s+Codes?\s*:|$)",raw,re.I) or [None,""])[1].strip()
         if not a or not reason or a=="Assertion statement" or reason=="Reason statement": issues.append("invalid_assertion_reason")
     elif kind in ("sequence","statement-set"):
-        body=re.split(r"\\bCodes?\\s*:",raw,maxsplit=1,flags=re.I)[0]
+        body=re.split(r"\bCodes?\s*:",raw,maxsplit=1,flags=re.I)[0]
         if len(structured_markers(body))<2: issues.append("invalid_structured_items")
     else:
         stem=strip_question_tail(raw)
         if len(stem)<20: issues.append("invalid_structured_items")
-        if re.search(r"\\bChoose\\s+the\\s+correct\\s+answer\\b",stem,re.I) and re.search(r"\\bCodes?\\s*:",stem,re.I): issues.append("ocr_corruption_signal")
+        if re.search(r"\bChoose\s+the\s+correct\s+answer\b",stem,re.I) and re.search(r"\bCodes?\s*:",stem,re.I): issues.append("ocr_corruption_signal")
     options_ok=isinstance(q.get("options"),list) and len(q.get("options"))==4 and isinstance(q.get("answer"),int) and 0<=q.get("answer")<4
     if not options_ok: issues.append("answerability_failed")
     return issues
