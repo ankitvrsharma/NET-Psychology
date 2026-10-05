@@ -1139,7 +1139,7 @@ function micro(){
   const explanationParts=[concept];
   if(kp.length){
     const compact=kp.slice(0,6).map(x=>String(x).trim()).filter(Boolean);
-    if(compact.length) explanationParts.push(compact.map(x=>'• '+x).join('\n'));
+    if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
   }
   const explanation=explanationParts.join('\n\n');
   const importantTerms=kp.slice(0,6).flatMap(x=>String(x).split(/[,:;()–—-]/).map(s=>s.trim())).filter(x=>x.length>=3&&x.length<=70);
