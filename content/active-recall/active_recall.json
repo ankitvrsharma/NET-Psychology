@@ -11778,5 +11778,41 @@
         "answer": "Source-based check: Given a new question about “Parental mediation of digital usage”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
       }
     ]
+  },
+  "2-2-6": {
+    "id": "2-2-6",
+    "title": "Types of variables",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is a variable and what are the main research-role classifications?",
+        "answer": "A variable is a characteristic or condition that can vary; key research roles include independent, dependent and extraneous/control variables."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What does the independent variable represent in an experiment?",
+        "answer": "The variable manipulated or changed by the researcher."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What does the dependent variable represent?",
+        "answer": "The measured outcome of the study."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "How are active and attribute variables different?",
+        "answer": "Active variables can be manipulated experimentally; attribute variables are pre-existing characteristics and are not ordinarily manipulated."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "How are continuous and discrete variables different?",
+        "answer": "Continuous variables can take values across a range; discrete variables take distinct/countable values."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "A researcher changes room temperature, measures test performance and keeps testing time constant. Identify the IV, DV and control variable.",
+        "answer": "IV = room temperature; DV = test performance; control variable = testing time."
+      }
+    ]
   }
 }

@@ -30798,5 +30798,75 @@
     "title": "Parental mediation of digital usage",
     "explanation": "parental strategies for guiding children's digital use and meaning-making Restriction alone does not build self-regulation.",
     "quick_card": null
+  },
+  "2-2-6|CORE IDEA": {
+    "id": "2-2-6|CORE IDEA",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "CORE IDEA",
+    "title": "Types of variables",
+    "explanation": "Variables are characteristics or conditions that can vary; identify them by their role in the research design.",
+    "quick_card": null
+  },
+  "2-2-6|KEY FEATURES": {
+    "id": "2-2-6|KEY FEATURES",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "KEY FEATURES",
+    "title": "Types of variables",
+    "explanation": "Independent → manipulated; dependent → measured; extraneous/control → possible influence controlled where possible; active/attribute and continuous/discrete are additional classifications.",
+    "quick_card": null
+  },
+  "2-2-6|PYQ FOCUS": {
+    "id": "2-2-6|PYQ FOCUS",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "PYQ FOCUS",
+    "title": "Types of variables",
+    "explanation": "Expect identification, classification and research-scenario questions asking which variable plays which role.",
+    "quick_card": null
+  },
+  "2-2-6|EXAM TRAP": {
+    "id": "2-2-6|EXAM TRAP",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "EXAM TRAP",
+    "title": "Types of variables",
+    "explanation": "Do not confuse research role (IV/DV) with manipulability (active/attribute) or value structure (continuous/discrete).",
+    "quick_card": null
+  },
+  "2-2-6|SOURCE DETAIL": {
+    "id": "2-2-6|SOURCE DETAIL",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "SOURCE DETAIL",
+    "title": "Types of variables",
+    "explanation": "PowerWithin distinguishes independent/dependent/control, quantitative/qualitative, active/attribute and continuous/discrete variables.",
+    "quick_card": null
+  },
+  "2-2-6|RECALL CUE": {
+    "id": "2-2-6|RECALL CUE",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "RECALL CUE",
+    "title": "Types of variables",
+    "explanation": "IV → manipulate | DV → measure | EV → may interfere | Control → hold constant",
+    "quick_card": null
+  },
+  "2-2-6|CONNECTION": {
+    "id": "2-2-6|CONNECTION",
+    "unit": 2,
+    "topic": 2,
+    "micro": 6,
+    "angle": "CONNECTION",
+    "title": "Types of variables",
+    "explanation": "Connect variable type to the research design before interpreting the result.",
+    "quick_card": null
   }
 }
