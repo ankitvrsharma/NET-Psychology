@@ -1142,7 +1142,7 @@ function micro(){
     if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
   }
   const explanation=explanationParts.join('\n\n');
-  const importantTerms=kp.slice(0,6).flatMap(x=>String(x).split(/[,:;()–—-]/).map(s=>s.trim())).filter(x=>x.length>=3&&x.length<=70);
+  const importantTerms=kp.slice(0,6).map(x=>String(x).split(/→|:|—|–|,/)[0].replace(/^[•\s]+/,'').trim()).filter(x=>x.length>=3&&x.length<=45);
   const explanationHtml=inlineLearningMarkup(explanation,importantTerms);
   const notesHtml=[
     ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
@@ -1159,8 +1159,7 @@ function micro(){
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="micro-explanation">'+explanationHtml+'</div>'+
-    (notesHtml?'<div class="micro-inline-notes">'+notesHtml+'</div>':'')+
+    '<div class="micro-explanation">'+explanationHtml+notesHtml+'</div>'+
     '</div></article>'+
     '<section class="micro-learning-actions">'+
     '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
