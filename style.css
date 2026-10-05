@@ -1858,7 +1858,7 @@ body.tour-open{overflow:hidden}
 @media(max-width:520px){.learning-approach{margin-top:22px!important}.learning-steps.compact{gap:7px;justify-content:flex-start;overflow:hidden;white-space:nowrap}.learning-steps.compact>div{gap:5px}.learning-steps.compact>div span{font-size:12px}.learning-steps.compact>div:not(:last-of-type):after{margin-left:7px}.learning-steps.compact>div b{width:19px;height:19px;font-size:9px}}
 
 /* Learning journey — optional destination previews */
-.journey-highlight{position:relative!important;z-index:1001!important;box-shadow:0 0 0 4px var(--blue)!important;border-radius:12px!important;filter:none!important;opacity:1!important}
+.journey-highlight{position:relative!important;z-index:auto!important;box-shadow:0 0 0 4px var(--blue)!important;border-radius:12px!important;filter:none!important;opacity:1!important}
 .journey-dialog{visibility:hidden}
 .journey-dialog.journey-ready{visibility:visible}
 .journey-preview-slot{margin-top:18px}
