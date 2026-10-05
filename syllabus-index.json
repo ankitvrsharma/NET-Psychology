@@ -8,20 +8,6 @@
       "description": "Build the story of psychology as a discipline: where its questions came from, how Indian and Western intellectual traditions shaped them, and how major schools and paradigms changed the subject. Move from philosophical roots to the emergence of scientific psychology, then compare the assumptions, methods, and objects of study that distinguish major traditions. By the end of the unit, you should be able to place major thinkers and schools in context and explain why psychology developed in different directions.",
       "parts": [
         {
-          "id": "1A",
-          "title": "Indian Psychology",
-          "description": "Study Indian psychological thought, traditions and their distinctive approaches to self, mind, knowledge and transformation.",
-          "topic_ids": [
-            1,
-            2,
-            3,
-            8,
-            12,
-            13,
-            14
-          ]
-        },
-        {
           "id": "1B",
           "title": "Western Psychology and Foundations",
           "description": "Trace the emergence of Western psychology, major schools, founding paths, knowledge foundations, paradigms and paradigmatic controversies.",
@@ -33,6 +19,20 @@
             9,
             10,
             11
+          ]
+        },
+        {
+          "id": "1A",
+          "title": "Indian Psychology",
+          "description": "Study Indian psychological thought, traditions and their distinctive approaches to self, mind, knowledge and transformation.",
+          "topic_ids": [
+            1,
+            2,
+            3,
+            8,
+            12,
+            13,
+            14
           ]
         }
       ],
@@ -1767,7 +1767,7 @@
       "parts": [
         {
           "id": "6A",
-          "title": "Thinking, Reasoning, Problem Solving and Decision Making",
+          "title": "Thinking",
           "description": "Study the cognitive processes used to represent problems, reason, solve problems and make decisions.",
           "topic_ids": [
             1,
@@ -2790,40 +2790,7 @@
       "id": 9,
       "title": "Human Development and Interventions",
       "description": "Trace psychological development across the lifespan and use that developmental perspective to understand major areas of psychological intervention. Connect developmental changes with psychopathology, psychotherapy, education, guidance, and counselling, while keeping the person’s age, context, and needs in view. This unit helps you distinguish developmental concepts from intervention approaches and understand where each becomes relevant.",
-      "parts": [
-        {
-          "id": "9A",
-          "title": "Human Development",
-          "description": "Study development across the lifespan, including major theories, domains and developmental processes.",
-          "topic_ids": [
-            1,
-            2,
-            3,
-            4
-          ]
-        },
-        {
-          "id": "9B",
-          "title": "Psychopathology and Psychotherapy",
-          "description": "Understand classification, assessment and major psychological disorders alongside the principal psychotherapeutic approaches in the syllabus.",
-          "topic_ids": [
-            5,
-            6
-          ]
-        },
-        {
-          "id": "9C",
-          "title": "Educational and Counselling Applications",
-          "description": "Apply developmental and psychological principles to learning, achievement, guidance and counselling contexts.",
-          "topic_ids": [
-            7,
-            8,
-            9,
-            10,
-            11
-          ]
-        }
-      ],
+      "parts": [],
       "pyq_count": 39,
       "pyq_frequency_band": "C",
       "topics": [
