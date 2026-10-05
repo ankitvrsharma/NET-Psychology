@@ -668,20 +668,60 @@ function initLearningJourney(){
   if(!tour)return;
   let seen=false; try{seen=localStorage.getItem('netPsychJourneySeen')==='1'}catch(e){}
   const steps=[
-    {eyebrow:'WELCOME',title:'Know Your Learning Journey',body:'This Study Hub is built around a simple idea: learning should lead to durable recall, not just familiar-looking notes.',target:null},
-    {eyebrow:'01 · LEARN',title:'Understand the micro-topic',body:'Start with a focused concept. Read the explanation, connect the ideas, and build understanding before testing yourself.',target:'#today'},
-    {eyebrow:'02 · RECALL',title:'Retrieve without looking',body:'Use Active Recall to bring the concept back from memory. Retrieval is part of learning—not just a test at the end.',target:'#learningApproach'},
-    {eyebrow:'03 · PRACTICE',title:'Apply what you know',body:'Use MCQs and previous-year questions to check whether you can recognise, distinguish and apply the concept in exam conditions.',target:'#today'},
-    {eyebrow:'04 · REVISE',title:'Return at the right time',body:'Scheduled revision brings concepts back after spacing. Your revision schedule is separate from today’s new-learning session.',target:'#learningApproach'},
-    {eyebrow:'DAILY TARGET',title:'Know what “done for today” means',body:'Daily Learning is not a menu of things you might study. It is your minimum daily target: complete 3 concepts and then take the 10-question practice test. Quick Learn is separate—a short optional concept preview.',target:'#today'},
-    {eyebrow:'YOUR LOOP',title:'Understand → Recall → Practice → Revise',body:'Move through the loop repeatedly. Progress comes from completing the learning process, not simply opening more pages.',target:null}
+    {eyebrow:'START HERE',title:'Start Learning',body:'Begin here when you are ready to build your learning route. Your answers help the Study Hub set the right starting emphasis for you.',target:()=>document.querySelector('#homeHero .hero-cta')},
+    {eyebrow:'YOUR MINIMUM TARGET',title:'Daily Learning',body:'This is not a list of everything you should study today. It is your minimum target: complete 3 focused concepts and then take the 10-question practice test.',target:()=>document.querySelector('#today')},
+    {eyebrow:'QUICK CONCEPT HELP',title:'Quick Learn',body:'Use a Quick Learn card when you want a short, focused concept preview or review. It is useful alongside your learning—not a replacement for the Daily Learning target.',target:()=>document.querySelector('#quickLearn')},
+    {eyebrow:'NAVIGATION · 1 OF 5',title:'Home',body:'Home brings you back to your main study hub, where you can see your current learning focus and continue from where you left off.',target:()=>document.querySelector('#site-navigation a[data-nav="home"]')},
+    {eyebrow:'NAVIGATION · 2 OF 5',title:'Learn',body:'Learn takes you into the syllabus, units, topics and micro-topics where your concept learning happens.',target:()=>document.querySelector('#site-navigation a[data-nav="learn"]')},
+    {eyebrow:'NAVIGATION · 3 OF 5',title:'Practice',body:'Practice is where you apply what you know through MCQs and previous-year questions.',target:()=>document.querySelector('#site-navigation a[data-nav="practice"]')},
+    {eyebrow:'NAVIGATION · 4 OF 5',title:'Revision',body:'Revision brings back concepts that are due for spaced review, so you return to them rather than relying on rereading alone.',target:()=>document.querySelector('#site-navigation a[data-nav="revision"]')},
+    {eyebrow:'NAVIGATION · 5 OF 5',title:'Progress',body:'Progress shows how your learning is developing across concepts, recall, practice and revision.',target:()=>document.querySelector('#site-navigation a[data-nav="progress"]')}
   ];
-  let step=0;
-  const close=()=>{tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
-  const render=()=>{const s=steps[step];tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Start Learning':'Next')+'</button></div></section>';tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');};
-  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()}; window.__openLearningJourney=()=>{step=0;render()};
-  tour.addEventListener('click',e=>{const a=e.target.closest('[data-journey]');if(!a)return;const act=a.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render()});
-  if(!seen) setTimeout(render,700);
+  let step=0,activeTarget=null;
+  const clearTarget=()=>{
+    if(activeTarget){activeTarget.classList.remove('journey-highlight');activeTarget.removeAttribute('data-journey-target');activeTarget=null}
+  };
+  const close=()=>{
+    clearTarget();tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open');
+  };
+  const placeDialog=(target)=>{
+    const dialog=tour.querySelector('.journey-dialog');
+    if(!dialog)return;
+    const margin=16,rect=target?.getBoundingClientRect();
+    if(!rect){dialog.style.left='50%';dialog.style.top='50%';dialog.style.transform='translate(-50%,-50%)';return}
+    dialog.style.transform='none';
+    const width=Math.min(560,window.innerWidth-margin*2);
+    dialog.style.width=width+'px';
+    const dialogHeight=dialog.offsetHeight;
+    let left=Math.max(margin,Math.min(window.innerWidth-width-margin,rect.left+(rect.width/2)-(width/2)));
+    let top=rect.bottom+18;
+    if(top+dialogHeight>window.innerHeight-margin)top=rect.top-dialogHeight-18;
+    if(top<margin)top=margin;
+    dialog.style.left=left+'px';dialog.style.top=top+'px';
+  };
+  const render=()=>{
+    clearTarget();
+    const s=steps[step],target=s.target?.();
+    tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Finish':'Next')+'</button></div></section>';
+    tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');
+    if(target){
+      activeTarget=target;activeTarget.classList.add('journey-highlight');activeTarget.setAttribute('data-journey-target','true');
+      requestAnimationFrame(()=>{target.scrollIntoView({behavior:'smooth',block:'center',inline:'nearest'});setTimeout(()=>placeDialog(target),220)});
+    }else requestAnimationFrame(()=>placeDialog(null));
+  };
+  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
+  window.__openLearningJourney=()=>{step=0;render()};
+  tour.addEventListener('click',e=>{
+    const a=e.target.closest('[data-journey]');
+    if(!a)return;
+    const act=a.dataset.journey;
+    if(act==='skip'){finish();return}
+    if(act==='back'){step=Math.max(0,step-1);render();return}
+    if(step===steps.length-1){finish();return}
+    step+=1;render();
+  });
+  window.addEventListener('resize',()=>{if(!tour.hidden&&activeTarget)placeDialog(activeTarget)});
+  if(!seen)setTimeout(render,700);
 }
 let deferredInstallPrompt=null;
 function initPwaInstallPrompt(){
