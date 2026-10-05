@@ -6,7 +6,7 @@
 
 This is a focused study space for **UGC NET Psychology** learners.
 
-It is built around the complete **10-unit, 114-topic, 440-micro-topic** syllabus structure so that you can study Psychology in small, manageable learning units rather than trying to revise everything at once.
+It is built around the complete **10-unit, 118-topic, 549-micro-topic** syllabus structure so that you can study Psychology in small, manageable learning units rather than trying to revise everything at once.
 
 The goal is simple:
 
@@ -151,9 +151,13 @@ The website follows the retained 10-unit UGC NET Psychology structure:
 9. **Human Development and Interventions**
 10. **Emerging Areas**
 
-Each unit is divided into topics and then into the original **440 micro-topics**.
+Each unit is divided into topics and then into the current **549 micro-topics**.
 
 ---
+
+## V2 release note
+
+The V2 release candidate is being checked against the full 10-unit, 118-topic, 549-micro-topic taxonomy. Learner-facing counts are based on content that has passed the site's publishing gate; unpublished or incomplete source coverage is not presented as completed learning material.
 
 ## A simple study session
 
