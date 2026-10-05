@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "policy": "all-candidate-sources",
+  "sources": [
+    {
+      "id": "powerwithin",
+      "name": "PowerWithin — UGC NET/JRF/SLET Psychology Paper 2",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "baron-misra",
+      "name": "Baron & Misra — Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "ciccarelli-white",
+      "name": "Ciccarelli & White — Psychology, 6th edition",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "self-teaching-guide",
+      "name": "Psychology — A Self-Teaching Guide",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "kaplan-ap",
+      "name": "Kaplan AP Psychology Prep Plus 2020–2021",
+      "kind": "source-library"
+    },
+    {
+      "id": "chromeias-personality",
+      "name": "CHROME IAS — Personality Theories",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "chromeias-perception",
+      "name": "CHROME IAS — Perception",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p1-unit14-esp",
+      "name": "P1 Unit 14 — ESP / ICOMP / Intersensory Perception",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit7-rehab",
+      "name": "P2 Unit 7 — Rehabilitation Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit6-community",
+      "name": "P2 Unit 6 — Community Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit4-stress",
+      "name": "P2 Unit 4 — Stress",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p1-unit2",
+      "name": "P1 Unit 2",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit14-gender",
+      "name": "P2 Unit 14 — Gender Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit10-it-mass-media",
+      "name": "P2 Unit 10 — IT & Mass Media",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit12-env-pop",
+      "name": "P2 Unit 12 — Environment & Population Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit9-social-integration",
+      "name": "P2 Unit 9 — Social Integration",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit5-educational",
+      "name": "P2 Unit 5 — Educational Psychology",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "p2-unit2-wellbeing",
+      "name": "P2 Unit 2 — Wellbeing & Mental Disorder",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-1",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 1",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-2",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 2",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-3",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 3",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-4",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 4",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-5",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 5",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-6",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 6",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "revisathon-pyq-7",
+      "name": "Revisathon — Through Last 5 Years PYQs Part 7",
+      "kind": "uploaded-project"
+    },
+    {
+      "id": "simply-psychology",
+      "name": "Simply Psychology",
+      "kind": "external-reference"
+    }
+  ]
+}

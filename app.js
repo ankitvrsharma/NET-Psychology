@@ -30,7 +30,7 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 let CONTENT_GATE={ready:false,failClosed:true,mode:'ai_or_owner',ai:{},owner:{approved:{},rejected:{}}};
-const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,homeLearning:null,sourceEnrichment:null};
+const CANONICAL_CONTENT={practiceQuestions:null,microtopics:null,quickLearnCards:null,deepDive:null,activeRecall:null,homeLearning:null,sourceEnrichment:null,sourceSynthesis:null};
 const CONTENT_REGISTRY={ready:false,failClosed:true,version:null,pools:{}};
 async function loadContentRegistry(){
   if(CONTENT_REGISTRY.ready)return CONTENT_REGISTRY;
@@ -59,34 +59,31 @@ async function loadCanonicalContentLayer(json,mode='all'){
   let ids=mode==='practice'?['questions']:mode==='micro'?
     (page==='microtopic'?['microtopics','quickLearn']:page==='deep-dive'?['microtopics','deepDive']:page==='active-recall'?['microtopics','activeRecall']:['microtopics','quickLearn']):
     ['microtopics','quickLearn','deepDive','activeRecall','questions'];
-  if(mode!=='practice') ids=[...new Set([...ids,'sourceEnrichment'])];
+  if(mode!=='practice') ids=[...new Set([...ids,'sourceSynthesis'])];
   const loaded=await Promise.all(ids.map(loadContentPool)); const byId={}; ids.forEach((id,i)=>byId[id]=loaded[i]);
   const qpool=byId.questions;
   CANONICAL_CONTENT.practiceQuestions=Array.isArray(qpool)?qpool:(qpool&&typeof qpool==='object'?[...(Array.isArray(qpool.pyq)?qpool.pyq:[]),...(Array.isArray(qpool.practice)?qpool.practice:[])]:null);
   CANONICAL_CONTENT.microtopics=byId.microtopics||null; CANONICAL_CONTENT.quickLearnCards=byId.quickLearn||null;
-  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.sourceEnrichment=byId.sourceEnrichment||null;
+  CANONICAL_CONTENT.deepDive=byId.deepDive||null; CANONICAL_CONTENT.activeRecall=byId.activeRecall||null; CANONICAL_CONTENT.sourceEnrichment=null; CANONICAL_CONTENT.sourceSynthesis=byId.sourceSynthesis||null;
   const micro=CANONICAL_CONTENT.microtopics&&typeof CANONICAL_CONTENT.microtopics==='object'?CANONICAL_CONTENT.microtopics:{};
   for(const u of json.units||[])for(const t of u.topics||[])for(const m of t.microtopics||[]){
     const k=key(u.id,t.id,m.id);
     const md=aliasedContent(micro,k); if(md&&typeof md==='object')Object.assign(m,md);
     const d=aliasedContent(CANONICAL_CONTENT.deepDive,k); if(d&&typeof d==='object')Object.assign(m,d);
     const a=aliasedContent(CANONICAL_CONTENT.activeRecall,k); if(a&&Array.isArray(a.prompts))m.active_recall=a.prompts;
-    const se=aliasedContent(CANONICAL_CONTENT.sourceEnrichment,k);
-    if(se&&typeof se==='object'){
-      m.source_enrichment=se;
+    const ss=aliasedContent(CANONICAL_CONTENT.sourceSynthesis,k);
+    if(ss&&typeof ss==='object'){
+      m.source_synthesis=ss;
+      m.source_policy=ss.source_policy||'all-candidate';
       const existingSources=Array.isArray(m.sources)?m.sources:[];
-      const extraSources=[];
-      if(se.kaplan?.chapter)extraSources.push('Kaplan AP Psychology Prep Plus 2020–2021 — '+se.kaplan.chapter);
-      if(se.simply_psychology?.title)extraSources.push('Simply Psychology — '+se.simply_psychology.title);
-      m.sources=[...new Set([...existingSources,...extraSources])];
-      m.source_focus=[...new Set([...(Array.isArray(m.source_focus)?m.source_focus:[]),...extraSources])];
-      const lens=[];
-      if(se.kaplan?.note)lens.push('KAPLAN LENS\\n'+se.kaplan.note);
-      if(se.simply_psychology?.note)lens.push('SIMPLY PSYCHOLOGY LENS\\n'+se.simply_psychology.note);
-      if(lens.length){
+      const evidenceSources=(Array.isArray(ss.evidence)?ss.evidence:[]).map(e=>e.source_id).filter(Boolean);
+      m.sources=[...new Set([...existingSources,...evidenceSources])];
+      m.source_focus=[];
+      const integrated=String(ss.integrated_note||'').trim();
+      if(integrated){
         const base=String(m.detailed_explanation||m.deep_learning||m.deep||'').trim();
-        const marker='SOURCE LENSES';
-        if(!base.includes(marker))m.detailed_explanation=(base?base+'\\n\\n':'')+marker+'\\n\\n'+lens.join('\\n\\n');
+        const marker='INTEGRATED SOURCE SYNTHESIS';
+        if(!base.includes(marker))m.detailed_explanation=(base?base+'\\n\\n':'')+marker+'\\n'+integrated;
       }
     }
   }
