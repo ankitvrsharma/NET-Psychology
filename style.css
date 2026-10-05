@@ -1833,3 +1833,13 @@ body[data-page="practice-session"] .practice-hero{display:none}
 body.tour-open{overflow:hidden}
 @media(max-width:820px){.learning-steps.compact{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.learning-approach{margin-top:28px!important}.learning-steps.compact{grid-template-columns:1fr 1fr}.learning-steps.compact>div{padding:11px}.journey-dialog{margin:8vh auto 0;padding:20px}.journey-actions{justify-content:stretch}.journey-actions .btn{flex:1}.install-prompt{align-items:flex-start;flex-direction:column}.install-actions{width:100%}.install-actions .btn{flex:1}}
+
+
+/* Learner-profile onboarding */
+.learning-profile{margin:18px 0 22px;padding:20px 22px}
+.learning-profile h2{margin:5px 0 14px;font-size:20px}
+.learning-profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:13px}
+.learning-profile-grid>div{padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface-soft,#f7f9fd)}
+.learning-profile-grid strong,.learning-profile-grid span{display:block}.learning-profile-grid strong{font-size:14px;color:var(--navy);line-height:1.35}.learning-profile-grid span{font-size:11px;color:var(--muted);margin-top:3px}
+.learning-profile-plan{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.5}
+@media(max-width:650px){.learning-profile-grid{grid-template-columns:1fr}.learning-profile{padding:17px}}
