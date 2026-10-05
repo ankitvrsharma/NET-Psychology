@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - syllabus-index.json
+      - data/syllabus-index.json
       - content-pools/**
       - content/**
       - scripts/validate_content_pools.py
@@ -12,7 +12,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - syllabus-index.json
+      - data/syllabus-index.json
       - content-pools/**
       - content/**
       - scripts/validate_content_pools.py
