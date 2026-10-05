@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.1.1';
+const CACHE='netpsych-shell-v1.2.0';
 const SHELL=[
   './',
   './index.html',
@@ -14,12 +14,15 @@ const SHELL=[
   './revision.html',
   './daily3.html',
   './daily-practice.html',
+  './learner.html',
+  './deep-dive.html',
   './style.css',
   './app.js',
   './syllabus-index.json',
   './content-version.js',
   './manifest.webmanifest',
-  './content-pools/registry.json'
+  './content-pools/registry.json',
+  './question-renderer.js'
 ];
 const RUNTIME_DATA=new Set([
   'kaplan_enrichment.json',
