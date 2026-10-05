@@ -92,16 +92,34 @@ async function loadCanonicalContentLayer(json,mode='all'){
 const KEY='netPsychProgress';
 async function loadContentGate(){
   try{
+    // The publication manifest is the authoritative release list. Config and
+    // owner overrides are supporting layers and must not take down published
+    // learning content when either optional file is temporarily unavailable.
     const [cfgRes,manifestRes,ownerRes]=await Promise.all([
       fetch('./config/content-publish-config.json?v='+DATA_VERSION,{cache:'no-store'}),
       fetch('./config/content-publish-manifest.json?v='+DATA_VERSION,{cache:'no-store'}),
       fetch('./config/content-owner-overrides.json?v='+DATA_VERSION,{cache:'no-store'})
     ]);
-    if(!cfgRes.ok||!manifestRes.ok||!ownerRes.ok) throw new Error('Content publishing gate unavailable');
-    const cfg=await cfgRes.json(), manifest=await manifestRes.json(), owner=await ownerRes.json();
+    if(!manifestRes.ok) throw new Error('Content publication manifest unavailable: '+manifestRes.status);
+    const manifest=await manifestRes.json();
+    if(!manifest||typeof manifest!=='object'||!manifest.ai_pass||typeof manifest.ai_pass!=='object'){
+      throw new Error('Content publication manifest has an invalid structure');
+    }
+    let cfg={};
+    if(cfgRes.ok){
+      try{cfg=await cfgRes.json()||{};}catch(e){console.warn('Publication config could not be parsed; using manifest mode.',e);}
+    }else{
+      console.warn('Publication config unavailable; using manifest mode:',cfgRes.status);
+    }
+    let owner={};
+    if(ownerRes.ok){
+      try{owner=await ownerRes.json()||{};}catch(e){console.warn('Owner overrides could not be parsed; continuing without overrides.',e);}
+    }else{
+      console.warn('Owner overrides unavailable; continuing without overrides:',ownerRes.status);
+    }
     CONTENT_GATE={
-      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'ai_or_owner',
-      ai:manifest.ai_pass||{questions:{pass:[]},microtopics:{pass:[]},quickLearnCards:{pass:[]},activeRecall:{pass:[]}},
+      ready:true,failClosed:false,mode:cfg.mode||manifest.mode||'expert_or_owner',
+      ai:manifest.ai_pass||{},
       owner:{
         approved:owner.owner_approved||{},
         rejected:owner.owner_rejected||{}
