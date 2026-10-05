@@ -1320,7 +1320,7 @@
       "id": "December-2012-22",
       "session": "December 2012",
       "question_number": 22,
-      "question": "As we enter a movie theatre from bright light the visual sensitivity UGC NET JRF December 2012 Paper II 46 UGC NET JRF December 2012 Paper II 46 Tap to check answer key increases and within 5-10 minutes we are able to see under low levels of illumination. This is due to",
+      "question": "As we enter a movie theatre from bright light, visual sensitivity increases and within 5–10 minutes we are able to see under low levels of illumination. This is due to",
       "options": [
         "Visual acuity",
         "Dark adaptation",
@@ -1329,11 +1329,11 @@
       ],
       "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: B. Dark adaptation. The stem describes the concept or relationship represented by Dark adaptation; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: B. Dark adaptation. Dark adaptation is the adjustment of visual sensitivity when the eyes move from bright illumination to darkness. As sensitivity increases, the visual system becomes better able to detect faint stimuli. Do not confuse it with visual acuity, which concerns the ability to resolve fine detail.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 2,
+      "micro": 1
     },
     {
       "id": "December-2012-23",
@@ -1548,7 +1548,7 @@
       "id": "December-2012-34",
       "session": "December 2012",
       "question_number": 34,
-      "question": "A man borrows money and forgets to pay it back because paying back is painful. This is an example of",
+      "question": "A man borrows money and forgets to pay it back because paying it back is painful. This is an example of",
       "options": [
         "Repression",
         "Reaction Formation",
@@ -1557,11 +1557,11 @@
       ],
       "answer": 0,
       "type": "PYQ",
-      "explanation": "Correct answer: A. Repression. The stem describes the concept or relationship represented by Repression; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: A. Repression. In the psychoanalytic framework, repression refers to keeping distressing or unacceptable mental material outside conscious awareness. The item describes motivated exclusion of an uncomfortable idea from awareness; it is not reaction formation or rationalization.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 7,
+      "topic": 2,
+      "micro": 1
     },
     {
       "id": "December-2012-35",
@@ -2049,13 +2049,13 @@
         "Retroactive effect",
         "Proactive effect"
       ],
-      "answer": 3,
+      "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: D. Proactive effect. The stem describes the concept or relationship represented by Proactive effect; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: B. Proactive interference. Proactive interference occurs when previously learned material interferes with learning or retaining newer material. The direction is old → new. Retroactive interference is the reverse: newer learning interferes with older material.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 19,
+      "micro": 1
     },
     {
       "id": "June-2013-11",
@@ -2712,11 +2712,11 @@
         "3.24",
         "5.06",
         "9.00",
-        "81.00 Questions 46 to 50: Read the following paragraph and answer the five questions which follow: The notion of true score is at the heart of classical reliability theory. This model proposes that the obtained score on a variable is a sum of true score and the random error of measurement, the two components being independent. Using this model, various ways of computing reliability have been developed. One of the way of examining the reliability of a test is to test the homogeneity of test items or 85 UGC NET JRF June 2013 Paper II 85 UGC NET JRF June 2013 Paper II Tap to check answer key the internal consistency. The most widely used method of estimating the reliability is split-half technique, also called as odd- even reliability. In this context, Spearman Brown correction is important. Kuder- Richardson reliability and Cronbach Alpha are the two other methods of studying internal consistency. Another important type of reliability is the inters corer reliability. This reliability is not useful for objective tests, but for certain types it is quite important. There are also other types of reliability such as parallel form reliability and test -retest reliability, the latter concerned with temporal stability of the test results."
+        "81.00"
       ],
       "answer": 0,
       "type": "PYQ",
-      "explanation": "Correct answer: A. 3.24. The stem describes the concept or relationship represented by 3.24; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: A. 3.24. For a chi-square test, a cell's contribution is (O − E)²/E. Here O = 16 and E = 25, so (16 − 25)²/25 = 81/25 = 3.24.",
       "kind": "direct",
       "unit": 2,
       "topic": 8,
@@ -2834,11 +2834,11 @@
       ],
       "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: B. Prototype. The stem describes the concept or relationship represented by Prototype; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: B. Prototype. A prototype is an abstracted, typical representation of a category. It can be understood as a central or average example against which category members are compared. An exemplar is a specific remembered instance, whereas a prototype is a generalized representation.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
     },
     {
       "id": "September-2013-2",
@@ -3974,11 +3974,11 @@
       ],
       "answer": 2,
       "type": "PYQ",
-      "explanation": "Correct answer: C. 4. The stem describes the concept or relationship represented by 4; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: C. 4. For a chi-square contingency table, degrees of freedom are (r − 1)(c − 1). With 3 rows and 6 degrees of freedom: 6 = (3 − 1)(c − 1), so 6 = 2(c − 1), giving c = 4.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 2,
+      "topic": 8,
+      "micro": 9
     },
     {
       "id": "December-2013-13",
@@ -4202,11 +4202,11 @@
       ],
       "answer": 0,
       "type": "PYQ",
-      "explanation": "Correct answer: A. CS ; CR. The stem describes the concept or relationship represented by CS ; CR; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: A. CS; CR. After the box-rattling cue has been paired with food, the box-rattling becomes a conditioned stimulus (CS). Salivation elicited by that conditioned cue is the conditioned response (CR).",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 10,
+      "micro": 1
     },
     {
       "id": "December-2013-25",
@@ -5698,7 +5698,7 @@
       "id": "December-2014-3",
       "session": "December 2014",
       "question_number": 3,
-      "question": "A projection apparatus used to show visual stimuli for very brief durations is called a). Visual Cliff b). Tachistoscope c). EEG Apparatus d). Trapezoidal Window",
+      "question": "A projection apparatus used to show visual stimuli for very brief durations is called a",
       "options": [
         "Visual Cliff",
         "Tachistoscope",
@@ -5707,11 +5707,11 @@
       ],
       "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: B. Tachistoscope. The stem describes the concept or relationship represented by Tachistoscope; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: B. Tachistoscope. A tachistoscope is an apparatus used to present visual stimuli for controlled, very brief exposures. In psychology it is associated with controlled studies of visual perception and processing.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 8,
+      "micro": 1
     },
     {
       "id": "December-2014-4",
@@ -6125,11 +6125,11 @@
       ],
       "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: B. 2 and 3. The stem describes the concept or relationship represented by 2 and 3; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: B. 2 and 3. During resting potential, the membrane is much more permeable to potassium than sodium. Thus the statement that it is almost permeable to potassium and almost impermeable to sodium is the correct pair.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 4,
+      "topic": 2,
+      "micro": 4
     },
     {
       "id": "December-2014-26",
@@ -7402,11 +7402,11 @@
       ],
       "answer": 0,
       "type": "PYQ",
-      "explanation": "Correct answer: A. (d) (b) (c) (e) and (a). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "explanation": "Correct answer: A. (d) → (b) → (c) → (e) → (a). The auditory pathway proceeds from the cochlear nuclei to the superior olives, then the inferior colliculi, then the medial geniculate nucleus, and finally the primary auditory cortex.",
       "kind": "sequence",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
     },
     {
       "id": "June-2015-43",
@@ -9088,20 +9088,20 @@
       "id": "July-2016-31",
       "session": "July 2016",
       "question_number": 31,
-      "question": "If the bones of the middle ear begins to deteriorate, the person will suffer difficulty in a). Loudness b). Timbre c). Conduction d). Stimulation 1. Codes:",
+      "question": "If the bones of the middle ear begin to deteriorate, the person will suffer difficulty in",
       "options": [
-        "a only",
-        "b and c",
-        "c only",
-        "c and d"
+        "Loudness",
+        "Timbre",
+        "Conduction",
+        "Stimulation"
       ],
-      "answer": 3,
+      "answer": 2,
       "type": "PYQ",
-      "explanation": "Correct answer: D. c and d. The stem describes the concept or relationship represented by c and d; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: C. Conduction. The middle-ear ossicles transmit and mechanically amplify sound vibrations toward the inner ear. Damage to them therefore produces a conductive hearing problem; 'stimulation' is not the specific auditory function tested here.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
     },
     {
       "id": "July-2016-32",
@@ -9190,13 +9190,13 @@
         "Accommodation",
         "Relative Size"
       ],
-      "answer": 2,
+      "answer": 0,
       "type": "PYQ",
-      "explanation": "Correct answer: C. Accommodation. The stem describes the concept or relationship represented by Accommodation; the alternatives refer to different concepts or conditions.",
+      "explanation": "Correct answer: A. Binocular disparity. Binocular disparity is the difference between the images received by the two eyes. The difference is larger for nearby objects and smaller for distant objects, providing a cue to depth. Accommodation refers to changes in lens shape for focusing.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 5,
+      "topic": 5,
+      "micro": 6
     },
     {
       "id": "July-2016-37",
@@ -12882,11 +12882,11 @@
       ],
       "answer": 1,
       "type": "PYQ",
-      "explanation": "Correct answer: B. valence; arousal. The item tests a factual association: the relevant person, work, date, contribution, or term is valence; arousal.",
+      "explanation": "Correct answer: B. Valence; arousal. The item distinguishes two dimensions of emotion-related cerebral activation: anterior hemispheric activity is associated with emotional valence, whereas posterior activation is associated with arousal in the framework tested by this PYQ.",
       "kind": "direct",
-      "unit": null,
-      "topic": null,
-      "micro": null
+      "unit": 7,
+      "topic": 12,
+      "micro": 1
     },
     {
       "id": "July-2018-81",
