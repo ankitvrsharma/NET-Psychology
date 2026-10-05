@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
-REQUESTS=ROOT/"rewrite-requests.json"; DATA=ROOT/"content/microtopics/microtopic_explanations.json"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
+REQUESTS=ROOT/"operations/rewrite-requests.json"; DATA=ROOT/"content/microtopics/micro_topics.json"; TRACK=ROOT/"operations/rewrite-reaudit-tracking.json"
 DEFAULT_MODEL="gemini-3.8-flash"
 DEFAULT_FALLBACK_MODELS=["gemini-3.7-flash","gemini-3.6-flash","gemini-3.5-flash"]
 

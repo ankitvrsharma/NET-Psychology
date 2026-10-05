@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "pools": {
     "microtopics": {
       "path": "content/microtopics/micro_topics.json",
@@ -53,17 +53,6 @@
         "home"
       ]
     },
-    "sourceEnrichment": {
-      "path": "content/source-enrichment/source_enrichment.json",
-      "format": "json-map",
-      "enabled": false,
-      "capabilities": [
-        "source-lens",
-        "kaplan",
-        "simply-psychology"
-      ],
-      "deprecated": true
-    },
     "sourceSynthesis": {
       "path": "content/source-synthesis/source_synthesis.json",
       "format": "json-map",
@@ -90,6 +79,70 @@
       "capabilities": [
         "deep-dive",
         "multi-source-enrichment"
+      ]
+    }
+  },
+  "canonicalData": {
+    "syllabus": {
+      "path": "data/syllabus-index.json",
+      "format": "json-object",
+      "enabled": true,
+      "role": "canonical UGC NET Psychology taxonomy"
+    },
+    "questionMapping": {
+      "path": "data/mcq_mapping.json",
+      "format": "json-object",
+      "enabled": true,
+      "role": "question-to-syllabus mapping and overrides"
+    },
+    "examSchedule": {
+      "path": "data/exam_schedule.json",
+      "format": "json-object",
+      "enabled": true,
+      "role": "exam-date and countdown configuration"
+    },
+    "ntaPyqRegistry": {
+      "path": "data/nta_pyq_registry.json",
+      "format": "json-object",
+      "enabled": true,
+      "role": "NTA/PYQ source registry"
+    }
+  },
+  "supportingContent": {
+    "sourceCatalog": {
+      "path": "content/source-synthesis/source_catalog.json",
+      "format": "json-object",
+      "enabled": true,
+      "capabilities": [
+        "source-provenance",
+        "source-library"
+      ]
+    },
+    "studySources": {
+      "path": "content/source-synthesis/study_sources.json",
+      "format": "json-object",
+      "enabled": true,
+      "capabilities": [
+        "source-policy",
+        "study-sources"
+      ]
+    },
+    "kaplanEnrichment": {
+      "path": "content/source-synthesis/kaplan_enrichment.json",
+      "format": "json-object",
+      "enabled": true,
+      "capabilities": [
+        "source-enrichment",
+        "kaplan"
+      ]
+    },
+    "simplyPsychologyEnrichment": {
+      "path": "content/source-synthesis/simply_psychology_enrichment.json",
+      "format": "json-object",
+      "enabled": true,
+      "capabilities": [
+        "source-enrichment",
+        "simply-psychology"
       ]
     }
   }

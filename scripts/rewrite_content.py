@@ -2,7 +2,7 @@ import json, os, re, sys, urllib.request, urllib.error
 from pathlib import Path
 from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parents[1]
-OWNER=ROOT/"content-owner-overrides.json"; DATA=ROOT/"content/microtopics/microtopic_explanations.json"; QUESTIONS=ROOT/"content/questions/questions.json"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
+OWNER=ROOT/"config/content-owner-overrides.json"; DATA=ROOT/"content/microtopics/micro_topics.json"; QUESTIONS=ROOT/"content/questions/questions.json"; TRACK=ROOT/"operations/rewrite-reaudit-tracking.json"
 MAX=2; PASS=70
 def now(): return datetime.now(timezone.utc).isoformat()
 def load(p,d): return json.loads(p.read_text(encoding="utf-8")) if p.exists() else d
@@ -55,7 +55,7 @@ def api(prompt):
         text=re.sub(r"^"+re.escape(fence)+r"(?:json)?\s*","",text); text=re.sub(r"\s*"+re.escape(fence)+r"$","",text)
     return json.loads(text)
 def main():
-    owner=load(OWNER,{}); data=load(DATA,{}); qp=load(QUESTIONS,{"pyq":[],"practice":[]}); qs=list(qp.get("pyq",[]))+list(qp.get("practice",[])); sources=load(ROOT/"study_sources.json",{}).get("source_library",[])
+    owner=load(OWNER,{}); data=load(DATA,{}); qp=load(QUESTIONS,{"pyq":[],"practice":[]}); qs=list(qp.get("pyq",[]))+list(qp.get("practice",[])); sources=load(ROOT/"content/source-synthesis/study_sources.json",{}).get("source_library",[])
     track=load(TRACK,{"schema_version":1,"items":{}}); track.setdefault("items",{}); changed=0
     for typ,ids in owner.get("owner_rejected",{}).items():
         for raw in ids or []:

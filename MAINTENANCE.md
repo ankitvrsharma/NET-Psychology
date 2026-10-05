@@ -16,7 +16,7 @@ Learner progress belongs on the learner's device and must not be committed to Gi
 
 - `app.js` — application behaviour, learning flow and progress logic.
 - `style.css` — responsive presentation.
-- `syllabus-index.json` — canonical syllabus structure.
+- `data/syllabus-index.json` — canonical syllabus structure.
 - `content-pools/registry.json` — stable registry of learner-facing content pools.
 - `content/questions/questions.json` — canonical practice/PYQ question pool.
 - `scripts/build_practice.py` — practice-bank build and validation.
@@ -44,3 +44,17 @@ Before publishing:
 ## Learner data
 
 Progress, revision history and imported backups stay local to the learner. Do not place personal progress data in repository files.
+
+## Repository organization
+
+- `content/` contains canonical learner-facing Psychology content.
+- `content/source-synthesis/` contains the active source synthesis layer and its provenance/supporting source notes.
+- `data/` contains canonical syllabus, question mapping, exam schedule and NTA/PYQ reference data.
+- `config/` contains publication-gate configuration and generated publication state.
+- `reports/` contains generated audit/build reports.
+- `operations/` contains rewrite queues and re-audit workflow state.
+- `archive/legacy/` contains retired duplicates kept only for rollback/reference; it is not loaded by the website.
+
+The canonical registry is `content-pools/registry.json`. Add new learner-facing content there rather than creating parallel root-level JSON files.
+
+`daily-learn.html` is the canonical daily learning page. `daily3.html` is retained only as a compatibility redirect for older links.

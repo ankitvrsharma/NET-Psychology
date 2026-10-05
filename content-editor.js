@@ -21,7 +21,7 @@ async function putFile(path,data,token,message){
   const x=await r.json();cache.set(path,{sha:x.content?.sha||existing.sha,data});return x;
 }
 async function approve(type,id,token){
-  const path='content-owner-overrides.json';
+  const path='config/content-owner-overrides.json';
   const f=await getFile(path),d=f.data&&typeof f.data==='object'?f.data:{schema_version:6,owner_approved:{},owner_rejected:{},notes:{}};
   d.owner_approved=d.owner_approved||{};d.owner_rejected=d.owner_rejected||{};d.notes=d.notes||{};
   const gateType=type==='deepDive'?'microtopics':type;

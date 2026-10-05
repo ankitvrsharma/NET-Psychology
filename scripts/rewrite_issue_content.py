@@ -115,12 +115,12 @@ def rewrite_micro(m):
 def main():
     # First audit the current repository so the rewrite queue is evidence-based.
     subprocess.run([sys.executable,'scripts/expert_audit.py'],check=True)
-    report=json.loads(Path('expert-audit-report.json').read_text(encoding='utf-8'))
+    report=json.loads(Path('reports/expert-audit-report.json').read_text(encoding='utf-8'))
     issue_ids={x['id'] for x in report['rows']['questions']} if 'rows' in report else set()
-    data=json.loads(Path('data.json').read_text(encoding='utf-8'))
-    qs=json.loads(Path('practice_questions.json').read_text(encoding='utf-8'))
+    data=json.loads(Path('data/syllabus-index.json').read_text(encoding='utf-8'))
+    qs=json.loads(Path('content/questions/questions.json').read_text(encoding='utf-8'))
     ex=json.loads(Path('practice_explanations.json').read_text(encoding='utf-8'))
-    mapping=json.loads(Path('mcq_mapping.json').read_text(encoding='utf-8'))
+    mapping=json.loads(Path('data/mcq_mapping.json').read_text(encoding='utf-8'))
 
     # Use the same mapping overrides as the live site before deciding what is an ISSUE.
     qissues=[]
@@ -153,7 +153,7 @@ def main():
 
     Path('practice_explanations.json').write_text(json.dumps(ex,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     raw=json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n'
-    Path('data.json').write_text(raw,encoding='utf-8')
+    Path('data/syllabus-index.json').write_text(raw,encoding='utf-8')
     Path('data.js').write_text('window.NETPSY_DATA = '+raw+';\n',encoding='utf-8')
     print(json.dumps({'question_issues_rewritten':len(qissues),'microtopic_issues_rewritten':len(miss_micro),'question_issue_examples':[x[0].get('id') for x in qissues[:10]],'microtopic_issue_examples':[x[3] for x in miss_micro[:10]]},indent=2))
 

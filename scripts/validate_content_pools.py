@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def load(rel): return json.loads((ROOT/rel).read_text(encoding="utf-8"))
 registry=load("content-pools/registry.json")
 assert re.fullmatch(r"(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)",str(registry.get("version",""))),"Invalid semantic version"
-syllabus=load("syllabus-index.json"); units=syllabus.get("units"); assert isinstance(units,list) and units
+syllabus=load("data/syllabus-index.json"); units=syllabus.get("units"); assert isinstance(units,list) and units
 micro_ids={f"{u['id']}-{t['id']}-{m['id']}" for u in units for t in u.get("topics",[]) for m in t.get("microtopics",[])}
 legacy_micro_ids={"2-15-1","2-15-2","2-15-3","3-7-1","4-5-1","4-7-3","4-7-4","4-7-5","4-7-6","6-4-4","6-4-5","7-3-2","7-3-3"}
 assert len(micro_ids)>0,f"No micro-topics found"

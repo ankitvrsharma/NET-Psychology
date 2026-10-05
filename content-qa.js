@@ -1,7 +1,7 @@
 (()=>{'use strict';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
-const OWNER='ankitvrsharma',REPO='NET-Psychology',BRANCH='main',API='https://api.github.com',OWNER_FILE='content-owner-overrides.json',REWRITE_FILE='rewrite-requests.json';
+const OWNER='ankitvrsharma',REPO='NET-Psychology',BRANCH='main',API='https://api.github.com',OWNER_FILE='config/content-owner-overrides.json',REWRITE_FILE='operations/rewrite-requests.json';
 const MAX_REWRITE_CYCLES=2,PASS=70,REVIEW=60,PAGE_SIZE=40;
 let audit=null,rows=[],visibleRows=[],pageSize=PAGE_SIZE;
 let filters={type:'all',audit:'all',owner:'all',workflow:'all',ownerReview:'pending'};
@@ -253,7 +253,7 @@ function bind(){
     const rw=e.target.closest('[data-rewrite]');if(rw){queueRewrite(rw.dataset.type,rw.dataset.id);return}
     const rr=e.target.closest('[data-request-rewrite]');if(rr){requestRewrite(rr.dataset.type,rr.dataset.id);return}
     if(e.target.closest('#commit-owner-decisions')){commitOwner();return}
-    if(e.target.closest('#export'))download('content-owner-overrides.json',ownerPayload());
+    if(e.target.closest('#export'))download('config/content-owner-overrides.json',ownerPayload());
     if(e.target.closest('#export-revisions'))download('content-qa-revision-log.json',store().revisions||{});
     if(e.target.closest('#export-report'))download('content-audit-report.json',{generated_at:new Date().toISOString(),audit});
   });
@@ -262,7 +262,7 @@ function download(name,obj){const a=document.createElement('a');a.href=URL.creat
 async function boot(){
   try{
     bind();
-    const [data,pool]=await Promise.all([jsonFetch('syllabus-index.json'),jsonFetch('content/questions/questions.json')]);
+    const [data,pool]=await Promise.all([jsonFetch('data/syllabus-index.json'),jsonFetch('content/questions/questions.json')]);
     const qs=pool&&typeof pool==='object'?[...(Array.isArray(pool.pyq)?pool.pyq:[]),...(Array.isArray(pool.practice)?pool.practice:[])]:[];
     audit=build(data,qs,{});
     renderSummary();
