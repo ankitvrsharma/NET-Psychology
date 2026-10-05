@@ -355,7 +355,14 @@ function journeyPlan(p){
   if(route.challenges.includes('application')||route.challenges.includes('practice'))reason+=' More application and question practice will reinforce the learning.';
   if(route.priorities.includes('pyq'))reason+=' PYQs are a priority in your practice mix.';
   if(route.priorities.includes('weak'))reason+=' Mistakes will be used to guide weak-area practice.';
-  return {...route,first,reason};
+  const timePlan={
+    '15-30':'Complete the 3 concepts + 10-question Daily Learning target; stop there if time is tight.',
+    '30-60':'Complete Daily Learning, then use remaining time for due revision.',
+    '60-120':'Complete Daily Learning, due revision, then add targeted PYQ/weak-area practice.',
+    '120-180':'Complete Daily Learning, revision and a focused PYQ/weak-area block.',
+    '180+':'Complete Daily Learning, revision and deeper practice; use remaining time for difficult or high-value topics.'
+  };
+  return {...route,first,reason,timePlan:timePlan[route.studyTime]||timePlan['30-60']};
 }
 function startPage(){
   document.title='Start Learning — UGC NET Psychology';
