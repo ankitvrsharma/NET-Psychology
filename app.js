@@ -655,7 +655,7 @@ function initLearningJourney(){
   let step=0;
   const close=()=>{tour.hidden=true;tour.setAttribute('aria-hidden','true');document.body.classList.remove('tour-open')};
   const render=()=>{const s=steps[step];tour.innerHTML='<div class="journey-backdrop"></div><section class="journey-dialog" role="dialog" aria-modal="true" aria-labelledby="journeyTitle"><div class="journey-progress"><span>KNOW YOUR LEARNING JOURNEY</span><b>'+String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0')+'</b></div><div class="eyebrow">'+s.eyebrow+'</div><h2 id="journeyTitle">'+s.title+'</h2><p>'+s.body+'</p><div class="journey-actions">'+(step>0?'<button class="btn" data-journey="back">Back</button>':'<button class="btn" data-journey="skip">Skip</button>')+'<button class="btn primary" data-journey="next">'+(step===steps.length-1?'Start Learning':'Next')+'</button></div></section>';tour.hidden=false;tour.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');};
-  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()};
+  const finish=()=>{try{localStorage.setItem('netPsychJourneySeen','1')}catch(e){}close()}; window.__openLearningJourney=()=>{step=0;render()};
   tour.addEventListener('click',e=>{const a=e.target.closest('[data-journey]');if(!a)return;const act=a.dataset.journey;if(act==='skip'){finish();return}if(act==='back'){step=Math.max(0,step-1);render();return}if(step===steps.length-1){finish();return}step+=1;render()});
   if(!seen) setTimeout(render,700);
 }
@@ -1359,7 +1359,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
-window.addEventListener('DOMContentLoaded',()=>{initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(e.target.closest('[data-open-journey]')){try{localStorage.removeItem('netPsychJourneySeen')}catch(err){}const el=document.querySelector('#journeyTour');if(el){el.hidden=false;el.setAttribute('aria-hidden','false');document.body.classList.add('tour-open');}}});});
+window.addEventListener('DOMContentLoaded',()=>{initLearningJourney();initPwaInstallPrompt();document.addEventListener('click',e=>{if(e.target.closest('[data-open-journey]')&&window.__openLearningJourney){window.__openLearningJourney();}});});
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
