@@ -1096,6 +1096,26 @@ function contextualExplanation(q){
   return detail?base+' Study link — '+c.title+': '+detail:base;
 }
 function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s)}})})}
+function inlineLearningMarkup(value,importantTerms=[]){
+  let text=String(value??'').replace(/\r/g,'').trim();
+  if(!text)return '';
+  const escaped=esc(text);
+  const terms=[...new Set(importantTerms.map(x=>String(x||'').trim()).filter(x=>x.length>=3))].sort((a,b)=>b.length-a.length);
+  let marked=escaped;
+  for(const term of terms){
+    const safe=esc(term).replace(/[.*+?^\${}()|[\]\\]/g,'\\$&');
+    if(!safe)continue;
+    marked=marked.replace(new RegExp('(?<![\\w-])'+safe+'(?![\\w-])','gi'),m=>'@@BOLD@@'+m+'@@/BOLD@@');
+  }
+  marked=marked.replace(/\*\*([^*]+)\*\*/g,'@@BOLD@@$1@@/BOLD@@');
+  marked=marked.replace(/@@BOLD@@/g,'<strong>').replace(/@@\/BOLD@@/g,'</strong>');
+  return marked.replace(/\n\s*\n/g,'<br><br>').replace(/\n/g,'<br>');
+}
+function inlineLearningNote(label,value,kind='note'){
+  const text=String(value??'').trim();
+  if(!text)return '';
+  return '<span class="micro-inline-note '+esc(kind)+'"><b>'+esc(label)+'</b> '+inlineLearningMarkup(text)+'</span>';
+}
 function micro(){
   const {u,t,m,k}=find();
   if(!u||!t||!m)return $('#microPage').innerHTML='<div class="panel empty">Micro-topic not found.</div>';
@@ -1105,22 +1125,42 @@ function micro(){
     $('#microPage').innerHTML='<section class="panel empty"><div class="eyebrow">CONTENT UNDER REVIEW</div><h1>This concept is temporarily unavailable.</h1><p>The learning content is being quality-checked before it is served.</p><a class="btn primary" href="learn.html">BACK TO LEARN</a></section>';
     return;
   }
+
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const notes=String(m.content_notes||'');
-  const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
-  const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
-  const deep=String(m.detailed_explanation||m.deep||concept).trim();
+  const concept=String(m.explanation||m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
+  const kp=Array.isArray(m.key_points)?m.key_points:bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
+  const inlineNudges=Array.isArray(m.inline_nudges)?m.inline_nudges:[];
+  const fallbackNudge=String(m.nudge||m.inline_nudge||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||'').trim();
+  const pyqContext=String(m.pyq_context||'').trim();
+
+  // Explanation stays intentionally lean. Supporting material is routed to the
+  // dedicated Deep Dive, Active Recall, Revision and Practice flows.
+  const explanationParts=[concept];
+  if(kp.length){
+    const compact=kp.slice(0,6).map(x=>String(x).trim()).filter(Boolean);
+    if(compact.length) explanationParts.push(compact.map(x=>/[.!?]$/.test(x)?x:x+'.').join(' '));
+  }
+  const explanation=explanationParts.join('\n\n');
+  const importantTerms=kp.slice(0,6).flatMap(x=>String(x).split(/[,:;()–—-]/).map(s=>s.trim())).filter(x=>x.length>=3&&x.length<=70);
+  const explanationHtml=inlineLearningMarkup(explanation,importantTerms);
+  const notesHtml=[
+    ...inlineNudges.map(x=>inlineLearningNote(x.label||'Nudge',x.text||x.note||x.value,'nudge')),
+    fallbackNudge&&!inlineNudges.length?inlineLearningNote('Nudge',fallbackNudge,'nudge'):'',
+    pyqContext?inlineLearningNote('PYQ cue',pyqContext,'pyq'):''
+  ].filter(Boolean).join('');
+
   const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
-  const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
+  const fromRevision=Q.get('from')==='revision';
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
+
   $('#microPage').innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><h1>'+esc(m.title)+'</h1></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<p class="micro-expert-explanation">'+esc(concept)+'</p>'+
-    (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
-    (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
+    '<div class="micro-explanation">'+explanationHtml+'</div>'+
+    (notesHtml?'<div class="micro-inline-notes">'+notesHtml+'</div>':'')+
     '</div></article>'+
     '<section class="micro-learning-actions">'+
     '<a class="micro-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span></a>'+
@@ -1128,6 +1168,7 @@ function micro(){
     '<a class="micro-action" href="'+nextHref+'"><span>NEXT</span></a>'+
     '</section></section>';
 }
+
 function practice(){
   const box=$('#practiceApp');
   const unitOptions=units().map(u=>{

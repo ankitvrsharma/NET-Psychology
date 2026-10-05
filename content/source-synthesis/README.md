@@ -16,3 +16,27 @@ The first migration converts the existing 26-topic Kaplan/Simply Psychology enri
 
 ## Integrity rule
 A source is never credited merely because it is in the candidate set. Evidence must be retrieved from that source before it is presented as contributing to a topic.
+
+## Learner-facing content distribution
+
+The **Explanation** is intentionally not a collection of fixed sub-sections. It is one clean teaching narrative.
+
+- Use **bold emphasis** for genuinely important terms, relationships or distinctions.
+- Add a **small inline nudge** wherever it helps the learner notice a useful qualification, implication, memory cue, or potential misunderstanding. A nudge is never rendered as a separate section.
+- Add a **PYQ cue inline only when the available PYQ evidence supports it**. Do not turn a generic “PYQ-style” instruction into a claim that a point was actually asked.
+- Keep research detail, extended comparisons and advanced connections in **Deep Dive**.
+- Keep retrieval prompts in **Active Recall**.
+- Keep spaced reactivation in **Revision**.
+- Keep answer discrimination, distractors and question-level reasoning in **MCQ Practice / PYQs**.
+- Avoid repeating the same information across these surfaces unless the repetition serves a different learning decision.
+
+### Supported micro-topic fields
+
+New or regenerated micro-topic content may use:
+
+- explanation — preferred learner-facing explanation.
+- key_points — high-value points that may be integrated into the explanation and selectively bolded.
+- inline_nudges — optional small contextual nudges; these are rendered inline without a heading.
+- pyq_context — optional PYQ-specific explanation, used only where actual PYQ evidence supports it.
+
+Existing expert_explanation, content_notes, and related fields remain valid fallbacks while content is regenerated. This change is therefore a **presentation/content-model transition**, not a claim that every existing micro-topic has already been rewritten to the new standard.
