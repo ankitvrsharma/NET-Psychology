@@ -18,8 +18,17 @@
   },
   "owner_approved": {
     "questions": [],
-    "microtopics": [],
-    "quickLearnCards": [],
+    "microtopics": [
+      "2-2-6"
+    ],
+    "quickLearnCards": [
+      "2-2-6|CORE IDEA",
+      "2-2-6|KEY FEATURES",
+      "2-2-6|PYQ FOCUS",
+      "2-2-6|EXAM TRAP",
+      "2-2-6|SOURCE DETAIL",
+      "2-2-6|RECALL CUE"
+    ],
     "activeRecall": []
   },
   "owner_rejected": {
