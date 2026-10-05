@@ -82,6 +82,15 @@
         "revision",
         "retrieval-before-review"
       ]
+    },
+    "deepDiveEnrichment": {
+      "path": "content/deep-dive/deep_dive_enrichment.json",
+      "format": "json-map",
+      "enabled": true,
+      "capabilities": [
+        "deep-dive",
+        "multi-source-enrichment"
+      ]
     }
   }
 }
