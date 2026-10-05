@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
-REQUESTS=ROOT/"rewrite-requests.json"; DATA=ROOT/"data.json"; DATAJS=ROOT/"data.js"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
+REQUESTS=ROOT/"rewrite-requests.json"; DATA=ROOT/"content/microtopics/microtopic_explanations.json"; TRACK=ROOT/"rewrite-reaudit-tracking.json"
 DEFAULT_MODEL="gemini-3.8-flash"
 DEFAULT_FALLBACK_MODELS=["gemini-3.7-flash","gemini-3.6-flash","gemini-3.5-flash"]
 
@@ -12,15 +12,7 @@ def load(p,d): return json.loads(p.read_text(encoding="utf-8")) if p.exists() el
 def save(p,x): p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
 def find_micro(data,key):
-    try: u,t,m=map(int,str(key).split("-")[:3])
-    except: return None
-    for a in data.get("units",[]):
-        if a.get("id")==u:
-            for b in a.get("topics",[]):
-                if b.get("id")==t:
-                    for c in b.get("microtopics",[]):
-                        if c.get("id")==m:return c
-    return None
+    return data.get(str(key)) if isinstance(data,dict) else None
 
 def target(data,typ,ident):
     base=str(ident).split("|",1)[0]
@@ -186,7 +178,7 @@ def main():
             errors.append(rid); error_details.append({"id":rid,"error":msg})
     raw=json.dumps(data,ensure_ascii=False,separators=(",",":"))+"\n"
     DATA.write_text(raw,encoding="utf-8")
-    DATAJS.write_text("window.NETPSY_DATA = "+raw+";\n",encoding="utf-8")
+
     reqs["updated_at"]=now(); save(REQUESTS,reqs)
     track["updated_at"]=now(); save(TRACK,track)
     print(json.dumps({"processed":len(processed),"errors":len(errors),"processed_ids":processed,"error_ids":errors,"error_details":error_details},ensure_ascii=False))

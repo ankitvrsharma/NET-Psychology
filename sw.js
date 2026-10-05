@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v50-canonical-content';
+const CACHE='netpsych-shell-v1.0.0';
 const SHELL=[
   './',
   './index.html',
@@ -18,15 +18,15 @@ const SHELL=[
   './app.js',
   './syllabus-index.json',
   './content-version.js',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './content-pools/registry.json'
 ];
 const RUNTIME_DATA=new Set([
   'kaplan_enrichment.json',
   'study_sources.json',
   'simply_psychology_enrichment.json',
   'mcq_mapping.json',
-  'practice_questions.json',
-  'practice_explanations.json',
+  'questions.json',
   'home-learning.json',
   'microtopic_explanations.json',
   'quick_learn_cards.json',

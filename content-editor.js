@@ -1,6 +1,6 @@
 (()=>{'use strict';
 const OWNER='ankitvrsharma',REPO='NET-Psychology',BRANCH='main',API='https://api.github.com';
-const FILES={questions:'content/practice_questions.json',microtopics:'content/microtopic_explanations.json',quickLearnCards:'content/quick_learn_cards.json',deepDive:'content/deep_dive_explanations.json',activeRecall:'content/active_recall.json'};
+const FILES={questions:'content/questions/questions.json',microtopics:'content/microtopics/microtopic_explanations.json',quickLearnCards:'content/quick-learn/quick_learn_cards.json',deepDive:'content/deep-dive/deep_dive_explanations.json',activeRecall:'content/active-recall/active_recall.json'};
 const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 let modal=null,current=null,cache=new Map();
 
@@ -57,7 +57,7 @@ function fields(type,item){
 async function resolve(type,id){
   const f=await getFile(FILES[type]);
   let item;
-  if(type==='questions')item=(f.data||[]).find(x=>String(x.id)===String(id));
+  if(type==='questions'){const items=[...(Array.isArray(f.data?.pyq)?f.data.pyq:[]),...(Array.isArray(f.data?.practice)?f.data.practice:[])];item=items.find(x=>String(x.id)===String(id));}
   else item=f.data?.[id];
   if(!item)throw Error('The canonical content record was not found. Run the content-category build first.');
   return {f,item};
@@ -105,7 +105,7 @@ async function save(e){
   try{
     const {type,id}=current,{f,item}=await resolve(current.type,current.id);
     const updated=collect(type,item);
-    if(type==='questions'){const arr=Array.isArray(f.data)?f.data.slice():[];const idx=arr.findIndex(x=>String(x.id)===String(id));if(idx<0)throw Error('Question record not found.');arr[idx]=updated;f.data=arr}
+    if(type==='questions'){const pyq=Array.isArray(f.data?.pyq)?f.data.pyq.slice():[],practice=Array.isArray(f.data?.practice)?f.data.practice.slice():[];let idx=pyq.findIndex(x=>String(x.id)===String(id));if(idx>=0)pyq[idx]=updated;else{idx=practice.findIndex(x=>String(x.id)===String(id));if(idx<0)throw Error('Question record not found.');practice[idx]=updated;}f.data={...f.data,pyq,practice};}
     else f.data={...(f.data||{}),[id]:updated};
     cache.set(FILES[type],f);
     await putFile(FILES[type],f.data,token,'Owner correction: '+type+' '+id);

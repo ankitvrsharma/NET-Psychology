@@ -12,14 +12,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Validate source and generated content
-        run: python scripts/validate_content.py
-
+      - name: Validate content pools
+        run: python scripts/validate_content_pools.py
       - name: Run deterministic expert audit
         run: python scripts/expert_audit.py
-
-      - name: Verify canonical source is the audit input
-        run: |
-          grep -q "content-source.json" scripts/expert_audit.py
-          echo "Expert audit is using content-source.json."

@@ -262,8 +262,9 @@ function download(name,obj){const a=document.createElement('a');a.href=URL.creat
 async function boot(){
   try{
     bind();
-    const [data,qs,ex]=await Promise.all([jsonFetch('data.json'),jsonFetch('practice_questions.json'),jsonFetch('practice_explanations.json')]);
-    audit=build(data,Array.isArray(qs)?qs:[],ex&&typeof ex==='object'?ex:{});
+    const [data,pool]=await Promise.all([jsonFetch('syllabus-index.json'),jsonFetch('content/questions/questions.json')]);
+    const qs=pool&&typeof pool==='object'?[...(Array.isArray(pool.pyq)?pool.pyq:[]),...(Array.isArray(pool.practice)?pool.practice:[])]:[];
+    audit=build(data,qs,{});
     renderSummary();
     renderRows();
     ownerState();

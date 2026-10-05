@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "20261005-source1";
+window.NETPSY_DATA_VERSION = "1.0.0";
