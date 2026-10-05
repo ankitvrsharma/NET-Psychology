@@ -1865,3 +1865,11 @@ body.tour-open{overflow:hidden}
 /* Home journey path removed from the learner-facing home page. */
 .learning-approach{display:none!important}
 @media(max-width:620px){.micro-learning-actions{grid-template-columns:1fr 2fr 1fr}.micro-action{padding:0 8px}.micro-action span{font-size:10px}}
+
+
+/* Stable page-height layout */
+body{min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+
+/* Keep onboarding questions fully inside their cards */
+.start-form legend{display:block;width:100%;margin:0 0 12px;padding:0}
