@@ -1843,3 +1843,8 @@ body.tour-open{overflow:hidden}
 .learning-profile-grid strong,.learning-profile-grid span{display:block}.learning-profile-grid strong{font-size:14px;color:var(--navy);line-height:1.35}.learning-profile-grid span{font-size:11px;color:var(--muted);margin-top:3px}
 .learning-profile-plan{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.5}
 @media(max-width:650px){.learning-profile-grid{grid-template-columns:1fr}.learning-profile{padding:17px}}
+
+
+/* Up Next hierarchy: unit context first, micro-topic second */
+.learn-up-next-item .up-next-unit{display:block;font-size:15px;line-height:1.35;font-weight:700;color:var(--navy)}
+.learn-up-next-item .up-next-micro{display:block;margin-top:5px;font-size:13px;line-height:1.4;font-style:normal;font-weight:500;color:var(--muted)}
