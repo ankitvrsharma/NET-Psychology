@@ -65,10 +65,100 @@ async function loadPool(name){
 const syllabusItems=()=>units().flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
 const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,ref.id)]||ref);
 const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||m;
+function todayKeyString(){
+  const now=new Date();
+  return [now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+}
+function stableSeed(value){
+  let hash=2166136261;
+  for(let i=0;i<String(value).length;i++){hash^=String(value).charCodeAt(i);hash=Math.imul(hash,16777619)}
+  return hash>>>0;
+}
+function seededShuffle(list,seed){
+  const out=list.slice();let x=seed>>>0;
+  const rand=()=>{x^=x<<13;x^=x>>>17;x^=x<<5;return (x>>>0)/4294967296};
+  for(let i=out.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[out[i],out[j]]=[out[j],out[i]]}
+  return out;
+}
+function dailyPracticeSeed(today=todayKeyString()){
+  const progress=state();
+  const started=Object.keys(progress).filter(k=>k!=='_practiceHistory'&&progress[k]&&typeof progress[k]==='object'&&progress[k].status&&progress[k].status!=='NEW').length;
+  const answers=Array.isArray(progress._practiceHistory)?progress._practiceHistory.length:0;
+  return stableSeed(today+'|'+started+'|'+answers);
+}
+function prepareHomeDecision(){
+  const today=todayKeyString(),allItems=syllabusItems(),stored=(()=>{try{return JSON.parse(localStorage.getItem('netPsychDaily3')||'null')}catch{return null}})();
+  const valid=new Set(allItems.map(x=>x.k));
+  if(!(stored?.date===today&&Array.isArray(stored.items)&&stored.items.length===3&&stored.items.every(k=>valid.has(k)))){
+    let rotation={served:[],cycle:0};
+    try{const saved=JSON.parse(localStorage.getItem('netPsychDailyLearning')||'null');if(saved&&Array.isArray(saved.served))rotation={served:saved.served,cycle:Number(saved.cycle)||0}}catch(e){}
+    let served=rotation.served.filter(k=>valid.has(k));
+    const chosen=[];
+    const addUnique=list=>{for(const x of list){if(!chosen.some(y=>y.k===x.k))chosen.push(x);if(chosen.length===3)break}};
+    addUnique(allItems.filter(x=>getP(x.k).status==='NEW'&&!served.includes(x.k)));
+    addUnique(allItems.filter(x=>getP(x.k).status==='NEW'));
+    addUnique(allItems.filter(x=>!served.includes(x.k)));
+    addUnique(allItems.filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=Date.now()).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next)));
+    addUnique(allItems);
+    const session=interleaveBy(chosen,x=>x.u.id,3);
+    if(session.length===3){
+      const nextServed=[...served,...session.map(x=>x.k)],completedCycle=nextServed.length>=allItems.length;
+      try{
+        localStorage.setItem('netPsychDaily3',JSON.stringify({date:today,items:session.map(x=>x.k)}));
+        localStorage.setItem('netPsychDailyLearning',JSON.stringify({served:completedCycle?[]:nextServed,cycle:completedCycle?rotation.cycle+1:rotation.cycle,lastDate:today}));
+      }catch(e){}
+    }
+  }
+  const quickId=CONTENT_POOLS.homeLearning?.quick_learn?.id||'';
+  const seed=dailyPracticeSeed(today);
+  try{
+    const daily=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');
+    localStorage.setItem('netPsychHomeDecision',JSON.stringify({date:today,daily3:daily?.items||[],practiceSeed:seed,quickLearnId:quickId}));
+    const practice=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null');
+    if(!(practice?.date===today&&Array.isArray(practice.ids)&&practice.ids.length===10)){
+      localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:today,seed}));
+    }
+  }catch(e){}
+}
+function progressivePrefetchAllowed(){
+  const c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+  if(navigator.onLine===false)return false;
+  if(navigator.saveData||c?.saveData)return false;
+  const type=String(c?.effectiveType||'').toLowerCase();
+  return !['slow-2g','2g'].includes(type);
+}
+function progressivePrefetch(paths){
+  if(!paths.length||!progressivePrefetchAllowed())return;
+  const urls=paths.map(path=>new URL('./'+path+'?v='+DATA_VERSION,document.baseURI).href);
+  const run=async()=>{
+    try{
+      if('serviceWorker' in navigator){
+        const reg=await navigator.serviceWorker.ready;
+        if(reg?.active){reg.active.postMessage({type:'NETPSY_PREFETCH',urls});return;}
+      }
+    }catch(e){}
+    for(const url of urls){
+      try{await fetch(url,{cache:'default',priority:'low'});}catch(e){}
+    }
+  };
+  const idle=window.requestIdleCallback||((cb)=>setTimeout(cb,1200));
+  idle(()=>run());
+}
+function scheduleProgressivePrefetch(page){
+  const next={
+    home:['content/microtopics/micro_topics.json'],
+    daily3:['content/active-recall/active_recall.json','content/questions/questions.json'],
+    'active-recall':['content/revision/revision_guidance.json'],
+    revision:['content/questions/questions.json'],
+    microtopic:['content/active-recall/active_recall.json','content/revision/revision_guidance.json'],
+    deepDive:['content/active-recall/active_recall.json']
+  };
+  progressivePrefetch(next[page]||[]);
+}
 const loadStudyData=async()=>{
-  D=await fetchJSON('data/syllabus-index.json','Syllabus index');
-  if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const page=document.body?.dataset?.page||'';
+  D=await fetchJSON(page==='home'?'data/home-index.json':'data/syllabus-index.json',page==='home'?'Home index':'Syllabus index');
+  if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const poolNames=new Set();
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
   if(microPages.has(page))poolNames.add('microtopics');
@@ -86,7 +176,9 @@ const loadStudyData=async()=>{
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
   }
+  if(page==='home')prepareHomeDecision();
   safeRender();
+  scheduleProgressivePrefetch(page);
   return true;
 };
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -364,6 +456,10 @@ function renderNetCountdown(summary=progressSummary()){
 function quickLearnItem(){
   const pool=CONTENT_POOLS.quickLearn;
   const bank=pool&&typeof pool==='object'?Object.values(pool).filter(x=>x&&x.id):[];
+  const fallback=CONTENT_POOLS.homeLearning?.quick_learn;
+  if(!bank.length&&fallback?.id){
+    return {...fallback,category:fallback.category||fallback.angle||'CONCEPT',href:fallback.href||microtopicHref({id:fallback.unit},{id:fallback.topic},{id:fallback.micro})};
+  }
   if(!bank.length)return null;
   const keyName='netPsychQuickLearnCycle';let cycle={seen:[],cycle:0};
   try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.seen))cycle={seen:stored.seen,cycle:Number(stored.cycle)||0}}catch(e){}
@@ -429,9 +525,9 @@ function dailyPractice(){
   try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
   let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
   if(questions.length!==10){
-    const shuffled=allQuestions.slice().sort(()=>Math.random()-0.5);
-    questions=shuffled.slice(0,10);
-    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,ids:questions.map(q=>q.id)}));
+    const seed=Number(stored?.date===todayKey&&stored?.seed)||dailyPracticeSeed(todayKey);
+    questions=seededShuffle(allQuestions,seed).slice(0,10);
+    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,seed,ids:questions.map(q=>q.id)}));
   }
   root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
   let current=0,ended=false,correctCount=0,answers={};
