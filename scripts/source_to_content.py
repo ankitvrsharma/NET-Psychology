@@ -178,7 +178,7 @@ def main():
             marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
             def append_once(existing,label,text):
                 existing=str(existing or "")
-                block=f"\\n\\n[{marker} {label}]\\n{text.strip()}"
+                block=f"\n\n[{marker} {label}]\n{text.strip()}"
                 return existing if f"[{marker} {label}]" in existing else existing+block
             for g in generated:
                 if g["microtopic_id"] not in pool: continue
