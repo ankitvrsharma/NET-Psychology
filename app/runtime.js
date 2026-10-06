@@ -136,8 +136,11 @@ const partForTopic=(u,t)=>unitParts(u).find(p=>Array.isArray(p.topic_ids)&&p.top
 function sourceEntries(m){return (m.sources||[]).map(id=>D.source_library?.find(s=>s.id===id)).filter(Boolean)}
 function sourceNames(m){return sourceEntries(m).map(s=>s.title)}
 function isStartedProgress(p){return !!(p&&((p.status&&p.status!=='NEW')||p.started===true||p.startedAt||p.understanding||p.application||p.last||p.lastRevision))}
-function startedMicrotopics(){return all().filter(x=>isStartedProgress(getP(x.k)))}
-function progressSummary(){const ps=all().map(x=>getP(x.k)),total=all().length,started=ps.filter(isStartedProgress).length,learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,revisionScheduled=ps.filter(p=>p.revisionCount>0||p.next||p.lastRevision).length,answered=ps.flatMap(p=>p.mcqHistory||[]),practice=state()._practiceHistory||[],allAnswers=answered.concat(practice),correct=allAnswers.filter(x=>x.correct).length;return {total,started,learned,mastered,revisionScheduled,coverage:total?Math.round(learned/total*100):0,mastery:learned?Math.round(mastered/learned*100):0,retention:learned?Math.round(revisionScheduled/learned*100):0,accuracy:allAnswers.length?Math.round(correct/allAnswers.length*100):0,answers:allAnswers.length}}
+function startedMicrotopics(){return syllabusItems().filter(x=>isStartedProgress(getP(x.k))).map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)}))}
+function progressSummary(){
+  const items=syllabusItems(),ps=items.map(x=>getP(x.k)),total=items.length,started=ps.filter(isStartedProgress).length,learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,revisionScheduled=ps.filter(p=>p.revisionCount>0||p.next||p.lastRevision).length,answered=ps.flatMap(p=>p.mcqHistory||[]),practice=state()._practiceHistory||[],allAnswers=answered.concat(practice),correct=allAnswers.filter(x=>x.correct).length;
+  return {total,started,learned,mastered,revisionScheduled,coverage:total?Math.round(learned/total*100):0,mastery:learned?Math.round(mastered/learned*100):0,retention:learned?Math.round(revisionScheduled/learned*100):0,accuracy:allAnswers.length?Math.round(correct/allAnswers.length*100):0,answers:allAnswers.length};
+}
 function progressTopicSummary(){
   const topics=units().flatMap(u=>(u.topics||[]).map(t=>({u,t,microtopics:t.microtopics||[]})));
   const touched=topics.filter(x=>x.microtopics.some(m=>isStartedProgress(getP(key(x.u.id,x.t.id,m.id)))));
