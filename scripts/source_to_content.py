@@ -85,10 +85,37 @@ def _gemini_schema(schema):
     return schema
 
 def _resolve_model_chain():
-    # Gemini's latest alias is preferred; two pinned stable models remain as fallbacks.
-    requested=os.getenv("NET_CONTENT_MODEL",MODEL)
-    chain=[requested]+MODEL_FALLBACKS
-    return list(dict.fromkeys(chain))
+    # Discover the current stable Gemini Flash family at runtime. This means
+    # the newest available stable Flash model is always first, with the two
+    # immediately previous stable versions retained as fallbacks.
+    import urllib.request, re
+    api_key=os.getenv("GEMINI_API_KEY")
+    if not api_key: raise SystemExit("GEMINI_API_KEY is required.")
+    requested=os.getenv("NET_CONTENT_MODEL","").strip()
+    configured=[x.strip() for x in os.getenv("NET_CONTENT_FALLBACKS","").split(",") if x.strip()]
+    if requested:
+        return list(dict.fromkeys([requested]+configured))
+    url="https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000"
+    req=urllib.request.Request(url,headers={"x-goog-api-key":api_key})
+    try:
+        with urllib.request.urlopen(req,timeout=30) as response:
+            models=json.loads(response.read().decode("utf-8")).get("models",[])
+        versions=[]
+        for m in models:
+            name=m.get("name","").split("/")[-1]
+            if "generateContent" not in m.get("supportedGenerationMethods",[]): continue
+            # Only stable numeric Gemini Flash models; exclude previews, lite,
+            # image/audio variants and other special-purpose models.
+            match=re.fullmatch(r"gemini-(\\d+)\\.(\\d+)-flash",name)
+            if match:
+                versions.append((int(match.group(1)),int(match.group(2)),name))
+        versions=sorted(set(versions),reverse=True)
+        if versions:
+            return [v[2] for v in versions[:3]]
+    except Exception:
+        pass
+    return ["gemini-flash-latest"]+configured
+
 
 def call_ai(instructions,payload,name,schema):
     import urllib.request
