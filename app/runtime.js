@@ -463,7 +463,7 @@ function quickLearnItem(){
   const last=seen[seen.length-1];let poolItems=unseen.filter(x=>x.id!==last);if(!poolItems.length)poolItems=unseen;
   const item=poolItems[Math.floor(Math.random()*poolItems.length)];seen=[...seen,item.id];
   try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}
-  return {...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
+  return {...item,category:item.category||item.angle||'CONCEPT',href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
