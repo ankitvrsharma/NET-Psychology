@@ -34,12 +34,13 @@ def main():
         me=micro[mid]
         me["expert_explanation"]=g["core_explanation"]
         me["detailed_explanation"]=g["detailed_explanation"]
+        me["cross_references"]=g.get("cross_references") or []
         de=deep.get(mid) or {"id":mid,"title":me.get("title","")}
-        de["id"]=mid; de["title"]=me.get("title",de.get("title","")); de["detailed_explanation"]=g["detailed_explanation"]; deep[mid]=de
+        de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title","")); de["detailed_explanation"]=g["detailed_explanation"]; deep[mid]=de
         ae=recall.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
-        ae["id"]=mid; ae["title"]=me.get("title",ae.get("title","")); ae["prompts"]=g.get("recall_prompts") or []; recall[mid]=ae
+        ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title","")); ae["prompts"]=g.get("recall_prompts") or []; recall[mid]=ae
         rg=g.get("revision_guidance") or {}; rev=revision.get(mid) or {"id":mid,"title":me.get("title","")}
-        rev["id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
+        rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
         for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"): rev[field]=rg.get(field,"")
         revision[mid]=rev
         item["status"]="PUBLISHED"; item["published_at"]=now; item["publication"]="OWNER_APPROVED"
