@@ -193,7 +193,7 @@ def main():
     qobj=load(QUESTIONS)
     questions=qobj if isinstance(qobj,list) else [*qobj.get("pyq",[]),*qobj.get("practice",[])]
     
-    if args.repair_existing:
+    if args.repair_existing and not args.apply_staged:
         # AI classification is restricted to a small candidate set per item.
         q_schema={"type":"object","properties":{"mappings":{"type":"array","items":{
             "type":"object","properties":{"id":{"type":"string"},"microtopic_id":{"type":"string"},"confidence":{"type":"number"}},
@@ -236,6 +236,8 @@ def main():
                     r=refs[m["microtopic_id"]]; quick[m["card_id"]].update(unit=r["unit"],topic=r["topic"],micro=r["micro"]); report["repairs"]["quick"]+=1
         report["unresolved"]["quick"]=[cid for cid,c in quick.items() if isinstance(c,dict) and f"{c.get('unit')}-{c.get('topic')}-{c.get('micro')}" not in refs]
 
+    if args.repair_existing and not args.apply_staged:
+        save(STAGING/"repair-plan.json",{"questions":qobj if isinstance(qobj,dict) else questions,"quick":quick})
     generated=[]
     target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()}
     existing_micro=load(MICRO)
@@ -264,31 +266,36 @@ def main():
         "source_notes":{"type":"string"}},
         "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","source_notes"],
         "additionalProperties":False}
-    for ref in list(refs.values()):
-        if target_ids and ref["id"] not in target_ids: continue
-        if len(generated)>=MAX_TOPICS: break
-        words=set(norm(ref["title"]).split())
-        ranked=[]
-        for src,i,text in source_chunks:
-            ranked.append((len(words & set(norm(text).split())),src,i,text))
-        ranked.sort(reverse=True,key=lambda x:x[0])
-        evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
-        if not evidence: continue
-        current={
-            "microtopic":existing_micro.get(ref["id"],{}),
-            "deep_dive":existing_deep.get(ref["id"],{}),
-            "active_recall":existing_recall.get(ref["id"],{}),
-            "revision":existing_revision.get(ref["id"],{})
-        }
-        generated.append(call_ai(
-            instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence.",
-            {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
+    if not args.apply_staged:
+        for ref in list(refs.values()):
+            if target_ids and ref["id"] not in target_ids: continue
+            if len(generated)>=MAX_TOPICS: break
+            words=set(norm(ref["title"]).split())
+            ranked=[]
+            for src,i,text in source_chunks:
+                ranked.append((len(words & set(norm(text).split())),src,i,text))
+            ranked.sort(reverse=True,key=lambda x:x[0])
+            evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
+            if not evidence: continue
+            current={
+                "microtopic":existing_micro.get(ref["id"],{}),
+                "deep_dive":existing_deep.get(ref["id"],{}),
+                "active_recall":existing_recall.get(ref["id"],{}),
+                "revision":existing_revision.get(ref["id"],{})
+            }
+            generated.append(call_ai(
+                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence.",
+                {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
     if args.apply_staged:
         staged=load(STAGING/"canonical-content.json")
         if not isinstance(staged,list) or not staged: raise SystemExit("No audited staged content available.")
         generated=staged
+        if args.repair_existing:
+            repair_plan=load(STAGING/"repair-plan.json")
+            qobj=repair_plan["questions"]
+            quick=repair_plan["quick"]
     if args.apply or args.apply_staged:
         if args.repair_existing:
             save(QUESTIONS,qobj if isinstance(qobj,dict) else questions)
