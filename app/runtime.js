@@ -1027,7 +1027,14 @@ function progress(){
   $('#progressApp').innerHTML=`<section class="page-hero progress-hero"><div class="eyebrow">PROGRESS</div><h1>See how your learning is building.</h1><p>See what you have explored, what you can recall, how you are performing in questions, and how consistently you are returning to what you have learned.</p></section>
   <section class="progress-signals"><div class="section-head"><div><div class="eyebrow">YOUR LEARNING SIGNALS</div><h2>Look at the pattern, not just the numbers.</h2><p class="page-guidance">These signals show different parts of your learning process. Use them together to understand where your learning is becoming secure and where it needs more work.</p></div></div>
     <div class="progress-category-stack">
-      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING</div><h2>Build your understanding across the syllabus.</h2><p>See how far you’ve explored the syllabus, what you’ve fully learned, and where you can begin next.</p></div></div><div class="progress-indicators">
+      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING PATH</div><h2>Track the five stages of secure learning.</h2><p>Each stage represents a different learning decision: starting, understanding, active recall, revision, and mastery.</p></div></div><div class="progress-indicators">
+        <div class="progress-indicator"><span>Started</span><strong>${s.started}</strong><small>micro-topics you have opened and begun</small></div>
+        <div class="progress-indicator"><span>Learned</span><strong>${s.learned}</strong><small>understanding checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Actively Recalled</span><strong>${s.activelyRecalled}</strong><small>active-recall checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Revision</span><strong>${s.revision}</strong><small>at least one revision checkpoint recorded</small></div>
+        <div class="progress-indicator"><span>Mastered</span><strong>${s.mastered}</strong><small>mastery condition completed</small></div>
+      </div></section>
+  <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING</div><h2>Build your understanding across the syllabus.</h2><p>See how far you’ve explored the syllabus, what you’ve fully learned, and where you can begin next.</p></div></div><div class="progress-indicators">
         <div class="progress-indicator"><span>Topics Mastered</span><strong>${topics.mastered}</strong><small>all micro-topics in the topic mastered</small></div>
         <div class="progress-indicator"><span>Topics Explored</span><strong>${topics.touched}</strong><small>at least one micro-topic started</small></div>
         <div class="progress-indicator"><span>Topics Not Touched Yet</span><strong>${topics.untouched}</strong><small>no micro-topic started yet</small></div>
