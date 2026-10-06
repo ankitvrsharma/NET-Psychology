@@ -1,0 +1,2856 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "June-2012-12",
+      "session": "June 2012",
+      "question_number": 12,
+      "question": "Assertion (A): We are able to recognize the similarity and differences of two objects. 1. Reason (R) : Dissociable subsystems operate simultaneously in each cerebral hemisphere. 2. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true but (R) is not the correct explanation of (A). c). (A) is true but (R) is false. d). Both (A) and (R) are false",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(A) is true but (R) is false.",
+        "Both (A) and (R) are false"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. The Gestalt principle of similarity leads people to group elements that share features such as shape, colour, or size.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2012-23",
+      "session": "June 2012",
+      "question_number": 23,
+      "question": "Intellectual functioning is mainly in the domain of which lobe of the Cortex?",
+      "options": [
+        "Occipital lobe",
+        "Frontal lobe",
+        "Parietal lobe",
+        "Temporal lobe"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Frontal lobe. The stem describes the concept or relationship represented by Frontal lobe; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2012-24",
+      "session": "June 2012",
+      "question_number": 24,
+      "question": "A nerve cell that responds to a vertical line but not to horizontal line is an example of",
+      "options": [
+        "linear perspective system",
+        "feature detector",
+        "pattern analyser",
+        "selection and organization process"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. feature detector. The stem describes the concept or relationship represented by feature detector; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2012-25",
+      "session": "June 2012",
+      "question_number": 25,
+      "question": "The visual signals from each retina reach striate cortex via which of the following?",
+      "options": [
+        "Lateral geniculate nucleus",
+        "Medical geniculate nucleus",
+        "Infero-temporal cortex",
+        "Posterior parietal cortex"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Lateral geniculate nucleus. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2012-28",
+      "session": "June 2012",
+      "question_number": 28,
+      "question": "Microsleep occurs mainly due to one of the following:",
+      "options": [
+        "Sleep disorder",
+        "Drugged state",
+        "Sleep deprivation",
+        "Dreaming state"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Sleep deprivation. The stem describes the concept or relationship represented by Sleep deprivation; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2012-35",
+      "session": "June 2012",
+      "question_number": 35,
+      "question": "Railroad tracks that seem to draw closer together as they recede into the distance are an example of",
+      "options": [
+        "Linear perspective",
+        "Relative size",
+        "Binocular vision",
+        "Feature detection"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Linear perspective. The stem describes the concept or relationship represented by Linear perspective; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2012-13",
+      "session": "December 2012",
+      "question_number": 13,
+      "question": "The sentence “Blue Jeans wear false smiles” has correct _______ but incorrect ________.",
+      "options": [
+        "Morphemes; phonemes",
+        "Phonemes; morphemes",
+        "Semantics; syntax",
+        "Syntax; semantics"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Syntax; semantics. The stem describes the concept or relationship represented by Syntax; semantics; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2012-16",
+      "session": "December 2012",
+      "question_number": 16,
+      "question": "The phi-phenomenon, stroboscopic motion, induced motion and autokinetic motion are all",
+      "options": [
+        "Pictorial cues",
+        "Apparent motion",
+        "Double images",
+        "Non-verbal cues 45 UGC NET JRF December 2012 Paper II 45 UGC NET JRF December 2012 Paper II Tap to check answer key"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Apparent motion. The stem describes the concept or relationship represented by Apparent motion; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2012-28",
+      "session": "December 2012",
+      "question_number": 28,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using the codes given below : 1. Assertion (A): People just coldly store and retrieve bits of data. 2. Reason (R): Psychologists recognize that people reconstruct their own version of the past. 3. Codes: a). Both (A) and (R) are correct and (R) is the correct explanation of (A). b). Both (A) and (R) are correct, but (R) is not the correct explanation of (A). c). (A) is false, but (R) is true. d). (A) is true, but (R) is false.",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are correct, but (R) is not the correct explanation of (A).",
+        "(A) is false, but (R) is true.",
+        "(A) is true, but (R) is false."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2012-49",
+      "session": "December 2012",
+      "question_number": 49,
+      "question": "‘Males are more extraverted than females’ is an example of",
+      "options": [
+        "Null hypothesis",
+        "Non-directional hypothesis",
+        "Directional hypothesis",
+        "Unverifiable hypothesis"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Directional hypothesis. The stem describes the concept or relationship represented by Directional hypothesis; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2013-16",
+      "session": "June 2013",
+      "question_number": 16,
+      "question": "Match the List– I with List–II and indicate your answer using the codes given below : List I (Glands) List II ( Hormons) a. Pituitary 1. Melatonin b. Adrenal Cortex 2. Adrenaline c. Pineal 3. Prolactin d. Adrenal Medulla 4. Corticosteroids Codes: 1. A B C D",
+      "options": [
+        "2 1 3 4",
+        "1 3 2 4",
+        "4 3 1 2",
+        "3 4 1 2"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 3 4 1 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2013-17",
+      "session": "June 2013",
+      "question_number": 17,
+      "question": "What is the correct sequence of ear parts given below? a). Eardrum – Hammer – Anvil – Stirrup – Oval window b). Oval window – Hammer – Eardrum – Anvil – Stirrup c). Eardrum – Anvil – Stirrup – Hammer – Oval window d). Oval window – Anvil – Hammer – Stirrup – Eardrum",
+      "options": [
+        "Eardrum – Hammer – Anvil – Stirrup – Oval window",
+        "Oval window – Hammer – Eardrum – Anvil – Stirrup",
+        "Eardrum – Anvil – Stirrup – Hammer – Oval window",
+        "Oval window – Anvil – Hammer – Stirrup – Eardrum"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Eardrum – Hammer – Anvil – Stirrup – Oval window. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2013-29",
+      "session": "June 2013",
+      "question_number": 29,
+      "question": "A slow graded electrical potential produced by a receptor cell in response to a physical stimulus is",
+      "options": [
+        "Receptor potential",
+        "Generator potential",
+        "Transduction",
+        "Arousal"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Receptor potential. The stem describes the concept or relationship represented by Receptor potential; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2013-31",
+      "session": "June 2013",
+      "question_number": 31,
+      "question": "Give the correct sequence of the location of following glands in human body from top to bottom a). Thyroid – Adrenal – Pancreas – Pituitary b). Thyroid – Pancreas – Pituitary– Adrenal c). Pituitary – Adrenal – Thyroid – Pancreas d). Pituitary – Thyroid – Adrenal – Pancreas",
+      "options": [
+        "Thyroid – Adrenal – Pancreas – Pituitary",
+        "Thyroid – Pancreas – Pituitary– Adrenal",
+        "Pituitary – Adrenal – Thyroid – Pancreas",
+        "Pituitary – Thyroid – Adrenal – Pancreas"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Pituitary – Thyroid – Adrenal – Pancreas. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2013-37",
+      "session": "June 2013",
+      "question_number": 37,
+      "question": "Perceiving one thing in relation to another when both are presented simultaneously is called",
+      "options": [
+        "Simultaneous perception",
+        "Figure-Ground perception",
+        "Consecutive perception",
+        "Successive perception"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Figure-Ground perception. The stem describes the concept or relationship represented by Figure-Ground perception; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2013-10",
+      "session": "September 2013",
+      "question_number": 10,
+      "question": "Which part of the brain is responsible for skilled movements?",
+      "options": [
+        "Thalamus",
+        "Prefrontal cortex",
+        "Pons",
+        "Cerebellum"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Cerebellum. The stem describes the concept or relationship represented by Cerebellum; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2013-32",
+      "session": "September 2013",
+      "question_number": 32,
+      "question": "Children first demonstrate a rudimentary understanding of syntax during the stage.",
+      "options": [
+        "Babbling",
+        "One-word",
+        "Two-word",
+        "Three-word"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Two-word. The stem describes the concept or relationship represented by Two-word; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2013-33",
+      "session": "September 2013",
+      "question_number": 33,
+      "question": "The Chess Master selects his next move by considering moves that would threaten his opponent’s queen. His opponent, a chess-playing computer selects its next move by 117 UGC NET JRF September 2013 Paper II 117 UGC NET JRF September 2013 Paper II Tap to check answer key considering all possible moves. The chess master is using _____ and the computer is using _____.",
+      "options": [
+        "Algorithm ; heuristic",
+        "Prototype ; mental set",
+        "Mental set ; prototype",
+        "Heuristic ; algorithm"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Heuristic ; algorithm. The stem describes the concept or relationship represented by Heuristic ; algorithm; the alternatives refer to different concepts or conditions. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2013-41",
+      "session": "September 2013",
+      "question_number": 41,
+      "question": "Read each of the following two statements, Assertion (A) and Reason (R). And indicate your answer using the codes given below: 1. Assertion (A): In Scandinavian countries, parents do not beat children. 2. Reason (R): Scandinavian countries have outlawed physical punishment by parents. 3. Codes: a). Both (A) and (R) are correct and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 119 UGC NET JRF September 2013 Paper II 119 UGC NET JRF September 2013 Paper II Tap to check answer key c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A). 119 UGC NET JRF September 2013 Paper II 119 UGC NET JRF September 2013 Paper II Tap to check answer key",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are correct and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Punishment is a consequence intended to decrease the future frequency of a behaviour.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2013-1",
+      "session": "December 2013",
+      "question_number": 1,
+      "question": "The visible spectrum wavelength ranges from a). 380 to 760 nanometres b). 200 to 700 nanometres c). 400 to 1000 nanometres d). 100 to 1000 nanometres",
+      "options": [
+        "380 to 760 nanometres",
+        "200 to 700 nanometres",
+        "400 to 1000 nanometres",
+        "100 to 1000 nanometres"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 380 to 760 nanometres. The stem describes the concept or relationship represented by 380 to 760 nanometres; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2013-33",
+      "session": "December 2013",
+      "question_number": 33,
+      "question": "Telegraphic speech is typical of the ______ stage.",
+      "options": [
+        "Babbling",
+        "One-word",
+        "Two-word",
+        "Three-word"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Two-word. The stem describes the concept or relationship represented by Two-word; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2013-34",
+      "session": "December 2013",
+      "question_number": 34,
+      "question": "The sentence “Blue Jeans wear false smiles” has correct _____ but incorrect _______.",
+      "options": [
+        "Morphemes; phonemes",
+        "Phonemes; morphemes",
+        "Semantics ; syntax",
+        "Syntax ; semantics"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Syntax ; semantics. The stem describes the concept or relationship represented by Syntax ; semantics; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2013-35",
+      "session": "December 2013",
+      "question_number": 35,
+      "question": "Read the following statements labelled as Assertion (A) and Reason (R) and indicate your answer by using the codes given below: 1. Assertion (A): In deduction, conclusion is derived from a premise. 2. Reason (R): People reason by using deduction as well as induction. 3. Codes: a). Both (A) and (R) are correct and (R) is the true explanation of (A). b). Both (A) and (R) are correct but (R) is not the correct explanation of (A). c). (A) is correct, but (R) is false. d). (A) is false, but (R) is correct.",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the true explanation of (A).",
+        "Both (A) and (R) are correct but (R) is not the correct explanation of (A).",
+        "(A) is correct, but (R) is false.",
+        "(A) is false, but (R) is correct."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are correct but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2014-19",
+      "session": "June 2014",
+      "question_number": 19,
+      "question": "What would be the degrees of freedom for a chi-square based on 4",
+      "options": [
+        "5",
+        "9",
+        "12",
+        "20"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 12. The stem describes the concept or relationship represented by 12; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2014-24",
+      "session": "June 2014",
+      "question_number": 24,
+      "question": "Arjun gets annoyed when his mother nags him to do his homework. When he finally does it, his mother stops nagging. Now he does the homework without any nagging. Here ‘nagging’ has served as a",
+      "options": [
+        "Punishment by application",
+        "Positive reinforcement",
+        "Negative reinforcement",
+        "Punishment by removal"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Negative reinforcement. The stem describes the concept or relationship represented by Negative reinforcement; the alternatives refer to different concepts or conditions. Negative reinforcement increases a behaviour by removing an aversive stimulus after the behaviour; it is not the same as punishment.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2014-17",
+      "session": "December 2014",
+      "question_number": 17,
+      "question": "Organizing items into familiar, manageable units, often automatically, is termed",
+      "options": [
+        "Priming",
+        "Chunking",
+        "Shaping",
+        "Encoding"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Chunking. The stem describes the concept or relationship represented by Chunking; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2015-19",
+      "session": "June 2015",
+      "question_number": 19,
+      "question": "Which of the following is correctly arranged? 1). Identify - set goals - explore - alternatives - select - evaluate – implement 2). Identify - explore - set goals - alternatives - select - implement – evaluate 3). Select - explore - identify - set goals - alternatives - implement – evaluate 4). Explore - identify- select - set goals - alternatives - evaluate - implement",
+      "options": [
+        "Identify - set goals - explore - alternatives - select - evaluate – implement",
+        "Identify - explore - set goals - alternatives - select - implement – evaluate",
+        "Select - explore - identify - set goals - alternatives - implement – evaluate",
+        "Explore - identify- select - set goals - alternatives - evaluate - implement"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Identify - explore - set goals - alternatives - select - implement – evaluate. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2015-32",
+      "session": "June 2015",
+      "question_number": 32,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I List II a. -67 mv (i) Polarized b. +45 mv (ii) Hyperpolarized c. -70 mv (iii) Depolarized UGC NET JRF June 2015 Paper II 260 UGC NET JRF June 2015 Paper II 260 Tap to check answer key d. -72 mv (iv) Completely depolarized Codes: 1. a b c d",
+      "options": [
+        "(iii) (ii) (i) (iv)",
+        "(iii) (iv) (i) (ii)",
+        "(ii) (iv) (iii) (i)",
+        "(iv) (iii) (i) (ii)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (iii) (iv) (i) (ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2015-40",
+      "session": "June 2015",
+      "question_number": 40,
+      "question": "The rate of responding is found to be higher in the condition of:",
+      "options": [
+        "Variable-internal schedule of reinforcement",
+        "Fixed-ratio schedule of reinforcement",
+        "Variable-ratio schedule of reinforcement",
+        "Both in (2) and (3)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Both in (2) and (3). The stem describes the concept or relationship represented by Both in (2) and (3); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-13",
+      "session": "December 2015",
+      "question_number": 13,
+      "question": "Words learned under water are recalled: 1). Better on land than under water 2). Better above land (sky) than on land 3). Better above land (sky) than under water 4). Better under water than on land",
+      "options": [
+        "Better on land than under water",
+        "Better above land (sky) than on land",
+        "Better above land (sky) than under water",
+        "Better under water than on land"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Better under water than on land. The stem describes the concept or relationship represented by Better under water than on land; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-17",
+      "session": "December 2015",
+      "question_number": 17,
+      "question": "Which of the following sequence is correct?",
+      "options": [
+        "Oral phase → Anal phase → Latency → Phallic → Genital",
+        "Anal → Oral → Phallic → Latency → Genital",
+        "Oral → Anal → Phallic → Latency → Genital",
+        "Oral → Phallic → Anal → Genital → Latency"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Oral → Anal → Phallic → Latency → Genital. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-19",
+      "session": "December 2015",
+      "question_number": 19,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): Action potentials normally travel along axons in one direction. 2. Reason (R): The portions of an axon over which an action potential has just travelled are left momentarily refractory. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). UGC NET JRF December 2015 Paper II 290 UGC NET JRF December 2015 Paper II 290 Tap to check answer key 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A). UGC NET JRF December 2015 Paper II 290 UGC NET JRF December 2015 Paper II 290 Tap to check answer key",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A). . Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-24",
+      "session": "December 2015",
+      "question_number": 24,
+      "question": "Choose the correct formula to measure Body Mass Index (BMI). 1). Weight in kg squared/height in meters 2). Weight in kg squared/Height in meters squrared 3). Weight in kg/height in meters 4). Weight in kg/height in meters squared",
+      "options": [
+        "Weight in kg squared/height in meters",
+        "Weight in kg squared/Height in meters squrared",
+        "Weight in kg/height in meters",
+        "Weight in kg/height in meters squared"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Weight in kg/height in meters squared. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-28",
+      "session": "December 2015",
+      "question_number": 28,
+      "question": "In which lobe of the cerebral cortex, the primary olfactory cortex lies?",
+      "options": [
+        "Frontal lobe",
+        "Temporal lobe",
+        "Occipital lobe",
+        "Parietal lobe"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Temporal lobe. The stem describes the concept or relationship represented by Temporal lobe; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-32",
+      "session": "December 2015",
+      "question_number": 32,
+      "question": "Which of the following parts of the basal ganglia constitute the striatum? 1). Amygdala 2). Caudate 3). Putamen 4). Globus Pallidus 293 UGC NET JRF December 2015 Paper II 293 UGC NET JRF December 2015 Paper II Tap to check answer key 1. Codes:",
+      "options": [
+        "(a) and (b)",
+        "(a) and (c)",
+        "(b) and (c)",
+        "(c) and (d)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (b) and (c). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-39",
+      "session": "December 2015",
+      "question_number": 39,
+      "question": "An accused is harassed and tortured until he confesses to the crime is an example of:",
+      "options": [
+        "Negative reinforcement",
+        "Punishment",
+        "Primary reinforcement",
+        "Secondary reinforcement"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Negative reinforcement. The stem describes the concept or relationship represented by Negative reinforcement; the alternatives refer to different concepts or conditions. Negative reinforcement increases a behaviour by removing an aversive stimulus after the behaviour; it is not the same as punishment.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-44",
+      "session": "December 2015",
+      "question_number": 44,
+      "question": "What is the correct sequence an auditory stimulus takes to reach the primary auditory cortex? 1). Cochlear nuclei - Superior olive - Inferior colliculus - Medial geniculate nucleus 2). Cochlear nuclei - Inferior colliculus - Superior olive - Medial geniculate nucleus 3). Superior olive - Cochlear nuclei - Inferior colliculus - Medial geniculate nucleus 4). Medial geniculate nucleus - Inferior colliculus - Superior olive - Cochlear nucleus",
+      "options": [
+        "Cochlear nuclei - Superior olive - Inferior colliculus - Medial geniculate nucleus",
+        "Cochlear nuclei - Inferior colliculus - Superior olive - Medial geniculate nucleus",
+        "Superior olive - Cochlear nuclei - Inferior colliculus - Medial geniculate nucleus",
+        "Medial geniculate nucleus - Inferior colliculus - Superior olive - Cochlear nucleus"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Cochlear nuclei - Superior olive - Inferior colliculus - Medial geniculate nucleus. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2015-49",
+      "session": "December 2015",
+      "question_number": 49,
+      "question": "What is the expected Cronbach alpha for the short versions, referred to in the paragraph?",
+      "options": [
+        "0.45",
+        "0.67",
+        "0.82",
+        "0.90"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 0.82. The stem describes the concept or relationship represented by 0.82; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2016-11",
+      "session": "July 2016",
+      "question_number": 11,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using codes given below: 1. Assertion (A): Extraverted individuals are sociable, impulsive and like excitement. 2. Reason (R): Brains of extraverts react more slowly and weakly to stimuli which cause them to seek excitement by approaching the environment. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2016-14",
+      "session": "July 2016",
+      "question_number": 14,
+      "question": "According to Master and Johnson following is the correct sequence of human sexual response:",
+      "options": [
+        "Excitement→Orgasm→Plateau→Res- olution",
+        "Excitement→Plateau→Orgasm→Res- olution",
+        "Excitement→Arousal→Orgasm→Res- olution",
+        "Arousal→Excitement→Orgasm→Res- olution"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Arousal→Excitement→Orgasm→Res- olution. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2016-16",
+      "session": "July 2016",
+      "question_number": 16,
+      "question": "Lesions of the ventromedial nuclei in the hypothalamus produce",
+      "options": [
+        "Anorexia",
+        "Obesity",
+        "Low level of Leptin",
+        "Hypoinsulinemia"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Hypoinsulinemia. The stem describes the concept or relationship represented by Hypoinsulinemia; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2016-33",
+      "session": "July 2016",
+      "question_number": 33,
+      "question": "The light passes through the eye in which of the following sequence? 1). Cornea, Pupil, Lens, Retina 2). Cornea, Lens, Pupil, Retina 3). Lens, Cornea, Pupil, Retina 4). Pupil, Cornea, Lens, Retina",
+      "options": [
+        "Cornea, Pupil, Lens, Retina",
+        "Cornea, Lens, Pupil, Retina",
+        "Lens, Cornea, Pupil, Retina",
+        "Pupil, Cornea, Lens, Retina"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Pupil, Cornea, Lens, Retina. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "January-2017-23",
+      "session": "January 2017",
+      "question_number": 23,
+      "question": "Network of auditory pathways can be arranged in which of following sequence:",
+      "options": [
+        "Auditory Nerve → Cochlear Nuclei → Superior olives → Lateral Leminiscus Inferior Colliculi → Medial Geniculate Nuclei → Primary Auditary Cortex.",
+        "Cochlear Nuclei → Auditory Nerve → Lateral Leminiscus → Superior Olives Inferior Colliculi → Medial Geniculate Nuclei → Primary Auditary Cortex.",
+        "Auditory Nerve → Cochlear Nuclei → Lateral Leminiscus → Inferior Colliculi → Superior Colliculi → Medial Geniculate Nuclei → Auditory Cortex",
+        "Cochlear Nuclei → Auditory Nerve → Inferior Colliculi → Superior Colliculi → Lateral Leminiscus → Medial Geniculate Nuclei → Auditary Cortex."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Auditory Nerve → Cochlear Nuclei → Superior olives → Lateral Leminiscus Inferior Colliculi → Medial Geniculate Nuclei → Primary Auditary Cortex.. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "January-2017-25",
+      "session": "January 2017",
+      "question_number": 25,
+      "question": "In a contingency table, one of the cell has an obtained frequency of 20 and an expected frequency of 30. What would be the contribution of this cell towards the total Chi-square value?",
+      "options": [
+        "3.33",
+        "5.00",
+        "10.00",
+        "20.00"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 3.33. The stem describes the concept or relationship represented by 3.33; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "January-2017-31",
+      "session": "January 2017",
+      "question_number": 31,
+      "question": "Which of the following are not nuclei of Thalamus? a). Internal Lamina b). Anterior Nucleus c). Ventromedial Nucleus d). Paraventricular Nucleus 1. Codes: 1). (a) and (b) only 2). (b) and (c) only 3). (c) and (d) only 4). (a) and (c) only",
+      "options": [
+        "(a) and (b) only",
+        "(b) and (c) only",
+        "(c) and (d) only",
+        "(a) and (c) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (c) and (d) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "January-2017-38",
+      "session": "January 2017",
+      "question_number": 38,
+      "question": "Which of the following sequence describes the energy mobilization in body?",
+      "options": [
+        "Fasting phase → Absorptive phase → Cephalic phase",
+        "Cephalic phase → Absorptive phase → Fasting phase",
+        "Absorptive phase → Fasting phase → Cephalic phase",
+        "Fasting phase → Cephalic phase → Absorptive phase"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Cephalic phase → Absorptive phase → Fasting phase. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-12",
+      "session": "November 2017",
+      "question_number": 12,
+      "question": "Where is Broca’s area located ?",
+      "options": [
+        "Frontal Lobe",
+        "Occipital Lobe",
+        "Parietal Lobe",
+        "Temporal Lobe"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Frontal Lobe. The stem describes the concept or relationship represented by Frontal Lobe; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-23",
+      "session": "November 2017",
+      "question_number": 23,
+      "question": "The frequency with which an operant response occurs before it is systematically reinforced, is called:",
+      "options": [
+        "Rate of responding",
+        "Operant level",
+        "Orienting reflex",
+        "Autoclitic behaviour"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Operant level. The stem describes the concept or relationship represented by Operant level; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-29",
+      "session": "November 2017",
+      "question_number": 29,
+      "question": "Which is the correct sequence of parts of ear through which sound travels in the ear?",
+      "options": [
+        "Tymphanic membrane → Stapes → Incus → Malleus → Cochlea",
+        "Tymphanic membrane → Incus → Stapes → Malleus → Cochlea",
+        "Malleus → Incus → Stapes → Cochlea → Tymphanic membrane",
+        "Tymphanic membrane → Malleus → Incus → Stapes → Cochlea"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Tymphanic membrane → Malleus → Incus → Stapes → Cochlea. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-33",
+      "session": "November 2017",
+      "question_number": 33,
+      "question": "Which of the following sequence is correctly arranged?",
+      "options": [
+        "Incoming information → Rehearsal buffer → Selective attention",
+        "Rehearsal Buffer → Selective attention → Incoming information",
+        "Selective attention → Rehearsal Buffer → Incoming information",
+        "Incoming information → Selective attention → Rehearsal buffer"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Incoming information → Selective attention → Rehearsal buffer. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-43",
+      "session": "November 2017",
+      "question_number": 43,
+      "question": "Arrange Thurston’s primary abilities in correct sequence:",
+      "options": [
+        "Verbal Comprehension; Verbal Fluency; Numerical Ability; Memory; Perceptual Speed; Inductive Reasoning, Spatial Visualization",
+        "Verbal Fluency; Verbal Comprehension; Numerical Ability; Memory; Perceptual Speed; Spatial Visualization; Inductive Reasoning",
+        "Numerical Ability; Verbal Comprehension; Verbal Fluency; Memory; Inductive Reasoning; Spatial Visualization; Perceptual Speed",
+        "Spatial Visualization; Inductive Reasoning; Memory; Perceptual Speed; Numerical Ability; Verbal Fluency; Verbal Comprehension"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Verbal Comprehension; Verbal Fluency; Numerical Ability; Memory; Perceptual Speed; Inductive Reasoning, Spatial Visualization. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-47",
+      "session": "November 2017",
+      "question_number": 47,
+      "question": "In the above study, ‘association value’ can be labelled as: a). Continuous variable b). Controlled variable c). Organismic variable d). Stimulus variable 1. Code: 1). (a) and (b) only 2). (a) and (c) only 3). (a), (b) and (c) only 4). (a), (b) and (d) only",
+      "options": [
+        "(a) and (b) only",
+        "(a) and (c) only",
+        "(a), (b) and (c) only",
+        "(a), (b) and (d) only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b) and (d) only. The stem describes the concept or relationship represented by (a), (b) and (d) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "November-2017-50",
+      "session": "November 2017",
+      "question_number": 50,
+      "question": "In the above study, the variance caused by Drug dosage can be labelled as:",
+      "options": [
+        "Primary variance",
+        "Secondary variance",
+        "Controlled variance",
+        "Error variance UGC NET JRF November 2017 Paper II 406 UGC NET JRF November 2017 Paper II 406"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Primary variance. The stem describes the concept or relationship represented by Primary variance; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-19",
+      "session": "July 2018",
+      "question_number": 19,
+      "question": "Whether we can be affected by stimuli that remain outside our conscious awareness has been examined by researches using a technique called:",
+      "options": [
+        "Cuing",
+        "Visualization",
+        "Imagery",
+        "Priming"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Priming. The stem describes the concept or relationship represented by Priming; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-34",
+      "session": "July 2018",
+      "question_number": 34,
+      "question": "Explanation of the moon illusion given by __________ is, “The horizon seems more distant than the night sky.”",
+      "options": [
+        "Perceptual learning hypothesis",
+        "Expectancy hypothesis",
+        "Apparent - distance hypothesis",
+        "Frame of reference hypothesis"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Apparent - distance hypothesis. The stem describes the concept or relationship represented by Apparent - distance hypothesis; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-35",
+      "session": "July 2018",
+      "question_number": 35,
+      "question": "Absorptive phase of energy mobilization involves the following events. Arrange them in the correct sequence. a). Glucose increases. b). Parasympathetic activation. c). Pancreas secretes insulin. d). Glucose enters the body cells. e). Glucose is stored in liver and muscles as glycogen. f). Fat stored in adipose cells as triglycerides. 1. Code :",
+      "options": [
+        "(a) → (b) → (c) → (e) → (d) → ( f )",
+        "(a) → (b) → (c) → (d) → (e) → ( f )",
+        "(a) → (c) → (b) → (d) → (f) → ( e )",
+        "(a) → (d) → (b) → (f) → (e) → ( c )"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a) → (b) → (c) → (d) → (e) → ( f ). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-43",
+      "session": "July 2018",
+      "question_number": 43,
+      "question": "Persons with a leison at the ventromedial nucleus are likely to: 441 UGC NET JRF July 2018 Paper II 441 UGC NET JRF July 2018 Paper II Tap to check answer key",
+      "options": [
+        "Overeat",
+        "Undereat",
+        "Eat normally",
+        "Eat normally or undereat"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Overeat. The stem describes the concept or relationship represented by Overeat; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-44",
+      "session": "July 2018",
+      "question_number": 44,
+      "question": "The percepts are based on : a). What we sense b). What we know c). What we infer d). What we conform 1. Code: 1). (a) and (b) only 2). (b) and (c) only 3). (a), (b) and (c) only 4). (a), (b) and (d) only",
+      "options": [
+        "(a) and (b) only",
+        "(b) and (c) only",
+        "(a), (b) and (c) only",
+        "(a), (b) and (d) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (b) and (c) only. The stem describes the concept or relationship represented by (a), (b) and (c) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-49",
+      "session": "July 2018",
+      "question_number": 49,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using codes given below: 1. Assertion (A): In the above study, the foreperiods were randomly varied. 2. Reason (R): Random variation of the foreperiods reduces the false reactions. 3. Code: 1). Both (A) and (R) are true, and (R) is 443 UGC NET JRF July 2018 Paper II 443 UGC NET JRF July 2018 Paper II Tap to check answer key the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is 443 UGC NET JRF July 2018 Paper II 443 UGC NET JRF July 2018 Paper II Tap to check answer key the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is  the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-60",
+      "session": "July 2018",
+      "question_number": 60,
+      "question": "The body’s response to danger is triggered by the release of __________ by the __________ glands.",
+      "options": [
+        "Acetylcholine ; adrenal",
+        "Epinephrine and norepinephrine; adrenal",
+        "Acetylcholine ; pituitary",
+        "Epinephrine and norepinephrine; pituitary"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Epinephrine and norepinephrine; adrenal. The stem describes the concept or relationship represented by Epinephrine and norepinephrine; adrenal; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-61",
+      "session": "July 2018",
+      "question_number": 61,
+      "question": "Which of the following is the characteristic of Mastery-Oriented Students? 1). They see ability as improvable. 2). They feel competent when they succeed. 3). They feel worthless when they fail. 4). They set unrealistically high goals.",
+      "options": [
+        "They see ability as improvable.",
+        "They feel competent when they succeed.",
+        "They feel worthless when they fail.",
+        "They set unrealistically high goals."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. They see ability as improvable.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2018-96",
+      "session": "July 2018",
+      "question_number": 96,
+      "question": "The inter-item correlations would be:",
+      "options": [
+        "Biserial correlations",
+        "Kendall’s tau",
+        "Phi-coefficients",
+        "Point-biserial correlations"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Phi-coefficients. The stem describes the concept or relationship represented by Phi-coefficients; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2018-1",
+      "session": "December 2018",
+      "question_number": 1,
+      "question": "Choose the correct answer from the code given below: 2. Options:- 1). (iii), (iv) and (v) 2). (i), (iv) and (v) 3). (i), (iii) and (v) 4). (i), (ii) and (v)",
+      "options": [
+        "(iii), (iv) and (v)",
+        "(i), (iv) and (v)",
+        "(i), (iii) and (v)",
+        "(i), (ii) and (v)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (i), (ii) and (v). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2018-41",
+      "session": "December 2018",
+      "question_number": 41,
+      "question": "Sensory-Specific satiety takes place in 1. Options:-",
+      "options": [
+        "Thalamus",
+        "Nucleus of solitary tract",
+        "Insula",
+        "Papillae"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Thalamus. The stem describes the concept or relationship represented by Thalamus; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2018-92",
+      "session": "December 2018",
+      "question_number": 92,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I (Term) List II (Description) (a) Prudence (i)Undergoing hardships for their benefit (b) Justice (ii)Controlling disruptive emotions and practicing self- discipline (c) Fortitude (iii)Fulfilling obligations to parents and respecting their rights (d) Temperance (iv)Using reason for their benefit 1. Options:- 1). (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii) 2). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv) 3). (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i) 4). (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+      "options": [
+        "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+        "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-37",
+      "session": "June 2019",
+      "question_number": 37,
+      "question": "Which of the following is/ are true about rhodopsin? a). It is a rod pigment that enables vision in low light b). It is a cone pigment that enables vision in bright light c). It is a G-protein coupled receptor d). It is a cone pigment and G-protein coupled receptor. UGC NET JRF June 2019 Paper II 496 UGC NET JRF June 2019 Paper II 496 Tap to check answer key 1. Select the correct option:",
+      "options": [
+        "(a) only",
+        "(a). (c) and (d)only",
+        "(b) only",
+        "(a) and (c) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (b) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-50",
+      "session": "June 2019",
+      "question_number": 50,
+      "question": "The inferential technique that A borrowed his father`s car during a college vacation and smashed it after the party A attended. Expected reactions of his father runs through A`s mind and generates several possibilities. It is the example of which heuristic?",
+      "options": [
+        "Availability heuristic",
+        "Representativeness heuristic",
+        "Conjunction Error",
+        "Stimulation heuristic"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Availability heuristic. The stem describes the concept or relationship represented by Availability heuristic; the alternatives refer to different concepts or conditions. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-69",
+      "session": "June 2019",
+      "question_number": 69,
+      "question": "When people are pressurized to admit guilt, but privately continue to believe in their own innocence. Choose the correct answer of above statement",
+      "options": [
+        "Voluntary false confession",
+        "Coerced-compliant false confession",
+        "Coerced-internalized false confession",
+        "Character evidences"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Character evidences. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-77",
+      "session": "June 2019",
+      "question_number": 77,
+      "question": "Which of the following endeavours to revalue the unique qualities associated with womanhood and feminity?",
+      "options": [
+        "Cultural feminism",
+        "Liberal feminism",
+        "Radical feminism",
+        "Socialistic feminism"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Liberal feminism. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-79",
+      "session": "June 2019",
+      "question_number": 79,
+      "question": "The quotation, “People believe good things should happen to good people and bad things to bad people”, represents",
+      "options": [
+        "Blank-out hypothesis",
+        "Just world hypothesis",
+        "Kama-hypothesis",
+        "Retribution hypothesis"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Retribution hypothesis. The stem describes the concept or relationship represented by Retribution hypothesis; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-87",
+      "session": "June 2019",
+      "question_number": 87,
+      "question": "According to Jung,what is made up of all the archetypes taken together’",
+      "options": [
+        "Personal unconscious",
+        "Collective unconscious",
+        "Mandala",
+        "Shadow"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Shadow. The stem describes the concept or relationship represented by Shadow; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-95",
+      "session": "June 2019",
+      "question_number": 95,
+      "question": "The 95% confidence interval for the true score of 32 would be",
+      "options": [
+        "32±0.94",
+        "32 ± 1.96",
+        "32±6.00",
+        "32±3.84 Read the following passage and answer the questions that follow A researcher wanted to study the effect of organization of material (A) on recall. She expected that retention interval (B) would moderate the effect of organization of material. She varied A at three levels— Low organization. Moderate organization, and High organization. She varied B at two levels— Short retention interval and Long retention interval. The subjects were randomly assigned to the different groups. Each subject received the List of 509 UGC NET JRF June 2019 Paper II 509 UGC NET JRF June 2019 Paper II Tap to check answer key words with specified level of organization. Each of them learnt the list up to one errorless trial and was tested after the specified retention interval. All the subjects had also received the intelligence test .The number of items, recalled by the subject was the dependent variable. The data were analyzed by the appropriate ANOVA,treating intelligence as a covariate. The partial results are given here-(i) the sum of squares for organization of material (A) was 255.00; (ii) the degrees of freedom for error variance was 115; (iii) the F ratio for interaction (AxB) was 0.95; The obtained results were appropriately interpreted"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 32±3.84 Read the following passage and answer the questions that follow A researcher wanted to study the effect of organization of material (A) on recall. She expected that retention interval (B) would moderate the effect of organization of material. She varied A at three levels— Low organization. Moderate organization, and High organization. She varied B at two levels— Short retention interval and Long retention interval. The subjects were randomly assigned to the different groups. Each subject received the List of  words with specified level of organization. Each of them learnt the list up to one errorless trial and was tested after the specified retention interval. All the subjects had also received the intelligence test .The number of items, recalled by the subject was the dependent variable. The data were analyzed by the appropriate ANOVA,treating intelligence as a covariate. The partial results are given here-(i) the sum of squares for organization of material (A) was 255.00; (ii) the degrees of freedom for error variance was 115; (iii) the F ratio for interaction (AxB) was 0.95; The obtained results were appropriately interpreted. The stem describes the concept or relationship represented by 32±3.84 Read the following passage and answer the questions that follow A researcher wanted to study the effect of organization of material (A) on recall. She expected that retention interval (B) would moderate the effect of organization of material. She varied A at three levels— Low organization. Moderate organization, and High organization. She varied B at two levels— Short retention interval and Long retention interval. The subjects were randomly assigned to the different groups. Each subject received the List of  words with specified level of organization. Each of them learnt the list up to one errorless trial and was tested after the specified retention interval. All the subjects had also received the intelligence test .The number of items, recalled by the subject was the dependent variable. The data were analyzed by the appropriate ANOVA,treating intelligence as a covariate. The partial results are given here-(i) the sum of squares for organization of material (A) was 255.00; (ii) the degrees of freedom for error variance was 115; (iii) the F ratio for interaction (AxB) was 0.95; The obtained results were appropriately interpreted; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-98",
+      "session": "June 2019",
+      "question_number": 98,
+      "question": "From the above results, it can be concluded that",
+      "options": [
+        "Main effect of organization of material is significant",
+        "Main effect of organization of material is non-significant",
+        "Retention interval does not moderate the effect of organization of material",
+        "Retention interval moderates the effect of organization of material"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Main effect of organization of material is non-significant. The stem describes the concept or relationship represented by Main effect of organization of material is non-significant; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-99",
+      "session": "June 2019",
+      "question_number": 99,
+      "question": "How many subjects have been employed in this study?",
+      "options": [
+        "116",
+        "120",
+        "121",
+        "122"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 122. The stem describes the concept or relationship represented by 122; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2019-100",
+      "session": "June 2019",
+      "question_number": 100,
+      "question": "What would be the degrees of freedom for covariate?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "6 UGC NET JRF June 2019 Paper II 510 UGC NET JRF June 2019 Paper II 510"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 1. The stem describes the concept or relationship represented by 1; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-2",
+      "session": "December 2019",
+      "question_number": 2,
+      "question": "Which device is used for the expression of different letters of a word?",
+      "options": [
+        "Acoustics",
+        "Acronyms",
+        "Key word system",
+        "Clustering"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Acronyms. The stem describes the concept or relationship represented by Acronyms; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-12",
+      "session": "December 2019",
+      "question_number": 12,
+      "question": "Read the following conversation and choose the correct option: 1. X: “I am so hungry! I am like way starving- 2. Y: You might consider a small nutritional snack to suppress your appetite” 3. This is",
+      "options": [
+        "Adult-adult and child-child interaction respectively",
+        "Complimentary transactions",
+        "Child-child and adult-adult crossed transactions respectively",
+        "Child-adult and adult-child crossed transactions respectively"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Child-child and adult-adult crossed transactions respectively. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-15",
+      "session": "December 2019",
+      "question_number": 15,
+      "question": "Descartes argued that body and mind interact. According to him which is the site for this interaction?",
+      "options": [
+        "Pancreas gland",
+        "Pineal gland",
+        "Pituitary gland",
+        "Adrenal gland"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Pineal gland. The stem describes the concept or relationship represented by Pineal gland; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-43",
+      "session": "December 2019",
+      "question_number": 43,
+      "question": "For becoming a good basketball player one must use",
+      "options": [
+        "Algorithms",
+        "Heuristics",
+        "Concepts",
+        "Prototypes"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Algorithms. The stem describes the concept or relationship represented by Algorithms; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-45",
+      "session": "December 2019",
+      "question_number": 45,
+      "question": "Match the waves with the corresponding frequencies: (a).Alpha waves (i) 4 — 7 Hz (b).Beta waves (ii) 14 — 30 Hz (c).Theta waves (iii) 8 —13 Hz (d).Delta waves (iv) 0 — 3 Hz Choose the correct option from 521 UGC NET JRF December 2019 Paper II 521 UGC NET JRF December 2019 Paper II Tap to check answer key those given below: 1). (a)-(iii), (b)-(ii), (c)-(i), (d)-(iv) 2). (a)-(ii),(b)-(iii), (c)-(i), (d)-(iv) 3). (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i) 4). (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "options": [
+        "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+        "(a)-(ii),(b)-(iii), (c)-(i), (d)-(iv)",
+        "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)",
+        "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a)-(iii), (b)-(ii), (c)-(i), (d)-(iv). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-46",
+      "session": "December 2019",
+      "question_number": 46,
+      "question": "Which of the following is the most common anti-obesity hormone?",
+      "options": [
+        "Leptin",
+        "Orexin",
+        "Insulin",
+        "Ghrelin"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Leptin. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-49",
+      "session": "December 2019",
+      "question_number": 49,
+      "question": "Arrange in sequence the network of auditory pathways a). Auditory Nerve b). Cochlear Nuclei c). Superior Olives d). Lateral Leminiscus e). Inferior Colliculi f). Medial Geniculate Nuclei g). Primary Auditory Cortex 1. Choose the correct sequence: 1). (a) —> (c) —> (b) —> (d) —> (e) —> (g) —> (f) 2). (a) —> (b) —> (c) —> (d) —> (e) —> (f) —> (g) 3). (b) —> (a) —> (d) —>(c) —> (g) —> (e) —> (f) 4). (f) —> (g) —> (e) —> (d) —> (c) —> (b) —> (a)",
+      "options": [
+        "(a) —> (c) —> (b) —> (d) —> (e) —> (g) —> (f)",
+        "(a) —> (b) —> (c) —> (d) —> (e) —> (f) —> (g)",
+        "(b) —> (a) —> (d) —>(c) —> (g) —> (e) —> (f)",
+        "(f) —> (g) —> (e) —> (d) —> (c) —> (b) —> (a)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a) —> (b) —> (c) —> (d) —> (e) —> (f) —> (g). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2019-89",
+      "session": "December 2019",
+      "question_number": 89,
+      "question": "Dr. X as a therapist felt a sense of complete understanding towards a father client, whose children behaved exactly the way his own children used to behave This is",
+      "options": [
+        "Empathy",
+        "Jumping to conclusion",
+        "Warmth and genuineness",
+        "Sympathy"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Sympathy. The stem describes the concept or relationship represented by Sympathy; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-2",
+      "session": "September 2020",
+      "question_number": 2,
+      "question": "Client: (Silent and shifting nervously in her chair. She is facing the counselor, but her eyes scan anxiously about) Counselor: It must be difficult for you to decide what you are going to do here with me This response is an example of:",
+      "options": [
+        "Dealing with content speculated to be motivating for non-verbal behaviour by the counselor",
+        "Encourages to deal with non verbal behaviour",
+        "Encourages to understand the feelings",
+        "Reflection of feelings"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Dealing with content speculated to be motivating for non-verbal behaviour by the counselor. The stem describes the concept or relationship represented by Dealing with content speculated to be motivating for non-verbal behaviour by the counselor; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-21",
+      "session": "September 2020",
+      "question_number": 21,
+      "question": "Which of the following are involved UGC NET JRF September 2020 Paper II 524 UGC NET JRF September 2020 Paper II 524 Tap to check answer key in decreased food intake and weight loss? a). Insulin b). Leptin c). Cholecystokinin d). Orexin 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A and B only",
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-33",
+      "session": "September 2020",
+      "question_number": 33,
+      "question": "Immediately after an action potential, the cell does not produce another action potential due to",
+      "options": [
+        "Absolute refractory period",
+        "Relative refractory period",
+        "Resting state",
+        "Active state"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Absolute refractory period. The stem describes the concept or relationship represented by Absolute refractory period; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-36",
+      "session": "September 2020",
+      "question_number": 36,
+      "question": "Which technique of studying the brain involves injecting the patient with radioactive glucose?",
+      "options": [
+        "EEG",
+        "MRI",
+        "PET",
+        "CT"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. PET. The stem describes the concept or relationship represented by PET; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-37",
+      "session": "September 2020",
+      "question_number": 37,
+      "question": "Antiduretic hormone (ADH) is released by which of the following?",
+      "options": [
+        "Adrenal cortex",
+        "Adrenal medulla",
+        "Anterior pituitary",
+        "Posterior pituitary"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Posterior pituitary. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-55",
+      "session": "September 2020",
+      "question_number": 55,
+      "question": "Which one of the following is the correct description of Old Fashioned Racism?",
+      "options": [
+        "A contemporary form of antagonism towards a racial group based on prejudice and values rather than on self-interest",
+        "Beliefs in which racial superiority, segregation and formal discrimination",
+        "Attitude towards a racial group, combing egalitarian social values and negative emotion resulting in avoidance of that group",
+        "Well learned sets of association that can be automatically activated, uncontrollable and unintentional"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Beliefs in which racial superiority, segregation and formal discrimination. The stem describes the concept or relationship represented by Beliefs in which racial superiority, segregation and formal discrimination; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-71",
+      "session": "September 2020",
+      "question_number": 71,
+      "question": "Total cholesterol is determined by adding which of the following values?",
+      "options": [
+        "HDL + LDL",
+        "HDL + LDL + 30% OF VLDL",
+        "HDL + LDL + 10% of VLDL",
+        "HDL + LDL + 20% of Triglycerides"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. HDL + LDL + 20% of Triglycerides. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-79",
+      "session": "September 2020",
+      "question_number": 79,
+      "question": "Vaibhasika and Sautrantika are associated with which of the following?",
+      "options": [
+        "Theravada",
+        "Cetasikas",
+        "Madhyamikavada",
+        "Sarvastivadin"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Sarvastivadin. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-92",
+      "session": "September 2020",
+      "question_number": 92,
+      "question": "What is indicated by R2 in the passage?",
+      "options": [
+        "64% variance is explained",
+        "80% variance is explained",
+        "32% variance is explained",
+        "36% variance is explained"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 64% variance is explained. The stem describes the concept or relationship represented by 64% variance is explained; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-93",
+      "session": "September 2020",
+      "question_number": 93,
+      "question": "Which of the following is the reason for insignificance of IT-B?",
+      "options": [
+        "Heteroscedasticity",
+        "Poor predictive power",
+        "Small sample size",
+        "Multicolinearity"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Multicolinearity. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "September-2020-94",
+      "session": "September 2020",
+      "question_number": 94,
+      "question": "Which of the following is correct about residual variance in the passage?",
+      "options": [
+        "It is correlated with predictor variable",
+        "It is correlated with criterion variable",
+        "It is systematically distributed",
+        "It is randomly distributed"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. It is randomly distributed. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-2",
+      "session": "June 2021",
+      "question_number": 2,
+      "question": "Visuospatial sketch pad is a component of which of the following?",
+      "options": [
+        "Long-term memory",
+        "Short-term memory",
+        "Working memory",
+        "Sensory memory"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Working memory. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Working memory is the limited-capacity system used to hold and manipulate information over short periods.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-3",
+      "session": "June 2021",
+      "question_number": 3,
+      "question": "After being robbed by a boy recently the shopkeeper says “beware of teenagers in our community” Which of the following explains his reactions?",
+      "options": [
+        "Algorithm",
+        "Availability Heuristic",
+        "Representative Heuristic",
+        "Gambler’s fallacy"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Representative Heuristic. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-7",
+      "session": "June 2021",
+      "question_number": 7,
+      "question": "Which of the following is correct for the Pheromones?",
+      "options": [
+        "Biochemical found within the brain which effect a person’s behaviour",
+        "Biochemical which play an important role in transmitting information from neuron to neuron",
+        "Chemical messengers found in the Central Nervous System",
+        "Chemical substances emitted by the person into the environment affecting the behaviour of others"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Chemical substances emitted by the person into the environment affecting the behaviour of others. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-20",
+      "session": "June 2021",
+      "question_number": 20,
+      "question": "Discovery and understanding of our own abilities brings happiness UGC NET JRF June 2021 Paper II 548 UGC NET JRF June 2021 Paper II 548 Tap to check answer key but also brings fear of new responsibilities and duties. It is called:",
+      "options": [
+        "Fear of failure",
+        "Jonah complex",
+        "Motives conflict",
+        "Fear of success"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Jonah complex. The stem describes the concept or relationship represented by Jonah complex; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-25",
+      "session": "June 2021",
+      "question_number": 25,
+      "question": "Vouyerstic and exhibitionistic disorders are included in which of the following in DSM-5?",
+      "options": [
+        "Sexual dysfunctions",
+        "Paraphillic disorders",
+        "Other conditions that focus on clinical attention",
+        "Disruptive impulse control and conduct disorders"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Paraphillic disorders. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-33",
+      "session": "June 2021",
+      "question_number": 33,
+      "question": "A Woman who learns that she has been deprived of promotion to a higher job in a company, may storm into her boss’s office and have temper tentrum. It exemplifies:",
+      "options": [
+        "Sublimation",
+        "Rationalization",
+        "Reaction Formation",
+        "Regression"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Regression. The stem describes the concept or relationship represented by Regression; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-36",
+      "session": "June 2021",
+      "question_number": 36,
+      "question": "Which of the following are the performance subtests of WAIS? a). Digit span b). Similarities c). Digit symbol d). Object assembly 1. Choose the correct answer from the options given below:",
+      "options": [
+        "(A) and (C) only",
+        "(C) and (D) only",
+        "(B), (C) and (D) only",
+        "(A), (C) and (D) only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (C) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-47",
+      "session": "June 2021",
+      "question_number": 47,
+      "question": "Which of the following statements is wrong?",
+      "options": [
+        "Body’s requirement of sleep varies with age",
+        "Tertiary prevention is action taken to identify and treat an illness or injury early with an aim of stopping or reversing the problem",
+        "Endorphins are released during exercise",
+        "Excessive alcohol consumption leads to shrinking of frontal lobe of the brain."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Tertiary prevention is action taken to identify and treat an illness or injury early with an aim of stopping or reversing the problem. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-79",
+      "session": "June 2021",
+      "question_number": 79,
+      "question": "Which of the following is/are correctly associated with Plato’s idea of‘Chariot that is pulled by two horses’? a). Desiring soul is the charioteer. b). Rational soul is located in the head. c). Rational soul is governed by restraint and modesty. d). Spirited soul knows the honour. 1. Choose the correct answer from the options given below:- 1). (C) only 561 UGC NET JRF June 2021 Paper II 561 UGC NET JRF June 2021 Paper II Tap to check answer key 2). (A) and (B) only 3). (B) and (D) only 4). (A), (C) and (D) only",
+      "options": [
+        "(C) only 561 UGC NET JRF June 2021 Paper II 561 UGC NET JRF June 2021 Paper II Tap to check answer key",
+        "(A) and (B) only",
+        "(B) and (D) only",
+        "(A), (C) and (D) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (B) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-86",
+      "session": "June 2021",
+      "question_number": 86,
+      "question": "Qualities such as calmness, tolerance, sociability, love of comfort and easygoingness depict, which of the following?",
+      "options": [
+        "Viscertonia",
+        "Somatotonia",
+        "Cerebrotonia",
+        "Ectomorphia"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Viscertonia. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-91",
+      "session": "June 2021",
+      "question_number": 91,
+      "question": "For computing inter-item correlations, which one of the following is suitable?",
+      "options": [
+        "Point biserial correlation",
+        "Biserial correlation",
+        "Rank difference correlation",
+        "Phi-coefficient"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Phi-coefficient. The stem describes the concept or relationship represented by Phi-coefficient; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-97",
+      "session": "June 2021",
+      "question_number": 97,
+      "question": "The above data indicates :",
+      "options": [
+        "that the assumption of homogeneity of variance is satisfied",
+        "that the assumption of homogeneity of variance is not satisfied",
+        "the absence of information related to the assumption of homogeneity of variance",
+        "the formal test of homogeneity of variance needs to be carried out"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. that the assumption of homogeneity of variance is satisfied. The stem describes the concept or relationship represented by that the assumption of homogeneity of variance is satisfied; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-98",
+      "session": "June 2021",
+      "question_number": 98,
+      "question": "The above findings indicate that the post-hoc comparisons are :",
+      "options": [
+        "Necessary for the effect of stress",
+        "Necessary for the effect of type of material",
+        "Necessary both for the effect of stress and type of material",
+        "Neither necessary for the effect of stress nor the type of material"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Neither necessary for the effect of stress nor the type of material. The stem describes the concept or relationship represented by Neither necessary for the effect of stress nor the type of material; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2021-99",
+      "session": "June 2021",
+      "question_number": 99,
+      "question": "The above results indicate that :",
+      "options": [
+        "the first hypothesis is verified",
+        "the first hypothesis is rejected",
+        "the first hypothesis is partially verified",
+        "the inadequate information for evaluating the first hypothesis"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. the first hypothesis is rejected. The stem describes the concept or relationship represented by the first hypothesis is rejected; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-2",
+      "session": "July 2022",
+      "question_number": 2,
+      "question": "Identify the plausible logic for the introduction of deviation IQ.",
+      "options": [
+        "Level of ratio IQ varies with age",
+        "Ratio IQ is not measured on interval scale",
+        "SD of ratio IQ varies scale - to - scale",
+        "Comparison of ratio IQ at different age levels is not possible as SD of IQ is not constant over age"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Comparison of ratio IQ at different age levels is not possible as SD of IQ is not constant over age. The stem describes the concept or relationship represented by Comparison of ratio IQ at different age levels is not possible as SD of IQ is not constant over age; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-7",
+      "session": "July 2022",
+      "question_number": 7,
+      "question": "Identify the theorist who has stated the following: 1. “ When we have passed beyond individualising, then we shall be real persons. Ego was the helpler, Ego is the bar “",
+      "options": [
+        "Carl Rogers",
+        "Abraham Maslow",
+        "Sri Aurobindo",
+        "Carl G. Jung"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Sri Aurobindo. The stem describes the concept or relationship represented by Sri Aurobindo; the alternatives refer to different concepts or conditions. In Freud’s model, the ego follows the reality principle and helps mediate among the demands of the id, superego, and external reality.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-9",
+      "session": "July 2022",
+      "question_number": 9,
+      "question": "Myelin sheath which insulates most axons in CNS is produced by________.",
+      "options": [
+        "Oligodendrocytes",
+        "Schwann cells",
+        "Microglia",
+        "Astrocytes"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Oligodendrocytes. The stem describes the concept or relationship represented by Oligodendrocytes; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-11",
+      "session": "July 2022",
+      "question_number": 11,
+      "question": "The human retina contains approximately ________.",
+      "options": [
+        "Six million rods",
+        "One hundred twenty million cones",
+        "Six million cones and 120 million rods",
+        "Six million rods and 120 million cones"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Six million cones and 120 million rods. The stem describes the concept or relationship represented by Six million cones and 120 million rods; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-38",
+      "session": "July 2022",
+      "question_number": 38,
+      "question": "Today employees are required to work in teams as it is believed that performance will be better in teams. This is because in a team:",
+      "options": [
+        "Social facilitation occurs",
+        "Social loafing occurs",
+        "Motivation loss is low",
+        "People are more attentive"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Social facilitation occurs. The stem describes the concept or relationship represented by Social facilitation occurs; the alternatives refer to different concepts or conditions. Social facilitation refers to changes in performance that occur in the presence of others, with effects depending on task characteristics and familiarity.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-49",
+      "session": "July 2022",
+      "question_number": 49,
+      "question": "The mean can be misleading if a distribution has ________. a). Marked skewness b). Large number of scores c). Few extremely high valued scores d). Small number of scores e). Few extremely low valued scores 1. Choose the correct answer from the 575 UGC NET JRF July 2022 Paper II 575 UGC NET JRF July 2022 Paper II Tap to check answer key options given below:",
+      "options": [
+        "A, B and D only",
+        "C, D and E only",
+        "A, C and E only",
+        "B, C and D only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, C and E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. The arithmetic mean is obtained by summing the scores and dividing by the number of scores.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-52",
+      "session": "July 2022",
+      "question_number": 52,
+      "question": "Identify the posterior pituitary hormones a). Thyrotropin b). Follicle Stimulating Hormone c). Oxytocin d). Luteinizing Hormone e). Vasopressin 1. Choose the correct answer from the options given below:",
+      "options": [
+        "C only",
+        "B only",
+        "A and B only",
+        "C and E only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. C and E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-56",
+      "session": "July 2022",
+      "question_number": 56,
+      "question": "What is the median of the scores given below? 1. 15, 8, 30, 12, 5, 40, 30, 20",
+      "options": [
+        "8.50",
+        "17.50",
+        "20",
+        "15"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 17.50. The stem describes the concept or relationship represented by 17.50; the alternatives refer to different concepts or conditions. The median is the middle score when observations are arranged in order; it is less affected by extreme scores than the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-65",
+      "session": "July 2022",
+      "question_number": 65,
+      "question": "The first response that people typically express when frustrated is to:",
+      "options": [
+        "Try again",
+        "Get angry",
+        "Give up",
+        "Be creative"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Get angry. The stem describes the concept or relationship represented by Get angry; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-79",
+      "session": "July 2022",
+      "question_number": 79,
+      "question": "Match List I with List II List I List II a. Z Score i) x ̄ = 50, σ = 10 b. Stanine ii) x ̄ = 5.5, σ = 2 c. T Score iii) x ̄ = 5, σ = 2 (approx) d. Sten iv) x ̄ = 0, σ = 1 Choose the correct answer from the options given below:",
+      "options": [
+        "A - IV, B - III, C - I, D - II",
+        "A - IV, B - I, C - III, D - II",
+        "A - I, B - II, C - IV, D - III",
+        "A - II B - III, C - I, D - IV"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A - IV, B - III, C - I, D - II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. A z score expresses how far a score lies from the mean in standard-deviation units.",
+      "kind": "match",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-94",
+      "session": "July 2022",
+      "question_number": 94,
+      "question": "Find the degree of freedom for the error term",
+      "options": [
+        "119",
+        "117",
+        "2",
+        "114"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 114. The stem describes the concept or relationship represented by 114; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "July-2022-99",
+      "session": "July 2022",
+      "question_number": 99,
+      "question": "This study shows that we behave according to our",
+      "options": [
+        "beliefs",
+        "attitudes",
+        "roles",
+        "background"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. roles. The stem describes the concept or relationship represented by roles; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-5",
+      "session": "March 2023",
+      "question_number": 5,
+      "question": "Which one is the correct formula for variance?",
+      "options": [
+        "Variance =",
+        "Variance =",
+        "Variance =",
+        "Variance ="
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Variance =. The stem describes the concept or relationship represented by Variance =; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-7",
+      "session": "March 2023",
+      "question_number": 7,
+      "question": "Which of the following is correct?",
+      "options": [
+        "Test-retest reliability is determined by assessing the degree of relationship between scores on one half of a test with scores on the other half of the test",
+        "Alternate forms reliability is determined by assessing the degree of relationship between scores on two different equivalent tests.",
+        "Split-half reliability is determined by assessing the degree of relationship between scores on the same test, administered on two different occasions",
+        "Internal reliability is the extent to which the effect of the dependent variable is the result of the independent variable and not some other aspect of the study"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Alternate forms reliability is determined by assessing the degree of relationship between scores on two different equivalent tests.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-8",
+      "session": "March 2023",
+      "question_number": 8,
+      "question": "Cog-screen, a computer assisted tool, has been used in the selection of 591 UGC NET JRF March 2023 Paper II Tap to check answer key _______________ .",
+      "options": [
+        "Human Resource Managers",
+        "Doctors",
+        "Airline pilots",
+        "Electronic Media journalists"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Airline pilots. The stem describes the concept or relationship represented by Airline pilots; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-13",
+      "session": "March 2023",
+      "question_number": 13,
+      "question": "A genetic inability to metabolize amino acid phenylalanine leads to one of the following conditions.",
+      "options": [
+        "Down’s syndrome",
+        "Autism",
+        "Cerebral Palsy",
+        "PKU"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. PKU. The stem describes the concept or relationship represented by PKU; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-16",
+      "session": "March 2023",
+      "question_number": 16,
+      "question": "Brain lesions of sub cortical regions produced by passing electrical current through an insulated electrode is called:",
+      "options": [
+        "Excitotoxic lesions",
+        "Radio frequency lesions UGC NET JRF March 2023 Paper II 592 UGC NET JRF March 2023 Paper II 592 Tap to check answer key",
+        "Sham lesions",
+        "Excitatory lesions"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Radio frequency lesions . The stem describes the concept or relationship represented by Radio frequency lesions ; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-19",
+      "session": "March 2023",
+      "question_number": 19,
+      "question": "Step by step interaction of operating a mechanical gadget is an example of:",
+      "options": [
+        "Trouble shooting",
+        "Algorithm",
+        "Heuristic approach",
+        "Means-end analysis"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Algorithm. The stem describes the concept or relationship represented by Algorithm; the alternatives refer to different concepts or conditions. An algorithm is a systematic, step-by-step procedure that, when correctly applied, leads to a solution.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-30",
+      "session": "March 2023",
+      "question_number": 30,
+      "question": "Which of the following is correct about the result of Milgram’s study?",
+      "options": [
+        "In the real word, most people will refuse to follow orders to inflict harm on a stranger",
+        "Many people will obey an authority figure even if innocent people get UGC NET JRF March 2023 Paper II 594 UGC NET JRF March 2023 Paper II 594 Tap to check answer key hurt",
+        "Most people are willing to give obviously wrong answers when ordered to do so",
+        "Most people stick to their own judgement even when group members unanimously disagree"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Many people will obey an authority figure even if innocent people get  hurt. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-70",
+      "session": "March 2023",
+      "question_number": 70,
+      "question": "Match List I with List II List I List II a. Turner’s syn- drome i) An imbalance in X chromosome where two X from the ovam combine with a Y-sperm b. Fragile-X syn- drome ii) An extra 21st chromosome c. Down’s syndrome iii) Ovum containing no X chromosome is fertilized by an ‘X’ bearing sperm d. Klinefelter syndrome iv) The X chromosome is compressed or broken Choose the correct answer from the options given below:",
+      "options": [
+        "A-I, B-III, C-II, D-IV",
+        "A-III, B-IV, C-II, D-I",
+        "A-II, B-III, C-I, D-IV",
+        "A-III, B-II, C-IV, D-I"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A-III, B-IV, C-II, D-I. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "March-2023-91",
+      "session": "March 2023",
+      "question_number": 91,
+      "question": "The children who answered the Aeroplane-elephant question correctly come under the stage of:",
+      "options": [
+        "Concrete operational stage",
+        "Intuitive Operational Stage",
+        "Formal Operational stage",
+        "Preoperational Stage"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Formal Operational stage. The stem describes the concept or relationship represented by Formal Operational stage; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-3",
+      "session": "June 2023",
+      "question_number": 3,
+      "question": "Paedocentrecism is:",
+      "options": [
+        "Show the path of knowledge and guide the child to get knowledge",
+        "Centre on child’s skill and behaviour",
+        "Involve child’s behaviour with parents and teachers",
+        "Focus how the child works and the progress he/she makes"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Show the path of knowledge and guide the child to get knowledge. The stem describes the concept or relationship represented by Show the path of knowledge and guide the child to get knowledge; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-5",
+      "session": "June 2023",
+      "question_number": 5,
+      "question": "To conduct a study on Anganwadi workers, the researcher randomly selected five districts out of 30 districts of a state and collected data from each and every Anganwadi worker from these five districts. This is an example of ________",
+      "options": [
+        "Stratified sampling",
+        "Cluster sampling",
+        "Quota sampling",
+        "Convenient sampling"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Cluster sampling. The stem describes the concept or relationship represented by Cluster sampling; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-13",
+      "session": "June 2023",
+      "question_number": 13,
+      "question": "Which parts of the brain are connected by the cerebral Aqueduct?",
+      "options": [
+        "Third and fourth ventricles of the brain",
+        "Lateral ventricles of the brain",
+        "Left and right frontal Lobe",
+        "Frontal and Parietal Lobe"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Third and fourth ventricles of the brain. The stem describes the concept or relationship represented by Third and fourth ventricles of the brain; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-17",
+      "session": "June 2023",
+      "question_number": 17,
+      "question": "What is meant by stroboscopic motion?",
+      "options": [
+        "We perceive an object is in motion whenever its image moves across our retina",
+        "Loss in sensitivity to motion",
+        "Tracking objects only in darkness",
+        "Tracking only the upward motion of objects"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. We perceive an object is in motion whenever its image moves across our retina. The stem describes the concept or relationship represented by We perceive an object is in motion whenever its image moves across our retina; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-19",
+      "session": "June 2023",
+      "question_number": 19,
+      "question": "When a lighting flashes nearby, we wince and start to prepare ourselves for the thunder to follow. This response to impending thunder is known as:",
+      "options": [
+        "Unconditioned stimulus",
+        "Unconditioned response",
+        "Conditioned stimulus",
+        "Conditioned response"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Conditioned response. The stem describes the concept or relationship represented by Conditioned response; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-28",
+      "session": "June 2023",
+      "question_number": 28,
+      "question": "Who is the author of the book “Escape from Freedom”?",
+      "options": [
+        "Fromm",
+        "Sullivan",
+        "Adler",
+        "Horney"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Fromm. The item tests a factual association: the relevant person, work, date, contribution, or term is Fromm.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-42",
+      "session": "June 2023",
+      "question_number": 42,
+      "question": "Existentialism is associated with which of the following names. (A). Soren Kierkegaard (B). Vlademier (C). Friedrich Nietzsche (D). Husserl 1. Choose the most appropriate from the options given below:",
+      "options": [
+        "A, B only",
+        "A, B, C only",
+        "A, C, D only",
+        "A, B, D only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, C, D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-53",
+      "session": "June 2023",
+      "question_number": 53,
+      "question": "The structural components of the collective unconscious (Jung) are called by different names. (A). Archetypes (B). Imagoes (C). Creative ego (D). Libido (E). Dominants 1. Choose the most appropriate from the options given below:",
+      "options": [
+        "A, E, C only",
+        "B, C, D only",
+        "A, B, C, D only",
+        "A, B, E only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, B, E only. The stem describes the concept or relationship represented by A, B, E only; the alternatives refer to different concepts or conditions. Freud emphasized unconscious processes as an important influence on behaviour and mental life.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-55",
+      "session": "June 2023",
+      "question_number": 55,
+      "question": "As indicated by reflexes, a new born baby responds to touch around the area of? (A). Head, Neck and mouth (B). Belly, Foot and neck (C). Mouth, Calf and head (D). Mouth and foot (E). Palm 623 UGC NET JRF June 2023 Paper II 623 UGC NET JRF June 2023 Paper II Tap to check answer key 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B only",
+        "B, E only",
+        "C, E only",
+        "D, E only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. D, E only. The item tests a factual association: the relevant person, work, date, contribution, or term is D, E only.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-85",
+      "session": "June 2023",
+      "question_number": 85,
+      "question": "Sequentially arrange the sections of the vertebrae of the spinal column from top to bottom. (A). Thoracic vertebrae (B). Sacral vertebrae (C). Cernical vertebrae (D). Lumbar vertebrae 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, D, B, C",
+        "C. A. D. B",
+        "A, C, B, D",
+        "B, A, D, C"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. C. A. D. B. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-97",
+      "session": "June 2023",
+      "question_number": 97,
+      "question": "The ZPD stands for:",
+      "options": [
+        "Zone of Postnatal development",
+        "Zone of proximal development",
+        "Zone of proximodistal development",
+        "Zone of proximal distance"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Zone of proximal development. The stem describes the concept or relationship represented by Zone of proximal development; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "June-2023-98",
+      "session": "June 2023",
+      "question_number": 98,
+      "question": "ZPD is defined by Vygotsky as:",
+      "options": [
+        "The region of sensitivity for learning characterized by the difference between the developmental level when the child is working alone and the level he/she is capable of reaching with the aid of an adult.",
+        "The region of difference between inability to use a known thing and benefit from the use of such a strategy",
+        "The region of learning what a child has learnt from experience and knows about the world in general.",
+        "The region of ability to fit into change and choose environments that best fulfill the child’s needs and desires to learn from society and culture."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. The region of sensitivity for learning characterized by the difference between the developmental level when the child is working alone and the level he/she is capable of reaching with the aid of an adult.. The stem describes the concept or relationship represented by The region of sensitivity for learning characterized by the difference between the developmental level when the child is working alone and the level he/she is capable of reaching with the aid of an adult.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-5",
+      "session": "December 2023",
+      "question_number": 5,
+      "question": "Statutory rape refers to",
+      "options": [
+        "The husband forcing the unwilling wife for sexual intercourse",
+        "Forcibly having sexual intercourse with a resisting minor",
+        "Forcibly having sexual intercourse with a resisting person from the same gender",
+        "Violence in sexual intercourse by a husband or wife legally married"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Forcibly having sexual intercourse with a resisting minor. The stem describes the concept or relationship represented by Forcibly having sexual intercourse with a resisting minor; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-8",
+      "session": "December 2023",
+      "question_number": 8,
+      "question": "One psychologist while collecting data from gamblers, first identified one gambler and from him traced out three more; and through these three further more. He continued like this 637 UGC NET JRF December 2023 Paper II 637 UGC NET JRF December 2023 Paper II Tap to check answer key This is an example of",
+      "options": [
+        "Quota sampling",
+        "Stratified sampling",
+        "Snowball sampling",
+        "Accidental sampling"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Snowball sampling. The stem describes the concept or relationship represented by Snowball sampling; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-9",
+      "session": "December 2023",
+      "question_number": 9,
+      "question": "Parameter: population:: _________ : sample.",
+      "options": [
+        "Dispersion",
+        "Inference",
+        "Statistic",
+        "Operation"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Statistic. The stem describes the concept or relationship represented by Statistic; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-19",
+      "session": "December 2023",
+      "question_number": 19,
+      "question": "The ability of brain to adopt to the environment and to replace function following damage is known as:",
+      "options": [
+        "Neuroplasticity",
+        "Accommodation",
+        "Assimilation",
+        "Hemispherical coordination"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Neuroplasticity. The stem describes the concept or relationship represented by Neuroplasticity; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-20",
+      "session": "December 2023",
+      "question_number": 20,
+      "question": "Temporal Lobe epilepsy results in",
+      "options": [
+        "Docile behaviour",
+        "Aggressive behaviour",
+        "Antisocial behaviour",
+        "Prosocial behaviour"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Aggressive behaviour. The stem describes the concept or relationship represented by Aggressive behaviour; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-21",
+      "session": "December 2023",
+      "question_number": 21,
+      "question": "Socrates questioning is a",
+      "options": [
+        "Philosophical questioning",
+        "Technique for self-understanding",
+        "Psychoanalytical technique",
+        "Technique in which counsellor asks the questions to the client"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Technique for self-understanding. The stem describes the concept or relationship represented by Technique for self-understanding; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-23",
+      "session": "December 2023",
+      "question_number": 23,
+      "question": "Homeostatic temperature in the body is regulated by",
+      "options": [
+        "changes in the external environment",
+        "drive reduction",
+        "preoptic region of the hypothalamus",
+        "electrical activities in the brain"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. preoptic region of the hypothalamus. The stem describes the concept or relationship represented by preoptic region of the hypothalamus; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-40",
+      "session": "December 2023",
+      "question_number": 40,
+      "question": "‘Miracle Question’ is a technique used in:",
+      "options": [
+        "Narrative therapy",
+        "Solution focused brief therapy",
+        "Feminist therapy",
+        "Reality therapy"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Solution focused brief therapy. The stem describes the concept or relationship represented by Solution focused brief therapy; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    },
+    {
+      "id": "December-2023-98",
+      "session": "December 2023",
+      "question_number": 98,
+      "question": "What is the criterion variable in this study?",
+      "options": [
+        "Gender",
+        "Social context factor",
+        "Post-traumatic growth",
+        "Quality of marital relationship"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Post-traumatic growth. The stem describes the concept or relationship represented by Post-traumatic growth; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": null,
+      "topic": null,
+      "micro": null
+    }
+  ],
+  "practice": []
+}
