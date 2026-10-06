@@ -15,21 +15,18 @@ from source_to_content import load, extract, chunks, canonical, call_ai, norm
 
 CONTENT_SCHEMA={"type":"object","properties":{
     "microtopic_id":{"type":"string"},
-    "quick_learn":{"type":"string"},
     "core_explanation":{"type":"string"},
     "detailed_explanation":{"type":"string"},
     "recall_prompts":{"type":"array","items":{"type":"object","properties":{
         "type":{"type":"string"},"prompt":{"type":"string"},"answer":{"type":"string"}},
         "required":["type","prompt","answer"],"additionalProperties":False}},
-    "exam_takeaway":{"type":"string"},
     "revision_guidance":{"type":"object","properties":{
         "recall_before_review":{"type":"string"},"self_check":{"type":"string"},
         "weak_point_prompt":{"type":"string"},"rating_instruction":{"type":"string"}},
         "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],
         "additionalProperties":False},
-    "source_notes":{"type":"string"}
-},"required":["microtopic_id","quick_learn","core_explanation","detailed_explanation",
-             "recall_prompts","exam_takeaway","revision_guidance","source_notes"],
+    "required":["microtopic_id","core_explanation","detailed_explanation",
+             "recall_prompts","revision_guidance"],
 "additionalProperties":False}
 
 def source_evidence(ref):
@@ -156,8 +153,7 @@ def main():
         passed=False
 
         for attempt in range(3):
-            required=["core_explanation","detailed_explanation","recall_prompts","exam_takeaway",
-                      "source_notes","revision_guidance"]
+            required=["core_explanation","detailed_explanation","recall_prompts","revision_guidance"]
             missing=[x for x in required if not current.get(x)]
             if missing:
                 final_audit={"approved":False,"score":0,"critical_failures":["missing generated field(s): "+", ".join(missing)],
