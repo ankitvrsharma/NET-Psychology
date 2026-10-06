@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-grounded content automation for the NET Psychology static pools."""
+"""Source-grounded automation for connected five-component NET Psychology learning packages."""
 from pathlib import Path
 import argparse, hashlib, json, os, re, subprocess, sys
 from datetime import datetime, timezone
@@ -19,7 +19,7 @@ def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
 def load_instructions():
     default={
         "enabled":True,
-        "default_instruction":"Use only supplied approved source evidence. The micro-topic is the canonical knowledge source; derive Deep Dive, Active Recall and Revision from it without contradiction or unsupported additions.",
+        "default_instruction":"Use only supplied approved source evidence. The micro-topic is the canonical knowledge source; derive Deep Dive, Active Recall, Revision and Practice/MCQs from the same knowledge without contradiction or unsupported additions. All five components form one connected learning package and must be generated/revised together when a rewrite is required.",
         "user_instruction":"",
         "target_microtopics":[]
     }
@@ -257,13 +257,14 @@ def main():
             },
             "required":["type","prompt","answer"],"additionalProperties":False}},
         "cross_references":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"relationship":{"type":"string"},"reason":{"type":"string"}},"required":["id","relationship","reason"],"additionalProperties":False}},
+        "practice_mcqs":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"question":{"type":"string"},"options":{"type":"array","items":{"type":"string"}},"correct_answer":{"type":"string"},"explanation":{"type":"string"}},"required":["id","question","options","correct_answer","explanation"],"additionalProperties":false}},
         "revision_guidance":{"type":"object","properties":{
             "recall_before_review":{"type":"string"},
             "self_check":{"type":"string"},
             "weak_point_prompt":{"type":"string"},
             "rating_instruction":{"type":"string"}},
             "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
-        "required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance"],
+        "required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance","practice_mcqs"],
         "additionalProperties":False}
     if not args.apply_staged:
         for ref in list(refs.values()):
@@ -280,10 +281,11 @@ def main():
                 "microtopic":existing_micro.get(ref["id"],{}),
                 "deep_dive":existing_deep.get(ref["id"],{}),
                 "active_recall":existing_recall.get(ref["id"],{}),
-                "revision":existing_revision.get(ref["id"],{})
+                "revision":existing_revision.get(ref["id"],{}),
+                "practice_mcqs":[]
             }
             generated.append(call_ai(
-                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content. Cross-references must use only supplied canonical candidates, must exclude the current micro-topic, and should identify only meaningful conceptual relationships useful for mixed-topic questions. If no candidate has a defensible relationship, return an empty cross_references array.",
+                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED FIVE-COMPONENT LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall, Revision and Practice/MCQs must be derived from that same knowledge. Generate all five together when practice MCQs are requested by the package schema. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content. Practice MCQs must be original practice items, never presented as genuine PYQs, and every answer/explanation must be supported by the connected package and source evidence. Cross-references must use only supplied canonical candidates, must exclude the current micro-topic, and should identify only meaningful conceptual relationships useful for mixed-topic questions. If no candidate has a defensible relationship, return an empty cross_references array.",
                 {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
