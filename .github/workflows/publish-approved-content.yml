@@ -1,0 +1,52 @@
+name: Publish owner-approved content
+
+on:
+  workflow_dispatch:
+    inputs:
+      microtopic_id:
+        description: "Optional micro-topic ID to publish; blank publishes all approved items"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish approved queue items
+        env:
+          MICROTOPIC_ID: ${{ github.event.inputs.microtopic_id || '' }}
+        run: |
+          if [ -n "$MICROTOPIC_ID" ]; then
+            python scripts/publish_approved_queue.py --microtopic-id "$MICROTOPIC_ID"
+          else
+            python scripts/publish_approved_queue.py
+          fi
+      - name: Validate published pools
+        run: python scripts/validate_content.py
+      - name: Push owner-approved publication
+        env:
+          NET_CONTENT_PUBLISH_TOKEN: ${{ secrets.NET_CONTENT_PUBLISH_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "No owner-approved content changes generated."
+            exit 0
+          fi
+          if [ -z "$NET_CONTENT_PUBLISH_TOKEN" ]; then
+            echo "NET_CONTENT_PUBLISH_TOKEN is required for owner-approved publication."
+            exit 1
+          fi
+          git config user.name "net-psychology-content-bot"
+          git config user.email "actions@github.com"
+          git add content data/content-approval-queue.json
+          git commit -m "chore: publish owner-approved Psychology content"
+          git remote set-url origin "https://x-access-token:$NET_CONTENT_PUBLISH_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+          git push origin main
