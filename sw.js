@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.0.2';
+const CACHE='netpsych-shell-v1.0.3';
 const SHELL=[
   './',
   './index.html',
@@ -18,9 +18,6 @@ const SHELL=[
   './daily-practice.html',
   './style.css',
   './app.js',
-  './app/facade.js',
-  './app/content-audit.js',
-  './app/data-loader.js',
   './app/runtime.js',
   './content-audit.json',
   './data.json',
