@@ -90,13 +90,20 @@ jobs:
 
       - name: Publish approved content
         if: ${{ success() }}
+        env:
+          NET_CONTENT_PUBLISH_TOKEN: ${{ secrets.NET_CONTENT_PUBLISH_TOKEN }}
         run: |
           if git diff --quiet; then
             echo "No audited content changes generated."
             exit 0
           fi
+          if [ -z "$NET_CONTENT_PUBLISH_TOKEN" ]; then
+            echo "NET_CONTENT_PUBLISH_TOKEN is required for direct publication. A GITHUB_TOKEN push does not trigger a GitHub Pages build."
+            exit 1
+          fi
           git config user.name "net-psychology-content-bot"
           git config user.email "actions@github.com"
           git add content data content-provenance.json
           git commit -m "chore: publish AI-audited Psychology content"
+          git remote set-url origin "https://x-access-token:$NET_CONTENT_PUBLISH_TOKEN@github.com/${GITHUB_REPOSITORY}.git"
           git push origin main
