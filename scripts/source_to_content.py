@@ -256,13 +256,14 @@ def main():
                 "answer":{"type":"string"}
             },
             "required":["type","prompt","answer"],"additionalProperties":False}},
+        "cross_references":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"relationship":{"type":"string"},"reason":{"type":"string"}},"required":["id","relationship","reason"],"additionalProperties":False}},
         "revision_guidance":{"type":"object","properties":{
             "recall_before_review":{"type":"string"},
             "self_check":{"type":"string"},
             "weak_point_prompt":{"type":"string"},
             "rating_instruction":{"type":"string"}},
             "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
-        "required":["microtopic_id","core_explanation","detailed_explanation","recall_prompts","revision_guidance"],
+        "required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance"],
         "additionalProperties":False}
     if not args.apply_staged:
         for ref in list(refs.values()):
@@ -282,7 +283,7 @@ def main():
                 "revision":existing_revision.get(ref["id"],{})
             }
             generated.append(call_ai(
-                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content.",
+                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content. Cross-references must use only supplied canonical candidates, must exclude the current micro-topic, and should identify only meaningful conceptual relationships useful for mixed-topic questions. If no candidate has a defensible relationship, return an empty cross_references array.",
                 {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
@@ -321,17 +322,18 @@ def main():
                 # generated package. Preserve IDs, titles, mappings, and unrelated learner data.
                 me["expert_explanation"]=g["core_explanation"]
                 me["detailed_explanation"]=g["detailed_explanation"]
+                me["cross_references"]=g.get("cross_references") or []
                 de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
-                de["id"]=mid; de["title"]=me.get("title",de.get("title",""))
+                de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title",""))
                 de["detailed_explanation"]=g["detailed_explanation"]
                 deep_pool[mid]=de
                 ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
-                ae["id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
+                ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
                 ae["prompts"]=g.get("recall_prompts") or []
                 recall_pool[mid]=ae
                 rg=g.get("revision_guidance") or {}
                 rev=revision_pool.get(mid) or {"id":mid,"title":me.get("title","")}
-                rev["id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
+                rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
                 for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
                     rev[field]=rg.get(field,"")
                 revision_pool[mid]=rev
