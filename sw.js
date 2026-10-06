@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v49-runtime-modules';
+const CACHE='netpsych-shell-v50-learning-availability';
 const SHELL=[
   './',
   './index.html',
