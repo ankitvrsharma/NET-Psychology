@@ -11,7 +11,8 @@ QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
-MODEL=os.getenv("NET_CONTENT_MODEL","gemini-2.5-flash")
+MODEL=os.getenv("NET_CONTENT_MODEL","gemini-flash-latest")
+MODEL_FALLBACKS=[x.strip() for x in os.getenv("NET_CONTENT_FALLBACKS","gemini-3.7-flash,gemini-3.6-flash").split(",") if x.strip()]
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -71,36 +72,46 @@ def _gemini_schema(schema):
         return [_gemini_schema(x) for x in schema]
     return schema
 
+def _gemini_schema(schema):
+    if isinstance(schema, dict):
+        out={}
+        for k,v in schema.items():
+            if k=="type" and isinstance(v,str): out[k]=v.upper()
+            elif k=="properties" and isinstance(v,dict): out[k]={pk:_gemini_schema(pv) for pk,pv in v.items()}
+            elif k=="items": out[k]=_gemini_schema(v)
+            else: out[k]=_gemini_schema(v) if isinstance(v,(dict,list)) else v
+        return out
+    if isinstance(schema,list): return [_gemini_schema(x) for x in schema]
+    return schema
+
+def _resolve_model_chain():
+    # Gemini's latest alias is preferred; two pinned stable models remain as fallbacks.
+    requested=os.getenv("NET_CONTENT_MODEL",MODEL)
+    chain=[requested]+MODEL_FALLBACKS
+    return list(dict.fromkeys(chain))
+
 def call_ai(instructions,payload,name,schema):
     import urllib.request
     api_key=os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise SystemExit("GEMINI_API_KEY is required.")
-    url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    if not api_key: raise SystemExit("GEMINI_API_KEY is required.")
     body={
         "systemInstruction":{"parts":[{"text":instructions}]},
         "contents":[{"parts":[{"text":json.dumps(payload,ensure_ascii=False)}]}],
-        "generationConfig":{
-            "responseMimeType":"application/json",
-            "responseSchema":_gemini_schema(schema),
-            "temperature":0.2
-        }
+        "generationConfig":{"responseMimeType":"application/json","responseSchema":_gemini_schema(schema),"temperature":0.2}
     }
-    req=urllib.request.Request(
-        url,
-        data=json.dumps(body,ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type":"application/json","x-goog-api-key":api_key},
-        method="POST")
-    try:
-        with urllib.request.urlopen(req,timeout=180) as response:
-            result=json.loads(response.read().decode("utf-8"))
-    except Exception as exc:
-        raise RuntimeError(f"Gemini API request failed: {exc}") from exc
-    try:
-        text=result["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text)
-    except (KeyError,IndexError,json.JSONDecodeError) as exc:
-        raise RuntimeError(f"Gemini returned an invalid structured response: {result}") from exc
+    errors=[]
+    for model in _resolve_model_chain():
+        url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        req=urllib.request.Request(url,data=json.dumps(body,ensure_ascii=False).encode("utf-8"),
+                                   headers={"Content-Type":"application/json","x-goog-api-key":api_key},method="POST")
+        try:
+            with urllib.request.urlopen(req,timeout=180) as response:
+                result=json.loads(response.read().decode("utf-8"))
+            text=result["candidates"][0]["content"]["parts"][0]["text"]
+            return json.loads(text)
+        except Exception as exc:
+            errors.append(f"{model}: {exc}")
+    raise RuntimeError("All configured Gemini models failed: "+" | ".join(errors))
 
 def canonical(s):
     out={}
