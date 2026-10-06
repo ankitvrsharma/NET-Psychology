@@ -1,0 +1,1105 @@
+{
+  "3-1-1": {
+    "id": "3-1-1",
+    "title": "Types of psychological tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of psychological tests. What is the central idea?",
+        "answer": "Psychological tests are standardized procedures for administering, scoring and interpreting tasks or responses to measure personal attributes or predict outcomes. The uploaded PowerWithin material distinguishes tests from broader assessment: assessment can combine interviews, observations and tests, while a psychological test is one component of that process."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of psychological tests.",
+        "answer": "Tests use specified administration and scoring procedures."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of psychological tests.",
+        "answer": "They measure attributes, traits, abilities or other psychological characteristics."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of psychological tests?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of psychological tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-2-1": {
+    "id": "3-2-1",
+    "title": "Item writing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Item writing. What is the central idea?",
+        "answer": "Item writing is the process of constructing individual questions or tasks that will represent the content and construct the test is intended to measure. The uploaded NET material places item writing before item analysis and standardization, indicating that items must first be developed and then evaluated empirically."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Item writing.",
+        "answer": "Items should represent the intended content or construct."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Item writing.",
+        "answer": "Wording and response format affect how an item functions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Item writing?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Item writing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-2-2": {
+    "id": "3-2-2",
+    "title": "Item analysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Item analysis. What is the central idea?",
+        "answer": "Item analysis examines how individual test items function. The uploaded PowerWithin material describes item–total relationships and comparisons between upper and lower criterion groups as ways of identifying useful items. Internal consistency information can also show whether a subtest or item relates appropriately to the overall test."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Item analysis.",
+        "answer": "Item analysis evaluates individual items empirically."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Item analysis.",
+        "answer": "Item–total relationships can indicate whether an item fits the test."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Item analysis?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Item analysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-3-1": {
+    "id": "3-3-1",
+    "title": "Standardization",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Standardization. What is the central idea?",
+        "answer": "Standardization means establishing uniform procedures for administering and scoring a test and developing an appropriate reference group for interpreting scores. The uploaded PowerWithin material emphasizes standardization samples and norms: a raw score has little meaning by itself and is commonly interpreted relative to the performance of a defined normative group."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Standardization.",
+        "answer": "Administration and scoring should be consistent."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Standardization.",
+        "answer": "A standardization sample provides the reference distribution."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Standardization?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Standardization indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-3-2": {
+    "id": "3-3-2",
+    "title": "Reliability",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Reliability. What is the central idea?",
+        "answer": "consistency or dependability of measurement"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reliability.",
+        "answer": "test-retest"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reliability.",
+        "answer": "internal consistency"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Reliability?",
+        "answer": "Reliability is necessary but not sufficient for validity."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Reliability?",
+        "answer": "Kaplan distinguishes reliability from validity and highlights test–retest, equivalent-form and split-half reliability. The exam decision is whether scores are consistent, not whether the test measures the intended construct. Simply Psychology describes reliability as consistency and gives test–retest and inter-observer reliability as examples. Consistency should not be confused with accuracy."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Reliability indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-3-3": {
+    "id": "3-3-3",
+    "title": "Validity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Validity. What is the central idea?",
+        "answer": "evidence supporting the intended interpretation and use of test scores"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Validity.",
+        "answer": "content"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Validity.",
+        "answer": "criterion-related"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Validity?",
+        "answer": "Validity is not simply one number."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Validity?",
+        "answer": "Kaplan organises validity around whether a test supports the intended interpretation of scores, including content, criterion-related and construct validity. Its exam questions match the evidence to what the test is supposed to establish. Simply Psychology separates internal, construct and ecological validity and explains how design controls protect the interpretation of findings."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Validity indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-3-4": {
+    "id": "3-3-4",
+    "title": "Norms",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Norms. What is the central idea?",
+        "answer": "reference information for interpreting scores relative to a defined population"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Norms.",
+        "answer": "percentiles"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Norms.",
+        "answer": "age/grade norms"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Norms?",
+        "answer": "Norms are not the same as cutoffs."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Norms?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Norms indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-3-5": {
+    "id": "3-3-5",
+    "title": "Types of reliability",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of reliability in 2–3 sentences.",
+        "answer": "Types of reliability is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Types of reliability?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Types of reliability?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Types of reliability?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Types of reliability?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of reliability indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-3-6": {
+    "id": "3-3-6",
+    "title": "Types of validity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of validity in 2–3 sentences.",
+        "answer": "Types of validity is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Types of validity?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Types of validity?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Types of validity?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Types of validity?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of validity indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-3-7": {
+    "id": "3-3-7",
+    "title": "Standard scores",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Standard scores in 2–3 sentences.",
+        "answer": "Standard scores is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Standard scores?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Standard scores?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Standard scores?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Standard scores?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Standard scores indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-1": {
+    "id": "3-4-1",
+    "title": "Intelligence tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Intelligence tests. What is the central idea?",
+        "answer": "Intelligence tests are designed to assess cognitive abilities. The uploaded sources trace a major historical development from Binet and Simon's 1905 Binet–Simon Scale to Terman's 1916 Stanford–Binet adaptation. The sources also discuss Wechsler scales and the distinction between fluid and crystallized intelligence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Intelligence tests.",
+        "answer": "Binet and Simon published the Binet–Simon Scale in 1905."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Intelligence tests.",
+        "answer": "Terman adapted it into the Stanford–Binet in 1916."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Intelligence tests?",
+        "answer": "Kaplan reviews intelligence testing through standardised measures such as Stanford–Binet and Wechsler scales, alongside norms, the normal curve, reliability, validity and cultural bias. Its exam style links a named test to what it measures and how scores are interpreted."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Intelligence tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-2": {
+    "id": "3-4-2",
+    "title": "Creativity tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Creativity tests. What is the central idea?",
+        "answer": "Creativity tests are used to assess creative thinking, particularly processes such as divergent thinking. The uploaded sources discuss Guilford and Cattell and describe Getzels and Jackson's work comparing groups identified through creativity and intelligence measures. Educational material also identifies the Torrance Tests of Creative Thinking as measures emphasizing originality and divergent thinking."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Creativity tests.",
+        "answer": "Creativity testing often emphasizes divergent production."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Creativity tests.",
+        "answer": "Guilford is a major source figure in the creativity-testing tradition."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Creativity tests?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Creativity tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-3": {
+    "id": "3-4-3",
+    "title": "Neuropsychological tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neuropsychological tests. What is the central idea?",
+        "answer": "Neuropsychological tests assess aspects of cognitive functioning related to brain and nervous-system functioning. The uploaded sources describe them as tools for assessing nervous-system damage and brain functioning and identify domains such as attention, memory and processing skills in educational material."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuropsychological tests.",
+        "answer": "They focus on cognitive/behavioral functions related to the nervous system."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuropsychological tests.",
+        "answer": "They can help assess possible brain dysfunction or damage."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Neuropsychological tests?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neuropsychological tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-4": {
+    "id": "3-4-4",
+    "title": "Aptitude tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Aptitude tests. What is the central idea?",
+        "answer": "Aptitude tests assess abilities relevant to acquiring new learning or performing particular kinds of tasks. Baron & Misra define aptitude tests in terms of the ability to acquire new information. The PowerWithin military-testing section describes aptitude batteries as cognitive or mental-ability measures that can include numerical, verbal, spatial and mechanical reasoning."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Aptitude tests.",
+        "answer": "Aptitude concerns potential or ability to learn/perform in a domain."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Aptitude tests.",
+        "answer": "Batteries may contain several subtests."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Aptitude tests?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Aptitude tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-5": {
+    "id": "3-4-5",
+    "title": "Personality assessment",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Personality assessment. What is the central idea?",
+        "answer": "Personality assessment uses multiple methods to understand relatively stable patterns of behavior, thoughts and feelings. Ciccarelli & White distinguish interviews, behavioral assessments, projective tests and personality inventories; the appropriate method depends partly on the theoretical perspective and the kind of information required."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Personality assessment.",
+        "answer": "Interviews can provide self-report information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Personality assessment.",
+        "answer": "Behavioral assessment uses direct observation, rating scales or frequency counts."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Personality assessment?",
+        "answer": "Kaplan distinguishes objective personality inventories from projective methods and uses examples such as the MMPI and Thematic Apperception Test. The key decision is whether a method uses standardised items and scoring or ambiguous stimuli. Simply Psychology connects trait assessment with the nomothetic tradition, questionnaires and factor analysis, while contrasting it with more idiographic approaches."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Personality assessment indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-6": {
+    "id": "3-4-6",
+    "title": "Interest inventories",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Interest inventories. What is the central idea?",
+        "answer": "Interest inventories assess patterns of vocational or other interests and are commonly used in career guidance. The uploaded NET material explicitly places interest inventories within psychological testing and career guidance, while the educational material links them with career exploration."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interest inventories.",
+        "answer": "They measure patterns of interests rather than intelligence or achievement."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interest inventories.",
+        "answer": "They are useful for educational and career guidance."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Interest inventories?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Interest inventories indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-4-7": {
+    "id": "3-4-7",
+    "title": "Binet-Simon and Stanford-Binet",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Binet-Simon and Stanford-Binet in 2–3 sentences.",
+        "answer": "Binet-Simon and Stanford-Binet is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Binet-Simon and Stanford-Binet?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Binet-Simon and Stanford-Binet?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Binet-Simon and Stanford-Binet?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Binet-Simon and Stanford-Binet?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Binet-Simon and Stanford-Binet indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-8": {
+    "id": "3-4-8",
+    "title": "Wechsler scales",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Wechsler scales in 2–3 sentences.",
+        "answer": "Wechsler scales is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Wechsler scales?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Wechsler scales?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Wechsler scales?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Wechsler scales?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Wechsler scales indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-9": {
+    "id": "3-4-9",
+    "title": "Rorschach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Rorschach in 2–3 sentences.",
+        "answer": "Rorschach is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Rorschach?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Rorschach?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Rorschach?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Rorschach?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Rorschach indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-10": {
+    "id": "3-4-10",
+    "title": "Thematic Apperception Test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Thematic Apperception Test in 2–3 sentences.",
+        "answer": "Thematic Apperception Test is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Thematic Apperception Test?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Thematic Apperception Test?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Thematic Apperception Test?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Thematic Apperception Test?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Thematic Apperception Test indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-11": {
+    "id": "3-4-11",
+    "title": "MMPI",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain MMPI in 2–3 sentences.",
+        "answer": "MMPI is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about MMPI?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish MMPI?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about MMPI?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for MMPI?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes MMPI indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-12": {
+    "id": "3-4-12",
+    "title": "NEO personality inventory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain NEO personality inventory in 2–3 sentences.",
+        "answer": "NEO personality inventory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about NEO personality inventory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish NEO personality inventory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about NEO personality inventory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for NEO personality inventory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes NEO personality inventory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-4-13": {
+    "id": "3-4-13",
+    "title": "EPQ personality inventory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain EPQ personality inventory in 2–3 sentences.",
+        "answer": "EPQ personality inventory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about EPQ personality inventory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish EPQ personality inventory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about EPQ personality inventory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for EPQ personality inventory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes EPQ personality inventory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "3-5-1": {
+    "id": "3-5-1",
+    "title": "Semantic differential scale",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Semantic differential scale. What is the central idea?",
+        "answer": "measurement of connotative meaning using bipolar adjective dimensions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Semantic differential scale.",
+        "answer": "bipolar adjectives"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Semantic differential scale.",
+        "answer": "Osgood"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Semantic differential scale?",
+        "answer": "Not the same as Likert."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Semantic differential scale?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Semantic differential scale indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-5-2": {
+    "id": "3-5-2",
+    "title": "Staples scale",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Staples scale. What is the central idea?",
+        "answer": "The Staples scale is listed in the uploaded NET material among attitude scales alongside semantic differential and Likert scales. The supplied source provides outline-level coverage for this specific scale, so the website retains the term and its placement without adding unsupported construction or scoring details."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Staples scale.",
+        "answer": "It is listed as an attitude-scale technique in the NET material."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Staples scale.",
+        "answer": "It belongs to the measurement of attitudes rather than cognitive ability testing."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Staples scale?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Staples scale indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-5-3": {
+    "id": "3-5-3",
+    "title": "Likert scale",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Likert scale. What is the central idea?",
+        "answer": "summated agreement scale using ordered response categories"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Likert scale.",
+        "answer": "strongly agree/disagree"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Likert scale.",
+        "answer": "ordered categories"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Likert scale?",
+        "answer": "A single Likert item is not the same as a whole Likert scale."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Likert scale?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Likert scale indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-5-4": {
+    "id": "3-5-4",
+    "title": "Computer-based psychological testing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Computer-based psychological testing. What is the central idea?",
+        "answer": "Computer-based psychological testing refers to administering psychological tests through computerized systems rather than solely through traditional paper-and-pencil formats. The uploaded NET material includes it as a distinct testing topic. Its interpretation still depends on the same psychometric principles of standardized administration, scoring, reliability and validity."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Computer-based psychological testing.",
+        "answer": "Administration and scoring are computerized."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Computer-based psychological testing.",
+        "answer": "Standardization and psychometric quality remain necessary."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Computer-based psychological testing?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Computer-based psychological testing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-1": {
+    "id": "3-6-1",
+    "title": "Clinical settings",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Clinical settings. What is the central idea?",
+        "answer": "In clinical settings, psychological tests are used as part of broader assessment to understand cognitive functioning, personality, symptoms and other clinically relevant characteristics. Baron & Misra emphasize that assessment can include interviews, life records, psychological tests and neuropsychological tests; testing can contribute to diagnosis and treatment planning."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Clinical settings.",
+        "answer": "Testing is one component of clinical assessment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Clinical settings.",
+        "answer": "Interviews and other information sources may be combined with tests."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Clinical settings?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Clinical settings indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-2": {
+    "id": "3-6-2",
+    "title": "Organizational and business settings",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Organizational and business settings. What is the central idea?",
+        "answer": "Organizational and business settings use psychological testing for purposes such as selection, placement, training and related personnel decisions. The uploaded NET material explicitly lists organizational/business applications, while the testing sections emphasize standardized measurement and aptitude/personality assessment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Organizational and business settings.",
+        "answer": "Testing can support selection and placement decisions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Organizational and business settings.",
+        "answer": "Aptitude and personality measures may be relevant to occupational requirements."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Organizational and business settings?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Organizational and business settings indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-3": {
+    "id": "3-6-3",
+    "title": "Educational settings",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Educational settings. What is the central idea?",
+        "answer": "Educational settings use psychological testing to understand abilities, achievement, interests and learning-related characteristics. The uploaded educational material links testing with academic, social and emotional support, while the NET material identifies education as a major application area."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Educational settings.",
+        "answer": "Testing can inform educational decisions and support planning."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Educational settings.",
+        "answer": "Intelligence and achievement measures assess different constructs."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Educational settings?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Educational settings indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-4": {
+    "id": "3-6-4",
+    "title": "Counseling settings",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Counseling settings. What is the central idea?",
+        "answer": "In counseling settings, psychological tests can provide structured information about abilities, interests, personality or other characteristics relevant to the counseling question. The uploaded NET material includes counseling and career guidance among testing applications. Tests should complement counseling interaction rather than replace professional judgment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counseling settings.",
+        "answer": "Tests can structure information relevant to counseling goals."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counseling settings.",
+        "answer": "Interest and aptitude measures are especially relevant to career guidance."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Counseling settings?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Counseling settings indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-5": {
+    "id": "3-6-5",
+    "title": "Military settings",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Military settings. What is the central idea?",
+        "answer": "The uploaded PowerWithin material gives detailed military applications of psychological testing. Testing is used across recruitment, training, placement, promotion and some specialized assignments. Aptitude, achievement and personality tests are among the tools described; the source also distinguishes uniform, diversified and mixed selection formats."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Military settings.",
+        "answer": "Military testing begins in recruitment and can continue through service."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Military settings.",
+        "answer": "Aptitude tests may assess verbal, numerical, spatial and related abilities."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Military settings?",
+        "answer": "PowerWithin provides the NET taxonomy of psychological assessment. Ciccarelli & White and the Self-Teaching Guide reinforce reliability, validity and testing concepts, while Kaplan adds an exam-oriented distinction between what a test measures and how consistently it measures it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Military settings indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "3-6-7": {
+    "id": "3-6-7",
+    "title": "Career guidance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Career guidance in 2–3 sentences.",
+        "answer": "School guidance supports educational, vocational and personal-social development through organized services such as information, assessment, placement and follow-up."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Career guidance?",
+        "answer": "student development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Career guidance?",
+        "answer": "assessment/information"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Career guidance?",
+        "answer": "Guidance is broader than one counselling session."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Career guidance?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Career guidance indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  }
+}
