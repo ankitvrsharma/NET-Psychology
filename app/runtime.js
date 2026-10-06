@@ -714,16 +714,6 @@ function mcqHTML(q,i,source='MCQ',showSource=true){
     "<div class=\"mcq-options\">"+opts.map((o,j)=>"<button class=\"mcq-option\" type=\"button\" data-a=\""+j+"\"><span class=\"option-letter\">"+String.fromCharCode(65+j)+"</span><span class=\"option-text\">"+esc(o)+"</span></button>").join("")+"</div>"+
     "<div class=\"mcq-feedback\" hidden></div></article>";
 }
-function mappedConcept(q){
-  if(!q||q.unit==null||q.topic==null||q.micro==null||!D)return null;
-  const u=units().find(x=>String(x.id)===String(q.unit));
-  const t=u?.topics.find(x=>String(x.id)===String(q.topic));
-  const m=t?.microtopics.find(x=>String(x.id)===String(q.micro));
-  if(!m)return null;
-  const core=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS');
-  const points=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')).slice(0,3);
-  return {title:m.title,core,points};
-}
 function contextualExplanation(q){
   return String(q?.explanation||PRACTICE_EXPLANATIONS?.[q?.id]||'').trim();
 }
