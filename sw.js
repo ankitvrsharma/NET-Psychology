@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.0.3';
+const CACHE='netpsych-shell-v1.1.0-static-pools';
 const SHELL=[
   './',
   './index.html',
@@ -19,18 +19,22 @@ const SHELL=[
   './style.css',
   './app.js',
   './app/runtime.js',
+  './content-pools/registry.json',
   './content-audit.json',
-  './data.json',
   './content-version.js',
   './manifest.webmanifest'
 ];
 const RUNTIME_DATA=new Set([
-  'kaplan_enrichment.json',
-  'study_sources.json',
-  'simply_psychology_enrichment.json',
+  'syllabus-index.json',
+  'active_recall.json',
+  'quick_cards.json',
+  'micro_topics.json',
+  'deep_dive.json',
+  'deep_dive_enrichment.json',
+  'questions.json',
+  'revision_guidance.json',
+  'home-learning.json',
   'mcq_mapping.json',
-  'practice_questions.json',
-  'practice_explanations.json',
   'content-audit.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
