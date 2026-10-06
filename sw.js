@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.3.1-canonical-microtopic-routing';
+const CACHE='netpsych-shell-v1.4.0-canonical-learning-production';
 const SHELL=[
   './',
   './index.html',
@@ -31,7 +31,6 @@ const RUNTIME_DATA=new Set([
   'quick_cards.json',
   'micro_topics.json',
   'deep_dive.json',
-  'deep_dive_enrichment.json',
   'questions.json',
   'revision_guidance.json',
   'home-learning.json',
@@ -55,12 +54,8 @@ self.addEventListener('fetch',event=>{
   const name=url.pathname.split('/').pop();
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
   const isRuntimeData=RUNTIME_DATA.has(name);
-  if(!isShell&&!isRuntimeData)return;
-  const cacheKey=canonicalRequest(url);
-  event.respondWith(fetch(req,{cache:'no-store'}).then(res=>{
-    if(!res.ok)throw new Error('Network response '+res.status);
-    const copy=res.clone();
-    event.waitUntil(caches.open(CACHE).then(cache=>cache.put(cacheKey,copy)));
-    return res;
-  }).catch(()=>caches.match(cacheKey)));
+  if(isShell||isRuntimeData){
+    event.respondWith(fetch(req,{cache:'no-store'}).then(response=>{if(response.ok)caches.open(CACHE).then(cache=>cache.put(canonicalRequest(url),response.clone()));return response}).catch(()=>caches.match(canonicalRequest(url))));
+    return;
+  }
 });
