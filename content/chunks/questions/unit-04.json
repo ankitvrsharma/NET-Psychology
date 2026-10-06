@@ -1,0 +1,2712 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "June-2012-13",
+      "session": "June 2012",
+      "question_number": 13,
+      "question": "What is the correct sequence of events given below? 1). Releasing of neurotransmitters 2). Post synaptic potential 3). Binding on receptor sites 4). Synthesis of neurotransmitters 1. Codes:",
+      "options": [
+        "1 2 3 4",
+        "4 3 2 1",
+        "4 1 3 2",
+        "2 4 1 3"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 4 1 3 2. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 2,
+      "micro": 5
+    },
+    {
+      "id": "June-2012-14",
+      "session": "June 2012",
+      "question_number": 14,
+      "question": "Assertion (A): The amplitude of the action potential in a neuron does not go beyond + 40 mV. 1. Reason (R) : Neurons function on “all or none” basis. 2. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true but (R) is not the correct explanation of (A). c). (A) is true but (R) is false. d). (A) is false but (R) is true",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(A) is true but (R) is false.",
+        "(A) is false but (R) is true"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-18",
+      "session": "June 2012",
+      "question_number": 18,
+      "question": "Match List-I with List-II : and indicate your answer with the help of codes given below : List I (Presentation of reinforcement) List II (Type of reinforcement) a. An unpleasant stimulus is presented to decrease behaviour 1. Positive reinforcement b. An unpleasant stimulus is removed to increase behaviour 2. Negative reinforcement c. A pleasant stimulus is presented to increase behaviour 3. Positive punishment d. A pleasant stimulus is removed to decrease behaviour 4. Negative punishment Codes: 1. A B C D",
+      "options": [
+        "1 2 3 4",
+        "2 3 4 1",
+        "4 1 3 2",
+        "3 2 1 4"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 3 2 1 4. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Positive reinforcement increases a behaviour by presenting a consequence after the behaviour.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-48",
+      "session": "June 2012",
+      "question_number": 48,
+      "question": "During emotions skin conductance changes occur due to the activity of some of the following : 1). Sweat glands 2). Adrenal glands 3). Parasympathetic nervous system 1. Codes:",
+      "options": [
+        "1 and 2",
+        "1 and 3",
+        "2 and 3",
+        "1, 2 and 3"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 1 and 2. The stem describes the concept or relationship represented by 1 and 2; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-2",
+      "session": "December 2012",
+      "question_number": 2,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R). Indicate your answer using the codes given below : 1. Assertion (A): If your teacher embarrasses you for asking a question in class, it is less likely that you would ask questions in class in future. 2. Reason (R): Negative reinforcement reduces the occurrence of behaviour. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Negative reinforcement increases a behaviour by removing an aversive stimulus after the behaviour; it is not the same as punishment.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-15",
+      "session": "December 2012",
+      "question_number": 15,
+      "question": "The main function of autoclitic behaviour is to 1). Qualify responses 2). Express relations 3). Providing a grammatical framework for verbal behaviour 1. Codes:",
+      "options": [
+        "1 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "1, 2 and 3"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 1, 2 and 3. The stem describes the concept or relationship represented by 1, 2 and 3; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-21",
+      "session": "December 2012",
+      "question_number": 21,
+      "question": "Learning by imitating others’ behaviour is called ______ learning. The researcher best known for studying this type of learning is",
+      "options": [
+        "Observational : Bandura",
+        "Secondary : Pavlov",
+        "Observational : Watson",
+        "Secondary : Skinner"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Observational : Bandura. The stem describes the concept or relationship represented by Observational : Bandura; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-31",
+      "session": "December 2012",
+      "question_number": 31,
+      "question": "Match the List I & List II and select the correct answer using the code given below : List I (Emotion) List II (Nerves Activity) (a). Fear 1. Parasypatheic arousal (b). Anger 2. Symapathetic arousal (c). Depression 3. Symapathetic and parasympathetic arousal 4. Psychosomatic Codes: 1. A B C",
+      "options": [
+        "2 3 1",
+        "1 2 3",
+        "2 1 3",
+        "3 2 1"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 2 3 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-33",
+      "session": "December 2012",
+      "question_number": 33,
+      "question": "A person, otherwise limited in mental ability, has amazing specific skills. 1. This is because of",
+      "options": [
+        "Academic under-achievement",
+        "Practical Intelligence 49 UGC NET JRF December 2012 Paper II 49 UGC NET JRF December 2012 Paper II Tap to check answer key",
+        "Academic over-achievement",
+        "Savant Syndrome"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Savant Syndrome. The stem describes the concept or relationship represented by Savant Syndrome; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "June-2013-15",
+      "session": "June 2013",
+      "question_number": 15,
+      "question": "Read each of the following two statements Assertion (A) and Reason (R) and indicate your answer using the codes given below : 1. Assertion (A): Psychoactive drugs affects the nervous systems to cause change in perception or mood. 2. Reason (R) : Reticular activating system is related to perception and mood. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-28",
+      "session": "June 2013",
+      "question_number": 28,
+      "question": "Match List – I with List – II and indicate your answer using the codes given below: List I ( Behaviour) List II ( Expression mode) a. Tone 1. Facial b. Crying 2. Glanduar c. Laugh 3. Varbal d. Eyebrow 4. Muscular Codes: 1. A B C D",
+      "options": [
+        "3 2 4 1",
+        "1 4 3 2",
+        "2 4 3 1",
+        "2 1 3 4"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 3 2 4 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. The mode is the most frequently occurring value in a distribution.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-30",
+      "session": "June 2013",
+      "question_number": 30,
+      "question": "This area contains ‘Somoto Sensory Cortex’",
+      "options": [
+        "Parietal lobe",
+        "Frontal lobe",
+        "Temporal lobe",
+        "Occipital lobe UGC NET JRF June 2013 Paper II 82 UGC NET JRF June 2013 Paper II 82 Tap to check answer key"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Parietal lobe. The stem describes the concept or relationship represented by Parietal lobe; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-32",
+      "session": "June 2013",
+      "question_number": 32,
+      "question": "A complex behaviour that is rigidly patterned throughout a species and is unlearned is called",
+      "options": [
+        "Imprinting",
+        "Instinct",
+        "Emotion",
+        "Feeling"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Instinct. The stem describes the concept or relationship represented by Instinct; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-40",
+      "session": "June 2013",
+      "question_number": 40,
+      "question": "Dissociable sub-systems operate simultaneously in each hemisphere and help us recognize similarity at one level and differences at another level in the perceived pattern. This system consists of 1). Top-down processing system 2). Abstract category sub-system 3). Bottom-up processing system 4). Specific-exemplar sub-system 1. Codes: a). 1 and 2 only b). 3 and 4 only c). 2 and 4 only d). 1 and 4 only",
+      "options": [
+        "1 and 2 only",
+        "3 and 4 only",
+        "2 and 4 only",
+        "1 and 4 only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 2 and 4 only. The stem describes the concept or relationship represented by 2 and 4 only; the alternatives refer to different concepts or conditions. The Gestalt principle of similarity leads people to group elements that share features such as shape, colour, or size.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2013-9",
+      "session": "September 2013",
+      "question_number": 9,
+      "question": "Match List-I with List-II and indicate your answer with the help of codes 111 UGC NET JRF September 2013 Paper II 111 UGC NET JRF September 2013 Paper II Tap to check answer key given below: List – I (Neu- rotransmitter) List – II (Location) a. Acetylcholine 1. Mid brain b. Serotonin 2. Autonomic nervous system c. Adrenalin 3. Brain Stem d. Dopamine 4. Neuromuscular junction Codes: 1. A B C D",
+      "options": [
+        "1 2 3 4",
+        "4 3 2 1",
+        "3 2 1 4",
+        "2 4 1 3"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 4 3 2 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2013-20",
+      "session": "September 2013",
+      "question_number": 20,
+      "question": "Match List-I with List-II and indicate your answer with the help of codes given below: List – I (Perceptual Theory) List – II (Explanation) UGC NET JRF September 2013 Paper II 114 UGC NET JRF September 2013 Paper II 114 Tap to check answer key a. Spinal Gate Control Theory 1. A theory proposed to explain motion sickness. b. Sensory Conflict Theory 2. There are three sets of receptors that respond differently to different wavelengths. c. Information Storage size Theory 3. Theory of pain that focuses on afferent nerve impulses transmission from the skin to the spinal cord. d. Young Helmholtz Theory 4. Perception of time is constructed from the amount of memory storage. Codes: 1. A B C D",
+      "options": [
+        "1 2 3 4",
+        "3 1 4 2",
+        "4 3 2 1",
+        "4 1 2 3"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 3 1 4 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "September-2013-28",
+      "session": "September 2013",
+      "question_number": 28,
+      "question": "Where is the borderline between deficiency and growth needs among Maslow’s fives? a). Safety needs and needs to belong b). Safety needs and physiological needs c). Esteem needs and self-actualization d). Needs to belong and esteem needs",
+      "options": [
+        "Safety needs and needs to belong",
+        "Safety needs and physiological needs",
+        "Esteem needs and self-actualization",
+        "Needs to belong and esteem needs"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Needs to belong and esteem needs. The stem describes the concept or relationship represented by Needs to belong and esteem needs; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-6",
+      "session": "December 2013",
+      "question_number": 6,
+      "question": "There are various kinds of cells in human body. Which one of the following is not a neuron?",
+      "options": [
+        "Sensory",
+        "Glia",
+        "Inter",
+        "Motor"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Glia. The stem describes the concept or relationship represented by Glia; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-11",
+      "session": "December 2013",
+      "question_number": 11,
+      "question": "The resting potential of a Neuron is",
+      "options": [
+        "– 95 mv",
+        "+ 85 mv",
+        "– 70 mv",
+        "+ 70 mv"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. – 70 mv. The stem describes the concept or relationship represented by – 70 mv; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-29",
+      "session": "December 2013",
+      "question_number": 29,
+      "question": "The degree to which construct system allows new information to enter that will allow construct system to change is called",
+      "options": [
+        "Individual Corollary",
+        "Permeability",
+        "Loose construing",
+        "Constructive Alternativism"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Permeability. The stem describes the concept or relationship represented by Permeability; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-1",
+      "session": "June 2014",
+      "question_number": 1,
+      "question": "Autonomic Nervous System is concerned with the regulation of ________. i). Smooth muscles ii). Skeletal muscles iii). Cardiac muscles iv). Glands 1. Codes: a). I and II b). I, II, III c). I, III, IV d). I, II, III, IV",
+      "options": [
+        "I and II",
+        "I, II, III",
+        "I, III, IV",
+        "I, II, III, IV"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. I, III, IV. The stem describes the concept or relationship represented by I, III, IV; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-3",
+      "session": "June 2014",
+      "question_number": 3,
+      "question": "Match List – I with List – II and indicate your answer with the help of the given below: List – I (Theorists) List – II (Motivational Concept) a. Hull 1. Instinct b. Cannon 2. Drive c. Tinbergen 3. Homeostatic d. McDougall 4. Fixed Action Pattern Codes: 1. a b c d",
+      "options": [
+        "2 3 4 1",
+        "3 4 2 1",
+        "4 1 2 3",
+        "1 2 3 4"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 2 3 4 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-10",
+      "session": "June 2014",
+      "question_number": 10,
+      "question": "Arrange the following in correct sequence through which the sound waves reach the receptors: i). Oval window ii). Incus iii). Stapes iv). Malleus v). Tympanic membrane 1. Codes: a). V, IV, II, III, I b). V, IV, III, II, I c). V, IV, I, III, II d). V, III, II, IV, I",
+      "options": [
+        "V, IV, II, III, I",
+        "V, IV, III, II, I",
+        "V, IV, I, III, II",
+        "V, III, II, IV, I"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. V, IV, II, III, I. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "June-2014-13",
+      "session": "June 2014",
+      "question_number": 13,
+      "question": "Continuum of “Birth Weight” is the basis of studying a). The effect of biological factors on 183 UGC NET JRF June 2014 Paper II 183 UGC NET JRF June 2014 Paper II Tap to check answer key intellectual development b). The effect of genetics on intellectual development c). The effect of genetic and sociocultural factors on intellectual development d). The effect of biological and socio- cultural factors on intellectual development.",
+      "options": [
+        "The effect of biological factors on 183 UGC NET JRF June 2014 Paper II 183 UGC NET JRF June 2014 Paper II Tap to check answer key intellectual development",
+        "The effect of genetics on intellectual development",
+        "The effect of genetic and sociocultural factors on intellectual development",
+        "The effect of biological and socio- cultural factors on intellectual development."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. The effect of biological factors on  intellectual development. The stem describes the concept or relationship represented by The effect of biological factors on  intellectual development; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-18",
+      "session": "June 2014",
+      "question_number": 18,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R): 1. Assertion (A): A positive charge applied to the inside of the membrane of the neuron produced depolarization. 2. Reason (R): Inside of the membrane was positively charged. 3. In the context of the above two statements, which one of the following is correct? 4. Codes: a). Both (A) and (R) are correct and (R) is the correct explanation of (A). b). Both (A) and (R) are correct but (R) is not the correct explanation of (A). c). (A) is correct, but (R) is wrong. d). (A) is wrong, but (R) is correct.",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are correct but (R) is not the correct explanation of (A).",
+        "(A) is correct, but (R) is wrong.",
+        "(A) is wrong, but (R) is correct."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is correct, but (R) is wrong.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-26",
+      "session": "June 2014",
+      "question_number": 26,
+      "question": "Which of the following cells do produce myelin in the Central Nervous System?",
+      "options": [
+        "Schwann cells",
+        "Astrocytes",
+        "Microglia",
+        "Oligodendrocytes"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Oligodendrocytes. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-28",
+      "session": "June 2014",
+      "question_number": 28,
+      "question": "Read each of the following two statements Assertion (A) and Reason UGC NET JRF June 2014 Paper II 186 UGC NET JRF June 2014 Paper II 186 Tap to check answer key (R) and indicate your answer using the codes given below: 1. Assertion (A): Low levels of serotonin release are associated with aggression and other forms of antisocial behaviour. 2. Reason (R): Serotonergic neurons play an inhibitory role in human aggression. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-36",
+      "session": "June 2014",
+      "question_number": 36,
+      "question": "Match List – I with List – II and indicate your answer with the help of the given below: List – I (Number) List – II (Structure) a. 31 1. Lobes of cerebrum b. 7 2. Cranial nerves c. 12 3. Cervical vertebrae d. 4 4. Spinal nerves Codes: 1. a b c d",
+      "options": [
+        "4 2 3 1",
+        "4 3 2 1",
+        "2 3 4 1",
+        "3 1 2 4"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 4 3 2 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-7",
+      "session": "December 2014",
+      "question_number": 7,
+      "question": "Which of the following descriptions are correct? 1). Weber’s Ratio means that greater the magnitude of a stimulus, smaller the change required for a difference to be detected. 2). The ability to detect, resolve and perceive fine details of a visual display is called visual acuity. 3). Stimulation of a succession of neighbouring retinal loci is called the image retina movement system. 4). Adaptation refers to the proportion of incident light that is reflected. a). 1 and 4 are correct. b). 2 and 1 are correct. c). 4 and 3 are correct. d). 2 and 3 are correct.",
+      "options": [
+        "1 and 4 are correct.",
+        "2 and 1 are correct.",
+        "4 and 3 are correct.",
+        "2 and 3 are correct."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 2 and 3 are correct.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-25",
+      "session": "December 2014",
+      "question_number": 25,
+      "question": "During Resting Potential, cell membrane is 1). Almost permeable to Sodium 2). Almost permeable to Potassium 3). Almost impermeable to Sodium 4). Almost impermeable to Potassium 1. Codes:",
+      "options": [
+        "1 and 4",
+        "2 and 3",
+        "1 and 2",
+        "3 and 4"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 and 3. During resting potential, the membrane is much more permeable to potassium than sodium. Thus the statement that it is almost permeable to potassium and almost impermeable to sodium is the correct pair.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "December-2014-28",
+      "session": "December 2014",
+      "question_number": 28,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): A neuron without an Axon cannot transmit information even to other neurons immediately adjacent to it. 2. Reason (R): Dendrite receives information from other neurons and Axons transmit it forward. 3. Codes: a). Both (A) and (R) are true and (R) is correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-16",
+      "session": "June 2015",
+      "question_number": 16,
+      "question": "Self - modelling means: 1). A type of learning in which individuals watch themselves behaving in a situationally appropriate manner and then show the same behaviours later on. 2). Type of learning in which individuals learn new behaviour 3). Type of learning in which individuals learn to develop self-beliefs 4). Type of learning in which individuals learn through guided - participation from significant others.",
+      "options": [
+        "A type of learning in which individuals watch themselves behaving in a situationally appropriate manner and then show the same behaviours later on.",
+        "Type of learning in which individuals learn new behaviour",
+        "Type of learning in which individuals learn to develop self-beliefs",
+        "Type of learning in which individuals learn through guided - participation from significant others."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A type of learning in which individuals watch themselves behaving in a situationally appropriate manner and then show the same behaviours later on.. The stem describes the concept or relationship represented by A type of learning in which individuals watch themselves behaving in a situationally appropriate manner and then show the same behaviours later on.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-21",
+      "session": "June 2015",
+      "question_number": 21,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I List II a. Libido (i) Human beings strive to return to an inorganic state of balance that preceded life, in which there is no painful struggle to satisfy biological needs. b. Thantos (ii) Psychic and pleasurable feelings associated with gratification of life instincts. c. Suppression (iii) A person’s refusal to perceive an unpleasant environment in external reality 257 UGC NET JRF June 2015 Paper II 257 UGC NET JRF June 2015 Paper II Tap to check answer key d. Denial (iv) Individual’s active and conscious attempt to stop anxiety provoking thoughts by simply not thinking about them. provoking thoughts by simply not thinking about them. Codes: 1. a b c d",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(iii) (i) (ii) (iv)",
+        "(ii) (i) (iv) (iii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (ii) (i) (iv) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-25",
+      "session": "June 2015",
+      "question_number": 25,
+      "question": "The parasympathetic nerves project from: 1). the lumbar and thoracic regions of the spinal cord 2). the brain and sacral region of the spinal cord 3). the brain and the lumbar region of the spinal cord 4). the lumbar and the sacral regions of the spinal cord",
+      "options": [
+        "the lumbar and thoracic regions of the spinal cord",
+        "the brain and sacral region of the spinal cord",
+        "the brain and the lumbar region of the spinal cord",
+        "the lumbar and the sacral regions of the spinal cord"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. the brain and sacral region of the spinal cord. The stem describes the concept or relationship represented by the brain and sacral region of the spinal cord; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 6,
+      "source_topic": "Spinal cord and autonomic nervous system",
+      "source_tags": [
+        "PYQ"
+      ]
+    },
+    {
+      "id": "June-2015-27",
+      "session": "June 2015",
+      "question_number": 27,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): A synapse does not necessarily result into action potential in post - synaptic neuron. 2. Reason (R): Synapses produce inhibitory post - synaptic potential also in post - synapatic neuron. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A) 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A) 3). (A) is true, but (R) is false 4). (A) is false, but (R) is true",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A). Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-42",
+      "session": "June 2015",
+      "question_number": 42,
+      "question": "Trace the correct sequence of the following events for audition: (a). synapses in primary auditory cortex (b). synapse in superior olives (c). synapse in the inferior colliculi (d). synapse in the cochlear nuclei (e). synapse in medial geniculate nucleus UGC NET JRF June 2015 Paper II 262 UGC NET JRF June 2015 Paper II 262 Tap to check answer key 1. Codes: 1). (d) (b) (c) (e) and (a) 2). (d) (c) (b) (e) and (a) 3). (b) (c) (e) (d) and (a) 4). (c) (b) (e) (d) and (a)",
+      "options": [
+        "(d) (b) (c) (e) and (a)",
+        "(d) (c) (b) (e) and (a)",
+        "(b) (c) (e) (d) and (a)",
+        "(c) (b) (e) (d) and (a)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (d) → (b) → (c) → (e) → (a). The auditory pathway proceeds from the cochlear nuclei to the superior olives, then the inferior colliculi, then the medial geniculate nucleus, and finally the primary auditory cortex.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "December-2015-1",
+      "session": "December 2015",
+      "question_number": 1,
+      "question": "Motion sickness can occur when : 1). One loses his vestibular sense. 2). One relies only on visual information. 3). One’s visual information and vestibular system’s information are congruent. 4). One’s visual system and vestibular system are in conflict. 1. Codes:",
+      "options": [
+        "(a) only",
+        "(a) and (b)",
+        "(d) only",
+        "(a) and (d)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (d) only. The stem describes the concept or relationship represented by (d) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-2",
+      "session": "December 2015",
+      "question_number": 2,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below : 1. Assertion (A): Iconic store is a discrete visual sensory store. 2. Reason (R) : Because information is believed to be stored in the form of visual codes. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-10",
+      "session": "December 2015",
+      "question_number": 10,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I (Cutaneous receptors) List II (Responds to) a. Free nerve endings i) Sudden displacement of skin b. Ruffini endings ii) Gradual skin indentation UGC NET JRF December 2015 Paper II 288 UGC NET JRF December 2015 Paper II 288 Tap to check answer key c. Merkel’s disks iii) Gradual skin stretch d. Pacinian corpuscles iv) Temperature change and pain Codes: 1. A B C D",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (iv) (iii) (ii) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "December-2015-40",
+      "session": "December 2015",
+      "question_number": 40,
+      "question": "Which of the following are not Mnemonic devices? 1). Categorical clustering 2). Pegword system 3). Consolidation 4). Rehearsal 1. Codes:",
+      "options": [
+        "(a) and (b)",
+        "(b) and (c)",
+        "(a) and (c)",
+        "(c) and (d)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (c) and (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-42",
+      "session": "December 2015",
+      "question_number": 42,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I List II a. EMG i) Sweat glands b. EEG ii) Iris c. GSR iii) Muscles d. Pupilometry iv) cortical neurons Codes: 1. A B C D",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii) (iv) (i) (ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-9",
+      "session": "July 2016",
+      "question_number": 9,
+      "question": "In terms of efficiency in scanning information, which one of the following strategies is considered to be the best?",
+      "options": [
+        "Conservative focusing",
+        "Focus gambling",
+        "Simultaneous scanning",
+        "Successive scanning"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Focus gambling. The stem describes the concept or relationship represented by Focus gambling; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 6,
+      "micro": 7
+    },
+    {
+      "id": "July-2016-18",
+      "session": "July 2016",
+      "question_number": 18,
+      "question": "When the action potential reaches the end of the axon terminals, it causes the release of 1). An electric spark that sets off the next neuron 2). Positively charged ions that excite the next cell 3). Negatively charged ions that inhibit the next cell. 4). Neurotransmitters that excite or inhibit the next cell.",
+      "options": [
+        "An electric spark that sets off the next neuron",
+        "Positively charged ions that excite the next cell",
+        "Negatively charged ions that inhibit the next cell.",
+        "Neurotransmitters that excite or inhibit the next cell."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Neurotransmitters that excite or inhibit the next cell.. The stem describes the concept or relationship represented by Neurotransmitters that excite or inhibit the next cell.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-26",
+      "session": "July 2016",
+      "question_number": 26,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I (System) List II (Components) a. Visual system i) Hammer, pinna, oval window b. Auditory system ii) Cornea, vitreous humour, aqueous humour c. Auditory system iii) GABA, Serotonin, Dopamine d. Messenger System iv) Glial cells, myelin, Neurillemma Codes: 1. A B C D 1). (i) (ii) (iii) (iv) 2). (ii) (iii) (iv) (i) 3). (iii) (ii) (i) (iv) 4). (ii) (i) (iv) (iii)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (ii) (i) (iv)",
+        "(ii) (i) (iv) (iii)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii) (ii) (i) (iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-30",
+      "session": "July 2016",
+      "question_number": 30,
+      "question": "What type of cell is responsible for the reproduction of other cells of the body ? a). Blood cells b). Stem cells c). Neurons d). Basal cells 1. Codes:",
+      "options": [
+        "a only",
+        "b only",
+        "c & d only",
+        "d & a only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. b only. The stem describes the concept or relationship represented by b only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-31",
+      "session": "July 2016",
+      "question_number": 31,
+      "question": "If the bones of the middle ear begin to deteriorate, the person will suffer difficulty in",
+      "options": [
+        "Loudness",
+        "Timbre",
+        "Conduction",
+        "Stimulation"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Conduction. The middle-ear ossicles transmit and mechanically amplify sound vibrations toward the inner ear. Damage to them therefore produces a conductive hearing problem; 'stimulation' is not the specific auditory function tested here.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "July-2016-39",
+      "session": "July 2016",
+      "question_number": 39,
+      "question": "Shaping in instrumental conditioning means 329 UGC NET JRF July 2016 Paper II 329 UGC NET JRF July 2016 Paper II Tap to check answer key 1). Teaching a complex sequence of behaviours by first shaping the final response in the sequence and then working backwards 2). A continuous reinforcement schedule is used for establishing new behaviours. 3). It involves reinforcing successive approximations of the final desired behaviour. 4). Consistent occurrence of a behaviour in the presence of discriminative stimulus.",
+      "options": [
+        "Teaching a complex sequence of behaviours by first shaping the final response in the sequence and then working backwards",
+        "A continuous reinforcement schedule is used for establishing new behaviours.",
+        "It involves reinforcing successive approximations of the final desired behaviour.",
+        "Consistent occurrence of a behaviour in the presence of discriminative stimulus."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Consistent occurrence of a behaviour in the presence of discriminative stimulus.. The stem describes the concept or relationship represented by Consistent occurrence of a behaviour in the presence of discriminative stimulus.; the alternatives refer to different concepts or conditions.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-41",
+      "session": "July 2016",
+      "question_number": 41,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using codes given below: 1. Assertion (A): gf and gc correlate positively across the age levels with moderate magnitude. 2. Reason (R): gf being neural energy is invested in the cultivation of gc and both are having different growth patterns. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-43",
+      "session": "July 2016",
+      "question_number": 43,
+      "question": "In heightened emotional states, the following functions are NOT triggered by sympathetic Nervous System activity: a). Perspiration b). Heightened pulse rate UGC NET JRF July 2016 Paper II 330 UGC NET JRF July 2016 Paper II 330 Tap to check answer key c). Digestion d). Pupillary dilation 1. Codes:",
+      "options": [
+        "c only",
+        "both c and d",
+        "a, b and c",
+        "a, c and d"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. a, c and d. The stem describes the concept or relationship represented by a, c and d; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-1",
+      "session": "January 2017",
+      "question_number": 1,
+      "question": "Which among the following are the products in Guilford’s structure of intellect model? a). Systems b). Transformation c). Reasoning d). Interpretation 1. Codes: 1). (a) and (b) only 2). (a), (b) and (c) only 3). (a), (b) and (d) only 4). (a), (b), (c) and (d)",
+      "options": [
+        "(a) and (b) only",
+        "(a), (b) and (c) only",
+        "(a), (b) and (d) only",
+        "(a), (b), (c) and (d)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a) and (b) only. The stem describes the concept or relationship represented by (a) and (b) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 3
+    },
+    {
+      "id": "January-2017-22",
+      "session": "January 2017",
+      "question_number": 22,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R); and indicate your answer using codes given below: 1. Assertion (A): The individual is left with little or no energy for cathexise (APM) after satisfying a particular need. 2. Reason (R): Cathexis is the investment of psychic energy in the thoughts of objects or processes that will satisfy a need. 3. Codes: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 361 UGC NET JRF January 2017 Paper II 361 UGC NET JRF January 2017 Paper II Tap to check answer key 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false. 361 UGC NET JRF January 2017 Paper II 361 UGC NET JRF January 2017 Paper II Tap to check answer key",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "January-2017-30",
+      "session": "January 2017",
+      "question_number": 30,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R); and indicate your answer using codes given below: 1. Assertion (A): Minor frustrations will add upto produce considerable frustration but not to aggression. 2. Reason (R): Disruption of goal- directed behaviour usually leads to frustration. 3. Codes: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true. UGC NET JRF January 2017 Paper II 364 UGC NET JRF January 2017 Paper II 364 Tap to check answer key",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true. UGC NET JRF January 2017 Paper II 364 UGC NET JRF January 2017 Paper II 364 Tap to check answer key"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is false, but (R) is true. . Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-42",
+      "session": "January 2017",
+      "question_number": 42,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List I (Explanation) List II (Concept) a.Remembering meaning of words, properties of objects. i. Sensory memory b.Helping information to be brought back to mind when it cannot be recalled spontaneously. ii. Semantic memory c.Remembering specific experiences of the past. iii. Retrieval cues d.Retaining representation of sensory input for brief periods of time. iv. Episodic memory 367 UGC NET JRF January 2017 Paper II 367 UGC NET JRF January 2017 Paper II Tap to check answer key Codes: 1. A B C D 1). (i) (ii) (iii) (iv) 2). (ii) (iii) (iv) (i) 3). (iii) (ii) (i) (iv) 4). (iv) (ii) (iii) (i)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (ii) (i) (iv)",
+        "(iv) (ii) (iii) (i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (ii) (iii) (iv) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Retrieval is the process of bringing stored information back into awareness or use.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "January-2017-44",
+      "session": "January 2017",
+      "question_number": 44,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R); and indicate your answer using codes given below: 1. Assertion (A): A neural membrane is double-layered. 2. Reason (R): Lipid molecules turn their tails toward each other. 3. Codes: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-45",
+      "session": "January 2017",
+      "question_number": 45,
+      "question": "The inputs from our sensory receptors are structured by",
+      "options": [
+        "Selective principles",
+        "Gestalt principles",
+        "Analytical principles",
+        "Learning principles Instructions for Questions 46 to 50: Read the following paragraph and answer the five questions which follow: A researcher working in the area of human intelligence wanted to develop a new verbal test of intelligence. For this purpose, he wrote 200 objective multiple-choice items. Each item had four alternatives, one of which was right and the three remaining ones were wrong. He administered this initial version to a sample of 400 subjects. Using P27 and P73 as the cut-off points, he obtained two groups – Low Scoring and High Scoring respectively. The item difficulty index and the item discrimination index were computed for each of the 200 items. To assess whether each item significantly discriminates between Low scoring and High scoring groups, appropriate statistical significance tests were also employed. This item analysis process retained 150 items. The final version of 150 items was administered to a fresh sample of 750 subjects. The appropriate measures of internal consistency reliability were obtained. The test norms were developed using normalized T scores (mean = 100, SD = 20) and the Wechsler type deviation IQ scores. To assess the dimensionality UGC NET JRF January 2017 Paper II 368 UGC NET JRF January 2017 Paper II 368 Tap to check answer key of verbal intelligence, the researcher also carried out the factor analysis of item scores."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Gestalt principles. The stem describes the concept or relationship represented by Gestalt principles; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "November-2017-6",
+      "session": "November 2017",
+      "question_number": 6,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Increase in synaptic strength is due to the simultaneous stimulation of pre - synaptic and post - synaptic neurons. 2. Reason (R): Long term Potentiation can be induced in the laboratory by stimulating the pre - synaptic neurons with pulses of high frequency of electricity for few seconds. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 2,
+      "micro": 5
+    },
+    {
+      "id": "November-2017-17",
+      "session": "November 2017",
+      "question_number": 17,
+      "question": "Purposive manipulation of reinforcement contingencies, which encourage desirable behaviour, is called:",
+      "options": [
+        "Contingency management",
+        "Contingency contracting",
+        "Contingent reinforcement",
+        "Non-contingent reinforcement"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Contingency management. The stem describes the concept or relationship represented by Contingency management; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-18",
+      "session": "November 2017",
+      "question_number": 18,
+      "question": "Which of the following depth cue is based on muscular feedback?",
+      "options": [
+        "Texture gradients",
+        "Motion parallax",
+        "Accommodation",
+        "Light and Shadow"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Accommodation. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-27",
+      "session": "November 2017",
+      "question_number": 27,
+      "question": "Afferent and Efferent nerves are found in which of the following?",
+      "options": [
+        "Sympathetic Nervous System",
+        "Para - Sympathetic Nervous System",
+        "Somatic Nervous System",
+        "Central Nervous System"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Somatic Nervous System. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 2,
+      "source_topic": "Peripheral nervous system",
+      "source_tags": [
+        "PYQ"
+      ]
+    },
+    {
+      "id": "November-2017-31",
+      "session": "November 2017",
+      "question_number": 31,
+      "question": "Match List - I with List - II and select the correct answer by choosing from the code given below: List I (Terms) List II (Explanation) a. Anorexia nervosa i) Sudden death occurs as terrified person’s parasympathetic nervous system over reacts due to which heart slows down to stop b. Bulimia nervosa ii) A resting period after orgasm, during which a person cannot achieve another orgasm c. Refractory period iii) An eating disorder in which a person significantly becomes underweight. d. Voodo Curse iv) An eating disorder marked by over eating. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iii) (iv) (ii) (i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (iii) (iv) (ii) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-38",
+      "session": "November 2017",
+      "question_number": 38,
+      "question": "Which of the following are regulated by Sympathetic Nervous System? a). Dilation of pupils b). Decreased activity of Adrenal Gland c). Digestion is stimulated d). Increased Heart Rate e). Dryness in mouth 1. Code: 1). (a), (b) and (c) only 2). (b) and (c) only 3). (a), (d) and (e) only 4). (a), (c), (d) and (e) only",
+      "options": [
+        "(a), (b) and (c) only",
+        "(b) and (c) only",
+        "(a), (d) and (e) only",
+        "(a), (c), (d) and (e) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (d) and (e) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-41",
+      "session": "November 2017",
+      "question_number": 41,
+      "question": "According to Skinner, which of the following are the characteristics of ‘Respondent Behaviour’? a). It is elicited. b). It is emitted. c). It is conditioned. d). It is unconditioned. 1. Code: 1). (a) and (c) only 2). ( b) and (c) only 3). (a), (c) and (d) only 403 UGC NET JRF November 2017 Paper II 403 UGC NET JRF November 2017 Paper II Tap to check answer key 4). ( b), (c) and (d) only",
+      "options": [
+        "(a) and (c) only",
+        "( b) and (c) only",
+        "(a), (c) and (d) only 403 UGC NET JRF November 2017 Paper II 403 UGC NET JRF November 2017 Paper II Tap to check answer key",
+        "( b), (c) and (d) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (c) and (d) only . Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-42",
+      "session": "November 2017",
+      "question_number": 42,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): To use a computer, we must learn to pay attention to specific stimuli, such as icons, commands and signals. 2. Reason (R): Learning creates perceptual habits that affect our daily experience. 3. Code : 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-7",
+      "session": "July 2018",
+      "question_number": 7,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Desciption) a. Counter- conditioning (i) After conditioning, a new CS(B) when paired with already conditioned stimulus CS(A) and presented as a compound stimulus, little or no conditioning occurs to CS(B). b. Blocking (ii) Elimination of undesirable behaviour by pairing CS with US other than the one that originally reinforced that behaviour. c. Overshad- owing (iii) Inhibition of conditioned response caused by conditioned emotional response. d. Condi- tioned Sup- pression (iv) While using compound CS where one of its components is more salient than the other, only the salient component is conditioned. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(ii) (i) (iii) (iv)",
+        "(ii) (i) (iv) (iii)",
+        "(iv) (iii) (i) (ii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (ii) (i) (iv) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-10",
+      "session": "July 2018",
+      "question_number": 10,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Description) a. Physiological Psychology i) Studies the psychological effects of brain damage in human patients. b. Neuropsychol- ogy ii) Studies the neural mechanisms of behaviour by manipulating the nervous systems of non- human animals in controlled experiments. UGC NET JRF July 2018 Paper II 432 UGC NET JRF July 2018 Paper II 432 Tap to check answer key c. Psychophysi- ology iii) Studies the relation between physiological activity and psychological processes in human subjects by non-invasive physiological recording. d. Cognitive Neuroscience iv) Studies the neural mechanisms of human cognition, mainly by using functional brain imaging techniques. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(iii) (iv) (i) (ii)",
+        "(ii) (i) (iv) (iii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (ii) (i) (iv) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 6,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-27",
+      "session": "July 2018",
+      "question_number": 27,
+      "question": "Which of the following terms explains the Reinforcement which is given only if a specific response is made?",
+      "options": [
+        "Concurrent Reinforcement",
+        "Incremental Reinforcement",
+        "Contingency Contract",
+        "Contingent Reinforcement"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Contingent Reinforcement. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-41",
+      "session": "July 2018",
+      "question_number": 41,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): For extraversion, monozygotic twins correlated more than the dizygotic twins. 2. Reason (R): Extraversion has genetic basis. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct Explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct Explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-45",
+      "session": "July 2018",
+      "question_number": 45,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Explanation ) a. Phrenology i)Field that locates areas of the brain responsible for specific aspects of emotional and behaviour functioning. b. Selective Breeding ii) An approach to establish genetic - behaviour relationship through mating of successive generations with a particular trait. c. Plasticity iii) Ability of parts of neurobiological system to change temporarily and for extended period time. d. Twin studies iv) An approach to establish of genetic - behaviour rela tionship through the comparison degree of similarity among identical twins, fraternal twins, and non-twins siblings. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (i) (iv) (iii)",
+        "(iii) (iv) (i) (ii)",
+        "(iv) (iii) (ii) (i) Instructions for Questions 46 to 50. Read the following paragraph and answer the five questions which follow: UGC NET JRF July 2018 Paper II 442 UGC NET JRF July 2018 Paper II 442 Tap to check answer key A researcher in experimental psychology hypothesized that a particular ‘Reward System’ for fast reactions would improve the reaction time. To verify this hypothesis, he selected forty subjects in the age range of 25 to 35 years from an organization. Following the standard reaction time experiment, he measured the simple reaction time without the reward system. While taking each trial in the experiment, the time-interval between the ready signal and the onset of stimulus was randomly varied between two to five seconds. In the second part of the experiment, the reward system was introduced and the simple reaction time was measured again for the same subjects. The mean reaction time before the introduction of reward system was 210 milliseconds and the mean reaction time after the introduction of reward system was 250 milliseconds. The difference between the two means was statistically significant at .01 level."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (i) (ii) (iii) (iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. The Gestalt principle of similarity leads people to group elements that share features such as shape, colour, or size.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 9,
+      "micro": 3
+    },
+    {
+      "id": "July-2018-51",
+      "session": "July 2018",
+      "question_number": 51,
+      "question": "In Vertebrates, myelin is produced in the brain and spinal cord by __________, and in rest of nervous system by __________. 1). Oligodendrocytes ; Schwann cells 2). Schwann cells ; Oligodendrocytes 3). Astrocytes ; Microglia 4). Microglia ; Astrocytes",
+      "options": [
+        "Oligodendrocytes ; Schwann cells",
+        "Schwann cells ; Oligodendrocytes",
+        "Astrocytes ; Microglia",
+        "Microglia ; Astrocytes"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Oligodendrocytes ; Schwann cells. The stem describes the concept or relationship represented by Oligodendrocytes ; Schwann cells; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-58",
+      "session": "July 2018",
+      "question_number": 58,
+      "question": "__________ makes neurons stand out visibly depicting which neurons are active ; whereas __________ uses antibodies attached to a dye to identify cellular components such as receptors, neurotransmitters, or enzymes. 1). Immunocytochemistry ; Autoradiography 2). Autoradiography ; Immunocytochemistry 3). Myelin staining ; Nissl Staining 4). Nissl Staining ; Myelin Staining",
+      "options": [
+        "Immunocytochemistry ; Autoradiography",
+        "Autoradiography ; Immunocytochemistry",
+        "Myelin staining ; Nissl Staining",
+        "Nissl Staining ; Myelin Staining"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Autoradiography ; Immunocytochemistry. The stem describes the concept or relationship represented by Autoradiography ; Immunocytochemistry; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "July-2018-65",
+      "session": "July 2018",
+      "question_number": 65,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Psychologist) List II (Concept) a. Thorndike i) Equipotentiality premise b. Pavlov ii) Cortical Mosaic c. Wertheimer iii) Neural Bond d. Seligman iv) Isomorphism Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (iv) (iii) (ii)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (ii) (iv) (i)",
+        "(iv) (i) (ii) (iii)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii) (ii) (iv) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-74",
+      "session": "July 2018",
+      "question_number": 74,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Behaviour therapy helps people to respond to life situations in the way they would like to respond. 2. Reason (R): Positive therapeutic relationship is a necessary but not sufficient condition for effective behaviour therapy. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-79",
+      "session": "July 2018",
+      "question_number": 79,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Proprioceptive stimuli result from the firing of the kinesthetic receptors in the muscles, joints and tendons of the body. 2. Reason (R): A response is conditioned to the stimuli present prior to the ingestion of a primary reinforcer. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is UGC NET JRF July 2018 Paper II 450 UGC NET JRF July 2018 Paper II 450 Tap to check answer key not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is UGC NET JRF July 2018 Paper II 450 UGC NET JRF July 2018 Paper II 450 Tap to check answer key not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "July-2018-89",
+      "session": "July 2018",
+      "question_number": 89,
+      "question": "Which of the following new disorders have been introduced in DSM-5? a). Premenstrual Dysphoric Disorder b). Mild Neurocognitive Disorder c). Disruptive Mood Dysregulation Disorder d). Road Rage Behaviour Disorder 1. Code: 1). (a), (b) and (c) are correct ; (d) is incorrect. 2). (a), (b) and (d) are correct ; (c) is incorrect. 3). (a), (c) and (d) are correct ; (b) is incorrect. 4). All (a), (b), (c) and (d) are correct.",
+      "options": [
+        "(a), (b) and (c) are correct ; (d) is incorrect.",
+        "(a), (b) and (d) are correct ; (c) is incorrect.",
+        "(a), (c) and (d) are correct ; (b) is incorrect.",
+        "All (a), (b), (c) and (d) are correct."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a), (b) and (c) are correct ; (d) is incorrect.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-91",
+      "session": "July 2018",
+      "question_number": 91,
+      "question": "‘Mechanistic Behaviour Analyses’ are characterised as: a). Behaviour is instigated by the onset of external or internal stimuli. b). Direction of behaviour is determined by S-R bonds or habits. c). Behaviour directed toward the goal persists till the achievement of goal. d). Events related to the goal achievement are encoded, categorised, and transformed into a belief. 1. Code: 1). ( a) and (b) correct ; (c) and (d) are incorrect. 2). ( b) and (c) correct ; (a) and (d) are incorrect. 3). ( a), (b) and (c) are correct ; (d) is incorrect. 4). ( b), (c) and (d) are correct ; (a) is incorrect.",
+      "options": [
+        "( a) and (b) correct ; (c) and (d) are incorrect.",
+        "( b) and (c) correct ; (a) and (d) are incorrect.",
+        "( a), (b) and (c) are correct ; (d) is incorrect.",
+        "( b), (c) and (d) are correct ; (a) is incorrect."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. ( a), (b) and (c) are correct ; (d) is incorrect.. The stem describes the concept or relationship represented by ( a), (b) and (c) are correct ; (d) is incorrect.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-7",
+      "session": "December 2018",
+      "question_number": 7,
+      "question": "Which of the following neurotransmitters is/are found throughout the central nervous system? i). GABA ii). Glycine iii). Dopamine iv). Serotonin 1. Choose the correct answer from the code given below: 2. Options:- 1). (i) and (iii) 2). Only (i) 3). (ii), (iii) and (iv) 4). (iii) and (iv)",
+      "options": [
+        "(i) and (iii)",
+        "Only (i)",
+        "(ii), (iii) and (iv)",
+        "(iii) and (iv)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Only (i). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-10",
+      "session": "December 2018",
+      "question_number": 10,
+      "question": "Match list I with List II and select the correct answer using the code given 461 UGC NET JRF December 2018 Paper II 461 UGC NET JRF December 2018 Paper II Tap to check answer key below: List I (Part of Nervous System) List II (Response) (a) Sympathetic nervous system (i) Calmness (b) Parasympathetic nervous system (ii) Emergency reactions (c)Pituitary gland (iii) Arousal (d) Somatic nervous system (iv) ACTH Options:- 1). (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i) 2). (a)-(iv), (b)-(ii), (c)-(iii), (d)-(i) 3). (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii) 4). (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+      "options": [
+        "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+        "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+        "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+        "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-13",
+      "session": "December 2018",
+      "question_number": 13,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I List II (a) Electromy- ography (i) Procedure for measuring muscular tension (b) Electrocu- lography (ii) Technique for recording eye movements (c) Plethysmog- raphy (iii) Technique for measuring volume of blood in an particular part of the body UGC NET JRF December 2018 Paper II 462 UGC NET JRF December 2018 Paper II 462 Tap to check answer key (d) Stereotactic (Iv) Technique in which devices are precisely positioned in the depth of brain surgery Options:- 1). (a)-(iii), (b)-(ii), (c)-(i), (d)-(iv) 2). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv) 3). (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii) 4). (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)",
+      "options": [
+        "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
+        "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-23",
+      "session": "December 2018",
+      "question_number": 23,
+      "question": "According to piaget, which of the following explains the concept of Cognitive Equilibration? 1. Options:- 1). Fact that every structure has its origin in earlier structures 2). Tendency to integrate structures into higher order systems 3). Individual seeking to stabilize his or her cognitive structures 4). Tendency to modify structure in order to incorporate new information",
+      "options": [
+        "Fact that every structure has its origin in earlier structures",
+        "Tendency to integrate structures into higher order systems",
+        "Individual seeking to stabilize his or her cognitive structures",
+        "Tendency to modify structure in order to incorporate new information"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Individual seeking to stabilize his or her cognitive structures. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 3
+    },
+    {
+      "id": "December-2018-29",
+      "session": "December 2018",
+      "question_number": 29,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I (Concept) List II (Description) (a). Cataplexy (i) Non-REM sleep (b). Apnoea (ii) REM sleep (c).Dreams (iii) Waking up as one stops breathing (d).Night terrors (iv) Symptom of narcolepsy Options:- 1). (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii) 2). (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i) 3). (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii) 4). (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+      "options": [
+        "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)",
+        "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+        "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
+        "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 7,
+      "micro": 5
+    },
+    {
+      "id": "December-2018-38",
+      "session": "December 2018",
+      "question_number": 38,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I List II (a) Night Terror (i) Disturbance in sleep-wake cycle (b) Restless Leg Syndrome (ii) Cramps in calf and foot muscles (c) Nocturnal Leg Cramps (iii) Sensations in legs causing movements and loss of sleep (d) Circadian Rhythm Disorder (iv) Extreme agitation Options:- 1). (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i) 2). (a)-(iv), (b)-(ii), (c)-(iii), (d)-(i) 3). (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv) 4). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+      "options": [
+        "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+        "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+        "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a)-(iv), (b)-(ii), (c)-(iii), (d)-(i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-68",
+      "session": "December 2018",
+      "question_number": 68,
+      "question": "Reciprocal determinism is an interaction between which of the following? 1. Options:- 1). Person’s behaviour and his environment 2). Person and his environment 3). Person and his behaviour 4). Person, his behaviour and his environment",
+      "options": [
+        "Person’s behaviour and his environment",
+        "Person and his environment",
+        "Person and his behaviour",
+        "Person, his behaviour and his environment"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Person and his behaviour. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-69",
+      "session": "December 2018",
+      "question_number": 69,
+      "question": "the following are all involved in hunger and eating process: i). Lateral hypothalamus ii). Ventral hypothalamus iii). Amino acids 1. In what sequence do these act? 2. Options:- 1). (i), (ii), (iii) 2). (iii), (i), (ii) 3). (iii), (ii), (i) 4). (i), (iii), (ii)",
+      "options": [
+        "(i), (ii), (iii)",
+        "(iii), (i), (ii)",
+        "(iii), (ii), (i)",
+        "(i), (iii), (ii)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii), (ii), (i). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 7,
+      "micro": 3
+    },
+    {
+      "id": "December-2018-76",
+      "session": "December 2018",
+      "question_number": 76,
+      "question": "Patterns of familial transmission of intelligence from one generation to other is investigated in 1. Options:- 1). Linkage analysis studies 2). Adoption studies 3). Association studies 4). Segregation analysis studies",
+      "options": [
+        "Linkage analysis studies",
+        "Adoption studies",
+        "Association studies",
+        "Segregation analysis studies"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Adoption studies. The stem describes the concept or relationship represented by Adoption studies; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 4
+    },
+    {
+      "id": "December-2018-80",
+      "session": "December 2018",
+      "question_number": 80,
+      "question": "Neurons make up only about percent of the brain’s cells and other a percent are glia cells. 1. Options:- 1). 20 percent; 80 percent 2). 80 percent; 20 percent 3). 10 percent; 90 percent 4). 90 percent; 10 percent",
+      "options": [
+        "20 percent; 80 percent",
+        "80 percent; 20 percent",
+        "10 percent; 90 percent",
+        "90 percent; 10 percent"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 80 percent; 20 percent. The stem describes the concept or relationship represented by 80 percent; 20 percent; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-90",
+      "session": "December 2018",
+      "question_number": 90,
+      "question": "Myelin stains and Nissl Stains identify and respectively. 1. Options:- 1). Neural pathways, Neural cell bodies UGC NET JRF December 2018 Paper II 482 UGC NET JRF December 2018 Paper II 482 Tap to check answer key 2). Neural cell bodies; Neural pathways 3). Nuclei; Neural cell bodies 4). Neural pathways; White matter",
+      "options": [
+        "Neural pathways, Neural cell bodies UGC NET JRF December 2018 Paper II 482 UGC NET JRF December 2018 Paper II 482 Tap to check answer key",
+        "Neural cell bodies; Neural pathways",
+        "Nuclei; Neural cell bodies",
+        "Neural pathways; White matter"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Nuclei; Neural cell bodies. The stem describes the concept or relationship represented by Nuclei; Neural cell bodies; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-5",
+      "session": "June 2019",
+      "question_number": 5,
+      "question": "Limbic system, basal ganglia and corpus striatum are parts of which section of brain? 1). Midbrain 489 UGC NET JRF June 2019 Paper II 489 UGC NET JRF June 2019 Paper II Tap to check answer key 2). Hindbrain 3). Telencephalon 4). Diencephalon",
+      "options": [
+        "Midbrain 489 UGC NET JRF June 2019 Paper II 489 UGC NET JRF June 2019 Paper II Tap to check answer key",
+        "Hindbrain",
+        "Telencephalon",
+        "Diencephalon"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Telencephalon. The stem describes the concept or relationship represented by Telencephalon; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-8",
+      "session": "June 2019",
+      "question_number": 8,
+      "question": "Which of the following is true about radio immunological assays? 1). These are methods to measure hormones 2). These methods were discovered by Jay Tepperman 3). These are anatomical methods 4). These measure brain structures",
+      "options": [
+        "These are methods to measure hormones",
+        "These methods were discovered by Jay Tepperman",
+        "These are anatomical methods",
+        "These measure brain structures"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. These are anatomical methods. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-41",
+      "session": "June 2019",
+      "question_number": 41,
+      "question": "When acetylcholine links the post synaptic side, it generates a depolarisation. What do you call it?",
+      "options": [
+        "Inhibitory Post synaptic Potential",
+        "Excitatory Post synaptic Potential",
+        "End plate potential",
+        "End plate potential and Inhibitory Post synaptic Potential"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Excitatory Post synaptic Potential. The stem describes the concept or relationship represented by Excitatory Post synaptic Potential; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 5
+    },
+    {
+      "id": "June-2019-53",
+      "session": "June 2019",
+      "question_number": 53,
+      "question": "Which of the following is degenerative disease accompanied by Amnesia caused by front temporal lobular degeneration and depression?",
+      "options": [
+        "Alzheimer`s disease",
+        "Parkinson’s disease",
+        "Pick’s disease",
+        "Huntigton’s disease"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Huntigton’s disease. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 6,
+      "micro": 2
+    },
+    {
+      "id": "June-2019-67",
+      "session": "June 2019",
+      "question_number": 67,
+      "question": "Fill in the blanks by choosing the right sequence 1. In the upside-down and reversed- image projection process on…………. the ……….. bends the rays entering the eye and the light rays from the top of an object are projected onto at the bottom of ……….. . 2. Select the correct option: 1). receptors, lens, retina, retina 2). lens, retina, receptors, retina 3). Retina, lens, receptors, retina 4). retina, lens, retina, receptors",
+      "options": [
+        "receptors, lens, retina, retina",
+        "lens, retina, receptors, retina",
+        "Retina, lens, receptors, retina",
+        "retina, lens, retina, receptors"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. receptors, lens, retina, retina. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "June-2019-74",
+      "session": "June 2019",
+      "question_number": 74,
+      "question": "Match List-I with List-II : List -I (Type of skin receptors) List-I (Sensory function) UGC NET JRF June 2019 Paper II 504 UGC NET JRF June 2019 Paper II 504 Tap to check answer key a. Meissner`s corpuscles i) Cold b. Pacinian corpuscles ii) Pain c. Krauser`s end bulbs iii)Touch d. Free nerve ending iv) pressure 1). (a)-(ii); (b)-(iv); (c)-(iii); (d)-(i) 2). (a)-(iii); (b)-(iv); (c)-(i); (d)-(ii) 3). (a)-(iv); (b)-(i); (c)-(ii); (d)-(iii) 4). (a)-(iv); (b)-(ii); (c)-(iii); (d)-(i)",
+      "options": [
+        "(a)-(ii); (b)-(iv); (c)-(iii); (d)-(i)",
+        "(a)-(iii); (b)-(iv); (c)-(i); (d)-(ii)",
+        "(a)-(iv); (b)-(i); (c)-(ii); (d)-(iii)",
+        "(a)-(iv); (b)-(ii); (c)-(iii); (d)-(i)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a)-(ii); (b)-(iv); (c)-(iii); (d)-(i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "December-2019-14",
+      "session": "December 2019",
+      "question_number": 14,
+      "question": "What is the reason of negative voltage of a neuron during Resting Potential? (Sodium= Na+ Potassium=K+ ; Chloride= CI- Organic anions= A- ) 1). Na+ and Cl- ions outside the membrane have more negative charge than K+ an A- ions inside 2). Na+ and Cl- ions outside the membrane have less negative charge than K+ and A- ions inside 3). Na+ and A- ions outside the membrane have more negative charge than K+ and CI- ions inside 4). Na+ and A- ions outside the 515 UGC NET JRF December 2019 Paper II 515 UGC NET JRF December 2019 Paper II Tap to check answer key membrane have less negative charge than K+ and CI- ions inside",
+      "options": [
+        "Na+ and Cl- ions outside the membrane have more negative charge than K+ an A- ions inside",
+        "Na+ and Cl- ions outside the membrane have less negative charge than K+ and A- ions inside",
+        "Na+ and A- ions outside the membrane have more negative charge than K+ and CI- ions inside",
+        "Na+ and A- ions outside the 515 UGC NET JRF December 2019 Paper II 515 UGC NET JRF December 2019 Paper II Tap to check answer key membrane have less negative charge than K+ and CI- ions inside"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Na+ and Cl- ions outside the membrane have less negative charge than K+ and A- ions inside. The stem describes the concept or relationship represented by Na+ and Cl- ions outside the membrane have less negative charge than K+ and A- ions inside; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-41",
+      "session": "December 2019",
+      "question_number": 41,
+      "question": "Value of behaviour to the organism its evolutionary history and its causation in terms of stimulus hormonal and neurological events- has been area of study of which of the following?",
+      "options": [
+        "Evolutionary psychology",
+        "Psychoanalysts",
+        "Ethology",
+        "Instinct Psychology"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Ethology. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-76",
+      "session": "December 2019",
+      "question_number": 76,
+      "question": "Which part of neuron is covered by Myelin sheath?",
+      "options": [
+        "Whole of Axon",
+        "Parts of Axon",
+        "Whole of Dendrite",
+        "Parts of Dendrites"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Parts of Axon. The stem describes the concept or relationship represented by Parts of Axon; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-10",
+      "session": "September 2020",
+      "question_number": 10,
+      "question": "Adult neurons rely heavily on which of the following? a). Glucose b). Protein c). Potassium d). Sodium UGC NET JRF September 2020 Paper II 522 UGC NET JRF September 2020 Paper II 522 Tap to check answer key 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A only",
+        "A and B only",
+        "C and D only",
+        "A, C and D only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-28",
+      "session": "September 2020",
+      "question_number": 28,
+      "question": "A harsh father always restricts the curiosity motive of his son and the son develops a general hostility towards his superiors. Which of the following is correct about this?",
+      "options": [
+        "The father represses the curiosity",
+        "Such change is permanent",
+        "It is the most modifiable response",
+        "It is conditioned hostility"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. It is conditioned hostility. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-42",
+      "session": "September 2020",
+      "question_number": 42,
+      "question": "What do you call the neurological procedure involving the implantation of a medical device under the skin in the chest that sends electrical impulses to electrodes surgically placed in the specific location in the brain?",
+      "options": [
+        "Deep Brain Stimulation (DBS)",
+        "Repetitive Transmagnetic Stimulation (rTMS)",
+        "Electroconvulsive Therapy (ECT)",
+        "Vagus Nerve Stimulation (VNS)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Deep Brain Stimulation (DBS). The stem describes the concept or relationship represented by Deep Brain Stimulation (DBS); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "September-2020-45",
+      "session": "September 2020",
+      "question_number": 45,
+      "question": "Who among the following has laid emphasis on examining the relationship of culturally specific practices with development?",
+      "options": [
+        "Piaget",
+        "Fodor",
+        "Vygotsky",
+        "Kohlberg"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Vygotsky. The stem describes the concept or relationship represented by Vygotsky; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "September-2020-58",
+      "session": "September 2020",
+      "question_number": 58,
+      "question": "Which neurotransmitter is helpful in synaptic plasticity?",
+      "options": [
+        "Acetylcholine",
+        "Glutamate",
+        "GABA",
+        "Dopamine"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Glutamate. The stem describes the concept or relationship represented by Glutamate; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 5
+    },
+    {
+      "id": "September-2020-70",
+      "session": "September 2020",
+      "question_number": 70,
+      "question": "Who among the following has Match List | with List II List I (Sources of Personal Efficacy by Bandura) List II (Therapeutic processes) a. Performance accomplishment i) Live models, symbolic modeling b. Vicarious experiences ii) Attribution, Relaxation biofeedback, symbolic desensitisation 535 UGC NET JRF September 2020 Paper II 535 UGC NET JRF September 2020 Paper II Tap to check answer key c. Verbal persuasion iii) Participant modelling, Performance exposure d. Emotional arousal iv) Suggestion, exhortation, self- instruction Choose the correct answer from the options given below:",
+      "options": [
+        "A-lll, B-ll, C-IV, D-I",
+        "A-l, B-III, C-ll, D-lV",
+        "A-II, B-III, C-1, D-IV",
+        "A-III, B-l, C-IV, D-II"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A-III, B-l, C-IV, D-II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Attribution concerns how people explain the causes of behaviour or events, including whether causes are located in the person or the situation.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "September-2020-77",
+      "session": "September 2020",
+      "question_number": 77,
+      "question": "Teplov while discussing the strong/ weak nervous systems believed that the point of ‘transmarginal unhibition’ is the point beyong which:",
+      "options": [
+        "The magnitude of response decreases as stimulus intensity decreases",
+        "The magnitude of response increases as stimulus intensity decreases",
+        "The magnitude of response increases irrespective of stimulus intensity decrease/increase",
+        "The magnitude of response decreases irrespective of stimulus intensity decrease/increase"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. The magnitude of response decreases as stimulus intensity decreases. The stem describes the concept or relationship represented by The magnitude of response decreases as stimulus intensity decreases; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-83",
+      "session": "September 2020",
+      "question_number": 83,
+      "question": "Which of the following is true about Hypovolemia? a). It causes thirst b). It increases the blood pressure c). Angiotensin is released during this condition d). The volume of blood increases e). Blood pressure reduces 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, C and E only",
+        "A, D and E only",
+        "B, C and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, C and E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 7,
+      "micro": 4
+    },
+    {
+      "id": "September-2020-90",
+      "session": "September 2020",
+      "question_number": 90,
+      "question": "Which one of the following terms denotes that there are qualities of experience that cannot be explained in terms of combinations of traditional kinds of sensations?",
+      "options": [
+        "Zeitgeist",
+        "Tropism",
+        "Gestalt Qualitaten",
+        "Conarium Comprehension: Read the given passage and answer the five questions which follow A researcher wanted to predict academic achievement using Intelligence Test - A (IT-A), Intelligence Test-B (IT-B), Type of school (rural/urban), and conscientiousness as predictors. She used multiple regression analysis. She collected data on 200 students on all variables. The OLS estimator was used. The F=8.9, p < .01 for the entire model. In individual predictor analysis, IT-B was the insignificant predictor. The suitable test indicated homoscedasticity. The model R2 = 0.64 and adjusted R2 = 0.59. Both intelligence tests are significantly correlated with the criterion variable and with each other."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Gestalt Qualitaten. The stem describes the concept or relationship represented by Gestalt Qualitaten; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-4",
+      "session": "June 2021",
+      "question_number": 4,
+      "question": "Which of the following is involved in Type ‘a’ processes of thinking as described by Wertheimer?",
+      "options": [
+        "Grouping and reorganization",
+        "Assimilation and conditioning",
+        "Blind trial and error",
+        "Partially productive methods"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Grouping and reorganization. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "June-2021-8",
+      "session": "June 2021",
+      "question_number": 8,
+      "question": "Which of the following nerves carry the sensory messages from skin, eyes and ears to Central Nervous System?",
+      "options": [
+        "Efferent",
+        "Afferent",
+        "Cranial",
+        "Peripheral"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Afferent. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-51",
+      "session": "June 2021",
+      "question_number": 51,
+      "question": "Which of the following describes the enduring facilitation of synaptic transmission that occurs following activation of synapses by high intensity and high frequency stimulation of pre-synaptic neurons?",
+      "options": [
+        "Action potential",
+        "Absolute refractory period",
+        "Relative refractory period",
+        "Long term potentiation"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Long term potentiation. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 5
+    },
+    {
+      "id": "June-2021-55",
+      "session": "June 2021",
+      "question_number": 55,
+      "question": "Behavior is a direct result of behavioral intentions, this is explained by which of the following?",
+      "options": [
+        "Theory of reasoned action",
+        "Theory of social Impact",
+        "Equity theory",
+        "Correspondent inference theory"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Theory of reasoned action. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 2
+    },
+    {
+      "id": "June-2021-67",
+      "session": "June 2021",
+      "question_number": 67,
+      "question": "Which of the following categories were given by Skinner for different verbal responses in terms of how they are reinforced? a). Mand b). Tact c). Echoic Behaviour d). Autoclitic Behaviour 1. Choose the correct answer from the options given below:-",
+      "options": [
+        "(A) and (B) only",
+        "(C) and (D) only",
+        "(A), (B) and (C) only",
+        "(A), (B), (C) and (D) only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A), (B), (C) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-4",
+      "session": "July 2022",
+      "question_number": 4,
+      "question": "Which components of psychoneuro immunological system is not effected by glucocorticoids",
+      "options": [
+        "Posterior pituitary",
+        "T - cells",
+        "B - cells",
+        "Hippocampal neurons"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Posterior pituitary. The stem describes the concept or relationship represented by Posterior pituitary; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-10",
+      "session": "July 2022",
+      "question_number": 10,
+      "question": "The largest structure in the Limbic System is the ________.",
+      "options": [
+        "Hippocampus",
+        "Cingulate gyrus",
+        "Fornix",
+        "Amygdala"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Cingulate gyrus. The stem describes the concept or relationship represented by Cingulate gyrus; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-12",
+      "session": "July 2022",
+      "question_number": 12,
+      "question": "An EEG record during NREM sleep shows ________ waves",
+      "options": [
+        "Delta",
+        "Alpha",
+        "Theta",
+        "Beta"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Delta. The stem describes the concept or relationship represented by Delta; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 7,
+      "micro": 5
+    },
+    {
+      "id": "July-2022-15",
+      "session": "July 2022",
+      "question_number": 15,
+      "question": "The process by which we translate sensory information into a meaningful representation that we process is known as________.",
+      "options": [
+        "Semantic encoding",
+        "Episodic decoding",
+        "Propositional representation",
+        "Pragmatic representation"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Semantic encoding. The stem describes the concept or relationship represented by Semantic encoding; the alternatives refer to different concepts or conditions. Encoding is the process of transforming information into a form that can be stored in memory.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-17",
+      "session": "July 2022",
+      "question_number": 17,
+      "question": "The somatic nervous system functions with the help of ______ nerves.",
+      "options": [
+        "Cranial",
+        "Spinal",
+        "Cranial and Spinal",
+        "Ganglionic neurons and cranial"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Cranial and Spinal. The stem describes the concept or relationship represented by Cranial and Spinal; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-35",
+      "session": "July 2022",
+      "question_number": 35,
+      "question": "Emotionally arousing stimuli have also found to lead to amnesia, even though no physical damage to brain structure related to memory have occurred. This refers to ________.",
+      "options": [
+        "Non verbal cue - utilization",
+        "Retrograde amnesia",
+        "Confabulations",
+        "Flashbulb memory repression"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Retrograde amnesia. The stem describes the concept or relationship represented by Retrograde amnesia; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-51",
+      "session": "July 2022",
+      "question_number": 51,
+      "question": "Which of the following hypothalamic nuclei were considered as hunger regulator? a). Supra optic nucleus b). Ventromedial hypothalamus c). Medial d). Lateral e). Paraventricular 1. Choose the correct answer from the options given below:",
+      "options": [
+        "D only",
+        "B and C only",
+        "B and D only",
+        "A and E only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 7,
+      "micro": 3
+    },
+    {
+      "id": "July-2022-55",
+      "session": "July 2022",
+      "question_number": 55,
+      "question": "________ refers to the capacity of the nervous system to perceive a stimulus presented at an intensity that is below threshold",
+      "options": [
+        "Unconscious processing",
+        "Stimulus adaption",
+        "Subliminal perception",
+        "Supraliminal sensation"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Subliminal perception. The stem describes the concept or relationship represented by Subliminal perception; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-76",
+      "session": "July 2022",
+      "question_number": 76,
+      "question": "Match List I with List II List I List II a. Self determination i) D.O. Hebb b. Contact Com- fort ii) Hans Selye c. Cell assembly iii) Edward Deci d. General Adaptation Syndrome iv) Harry Harlow Choose the correct answer from the options given below:",
+      "options": [
+        "A - III, B - IV, C – II, D - I",
+        "A - III, B - IV, C - I, D - II",
+        "A - II, B - I, C - III, D - IV",
+        "A - I, B - II, C - IV, D - III"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A - III, B - IV, C - I, D - II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-85",
+      "session": "July 2022",
+      "question_number": 85,
+      "question": "Find the correct sequence of events in reference to James-Lange theory of emotions a). The feedback received constitutes feeling of emotions b). The emotion producing situation is interpreted by the cortex c). The brain receives sensory feedback of responses occuring in the body d). The cortex triggers changes in peripheral nervous system e). The muscular and visceral changes occur in the body 1. Choose the correct answer from the options given below:",
+      "options": [
+        "B, D, E, C, A",
+        "A, D, C, E, B",
+        "D, B, E, C, A",
+        "B, D, C, E, A UGC NET JRF July 2022 Paper II 584 UGC NET JRF July 2022 Paper II 584 Tap to check answer key"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. B, D, E, C, A. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-86",
+      "session": "July 2022",
+      "question_number": 86,
+      "question": "Given below are two statements 1. Statement I: Life - course - persistent antisocial behaviour occurs during adulthood. 2. Statement II: Adolescence - limited antisocial behaviour occurs due to maturity gap. 3. In light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both Statement I and Statement II are correct",
+        "Both Statement I and Statement II are incorrect",
+        "Statement I is correct but Statement II is incorrect",
+        "Statement I is incorrect but Statement II is correct"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Statement I is incorrect but Statement II is correct. The stem describes the concept or relationship represented by Statement I is incorrect but Statement II is correct; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-10",
+      "session": "March 2023",
+      "question_number": 10,
+      "question": "Which structure of the Limbic system is mostly responsible for controlling the emotional behaviour of fear?",
+      "options": [
+        "Amygdala",
+        "Hippocampus",
+        "Cingulate gyrus",
+        "Mammilary bodies"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Amygdala. The stem describes the concept or relationship represented by Amygdala; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-11",
+      "session": "March 2023",
+      "question_number": 11,
+      "question": "REM sleep is characterized by one of the following conditions.",
+      "options": [
+        "PGO waves",
+        "ULPA",
+        "Flip-flop",
+        "Histamine"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. PGO waves. The stem describes the concept or relationship represented by PGO waves; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 7,
+      "micro": 5
+    },
+    {
+      "id": "March-2023-14",
+      "session": "March 2023",
+      "question_number": 14,
+      "question": "A person who had experienced an intensive negative emotion fails to recollect the emotional event. This is known as:",
+      "options": [
+        "Forgetting due to interference",
+        "Retrieval failure",
+        "Motivated Forgetting",
+        "Forgetting due to decay"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Motivated Forgetting. The stem describes the concept or relationship represented by Motivated Forgetting; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-36",
+      "session": "March 2023",
+      "question_number": 36,
+      "question": "Which of the following is not relevant to a cardiac patient’s behaviour of adherence to treatment?",
+      "options": [
+        "Self-efficacy",
+        "Perception about how serious is the condition 595 UGC NET JRF March 2023 Paper II 595 UGC NET JRF March 2023 Paper II Tap to check answer key",
+        "Sense of humour",
+        "Perception of how much control one can exercise on health"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Sense of humour. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-49",
+      "session": "March 2023",
+      "question_number": 49,
+      "question": "Which of the following statement/s are True of Biofeedback? a). It is accurate b). Behaviour can be modified through biofeedback c). It helps in bringing involuntary actions to voluntary actions d). It is one of the components of polygraphy 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A and B only",
+        "C and D only",
+        "A, B and D only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-14",
+      "session": "June 2023",
+      "question_number": 14,
+      "question": "A unipolar neuron found in the somato sensory system are sensitive to:",
+      "options": [
+        "Visual sensations",
+        "Auditory sensations",
+        "Tactile sensations",
+        "Olfactory sensations"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Tactile sensations. The stem describes the concept or relationship represented by Tactile sensations; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-15",
+      "session": "June 2023",
+      "question_number": 15,
+      "question": "Amygdala, part of the Limbic system, is specifically responsible for one of the following functions:",
+      "options": [
+        "Thinking",
+        "Learning",
+        "Memory UGC NET JRF June 2023 Paper II 616 UGC NET JRF June 2023 Paper II 616 Tap to check answer key",
+        "Emotion"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Emotion. The stem describes the concept or relationship represented by Emotion; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-24",
+      "session": "June 2023",
+      "question_number": 24,
+      "question": "Which of the following is not a chromosomal disorder characterized by subaverage intellectual functioning?",
+      "options": [
+        "Down syndrome",
+        "Fragile X syndrome",
+        "Cerebral palsy",
+        "Trisomy 13"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Cerebral palsy. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-35",
+      "session": "June 2023",
+      "question_number": 35,
+      "question": "Which of the following is correct about the impact of stress on immune system of an individual?",
+      "options": [
+        "The immune system is weakened because of an increase in the blood pressure in the face of stress",
+        "Increased release of glucose from the liver during stress neutralizes the immune functioning of the WBC",
+        "Increased level of ACTH in blood destroys the T cells",
+        "Increased level of cortisol in blood destroys the T cells."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Increased level of cortisol in blood destroys the T cells.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-39",
+      "session": "June 2023",
+      "question_number": 39,
+      "question": "Which one of the following is not a principal characteristic of the REM sleep?",
+      "options": [
+        "EEG desynchrony (Rapid Irregular Waves)",
+        "Lack of muscle tonus",
+        "Lack of genital activity",
+        "Dreams"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Lack of genital activity. The stem describes the concept or relationship represented by Lack of genital activity; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 7,
+      "micro": 5
+    },
+    {
+      "id": "June-2023-56",
+      "session": "June 2023",
+      "question_number": 56,
+      "question": "Etiological models of psychopathology includes: (A). Nervous system going awry (B). Social conflicts (C). Intrapsychic conflicts (D). Learning dysfunctional behaviour (E). Indulgence in religion. 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B, C only",
+        "B, C, D, E only",
+        "A, C, D only",
+        "A, C, D, E only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, C, D only. The stem describes the concept or relationship represented by A, C, D only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-58",
+      "session": "June 2023",
+      "question_number": 58,
+      "question": "What is meant by bottom-up processing? (A). It always distorts our observations (B). Sensory analysis that starts at the entry level (C). When our experience and expectations guide our perception (D). Higher level mental processes are involved (E). Helps to detect the lines, angles and colours 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B only",
+        "A, C, D only",
+        "B, E only",
+        "C, E only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. B, E only. The stem describes the concept or relationship represented by B, E only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-72",
+      "session": "June 2023",
+      "question_number": 72,
+      "question": "Match List I with List II List I List II a. Manic Disor- der i) Frontal-striatal region of the brain implicated b. Panic Disor- der ii) Elevated expansive mood and increased energy c. Schizophrenia iii) Heightened awareness of emotion specific stimulus. d. ADHD iv) Delusion, Hallucination, incoherent speech UGC NET JRF June 2023 Paper II 628 UGC NET JRF June 2023 Paper II 628 Tap to check answer key Choose the correct answer from the options given below:",
+      "options": [
+        "A-II, B-III, C-IV, D-I",
+        "A-I, B-IV, C-II, D-III",
+        "A-III,. B-II, C-I, D-IV",
+        "A-IV, B-III, C-II, D-I"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A-II, B-III, C-IV, D-I. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "June-2023-73",
+      "session": "June 2023",
+      "question_number": 73,
+      "question": "Match List I with List II List I List II a. Object Perma- nence i) Pre Operation b. Abstract thinking ii) Sensory motor c. Ego centrism iii) Concrete operation d. Conservation iv) Formal Operation Choose the correct answer from the options given below:",
+      "options": [
+        "A-II, B-IV, C-III, D-I",
+        "A-II, B-III, C-IV, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-IV, B-III, C-II, D-I"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A-II, B-III, C-IV, D-I. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. In Freud’s model, the ego follows the reality principle and helps mediate among the demands of the id, superego, and external reality.",
+      "kind": "match",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-90",
+      "session": "June 2023",
+      "question_number": 90,
+      "question": "Given below are two statements: 1. Statement I: Motivation is a condition that energizes behaviour but gives no direction. 2. Statement II: Motivational States arise only from external incentive factors. 3. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both Statement I and Statement II are correct",
+        "Both Statement I and Statement II are incorrect",
+        "Statement I is correct but statement II is not correct",
+        "Statement I is incorrect but Statement II is correct Questions 90 to 95: Read the following paragraph and answer the five questions which follow: A study was conducted to find out whether participation in meditation influences well-being in children. Hence a group of children who have not participated in meditation before but are now planning to begin participating in meditation were given a well being scale before they began meditation. The children were 633 UGC NET JRF June 2023 Paper II 633 UGC NET JRF June 2023 Paper II Tap to check answer key administered the same test again after 2 months of meditation. The well being was measured on an internal scale, with higher scores indicating higher well being. The scores on the scale were normally distributed. The scores are given below. Before After 4 6 8 5 10 11 12 10 14 15 16 17 18 16"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both Statement I and Statement II are incorrect. The stem describes the concept or relationship represented by Both Statement I and Statement II are incorrect; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-2",
+      "session": "December 2023",
+      "question_number": 2,
+      "question": "Which of the following is a disease not related to Cardiovascular system?",
+      "options": [
+        "Atherosclerosis",
+        "Angina Pectoris",
+        "Crohn’s Disease",
+        "Aneurysm"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Crohn’s Disease. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-4",
+      "session": "December 2023",
+      "question_number": 4,
+      "question": "Autoclitic behaviour refers to.",
+      "options": [
+        "A grammatical framework for verbal behaviour",
+        "A person who works alone",
+        "Behaviour for the benefit of oneself",
+        "Behaviour exhibited when one meets a specified objective"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A grammatical framework for verbal behaviour. The stem describes the concept or relationship represented by A grammatical framework for verbal behaviour; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-18",
+      "session": "December 2023",
+      "question_number": 18,
+      "question": "The two specific objectives of Watson’s Behaviourism are ‘NOT”:",
+      "options": [
+        "to predict the response by knowing the stimulus and to predict the stimulus by knowing the response",
+        "to predict the behaviour of the learner and to modify the behaviour",
+        "to control the behaviour of the learner and vary the experimental condition to bring about the change",
+        "to study the learner in a controlled laboratory environment and to examine the effect of reinforcement"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. to study the learner in a controlled laboratory environment and to examine the effect of reinforcement. The stem describes the concept or relationship represented by to study the learner in a controlled laboratory environment and to examine the effect of reinforcement; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 1,
+      "micro": 2
+    },
+    {
+      "id": "December-2023-25",
+      "session": "December 2023",
+      "question_number": 25,
+      "question": "Which of the following is not a technological system designed to aid, enhance or inspire learning:",
+      "options": [
+        "Python",
+        "Logo",
+        "Squcak",
+        "Boxer"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Python. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-52",
+      "session": "December 2023",
+      "question_number": 52,
+      "question": "According to psychophysical school which of the following statements are true? (A). Weber’s ratio increases as the stimulus intensity increases (B). DL increases proportionately to the changes in the stimulus intensily (C). Limens determines the perception of sensory stimulus (D). Weber’s ratio and techner’s law are contradictory in nature 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, only",
+        "B, C only",
+        "A, D only",
+        "A, C only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B, C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 4,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-90",
+      "session": "December 2023",
+      "question_number": 90,
+      "question": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R 1. Assertion A: Sexual derive is one of the physiological needs 2. Assertion R: Human beings cannot live without gratifying sexual drive. 3. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both A and R are correct and R is the correct explanation of A",
+        "Both A and R are correct but R is not the correct explanation of A",
+        "A is correct but R is not correct",
+        "A is not correct but R is correct Questions 91 to 95: Read the following paragraph and answer the five questions which follow: Jeevan, a twelve-year-old boy was brought to the psychologist because he hated school, When the teacher was contacted, she informed that Jeevan was unpopular in the class because of his show- off behaviour that even disrupted the class. Apparently, the parents at home used to find such behavioural 655 UGC NET JRF December 2023 Paper II 655 UGC NET JRF December 2023 Paper II Tap to check answer key entertaining and laughed and enjoyed it. The psychologist drew out a programme to bring a change in Jeevan’s behaviour. She first helped the parents to understand what is show off behaviour and what is not. His parents were instructed by the psychologist to avoid paying attention to Jeevan’s show off behaviour the teacher was instructed to praise other children whenever anyone helped a classmate in any way. The psychologist also added that each time Jeevan manifested show-off behaviour, the loud noise of bore-well digging be played to him by the teacher. In fact, the psychologist used therapeutic interventions."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A is correct but R is not correct. The stem describes the concept or relationship represented by A is correct but R is not correct; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-92",
+      "session": "December 2023",
+      "question_number": 92,
+      "question": "By instructing the parents not to pay attention to Jeevan’s show off behaviour at home the psychologist aimed at:",
+      "options": [
+        "Punishment",
+        "Stimulus discrimination",
+        "Extinction",
+        "Stimulus generalization"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Extinction. The stem describes the concept or relationship represented by Extinction; the alternatives refer to different concepts or conditions. Extinction is the reduction of a learned response when the reinforcing or conditioning relationship that maintained it is discontinued.",
+      "kind": "direct",
+      "unit": 4,
+      "topic": 9,
+      "micro": 1
+    }
+  ],
+  "practice": []
+}
