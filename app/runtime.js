@@ -68,7 +68,17 @@ const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
 const units=()=>D?.units||[];
+const hasLearningContent=m=>{
+  const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];
+  const text=values.map(v=>{
+    if(Array.isArray(v))return v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' ');
+    if(v&&typeof v==='object')return JSON.stringify(v);
+    return String(v||'');
+  }).join(' ').replace(/\\s+/g,' ').trim();
+  return text.length>=80;
+};
 const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
+const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
 const microAvailable=(u,t,m)=>contentIsPublished('microtopics',key(u.id,t.id,m.id));
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
@@ -237,7 +247,7 @@ function dailySessionNext(currentKey){
     for(const itemKey of candidates){
       const p=getP(itemKey);
       if(!p.recallCompletedAt&&p.status!=='MASTERED'){
-        const item=all().find(x=>x.k===itemKey);
+        const item=dailyLearningItems().find(x=>x.k===itemKey);
         if(item)return item;
       }
     }
@@ -442,7 +452,7 @@ function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)retur
 function daily3(){
   document.title='3-Concept Learning — UGC NET Psychology';
   const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
-  const allItems=all(),keyName='netPsychDailyLearning';
+  const allItems=dailyLearningItems(),keyName='netPsychDailyLearning';
   let existingToday=null;
   try{const storedToday=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');if(storedToday?.date===todayKey&&Array.isArray(storedToday.items))existingToday=storedToday.items.map(k=>allItems.find(x=>x.k===k)).filter(Boolean)}catch(e){}
   if(existingToday?.length){
