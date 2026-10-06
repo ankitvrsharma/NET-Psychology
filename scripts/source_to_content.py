@@ -247,7 +247,6 @@ def main():
     existing_revision=load(REVISION)
     content_schema={"type":"object","properties":{
         "microtopic_id":{"type":"string"},
-        "quick_learn":{"type":"string"},
         "core_explanation":{"type":"string"},
         "detailed_explanation":{"type":"string"},
         "recall_prompts":{"type":"array","items":{
@@ -257,15 +256,13 @@ def main():
                 "answer":{"type":"string"}
             },
             "required":["type","prompt","answer"],"additionalProperties":False}},
-        "exam_takeaway":{"type":"string"},
         "revision_guidance":{"type":"object","properties":{
             "recall_before_review":{"type":"string"},
             "self_check":{"type":"string"},
             "weak_point_prompt":{"type":"string"},
             "rating_instruction":{"type":"string"}},
             "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
-        "source_notes":{"type":"string"}},
-        "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","revision_guidance","source_notes"],
+        "required":["microtopic_id","core_explanation","detailed_explanation","recall_prompts","revision_guidance"],
         "additionalProperties":False}
     if not args.apply_staged:
         for ref in list(refs.values()):
@@ -285,7 +282,7 @@ def main():
                 "revision":existing_revision.get(ref["id"],{})
             }
             generated.append(call_ai(
-                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence.",
+                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content.",
                 {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
@@ -322,17 +319,11 @@ def main():
                 me=micro_pool[mid]
                 # Surgical publication: replace only the canonical fields owned by this
                 # generated package. Preserve IDs, titles, mappings, and unrelated learner data.
-                me["content_notes"]=g["quick_learn"]
                 me["expert_explanation"]=g["core_explanation"]
                 me["detailed_explanation"]=g["detailed_explanation"]
-                me["recall_cue"]=g["exam_takeaway"]
-                me["source_notes"]=g["source_notes"]
-                me["source_pipeline"]=[{"marker":marker,"model":MODEL,"generated_at":now,"publication":"AI_AUDIT_PASS"}]
                 de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
                 de["id"]=mid; de["title"]=me.get("title",de.get("title",""))
                 de["detailed_explanation"]=g["detailed_explanation"]
-                de["exam_takeaway"]=g["exam_takeaway"]
-                de["source_pipeline"]=[{"marker":marker,"model":MODEL,"generated_at":now,"publication":"AI_AUDIT_PASS"}]
                 deep_pool[mid]=de
                 ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
                 ae["id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
