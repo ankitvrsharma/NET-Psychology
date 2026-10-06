@@ -1,0 +1,2189 @@
+{
+  "7-1-1": {
+    "id": "7-1-1",
+    "title": "Biological determinants",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Biological determinants. What is the central idea?",
+        "answer": "Biological determinants of personality include inherited characteristics, nervous-system processes and other biological factors that contribute to individual differences. The uploaded sources discuss behavioral genetics and the biology of personality while emphasizing interaction with environmental experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biological determinants.",
+        "answer": "Genes contribute to individual differences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biological determinants.",
+        "answer": "Biological systems can influence temperament and behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Biological determinants?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Biological determinants indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-1-2": {
+    "id": "7-1-2",
+    "title": "Socio-cultural determinants",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Socio-cultural determinants. What is the central idea?",
+        "answer": "Socio-cultural determinants include family, socialization, cultural norms, roles and broader social environments that shape personality development and expression. The uploaded personality texts treat personality as developing through interaction between individual characteristics and social context."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Socio-cultural determinants.",
+        "answer": "Family and socialization provide important developmental contexts."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Socio-cultural determinants.",
+        "answer": "Culture shapes expectations, roles and patterns of behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Socio-cultural determinants?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Socio-cultural determinants indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-1": {
+    "id": "7-2-1",
+    "title": "Psychoanalytical approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychoanalytical approach. What is the central idea?",
+        "answer": "The psychoanalytic approach explains personality through unconscious processes, internal conflict and developmental experiences. Ciccarelli & White describe Freud's id, ego and superego, with the ego managing conflicts between impulses and moral restrictions and using defense mechanisms to reduce anxiety."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical approach.",
+        "answer": "Freud proposed conscious, preconscious and unconscious processes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical approach.",
+        "answer": "Id follows the pleasure principle."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychoanalytical approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychoanalytical approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-2": {
+    "id": "7-2-2",
+    "title": "Neo-Freudian approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neo-Freudian approach. What is the central idea?",
+        "answer": "psychoanalysis and psychodynamic explanations centered on unconscious processes"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neo-Freudian approach.",
+        "answer": "id, ego, superego"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neo-Freudian approach.",
+        "answer": "defense mechanisms"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Neo-Freudian approach?",
+        "answer": "Freud is not the founder of behaviorism."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Neo-Freudian approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neo-Freudian approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-3": {
+    "id": "7-2-3",
+    "title": "Social learning approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social learning approach. What is the central idea?",
+        "answer": "The social learning approach explains personality through learned behavior and the influence of social models, reinforcement and expectations. The uploaded sources connect personality with behavioral and social-cognitive learning processes rather than treating traits as completely independent of experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social learning approach.",
+        "answer": "Behavior can be learned through observation and consequences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social learning approach.",
+        "answer": "Social context influences behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social learning approach?",
+        "answer": "Kaplan's social-cognitive treatment of personality links learned behaviour with modelling, expectations and reciprocal influence between person and environment. Simply Psychology contrasts trait approaches with social-learning accounts that place greater weight on environmental influence and learned behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social learning approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-4": {
+    "id": "7-2-4",
+    "title": "Trait and Type approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Trait and Type approach. What is the central idea?",
+        "answer": "Trait and type approaches describe relatively stable patterns of characteristics that distinguish individuals. Baron & Misra define personality as unique and relatively stable patterns of behavior, thoughts and emotions, while trait theories measure dimensions such as characteristic tendencies."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Trait and Type approach.",
+        "answer": "Traits are relatively stable characteristics."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Trait and Type approach.",
+        "answer": "Type approaches classify people into broader categories."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Trait and Type approach?",
+        "answer": "Kaplan presents trait approaches through dimensions such as Eysenck's PEN model and the Big Five, including OCEAN terminology. The exam emphasis is on identifying a stable personality dimension rather than a learned behaviour or situational state. Simply Psychology explains the idiographic–nomothetic distinction and connects nomothetic trait theories with questionnaires and factor analysis."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Trait and Type approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-5": {
+    "id": "7-2-5",
+    "title": "Cognitive approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive approach. What is the central idea?",
+        "answer": "The cognitive approach emphasizes how people interpret events, form beliefs and expectations, and use mental representations in shaping behavior. Personality is therefore linked to characteristic ways of thinking and interpreting social situations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive approach.",
+        "answer": "Interpretation of events influences behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive approach.",
+        "answer": "Expectancies and beliefs affect action."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cognitive approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-6": {
+    "id": "7-2-6",
+    "title": "Humanistic approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Humanistic approach. What is the central idea?",
+        "answer": "The humanistic approach emphasizes conscious experience, personal growth, choice and the tendency toward self-actualization. The uploaded sources describe humanistic personality theories through the individual's subjective experience and potential for growth."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Humanistic approach.",
+        "answer": "The person is viewed as an active agent."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Humanistic approach.",
+        "answer": "Self-concept and subjective experience are important."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Humanistic approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Humanistic approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-7": {
+    "id": "7-2-7",
+    "title": "Existential approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Existential approach. What is the central idea?",
+        "answer": "The existential approach focuses on meaning, freedom, responsibility, choice and the individual's confrontation with fundamental conditions of life. The uploaded PowerWithin material includes existential approaches among personality and therapeutic traditions and discusses meaning-centered ideas such as Frankl's logotherapy."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Existential approach.",
+        "answer": "Meaning is a central concern."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Existential approach.",
+        "answer": "Choice and responsibility are emphasized."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Existential approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Existential approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-8": {
+    "id": "7-2-8",
+    "title": "Transpersonal psychology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Transpersonal psychology. What is the central idea?",
+        "answer": "experiences beyond ordinary ego boundaries and self-transcendence"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Transpersonal psychology.",
+        "answer": "expanded consciousness"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Transpersonal psychology.",
+        "answer": "spiritual/peak experience"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Transpersonal psychology?",
+        "answer": "It is not identical to any single religion."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Transpersonal psychology?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Transpersonal psychology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-2-9": {
+    "id": "7-2-9",
+    "title": "Allport's trait approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Allport's trait approach in 2–3 sentences.",
+        "answer": "Allport's trait approach is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Allport's trait approach?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Allport's trait approach?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Allport's trait approach?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Allport's trait approach?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Allport's trait approach indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-2-10": {
+    "id": "7-2-10",
+    "title": "Cattell's trait approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cattell's trait approach in 2–3 sentences.",
+        "answer": "Cattell's trait approach is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Cattell's trait approach?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Cattell's trait approach?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Cattell's trait approach?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Cattell's trait approach?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cattell's trait approach indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-2-11": {
+    "id": "7-2-11",
+    "title": "Eysenck's trait approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Eysenck's trait approach in 2–3 sentences.",
+        "answer": "Eysenck's trait approach is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Eysenck's trait approach?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Eysenck's trait approach?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Eysenck's trait approach?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Eysenck's trait approach?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Eysenck's trait approach indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-2-12": {
+    "id": "7-2-12",
+    "title": "Big Five model",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Big Five model in 2–3 sentences.",
+        "answer": "Big Five model is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Big Five model?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Big Five model?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Big Five model?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Big Five model?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Big Five model indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-3-1": {
+    "id": "7-3-1",
+    "title": "Rotter's Locus of Control",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Rotter's Locus of Control. What is the central idea?",
+        "answer": "expectancy that outcomes are controlled internally or externally"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rotter's Locus of Control.",
+        "answer": "internal locus"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rotter's Locus of Control.",
+        "answer": "external locus"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Rotter's Locus of Control?",
+        "answer": "Internal locus does not mean total control."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Rotter's Locus of Control?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Rotter's Locus of Control indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-1": {
+    "id": "7-4-1",
+    "title": "Instincts",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Instincts. What is the central idea?",
+        "answer": "Instincts are innate behavior patterns or predispositions that do not depend on prior learning. The uploaded Self-Teaching Guide distinguishes biological drives from acquired motives and places instinct concepts within historical explanations of motivation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instincts.",
+        "answer": "Instincts are biologically based."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instincts.",
+        "answer": "They do not require the same kind of learning as acquired motives."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Instincts?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Instincts indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-2": {
+    "id": "7-4-2",
+    "title": "Needs",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Needs. What is the central idea?",
+        "answer": "Needs are conditions or requirements that motivate behavior toward maintaining the organism or achieving psychological goals. The uploaded sources distinguish physiological needs from psychological or acquired motives and discuss needs in motivational theories."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Needs.",
+        "answer": "Physiological needs include states such as hunger and thirst."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Needs.",
+        "answer": "Psychological needs can involve achievement, affiliation or power."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Needs?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Needs indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-3": {
+    "id": "7-4-3",
+    "title": "Drives",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Drives. What is the central idea?",
+        "answer": "A drive is a motivational state associated with physiological or psychological arousal that directs behavior. The Self-Teaching Guide defines a motive as a state of physiological or psychological arousal that can play a causal role in behavior and discusses biological drives such as hunger and thirst."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Drives.",
+        "answer": "Drives can arise from physiological states."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Drives.",
+        "answer": "Drive reduction theory links motivation with restoring homeostasis."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Drives?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Drives indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-4": {
+    "id": "7-4-4",
+    "title": "Arousal",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Arousal. What is the central idea?",
+        "answer": "Arousal refers to a level of physiological or psychological activation. Ciccarelli & White describe arousal theory as the idea that people seek an optimal level of stimulation, sometimes increasing stimulation when underaroused and reducing it when overaroused."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Arousal.",
+        "answer": "People may seek an optimal level of stimulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Arousal.",
+        "answer": "Underarousal can motivate exploration or stimulation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Arousal?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Arousal indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-5": {
+    "id": "7-4-5",
+    "title": "Incentives",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Incentives. What is the central idea?",
+        "answer": "Incentives are external or learned rewards that attract behavior. Ciccarelli & White describe incentive approaches as explaining behavior through anticipated rewards, such as eating a desirable food even when hunger is not strong."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Incentives.",
+        "answer": "Incentives can attract behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Incentives.",
+        "answer": "They may be learned rather than biologically necessary."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Incentives?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Incentives indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-6": {
+    "id": "7-4-6",
+    "title": "Motivational cycle",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Motivational cycle. What is the central idea?",
+        "answer": "The motivational cycle describes how a need or motivational state creates tension, directs behavior toward a goal, and is reduced or transformed when the goal is reached. The Self-Teaching Guide links motivation with internal physiological or psychological arousal that influences action."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivational cycle.",
+        "answer": "A need or motive initiates motivational activity."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivational cycle.",
+        "answer": "Arousal energizes goal-directed behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Motivational cycle?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Motivational cycle indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-4-7": {
+    "id": "7-4-7",
+    "title": "Primary and secondary motives",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Primary and secondary motives in 2–3 sentences.",
+        "answer": "Primary and secondary motives is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Primary and secondary motives?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Primary and secondary motives?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Primary and secondary motives?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Primary and secondary motives?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Primary and secondary motives indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-4-8": {
+    "id": "7-4-8",
+    "title": "Maslow's hierarchy of needs",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Maslow's hierarchy of needs in 2–3 sentences.",
+        "answer": "Maslow's hierarchy of needs is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Maslow's hierarchy of needs?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Maslow's hierarchy of needs?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Maslow's hierarchy of needs?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Maslow's hierarchy of needs?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Maslow's hierarchy of needs indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-5-1": {
+    "id": "7-5-1",
+    "title": "Psychoanalytical approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychoanalytical approach. What is the central idea?",
+        "answer": "The psychoanalytic approach explains motivation through unconscious wishes, conflicts and instinctual energies. The Self-Teaching Guide and personality material place biological and unconscious motives within the psychodynamic tradition."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical approach.",
+        "answer": "Unconscious motives can influence behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical approach.",
+        "answer": "Instinctual drives are central in Freud's model."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychoanalytical approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychoanalytical approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-5-2": {
+    "id": "7-5-2",
+    "title": "Ethological approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Ethological approach. What is the central idea?",
+        "answer": "The ethological approach explains motivation in relation to evolved behavior patterns and their adaptive value. It emphasizes behavior that has been shaped by natural selection and the species-specific conditions under which it is expressed."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethological approach.",
+        "answer": "Behavior can have evolutionary functions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethological approach.",
+        "answer": "Innate tendencies are considered in relation to environmental conditions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Ethological approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Ethological approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-5-3": {
+    "id": "7-5-3",
+    "title": "S-R Cognitive approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain S-R Cognitive approach. What is the central idea?",
+        "answer": "The S-R cognitive approach connects motivation with the relationship between environmental situations, internal cognitive processes and behavioral responses. The cognitive emphasis recognizes that people interpret situations and expectations rather than responding mechanically to stimuli."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about S-R Cognitive approach.",
+        "answer": "Stimulus conditions can influence behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about S-R Cognitive approach.",
+        "answer": "Cognitive interpretation mediates responses."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of S-R Cognitive approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes S-R Cognitive approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-5-4": {
+    "id": "7-5-4",
+    "title": "Humanistic approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Humanistic approach. What is the central idea?",
+        "answer": "The humanistic approach views people as active agents motivated toward growth, self-development and fulfillment. The Self-Teaching Guide discusses self-actualization as a central humanistic motive, while Ciccarelli & White discusses psychological needs and intrinsic motivation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Humanistic approach.",
+        "answer": "Growth and self-actualization are central."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Humanistic approach.",
+        "answer": "Motivation includes psychological as well as biological needs."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Humanistic approach?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Humanistic approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-6-1": {
+    "id": "7-6-1",
+    "title": "Exploratory behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Exploratory behavior. What is the central idea?",
+        "answer": "Exploratory behavior involves seeking information, stimulation or environmental novelty. Ciccarelli & White places exploration among stimulus motives and notes that such behavior can occur without a clear biological deficit."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Exploratory behavior.",
+        "answer": "Exploration can increase stimulation or information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Exploratory behavior.",
+        "answer": "It can occur without deprivation of a basic physiological need."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Exploratory behavior?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Exploratory behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-6-2": {
+    "id": "7-6-2",
+    "title": "Curiosity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Curiosity. What is the central idea?",
+        "answer": "Curiosity is a motive to seek information, novelty or understanding. Ciccarelli & White treats curiosity as an example of a stimulus motive, while the NET material places it with exploratory behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Curiosity.",
+        "answer": "Curiosity can motivate information seeking."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Curiosity.",
+        "answer": "It can be triggered by novelty or uncertainty."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Curiosity?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Curiosity indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-7-1": {
+    "id": "7-7-1",
+    "title": "Zuckerman’s Sensation seeking",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Zuckerman’s Sensation seeking. What is the central idea?",
+        "answer": "Zuckerman's sensation-seeking construct concerns individual differences in the need for stimulation and novel or intense experiences. Ciccarelli & White describes sensation seekers as people who seek higher levels of arousal than average."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Zuckerman’s Sensation seeking.",
+        "answer": "Sensation seeking reflects a preference for stimulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Zuckerman’s Sensation seeking.",
+        "answer": "People differ in their desired arousal levels."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Zuckerman’s Sensation seeking?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Zuckerman’s Sensation seeking indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-8-1": {
+    "id": "7-8-1",
+    "title": "Achievement",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Achievement. What is the central idea?",
+        "answer": "Achievement motivation concerns striving for competence, success and accomplishment. The uploaded sources discuss achievement as an acquired motive and McClelland's need-based approach."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Achievement.",
+        "answer": "Achievement involves striving for success or mastery."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Achievement.",
+        "answer": "Goals and standards influence achievement behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Achievement?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Achievement indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-8-2": {
+    "id": "7-8-2",
+    "title": "Affiliation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Affiliation. What is the central idea?",
+        "answer": "Affiliation motivation concerns the desire for social connection, acceptance and positive relationships. The uploaded sources place affiliation among acquired motives and McClelland's needs."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Affiliation.",
+        "answer": "Affiliation involves desire for interpersonal connection."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Affiliation.",
+        "answer": "Acceptance and belonging can motivate behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Affiliation?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Affiliation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-8-3": {
+    "id": "7-8-3",
+    "title": "Power",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Power. What is the central idea?",
+        "answer": "Power motivation concerns the desire to influence, control or have an impact on people or situations. The uploaded sources include power among acquired motives and McClelland's needs."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Power.",
+        "answer": "Power involves influence or impact."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Power.",
+        "answer": "It can be expressed in interpersonal or organizational contexts."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Power?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Power indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-9-1": {
+    "id": "7-9-1",
+    "title": "Motivational competence",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Motivational competence. What is the central idea?",
+        "answer": "Motivational competence refers to the capacity to organize and sustain motivation in pursuit of goals. The uploaded NET material lists it as a distinct motivational topic, but the supplied extract gives limited standalone definition; retain the term and connect it with self-regulation, goal-directed behavior and motivational processes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivational competence.",
+        "answer": "It concerns effective use and regulation of motivation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivational competence.",
+        "answer": "Goal direction is central."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Motivational competence?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Motivational competence indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-10-1": {
+    "id": "7-10-1",
+    "title": "Self-regulation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Self-regulation. What is the central idea?",
+        "answer": "Self-regulation involves monitoring and controlling one's thoughts, emotions and behavior in relation to goals. The uploaded sources connect self-regulation with metacognition, motivation and behavior change."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Self-regulation.",
+        "answer": "Goals provide standards for regulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Self-regulation.",
+        "answer": "Monitoring tracks progress and internal states."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Self-regulation?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Self-regulation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-11-1": {
+    "id": "7-11-1",
+    "title": "Flow",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Flow. What is the central idea?",
+        "answer": "deep absorption associated with clear goals, feedback and a balance between challenge and skill"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Flow.",
+        "answer": "challenge-skill balance"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Flow.",
+        "answer": "absorption"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Flow?",
+        "answer": "Flow is not simply relaxation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Flow?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Flow indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-12-1": {
+    "id": "7-12-1",
+    "title": "Physiological correlates of emotion",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Physiological correlates of emotion. What is the central idea?",
+        "answer": "Emotion includes physiological arousal as well as subjective feeling and expressive behavior. Ciccarelli & White identifies sympathetic arousal, brain activity and structures such as the amygdala as physiological components of emotion; the classic theories differ in how these physiological changes relate temporally to emotional experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Physiological correlates of emotion.",
+        "answer": "Emotion involves physiological arousal."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Physiological correlates of emotion.",
+        "answer": "The autonomic nervous system contributes to bodily changes."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Physiological correlates of emotion?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Physiological correlates of emotion indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-1": {
+    "id": "7-13-1",
+    "title": "James-Lange theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain James-Lange theory. What is the central idea?",
+        "answer": "emotion involves perception of bodily changes following an emotional stimulus"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about James-Lange theory.",
+        "answer": "stimulus → bodily response → emotion"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about James-Lange theory.",
+        "answer": "peripheral feedback"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about James-Lange theory?",
+        "answer": "Differs from Cannon-Bard."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of James-Lange theory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes James-Lange theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-2": {
+    "id": "7-13-2",
+    "title": "Cannon-Bard theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Canon-Bard theory. What is the central idea?",
+        "answer": "emotional experience and physiological arousal occur in parallel"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Canon-Bard theory.",
+        "answer": "simultaneous arousal and feeling"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Canon-Bard theory.",
+        "answer": "central processing"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Canon-Bard theory?",
+        "answer": "Not body-first."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Canon-Bard theory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Canon-Bard theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-3": {
+    "id": "7-13-3",
+    "title": "Schachter and Singer theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Schachter and Singer theory. What is the central idea?",
+        "answer": "emotion depends on physiological arousal plus cognitive interpretation/label"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Schachter and Singer theory.",
+        "answer": "arousal"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Schachter and Singer theory.",
+        "answer": "label"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Schachter and Singer theory?",
+        "answer": "Arousal alone does not specify emotion."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Schachter and Singer theory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Schachter and Singer theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-4": {
+    "id": "7-13-4",
+    "title": "Lazarus theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Lazarus theory. What is the central idea?",
+        "answer": "Lazarus's cognitive-mediational theory proposes that cognitive appraisal of a situation is central to emotional experience. The uploaded sources state that appraisal mediates between the stimulus and the emotional response; a situation judged threatening can elicit action tendencies and physiological responses, while reappraisal can alter the response."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lazarus theory.",
+        "answer": "Appraisal is central to emotion."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lazarus theory.",
+        "answer": "The interpretation of the stimulus comes before the emotional response in the model."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Lazarus theory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Lazarus theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-5": {
+    "id": "7-13-5",
+    "title": "Lindsley theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Lindsley theory. What is the central idea?",
+        "answer": "The uploaded NET material lists Lindsley among theories of emotion, but the supplied extract provides limited standalone treatment of the theory. Retain the theorist within the physiological/arousal tradition and use the detailed source section when revising the exact formulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lindsley theory.",
+        "answer": "Lindsley is included in the NET theory sequence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lindsley theory.",
+        "answer": "The topic belongs to physiological theories of emotion."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Lindsley theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Lindsley theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-13-6": {
+    "id": "7-13-6",
+    "title": "Facial feedback theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Facial feedback theory in 2–3 sentences.",
+        "answer": "Facial feedback theory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Facial feedback theory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Facial feedback theory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Facial feedback theory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Facial feedback theory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Facial feedback theory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-14-1": {
+    "id": "7-14-1",
+    "title": "Emotion regulation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Emotion regulation. What is the central idea?",
+        "answer": "Emotion regulation refers to processes used to influence the intensity, duration or expression of emotional responses. The uploaded sources connect regulation with cognitive appraisal, coping and self-regulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Emotion regulation.",
+        "answer": "Regulation can occur through changing interpretation or behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Emotion regulation.",
+        "answer": "Coping strategies can influence emotional responses."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Emotion regulation?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Emotion regulation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-15-1": {
+    "id": "7-15-1",
+    "title": "Sources of conflict",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sources of conflict. What is the central idea?",
+        "answer": "Conflict arises when incompatible goals, motives or demands compete for behavior. The uploaded sources discuss frustration and conflict as situations in which a person is pulled toward or away from alternatives, including competing internal and external demands."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sources of conflict.",
+        "answer": "Incompatible goals can create conflict."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sources of conflict.",
+        "answer": "Conflict may involve internal motives or external demands."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sources of conflict?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sources of conflict indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-15-2": {
+    "id": "7-15-2",
+    "title": "Types of conflict",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of conflict. What is the central idea?",
+        "answer": "The uploaded Self-Teaching Guide distinguishes approach–approach, avoidance–avoidance, approach–avoidance and double/multiple approach–avoidance conflicts. The classification depends on whether alternatives are attractive, unattractive or mixed."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of conflict.",
+        "answer": "Approach–approach: choose between two desirable alternatives."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of conflict.",
+        "answer": "Avoidance–avoidance: choose between two undesirable alternatives."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of conflict?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of conflict indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-1": {
+    "id": "7-16-1",
+    "title": "Concept of stress and coping",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Concept of stress and coping. What is the central idea?",
+        "answer": "stress as appraisal of demands relative to resources, with coping efforts to manage demands/emotions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Concept of stress and coping.",
+        "answer": "stressor"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Concept of stress and coping.",
+        "answer": "appraisal"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Concept of stress and coping?",
+        "answer": "Stress is not defined only by the event."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Concept of stress and coping?",
+        "answer": "Kaplan links stress to physiological arousal and coping to responses to stressors. Its exam material also connects arousal and performance through the Yerkes–Dodson relationship."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Concept of stress and coping indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-2": {
+    "id": "7-16-2",
+    "title": "Models of stress and coping",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Models of stress and coping. What is the central idea?",
+        "answer": "The uploaded sources present stress through physiological, psychological and cognitive-appraisal models. Ciccarelli & White describes stress as depending partly on appraisal of demands and coping resources, while Lazarus's approach distinguishes appraisal of the event from appraisal of coping options."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Models of stress and coping.",
+        "answer": "Stress depends on both demands and appraisal."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Models of stress and coping.",
+        "answer": "Cognitive appraisal influences whether an event is experienced as stressful."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Models of stress and coping?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Models of stress and coping indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-3": {
+    "id": "7-16-3",
+    "title": "Type A behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Type A behavior. What is the central idea?",
+        "answer": "Type A behavior is a cluster including competitiveness, impatience and hostility. Baron & Misra describe the original observations of Friedman and Rosenman and later evidence linking cynical hostility particularly strongly with cardiovascular risk."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type A behavior.",
+        "answer": "Competitiveness is a characteristic of the pattern."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type A behavior.",
+        "answer": "Impatience and time urgency are common features."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Type A behavior?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Type A behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-4": {
+    "id": "7-16-4",
+    "title": "Type B behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Type B behavior. What is the central idea?",
+        "answer": "Type B is described in contrast with Type A: it is associated with a less hurried, less competitive and less irritable pattern. The uploaded sources use Type B mainly as a comparison category in discussions of personality and stress."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type B behavior.",
+        "answer": "Less time urgency than Type A."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type B behavior.",
+        "answer": "Less competitiveness and irritability in the source comparison."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Type B behavior?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Type B behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-5": {
+    "id": "7-16-5",
+    "title": "Type C behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Type C behavior. What is the central idea?",
+        "answer": "Type C behavior is included in the uploaded NET stress-and-coping outline as a personality pattern associated with stress. The supplied major-text extracts give limited standalone treatment, so the website retains the source-supported classification without adding unsupported causal claims."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type C behavior.",
+        "answer": "Type C is listed as a stress/personality pattern."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type C behavior.",
+        "answer": "It is distinct from Type A and Type B classifications."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Type C behavior?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Type C behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-6": {
+    "id": "7-16-6",
+    "title": "Type D behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Type D behavior. What is the central idea?",
+        "answer": "Type D behavior is included in the uploaded NET material as a stress/personality pattern. The supplied extract gives limited standalone detail, so the note retains the term as an exam distinction rather than inventing a detailed profile."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type D behavior.",
+        "answer": "Type D is included among stress-related personality patterns."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Type D behavior.",
+        "answer": "It is distinct from Type A, B and C classifications."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Type D behavior?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Type D behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-16-7": {
+    "id": "7-16-7",
+    "title": "Eustress and distress",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Eustress and distress in 2–3 sentences.",
+        "answer": "Eustress and distress is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Eustress and distress?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Eustress and distress?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Eustress and distress?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Eustress and distress?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Eustress and distress indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-16-8": {
+    "id": "7-16-8",
+    "title": "Selye's General Adaptation Syndrome",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Selye's General Adaptation Syndrome in 2–3 sentences.",
+        "answer": "Selye's General Adaptation Syndrome is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Selye's General Adaptation Syndrome?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Selye's General Adaptation Syndrome?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Selye's General Adaptation Syndrome?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Selye's General Adaptation Syndrome?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Selye's General Adaptation Syndrome indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-16-9": {
+    "id": "7-16-9",
+    "title": "Cognitive appraisal of stress",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive appraisal of stress in 2–3 sentences.",
+        "answer": "Cognitive appraisal of stress is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Cognitive appraisal of stress?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Cognitive appraisal of stress?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Cognitive appraisal of stress?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Cognitive appraisal of stress?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive appraisal of stress indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-16-10": {
+    "id": "7-16-10",
+    "title": "Problem-focused and emotion-focused coping",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Problem-focused and emotion-focused coping in 2–3 sentences.",
+        "answer": "Problem-focused and emotion-focused coping is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Problem-focused and emotion-focused coping?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Problem-focused and emotion-focused coping?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Problem-focused and emotion-focused coping?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Problem-focused and emotion-focused coping?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Problem-focused and emotion-focused coping indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-17-1": {
+    "id": "7-17-1",
+    "title": "Biofeedback",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Biofeedback. What is the central idea?",
+        "answer": "Biofeedback is a technique in which information about physiological activity is fed back to the person so that the person can learn to regulate that activity. The uploaded psychology material includes biofeedback among stress-management strategies and treats it as a way of gaining control over physiological responses."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biofeedback.",
+        "answer": "Physiological information is measured and fed back."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biofeedback.",
+        "answer": "The person learns voluntary control over a physiological response."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Biofeedback?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Biofeedback indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-2": {
+    "id": "7-17-2",
+    "title": "Music therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Music therapy. What is the central idea?",
+        "answer": "Music therapy is listed in the uploaded NET material as a stress-management strategy. The source provides limited standalone detail, so the node retains its place within stress-management approaches without adding unsupported claims about a specific mechanism or treatment effect."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Music therapy.",
+        "answer": "It is included as a stress-management strategy."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Music therapy.",
+        "answer": "Music can be used within structured therapeutic or relaxation contexts."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Music therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Music therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-3": {
+    "id": "7-17-3",
+    "title": "Breathing exercises",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Breathing exercises. What is the central idea?",
+        "answer": "Breathing exercises are included in the uploaded NET material among stress-management strategies. Controlled breathing can be used to influence physiological arousal and support relaxation, but the supplied source gives limited standalone protocol detail."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Breathing exercises.",
+        "answer": "Breathing exercises can be used to manage arousal."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Breathing exercises.",
+        "answer": "They are listed among stress-management techniques."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Breathing exercises?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Breathing exercises indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-4": {
+    "id": "7-17-4",
+    "title": "Progressive Muscular Relaxation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Progressive Muscular Relaxation. What is the central idea?",
+        "answer": "Progressive muscular relaxation is a relaxation method involving systematic attention to and release of muscle tension. The uploaded sources list it as a stress-management technique; Baron & Misra cite research involving progressive muscular relaxation in relation to mental health."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Progressive Muscular Relaxation.",
+        "answer": "Attention is directed to muscle tension and relaxation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Progressive Muscular Relaxation.",
+        "answer": "The technique aims to reduce physical tension and arousal."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Progressive Muscular Relaxation?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Progressive Muscular Relaxation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-5": {
+    "id": "7-17-5",
+    "title": "Guided Imagery",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Guided Imagery. What is the central idea?",
+        "answer": "Guided imagery uses deliberately generated mental images as part of relaxation or coping. The uploaded NET material lists guided imagery among stress-management strategies and Ciccarelli & White groups guided visualization with relaxation-based coping."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Guided Imagery.",
+        "answer": "Mental imagery is used deliberately."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Guided Imagery.",
+        "answer": "It can be used to promote relaxation or coping."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Guided Imagery?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Guided Imagery indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-6": {
+    "id": "7-17-6",
+    "title": "Mindfulness",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Mindfulness. What is the central idea?",
+        "answer": "purposeful, present-moment and nonjudgmental attention to experience"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mindfulness.",
+        "answer": "present moment"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mindfulness.",
+        "answer": "nonjudgment"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Mindfulness?",
+        "answer": "Not simply relaxation or emptying the mind."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Mindfulness?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Mindfulness indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-7": {
+    "id": "7-17-7",
+    "title": "Meditation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Meditation. What is the central idea?",
+        "answer": "Meditation is listed as a stress-management strategy. Ciccarelli & White notes that meditation can promote relaxation, calm anxiety, improve sleep and lower blood pressure, while the NET material places it among stress-management techniques."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Meditation.",
+        "answer": "Meditation can promote relaxation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Meditation.",
+        "answer": "It can be used to reduce anxiety/arousal."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Meditation?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Meditation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-8": {
+    "id": "7-17-8",
+    "title": "Yogasana",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Yogasana. What is the central idea?",
+        "answer": "Yogasana is listed in the uploaded NET material among stress-management strategies. The source's broader Indian-psychology material also treats Yoga as a disciplined approach involving body, mind and consciousness, so the stress-management node should be understood as one application within that broader tradition."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Yogasana.",
+        "answer": "Yogasana is included among stress-management strategies."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Yogasana.",
+        "answer": "Yoga has a broader conceptual context in Indian psychology."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Yogasana?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Yogasana indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-17-9": {
+    "id": "7-17-9",
+    "title": "Stress Inoculation Training",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Stress Inoculation Training. What is the central idea?",
+        "answer": "Stress inoculation training is listed by the uploaded sources as a stress-management approach. Kaplan identifies it as a cognitive-behavioral stress-management technique, and the concept involves preparing people with skills and coping strategies for anticipated stressors."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stress Inoculation Training.",
+        "answer": "It is a structured stress-management approach."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stress Inoculation Training.",
+        "answer": "It emphasizes coping skills and preparation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Stress Inoculation Training?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Stress Inoculation Training indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "7-18-1": {
+    "id": "7-18-1",
+    "title": "Seligman's Explanatory styles",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Seligman's Explanatory styles in 2–3 sentences.",
+        "answer": "Seligman's Explanatory styles is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Seligman's Explanatory styles?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Seligman's Explanatory styles?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Seligman's Explanatory styles?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Seligman's Explanatory styles?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Seligman's Explanatory styles indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "7-19-1": {
+    "id": "7-19-1",
+    "title": "Kohlberg’s theory of Moral development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Kohlberg’s theory of Moral development in 2–3 sentences.",
+        "answer": "Kohlberg organized moral reasoning into preconventional, conventional and postconventional levels containing six stages."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Kohlberg’s theory of Moral development?",
+        "answer": "three levels"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Kohlberg’s theory of Moral development?",
+        "answer": "six stages"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Kohlberg’s theory of Moral development?",
+        "answer": "Gilligan's care perspective provides an important critique."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Kohlberg’s theory of Moral development?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Kohlberg’s theory of Moral development indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  }
+}
