@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.6.0';
+const CACHE='netpsych-shell-v1.7.0';
 const SHELL=[
   './',
   './index.html',
@@ -54,10 +54,20 @@ self.addEventListener('fetch',event=>{
   const isRuntimeData=RUNTIME_DATA.has(name);
   if(!isShell&&!isRuntimeData)return;
   const cacheKey=canonicalRequest(url);
-  event.respondWith(fetch(req,{cache:'no-store'}).then(res=>{
-    if(!res.ok)throw new Error('Network response '+res.status);
-    const copy=res.clone();
-    event.waitUntil(caches.open(CACHE).then(cache=>cache.put(cacheKey,copy)));
-    return res;
-  }).catch(()=>caches.match(cacheKey)));
+  event.respondWith((async()=>{
+    const cached=await caches.match(cacheKey);
+    const refresh=fetch(req,{cache:'no-store'}).then(res=>{
+      if(!res.ok)throw new Error('Network response '+res.status);
+      const copy=res.clone();
+      event.waitUntil(caches.open(CACHE).then(cache=>cache.put(cacheKey,copy)));
+      return res;
+    }).catch(()=>null);
+    if(cached){
+      event.waitUntil(refresh.then(()=>undefined));
+      return cached;
+    }
+    const fresh=await refresh;
+    if(fresh)return fresh;
+    throw new Error('Cached resource unavailable and network request failed');
+  })());
 });
