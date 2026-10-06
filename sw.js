@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.1.1-549-pool-sync';
+const CACHE='netpsych-shell-v1.3.0-direct-static-pools';
 const SHELL=[
   './',
   './index.html',
@@ -19,7 +19,8 @@ const SHELL=[
   './style.css',
   './app.js',
   './app/runtime.js',
-  './content-pools/registry.json',
+  './app/content-audit.js',
+  './feedback-config.js',
   './content-audit.json',
   './content-version.js',
   './manifest.webmanifest'

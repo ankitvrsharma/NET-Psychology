@@ -1,7 +1,7 @@
 /* Stable browser entry point. The learner application loads the runtime directly. */
 (function(){
   'use strict';
-  const VERSION='1.0.3';
+  const VERSION='1.0.4';
   const script=document.createElement('script');
   script.src='./app/runtime.js?v='+VERSION;
   script.async=false;

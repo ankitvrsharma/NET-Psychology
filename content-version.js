@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "1.2.0-549-pool-sync-20261006";
+window.NETPSY_DATA_VERSION = "1.3.0-direct-static-pools";
