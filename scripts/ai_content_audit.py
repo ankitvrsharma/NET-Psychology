@@ -152,21 +152,20 @@ def main():
         ref=refs[mid]
         evidence=source_evidence(ref)
         history=[]
-        # Deterministic cross-reference gate before the model audit.
-        refs_in_package=current.get("cross_references") or []
-        bad_refs=[]
-        seen=set()
-        for x in refs_in_package:
-            rid=str(x.get("id","")).strip() if isinstance(x,dict) else ""
-            if not rid or rid==mid or rid not in refs or rid in seen or not str(x.get("relationship","")).strip() or not str(x.get("reason","")).strip():
-                bad_refs.append(rid or "<missing>")
-            seen.add(rid)
         final_audit=None
         passed=False
 
         for attempt in range(3):
             required=["core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance"]
-            missing=[x for x in required if not current.get(x)]
+            missing=[x for x in required if x not in current or current.get(x) is None]
+            refs_in_package=current.get("cross_references") or []
+            bad_refs=[]
+            seen=set()
+            for x in refs_in_package:
+                rid=str(x.get("id","")).strip() if isinstance(x,dict) else ""
+                if not rid or rid==mid or rid not in refs or rid in seen or not str(x.get("relationship","")).strip() or not str(x.get("reason","")).strip():
+                    bad_refs.append(rid or "<missing>")
+                seen.add(rid)
             if missing:
                 final_audit={"approved":False,"score":0,"critical_failures":["missing generated field(s): "+", ".join(missing)],
                              "issues":[],"microtopic_id":mid}
