@@ -1,0 +1,2215 @@
+{
+  "2-1-1": {
+    "id": "2-1-1",
+    "title": "Meaning of research",
+    "explanation": "systematic, objective and empirical inquiry used to generate or test knowledge systematic; objective; empirical; replicable where appropriate.",
+    "key_points": [
+      "systematic",
+      "objective",
+      "empirical",
+      "replicable where appropriate"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Research is not merely collecting information."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsystematic, objective and empirical inquiry used to generate or test knowledge\n\nKEY POINTS\n• systematic\n• objective\n• empirical\n• replicable where appropriate\n\nDISTINCTION / CAUTION\nResearch is not merely collecting information.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nResearch → systematic + empirical",
+    "distinction": "Research is not merely collecting information.",
+    "exam_takeaway": "Research → systematic + empirical",
+    "revision_cue": "Research → systematic + empirical",
+    "revision_check": "Recall Meaning of research first, then explain the following caution in your own words: Research is not merely collecting information."
+  },
+  "2-1-2": {
+    "id": "2-1-2",
+    "title": "Purpose of research",
+    "explanation": "description, explanation, prediction and application/improvement describe; explain; predict; apply.",
+    "key_points": [
+      "describe",
+      "explain",
+      "predict",
+      "apply"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not every design establishes causation."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ndescription, explanation, prediction and application/improvement\n\nKEY POINTS\n• describe\n• explain\n• predict\n• apply\n\nDISTINCTION / CAUTION\nNot every design establishes causation.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nD-E-P-A",
+    "distinction": "Not every design establishes causation.",
+    "exam_takeaway": "D-E-P-A",
+    "revision_cue": "D-E-P-A",
+    "revision_check": "Recall Purpose of research first, then explain the following caution in your own words: Not every design establishes causation."
+  },
+  "2-1-3": {
+    "id": "2-1-3",
+    "title": "Dimensions of research",
+    "explanation": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques. Research is systematic rather than casual observation; The research paradigm shapes assumptions about knowledge; Methods operationalize the research question; Analysis and interpretation must fit the design and data; SOURCE BASIS; PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics.",
+    "key_points": [
+      "Research is systematic rather than casual observation.",
+      "The research paradigm shapes assumptions about knowledge.",
+      "Methods operationalize the research question.",
+      "Analysis and interpretation must fit the design and data.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nThe uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques.\n\nKEY POINTS\n• Research is systematic rather than casual observation.\n• The research paradigm shapes assumptions about knowledge.\n• Methods operationalize the research question.\n• Analysis and interpretation must fit the design and data.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Research Methodology and Statistics; research meaning, paradigms, methods and statistics.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nDimensions of research → Research is systematic rather than casual observation • The research paradigm shapes assumptions about knowledge • Methods operationalize the research question",
+    "distinction": "",
+    "exam_takeaway": "Dimensions of research → Research is systematic rather than casual observation • The research paradigm shapes assumptions about knowledge • Methods operationalize the research question",
+    "revision_cue": "Dimensions of research → Research is systematic rather than casual observation • The research paradigm shapes assumptions about knowledge • Methods operationalize the research question",
+    "revision_check": "Recall Dimensions of research first and state two supporting points before checking the note."
+  },
+  "2-2-1": {
+    "id": "2-2-1",
+    "title": "Research problems",
+    "explanation": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected. The problem defines the focus of inquiry; Variables identify relevant characteristics or conditions; Operational definitions specify how constructs will be observed or measured; The problem guides hypotheses, sampling and design; SOURCE BASIS; PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling.",
+    "key_points": [
+      "The problem defines the focus of inquiry.",
+      "Variables identify relevant characteristics or conditions.",
+      "Operational definitions specify how constructs will be observed or measured.",
+      "The problem guides hypotheses, sampling and design.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nA research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected.\n\nKEY POINTS\n• The problem defines the focus of inquiry.\n• Variables identify relevant characteristics or conditions.\n• Operational definitions specify how constructs will be observed or measured.\n• The problem guides hypotheses, sampling and design.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2, Research Problems, Variables and Operational Definitions, Hypothesis, Sampling.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nResearch problems → The problem defines the focus of inquiry • Variables identify relevant characteristics or conditions • Operational definitions specify how constructs will be observed or measured",
+    "distinction": "",
+    "exam_takeaway": "Research problems → The problem defines the focus of inquiry • Variables identify relevant characteristics or conditions • Operational definitions specify how constructs will be observed or measured",
+    "revision_cue": "Research problems → The problem defines the focus of inquiry • Variables identify relevant characteristics or conditions • Operational definitions specify how constructs will be observed or measured",
+    "revision_check": "Recall Research problems first and state two supporting points before checking the note."
+  },
+  "2-2-2": {
+    "id": "2-2-2",
+    "title": "Variables",
+    "explanation": "characteristics that can take different values and structure research designs independent; dependent; extraneous; control; moderator/mediator.",
+    "key_points": [
+      "independent",
+      "dependent",
+      "extraneous",
+      "control",
+      "moderator/mediator"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Confounding is an uncontrolled alternative explanation."
+      }
+    ],
+    "sources": [
+      "kaplan-ap",
+      "simply-psychology",
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Kaplan treats variables as the building blocks of research design and distinguishes independent, dependent, control and confounding variables. Its exam-oriented examples emphasize identifying each variable from the role it plays in a study. Simply Psychology adds an operationalisation lens: the researcher must make a variable measurable so the study can be tested and replicated. It also distinguishes IV, DV and extraneous variables and explains how blinding and control reduce alternative explanations.",
+    "content_notes": "CORE CONCEPT\ncharacteristics that can take different values and structure research designs\n\nKEY POINTS\n• independent\n• dependent\n• extraneous\n• control\n• moderator/mediator\n\nDISTINCTION / CAUTION\nConfounding is an uncontrolled alternative explanation.\n\nMULTI-SOURCE SYNTHESIS\nKaplan treats variables as the building blocks of research design and distinguishes independent, dependent, control and confounding variables. Its exam-oriented examples emphasize identifying each variable from the role it plays in a study. Simply Psychology adds an operationalisation lens: the researcher must make a variable measurable so the study can be tested and replicated. It also distinguishes IV, DV and extraneous variables and explains how blinding and control reduce alternative explanations.\n\nMEMORY HOOK\nIV → DV",
+    "distinction": "Confounding is an uncontrolled alternative explanation.",
+    "exam_takeaway": "IV → DV",
+    "revision_cue": "IV → DV",
+    "revision_check": "Recall Variables first, then explain the following caution in your own words: Confounding is an uncontrolled alternative explanation."
+  },
+  "2-2-3": {
+    "id": "2-2-3",
+    "title": "Operational definitions",
+    "explanation": "specifying exactly how an abstract construct will be observed or measured measurable indicator; replicable procedure; construct → measure.",
+    "key_points": [
+      "measurable indicator",
+      "replicable procedure",
+      "construct → measure"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not the same as a philosophical definition."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nspecifying exactly how an abstract construct will be observed or measured\n\nKEY POINTS\n• measurable indicator\n• replicable procedure\n• construct → measure\n\nDISTINCTION / CAUTION\nIt is not the same as a philosophical definition.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nOperationalize → measure",
+    "distinction": "It is not the same as a philosophical definition.",
+    "exam_takeaway": "Operationalize → measure",
+    "revision_cue": "Operationalize → measure",
+    "revision_check": "Recall Operational definitions first, then explain the following caution in your own words: It is not the same as a philosophical definition."
+  },
+  "2-2-4": {
+    "id": "2-2-4",
+    "title": "Hypothesis",
+    "explanation": "a tentative, specific and testable statement about a relationship or difference null/alternative; directional/non-directional; testability.",
+    "key_points": [
+      "null/alternative",
+      "directional/non-directional",
+      "testability"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A vague prediction is not a good hypothesis."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\na tentative, specific and testable statement about a relationship or difference\n\nKEY POINTS\n• null/alternative\n• directional/non-directional\n• testability\n\nDISTINCTION / CAUTION\nA vague prediction is not a good hypothesis.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nHypothesis → tentative + testable",
+    "distinction": "A vague prediction is not a good hypothesis.",
+    "exam_takeaway": "Hypothesis → tentative + testable",
+    "revision_cue": "Hypothesis → tentative + testable",
+    "revision_check": "Recall Hypothesis first, then explain the following caution in your own words: A vague prediction is not a good hypothesis."
+  },
+  "2-2-5": {
+    "id": "2-2-5",
+    "title": "Sampling",
+    "explanation": "selecting a subset of a population for study probability sampling; non-probability sampling; random sampling ≠ random assignment.",
+    "key_points": [
+      "probability sampling",
+      "non-probability sampling",
+      "random sampling ≠ random assignment"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Do not confuse sampling with assignment."
+      }
+    ],
+    "sources": [
+      "kaplan-ap",
+      "simply-psychology",
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Kaplan separates random sampling from random assignment and treats sampling as selection from a population. Its study approach asks learners to identify the sampling method and distinguish it from how participants are allocated to conditions. Simply Psychology distinguishes volunteer, opportunity, random, systematic, stratified, snowball and quota sampling and links sampling to representativeness and generalisability.",
+    "content_notes": "CORE CONCEPT\nselecting a subset of a population for study\n\nKEY POINTS\n• probability sampling\n• non-probability sampling\n• random sampling ≠ random assignment\n\nDISTINCTION / CAUTION\nDo not confuse sampling with assignment.\n\nMULTI-SOURCE SYNTHESIS\nKaplan separates random sampling from random assignment and treats sampling as selection from a population. Its study approach asks learners to identify the sampling method and distinguish it from how participants are allocated to conditions. Simply Psychology distinguishes volunteer, opportunity, random, systematic, stratified, snowball and quota sampling and links sampling to representativeness and generalisability.\n\nMEMORY HOOK\nSampling → who enters?",
+    "distinction": "Do not confuse sampling with assignment.",
+    "exam_takeaway": "Sampling → who enters?",
+    "revision_cue": "Sampling → who enters?",
+    "revision_check": "Recall Sampling first, then explain the following caution in your own words: Do not confuse sampling with assignment."
+  },
+  "2-2-6": {
+    "id": "2-2-6",
+    "title": "Types of variables",
+    "explanation": "Variables are properties that take on different values and are measurable. In research, the role of a variable depends on how it is used in the design. Independent variable → manipulated by the experimenter; Dependent variable → observed/measured outcome; Control variable → a potential independent variable held constant during an experiment; Quantitative variables → numerical; qualitative variables → qualities/categories; Active variables → can be manipulated, changed or controlled experimentally; Attribute variables → pre-existing characteristics of the study population.",
+    "key_points": [
+      "Independent variable → manipulated by the experimenter.",
+      "Dependent variable → observed/measured outcome.",
+      "Control variable → a potential independent variable held constant during an experiment.",
+      "Quantitative variables → numerical; qualitative variables → qualities/categories.",
+      "Active variables → can be manipulated, changed or controlled experimentally.",
+      "Attribute variables → pre-existing characteristics of the study population."
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Do not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications.",
+    "content_notes": "CORE CONCEPT\nVariables are properties that take on different values and are measurable. In research, the role of a variable depends on how it is used in the design.\n\nKEY POINTS\n• Independent variable → manipulated by the experimenter.\n• Dependent variable → observed/measured outcome.\n• Control variable → a potential independent variable held constant during an experiment.\n• Quantitative variables → numerical; qualitative variables → qualities/categories.\n• Active variables → can be manipulated, changed or controlled experimentally.\n• Attribute variables → pre-existing characteristics of the study population.\n\nDISTINCTION / CAUTION\nDo not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling.\n\nMULTI-SOURCE SYNTHESIS\nThe NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications.\n\nMEMORY HOOK\nIV = manipulated • DV = measured • Control = held constant • Active = manipulable • Attribute = pre-existing • Continuous = range • Discrete = distinct",
+    "distinction": "Do not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling.",
+    "exam_takeaway": "IV = manipulated • DV = measured • Control = held constant • Active = manipulable • Attribute = pre-existing • Continuous = range • Discrete = distinct",
+    "revision_cue": "IV = manipulated • DV = measured • Control = held constant • Active = manipulable • Attribute = pre-existing • Continuous = range • Discrete = distinct",
+    "revision_check": "Recall Types of variables first, then explain why this caution matters: Do not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling."
+  },
+  "2-2-7": {
+    "id": "2-2-7",
+    "title": "Levels of measurement",
+    "explanation": "Levels of measurement is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nLevels of measurement is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Levels of measurement: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-2-8": {
+    "id": "2-2-8",
+    "title": "Null and alternative hypotheses",
+    "explanation": "Null and alternative hypotheses is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nNull and alternative hypotheses is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Null and alternative hypotheses: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-2-9": {
+    "id": "2-2-9",
+    "title": "Type I and Type II errors",
+    "explanation": "Type I and Type II errors is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nType I and Type II errors is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Type I and Type II errors: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-2-10": {
+    "id": "2-2-10",
+    "title": "Sampling techniques",
+    "explanation": "Sampling techniques is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nSampling techniques is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Sampling techniques: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-3-1": {
+    "id": "2-3-1",
+    "title": "Ethics in conducting research",
+    "explanation": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards. Participant welfare is a central ethical concern; Consent and voluntary participation matter; Privacy and confidentiality must be protected; Research procedures should be scientifically and ethically justified; SOURCE BASIS; PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable.",
+    "key_points": [
+      "Participant welfare is a central ethical concern.",
+      "Consent and voluntary participation matter.",
+      "Privacy and confidentiality must be protected.",
+      "Research procedures should be scientifically and ethically justified.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nEthics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards.\n\nKEY POINTS\n• Participant welfare is a central ethical concern.\n• Consent and voluntary participation matter.\n• Privacy and confidentiality must be protected.\n• Research procedures should be scientifically and ethically justified.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research; Paper 1 research/ethics material where applicable.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nEthics in conducting research → Participant welfare is a central ethical concern • Consent and voluntary participation matter • Privacy and confidentiality must be protected",
+    "distinction": "",
+    "exam_takeaway": "Ethics in conducting research → Participant welfare is a central ethical concern • Consent and voluntary participation matter • Privacy and confidentiality must be protected",
+    "revision_cue": "Ethics in conducting research → Participant welfare is a central ethical concern • Consent and voluntary participation matter • Privacy and confidentiality must be protected",
+    "revision_check": "Recall Ethics in conducting research first and state two supporting points before checking the note."
+  },
+  "2-3-2": {
+    "id": "2-3-2",
+    "title": "Ethics in reporting research",
+    "explanation": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data. Report methods and findings accurately; Do not fabricate or falsify data; Give appropriate credit to sources and contributors; Do not claim more than the evidence supports; SOURCE BASIS; PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research.",
+    "key_points": [
+      "Report methods and findings accurately.",
+      "Do not fabricate or falsify data.",
+      "Give appropriate credit to sources and contributors.",
+      "Do not claim more than the evidence supports.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nEthics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data.\n\nKEY POINTS\n• Report methods and findings accurately.\n• Do not fabricate or falsify data.\n• Give appropriate credit to sources and contributors.\n• Do not claim more than the evidence supports.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2, Ethics in Conducting and Reporting Research.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nEthics in reporting research → Report methods and findings accurately • Do not fabricate or falsify data • Give appropriate credit to sources and contributors",
+    "distinction": "",
+    "exam_takeaway": "Ethics in reporting research → Report methods and findings accurately • Do not fabricate or falsify data • Give appropriate credit to sources and contributors",
+    "revision_cue": "Ethics in reporting research → Report methods and findings accurately • Do not fabricate or falsify data • Give appropriate credit to sources and contributors",
+    "revision_check": "Recall Ethics in reporting research first and state two supporting points before checking the note."
+  },
+  "2-4-1": {
+    "id": "2-4-1",
+    "title": "Quantitative research",
+    "explanation": "numerical measurement and statistical analysis of variables and relationships measurement; numbers; statistical analysis.",
+    "key_points": [
+      "measurement",
+      "numbers",
+      "statistical analysis"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Quantitative does not automatically mean experimental."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nnumerical measurement and statistical analysis of variables and relationships\n\nKEY POINTS\n• measurement\n• numbers\n• statistical analysis\n\nDISTINCTION / CAUTION\nQuantitative does not automatically mean experimental.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nQuant → numbers",
+    "distinction": "Quantitative does not automatically mean experimental.",
+    "exam_takeaway": "Quant → numbers",
+    "revision_cue": "Quant → numbers",
+    "revision_check": "Recall Quantitative research first, then explain the following caution in your own words: Quantitative does not automatically mean experimental."
+  },
+  "2-4-2": {
+    "id": "2-4-2",
+    "title": "Qualitative research",
+    "explanation": "study of meanings, experiences, processes and contexts using rich non-numerical data interviews/observations; meaning; context; interpretive analysis.",
+    "key_points": [
+      "interviews/observations",
+      "meaning",
+      "context",
+      "interpretive analysis"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Qualitative is not synonymous with unscientific."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nstudy of meanings, experiences, processes and contexts using rich non-numerical data\n\nKEY POINTS\n• interviews/observations\n• meaning\n• context\n• interpretive analysis\n\nDISTINCTION / CAUTION\nQualitative is not synonymous with unscientific.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nQual → meaning",
+    "distinction": "Qualitative is not synonymous with unscientific.",
+    "exam_takeaway": "Qual → meaning",
+    "revision_cue": "Qual → meaning",
+    "revision_check": "Recall Qualitative research first, then explain the following caution in your own words: Qualitative is not synonymous with unscientific."
+  },
+  "2-4-3": {
+    "id": "2-4-3",
+    "title": "Mixed methods approach",
+    "explanation": "intentional integration of quantitative and qualitative approaches integration; complementarity; triangulation; sequential/concurrent designs.",
+    "key_points": [
+      "integration",
+      "complementarity",
+      "triangulation",
+      "sequential/concurrent designs"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Two methods without integration are not automatically mixed methods."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nintentional integration of quantitative and qualitative approaches\n\nKEY POINTS\n• integration\n• complementarity\n• triangulation\n• sequential/concurrent designs\n\nDISTINCTION / CAUTION\nTwo methods without integration are not automatically mixed methods.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nMixed → numbers + meaning",
+    "distinction": "Two methods without integration are not automatically mixed methods.",
+    "exam_takeaway": "Mixed → numbers + meaning",
+    "revision_cue": "Mixed → numbers + meaning",
+    "revision_check": "Recall Mixed methods approach first, then explain the following caution in your own words: Two methods without integration are not automatically mixed methods."
+  },
+  "2-5-1": {
+    "id": "2-5-1",
+    "title": "Observation",
+    "explanation": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias. Behavior is recorded rather than inferred only from self-report; Participant and non-participant observation are distinct forms; Naturalistic observation can increase ecological relevance; Observer bias and limited control are important limitations; SOURCE BASIS; PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation.",
+    "key_points": [
+      "Behavior is recorded rather than inferred only from self-report.",
+      "Participant and non-participant observation are distinct forms.",
+      "Naturalistic observation can increase ecological relevance.",
+      "Observer bias and limited control are important limitations.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nObservation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias.\n\nKEY POINTS\n• Behavior is recorded rather than inferred only from self-report.\n• Participant and non-participant observation are distinct forms.\n• Naturalistic observation can increase ecological relevance.\n• Observer bias and limited control are important limitations.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 methods; Paper 1 Unit 2 observation-method material; Ciccarelli & White, direct observation.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nObservation → Behavior is recorded rather than inferred only from self-report • Participant and non-participant observation are distinct forms • Naturalistic observation can increase ecological relevance",
+    "distinction": "",
+    "exam_takeaway": "Observation → Behavior is recorded rather than inferred only from self-report • Participant and non-participant observation are distinct forms • Naturalistic observation can increase ecological relevance",
+    "revision_cue": "Observation → Behavior is recorded rather than inferred only from self-report • Participant and non-participant observation are distinct forms • Naturalistic observation can increase ecological relevance",
+    "revision_check": "Recall Observation first and state two supporting points before checking the note."
+  },
+  "2-5-2": {
+    "id": "2-5-2",
+    "title": "Survey",
+    "explanation": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population. Surveys can reach large samples efficiently; Questions may assess attitudes, opinions or reported behavior; Repeated surveys can examine change over time; Sampling and question wording affect the quality of conclusions; SOURCE BASIS; Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method.",
+    "key_points": [
+      "Surveys can reach large samples efficiently.",
+      "Questions may assess attitudes, opinions or reported behavior.",
+      "Repeated surveys can examine change over time.",
+      "Sampling and question wording affect the quality of conclusions.",
+      "SOURCE BASIS",
+      "Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nThe survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population.\n\nKEY POINTS\n• Surveys can reach large samples efficiently.\n• Questions may assess attitudes, opinions or reported behavior.\n• Repeated surveys can examine change over time.\n• Sampling and question wording affect the quality of conclusions.\n• SOURCE BASIS\n• Baron & Misra — Research Methods, Survey Method; Psychology: A Self-Teaching Guide — Survey Method.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nSurvey → Surveys can reach large samples efficiently • Questions may assess attitudes, opinions or reported behavior • Repeated surveys can examine change over time",
+    "distinction": "",
+    "exam_takeaway": "Survey → Surveys can reach large samples efficiently • Questions may assess attitudes, opinions or reported behavior • Repeated surveys can examine change over time",
+    "revision_cue": "Survey → Surveys can reach large samples efficiently • Questions may assess attitudes, opinions or reported behavior • Repeated surveys can examine change over time",
+    "revision_check": "Recall Survey first and state two supporting points before checking the note."
+  },
+  "2-5-3": {
+    "id": "2-5-3",
+    "title": "Interview",
+    "explanation": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill. Structured interviews use predetermined questions; Unstructured interviews are flexible and allow probing; Group interviews/focus groups generate interaction among participants; Interviewer skill and bias can affect the data; SOURCE BASIS; PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews.",
+    "key_points": [
+      "Structured interviews use predetermined questions.",
+      "Unstructured interviews are flexible and allow probing.",
+      "Group interviews/focus groups generate interaction among participants.",
+      "Interviewer skill and bias can affect the data.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nAn interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill.\n\nKEY POINTS\n• Structured interviews use predetermined questions.\n• Unstructured interviews are flexible and allow probing.\n• Group interviews/focus groups generate interaction among participants.\n• Interviewer skill and bias can affect the data.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Interview Process; Baron & Misra — assessment interviews.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nInterview → Structured interviews use predetermined questions • Unstructured interviews are flexible and allow probing • Group interviews/focus groups generate interaction among participants",
+    "distinction": "",
+    "exam_takeaway": "Interview → Structured interviews use predetermined questions • Unstructured interviews are flexible and allow probing • Group interviews/focus groups generate interaction among participants",
+    "revision_cue": "Interview → Structured interviews use predetermined questions • Unstructured interviews are flexible and allow probing • Group interviews/focus groups generate interaction among participants",
+    "revision_check": "Recall Interview first and state two supporting points before checking the note."
+  },
+  "2-5-4": {
+    "id": "2-5-4",
+    "title": "Questionnaires",
+    "explanation": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity. Questionnaires standardize the questions presented to respondents; They are efficient for collecting data from many people; Response format influences the kind of data obtained; Self-report can be affected by memory, interpretation or socially desirable responding; SOURCE BASIS; Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires.",
+    "key_points": [
+      "Questionnaires standardize the questions presented to respondents.",
+      "They are efficient for collecting data from many people.",
+      "Response format influences the kind of data obtained.",
+      "Self-report can be affected by memory, interpretation or socially desirable responding.",
+      "SOURCE BASIS",
+      "Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nQuestionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity.\n\nKEY POINTS\n• Questionnaires standardize the questions presented to respondents.\n• They are efficient for collecting data from many people.\n• Response format influences the kind of data obtained.\n• Self-report can be affected by memory, interpretation or socially desirable responding.\n• SOURCE BASIS\n• Baron & Misra — Survey Method; PowerWithin Psychology — Survey/Questionnaires.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nQuestionnaires → Questionnaires standardize the questions presented to respondents • They are efficient for collecting data from many people • Response format influences the kind of data obtained",
+    "distinction": "",
+    "exam_takeaway": "Questionnaires → Questionnaires standardize the questions presented to respondents • They are efficient for collecting data from many people • Response format influences the kind of data obtained",
+    "revision_cue": "Questionnaires → Questionnaires standardize the questions presented to respondents • They are efficient for collecting data from many people • Response format influences the kind of data obtained",
+    "revision_check": "Recall Questionnaires first and state two supporting points before checking the note."
+  },
+  "2-5-5": {
+    "id": "2-5-5",
+    "title": "Experimental method",
+    "explanation": "manipulation of an independent variable under controlled conditions to observe effects IV manipulation; control; comparison; random assignment where possible.",
+    "key_points": [
+      "IV manipulation",
+      "control",
+      "comparison",
+      "random assignment where possible"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Random assignment is not random sampling."
+      }
+    ],
+    "sources": [
+      "kaplan-ap",
+      "simply-psychology",
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Kaplan contrasts controlled, field and natural/quasi-experimental approaches and frames experiments around manipulation, measurement and control. For exam reasoning, identify the IV, DV, allocation method and possible confound. Simply Psychology distinguishes independent, matched and repeated-measures designs and explains why counterbalancing matters when the same participants experience more than one condition.",
+    "content_notes": "CORE CONCEPT\nmanipulation of an independent variable under controlled conditions to observe effects\n\nKEY POINTS\n• IV manipulation\n• control\n• comparison\n• random assignment where possible\n\nDISTINCTION / CAUTION\nRandom assignment is not random sampling.\n\nMULTI-SOURCE SYNTHESIS\nKaplan contrasts controlled, field and natural/quasi-experimental approaches and frames experiments around manipulation, measurement and control. For exam reasoning, identify the IV, DV, allocation method and possible confound. Simply Psychology distinguishes independent, matched and repeated-measures designs and explains why counterbalancing matters when the same participants experience more than one condition.\n\nMEMORY HOOK\nExperiment → manipulate + control",
+    "distinction": "Random assignment is not random sampling.",
+    "exam_takeaway": "Experiment → manipulate + control",
+    "revision_cue": "Experiment → manipulate + control",
+    "revision_check": "Recall Experimental method first, then explain the following caution in your own words: Random assignment is not random sampling."
+  },
+  "2-5-6": {
+    "id": "2-5-6",
+    "title": "Quasi-experimental method",
+    "explanation": "intervention research without full random assignment intervention; comparison; no full random assignment.",
+    "key_points": [
+      "intervention",
+      "comparison",
+      "no full random assignment"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not correlational research."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nintervention research without full random assignment\n\nKEY POINTS\n• intervention\n• comparison\n• no full random assignment\n\nDISTINCTION / CAUTION\nIt is not correlational research.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nQuasi → intervention, no full random assignment",
+    "distinction": "It is not correlational research.",
+    "exam_takeaway": "Quasi → intervention, no full random assignment",
+    "revision_cue": "Quasi → intervention, no full random assignment",
+    "revision_check": "Recall Quasi-experimental method first, then explain the following caution in your own words: It is not correlational research."
+  },
+  "2-5-7": {
+    "id": "2-5-7",
+    "title": "Field studies",
+    "explanation": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control. Research occurs in a natural or real-world setting; Contextual information can be richer than in a laboratory; Control over extraneous variables is generally lower; Interpretation must consider the setting in which the behavior occurred; SOURCE BASIS; PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples.",
+    "key_points": [
+      "Research occurs in a natural or real-world setting.",
+      "Contextual information can be richer than in a laboratory.",
+      "Control over extraneous variables is generally lower.",
+      "Interpretation must consider the setting in which the behavior occurred.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nField studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control.\n\nKEY POINTS\n• Research occurs in a natural or real-world setting.\n• Contextual information can be richer than in a laboratory.\n• Control over extraneous variables is generally lower.\n• Interpretation must consider the setting in which the behavior occurred.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 methods; Baron & Misra — community and school-based research examples.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nField studies → Research occurs in a natural or real-world setting • Contextual information can be richer than in a laboratory • Control over extraneous variables is generally lower",
+    "distinction": "",
+    "exam_takeaway": "Field studies → Research occurs in a natural or real-world setting • Contextual information can be richer than in a laboratory • Control over extraneous variables is generally lower",
+    "revision_cue": "Field studies → Research occurs in a natural or real-world setting • Contextual information can be richer than in a laboratory • Control over extraneous variables is generally lower",
+    "revision_check": "Recall Field studies first and state two supporting points before checking the note."
+  },
+  "2-5-8": {
+    "id": "2-5-8",
+    "title": "Cross-cultural studies",
+    "explanation": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs. The basic purpose is comparison across cultural contexts; Culture can influence behavior, development and interpretation; Cross-cultural comparisons can reveal limits of generalization; Measurement equivalence and cultural context are important concerns; SOURCE BASIS; PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development.",
+    "key_points": [
+      "The basic purpose is comparison across cultural contexts.",
+      "Culture can influence behavior, development and interpretation.",
+      "Cross-cultural comparisons can reveal limits of generalization.",
+      "Measurement equivalence and cultural context are important concerns.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nCross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs.\n\nKEY POINTS\n• The basic purpose is comparison across cultural contexts.\n• Culture can influence behavior, development and interpretation.\n• Cross-cultural comparisons can reveal limits of generalization.\n• Measurement equivalence and cultural context are important concerns.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Cross-Cultural Studies; Baron & Misra — cross-cultural discussion of moral development.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nCross-cultural studies → The basic purpose is comparison across cultural contexts • Culture can influence behavior, development and interpretation • Cross-cultural comparisons can reveal limits of generalization",
+    "distinction": "",
+    "exam_takeaway": "Cross-cultural studies → The basic purpose is comparison across cultural contexts • Culture can influence behavior, development and interpretation • Cross-cultural comparisons can reveal limits of generalization",
+    "revision_cue": "Cross-cultural studies → The basic purpose is comparison across cultural contexts • Culture can influence behavior, development and interpretation • Cross-cultural comparisons can reveal limits of generalization",
+    "revision_check": "Recall Cross-cultural studies first and state two supporting points before checking the note."
+  },
+  "2-5-9": {
+    "id": "2-5-9",
+    "title": "Phenomenology",
+    "explanation": "systematic study of the meaning and structure of lived experience lived experience; meaning; first-person perspective.",
+    "key_points": [
+      "lived experience",
+      "meaning",
+      "first-person perspective"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not just asking for opinions."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsystematic study of the meaning and structure of lived experience\n\nKEY POINTS\n• lived experience\n• meaning\n• first-person perspective\n\nDISTINCTION / CAUTION\nNot just asking for opinions.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPhenomenology → lived experience",
+    "distinction": "Not just asking for opinions.",
+    "exam_takeaway": "Phenomenology → lived experience",
+    "revision_cue": "Phenomenology → lived experience",
+    "revision_check": "Recall Phenomenology first, then explain the following caution in your own words: Not just asking for opinions."
+  },
+  "2-5-10": {
+    "id": "2-5-10",
+    "title": "Grounded theory",
+    "explanation": "development of concepts and theory from systematically analyzed qualitative data coding; categories; constant comparison; theory generation.",
+    "key_points": [
+      "coding",
+      "categories",
+      "constant comparison",
+      "theory generation"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not a preselected theory imposed on the data."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ndevelopment of concepts and theory from systematically analyzed qualitative data\n\nKEY POINTS\n• coding\n• categories\n• constant comparison\n• theory generation\n\nDISTINCTION / CAUTION\nIt is not a preselected theory imposed on the data.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nGrounded → theory grows from data",
+    "distinction": "It is not a preselected theory imposed on the data.",
+    "exam_takeaway": "Grounded → theory grows from data",
+    "revision_cue": "Grounded → theory grows from data",
+    "revision_check": "Recall Grounded theory first, then explain the following caution in your own words: It is not a preselected theory imposed on the data."
+  },
+  "2-5-11": {
+    "id": "2-5-11",
+    "title": "Focus groups",
+    "explanation": "guided group discussion in which interaction itself becomes data moderator; group interaction; shared/divergent views.",
+    "key_points": [
+      "moderator",
+      "group interaction",
+      "shared/divergent views"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not just several individual interviews at once."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nguided group discussion in which interaction itself becomes data\n\nKEY POINTS\n• moderator\n• group interaction\n• shared/divergent views\n\nDISTINCTION / CAUTION\nIt is not just several individual interviews at once.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nFocus group → interaction is data",
+    "distinction": "It is not just several individual interviews at once.",
+    "exam_takeaway": "Focus group → interaction is data",
+    "revision_cue": "Focus group → interaction is data",
+    "revision_check": "Recall Focus groups first, then explain the following caution in your own words: It is not just several individual interviews at once."
+  },
+  "2-5-12": {
+    "id": "2-5-12",
+    "title": "Narratives",
+    "explanation": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts. Narratives preserve participants' accounts of experience; They are useful for studying meaning and lived experience; Analysis can identify themes and layers of meaning; Interpretation remains closely tied to context and the participant's account; SOURCE BASIS; PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives.",
+    "key_points": [
+      "Narratives preserve participants' accounts of experience.",
+      "They are useful for studying meaning and lived experience.",
+      "Analysis can identify themes and layers of meaning.",
+      "Interpretation remains closely tied to context and the participant's account.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nNarratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts.\n\nKEY POINTS\n• Narratives preserve participants' accounts of experience.\n• They are useful for studying meaning and lived experience.\n• Analysis can identify themes and layers of meaning.\n• Interpretation remains closely tied to context and the participant's account.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 qualitative methods, phenomenology and narratives.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nNarratives → Narratives preserve participants' accounts of experience • They are useful for studying meaning and lived experience • Analysis can identify themes and layers of meaning",
+    "distinction": "",
+    "exam_takeaway": "Narratives → Narratives preserve participants' accounts of experience • They are useful for studying meaning and lived experience • Analysis can identify themes and layers of meaning",
+    "revision_cue": "Narratives → Narratives preserve participants' accounts of experience • They are useful for studying meaning and lived experience • Analysis can identify themes and layers of meaning",
+    "revision_check": "Recall Narratives first and state two supporting points before checking the note."
+  },
+  "2-5-13": {
+    "id": "2-5-13",
+    "title": "Case studies",
+    "explanation": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case. The unit of analysis is an individual case or bounded case; Multiple data sources may be combined; The approach is idiographic and context-sensitive; Generalization can be limited when the case is unique; SOURCE BASIS; PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion.",
+    "key_points": [
+      "The unit of analysis is an individual case or bounded case.",
+      "Multiple data sources may be combined.",
+      "The approach is idiographic and context-sensitive.",
+      "Generalization can be limited when the case is unique.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nA case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case.\n\nKEY POINTS\n• The unit of analysis is an individual case or bounded case.\n• Multiple data sources may be combined.\n• The approach is idiographic and context-sensitive.\n• Generalization can be limited when the case is unique.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Case Study Research Method; Baron & Misra — case-method discussion.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nCase studies → The unit of analysis is an individual case or bounded case • Multiple data sources may be combined • The approach is idiographic and context-sensitive",
+    "distinction": "",
+    "exam_takeaway": "Case studies → The unit of analysis is an individual case or bounded case • Multiple data sources may be combined • The approach is idiographic and context-sensitive",
+    "revision_cue": "Case studies → The unit of analysis is an individual case or bounded case • Multiple data sources may be combined • The approach is idiographic and context-sensitive",
+    "revision_check": "Recall Case studies first and state two supporting points before checking the note."
+  },
+  "2-5-14": {
+    "id": "2-5-14",
+    "title": "Ethnography",
+    "explanation": "sustained study of people and practices in cultural context culture; fieldwork; participant observation.",
+    "key_points": [
+      "culture",
+      "fieldwork",
+      "participant observation"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A brief field visit is not full ethnography."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsustained study of people and practices in cultural context\n\nKEY POINTS\n• culture\n• fieldwork\n• participant observation\n\nDISTINCTION / CAUTION\nA brief field visit is not full ethnography.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nEthno → culture in context",
+    "distinction": "A brief field visit is not full ethnography.",
+    "exam_takeaway": "Ethno → culture in context",
+    "revision_cue": "Ethno → culture in context",
+    "revision_check": "Recall Ethnography first, then explain the following caution in your own words: A brief field visit is not full ethnography."
+  },
+  "2-6-1": {
+    "id": "2-6-1",
+    "title": "Measures of central tendency",
+    "explanation": "summary of the central location of a distribution mean; median; mode.",
+    "key_points": [
+      "mean",
+      "median",
+      "mode"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Mean is sensitive to extreme scores."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsummary of the central location of a distribution\n\nKEY POINTS\n• mean\n• median\n• mode\n\nDISTINCTION / CAUTION\nMean is sensitive to extreme scores.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nCentre → mean/median/mode",
+    "distinction": "Mean is sensitive to extreme scores.",
+    "exam_takeaway": "Centre → mean/median/mode",
+    "revision_cue": "Centre → mean/median/mode",
+    "revision_check": "Recall Measures of central tendency first, then explain the following caution in your own words: Mean is sensitive to extreme scores."
+  },
+  "2-6-2": {
+    "id": "2-6-2",
+    "title": "Measures of dispersion",
+    "explanation": "summary of how spread out scores are range; variance; standard deviation.",
+    "key_points": [
+      "range",
+      "variance",
+      "standard deviation"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Spread and central tendency answer different questions."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsummary of how spread out scores are\n\nKEY POINTS\n• range\n• variance\n• standard deviation\n\nDISTINCTION / CAUTION\nSpread and central tendency answer different questions.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nDispersion → spread",
+    "distinction": "Spread and central tendency answer different questions.",
+    "exam_takeaway": "Dispersion → spread",
+    "revision_cue": "Dispersion → spread",
+    "revision_check": "Recall Measures of dispersion first, then explain the following caution in your own words: Spread and central tendency answer different questions."
+  },
+  "2-6-3": {
+    "id": "2-6-3",
+    "title": "Descriptive and inferential statistics",
+    "explanation": "Descriptive and inferential statistics is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nDescriptive and inferential statistics is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Descriptive and inferential statistics: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-6-4": {
+    "id": "2-6-4",
+    "title": "Mean, median and mode",
+    "explanation": "Mean, median and mode is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nMean, median and mode is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Mean, median and mode: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-6-5": {
+    "id": "2-6-5",
+    "title": "Variance and standard deviation",
+    "explanation": "Variance and standard deviation is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nVariance and standard deviation is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Variance and standard deviation: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-7-1": {
+    "id": "2-7-1",
+    "title": "Normal probability curve",
+    "explanation": "symmetric bell-shaped distribution where mean, median and mode coincide symmetry; mean = median = mode; 68–95–99.7% rule approximately.",
+    "key_points": [
+      "symmetry",
+      "mean = median = mode",
+      "68–95–99.7% rule approximately"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not every psychological distribution is perfectly normal."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsymmetric bell-shaped distribution where mean, median and mode coincide\n\nKEY POINTS\n• symmetry\n• mean = median = mode\n• 68–95–99.7% rule approximately\n\nDISTINCTION / CAUTION\nNot every psychological distribution is perfectly normal.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nNormal → bell curve",
+    "distinction": "Not every psychological distribution is perfectly normal.",
+    "exam_takeaway": "Normal → bell curve",
+    "revision_cue": "Normal → bell curve",
+    "revision_check": "Recall Normal probability curve first, then explain the following caution in your own words: Not every psychological distribution is perfectly normal."
+  },
+  "2-8-1": {
+    "id": "2-8-1",
+    "title": "Parametric tests",
+    "explanation": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data. t-tests are listed under parametric tests in the source; Parametric and non-parametric procedures form different families of inferential tests; Choice of test depends on design, variables and assumptions; The source separately emphasizes power analysis and effect size; SOURCE BASIS; PowerWithin Psychology — Unit 2 Statistics in Psychology.",
+    "key_points": [
+      "t-tests are listed under parametric tests in the source.",
+      "Parametric and non-parametric procedures form different families of inferential tests.",
+      "Choice of test depends on design, variables and assumptions.",
+      "The source separately emphasizes power analysis and effect size.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Statistics in Psychology."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nThe uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data.\n\nKEY POINTS\n• t-tests are listed under parametric tests in the source.\n• Parametric and non-parametric procedures form different families of inferential tests.\n• Choice of test depends on design, variables and assumptions.\n• The source separately emphasizes power analysis and effect size.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Statistics in Psychology.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nParametric tests → t-tests are listed under parametric tests in the source • Parametric and non-parametric procedures form different families of inferential tests • Choice of test depends on design, variables and assumptions",
+    "distinction": "",
+    "exam_takeaway": "Parametric tests → t-tests are listed under parametric tests in the source • Parametric and non-parametric procedures form different families of inferential tests • Choice of test depends on design, variables and assumptions",
+    "revision_cue": "Parametric tests → t-tests are listed under parametric tests in the source • Parametric and non-parametric procedures form different families of inferential tests • Choice of test depends on design, variables and assumptions",
+    "revision_check": "Recall Parametric tests first and state two supporting points before checking the note."
+  },
+  "2-8-2": {
+    "id": "2-8-2",
+    "title": "t-test",
+    "explanation": "comparison of means using one-sample, independent-samples or paired-samples variants compare means; independent vs paired; t statistic.",
+    "key_points": [
+      "compare means",
+      "independent vs paired",
+      "t statistic"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Paired t is for related observations."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ncomparison of means using one-sample, independent-samples or paired-samples variants\n\nKEY POINTS\n• compare means\n• independent vs paired\n• t statistic\n\nDISTINCTION / CAUTION\nPaired t is for related observations.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nt → compare means",
+    "distinction": "Paired t is for related observations.",
+    "exam_takeaway": "t → compare means",
+    "revision_cue": "t → compare means",
+    "revision_check": "Recall t-test first, then explain the following caution in your own words: Paired t is for related observations."
+  },
+  "2-8-3": {
+    "id": "2-8-3",
+    "title": "Non-parametric tests",
+    "explanation": "tests with fewer distributional assumptions, often useful for ordinal/rank data rank-based methods; fewer assumptions; small/non-normal samples.",
+    "key_points": [
+      "rank-based methods",
+      "fewer assumptions",
+      "small/non-normal samples"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Non-parametric does not mean assumption-free."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ntests with fewer distributional assumptions, often useful for ordinal/rank data\n\nKEY POINTS\n• rank-based methods\n• fewer assumptions\n• small/non-normal samples\n\nDISTINCTION / CAUTION\nNon-parametric does not mean assumption-free.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nNon-parametric → fewer assumptions",
+    "distinction": "Non-parametric does not mean assumption-free.",
+    "exam_takeaway": "Non-parametric → fewer assumptions",
+    "revision_cue": "Non-parametric → fewer assumptions",
+    "revision_check": "Recall Non-parametric tests first, then explain the following caution in your own words: Non-parametric does not mean assumption-free."
+  },
+  "2-8-4": {
+    "id": "2-8-4",
+    "title": "Sign test",
+    "explanation": "non-parametric test using only the direction of paired differences paired data; plus/minus direction; binomial logic.",
+    "key_points": [
+      "paired data",
+      "plus/minus direction",
+      "binomial logic"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It ignores magnitude and ranks."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nnon-parametric test using only the direction of paired differences\n\nKEY POINTS\n• paired data\n• plus/minus direction\n• binomial logic\n\nDISTINCTION / CAUTION\nIt ignores magnitude and ranks.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nSign → + or −",
+    "distinction": "It ignores magnitude and ranks.",
+    "exam_takeaway": "Sign → + or −",
+    "revision_cue": "Sign → + or −",
+    "revision_check": "Recall Sign test first, then explain the following caution in your own words: It ignores magnitude and ranks."
+  },
+  "2-8-5": {
+    "id": "2-8-5",
+    "title": "Wilcoxon Signed rank test",
+    "explanation": "rank-based test for paired or related observations related samples; ranked differences; alternative to paired t.",
+    "key_points": [
+      "related samples",
+      "ranked differences",
+      "alternative to paired t"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Do not confuse with Mann–Whitney for independent groups."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrank-based test for paired or related observations\n\nKEY POINTS\n• related samples\n• ranked differences\n• alternative to paired t\n\nDISTINCTION / CAUTION\nDo not confuse with Mann–Whitney for independent groups.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nWilcoxon → paired ranks",
+    "distinction": "Do not confuse with Mann–Whitney for independent groups.",
+    "exam_takeaway": "Wilcoxon → paired ranks",
+    "revision_cue": "Wilcoxon → paired ranks",
+    "revision_check": "Recall Wilcoxon Signed rank test first, then explain the following caution in your own words: Do not confuse with Mann–Whitney for independent groups."
+  },
+  "2-8-6": {
+    "id": "2-8-6",
+    "title": "Mann-Whitney test",
+    "explanation": "rank-based comparison of two independent groups independent groups; ordinal/rank data; alternative to independent t.",
+    "key_points": [
+      "independent groups",
+      "ordinal/rank data",
+      "alternative to independent t"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not for paired data."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrank-based comparison of two independent groups\n\nKEY POINTS\n• independent groups\n• ordinal/rank data\n• alternative to independent t\n\nDISTINCTION / CAUTION\nIt is not for paired data.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nMann → two independent groups",
+    "distinction": "It is not for paired data.",
+    "exam_takeaway": "Mann → two independent groups",
+    "revision_cue": "Mann → two independent groups",
+    "revision_check": "Recall Mann-Whitney test first, then explain the following caution in your own words: It is not for paired data."
+  },
+  "2-8-7": {
+    "id": "2-8-7",
+    "title": "Kruskal-Wallis test",
+    "explanation": "rank-based comparison of more than two independent groups 3+ independent groups; ranks; alternative to one-way ANOVA.",
+    "key_points": [
+      "3+ independent groups",
+      "ranks",
+      "alternative to one-way ANOVA"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A significant result does not identify every pairwise difference."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrank-based comparison of more than two independent groups\n\nKEY POINTS\n• 3+ independent groups\n• ranks\n• alternative to one-way ANOVA\n\nDISTINCTION / CAUTION\nA significant result does not identify every pairwise difference.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nKruskal → many independent groups",
+    "distinction": "A significant result does not identify every pairwise difference.",
+    "exam_takeaway": "Kruskal → many independent groups",
+    "revision_cue": "Kruskal → many independent groups",
+    "revision_check": "Recall Kruskal-Wallis test first, then explain the following caution in your own words: A significant result does not identify every pairwise difference."
+  },
+  "2-8-8": {
+    "id": "2-8-8",
+    "title": "Friedman test",
+    "explanation": "rank-based comparison of three or more related conditions 3+ related conditions; repeated measures; alternative to repeated-measures ANOVA.",
+    "key_points": [
+      "3+ related conditions",
+      "repeated measures",
+      "alternative to repeated-measures ANOVA"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not for independent groups."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrank-based comparison of three or more related conditions\n\nKEY POINTS\n• 3+ related conditions\n• repeated measures\n• alternative to repeated-measures ANOVA\n\nDISTINCTION / CAUTION\nNot for independent groups.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nFriedman → repeated ranks",
+    "distinction": "Not for independent groups.",
+    "exam_takeaway": "Friedman → repeated ranks",
+    "revision_cue": "Friedman → repeated ranks",
+    "revision_check": "Recall Friedman test first, then explain the following caution in your own words: Not for independent groups."
+  },
+  "2-8-9": {
+    "id": "2-8-9",
+    "title": "Chi-square test",
+    "explanation": "Chi-square test is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nChi-square test is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Chi-square test: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-9-1": {
+    "id": "2-9-1",
+    "title": "Power analysis",
+    "explanation": "analysis of the probability of detecting an effect when it exists power = 1 − beta; sample size; effect size; alpha.",
+    "key_points": [
+      "power = 1 − beta",
+      "sample size",
+      "effect size",
+      "alpha"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "High power does not guarantee a true effect."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nanalysis of the probability of detecting an effect when it exists\n\nKEY POINTS\n• power = 1 − beta\n• sample size\n• effect size\n• alpha\n\nDISTINCTION / CAUTION\nHigh power does not guarantee a true effect.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPower → ability to detect",
+    "distinction": "High power does not guarantee a true effect.",
+    "exam_takeaway": "Power → ability to detect",
+    "revision_cue": "Power → ability to detect",
+    "revision_check": "Recall Power analysis first, then explain the following caution in your own words: High power does not guarantee a true effect."
+  },
+  "2-10-1": {
+    "id": "2-10-1",
+    "title": "Effect size",
+    "explanation": "quantification of the magnitude of a difference or relationship Cohen's d; r; eta-squared.",
+    "key_points": [
+      "Cohen's d",
+      "r",
+      "eta-squared"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Statistical significance and effect size answer different questions."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nquantification of the magnitude of a difference or relationship\n\nKEY POINTS\n• Cohen's d\n• r\n• eta-squared\n\nDISTINCTION / CAUTION\nStatistical significance and effect size answer different questions.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nEffect size → how big?",
+    "distinction": "Statistical significance and effect size answer different questions.",
+    "exam_takeaway": "Effect size → how big?",
+    "revision_cue": "Effect size → how big?",
+    "revision_check": "Recall Effect size first, then explain the following caution in your own words: Statistical significance and effect size answer different questions."
+  },
+  "2-11-1": {
+    "id": "2-11-1",
+    "title": "Correlation",
+    "explanation": "direction and strength of association between variables positive/negative/zero; Pearson r −1 to +1; association ≠ causation.",
+    "key_points": [
+      "positive/negative/zero",
+      "Pearson r −1 to +1",
+      "association ≠ causation"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Correlation alone does not establish causation."
+      }
+    ],
+    "sources": [
+      "kaplan-ap",
+      "simply-psychology",
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Kaplan uses correlation questions to test strength and direction without confusing association with causation. A coefficient near either end of −1 to +1 indicates a strong relationship, while the sign indicates direction. Simply Psychology defines correlation as an association and stresses that correlation alone does not establish causation because another explanation or third variable may be involved.",
+    "content_notes": "CORE CONCEPT\ndirection and strength of association between variables\n\nKEY POINTS\n• positive/negative/zero\n• Pearson r −1 to +1\n• association ≠ causation\n\nDISTINCTION / CAUTION\nCorrelation alone does not establish causation.\n\nMULTI-SOURCE SYNTHESIS\nKaplan uses correlation questions to test strength and direction without confusing association with causation. A coefficient near either end of −1 to +1 indicates a strong relationship, while the sign indicates direction. Simply Psychology defines correlation as an association and stresses that correlation alone does not establish causation because another explanation or third variable may be involved.\n\nMEMORY HOOK\nCorrelation → relationship",
+    "distinction": "Correlation alone does not establish causation.",
+    "exam_takeaway": "Correlation → relationship",
+    "revision_cue": "Correlation → relationship",
+    "revision_check": "Recall Correlation first, then explain the following caution in your own words: Correlation alone does not establish causation."
+  },
+  "2-11-2": {
+    "id": "2-11-2",
+    "title": "Product Moment correlation",
+    "explanation": "Pearson correlation for linear association between quantitative variables Pearson r; linear relation; −1 to +1.",
+    "key_points": [
+      "Pearson r",
+      "linear relation",
+      "−1 to +1"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "High r does not prove causality."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nPearson correlation for linear association between quantitative variables\n\nKEY POINTS\n• Pearson r\n• linear relation\n• −1 to +1\n\nDISTINCTION / CAUTION\nHigh r does not prove causality.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPearson → linear",
+    "distinction": "High r does not prove causality.",
+    "exam_takeaway": "Pearson → linear",
+    "revision_cue": "Pearson → linear",
+    "revision_check": "Recall Product Moment correlation first, then explain the following caution in your own words: High r does not prove causality."
+  },
+  "2-11-3": {
+    "id": "2-11-3",
+    "title": "Rank Order correlation",
+    "explanation": "correlation based on ranks, commonly Spearman rho ordinal/rank data; monotonic association; Spearman.",
+    "key_points": [
+      "ordinal/rank data",
+      "monotonic association",
+      "Spearman"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Do not confuse with Pearson."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ncorrelation based on ranks, commonly Spearman rho\n\nKEY POINTS\n• ordinal/rank data\n• monotonic association\n• Spearman\n\nDISTINCTION / CAUTION\nDo not confuse with Pearson.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nRank → Spearman",
+    "distinction": "Do not confuse with Pearson.",
+    "exam_takeaway": "Rank → Spearman",
+    "revision_cue": "Rank → Spearman",
+    "revision_check": "Recall Rank Order correlation first, then explain the following caution in your own words: Do not confuse with Pearson."
+  },
+  "2-11-4": {
+    "id": "2-11-4",
+    "title": "Partial correlation",
+    "explanation": "association between two variables after statistically controlling other variable(s) control third variable; conditional association.",
+    "key_points": [
+      "control third variable",
+      "conditional association"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Controlling a variable can change the observed association."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nassociation between two variables after statistically controlling other variable(s)\n\nKEY POINTS\n• control third variable\n• conditional association\n\nDISTINCTION / CAUTION\nControlling a variable can change the observed association.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPartial → after control",
+    "distinction": "Controlling a variable can change the observed association.",
+    "exam_takeaway": "Partial → after control",
+    "revision_cue": "Partial → after control",
+    "revision_check": "Recall Partial correlation first, then explain the following caution in your own words: Controlling a variable can change the observed association."
+  },
+  "2-11-5": {
+    "id": "2-11-5",
+    "title": "Multiple correlation",
+    "explanation": "relationship between one criterion and a set of predictors multiple predictors; Multiple R; prediction.",
+    "key_points": [
+      "multiple predictors",
+      "Multiple R",
+      "prediction"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is related to but not identical with multiple regression."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrelationship between one criterion and a set of predictors\n\nKEY POINTS\n• multiple predictors\n• Multiple R\n• prediction\n\nDISTINCTION / CAUTION\nIt is related to but not identical with multiple regression.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nMultiple → many predictors",
+    "distinction": "It is related to but not identical with multiple regression.",
+    "exam_takeaway": "Multiple → many predictors",
+    "revision_cue": "Multiple → many predictors",
+    "revision_check": "Recall Multiple correlation first, then explain the following caution in your own words: It is related to but not identical with multiple regression."
+  },
+  "2-12-1": {
+    "id": "2-12-1",
+    "title": "Biserial correlation",
+    "explanation": "association between a continuous variable and an artificially dichotomized variable continuous + artificial dichotomy; distinguish from point-biserial.",
+    "key_points": [
+      "continuous + artificial dichotomy",
+      "distinguish from point-biserial"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Artificial versus natural dichotomy is the key distinction."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nassociation between a continuous variable and an artificially dichotomized variable\n\nKEY POINTS\n• continuous + artificial dichotomy\n• distinguish from point-biserial\n\nDISTINCTION / CAUTION\nArtificial versus natural dichotomy is the key distinction.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nBiserial → artificial split",
+    "distinction": "Artificial versus natural dichotomy is the key distinction.",
+    "exam_takeaway": "Biserial → artificial split",
+    "revision_cue": "Biserial → artificial split",
+    "revision_check": "Recall Biserial correlation first, then explain the following caution in your own words: Artificial versus natural dichotomy is the key distinction."
+  },
+  "2-12-2": {
+    "id": "2-12-2",
+    "title": "Point biserial correlation",
+    "explanation": "association between a continuous variable and a genuinely dichotomous variable continuous + true dichotomy; special Pearson case.",
+    "key_points": [
+      "continuous + true dichotomy",
+      "special Pearson case"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Do not confuse with biserial."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nassociation between a continuous variable and a genuinely dichotomous variable\n\nKEY POINTS\n• continuous + true dichotomy\n• special Pearson case\n\nDISTINCTION / CAUTION\nDo not confuse with biserial.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPoint-biserial → real binary",
+    "distinction": "Do not confuse with biserial.",
+    "exam_takeaway": "Point-biserial → real binary",
+    "revision_cue": "Point-biserial → real binary",
+    "revision_check": "Recall Point biserial correlation first, then explain the following caution in your own words: Do not confuse with biserial."
+  },
+  "2-12-3": {
+    "id": "2-12-3",
+    "title": "Tetrachoric correlation",
+    "explanation": "estimated association between two dichotomized variables assumed to reflect underlying continuous traits two dichotomies; latent continuity.",
+    "key_points": [
+      "two dichotomies",
+      "latent continuity"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not simply the same as phi."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nestimated association between two dichotomized variables assumed to reflect underlying continuous traits\n\nKEY POINTS\n• two dichotomies\n• latent continuity\n\nDISTINCTION / CAUTION\nNot simply the same as phi.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nTetra → two dichotomies",
+    "distinction": "Not simply the same as phi.",
+    "exam_takeaway": "Tetra → two dichotomies",
+    "revision_cue": "Tetra → two dichotomies",
+    "revision_check": "Recall Tetrachoric correlation first, then explain the following caution in your own words: Not simply the same as phi."
+  },
+  "2-12-4": {
+    "id": "2-12-4",
+    "title": "Phi coefficient",
+    "explanation": "association between two genuinely dichotomous variables 2×2 table; two binary variables.",
+    "key_points": [
+      "2×2 table",
+      "two binary variables"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Not for continuous variables."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nassociation between two genuinely dichotomous variables\n\nKEY POINTS\n• 2×2 table\n• two binary variables\n\nDISTINCTION / CAUTION\nNot for continuous variables.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nPhi → 2×2",
+    "distinction": "Not for continuous variables.",
+    "exam_takeaway": "Phi → 2×2",
+    "revision_cue": "Phi → 2×2",
+    "revision_check": "Recall Phi coefficient first, then explain the following caution in your own words: Not for continuous variables."
+  },
+  "2-13-1": {
+    "id": "2-13-1",
+    "title": "Simple linear regression",
+    "explanation": "prediction of one criterion from one predictor slope; intercept; prediction.",
+    "key_points": [
+      "slope",
+      "intercept",
+      "prediction"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Prediction does not prove causation."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nprediction of one criterion from one predictor\n\nKEY POINTS\n• slope\n• intercept\n• prediction\n\nDISTINCTION / CAUTION\nPrediction does not prove causation.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nSimple → one predictor",
+    "distinction": "Prediction does not prove causation.",
+    "exam_takeaway": "Simple → one predictor",
+    "revision_cue": "Simple → one predictor",
+    "revision_check": "Recall Simple linear regression first, then explain the following caution in your own words: Prediction does not prove causation."
+  },
+  "2-13-2": {
+    "id": "2-13-2",
+    "title": "Multiple regression",
+    "explanation": "prediction of one criterion from several predictors multiple predictors; coefficients; unique contribution.",
+    "key_points": [
+      "multiple predictors",
+      "coefficients",
+      "unique contribution"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A predictor may lose unique contribution after controls."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nprediction of one criterion from several predictors\n\nKEY POINTS\n• multiple predictors\n• coefficients\n• unique contribution\n\nDISTINCTION / CAUTION\nA predictor may lose unique contribution after controls.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nMultiple → many predictors",
+    "distinction": "A predictor may lose unique contribution after controls.",
+    "exam_takeaway": "Multiple → many predictors",
+    "revision_cue": "Multiple → many predictors",
+    "revision_check": "Recall Multiple regression first, then explain the following caution in your own words: A predictor may lose unique contribution after controls."
+  },
+  "2-14-1": {
+    "id": "2-14-1",
+    "title": "Assumptions of factor analysis",
+    "explanation": "identification of latent dimensions underlying correlations among observed variables factors; loadings; common variance.",
+    "key_points": [
+      "factors",
+      "loadings",
+      "common variance"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A factor is not automatically causal."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nidentification of latent dimensions underlying correlations among observed variables\n\nKEY POINTS\n• factors\n• loadings\n• common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nFactors → hidden dimensions",
+    "distinction": "A factor is not automatically causal.",
+    "exam_takeaway": "Factors → hidden dimensions",
+    "revision_cue": "Factors → hidden dimensions",
+    "revision_check": "Recall Assumptions of factor analysis first, then explain the following caution in your own words: A factor is not automatically causal."
+  },
+  "2-14-2": {
+    "id": "2-14-2",
+    "title": "Methods of factor analysis",
+    "explanation": "identification of latent dimensions underlying correlations among observed variables factors; loadings; common variance.",
+    "key_points": [
+      "factors",
+      "loadings",
+      "common variance"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "A factor is not automatically causal."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nidentification of latent dimensions underlying correlations among observed variables\n\nKEY POINTS\n• factors\n• loadings\n• common variance\n\nDISTINCTION / CAUTION\nA factor is not automatically causal.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nFactors → hidden dimensions",
+    "distinction": "A factor is not automatically causal.",
+    "exam_takeaway": "Factors → hidden dimensions",
+    "revision_cue": "Factors → hidden dimensions",
+    "revision_check": "Recall Methods of factor analysis first, then explain the following caution in your own words: A factor is not automatically causal."
+  },
+  "2-14-3": {
+    "id": "2-14-3",
+    "title": "Rotation",
+    "explanation": "re-expression of extracted factors to make loading patterns easier to interpret orthogonal; oblique; interpretability.",
+    "key_points": [
+      "orthogonal",
+      "oblique",
+      "interpretability"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Rotation does not create new variables."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nre-expression of extracted factors to make loading patterns easier to interpret\n\nKEY POINTS\n• orthogonal\n• oblique\n• interpretability\n\nDISTINCTION / CAUTION\nRotation does not create new variables.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nRotate → clarify",
+    "distinction": "Rotation does not create new variables.",
+    "exam_takeaway": "Rotate → clarify",
+    "revision_cue": "Rotate → clarify",
+    "revision_check": "Recall Rotation first, then explain the following caution in your own words: Rotation does not create new variables."
+  },
+  "2-14-4": {
+    "id": "2-14-4",
+    "title": "Interpretation",
+    "explanation": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret. Factor loading indicates the relationship of a variable with a factor; Eigenvalues represent variance explained by factors; Rotation helps make factor patterns more interpretable; The source distinguishes exploratory factor analysis from confirmatory factor analysis; SOURCE BASIS; PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation.",
+    "key_points": [
+      "Factor loading indicates the relationship of a variable with a factor.",
+      "Eigenvalues represent variance explained by factors.",
+      "Rotation helps make factor patterns more interpretable.",
+      "The source distinguishes exploratory factor analysis from confirmatory factor analysis.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nFactor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret.\n\nKEY POINTS\n• Factor loading indicates the relationship of a variable with a factor.\n• Eigenvalues represent variance explained by factors.\n• Rotation helps make factor patterns more interpretable.\n• The source distinguishes exploratory factor analysis from confirmatory factor analysis.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Factor Analysis: assumptions, methods, rotation and interpretation.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nInterpretation → Factor loading indicates the relationship of a variable with a factor • Eigenvalues represent variance explained by factors • Rotation helps make factor patterns more interpretable",
+    "distinction": "",
+    "exam_takeaway": "Interpretation → Factor loading indicates the relationship of a variable with a factor • Eigenvalues represent variance explained by factors • Rotation helps make factor patterns more interpretable",
+    "revision_cue": "Interpretation → Factor loading indicates the relationship of a variable with a factor • Eigenvalues represent variance explained by factors • Rotation helps make factor patterns more interpretable",
+    "revision_check": "Recall Interpretation first and state two supporting points before checking the note."
+  },
+  "2-14-5": {
+    "id": "2-14-5",
+    "title": "Factor extraction",
+    "explanation": "Factor extraction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nFactor extraction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Factor extraction: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-14-6": {
+    "id": "2-14-6",
+    "title": "Main effects and interaction",
+    "explanation": "Main effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nMain effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Main effects and interaction: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-14-7": {
+    "id": "2-14-7",
+    "title": "Post-hoc comparisons",
+    "explanation": "Post-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nPost-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Post-hoc comparisons: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-15-4": {
+    "id": "2-15-4",
+    "title": "Randomized Block Designs",
+    "explanation": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs. Blocking controls or reduces variation associated with a known nuisance variable; Treatment assignment is randomized within blocks; The design can improve precision when the blocking variable is relevant; Randomized block designs are distinct from completely randomized designs; SOURCE BASIS; PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material.",
+    "key_points": [
+      "Blocking controls or reduces variation associated with a known nuisance variable.",
+      "Treatment assignment is randomized within blocks.",
+      "The design can improve precision when the blocking variable is relevant.",
+      "Randomized block designs are distinct from completely randomized designs.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nA randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs.\n\nKEY POINTS\n• Blocking controls or reduces variation associated with a known nuisance variable.\n• Treatment assignment is randomized within blocks.\n• The design can improve precision when the blocking variable is relevant.\n• Randomized block designs are distinct from completely randomized designs.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Experimental Designs; REVISATHON Part 5 — Randomized Block Design/PYQ material.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nRandomized Block Designs → Blocking controls or reduces variation associated with a known nuisance variable • Treatment assignment is randomized within blocks • The design can improve precision when the blocking variable is relevant",
+    "distinction": "",
+    "exam_takeaway": "Randomized Block Designs → Blocking controls or reduces variation associated with a known nuisance variable • Treatment assignment is randomized within blocks • The design can improve precision when the blocking variable is relevant",
+    "revision_cue": "Randomized Block Designs → Blocking controls or reduces variation associated with a known nuisance variable • Treatment assignment is randomized within blocks • The design can improve precision when the blocking variable is relevant",
+    "revision_check": "Recall Randomized Block Designs first and state two supporting points before checking the note."
+  },
+  "2-15-5": {
+    "id": "2-15-5",
+    "title": "Repeated Measures Design",
+    "explanation": "same participants measured across conditions or times within-subjects; individual differences controlled; order effects.",
+    "key_points": [
+      "within-subjects",
+      "individual differences controlled",
+      "order effects"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Carryover/order effects matter."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nsame participants measured across conditions or times\n\nKEY POINTS\n• within-subjects\n• individual differences controlled\n• order effects\n\nDISTINCTION / CAUTION\nCarryover/order effects matter.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nRepeated → same people",
+    "distinction": "Carryover/order effects matter.",
+    "exam_takeaway": "Repeated → same people",
+    "revision_cue": "Repeated → same people",
+    "revision_check": "Recall Repeated Measures Design first, then explain the following caution in your own words: Carryover/order effects matter."
+  },
+  "2-15-6": {
+    "id": "2-15-6",
+    "title": "Latin Square",
+    "explanation": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement. Each treatment occurs once in every row; Each treatment also occurs once in every column; Rows and columns represent two sources of systematic variation; Treatment placement is randomized within the design constraints; SOURCE BASIS; PowerWithin Psychology — Unit 2 Latin Square Design.",
+    "key_points": [
+      "Each treatment occurs once in every row.",
+      "Each treatment also occurs once in every column.",
+      "Rows and columns represent two sources of systematic variation.",
+      "Treatment placement is randomized within the design constraints.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Latin Square Design."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nA Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement.\n\nKEY POINTS\n• Each treatment occurs once in every row.\n• Each treatment also occurs once in every column.\n• Rows and columns represent two sources of systematic variation.\n• Treatment placement is randomized within the design constraints.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Latin Square Design.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nLatin Square → Each treatment occurs once in every row • Each treatment also occurs once in every column • Rows and columns represent two sources of systematic variation",
+    "distinction": "",
+    "exam_takeaway": "Latin Square → Each treatment occurs once in every row • Each treatment also occurs once in every column • Rows and columns represent two sources of systematic variation",
+    "revision_cue": "Latin Square → Each treatment occurs once in every row • Each treatment also occurs once in every column • Rows and columns represent two sources of systematic variation",
+    "revision_check": "Recall Latin Square first and state two supporting points before checking the note."
+  },
+  "2-15-7": {
+    "id": "2-15-7",
+    "title": "Cohort studies",
+    "explanation": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims. A cohort is a defined group followed as a unit of observation; The design is useful for studying change or outcomes associated with an exposure; Temporal ordering can be important in cohort research; The supplied NET section gives outline-level coverage here; SOURCE BASIS; PowerWithin Psychology — Unit 2 Experimental Designs outline.",
+    "key_points": [
+      "A cohort is a defined group followed as a unit of observation.",
+      "The design is useful for studying change or outcomes associated with an exposure.",
+      "Temporal ordering can be important in cohort research.",
+      "The supplied NET section gives outline-level coverage here.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Experimental Designs outline."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nCohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims.\n\nKEY POINTS\n• A cohort is a defined group followed as a unit of observation.\n• The design is useful for studying change or outcomes associated with an exposure.\n• Temporal ordering can be important in cohort research.\n• The supplied NET section gives outline-level coverage here.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Experimental Designs outline.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nCohort studies → A cohort is a defined group followed as a unit of observation • The design is useful for studying change or outcomes associated with an exposure • Temporal ordering can be important in cohort research",
+    "distinction": "",
+    "exam_takeaway": "Cohort studies → A cohort is a defined group followed as a unit of observation • The design is useful for studying change or outcomes associated with an exposure • Temporal ordering can be important in cohort research",
+    "revision_cue": "Cohort studies → A cohort is a defined group followed as a unit of observation • The design is useful for studying change or outcomes associated with an exposure • Temporal ordering can be important in cohort research",
+    "revision_check": "Recall Cohort studies first and state two supporting points before checking the note."
+  },
+  "2-15-8": {
+    "id": "2-15-8",
+    "title": "Time series",
+    "explanation": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event. The same outcome is observed repeatedly across time; The sequence of observations is central to interpretation; Time-series designs are useful when random assignment is not feasible; Pre-intervention and post-intervention patterns can be compared; SOURCE BASIS; PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design.",
+    "key_points": [
+      "The same outcome is observed repeatedly across time.",
+      "The sequence of observations is central to interpretation.",
+      "Time-series designs are useful when random assignment is not feasible.",
+      "Pre-intervention and post-intervention patterns can be compared.",
+      "SOURCE BASIS",
+      "PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design."
+    ],
+    "inline_nudges": [],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nTime-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event.\n\nKEY POINTS\n• The same outcome is observed repeatedly across time.\n• The sequence of observations is central to interpretation.\n• Time-series designs are useful when random assignment is not feasible.\n• Pre-intervention and post-intervention patterns can be compared.\n• SOURCE BASIS\n• PowerWithin Psychology — Unit 2 Experimental Designs; Paper 1 Unit 2 Time Series Design.\n\nDISTINCTION / CAUTION\nNo additional source-supported caution was identified in the current material.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nTime series → The same outcome is observed repeatedly across time • The sequence of observations is central to interpretation • Time-series designs are useful when random assignment is not feasible",
+    "distinction": "",
+    "exam_takeaway": "Time series → The same outcome is observed repeatedly across time • The sequence of observations is central to interpretation • Time-series designs are useful when random assignment is not feasible",
+    "revision_cue": "Time series → The same outcome is observed repeatedly across time • The sequence of observations is central to interpretation • Time-series designs are useful when random assignment is not feasible",
+    "revision_check": "Recall Time series first and state two supporting points before checking the note."
+  },
+  "2-15-9": {
+    "id": "2-15-9",
+    "title": "MANOVA",
+    "explanation": "multivariate comparison involving multiple dependent variables multiple DVs; multivariate F.",
+    "key_points": [
+      "multiple DVs",
+      "multivariate F"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "It is not multiple regression."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nmultivariate comparison involving multiple dependent variables\n\nKEY POINTS\n• multiple DVs\n• multivariate F\n\nDISTINCTION / CAUTION\nIt is not multiple regression.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nMANOVA → many outcomes",
+    "distinction": "It is not multiple regression.",
+    "exam_takeaway": "MANOVA → many outcomes",
+    "revision_cue": "MANOVA → many outcomes",
+    "revision_check": "Recall MANOVA first, then explain the following caution in your own words: It is not multiple regression."
+  },
+  "2-15-10": {
+    "id": "2-15-10",
+    "title": "ANCOVA",
+    "explanation": "comparison of group means while statistically adjusting for a covariate ANOVA + covariate; adjusted means.",
+    "key_points": [
+      "ANOVA + covariate",
+      "adjusted means"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "The covariate must be appropriate."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\ncomparison of group means while statistically adjusting for a covariate\n\nKEY POINTS\n• ANOVA + covariate\n• adjusted means\n\nDISTINCTION / CAUTION\nThe covariate must be appropriate.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nANCOVA → compare + adjust",
+    "distinction": "The covariate must be appropriate.",
+    "exam_takeaway": "ANCOVA → compare + adjust",
+    "revision_cue": "ANCOVA → compare + adjust",
+    "revision_check": "Recall ANCOVA first, then explain the following caution in your own words: The covariate must be appropriate."
+  },
+  "2-15-11": {
+    "id": "2-15-11",
+    "title": "Single-subject designs",
+    "explanation": "repeated measurement of one person or a small number of cases across baseline/intervention phases AB/ABA/ABAB; baseline; repeated measures.",
+    "key_points": [
+      "AB/ABA/ABAB",
+      "baseline",
+      "repeated measures"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Small N does not mean no experimental control."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "self-teaching-guide",
+      "kaplan-ap"
+    ],
+    "source_notes": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.",
+    "content_notes": "CORE CONCEPT\nrepeated measurement of one person or a small number of cases across baseline/intervention phases\n\nKEY POINTS\n• AB/ABA/ABAB\n• baseline\n• repeated measures\n\nDISTINCTION / CAUTION\nSmall N does not mean no experimental control.\n\nMULTI-SOURCE SYNTHESIS\nPowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features.\n\nMEMORY HOOK\nSingle-subject → repeated case",
+    "distinction": "Small N does not mean no experimental control.",
+    "exam_takeaway": "Single-subject → repeated case",
+    "revision_cue": "Single-subject → repeated case",
+    "revision_check": "Recall Single-subject designs first, then explain the following caution in your own words: Small N does not mean no experimental control."
+  },
+  "2-16-1": {
+    "id": "2-16-1",
+    "title": "ANOVA",
+    "explanation": "ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall ANOVA: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-16-2": {
+    "id": "2-16-2",
+    "title": "One-way ANOVA",
+    "explanation": "One-way ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nOne-way ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall One-way ANOVA: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-16-3": {
+    "id": "2-16-3",
+    "title": "Factorial ANOVA",
+    "explanation": "Factorial ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nFactorial ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Factorial ANOVA: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-16-4": {
+    "id": "2-16-4",
+    "title": "Main effects and interaction",
+    "explanation": "Main effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nMain effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Main effects and interaction: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  },
+  "2-16-5": {
+    "id": "2-16-5",
+    "title": "Post-hoc comparisons",
+    "explanation": "Post-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.",
+    "key_points": [
+      "definition/core construct",
+      "mechanism or classification",
+      "application/context"
+    ],
+    "inline_nudges": [
+      {
+        "label": "Exam caution",
+        "text": "Use source terminology and do not infer beyond the study material."
+      }
+    ],
+    "sources": [
+      "powerwithin",
+      "ciccarelli-white",
+      "baron-misra",
+      "self-teaching-guide"
+    ],
+    "source_notes": "Source basis: powerwithin, ciccarelli-white, baron-misra, self-teaching-guide. Synthesized conservatively from the uploaded study material.",
+    "content_notes": "CORE CONCEPT\nPost-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept.\n\nKEY POINTS\n• definition/core construct\n• mechanism or classification\n• application/context\n\nDISTINCTION / CAUTION\nUse source terminology and do not infer beyond the study material.\n\nSOURCE BASIS\npowerwithin • ciccarelli-white • baron-misra • self-teaching-guide",
+    "distinction": "Use source terminology and do not infer beyond the study material.",
+    "exam_takeaway": "definition/core construct",
+    "revision_cue": "Recall Post-hoc comparisons: definition/core construct; mechanism or classification.",
+    "revision_check": "Recall the core idea and explain why this caution matters: Use source terminology and do not infer beyond the study material."
+  }
+}
