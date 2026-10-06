@@ -2392,18 +2392,18 @@
   "6-4-4": {
     "id": "6-4-4",
     "title": "Stages of problem solving",
-    "recall_before_review": "Types of decision-making → Decision making requires alternatives and a choice • Choices may be made under different levels of information and uncertainty • Cognitive biases can affect decisions",
-    "self_check": "Recall the central idea and two supporting points before checking the note.",
-    "weak_point_prompt": "Before reopening Types of decision-making, identify the part you are least certain you can explain or distinguish.",
-    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+    "revision_cue": "Recall Stages of problem solving: core construct.",
+    "revision_check": "Explain Stages of problem solving without looking.",
+    "exam_takeaway": "core construct",
+    "source_basis": []
   },
   "6-4-5": {
     "id": "6-4-5",
     "title": "Algorithms",
-    "recall_before_review": "Decision-making models → Models specify how alternatives are represented and evaluated • Information availability affects choice • People may use simplifying strategies rather than exhaustive analysis",
-    "self_check": "Recall the central idea and two supporting points before checking the note.",
-    "weak_point_prompt": "Before reopening Decision-making models, identify the part you are least certain you can explain or distinguish.",
-    "rating_instruction": "Again = could not retrieve; Hard = partial or effortful; Good = accurate; Easy = quick and confident."
+    "revision_cue": "Recall Algorithms: core construct.",
+    "revision_check": "Explain Algorithms without looking.",
+    "exam_takeaway": "core construct",
+    "source_basis": []
   },
   "6-4-6": {
     "id": "6-4-6",
