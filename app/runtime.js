@@ -21,7 +21,7 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 function initAdminNavigation(){
   const nav=document.querySelector('#site-navigation');
   if(!nav||nav.querySelector('[data-nav="admin"]'))return;
-  if(sessionStorage.getItem('netPsychAdminToken')){const a=document.createElement('a');a.className='nav-link';a.dataset.nav='admin';a.href='admin.html';a.textContent='Admin';nav.appendChild(a)}
+  if(sessionStorage.getItem('netPsychAdminAuthenticated')==='1'&&sessionStorage.getItem('netPsychAdminToken')){const a=document.createElement('a');a.className='nav-link';a.dataset.nav='admin';a.href='admin.html';a.textContent='Admin';nav.appendChild(a)}
 }
 
 function initDataActions(){
