@@ -1,0 +1,2792 @@
+{
+  "2-1-1": {
+    "id": "2-1-1",
+    "title": "Meaning of research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Meaning of research. What is the central idea?",
+        "answer": "systematic, objective and empirical inquiry used to generate or test knowledge"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Meaning of research.",
+        "answer": "systematic"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Meaning of research.",
+        "answer": "objective"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Meaning of research?",
+        "answer": "Research is not merely collecting information."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Meaning of research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Meaning of research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-1-2": {
+    "id": "2-1-2",
+    "title": "Purpose of research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Purpose of research. What is the central idea?",
+        "answer": "description, explanation, prediction and application/improvement"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Purpose of research.",
+        "answer": "describe"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Purpose of research.",
+        "answer": "explain"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Purpose of research?",
+        "answer": "Not every design establishes causation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Purpose of research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Purpose of research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-1-3": {
+    "id": "2-1-3",
+    "title": "Dimensions of research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Dimensions of research. What is the central idea?",
+        "answer": "The uploaded NET material treats research as systematic inquiry and distinguishes dimensions through the kinds of questions, assumptions and methods used to investigate psychological phenomena. The source places research paradigms, methods and statistical procedures within a connected framework rather than as isolated techniques."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Dimensions of research.",
+        "answer": "Research is systematic rather than casual observation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Dimensions of research.",
+        "answer": "The research paradigm shapes assumptions about knowledge."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Dimensions of research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Dimensions of research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-1": {
+    "id": "2-2-1",
+    "title": "Research problems",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Research problems. What is the central idea?",
+        "answer": "A research problem identifies the issue or question that the study is designed to investigate. The uploaded NET material places research problems alongside variables, operational definitions, hypotheses and sampling, showing that a good problem statement must be translated into observable or measurable terms before data are collected."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Research problems.",
+        "answer": "The problem defines the focus of inquiry."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Research problems.",
+        "answer": "Variables identify relevant characteristics or conditions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Research problems?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Research problems indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-2": {
+    "id": "2-2-2",
+    "title": "Variables",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Variables. What is the central idea?",
+        "answer": "characteristics that can take different values and structure research designs"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Variables.",
+        "answer": "independent"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Variables.",
+        "answer": "dependent"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Variables?",
+        "answer": "Confounding is an uncontrolled alternative explanation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Variables?",
+        "answer": "Kaplan treats variables as the building blocks of research design and distinguishes independent, dependent, control and confounding variables. Its exam-oriented examples emphasize identifying each variable from the role it plays in a study. Simply Psychology adds an operationalisation lens: the researcher must make a variable measurable so the study can be tested and replicated. It also distinguishes IV, DV and extraneous variables and explains how blinding and control reduce alternative explanations."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Variables indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-3": {
+    "id": "2-2-3",
+    "title": "Operational definitions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Operational definitions. What is the central idea?",
+        "answer": "specifying exactly how an abstract construct will be observed or measured"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Operational definitions.",
+        "answer": "measurable indicator"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Operational definitions.",
+        "answer": "replicable procedure"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Operational definitions?",
+        "answer": "It is not the same as a philosophical definition."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Operational definitions?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Operational definitions indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-4": {
+    "id": "2-2-4",
+    "title": "Hypothesis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hypothesis. What is the central idea?",
+        "answer": "a tentative, specific and testable statement about a relationship or difference"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hypothesis.",
+        "answer": "null/alternative"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hypothesis.",
+        "answer": "directional/non-directional"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Hypothesis?",
+        "answer": "A vague prediction is not a good hypothesis."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Hypothesis?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hypothesis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-5": {
+    "id": "2-2-5",
+    "title": "Sampling",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sampling. What is the central idea?",
+        "answer": "selecting a subset of a population for study"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sampling.",
+        "answer": "probability sampling"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sampling.",
+        "answer": "non-probability sampling"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Sampling?",
+        "answer": "Do not confuse sampling with assignment."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sampling?",
+        "answer": "Kaplan separates random sampling from random assignment and treats sampling as selection from a population. Its study approach asks learners to identify the sampling method and distinguish it from how participants are allocated to conditions. Simply Psychology distinguishes volunteer, opportunity, random, systematic, stratified, snowball and quota sampling and links sampling to representativeness and generalisability."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sampling indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-6": {
+    "id": "2-2-6",
+    "title": "Types of variables",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of variables. What is the central idea?",
+        "answer": "Variables are properties that take on different values and are measurable. In research, the role of a variable depends on how it is used in the design."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of variables.",
+        "answer": "Independent variable → manipulated by the experimenter."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of variables.",
+        "answer": "Dependent variable → observed/measured outcome."
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Types of variables?",
+        "answer": "Do not confuse the independent variable with the dependent variable, and do not confuse a control variable with the outcome being measured. Random assignment is a way of controlling extraneous/confounding variables; it is not the same thing as sampling."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of variables?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of variables indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-2-7": {
+    "id": "2-2-7",
+    "title": "Levels of measurement",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Levels of measurement in 2–3 sentences.",
+        "answer": "Levels of measurement is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Levels of measurement?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Levels of measurement?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Levels of measurement?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Levels of measurement?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Levels of measurement indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-2-8": {
+    "id": "2-2-8",
+    "title": "Null and alternative hypotheses",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Null and alternative hypotheses in 2–3 sentences.",
+        "answer": "Null and alternative hypotheses is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Null and alternative hypotheses?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Null and alternative hypotheses?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Null and alternative hypotheses?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Null and alternative hypotheses?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Null and alternative hypotheses indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-2-9": {
+    "id": "2-2-9",
+    "title": "Type I and Type II errors",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Type I and Type II errors in 2–3 sentences.",
+        "answer": "Type I and Type II errors is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Type I and Type II errors?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Type I and Type II errors?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Type I and Type II errors?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Type I and Type II errors?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Type I and Type II errors indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-2-10": {
+    "id": "2-2-10",
+    "title": "Sampling techniques",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sampling techniques in 2–3 sentences.",
+        "answer": "Sampling techniques is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Sampling techniques?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Sampling techniques?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Sampling techniques?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Sampling techniques?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sampling techniques indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-3-1": {
+    "id": "2-3-1",
+    "title": "Ethics in conducting research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Ethics in conducting research. What is the central idea?",
+        "answer": "Ethics in conducting research concerns protecting participants and maintaining responsible research practice. The uploaded material places ethics alongside research design and reporting. In practice, ethical conduct requires appropriate consent, protection from avoidable harm, responsible handling of participant information and adherence to applicable professional and institutional standards."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethics in conducting research.",
+        "answer": "Participant welfare is a central ethical concern."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethics in conducting research.",
+        "answer": "Consent and voluntary participation matter."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Ethics in conducting research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Ethics in conducting research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-3-2": {
+    "id": "2-3-2",
+    "title": "Ethics in reporting research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Ethics in reporting research. What is the central idea?",
+        "answer": "Ethics in reporting research concerns honest and responsible representation of what the study actually found. The source framework places reporting ethics alongside conducting research, so researchers must not distort evidence through fabrication, falsification, plagiarism or misleading presentation. Claims should remain proportionate to the design and data."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethics in reporting research.",
+        "answer": "Report methods and findings accurately."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethics in reporting research.",
+        "answer": "Do not fabricate or falsify data."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Ethics in reporting research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Ethics in reporting research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-4-1": {
+    "id": "2-4-1",
+    "title": "Quantitative research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Quantitative research. What is the central idea?",
+        "answer": "numerical measurement and statistical analysis of variables and relationships"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Quantitative research.",
+        "answer": "measurement"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Quantitative research.",
+        "answer": "numbers"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Quantitative research?",
+        "answer": "Quantitative does not automatically mean experimental."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Quantitative research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Quantitative research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-4-2": {
+    "id": "2-4-2",
+    "title": "Qualitative research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Qualitative research. What is the central idea?",
+        "answer": "study of meanings, experiences, processes and contexts using rich non-numerical data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Qualitative research.",
+        "answer": "interviews/observations"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Qualitative research.",
+        "answer": "meaning"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Qualitative research?",
+        "answer": "Qualitative is not synonymous with unscientific."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Qualitative research?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Qualitative research indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-4-3": {
+    "id": "2-4-3",
+    "title": "Mixed methods approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Mixed methods approach. What is the central idea?",
+        "answer": "intentional integration of quantitative and qualitative approaches"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mixed methods approach.",
+        "answer": "integration"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mixed methods approach.",
+        "answer": "complementarity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Mixed methods approach?",
+        "answer": "Two methods without integration are not automatically mixed methods."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Mixed methods approach?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Mixed methods approach indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-1": {
+    "id": "2-5-1",
+    "title": "Observation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Observation. What is the central idea?",
+        "answer": "Observation is a method in which behavior or events are systematically watched and recorded. The uploaded material and Paper 1 notes distinguish participant and non-participant forms and emphasize its usefulness for studying behavior in natural settings. Observation can provide direct behavioral information but requires clear recording procedures and attention to observer effects and bias."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Observation.",
+        "answer": "Behavior is recorded rather than inferred only from self-report."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Observation.",
+        "answer": "Participant and non-participant observation are distinct forms."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Observation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Observation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-2": {
+    "id": "2-5-2",
+    "title": "Survey",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Survey. What is the central idea?",
+        "answer": "The survey method gathers information from people by asking questions about their views or behavior. Baron & Misra describe surveys as useful for obtaining information efficiently from large numbers of people and for tracking changes over time. The Self-Teaching Guide similarly describes surveys as a way to obtain a broad picture of a population."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Survey.",
+        "answer": "Surveys can reach large samples efficiently."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Survey.",
+        "answer": "Questions may assess attitudes, opinions or reported behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Survey?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Survey indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-3": {
+    "id": "2-5-3",
+    "title": "Interview",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Interview. What is the central idea?",
+        "answer": "An interview is a method of obtaining information through direct questioning. The uploaded PowerWithin material distinguishes structured, unstructured and group interviews. Structured interviews use a fixed schedule and are efficient but less flexible; unstructured interviews use open questions and allow probing, producing richer qualitative data but requiring more time and interviewer skill."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interview.",
+        "answer": "Structured interviews use predetermined questions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interview.",
+        "answer": "Unstructured interviews are flexible and allow probing."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Interview?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Interview indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-4": {
+    "id": "2-5-4",
+    "title": "Questionnaires",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Questionnaires. What is the central idea?",
+        "answer": "Questionnaires are written or otherwise standardized sets of questions used to collect information from respondents. The uploaded sources place questionnaires within survey research. Their main advantage is efficient collection of comparable responses, while wording, response format, nonresponse and self-report limitations can affect validity."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Questionnaires.",
+        "answer": "Questionnaires standardize the questions presented to respondents."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Questionnaires.",
+        "answer": "They are efficient for collecting data from many people."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Questionnaires?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Questionnaires indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-5": {
+    "id": "2-5-5",
+    "title": "Experimental method",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Experimental method. What is the central idea?",
+        "answer": "manipulation of an independent variable under controlled conditions to observe effects"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Experimental method.",
+        "answer": "IV manipulation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Experimental method.",
+        "answer": "control"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Experimental method?",
+        "answer": "Random assignment is not random sampling."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Experimental method?",
+        "answer": "Kaplan contrasts controlled, field and natural/quasi-experimental approaches and frames experiments around manipulation, measurement and control. For exam reasoning, identify the IV, DV, allocation method and possible confound. Simply Psychology distinguishes independent, matched and repeated-measures designs and explains why counterbalancing matters when the same participants experience more than one condition."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Experimental method indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-6": {
+    "id": "2-5-6",
+    "title": "Quasi-experimental method",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Quasi-experimental method. What is the central idea?",
+        "answer": "intervention research without full random assignment"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Quasi-experimental method.",
+        "answer": "intervention"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Quasi-experimental method.",
+        "answer": "comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Quasi-experimental method?",
+        "answer": "It is not correlational research."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Quasi-experimental method?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Quasi-experimental method indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-7": {
+    "id": "2-5-7",
+    "title": "Field studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Field studies. What is the central idea?",
+        "answer": "Field studies examine behavior in real-world settings rather than only under tightly controlled laboratory conditions. The source framework includes field studies as a distinct research method, and Baron & Misra provide examples of community- and school-based research. Field settings can improve contextual relevance while reducing experimental control."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Field studies.",
+        "answer": "Research occurs in a natural or real-world setting."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Field studies.",
+        "answer": "Contextual information can be richer than in a laboratory."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Field studies?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Field studies indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-8": {
+    "id": "2-5-8",
+    "title": "Cross-cultural studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cross-cultural studies. What is the central idea?",
+        "answer": "Cross-cultural studies compare psychological phenomena across cultural groups or settings. The uploaded material uses cross-cultural research to show why psychological findings should not automatically be assumed to be culturally universal. Baron & Misra discuss evidence that cultural background can affect developmental patterns and the interpretation of psychological constructs."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cross-cultural studies.",
+        "answer": "The basic purpose is comparison across cultural contexts."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cross-cultural studies.",
+        "answer": "Culture can influence behavior, development and interpretation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cross-cultural studies?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cross-cultural studies indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-9": {
+    "id": "2-5-9",
+    "title": "Phenomenology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Phenomenology. What is the central idea?",
+        "answer": "systematic study of the meaning and structure of lived experience"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Phenomenology.",
+        "answer": "lived experience"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Phenomenology.",
+        "answer": "meaning"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Phenomenology?",
+        "answer": "Not just asking for opinions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Phenomenology?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Phenomenology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-10": {
+    "id": "2-5-10",
+    "title": "Grounded theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Grounded theory. What is the central idea?",
+        "answer": "development of concepts and theory from systematically analyzed qualitative data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Grounded theory.",
+        "answer": "coding"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Grounded theory.",
+        "answer": "categories"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Grounded theory?",
+        "answer": "It is not a preselected theory imposed on the data."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Grounded theory?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Grounded theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-11": {
+    "id": "2-5-11",
+    "title": "Focus groups",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Focus groups. What is the central idea?",
+        "answer": "guided group discussion in which interaction itself becomes data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Focus groups.",
+        "answer": "moderator"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Focus groups.",
+        "answer": "group interaction"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Focus groups?",
+        "answer": "It is not just several individual interviews at once."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Focus groups?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Focus groups indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-12": {
+    "id": "2-5-12",
+    "title": "Narratives",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Narratives. What is the central idea?",
+        "answer": "Narratives are qualitative accounts in which participants' experiences are represented through stories or accounts of events. The uploaded PowerWithin material notes that phenomenological analysis can present lived experience in narrative form and examine layers of meaning in participants' accounts."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Narratives.",
+        "answer": "Narratives preserve participants' accounts of experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Narratives.",
+        "answer": "They are useful for studying meaning and lived experience."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Narratives?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Narratives indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-13": {
+    "id": "2-5-13",
+    "title": "Case studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Case studies. What is the central idea?",
+        "answer": "A case study is an in-depth investigation of a single person, group, event or community. The uploaded PowerWithin material describes the idiographic focus and the use of multiple sources such as observations and interviews. Case studies can provide detailed understanding but are limited in how confidently findings can be generalized from a unique case."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Case studies.",
+        "answer": "The unit of analysis is an individual case or bounded case."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Case studies.",
+        "answer": "Multiple data sources may be combined."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Case studies?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Case studies indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-5-14": {
+    "id": "2-5-14",
+    "title": "Ethnography",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Ethnography. What is the central idea?",
+        "answer": "sustained study of people and practices in cultural context"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethnography.",
+        "answer": "culture"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ethnography.",
+        "answer": "fieldwork"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Ethnography?",
+        "answer": "A brief field visit is not full ethnography."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Ethnography?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Ethnography indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-6-1": {
+    "id": "2-6-1",
+    "title": "Measures of central tendency",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Measures of central tendency. What is the central idea?",
+        "answer": "summary of the central location of a distribution"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Measures of central tendency.",
+        "answer": "mean"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Measures of central tendency.",
+        "answer": "median"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Measures of central tendency?",
+        "answer": "Mean is sensitive to extreme scores."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Measures of central tendency?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Measures of central tendency indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-6-2": {
+    "id": "2-6-2",
+    "title": "Measures of dispersion",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Measures of dispersion. What is the central idea?",
+        "answer": "summary of how spread out scores are"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Measures of dispersion.",
+        "answer": "range"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Measures of dispersion.",
+        "answer": "variance"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Measures of dispersion?",
+        "answer": "Spread and central tendency answer different questions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Measures of dispersion?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Measures of dispersion indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-6-3": {
+    "id": "2-6-3",
+    "title": "Descriptive and inferential statistics",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Descriptive and inferential statistics in 2–3 sentences.",
+        "answer": "Descriptive and inferential statistics is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Descriptive and inferential statistics?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Descriptive and inferential statistics?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Descriptive and inferential statistics?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Descriptive and inferential statistics?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Descriptive and inferential statistics indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-6-4": {
+    "id": "2-6-4",
+    "title": "Mean, median and mode",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Mean, median and mode in 2–3 sentences.",
+        "answer": "Mean, median and mode is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Mean, median and mode?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Mean, median and mode?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Mean, median and mode?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Mean, median and mode?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Mean, median and mode indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-6-5": {
+    "id": "2-6-5",
+    "title": "Variance and standard deviation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Variance and standard deviation in 2–3 sentences.",
+        "answer": "Variance and standard deviation is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Variance and standard deviation?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Variance and standard deviation?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Variance and standard deviation?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Variance and standard deviation?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Variance and standard deviation indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-7-1": {
+    "id": "2-7-1",
+    "title": "Normal probability curve",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Normal probability curve. What is the central idea?",
+        "answer": "symmetric bell-shaped distribution where mean, median and mode coincide"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Normal probability curve.",
+        "answer": "symmetry"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Normal probability curve.",
+        "answer": "mean = median = mode"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Normal probability curve?",
+        "answer": "Not every psychological distribution is perfectly normal."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Normal probability curve?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Normal probability curve indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-1": {
+    "id": "2-8-1",
+    "title": "Parametric tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Parametric tests. What is the central idea?",
+        "answer": "The uploaded NET material identifies t-tests as parametric tests and contrasts them with non-parametric procedures such as the Sign test, Wilcoxon signed-rank, Mann–Whitney, Kruskal–Wallis and Friedman tests. Parametric procedures are used within a statistical framework involving assumptions about the distribution and measurement characteristics of the data."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Parametric tests.",
+        "answer": "t-tests are listed under parametric tests in the source."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Parametric tests.",
+        "answer": "Parametric and non-parametric procedures form different families of inferential tests."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Parametric tests?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Parametric tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-2": {
+    "id": "2-8-2",
+    "title": "t-test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain t-test. What is the central idea?",
+        "answer": "comparison of means using one-sample, independent-samples or paired-samples variants"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about t-test.",
+        "answer": "compare means"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about t-test.",
+        "answer": "independent vs paired"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about t-test?",
+        "answer": "Paired t is for related observations."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of t-test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes t-test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-3": {
+    "id": "2-8-3",
+    "title": "Non-parametric tests",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Non-parametric tests. What is the central idea?",
+        "answer": "tests with fewer distributional assumptions, often useful for ordinal/rank data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Non-parametric tests.",
+        "answer": "rank-based methods"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Non-parametric tests.",
+        "answer": "fewer assumptions"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Non-parametric tests?",
+        "answer": "Non-parametric does not mean assumption-free."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Non-parametric tests?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Non-parametric tests indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-4": {
+    "id": "2-8-4",
+    "title": "Sign test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sign test. What is the central idea?",
+        "answer": "non-parametric test using only the direction of paired differences"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sign test.",
+        "answer": "paired data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sign test.",
+        "answer": "plus/minus direction"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Sign test?",
+        "answer": "It ignores magnitude and ranks."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sign test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sign test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-5": {
+    "id": "2-8-5",
+    "title": "Wilcoxon Signed rank test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Wilcoxon Signed rank test. What is the central idea?",
+        "answer": "rank-based test for paired or related observations"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Wilcoxon Signed rank test.",
+        "answer": "related samples"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Wilcoxon Signed rank test.",
+        "answer": "ranked differences"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Wilcoxon Signed rank test?",
+        "answer": "Do not confuse with Mann–Whitney for independent groups."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Wilcoxon Signed rank test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Wilcoxon Signed rank test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-6": {
+    "id": "2-8-6",
+    "title": "Mann-Whitney test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Mann-Whitney test. What is the central idea?",
+        "answer": "rank-based comparison of two independent groups"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mann-Whitney test.",
+        "answer": "independent groups"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mann-Whitney test.",
+        "answer": "ordinal/rank data"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Mann-Whitney test?",
+        "answer": "It is not for paired data."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Mann-Whitney test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Mann-Whitney test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-7": {
+    "id": "2-8-7",
+    "title": "Kruskal-Wallis test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Kruskal-Wallis test. What is the central idea?",
+        "answer": "rank-based comparison of more than two independent groups"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Kruskal-Wallis test.",
+        "answer": "3+ independent groups"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Kruskal-Wallis test.",
+        "answer": "ranks"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Kruskal-Wallis test?",
+        "answer": "A significant result does not identify every pairwise difference."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Kruskal-Wallis test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Kruskal-Wallis test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-8": {
+    "id": "2-8-8",
+    "title": "Friedman test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Friedman test. What is the central idea?",
+        "answer": "rank-based comparison of three or more related conditions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Friedman test.",
+        "answer": "3+ related conditions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Friedman test.",
+        "answer": "repeated measures"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Friedman test?",
+        "answer": "Not for independent groups."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Friedman test?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Friedman test indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-8-9": {
+    "id": "2-8-9",
+    "title": "Chi-square test",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Chi-square test in 2–3 sentences.",
+        "answer": "Chi-square test is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Chi-square test?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Chi-square test?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Chi-square test?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Chi-square test?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Chi-square test indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-9-1": {
+    "id": "2-9-1",
+    "title": "Power analysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Power analysis. What is the central idea?",
+        "answer": "analysis of the probability of detecting an effect when it exists"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Power analysis.",
+        "answer": "power = 1 − beta"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Power analysis.",
+        "answer": "sample size"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Power analysis?",
+        "answer": "High power does not guarantee a true effect."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Power analysis?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Power analysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-10-1": {
+    "id": "2-10-1",
+    "title": "Effect size",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Effect size. What is the central idea?",
+        "answer": "quantification of the magnitude of a difference or relationship"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Effect size.",
+        "answer": "Cohen's d"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Effect size.",
+        "answer": "r"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Effect size?",
+        "answer": "Statistical significance and effect size answer different questions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Effect size?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Effect size indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-11-1": {
+    "id": "2-11-1",
+    "title": "Correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Correlation. What is the central idea?",
+        "answer": "direction and strength of association between variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Correlation.",
+        "answer": "positive/negative/zero"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Correlation.",
+        "answer": "Pearson r −1 to +1"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Correlation?",
+        "answer": "Correlation alone does not establish causation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Correlation?",
+        "answer": "Kaplan uses correlation questions to test strength and direction without confusing association with causation. A coefficient near either end of −1 to +1 indicates a strong relationship, while the sign indicates direction. Simply Psychology defines correlation as an association and stresses that correlation alone does not establish causation because another explanation or third variable may be involved."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-11-2": {
+    "id": "2-11-2",
+    "title": "Product Moment correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Product Moment correlation. What is the central idea?",
+        "answer": "Pearson correlation for linear association between quantitative variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Product Moment correlation.",
+        "answer": "Pearson r"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Product Moment correlation.",
+        "answer": "linear relation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Product Moment correlation?",
+        "answer": "High r does not prove causality."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Product Moment correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Product Moment correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-11-3": {
+    "id": "2-11-3",
+    "title": "Rank Order correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Rank Order correlation. What is the central idea?",
+        "answer": "correlation based on ranks, commonly Spearman rho"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rank Order correlation.",
+        "answer": "ordinal/rank data"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rank Order correlation.",
+        "answer": "monotonic association"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Rank Order correlation?",
+        "answer": "Do not confuse with Pearson."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Rank Order correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Rank Order correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-11-4": {
+    "id": "2-11-4",
+    "title": "Partial correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Partial correlation. What is the central idea?",
+        "answer": "association between two variables after statistically controlling other variable(s)"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Partial correlation.",
+        "answer": "control third variable"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Partial correlation.",
+        "answer": "conditional association"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Partial correlation?",
+        "answer": "Controlling a variable can change the observed association."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Partial correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Partial correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-11-5": {
+    "id": "2-11-5",
+    "title": "Multiple correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Multiple correlation. What is the central idea?",
+        "answer": "relationship between one criterion and a set of predictors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Multiple correlation.",
+        "answer": "multiple predictors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Multiple correlation.",
+        "answer": "Multiple R"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Multiple correlation?",
+        "answer": "It is related to but not identical with multiple regression."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Multiple correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Multiple correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-12-1": {
+    "id": "2-12-1",
+    "title": "Biserial correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Biserial correlation. What is the central idea?",
+        "answer": "association between a continuous variable and an artificially dichotomized variable"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biserial correlation.",
+        "answer": "continuous + artificial dichotomy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Biserial correlation.",
+        "answer": "distinguish from point-biserial"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Biserial correlation?",
+        "answer": "Artificial versus natural dichotomy is the key distinction."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Biserial correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Biserial correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-12-2": {
+    "id": "2-12-2",
+    "title": "Point biserial correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Point biserial correlation. What is the central idea?",
+        "answer": "association between a continuous variable and a genuinely dichotomous variable"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Point biserial correlation.",
+        "answer": "continuous + true dichotomy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Point biserial correlation.",
+        "answer": "special Pearson case"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Point biserial correlation?",
+        "answer": "Do not confuse with biserial."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Point biserial correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Point biserial correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-12-3": {
+    "id": "2-12-3",
+    "title": "Tetrachoric correlation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Tetrachoric correlation. What is the central idea?",
+        "answer": "estimated association between two dichotomized variables assumed to reflect underlying continuous traits"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Tetrachoric correlation.",
+        "answer": "two dichotomies"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Tetrachoric correlation.",
+        "answer": "latent continuity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Tetrachoric correlation?",
+        "answer": "Not simply the same as phi."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Tetrachoric correlation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Tetrachoric correlation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-12-4": {
+    "id": "2-12-4",
+    "title": "Phi coefficient",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Phi coefficient. What is the central idea?",
+        "answer": "association between two genuinely dichotomous variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Phi coefficient.",
+        "answer": "2×2 table"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Phi coefficient.",
+        "answer": "two binary variables"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Phi coefficient?",
+        "answer": "Not for continuous variables."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Phi coefficient?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Phi coefficient indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-13-1": {
+    "id": "2-13-1",
+    "title": "Simple linear regression",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Simple linear regression. What is the central idea?",
+        "answer": "prediction of one criterion from one predictor"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Simple linear regression.",
+        "answer": "slope"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Simple linear regression.",
+        "answer": "intercept"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Simple linear regression?",
+        "answer": "Prediction does not prove causation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Simple linear regression?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Simple linear regression indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-13-2": {
+    "id": "2-13-2",
+    "title": "Multiple regression",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Multiple regression. What is the central idea?",
+        "answer": "prediction of one criterion from several predictors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Multiple regression.",
+        "answer": "multiple predictors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Multiple regression.",
+        "answer": "coefficients"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Multiple regression?",
+        "answer": "A predictor may lose unique contribution after controls."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Multiple regression?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Multiple regression indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-14-1": {
+    "id": "2-14-1",
+    "title": "Assumptions of factor analysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Assumptions of factor analysis. What is the central idea?",
+        "answer": "identification of latent dimensions underlying correlations among observed variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Assumptions of factor analysis.",
+        "answer": "factors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Assumptions of factor analysis.",
+        "answer": "loadings"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Assumptions of factor analysis?",
+        "answer": "A factor is not automatically causal."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Assumptions of factor analysis?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Assumptions of factor analysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-14-2": {
+    "id": "2-14-2",
+    "title": "Methods of factor analysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Methods of factor analysis. What is the central idea?",
+        "answer": "identification of latent dimensions underlying correlations among observed variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Methods of factor analysis.",
+        "answer": "factors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Methods of factor analysis.",
+        "answer": "loadings"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Methods of factor analysis?",
+        "answer": "A factor is not automatically causal."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Methods of factor analysis?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Methods of factor analysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-14-3": {
+    "id": "2-14-3",
+    "title": "Rotation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Rotation. What is the central idea?",
+        "answer": "re-expression of extracted factors to make loading patterns easier to interpret"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rotation.",
+        "answer": "orthogonal"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Rotation.",
+        "answer": "oblique"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Rotation?",
+        "answer": "Rotation does not create new variables."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Rotation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Rotation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-14-4": {
+    "id": "2-14-4",
+    "title": "Interpretation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Interpretation. What is the central idea?",
+        "answer": "Factor-analysis interpretation uses quantities such as factor loadings, eigenvalues, communalities and factor scores to understand the structure extracted from correlated variables. The uploaded PowerWithin material describes a factor loading as the relationship between a variable and factor and an eigenvalue as the variance explained by a factor. Rotation is used to make the output easier to interpret."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interpretation.",
+        "answer": "Factor loading indicates the relationship of a variable with a factor."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interpretation.",
+        "answer": "Eigenvalues represent variance explained by factors."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Interpretation?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Interpretation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-14-5": {
+    "id": "2-14-5",
+    "title": "Factor extraction",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Factor extraction in 2–3 sentences.",
+        "answer": "Factor extraction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Factor extraction?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Factor extraction?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Factor extraction?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Factor extraction?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Factor extraction indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-14-6": {
+    "id": "2-14-6",
+    "title": "Main effects and interaction",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Main effects and interaction in 2–3 sentences.",
+        "answer": "Main effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Main effects and interaction?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Main effects and interaction?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Main effects and interaction?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Main effects and interaction?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Main effects and interaction indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-14-7": {
+    "id": "2-14-7",
+    "title": "Post-hoc comparisons",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Post-hoc comparisons in 2–3 sentences.",
+        "answer": "Post-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Post-hoc comparisons?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Post-hoc comparisons?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Post-hoc comparisons?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Post-hoc comparisons?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Post-hoc comparisons indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-15-4": {
+    "id": "2-15-4",
+    "title": "Randomized Block Designs",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Randomized Block Designs. What is the central idea?",
+        "answer": "A randomized block design groups participants or experimental units into relatively homogeneous blocks on a variable that may influence the outcome, then randomizes treatment conditions within blocks. The supplied Revisathon material includes questions on randomized block ANOVA and error degrees of freedom, while the NET material lists randomized block designs among experimental designs."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Randomized Block Designs.",
+        "answer": "Blocking controls or reduces variation associated with a known nuisance variable."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Randomized Block Designs.",
+        "answer": "Treatment assignment is randomized within blocks."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Randomized Block Designs?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Randomized Block Designs indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-5": {
+    "id": "2-15-5",
+    "title": "Repeated Measures Design",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Repeated Measures Design. What is the central idea?",
+        "answer": "same participants measured across conditions or times"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Repeated Measures Design.",
+        "answer": "within-subjects"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Repeated Measures Design.",
+        "answer": "individual differences controlled"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Repeated Measures Design?",
+        "answer": "Carryover/order effects matter."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Repeated Measures Design?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Repeated Measures Design indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-6": {
+    "id": "2-15-6",
+    "title": "Latin Square",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Latin Square. What is the central idea?",
+        "answer": "A Latin square design arranges treatments so that each treatment appears once in each row and once in each column. The uploaded PowerWithin material describes it as a way to reduce systematic error associated with two blocking dimensions while balancing treatment placement."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Latin Square.",
+        "answer": "Each treatment occurs once in every row."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Latin Square.",
+        "answer": "Each treatment also occurs once in every column."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Latin Square?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Latin Square indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-7": {
+    "id": "2-15-7",
+    "title": "Cohort studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cohort studies. What is the central idea?",
+        "answer": "Cohort studies follow a defined group of people who share a characteristic or exposure and examine outcomes over time or across relevant conditions. The uploaded NET material lists cohort studies among experimental-design-related coverage, but provides limited detail in the supplied section; retain the basic design distinction without importing unsupported technical claims."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cohort studies.",
+        "answer": "A cohort is a defined group followed as a unit of observation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cohort studies.",
+        "answer": "The design is useful for studying change or outcomes associated with an exposure."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cohort studies?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cohort studies indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-8": {
+    "id": "2-15-8",
+    "title": "Time series",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Time series. What is the central idea?",
+        "answer": "Time-series designs collect repeated observations of an outcome across multiple time points. The supplied Paper 1 material places time-series designs within quasi-experimental designs, while the NET material lists time series in its experimental-design coverage. Repeated observations allow researchers to examine patterns before and after an intervention or event."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Time series.",
+        "answer": "The same outcome is observed repeatedly across time."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Time series.",
+        "answer": "The sequence of observations is central to interpretation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Time series?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Time series indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-9": {
+    "id": "2-15-9",
+    "title": "MANOVA",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain MANOVA. What is the central idea?",
+        "answer": "multivariate comparison involving multiple dependent variables"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about MANOVA.",
+        "answer": "multiple DVs"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about MANOVA.",
+        "answer": "multivariate F"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about MANOVA?",
+        "answer": "It is not multiple regression."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of MANOVA?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes MANOVA indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-10": {
+    "id": "2-15-10",
+    "title": "ANCOVA",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain ANCOVA. What is the central idea?",
+        "answer": "comparison of group means while statistically adjusting for a covariate"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about ANCOVA.",
+        "answer": "ANOVA + covariate"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about ANCOVA.",
+        "answer": "adjusted means"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about ANCOVA?",
+        "answer": "The covariate must be appropriate."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of ANCOVA?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes ANCOVA indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-15-11": {
+    "id": "2-15-11",
+    "title": "Single-subject designs",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Single-subject designs. What is the central idea?",
+        "answer": "repeated measurement of one person or a small number of cases across baseline/intervention phases"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Single-subject designs.",
+        "answer": "AB/ABA/ABAB"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Single-subject designs.",
+        "answer": "baseline"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Single-subject designs?",
+        "answer": "Small N does not mean no experimental control."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Single-subject designs?",
+        "answer": "PowerWithin provides the NET-facing research-method framework. Ciccarelli & White and the Self-Teaching Guide reinforce the logic of operational definitions, design, measurement and interpretation, while Kaplan supplies an exam-oriented way to identify variables and design features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Single-subject designs indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "2-16-1": {
+    "id": "2-16-1",
+    "title": "ANOVA",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain ANOVA in 2–3 sentences.",
+        "answer": "ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about ANOVA?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish ANOVA?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about ANOVA?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for ANOVA?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes ANOVA indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-16-2": {
+    "id": "2-16-2",
+    "title": "One-way ANOVA",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain One-way ANOVA in 2–3 sentences.",
+        "answer": "One-way ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about One-way ANOVA?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish One-way ANOVA?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about One-way ANOVA?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for One-way ANOVA?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes One-way ANOVA indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-16-3": {
+    "id": "2-16-3",
+    "title": "Factorial ANOVA",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Factorial ANOVA in 2–3 sentences.",
+        "answer": "Factorial ANOVA is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Factorial ANOVA?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Factorial ANOVA?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Factorial ANOVA?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Factorial ANOVA?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Factorial ANOVA indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-16-4": {
+    "id": "2-16-4",
+    "title": "Main effects and interaction",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Main effects and interaction in 2–3 sentences.",
+        "answer": "Main effects and interaction is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Main effects and interaction?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Main effects and interaction?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Main effects and interaction?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Main effects and interaction?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Main effects and interaction indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "2-16-5": {
+    "id": "2-16-5",
+    "title": "Post-hoc comparisons",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Post-hoc comparisons in 2–3 sentences.",
+        "answer": "Post-hoc comparisons is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Post-hoc comparisons?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Post-hoc comparisons?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Post-hoc comparisons?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Post-hoc comparisons?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Post-hoc comparisons indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  }
+}
