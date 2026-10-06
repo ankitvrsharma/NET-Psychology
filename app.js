@@ -1,7 +1,7 @@
 /* Stable browser entry point. Keep page HTML pointed at app.js; the facade owns runtime loading. */
 (function(){
   'use strict';
-  const VERSION='20261006-unit-availability-v1';
+  const VERSION='20261006-admin-v1';
   const script=document.createElement('script');
   script.src='./app/facade.js?v='+VERSION;
   script.async=false;
