@@ -174,15 +174,23 @@ def main():
             save(QUESTIONS,qobj if isinstance(qobj,dict) else questions); save(QUICK,quick)
         if generated:
             pool=load(MICRO)
+            source_stamp="\n".join(sorted(x["sha256"] for x in source_meta))
+            marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
+            def append_once(existing,label,text):
+                existing=str(existing or "")
+                block=f"\\n\\n[{marker} {label}]\\n{text.strip()}"
+                return existing if f"[{marker} {label}]" in existing else existing+block
             for g in generated:
                 if g["microtopic_id"] not in pool: continue
                 e=pool[g["microtopic_id"]]
-                e["content_notes"]=g["quick_learn"]
-                e["expert_explanation"]=g["core_explanation"]
-                e["detailed_explanation"]=g["detailed_explanation"]
-                e["application_question"]=g["recall_prompts"][0] if g["recall_prompts"] else e.get("application_question","")
-                e["recall_cue"]=g["exam_takeaway"]; e["source_notes"]=g["source_notes"]
-                e["source_pipeline"]={"model":MODEL,"generated_at":datetime.now(timezone.utc).isoformat()}
+                e["content_notes"]=append_once(e.get("content_notes"),"QUICK LEARN",g["quick_learn"])
+                e["expert_explanation"]=append_once(e.get("expert_explanation"),"SOURCE-GROUNDED EXPLANATION",g["core_explanation"])
+                e["detailed_explanation"]=append_once(e.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
+                if g["recall_prompts"]:
+                    e["application_question"]=append_once(e.get("application_question"),"RETRIEVAL PROMPTS","; ".join(g["recall_prompts"]))
+                e["recall_cue"]=append_once(e.get("recall_cue"),"EXAM TAKEAWAY",g["exam_takeaway"])
+                e["source_notes"]=append_once(e.get("source_notes"),"PROVENANCE",g["source_notes"])
+                e.setdefault("source_pipeline",[]).append({"marker":marker,"model":MODEL,"generated_at":datetime.now(timezone.utc).isoformat()})
             save(MICRO,pool)
         save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
