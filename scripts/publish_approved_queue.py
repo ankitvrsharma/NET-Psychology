@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish owner-approved AI content surgically into the four learner pools."""
+"""Publish owner-approved connected-package components into static learner pools."""
 from pathlib import Path
 from datetime import datetime, timezone
 import argparse, hashlib, json
@@ -10,6 +10,7 @@ MICRO=ROOT/"content/microtopics/micro_topics.json"
 DEEP=ROOT/"content/deep-dive/deep_dive.json"
 RECALL=ROOT/"content/active-recall/active_recall.json"
 REVISION=ROOT/"content/revision/revision_guidance.json"
+PRACTICE=ROOT/"content/practice/practice_mcqs.json"
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
 def save(p,o): Path(p).write_text(json.dumps(o,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -26,25 +27,36 @@ def main():
     if not selected:
         print("No owner-approved content is waiting for publication."); return 0
     micro=load(MICRO); deep=load(DEEP); recall=load(RECALL); revision=load(REVISION)
+    practice=load(PRACTICE) if PRACTICE.exists() else {}
     now=datetime.now(timezone.utc).isoformat()
     marker="OWNER APPROVAL "+hashlib.sha256(now.encode()).hexdigest()[:12]
     for item in selected:
-        mid=str(item["microtopic_id"]); g=item.get("package") or {}
+        mid=str(item["microtopic_id"]); component=str(item.get("component") or "")
+        g=item.get("package") or {}
+        approved_components=item.get("approved_components") or ([component] if component else ["microtopic","deep_dive","active_recall","revision"])
         if mid not in micro: raise SystemExit(f"Cannot publish {mid}: canonical micro-topic is missing.")
         me=micro[mid]
-        me["expert_explanation"]=g["core_explanation"]
-        me["detailed_explanation"]=g["detailed_explanation"]
-        me["cross_references"]=g.get("cross_references") or []
-        de=deep.get(mid) or {"id":mid,"title":me.get("title","")}
-        de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title","")); de["detailed_explanation"]=g["detailed_explanation"]; deep[mid]=de
-        ae=recall.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
-        ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title","")); ae["prompts"]=g.get("recall_prompts") or []; recall[mid]=ae
-        rg=g.get("revision_guidance") or {}; rev=revision.get(mid) or {"id":mid,"title":me.get("title","")}
-        rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
-        for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"): rev[field]=rg.get(field,"")
-        revision[mid]=rev
-        item["status"]="PUBLISHED"; item["published_at"]=now; item["publication"]="OWNER_APPROVED"
-    save(MICRO,micro); save(DEEP,deep); save(RECALL,recall); save(REVISION,revision)
+        if "microtopic" in approved_components:
+            me["expert_explanation"]=g["core_explanation"]
+            me["detailed_explanation"]=g["detailed_explanation"]
+            me["cross_references"]=g.get("cross_references") or []
+        if "deep_dive" in approved_components:
+            de=deep.get(mid) or {"id":mid,"title":me.get("title","")}
+            de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title",""))
+            de["detailed_explanation"]=g["detailed_explanation"]; deep[mid]=de
+        if "active_recall" in approved_components:
+            ae=recall.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
+            ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
+            ae["prompts"]=g.get("recall_prompts") or []; recall[mid]=ae
+        if "revision" in approved_components:
+            rg=g.get("revision_guidance") or {}; rev=revision.get(mid) or {"id":mid,"title":me.get("title","")}
+            rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
+            for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"): rev[field]=rg.get(field,"")
+            revision[mid]=rev
+        if "practice" in approved_components:
+            practice[mid]={"id":mid+"P","microtopic_id":mid,"title":me.get("title",""),"questions":g.get("practice_mcqs") or []}
+        item["status"]="PUBLISHED"; item["published_at"]=now; item["publication"]="OWNER_APPROVED_COMPONENT"
+    save(MICRO,micro); save(DEEP,deep); save(RECALL,recall); save(REVISION,revision); PRACTICE.parent.mkdir(parents=True,exist_ok=True); save(PRACTICE,practice)
     queue["updated_at"]=now; queue["pending"]=pending; save(QUEUE,queue)
     print(f"Published {len(selected)} owner-approved package(s) surgically.")
     return 0
