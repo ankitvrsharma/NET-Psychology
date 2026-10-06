@@ -63,7 +63,6 @@ async function loadStudyData(){
         json.mcq_mapping=map;
       }
     }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
-    ctx.questions=ctx.questions.filter(q=>ctx.isPublished('questions',q.id));
   }
   ctx.render();
   return true;

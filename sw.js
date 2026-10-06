@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v53-admin-dashboard';
+const CACHE='netpsych-shell-v54-audit-status';
 const SHELL=[
   './',
   './index.html',
@@ -22,6 +22,7 @@ const SHELL=[
   './app/content-audit.js',
   './app/data-loader.js',
   './app/runtime.js',
+  './content-audit.json',
   './data.json',
   './content-version.js',
   './manifest.webmanifest'
@@ -33,7 +34,7 @@ const RUNTIME_DATA=new Set([
   'mcq_mapping.json',
   'practice_questions.json',
   'practice_explanations.json',
-  'content-publication.json'
+  'content-audit.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});

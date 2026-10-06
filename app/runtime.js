@@ -35,21 +35,18 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
-const EXPERT_THRESHOLDS={pass:70,review:60};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
-let PUBLICATION={approved:{microtopics:[],questions:[]},rejected:{microtopics:[],questions:[]}};
-const loadPublicationState=async()=>{try{const r=await fetch('./content-publication.json?v=20261006-admin-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.approved)PUBLICATION=x}}catch(e){};safeRender()};
+let AUDIT_STATE={schema_version:1,expert_reviewed:{microtopics:[],questions:[]},updated_at:''};
+const loadAuditState=async()=>{try{const r=await fetch('./content-audit.json?v=20261006-audit-status-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.expert_reviewed)AUDIT_STATE=x}}catch(e){};safeRender()};
 const runtimeContext=Object.defineProperties({},{
   data:{get:()=>D,set:v=>{D=v}},
   questions:{get:()=>PRACTICE_QUESTIONS,set:v=>{PRACTICE_QUESTIONS=v}},
-  render:{value:()=>safeRender()},
-  isPublished:{value:(type,id)=>contentIsPublished(type,id)}
+  render:{value:()=>safeRender()}
 });
 const contentAudit=window.NETPsychologyContentAudit.create(runtimeContext);
 const expertAudit=contentAudit.expertAudit;
-const contentIsPublished=(type,id)=>{if(PUBLICATION.rejected[type]?.includes(id))return false;if(PUBLICATION.approved[type]?.includes(id))return true;return contentAudit.contentIsPublished(type,id)};
+const contentReviewStatus=(type,id)=>AUDIT_STATE.expert_reviewed[type]?.includes(String(id))?'EXPERT REVIEWED':expertAudit(type,id).status==='PASS'?'REVIEWED':'NEED REVIEW';
 const loadStudyData=window.NETPsychologyDataLoader.create({
   get data(){return D},
   set data(v){D=v},
@@ -58,8 +55,7 @@ const loadStudyData=window.NETPsychologyDataLoader.create({
   get explanations(){return PRACTICE_EXPLANATIONS},
   set explanations(v){PRACTICE_EXPLANATIONS=v},
   dataVersion:DATA_VERSION,
-  render:()=>safeRender(),
-  isPublished:(type,id)=>contentIsPublished(type,id)
+  render:()=>safeRender()
 });
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
@@ -77,9 +73,9 @@ const hasLearningContent=m=>{
   }).join(' ').replace(/\\s+/g,' ').trim();
   return text.length>=80;
 };
-const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(m=>contentIsPublished('microtopics',key(u.id,t.id,m.id))).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
+const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(hasLearningContent).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
-const microAvailable=(u,t,m)=>contentIsPublished('microtopics',key(u.id,t.id,m.id));
+const microAvailable=(u,t,m)=>hasLearningContent(m);
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
@@ -430,7 +426,7 @@ function quickStudyParts(m){const d=String(m.deep_learning||''),n=String(m.conte
 function quickClassify(t,x){const s=(t+' '+x).toLowerCase();if(/\b(timeline|history|development of|origin|emergence|chronology)\b/.test(s))return'TIMELINE';if(/\b(study|experiment|finding|effect|law|principle)\b/.test(s))return'FINDING';if(/\b(vs\.?|versus|difference|distinguish|distinction|compared with)\b/.test(s))return'DISTINCTION';if(/\b(psychologist|theorist|contribution)\b/.test(s))return'PSYCHOLOGIST';if(/\b(school|structuralism|functionalism|gestalt|behavio(u)rism|psychoanalysis|humanistic psychology)\b/.test(s))return'SCHOOL';if(/\b(approach|therapy|perspective)\b/.test(s))return'APPROACH';if(/\b(theory|model|framework)\b/.test(s))return'THEORY';return'CONCEPT'}
 function quickSources(m){return[...new Set(sourceNames(m).concat((m.study_source_config||{}).notes_primary||[]).filter(Boolean))]}
 function quickVisual(m,k,p){const t=String(m.title||'').toLowerCase(),s=(t+' '+p.join(' ')).toLowerCase();if(/shape constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-shape-stage"><span class="qv-coin circle"></span><span class="qv-coin ellipse"></span><span class="qv-arrow">→</span><span class="qv-coin ellipse tilted"></span></div><div class="qv-caption"><b>RETINAL IMAGE</b><span>viewing angle changes the image; perceived shape remains stable</span></div></div>';if(/size constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-size-stage"><span class="qv-person small"></span><span class="qv-person large"></span></div><div class="qv-caption"><b>RETINAL SIZE CHANGES</b><span>distance changes the image; perceived size remains relatively stable</span></div></div>';if(/brightness constancy|color constancy/.test(t))return'<div class="quick-visual-diagram"><div class="qv-light-stage"><span class="qv-light">LIGHT</span><span class="qv-object"></span><span class="qv-light dim">SHADE</span></div><div class="qv-caption"><b>CONTEXT CHANGES</b><span>the object is perceived as relatively stable across illumination</span></div></div>';if(k==='TIMELINE'||/\b(stage|stages|sequence|process|cycle|conditioning|development)\b/.test(s)){const i=p.slice(0,4);if(i.length>=2)return'<div class="quick-visual quick-flow">'+i.map((x,j)=>'<div><b>'+(j+1)+'</b><span>'+esc(x.slice(0,120))+'</span></div>').join('<i>→</i>')+'</div>'}return''}
-function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&contentIsPublished('microtopics',key(u.id,t.id,m.id))&&contentIsPublished('quickLearnCards',cardKey))bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
+function buildQuickLearnBank(){if(QUICK_BANK_CACHE)return QUICK_BANK_CACHE;const bank=[],angles=[['CORE IDEA',x=>x.core],['KEY FEATURES',x=>[x.core,x.points.slice(0,3).join(' ')].filter(Boolean).join(' ')],['PYQ FOCUS',x=>x.dist?('In questions, watch this distinction: '+x.dist):(x.exam||x.core)],['EXAM TRAP',x=>x.dist||x.core],['SOURCE DETAIL',x=>[x.core,x.points.slice(0,2).join(' ')].filter(Boolean).join(' ')],['RECALL CUE',x=>[x.hook,x.core].filter(Boolean).join(' — ')],['CONNECTION',x=>[x.core,x.dist].filter(Boolean).join(' ')]];units().forEach(u=>u.topics.forEach(t=>t.microtopics.forEach(m=>{const p=quickStudyParts(m),joined=[p.core,...p.points].filter(Boolean).join(' ');if(!joined)return;const cat=quickClassify(m.title,joined),src=quickSources(m);angles.forEach(a=>{const cardKey=key(u.id,t.id,m.id)+'|'+a[0];const e=quickClean(a[1](p));if(e&&hasLearningContent(m))bank.push({id:'QL-'+String(bank.length+1).padStart(4,'0'),title:m.title,category:cat,angle:a[0],explanation:e.slice(0,900),secondary:'',visual:quickVisual(m,cat,p.points),unit:u.id,topic:t.id,micro:m.id,sources:src})})})));QUICK_BANK_CACHE=bank;return bank}
 function quickLearnItem(){const bank=buildQuickLearnBank();if(!bank.length)return null;const keyName='netPsychQuickLearnCycle';let cycle={seen:[],cycle:0};try{const stored=JSON.parse(localStorage.getItem(keyName)||'null');if(stored&&Array.isArray(stored.seen))cycle={seen:stored.seen,cycle:Number(stored.cycle)||0}}catch(e){}const validIds=new Set(bank.map(x=>x.id));let seen=cycle.seen.filter(id=>validIds.has(id));let unseen=bank.filter(x=>!seen.includes(x.id));if(!unseen.length){cycle={seen:[],cycle:cycle.cycle+1};seen=[];unseen=bank.slice()}const last=seen[seen.length-1];let pool=unseen;if(pool.length>1&&last)pool=pool.filter(x=>x.id!==last);if(!pool.length)pool=unseen;const item=pool[Math.floor(Math.random()*pool.length)];seen=[...seen,item.id];try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}return{...item,href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)}}function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
@@ -567,7 +563,7 @@ function topicPage(){
     const list=topicItems.filter(m=>{const p=getP(key(u.id,t.id,m.id));if(filter==='new')return p.status==='NEW';if(filter==='learning')return p.status==='LEARNING'||p.status==='RETENTION';if(filter==='mastered')return p.status==='MASTERED';if(filter==='due')return p.next&&new Date(p.next)<=new Date();return true});
     const cards=list.map(m=>{
       const p=getP(key(u.id,t.id,m.id)),available=microAvailable(u,t,m),concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title,kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')),qs=practiceFor(u.id,t.id,m.id),due=p.next&&new Date(p.next)<=new Date();
-      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
+      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span><span class="review-status '+contentReviewStatus('microtopics',key(u.id,t.id,m.id)).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',key(u.id,t.id,m.id))+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
       if(!available)return '<article class="micro-card topic-micro-card content-unavailable">'+body+'<span class="link content-soon-link">COMING SOON <b>•</b></span></article>';
       return '<a class="micro-card topic-micro-card" href="microtopic.html?unit='+u.id+'&topic='+t.id+'&micro='+m.id+'">'+body+'<span class="link">'+(p.status==='NEW'?'Start learning':due?'Review now':'Continue learning')+' <b>→</b></span></a>';
     }).join('');
@@ -713,6 +709,7 @@ function mcqHTML(q,i,source='MCQ',showSource=true){
   const provenance=tags.join(' · ');
   const kind=q.kind||"direct";
   const sourceLabel=q.session?String(q.session)+" · PYQ":provenance;
+  const reviewLabel=contentReviewStatus('questions',q.id);
   return "<article class=\"mcq\" data-i=\""+i+"\" data-answer=\""+ans+"\" data-kind=\""+esc(kind)+"\">"+
     "<div class=\"mcq-meta\"><span class=\"question-kind\">"+esc(kindLabel(kind))+"</span>"+(showSource?"<span class=\"question-source\">"+esc(sourceLabel)+" · Q"+esc(q.question_number??(i+1))+"</span>":"")+"</div>"+
     structuredQuestionHTML(q)+
@@ -745,7 +742,7 @@ function micro(){
   if(!u||!t||!m){root.innerHTML='<div class="panel empty">Micro-topic not found.</div>';return}
   const p=getP(k);
   document.title=m.title+' — UGC NET Psychology';
-  if(!contentIsPublished('microtopics',k)){
+  if(!hasLearningContent(m)){
     root.innerHTML='<section class="panel empty"><div class="eyebrow">COMING SOON</div><h1>This learning content is not available yet.</h1><p>We have the syllabus entry, but the learner-ready content has not been released for this concept.</p><a class="btn primary" href="learn.html">BACK TO LEARN</a></section>';
     return;
   }
@@ -761,7 +758,7 @@ function micro(){
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><span class="review-status '+contentReviewStatus('microtopics',k).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',k)+'</span><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
     '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
@@ -1132,7 +1129,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
-loadPublicationState();
+loadAuditState();
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
