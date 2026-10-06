@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.3.0-direct-static-pools';
+const CACHE='netpsych-shell-v1.3.1-canonical-microtopic-routing';
 const SHELL=[
   './',
   './index.html',
