@@ -28,7 +28,7 @@ Put new source files in `sources/inbox/` and commit them to GitHub. The **Source
 
 The learner site never performs these operations.
 
-The workflow uses the Google Gemini API with structured JSON output. The repository needs an Actions secret named `GEMINI_API_KEY`; never put the key in source files. The default is Gemini's `gemini-flash-latest` alias, so new releases are picked up automatically. Two pinned fallback models (`gemini-3.7-flash` and `gemini-3.6-flash`) are retained for continuity. These can be overridden with the Actions variables `NET_CONTENT_MODEL` and `NET_CONTENT_FALLBACKS`.
+The workflow uses the Google Gemini API with structured JSON output. The repository needs an Actions secret named `GEMINI_API_KEY`; never put the key in source files. By default, the pipeline queries Gemini's model list, selects the newest available stable numeric Gemini Flash model, and keeps the two immediately previous stable Flash versions as fallbacks. This automatically rolls the fallback window forward when Google releases a newer stable Flash model. `NET_CONTENT_MODEL` and `NET_CONTENT_FALLBACKS` may override discovery when needed.
 
 For the first repair pass on the existing repository, run the workflow manually with **Repair existing = true** and **Synthesize sources = false**. After that, adding a new source can trigger the full source-to-content flow automatically.
 
