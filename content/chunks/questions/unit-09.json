@@ -1,0 +1,747 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "December-2012-47",
+      "session": "December 2012",
+      "question_number": 47,
+      "question": "Which one of the following is an example of an artificially discrete variable? a). Number of children in a family b). Nationality c). Sex d). Examination results in terms of pass and fail UGC NET JRF December 2012 Paper II 52 UGC NET JRF December 2012 Paper II 52 Tap to check answer key",
+      "options": [
+        "Number of children in a family",
+        "Nationality",
+        "Sex",
+        "Examination results in terms of pass and fail UGC NET JRF December 2012 Paper II 52 UGC NET JRF December 2012 Paper II 52 Tap to check answer key"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Examination results in terms of pass and fail . The stem describes the concept or relationship represented by Examination results in terms of pass and fail ; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "September-2013-35",
+      "session": "September 2013",
+      "question_number": 35,
+      "question": "Read the following two statements, Assertion (A) and Reason (R). And indicate your answer by using the codes given below: 1. Assertion (A): A child always carries umbrella with him while he goes to school. 2. Reason (R): The child wants to protect himself from rain. 3. Codes: a). Both (A) and (R) are correct and (R) is the true explanation of (A). b). Both (A) and (R) are correct, but (R) is not the true explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the true explanation of (A).",
+        "Both (A) and (R) are correct, but (R) is not the true explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are correct, but (R) is not the true explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 9,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-27",
+      "session": "December 2014",
+      "question_number": 27,
+      "question": "Mental grouping of similar objects, 223 UGC NET JRF December 2014 Paper II 223 UGC NET JRF December 2014 Paper II Tap to check answer key events or people is called",
+      "options": [
+        "Cognition",
+        "Concept",
+        "Prototype",
+        "Thinking"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Concept. The stem describes the concept or relationship represented by Concept; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "December-2014-37",
+      "session": "December 2014",
+      "question_number": 37,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List I (Classification of Developmental delay) List II (Range of IQ Scores) a. Mild 1. 25 – 40 b. Profound 2. 55 – 70 c. Severe 3. Below 25 d. Moderate 4. 40 – 55 Codes: 1. A B C D",
+      "options": [
+        "4 2 1 3",
+        "2 3 1 4",
+        "3 1 4 2",
+        "2 1 3 4"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 3 1 4. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 9,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-47",
+      "session": "December 2014",
+      "question_number": 47,
+      "question": "Which one of the following is an example of artificially discrete organismic variable? a). Examination result as pass or fail. b). Nationality c). Classification of students as low, average and high intelligent d). Gender",
+      "options": [
+        "Examination result as pass or fail.",
+        "Nationality",
+        "Classification of students as low, average and high intelligent",
+        "Gender"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Classification of students as low, average and high intelligent. The stem describes the concept or relationship represented by Classification of students as low, average and high intelligent; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "December-2015-7",
+      "session": "December 2015",
+      "question_number": 7,
+      "question": "Biologically based emotional and behavioural tendencies that are evident in early childhood represent:",
+      "options": [
+        "Trait",
+        "Type",
+        "Temperament",
+        "Style"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Temperament. The stem describes the concept or relationship represented by Temperament; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "July-2016-23",
+      "session": "July 2016",
+      "question_number": 23,
+      "question": "A 40 years old person is having the mental age of 20 years. What would be his IQ ?",
+      "options": [
+        "100",
+        "50",
+        "80",
+        "125"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 100. The stem describes the concept or relationship represented by 100; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-20",
+      "session": "July 2018",
+      "question_number": 20,
+      "question": "Which of the following sequences 435 UGC NET JRF July 2018 Paper II 435 UGC NET JRF July 2018 Paper II Tap to check answer key depicts Erikson’s stages of development correctly?",
+      "options": [
+        "Oral Sensory → Muscular anal → Locomotor genital → Latency → Adolescence → Adulthood.",
+        "Muscular anal → Oral Sensory → Locomotor genital → Latency → Adolescence → Adulthood.",
+        "Oral Sensory → Muscular anal → Latency → Locomotor genital → Adolescence → Adulthood.",
+        "Muscular anal → Locomotor genital → Oral Sensory → Latency → Adolescence → Adulthood."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Oral Sensory → Muscular anal → Locomotor genital → Latency → Adolescence → Adulthood.. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "July-2018-39",
+      "session": "July 2018",
+      "question_number": 39,
+      "question": "In group counselling, what is the correct sequence of stages of group development? a). Forming b). Norming c). Mourning d). Storming e). Performing 1. Code:",
+      "options": [
+        "(b) → (c) → (a) → (e) → (d)",
+        "(a) → (d) → (b) → (e) → (c )",
+        "(a) → (c) → (e) → (b) → (d)",
+        "(d) → (a) → (b) → (c) → (e)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a) → (d) → (b) → (e) → (c ). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2018-51",
+      "session": "December 2018",
+      "question_number": 51,
+      "question": "In a response to questions asked by teachers, Ayan keeps jumping up with a raised hand on his seat till the teacher asks him to get up and answer. He also remains uneasy. Which is the most appropriate way of dealing with Ayan by the teacher? 1. Options:-",
+      "options": [
+        "Shaping",
+        "Extinction",
+        "Didactic counseling to explain why this is a bad habit",
+        "Response cost form of punishment"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Shaping. The stem describes the concept or relationship represented by Shaping; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 9,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-73",
+      "session": "December 2018",
+      "question_number": 73,
+      "question": "What is piaget’s term for a child’s uneven cognitive performance, an inability to solve certain problems even though one can solve similar problems requiring the same mental processes? 1. Options:- 1). Invariant development sequence 2). A-not-B-error 3). Representational insight 4). Horizontal decalage",
+      "options": [
+        "Invariant development sequence",
+        "A-not-B-error",
+        "Representational insight",
+        "Horizontal decalage"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Horizontal decalage. The stem describes the concept or relationship represented by Horizontal decalage; the alternatives refer to different concepts or conditions.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-4",
+      "session": "June 2019",
+      "question_number": 4,
+      "question": "Arrange the following in correct sequence of development of emotional expressions: a). Self-conscious emotions emerge but depend on monitoring and encouragement of adults. b). Expression of happiness increases while interacting with familiar people. c). Anger and Fear increase in frequency and intensity. d). Self conclusion emotions are clearly linked to self-evaluation. 1. Select the correct option:",
+      "options": [
+        "(b)→(a)→(c)→(d)",
+        "(b)→(c)→(a)→(d)",
+        "(b)→(c)→(d)→(a)",
+        "(c)→(b)→(a)→(d)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (c)→(b)→(a)→(d). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "December-2019-35",
+      "session": "December 2019",
+      "question_number": 35,
+      "question": "Arrange the Ego Strengths in correct sequence according to Erickson, stages of development",
+      "options": [
+        "Hope—> purpose—> competence—> fidelity —> love —> care—> wisdom—> will",
+        "Will —> hope —> purpose —> competence —> fidelity —> care —> wisdom —> love",
+        "Hope —> will —> purpose —> competence —> fidelity —> love —> care—> wisdom",
+        "Purpose —> hope —> will —> fidelity—> competence —> care —> wisdom —> love"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Hope —> will —> purpose —> competence —> fidelity —> love —> care—> wisdom. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order. In Freud’s model, the ego follows the reality principle and helps mediate among the demands of the id, superego, and external reality.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "September-2020-11",
+      "session": "September 2020",
+      "question_number": 11,
+      "question": "Which is the correct sequence of speech and language development according to Vygotsky? a). Naive b). Primitive c). Egocentric d). Ingrowth 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, C, D",
+        "B, A, C, D",
+        "A, B, D, C",
+        "B, A, D, C"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B, A, C, D. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 4,
+      "micro": 3
+    },
+    {
+      "id": "September-2020-53",
+      "session": "September 2020",
+      "question_number": 53,
+      "question": "What is the retention without conscious recollection of skills and dispositions called?",
+      "options": [
+        "Iconic memory",
+        "Implicit memory",
+        "Explicit memory",
+        "Semantic memory"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Implicit memory. The stem describes the concept or relationship represented by Implicit memory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 11,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-21",
+      "session": "June 2021",
+      "question_number": 21,
+      "question": "Who among the following proposed that different emotional stimuli induce different patterns of ANS activity and that these different patterns produce different emotional experiences?",
+      "options": [
+        "James–Lange",
+        "Cannon–Bard",
+        "Singer–Schachter",
+        "Plutchik"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. James–Lange. The stem describes the concept or relationship represented by James–Lange; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "June-2021-35",
+      "session": "June 2021",
+      "question_number": 35,
+      "question": "Which of the following in learning environment are considered to be true about school success? a). The self image is vital to learning b). Very high goal setting is necessary to motivate and study c). Success experience is a function of challenge more than repetition d). Child’s spiritual identity is vital to learning 1. Choose the correct answer from the options given below:",
+      "options": [
+        "(A) and (D) only",
+        "(B) and (C) only",
+        "(A), (C) and (D) only",
+        "(B), (C) and (D) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A), (C) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-38",
+      "session": "June 2021",
+      "question_number": 38,
+      "question": "Match List I with List II: List I (Type of communication in family therapy) List II (Description) a. Congruent i) Carries an air of self importance b. Placating ii) Placing others above oneself c. Blaming iii) Seeing the world with a lens of objectivity and coolness d. Super reasonable iv) Reasonably flexible with a sense of connection UGC NET JRF June 2021 Paper II 552 UGC NET JRF June 2021 Paper II 552 Tap to check answer key Choose the correct answer from the options given below",
+      "options": [
+        "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+        "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+        "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+        "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A)-(IV), (B)-(II), (C)-(I), (D)-(III). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 9,
+      "topic": 6,
+      "micro": 16
+    },
+    {
+      "id": "June-2021-42",
+      "session": "June 2021",
+      "question_number": 42,
+      "question": "Which of the following characteristics are applicable to emotions that are considered to occur as a result of interaction among subjective and environmental factors and neural and hormonal processes? a). Emotions give rise to hedonic experiences. b). Emotions stimulate to generate cognitive explanations. c). Emotions trigger variety of internal neurobiological changes. d). Emotions always elicit rewarding behaviour. 1. Choose the most appropriate answer from the options given below:-",
+      "options": [
+        "(A) and (B) only",
+        "(B) and (C) only",
+        "(A), (B) and (C) only",
+        "(B), (C) and (D) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A), (B) and (C) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "June-2021-88",
+      "session": "June 2021",
+      "question_number": 88,
+      "question": "A person’s chronological Age is 20 years, and mental age is 16 years. What would be his IQ?",
+      "options": [
+        "120",
+        "100",
+        "80",
+        "110"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 100. The stem describes the concept or relationship represented by 100; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "June-2021-90",
+      "session": "June 2021",
+      "question_number": 90,
+      "question": "New Mood Therapy:- a). is a cognitive therapy b). is meant for treatment of depression c). involves many behavioural interventions d). was originated by Ellis e). is action commitment therapy 1. Choose the correct answer from the options given below:-",
+      "options": [
+        "(A), (B) and (E) only",
+        "(A), (B) and (C) only",
+        "(B) and (E) only",
+        "(B), (C) and (D) only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (A), (B) and (C) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 6,
+      "micro": 5
+    },
+    {
+      "id": "July-2022-59",
+      "session": "July 2022",
+      "question_number": 59,
+      "question": "The phenomenon of object permanence occurs in which stage of cognitive development?",
+      "options": [
+        "Sensori - Motor",
+        "Preoperational",
+        "Concrete operational",
+        "Formal operational"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Sensori - Motor. The stem describes the concept or relationship represented by Sensori - Motor; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "July-2022-74",
+      "session": "July 2022",
+      "question_number": 74,
+      "question": "Match List I with List II List I (Name of the Disorders) List II (Category of the Disorder) a. Autism i) Neurocognitive b. Alzheimer ii) Elimination c. Bulimia Nervosa iii) Neurodevelop- mental d. Encopresis iv) Eating Choose the correct answer from the options given below:",
+      "options": [
+        "A - III, B - I, C - IV, D - II",
+        "A - I, B - III, C - II, D - IV",
+        "A - I, B - II, C - IV, D - III",
+        "A - III, B – II, C - IV, D - I"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A - III, B - I, C - IV, D - II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 9,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "July-2022-89",
+      "session": "July 2022",
+      "question_number": 89,
+      "question": "Given below are two statements, one is labelled as Assertion A and the other is labelled as Reason R. 1. Assertion A: Counsellors generally follow eclectic approach to counselling suitable to specific context. 2. Reason R: When counsellor and client differ in their cutural background, it requires multicultural counselling skills. 3. In light of the above statements, choose the correct answer from the options given below:",
+      "options": [
+        "Both A and R are true and R is the 585 UGC NET JRF July 2022 Paper II 585 UGC NET JRF July 2022 Paper II Tap to check answer key correct explanation of A",
+        "Both A and R are true but R is NOT the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both A and R are true but R is NOT the correct explanation of A. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 11,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-31",
+      "session": "March 2023",
+      "question_number": 31,
+      "question": "Which of the following definitions is not correct according to Gestalt therapy?",
+      "options": [
+        "Introjection refers to the internalized rules governing our thoughts, feelings and behaviour which we absorb from parental and other influences from childhood onwards",
+        "Retroflection refers to the process whereby we do to ourselves what we would like to do to some one else",
+        "Confluence refers to the style of relating to other people which is based on an absence of conflict and a conviction that everyone should be in agreement",
+        "Deflection refers to the process of attributing aspects of ourselves to other people"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Deflection refers to the process of attributing aspects of ourselves to other people. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-33",
+      "session": "March 2023",
+      "question_number": 33,
+      "question": "Which of the following name is associated with Play Therapy?",
+      "options": [
+        "Eric Berne",
+        "Elizabeth Hurlock",
+        "Gerard Egan",
+        "Virginia Axline"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Virginia Axline. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 10
+    },
+    {
+      "id": "March-2023-34",
+      "session": "March 2023",
+      "question_number": 34,
+      "question": "In REBT, treatment is based on :",
+      "options": [
+        "Assessment of goals and activating events only",
+        "Diagnostic categories, beliefs and consequences",
+        "Believes and consequences only",
+        "Assessment of goals, activating events, believes and consequences"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Assessment of goals, activating events, believes and consequences. The stem describes the concept or relationship represented by Assessment of goals, activating events, believes and consequences; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 7
+    },
+    {
+      "id": "March-2023-35",
+      "session": "March 2023",
+      "question_number": 35,
+      "question": "Transactional analysis is concerned with four major areas of analysis. Which out of the following does not come under this?",
+      "options": [
+        "Structural analysis",
+        "Hypnotic analysis",
+        "Ground analysis",
+        "Game analysis"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Hypnotic analysis. The stem describes the concept or relationship represented by Hypnotic analysis; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 12
+    },
+    {
+      "id": "March-2023-55",
+      "session": "March 2023",
+      "question_number": 55,
+      "question": "Which of the following indicate aspects of language development? a). Pragmatics b). Syntax c). Imprinting d). Semantics 599 UGC NET JRF March 2023 Paper II 599 UGC NET JRF March 2023 Paper II Tap to check answer key 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A and B only",
+        "A, B and D only",
+        "B and C only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 4,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-61",
+      "session": "March 2023",
+      "question_number": 61,
+      "question": "Transactional Analysis refers to the ego states such as: a). Critical Parent, Adult b). Parent, Child, Adult c). Nurturant Parent, Little Professor d). Adapted child, Deviant child 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "C and D only",
+        "B, C and D only",
+        "A and D only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. In Freud’s model, the ego follows the reality principle and helps mediate among the demands of the id, superego, and external reality.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 6,
+      "micro": 12
+    },
+    {
+      "id": "March-2023-65",
+      "session": "March 2023",
+      "question_number": 65,
+      "question": "In the Transactional Analysis, Ego State Analysis involves analyzing a). Id, Ego, Super Ego b). Alter Ego c). Parent, Adult, child d). Voluntary and Involuntary Ego 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A and C only",
+        "B only",
+        "C only",
+        "C and D only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. C only. The stem describes the concept or relationship represented by C only; the alternatives refer to different concepts or conditions. In Freud’s model, the ego follows the reality principle and helps mediate among the demands of the id, superego, and external reality.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 12
+    },
+    {
+      "id": "June-2023-34",
+      "session": "June 2023",
+      "question_number": 34,
+      "question": "Which of the following is not correct about REBT?",
+      "options": [
+        "REBT aims to help individuals think clearly, feel appropriately and act effectively.",
+        "REBT uses the A-B-C theory of personality to identify client’s problems.",
+        "The focus of the therapist is on the feelings and behaviour of the individual than on the incident that induced the negative feelings",
+        "REBT aims at a combination of philosophical change with cognitive emotional and behavioural strategies."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. The focus of the therapist is on the feelings and behaviour of the individual than on the incident that induced the negative feelings. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 7
+    },
+    {
+      "id": "June-2023-76",
+      "session": "June 2023",
+      "question_number": 76,
+      "question": "Arrange Erik Eriksons stages of psychosocial development and basic strengths: (A). trust vs mistrust (B). Initiative vs guilt (C). Industriousness vs inferiority (D). Autonomy vs doubt, shame 1. Choose the correct answer from the options given below.",
+      "options": [
+        "A, D, B, C",
+        "A, C, B, D",
+        "A, B, D, C",
+        "B, C, A. D"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, D, B, C. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2023-50",
+      "session": "December 2023",
+      "question_number": 50,
+      "question": "Egan’s developmental model of counselling mentions the following distinct steps in its three stages: (A). Possibilities, Commitment (B). Best fit, Leverage (C). Blindspot, Focusing (D). Leverage, Confronting (E). Agenda, Commitment 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, D only",
+        "A, B, E only",
+        "A, B, C only",
+        "A, B, C, E only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, B, E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2023-56",
+      "session": "December 2023",
+      "question_number": 56,
+      "question": "Which of the following are the influencing skills of counselling? (A). Self disclosure (B). Information giving (C). Confrontation (D). Smart-goals 1. Choose the correct answer from the options given below:",
+      "options": [
+        "D only",
+        "A, B , D only",
+        "B, C, D only",
+        "A, B, C only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, B, C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 9,
+      "topic": 11,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-75",
+      "session": "December 2023",
+      "question_number": 75,
+      "question": "Match List I with List II List I List II a. Gestalt psy- chology i) Believing that one has various horrible disease conditions b. Hypo- chondriacal delusions ii) Emphasis on personal growth and self-direction c. Humanistic existential therapy iii) Whole in more than the sum of its parts d. Existential neurosis iv) Feeling of alienation meaninglessness and apathy Choose the correct answer from the options given below:",
+      "options": [
+        "A-III, B-IV, C-I, D-II",
+        "A-III, B-I, C-II. D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-I, C-III, D-IV"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A-III, B-I, C-II. D-IV. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 9,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "December-2023-83",
+      "session": "December 2023",
+      "question_number": 83,
+      "question": "Arrange the stages of group development as suggested by Tuckman: (A). Storming (B). Performing (C). Forming (D). Adjourning (E). Norming 1. Choose the correct answer from the options given below:",
+      "options": [
+        "C, A, B, E, D",
+        "C, A, E, B, D",
+        "A, C, E, B, D",
+        "A, C, B, E, D"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. C, A, E, B, D. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 9,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2023-94",
+      "session": "December 2023",
+      "question_number": 94,
+      "question": "By instructing the teacher to play the loud noise of bore-well digging the psychologist introduced:",
+      "options": [
+        "Aversion Therapy",
+        "Implosive Therapy",
+        "Response Shaping",
+        "Rogerian Therapy"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Aversion Therapy. The item tests a factual association: the relevant person, work, date, contribution, or term is Aversion Therapy.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 6,
+      "micro": 10
+    },
+    {
+      "id": "December-2023-99",
+      "session": "December 2023",
+      "question_number": 99,
+      "question": "There are different domains of PGT. Which one of the following does not come under them?",
+      "options": [
+        "Personal strength",
+        "Spiritual change",
+        "Relationship with others",
+        "Creativity"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Creativity. The stem describes the concept or relationship represented by Creativity; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 9,
+      "topic": 4,
+      "micro": 1
+    }
+  ],
+  "practice": []
+}
