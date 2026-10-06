@@ -237,6 +237,10 @@ def main():
 
     generated=[]
     target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()}
+    existing_micro=load(MICRO)
+    existing_deep=load(ROOT/"content/deep-dive/deep_dive.json")
+    existing_recall=load(ROOT/"content/active-recall/active_recall.json")
+    existing_revision=load(REVISION)
     content_schema={"type":"object","properties":{
         "microtopic_id":{"type":"string"},
         "quick_learn":{"type":"string"},
@@ -269,15 +273,12 @@ def main():
         ranked.sort(reverse=True,key=lambda x:x[0])
         evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
         if not evidence: continue
-        current={}
-        try:
-            micro_current=load(MICRO).get(ref["id"],{})
-            deep_current=load(ROOT/"content/deep-dive/deep_dive.json").get(ref["id"],{})
-            recall_current=load(ROOT/"content/active-recall/active_recall.json").get(ref["id"],{})
-            revision_current=load(REVISION).get(ref["id"],{})
-            current={"microtopic":micro_current,"deep_dive":deep_current,"active_recall":recall_current,"revision":revision_current}
-        except Exception:
-            current={}
+        current={
+            "microtopic":existing_micro.get(ref["id"],{}),
+            "deep_dive":existing_deep.get(ref["id"],{}),
+            "active_recall":existing_recall.get(ref["id"],{}),
+            "revision":existing_revision.get(ref["id"],{})
+        }
         generated.append(call_ai(
             instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence.",
             {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
