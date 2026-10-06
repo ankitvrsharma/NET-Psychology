@@ -35,8 +35,6 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
-const EXPERT_THRESHOLDS={pass:70,review:60};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 let PUBLICATION={approved:{microtopics:[],questions:[]},rejected:{microtopics:[],questions:[]}};
