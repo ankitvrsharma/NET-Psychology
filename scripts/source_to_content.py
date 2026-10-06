@@ -12,6 +12,7 @@ QUESTIONS=ROOT/"content/questions/questions.json"
 REVISION=ROOT/"content/revision/revision_guidance.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
+INSTRUCTIONS=ROOT/"data/content-enrichment-instructions.json"
 MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
