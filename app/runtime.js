@@ -77,6 +77,7 @@ const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(hasLea
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
 const microAvailable=(u,t,m)=>hasLearningContent(m);
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
+const microtopicHref=(u,t,m,extra={})=>{const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
@@ -470,7 +471,7 @@ function daily3(){
   try{localStorage.setItem('netPsychDaily3',JSON.stringify({date:todayKey,items:session.map(x=>x.k)}));localStorage.setItem(keyName,JSON.stringify({served:completedCycle?[]:nextServed,cycle:completedCycle?rotation.cycle+1:rotation.cycle,lastDate:todayKey}))}catch(e){}
   $('#daily3App').innerHTML='<section class="page-hero daily3-hero"><div class="eyebrow">3-CONCEPT DAILY SESSION</div><h1>Learn three concepts today.</h1><p>Work through three focused concepts today. Start with each concept, build your understanding, and move on when you are ready.</p></section><section class="daily3-list">'+session.map((x,i)=>'<article class="daily3-item card"><div class="daily3-number">0'+(i+1)+'</div><div class="daily3-copy"><div class="eyebrow">UNIT '+x.u.id+(partForTopic(x.u,x.t)?' · PART '+esc(partForTopic(x.u,x.t).id):'')+' · TOPIC '+x.t.id+'</div><h2>'+esc(x.m.title)+'</h2><p>'+esc(x.t.title)+'</p></div><a class="btn primary" href="microtopic.html?unit='+x.u.id+'&topic='+x.t.id+'&micro='+x.m.id+'">START CONCEPT</a></article>').join('')+'</section><section class="panel daily3-note"><b>Why three?</b><span>Three concepts give you a manageable study load while helping you keep moving through the syllabus. Your scheduled revisions remain available separately when concepts are due.</span></section>';
 }
-function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return `microtopic.html?unit=${due.u.id}&topic=${due.t.id}&micro=${due.m.id}`;const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return `microtopic.html?unit=${started.u.id}&topic=${started.t.id}&micro=${started.m.id}`;return 'unit.html?id=1'}
+function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return microtopicHref(due.u,due.t,due.m);const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return microtopicHref(started.u,started.t,started.m);return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
 function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const next=new Date(now.getTime()+days*86400000),successful=(p.successfulRevisions||0)+(rating==='good'||rating==='easy'?1:0),mastered=successful>=3&&count>=3&&rating!=='again';setP(k,{next:next.toISOString(),nextInterval:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,successfulRevisions:successful,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:days}].slice(-20),last:now.toISOString()});return next}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
@@ -753,7 +754,7 @@ function micro(){
   const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
   const deep=String(m.detailed_explanation||m.deep||concept).trim();
   const shortNotes=Array.isArray(m.study_notes)&&m.study_notes.length?m.study_notes.map(x=>String(x?.content||'').trim()).filter(Boolean).join('\n\n'): [concept,...kp].filter(Boolean).join('\n\n');
-  const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
+  const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
@@ -961,7 +962,7 @@ function practice(){
     };
     const learningHrefForQuestion=q=>{
       const u=units().find(x=>String(x.id)===String(q?.unit)),t=u?.topics.find(x=>String(x.id)===String(q?.topic)),m=t?.microtopics.find(x=>String(x.id)===String(q?.micro));
-      return u&&t&&m?'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id):'learn.html';
+      return u&&t&&m?microtopicHref(u,t,m):'learn.html';
     };
     const renderComplete=(timeUp=false)=>{
       stopTimer();

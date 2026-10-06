@@ -1,7 +1,7 @@
 /* Application facade: loads runtime dependencies in a deterministic order, then starts the learner app. */
 (function(){
 'use strict';
-const VERSION='20261006-audit-status-v1';
+const VERSION='1.0.1';
 const files=[
   './app/content-audit.js?v='+VERSION,
   './app/data-loader.js?v='+VERSION,
