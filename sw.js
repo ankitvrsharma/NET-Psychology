@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.4.0-canonical-learning-production';
+const CACHE='netpsych-shell-v1.4.1-route-compatibility';
 const SHELL=[
   './',
   './index.html',
