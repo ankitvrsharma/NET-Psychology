@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v54-audit-status';
+const CACHE='netpsych-shell-20261006-r1';
 const SHELL=[
   './',
   './index.html',
