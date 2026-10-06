@@ -1,0 +1,2229 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "June-2012-9",
+      "session": "June 2012",
+      "question_number": 9,
+      "question": "Which of the following the Tetrad equation as given by Spearman? a). r12 *r34 = r14 *r23 b). r13 *r24 = r14 *r23 c). r14 *r23 = r13 *r24 d). All of these",
+      "options": [
+        "r12 *r34 = r14 *r23",
+        "r13 *r24 = r14 *r23",
+        "r14 *r23 = r13 *r24",
+        "All of these"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. All of these. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-10",
+      "session": "June 2012",
+      "question_number": 10,
+      "question": "What among the following define a problem space? 1). An initial state 2). A goal state 3). A set of operations",
+      "options": [
+        "1, 3",
+        "1, 2",
+        "2, 3",
+        "1, 2, 3"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 1, 2, 3. The stem describes the concept or relationship represented by 1, 2, 3; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-17",
+      "session": "June 2012",
+      "question_number": 17,
+      "question": "Natural concepts are based on : 15 UGC NET JRF June 2012 Paper II 15 UGC NET JRF June 2012 Paper II Tap to check answer key",
+      "options": [
+        "prototypes",
+        "a set of rules/properties",
+        "schemas",
+        "propositions"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. prototypes. The stem describes the concept or relationship represented by prototypes; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "June-2012-49",
+      "session": "June 2012",
+      "question_number": 49,
+      "question": "What among the following is true for mental set ? 1). It can enhance the quality and speed of perceiving and problem solving under some conditions. 2). It can enhance the quality and speed of perceiving and problem solving in new situations. 3). It may inhibit or distort the quality of mental activities in new situations. 4). It may inhibit or distort the quality of mental activities under same conditions. 1. Codes: a). 1 and 2 only b). 2 and 3 only c). 1 and 3 only d). 3 and 4 only",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "3 and 4 only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 1 and 3 only. The stem describes the concept or relationship represented by 1 and 3 only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-50",
+      "session": "June 2012",
+      "question_number": 50,
+      "question": "Match the following List I List II a. Thinking 1. Mental activity through which We transform available information in order to reach conclusions b. Reasoning 2. An activity that involves the Manipulation of mental representation of various features of the external world. c. Decision making 3. Processing information in various ways in order to move toward desired goals. UGC NET JRF June 2012 Paper II 22 UGC NET JRF June 2012 Paper II 22 Tap to check answer key d. Problem solving 4. The process of choosing between two or more alternatives on the basis of information about them. Codes: 1. A B C D",
+      "options": [
+        "4 3 2 1",
+        "2 1 4 3",
+        "3 4 2 1",
+        "2 3 1 4 23 UGC NET JRF June 2012 Paper II 23 UGC NET JRF June 2012 Paper II"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 1 4 3. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-7",
+      "session": "December 2012",
+      "question_number": 7,
+      "question": "The role of unconscious in creative thinking is known as the process of a). Verification b). Illumination c). Inoculation d). Incubation",
+      "options": [
+        "Verification",
+        "Illumination",
+        "Inoculation",
+        "Incubation"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Incubation. The stem describes the concept or relationship represented by Incubation; the alternatives refer to different concepts or conditions. Freud emphasized unconscious processes as an important influence on behaviour and mental life.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "December-2012-10",
+      "session": "December 2012",
+      "question_number": 10,
+      "question": "Which is not the obstacle to problem solving? a). Confirmation bias b). Fixation c). Mental Set d). Heuristics",
+      "options": [
+        "Confirmation bias",
+        "Fixation",
+        "Mental Set",
+        "Heuristics"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Heuristics. The stem describes the concept or relationship represented by Heuristics; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-11",
+      "session": "December 2012",
+      "question_number": 11,
+      "question": "Given below are two statements, one labelled as Assertion (A), and the other labelled as Reason (R). Indicate your answer using the codes given below : 1. Assertion (A): Algorithm is a logical rule that guarantees solving particular problem. 2. Reason (R): One can find the solution even to complex problems by following step by step procedure. 3. Codes: a). Both (A) and (R) are true, but (R) is not the correct explanation of (A). b). Both (A) and (R) are true and (R) is the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. An algorithm is a systematic, step-by-step procedure that, when correctly applied, leads to a solution.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-14",
+      "session": "December 2012",
+      "question_number": 14,
+      "question": "Match the following lists according to the types and characteristics of thinking: List I ( Types of Thinking) List II (Characteristic) (a). Autistic thinking 1. Reasoning (b). Realistic Thinking 2. Drawing facts (c). Covergent thinking 3. Unusual uses (d). Creative thinking 4. Fantasy Codes: 1. A B C D",
+      "options": [
+        "1 3 4 2",
+        "3 1 2 4",
+        "2 1 3 4",
+        "4 1 2 3"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 4 1 2 3. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2012-27",
+      "session": "December 2012",
+      "question_number": 27,
+      "question": "Read the following two statements, Assertion (A) and Reason (R) and indicate your answer using the codes given below : 1. Assertion (A): Biderman’s ‘recognition by components’ theory states that objects can be thought of as being composed of basic building blocks called Geons. 2. Reason (R): The relationship between features and geons does not exist. Geons are not composed of features such as edges, corners etc. 3. Codes: a). (A) and (R) are false. b). (A) is false, but (R) is true. c). Both (A) and (R) are true, (R) is not the correct explanation of (A). d). (A) is true, but (R) is false.",
+      "options": [
+        "(A) and (R) are false.",
+        "(A) is false, but (R) is true.",
+        "Both (A) and (R) are true, (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-43",
+      "session": "December 2012",
+      "question_number": 43,
+      "question": "Read each of the following two statements Assertion (A) and Reason (R) and indicate your answer using the codes below : 1. Assertion (A): Thalamus and Hypothalamus play an important role in emotions. 2. Reason (R) : Thalamus and Hypothalamus anatomically lie close each other. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, (R) is false. d). (A) is false, (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, (R) is false.",
+        "(A) is false, (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "December-2012-50",
+      "session": "December 2012",
+      "question_number": 50,
+      "question": "Which of the following represent/s stylistically correct version/s of a hypothesis? 1). To study the relationship between intelligence and academic achievement 2). Is there a relationship between intelligence and academic achievement? 3). Intelligence and academic achievement are positively correlated. 4). Intelligence and academic achievement are unrelated. 1. Codes:",
+      "options": [
+        "1 only",
+        "3 only",
+        "1 and 2 only",
+        "3 and 4 only 53 UGC NET JRF December 2012 Paper II 53 UGC NET JRF December 2012 Paper II"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 3 and 4 only . Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-3",
+      "session": "June 2013",
+      "question_number": 3,
+      "question": "Which is the most basic and common obstacle to problem solving? a). Confirmation bias b). Fixation c). Functional fixedness d). Mental set",
+      "options": [
+        "Confirmation bias",
+        "Fixation",
+        "Functional fixedness",
+        "Mental set"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Fixation. The stem describes the concept or relationship represented by Fixation; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-4",
+      "session": "June 2013",
+      "question_number": 4,
+      "question": "The child who says “Milk gone” is engaging in ________. This type of utterance demonstrates that children are actively experimenting with rules of ________.",
+      "options": [
+        "Babbling; syntax",
+        "Telegraphic speech; syntax",
+        "Babbling ; semantics",
+        "Telegraphic speech; semantics"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Telegraphic speech; syntax. The stem describes the concept or relationship represented by Telegraphic speech; syntax; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-5",
+      "session": "June 2013",
+      "question_number": 5,
+      "question": "Problem solving comprises of four stages. Choose the correct sequence of stages a). Incubation, preparation, verification, illumination b). Preparation, incubation, illumination, verification",
+      "options": [
+        "Incubation, preparation, verification, illumination",
+        "Preparation, incubation, illumination, verification",
+        "Incubation, preparation, illumination, verification",
+        "Preparation, illumination, incubation, verification"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Preparation, incubation, illumination, verification. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-39",
+      "session": "June 2013",
+      "question_number": 39,
+      "question": "Which of the following are essential to Spearman’s methodology of theory development? i). Tetral equation ii). Tetral difference iii). Specific factor iv). Neurological basis of intelligence 1. Codes: a). I, II and III b). I, III and IV c). II, III and IV d). I, II and IV",
+      "options": [
+        "I, II and III",
+        "I, III and IV",
+        "II, III and IV",
+        "I, II and IV"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. I, II and III. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "September-2013-1",
+      "session": "September 2013",
+      "question_number": 1,
+      "question": "Abstract, idealized representation that captures an average or typical member of a category of things is referred to as",
+      "options": [
+        "Exemplar",
+        "Prototype",
+        "Concept",
+        "Schemas"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Prototype. A prototype is an abstracted, typical representation of a category. It can be understood as a central or average example against which category members are compared. An exemplar is a specific remembered instance, whereas a prototype is a generalized representation.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "September-2013-34",
+      "session": "September 2013",
+      "question_number": 34,
+      "question": "Match List-I with List-II and indicate your answer with the help of codes given below : List – I (Process/ Phenomenon) List – II (Psychological Name) a. Grouping of similar objects, events 1. Concept b. Logical rule of solving problem 2. Insight c. Thumb-rule of solving problem 3. Heuristic d. Realization of solution to problem 4. Algorithm Codes: 1. A B C D",
+      "options": [
+        "1 2 3 4",
+        "1 3 4 2",
+        "1 4 2 3",
+        "1 4 3 2"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 1 4 3 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-42",
+      "session": "December 2013",
+      "question_number": 42,
+      "question": "Which set of three approaches is more relevant to study the impact of Genetic factors on intelligence? 1). Correlation between siblings 2). Correlation between identical twins reared apart. 3). Adopted child studies. 4). Correlation between parents and children. 1. Codes: a). 1, 2 and 3 b). 2, 3 and 4 c). 1, 2 and 4 d). 1, 3 and 4",
+      "options": [
+        "1, 2 and 3",
+        "2, 3 and 4",
+        "1, 2 and 4",
+        "1, 3 and 4"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 1, 2 and 4. The stem describes the concept or relationship represented by 1, 2 and 4; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-21",
+      "session": "June 2014",
+      "question_number": 21,
+      "question": "Children of affluent and educated parents tend to score higher on tests of ability than children of parents living in poverty and who are not well educated. This relationship between socio-economic status and scores on ability tests is because of : 1). Genetic differences in ability between different social classes. 2). Differences in the adequacy of the biological and environmental factors in nutrition and health care. 3). Differences in the cultural and learning experiences provided for children from different social classes. 1. Codes:",
+      "options": [
+        "1 and 3",
+        "2 and 3",
+        "1 and 2",
+        "1, 2 and 3"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 1, 2 and 3. The stem describes the concept or relationship represented by 1, 2 and 3; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-22",
+      "session": "June 2014",
+      "question_number": 22,
+      "question": "In reasoning when the premises are true, ________ cannot be false.",
+      "options": [
+        "Conclusion",
+        "Argument",
+        "Thoughts 185 UGC NET JRF June 2014 Paper II 185 UGC NET JRF June 2014 Paper II Tap to check answer key",
+        "Propositions"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Conclusion. The stem describes the concept or relationship represented by Conclusion; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-29",
+      "session": "June 2014",
+      "question_number": 29,
+      "question": "Constructive Alternativism refers to: a). A person’s mental processes are psychologically channelised by the ways in which he anticipates events. b). All present interpretations of the universe are subject to revision or replacement. c). It is a category of thought by which the individual construes or interprets his personal world of experience. d). It is a process by which a person predicts and controls personal experiences by construing their replications.",
+      "options": [
+        "A person’s mental processes are psychologically channelised by the ways in which he anticipates events.",
+        "All present interpretations of the universe are subject to revision or replacement.",
+        "It is a category of thought by which the individual construes or interprets his personal world of experience.",
+        "It is a process by which a person predicts and controls personal experiences by construing their replications."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. All present interpretations of the universe are subject to revision or replacement.. The stem describes the concept or relationship represented by All present interpretations of the universe are subject to revision or replacement.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-42",
+      "session": "June 2014",
+      "question_number": 42,
+      "question": "The process of expanding our level of awareness and allowing us to observe ourselves engaged in the problem solving process is termed as:",
+      "options": [
+        "Representativeness Heuristic",
+        "Algorithm",
+        "Anchoring – and – Adjustment UGC NET JRF June 2014 Paper II 190 UGC NET JRF June 2014 Paper II 190 Tap to check answer key Heuristic",
+        "Metacognitive Processing"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Metacognitive Processing. The stem describes the concept or relationship represented by Metacognitive Processing; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-4",
+      "session": "December 2014",
+      "question_number": 4,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List – I (Authors) List – II (Concepts) a. Cattell 1. General and Specific factors b. Spearman 2. Fluid and Crystallized intelligence c. Gardner 3. Triarchic theory of intelligence d. Sternberg 4. Multiple Intellegence theory Codes: 1. A B C D",
+      "options": [
+        "1 3 4 2",
+        "2 1 4 3",
+        "3 4 2 1",
+        "4 3 2 1"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 1 4 3. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-10",
+      "session": "December 2014",
+      "question_number": 10,
+      "question": "The left hemisphere is more skilled at a). Seeing the forest not the trees. b). Interpreting speech and language. c). Analysing the melodies. d). Judging the symmetry in a photograph.",
+      "options": [
+        "Seeing the forest not the trees.",
+        "Interpreting speech and language.",
+        "Analysing the melodies.",
+        "Judging the symmetry in a photograph."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Interpreting speech and language.. The stem describes the concept or relationship represented by Interpreting speech and language.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-24",
+      "session": "December 2014",
+      "question_number": 24,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List – I (Concept) List – II (Description) a. Morpheme 1. The set of rules by which we derive meanings, from morphemes, words and sentences. b. Grammar 2. The rules for combining words into grammatically sensible sentences. c. Semantics 3. The system of rules that enables us to communicate with and understand others. d. Syntax 4. The smallest unit that carries meaning may be a word or a part of word. Codes: 1. A B C D",
+      "options": [
+        "1 2 3 4",
+        "2 3 4 1",
+        "3 4 2 1",
+        "4 3 1 2"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 4 3 1 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-28",
+      "session": "June 2015",
+      "question_number": 28,
+      "question": "Which of the following is not the way we acquire concepts?",
+      "options": [
+        "Naturally acquired",
+        "By Discrimination Learning",
+        "Innate",
+        "By Definition"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Innate. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "June-2015-29",
+      "session": "June 2015",
+      "question_number": 29,
+      "question": "Match the List – I with List – II and select the correct answer using the codes given below: List I List II a. Functional fixedness (i) A cognitive process that employ appropriate novelty to originality that suits some purpose. 259 UGC NET JRF June 2015 Paper II 259 UGC NET JRF June 2015 Paper II Tap to check answer key b. Back tracking (ii) A problem solving phenomenon in which people seeing alternative uses for common objects. c. Creativity (iii) A problem solving technique that involves keeping track of solving process where in assumptions are made; so they may later be changed. d. Working backward (iv) A problem solving technique that identifies the final goals and the steps in reverse order. Codes: 1. a b c d",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (i) (ii) (iv)",
+        "(ii) (iii) (i) (iv)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (ii) (iii) (i) (iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-33",
+      "session": "June 2015",
+      "question_number": 33,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): In problem solving process, people generally evolve/ select the optimal solutions of a problem. 2. Reason (R): A number of solutions are identified to choose from. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A) 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A) 3). (A) is true, but (R) is false 4). (A) is false, but (R) is true",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A). Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-39",
+      "session": "June 2015",
+      "question_number": 39,
+      "question": "Which of the following stages is called the period of problem solving behaviour?",
+      "options": [
+        "Secondary Circular Reaction",
+        "Reflex",
+        "Tertiary Reaction",
+        "Primary Circular Reaction"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Tertiary Reaction. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-41",
+      "session": "June 2015",
+      "question_number": 41,
+      "question": "Read the following statements and indicate which are correct. (a). Archetypes are themes that have existed in all cultures throughout history. (b). Personal unconscious is the region next to the ego which consists of all the forgotten experiences that have lost their intensity (c). Masculine Archetype in men is called animus. (d). Persona is a compromise between demands of the environment and necessities of an individual. 1. Codes: 1). (a), (b) and (c) 2). (b), (c) and (d) 3). (a), (b) and (d) 4). (a), (c) and (d)",
+      "options": [
+        "(a), (b) and (c)",
+        "(b), (c) and (d)",
+        "(a), (b) and (d)",
+        "(a), (c) and (d)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (b) and (d). The stem describes the concept or relationship represented by (a), (b) and (d); the alternatives refer to different concepts or conditions. Freud emphasized unconscious processes as an important influence on behaviour and mental life.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-4",
+      "session": "December 2015",
+      "question_number": 4,
+      "question": "Which among the following defines problem space? 1). An initial state 2). A goal state 3). A set of operations 1. Codes:",
+      "options": [
+        "(a) and (c)",
+        "(a) and (b)",
+        "(b) and (c)",
+        "(a), (b) and (c)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b) and (c). The stem describes the concept or relationship represented by (a), (b) and (c); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-10",
+      "session": "July 2016",
+      "question_number": 10,
+      "question": "In retrograde amnesia, which of the following kind of problem is seen:",
+      "options": [
+        "Problems with recalling previously learned material",
+        "Problems with face recognition.",
+        "Difficulty finding routes. UGC NET JRF July 2016 Paper II 322 UGC NET JRF July 2016 Paper II 322 Tap to check answer key",
+        "Poor encoding of verbal material."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Problems with face recognition.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-13",
+      "session": "July 2016",
+      "question_number": 13,
+      "question": "Match List – I with List – II and indicate the correct answer using the codes given below: List I (Concept) List II (Explanation) a. Artificial concepts i) Representation of objects b. Natural concepts ii) Clearest objects in the physical world c. Prototypes iii) Defined by set of rules d. Visual images iv) Not based on precise properties Codes: 1. A B C D 1). ( ii) (iii) (iv) (i) 2). ( iii) (iv) (ii) (i) 3). (iii) (ii) (iv) (i) 4). (iv) (iii) (i) (ii)",
+      "options": [
+        "( ii) (iii) (iv) (i)",
+        "( iii) (iv) (ii) (i)",
+        "(iii) (ii) (iv) (i)",
+        "(iv) (iii) (i) (ii)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (iv) (iii) (i) (ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-28",
+      "session": "July 2016",
+      "question_number": 28,
+      "question": "One prominent class of theorists of deductive reasoning believe that deduction depends on _____ of inference akin to those of ______. 1). informal rules; logical calculus 2). formal rules; analytical calculus 3). procedural rules; logical calculus 4). formal rules; logical calculus",
+      "options": [
+        "informal rules; logical calculus",
+        "formal rules; analytical calculus",
+        "procedural rules; logical calculus",
+        "formal rules; logical calculus"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. formal rules; logical calculus. The stem describes the concept or relationship represented by formal rules; logical calculus; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-32",
+      "session": "July 2016",
+      "question_number": 32,
+      "question": "What is the correct sequence of products in Guilford’s Struct of Intellect Model (SOI)?",
+      "options": [
+        "Unit → Class → System → Relations Implication → Transformation",
+        "Class → Unit → Systems → Relation Transformation → Implication",
+        "Unit → Class → Relation → System Transformation → Implication",
+        "Unit → Relation → Class → System Transformation → Implication"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Class → Unit → Systems → Relation Transformation → Implication. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "January-2017-26",
+      "session": "January 2017",
+      "question_number": 26,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List I (Concept) List II (Explanation) a. Analogical reasoning i. Processes that allow to make predictions about events/objects. b. Deductive reasoning ii. Using inferences to add new knowledge. c. Inductive reasoning iii. Using means-end analysis. d. Physical reasoning iv. Drawing valid conclusions from premises. Codes: 1. A B C D 1). (i) (ii) (iii) (iv) 2). (ii) (iii) (iv) (i) 3). (iii) (iv) (ii) (i) 4). (iv) (iii) (ii) (i)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (ii) (i)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii) (iv) (ii) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-29",
+      "session": "January 2017",
+      "question_number": 29,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List I (Concept) List II (Explanation) a. Syntelity i. Dynamic source trait with an environmental origin. b. Self- sentiment ii. Description of traits that characterize a group. c. Metaerg iii. Causal relationship between Ergs, sentiments and Attitudes. d. Subsidiation iv. The most powerful sentiment which organizes the entire personality. Codes: 1. A B C D 1). (iv) (ii) (i) (iii) 2). (ii) (iv) (i) (iii) 3). (iv) (iii) (ii) (i) 4). (ii) (iv) (iii) (i)",
+      "options": [
+        "(iv) (ii) (i) (iii)",
+        "(ii) (iv) (i) (iii)",
+        "(iv) (iii) (ii) (i)",
+        "(ii) (iv) (iii) (i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (ii) (iv) (i) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-35",
+      "session": "January 2017",
+      "question_number": 35,
+      "question": "In problem solving if you follow rules that reduce the number of operations or allow you to take short cuts, you are using:",
+      "options": [
+        "Algorithm",
+        "Heuristic",
+        "Strategy",
+        "Skill"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Heuristic. The stem describes the concept or relationship represented by Heuristic; the alternatives refer to different concepts or conditions. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-40",
+      "session": "January 2017",
+      "question_number": 40,
+      "question": "In Guilford’s struct of Intellect Model, obtained abilities have been named in which of the following sequence:",
+      "options": [
+        "Operations; contents; products",
+        "Operations; products; contents",
+        "Contents; operations; products",
+        "Products; contents; operations"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Operations; contents; products. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "January-2017-41",
+      "session": "January 2017",
+      "question_number": 41,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R); and indicate your answer using codes given below: 1. Assertion (A): Differences between intelligence levels of monozygotic twins are attributed to environmental influences. 2. Reason (R): Monozygotic twins have identical genetically determined reaction range. 3. Codes: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-7",
+      "session": "November 2017",
+      "question_number": 7,
+      "question": "Concepts allow us to identify things without _________.",
+      "options": [
+        "Learning",
+        "Relearning",
+        "Recognition",
+        "Remembering"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Relearning. The stem describes the concept or relationship represented by Relearning; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "November-2017-8",
+      "session": "November 2017",
+      "question_number": 8,
+      "question": "Below given are some concepts. Indicate which is the correct sequence in terms of levels of increasing abstraction ? Concepts are: a). Negation concept b). Alternative denial concept c). Disjunction concept 1. Code:",
+      "options": [
+        "(a), (b), (c)",
+        "(a), (c), (b)",
+        "(b), (a), (c)",
+        "(c), (b), (a) 395 UGC NET JRF November 2017 Paper II 395 UGC NET JRF November 2017 Paper II Tap to check answer key"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a), (b), (c). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "November-2017-10",
+      "session": "November 2017",
+      "question_number": 10,
+      "question": "Binocular cues depend on: a). Combination of the images in the left and right retinas b). The way two eyes work together c). Image in either right or left eye d). Difference between the images in the two eyes 1. Code : 1). (a), (b) and (d) only 2). ( a), (c) and (d) only 3). (c), (a) and (b) only 4). (b), (c) and (d) only",
+      "options": [
+        "(a), (b) and (d) only",
+        "( a), (c) and (d) only",
+        "(c), (a) and (b) only",
+        "(b), (c) and (d) only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a), (b) and (d) only. The stem describes the concept or relationship represented by (a), (b) and (d) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-20",
+      "session": "November 2017",
+      "question_number": 20,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Spearman proposed the existence of specific factor of intelligence. 2. Reason (R): It was observed that tetrad differences are always equal to zero. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. UGC NET JRF November 2017 Paper II 398 UGC NET JRF November 2017 Paper II 398 Tap to check answer key 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false. UGC NET JRF November 2017 Paper II 398 UGC NET JRF November 2017 Paper II 398 Tap to check answer key",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false. . Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-30",
+      "session": "November 2017",
+      "question_number": 30,
+      "question": "The 1986 Symposium on intelligence identified the main loci of intelligence: a). Intelligence within the individual b). Intelligence within the environment c). Intelligence within the interaction between the individual and environment d). Intelligence to be measured by psychometric measures 1. Code: 1). (a) and (b) only 2). (c) and (d) only 3). (a), (b) and (c) only 4). (b), (c) and (d) only UGC NET JRF November 2017 Paper II 400 UGC NET JRF November 2017 Paper II 400 Tap to check answer key",
+      "options": [
+        "(a) and (b) only",
+        "(c) and (d) only",
+        "(a), (b) and (c) only",
+        "(b), (c) and (d) only UGC NET JRF November 2017 Paper II 400 UGC NET JRF November 2017 Paper II 400 Tap to check answer key"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (b) and (c) only. The stem describes the concept or relationship represented by (a), (b) and (c) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-39",
+      "session": "November 2017",
+      "question_number": 39,
+      "question": "Which of the following can cause errors in reasoning? a). Premise phrasing manner b). Foreclosure effects c). Confirmation bias 1. Code:",
+      "options": [
+        "(a) and (b)",
+        "(a) and (c)",
+        "(b) and (c)",
+        "(a), (b) and (c)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b) and (c). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-11",
+      "session": "July 2018",
+      "question_number": 11,
+      "question": "Which of the following explains the Threshold Hypothesis regarding Intelligence - Creativity relationship? 1). There is a positive correlation between Intelligence and Creativity. 2). There is a positive correlation between Intelligence and Creativity upto a particular level of Intelligence. 3). There is a positive correlation between Intelligence and Creativity beyond a particular level of Intelligence. 4). There is a negative correlation between Intelligence and Creativity beyond a particular level of Intelligence.",
+      "options": [
+        "There is a positive correlation between Intelligence and Creativity.",
+        "There is a positive correlation between Intelligence and Creativity upto a particular level of Intelligence.",
+        "There is a positive correlation between Intelligence and Creativity beyond a particular level of Intelligence.",
+        "There is a negative correlation between Intelligence and Creativity beyond a particular level of Intelligence."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. There is a positive correlation between Intelligence and Creativity upto a particular level of Intelligence.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Correlation describes the degree and direction of association between variables; correlation by itself does not establish causation.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-12",
+      "session": "July 2018",
+      "question_number": 12,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Explanation) a. Concor- dance i) Percentage of cases in which, if specific gene is present, a particular trait, characteristic or disease will actually manifest itself in the fully developed organism. b. Penetrance ii) Relationship between twins or other family members with respect to a given trait. 433 UGC NET JRF July 2018 Paper II 433 UGC NET JRF July 2018 Paper II Tap to check answer key c. Prevalence iii) Number of new cases of specific condition or disease that arise during a particular period of time. d. Incidence iv) Frequency of occurrence of a given condition among a certain population at a particular point of time. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(iii) (iv) (i) (ii)",
+        "(ii) (i) (iv) (iii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (ii) (i) (iv) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-22",
+      "session": "July 2018",
+      "question_number": 22,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Explanation) a. Inductive thought i) Thought that is intuitive and haphazard. b. Logical thought ii) Thought that applies a general set of rules to specific situations. c. Deductive thought iii) Drawing conclusions on the basis of principles of learning. UGC NET JRF July 2018 Paper II 436 UGC NET JRF July 2018 Paper II 436 Tap to check answer key d. Illogical thought iv) Thinking in which a principle is inferred from a series of specific examples. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (iv) (iii) (ii) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-24",
+      "session": "July 2018",
+      "question_number": 24,
+      "question": "Read the following statements and describe which are correct: a). Archetypes are themes that have existed in all cultures through history. b). Personal unconscious is the region next to ego which consists of all the forgotten experiences that have lost their intensity. c). Masculine archetype in men is called animus. d). Persona is a compromise between demands of the environment and necessities of individuals. 1. Code: 1). (a), (b) and (c) are correct ; (d) is not correct. 2). (b), (c) and (d) are correct ; (a) is not correct. 3). (a), (b) and (d) are correct ; (c) is not correct. 4). (a), (c) and (d) are correct ; and (b) is not correct.",
+      "options": [
+        "(a), (b) and (c) are correct ; (d) is not correct.",
+        "(b), (c) and (d) are correct ; (a) is not correct.",
+        "(a), (b) and (d) are correct ; (c) is not correct.",
+        "(a), (c) and (d) are correct ; and (b) is not correct."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (b) and (d) are correct ; (c) is not correct.. The stem describes the concept or relationship represented by (a), (b) and (d) are correct ; (c) is not correct.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-30",
+      "session": "July 2018",
+      "question_number": 30,
+      "question": "During which stage most of the creative thinking occurs?",
+      "options": [
+        "Preparation",
+        "Incubation",
+        "Illumination",
+        "Evaluation"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Incubation. The stem describes the concept or relationship represented by Incubation; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "July-2018-31",
+      "session": "July 2018",
+      "question_number": 31,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Concept) List II (Explanation) a. Disjunctive Concept i) A class of objects that have two or more features in common. b. Prototype ii) Showing relationship between object and surroundings. c. Conjunctive Concept iii) Showing the presence of at least one of several possible features. d. Relational Concept iv) An ideal model referring to a particular concept. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(iii) (iv) (i) (ii)",
+        "(ii) (iii) (iv) (i)",
+        "(iv) (iii) (i) (ii)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (iii) (iv) (i) (ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-52",
+      "session": "July 2018",
+      "question_number": 52,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Algorithm is a logical rule that guarantees solving a particular problem. 2. Reason (R): One can find the solution even to complex problems by following step by step procedure. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. An algorithm is a systematic, step-by-step procedure that, when correctly applied, leads to a solution.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-75",
+      "session": "July 2018",
+      "question_number": 75,
+      "question": "Decentration and reversible thought processes are the characteristics of which of the following stage?",
+      "options": [
+        "Sensory - Motor",
+        "Pre - Operational",
+        "Concrete - Operational",
+        "Formal Operations"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Concrete - Operational. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-83",
+      "session": "July 2018",
+      "question_number": 83,
+      "question": "Creative thinking is different from routine problem solving in respect of: a). Fluency b). Flexibility c). Originality d). Day dreaming 1. Code:",
+      "options": [
+        "(a) and (b)",
+        "(b) and (c)",
+        "(c) and (d)",
+        "( a), (b) and (c )"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. ( a), (b) and (c ). The stem describes the concept or relationship represented by ( a), (b) and (c ); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-87",
+      "session": "July 2018",
+      "question_number": 87,
+      "question": "Read each of the following statements- Assertion (A) and Reason (R): and indicate your answer using code given below: 1. Assertion (A): Jensen has put forward Regression argument in favour of his theory. 2. Reason (R): Children of parents having very high intelligence levels will have below average intelligence scores. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. UGC NET JRF July 2018 Paper II 452 UGC NET JRF July 2018 Paper II 452 Tap to check answer key 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false. UGC NET JRF July 2018 Paper II 452 UGC NET JRF July 2018 Paper II 452 Tap to check answer key",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false. . Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "July-2018-88",
+      "session": "July 2018",
+      "question_number": 88,
+      "question": "Handling feelings appropriately, ability to soothe oneself, and ability to shake off rampant anxiety are the characteristics of which of the components of Emotional Intelligence as proposed by Goleman?",
+      "options": [
+        "Knowing one’s emotions",
+        "Managing emotions",
+        "Motivating oneself",
+        "Handling relationships"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Managing emotions. The stem describes the concept or relationship represented by Managing emotions; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 6,
+      "micro": 7
+    },
+    {
+      "id": "July-2018-93",
+      "session": "July 2018",
+      "question_number": 93,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Children have remarkable ability to create mental representation of the world in the form of language. 2. Reason (R): Reasoning and problem solving are the ways of manipulating the ideas. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-3",
+      "session": "December 2018",
+      "question_number": 3,
+      "question": "Match List I with List II and choose the correct answer using the code given be List I List II (a).Mental models (i) The impact of past experience on present problem solving through better alternative (b). Heuristics (ii) Knowledge structures that guide our interactions with objects and events around us (c). Availability heuristics (iii) Mental rules of thumb that permit us to make decisions and judgments in a rapid manner (d).Mental set (iv) A cognitive rule of thumb in which the probability of various events is judged on the basis of low quickly them come to mind Options:- 1). (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv) 2). (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) 459 UGC NET JRF December 2018 Paper II 459 UGC NET JRF December 2018 Paper II Tap to check answer key 3). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv) 4). (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "options": [
+        "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)",
+        "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) 459 UGC NET JRF December 2018 Paper II 459 UGC NET JRF December 2018 Paper II Tap to check answer key",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) . Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "December-2018-11",
+      "session": "December 2018",
+      "question_number": 11,
+      "question": "What is a toddler experiencing who is occupied with pointing at things and asking what they are? 1. Options:- 1). An overactive Language Acquisition Device (LAD) 2). Prelinguistic vocables 3). The naming explosion 4). Multilinguistic awareness",
+      "options": [
+        "An overactive Language Acquisition Device (LAD)",
+        "Prelinguistic vocables",
+        "The naming explosion",
+        "Multilinguistic awareness"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Prelinguistic vocables. The item tests a factual association: the relevant person, work, date, contribution, or term is Prelinguistic vocables.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-19",
+      "session": "December 2018",
+      "question_number": 19,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I (Style) List II (Description) (a) Directive Autocraft (i) Makes decision participatively and gives latitude to subordinates in carrying out their job UGC NET JRF December 2018 Paper II 464 UGC NET JRF December 2018 Paper II 464 Tap to check answer key (b) Directive Democraft (ii) Makes decision unilaterally and gives subordinates latitude in carrying out their work (c) Permissive autocrat (iii) Making decisions participatively by close supervision of subordinates (d) Permissive democrat (iv) Making decisions unilaterally, but closely supervising of subordibates Options:- 1). (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i) 2). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv) 3). (a)-(ii), (b)-(i), (c)-(iii), (d)-(iv) 4). (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "options": [
+        "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+        "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-22",
+      "session": "December 2018",
+      "question_number": 22,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R). Read the statements and choose the correct answer using the code given below: 1. Assertion (A): According to Bandura, 465 UGC NET JRF December 2018 Paper II 465 UGC NET JRF December 2018 Paper II Tap to check answer key the behaviour is fully determined by mental images of past experiences. 2. Reason (R): Information gained from observations is stored symbolically in retentional processes to make it useful. 3. Options:- 1). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 2). (A) is true, but (R) is false. 3). (A) is false, but (R) is true. 4). Both (A) and (R) are true, but (R) is the correct explanation of (A).",
+      "options": [
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true.",
+        "Both (A) and (R) are true, but (R) is the correct explanation of (A)."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Both (A) and (R) are true, but (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "December-2018-57",
+      "session": "December 2018",
+      "question_number": 57,
+      "question": "Rules within a language indicating how words can be combined into meaningful sentences refer to 1. Options:-",
+      "options": [
+        "Babbling",
+        "Semantic development",
+        "Phonological development",
+        "Grammar"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Semantic development. The stem describes the concept or relationship represented by Semantic development; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-59",
+      "session": "December 2018",
+      "question_number": 59,
+      "question": "What is the correct sequence of products in Guilford’s SOI model?",
+      "options": [
+        "Unit → Relation → Class → System → Transformation → Impplication",
+        "Unit → Class → Relation → System → Transformation → Impplication",
+        "Class → Unit → System → Relation → Transformation → Impplication",
+        "Unit → Class → Relation → System → Impplication → Transformation"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Unit → Class → Relation → System → Impplication → Transformation. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2018-63",
+      "session": "December 2018",
+      "question_number": 63,
+      "question": "Given below are two statements, 475 UGC NET JRF December 2018 Paper II 475 UGC NET JRF December 2018 Paper II Tap to check answer key one labelled as Assertion (A) and the other labelled as Reason (R). Read the statements and choose the correct answer using the code given below: 1. Assertion (A): Thurstone labelled his theory of intelligence as theory of primary mental abilities. 2. Reason (R): Thurstone found more than two first-order factors of intelligence through orthogonal rotation. 3. Options:- 1). (A) is false, but (R) is true. 2). Both (A) and (R) are true, but (R) is the correct explanation of (A). 3). (A) is true, but (R) is false. 4). Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "options": [
+        "(A) is false, but (R) is true.",
+        "Both (A) and (R) are true, but (R) is the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A)."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 6,
+      "micro": 2
+    },
+    {
+      "id": "December-2018-70",
+      "session": "December 2018",
+      "question_number": 70,
+      "question": "Creative thinking is a combination of in thinking and in understanding to produce ideas and . 1. Options:- 1). Flexibility, reorganization; innovative, solutions 2). Reorganization, flexibility; new, solutions 3). Flexibility, reorganization; novel, solutions 4). Flexibility, reorganization; abstract, solutions 477 UGC NET JRF December 2018 Paper II 477 UGC NET JRF December 2018 Paper II Tap to check answer key",
+      "options": [
+        "Flexibility, reorganization; innovative, solutions",
+        "Reorganization, flexibility; new, solutions",
+        "Flexibility, reorganization; novel, solutions",
+        "Flexibility, reorganization; abstract, solutions 477 UGC NET JRF December 2018 Paper II 477 UGC NET JRF December 2018 Paper II Tap to check answer key"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Reorganization, flexibility; new, solutions. The stem describes the concept or relationship represented by Reorganization, flexibility; new, solutions; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "December-2018-77",
+      "session": "December 2018",
+      "question_number": 77,
+      "question": "Match list I with List II and select the correct answer using the code given below: List I (Tests) List II (Concept) (a) Block design (i) Perceptual reasoning (b) Similarities (ii) Comprehension (c) Matrix task (iii) Simultaneous processing (d) Sentence questions (iv) Successive processing Options:- 1). (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii) 2). (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv) 3). (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i) 4). (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
+      "options": [
+        "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+        "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+        "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-9",
+      "session": "June 2019",
+      "question_number": 9,
+      "question": "A competent and a well-performing female middle level manager did not consider herself suitable for the position of senior manager thinking that females are not suitable for such high positions This is a typical example of which of the following?",
+      "options": [
+        "glass-ceding phenomenon",
+        "low motivation to approach success",
+        "gender discrimination",
+        "high motivation to avoid failure"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. gender discrimination. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "June-2019-12",
+      "session": "June 2019",
+      "question_number": 12,
+      "question": "Match List-I with List-II List-I (Psychologist) List-II (Definition) a. Binet and Simon i) The power of good response from the perspective of truth or fact b. Terman ii) The capacity to judge, understand and reason well c. Thorndike iii) The capacity to form concepts and grasp their significance d. Eysenck, M. W. iv) Error-free transmission of information thorough the cortex Select the correct option: 1). (a)-(iv); (b)-(iii); (c)-(i); (d)-(ii) 2). (a)-(i); (b)-(ii); (c)-(iii); (d)-(iv) 3). (a)-(ii); (b)-(iii); (c)-(i); (d)-(iv) 4). (a)-(iii); (b)-(ii); (c)-(iv); (d)-(i)",
+      "options": [
+        "(a)-(iv); (b)-(iii); (c)-(i); (d)-(ii)",
+        "(a)-(i); (b)-(ii); (c)-(iii); (d)-(iv)",
+        "(a)-(ii); (b)-(iii); (c)-(i); (d)-(iv)",
+        "(a)-(iii); (b)-(ii); (c)-(iv); (d)-(i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a)-(i); (b)-(ii); (c)-(iii); (d)-(iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "June-2019-39",
+      "session": "June 2019",
+      "question_number": 39,
+      "question": "Match List-I with List-II : List-I (Concept) List-II (Explanation) a. Mental representation i) Building schemas through direct interaction with environment b. Operations ii) Using current schemas to interpret the external world c. Adaptation iii) The ability to remember and copy the behaviour of models who are not present d. Assimilation iv) Mental representation of actions they obey using logical rules Select the correct option: a). (a)-(iv); (b)-(iii); (c)-(i); (d)-(ii) b). (a)-(iv); (b)-(ii); (c)-(i); (d)-(iii) c). (a)-(iii); (b)-(iv); (c)-(i); (d)-(ii) d). (a) -(ii); (b)-(i); (c)-(iv); (d)-(iii)",
+      "options": [
+        "(a)-(iv); (b)-(iii); (c)-(i); (d)-(ii)",
+        "(a)-(iv); (b)-(ii); (c)-(i); (d)-(iii)",
+        "(a)-(iii); (b)-(iv); (c)-(i); (d)-(ii)",
+        "(a) -(ii); (b)-(i); (c)-(iv); (d)-(iii)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a) -(ii); (b)-(i); (c)-(iv); (d)-(iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-40",
+      "session": "June 2019",
+      "question_number": 40,
+      "question": "First make a small request, when the person complies, make another large request. This concept is based on which compliance technique?",
+      "options": [
+        "Foot-in-the-door",
+        "Door-in-the-face",
+        "Lowball",
+        "Thats not all"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Door-in-the-face. The stem describes the concept or relationship represented by Door-in-the-face; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-52",
+      "session": "June 2019",
+      "question_number": 52,
+      "question": "Choose the correct answer for leadership style. low task, low relationship style:",
+      "options": [
+        "Participating style",
+        "Selling style",
+        "Delegating style",
+        "Telling style"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Participating style. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-63",
+      "session": "June 2019",
+      "question_number": 63,
+      "question": "Match List-I with List-II : List-1 (Psychologist) List-11 (Concept) a. Kelley i) Constructive alternativism b. Eysenck ii) Hedonic tone c. Cattell iii) Hypothetico- deductive spiral d. Hull iv) Response hierarchies Select the correct option: 1). (a)-(i); (b)-(iii); (c)-(ii); (d)-(iv) 2). (a)-(ii); (b)-(iv); (c)-(i); (d)-(iii) 3). (a)-(i); (b)-(ii); (c)-(iii); (d)-(iv) 4). (a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)",
+      "options": [
+        "(a)-(i); (b)-(iii); (c)-(ii); (d)-(iv)",
+        "(a)-(ii); (b)-(iv); (c)-(i); (d)-(iii)",
+        "(a)-(i); (b)-(ii); (c)-(iii); (d)-(iv)",
+        "(a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a)-(i); (b)-(iii); (c)-(ii); (d)-(iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-68",
+      "session": "June 2019",
+      "question_number": 68,
+      "question": "Which of the following sequences of decision making perspectives of prosocial behaviour is correct?",
+      "options": [
+        "Perceived need →taking personal responsibility→weighing the cost and benefits→deciding how to help→help is given",
+        "Taking personal responsibility→deciding how to help→help is given→weighing the cost and benefits→perceived need",
+        "Weighing the cost and benefits→perceived need→deciding how to help→help is given→taking personal responsibility",
+        "Perceived need→weighing the cost and benefits→deciding how to help→taking personal responsibility→help is given 503 UGC NET JRF June 2019 Paper II 503 UGC NET JRF June 2019 Paper II Tap to check answer key"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Weighing the cost and benefits→perceived need→deciding how to help→help is given→taking personal responsibility. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-70",
+      "session": "June 2019",
+      "question_number": 70,
+      "question": "Torrance used the term ‘creatively handicapped’ for whom?",
+      "options": [
+        "Students very high in creativity but low in academic achievement",
+        "Students high in intelligence but low in creativity",
+        "Students average in both intelligence and creativity",
+        "Students with low levels of both intelligence and creativity"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Students average in both intelligence and creativity. The stem describes the concept or relationship represented by Students average in both intelligence and creativity; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-72",
+      "session": "June 2019",
+      "question_number": 72,
+      "question": "Given below are two statements one labelled as Assertion (A) and other labelled as Reason (R). Read the statement. 1. Assertion (A): Mental stress may cause cardiac is schema 2. Reason (R): Stress unfavorably affects the balance between cardiac demand and supply. 3. Choose the correct answer from the options given below: 1). Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "(A)is true but (R) is false",
+        "(A) is false but (R) is true"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true but (R) is not the correct explanation of (A). Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. A schema is an organized cognitive structure that helps people interpret and organize information.",
+      "kind": "assertion-reason",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-88",
+      "session": "June 2019",
+      "question_number": 88,
+      "question": "Which of the following are steps of problem- solving cycle? a). Problem identification b). Problem definition c). Organization d). Allocation of resources 507 UGC NET JRF June 2019 Paper II 507 UGC NET JRF June 2019 Paper II Tap to check answer key 1. Select the correct option: 1). (a) and (b) only 2). (c) and (d) only 3). (b), (c) and (d) only 4). (a), (b). (c) and (d)",
+      "options": [
+        "(a) and (b) only",
+        "(c) and (d) only",
+        "(b), (c) and (d) only",
+        "(a), (b). (c) and (d)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (c) and (d) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-11",
+      "session": "December 2019",
+      "question_number": 11,
+      "question": "According to Goleman ‘Management of Emotions’ component of Emotional intelligence includes a). Handling feelings so that they an appropriate. b). Ability to soothe oneself. c). Ability to shake off rampant anxiety gloom or irritability. d). Recognizing feeling as it happens. 1. Choose the correct option: 1). (a), (b) and (d) only 2). (b), (c) and (d) only 3). (a), (b) and (c) only 4). (a), (b), (c) and (d)",
+      "options": [
+        "(a), (b) and (d) only",
+        "(b), (c) and (d) only",
+        "(a), (b) and (c) only",
+        "(a), (b), (c) and (d)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a), (b) and (c) only. The stem describes the concept or relationship represented by (a), (b) and (c) only; the alternatives refer to different concepts or conditions.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 6,
+      "micro": 7
+    },
+    {
+      "id": "December-2019-16",
+      "session": "December 2019",
+      "question_number": 16,
+      "question": "Given below are two statements - one is labelled as Assertion (A) and the other is labelled as Reason (B). 1. Assertion (A): Sensitivity to targets reflects the placement of a flexible criterion and is measured in terms of ‘hits minus false alarms’. 2. Reasons (R): When the consequences of making a Miss are very grave, we lower the criterion for considering something as ‘Hit’ 3. In the light of above two statements choose the correct option: 1). Both (A) and (R) are true and (R) is the corset explanation of (A) 2). Both (A) and (R) is true and (R) is not the correct explanation of (A) 3). (A) is true, but (R) is false 4). (A) is false, but (R) is true",
+      "options": [
+        "Both (A) and (R) are true and (R) is the corset explanation of (A)",
+        "Both (A) and (R) is true and (R) is not the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the corset explanation of (A). Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-22",
+      "session": "December 2019",
+      "question_number": 22,
+      "question": "Which of the following problem solving technique involves the analysis of difference between the current situation and the desired set goal then doing something to reduce this difference",
+      "options": [
+        "Heuristics",
+        "Sub goals",
+        "Means and analysis",
+        "Brain storming"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Means and analysis. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-23",
+      "session": "December 2019",
+      "question_number": 23,
+      "question": "According to Decision Stage Model, How many slaps are comprised in taking a decision?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Five. The stem describes the concept or relationship represented by Five; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2019-75",
+      "session": "December 2019",
+      "question_number": 75,
+      "question": "Jensen’s level I and level II abilities can be best understood in terms of which of the following? a). Difficulty and complexity of tasks b). Socioeconomic differences 527 UGC NET JRF December 2019 Paper II 527 UGC NET JRF December 2019 Paper II Tap to check answer key c). Racial differences d). Geographical differences 1. Choose the correct option: 1). (a), (c) and (d) only 2). (a), (b) and (c) only 3). (b),(c) and (d) only 4). (a), (b), (c) and (d)",
+      "options": [
+        "(a), (c) and (d) only",
+        "(a), (b) and (c) only",
+        "(b),(c) and (d) only",
+        "(a), (b), (c) and (d)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a), (b) and (c) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "December-2019-88",
+      "session": "December 2019",
+      "question_number": 88,
+      "question": "Match the following leadership styles with their characteristics: List I List II (a). Directive (i) Leader consults subordinates thereby permitting them to participate in decision making (b). Supportive (ii) Leader sets challenging goals and seeks improvement in performance (c). Participative (iii) Leader provides specific guidance by establishing work schedules and rules UGC NET JRF December 2019 Paper II 530 UGC NET JRF December 2019 Paper II 530 Tap to check answer key (d).Achieve- ment orient- ed (iv) Leader establishes good relations with sub-ordinates and satisfies their needs Choose the correct option from the give below: 1). (a)- (i),(b)-(ii) (c)-(iii) ,(d)-(iv) 2). (a)-(ii).(b)-(iii), (c)-(iv),(d)-(i) 3). (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) 4). (a)-(iv) , (b)-(i), (c)-(ii) ,(d)- (iii).",
+      "options": [
+        "(a)- (i),(b)-(ii) (c)-(iii) ,(d)-(iv)",
+        "(a)-(ii).(b)-(iii), (c)-(iv),(d)-(i)",
+        "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+        "(a)-(iv) , (b)-(i), (c)-(ii) ,(d)- (iii)."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-4",
+      "session": "September 2020",
+      "question_number": 4,
+      "question": "Which of the following are the components of Metacognition? a). Metacognition knowledge b). Metacognition experience c). Metacognition control d). Metacognition regulation 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A and B only",
+        "A and D only",
+        "A, B and C only",
+        "A, B and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-15",
+      "session": "September 2020",
+      "question_number": 15,
+      "question": "According to Lazarus, what comes between the stimulus and emotional response to that stimulus to mediate?",
+      "options": [
+        "Physiological reactions",
+        "Labeling",
+        "Social and situational cues",
+        "Cognitive appraisal"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Cognitive appraisal. The stem describes the concept or relationship represented by Cognitive appraisal; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-35",
+      "session": "September 2020",
+      "question_number": 35,
+      "question": "Making decisions by the use of mental short cuts that focus on one aspect of a problem, while ignoring others refers to which one of the following?",
+      "options": [
+        "Framing",
+        "Belief perseverance",
+        "Heuristics",
+        "Mental set"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Heuristics. The stem describes the concept or relationship represented by Heuristics; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-51",
+      "session": "September 2020",
+      "question_number": 51,
+      "question": "What is the correct sequence of Decision Making Perspective of Pro- social behaviour to help a person in distress? a). Taking personal responsibility b). Weighing the cost and benefits c). Perceived a need d). Deciding how to help 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, C, B, D",
+        "B, A, C, D",
+        "A,B,C, D",
+        "C,A,B,D"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. C,A,B,D. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-68",
+      "session": "September 2020",
+      "question_number": 68,
+      "question": "The cognitive theory contends dependency behaviours to be UGC NET JRF September 2020 Paper II 534 UGC NET JRF September 2020 Paper II 534 Tap to check answer key arising, from and being maintained by cognitive distortions and maladaptive thought processes. 1. Which of the following are associated with cognitive distortions? a). Availability b). Hindsight bias c). Flexible attribution d). IIIusion of control 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, C and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "C and D only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B, C and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Attribution concerns how people explain the causes of behaviour or events, including whether causes are located in the person or the situation.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-87",
+      "session": "September 2020",
+      "question_number": 87,
+      "question": "Mr. A is very good at discriminating between progressive and regressive ways of behaviour. His choices are clearly perceived by him and adequately symbolised. 1. According to Rogers, these are the characteristics of which of the following? a). Individual tendency towards ‘growth’ b). Tendency to ‘self actualise’ c). His constructive creativity d). His self-affirmation 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A and C only",
+        "A, C and D only",
+        "A and B only",
+        "B only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A and B only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-16",
+      "session": "June 2021",
+      "question_number": 16,
+      "question": "Which of the following are features of Metacognition? a). Encoding b). Regulation c). Monitoring d). Evaluation 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "(A), (B) and (C) only",
+        "(A) and (B) only",
+        "(C) and (B) only",
+        "(B), (C) and (D) only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (B), (C) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Encoding is the process of transforming information into a form that can be stored in memory.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 5,
+      "micro": 2
+    },
+    {
+      "id": "June-2021-24",
+      "session": "June 2021",
+      "question_number": 24,
+      "question": "Arrange in correct sequence, the first five intelligences given by Gardner : a). Linguistic Intelligence b). Logico-mathematical Intelligence c). Spatial Intelligence d). Kinesthetic Intelligence e). Natural intelligence 1. Choose the correct answer options from the given below:",
+      "options": [
+        "A, B, C, D, E",
+        "B, A, C, E, D",
+        "C, B, A, D, E",
+        "D, C, E, B, A"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B, C, D, E. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 6,
+      "micro": 5
+    },
+    {
+      "id": "June-2021-29",
+      "session": "June 2021",
+      "question_number": 29,
+      "question": "Jensen’s Level I and Level II abilities can be best understood in terms of which of the following? UGC NET JRF June 2021 Paper II 550 UGC NET JRF June 2021 Paper II 550 Tap to check answer key a). Difficulty and complexity of tasks b). SES Differences c). Racial Differences d). Gender Differences 1. Choose the correct answer from the options given below:",
+      "options": [
+        "(A) and (B) only",
+        "(C) and (D) only",
+        "(A), (B) and (C) only",
+        "(B), (C) and (D) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A), (B) and (C) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "June-2021-58",
+      "session": "June 2021",
+      "question_number": 58,
+      "question": "Memory that is thought to contain knowledge, facts, information, ideas that can be recalled or described in words, pictures, or symbols is called:-",
+      "options": [
+        "Procedural memory",
+        "Episodic memory",
+        "Semantic memory",
+        "Declarative memory"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Declarative memory. The stem describes the concept or relationship represented by Declarative memory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "June-2021-68",
+      "session": "June 2021",
+      "question_number": 68,
+      "question": "Which among these is correct for Cyber bullying? a). It involves disinhibition b). Lesser role of Bystanders c). Ability of targets to retaliate is more d). No evidence left behind 1. Choose the correct answer from the options given below:-",
+      "options": [
+        "(A) and (B) only",
+        "(A), (B) and (C) only",
+        "(A), (B) and (C) only",
+        "(A), (B) and (D) only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (A), (B) and (C) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "June-2021-74",
+      "session": "June 2021",
+      "question_number": 74,
+      "question": "Arrange the first five elements of ‘Flow’ in correct sequence: a). Clarity of Goals b). Immediate Feedback of Actions c). Balance between challenges and skills d). Merger of awareness and actions e). Exclusion of distractions from consciousness 1. Choose the correct answer from the options given below :",
+      "options": [
+        "A, B, C, D, E",
+        "A, C, B, D, E",
+        "B, C, A, E, D",
+        "C, B, A, D, E"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B, C, D, E. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-81",
+      "session": "June 2021",
+      "question_number": 81,
+      "question": "Which of the following type of inversion is observed in reaction formation? a). Implicit b). Explicit c). Conscious d). Unconscious 1. Choose the correct answer from the options given below :-",
+      "options": [
+        "(A) and (D) only",
+        "(B) and (C) only",
+        "(B) and (D) only",
+        "(A) and (C) only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (B) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Freud emphasized unconscious processes as an important influence on behaviour and mental life.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-31",
+      "session": "July 2022",
+      "question_number": 31,
+      "question": "Gardner’s theory of intelligence posits that a person who is introspective , self reflective, understands the strengths and weaknesses tends to have higher level of ________.",
+      "options": [
+        "lntrapersonal intelligence",
+        "Naturalist intelligence",
+        "Interpersonal intelligence",
+        "Linguistic intelligence"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. lntrapersonal intelligence. The item tests a factual association: the relevant person, work, date, contribution, or term is lntrapersonal intelligence.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 6,
+      "micro": 5
+    },
+    {
+      "id": "July-2022-45",
+      "session": "July 2022",
+      "question_number": 45,
+      "question": "Which of the following about acculturation is NOT correct? a). It includes sticking to one’s cultural beliefs b). It involves displaying prejudice toward people from different cultures c). It involves adopting new ways of behaving d). It involves balancing between values of two different cultures 1. Choose the correct answer from the options given below:",
+      "options": [
+        "C only",
+        "A and B only",
+        "A, B and C only",
+        "D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A and B only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-63",
+      "session": "July 2022",
+      "question_number": 63,
+      "question": "_________ is an impairment of language functioning caused by damage to the brain",
+      "options": [
+        "Agraphia",
+        "Amnesia",
+        "Aphasia",
+        "Autism"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Aphasia. The stem describes the concept or relationship represented by Aphasia; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-20",
+      "session": "March 2023",
+      "question_number": 20,
+      "question": "Making a reference to a respected person believed to be well informed, when one’s own logic or reasoning is weak, is called:",
+      "options": [
+        "Arguing in circles",
+        "False Analogy",
+        "Appeal to authority",
+        "Overgeneralization"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Appeal to authority. The stem describes the concept or relationship represented by Appeal to authority; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-29",
+      "session": "March 2023",
+      "question_number": 29,
+      "question": "Which of the following is a group decision-making technique?",
+      "options": [
+        "Brainstorming",
+        "Ordinal group technique",
+        "Risky shift",
+        "Random shift"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Brainstorming. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "March-2023-38",
+      "session": "March 2023",
+      "question_number": 38,
+      "question": "Actions taken to identify and treat an illness or injury early with an aim of stopping or reversing the problem comes under:",
+      "options": [
+        "Primary prevention",
+        "Secondary prevention",
+        "Tertiary prevention",
+        "Protection prevention"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Secondary prevention. The stem describes the concept or relationship represented by Secondary prevention; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-41",
+      "session": "March 2023",
+      "question_number": 41,
+      "question": "Which of the following is correct about cognitive perspective? a). Thinking and understanding about the world b). Information processing c). Overt behaviour only d). Similarity of thinking and working of a computer 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A and D only",
+        "C and D only",
+        "A, B and D only",
+        "A and B only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. The Gestalt principle of similarity leads people to group elements that share features such as shape, colour, or size.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-54",
+      "session": "March 2023",
+      "question_number": 54,
+      "question": "Which of the following statements are true? a). All intelligent persons are creative b). Creativity is also known as divergent thinking c). Creativity is genetically determined d). Research is not conclusive about the relationship between intelligence and creativity 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A and B only",
+        "B and C only",
+        "A and D only",
+        "B and D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 8,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-56",
+      "session": "March 2023",
+      "question_number": 56,
+      "question": "Which of the following is true about linguistic-relativity hypothesis? a). Thought produces language b). Language shapes perception and understanding c). Language determines thought d). Thinking and language interact 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A and D only",
+        "B and C only",
+        "A only",
+        "B, C and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-72",
+      "session": "March 2023",
+      "question_number": 72,
+      "question": "Match List I with List II List I List II a. Thurstone i) Triarchic Theory b. Gardner ii) Set of seven primary mental abilities c. Sternberg iii) Multiple intelligence d. J.P. Das iv) Pass Model Choose the correct answer from the options given below:",
+      "options": [
+        "A-IV, B-I, C-II, D-III",
+        "A-II, B-I, C-III, D-IV",
+        "A-II, B-III, C-I, D-IV",
+        "A-II, B-III, C-IV, D-I"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A-II, B-III, C-I, D-IV. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 6,
+      "micro": 2
+    },
+    {
+      "id": "March-2023-84",
+      "session": "March 2023",
+      "question_number": 84,
+      "question": "As per Tuckman’s group development model, identify the correct sequence a). Norming b). Storming c). Performing UGC NET JRF March 2023 Paper II 608 UGC NET JRF March 2023 Paper II 608 Tap to check answer key d). Forming e). Adjourning 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, C, B, D, E",
+        "A, D, B, C, E",
+        "D, B, A, C, E",
+        "D, A, B, C, E"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. D, B, A, C, E. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-22",
+      "session": "June 2023",
+      "question_number": 22,
+      "question": "Which of the following is not a metacognitive activity?",
+      "options": [
+        "Wondering how one could have been mistaken",
+        "Reflecting on our own thinking process",
+        "Theory of mind",
+        "Communicating one’s present postal address 617 UGC NET JRF June 2023 Paper II 617 UGC NET JRF June 2023 Paper II Tap to check answer key"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Communicating one’s present postal address . Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-23",
+      "session": "June 2023",
+      "question_number": 23,
+      "question": "Which of the following is true about the concept of heritability?",
+      "options": [
+        "The heritability of a trait refers to differences in percentages of a trait within an individual",
+        "Heritability refers to a population not to individual",
+        "The heritability of a trait is a single and fixed number",
+        "Heritability tells us about the source of mean differences between groups"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. The heritability of a trait is a single and fixed number. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-26",
+      "session": "June 2023",
+      "question_number": 26,
+      "question": "Three stage model of chronic stress formulated by Hans Selye is called:",
+      "options": [
+        "GAS - General Adjustment Syndrome",
+        "GAS- General Adjustment System",
+        "GAS General Adaptation System",
+        "GAS- General Adaptation Syndrome"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. GAS- General Adaptation Syndrome. The stem describes the concept or relationship represented by GAS- General Adaptation Syndrome; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-64",
+      "session": "June 2023",
+      "question_number": 64,
+      "question": "Identify the components of the ‘Ethical Decision Making. (A). Moral Awareness (B). Moral Anxiety (C). Moral Intent (D). Moral Judgement (E). Moral Context 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B, C only",
+        "B, C, D only",
+        "C, D, E only",
+        "A, C, D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, C, D only. The stem describes the concept or relationship represented by A, C, D only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-66",
+      "session": "June 2023",
+      "question_number": 66,
+      "question": "Match List I with List II List I List II a. Samacariya i) Transformation wholeness b. Tanha ii) Desire c. Satori iii) Healthy virtuous d. Sammadithhi iv) Thinking Choose the correct answer from the options given below:",
+      "options": [
+        "A-III, B-I, C-II, D-III",
+        "A-IV, B-I, C-II, D-III",
+        "A-III, B-II, C-I, D-IV",
+        "A-II, B-III, C-I. D-IV"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A-III, B-II, C-I, D-IV. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-75",
+      "session": "June 2023",
+      "question_number": 75,
+      "question": "Match List I with List II List I List II a. Pratyahara i) Concentration b. Dharana ii) Attaining Oneness or Integration c. Dhyana iii) Control over thoughts d. Samadhi iv) Meditation Choose the correct answer from the options given below:",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-III, B-II, C-I. D-IV 629 UGC NET JRF June 2023 Paper II 629 UGC NET JRF June 2023 Paper II Tap to check answer key",
+        "A-III, B-I, C-IV, D-II",
+        "A-II, B-I, C-III, D-IV"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A-III, B-I, C-IV, D-II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 6,
+      "topic": 1,
+      "micro": 4
+    },
+    {
+      "id": "December-2023-35",
+      "session": "December 2023",
+      "question_number": 35,
+      "question": "‘Foreign Hull’ is the concept coined by:",
+      "options": [
+        "Kurt Lewin",
+        "Alfred Adler",
+        "Erik Erikson",
+        "Abraham Maslow"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Kurt Lewin. The item tests a factual association: the relevant person, work, date, contribution, or term is Kurt Lewin.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-37",
+      "session": "December 2023",
+      "question_number": 37,
+      "question": "The concept of ‘collective unconscious’ is one of the most powerful, original and controversial features of:",
+      "options": [
+        "Adler’s Personality Theory",
+        "Jung’s Personality Theory",
+        "Freud’s Personality Theory",
+        "InFromm’s Personality Theory"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Jung’s Personality Theory. The stem describes the concept or relationship represented by Jung’s Personality Theory; the alternatives refer to different concepts or conditions. Freud emphasized unconscious processes as an important influence on behaviour and mental life.",
+      "kind": "direct",
+      "unit": 6,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-41",
+      "session": "December 2023",
+      "question_number": 41,
+      "question": "Which of the following comes under divergent thinking? (A). Fluency (B). Flexibility (C). Preparation (D). Verification 641 UGC NET JRF December 2023 Paper II 641 UGC NET JRF December 2023 Paper II Tap to check answer key 1. Choose the correct answer from the options given below:",
+      "options": [
+        "B, C, D Only",
+        "A, C, E Only",
+        "A, B, C Only",
+        "B, C, E Only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, B, C Only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 6,
+      "topic": 2,
+      "micro": 4
+    }
+  ],
+  "practice": []
+}
