@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "purpose": "AI gate for direct publication of source-grounded Psychology learning content.",
+  "decision": "Publish only when every generated learning package passes the AI audit and all deterministic structural checks.",
+  "minimum_score": 0.9,
+  "require_all_criteria": true,
+  "criteria": [
+    "source_fidelity",
+    "canonical_microtopic_alignment",
+    "microtopic_exam_adequacy",
+    "deep_dive_value",
+    "active_recall_retrievability",
+    "revision_alignment",
+    "cross_pool_consistency",
+    "no_fabricated_pyq",
+    "no_generic_ai_filler",
+    "no_unsupported_claims",
+    "cross_reference_validity",
+    "mixed_topic_interleaving_value"
+  ],
+  "critical_failures": [
+    "unsupported claim presented as fact",
+    "contradiction across learning pools",
+    "fabricated PYQ, researcher, experiment, statistic or citation",
+    "active recall answer not taught by the package",
+    "content unrelated to the canonical micro-topic",
+    "cross-reference points to a nonexistent or self-referential micro-topic",
+    "cross-reference is unsupported or materially misleading"
+  ],
+  "publish_rule": "Publish each package independently when that package passes the AI audit and deterministic checks. Packages that still fail after two rewrite attempts are queued for owner approval; a failed package must not block unrelated packages that pass."
+}
