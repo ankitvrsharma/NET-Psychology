@@ -1834,3 +1834,63 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .admin-filter{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:8px 12px;font:inherit;font-size:10px;font-weight:850;letter-spacing:.06em;cursor:pointer}
 .admin-filter.active{background:var(--navy);color:#fff;border-color:var(--navy)}
 @media(max-width:720px){.admin-filters{padding:0 2px}.admin-filter{flex:1;min-width:120px}.admin-item-copy{width:100%}}
+
+/* Learner content feedback — inline, quiet, and mobile-friendly. */
+.learner-content-feedback{
+  max-width:900px;
+  margin:16px auto 0;
+  padding:17px 19px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+}
+.learner-content-feedback p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.learner-feedback-actions{display:flex;gap:8px;flex-wrap:wrap}
+.learner-feedback-btn{
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--navy);
+  border-radius:9px;
+  padding:9px 12px;
+  font:inherit;
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.05em;
+  cursor:pointer;
+}
+.learner-feedback-btn:hover{background:#f7f9fc}
+.learner-feedback-btn.selected{border-color:var(--blue);background:#eef3ff;color:var(--blue)}
+.learner-feedback-thanks{color:var(--green);font-size:11px;font-weight:750}
+.learner-verification-badge{
+  display:inline-flex;
+  align-items:center;
+  margin-top:10px;
+  padding:5px 8px;
+  border-radius:7px;
+  background:#eef7f1;
+  color:#247044;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+@media(max-width:620px){
+  .learner-content-feedback{display:grid;padding:15px 16px;gap:11px}
+  .learner-feedback-actions{display:grid;grid-template-columns:1fr 1fr}
+  .learner-feedback-btn{width:100%;min-height:44px}
+}
+@media(max-width:420px){
+  .learner-feedback-actions{grid-template-columns:1fr}
+}
+
+.admin-health{max-width:980px;margin:0 auto 12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.admin-health strong{display:block;margin-top:3px;color:var(--green);font-size:20px}
+.admin-health p{margin:2px 0 0;color:var(--muted);font-size:12px}
+.review-status.satisfactory{background:#eef7f1;color:#247044}
+.review-status.not-satisfactory{background:#fff0f0;color:#9b3333}
+.admin-status.pass{background:#eef7f1;color:#247044}
+.admin-status.review{background:#fff7e8;color:#8b5a00}
+.admin-status.issue{background:#fff0f0;color:#9b3333}

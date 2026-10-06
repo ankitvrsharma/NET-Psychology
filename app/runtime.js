@@ -36,6 +36,7 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.1.0-static-pools';
+let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
   microtopics:'content/microtopics/micro_topics.json',
@@ -66,6 +67,7 @@ function hydrateSyllabusWithMicrotopics(){
 }
 const loadStudyData=async()=>{
   D=await fetchJSON('data/syllabus-index.json','Syllabus index');
+  try{CONTENT_REVIEW=await fetchJSON('content-audit.json','Content review state');}catch(e){CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};}
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const page=document.body?.dataset?.page||'';
   const needsMicro=!['practice','practice-session'].includes(page);
@@ -92,6 +94,23 @@ const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
 const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
+const reviewState=(type,id)=>String(CONTENT_REVIEW?.owner_review?.[type]?.[String(id)]||'');
+const learnerVerificationTag=(type,id,audit)=>{
+  const owner=reviewState(type,id);
+  if(owner==='NOT_SATISFACTORY')return 'EXPERT VERIFIED';
+  if(audit?.status==='PASS')return 'VERIFIED';
+  return '';
+};
+const feedbackKey=(type,id)=>'netPsychContentFeedback:'+type+':'+String(id)+':'+String(DATA_VERSION);
+const feedbackState=(type,id)=>{try{return localStorage.getItem(feedbackKey(type,id))||''}catch{return ''}};
+const submitLearnerFeedback=async(type,id,rating)=>{
+  const payload={content_id:String(id),content_type:type,rating,content_version:DATA_VERSION,at:new Date().toISOString()};
+  try{localStorage.setItem(feedbackKey(type,id),rating)}catch(e){}
+  const endpoint=String(window.NETPSY_FEEDBACK_ENDPOINT||'').trim();
+  if(endpoint){
+    try{await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),keepalive:true})}catch(e){}
+  }
+};
 const units=()=>D?.units||[];
 const hasLearningContent=m=>{
   const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];
@@ -669,21 +688,38 @@ function micro(){
   const shortNotes=Array.isArray(m.study_notes)&&m.study_notes.length?m.study_notes.map(x=>String(x?.content||'').trim()).filter(Boolean).join('\n\n'): [concept,...kp].filter(Boolean).join('\n\n');
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
+  const audit=window.NETPsychologyContentAudit?.create?.({data:D,questions:PRACTICE_QUESTIONS})?.expertAudit?.('microtopics',k)||null;
+  const verificationTag=learnerVerificationTag('microtopics',k,audit);
+  const currentFeedback=feedbackState('microtopics',k);
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p>'+
+    (verificationTag?'<span class="learner-verification-badge">'+esc(verificationTag)+'</span>':'')+
+    '</header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
     '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
     (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
     '</div></article>'+
+    '<section class="learner-content-feedback" aria-label="Content feedback">'+
+    '<div><span class="eyebrow">HELP US IMPROVE</span><p>Was this content satisfactory for your preparation?</p></div>'+
+    '<div class="learner-feedback-actions" role="group" aria-label="Content satisfaction">'+
+    '<button class="learner-feedback-btn '+(currentFeedback==='SATISFACTORY'?'selected':'')+'" type="button" data-content-feedback="SATISFACTORY">✓ SATISFACTORY</button>'+
+    '<button class="learner-feedback-btn '+(currentFeedback==='NOT_SATISFACTORY'?'selected':'')+'" type="button" data-content-feedback="NOT_SATISFACTORY">NOT SATISFACTORY</button>'+
+    '</div><span class="learner-feedback-thanks" aria-live="polite">'+(currentFeedback?'Thank you. Your feedback helps improve the learning content.':'')+'</span></section>'+
     '<section class="micro-bottom-navigation" aria-label="Micro-topic navigation">'+
     '<a class="micro-bottom-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span><b>←</b></a>'+
     '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK YOUR RECALL</span><b>→</b></a>'+
     '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT</span><b>→</b></a>'+
     '</section>'+
     '</section>';
+  root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
+    const rating=btn.dataset.contentFeedback;
+    await submitLearnerFeedback('microtopics',k,rating);
+    root.querySelectorAll('[data-content-feedback]').forEach(b=>b.classList.toggle('selected',b.dataset.contentFeedback===rating));
+    const thanks=root.querySelector('.learner-feedback-thanks');if(thanks)thanks.textContent='Thank you. Your feedback helps improve the learning content.';
+  }));
 }
 function practice(){
   const box=$('#practiceApp');
