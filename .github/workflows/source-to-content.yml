@@ -6,6 +6,7 @@ on:
     paths:
       - "sources/inbox/**"
       - "sources/source-policy.json"
+      - "data/content-enrichment-instructions.json"
       - "scripts/source_to_content.py"
       - ".github/workflows/source-to-content.yml"
   workflow_dispatch:
@@ -16,6 +17,10 @@ on:
         default: "true"
       synthesize_sources:
         description: "Generate source-grounded learning content from sources/inbox"
+        required: false
+        default: "true"
+      enrich_existing:
+        description: "Apply the saved admin enrichment instruction to source-backed learning packages"
         required: false
         default: "true"
 
@@ -52,12 +57,14 @@ jobs:
         run: |
           REPAIR="${{ github.event.inputs.repair_existing || 'true' }}"
           SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
-          if [ "$SYNTH" = "true" ] && [ "$REPAIR" = "true" ]; then
-            python scripts/source_to_content.py --apply --repair-existing
-          elif [ "$SYNTH" = "true" ]; then
-            python scripts/source_to_content.py --apply
+          ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
+          ARGS="--apply"
+          if [ "$REPAIR" = "true" ]; then ARGS="$ARGS --repair-existing"; fi
+          if [ "$ENRICH" = "true" ]; then ARGS="$ARGS --enrich-existing"; fi
+          if [ "$SYNTH" = "true" ]; then
+            python scripts/source_to_content.py $ARGS
           elif [ "$REPAIR" = "true" ]; then
-            python scripts/source_to_content.py --apply --repair-existing
+            python scripts/source_to_content.py $ARGS
           else
             echo "Nothing requested."
           fi
