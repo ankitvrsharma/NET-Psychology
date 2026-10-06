@@ -31,83 +31,28 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
 const EXPERT_THRESHOLDS={pass:70,review:60};
-function expertText(value){if(Array.isArray(value))return value.map(expertText).join(' ');if(value&&typeof value==='object')return Object.values(value).map(expertText).join(' ');return String(value??'');}
-function expertSignals(text){const s=expertText(text).replace(/\s+/g,' ').trim(),low=s.toLowerCase();const generic=['this topic is important','plays a crucial role','understanding this concept','in simple terms','it is important to note','in conclusion','this helps us understand','is very important'];const domain=['mechanism','distinguish','contrast','whereas','condition','evidence','study','research','theory','model','construct','process','predict','criterion','validity','reliability','reinforcement','cognition','behaviour','behavior','individual difference','development','assessment','experiment','correlation','causal'];const teaching=['exam','pyq','trap','recall','application','example','scenario','cue','mnemonic'];return{length:s.length,genericHits:generic.filter(x=>low.includes(x)).length,domainHits:domain.filter(x=>low.includes(x)).length,teachingHits:teaching.filter(x=>low.includes(x)).length,contrastHits:(low.match(/\b(distinguish|different from|whereas|unlike|contrast|not the same as|however)\b/g)||[]).length,mechanismHits:(low.match(/\b(because|therefore|leads to|results in|involves|through|mechanism|process)\b/g)||[]).length,names:(s.match(/\b[A-Z][a-z]+(?:[- ][A-Z][a-z]+)?\b/g)||[]).length};}
-function expertMicroAudit(m){const core=expertText([m.title,m.expert_explanation,m.detailed_explanation,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.kaplan_enrichment?.notes,m.simply_psychology_enrichment?.notes]),sig=expertSignals(core),issues=[];if(!String(m.title||'').trim())issues.push('missing_title');if(sig.length<220)issues.push('too_thin');if(!Array.isArray(m.sources)||!m.sources.length)issues.push('no_explicit_source_mapping');if(sig.genericHits>=3)issues.push('generic_ai_style');if(sig.domainHits<3)issues.push('low_psychology_specificity');if(sig.mechanismHits<1&&sig.contrastHits<1)issues.push('weak_explanation_structure');let source=Array.isArray(m.sources)&&m.sources.length?15:0;if(m.kaplan_enrichment?.notes||m.simply_psychology_enrichment?.notes||m.source_notes)source+=5;const accuracy=Math.min(25,10+(sig.domainHits*2)+(sig.mechanismHits*2)+(sig.contrastHits*2));const expert=Math.min(20,8+(sig.length>=500?5:0)+(sig.domainHits>=6?4:0)+(sig.names>=2?3:0));const net=Math.min(15,6+(sig.teachingHits*2)+(String(m.content_notes||'').toLowerCase().includes('pyq')?3:0));const learning=Math.min(10,4+(m.application_question?2:0)+(m.recall_cue||m.memory_hook?2:0)+(sig.contrastHits?2:0));const originality=Math.max(0,10-(sig.genericHits*3)-(sig.length<180?4:0));let score=source+accuracy+expert+net+learning+originality;if(sig.genericHits>=3)score-=8;if(!m.sources?.length)score-=10;score=Math.max(0,Math.min(100,Math.round(score)));const critical=issues.some(x=>['missing_title','no_explicit_source_mapping'].includes(x));const status=critical||score<EXPERT_THRESHOLDS.review?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':'REVIEW';return{score,status,issues,signals:sig};}
-function expertQuestionAudit(q){const text=expertText([q.question,q.explanation,q.session,q.type,q.kind]),sig=expertSignals(text),issues=[];if(!String(q.question||'').trim())issues.push('missing_question');if(!Array.isArray(q.options)||q.options.length!==4)issues.push('invalid_options');if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)issues.push('invalid_answer');const mapped=q.unit!=null&&q.topic!=null&&q.micro!=null;if(!mapped)issues.push('unmapped');if(!String(q.explanation||'').trim())issues.push('missing_explanation');if(sig.genericHits>=2)issues.push('generic_explanation_style');if(sig.length<180)issues.push('thin_explanation');if(!q.session||q.type!=='PYQ')issues.push('weak_provenance');let score=0;score+=(q.session&&q.type==='PYQ'?20:0);score+=(Array.isArray(q.options)&&q.options.length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4?15:0);score+=(mapped?15:0);score+=Math.min(20,String(q.explanation||'').length>=300?20:String(q.explanation||'').length>=220?16:String(q.explanation||'').length>=180?12:6);score+=Math.min(15,sig.domainHits*1.5);score+=Math.min(10,sig.contrastHits*2+sig.mechanismHits*2);score+=(q.kind?5:0);score-=Math.min(15,sig.genericHits*4);score=Math.max(0,Math.min(100,Math.round(score)));const status=issues.some(i=>['missing_question','missing_explanation','invalid_options','invalid_answer'].includes(i))?'ISSUE':score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE';return{score,status,issues,signals:sig};}
-function expertQuickCardAudit(id){const parts=String(id||'').split('|'),mid=parts[0],angle=parts[1]||'',p=mid.split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);if(!mt)return{score:0,status:'ISSUE',issues:['missing_parent_microtopic']};const base=expertMicroAudit(mt),text=expertText([mt.expert_explanation,mt.detailed_explanation,mt.content_notes,mt.study_notes,mt.application_question,mt.recall_cue,mt.memory_hook]).toLowerCase();const requirements={'CORE IDEA':/core|definition|means|refers|concept|theor/i,'KEY FEATURES':/feature|characteristic|component|dimension|factor|type/i,'PYQ FOCUS':/pyq|exam|question|distinguish|trap/i,'EXAM TRAP':/trap|distinguish|not the same|whereas|common error/i,'SOURCE DETAIL':/source|study|research|author|model|theory/i,'RECALL CUE':/recall|cue|memory|mnemonic/i,'CONNECTION':/connect|relationship|link|related|contrast|compare/i};const missing=requirements[angle]&&!requirements[angle].test(text),issues=base.issues.slice();if(missing)issues.push('weak_angle_specific_support');const score=Math.max(0,base.score-(missing?15:0));return{score,status:score>=EXPERT_THRESHOLDS.pass?'PASS':score>=EXPERT_THRESHOLDS.review?'REVIEW':'ISSUE',issues};}
-function expertAudit(type,id){if(type==='microtopics'){const p=String(id).split('-').map(Number),mt=D?.units?.find(x=>x.id===p[0])?.topics?.find(x=>x.id===p[1])?.microtopics?.find(x=>x.id===p[2]);return mt?expertMicroAudit(mt):{score:0,status:'ISSUE',issues:['missing_microtopic']};}if(type==='quickLearnCards')return expertQuickCardAudit(id);const q=(PRACTICE_QUESTIONS||[]).find(x=>String(x.id)===String(id));return q?expertQuestionAudit(q):{score:0,status:'ISSUE',issues:['content_not_loaded']};}
-function contentIsPublished(type,id){
-  return expertAudit(type,id).status==='PASS';
-}
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
-async function loadStudyData(){
-  const response=await fetch('./data.json?v='+DATA_VERSION,{cache:'default'});
-  if(!response.ok) throw new Error('Study data request failed: '+response.status);
-  const json=await response.json();
-  try{
-    const kr=await fetch('./kaplan_enrichment.json?v='+DATA_VERSION+'',{cache:'default'});
-    if(kr.ok){
-      const kp=await kr.json();
-      const map=kp&&kp.microtopics&&typeof kp.microtopics==='object'?kp.microtopics:{};
-      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-        if(map[m.title]) m.kaplan_enrichment={source:kp.source?.title||'Kaplan AP Psychology Prep Plus',role:kp.source?.role||'Primary enrichment source',notes:map[m.title]};
-      }
-      json.kaplan_enrichment_meta=kp.source||null;
-    }
-  }catch(e){console.warn('Kaplan enrichment could not be loaded:',e)}
-  try{
-    const sr=await fetch('./study_sources.json?v='+DATA_VERSION,{cache:'default'});
-    if(sr.ok) json.study_source_config=await sr.json();
-  }catch(e){console.warn('Study source configuration could not be loaded:',e)}
-  try{
-    const sp=await fetch('./simply_psychology_enrichment.json?v='+DATA_VERSION,{cache:'default'});
-    if(sp.ok){
-      const cfg=await sp.json();
-      const entries=Array.isArray(cfg?.topics)?cfg.topics:[];
-      for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-        const title=String(m.title||'').toLowerCase();
-        const match=entries.find(x=>x?.match&&title.includes(String(x.match).toLowerCase()));
-        if(match?.notes) m.simply_psychology_enrichment={source:cfg.source?.title||'Simply Psychology',role:cfg.source?.role||'Selective web-based explanation and example layer',notes:match.notes};
-      }
-      json.simply_psychology_enrichment_meta=cfg.source||null;
-    }
-  }catch(e){console.warn('Simply Psychology enrichment could not be loaded:',e)}
-  for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
-    m.study_source_config=json.study_source_config||null;
-  }
-  D=json;
-  // Render core UI immediately; optional enrichment must never block a usable page.
-  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') safeRender();
-  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
-    try{
-      const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
-      if(pq.ok){const parsed=await pq.json();if(Array.isArray(parsed))PRACTICE_QUESTIONS=parsed;}
-      try{const pe=await fetch('./practice_explanations.json?v=20261001-pyq1',{cache:'default'});if(pe.ok){const parsed=await pe.json();if(parsed&&typeof parsed==='object'){PRACTICE_EXPLANATIONS=parsed;PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>({...q,explanation:PRACTICE_EXPLANATIONS[q.id]||q.explanation}));}}}catch(e){console.warn('PYQ explanations could not be loaded:',e)}
-    }catch(e){console.warn('PYQ bank could not be loaded:',e)}
-    try{
-      const mm=await fetch('./mcq_mapping.json?v='+DATA_VERSION,{cache:'default'});
-      if(mm.ok){
-        const map=await mm.json();
-        const overrides=map&&map.question_overrides&&typeof map.question_overrides==='object'?map.question_overrides:{};
-        PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.map(q=>{
-          const o=overrides[q.id];
-          const base={...q,source_tags:Array.isArray(q.source_tags)&&q.source_tags.length?q.source_tags:['PYQ']};
-          if(!o)return base;
-          const parts=String(o.target||'').split('-').map(Number);
-          if(parts.length!==3||parts.some(Number.isNaN))return {...base,source_tags:o.sources||base.source_tags,source_topic:o.topic||''};
-          return {...base,unit:parts[0],topic:parts[1],micro:parts[2],source_tags:o.sources||base.source_tags,source_topic:o.topic||''};
-        });
-        json.mcq_mapping=map;
-      }
-    }catch(e){console.warn('MCQ mapping could not be loaded:',e)}
-    PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(q=>contentIsPublished('questions',q.id));
-  }
-  safeRender();
-  return true;
-}
-
+const runtimeContext=Object.defineProperties({},{
+  data:{get:()=>D,set:v=>{D=v}},
+  questions:{get:()=>PRACTICE_QUESTIONS,set:v=>{PRACTICE_QUESTIONS=v}},
+  render:{value:()=>safeRender()},
+  isPublished:{value:(type,id)=>contentIsPublished(type,id)}
+});
+const contentAudit=window.NETPsychologyContentAudit.create(runtimeContext);
+const expertAudit=contentAudit.expertAudit;
+const contentIsPublished=contentAudit.contentIsPublished;
+const loadStudyData=window.NETPsychologyDataLoader.create({
+  get data(){return D},
+  set data(v){D=v},
+  get questions(){return PRACTICE_QUESTIONS},
+  set questions(v){PRACTICE_QUESTIONS=v},
+  get explanations(){return PRACTICE_EXPLANATIONS},
+  set explanations(v){PRACTICE_EXPLANATIONS=v},
+  dataVersion:DATA_VERSION,
+  render:()=>safeRender(),
+  isPublished:(type,id)=>contentIsPublished(type,id)
+});
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
