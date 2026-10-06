@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v52-unit-availability';
+const CACHE='netpsych-shell-v53-admin-dashboard';
 const SHELL=[
   './',
   './index.html',
@@ -11,6 +11,8 @@ const SHELL=[
   './unit.html',
   './start.html',
   './progress.html',
+  './admin.html',
+  './admin.js',
   './revision.html',
   './daily3.html',
   './daily-practice.html',
@@ -30,7 +32,8 @@ const RUNTIME_DATA=new Set([
   'simply_psychology_enrichment.json',
   'mcq_mapping.json',
   'practice_questions.json',
-  'practice_explanations.json'
+  'practice_explanations.json',
+  'content-publication.json'
 ]);
 const NEVER_CACHE=new Set(['exam_schedule.json']);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
