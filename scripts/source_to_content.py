@@ -246,28 +246,39 @@ def main():
     existing_deep=load(ROOT/"content/deep-dive/deep_dive.json")
     existing_recall=load(ROOT/"content/active-recall/active_recall.json")
     existing_revision=load(REVISION)
+    recall_prompt_schema={"type":"object","properties":{
+        "type":{"type":"string"},
+        "prompt":{"type":"string"},
+        "answer":{"type":"string"}
+    },"required":["type","prompt","answer"],"additionalProperties":False}
+    cross_reference_schema={"type":"object","properties":{
+        "id":{"type":"string"},
+        "relationship":{"type":"string"},
+        "reason":{"type":"string"}
+    },"required":["id","relationship","reason"],"additionalProperties":False}
+    practice_mcq_schema={"type":"object","properties":{
+        "id":{"type":"string"},
+        "question":{"type":"string"},
+        "options":{"type":"array","items":{"type":"string"}},
+        "correct_answer":{"type":"string"},
+        "explanation":{"type":"string"}
+    },"required":["id","question","options","correct_answer","explanation"],"additionalProperties":False}
+    revision_guidance_schema={"type":"object","properties":{
+        "recall_before_review":{"type":"string"},
+        "self_check":{"type":"string"},
+        "weak_point_prompt":{"type":"string"},
+        "rating_instruction":{"type":"string"}
+    },"required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False}
     content_schema={"type":"object","properties":{
         "microtopic_id":{"type":"string"},
         "core_explanation":{"type":"string"},
         "detailed_explanation":{"type":"string"},
-        "recall_prompts":{"type":"array","items":{
-            "type":"object","properties":{
-                "type":{"type":"string"},
-                "prompt":{"type":"string"},
-                "answer":{"type":"string"}
-            },
-            "required":["type","prompt","answer"],"additionalProperties":False}},
-        "cross_references":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"relationship":{"type":"string"},"reason":{"type":"string"}},"required":["id","relationship","reason"],"additionalProperties":False}},
-        "practice_mcqs":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"question":{"type":"string"},"options":{"type":"array","items":{"type":"string"}},"correct_answer":{"type":"string"},"explanation":{"type":"string"}},"required":["id","question","options","correct_answer","explanation"],"additionalProperties":false}},
-        "revision_guidance":{"type":"object","properties":{
-            "recall_before_review":{"type":"string"},
-            "self_check":{"type":"string"},
-            "weak_point_prompt":{"type":"string"},
-            "rating_instruction":{"type":"string"}},
-            "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
-        "required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance","practice_mcqs"],
-        "additionalProperties":False}
-    if not args.apply_staged:
+        "recall_prompts":{"type":"array","items":recall_prompt_schema},
+        "cross_references":{"type":"array","items":cross_reference_schema},
+        "practice_mcqs":{"type":"array","items":practice_mcq_schema},
+        "revision_guidance":revision_guidance_schema
+    },"required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance","practice_mcqs"],
+      "additionalProperties":False}if not args.apply_staged:
         for ref in list(refs.values()):
             if target_ids and ref["id"] not in target_ids: continue
             if len(generated)>=MAX_TOPICS: break
