@@ -1,0 +1,1894 @@
+{
+  "8-1-1": {
+    "id": "8-1-1",
+    "title": "Nature of social psychology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Nature of social psychology. What is the central idea?",
+        "answer": "Social psychology studies how people think about, influence and relate to other people. The uploaded NET material emphasizes the social context of behavior, while Kaplan organizes the field around social perception, attitudes, group processes and social influence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Nature of social psychology.",
+        "answer": "Social context is central to explanation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Nature of social psychology.",
+        "answer": "The field examines cognition, affect and behavior in social situations."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Nature of social psychology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Nature of social psychology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-1-2": {
+    "id": "8-1-2",
+    "title": "Scope of social psychology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Scope of social psychology. What is the central idea?",
+        "answer": "The scope of social psychology includes social perception, communication, attribution, attitudes, prosocial behavior, group influence, conformity, persuasion, compliance, social power, group dynamics, leadership and intergroup relations. The uploaded NET outline explicitly organizes the unit around these domains."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Scope of social psychology.",
+        "answer": "Social cognition and perception are core areas."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Scope of social psychology.",
+        "answer": "Attitudes and their change are studied."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Scope of social psychology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Scope of social psychology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-1-3": {
+    "id": "8-1-3",
+    "title": "History of social psychology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain History of social psychology. What is the central idea?",
+        "answer": "The history of social psychology is characterized by the development of systematic approaches to social influence, group processes, attitudes and interpersonal behavior. The uploaded material presents the field as a scientific discipline that connects individual psychological processes with social context."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about History of social psychology.",
+        "answer": "The field developed around systematic study of social behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about History of social psychology.",
+        "answer": "Attitudes, group influence and interpersonal processes became major areas."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of History of social psychology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes History of social psychology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-2-1": {
+    "id": "8-2-1",
+    "title": "Field theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Field theory. What is the central idea?",
+        "answer": "Field theory, associated with Kurt Lewin, explains behavior as a function of the person and the psychological environment. Social behavior is therefore understood within a dynamic field of forces rather than as a property of the individual alone."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Field theory.",
+        "answer": "Lewin is the key theorist."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Field theory.",
+        "answer": "Behavior is considered in relation to person and environment."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Field theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Field theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-2-2": {
+    "id": "8-2-2",
+    "title": "Cognitive Dissonance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive Dissonance. What is the central idea?",
+        "answer": "discomfort arising from inconsistency among cognitions or between cognition and behavior"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive Dissonance.",
+        "answer": "Festinger"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive Dissonance.",
+        "answer": "inconsistency"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cognitive Dissonance?",
+        "answer": "Not simply disagreement."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cognitive Dissonance?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive Dissonance indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-2-3": {
+    "id": "8-2-3",
+    "title": "Sociobiology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sociobiology. What is the central idea?",
+        "answer": "Sociobiology applies evolutionary reasoning to social behavior, asking how behavioral tendencies may relate to adaptation and reproductive success. The uploaded NET material includes sociobiology as one theoretical perspective in social psychology."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sociobiology.",
+        "answer": "Social behavior can be examined through evolutionary principles."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sociobiology.",
+        "answer": "Adaptive consequences are relevant to explanation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sociobiology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sociobiology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-2-4": {
+    "id": "8-2-4",
+    "title": "Psychodynamic approaches",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychodynamic approaches. What is the central idea?",
+        "answer": "Psychodynamic approaches explain social behavior partly through unconscious processes, internal conflicts and early relational experiences. The uploaded NET material lists psychodynamic approaches among theoretical perspectives in social psychology."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychodynamic approaches.",
+        "answer": "Unconscious processes can influence social behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychodynamic approaches.",
+        "answer": "Early relationships may shape later interpersonal patterns."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychodynamic approaches?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychodynamic approaches indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-2-5": {
+    "id": "8-2-5",
+    "title": "Social Cognition",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social Cognition. What is the central idea?",
+        "answer": "how people notice, interpret, remember and use information about social others and situations"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Cognition.",
+        "answer": "schemas"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Cognition.",
+        "answer": "heuristics"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Social Cognition?",
+        "answer": "It is broader than simply 'thinking about society'."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social Cognition?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social Cognition indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-1": {
+    "id": "8-3-1",
+    "title": "Social perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social perception. What is the central idea?",
+        "answer": "Social perception is the process of forming impressions and making sense of other people and social situations. The uploaded social-psychology material places it alongside communication and attribution."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social perception.",
+        "answer": "People form impressions from social information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social perception.",
+        "answer": "Interpretation is influenced by expectations and prior knowledge."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social perception?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social perception indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-2": {
+    "id": "8-3-2",
+    "title": "Communication",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Communication. What is the central idea?",
+        "answer": "Communication is the exchange of information, meanings and signals between people. In social psychology, communication is relevant because verbal and nonverbal cues influence social perception, relationships and coordination of behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Communication.",
+        "answer": "Communication can be verbal and nonverbal."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Communication.",
+        "answer": "Meaning depends partly on context and interpretation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Communication?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Communication indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-3": {
+    "id": "8-3-3",
+    "title": "Attributions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Attributions. What is the central idea?",
+        "answer": "Attribution is the process of explaining the causes of behavior. Baron & Misra discuss internal and external attributions and the self-serving bias, in which positive outcomes are more likely to be attributed internally and negative outcomes externally."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attributions.",
+        "answer": "Internal attributions locate causes in the person."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attributions.",
+        "answer": "External attributions locate causes in the situation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Attributions?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Attributions indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-4": {
+    "id": "8-3-4",
+    "title": "Attitude",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Attitude. What is the central idea?",
+        "answer": "An attitude is an evaluative tendency toward a person, object, issue or behavior. The uploaded sources treat attitudes as important social-psychological constructs that can influence behavior and can themselves be changed by experience and persuasion."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attitude.",
+        "answer": "Attitudes have an evaluative component."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attitude.",
+        "answer": "They can be positive, negative or mixed."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Attitude?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Attitude indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-5": {
+    "id": "8-3-5",
+    "title": "Attitude change",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Attitude change. What is the central idea?",
+        "answer": "Attitude change involves modification of an existing evaluation. The uploaded sources discuss persuasion and cognitive dissonance as important mechanisms through which attitudes can change. Dissonance can arise from inconsistency between attitudes and behavior and motivate efforts to reduce the inconsistency."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attitude change.",
+        "answer": "Persuasive communication can change attitudes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Attitude change.",
+        "answer": "Cognitive dissonance can motivate attitude change."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Attitude change?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Attitude change indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-6": {
+    "id": "8-3-6",
+    "title": "Cultural context of attitudes",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cultural context of attitudes. What is the central idea?",
+        "answer": "Attitudes develop and operate within cultural contexts that shape norms, values, social roles and interpretation. The uploaded NET material explicitly places attitude change within cultural context, and Baron & Misra repeatedly discuss cultural influences on social behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cultural context of attitudes.",
+        "answer": "Culture provides norms and values relevant to evaluation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cultural context of attitudes.",
+        "answer": "The same behavior can be evaluated differently across cultural contexts."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cultural context of attitudes?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cultural context of attitudes indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-7": {
+    "id": "8-3-7",
+    "title": "Prosocial behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Prosocial behavior. What is the central idea?",
+        "answer": "Prosocial behavior refers to actions intended to benefit other people. Kaplan describes prosocial behavior as behavior that benefits others, while the sources discuss helping, altruism, empathy and social factors that influence helping."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Prosocial behavior.",
+        "answer": "The intended outcome benefits another person."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Prosocial behavior.",
+        "answer": "Helping and altruism are common examples."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Prosocial behavior?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Prosocial behavior indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-3-8": {
+    "id": "8-3-8",
+    "title": "Fundamental attribution error",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Fundamental attribution error in 2–3 sentences.",
+        "answer": "Fundamental attribution error is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Fundamental attribution error?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Fundamental attribution error?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Fundamental attribution error?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Fundamental attribution error?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Fundamental attribution error indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-9": {
+    "id": "8-3-9",
+    "title": "Actor-observer bias",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Actor-observer bias in 2–3 sentences.",
+        "answer": "Actor-observer bias is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Actor-observer bias?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Actor-observer bias?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Actor-observer bias?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Actor-observer bias?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Actor-observer bias indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-10": {
+    "id": "8-3-10",
+    "title": "Self-serving bias",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Self-serving bias in 2–3 sentences.",
+        "answer": "Self-serving bias is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Self-serving bias?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Self-serving bias?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Self-serving bias?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Self-serving bias?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Self-serving bias indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-11": {
+    "id": "8-3-11",
+    "title": "Attitude components and formation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Attitude components and formation in 2–3 sentences.",
+        "answer": "Attitude components and formation is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Attitude components and formation?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Attitude components and formation?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Attitude components and formation?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Attitude components and formation?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Attitude components and formation indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-12": {
+    "id": "8-3-12",
+    "title": "Cognitive dissonance and attitude change",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive dissonance and attitude change in 2–3 sentences.",
+        "answer": "Cognitive dissonance and attitude change is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Cognitive dissonance and attitude change?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Cognitive dissonance and attitude change?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Cognitive dissonance and attitude change?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Cognitive dissonance and attitude change?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive dissonance and attitude change indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-13": {
+    "id": "8-3-13",
+    "title": "Central and peripheral routes to persuasion",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Central and peripheral routes to persuasion in 2–3 sentences.",
+        "answer": "Central and peripheral routes to persuasion is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Central and peripheral routes to persuasion?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Central and peripheral routes to persuasion?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Central and peripheral routes to persuasion?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Central and peripheral routes to persuasion?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Central and peripheral routes to persuasion indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-14": {
+    "id": "8-3-14",
+    "title": "Helping and altruism",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Helping and altruism in 2–3 sentences.",
+        "answer": "Helping and altruism is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Helping and altruism?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Helping and altruism?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Helping and altruism?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Helping and altruism?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Helping and altruism indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-3-15": {
+    "id": "8-3-15",
+    "title": "Bystander effect and diffusion of responsibility",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Bystander effect and diffusion of responsibility in 2–3 sentences.",
+        "answer": "Bystander effect and diffusion of responsibility is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Bystander effect and diffusion of responsibility?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Bystander effect and diffusion of responsibility?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Bystander effect and diffusion of responsibility?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Bystander effect and diffusion of responsibility?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Bystander effect and diffusion of responsibility indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-4-1": {
+    "id": "8-4-1",
+    "title": "Social Facilitation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social Facilitation. What is the central idea?",
+        "answer": "Social facilitation concerns changes in performance caused by the presence of other people. The classic pattern is that the presence of others can improve performance on well-learned or simple tasks but impair performance on difficult or unfamiliar tasks."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Facilitation.",
+        "answer": "Audience presence can affect performance."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Facilitation.",
+        "answer": "Well-learned tasks may show improved performance."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social Facilitation?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social Facilitation indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-2": {
+    "id": "8-4-2",
+    "title": "Social loafing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social loafing. What is the central idea?",
+        "answer": "Social loafing is the tendency for individuals to exert less effort when working collectively than when working alone, particularly when individual contributions are less identifiable. Kaplan explicitly identifies larger group settings as a context in which social loafing can occur."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social loafing.",
+        "answer": "Effort can decline in group tasks."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social loafing.",
+        "answer": "Individual contribution may be less identifiable."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social loafing?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social loafing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-3": {
+    "id": "8-4-3",
+    "title": "Conformity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Conformity. What is the central idea?",
+        "answer": "adjustment of behavior or judgment toward group norms"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Conformity.",
+        "answer": "Asch"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Conformity.",
+        "answer": "normative influence"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Conformity?",
+        "answer": "Different from obedience."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Conformity?",
+        "answer": "Kaplan distinguishes conformity from other forms of social influence and uses Asch's line-judgement paradigm to illustrate majority pressure. Normative influence is associated with fitting in, while informational influence involves using others as information under uncertainty. Simply Psychology distinguishes public yielding driven by normative pressure from genuine uncertainty driven by informational influence and emphasises the role of a unanimous majority."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Conformity indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-4": {
+    "id": "8-4-4",
+    "title": "Peer Pressure",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Peer Pressure. What is the central idea?",
+        "answer": "Peer pressure refers to influence from peers that affects a person's attitudes, choices or behavior. It can operate through explicit demands, social expectations or the desire to belong."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Peer Pressure.",
+        "answer": "Peers can influence behavior directly or indirectly."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Peer Pressure.",
+        "answer": "Conformity and group norms are related processes."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Peer Pressure?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Peer Pressure indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-5": {
+    "id": "8-4-5",
+    "title": "Persuasion",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Persuasion. What is the central idea?",
+        "answer": "Persuasion is the process of attempting to change another person's attitudes, beliefs or behavior through communication. The uploaded social-psychology material treats persuasion as a major form of social influence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Persuasion.",
+        "answer": "Persuasion involves communication."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Persuasion.",
+        "answer": "Messages can influence attitudes and behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Persuasion?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Persuasion indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-6": {
+    "id": "8-4-6",
+    "title": "Compliance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Compliance. What is the central idea?",
+        "answer": "Compliance occurs when a person changes behavior in response to a request. The uploaded social-influence material lists compliance alongside conformity, persuasion, obedience, social power and reactance."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Compliance.",
+        "answer": "Compliance involves responding to a request."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Compliance.",
+        "answer": "It differs from obedience, which typically involves an authority."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Compliance?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Compliance indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-7": {
+    "id": "8-4-7",
+    "title": "Obedience",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Obedience. What is the central idea?",
+        "answer": "behavior change in response to an authority's command"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Obedience.",
+        "answer": "Milgram"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Obedience.",
+        "answer": "authority"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Obedience?",
+        "answer": "Different from conformity."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Obedience?",
+        "answer": "Kaplan treats obedience as following an authority's direct instruction and contrasts it with conformity. Milgram's work is used to show how situational authority can strongly shape behaviour. Simply Psychology defines obedience as responding to a direct order from an authority figure and distinguishes it from conformity. Legitimacy, proximity and diffusion of responsibility help interpret Milgram-type questions."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Obedience indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-8": {
+    "id": "8-4-8",
+    "title": "Social Power",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social Power. What is the central idea?",
+        "answer": "Social power is the capacity to influence other people's behavior, decisions or outcomes. The uploaded NET material places social power within the broader study of social influence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Power.",
+        "answer": "Power concerns influence over others or outcomes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Power.",
+        "answer": "Power can operate through different social relationships and resources."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social Power?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social Power indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-9": {
+    "id": "8-4-9",
+    "title": "Reactance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Reactance. What is the central idea?",
+        "answer": "Psychological reactance is a motivational response to perceived restriction of freedom. The uploaded social-psychology material lists reactance as a form of social influence response, and environmental material notes that perceived loss of control can increase stress reactions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reactance.",
+        "answer": "Reactance follows perceived restriction of freedom."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reactance.",
+        "answer": "People may resist or restore the threatened choice."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Reactance?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Reactance indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-4-10": {
+    "id": "8-4-10",
+    "title": "Asch conformity experiment",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Asch conformity experiment in 2–3 sentences.",
+        "answer": "Asch conformity experiment is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Asch conformity experiment?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Asch conformity experiment?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Asch conformity experiment?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Asch conformity experiment?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Asch conformity experiment indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-4-11": {
+    "id": "8-4-11",
+    "title": "Sherif's social influence research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sherif's social influence research in 2–3 sentences.",
+        "answer": "Sherif's social influence research is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Sherif's social influence research?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Sherif's social influence research?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Sherif's social influence research?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Sherif's social influence research?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sherif's social influence research indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-4-12": {
+    "id": "8-4-12",
+    "title": "Milgram obedience experiment",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Milgram obedience experiment in 2–3 sentences.",
+        "answer": "Milgram obedience experiment is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Milgram obedience experiment?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Milgram obedience experiment?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Milgram obedience experiment?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Milgram obedience experiment?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Milgram obedience experiment indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-4-13": {
+    "id": "8-4-13",
+    "title": "Zimbardo role research",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Zimbardo role research in 2–3 sentences.",
+        "answer": "Zimbardo role research is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Zimbardo role research?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Zimbardo role research?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Zimbardo role research?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Zimbardo role research?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Zimbardo role research indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-5-1": {
+    "id": "8-5-1",
+    "title": "Aggression",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Aggression. What is the central idea?",
+        "answer": "behavior intended to harm another person who wants to avoid the harm"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Aggression.",
+        "answer": "hostile/instrumental"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Aggression.",
+        "answer": "learning"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Aggression?",
+        "answer": "Anger is an emotion; aggression is behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Aggression?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Aggression indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-5-2": {
+    "id": "8-5-2",
+    "title": "Biological approaches to aggression",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Biological approaches to aggression in 2–3 sentences.",
+        "answer": "Biological approaches to aggression is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Biological approaches to aggression?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Biological approaches to aggression?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Biological approaches to aggression?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Biological approaches to aggression?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Biological approaches to aggression indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-5-3": {
+    "id": "8-5-3",
+    "title": "Frustration-aggression hypothesis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Frustration-aggression hypothesis in 2–3 sentences.",
+        "answer": "Frustration-aggression hypothesis is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Frustration-aggression hypothesis?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Frustration-aggression hypothesis?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Frustration-aggression hypothesis?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Frustration-aggression hypothesis?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Frustration-aggression hypothesis indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-5-4": {
+    "id": "8-5-4",
+    "title": "Social learning approach to aggression",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social learning approach to aggression in 2–3 sentences.",
+        "answer": "Social learning approach to aggression is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Social learning approach to aggression?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Social learning approach to aggression?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Social learning approach to aggression?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Social learning approach to aggression?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social learning approach to aggression indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-5-5": {
+    "id": "8-5-5",
+    "title": "Situational and media influences",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Situational and media influences in 2–3 sentences.",
+        "answer": "Situational and media influences is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Situational and media influences?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Situational and media influences?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Situational and media influences?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Situational and media influences?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Situational and media influences indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "8-6-1": {
+    "id": "8-6-1",
+    "title": "Group dynamics",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Group dynamics. What is the central idea?",
+        "answer": "Group dynamics concerns the patterns of interaction, roles, norms, cohesion and influence that develop within groups. The uploaded NET material places group dynamics alongside leadership and social influence."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Group dynamics.",
+        "answer": "Groups develop norms and roles."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Group dynamics.",
+        "answer": "Cohesion can affect interaction and performance."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Group dynamics?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Group dynamics indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-6-2": {
+    "id": "8-6-2",
+    "title": "Leadership styles",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Leadership styles. What is the central idea?",
+        "answer": "Leadership styles describe characteristic patterns of how leaders direct and interact with groups. The uploaded sources include autocratic, democratic and laissez-faire styles and discuss the Blake–Mouton grid, which combines concern for people with concern for results."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Leadership styles.",
+        "answer": "Autocratic leadership emphasizes leader control."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Leadership styles.",
+        "answer": "Democratic leadership involves greater participation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Leadership styles?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Leadership styles indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-6-3": {
+    "id": "8-6-3",
+    "title": "Leadership effectiveness",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Leadership effectiveness. What is the central idea?",
+        "answer": "Leadership effectiveness depends on the interaction between leader characteristics, behavior and situational conditions. Revisathon material summarizes Fiedler's contingency approach: task-oriented and relationship-oriented styles may be effective depending on situational favorability."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Leadership effectiveness.",
+        "answer": "Leadership effectiveness is context dependent."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Leadership effectiveness.",
+        "answer": "Fiedler distinguishes task- and relationship-oriented styles."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Leadership effectiveness?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Leadership effectiveness indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-1": {
+    "id": "8-7-1",
+    "title": "Minimal Group Experiment",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Minimal Group Experiment. What is the central idea?",
+        "answer": "The minimal-group paradigm demonstrates that people can show in-group favoritism even when group membership is created using minimal or relatively arbitrary distinctions. The uploaded NET material lists the Minimal Group Experiment with Social Identity Theory as a major intergroup-relations topic."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Minimal Group Experiment.",
+        "answer": "Minimal categorization can create meaningful group distinctions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Minimal Group Experiment.",
+        "answer": "In-group favoritism can emerge with minimal group formation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Minimal Group Experiment?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Minimal Group Experiment indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-2": {
+    "id": "8-7-2",
+    "title": "Social Identity Theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social Identity Theory. What is the central idea?",
+        "answer": "intergroup behavior through categorization, identification and social comparison"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Identity Theory.",
+        "answer": "Tajfel & Turner"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Identity Theory.",
+        "answer": "ingroup/outgroup"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Social Identity Theory?",
+        "answer": "Identity processes do not require deep hostility."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social Identity Theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social Identity Theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-3": {
+    "id": "8-7-3",
+    "title": "Relative Deprivation Theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Relative Deprivation Theory. What is the central idea?",
+        "answer": "Relative deprivation concerns perceived disadvantage that arises from comparison with relevant others or standards, rather than from absolute deprivation alone. Baron & Misra discuss relative deprivation in relation to intergroup attitudes and prejudice."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Relative Deprivation Theory.",
+        "answer": "Perceived comparison is central."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Relative Deprivation Theory.",
+        "answer": "People can feel deprived even when basic needs are met."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Relative Deprivation Theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Relative Deprivation Theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-4": {
+    "id": "8-7-4",
+    "title": "Realistic Conflict Theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Realistic Conflict Theory. What is the central idea?",
+        "answer": "intergroup hostility partly through competition over scarce resources"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Realistic Conflict Theory.",
+        "answer": "Sherif"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Realistic Conflict Theory.",
+        "answer": "competition"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Realistic Conflict Theory?",
+        "answer": "Not all prejudice requires resource competition."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Realistic Conflict Theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Realistic Conflict Theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-5": {
+    "id": "8-7-5",
+    "title": "Balance Theories",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Balance Theories. What is the central idea?",
+        "answer": "Balance theories examine consistency among people's attitudes toward themselves, others and objects. The uploaded NET material lists balance theories within theories of intergroup relations and social cognition."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Balance Theories.",
+        "answer": "Relations among attitudes can be balanced or imbalanced."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Balance Theories.",
+        "answer": "People may be motivated to reduce inconsistency."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Balance Theories?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Balance Theories indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-6": {
+    "id": "8-7-6",
+    "title": "Equity Theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Equity Theory. What is the central idea?",
+        "answer": "perceived fairness of input–outcome ratios in relationships"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Equity Theory.",
+        "answer": "inputs"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Equity Theory.",
+        "answer": "outcomes"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Equity Theory?",
+        "answer": "Equity is not always identical to equality."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Equity Theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Equity Theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-7-7": {
+    "id": "8-7-7",
+    "title": "Social Exchange Theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social Exchange Theory. What is the central idea?",
+        "answer": "relationships partly evaluated through rewards, costs, comparison levels and alternatives"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Exchange Theory.",
+        "answer": "rewards"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social Exchange Theory.",
+        "answer": "costs"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Social Exchange Theory?",
+        "answer": "It is a model, not literal money accounting."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social Exchange Theory?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social Exchange Theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-1": {
+    "id": "8-8-1",
+    "title": "Health applications",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Health applications. What is the central idea?",
+        "answer": "Applied social psychology uses knowledge about social influence, attitudes, norms and interpersonal processes to address health behavior. The uploaded NET material lists health as an application area, while Baron & Misra discuss social-psychological influences on health-related behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health applications.",
+        "answer": "Health behavior is influenced by social context."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health applications.",
+        "answer": "Attitudes and norms can affect health decisions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Health applications?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Health applications indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-2": {
+    "id": "8-8-2",
+    "title": "Environmental applications",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Environmental applications. What is the central idea?",
+        "answer": "Environmental social psychology examines how physical settings influence behavior and how people interact with environments. The uploaded NET material includes environment as an application and separately covers personal space, crowding and territoriality."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Environmental applications.",
+        "answer": "Physical settings can influence stress and interaction."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Environmental applications.",
+        "answer": "Crowding concerns perceived density and its psychological effects."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Environmental applications?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Environmental applications indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-3": {
+    "id": "8-8-3",
+    "title": "Law applications",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Law applications. What is the central idea?",
+        "answer": "Applied social psychology can contribute to law through the study of social influence, perception, attitudes, testimony and behavior in legal contexts. The uploaded NET material lists law as an application area but provides limited standalone detail in the supplied extract."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Law applications.",
+        "answer": "Social psychological principles can inform legal contexts."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Law applications.",
+        "answer": "Perception and judgment can affect legal decisions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Law applications?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Law applications indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-4": {
+    "id": "8-8-4",
+    "title": "Personal space",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Personal space. What is the central idea?",
+        "answer": "Personal space is the preferred physical distance people maintain around themselves during social interaction. Ciccarelli & White describes it as a form of territorial protection and notes that it can be influenced by interpersonal and cultural factors."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Personal space.",
+        "answer": "Personal space varies across people and situations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Personal space.",
+        "answer": "It regulates interpersonal distance."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Personal space?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Personal space indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-5": {
+    "id": "8-8-5",
+    "title": "Crowding",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Crowding. What is the central idea?",
+        "answer": "Crowding refers to the subjective experience of having too many people or too little desired space, rather than density alone. The uploaded environmental psychology material links crowding with perceived control and stress reactions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Crowding.",
+        "answer": "Density is a physical condition; crowding is a psychological experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Crowding.",
+        "answer": "Perceived control can influence stress responses to crowding."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Crowding?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Crowding indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "8-8-6": {
+    "id": "8-8-6",
+    "title": "Territoriality",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Territoriality. What is the central idea?",
+        "answer": "Territoriality concerns behaviors and cognitions associated with control, ownership or defense of a physical area. The uploaded sources distinguish it from personal space and include territoriality within applied environmental social psychology."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Territoriality.",
+        "answer": "Territories are physical areas associated with control or ownership."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Territoriality.",
+        "answer": "Territorial behavior can regulate access and social interaction."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Territoriality?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Territoriality indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  }
+}
