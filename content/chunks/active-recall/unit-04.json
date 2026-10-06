@@ -1,0 +1,1079 @@
+{
+  "4-1-1": {
+    "id": "4-1-1",
+    "title": "General sensations",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain General sensations. What is the central idea?",
+        "answer": "The uploaded NET material distinguishes general and specific sensations within the study of sensation, receptors and sensory processes. General sensations refer to bodily sensory information such as touch, temperature and pain, whereas specific sensory systems are associated with specialized organs such as vision, hearing, taste and smell."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about General sensations.",
+        "answer": "General sensations arise from bodily sensory systems."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about General sensations.",
+        "answer": "Specific sensations involve specialized sensory organs/pathways."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of General sensations?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes General sensations indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-1-2": {
+    "id": "4-1-2",
+    "title": "Specific sensations",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Specific sensations. What is the central idea?",
+        "answer": "Specific sensations are associated with specialized sensory systems such as vision, hearing, taste and smell. The source framework organizes these systems through their receptors and sensory processes, while Ciccarelli & White and Baron & Misra explain how physical stimulation is transformed into neural information and conscious sensation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Specific sensations.",
+        "answer": "Vision, hearing, taste and smell are specialized sensory systems."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Specific sensations.",
+        "answer": "Each system has characteristic receptors and pathways."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Specific sensations?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Specific sensations indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-1-3": {
+    "id": "4-1-3",
+    "title": "Receptors",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Receptors. What is the central idea?",
+        "answer": "Sensory receptors are specialized structures that detect particular forms of physical stimulation and initiate neural signaling. The uploaded sources emphasize that different sensory systems have different receptor arrangements and transduction processes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Receptors.",
+        "answer": "Receptors are specialized for particular kinds of stimulation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Receptors.",
+        "answer": "They initiate neural signals when appropriate stimulation occurs."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Receptors?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Receptors indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-1-4": {
+    "id": "4-1-4",
+    "title": "Sensory processes",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sensory processes. What is the central idea?",
+        "answer": "Sensory processes begin when physical stimulation reaches sensory receptors and is transformed into neural information. Baron & Misra emphasize the remarkable sensitivity of sensory systems, while the NET material organizes sensation around receptors and sensory processing. The study of sensation therefore links physical energy, receptor activity and neural transmission."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory processes.",
+        "answer": "Physical stimulation provides the input."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory processes.",
+        "answer": "Receptors detect relevant stimulation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sensory processes?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sensory processes indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-2-1": {
+    "id": "4-2-1",
+    "title": "Neuron structure",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neuron structure. What is the central idea?",
+        "answer": "organization of dendrites, soma, axon and terminal regions for receiving and transmitting information"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuron structure.",
+        "answer": "dendrites receive"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuron structure.",
+        "answer": "soma integrates"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Neuron structure?",
+        "answer": "Dendrites and axons have different typical roles."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Neuron structure?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neuron structure indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-2-2": {
+    "id": "4-2-2",
+    "title": "Neuron functions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neuron functions. What is the central idea?",
+        "answer": "Neurons are specialized cells that receive, process and transmit information through neural signaling. The uploaded sources organize Unit 4 around neuron structure, functions, types, neural impulse, synaptic transmission and neurotransmitters."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuron functions.",
+        "answer": "Neurons receive and transmit information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neuron functions.",
+        "answer": "Neural impulses travel along the neuron."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Neuron functions?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neuron functions indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-2-3": {
+    "id": "4-2-3",
+    "title": "Types of neurons",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of neurons. What is the central idea?",
+        "answer": "functional classification into sensory, motor and interneurons"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of neurons.",
+        "answer": "afferent/sensory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of neurons.",
+        "answer": "efferent/motor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Types of neurons?",
+        "answer": "Afferent/efferent are defined relative to the CNS."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of neurons?",
+        "answer": "PowerWithin provides the NET biological framework. Ciccarelli & White supplies the broader biological-neuroscience account, while the Self-Teaching Guide reinforces the link between biological systems and observable behaviour."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of neurons indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "4-2-4": {
+    "id": "4-2-4",
+    "title": "Neural impulse",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Neural impulse? State its meaning and central idea in your own words.",
+        "answer": "action potential as a rapid, all-or-none change in membrane potential"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Neural impulse can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "depolarization"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Neural impulse? State the difference and why it matters.",
+        "answer": "Stimulus intensity is not coded by larger action potentials."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Neural impulse to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Neural impulse”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-2-5": {
+    "id": "4-2-5",
+    "title": "Synaptic transmission",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Synaptic transmission? State its meaning and central idea in your own words.",
+        "answer": "communication from a presynaptic neuron to a postsynaptic cell"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Synaptic transmission can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "neurotransmitter release"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Synaptic transmission? State the difference and why it matters.",
+        "answer": "A neurotransmitter's effect depends on its receptor/context."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Synaptic transmission to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Synaptic transmission”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-3-1": {
+    "id": "4-3-1",
+    "title": "Neurotransmitters",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Neurotransmitters? State its meaning and central idea in your own words.",
+        "answer": "chemical messengers that influence postsynaptic activity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Neurotransmitters? State the difference and why it matters.",
+        "answer": "No single neurotransmitter causes one behavior alone."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Neurotransmitters to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Neurotransmitters”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-4-1": {
+    "id": "4-4-1",
+    "title": "Central nervous system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Central nervous system? State its meaning and central idea in your own words.",
+        "answer": "brain and spinal cord as the major integrative center"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Central nervous system? State the difference and why it matters.",
+        "answer": "CNS is not the autonomic nervous system."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Central nervous system to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Central nervous system”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-4-2": {
+    "id": "4-4-2",
+    "title": "Peripheral nervous system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Peripheral nervous system? State its meaning and central idea in your own words.",
+        "answer": "neural structures outside brain/spinal cord connecting CNS with the body"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Peripheral nervous system? State the difference and why it matters.",
+        "answer": "PNS includes voluntary and autonomic pathways."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Peripheral nervous system to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Peripheral nervous system”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-4-3": {
+    "id": "4-4-3",
+    "title": "Structure and functions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Structure and functions? State its meaning and central idea in your own words.",
+        "answer": "The nervous system is organized into central and peripheral divisions. The central nervous system consists of the brain and spinal cord; the peripheral nervous system connects the central system with the rest of the body and includes somatic and autonomic functions. The uploaded sources use this organization to explain how neural control is distributed."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Structure and functions can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "CNS = brain and spinal cord."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Structure and functions can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "PNS connects the CNS with sensory receptors and effectors."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Structure and functions to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Structure and functions” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-4-4": {
+    "id": "4-4-4",
+    "title": "Brain structures and major functions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Brain structures and major functions in 2–3 sentences.",
+        "answer": "Brain structures and major functions is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Brain structures and major functions?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Brain structures and major functions?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Brain structures and major functions?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Brain structures and major functions?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Brain structures and major functions indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-4-5": {
+    "id": "4-4-5",
+    "title": "Cerebral lobes and functions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cerebral lobes and functions in 2–3 sentences.",
+        "answer": "Cerebral lobes and functions is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Cerebral lobes and functions?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Cerebral lobes and functions?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Cerebral lobes and functions?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Cerebral lobes and functions?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cerebral lobes and functions indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-4-6": {
+    "id": "4-4-6",
+    "title": "Spinal cord and autonomic nervous system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Spinal cord and autonomic nervous system in 2–3 sentences.",
+        "answer": "Spinal cord and autonomic nervous system is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Spinal cord and autonomic nervous system?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Spinal cord and autonomic nervous system?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Spinal cord and autonomic nervous system?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Spinal cord and autonomic nervous system?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Spinal cord and autonomic nervous system indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-4-7": {
+    "id": "4-4-7",
+    "title": "Neuroplasticity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neuroplasticity in 2–3 sentences.",
+        "answer": "Neuroplasticity is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Neuroplasticity?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Neuroplasticity?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Neuroplasticity?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Neuroplasticity?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neuroplasticity indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-5-1": {
+    "id": "4-5-1",
+    "title": "Neuroplasticity",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Neuroplasticity? State its meaning and central idea in your own words.",
+        "answer": "capacity of nervous systems to change structure or function with experience, learning or injury"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Neuroplasticity can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "synaptic change"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Neuroplasticity can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "experience-dependent plasticity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Neuroplasticity? State the difference and why it matters.",
+        "answer": "Plasticity does not mean unlimited recovery."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Neuroplasticity to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Neuroplasticity”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-6-1": {
+    "id": "4-6-1",
+    "title": "Anatomical methods",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Anatomical methods? State its meaning and central idea in your own words.",
+        "answer": "Anatomical methods study the structure and organization of the nervous system. The uploaded NET material lists anatomical methods among invasive physiological-psychology methods, alongside degeneration, lesion, chemical and microelectrode techniques."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Anatomical methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The focus is neural structure and organization."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Anatomical methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "They are concerned with locating or describing anatomical structures."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Anatomical methods to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Anatomical methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-6-2": {
+    "id": "4-6-2",
+    "title": "Degeneration techniques",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Degeneration techniques? State its meaning and central idea in your own words.",
+        "answer": "Degeneration techniques are listed by the uploaded NET material among invasive methods used to study brain–behavior relationships. They involve examining changes in neural tissue following damage or interruption of neural pathways, allowing researchers to infer the functions associated with affected structures."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Degeneration techniques can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "They are used to study brain–behavior relationships."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Degeneration techniques can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Neural damage or degeneration provides information about function."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Degeneration techniques to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Degeneration techniques” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-6-3": {
+    "id": "4-6-3",
+    "title": "Lesion techniques",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Lesion techniques? State its meaning and central idea in your own words.",
+        "answer": "Lesion techniques involve deliberately damaging or examining damaged neural tissue to investigate the behavioral consequences of that damage. Baron & Misra describe lesion approaches as a way to study the effects produced by damage to specific brain regions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Lesion techniques can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "A lesion is damage to neural tissue."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Lesion techniques can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Behavioral changes after a lesion can provide functional evidence."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Lesion techniques to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Lesion techniques” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-6-4": {
+    "id": "4-6-4",
+    "title": "Chemical methods",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Chemical methods? State its meaning and central idea in your own words.",
+        "answer": "Chemical methods manipulate or measure chemical processes involved in nervous-system functioning. The uploaded NET material lists chemical methods among invasive physiological-psychology techniques and places neurotransmitters and hormonal influences within the broader biological basis of behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Chemical methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Chemical methods investigate neurochemical influences on behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Chemical methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "They may involve altering or examining chemical signaling."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Chemical methods to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Chemical methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-6-5": {
+    "id": "4-6-5",
+    "title": "Microelectrode studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Microelectrode studies? State its meaning and central idea in your own words.",
+        "answer": "Microelectrode studies record activity from very small groups of neurons or individual neural cells. Baron & Misra describe microelectrodes as being used to record changes in brain activity associated with specific stimuli or activities."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Microelectrode studies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Microelectrodes permit fine-grained neural recording."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Microelectrode studies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "They can link neural activity with stimuli or behavior."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Microelectrode studies to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Microelectrode studies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-6-6": {
+    "id": "4-6-6",
+    "title": "EEG",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is EEG? State its meaning and central idea in your own words.",
+        "answer": "recording of scalp electrical activity, especially useful for temporal dynamics"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about EEG can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "high temporal resolution"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for EEG? State the difference and why it matters.",
+        "answer": "Spatial resolution is relatively limited."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use EEG to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “EEG”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-6-7": {
+    "id": "4-6-7",
+    "title": "Scanning methods",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Scanning methods? State its meaning and central idea in your own words.",
+        "answer": "Scanning methods are non-invasive approaches used to examine brain structure or activity. The uploaded NET material contrasts scanning methods with invasive techniques and places them alongside EEG within non-invasive physiological-psychology methods."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Scanning methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Scanning methods are categorized as non-invasive in the source."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Scanning methods can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "They allow researchers to examine brain-related structure or activity."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Scanning methods to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Scanning methods” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-7-1": {
+    "id": "4-7-1",
+    "title": "Muscular system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Muscular system? State its meaning and central idea in your own words.",
+        "answer": "The muscular system provides the effectors through which the nervous system produces movement and behavior. The uploaded NET material includes muscular and glandular systems as biological bases of behavior, linking physiological processes with observable action."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Muscular system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Muscles execute movement in response to neural control."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Muscular system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Muscular activity is an important output of the nervous system."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Muscular system to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Muscular system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-7-2": {
+    "id": "4-7-2",
+    "title": "Glandular system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Glandular system? State its meaning and central idea in your own words.",
+        "answer": "The glandular system includes glands that release chemical messengers, particularly hormones, which influence physiological processes and behavior. The uploaded sources place the endocrine system within the biological basis of behavior and motivation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Glandular system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Endocrine glands release hormones into the bloodstream."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Glandular system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Hormones can influence behavior and physiological states."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Glandular system to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Glandular system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-8-1": {
+    "id": "4-8-1",
+    "title": "Limbic system",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Limbic system? State its meaning and central idea in your own words.",
+        "answer": "The limbic system is presented in the uploaded sources as an important neural system associated with emotion and motivated behavior. Kaplan identifies structures such as the amygdala and hypothalamus within the broader limbic-system discussion, while Baron & Misra discuss limbic involvement in emotional and motivational processes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Limbic system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The limbic system is associated with emotion and motivation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Limbic system can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The amygdala is especially important in fear and other emotional responses."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Limbic system to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Limbic system” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-8-2": {
+    "id": "4-8-2",
+    "title": "Hormonal regulation of behavior",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Hormonal regulation of behavior? State its meaning and central idea in your own words.",
+        "answer": "Hormonal regulation of behavior involves endocrine signals that influence physiological states and behavior. The uploaded sources describe the endocrine system as a network of glands producing hormones and place hormonal regulation alongside neural mechanisms in the biological basis of behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Hormonal regulation of behavior can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Hormones are chemical messengers released by endocrine glands."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Hormonal regulation of behavior can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The endocrine system interacts with neural regulation."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Hormonal regulation of behavior to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Hormonal regulation of behavior” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-9-1": {
+    "id": "4-9-1",
+    "title": "Chromosomal anomalies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Chromosomal anomalies? State its meaning and central idea in your own words.",
+        "answer": "Chromosomal anomalies are changes in chromosome number or structure that can affect development and behavior. The uploaded NET material includes chromosomal anomalies under genetics and behavior, linking biological inheritance with psychological characteristics."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Chromosomal anomalies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Chromosomes carry genetic information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Chromosomal anomalies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Anomalies can alter developmental processes."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Chromosomal anomalies to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Chromosomal anomalies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-9-2": {
+    "id": "4-9-2",
+    "title": "Nature-Nurture controversy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Nature-Nurture controversy? State its meaning and central idea in your own words.",
+        "answer": "The nature–nurture issue concerns the relative and interactive contributions of heredity and environment to psychological characteristics. Baron & Misra discuss twin and adoption research as ways of estimating genetic and environmental contributions, while the NET material places these designs under the nature–nurture controversy."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Nature-Nurture controversy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Nature refers broadly to inherited/genetic influences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Nature-Nurture controversy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Nurture refers broadly to environmental and experiential influences."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Nature-Nurture controversy to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Nature-Nurture controversy” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-9-3": {
+    "id": "4-9-3",
+    "title": "Twin studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Twin studies? State its meaning and central idea in your own words.",
+        "answer": "comparison of monozygotic and dizygotic twins to estimate genetic and environmental contributions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Twin studies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "heritability"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Twin studies? State the difference and why it matters.",
+        "answer": "Heritability is a population statistic, not an individual destiny."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Twin studies to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Twin studies”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "4-9-4": {
+    "id": "4-9-4",
+    "title": "Adoption studies",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Adoption studies? State its meaning and central idea in your own words.",
+        "answer": "Adoption studies help separate genetic and environmental influences by examining similarities between adopted individuals and their biological and adoptive relatives. Baron & Misra describe adoption research, including studies of identical twins raised in different homes, as a way to estimate genetic and environmental contributions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Adoption studies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Adoption separates some aspects of biological and rearing environments."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Adoption studies can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Similarity with biological relatives can provide evidence relevant to genetic influence."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Adoption studies to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify how “Adoption studies” is represented in a new psychology question and justify the answer using the source-supported mechanism or distinction."
+      }
+    ]
+  },
+  "4-10-1": {
+    "id": "4-10-1",
+    "title": "Hunger",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hunger in 2–3 sentences.",
+        "answer": "Hunger is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Hunger?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Hunger?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Hunger?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Hunger?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hunger indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-10-2": {
+    "id": "4-10-2",
+    "title": "Thirst",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Thirst in 2–3 sentences.",
+        "answer": "Thirst is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Thirst?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Thirst?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Thirst?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Thirst?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Thirst indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-10-3": {
+    "id": "4-10-3",
+    "title": "Sleep",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sleep in 2–3 sentences.",
+        "answer": "Sleep is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Sleep?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Sleep?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Sleep?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Sleep?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sleep indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "4-10-4": {
+    "id": "4-10-4",
+    "title": "Sex",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sex in 2–3 sentences.",
+        "answer": "Sex is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Sex?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Sex?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Sex?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Sex?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sex indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  }
+}
