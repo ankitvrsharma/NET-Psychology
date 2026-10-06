@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v51-micro-navigation';
+const CACHE='netpsych-shell-v52-unit-availability';
 const SHELL=[
   './',
   './index.html',
