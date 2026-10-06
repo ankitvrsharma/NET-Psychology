@@ -1,0 +1,2096 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "June-2012-38",
+      "session": "June 2012",
+      "question_number": 38,
+      "question": "Match List-I with List-II : and indicate your answer with the help of codes given below : List I (Childhood experience) List II (Personality characteristic) a. Little Gratification in oral stage 1. Overly dependent b. Excessive Gratification in oral stage 2. Impulsive c. Overly harsh toilet training in Anal stage 3. Hostile d. Relieved toilet training in Anal stage 4. Compulsive Codes: 1. A B C D",
+      "options": [
+        "2 4 3 1",
+        "1 3 4 2",
+        "1 4 2 3",
+        "2 3 1 4 19 UGC NET JRF June 2012 Paper II 19 UGC NET JRF June 2012 Paper II Tap to check answer key"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 1 3 4 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2012-44",
+      "session": "June 2012",
+      "question_number": 44,
+      "question": "Some steps in test construction are listed below : 1). Internal consistency assessment 2). Item analysis 3). Test-retest reliability 4). Item writing 1. Usually, the above steps are carried out in the following sequence. a). 4, 2, 1, 3 b). 4, 1, 3, 2 c). 2, 4, 1, 3 d). 4, 3, 2, 1",
+      "options": [
+        "4, 2, 1, 3",
+        "4, 1, 3, 2",
+        "2, 4, 1, 3",
+        "4, 3, 2, 1"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 4, 2, 1, 3. The stem describes the concept or relationship represented by 4, 2, 1, 3; the alternatives refer to different concepts or conditions.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2012-47",
+      "session": "June 2012",
+      "question_number": 47,
+      "question": "Match List-I with List-II : and indicate your answer with the help of codes given below : List I ( Validity type) List II ( Brief description) a. Predictive validity 1. Covering all the important areas in a given course of study b. Concurrent validity 2. Yielding theoretically results c. Construct validity 3. High relationship between the new test and the established test of same trait 21 UGC NET JRF June 2012 Paper II 21 UGC NET JRF June 2012 Paper II Tap to check answer key d. Content validity 4. Forecasting some significant behaviour on the basis of test scores Codes: 1. A B C D",
+      "options": [
+        "3 4 2 1",
+        "4 3 1 2",
+        "2 1 4 3",
+        "4 3 2 1"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 4 3 2 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Validity concerns whether an assessment or measure supports the interpretation or purpose for which it is used.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "December-2012-19",
+      "session": "December 2012",
+      "question_number": 19,
+      "question": "A psychotic person would probably score the highest on which MMPI-2 scale?",
+      "options": [
+        "Depression",
+        "Hysteria",
+        "Schizophrenia",
+        "Mania"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Schizophrenia. The stem describes the concept or relationship represented by Schizophrenia; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-23",
+      "session": "December 2012",
+      "question_number": 23,
+      "question": "Which of the following internal conditions determine perceptual process? 1). Intelligence 2). Emotion 3). Motivation 4). Information a). 1 and 2 only b). 2 and 3 only c). 2 and 4 only d). 1 and 4 only",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "2 and 4 only",
+        "1 and 4 only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 and 3 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2012-37",
+      "session": "December 2012",
+      "question_number": 37,
+      "question": "For an intelligence test, while computing item-remainder correlations for item analysis, we compute a). Phi-coefficient b). Spearman rho c). Tetra choric correlation d). Point-biserial correlation",
+      "options": [
+        "Phi-coefficient",
+        "Spearman rho",
+        "Tetra choric correlation",
+        "Point-biserial correlation"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Point-biserial correlation. The stem describes the concept or relationship represented by Point-biserial correlation; the alternatives refer to different concepts or conditions. Correlation describes the degree and direction of association between variables; correlation by itself does not establish causation.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2012-46",
+      "session": "December 2012",
+      "question_number": 46,
+      "question": "Which of the following variable/s can be labelled as organismic variable/s? 1). Task complexity 2). Intelligence 3). Errors made while learning task 4). Heart rate 1. Codes:",
+      "options": [
+        "4 only",
+        "2 and 4 only",
+        "1, 2 and 4 only",
+        "2, 3 and 4 only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2 and 4 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-14",
+      "session": "June 2013",
+      "question_number": 14,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R) Indicate your answer using the codes given below : 1. Assertion (A): Heritability of intelligence explains variations due to genetics for individuals within a given population. 2. Reason (R): Earlier the children from deprived families were adopted, the higher their intelligence score will be. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). UGC NET JRF June 2013 Paper II 78 UGC NET JRF June 2013 Paper II 78 Tap to check answer key c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A). UGC NET JRF June 2013 Paper II 78 UGC NET JRF June 2013 Paper II 78 Tap to check answer key",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A). . Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-23",
+      "session": "June 2013",
+      "question_number": 23,
+      "question": "In a study on ‘Career Aspirations of Students’, the respondents were required to state their career aspirations in about sixty words. This would be an example of",
+      "options": [
+        "Fixed -alternative item",
+        "Scale item",
+        "Open-end item",
+        "Checklist item"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Open-end item. The stem describes the concept or relationship represented by Open-end item; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-26",
+      "session": "June 2013",
+      "question_number": 26,
+      "question": "Which of the following is not one of the Big Five personality factors?",
+      "options": [
+        "Submissiveness",
+        "Agreeableness",
+        "Extroversion",
+        "Openness to experience"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Submissiveness. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2013-35",
+      "session": "June 2013",
+      "question_number": 35,
+      "question": "Consider the following three types of psychological researches : 1). Field experiment 2). Laboratory experiment 3). Ex post facto study 1. Arrange these typical investigations in descending order in terms of the researcher’s ability to control secondary variance.",
+      "options": [
+        "3, 1, 2",
+        "2, 1, 3",
+        "3, 2, 1",
+        "1, 2, 3"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 2, 1, 3. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-46",
+      "session": "June 2013",
+      "question_number": 46,
+      "question": "Reliability can be defined as",
+      "options": [
+        "Total Score Variance \\ Total Variance",
+        "Error Variance \\ Total Variance",
+        "TrueScore Variance \\ Error Variance",
+        "Error variance\\ Total Score Variance"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Total Score Variance \\ Total Variance. The stem describes the concept or relationship represented by Total Score Variance \\ Total Variance; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "June-2013-47",
+      "session": "June 2013",
+      "question_number": 47,
+      "question": "For a newly developed test, the scores on odd and even part correlated by 0.4. After applying Spearman-Brown formula a). The corrected reliability would by 0.8. b). The corrected reliability would be 0.4. c). The corrected reliability would be greater than 0.4 and lesser than 0.8. d). The corrected reliability would be lesser than 0.4.",
+      "options": [
+        "The corrected reliability would by 0.8.",
+        "The corrected reliability would be 0.4.",
+        "The corrected reliability would be greater than 0.4 and lesser than 0.8.",
+        "The corrected reliability would be lesser than 0.4."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. The corrected reliability would be greater than 0.4 and lesser than 0.8.. The item tests a factual association: the relevant person, work, date, contribution, or term is The corrected reliability would be greater than 0.4 and lesser than 0.8.. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "June-2013-49",
+      "session": "June 2013",
+      "question_number": 49,
+      "question": "For which of the following types of tests interscorer reliability is relevant? a). Objective personality inventories b). Projective tests c). Achievement tests with descriptive items d). Intelligence tests 1. Codes: a). 1 and 2 only b). 2 and 4 only c). 1 and 3 only d). 2 and 3 only",
+      "options": [
+        "1 and 2 only",
+        "2 and 4 only",
+        "1 and 3 only",
+        "2 and 3 only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 2 and 3 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "September-2013-23",
+      "session": "September 2013",
+      "question_number": 23,
+      "question": "Given below are two statements, the first labelled as Assertion (A) and the other labelled as Reason (R). Indicate your answer using the codes given below: 115 UGC NET JRF September 2013 Paper II 115 UGC NET JRF September 2013 Paper II Tap to check answer key 1. Assertion (A): The usual educational evaluation is aimed at maximizing examiner variance. 2. Reason (R): Examiner variance is reduced with higher inters- scorer reliability. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "September-2013-24",
+      "session": "September 2013",
+      "question_number": 24,
+      "question": "Which of the following can be employed to assess the vocational interests of the subjects in guidance and counseling set up? 1). EPPS 2). SVIB 3). DAT 4). GATB",
+      "options": [
+        "2 only",
+        "1 and 2 only",
+        "3 and 4 only",
+        "2, 3 and 4 only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 2 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 6,
+      "micro": 4
+    },
+    {
+      "id": "September-2013-36",
+      "session": "September 2013",
+      "question_number": 36,
+      "question": "Which of the following scale/s is/are found in Eysenck’s EPQ but not in Costa and McCrae’s NEO-PI-R? 1). Agreeableness 2). Extraversion 3). Psychoticism 4). Lie",
+      "options": [
+        "3 only",
+        "1 and 2 only",
+        "2 and 3 only",
+        "3 and 4 only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 3 and 4 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-8",
+      "session": "December 2013",
+      "question_number": 8,
+      "question": "Individual differences in intelligence are due to a). only genetic factors b). only environmental factors c). genetic and economic factors d). many factors including genetic and environmental",
+      "options": [
+        "only genetic factors",
+        "only environmental factors",
+        "genetic and economic factors",
+        "many factors including genetic and environmental"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. many factors including genetic and environmental. The stem describes the concept or relationship represented by many factors including genetic and environmental; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-30",
+      "session": "December 2013",
+      "question_number": 30,
+      "question": "Who among the following has developed a test for personality assessment where the subject has to choose between a pair of jokes?",
+      "options": [
+        "McCafe",
+        "McCall",
+        "J.M. Cattell",
+        "R.B. Cattell"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. R.B. Cattell. The item tests a factual association: the relevant person, work, date, contribution, or term is R.B. Cattell.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "December-2013-40",
+      "session": "December 2013",
+      "question_number": 40,
+      "question": "Out of following who has not divided intelligence into two general components?",
+      "options": [
+        "Cattell J.M.",
+        "Jensen",
+        "Hebb",
+        "Thurstone"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Thurstone. The stem describes the concept or relationship represented by Thurstone; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2013-46",
+      "session": "December 2013",
+      "question_number": 46,
+      "question": "Reliability is conceptualized as",
+      "options": [
+        "Obtained variance/ True variance",
+        "True varaince/ True varaince + Error variance",
+        "True variance/ Error variance",
+        "Obtained variance/ Error variance"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. True varaince/ True varaince + Error variance. The stem describes the concept or relationship represented by True varaince/ True varaince + Error variance; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "June-2014-4",
+      "session": "June 2014",
+      "question_number": 4,
+      "question": "Match List – I with List – II and indicate your answer with the help of the given below: List – I (Psychologist) List – II (Concept of Personality) a. Kelly 1. Mandala b. Erickson 2. Corollary c. Adler 3. Fidelity d. Jung 4. Compensation Codes: 1. a b c d",
+      "options": [
+        "2 4 3 1",
+        "1 3 4 2",
+        "2 3 4 1",
+        "1 4 3 2 181 UGC NET JRF June 2014 Paper II 181 UGC NET JRF June 2014 Paper II Tap to check answer key"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 2 3 4 1. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2014-9",
+      "session": "June 2014",
+      "question_number": 9,
+      "question": "Which of the following is/are example of continuous organismic UGC NET JRF June 2014 Paper II 182 UGC NET JRF June 2014 Paper II 182 Tap to check answer key variable? 1). Gender 2). Heart beats per minute 3). Trials required to learn a list of CVC trigrams 4). Intelligence 1. Codes:",
+      "options": [
+        "1 only",
+        "4 only",
+        "2 & 4 only",
+        "2, 3 & 4 only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 2 & 4 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2014-47",
+      "session": "June 2014",
+      "question_number": 47,
+      "question": "What inference can you draw about the reliability of the text? a). The test has unsatisfactory ‘test-retest reliability’. b). The test has satisfactory test-retest reliability. c). The test has satisfactory internal consistency and test-retest reliability d). The rest has satisfactory test-retest reliability but unsatisfactory internal consistency.",
+      "options": [
+        "The test has unsatisfactory ‘test-retest reliability’.",
+        "The test has satisfactory test-retest reliability.",
+        "The test has satisfactory internal consistency and test-retest reliability",
+        "The rest has satisfactory test-retest reliability but unsatisfactory internal consistency."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. The test has unsatisfactory ‘test-retest reliability’.. The stem describes the concept or relationship represented by The test has unsatisfactory ‘test-retest reliability’.; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "June-2014-50",
+      "session": "June 2014",
+      "question_number": 50,
+      "question": "What evidence has been obtained for the validity of the above test?",
+      "options": [
+        "Satisfactory predictive validity UGC NET JRF June 2014 Paper II 192 UGC NET JRF June 2014 Paper II 192 Tap to check answer key",
+        "Unsatisfactory predictive validity",
+        "Satisfactory concurrent validity",
+        "Unsatisfactory concurrent validity 193 UGC NET JRF June 2014 Paper II 193 UGC NET JRF June 2014 Paper II"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Satisfactory predictive validity . The stem describes the concept or relationship represented by Satisfactory predictive validity ; the alternatives refer to different concepts or conditions. Validity concerns whether an assessment or measure supports the interpretation or purpose for which it is used.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "December-2014-12",
+      "session": "December 2014",
+      "question_number": 12,
+      "question": "On a Wechsler type intelligence scale Arish has a deviation IQ of 115. If the norms of this test are expressed in terms of normalized T scores (mean = 50, SD = 10), what would be the T score of Arish?",
+      "options": [
+        "40",
+        "60",
+        "65",
+        "84"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 60. The stem describes the concept or relationship represented by 60; the alternatives refer to different concepts or conditions. The arithmetic mean is obtained by summing the scores and dividing by the number of scores.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 4
+    },
+    {
+      "id": "December-2014-19",
+      "session": "December 2014",
+      "question_number": 19,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List –I (Scaling Techniques) List – II (Features) a. Paired comparison 1. Assesses unidimensionality of the scale. b. Equal appearing intervals 2. Suitable for assessing multidimensional attitudes. c. Scalogram analysis 3. Suitable for scaling a large number of attitude items. d. Summated ratings 4. Employs Z scores as the measure of scale values. Codes: 1. A B C D",
+      "options": [
+        "4 3 2 1",
+        "3 4 1 2",
+        "2 3 1 4",
+        "4 3 1 2"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 4 3 1 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-40",
+      "session": "December 2014",
+      "question_number": 40,
+      "question": "Which of the following statements are true about the EPQ-R (Revised Eysenck Personality Questionnaire) and the NEO-PI-R (Revised NEO Personality Inventory)? 1). Both the tests measure Openness to Experience. 227 UGC NET JRF December 2014 Paper II 227 UGC NET JRF December 2014 Paper II Tap to check answer key 2). The Psychoticism scale of the EPQ-R correlates negatively with the Agreeableness and the Conscientiousness scales of the NEO- PI-R. 3). EPQ-R has a Lie scale; NEO-PI-R does not have a Lie Scale. 4). Extraversion and Neuroticism scales of the EPQ-R positively correlate with the corresponding NEO-PI-R scales. a). 1 and 2 only b). 2 and 4 only c). 3 and 4 only d). 2, 3 and 4 only",
+      "options": [
+        "1 and 2 only",
+        "2 and 4 only",
+        "3 and 4 only",
+        "2, 3 and 4 only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 2, 3 and 4 only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-5",
+      "session": "June 2015",
+      "question_number": 5,
+      "question": "History of intelligence Testing can be discribed in following sequence:",
+      "options": [
+        "Galton → J.M. Caltell → Benet - Simon → Wechsler",
+        "J.M. Cattell → Stern-Terman → Benet - Simon → Wechsler",
+        "Wister → Benet - Simon → Spearman → R.B. Cattell",
+        "Galton → J.M. Cattell → Spearman → Wechsler"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Galton → J.M. Caltell → Benet - Simon → Wechsler. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-7",
+      "session": "June 2015",
+      "question_number": 7,
+      "question": "Deterioration Quotient (DQ) was first used in which intelligence tests?",
+      "options": [
+        "Benet - Simon Test",
+        "Galton - Cattell Test",
+        "Raven Progressive Matrices",
+        "Wechsler Adult Intelligence Test"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Wechsler Adult Intelligence Test. The stem describes the concept or relationship represented by Wechsler Adult Intelligence Test; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-12",
+      "session": "June 2015",
+      "question_number": 12,
+      "question": "On a Wechsler type intelligence scale, the subject has a deviation IQ 115. What would be his T score (Mean=50, SD=10)?",
+      "options": [
+        "60",
+        "65",
+        "68",
+        "84"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. 60. The stem describes the concept or relationship represented by 60; the alternatives refer to different concepts or conditions. The arithmetic mean is obtained by summing the scores and dividing by the number of scores.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-14",
+      "session": "June 2015",
+      "question_number": 14,
+      "question": "The following areas are involved in human vision : (a). Prestriate cortex (b). Striate cortex (c). Inferotemporal cortex (d). Posterior parietal cortex 1. Choose the correct option:",
+      "options": [
+        "(a) and (b)",
+        "(a), (b) and (c)",
+        "(b), (c) and (d)",
+        "(a), (b), (c) and (d)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b), (c) and (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-24",
+      "session": "June 2015",
+      "question_number": 24,
+      "question": "Spearman Inferred General Intelligence on the basis of: (a). Positive Manifold in intercorrelation matrix (b). Tetrad differences in equation (c). unequal scores of same subjects on intelligence tests (d). Reports from the subjects 1. Codes:",
+      "options": [
+        "(a) and (c)",
+        "(b) and (d)",
+        "(a) and (b)",
+        "(c) and (d) UGC NET JRF June 2015 Paper II 258 UGC NET JRF June 2015 Paper II 258 Tap to check answer key"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a) and (b). The stem describes the concept or relationship represented by (a) and (b); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2015-36",
+      "session": "June 2015",
+      "question_number": 36,
+      "question": "The first attempt to both theorise and measure intelligence was made by:",
+      "options": [
+        "J.M. Cattell",
+        "Galton",
+        "Binel",
+        "Spearman"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Galton. The stem describes the concept or relationship represented by Galton; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-6",
+      "session": "December 2015",
+      "question_number": 6,
+      "question": "Match the List – I with List – II and 287 UGC NET JRF December 2015 Paper II 287 UGC NET JRF December 2015 Paper II Tap to check answer key select the correct answer using the codes given below: List I List II a. Binet i) Intelligent people often have intelligent relatives b. Broca ii) Performance based intelligence tests eliminate cultural bias c. Wechsler iii) Correlation between intelligence and brain size d. Galton iv) Intelligence is a collection of mental abilities Codes: 1. A B C D",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (iv) (iii) (ii) (i). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Correlation describes the degree and direction of association between variables; correlation by itself does not establish causation.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-25",
+      "session": "December 2015",
+      "question_number": 25,
+      "question": "Which of the following are not identified by Thurstone? 1). Induction 2). Spatial 3). Symbolic 4). Semantic 1. Codes:",
+      "options": [
+        "(a) and (b)",
+        "(c) and (d)",
+        "(a) and (c)",
+        "(a), (b) and (c)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (c) and (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2015-45",
+      "session": "December 2015",
+      "question_number": 45,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): Non-equivalent control groups are often encountered in quasi-experimental research. 2. Reason (R): Quasi-experimental designs are highly useful in policy UGC NET JRF December 2015 Paper II 296 UGC NET JRF December 2015 Paper II 296 Tap to check answer key and program evaluation research. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true. Instruction for Q.Nos. 46 to 50: Read the following paragraph and answer the five questions which follow. Paragraph: A psychometrician wanted to develop a new test of Abstract Thinking. He prepared eighty items, presumably assessing abstract thinking. Each item had five alternative answers, one of them being correct. The psychometrician carried out item analysis by using item- remainder correlations. Item analysis retained sixty items. To examine internal consistency among the items, inter-item correlations were inspected. Then the split-half reliability coefficient, Kuder - Richardson reliability coefficient, and Cronbach’s alpha coefficient were obtained for the sixty item test. The analysis yielded the Cronbach’s alpha coefficient of 0.90. Since the test was fairly long and the alpha coefficient was also quite high, an attempt was made to develop two short versions of equal length by randomly dividing the test items. The 60 item version was, then, correlated with the already established abstract reasoning test, using N=500. The correlation between the new and an established test was 0.24, significant at .01 level.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true. Instruction for Q.Nos. 46 to 50: Read the following paragraph and answer the five questions which follow. Paragraph: A psychometrician wanted to develop a new test of Abstract Thinking. He prepared eighty items, presumably assessing abstract thinking. Each item had five alternative answers, one of them being correct. The psychometrician carried out item analysis by using item- remainder correlations. Item analysis retained sixty items. To examine internal consistency among the items, inter-item correlations were inspected. Then the split-half reliability coefficient, Kuder - Richardson reliability coefficient, and Cronbach’s alpha coefficient were obtained for the sixty item test. The analysis yielded the Cronbach’s alpha coefficient of 0.90. Since the test was fairly long and the alpha coefficient was also quite high, an attempt was made to develop two short versions of equal length by randomly dividing the test items. The 60 item version was, then, correlated with the already established abstract reasoning test, using N=500. The correlation between the new and an established test was 0.24, significant at .01 level."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Both (A) and (R) are true, but (R) is not the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "July-2016-2",
+      "session": "July 2016",
+      "question_number": 2,
+      "question": "In a study on scaling of attitude items, eleven statements were included. What would be the number of pairs of attitude statements?",
+      "options": [
+        "21",
+        "55",
+        "110",
+        "121"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. 121. The stem describes the concept or relationship represented by 121; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-3",
+      "session": "July 2016",
+      "question_number": 3,
+      "question": "Who first attempted to describe personality traits in terms of Lexican descriptors?",
+      "options": [
+        "Ross Stagner",
+        "Allport and Odbert",
+        "R.B. Cattell",
+        "Coasta and McCrae"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Allport and Odbert. The stem describes the concept or relationship represented by Allport and Odbert; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "July-2016-12",
+      "session": "July 2016",
+      "question_number": 12,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes: List I (Concept) List II (Explanation) a. Personality Structure i) Psychological reactions and motives that change dynamically over relatively brief periods. b. Personality Process ii) Stable and enduring qualities that define the individual and distinguish individuals from one another. c. Personality Development iii) People sometimes change and sometimes resist change or are unable to change accordingly d. Psychopathol- ogy and Change iv) Everybody comes up to be an unique individual by adulthood Codes: 1. A B C D 1). ( i) (ii) (iii) (iv) 2). (ii) (iii) (iv) (i) 3). (ii) (i) (iv) (iii) 4). (iii) (i) (ii) (iv) 323 UGC NET JRF July 2016 Paper II 323 UGC NET JRF July 2016 Paper II Tap to check answer key",
+      "options": [
+        "( i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(ii) (i) (iv) (iii)",
+        "(iii) (i) (ii) (iv) 323 UGC NET JRF July 2016 Paper II 323 UGC NET JRF July 2016 Paper II Tap to check answer key"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. ( i) (ii) (iii) (iv). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "July-2016-25",
+      "session": "July 2016",
+      "question_number": 25,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using codes given below: 1. Assertion (A): According to Classical Test Theory (CTT), reliability can be conceptualized as the ratio of true score variance to the observed score variance. 2. Reason (R) : According to the CTT, the random error of measurement is assumed to be uncorrelated with the true score. UGC NET JRF July 2016 Paper II 326 UGC NET JRF July 2016 Paper II 326 Tap to check answer key 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "July-2016-35",
+      "session": "July 2016",
+      "question_number": 35,
+      "question": "Match List – I with List – II and select the correct answer using the codes given below: List I (Concept) List II (Psychologists) a. Mental Age i) Stern b. Intelligence Quotient ii) Binet c. Mental Tests iii) Spearman d. Tetrad Equation iv) J.M. Cattell Codes: 1. A B C D 1). (i) (ii) (iii) (iv) 2). (ii) (i) (iv) (iii) 3). (iii) (ii) (i) (iv) 4). (iv) (iii) (ii) (i)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (i) (iv) (iii)",
+        "(iii) (ii) (i) (iv)",
+        "(iv) (iii) (ii) (i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (ii) (i) (iv) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-45",
+      "session": "July 2016",
+      "question_number": 45,
+      "question": "Which of the following statement/s is/are true, when the Eysenck Personality Questionnaire (EPQ or EPQ-R) and Costa and McCrae’s NEO-PI–3 are compared? a). EPQ-R Psychoticism (P) scale is uncorrelated with Five- Factor Agreeableness (A) and Consentiousness (C) Scale. b). P scale is positively correlated with A and C scales. c). P scale is negatively correlated with A and C scales. d). EPQ-R has Lie scale, NEO-PI–3 has no lie scale. e). Both EPQ-R and NEO-PI-3 have lie scale. 1. Codes: 331 UGC NET JRF July 2016 Paper II 331 UGC NET JRF July 2016 Paper II Tap to check answer key 1). a and d only 2). b and e only 3). c and d only 4). a and e only Instructions (Questions 46 to 50): Read the following paragraph and answer the five questions which follow: An environmental psychologist hypothesized that the noise would adversely affect the performance on mental tasks. One hundred and fifty subjects, 75 boys and 75 girls, studying in the twelfth standard, in the age range of 17 to 19 years and in the IQ range of 85 to 115, constituted the initial pool of subjects. Three groups of equal size were formed by random assignment. Group I performed under high noise condition (75 decibels), Group II performed under moderate noise condition (60 decibels), and Group III performed under silent condition. Each subject was instructed to solve 45 simple numerical problems in the allotted time of 90 minutes. The mean number of correctly solved problems were twenty-four, twenty and fifteen respectively. The intergroup mean differences were statistically significant.",
+      "options": [
+        "a and d only",
+        "b and e only",
+        "c and d only",
+        "a and e only Instructions (Questions 46 to 50): Read the following paragraph and answer the five questions which follow: An environmental psychologist hypothesized that the noise would adversely affect the performance on mental tasks. One hundred and fifty subjects, 75 boys and 75 girls, studying in the twelfth standard, in the age range of 17 to 19 years and in the IQ range of 85 to 115, constituted the initial pool of subjects. Three groups of equal size were formed by random assignment. Group I performed under high noise condition (75 decibels), Group II performed under moderate noise condition (60 decibels), and Group III performed under silent condition. Each subject was instructed to solve 45 simple numerical problems in the allotted time of 90 minutes. The mean number of correctly solved problems were twenty-four, twenty and fifteen respectively. The intergroup mean differences were statistically significant."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. a and d only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "July-2016-46",
+      "session": "July 2016",
+      "question_number": 46,
+      "question": "The variable ‘intelligence’, in the above study, can be labelled as a). Behavioural variable b). Organismic variable c). Continuous variable d). Controlled variable 1. Codes: 1). a and d only 2). b and c only 3). a, c and d only 4). b, c and d only",
+      "options": [
+        "a and d only",
+        "b and c only",
+        "a, c and d only",
+        "b, c and d only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. b and c only. The stem describes the concept or relationship represented by b and c only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-21",
+      "session": "January 2017",
+      "question_number": 21,
+      "question": "Chronometric measurement of intelligence involves the use of which of the following:",
+      "options": [
+        "Reaction time apparatus",
+        "Flicker-Fusion apparatus",
+        "ECG Bio-feedback apparatus",
+        "EMG Bio-feedback apparatus"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Reaction time apparatus. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "January-2017-46",
+      "session": "January 2017",
+      "question_number": 46,
+      "question": "Which one of the following test of statistical significance can be employed in the above study to evaluate whether the item significantly discriminates between the Low scoring and High scoring groups?",
+      "options": [
+        "Chi-square",
+        "Point-biserial correlation",
+        "t test",
+        "Biserial correlation"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Chi-square. The stem describes the concept or relationship represented by Chi-square; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-4",
+      "session": "November 2017",
+      "question_number": 4,
+      "question": "Arrange the clinical scales of MMPI - II in correct sequence. UGC NET JRF November 2017 Paper II 394 UGC NET JRF November 2017 Paper II 394 Tap to check answer key",
+      "options": [
+        "Depression → Hypochondriasis → Hysteria → Psychopathic Deviate → Masculinity-Feminity → Paranoia → Psychasthenia → Schizophrenia → Hypomania → Social Introversion",
+        "Hypochondriasis → Depression → Hysteria → Psychopathic Deviate → Masculinity-Feminity → Paranoia → Psychasthenia → Schizophrenia → Hypomania → Social Introversion",
+        "Social Introversion → Hypomania → Hypochondriasis → Depression → Hysteria → Psychopathic Deviate → Masculinity-Feminity → Paranoia → Psychasthenia → Schizophrenia",
+        "Social introversion → Hypomania → Schizophrenia → Psychasthenia → Paranoia → Masculinity-Feminity → Psychopathic deviate → Hysteria → Depression → Hypochondriasis"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Hypochondriasis → Depression → Hysteria → Psychopathic Deviate → Masculinity-Feminity → Paranoia → Psychasthenia → Schizophrenia → Hypomania → Social Introversion. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-5",
+      "session": "November 2017",
+      "question_number": 5,
+      "question": "Allport defined personality as:",
+      "options": [
+        "Response style",
+        "Social stimulus value",
+        "Intervening variable",
+        "Thinking style"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Intervening variable. The stem describes the concept or relationship represented by Intervening variable; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "November-2017-25",
+      "session": "November 2017",
+      "question_number": 25,
+      "question": "________ defined intelligence as the ability to ‘see relations and to educe correlates’.",
+      "options": [
+        "Binet",
+        "Spearman",
+        "Terman",
+        "Boring"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Spearman. The stem describes the concept or relationship represented by Spearman; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-26",
+      "session": "November 2017",
+      "question_number": 26,
+      "question": "Which of the following statements are true about Eysenck Personality Questionnaire-Revised ( EPQ - R) and the NEO - Personality Inventory - 3 (NEO - PI - 3)? a). Both EPQ - R and NEO - PI - 3 have Extraversion and Neuroticism scales. b). Eysenckian Psychoticism scale correlates positively with Agreeableness, and negatively with conscientiousness scales of NEO - PI - 3. c). Eysenckian Psychoticism scale correlates negatively with Agreeableness and conscientiousness scales of NEO - PI - 3. d). Only EPQ - R has lie scale; NEO - PI - 3 does not have lie scale. 1. Code: 399 UGC NET JRF November 2017 Paper II 399 UGC NET JRF November 2017 Paper II Tap to check answer key 1). (a) and (b) only 2). (a) and (c) only 3). (a), (b) and (c) only 4). (a), (c) and (d) only",
+      "options": [
+        "(a) and (b) only",
+        "(a) and (c) only",
+        "(a), (b) and (c) only",
+        "(a), (c) and (d) only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (c) and (d) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-37",
+      "session": "November 2017",
+      "question_number": 37,
+      "question": "A researcher wants to scale nine attitude items by the method of paired comparison. What would be the number of pairs of the attitude items?",
+      "options": [
+        "81",
+        "72",
+        "36",
+        "9"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 36. The stem describes the concept or relationship represented by 36; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "November-2017-49",
+      "session": "November 2017",
+      "question_number": 49,
+      "question": "Match List - I with List - II in the context of above study and select the correct answer by choosing from the code given below: List I List II a. Independent variable i) Intelligence b. Dependent variable ii) Drug dosage c. Controlled variable iii) Gender d. Discrete variable iv) Trials required to learn the list Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(iv) (ii) (iii) (i)",
+        "(iv) (ii) (i) (iii)",
+        "(ii) (iv) (iii) (i)",
+        "(ii) (iv) (i) (iii)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (ii) (iv) (i) (iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-4",
+      "session": "July 2018",
+      "question_number": 4,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Perceived fairness of the interpersonal treatment is used to determine organizational outcomes. 2. Reason (R): People expect informational transparency and respect in organizations. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true, and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 6,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-13",
+      "session": "July 2018",
+      "question_number": 13,
+      "question": "Which of the following significant changes have been incorporated in DSM-5? a). The title of the manual is not DSM-V, but DSM-5, a deliberate shift from traditional Roman numerals used in previous editions toward Arabic numerals. b). Multiaxial Assessment System - a central feature of DSM since its introduction in DSM - III in 1980, has been dropped altogether from DSM-5. c). DSM-5 authors have overhauled the manual to emphasise neuropsychological or biological roots of mental disorders. d). DSM-5 authors have removed 5 of 10 personality disorders previously included in that section. Dropped disorders are paranoid, schizoid, histrionic, dependent and narcissistic personality disorders. 1. Code: 1). (a), (b), (c) are correct; (d) is incorrect. 2). (b), (c) and (d) are correct; (a) is incorrect. 3). (a) and (b) are correct; (c) and (d) are incorrect. 4). (c) and (d) are correct; (a) and (b) are incorrect.",
+      "options": [
+        "(a), (b), (c) are correct; (d) is incorrect.",
+        "(b), (c) and (d) are correct; (a) is incorrect.",
+        "(a) and (b) are correct; (c) and (d) are incorrect.",
+        "(c) and (d) are correct; (a) and (b) are incorrect."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a) and (b) are correct; (c) and (d) are incorrect.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "July-2018-32",
+      "session": "July 2018",
+      "question_number": 32,
+      "question": "Chimpanzee Sarah’s one of the most outstanding achievements was the construction of sentences involving:",
+      "options": [
+        "Negation",
+        "Conditional relationship",
+        "Adult grammar",
+        "Unprompted questions"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Conditional relationship. The stem describes the concept or relationship represented by Conditional relationship; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-78",
+      "session": "July 2018",
+      "question_number": 78,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Galton developed anthropometric tests of intelligence. 2. Reason (R): Psychometric tests were low in reliability and validity. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-95",
+      "session": "July 2018",
+      "question_number": 95,
+      "question": "Read each of the following statements - Assertion (A) and Reason (R); and indicate your answer using code given below: 1. Assertion (A): Premack principle, based on Probability-Differential Hypothesis, states that the opportunity to engage in a frequently occurring activity can be used to reinforce less frequently activity. 2. Reason (R): According to Probability- Differential Hypothesis, restricted access to a response makes that response reinforcing and excessive access to that response makes that response punishing. 3. Code: 1). Both (A) and (R) are true, and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 4). (A) is false, but (R) is true. Instructions for questions 96 to 100: UGC NET JRF July 2018 Paper II 454 UGC NET JRF July 2018 Paper II 454 Tap to check answer key Read the following paragraph and answer the five questions which follow: An educational psychologist wanted to develop an achievement test in physics for graduate students. After going through the usual test construction procedure, he retained 100 items; each item having five alternatives, one of them being correct. The psychologist wanted to examine the factor structure of the resulting achievement test. Using a sample of 1,000 subjects, the psychologist obtained the inter-item correlations. He obtained the initial estimates of communality and then decided to factor analyze the inter- item correlations matrix by following the common-factor model. He extracted the unrotated factors and retained the first nine factors for rotaion. The nine unrotated factors explained 67.5 percent of variance. After factor rotation, all the inter-factor correlations were found to be zero. The factor structure of the achievement test of physics was found to be interpretable.",
+      "options": [
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true. Instructions for questions 96 to 100: UGC NET JRF July 2018 Paper II 454 UGC NET JRF July 2018 Paper II 454 Tap to check answer key Read the following paragraph and answer the five questions which follow: An educational psychologist wanted to develop an achievement test in physics for graduate students. After going through the usual test construction procedure, he retained 100 items; each item having five alternatives, one of them being correct. The psychologist wanted to examine the factor structure of the resulting achievement test. Using a sample of 1,000 subjects, the psychologist obtained the inter-item correlations. He obtained the initial estimates of communality and then decided to factor analyze the inter- item correlations matrix by following the common-factor model. He extracted the unrotated factors and retained the first nine factors for rotaion. The nine unrotated factors explained 67.5 percent of variance. After factor rotation, all the inter-factor correlations were found to be zero. The factor structure of the achievement test of physics was found to be interpretable."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true, but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-24",
+      "session": "December 2018",
+      "question_number": 24,
+      "question": "Using the notions Chronological Age (CA), Educational Age (EA), and Mental Age (MA),the Accomplishment Quotient (AQ) is computed as 1. Options:-",
+      "options": [
+        "100 (EA/CA)",
+        "100 (MA/EA)",
+        "100 (MA/CA)",
+        "100 (EA/MA)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 100 (MA/CA). The stem describes the concept or relationship represented by 100 (MA/CA); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "December-2018-86",
+      "session": "December 2018",
+      "question_number": 86,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R). Read the statements and choose the correct answer using the code given below: 1. Assertion (A): While scaling the attitude items (statements) by the method of equal appearing intervals, median is often used as the measure of scale values. 2. Reason (R): The distribution of categories, assigned by the judges, is skewed for several items. 3. Options:- 1). (A) is false, but (R) is true. 2). Both (A) and (R) are true, but (R) is the correct explanation of (A). 3). Both (A) and (R) are true, but (R) is 481 UGC NET JRF December 2018 Paper II 481 UGC NET JRF December 2018 Paper II Tap to check answer key not the correct explanation of (A). 4). (A) is true, but (R) is false.",
+      "options": [
+        "(A) is false, but (R) is true.",
+        "Both (A) and (R) are true, but (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is 481 UGC NET JRF December 2018 Paper II 481 UGC NET JRF December 2018 Paper II Tap to check answer key not the correct explanation of (A).",
+        "(A) is true, but (R) is false."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (A) is false, but (R) is true.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. The median is the middle score when observations are arranged in order; it is less affected by extreme scores than the mean.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2018-99",
+      "session": "December 2018",
+      "question_number": 99,
+      "question": "The three second-order factors would explain of the variance among 68 scales. 1. Options:- 1). More than 72 percent 2). 72 percent 3). 100 percent 4). Less than 72 percent",
+      "options": [
+        "More than 72 percent",
+        "72 percent",
+        "100 percent",
+        "Less than 72 percent"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 100 percent. The stem describes the concept or relationship represented by 100 percent; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-3",
+      "session": "June 2019",
+      "question_number": 3,
+      "question": "In Torrance Test of Creative Thinking (figural), picture construction activity is scored for which of the following? a). Fluency b). Flexibility c). Originality d). Elaboration 1. Select the correct option: 1). Only (a) and (b) 2). Only (c) and (d) 3). Only (b), (c) and (d) 4). (a). (b). (c) and (d)",
+      "options": [
+        "Only (a) and (b)",
+        "Only (c) and (d)",
+        "Only (b), (c) and (d)",
+        "(a). (b). (c) and (d)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Only (c) and (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-7",
+      "session": "June 2019",
+      "question_number": 7,
+      "question": "Psychometric tests of creativity Like Torrance Tests of Creative Thinking Index measure creativity in terms of",
+      "options": [
+        "Person",
+        "Product",
+        "Process",
+        "Persuasion"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Person. The stem describes the concept or relationship represented by Person; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 2
+    },
+    {
+      "id": "June-2019-34",
+      "session": "June 2019",
+      "question_number": 34,
+      "question": "On a Wechsler Type Adult Intelligence Scale, having normally distributed scores, the subject had a",
+      "options": [
+        "84",
+        "85",
+        "115",
+        "120"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 115. The stem describes the concept or relationship represented by 115; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-44",
+      "session": "June 2019",
+      "question_number": 44,
+      "question": "Match List-I with List-II: List -I (Concept) List -II ) Description) a. Big-C creativity i) Creativity of eminence b. Little-C creativity ii) Creativity of everyday life recognised by others c. Minei -C creativity iii) Subjective and personal form of day-to- day creativity d. Pro-C creativity iv) Professional creativity which has not attained status of eminence Select the correct option 1). (a)-(i); (b)-(ii); (c)-(iii); (d)-(iv) 2). (a)-(ii); (b)-(i); (c)-(iv); (d)-(iii) 3). (a)-(iii); (b)-(iv); (c)-(i); (d)-(ii) 4). (a) -(iv); (b)-(iii); (c)-(ii); (d)-(i)",
+      "options": [
+        "(a)-(i); (b)-(ii); (c)-(iii); (d)-(iv)",
+        "(a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)",
+        "(a)-(iii); (b)-(iv); (c)-(i); (d)-(ii)",
+        "(a) -(iv); (b)-(iii); (c)-(ii); (d)-(i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(iii); (b)-(iv); (c)-(i); (d)-(ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 2
+    },
+    {
+      "id": "June-2019-54",
+      "session": "June 2019",
+      "question_number": 54,
+      "question": "Positive emotions are expressed as a result of activation of which of the following? 1). Frontal areas of right hemisphere 2). Pre-frontal areas of right hemisphere 3). Frontal areas of left hemisphere 4). Pre-frontal areas of left hemisphere",
+      "options": [
+        "Frontal areas of right hemisphere",
+        "Pre-frontal areas of right hemisphere",
+        "Frontal areas of left hemisphere",
+        "Pre-frontal areas of left hemisphere"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Pre-frontal areas of right hemisphere. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-84",
+      "session": "June 2019",
+      "question_number": 84,
+      "question": "Projective measures, particularly inkblot tests, index which of the following? 1). Novelty context of creativity 2). Meaning context of creativity 3). Domain-specific Creativity 4). everyday creativity",
+      "options": [
+        "Novelty context of creativity",
+        "Meaning context of creativity",
+        "Domain-specific Creativity",
+        "everyday creativity"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Novelty context of creativity. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 2
+    },
+    {
+      "id": "June-2019-86",
+      "session": "June 2019",
+      "question_number": 86,
+      "question": "Match List-I with List-II: List I (Concept) List II (Description) a. Impair- ment i)Any loss or abnormality of psychological ,physiological or anatomical structure or function b. Disability ii) Any restriction or lack of ability to perform an activity in age appropriate manner c. Handicap iii)Perception and assessment of one’s abilities to be lower relative to others d. Disad- vantage iv) Inability to perform with expected norms 1. Choose the correct option from the option given below:",
+      "options": [
+        "(a)-(i); (b)-(ii);(c)-(iii);(d)-(iv)",
+        "(a)-(ii); (b)-(iv);(c)-(i);(d)-(iii)",
+        "(a)-(iii); (b)-(i);(c)-(iv);(d)-(ii)",
+        "(a)-(iv); (b)-(iii);(c)-(ii);(d)-(i)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a)-(ii); (b)-(iv);(c)-(i);(d)-(iii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2019-90",
+      "session": "June 2019",
+      "question_number": 90,
+      "question": "Given below are two statements one labelled as Assertion (A) and other labelled as Reason (R). Read the statements. 1. Assertion (A): Changing client`s perception requires persuasive skills and direction from the counsellor and such input is known as ‘lead’. 2. Reason (R): Counsellor should make minimum verbal responses and maintain silence so that clients feel some pressure to continue, and will choose to continue with minimum input from the counsellor; thus counsellor taking a good lead. 3. Choose the correct answer from the options given below: 1). Both (A) and (R) are true and (R) is the correct explanation of (A) 2). Both (A) and (R) are true but (R) is not the fated explanation of (A) 3). (A) is true but (R) is false 4). (A) is false but (R) is true Read the following paragraph and answer the five questions which follow A psychologist wanted to develop an achievement test in Chemistry for SSC students of central schools For this purpose, he wrote 110 items having multiple-choice format He administered this draft version to a sample of 300 subjects. Item analysis was carried out by computing item-remainder correlations. The item analysis retained 80 items .The eighty-item version was administered to a fresh sample of 400 subjects which yielded a mean of 40.00 and standard deviation of 8.00. The scores were found to be normally distributed. Cronbach alpha for eighty- item version was found to be 0.94. The psychologist also computed odd- even reliability and Kuder - Richardson UGC NET JRF June 2019 Paper II 508 UGC NET JRF June 2019 Paper II 508 Tap to check answer key (K-R) reliability. For this version. On this version, one of the subjects Manas, had a score of 32 Since the eight. -item version was considered long for administration, two forms. Form A and Form B were prepared by randomly assigning 40 items to each form.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are true but (R) is not the fated explanation of (A)",
+        "(A) is true but (R) is false",
+        "(A) is false but (R) is true Read the following paragraph and answer the five questions which follow A psychologist wanted to develop an achievement test in Chemistry for SSC students of central schools For this purpose, he wrote 110 items having multiple-choice format He administered this draft version to a sample of 300 subjects. Item analysis was carried out by computing item-remainder correlations. The item analysis retained 80 items .The eighty-item version was administered to a fresh sample of 400 subjects which yielded a mean of 40.00 and standard deviation of 8.00. The scores were found to be normally distributed. Cronbach alpha for eighty- item version was found to be 0.94. The psychologist also computed odd- even reliability and Kuder - Richardson UGC NET JRF June 2019 Paper II 508 UGC NET JRF June 2019 Paper II 508 Tap to check answer key (K-R) reliability. For this version. On this version, one of the subjects Manas, had a score of 32 Since the eight. -item version was considered long for administration, two forms. Form A and Form B were prepared by randomly assigning 40 items to each form."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A). Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-5",
+      "session": "December 2019",
+      "question_number": 5,
+      "question": "Which one of the following statement is true regarding the relationship of test length with reliability and validity 1). As test length increases, only reliability improves. 2). As test length increases, only validity improves. 3). As test length increases, neither reliability nor validity improves. 4). As test length increases, both reliability and validity improve.",
+      "options": [
+        "As test length increases, only reliability improves.",
+        "As test length increases, only validity improves.",
+        "As test length increases, neither reliability nor validity improves.",
+        "As test length increases, both reliability and validity improve."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. As test length increases, both reliability and validity improve.. The stem describes the concept or relationship represented by As test length increases, both reliability and validity improve.; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-21",
+      "session": "December 2019",
+      "question_number": 21,
+      "question": "The bipolar adjectives scale ‘Fast slow’ in Osgood semantic differential would belong to",
+      "options": [
+        "Evaluative factor",
+        "Potency factor",
+        "General factor",
+        "Activity factor"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Activity factor. The stem describes the concept or relationship represented by Activity factor; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-68",
+      "session": "December 2019",
+      "question_number": 68,
+      "question": "Which of the following norms suggest people that they ought to behave?",
+      "options": [
+        "Social responsibility norms",
+        "Reciprocity norms",
+        "Prescriptive norms",
+        "Proscriptive norms"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Prescriptive norms. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 4
+    },
+    {
+      "id": "December-2019-69",
+      "session": "December 2019",
+      "question_number": 69,
+      "question": "Which of the following are the motivators for helping others? a). Attitudes b). Empathy c). Personal distress d). Norms and values UGC NET JRF December 2019 Paper II 526 UGC NET JRF December 2019 Paper II 526 Tap to check answer key 1. Choose the correct option: 1). (a), (b) and (c) 2). (a), (b) and (d) 3). (a), (c) and (d) 4). (b), (c) and (d)",
+      "options": [
+        "(a), (b) and (c)",
+        "(a), (b) and (d)",
+        "(a), (c) and (d)",
+        "(b), (c) and (d)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (b), (c) and (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 3,
+      "micro": 4
+    },
+    {
+      "id": "December-2019-81",
+      "session": "December 2019",
+      "question_number": 81,
+      "question": "Match the following types of aggression with their description: (a). Hostile Aggression (i) An instinctual drive involving aggressive action towards death (b). Emotional Aggression (ii) Injury in which the goal is to obtain something of value (c). Instru- mental Aggression (iii) An act stemming from feelings of anger and aimed at inflicting pain (d). Thantos (iv) Injury or harm that is carried out for the explicit goal of hurting someone Choose the correct option from those given below:",
+      "options": [
+        "(a)-(i),(b)-(ii),(c)-(iii), (d)-(iv)",
+        "(a)-(ii),(b)-(iii), (c)-(iv),(d)-(i)",
+        "(a)-(iii), (b)-(iv),(c)-(i), (d)-(ii)",
+        "(a)-(iii), (b)-(iv), (c)-(ii) ,(d)-(i)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a)-(iii), (b)-(iv), (c)-(ii) ,(d)-(i). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-84",
+      "session": "December 2019",
+      "question_number": 84,
+      "question": "Creativity has been conceptualised in terms of which of the following a). As person b). As potential c). As process d). As perseverance 529 UGC NET JRF December 2019 Paper II 529 UGC NET JRF December 2019 Paper II Tap to check answer key 1. Choose the correct option: 1). (a), (b) and (c) only 2). (b), (c) and (d) only 3). (a), (c) and (d) only 4). (a), (b), (c) and (d)",
+      "options": [
+        "(a), (b) and (c) only",
+        "(b), (c) and (d) only",
+        "(a), (c) and (d) only",
+        "(a), (b), (c) and (d)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a), (b) and (c) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 4,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-95",
+      "session": "December 2019",
+      "question_number": 95,
+      "question": "Which one of the following reason best justifies the application of MANOVA in the present work? 1). There are several groups and more than one Independent Variable (IV) 2). More than one Dependent Variables (DV) have been employed 3). More than one Dependent Variables with moderate inter correlations have been employed 4). The moderating effect of stress on the effect of noise on RT can be demonstrated only through MANOVA Read the following paragraph and answer the five questions 96 to 100 which follows: A leading business school in the city had a view that its students must LIN/ a toxd proficiency in English language usage. As an initial step the school authentic, decided to develop a brief language UMW! Test The project in-charge wrote 30 item. Each item had file alternative= answers, one of which was correct. He administered these 30 Items to n sample of 250 students. For item analysis item- UGC NET JRF December 2019 Paper II 532 UGC NET JRF December 2019 Paper II 532 Tap to check answer key remainder correlations were computed. The item analysis retained 25 items. The twenty-five item version was administered to a fresh sample of 300 students. Three reliability coefficients were computed split half pliability coefficient. Kuder- Richardson 11 reliability coefficient and Cronbach alpha - were computed. The Cronbach alpha was found to be 0.7. The test-retest reliability was also computed with a time- interval of eight weeks in two administrations using the same sample. The tliatrateat correlation was found to be 0.26 significant at 0.01 level. The school authorities pleased with the effons of the project in-charge asked him to add similar items and develop a 75 item version",
+      "options": [
+        "There are several groups and more than one Independent Variable (IV)",
+        "More than one Dependent Variables (DV) have been employed",
+        "More than one Dependent Variables with moderate inter correlations have been employed",
+        "The moderating effect of stress on the effect of noise on RT can be demonstrated only through MANOVA Read the following paragraph and answer the five questions 96 to 100 which follows: A leading business school in the city had a view that its students must LIN/ a toxd proficiency in English language usage. As an initial step the school authentic, decided to develop a brief language UMW! Test The project in-charge wrote 30 item. Each item had file alternative= answers, one of which was correct. He administered these 30 Items to n sample of 250 students. For item analysis item- UGC NET JRF December 2019 Paper II 532 UGC NET JRF December 2019 Paper II 532 Tap to check answer key remainder correlations were computed. The item analysis retained 25 items. The twenty-five item version was administered to a fresh sample of 300 students. Three reliability coefficients were computed split half pliability coefficient. Kuder- Richardson 11 reliability coefficient and Cronbach alpha - were computed. The Cronbach alpha was found to be 0.7. The test-retest reliability was also computed with a time- interval of eight weeks in two administrations using the same sample. The tliatrateat correlation was found to be 0.26 significant at 0.01 level. The school authorities pleased with the effons of the project in-charge asked him to add similar items and develop a 75 item version"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. More than one Dependent Variables with moderate inter correlations have been employed. The stem describes the concept or relationship represented by More than one Dependent Variables with moderate inter correlations have been employed; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-96",
+      "session": "December 2019",
+      "question_number": 96,
+      "question": "The above information provides an evidence for a). Unsatisfactory test-retest reliability b). Satisfactory test-retest reliability c). Acceptable internal consistency reliability d). Unacceptable internal consistency reliability 1. Choose the correct option:",
+      "options": [
+        "(a) and (c)",
+        "(a) and (d)",
+        "(b) and (c)",
+        "(b) and (d)"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a) and (c). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-98",
+      "session": "December 2019",
+      "question_number": 98,
+      "question": "If the project in-charge developed a 75 item version by adding similar item what would be the expected Cronbach alpha?",
+      "options": [
+        "0.700",
+        "0.824",
+        "0.875",
+        "0.931"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 0.875. The item tests a factual association: the relevant person, work, date, contribution, or term is 0.875.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-3",
+      "session": "September 2020",
+      "question_number": 3,
+      "question": "Which of the following is an attitude measure that places a single adjective in the centre of an even number of numerical values?",
+      "options": [
+        "Edward scale",
+        "Thurstone scale",
+        "Stapel scale",
+        "Semantic differential scale"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Stapel scale. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-39",
+      "session": "September 2020",
+      "question_number": 39,
+      "question": "Several types of heuristics have been identified by researchers. Which of the these are included in it? a). Lexicographic strategy b). Satisficing strategy c). Mental set d). Elimination by aspects 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-41",
+      "session": "September 2020",
+      "question_number": 41,
+      "question": "Which of the following is the correct explanation of “An intolerance for weakness, a punitive attitude and submissive respect for their in- group authorities as reflected in their agreement”?",
+      "options": [
+        "Social Dominance Orientation",
+        "Ethnocentrism",
+        "Conformity",
+        "Inequality"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Ethnocentrism. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-89",
+      "session": "September 2020",
+      "question_number": 89,
+      "question": "Which of the following is the correct response pattern for the semantic differential test to measure a trait ‘active’?",
+      "options": [
+        "I am active: SA A N O SD",
+        "I am active: True/False",
+        "Choose one: Active-Trusting",
+        "Active...Neutral...Passive"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Active...Neutral...Passive. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-10",
+      "session": "June 2021",
+      "question_number": 10,
+      "question": "Which one of the following is usually not considered an example of the evaluative dimension of the Osgood Semantic Differential?",
+      "options": [
+        "Clean –––––––––––– Dirty",
+        "Slow –––––––––––– Fast",
+        "Good –––––––––––– Bad",
+        "Kind –––––––––––– Cruel"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Slow –––––––––––– Fast. The stem describes the concept or relationship represented by Slow –––––––––––– Fast; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-41",
+      "session": "June 2021",
+      "question_number": 41,
+      "question": "Pattern of familial transmission of intelligence from one generation to other is investigated in which of the following?",
+      "options": [
+        "Linkage analysis studies",
+        "Adoption studies",
+        "Association studies",
+        "Segregation analysis Studies"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Linkage analysis studies. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-50",
+      "session": "June 2021",
+      "question_number": 50,
+      "question": "Communication of the understanding of the ‘internal frame of reference’ to client by a therapist pertains to which type of counseling skills?",
+      "options": [
+        "Reflection",
+        "Focusing",
+        "Empathy",
+        "Social influencer s"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Reflection. The stem describes the concept or relationship represented by Reflection; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 6,
+      "micro": 4
+    },
+    {
+      "id": "June-2021-83",
+      "session": "June 2021",
+      "question_number": 83,
+      "question": "Given below are two statements : 1. Statement (I) : Edwards Personality Preference Schedule (EPPS) uses forced choice format. 2. Statement (II) : The forced choice format is presumed to prevent socially desirable responding 3. In the light of the above statements, choose the most appropriate answer from the options given below: UGC NET JRF June 2021 Paper II 562 UGC NET JRF June 2021 Paper II 562 Tap to check answer key",
+      "options": [
+        "Both Statement (I) and Statement (II) are correct",
+        "Both Statement (I) and Statement (II) are incorrect",
+        "Statement (I) is correct but Statement (II) is incorrect",
+        "Statement (I) is incorrect but Statement (II) is correct"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both Statement (I) and Statement (II) are correct. The stem describes the concept or relationship represented by Both Statement (I) and Statement (II) are correct; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2021-93",
+      "session": "June 2021",
+      "question_number": 93,
+      "question": "Give below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R) : 1. Assertion (A): It is not possible to compute K-R reliability for the above test, since each item has five alternatives 2. Reason (R) : K-R reliability can be UGC NET JRF June 2021 Paper II 564 UGC NET JRF June 2021 Paper II 564 Tap to check answer key computed, when the items can be dichotomously scored 3. In the light of the above statements, choose the most appropriate answer from the options given below :",
+      "options": [
+        "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are correct but (R) is Not the correct explanation of (A)",
+        "(A) is correct but (R) is not correct",
+        "(A) is not correct but (R) is correct"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A) is not correct but (R) is correct. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "assertion-reason",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-95",
+      "session": "June 2021",
+      "question_number": 95,
+      "question": "Item I was passed by 30 subjects in Low scoring group and by 56 subjects in High scoring group. What would be the discrimination index for item I? 1). 0.241 2). 0.481 3). 0.556 4). 0.796 Read the following paragraph and answer the five questions that follow: An experimental psychologist wanted to test two hypotheses. The first hypothesis proposed that stress would adversely affect the rate of serial learning. The second hypothesis proposed that the type of material (meaningless vs. meaningful) would moderate the effect of stress. The psychologist formed six groups by manipulating stress (A) at three levels — Low. Moderate and High and Type of material (B) at two levels. The subjects were randomly assigned to these groups from an initial pool of subjects. The list of 15 CVC trigrams constituted meaningless material and the list of 15 three lettered meaningful words constituted meaningful material. The number of trials required to learn the list was the dependent variable. The data were analysed by suitable analysis of variance. Following are the selected findings.",
+      "options": [
+        "The ratio of largest to smallest standard deviations for the six groups was reasonably close to one",
+        "The degrees of freedom for error variance was 135",
+        "The F ratio for the effect of stress was 0.05.",
+        "The effect sizes for each effect were calculated both by obtaining eta square and partial eta square."
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. The degrees of freedom for error variance was 135. The stem describes the concept or relationship represented by The degrees of freedom for error variance was 135; the alternatives refer to different concepts or conditions. Variance is a measure of dispersion based on squared deviations from the mean.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "July-2022-1",
+      "session": "July 2022",
+      "question_number": 1,
+      "question": "Computer assisted testing is principally based on________",
+      "options": [
+        "Item response theory",
+        "Efficiency of modern computers",
+        "Emphasis on internal consistency",
+        "Compatibility between manual and computerised scoring"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Item response theory. The stem describes the concept or relationship represented by Item response theory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-3",
+      "session": "July 2022",
+      "question_number": 3,
+      "question": "At which difficulty level (pass proportion) the item can make highest differentiation?",
+      "options": [
+        "0.35",
+        "0.50",
+        "0.75",
+        "0.25"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 0.50. The stem describes the concept or relationship represented by 0.50; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-6",
+      "session": "July 2022",
+      "question_number": 6,
+      "question": "The type of psychological tests in which validation criterion is the performance in specialized training is________.",
+      "options": [
+        "Achievement",
+        "Attitude",
+        "Aptitude",
+        "Intelligence"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Aptitude. The stem describes the concept or relationship represented by Aptitude; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-13",
+      "session": "July 2022",
+      "question_number": 13,
+      "question": "One of the primary objectives for developing first Wechsler Intelligence Scales was to",
+      "options": [
+        "Meet the need of an effective adult scale",
+        "Provide a test with increased face validity",
+        "Develop widely acceptable scale for children",
+        "Have scale with emphasis on speed component"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Meet the need of an effective adult scale. The stem describes the concept or relationship represented by Meet the need of an effective adult scale; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-32",
+      "session": "July 2022",
+      "question_number": 32,
+      "question": "Crystallized intelligence includes ________. UGC NET JRF July 2022 Paper II 572 UGC NET JRF July 2022 Paper II 572 Tap to check answer key",
+      "options": [
+        "Learned knowledge and skills",
+        "Novel ideas",
+        "Divergent thinking",
+        "Emotional Skills"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Learned knowledge and skills. The stem describes the concept or relationship represented by Learned knowledge and skills; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-70",
+      "session": "July 2022",
+      "question_number": 70,
+      "question": "Match List I with List II List I (Types of cells) List II (Functions) a. Antigen i) Cell mediated immunity 579 UGC NET JRF July 2022 Paper II 579 UGC NET JRF July 2022 Paper II Tap to check answer key b. Phagoctyes ii) Consume and destroy micro organism c. Acetylcholine iii) Antibody mediated immunity d. B cells iv) Distinguishes foreign cell Choose the correct answer from the options given below:",
+      "options": [
+        "A - IV, B - I, C – II, D - III",
+        "A - IV, B - II, C - I, D - III",
+        "A – II, B - IV, C - I, D - III",
+        "A - IV, B - III, C – II, D - I"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A - IV, B - II, C - I, D - III. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-3",
+      "session": "March 2023",
+      "question_number": 3,
+      "question": "If observers disagree 15 times out of 75, then the inter-rater reliability is:",
+      "options": [
+        "50%",
+        "80%",
+        "20%",
+        "60%"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. 80%. The stem describes the concept or relationship represented by 80%; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "March-2023-9",
+      "session": "March 2023",
+      "question_number": 9,
+      "question": "Utility of Semantic differential scale is not contingent upon:",
+      "options": [
+        "Finding appropriate adjective pairs",
+        "Meaning of the words",
+        "Length of the items in the scale",
+        "Contextual reference of the items"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Length of the items in the scale. The stem describes the concept or relationship represented by Length of the items in the scale; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-32",
+      "session": "March 2023",
+      "question_number": 32,
+      "question": "The counsellor can use the following formula for a rough assessment of severity of client’s problem, prescribed by Mehrabian and Reed (1969).",
+      "options": [
+        "Distress + Uncontrollability + Frequency",
+        "Distress + Uncontrollability - Frequency",
+        "Distress × uncontrollability × frequency",
+        "(Distress + controllability) × Frequency"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Distress × uncontrollability × frequency. The stem describes the concept or relationship represented by Distress × uncontrollability × frequency; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "March-2023-45",
+      "session": "March 2023",
+      "question_number": 45,
+      "question": "Which of the following statements are true of aptitude? a). They are acquired b). They are innate c). Training ensures optimal performance d). Aptitudes and interests are positively related 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A and B only",
+        "B and C only",
+        "A, B and C only",
+        "C and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "March-2023-48",
+      "session": "March 2023",
+      "question_number": 48,
+      "question": "Which of the following domains are assessed by Neuropsychological tests? a). Language b). Opinion c). Memory d). Executive Functioning e). Reaction 1. Choose the correct answer from the options given below:",
+      "options": [
+        "B, C and E only",
+        "A, C and D only",
+        "C, D and E only",
+        "A, B and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, C and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 4,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-58",
+      "session": "March 2023",
+      "question_number": 58,
+      "question": "Which of the following is true with reference to psychological stress? a). Stress is a temporary phenomenon b). Stress is a subjective perception c). Personality and stress are not related d). A certain degree of stress is needed for optimal performance 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only",
+        "A, B and D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "March-2023-69",
+      "session": "March 2023",
+      "question_number": 69,
+      "question": "Match List I with List II List I (Attitude Scales) List II (Psychologists) a. Summated Rating scale i) Thurstone b. . Semantic dif- ferential scale ii) Guttman c. Equal Appearing Interval Scale iii) Likert d. Cumulative scale iv) Osgood Choose the correct answer from the options given below:",
+      "options": [
+        "A-IV, B-I, C-II, D-III",
+        "A-III, B-IV, C-I, D-II",
+        "A-III, B-IV, C-II, D-I",
+        "A-IV, B-I, C-III, D-II"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A-III, B-IV, C-I, D-II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-76",
+      "session": "March 2023",
+      "question_number": 76,
+      "question": "Arrange in sequence the following scales of measurement Ordinal, Nominal, Ratio and Interval according to properties of scale a). Identity b). Identity and Magnitude c). Identity, magnitude and equal unit size d). Identity, magnitude, equal unit size and absolute Zero 1. Choose the correct answer from the options given below:",
+      "options": [
+        "B, A, D, C",
+        "B, C, D, A",
+        "A, B, D, C",
+        "C, B, A, D"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. B, A, D, C. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-77",
+      "session": "March 2023",
+      "question_number": 77,
+      "question": "What is the correct sequence in development of a psychological tool? a). Establishing reliability b). Item analysis c). Developing norm d). Establishing validity 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, D, C",
+        "B, A, D, C",
+        "A, D, C, B",
+        "B, A, C, D"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B, A, D, C. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "sequence",
+      "unit": 3,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "June-2023-12",
+      "session": "June 2023",
+      "question_number": 12,
+      "question": "The formula used to estimate how many homogeneous test questions should be added to a test to raise its reliability to the described level is:",
+      "options": [
+        "Coefficient alpha",
+        "Spearman Brown formula",
+        "Pearson product moment correlation",
+        "KR-20"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. KR-20. The stem describes the concept or relationship represented by KR-20; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "June-2023-16",
+      "session": "June 2023",
+      "question_number": 16,
+      "question": "Which one of the following areas is not located in the Temperal Lobe ?",
+      "options": [
+        "Area for perception of body sensations such as, heat, cold, touch, pressure, and pain",
+        "Area for perception of movements, and recognition of faces",
+        "Broca’s speech area",
+        "Primary auditory area"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Broca’s speech area. The stem describes the concept or relationship represented by Broca’s speech area; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-95",
+      "session": "June 2023",
+      "question_number": 95,
+      "question": "Which of the following is correct about interval scale?",
+      "options": [
+        "Identity, Magnitude, equal unit size and absolute zero are the properties of this scale.",
+        "Identity and equal unit size are its properties",
+        "Identity, Magnitude and equal unit size are its properties",
+        "Identity and magnitude are the properties of this scale Questions 96 to 100: Read the following paragraph and answer UGC NET JRF June 2023 Paper II 634 UGC NET JRF June 2023 Paper II 634 Tap to check answer key the five questions which follow: Lev S. Vygotsky developed a theory of cognitive development. He explained that experienced adults help children with innate basic capabilities to attain more complex and higher order cognitive capabilities. To describe and assess this potential, he proposed the notion of ZPD. Based on Vygotskian thinking, an instructional process was developed in which the more knowledgeable partner adjusts the amount and type of support he offers to fit with the child’s learning needs over the course of interaction. According to Vygotsky, psychological tools and signs facilitate and direct thinking process."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Identity, Magnitude and equal unit size are its properties. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-13",
+      "session": "December 2023",
+      "question_number": 13,
+      "question": "Attitude which is conscious and easy to report is called_______.",
+      "options": [
+        "Implicit attitude",
+        "Explicit attitude",
+        "Unconscious attitude",
+        "Intrinsic attitude"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Explicit attitude. The stem describes the concept or relationship represented by Explicit attitude; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-31",
+      "session": "December 2023",
+      "question_number": 31,
+      "question": "Which scale of measurement has absolute zero?",
+      "options": [
+        "Nominal",
+        "Ordinal",
+        "Interval",
+        "Ratio"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Ratio. The stem describes the concept or relationship represented by Ratio; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-32",
+      "session": "December 2023",
+      "question_number": 32,
+      "question": "Wechsler Adult Intelligence Scale (WAIS) published in 1955 has:",
+      "options": [
+        "5 Verbal and 5 Performance",
+        "5 Verbal and 6 Performance",
+        "6 Verbal and 5 Performance",
+        "6 Verbal and 6 Performance"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 6 Verbal and 5 Performance. The stem describes the concept or relationship represented by 6 Verbal and 5 Performance; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-44",
+      "session": "December 2023",
+      "question_number": 44,
+      "question": "Scientifically sound test must possess which of the following: (A). Objectively (B). Norms (C). Time Limit (D). Reliability (E). Validity 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, C, D only",
+        "A, B, D, E only",
+        "A, B, C, E only",
+        "E, D, C, B only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, B, D, E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "statement-set",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "December-2023-86",
+      "session": "December 2023",
+      "question_number": 86,
+      "question": ". Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. 1. Assertion A: One psychometrician used Cronbach’s alpha to verify reliability of a general knowledge test with answers, in True/False format. 2. Reason R: Cronbach’s alpha estimates the internal consistency of a Test. 3. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both A and R are correct and R is the correct explanation of A",
+        ") Both A and R are correct but R is not the correct explanation of A",
+        "A is correct but R is not correct",
+        "A is not correct but R is correct"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A is not correct but R is correct. The stem describes the concept or relationship represented by A is not correct but R is correct; the alternatives refer to different concepts or conditions. Reliability concerns the consistency or dependability of measurement.",
+      "kind": "direct",
+      "unit": 3,
+      "topic": 3,
+      "micro": 2
+    }
+  ],
+  "practice": []
+}
