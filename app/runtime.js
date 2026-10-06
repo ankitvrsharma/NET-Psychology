@@ -691,7 +691,8 @@ function micro(){
   const shortNotes=Array.isArray(m.study_notes)&&m.study_notes.length?m.study_notes.map(x=>String(x?.content||'').trim()).filter(Boolean).join('\n\n'): [concept,...kp].filter(Boolean).join('\n\n');
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
-  const audit=window.NETPsychologyContentAudit?.create?.({data:D,questions:PRACTICE_QUESTIONS})?.expertAudit?.('microtopics',k)||null;
+  let audit=null;
+  try{audit=window.NETPsychologyContentAudit?.create?.({data:D,questions:PRACTICE_QUESTIONS})?.expertAudit?.('microtopics',k)||null;}catch(e){console.warn('Optional content audit unavailable for learner tag:',e)}
   const verificationTag=learnerVerificationTag('microtopics',k,audit);
   const currentFeedback=feedbackState('microtopics',k);
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
