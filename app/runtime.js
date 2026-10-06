@@ -46,7 +46,7 @@ const CONTENT_POOL_PATHS=Object.freeze({
   revisionGuidance:'content/revision/revision_guidance.json',
   homeLearning:'content/home/home-learning.json'
 });
-let STATE_CACHE=null,QUICK_BANK_CACHE=null;
+let STATE_CACHE=null;
 async function fetchJSON(path,label){
   const response=await fetch('./'+path+'?v='+DATA_VERSION,{cache:'default'});
   if(!response.ok)throw new Error(label+' request failed: '+response.status);
@@ -60,7 +60,6 @@ async function loadPool(name){
   CONTENT_POOLS[name]=value;
   return value;
 }
-function microPoolEntry(id){return CONTENT_POOLS.microtopics&&typeof CONTENT_POOLS.microtopics==='object'?(CONTENT_POOLS.microtopics[id]||null):null}
 function hydrateSyllabusWithMicrotopics(){
   const pool=CONTENT_POOLS.microtopics||{};
   D.units=(D.units||[]).map(u=>({...u,topics:(u.topics||[]).map(t=>({...t,microtopics:(t.microtopics||[]).map(m=>({...m,...(pool[key(u.id,t.id,m.id)]||{})}))}))}));
@@ -111,42 +110,6 @@ const microtopicHref=(u,t,m,extra={})=>{const url=new URL('microtopic.html',docu
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
-const normalizeNoteBlocks=(m,concept,kp,core,trap,hook)=>{
-  const explicit=Array.isArray(m.study_notes)?m.study_notes:[];
-  if(explicit.length)return explicit.map((b)=>({
-    title:b?.title||b?.label||'Study note',
-    content:Array.isArray(b?.content)?b.content.join('\n'):b?.content,
-    type:b?.type||'note',
-    source:b?.source||b?.sources||''
-  })).filter(b=>String(b.content||'').trim());
-  const blocks=[];
-  const add=(title,content,type='note',source='')=>{if(String(content||'').trim())blocks.push({title,content,type,source})};
-  add('Core idea',concept,'core');
-  if(kp.length)add('Key points',kp,'list');
-  const sourceNotes=m.source_notes&&typeof m.source_notes==='object'?m.source_notes:{};
-  Object.entries(sourceNotes).forEach(([source,content])=>add(source,content,'source',source));
-  add('Explanation & connections',core,'explanation');
-  add('Apply it',m.application_question,'application');
-  add('Exam focus',section(m.content_notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(m.content_notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS'),'exam');
-  add('Common trap / distinction',trap,'trap');
-  add('Teaching focus',section(m.content_notes,'5-MINUTE TEACHING FOCUS','\n\nMEMORY HOOK'),'teaching');
-  add('Memory cue',hook,'memory');
-  if(m.kaplan_enrichment?.notes)add(m.kaplan_enrichment.source||'Kaplan source note',m.kaplan_enrichment.notes,'source',m.kaplan_enrichment.source||'Kaplan');
-  if(m.simply_psychology_enrichment?.notes)add(m.simply_psychology_enrichment.source||'Simply Psychology',m.simply_psychology_enrichment.notes,'source',m.simply_psychology_enrichment.source||'Simply Psychology');
-  return blocks;
-};
-const studyNotesHTML=(m,concept,kp,core,trap,hook)=>{
-  const blocks=normalizeNoteBlocks(m,concept,kp,core,trap,hook);
-  const sourceConfig=m.study_source_config||{};
-  const noteSources=Array.isArray(sourceConfig.notes_primary)?sourceConfig.notes_primary:[];
-  const provenance=noteSources.length?'<div class="study-note-source-note">Primary learning sources: '+noteSources.map(esc).join(' · ')+'</div>':'';
-  return '<div class="study-notes"><div class="study-note-intro"><span class="eyebrow">SOURCE-GROUNDED STUDY NOTES</span><h2>'+esc(m.title)+'</h2><p>Use only the parts you need: understand the idea, make the useful connection, then close the notes and recall it.</p></div>'+blocks.map(b=>{
-    const content=Array.isArray(b.content)?'<ul class="study-note-list">'+b.content.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':esc(b.content);
-    const cls=b.type==='trap'?'trap':b.type==='core'?'core':b.type==='exam'?'exam-focus':b.type==='memory'?'memory':'';
-    const src=b.source?'<small class="study-note-source-label">'+esc(Array.isArray(b.source)?b.source.join(' · '):b.source)+'</small>':'';
-    return '<section class="study-note-block '+cls+'"><h3>'+esc(b.title)+'</h3>'+src+'<div class="study-note-text">'+content+'</div></section>';
-  }).join('')+provenance+'</div>';
-};
 const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
 const countMicro=u=>u.topics.reduce((n,t)=>n+t.microtopics.length,0);
 const unitParts=u=>Array.isArray(u?.parts)?u.parts:[];
@@ -280,76 +243,6 @@ function dailySessionNext(currentKey){
     }
   }catch(e){}
   return null;
-}
-function recallContent(m){
-  const notes=String(m.content_notes||'');
-  const core=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const points=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION')).filter(Boolean);
-  const distinction=String(m.distinction||section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN')||section(notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
-  const pattern=String(section(notes,'PYQ-STYLE PATTERN','\n\nCOMMON TRAP')||section(notes,'PYQ-STYLE PATTERN','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
-  const application=String(m.application_question||'').trim();
-  const deep=String(m.detailed_explanation||m.deep_learning||m.deep||'').trim();
-  return {core,points,distinction,pattern,application,deep};
-}
-function buildRecallPrompts(m,qs){
-  const c=recallContent(m),title=String(m.title||'this concept').trim(),prompts=[],hasMappedQuestions=Array.isArray(qs)&&qs.length>0;
-  if(c.core){
-    prompts.push({
-      type:'FREE RECALL',
-      prompt:'Without looking at your notes, what is '+title+'? State its meaning and central idea in your own words.',
-      answer:c.core
-    });
-  }
-  c.points.slice(0,2).forEach((point,index)=>{
-    prompts.push({
-      type:'KEY IDEA',
-      prompt:'What key idea about '+title+' can you recall that explains or qualifies the concept? Give the point in your own words.',
-      answer:point
-    });
-  });
-  if(c.distinction){
-    prompts.push({
-      type:'DISTINCTION',
-      prompt:'What distinction or caution must you keep clear for '+title+'? State the difference and why it matters.',
-      answer:c.distinction
-    });
-  }
-  if(c.application){
-    prompts.push({
-      type:'APPLICATION',
-      prompt:'How would you use '+title+' to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.',
-      answer:c.application
-    });
-  }
-  if(hasMappedQuestions&&c.pattern&&prompts.length<5){
-    prompts.push({
-      type:'EXAM REASONING',
-      prompt:'A related NET question may test this concept through its mechanism, finding, or distinction. Without looking, what part of '+title+' would you retrieve to answer it correctly, and why?',
-      answer:c.pattern
-    });
-  }else if(c.pattern&&prompts.length<5){
-    prompts.push({
-      type:'EXAM REASONING',
-      prompt:'What feature, mechanism, finding, or distinction of '+title+' would you need to retrieve to solve a related NET question correctly? Explain it without looking.',
-      answer:c.pattern
-    });
-  }else if(c.deep && prompts.length<3){
-    prompts.push({
-      type:'EXPLAIN',
-      prompt:'What is the most important mechanism or relationship within '+title+' that you should be able to explain without notes?',
-      answer:c.deep.slice(0,1200)
-    });
-  }
-  const seen=new Set();
-  return prompts.filter(p=>{
-    const answer=String(p.answer||'').replace(/\s+/g,' ').trim();
-    const prompt=String(p.prompt||'').replace(/\s+/g,' ').trim();
-    const keyName=prompt+'|'+answer;
-    if(!answer||answer.length<12||seen.has(keyName))return false;
-    seen.add(keyName);
-    p.answer=answer;
-    return true;
-  }).slice(0,5);
 }
 function activeRecall(){
   const {u,t,m,k}=find(),root=$('#activeRecallPage');
