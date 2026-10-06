@@ -1,0 +1,2234 @@
+{
+  "9-1-1": {
+    "id": "9-1-1",
+    "title": "Nature of development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Nature of development. What is the central idea?",
+        "answer": "systematic change across the lifespan in biological, cognitive, emotional and social domains"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Nature of development.",
+        "answer": "lifespan"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Nature of development.",
+        "answer": "multidimensionality"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Nature of development?",
+        "answer": "Development is not limited to childhood."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Nature of development?",
+        "answer": "Kaplan introduces development as systematic change across the lifespan and organises the area around physical, cognitive, social and emotional development. Its exam preparation asks learners to identify the developmental domain before selecting a theory or stage."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Nature of development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-1-2": {
+    "id": "9-1-2",
+    "title": "Principles of development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Principles of development. What is the central idea?",
+        "answer": "organized patterns such as cephalocaudal and proximodistal development alongside individual differences"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Principles of development.",
+        "answer": "cephalocaudal: head → toe"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Principles of development.",
+        "answer": "proximodistal: centre → outward"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Principles of development?",
+        "answer": "Do not reverse the two sequences."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Principles of development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Principles of development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-1-3": {
+    "id": "9-1-3",
+    "title": "Factors in development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Factors in development. What is the central idea?",
+        "answer": "Factors in development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Factors in development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Factors in development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Factors in development?",
+        "answer": "Avoid a simple heredity-versus-environment split; the source treatment emphasizes interaction."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Factors in development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Factors in development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-1-4": {
+    "id": "9-1-4",
+    "title": "Stages of development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Stages of development. What is the central idea?",
+        "answer": "Stages of development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stages of development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stages of development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Stages of development?",
+        "answer": "Do not mix stages from different theories as one universal sequence."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Stages of development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Stages of development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-2-1": {
+    "id": "9-2-1",
+    "title": "Successful aging",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Successful aging. What is the central idea?",
+        "answer": "maintaining health, function, engagement and wellbeing while adapting to age-related change"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Successful aging.",
+        "answer": "function"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Successful aging.",
+        "answer": "engagement"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Successful aging?",
+        "answer": "It does not mean absence of every disease."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Successful aging?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Successful aging indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-3-1": {
+    "id": "9-3-1",
+    "title": "Psychoanalytical theories",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychoanalytical theories. What is the central idea?",
+        "answer": "Psychoanalytical theories"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical theories.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalytical theories.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Psychoanalytical theories?",
+        "answer": "Freud's stages and Erikson's stages are different systems with different organizing constructs."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychoanalytical theories?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychoanalytical theories indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-3-2": {
+    "id": "9-3-2",
+    "title": "Behavioristic theories",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Behavioristic theories. What is the central idea?",
+        "answer": "Behavioristic theories"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavioristic theories.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavioristic theories.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Behavioristic theories?",
+        "answer": "The behavioristic account does not use developmental stages as its primary explanatory unit."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Behavioristic theories?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Behavioristic theories indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-3-3": {
+    "id": "9-3-3",
+    "title": "Cognitive theories",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive theories. What is the central idea?",
+        "answer": "Cognitive theories"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive theories.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive theories.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cognitive theories?",
+        "answer": "Do not confuse cognitive stages with psychosocial or psychosexual stages."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cognitive theories?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive theories indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-3-4": {
+    "id": "9-3-4",
+    "title": "Piaget's cognitive development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Piaget's cognitive development in 2–3 sentences.",
+        "answer": "Piaget explained cognitive development through sensorimotor, preoperational, concrete operational and formal operational stages, with assimilation, accommodation and equilibration as mechanisms of change."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Piaget's cognitive development?",
+        "answer": "four stages"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Piaget's cognitive development?",
+        "answer": "assimilation/accommodation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Piaget's cognitive development?",
+        "answer": "Later research has revised several claims about rigid stages and children's abilities."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Piaget's cognitive development?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Piaget's cognitive development indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-3-5": {
+    "id": "9-3-5",
+    "title": "Vygotsky's sociocultural theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Vygotsky's sociocultural theory in 2–3 sentences.",
+        "answer": "Vygotsky emphasized social interaction, language and cultural tools; the zone of proximal development describes performance achievable with appropriate assistance."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Vygotsky's sociocultural theory?",
+        "answer": "social interaction"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Vygotsky's sociocultural theory?",
+        "answer": "zone of proximal development"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Vygotsky's sociocultural theory?",
+        "answer": "Scaffolding is calibrated support, not permanent dependence."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Vygotsky's sociocultural theory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Vygotsky's sociocultural theory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-3-6": {
+    "id": "9-3-6",
+    "title": "Erikson's psychosocial stages",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Erikson's psychosocial stages in 2–3 sentences.",
+        "answer": "Erikson described development as psychosocial crises across the lifespan, including trust, identity, intimacy and generativity."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Erikson's psychosocial stages?",
+        "answer": "psychosocial crises"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Erikson's psychosocial stages?",
+        "answer": "identity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Erikson's psychosocial stages?",
+        "answer": "Do not confuse psychosocial stages with Freud's psychosexual stages."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Erikson's psychosocial stages?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Erikson's psychosocial stages indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-3-7": {
+    "id": "9-3-7",
+    "title": "Kohlberg's moral development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Kohlberg's moral development in 2–3 sentences.",
+        "answer": "Kohlberg organized moral reasoning into preconventional, conventional and postconventional levels containing six stages."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Kohlberg's moral development?",
+        "answer": "three levels"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Kohlberg's moral development?",
+        "answer": "six stages"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Kohlberg's moral development?",
+        "answer": "Gilligan's care perspective provides an important critique."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Kohlberg's moral development?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Kohlberg's moral development indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-4-1": {
+    "id": "9-4-1",
+    "title": "Sensory-motor development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sensory-motor development. What is the central idea?",
+        "answer": "Sensory-motor development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory-motor development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory-motor development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Sensory-motor development?",
+        "answer": "This domain is broader than Piaget's specific sensorimotor stage."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sensory-motor development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sensory-motor development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-4-2": {
+    "id": "9-4-2",
+    "title": "Cognitive development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cognitive development. What is the central idea?",
+        "answer": "Cognitive development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cognitive development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cognitive development?",
+        "answer": "Cognitive development is broader than Piaget alone; information-processing approaches are also relevant."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cognitive development?",
+        "answer": "Kaplan connects cognitive development with changes in reasoning, representation and problem solving and uses major developmental theories to organise those changes. For exam use, identify the child's cognitive capability or limitation before naming a stage or theory. Simply Psychology provides a complementary theory-oriented way to compare explanatory perspectives. Use the developmental source material first for stage-specific claims and this source for broader conceptual framing."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cognitive development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-4-3": {
+    "id": "9-4-3",
+    "title": "Language development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Language development. What is the central idea?",
+        "answer": "Language development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Language development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Language development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Language development?",
+        "answer": "Language development is broader than vocabulary alone."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Language development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Language development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-4-4": {
+    "id": "9-4-4",
+    "title": "Emotional development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Emotional development. What is the central idea?",
+        "answer": "Emotional development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Emotional development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Emotional development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Emotional development?",
+        "answer": "Emotion as a developmental domain should not be confused with psychopathology or personality traits."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Emotional development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Emotional development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-4-5": {
+    "id": "9-4-5",
+    "title": "Social development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social development. What is the central idea?",
+        "answer": "Social development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Social development?",
+        "answer": "Social development is broader than parent-child socialization alone."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-4-6": {
+    "id": "9-4-6",
+    "title": "Moral development",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Moral development. What is the central idea?",
+        "answer": "Moral development"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Moral development.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Moral development.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Moral development?",
+        "answer": "Kohlberg's stages describe moral reasoning, not a complete measure of moral behavior."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Moral development?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Moral development indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-5-1": {
+    "id": "9-5-1",
+    "title": "Concept of psychopathology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Concept of psychopathology. What is the central idea?",
+        "answer": "Concept of psychopathology"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Concept of psychopathology.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Concept of psychopathology.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Concept of psychopathology?",
+        "answer": "Unusual behavior alone is not sufficient to establish psychopathology."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Concept of psychopathology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Concept of psychopathology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-5-2": {
+    "id": "9-5-2",
+    "title": "Mental Status Examination",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Mental Status Examination. What is the central idea?",
+        "answer": "structured assessment of current mental functioning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mental Status Examination.",
+        "answer": "appearance/behavior"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Mental Status Examination.",
+        "answer": "speech"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Mental Status Examination?",
+        "answer": "MSE is not itself a complete diagnosis."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Mental Status Examination?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Mental Status Examination indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-5-3": {
+    "id": "9-5-3",
+    "title": "Classification",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Classification. What is the central idea?",
+        "answer": "Classification"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classification.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classification.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Classification?",
+        "answer": "Classification and etiology are different questions."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Classification?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Classification indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-5-4": {
+    "id": "9-5-4",
+    "title": "Causes of psychopathology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Causes of psychopathology. What is the central idea?",
+        "answer": "psychopathology understood through interacting biological, psychological and social influences"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Causes of psychopathology.",
+        "answer": "genetic vulnerability"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Causes of psychopathology.",
+        "answer": "learning"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Causes of psychopathology?",
+        "answer": "Avoid single-cause explanations."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Causes of psychopathology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Causes of psychopathology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-5-5": {
+    "id": "9-5-5",
+    "title": "Neurodevelopmental disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neurodevelopmental disorders in 2–3 sentences.",
+        "answer": "Neurodevelopmental disorders is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Neurodevelopmental disorders?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Neurodevelopmental disorders?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Neurodevelopmental disorders?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Neurodevelopmental disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neurodevelopmental disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-6": {
+    "id": "9-5-6",
+    "title": "Schizophrenia spectrum and psychotic disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Schizophrenia spectrum and psychotic disorders in 2–3 sentences.",
+        "answer": "Schizophrenia-spectrum and psychotic disorders involve disturbances in thought, perception, behaviour and functioning, with psychotic symptoms central to many presentations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Schizophrenia spectrum and psychotic disorders?",
+        "answer": "psychosis"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Schizophrenia spectrum and psychotic disorders?",
+        "answer": "thought/perception"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Schizophrenia spectrum and psychotic disorders?",
+        "answer": "Not every psychotic symptom establishes schizophrenia."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Schizophrenia spectrum and psychotic disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Schizophrenia spectrum and psychotic disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-7": {
+    "id": "9-5-7",
+    "title": "Depressive disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Depressive disorders in 2–3 sentences.",
+        "answer": "Depressive disorders involve persistent disturbances in mood and associated cognitive, behavioural and physical symptoms causing significant distress or impairment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Depressive disorders?",
+        "answer": "mood/loss of interest"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Depressive disorders?",
+        "answer": "cognitive/physical symptoms"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Depressive disorders?",
+        "answer": "Ordinary sadness alone is not a depressive disorder."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Depressive disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Depressive disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-8": {
+    "id": "9-5-8",
+    "title": "Bipolar disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Bipolar disorders in 2–3 sentences.",
+        "answer": "Bipolar disorders involve episodes of elevated or irritable mood with changes in energy and activity, often with depressive episodes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Bipolar disorders?",
+        "answer": "mania/hypomania"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Bipolar disorders?",
+        "answer": "depression"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Bipolar disorders?",
+        "answer": "Bipolar disorder is not ordinary mood fluctuation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Bipolar disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Bipolar disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-9": {
+    "id": "9-5-9",
+    "title": "Anxiety disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Anxiety disorders in 2–3 sentences.",
+        "answer": "Anxiety disorders involve excessive or persistent fear or anxiety and related avoidance that is disproportionate or impairing."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Anxiety disorders?",
+        "answer": "fear/anxiety"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Anxiety disorders?",
+        "answer": "avoidance"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Anxiety disorders?",
+        "answer": "Normal anxiety differs from clinical anxiety in intensity, persistence and impact."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Anxiety disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Anxiety disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-10": {
+    "id": "9-5-10",
+    "title": "Obsessive-compulsive and related disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Obsessive-compulsive and related disorders in 2–3 sentences.",
+        "answer": "Obsessive-compulsive and related disorders involve intrusive experiences and/or repetitive behaviours that become difficult to control or impair functioning."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Obsessive-compulsive and related disorders?",
+        "answer": "obsessions"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Obsessive-compulsive and related disorders?",
+        "answer": "compulsions"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Obsessive-compulsive and related disorders?",
+        "answer": "A repetitive habit is not automatically a compulsion."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Obsessive-compulsive and related disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Obsessive-compulsive and related disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-11": {
+    "id": "9-5-11",
+    "title": "Trauma- and stressor-related disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Trauma- and stressor-related disorders in 2–3 sentences.",
+        "answer": "Trauma- and stressor-related disorders connect symptoms to stressful or traumatic events and may involve intrusion, avoidance, mood/cognition changes and arousal."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Trauma- and stressor-related disorders?",
+        "answer": "stressor exposure"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Trauma- and stressor-related disorders?",
+        "answer": "intrusion/avoidance"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Trauma- and stressor-related disorders?",
+        "answer": "Consider the stressor and symptom pattern together."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Trauma- and stressor-related disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Trauma- and stressor-related disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-12": {
+    "id": "9-5-12",
+    "title": "Dissociative disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Dissociative disorders in 2–3 sentences.",
+        "answer": "Dissociative disorders involve disruptions in the integration of consciousness, memory, identity, perception or related functions."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Dissociative disorders?",
+        "answer": "integration"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Dissociative disorders?",
+        "answer": "memory/identity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Dissociative disorders?",
+        "answer": "Dissociation is not ordinary distraction."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Dissociative disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Dissociative disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-13": {
+    "id": "9-5-13",
+    "title": "Somatic symptom and related disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Somatic symptom and related disorders in 2–3 sentences.",
+        "answer": "Somatic symptom and related disorders involve prominent physical symptoms or health concerns in which thoughts, feelings and behaviour around symptoms are clinically important."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Somatic symptom and related disorders?",
+        "answer": "somatic symptoms"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Somatic symptom and related disorders?",
+        "answer": "health concerns"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Somatic symptom and related disorders?",
+        "answer": "Do not define these conditions simply as imaginary symptoms."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Somatic symptom and related disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Somatic symptom and related disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-14": {
+    "id": "9-5-14",
+    "title": "Personality disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Personality disorders in 2–3 sentences.",
+        "answer": "Personality disorders involve enduring patterns of inner experience and behaviour that are inflexible, pervasive and associated with distress or impairment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Personality disorders?",
+        "answer": "enduring pattern"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Personality disorders?",
+        "answer": "pervasiveness"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Personality disorders?",
+        "answer": "A single trait or temporary state is not a personality disorder."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Personality disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Personality disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-15": {
+    "id": "9-5-15",
+    "title": "Eating disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Eating disorders in 2–3 sentences.",
+        "answer": "Eating disorders involve clinically significant disturbances in eating behaviour and related concerns about food, weight or body shape."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Eating disorders?",
+        "answer": "disturbed eating"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Eating disorders?",
+        "answer": "body/weight concerns"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Eating disorders?",
+        "answer": "Do not reduce eating disorders to a desire to lose weight."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Eating disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Eating disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-5-16": {
+    "id": "9-5-16",
+    "title": "Neurocognitive disorders",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neurocognitive disorders in 2–3 sentences.",
+        "answer": "Neurocognitive disorders involve acquired decline from a previous level of cognitive functioning affecting domains such as memory, attention, language or executive function."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Neurocognitive disorders?",
+        "answer": "acquired decline"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Neurocognitive disorders?",
+        "answer": "cognitive domains"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Neurocognitive disorders?",
+        "answer": "Low ability without decline is not the defining idea."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Neurocognitive disorders?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neurocognitive disorders indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-6-1": {
+    "id": "9-6-1",
+    "title": "Psychoanalysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychoanalysis. What is the central idea?",
+        "answer": "Psychoanalysis"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalysis.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoanalysis.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Psychoanalysis?",
+        "answer": "Psychoanalysis is more than simply discussing past events; unconscious conflict and interpretation are central."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychoanalysis?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychoanalysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-2": {
+    "id": "9-6-2",
+    "title": "Person-centered therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Person-centered therapy. What is the central idea?",
+        "answer": "Rogers' approach emphasizing empathy, congruence and unconditional positive regard"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Person-centered therapy.",
+        "answer": "client autonomy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Person-centered therapy.",
+        "answer": "empathy"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Person-centered therapy?",
+        "answer": "It is not advice-giving."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Person-centered therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Person-centered therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-3": {
+    "id": "9-6-3",
+    "title": "Gestalt therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Gestalt therapy. What is the central idea?",
+        "answer": "Gestalt therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Gestalt therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Gestalt therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Gestalt therapy?",
+        "answer": "Do not confuse Gestalt therapy with Gestalt principles of perceptual organization."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Gestalt therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Gestalt therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-4": {
+    "id": "9-6-4",
+    "title": "Existential therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Existential therapy. What is the central idea?",
+        "answer": "Existential therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Existential therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Existential therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Existential therapy?",
+        "answer": "It is an experiential/philosophical approach rather than a single symptom protocol."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Existential therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Existential therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-5": {
+    "id": "9-6-5",
+    "title": "Acceptance Commitment Therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Acceptance Commitment Therapy. What is the central idea?",
+        "answer": "ACT combines acceptance, mindfulness and values-guided action to build psychological flexibility"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Acceptance Commitment Therapy.",
+        "answer": "acceptance"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Acceptance Commitment Therapy.",
+        "answer": "defusion"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Acceptance Commitment Therapy?",
+        "answer": "Acceptance is not resignation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Acceptance Commitment Therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Acceptance Commitment Therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-6": {
+    "id": "9-6-6",
+    "title": "Behavior therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Behavior therapy. What is the central idea?",
+        "answer": "Behavior therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavior therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavior therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Behavior therapy?",
+        "answer": "Identify the conditioning principle before naming a technique."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Behavior therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Behavior therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-7": {
+    "id": "9-6-7",
+    "title": "REBT",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain REBT. What is the central idea?",
+        "answer": "Ellis' approach linking activating events, beliefs and emotional/behavioral consequences, with disputation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about REBT.",
+        "answer": "Albert Ellis"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about REBT.",
+        "answer": "A-B-C"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about REBT?",
+        "answer": "Beliefs mediate the consequences."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of REBT?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes REBT indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-8": {
+    "id": "9-6-8",
+    "title": "CBT",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain CBT. What is the central idea?",
+        "answer": "structured approach targeting reciprocal links among thoughts, emotions and behavior"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about CBT.",
+        "answer": "cognitive restructuring"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about CBT.",
+        "answer": "behavioral experiments"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about CBT?",
+        "answer": "Not simply positive thinking."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of CBT?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes CBT indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-9": {
+    "id": "9-6-9",
+    "title": "MBCT",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain MBCT. What is the central idea?",
+        "answer": "MBCT"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about MBCT.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about MBCT.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about MBCT?",
+        "answer": "MBCT is not merely relaxation training; the cognitive relationship to thoughts is central."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of MBCT?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes MBCT indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-10": {
+    "id": "9-6-10",
+    "title": "Play therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Play therapy. What is the central idea?",
+        "answer": "Play therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Play therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Play therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Play therapy?",
+        "answer": "Therapeutic play is not simply recreational play."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Play therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Play therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-11": {
+    "id": "9-6-11",
+    "title": "Positive psychotherapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Positive psychotherapy. What is the central idea?",
+        "answer": "Positive psychotherapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Positive psychotherapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Positive psychotherapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Positive psychotherapy?",
+        "answer": "It does not mean ignoring symptoms or suffering."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Positive psychotherapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Positive psychotherapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-12": {
+    "id": "9-6-12",
+    "title": "Transactional Analysis",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Transactional Analysis. What is the central idea?",
+        "answer": "Transactional Analysis"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Transactional Analysis.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Transactional Analysis.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Transactional Analysis?",
+        "answer": "TA ego states should not be equated directly with Freud's id, ego and superego."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Transactional Analysis?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Transactional Analysis indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-13": {
+    "id": "9-6-13",
+    "title": "Dialectic behavior therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Dialectic behavior therapy. What is the central idea?",
+        "answer": "acceptance-and-change treatment emphasizing mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Dialectic behavior therapy.",
+        "answer": "Marsha Linehan"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Dialectic behavior therapy.",
+        "answer": "four skills domains"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Dialectic behavior therapy?",
+        "answer": "It is broader than one emotion technique."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Dialectic behavior therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Dialectic behavior therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-14": {
+    "id": "9-6-14",
+    "title": "Art therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Art therapy. What is the central idea?",
+        "answer": "Art therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Art therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Art therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Art therapy?",
+        "answer": "Do not treat every drawing as a fixed diagnostic symbol."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Art therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Art therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-15": {
+    "id": "9-6-15",
+    "title": "Performing Art Therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Performing Art Therapy. What is the central idea?",
+        "answer": "Performing Art Therapy"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Performing Art Therapy.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Performing Art Therapy.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Performing Art Therapy?",
+        "answer": "The therapeutic medium distinguishes performing-art therapy from other expressive therapies."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Performing Art Therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Performing Art Therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-16": {
+    "id": "9-6-16",
+    "title": "Family therapy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Family therapy. What is the central idea?",
+        "answer": "systemic approach focusing on relationship patterns, communication and family interaction"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Family therapy.",
+        "answer": "systems"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Family therapy.",
+        "answer": "boundaries"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Family therapy?",
+        "answer": "Not every family member must attend every session."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Family therapy?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Family therapy indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-6-17": {
+    "id": "9-6-17",
+    "title": "Therapeutic goals, techniques and applications",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Therapeutic goals, techniques and applications in 2–3 sentences.",
+        "answer": "Therapeutic goals, techniques and applications is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Therapeutic goals, techniques and applications?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Therapeutic goals, techniques and applications?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Therapeutic goals, techniques and applications?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Therapeutic goals, techniques and applications?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Therapeutic goals, techniques and applications indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "9-7-1": {
+    "id": "9-7-1",
+    "title": "Applications of motivation theories in school",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Applications of motivation theories in school. What is the central idea?",
+        "answer": "Applications of motivation theories in school"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of motivation theories in school.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of motivation theories in school.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Applications of motivation theories in school?",
+        "answer": "An application should identify the theory and its mechanism rather than merely stating that motivation improves learning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Applications of motivation theories in school?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Applications of motivation theories in school indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-7-2": {
+    "id": "9-7-2",
+    "title": "Applications of learning theories in school",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Applications of learning theories in school. What is the central idea?",
+        "answer": "Applications of learning theories in school"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of learning theories in school.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of learning theories in school.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Applications of learning theories in school?",
+        "answer": "Do not reduce all classroom learning to operant conditioning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Applications of learning theories in school?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Applications of learning theories in school indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-8-1": {
+    "id": "9-8-1",
+    "title": "Factors in educational achievement",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Factors in educational achievement. What is the central idea?",
+        "answer": "Factors in educational achievement"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Factors in educational achievement.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Factors in educational achievement.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Factors in educational achievement?",
+        "answer": "Achievement is an outcome and is not identical to intelligence."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Factors in educational achievement?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Factors in educational achievement indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-9-1": {
+    "id": "9-9-1",
+    "title": "Teacher effectiveness",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Teacher effectiveness. What is the central idea?",
+        "answer": "Teacher effectiveness"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Teacher effectiveness.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Teacher effectiveness.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Teacher effectiveness?",
+        "answer": "Effectiveness is not synonymous with popularity or authority; educational impact is central."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Teacher effectiveness?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Teacher effectiveness indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-10-1": {
+    "id": "9-10-1",
+    "title": "Needs for school guidance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Needs for school guidance. What is the central idea?",
+        "answer": "Needs for school guidance"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Needs for school guidance.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Needs for school guidance.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Needs for school guidance?",
+        "answer": "Guidance is broader than counselling; counselling is one service within a guidance programme."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Needs for school guidance?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Needs for school guidance indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-10-2": {
+    "id": "9-10-2",
+    "title": "Organizational setup for school guidance",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Organizational setup for school guidance. What is the central idea?",
+        "answer": "Organizational setup for school guidance"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Organizational setup for school guidance.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Organizational setup for school guidance.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Organizational setup for school guidance?",
+        "answer": "Programme structure is different from the needs that guidance addresses."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Organizational setup for school guidance?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Organizational setup for school guidance indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-10-3": {
+    "id": "9-10-3",
+    "title": "School guidance techniques",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain School guidance techniques. What is the central idea?",
+        "answer": "School guidance techniques"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about School guidance techniques.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about School guidance techniques.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about School guidance techniques?",
+        "answer": "Do not confuse placement with follow-up or referral."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of School guidance techniques?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes School guidance techniques indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-11-1": {
+    "id": "9-11-1",
+    "title": "Counselling process",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Counselling process. What is the central idea?",
+        "answer": "structured helping process involving rapport, assessment, goals, intervention and follow-up"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling process.",
+        "answer": "rapport"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling process.",
+        "answer": "assessment"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Counselling process?",
+        "answer": "Counselling is not simply advice."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Counselling process?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Counselling process indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-11-2": {
+    "id": "9-11-2",
+    "title": "Counselling skills",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Counselling skills. What is the central idea?",
+        "answer": "active listening, empathy, reflection, questioning, summarizing and appropriate silence"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling skills.",
+        "answer": "attending"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling skills.",
+        "answer": "empathy"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Counselling skills?",
+        "answer": "Questioning should not become interrogation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Counselling skills?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Counselling skills indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-11-3": {
+    "id": "9-11-3",
+    "title": "Counselling techniques",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Counselling techniques. What is the central idea?",
+        "answer": "Counselling techniques"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling techniques.",
+        "answer": "definition and central mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Counselling techniques.",
+        "answer": "major named construct/stage/process where supported"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Counselling techniques?",
+        "answer": "Technique must be interpreted within its counselling model and purpose."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Counselling techniques?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Counselling techniques indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "9-11-4": {
+    "id": "9-11-4",
+    "title": "Basic counselling skills: listening, questioning and empathy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Basic counselling skills: listening, questioning and empathy in 2–3 sentences.",
+        "answer": "Counselling skills include attending, active listening, empathy, reflection, questioning and summarising."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Basic counselling skills: listening, questioning and empathy?",
+        "answer": "active listening"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Basic counselling skills: listening, questioning and empathy?",
+        "answer": "empathy"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Basic counselling skills: listening, questioning and empathy?",
+        "answer": "Skills should facilitate client exploration."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Basic counselling skills: listening, questioning and empathy?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Basic counselling skills: listening, questioning and empathy indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  }
+}
