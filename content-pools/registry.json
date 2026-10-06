@@ -145,5 +145,16 @@
         "simply-psychology"
       ]
     }
+  },
+  "canonicalContract": {
+    "source": "data/syllabus-index.json",
+    "expectedMicrotopics": 549,
+    "pools": [
+      "microtopics",
+      "activeRecall",
+      "revisionGuidance",
+      "deepDive"
+    ],
+    "rule": "Each enabled learning pool must contain exactly the canonical syllabus microtopic IDs; orphan IDs are invalid and pool titles must match the canonical syllabus title."
   }
 }
