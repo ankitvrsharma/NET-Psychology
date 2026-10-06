@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "December-2012-6",
+      "session": "December 2012",
+      "question_number": 6,
+      "question": "The chronological age that most typically corresponds to a given level of performance is called",
+      "options": [
+        "Intelligence Quotient",
+        "Maturation",
+        "Mental age",
+        "None of the above"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Mental age. The stem describes the concept or relationship represented by Mental age; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "June-2013-20",
+      "session": "June 2013",
+      "question_number": 20,
+      "question": "When a child gets two chocolates once every week for its performance in the class it is an instance of",
+      "options": [
+        "Fixed ratio, variable interval",
+        "Fixed ratio, fixed interval",
+        "Variable ratio, fixed interval",
+        "Variable ratio, variable interval"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Fixed ratio, fixed interval. The stem describes the concept or relationship represented by Fixed ratio, fixed interval; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "December-2013-9",
+      "session": "December 2013",
+      "question_number": 9,
+      "question": "Put the parts of the Brain in sequence, going from higher to lower level of brain 1. i. Metencephalon 2. ii. Mesencephalon 3. iii. Diancephalon 4. iv. Telencephalon 5. v. Myelencephalon 6. Codes: a). i, ii, iii, iv, v b). ii, iv, i, iii, v c). iv, iii, ii, i, v d). iii, ii, i, v, iv",
+      "options": [
+        "i, ii, iii, iv, v",
+        "ii, iv, i, iii, v",
+        "iv, iii, ii, i, v",
+        "iii, ii, i, v, iv"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. iv, iii, ii, i, v. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 10,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "December-2015-41",
+      "session": "December 2015",
+      "question_number": 41,
+      "question": "Read each of the following two statements - Assertion (A) and Reason (R) and indicate your answer using the codes given below: 1. Assertion (A): Advertising and media campaigns are based frequently on the availability heuristic. 2. Reason (R): Consumers recall instances of being satisfied and expect this outcome to recur. 3. Codes: 1). Both (A) and (R) are true and (R) is the correct explanation of (A). 2). Both (A) and (R) are true, but (R) is not the correct explanation of (A). 3). (A) is true, but (R) is false. 295 UGC NET JRF December 2015 Paper II 295 UGC NET JRF December 2015 Paper II Tap to check answer key 4). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false. 295 UGC NET JRF December 2015 Paper II 295 UGC NET JRF December 2015 Paper II Tap to check answer key",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship. A heuristic is a useful rule of thumb or shortcut that can make problem solving faster, although it does not guarantee a correct solution.",
+      "kind": "assertion-reason",
+      "unit": 10,
+      "topic": 3,
+      "micro": 4
+    },
+    {
+      "id": "July-2016-21",
+      "session": "July 2016",
+      "question_number": 21,
+      "question": "AIDS attack a number of very different population; young gay men, intravenous drug users, 325 UGC NET JRF July 2016 Paper II 325 UGC NET JRF July 2016 Paper II Tap to check answer key haemophiliacs, Haitians, infants and recipients of blood transfusion, but commonly among them is the decrease in T lymphocytes, so it is an example of",
+      "options": [
+        "Inductive reasoning",
+        "Deductive reasoning",
+        "Analogical reasoning",
+        "Syllogism"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Deductive reasoning. The stem describes the concept or relationship represented by Deductive reasoning; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 5,
+      "micro": 9
+    },
+    {
+      "id": "June-2019-16",
+      "session": "June 2019",
+      "question_number": 16,
+      "question": "Which of the following are the behaviours identified by Maslow that lead to self actualization? a). Growth choices b). Use of Ego defence c). Self-awareness d). Concentration 1. Select the correct option: 1). (a). (b) and (c) only 2). (a), (c) and (d) only 3). (c) and (b) only 4). (a), (b) and (d) only",
+      "options": [
+        "(a). (b) and (c) only",
+        "(a), (c) and (d) only",
+        "(c) and (b) only",
+        "(a), (b) and (d) only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a). (b) and (c) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 10,
+      "topic": 4,
+      "micro": 6
+    },
+    {
+      "id": "June-2019-27",
+      "session": "June 2019",
+      "question_number": 27,
+      "question": "Consideration of mental health need of persons with cancer will have positive effects on a). Quality of life b). Emotional well-being c). Positive biological changes d). Killing carcinogenic cells 1. Select the correct option: 1). (a) and (b) only 2). (c) and (d) only 3). (a), (b) and (c) only 4). (b). (c) and (d) only",
+      "options": [
+        "(a) and (b) only",
+        "(c) and (d) only",
+        "(a), (b) and (c) only",
+        "(b). (c) and (d) only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (a) and (b) only. The stem describes the concept or relationship represented by (a) and (b) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 5,
+      "micro": 8
+    },
+    {
+      "id": "June-2019-56",
+      "session": "June 2019",
+      "question_number": 56,
+      "question": "A 12-year-old boy started showing a gradual onset of jerky. uncontrolled movements in limbs with clumsiness, frequent falling. slurred speech and drooling caused by HTT mutation. What disorder is he suffering from?",
+      "options": [
+        "Ataxia",
+        "Huntington s",
+        "Dystonia",
+        "Essential tremors"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Huntington s. The item tests a factual association: the relevant person, work, date, contribution, or term is Huntington s.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 2,
+      "micro": 3
+    },
+    {
+      "id": "December-2019-36",
+      "session": "December 2019",
+      "question_number": 36,
+      "question": "Generational digital or Gen-D factor a). pertains to reversal of power hierarchy in terms of digital technology b). pertains to imparting knowledge downward to younger generation c). calls for psychoeducation of parents and care givers on digital technology usage d). calls for the adolescent psychoeducation on digital technology usage 1. Choosethe correct option:",
+      "options": [
+        "Only (a)",
+        "Only (b)",
+        "(a) and (c)",
+        "(b) and (d)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a) and (c). The stem describes the concept or relationship represented by (a) and (c); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 6,
+      "micro": 6
+    },
+    {
+      "id": "December-2019-54",
+      "session": "December 2019",
+      "question_number": 54,
+      "question": "Double standards of mental health with regard to adult females: a). Depicted adult female behaviour as less socially desirable and healthy b). Had set up barriers against the advancement of women a non- traditional roles. c). Pertain to the changing dual personality of women in the current scenario. d). Pertain to the identification of the general standards of healthy behaviour with men only. 1. Choose the correct option",
+      "options": [
+        "Only (d)",
+        "Only (c)",
+        "Only (a) and (b)",
+        "(a), (b) and (c)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b) and (c). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 10,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-17",
+      "session": "September 2020",
+      "question_number": 17,
+      "question": "What does ‘Absolute Poverty’ mean?",
+      "options": [
+        "Poverty in terms of absolute number of people",
+        "Poverty in terms of prevailing price level",
+        "Poverty in terms of absolute level of unemployment",
+        "Basic minimum calorie requirement"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Basic minimum calorie requirement. The stem describes the concept or relationship represented by Basic minimum calorie requirement; the alternatives refer to different concepts or conditions. The arithmetic mean is obtained by summing the scores and dividing by the number of scores.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-18",
+      "session": "September 2020",
+      "question_number": 18,
+      "question": "In Bronfenbrenner’s model, which one of the following systems is independent of cultural bias?",
+      "options": [
+        "Micro system",
+        "Meso system",
+        "Exo system",
+        "Macro system"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Macro system. The stem describes the concept or relationship represented by Macro system; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 1,
+      "micro": 5
+    },
+    {
+      "id": "September-2020-23",
+      "session": "September 2020",
+      "question_number": 23,
+      "question": "Which of the following character strengths are included in the VIA classification of strengths? a). Creativity b). Forgiveness c). Resilience d). Prudence 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "D, C and A only",
+        "A, B and D only",
+        "A and C only"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A, B and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 10,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "September-2020-30",
+      "session": "September 2020",
+      "question_number": 30,
+      "question": "Which one of the following is considered as correct for Poverty Gap?",
+      "options": [
+        "Gap between Rich and Poor",
+        "Gap between developed and developing nations",
+        "Difference between poverty line and actual income level of all those living below that line",
+        "Gap in the infrastructure facilities between developed nations"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Difference between poverty line and actual income level of all those living below that line. The stem describes the concept or relationship represented by Difference between poverty line and actual income level of all those living below that line; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 1,
+      "micro": 1
+    },
+    {
+      "id": "June-2021-19",
+      "session": "June 2021",
+      "question_number": 19,
+      "question": "According to Master and Johnson, which of the following is correct sequence of Sexual Response? a). Excitement b). Desire c). Plateau d). Orgasm e). Resolution 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, C, D, E",
+        "B, A, D, E",
+        "B, A, C, D",
+        "A, B, C, D"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, C, D, E. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 10,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "July-2022-42",
+      "session": "July 2022",
+      "question_number": 42,
+      "question": "Which of the following are major/ sources of stressors linked to Coronary Heart Disease a). Catastrophes b). Hassles c). Major life events d). Type A personality e). Low Motivation 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, C and D only",
+        "A, B,C and E only",
+        "B,C and D only",
+        "A, B and E only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A, B, C and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 10,
+      "topic": 5,
+      "micro": 6
+    },
+    {
+      "id": "March-2023-87",
+      "session": "March 2023",
+      "question_number": 87,
+      "question": "Given below are two statements: 1. Statement I: Posterior of pituitary gland secretes antidiuretic hormone which stimulates kidneys to reabsorb water to prevent dehydration. 2. Statement II: Cortex of adrenal glands located on the top of Kidneys helps in uterine contraction during child birth and release of milk through mammary glands in females and contraction of sperm duct during ejaculation in males. 3. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false 609 UGC NET JRF March 2023 Paper II 609 UGC NET JRF March 2023 Paper II Tap to check answer key",
+        "Statement I is false but Statement II is true"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Statement I is true but Statement II is false . The stem describes the concept or relationship represented by Statement I is true but Statement II is false ; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 2,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-25",
+      "session": "June 2023",
+      "question_number": 25,
+      "question": "As per Values in Action (VIA), classification of character strengths and virtues are as under:",
+      "options": [
+        "Character strengths - 20; Virtues – 06",
+        "Character strengths - 24; Virtues - 06",
+        "Character strengths 18; Virtues - 06",
+        "Character strengths - 24; Virtues – 04"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Character strengths - 24; Virtues - 06. The stem describes the concept or relationship represented by Character strengths - 24; Virtues - 06; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 4,
+      "micro": 4
+    },
+    {
+      "id": "June-2023-36",
+      "session": "June 2023",
+      "question_number": 36,
+      "question": "Which of the following contributes to maintaining a health risk behaviour?",
+      "options": [
+        "Lack of knowledge and the health risk behaviour helping the individual in avoidance of pain",
+        "The incentive ingrained in health risk behaviour and availability of leisure time",
+        "Avoidance of pain and need to spend money",
+        "Avoidance of pain and high self- efficacy"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Lack of knowledge and the health risk behaviour helping the individual in avoidance of pain. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 5,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-37",
+      "session": "June 2023",
+      "question_number": 37,
+      "question": "Which of the following describes resilience?",
+      "options": [
+        "Individuals at risk whose performance is better than expected",
+        "Individuals in enriched environment excelling in performance. 619 UGC NET JRF June 2023 Paper II 619 UGC NET JRF June 2023 Paper II Tap to check answer key",
+        "Individuals with very good performance sliding down following a traumatic experience",
+        "Individuals who avoid risks and are happy with their average performance"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Individuals at risk whose performance is better than expected. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "June-2023-38",
+      "session": "June 2023",
+      "question_number": 38,
+      "question": "Which of the following does not come under Cardiovascular Disease (CVD)?",
+      "options": [
+        "Myocardial Infarction",
+        "Crohn’s disease",
+        "Angina Pectoris",
+        "Cardiomyopathy"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Crohn’s disease. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 10,
+      "topic": 5,
+      "micro": 6
+    },
+    {
+      "id": "December-2023-74",
+      "session": "December 2023",
+      "question_number": 74,
+      "question": "Match List I with List II List I List II UGC NET JRF December 2023 Paper II 650 UGC NET JRF December 2023 Paper II 650 Tap to check answer key a. Passive eu- thanasia i) The doctor ends a suffering of a patient’s life at his/ her request by administering a lethal dose of a drug b. Voluntary active eutha- nasia ii) The doctor helps the patient take his/her life by enabling the patient swallow or inject a lethal dose of drug c. Assisted suicide iii) The doctor ends a suffering of a patient by administering a lethal dose of drug without the patents consent or permission d. Involuntary active eutha- nasia iv) The doctor withholds or withdraws treatment by permitting the patent to die naturally, on the request of the patient Choose the correct answer from the options given below:",
+      "options": [
+        "A-IV, B-I, C-II, D-III",
+        "A-IV, B-II, C-III, D-I",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-II, C-IV, D-III"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A-IV, B-I, C-II, D-III. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 10,
+      "topic": 2,
+      "micro": 3
+    }
+  ],
+  "practice": []
+}
