@@ -748,24 +748,12 @@ function micro(){
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
     (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
     '</div></article>'+
-    '<section class="micro-learning-actions micro-learning-choice-actions">'+
-    '<button class="micro-action" type="button" data-micro-panel="notes"><span>SHORT NOTES</span><b>＋</b></button>'+
-    '<button class="micro-action" type="button" data-micro-understand><span>I UNDERSTAND</span><b>→</b></button>'+
-    '<button class="micro-action" type="button" data-micro-panel="deep"><span>DETAILED EXPLANATION</span><b>＋</b></button>'+
+    '<section class="micro-bottom-navigation" aria-label="Micro-topic navigation">'+
+    '<a class="micro-bottom-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span><b>←</b></a>'+
+    '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK YOUR RECALL</span><b>→</b></a>'+
+    '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT</span><b>→</b></a>'+
     '</section>'+
-    '<section class="micro-support-panel card" id="microNotesPanel" hidden><div class="eyebrow">SHORT NOTES</div><div class="micro-support-copy">'+esc(shortNotes)+'</div></section>'+
-    '<section class="micro-support-panel card" id="microDeepPanel" hidden><div class="eyebrow">DETAILED EXPLANATION</div><div class="micro-support-copy">'+esc(deep)+'</div></section>'+
-    '<section class="micro-next-step"><a class="text-link" href="'+nextHref+'">NEXT CONCEPT →</a></section>'+
     '</section>';
-  qsa('[data-micro-panel]').forEach(button=>button.addEventListener('click',()=>{
-    const target=button.dataset.microPanel==='notes'?$('#microNotesPanel'):$('#microDeepPanel');
-    if(target)target.hidden=!target.hidden;
-    if(target&&!target.hidden)target.scrollIntoView({behavior:'smooth',block:'nearest'});
-  }));
-  root.querySelector('[data-micro-understand]')?.addEventListener('click',()=>{
-    setP(k,{understandingAt:new Date().toISOString(),last:new Date().toISOString(),status:'LEARNING'});
-    location.href=recallHref;
-  });
 }
 function practice(){
   const box=$('#practiceApp');
