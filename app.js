@@ -1,10 +1,10 @@
-/* Stable browser entry point. Keep page HTML pointed at app.js; the facade owns runtime loading. */
+/* Stable browser entry point. The learner application loads the runtime directly. */
 (function(){
   'use strict';
-  const VERSION='1.0.2';
+  const VERSION='1.0.3';
   const script=document.createElement('script');
-  script.src='./app/facade.js?v='+VERSION;
+  script.src='./app/runtime.js?v='+VERSION;
   script.async=false;
-  script.onerror=()=>console.error('NET Psychology application facade could not be loaded.');
+  script.onerror=()=>console.error('NET Psychology learner runtime could not be loaded.');
   document.head.appendChild(script);
 })();
