@@ -35,11 +35,8 @@ def source_evidence(ref):
     return [{"source":x[1],"chunk":x[2],"text":x[3]} for x in ranked[:6]]
 
 def available(g,component):
-    if component=="microtopic": return bool(str(g.get("core_explanation","")).strip())
-    if component=="deep_dive": return bool(str(g.get("detailed_explanation","")).strip())
-    if component=="active_recall": return bool(g.get("recall_prompts"))
-    if component=="revision": return bool(g.get("revision_guidance"))
-    return bool(g.get("practice_mcqs"))
+    # All five components are required for a connected package. Missing content is a deterministic failure, not an optional omission.
+    return True
 
 def audit_component(g,component,ref,policy,evidence):
     criteria={
@@ -124,8 +121,6 @@ def main():
             current["microtopic_id"]=mid
             component_audits={}
             for component in COMPONENTS:
-                if not available(current,component):
-                    continue
                 if component=="microtopic":
                     bad=not str(current.get("core_explanation","")).strip()
                 elif component=="deep_dive":
@@ -142,7 +137,6 @@ def main():
                             bad=True
             
             for component in COMPONENTS:
-                if not available(current,component): continue
                 audit={"approved":False,"score":0,"critical_failures":["deterministic component structure failed"],"issues":[],"microtopic_id":mid,"component":component} if (
                     (component=="revision" and any(not str((current.get("revision_guidance") or {}).get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))) or
                     (component=="practice" and any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or []))
@@ -157,7 +151,6 @@ def main():
                 current["microtopic_id"]=mid
 
         for component in COMPONENTS:
-            if not available(current,component): continue
             audit=final_audits.get(component,{})
             key=(mid,component)
             if component in passed_components:
