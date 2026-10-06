@@ -28,7 +28,7 @@ Put new source files in `sources/inbox/` and commit them to GitHub. The **Source
 
 The learner site never performs these operations.
 
-The workflow uses the Google Gemini API with structured JSON output. The repository needs an Actions secret named `GEMINI_API_KEY`; never put the key in source files. The default model is `gemini-2.5-flash`; a different Gemini model may be supplied as the Actions variable `NET_CONTENT_MODEL`.
+The workflow uses the Google Gemini API with structured JSON output. The repository needs an Actions secret named `GEMINI_API_KEY`; never put the key in source files. The default is Gemini's `gemini-flash-latest` alias, so new releases are picked up automatically. Two pinned fallback models (`gemini-3.7-flash` and `gemini-3.6-flash`) are retained for continuity. These can be overridden with the Actions variables `NET_CONTENT_MODEL` and `NET_CONTENT_FALLBACKS`.
 
 For the first repair pass on the existing repository, run the workflow manually with **Repair existing = true** and **Synthesize sources = false**. After that, adding a new source can trigger the full source-to-content flow automatically.
 
