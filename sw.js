@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.7.0';
+const CACHE='netpsych-shell-v1.8.0';
 const SHELL=[
   './',
   './index.html',
@@ -42,6 +42,22 @@ self.addEventListener('install',event=>{
 });
 self.addEventListener('activate',event=>{
   event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('message',event=>{
+  const data=event.data;
+  if(!data||data.type!=='NETPSY_PREFETCH'||!Array.isArray(data.urls)||!data.urls.length)return;
+  event.waitUntil((async()=>{
+    const cache=await caches.open(CACHE);
+    for(const raw of data.urls.slice(0,4)){
+      try{
+        const url=new URL(raw,self.location.origin);
+        if(url.origin!==self.location.origin)continue;
+        const request=new Request(url.href,{cache:'no-store'});
+        const response=await fetch(request);
+        if(response.ok)await cache.put(canonicalRequest(url),response.clone());
+      }catch(e){}
+    }
+  })());
 });
 self.addEventListener('fetch',event=>{
   const req=event.request;
