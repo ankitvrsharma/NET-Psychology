@@ -23,6 +23,11 @@ pool_paths={
 }
 for name,path in pool_paths.items():
     pool=load(path)
+    if name=="practice" and not pool:
+        # Topic-wise generated practice is a future content layer. An empty pool is valid
+        # until the first audited Practice package is published.
+        print("practice: 0 entries; empty pool accepted until Practice content is published")
+        continue
     missing=[k for k in canonical if k not in pool]
     extra=[k for k in pool if k not in canonical]
     mismatched=[k for k in canonical if k in pool and str(pool[k].get("title",""))!=str(canonical[k])]
