@@ -1,615 +1,484 @@
-# NET-Psychology — Website Governance
+# NET-Psychology — Website Philosophy & Governance Charter
 
-> Single source of truth for agreed product philosophy, learning principles, UX rules, architecture boundaries, content rules, naming conventions, and change-management rules.
+> This document defines **how the project makes product, learning, UX, content, and engineering decisions**.
 >
-> This document records decisions made for the NET-Psychology website so they are not repeatedly rediscovered or accidentally reversed.
+> It is not a catalogue of website features. Current implementation details belong in architecture documentation.
 
-## 1. Product purpose
+## 1. Purpose
 
-NET-Psychology is a learner-first UGC NET Psychology preparation system for NET and NET-JRF.
+NET-Psychology exists to help a learner prepare effectively for UGC NET Psychology and NET-JRF.
 
-It is not intended to be:
-- a PDF archive;
-- a generic Psychology encyclopedia;
-- a collection of disconnected AI notes;
-- a feature showcase.
+The product is judged by whether it improves the learner's ability to understand, retrieve, apply, distinguish, retain, and perform in the examination.
 
-Its purpose is to help a learner understand Psychology, retrieve it, apply it, retain it, and become exam-ready.
+The website is a means to that end.
 
-The product principle is:
+### Governing principle
 
-Understand → Retrieve → Apply → Interleave → Space → Master
+**Learning outcomes take priority over feature quantity, visual novelty, and implementation convenience.**
 
-The interface, content model, progress model, practice system, and revision system should reinforce this sequence.
+## 2. Learner-first decision making
 
-## 2. Product philosophy
+### Principle
 
-### 2.1 Learning is the product
+Every product decision must begin with the learner's problem, not with what the technology can display.
 
-Features are valuable only when they improve learning or make the learning system easier to use.
+### Rules
 
-Before adding or changing something, ask:
-1. What learner problem does this solve?
-2. Which part of the learning cycle does it support?
-3. Does it reduce or increase cognitive load?
-4. Does it duplicate an existing capability?
-5. Can the current architecture support it without creating a second system?
+Before adding, removing, or changing something, ask:
 
-### 2.2 Learner decision first
+1. What learner problem exists?
+2. What evidence shows that the problem is real?
+3. What learner behaviour should change?
+4. Why is this intervention appropriate?
+5. What existing behaviour might it disrupt?
+6. How will we know whether the intervention worked?
 
-Every screen should make the learner's next useful decision clear.
+If there is no meaningful learner problem, do not introduce the change.
 
-Examples:
-- What should I learn?
-- What should I recall?
-- What should I practise?
-- What should I revise?
-- What should I do next?
+## 3. Learning before interface
 
-Do not display information simply because it is available.
+### Principle
 
-### 2.3 Don't fix what is not broken
+The interface should serve the learning process; the learning process should not be distorted to justify interface features.
 
-This is a permanent engineering and product rule.
+### Rules
+
+- Every interaction should have a cognitive or navigational purpose.
+- Do not add a control merely because it is technically possible.
+- Do not expose internal system complexity to the learner.
+- Prefer fewer, clearer choices over many equivalent choices.
+- A visually attractive solution is inferior to a less attractive solution when it produces worse learning behaviour.
+
+## 4. Cognitive effort must be spent deliberately
+
+### Principle
+
+Learner attention and working memory are limited resources.
+
+### Rules
+
+- Remove unnecessary decisions, navigation, visual noise, and repetition.
+- Do not make the interface difficult merely to make learning difficult.
+- Productive difficulty should come from the learning task, not poor UX.
+- Present information progressively when the learner does not yet need all of it.
+- Deeper information should be available when it serves understanding, comparison, application, or another meaningful decision.
+
+### Anti-pattern
+
+**Complexity is not depth.**
+
+A page containing more text, controls, cards, or animations is not automatically a better learning experience.
+
+## 5. Retrieval should be preferred over passive recognition
+
+### Principle
+
+When the learning objective is remembering, the system should favour retrieving information over repeatedly recognising information on the screen.
+
+### Rules
+
+- Give the learner an opportunity to think before revealing an answer when appropriate.
+- Do not treat reading as proof of remembering.
+- Do not treat seeing an explanation again as proof of revision.
+- Practice should require a meaningful learner response.
+- Feedback should help the learner understand what the response means for subsequent learning.
+
+## 6. Understanding, retrieval, application, and mastery are different states
+
+### Principle
+
+Different kinds of evidence represent different kinds of learning.
+
+### Rules
+
+Do not collapse:
+
+- exposure into understanding;
+- understanding into recall;
+- recall into application;
+- completion into mastery.
+
+A learner should not be labelled successful merely because they opened, read, or completed a screen.
+
+Mastery claims must be based on the learning evidence defined by the product's approved learning model.
+
+## 7. Productive difficulty, not arbitrary friction
+
+### Principle
+
+The system should make learning effortful where effort improves learning, while removing effort that serves no learning purpose.
+
+### Rules
+
+- Preserve useful retrieval effort.
+- Preserve useful comparison and discrimination.
+- Preserve useful application demands.
+- Remove avoidable navigation and interface friction.
+- Increase challenge when the learner is ready rather than merely adding complexity.
+
+## 8. Spacing and forgetting are part of the design
+
+### Principle
+
+Learning should survive the passage of time, not only the immediate study session.
+
+### Rules
+
+- Returning to a page is not automatically a successful revision.
+- Revision should provide an opportunity to retrieve or reconstruct knowledge.
+- Previous performance should inform future learning where the system supports it.
+- Forgetting is information about learning state, not a moral failure.
+- Changes to revision semantics require deliberate evaluation because they alter the learning model.
+
+## 9. Practice should change learning, not merely produce scores
+
+### Principle
+
+A question is valuable when the learner's response provides useful information or practice.
+
+### Rules
+
+- Questions should have a learning purpose.
+- Errors should guide the next useful action where possible.
+- Practice should distinguish concepts that learners are likely to confuse.
+- Feedback should be proportionate to the learning need.
+- Scores must not be presented as more meaningful than the evidence behind them.
+
+### Integrity rule
+
+A generated practice question must never be represented as a genuine previous-year question.
+
+## 10. One knowledge, one primary home
+
+### Principle
+
+Information should have a clear canonical home.
+
+### Rules
+
+- Do not duplicate an explanation simply because several pages could display it.
+- Repeat information only when the repetition performs a different cognitive function.
+- Prefer references, links, prompts, or contextual cues over copying complete content.
+- Before adding content, check whether the learner already has an adequate canonical representation.
+
+### Test
+
+If removing the duplicate would not remove a distinct learner decision or learning function, the duplicate probably should not exist.
+
+## 11. Content must earn its place
+
+### Principle
+
+Every additional piece of information consumes learner attention.
+
+### Rules
+
+Content should be added because it improves at least one of:
+
+- understanding;
+- discrimination between concepts;
+- retrieval;
+- application;
+- retention;
+- examination performance.
+
+Do not add material merely because:
+
+- a source contains it;
+- an AI model can generate it;
+- another website contains it;
+- a page looks empty without it.
+
+**More content is not the same as more preparation.**
+
+## 12. Sources are evidence, not competing learner experiences
+
+### Principle
+
+Books, PDFs, PYQs, notes, and other approved sources are inputs into content production. They should not become parallel learner-facing versions of the same knowledge.
+
+### Rules
+
+- Preserve source-supported terminology and distinctions.
+- Use multiple sources to improve the canonical learning material.
+- Do not force learners to reconcile contradictory source presentations when the product can provide a clear supported explanation.
+- Do not attribute unsupported claims to a source.
+- Do not manufacture provenance.
+- New sources should improve quality, not merely increase volume.
+
+## 13. Content should be faithful before it is clever
+
+### Principle
+
+Exam preparation requires trustworthy knowledge.
+
+### Rules
+
+- Do not silently invent facts to make an explanation sound complete.
+- Do not replace source-supported terminology with fashionable wording merely for style.
+- Preserve important theoretical distinctions.
+- When sources do not support a claim, mark the gap rather than filling it invisibly.
+- When synthesis is necessary, distinguish synthesis from direct source content during production and validation.
+
+## 14. The learner should always have a useful next decision
+
+### Principle
+
+A learning system should reduce uncertainty about what to do next.
+
+At any meaningful point, the learner should be able to determine whether the next useful action is to understand, retrieve, apply, compare, revise, continue, or stop because the current objective has been adequately met.
+
+### Rule
+
+Do not present several equally prominent actions when one is clearly the intended next step.
+
+## 15. Progressive disclosure over information dumping
+
+### Principle
+
+Give the learner what is needed for the current decision, then expose additional depth when it becomes useful.
+
+### Rules
+
+- Start with the conceptual structure needed for understanding.
+- Reveal depth when it supports a real learning need.
+- Do not hide essential information merely to create more clicks.
+- Do not force every learner through maximum detail.
+
+Progressive disclosure must reduce cognitive load, not become artificial fragmentation.
+
+## 16. Responsive design is contextual adaptation
+
+### Principle
+
+A learner's device changes the interaction context, not the importance of learning.
+
+### Rules
+
+- Mobile, tablet, tablet landscape, and laptop experiences must preserve the same learning logic.
+- Do not simply shrink desktop layouts.
+- Touch interaction must be practical.
+- Reading and retrieval must remain comfortable on small screens.
+- Wider screens may expose more context, but must not introduce unnecessary cognitive complexity.
+- A responsive change must not silently change the meaning of a learning state.
+
+## 17. Accessibility is part of learning quality
+
+### Principle
+
+Accessibility is not an optional visual enhancement; it determines whether learners can use the learning system.
+
+### Rules
+
+- Information hierarchy must remain understandable without decorative cues.
+- Interactive elements must be perceivable and usable.
+- Text must remain readable.
+- Meaning must not depend solely on colour.
+- Motion and visual effects must never obstruct comprehension or essential interaction.
+
+## 18. Consistency is a learning aid
+
+### Principle
+
+Predictability reduces unnecessary cognitive load.
+
+### Rules
+
+Use consistent terminology, hierarchy, interaction patterns, navigation conventions, feedback meanings, progress semantics, and responsive behaviour.
+
+Do not introduce a new interaction pattern when an established pattern already solves the same problem.
+
+## 19. Preserve working behaviour
+
+### Principle
+
+Stability is part of product quality.
+
+### Rules
 
 - Do not change working behaviour without a concrete reason.
-- Do not refactor stable code merely for aesthetic preference.
-- Do not replace a working architecture with a different architecture without a demonstrated need.
-- Do not add speculative abstractions.
-- Do not perform unrelated cleanup inside a feature or bug-fix PR.
+- Do not refactor stable code merely because another implementation looks cleaner.
+- Do not replace a working architecture without demonstrated need.
+- Do not perform unrelated cleanup inside a focused change.
 - When something is broken, identify the smallest root cause and make the smallest safe correction.
 
-Working code is not technical debt merely because it could be written differently.
+**Working code is not broken merely because it could be written differently.**
 
-### 2.4 Consistency beats novelty
+## 20. Root cause before intervention
 
-Prefer one clear, predictable pattern over multiple clever alternatives.
+### Principle
 
-Use:
-- consistent terminology;
-- consistent navigation;
-- consistent button behaviour;
-- consistent progress semantics;
-- consistent content hierarchy;
-- consistent responsive behaviour.
+Fix causes, not symptoms.
 
-## 3. Learning architecture
+### Rules
 
-### 3.1 The learning cycle
+For a defect:
 
-The system represents a complete learning cycle:
+1. establish the failure;
+2. identify the affected behaviour;
+3. trace the failure to its owning layer;
+4. determine the smallest responsible cause;
+5. make the smallest safe correction;
+6. inspect related paths for the same failure mode;
+7. validate the affected behaviour.
 
-1. Understand — construct a coherent mental model.
-2. Retrieve — recall without relying on the notes.
-3. Apply — use the concept in questions or situations.
-4. Interleave — distinguish related concepts and switch between them.
-5. Space — return after time has passed.
-6. Master — demonstrate stable learning rather than merely completing a page.
+Do not broaden a bug fix into speculative refactoring.
 
-These are complementary stages, not six separate features.
+## 21. Complexity must justify itself
 
-### 3.2 Micro-topics are the atomic learning unit
+### Principle
 
-The syllabus hierarchy is:
+Every additional abstraction, data layer, dependency, or runtime path creates maintenance cost.
 
-Unit → Topic → Micro-topic
+### Rules
 
-A micro-topic should represent one coherent learnable concept.
+- Prefer one canonical implementation over parallel implementations.
+- Do not maintain two systems for the same learner task.
+- Remove obsolete architecture when it has been deliberately replaced.
+- Avoid speculative abstractions.
+- Avoid dependencies that do not solve a concrete problem.
+- Keep the system understandable to its intended maintainer.
 
-It should be:
-- focused;
-- conceptually meaningful;
-- exam-relevant;
-- sufficiently explained;
-- connected to related ideas where useful;
-- suitable for later retrieval and revision.
+## 22. Compatibility should be deliberate
 
-Do not turn a micro-topic into a miniature textbook.
+### Principle
 
-### 3.3 One canonical micro-topic experience
+Existing learner continuity is valuable.
 
-The approved runtime sequence is:
+### Rules
 
-Concept Explanation → Deep Dive → Check Your Recall → Next
+- Treat established routes, data contracts, progress state, and content identifiers as contracts unless intentionally changed.
+- Preserve compatibility where reasonably possible when implementation changes.
+- Isolate compatibility logic at system boundaries.
+- Do not allow compatibility code to become a second architecture.
+- Breaking a contract requires an explicit reason and appropriate migration or fallback planning.
 
-This is the canonical micro-topic learner flow.
+## 23. Change management
 
-Do not restore separate runtime experiences for:
-- Short Notes;
-- Detailed Explanation;
-- alternate explanation cards;
-- parallel explanation engines;
-- source-specific learning pages.
+### Principle
 
-If additional source material improves a concept, enrich the canonical content used by the existing flow.
+Changes should be intentional, traceable, and reversible where practical.
 
-### 3.4 Application and practice are part of the wider cycle
+### Rules
 
-The micro-topic page does not need to contain every learning activity.
+Every meaningful change should establish:
 
-Understand and Deep Dive primarily support understanding.
+**Problem → Evidence → Decision → Intervention → Risk → Validation**
 
-Check Your Recall supports retrieval.
+Before implementation:
 
-Practice / MCQs / PYQs support application, discrimination, and exam practice.
+- inspect the relevant existing behaviour;
+- check for similar problems elsewhere;
+- identify dependencies and contracts;
+- consider whether the requested change creates duplication.
 
-Revision supports spaced return.
+After implementation:
 
-This separation keeps each screen focused while preserving the complete learning cycle.
+- validate the affected flow;
+- report limitations honestly;
+- avoid claiming validation that was not performed.
 
-### 3.5 Mastery is earned
+## 24. Scope discipline
 
-Opening a page, scrolling through content, or finishing a reading section does not equal mastery.
+### Principle
 
-The approved mastery model requires:
+A good change solves the intended problem without creating unnecessary new problems.
 
-Understanding → Active Recall → two revision cycles → MASTERED
+### Rules
 
-Mastery should therefore represent evidence of learning, not page completion.
+- Keep PRs focused.
+- Related improvements may be suggested, but should not silently enter the requested change.
+- Do not use a feature request as an excuse for unrelated cleanup.
+- If a broader architectural change is genuinely required, stop and explain why before expanding scope.
 
-## 4. Retrieval, practice and revision principles
+## 25. Naming and versioning are consistency rules
 
-### 4.1 Retrieval before rereading
+### Principle
 
-When the learner is asked to recall, the system should encourage an attempt from memory before revealing or revisiting the answer.
+Names and versions are contracts, not decoration.
 
-Do not design retrieval as another form of passive reading.
+### Rules
 
-### 4.2 Practice has a learning purpose
+Use Semantic Versioning only:
 
-Questions are not only for scoring.
+**MAJOR.MINOR.PATCH**
 
-An error should help the learner identify what needs:
-- clarification;
-- retrieval practice;
-- comparison with a similar concept;
-- further application;
-- revision.
-
-### 4.3 MCQ and PYQ remain distinct
-
-The site should distinguish:
-- MCQ — practice questions created for learning.
-- PYQ — genuine previous-year questions supported by source information.
-
-Generated questions must never be presented as PYQs.
-
-Do not create a separate learner-facing Verified PYQ architecture when the approved system uses the MCQ/PYQ distinction.
-
-### 4.4 Spacing is a learning mechanism
-
-Revision should bring concepts back after a delay rather than encouraging endless immediate rereading.
-
-The existing revision/progress model should be preserved unless a specific problem requires a change.
-
-If a learner forgets something, the system should treat that as useful learning information and bring the concept back appropriately—not as failure.
-
-### 4.5 Do not duplicate learning surfaces
-
-The same explanation should not be copied into several cards or pages just because multiple locations are technically available.
-
-Repeat information only when the repetition serves a different cognitive task.
-
-## 5. Content philosophy
-
-### 5.1 Sources are inputs; canonical content is the product
-
-Uploaded books, PDFs, PYQs, notes, and other approved sources are used to produce learner-ready content.
-
-The learner should consume the canonical content, not a collection of source-specific versions of the same concept.
-
-### 5.2 New sources should enrich existing learning
-
-When a new source is added:
-1. identify what genuinely useful knowledge it contributes;
-2. map it to the appropriate Unit → Topic → Micro-topic;
-3. improve the existing canonical content where appropriate;
-4. add distinctions, examples, explanations, or exam relevance only where they improve learning;
-5. avoid duplicating material already adequately covered.
-
-A new source should increase content quality, not merely content volume.
-
-### 5.3 Source synthesis is not a learner-facing architecture
-
-Multiple sources may be synthesized during content production.
-
-However, source synthesis must not become a second runtime learning system.
-
-The current architecture intentionally uses:
-- canonical published content pools;
-- source-aware content generation and repair;
-- provenance/audit information where needed.
-
-Do not recreate a source-synthesis runtime layer.
-
-### 5.4 Source fidelity
-
-Source-derived content should preserve the supported terminology, distinctions, theories, researchers, examples, and framing.
-
-Do not silently invent claims or attribute unsupported information to a source.
-
-## 6. Current architecture boundaries
-
-The following architectural boundaries are intentional.
-
-### 6.1 Syllabus is the structural source
-
-data/syllabus-index.json provides the Unit → Topic → Micro-topic structure used by the runtime.
-
-Do not create another competing syllabus hierarchy.
-
-### 6.2 Content pools are canonical runtime inputs
-
-The runtime loads canonical content pools for the learning surfaces it needs, including:
-- micro-topic content;
-- Quick Learn/content where currently used;
-- Deep Dive;
-- Active Recall;
-- questions;
-- revision guidance;
-- home-learning content.
-
-Do not create duplicate stores for the same learner content.
-
-### 6.3 app/runtime.js is the shared learner runtime
-
-Shared routing, content loading, progress, rendering, practice, revision, and learning behaviour should remain coherent through the existing runtime architecture.
-
-Do not create page-specific copies of the same business logic unless there is a demonstrated need.
-
-### 6.4 Progress is local learner state
-
-The existing learner progress store uses the established local browser storage key:
-
-netPsychProgress
-
-Do not change the storage contract casually. Changes to progress state can affect existing learner continuity.
-
-### 6.5 Backward compatibility belongs at the boundary
-
-Legacy links/bookmarks may require compatibility handling.
-
-Compatibility code should:
-- solve a real compatibility need;
-- remain isolated at the route/input boundary;
-- preserve the canonical current route/data model;
-- not become a second runtime architecture.
-
-### 6.6 Service-worker caching is infrastructure, not content logic
-
-The service worker should support reliable delivery of the current application and canonical runtime data.
-
-Cache identifiers must track the project SemVer.
-
-Do not put learner logic into the service worker merely for convenience.
-
-## 7. UX and responsive design
-
-### 7.1 All major form factors matter
-
-The website must work properly on:
-- phones;
-- tablets;
-- tablet landscape;
-- laptops/desktops.
-
-Tablet landscape is a deliberate target, not an edge case.
-
-### 7.2 Mobile is a first-class experience
-
-Do not simply shrink the desktop layout.
-
-Mobile design should consider:
-- touch targets;
-- thumb reach;
-- vertical progression;
-- readable text;
-- low visual clutter;
-- clear primary actions.
-
-### 7.3 Progressive disclosure
-
-Do not show every detail immediately.
-
-Present enough information for the current decision and reveal deeper information when useful.
-
-This supports the approved micro-topic progression without forcing every learner through maximum detail.
-
-### 7.4 Navigation should answer “where next?”
-
-The learner should understand:
-- where they are;
-- what they are learning;
-- what they can do next.
-
-Avoid unnecessary navigation choices.
-
-### 7.5 Overlays and prompts should respect learner control
-
-Do not repeatedly interrupt study with prompts.
-
-If a learner explicitly declines an install prompt, the site should respect the agreed suppression behaviour rather than repeatedly displaying the same overlay.
-
-### 7.6 Progress is feedback, not decoration
-
-Progress indicators should help the learner decide what to do next.
-
-Do not create metrics merely because they look impressive.
-
-Different progress signals should answer different questions, such as:
-- What have I explored?
-- What have I mastered?
-- What is due for revision?
-- How am I performing in practice?
-
-## 8. Information architecture and duplication rules
-
-### 8.1 One fact, one primary home
-
-Every important piece of information should have a natural primary location.
-
-Examples:
-- syllabus structure → syllabus;
-- concept explanation → micro-topic;
-- extended conceptual connection → Deep Dive;
-- retrieval prompts → Active Recall;
-- question performance → Practice;
-- scheduled return → Revision/Progress.
-
-Other screens may reference it when that supports a different decision.
-
-### 8.2 No repeated blocks for convenience
-
-Do not copy a complete explanation into Home, Dashboard/Progress, Topic, Micro-topic, Deep Dive, and Practice merely to avoid navigation.
-
-Instead, provide a clear link or action to the canonical location.
-
-### 8.3 Don't overload the home screen
-
-Home should orient the learner and help them start or continue learning.
-
-It should not become a second syllabus, notes repository, analytics dashboard, and practice page at once.
-
-## 9. Engineering principles
-
-### 9.1 Root cause before code change
-
-For every bug:
-1. identify the actual failure;
-2. trace it to its root cause;
-3. confirm which layer owns the problem;
-4. make the smallest safe change;
-5. check related paths;
-6. validate the affected flow.
-
-Do not patch symptoms while leaving the root cause intact.
-
-### 9.2 Preserve working contracts
-
-Treat these as contracts unless intentionally changed:
-- routes;
-- data keys;
-- localStorage keys;
-- content schemas;
-- canonical content paths;
-- page responsibilities;
-- learning-state semantics.
-
-### 9.3 No dead or duplicate architecture
-
-Do not retain or recreate architecture that was deliberately removed.
-
-In particular, do not reintroduce:
-- parallel source-synthesis runtime layers;
-- duplicate micro-topic explanation systems;
-- unused alternate content calculations;
-- obsolete learner-facing sections.
-
-### 9.4 Avoid speculative refactoring
-
-A change should have a reason.
-
-Do not:
-- rename files for aesthetics;
-- reorganize directories without need;
-- rewrite working functions merely for style;
-- introduce frameworks or dependencies without a concrete benefit.
-
-## 10. Naming and versioning
-
-### 10.1 Semantic Versioning only
-
-Use:
-
-MAJOR.MINOR.PATCH
-
-Meaning:
 - MAJOR — breaking change;
-- MINOR — backward-compatible feature or capability;
-- PATCH — backward-compatible bug fix.
+- MINOR — backward-compatible capability;
+- PATCH — backward-compatible fix.
 
-Examples:
-- 1.0.0
-- 1.0.1
-- 1.1.0
-- 2.0.0
+Never append descriptive suffixes to versions.
 
-Never use descriptive suffixes as part of the version.
+New filenames should be:
 
-Not acceptable:
-- 1.4.2-progress-storage
-- 1.4.1-route-compatibility
-- 1.4.0-canonical-learning-production
+**lowercase + kebab-case + descriptive responsibility**
 
-### 10.2 Version values and cache identifiers
+Do not rename an established file merely for aesthetics. Rename only when its responsibility genuinely changes.
 
-The same SemVer should be used consistently by:
-- project version values;
-- runtime fallback values;
-- service-worker cache identifiers;
-- relevant asset/cache-busting identifiers.
+## 26. GitHub governance
 
-Example:
+### Principle
 
-netpsych-shell-v1.4.2
+Repository changes should remain reviewable and intentional.
 
-### 10.3 File naming
+### Rules
 
-New files should use:
+- Use focused branches and PRs.
+- Check related issues or similar problems before finalising a change.
+- Explain the problem, decision, scope, and validation in the PR.
+- Seek explicit user approval before merging.
+- After approval, merge only the approved change.
+- Verify available CI/workflow results after merge.
+- Do not claim live/device validation unless it actually occurred.
 
-lowercase + kebab-case + descriptive responsibility
+## 27. Decision hierarchy
 
-Examples:
-- project-governance.md
-- content-version.js
-- source-to-content.py
+When principles conflict, prioritise:
 
-Do not randomly rename stable files.
+1. **Learner safety and correctness**
+2. **Learning effectiveness**
+3. **Preservation of working behaviour**
+4. **Clarity and consistency**
+5. **Maintainability**
+6. **Performance**
+7. **Aesthetic improvement**
 
-Rename an existing file only when its architectural responsibility genuinely changes.
+A prettier solution does not win against a safer or more effective one.
 
-Keep stable public/runtime filenames stable. In particular:
+## 28. What this project must resist
 
-microtopic.html remains microtopic.html.
+The following are recurring failure modes and should be actively resisted:
 
-## 11. GitHub change-management rules
+- feature accumulation without a learner problem;
+- content accumulation without a learning purpose;
+- duplicate explanations;
+- generic AI filler;
+- passive reading disguised as learning;
+- scores mistaken for mastery;
+- page completion mistaken for learning;
+- unnecessary interface complexity;
+- parallel implementations of the same capability;
+- speculative refactoring;
+- breaking working behaviour for aesthetic reasons;
+- random renaming;
+- non-SemVer versioning;
+- unrelated PR expansion;
+- unverified claims about testing;
+- silently overriding an agreed decision.
 
-### 11.1 Focused branches and PRs
+## 29. How this charter changes
 
-A meaningful change should be represented by a focused branch and PR.
+This charter should remain stable.
 
-A PR should:
-- have one clear purpose;
-- contain related changes only;
-- explain the problem and solution;
-- state validation performed;
-- avoid unrelated cleanup.
+A new principle should be added only when:
 
-### 11.2 Check related issues, but control scope
+- a recurring decision cannot be handled by the existing principles;
+- the principle generalises beyond one feature;
+- it prevents a meaningful future mistake;
+- and it is explicitly agreed.
 
-Before finalizing a PR:
-- check whether the same problem exists elsewhere;
-- identify related issues;
-- suggest related improvements when they materially support the requested goal.
+A feature, bug, file path, or implementation detail does not belong here merely because it is important today.
 
-Do not silently expand the PR into unrelated work.
+### Final rule
 
-### 11.3 Approval before merge
-
-Never merge a PR without explicit user approval.
-
-Before requesting approval:
-1. review the implementation;
-2. check similar issues elsewhere;
-3. validate relevant files and flows;
-4. report anything that remains uncertain;
-5. explain exactly what the PR changes;
-6. ask for approval.
-
-After approval:
-- merge the approved PR;
-- verify available CI/workflow results;
-- check the resulting main branch state.
-
-### 11.4 No false validation claims
-
-Never say:
-- the live site was tested unless it was actually tested;
-- CI passed unless the relevant run was observed;
-- all buttons work unless that was actually verified.
-
-Distinguish clearly between:
-- static/code validation;
-- automated CI;
-- live browser testing;
-- device testing.
-
-## 12. Content production and uploaded sources
-
-When the project receives a new source file:
-
-Source → identify useful knowledge → map to syllabus → enrich canonical content → validate → publish
-
-Do not simply append the new source as another reading layer.
-
-For each relevant micro-topic, consider whether the source improves:
-- conceptual explanation;
-- important distinctions;
-- examples;
-- theories/models;
-- researchers;
-- terminology;
-- application;
-- exam relevance;
-- retrieval cues;
-- Deep Dive.
-
-Only add material when it improves the learner's understanding or decision.
-
-## 13. PWA and deployment
-
-The website should remain easy to maintain and deploy through GitHub Pages.
-
-Prefer:
-- simple static architecture;
-- understandable files;
-- minimal dependencies;
-- predictable service-worker behaviour;
-- deterministic content loading.
-
-When application/runtime files change:
-- update the SemVer appropriately;
-- keep cache identifiers consistent;
-- ensure stale cached assets cannot silently break the current runtime.
-
-When content changes:
-- validate the relevant JSON/data;
-- validate generated content where automated checks exist.
-
-## 14. Decision hierarchy
-
-When principles compete, use this order:
-
-1. Learner safety and correctness
-2. Learning effectiveness
-3. Preservation of working behaviour
-4. Clarity and consistency
-5. Maintainability
-6. Performance
-7. Aesthetic improvement
-
-A visually cleaner solution is not automatically better if it makes learning harder or breaks established behaviour.
-
-## 15. What must not happen
-
-Never:
-- fix what is not broken;
-- add features without a learner problem;
-- duplicate content merely because it exists in multiple sources;
-- create parallel architectures for the same learner task;
-- recreate deliberately removed source-synthesis runtime layers;
-- turn micro-topics into generic AI-generated filler;
-- present generated questions as PYQs;
-- change approved mastery or revision semantics casually;
-- change progress storage contracts casually;
-- randomly rename stable files;
-- use non-SemVer version strings;
-- silently expand a PR into unrelated refactoring;
-- claim tests that were not actually performed;
-- merge without user approval;
-- preserve obsolete architecture just because it already exists.
-
-## 16. Governance rule
-
-This file is the project's single reference point for agreed website philosophy and architectural principles.
-
-If a future request conflicts with a rule here:
-1. identify the conflict;
-2. explain the trade-off;
-3. do not silently override the existing decision;
-4. propose the change;
-5. update this document only after the new decision is explicitly agreed.
-
-The goal is not to prevent evolution.
-
-The goal is to make evolution intentional, traceable, learner-centred, and consistent with the architecture we have already agreed to build.
+**The website should evolve because the learner's needs, evidence, or a demonstrated technical constraint justify the change—not because change itself feels productive.**
