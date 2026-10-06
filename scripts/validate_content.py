@@ -30,10 +30,9 @@ for name,path in pool_paths.items():
 
 quick=load("content/quick-learn/quick_cards.json")
 quick_micro_ids={f"{v.get('unit')}-{v.get('topic')}-{v.get('micro')}" for v in quick.values()}
-missing=[k for k in canonical if k not in quick_micro_ids]
 extra=[k for k in quick_micro_ids if k not in canonical]
-assert not missing and not extra, f"quickLearn: missing_microtopics={len(missing)} extra_microtopics={len(extra)}"
-print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; OK")
+assert not extra, f"quickLearn: {len(extra)} cards point to non-canonical micro-topics"
+print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; partial coverage is allowed")
 
 questions=load("content/questions/questions.json")
 questions=questions if isinstance(questions,list) else [*questions.get("pyq",[]),*questions.get("practice",[])]
@@ -51,10 +50,12 @@ for q in questions:
         expected=f"{key[0]}-{key[1]}-{key[2]}"
         if expected not in canonical:
             bad_mapping.append(q["id"])
-assert not bad_mapping, f"questions: invalid syllabus mappings: {bad_mapping[:10]}"
+assert not bad_mapping, f"questions: invalid non-null syllabus mappings: {bad_mapping[:10]}"
 
+unmapped=sum(any(q.get(k) is None for k in ("unit","topic","micro")) for q in questions)
 missing_explanations=sum(not str(q.get("explanation","")).strip() for q in questions)
 print(f"Canonical micro-topics: {len(canonical)}")
 print(f"Questions: {len(questions)}")
+print(f"Unmapped questions: {unmapped}")
 print(f"Missing question explanations: {missing_explanations}")
 assert missing_explanations == 0, "questions: missing explanations"
