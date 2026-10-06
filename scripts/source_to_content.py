@@ -307,6 +307,8 @@ def main():
             deep_pool=load(ROOT/"content/deep-dive/deep_dive.json")
             recall_pool=load(ROOT/"content/active-recall/active_recall.json")
             revision_pool=load(REVISION)
+            practice_path=ROOT/"content/practice/practice_mcqs.json"
+            practice_pool=load(practice_path) if practice_path.exists() else {}
             source_stamp="\n".join(sorted(x["sha256"] for x in source_meta))
             marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
             now=datetime.now(timezone.utc).isoformat()
@@ -339,6 +341,10 @@ def main():
                 for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
                     rev[field]=rg.get(field,"")
                 revision_pool[mid]=rev
+                if g.get("practice_mcqs"):
+                    practice_pool[mid]={"id":mid+"P","microtopic_id":mid,"title":me.get("title",""),"questions":g.get("practice_mcqs") or []}
+            practice_path.parent.mkdir(parents=True,exist_ok=True)
+            save(practice_path,practice_pool)
             save(MICRO,micro_pool)
             save(ROOT/"content/deep-dive/deep_dive.json",deep_pool)
             save(ROOT/"content/active-recall/active_recall.json",recall_pool)
