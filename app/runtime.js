@@ -567,7 +567,7 @@ function topicPage(){
     const list=topicItems.filter(m=>{const p=getP(key(u.id,t.id,m.id));if(filter==='new')return p.status==='NEW';if(filter==='learning')return p.status==='LEARNING'||p.status==='RETENTION';if(filter==='mastered')return p.status==='MASTERED';if(filter==='due')return p.next&&new Date(p.next)<=new Date();return true});
     const cards=list.map(m=>{
       const p=getP(key(u.id,t.id,m.id)),available=microAvailable(u,t,m),concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title,kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')),qs=practiceFor(u.id,t.id,m.id),due=p.next&&new Date(p.next)<=new Date();
-      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
+      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span><span class="review-status '+contentReviewStatus('microtopics',key(u.id,t.id,m.id)).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',key(u.id,t.id,m.id))+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
       if(!available)return '<article class="micro-card topic-micro-card content-unavailable">'+body+'<span class="link content-soon-link">COMING SOON <b>•</b></span></article>';
       return '<a class="micro-card topic-micro-card" href="microtopic.html?unit='+u.id+'&topic='+t.id+'&micro='+m.id+'">'+body+'<span class="link">'+(p.status==='NEW'?'Start learning':due?'Review now':'Continue learning')+' <b>→</b></span></a>';
     }).join('');
@@ -713,6 +713,7 @@ function mcqHTML(q,i,source='MCQ',showSource=true){
   const provenance=tags.join(' · ');
   const kind=q.kind||"direct";
   const sourceLabel=q.session?String(q.session)+" · PYQ":provenance;
+  const reviewLabel=contentReviewStatus('questions',q.id);
   return "<article class=\"mcq\" data-i=\""+i+"\" data-answer=\""+ans+"\" data-kind=\""+esc(kind)+"\">"+
     "<div class=\"mcq-meta\"><span class=\"question-kind\">"+esc(kindLabel(kind))+"</span>"+(showSource?"<span class=\"question-source\">"+esc(sourceLabel)+" · Q"+esc(q.question_number??(i+1))+"</span>":"")+"</div>"+
     structuredQuestionHTML(q)+
@@ -761,7 +762,7 @@ function micro(){
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><span class="review-status '+contentReviewStatus('microtopics',k).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',k)+'</span><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
     '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
