@@ -1,92 +1,67 @@
 # Beginner maintenance guide
 
-You do not need to learn web development to maintain the project.
+The website is a static learner application. The learner runtime reads pre-built content directly; content generation never runs in a learner's browser.
 
-## Core architecture
+## Canonical learner content
 
-The learner website uses **pre-populated static content pools**.
-
-The authoritative learner content is:
-
-- `data/syllabus-index.json` — canonical unit/topic/micro-topic structure and IDs.
+- `data/syllabus-index.json` — canonical unit/topic/micro-topic IDs.
 - `content/microtopics/micro_topics.json` — core micro-topic learning content.
-- `content/quick-learn/quick_cards.json` — Quick Learn content.
-- `content/deep-dive/deep_dive.json` — Deep Learning content.
-- `content/active-recall/active_recall.json` — retrieval-practice content.
+- `content/quick-learn/quick_cards.json` — Quick Learn cards.
+- `content/deep-dive/deep_dive.json` — deeper explanations.
+- `content/active-recall/active_recall.json` — retrieval practice.
 - `content/questions/questions.json` — MCQs and PYQs.
 - `content/revision/revision_guidance.json` — revision guidance.
-- `content/home/home-learning.json` — Home learning guidance.
 
-The learner runtime **reads these pools directly**. It must not regenerate, hydrate, repair, audit or synchronise content while a learner is opening a page.
+Do not reintroduce runtime hydration, synchronisation, repair or a second canonical content file.
 
-Do not reintroduce a second canonical content file such as the old `data.json`/generated `data.js` architecture.
+## Automatic source-to-content pipeline
+
+Put new source files in `sources/inbox/` and commit them to GitHub. The **Source to content automation** workflow then:
+
+1. extracts text;
+2. maps source evidence to canonical micro-topics;
+3. creates source-grounded learner content;
+4. repairs stale Quick Learn references and unresolved question mappings when confidence is high;
+5. records provenance;
+6. validates the static pools;
+7. opens a review PR instead of publishing directly to `main`.
+
+The learner site never performs these operations.
+
+The workflow uses the OpenAI Responses API with Structured Outputs. The repository needs an Actions secret named `OPENAI_API_KEY`; never put the key in source files. A model override may be supplied as the Actions variable `NET_CONTENT_MODEL`.
+
+For the first repair pass on the existing repository, run the workflow manually with **Repair existing = true** and **Synthesize sources = false**. After that, adding a new source can trigger the full source-to-content flow automatically.
+
+## Content quality rules
+
+Automation may classify and draft, but it must not silently decide uncertain mappings. High-confidence mapping is applied; ambiguous records remain reported for human review.
+
+Source-derived content must:
+- preserve source-supported terminology and named theories/researchers;
+- distinguish source evidence from inference;
+- avoid unsupported generic filler;
+- use different wording for explanation, retrieval and revision decisions;
+- retain PYQ provenance;
+- avoid reproducing long copyrighted passages.
+
+## Validation and publishing
+
+Before merging content:
+1. JSON and pool validation must pass;
+2. unresolved mappings should be reviewed;
+3. source provenance should be present;
+4. learner page references must still resolve;
+5. mobile/tablet/laptop behaviour should be checked for UI changes.
 
 ## Main application files
 
-- `app/runtime.js` — learner application behaviour, navigation, learning flow and local progress.
+- `app/runtime.js` — learner behaviour and learning flow.
 - `app.js` — runtime entry point.
 - `style.css` — responsive presentation.
 - `sw.js` — PWA/offline caching only.
-- `manifest.webmanifest` — install metadata.
 - `admin.js` / `admin.html` — owner audit workbench.
-- `app/content-audit.js` — deterministic content-quality audit used by the admin layer.
-- `content-audit.json` — owner review state.
-- `content-pools/pool-integrity.js` — build/admin integrity helper.
-
-## Content workflow
-
-When a new Psychology source is added, use it to improve or create relevant content rather than repeating the same material everywhere. Keep:
-
-- concise concept explanations in learning pages;
-- retrieval prompts and application questions where they serve a different learning decision;
-- source attribution/provenance with the content;
-- PYQs in the question pool, with session/source information preserved.
-
-New content should pass the same audit and pool-integrity checks before becoming part of the published learner pools.
-
-Learner progress belongs on the learner's device and must not be committed to GitHub.
-
-## Publishing validation
-
-The GitHub Actions content-validation workflow checks the **published static pools directly**. It verifies:
-
-1. the syllabus structure is valid;
-2. each learning pool has the same canonical micro-topic coverage;
-3. titles remain aligned with the syllabus;
-4. questions have four options, valid answer indexes and valid syllabus mappings;
-5. question explanations are present.
-
-The workflow is a validation gate. It does not silently rewrite learner content.
-
-## Source intake
-
-`sources/inbox/` is for source files and provenance. `scripts/source_intake.py` inventories source files and checks their metadata; it is not itself a learner-content generator.
-
-Source-derived content should be deliberately created, audited and published into the static pools.
-
-## PWA and caching
-
-Keep the service worker simple:
-
-- cache the application shell;
-- cache published static pools after successful network responses;
-- use network-first behaviour so a new deployment can replace stale content;
-- do not put content-generation or synchronisation logic into the service worker.
-
-When changing the published pool set or runtime cache contract, bump the service-worker cache name.
-
-## Quality checks before publishing
-
-Before merging content or structural changes:
-
-1. validate the JSON;
-2. run the published-pool validation workflow;
-3. check internal links and page loading;
-4. test keyboard navigation and mobile/tablet layouts;
-5. confirm new source material is represented in the appropriate learning location;
-6. review source/provenance and copyright-sensitive excerpts;
-7. verify the learner runtime is still reading the intended static pool directly.
+- `app/content-audit.js` — deterministic content-quality audit for owner/admin use.
 
 ## Learner data
 
-Progress, revision history and imported backups stay local to the learner. Do not place personal progress data in repository files.
+Progress, revision history and imported backups stay on the learner's device. Do not put personal learner progress into repository files.
