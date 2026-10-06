@@ -11,7 +11,7 @@ QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
-MODEL=os.getenv("NET_CONTENT_MODEL","gemini-flash-latest")
+MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -82,17 +82,23 @@ def _resolve_model_chain():
     if requested:
         return list(dict.fromkeys([requested]+configured))
     url="https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000"
-    req=urllib.request.Request(url,headers={"x-goog-api-key":api_key})
     try:
-        with urllib.request.urlopen(req,timeout=30) as response:
-            models=json.loads(response.read().decode("utf-8")).get("models",[])
+        models=[]
+        next_token=None
+        while True:
+            page_url=url + (f"&pageToken={next_token}" if next_token else "")
+            page_req=urllib.request.Request(page_url,headers={"x-goog-api-key":api_key})
+            with urllib.request.urlopen(page_req,timeout=30) as response:
+                page=json.loads(response.read().decode("utf-8"))
+            models.extend(page.get("models",[]))
+            next_token=page.get("nextPageToken")
+            if not next_token:
+                break
         versions=[]
         for m in models:
             name=m.get("name","").split("/")[-1]
             if "generateContent" not in m.get("supportedGenerationMethods",[]): continue
-            # Only stable numeric Gemini Flash models; exclude previews, lite,
-            # image/audio variants and other special-purpose models.
-            match=re.fullmatch(r"gemini-(\\d+)\\.(\\d+)-flash",name)
+            match=re.fullmatch(r"gemini-(\d+)\.(\d+)-flash",name)
             if match:
                 versions.append((int(match.group(1)),int(match.group(2)),name))
         versions=sorted(set(versions),reverse=True)
@@ -100,8 +106,7 @@ def _resolve_model_chain():
             return [v[2] for v in versions[:3]]
     except Exception:
         pass
-    return ["gemini-flash-latest"]+configured
-
+    return ["gemini-3.8-flash","gemini-3.7-flash","gemini-3.6-flash"]+configured
 
 def call_ai(instructions,payload,name,schema):
     import urllib.request
@@ -284,12 +289,4 @@ def main():
         save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})
-        save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
-             "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
-             "repairs":report["repairs"],"unresolved":report["unresolved"]})
-    save(STAGING/"run-report.json",report)
-    print(json.dumps(report,ensure_ascii=False,indent=2))
-    return 0
 
-if __name__=="__main__":
-    raise SystemExit(main())

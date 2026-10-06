@@ -57,7 +57,7 @@ jobs:
           elif [ "$SYNTH" = "true" ]; then
             python scripts/source_to_content.py --apply
           elif [ "$REPAIR" = "true" ]; then
-            python scripts/source_to_content.py --apply --repair-existing --no-source-synthesis
+            python scripts/source_to_content.py --apply --repair-existing
           else
             echo "Nothing requested."
           fi
