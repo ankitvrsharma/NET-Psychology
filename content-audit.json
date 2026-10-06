@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
-  "expert_reviewed": {
-    "microtopics": [],
-    "questions": []
+  "schema_version": 2,
+  "owner_review": {
+    "microtopics": {},
+    "questions": {}
   },
   "updated_at": ""
 }
