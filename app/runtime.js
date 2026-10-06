@@ -38,7 +38,7 @@ const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],P
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
 let AUDIT_STATE={schema_version:1,expert_reviewed:{microtopics:[],questions:[]},updated_at:''};
-const loadAuditState=async()=>{try{const r=await fetch('./content-audit.json?v=20261006-audit-status-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.expert_reviewed)AUDIT_STATE=x}}catch(e){};safeRender()};
+const loadAuditState=async()=>{try{const r=await fetch('./content-audit.json?v=20261006-audit-status-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.expert_reviewed)AUDIT_STATE=x}}catch(e){};if(D)safeRender()};
 const runtimeContext=Object.defineProperties({},{
   data:{get:()=>D,set:v=>{D=v}},
   questions:{get:()=>PRACTICE_QUESTIONS,set:v=>{PRACTICE_QUESTIONS=v}},
