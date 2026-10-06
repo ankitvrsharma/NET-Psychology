@@ -46,7 +46,8 @@ jobs:
       - name: Generate and repair content
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || 'gemini-2.5-flash' }}
+          NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || 'gemini-flash-latest' }}
+          NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || 'gemini-3.7-flash,gemini-3.6-flash' }}
           NET_MAX_TOPICS_PER_RUN: "20"
         run: |
           REPAIR="${{ github.event.inputs.repair_existing || 'true' }}"
