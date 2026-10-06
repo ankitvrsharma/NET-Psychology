@@ -11,7 +11,7 @@ QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
-MODEL=os.getenv("NET_CONTENT_MODEL","gpt-5-mini")
+MODEL=os.getenv("NET_CONTENT_MODEL","gemini-2.5-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -53,12 +53,54 @@ def chunks(text,size=12000):
     if cur: out.append(cur)
     return out
 
+def _gemini_schema(schema):
+    """Convert JSON Schema types to Gemini's REST schema enum format."""
+    if isinstance(schema, dict):
+        out={}
+        for k,v in schema.items():
+            if k=="type" and isinstance(v,str):
+                out[k]=v.upper()
+            elif k=="properties" and isinstance(v,dict):
+                out[k]={pk:_gemini_schema(pv) for pk,pv in v.items()}
+            elif k=="items":
+                out[k]=_gemini_schema(v)
+            else:
+                out[k]=_gemini_schema(v) if isinstance(v,(dict,list)) else v
+        return out
+    if isinstance(schema,list):
+        return [_gemini_schema(x) for x in schema]
+    return schema
+
 def call_ai(instructions,payload,name,schema):
-    from openai import OpenAI
-    r=OpenAI().responses.create(
-        model=MODEL,instructions=instructions,input=json.dumps(payload,ensure_ascii=False),
-        text={"format":{"type":"json_schema","name":name,"strict":True,"schema":schema}},store=False)
-    return json.loads(r.output_text)
+    import urllib.request
+    api_key=os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise SystemExit("GEMINI_API_KEY is required.")
+    url=f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    body={
+        "systemInstruction":{"parts":[{"text":instructions}]},
+        "contents":[{"parts":[{"text":json.dumps(payload,ensure_ascii=False)}]}],
+        "generationConfig":{
+            "responseMimeType":"application/json",
+            "responseSchema":_gemini_schema(schema),
+            "temperature":0.2
+        }
+    }
+    req=urllib.request.Request(
+        url,
+        data=json.dumps(body,ensure_ascii=False).encode("utf-8"),
+        headers={"Content-Type":"application/json","x-goog-api-key":api_key},
+        method="POST")
+    try:
+        with urllib.request.urlopen(req,timeout=180) as response:
+            result=json.loads(response.read().decode("utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"Gemini API request failed: {exc}") from exc
+    try:
+        text=result["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
+    except (KeyError,IndexError,json.JSONDecodeError) as exc:
+        raise RuntimeError(f"Gemini returned an invalid structured response: {result}") from exc
 
 def canonical(s):
     out={}
@@ -97,7 +139,7 @@ def main():
     if not source_chunks and not args.repair_existing:
         print("No supported sources found."); return 0
 
-    report={"schema_version":1,"model":MODEL,"sources":source_meta,
+    report={"schema_version":1,"provider":"Google Gemini API","model":MODEL,"sources":source_meta,
             "repairs":{"quick":0,"questions":0},"unresolved":{"quick":[],"questions":[]}}
     quick=load(QUICK)
     qobj=load(QUESTIONS)
