@@ -15,6 +15,26 @@ MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
+def load_instructions():
+    default={
+        "enabled":True,
+        "default_instruction":"Use only supplied approved source evidence. The micro-topic is the canonical knowledge source; derive Deep Dive, Active Recall and Revision from it without contradiction or unsupported additions.",
+        "user_instruction":"",
+        "target_microtopics":[]
+    }
+    if not INSTRUCTIONS.exists(): return default
+    try:
+        value=load(INSTRUCTIONS)
+        if not isinstance(value,dict): return default
+        return {**default,**value}
+    except Exception:
+        return default
+
+def instruction_text(cfg):
+    base=str(cfg.get("default_instruction") or "").strip()
+    user=str(cfg.get("user_instruction") or "").strip()
+    return base + ("\n\nADMIN ENRICHMENT INSTRUCTION:\n"+user if user else "")
+
 def save(p,o):
     Path(p).parent.mkdir(parents=True,exist_ok=True)
     Path(p).write_text(json.dumps(o,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -153,8 +173,9 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--apply",action="store_true")
     ap.add_argument("--repair-existing",action="store_true")
+    ap.add_argument("--enrich-existing",action="store_true",help="Use the saved admin enrichment instruction for existing source-backed content.")
     args=ap.parse_args()
-    syllabus=load(SYLLABUS); refs=canonical(syllabus)
+    syllabus=load(SYLLABUS); refs=canonical(syllabus); enrichment=load_instructions()
     source_chunks=[]; source_meta=[]
     for p in sorted(INBOX.rglob("*")):
         if p.is_file() and p.suffix.lower() in {".pdf",".docx",".pptx",".txt",".md"}:
@@ -162,7 +183,7 @@ def main():
             rel=str(p.relative_to(ROOT)).replace("\\","/")
             source_meta.append({"path":rel,"sha256":sha(p),"chunks":len(cs),"characters":len(text)})
             source_chunks += [(rel,i,c) for i,c in enumerate(cs)]
-    if not source_chunks and not args.repair_existing:
+    if not source_chunks and not args.repair_existing and not args.enrich_existing:
         print("No supported sources found."); return 0
 
     report={"schema_version":1,"provider":"Google Gemini API","model":MODEL,"sources":source_meta,
@@ -215,6 +236,7 @@ def main():
         report["unresolved"]["quick"]=[cid for cid,c in quick.items() if isinstance(c,dict) and f"{c.get('unit')}-{c.get('topic')}-{c.get('micro')}" not in refs]
 
     generated=[]
+    target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()}
     content_schema={"type":"object","properties":{
         "microtopic_id":{"type":"string"},
         "quick_learn":{"type":"string"},
@@ -228,10 +250,17 @@ def main():
             },
             "required":["type","prompt","answer"],"additionalProperties":False}},
         "exam_takeaway":{"type":"string"},
+        "revision_guidance":{"type":"object","properties":{
+            "recall_before_review":{"type":"string"},
+            "self_check":{"type":"string"},
+            "weak_point_prompt":{"type":"string"},
+            "rating_instruction":{"type":"string"}},
+            "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
         "source_notes":{"type":"string"}},
         "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","source_notes"],
         "additionalProperties":False}
     for ref in list(refs.values()):
+        if target_ids and ref["id"] not in target_ids: continue
         if len(generated)>=MAX_TOPICS: break
         words=set(norm(ref["title"]).split())
         ranked=[]
@@ -240,9 +269,18 @@ def main():
         ranked.sort(reverse=True,key=lambda x:x[0])
         evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
         if not evidence: continue
+        current={}
+        try:
+            micro_current=load(MICRO).get(ref["id"],{})
+            deep_current=load(ROOT/"content/deep-dive/deep_dive.json").get(ref["id"],{})
+            recall_current=load(ROOT/"content/active-recall/active_recall.json").get(ref["id"],{})
+            revision_current=load(REVISION).get(ref["id"],{})
+            current={"microtopic":micro_current,"deep_dive":deep_current,"active_recall":recall_current,"revision":revision_current}
+        except Exception:
+            current={}
         generated.append(call_ai(
-            "Create source-grounded UGC NET Psychology learner content. Use only facts supported by the supplied excerpts; do not silently add general knowledge. Preserve source terminology, named theories/researchers, distinctions and exam-relevant relationships. Write one coherent concept explanation, one genuinely useful detailed explanation, and retrieval prompts that test understanding rather than copying sentences. Return concise content suitable for the canonical learner pools.",
-            {"microtopic":ref,"source_excerpts":evidence},"microtopic_content",content_schema))
+            instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall and Revision must be derived from that same knowledge. Return source-grounded content only and do not invent missing evidence.",
+            {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
     if args.apply:
@@ -253,6 +291,7 @@ def main():
             micro_pool=load(MICRO)
             deep_pool=load(ROOT/"content/deep-dive/deep_dive.json")
             recall_pool=load(ROOT/"content/active-recall/active_recall.json")
+            revision_pool=load(REVISION)
             source_stamp="\n".join(sorted(x["sha256"] for x in source_meta))
             marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
             now=datetime.now(timezone.utc).isoformat()
@@ -283,9 +322,16 @@ def main():
                 prompts=g.get("recall_prompts") or []
                 if prompts: ae["prompts"]=prompts
                 recall_pool[mid]=ae
+                rg=g.get("revision_guidance") or {}
+                rev=revision_pool.get(mid) or {"id":mid,"title":me.get("title","")}
+                rev["id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
+                for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
+                    if rg.get(field): rev[field]=rg[field]
+                revision_pool[mid]=rev
             save(MICRO,micro_pool)
             save(ROOT/"content/deep-dive/deep_dive.json",deep_pool)
             save(ROOT/"content/active-recall/active_recall.json",recall_pool)
+            save(REVISION,revision_pool)
         save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})
