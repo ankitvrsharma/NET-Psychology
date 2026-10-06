@@ -1,0 +1,63 @@
+{
+  "purpose": "Keep the learning interface consistent while allowing each micro-topic's content structure to emerge from the evidence and source material actually available.",
+  "notes_primary": [
+    "Kaplan AP Psychology Prep Plus 2020–2021",
+    "Psychology by Ciccarelli & White (6th ed.)",
+    "Baron & Misra",
+    "Simply Psychology"
+  ],
+  "mcq_primary": [
+    "PowerWithin",
+    "REVISATHON",
+    "Verified UGC NET Psychology PYQs"
+  ],
+  "notes_rule": "Use the four notes sources as a synthesis pool. Do not force all four into every topic; use only relevant supported material.",
+  "mcq_rule": "Use PowerWithin, REVISATHON and verified PYQs for practice. Do not present a practice question as a PYQ unless its provenance is verified.",
+  "ui_rule": "The renderer accepts variable note blocks. Empty or unsupported blocks are omitted rather than replaced with filler.",
+  "retrieval_rule": "Recall and application remain separate from notes so the learner must retrieve rather than repeatedly reread.",
+  "sources": [
+    {
+      "id": "kaplan",
+      "title": "AP Psychology Prep Plus 2020–2021",
+      "publisher": "Kaplan Test Prep",
+      "role": "Primary conceptual notes and enrichment"
+    },
+    {
+      "id": "ciccarelli",
+      "title": "Psychology, 6th edition",
+      "publisher": "Ciccarelli & White",
+      "role": "Primary conceptual notes and textbook grounding"
+    },
+    {
+      "id": "baron-misra",
+      "title": "Psychology",
+      "publisher": "Baron & Misra",
+      "role": "Primary conceptual notes and Indian/contextual grounding"
+    },
+    {
+      "id": "simply-psychology",
+      "title": "Simply Psychology",
+      "publisher": "Simply Psychology",
+      "role": "Primary web-based explanations and accessible examples",
+      "url": "https://www.simplypsychology.org/theories"
+    },
+    {
+      "id": "powerwithin",
+      "title": "PowerWithin Psychology",
+      "publisher": "PowerWithin Education",
+      "role": "Primary MCQ/practice source"
+    },
+    {
+      "id": "revisathon",
+      "title": "REVISATHON — Through Last 5 Years PYQs",
+      "publisher": "REVISATHON",
+      "role": "Primary MCQ/PYQ practice source"
+    },
+    {
+      "id": "ugc-pyq",
+      "title": "Verified UGC NET Psychology PYQs",
+      "publisher": "UGC NET question-paper material",
+      "role": "Primary authentic PYQ source"
+    }
+  ]
+}
