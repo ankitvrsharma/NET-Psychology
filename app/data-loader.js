@@ -7,6 +7,9 @@ async function loadStudyData(){
   const response=await fetch('./data.json?v='+ctx.dataVersion,{cache:'default'});
   if(!response.ok) throw new Error('Study data request failed: '+response.status);
   const json=await response.json();
+  // Publish the core dataset before optional enrichment so data-dependent routes can render immediately.
+  ctx.data=json;
+  ctx.render();
   try{
     const kr=await fetch('./kaplan_enrichment.json?v='+ctx.dataVersion+'',{cache:'default'});
     if(kr.ok){
@@ -38,9 +41,7 @@ async function loadStudyData(){
   for(const u of json.units||[]) for(const t of u.topics||[]) for(const m of t.microtopics||[]){
     m.study_source_config=json.study_source_config||null;
   }
-  ctx.data=json;
-  // Render core UI immediately; optional enrichment must never block a usable page.
-  if(document.body.dataset.page==='home'||document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='start') ctx.render();
+  // Optional enrichment must never block a usable page; the core dataset was rendered above.
   if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
     try{
       const pq=await fetch('./practice_questions.json?v=20261001-pyq1',{cache:'default'});
