@@ -36,6 +36,7 @@ function initDataActions(){
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.4.0-canonical-learning-production';
+const KEY='netPsychProgress';
 let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
