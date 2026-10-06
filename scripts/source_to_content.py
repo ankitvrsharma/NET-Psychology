@@ -9,6 +9,7 @@ INBOX=ROOT/"sources/inbox"
 SYLLABUS=ROOT/"data/syllabus-index.json"
 QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
+REVISION=ROOT/"content/revision/revision_guidance.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
 MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
@@ -289,8 +290,9 @@ def main():
     if generated:
         save(STAGING/"canonical-content.json",generated)
     if args.apply_staged:
-        staged=load(STAGING/"canonical-content.json")
-        if not isinstance(staged,list) or not staged: raise SystemExit("No audited staged content available.")
+        approved_path=STAGING/"canonical-content-approved.json"
+        staged=load(approved_path) if approved_path.exists() else []
+        if not isinstance(staged,list): raise SystemExit("Audited staged content is invalid.")
         generated=staged
         if args.repair_existing:
             repair_plan=load(STAGING/"repair-plan.json")
@@ -318,28 +320,29 @@ def main():
                 mid=g.get("microtopic_id")
                 if mid not in micro_pool: continue
                 me=micro_pool[mid]
-                me["content_notes"]=append_once(me.get("content_notes"),"QUICK LEARN",g["quick_learn"])
-                me["expert_explanation"]=append_once(me.get("expert_explanation"),"SOURCE-GROUNDED EXPLANATION",g["core_explanation"])
-                me["detailed_explanation"]=append_once(me.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
-                me["recall_cue"]=append_once(me.get("recall_cue"),"EXAM TAKEAWAY",g["exam_takeaway"])
-                me["source_notes"]=append_once(me.get("source_notes"),"PROVENANCE",g["source_notes"])
-                me.setdefault("source_pipeline",[]).append({"marker":marker,"model":MODEL,"generated_at":now})
+                # Surgical publication: replace only the canonical fields owned by this
+                # generated package. Preserve IDs, titles, mappings, and unrelated learner data.
+                me["content_notes"]=g["quick_learn"]
+                me["expert_explanation"]=g["core_explanation"]
+                me["detailed_explanation"]=g["detailed_explanation"]
+                me["recall_cue"]=g["exam_takeaway"]
+                me["source_notes"]=g["source_notes"]
+                me["source_pipeline"]=[{"marker":marker,"model":MODEL,"generated_at":now,"publication":"AI_AUDIT_PASS"}]
                 de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
                 de["id"]=mid; de["title"]=me.get("title",de.get("title",""))
-                de["detailed_explanation"]=append_once(de.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
-                de["exam_takeaway"]=g.get("exam_takeaway","") or de.get("exam_takeaway","")
-                de["source_pipeline"]=de.get("source_pipeline",[])+[{"marker":marker,"model":MODEL,"generated_at":now}]
+                de["detailed_explanation"]=g["detailed_explanation"]
+                de["exam_takeaway"]=g["exam_takeaway"]
+                de["source_pipeline"]=[{"marker":marker,"model":MODEL,"generated_at":now,"publication":"AI_AUDIT_PASS"}]
                 deep_pool[mid]=de
                 ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
                 ae["id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
-                prompts=g.get("recall_prompts") or []
-                if prompts: ae["prompts"]=prompts
+                ae["prompts"]=g.get("recall_prompts") or []
                 recall_pool[mid]=ae
                 rg=g.get("revision_guidance") or {}
                 rev=revision_pool.get(mid) or {"id":mid,"title":me.get("title","")}
                 rev["id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
                 for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
-                    if rg.get(field): rev[field]=rg[field]
+                    rev[field]=rg.get(field,"")
                 revision_pool[mid]=rev
             save(MICRO,micro_pool)
             save(ROOT/"content/deep-dive/deep_dive.json",deep_pool)
