@@ -103,6 +103,7 @@ Rules:
 - Remove generic AI filler.
 - Return the complete package, not a patch.
 - Do not change unrelated micro-topics.
+- Preserve only source-supported cross-references; if a relationship is not defensible from the supplied evidence, remove it rather than guessing.
 
 CANONICAL MICRO-TOPIC:
 {json.dumps(ref,ensure_ascii=False)}
@@ -152,19 +153,19 @@ def main():
         evidence=source_evidence(ref)
         history=[]
         # Deterministic cross-reference gate before the model audit.
-            refs_in_package=current.get("cross_references") or []
-            bad_refs=[]
-            seen=set()
-            for x in refs_in_package:
-                rid=str(x.get("id","")).strip() if isinstance(x,dict) else ""
-                if not rid or rid==mid or rid not in refs or rid in seen or not str(x.get("relationship","")).strip() or not str(x.get("reason","")).strip():
-                    bad_refs.append(rid or "<missing>")
-                seen.add(rid)
-            final_audit=None
+        refs_in_package=current.get("cross_references") or []
+        bad_refs=[]
+        seen=set()
+        for x in refs_in_package:
+            rid=str(x.get("id","")).strip() if isinstance(x,dict) else ""
+            if not rid or rid==mid or rid not in refs or rid in seen or not str(x.get("relationship","")).strip() or not str(x.get("reason","")).strip():
+                bad_refs.append(rid or "<missing>")
+            seen.add(rid)
+        final_audit=None
         passed=False
 
         for attempt in range(3):
-            required=["core_explanation","detailed_explanation","recall_prompts","revision_guidance"]
+            required=["core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance"]
             missing=[x for x in required if not current.get(x)]
             if missing:
                 final_audit={"approved":False,"score":0,"critical_failures":["missing generated field(s): "+", ".join(missing)],
