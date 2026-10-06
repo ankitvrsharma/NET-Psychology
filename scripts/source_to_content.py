@@ -278,7 +278,8 @@ def main():
         "practice_mcqs":{"type":"array","items":practice_mcq_schema},
         "revision_guidance":revision_guidance_schema
     },"required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance","practice_mcqs"],
-      "additionalProperties":False}if not args.apply_staged:
+    },"required":["microtopic_id","core_explanation","detailed_explanation","cross_references","recall_prompts","revision_guidance","practice_mcqs"],"additionalProperties":False}
+    if not args.apply_staged:
         for ref in list(refs.values()):
             if target_ids and ref["id"] not in target_ids: continue
             if len(generated)>=MAX_TOPICS: break
