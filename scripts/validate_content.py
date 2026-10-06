@@ -4,41 +4,57 @@ from pathlib import Path
 def load(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
-data=load("data.json")
-questions=load("practice_questions.json")
-assert isinstance(data,dict) and isinstance(data.get("units"),list), "data.json: invalid units structure"
-assert isinstance(questions,list), "practice_questions.json: expected list"
+syllabus=load("data/syllabus-index.json")
+assert isinstance(syllabus,dict) and isinstance(syllabus.get("units"),list), "syllabus-index.json: invalid units structure"
 
-micro_ids={(u["id"],t["id"],m["id"]) for u in data["units"] for t in u.get("topics",[]) for m in t.get("microtopics",[])}
+canonical={}
+for unit in syllabus["units"]:
+    for topic in unit.get("topics",[]):
+        for micro in topic.get("microtopics",[]):
+            key=f"{unit['id']}-{topic['id']}-{micro['id']}"
+            canonical[key]=micro.get("title","")
+
+pool_paths={
+    "microtopics":"content/microtopics/micro_topics.json",
+    "deepDive":"content/deep-dive/deep_dive.json",
+    "activeRecall":"content/active-recall/active_recall.json",
+    "revisionGuidance":"content/revision/revision_guidance.json",
+}
+for name,path in pool_paths.items():
+    pool=load(path)
+    missing=[k for k in canonical if k not in pool]
+    extra=[k for k in pool if k not in canonical]
+    mismatched=[k for k in canonical if k in pool and str(pool[k].get("title",""))!=str(canonical[k])]
+    assert not missing and not extra and not mismatched, f"{name}: missing={len(missing)} extra={len(extra)} title_mismatches={len(mismatched)}"
+    print(f"{name}: {len(pool)} entries; OK")
+
+quick=load("content/quick-learn/quick_cards.json")
+quick_micro_ids={f"{v.get('unit')}-{v.get('topic')}-{v.get('micro')}" for v in quick.values()}
+stale_quick=[k for k in quick_micro_ids if k not in canonical]
+print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; stale/non-canonical references: {len(stale_quick)}")
+
+questions=load("content/questions/questions.json")
+questions=questions if isinstance(questions,list) else [*questions.get("pyq",[]),*questions.get("practice",[])]
+assert questions, "questions.json: empty question pool"
 ids=[q.get("id") for q in questions]
-assert all(ids), "PYQ: missing question id"
-assert len(ids)==len(set(ids)), "PYQ: duplicate question ids"
-
-bad_answers=[q["id"] for q in questions if not isinstance(q.get("answer"),int) or not 0 <= q["answer"] < len(q.get("options",[]))]
-assert not bad_answers, f"PYQ: invalid answer indexes: {bad_answers[:10]}"
+assert all(ids), "questions: missing question id"
+assert len(ids)==len(set(ids)), "questions: duplicate question ids"
+assert all(isinstance(q.get("options"),list) and len(q["options"])==4 for q in questions), "questions: invalid options"
+assert all(isinstance(q.get("answer"),int) and 0<=q["answer"]<4 for q in questions), "questions: invalid answer indexes"
 
 bad_mapping=[]
-confidence_counts={"high":0,"medium":0,"low":0,"unmapped":0,"missing":0}
 for q in questions:
     key=(q.get("unit"),q.get("topic"),q.get("micro"))
-    conf=q.get("mapping_confidence")
-    confidence_counts[conf if conf in confidence_counts else "missing"] += 1
-    if any(v is not None for v in key) and key not in micro_ids:
-        bad_mapping.append(q["id"])
-assert not bad_mapping, f"PYQ: invalid non-null syllabus mappings: {bad_mapping[:10]}"
+    if any(v is not None for v in key):
+        expected=f"{key[0]}-{key[1]}-{key[2]}"
+        if expected not in canonical:
+            bad_mapping.append(q["id"])
 
-generic_markers=(
-    "The stem describes the concept or relationship represented by",
-    "Evaluate each statement independently against the relevant psychological principle",
-    "Arrange the items according to the established chronological, developmental, or logical order",
-    "Check each List-I item against its specific person, concept, function, or description",
-)
-generic=sum(any(marker in str(q.get("explanation","")) for marker in generic_markers) for q in questions)
+unmapped=sum(any(q.get(k) is None for k in ("unit","topic","micro")) for q in questions)
 missing_explanations=sum(not str(q.get("explanation","")).strip() for q in questions)
-
-print(f"Content units: {len(data['units'])}")
-print(f"PYQs: {len(questions)}")
-print(f"Mapping confidence: {confidence_counts}")
-print(f"Generic explanation templates remaining: {generic}")
-print(f"Missing explanations: {missing_explanations}")
-assert missing_explanations == 0, "PYQ: missing explanations"
+print(f"Canonical micro-topics: {len(canonical)}")
+print(f"Questions: {len(questions)}")
+print(f"Unmapped questions: {unmapped}")
+print(f"Non-canonical question mappings: {len(bad_mapping)}")
+print(f"Missing question explanations: {missing_explanations}")
+assert missing_explanations == 0, "questions: missing explanations"

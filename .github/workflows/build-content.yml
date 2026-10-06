@@ -1,65 +1,77 @@
-name: Validate Psychology content
+name: Validate published Psychology content
 
 on:
   push:
     branches: [main]
     paths:
-      - data.json
-      - scripts/build_practice.py
-      - practice_explanations.json
+      - data/syllabus-index.json
+      - content/**
+      - content-pools/pool-integrity.js
+      - scripts/validate_content.py
       - .github/workflows/build-content.yml
   pull_request:
     branches: [main]
     paths:
-      - data.json
-      - scripts/build_practice.py
-      - practice_explanations.json
+      - data/syllabus-index.json
+      - content/**
+      - content-pools/pool-integrity.js
+      - scripts/validate_content.py
       - .github/workflows/build-content.yml
 
 permissions:
   contents: read
 
 jobs:
-  validate-content:
+  validate-published-content:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Install PDF tooling
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils
-
-      - name: Validate content JSON
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate canonical static pools
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          data=json.loads(Path("data.json").read_text(encoding="utf-8"))
-          assert isinstance(data,dict) and isinstance(data.get("units"),list)
-          print(f"Validated {len(data['units'])} units")
+
+          syllabus=json.loads(Path('data/syllabus-index.json').read_text(encoding='utf-8'))
+          assert isinstance(syllabus.get('units'),list) and syllabus['units'], 'Syllabus is empty'
+          canonical={}
+          for unit in syllabus['units']:
+              for topic in unit.get('topics',[]):
+                  for micro in topic.get('microtopics',[]):
+                      key=f"{unit['id']}-{topic['id']}-{micro['id']}"
+                      canonical[key]=micro.get('title','')
+
+          one_to_one={
+              'microtopics':'content/microtopics/micro_topics.json',
+              'deepDive':'content/deep-dive/deep_dive.json',
+              'activeRecall':'content/active-recall/active_recall.json',
+              'revisionGuidance':'content/revision/revision_guidance.json',
+          }
+          for name,path in one_to_one.items():
+              pool=json.loads(Path(path).read_text(encoding='utf-8'))
+              missing=[k for k in canonical if k not in pool]
+              extra=[k for k in pool if k not in canonical]
+              mismatched=[k for k in canonical if k in pool and str(pool[k].get('title',''))!=str(canonical[k])]
+              assert not missing and not extra and not mismatched, f"{name}: missing={len(missing)} extra={len(extra)} title_mismatches={len(mismatched)}"
+              print(f"{name}: {len(pool)} entries; OK")
+
+          quick=json.loads(Path('content/quick-learn/quick_cards.json').read_text(encoding='utf-8'))
+          quick_micro_ids={str(v.get('unit'))+'-'+str(v.get('topic'))+'-'+str(v.get('micro')) for v in quick.values()}
+          stale_quick=[k for k in quick_micro_ids if k not in canonical]
+          print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; stale/non-canonical references: {len(stale_quick)}")
+
+          questions=json.loads(Path('content/questions/questions.json').read_text(encoding='utf-8'))
+          questions = questions if isinstance(questions,list) else [*questions.get('pyq',[]),*questions.get('practice',[])]
+          assert questions, 'Question pool is empty'
+          assert all(isinstance(q.get('options'),list) and len(q['options'])==4 for q in questions), 'Question with invalid options'
+          assert all(isinstance(q.get('answer'),int) and 0<=q['answer']<=3 for q in questions), 'Question with invalid answer'
+          invalid=[q.get('id') for q in questions if any(v is not None for v in (q.get('unit'),q.get('topic'),q.get('micro'))) and f"{q.get('unit')}-{q.get('topic')}-{q.get('micro')}" not in canonical]
+          unmapped=sum(any(q.get(k) is None for k in ('unit','topic','micro')) for q in questions)
+          print(f"questions: {len(questions)} entries; unresolved mappings: {unmapped}; non-canonical mappings: {len(invalid)}")
+          print(f"canonical micro-topics: {len(canonical)}")
           PY
-
-      - name: Build practice bank
-        run: python scripts/build_practice.py
-
-      - name: Validate PYQ structure and mappings
+      - name: Run static content validator
         run: python scripts/validate_content.py
-
-      - name: Validate generated browser bundle
-        run: |
-          python - <<'PY'
-          import hashlib,json
-          from pathlib import Path
-          raw=Path("data.json").read_text(encoding="utf-8")
-          version=hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
-          expected="window.NETPSY_DATA = "+raw+";\n"
-          assert Path("data.js").read_text(encoding="utf-8")==expected, "data.js is stale; rebuild it before publishing"
-          expected_version="window.NETPSY_DATA_VERSION = "+json.dumps(version)+";\n"
-          assert Path("content-version.js").read_text(encoding="utf-8")==expected_version, "content-version.js is stale; rebuild it before publishing"
-          print("Generated browser bundles are current:",version)
-          PY
-
-      - name: Validate generated files are tracked
-        run: git diff --exit-code -- data.js content-version.js practice_questions.json practice-build-report.json

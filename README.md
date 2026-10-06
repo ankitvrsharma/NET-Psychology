@@ -6,7 +6,7 @@
 
 This is a focused study space for **UGC NET Psychology** learners.
 
-It is built around the complete **10-unit, 114-topic, 440-micro-topic** syllabus structure so that you can study Psychology in small, manageable learning units rather than trying to revise everything at once.
+It is built around the current **10-unit, 118-topic, 549-micro-topic** syllabus structure so that you can study Psychology in small, manageable learning units rather than trying to revise everything at once.
 
 The goal is simple:
 
@@ -107,9 +107,9 @@ You can rate your retrieval:
 | Rating | What it means |
 |---|---|
 | **Again** | I could not recall it successfully. |
-| **Hard** | I recalld it, but it required substantial effort. |
-| **Good** | I recalld it successfully with normal effort. |
-| **Easy** | I recalld it easily. |
+| **Hard** | I recalled it, but it required substantial effort. |
+| **Good** | I recalled it successfully with normal effort. |
+| **Easy** | I recalled it easily. |
 
 Your next revision is then scheduled from your performance.
 
@@ -138,7 +138,7 @@ So a completed micro-topic is not automatically a mastered micro-topic.
 
 ## What you can study
 
-The website follows the retained 10-unit UGC NET Psychology structure:
+The website follows the current 10-unit UGC NET Psychology structure:
 
 1. **Emergence of Psychology**
 2. **Research Methodology and Statistics**
@@ -151,7 +151,7 @@ The website follows the retained 10-unit UGC NET Psychology structure:
 9. **Human Development and Interventions**
 10. **Emerging Areas**
 
-Each unit is divided into topics and then into the original **440 micro-topics**.
+Each unit is divided into topics and then into the current **549 micro-topics**.
 
 ---
 
