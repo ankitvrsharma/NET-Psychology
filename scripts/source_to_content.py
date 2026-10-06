@@ -174,6 +174,7 @@ def main():
     ap.add_argument("--apply",action="store_true")
     ap.add_argument("--repair-existing",action="store_true")
     ap.add_argument("--enrich-existing",action="store_true",help="Use the saved admin enrichment instruction for existing source-backed content.")
+    ap.add_argument("--apply-staged",action="store_true",help="Publish the already audited content-staging/canonical-content.json.")
     args=ap.parse_args()
     syllabus=load(SYLLABUS); refs=canonical(syllabus); enrichment=load_instructions()
     source_chunks=[]; source_meta=[]
@@ -183,7 +184,7 @@ def main():
             rel=str(p.relative_to(ROOT)).replace("\\","/")
             source_meta.append({"path":rel,"sha256":sha(p),"chunks":len(cs),"characters":len(text)})
             source_chunks += [(rel,i,c) for i,c in enumerate(cs)]
-    if not source_chunks and not args.repair_existing and not args.enrich_existing:
+    if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.apply_staged:
         print("No supported sources found."); return 0
 
     report={"schema_version":1,"provider":"Google Gemini API","model":MODEL,"sources":source_meta,
@@ -284,7 +285,11 @@ def main():
             {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
     if generated:
         save(STAGING/"canonical-content.json",generated)
-    if args.apply:
+    if args.apply_staged:
+        staged=load(STAGING/"canonical-content.json")
+        if not isinstance(staged,list) or not staged: raise SystemExit("No audited staged content available.")
+        generated=staged
+    if args.apply or args.apply_staged:
         if args.repair_existing:
             save(QUESTIONS,qobj if isinstance(qobj,dict) else questions)
             save(QUICK,quick)
