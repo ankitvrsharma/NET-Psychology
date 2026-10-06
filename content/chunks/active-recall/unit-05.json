@@ -1,0 +1,2242 @@
+{
+  "5-1-1": {
+    "id": "5-1-1",
+    "title": "Forms of attention",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Forms of attention? State its meaning and central idea in your own words.",
+        "answer": "selective, sustained, divided and alternating forms of attention"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Forms of attention? State the difference and why it matters.",
+        "answer": "Dividing attention often reduces performance on demanding tasks."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Forms of attention to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Forms of attention”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "5-1-2": {
+    "id": "5-1-2",
+    "title": "Models of attention",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Models of attention? State its meaning and central idea in your own words.",
+        "answer": "Attention is selective: people cannot process all incoming information equally, so attention prioritizes some inputs. The uploaded sources describe selective attention and models in which selection can occur at different stages of processing. Personally relevant information can sometimes attract attention even when it is not the current focus."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Models of attention can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Selective attention allocates limited processing resources."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Models of attention can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Early and late selection models differ in where selection is proposed to occur."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Models of attention to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Models of attention” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-2-1": {
+    "id": "5-2-1",
+    "title": "Perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Perception? State its meaning and central idea in your own words.",
+        "answer": "Perception is the active process of organizing sensory input and giving it meaning. The uploaded PowerWithin material distinguishes perception from sensation and emphasizes perceptual sets, schemas, bottom-up processing and top-down processing. Ciccarelli & White likewise describes perception as the meaningful organization and interpretation of sensation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception organizes sensory information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perceptual sets can bias how stimuli are interpreted."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-3-1": {
+    "id": "5-3-1",
+    "title": "Gestalt approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Gestalt approach? State its meaning and central idea in your own words.",
+        "answer": "The Gestalt approach emphasizes that perceptual experience is organized into meaningful wholes rather than being a simple sum of isolated sensory elements. The source highlights figure–ground organization and laws such as similarity, proximity, closure and continuity, with the principle of Prägnanz describing the tendency toward organized forms."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Gestalt approach can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception tends to form organized wholes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Gestalt approach can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Figure–ground segregation is a basic organizing process."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Gestalt approach to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Gestalt approach” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-3-2": {
+    "id": "5-3-2",
+    "title": "Physiological approach",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Physiological approach? State its meaning and central idea in your own words.",
+        "answer": "The physiological approach explains perception through the sensory and neural mechanisms that receive, transmit and process stimulation. The uploaded NET material contrasts physiological and Gestalt approaches, while the broader Unit 4 material supplies the biological basis involving receptors and neural processing."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Physiological approach can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "It emphasizes sensory receptors and neural mechanisms."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Physiological approach can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Physical stimulation is transformed into neural information."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Physiological approach to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Physiological approach” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-4-1": {
+    "id": "5-4-1",
+    "title": "Gestalt organization",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Gestalt organization? State its meaning and central idea in your own words.",
+        "answer": "Gestalt organization explains how sensory elements are grouped into coherent patterns. The source identifies figure–ground organization and laws of similarity, proximity, closure and continuity. These principles help explain why people perceive structured wholes even when sensory input is incomplete or ambiguous."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Gestalt organization can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Grouping converts separate elements into organized patterns."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Gestalt organization can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Figure and ground are differentiated within the perceptual field."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Gestalt organization to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Gestalt organization” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-4-2": {
+    "id": "5-4-2",
+    "title": "Figure and ground",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Figure and ground? State its meaning and central idea in your own words.",
+        "answer": "Figure–ground organization is the tendency to separate a perceptual field into a focal figure and a background. Baron & Misra describe the figure as having a definite shape/location while the ground lacks a definite shape or location. Ambiguous figures can alternate between possible figure–ground organizations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Figure and ground can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Figure is the focal, structured element."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Figure and ground can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Ground provides the background against which the figure is perceived."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Figure and ground to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Figure and ground” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-4-3": {
+    "id": "5-4-3",
+    "title": "Laws of organization",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Laws of organization? State its meaning and central idea in your own words.",
+        "answer": "The source identifies Gestalt laws of perceptual organization that guide grouping of sensory elements. Similarity groups alike elements, proximity groups nearby elements, closure fills gaps in incomplete forms, and continuity links elements into coherent patterns."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Laws of organization can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Similarity → similar elements are grouped."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Laws of organization can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Proximity → nearby elements are grouped."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Laws of organization to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Laws of organization” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-1": {
+    "id": "5-5-1",
+    "title": "Size constancy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Size constancy? State its meaning and central idea in your own words.",
+        "answer": "Size constancy is the tendency to perceive an object's physical size as relatively stable even though the retinal image changes with distance. Baron & Misra explain that the perceived size remains relatively constant as an object's distance changes, despite large changes in retinal image size."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Size constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Retinal image size changes with distance."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Size constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perceived physical size remains relatively stable."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Size constancy to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Size constancy” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-2": {
+    "id": "5-5-2",
+    "title": "Shape constancy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Shape constancy? State its meaning and central idea in your own words.",
+        "answer": "Shape constancy is the tendency to perceive an object as having a stable shape even when the retinal image changes because of viewing angle. Baron & Misra use the example of recognizing a coin as round even when its retinal image changes as it rotates."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Shape constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Viewing angle changes the retinal image."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Shape constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The perceived object's shape remains relatively stable."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Shape constancy to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Shape constancy” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-3": {
+    "id": "5-5-3",
+    "title": "Color constancy",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Color constancy? State its meaning and central idea in your own words.",
+        "answer": "Color or brightness constancy refers to maintaining a relatively stable perception of an object's surface properties despite changes in illumination. The uploaded PowerWithin material explains brightness constancy in relation to the ratio between an object and its surroundings."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Color constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Illumination can change the physical light reaching the eyes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Color constancy can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception can remain relatively stable across lighting conditions."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Color constancy to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Color constancy” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-4": {
+    "id": "5-5-4",
+    "title": "Illusions",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Illusions? State its meaning and central idea in your own words.",
+        "answer": "systematic misperceptions in which an external stimulus is present but interpreted differently"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Illusions can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "context effects"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Illusions can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "organization"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Illusions? State the difference and why it matters.",
+        "answer": "Illusion differs from hallucination because a stimulus is present."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Illusions to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Illusions”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "5-5-5": {
+    "id": "5-5-5",
+    "title": "Perception of form",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Perception of form? State its meaning and central idea in your own words.",
+        "answer": "Perception of form involves organizing visual information into recognizable objects and patterns. The uploaded sources link form perception with Gestalt organization, figure–ground relations, pattern recognition and top-down/bottom-up processing."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of form can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Form perception organizes features into objects or patterns."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of form can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Gestalt grouping contributes to coherent form."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Perception of form to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Perception of form” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-6": {
+    "id": "5-5-6",
+    "title": "Perception of depth",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Perception of depth? State its meaning and central idea in your own words.",
+        "answer": "Depth perception is the ability to perceive the world in three dimensions. The uploaded PowerWithin material distinguishes monocular depth cues, which require one eye, from binocular cues, which depend on information from both eyes."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of depth can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Depth perception converts two-dimensional retinal information into three-dimensional experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of depth can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Monocular cues can operate with one eye."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Perception of depth to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Perception of depth” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-5-7": {
+    "id": "5-5-7",
+    "title": "Perception of movement",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Perception of movement? State its meaning and central idea in your own words.",
+        "answer": "Perception of movement is the experience of objects or the environment changing position over time. The uploaded material includes movement perception within visual perception, and the PYQ material specifically identifies the phi phenomenon as an illusion of movement."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of movement can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Movement perception depends on changing visual information over time."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perception of movement can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Apparent movement can occur without a physically moving object."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Perception of movement to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Perception of movement” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-6-1": {
+    "id": "5-6-1",
+    "title": "Motivation in perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Motivation in perception? State its meaning and central idea in your own words.",
+        "answer": "Motivation can influence perceptual interpretation by shaping perceptual sets and readiness to notice or interpret stimuli in particular ways. The uploaded NET material explicitly includes the role of motivation in perception."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Motivation in perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception is not completely independent of current needs and goals."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Motivation in perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Motivational states can contribute to perceptual set."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Motivation in perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Motivation in perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-6-2": {
+    "id": "5-6-2",
+    "title": "Learning in perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Learning in perception? State its meaning and central idea in your own words.",
+        "answer": "Learning can influence perception by changing how sensory patterns are recognized and interpreted. The uploaded material includes learning as a factor in perception and connects perception with schemas, experience and pattern recognition."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Learning in perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Experience can improve recognition of familiar patterns."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Learning in perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Learned associations influence interpretation."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Learning in perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Learning in perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-7-1": {
+    "id": "5-7-1",
+    "title": "Assumptions of signal detection theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Assumptions of signal detection theory? State its meaning and central idea in your own words.",
+        "answer": "framework separating sensitivity to signals from decision criterion under uncertainty"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Assumptions of signal detection theory? State the difference and why it matters.",
+        "answer": "A liberal criterion can raise both hits and false alarms."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Assumptions of signal detection theory to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Assumptions of signal detection theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "5-7-2": {
+    "id": "5-7-2",
+    "title": "Applications of signal detection theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Applications of signal detection theory? State its meaning and central idea in your own words.",
+        "answer": "framework separating sensitivity to signals from decision criterion under uncertainty"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What distinction or caution must you keep clear for Applications of signal detection theory? State the difference and why it matters.",
+        "answer": "A liberal criterion can raise both hits and false alarms."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Applications of signal detection theory to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based check: Given a new question about “Applications of signal detection theory”, identify the exact concept, theorist/model or distinction being tested and justify the answer using only the terminology and relationships established in the study material."
+      }
+    ]
+  },
+  "5-8-1": {
+    "id": "5-8-1",
+    "title": "Subliminal perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Subliminal perception? State its meaning and central idea in your own words.",
+        "answer": "Subliminal perception concerns processing of stimulation below the level at which a person reports conscious awareness. The uploaded PYQ material distinguishes subliminal perception from signal detection, while Baron & Misra place it within the broader study of active perceptual processing."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Subliminal perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Subliminal refers to stimulation below reported conscious awareness."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Subliminal perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "It is different from ordinary conscious perception."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Subliminal perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Subliminal perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-8-2": {
+    "id": "5-8-2",
+    "title": "Factors related to subliminal perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Factors related to subliminal perception? State its meaning and central idea in your own words.",
+        "answer": "The uploaded material places subliminal perception within a broader framework in which perception depends on attention, expectations, perceptual sets and processing conditions. The source coverage is outline-level for a separate list of factors, so the note retains only these supported influences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Factors related to subliminal perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Attention affects what information is processed."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Factors related to subliminal perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perceptual set and expectations influence interpretation."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Factors related to subliminal perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Factors related to subliminal perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-8-3": {
+    "id": "5-8-3",
+    "title": "Information processing approach to perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Information processing approach to perception? State its meaning and central idea in your own words.",
+        "answer": "The information-processing approach describes perception as a sequence of processing operations through which sensory information is selected, organized and interpreted. The uploaded PowerWithin material contrasts bottom-up processing, which builds from stimulus elements, with top-down processing, which uses knowledge, concepts and expectations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Information processing approach to perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception involves active processing of information."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Information processing approach to perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Bottom-up processing begins with stimulus features."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Information processing approach to perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Information processing approach to perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-8-4": {
+    "id": "5-8-4",
+    "title": "Culture and perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Culture and perception? State its meaning and central idea in your own words.",
+        "answer": "Culture can influence perceptual interpretation and the strategies people use to organize visual information. Ciccarelli & White provide cross-cultural examples showing that experience with a cultural environment can affect how people interpret two- and three-dimensional representations."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Culture and perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perception has a subjective and experience-sensitive component."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Culture and perception can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Cultural experience can shape perceptual expectations."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Culture and perception to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Culture and perception” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-8-5": {
+    "id": "5-8-5",
+    "title": "Perceptual styles",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, what is Perceptual styles? State its meaning and central idea in your own words.",
+        "answer": "Perceptual styles refer to relatively characteristic ways of organizing or interpreting perceptual information. The uploaded NET material lists perceptual styles as an advanced perception topic but gives limited standalone detail in the supplied extract."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perceptual styles can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "The topic concerns individual differences in perceptual organization or interpretation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What key idea about Perceptual styles can you recall that explains or qualifies the concept? Give the point in your own words.",
+        "answer": "Perceptual style can interact with experience and context."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "How would you use Perceptual styles to explain the situation or problem described in your study material? State the psychological reasoning, not just the label.",
+        "answer": "Source-based application: Identify the perception/learning principle represented by “Perceptual styles” in a new question and justify the answer with the source-supported mechanism."
+      }
+    ]
+  },
+  "5-8-6": {
+    "id": "5-8-6",
+    "title": "Pattern recognition",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Pattern recognition. What is the central idea?",
+        "answer": "Pattern recognition is the process of identifying meaningful forms or objects from sensory input. Baron & Misra contrast bottom-up approaches, which build patterns from lower-level features such as edges and lines, with top-down approaches that use expectations and knowledge."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Pattern recognition.",
+        "answer": "Bottom-up recognition combines simpler stimulus features."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Pattern recognition.",
+        "answer": "Top-down recognition uses prior knowledge and expectations."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Pattern recognition?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Pattern recognition indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-8-7": {
+    "id": "5-8-7",
+    "title": "Ecological perspective on perception",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Ecological perspective on perception. What is the central idea?",
+        "answer": "The ecological perspective emphasizes perception as an adaptive process occurring in an organism's real environment. The uploaded NET material lists the ecological perspective as an advanced perception approach, but provides limited standalone detail in the supplied extract."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ecological perspective on perception.",
+        "answer": "Perception is considered in relation to the organism's environment."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Ecological perspective on perception.",
+        "answer": "The approach emphasizes useful information available in real-world settings."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Ecological perspective on perception?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Ecological perspective on perception indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-9-1": {
+    "id": "5-9-1",
+    "title": "Learning process",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Learning process. What is the central idea?",
+        "answer": "Learning is described in the uploaded Kaplan material as a relatively permanent change in behavior or behavioral potential resulting from experience. The NET syllabus then organizes learning through Thorndike, Guthrie, Hull, classical conditioning, instrumental learning and later cognitive approaches."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Learning process.",
+        "answer": "Learning is linked to experience."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Learning process.",
+        "answer": "It produces relatively lasting change rather than a temporary state."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Learning process?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Learning process indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-9-2": {
+    "id": "5-9-2",
+    "title": "Thorndike's learning theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Thorndike's learning theory in 2–3 sentences.",
+        "answer": "Thorndike's learning theory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Thorndike's learning theory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Thorndike's learning theory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Thorndike's learning theory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Thorndike's learning theory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Thorndike's learning theory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-9-3": {
+    "id": "5-9-3",
+    "title": "Guthrie's learning theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Guthrie's learning theory in 2–3 sentences.",
+        "answer": "Guthrie's learning theory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Guthrie's learning theory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Guthrie's learning theory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Guthrie's learning theory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Guthrie's learning theory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Guthrie's learning theory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-9-4": {
+    "id": "5-9-4",
+    "title": "Hull's learning theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hull's learning theory in 2–3 sentences.",
+        "answer": "Hull's learning theory is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Hull's learning theory?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Hull's learning theory?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Hull's learning theory?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Hull's learning theory?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hull's learning theory indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-10-1": {
+    "id": "5-10-1",
+    "title": "Classical conditioning procedure",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Classical conditioning procedure. What is the central idea?",
+        "answer": "learning by pairing a neutral/conditioned stimulus with an unconditioned stimulus"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classical conditioning procedure.",
+        "answer": "UCS/UCR"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classical conditioning procedure.",
+        "answer": "CS/CR"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Classical conditioning procedure?",
+        "answer": "CS is learned; UCS naturally elicits the response."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Classical conditioning procedure?",
+        "answer": "Kaplan defines classical conditioning as learning an association between stimuli: a previously neutral cue becomes capable of eliciting a response after pairing with an unconditioned stimulus. Its exam method is to identify UCS, UCR, CS and CR from the sequence. Simply Psychology presents the before–during–after sequence and stresses that the conditioned stimulus becomes a predictive cue for the unconditioned stimulus."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Classical conditioning procedure indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-10-2": {
+    "id": "5-10-2",
+    "title": "Classical conditioning phenomena",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Classical conditioning phenomena. What is the central idea?",
+        "answer": "acquisition, extinction, spontaneous recovery, generalization and discrimination"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classical conditioning phenomena.",
+        "answer": "acquisition"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Classical conditioning phenomena.",
+        "answer": "extinction"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Classical conditioning phenomena?",
+        "answer": "Extinction does not necessarily erase all learning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Classical conditioning phenomena?",
+        "answer": "Kaplan treats acquisition, generalisation, discrimination, extinction, spontaneous recovery and higher-order conditioning as core classical-conditioning phenomena. Its practice questions ask which phenomenon best explains a change in the learned response. Simply Psychology adds a useful mechanism distinction: extinction weakens the conditioned response when the predictive relationship is broken, while spontaneous recovery shows extinction does not simply erase original learning."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Classical conditioning phenomena indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-10-3": {
+    "id": "5-10-3",
+    "title": "Related issues in classical conditioning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Related issues in classical conditioning. What is the central idea?",
+        "answer": "Related issues in classical conditioning include processes such as acquisition, extinction, stimulus generalization and discrimination, and spontaneous recovery. These phenomena concern how conditioned responses are established, weakened, generalized or recovered over time."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Related issues in classical conditioning.",
+        "answer": "Acquisition is the development of a conditioned response."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Related issues in classical conditioning.",
+        "answer": "Extinction follows when the conditioned stimulus is no longer paired with the unconditioned stimulus."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Related issues in classical conditioning?",
+        "answer": "Kaplan extends classical conditioning beyond the basic Pavlovian sequence to expectancy, biological preparedness and taste aversion. These examples are useful for questions asking when conditioning is not a simple equal-pairing process. Simply Psychology discusses predictive value, blocking and biological preparedness as qualifications to a purely mechanical pairing account. Use these after the basic CS/UCS sequence is secure."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Related issues in classical conditioning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-10-4": {
+    "id": "5-10-4",
+    "title": "Acquisition",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Acquisition in 2–3 sentences.",
+        "answer": "Acquisition is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Acquisition?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Acquisition?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Acquisition?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Acquisition?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Acquisition indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-10-5": {
+    "id": "5-10-5",
+    "title": "Extinction and spontaneous recovery",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Extinction and spontaneous recovery in 2–3 sentences.",
+        "answer": "Extinction and spontaneous recovery is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Extinction and spontaneous recovery?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Extinction and spontaneous recovery?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Extinction and spontaneous recovery?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Extinction and spontaneous recovery?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Extinction and spontaneous recovery indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-10-6": {
+    "id": "5-10-6",
+    "title": "Generalization and discrimination",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Generalization and discrimination in 2–3 sentences.",
+        "answer": "Discrimination involves differential treatment or outcomes based on social-category membership and can affect opportunity, stress, identity and wellbeing."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Generalization and discrimination?",
+        "answer": "unequal treatment"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Generalization and discrimination?",
+        "answer": "social categories"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Generalization and discrimination?",
+        "answer": "Distinguish discrimination from prejudice and stereotyping."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Generalization and discrimination?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Generalization and discrimination indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-10-7": {
+    "id": "5-10-7",
+    "title": "Higher-order conditioning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Higher-order conditioning in 2–3 sentences.",
+        "answer": "Higher-order conditioning is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Higher-order conditioning?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Higher-order conditioning?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Higher-order conditioning?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Higher-order conditioning?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Higher-order conditioning indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-10-8": {
+    "id": "5-10-8",
+    "title": "Conditioning procedures",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Conditioning procedures in 2–3 sentences.",
+        "answer": "Conditioning procedures is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Conditioning procedures?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Conditioning procedures?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Conditioning procedures?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Conditioning procedures?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Conditioning procedures indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-11-1": {
+    "id": "5-11-1",
+    "title": "Instrumental learning phenomena",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Instrumental learning phenomena. What is the central idea?",
+        "answer": "Instrumental/operant learning concerns behavior that is changed by its consequences. The uploaded Self-Teaching Guide describes extinction when reinforcement is withheld and the partial-reinforcement effect, in which behavior learned under intermittent reinforcement is more resistant to extinction."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instrumental learning phenomena.",
+        "answer": "Consequences influence future response frequency."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instrumental learning phenomena.",
+        "answer": "Extinction involves a decline when reinforcement is withheld."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Instrumental learning phenomena?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Instrumental learning phenomena indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-11-2": {
+    "id": "5-11-2",
+    "title": "Instrumental learning paradigms",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Instrumental learning paradigms. What is the central idea?",
+        "answer": "Instrumental learning paradigms study how responses are acquired and maintained through consequences. The uploaded sources cover reinforcement, punishment, shaping, discrimination and schedules of reinforcement as central operant procedures."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instrumental learning paradigms.",
+        "answer": "Reinforcement strengthens behavior."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Instrumental learning paradigms.",
+        "answer": "Shaping reinforces successive approximations to a target response."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Instrumental learning paradigms?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Instrumental learning paradigms indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-11-3": {
+    "id": "5-11-3",
+    "title": "Theoretical issues in instrumental learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Theoretical issues in instrumental learning. What is the central idea?",
+        "answer": "Theoretical issues in instrumental learning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Theoretical issues in instrumental learning.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Theoretical issues in instrumental learning.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Theoretical issues in instrumental learning?",
+        "answer": "Reinforcement is defined by its effect on behavior, not by whether a consequence is pleasant."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Theoretical issues in instrumental learning?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Theoretical issues in instrumental learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-11-4": {
+    "id": "5-11-4",
+    "title": "Law of Effect",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Law of Effect in 2–3 sentences.",
+        "answer": "Law of Effect is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Law of Effect?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Law of Effect?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Law of Effect?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Law of Effect?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Law of Effect indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-11-5": {
+    "id": "5-11-5",
+    "title": "Operant conditioning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Operant conditioning in 2–3 sentences.",
+        "answer": "Operant conditioning is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Operant conditioning?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Operant conditioning?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Operant conditioning?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Operant conditioning?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Operant conditioning indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-12-1": {
+    "id": "5-12-1",
+    "title": "Basic reinforcement variables",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Basic reinforcement variables. What is the central idea?",
+        "answer": "characteristics that can take different values and structure research designs"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Basic reinforcement variables.",
+        "answer": "independent"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Basic reinforcement variables.",
+        "answer": "dependent"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Basic reinforcement variables?",
+        "answer": "Confounding is an uncontrolled alternative explanation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Basic reinforcement variables?",
+        "answer": "Kaplan distinguishes reinforcement from punishment by their effect on behaviour: reinforcement increases behaviour and punishment decreases it. It also stresses the importance of clear and timely consequences. Simply Psychology provides a complementary explanation of consequence-based operant conditioning. Keep the NET distinction precise: reinforcement strengthens behaviour; punishment is intended to reduce it."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Basic reinforcement variables indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-12-2": {
+    "id": "5-12-2",
+    "title": "Reinforcement schedules",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Reinforcement schedules. What is the central idea?",
+        "answer": "fixed/variable and ratio/interval schedules that determine when reinforcement occurs"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reinforcement schedules.",
+        "answer": "FR"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Reinforcement schedules.",
+        "answer": "FI"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Reinforcement schedules?",
+        "answer": "Variable ratio and variable interval are commonly confused."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Reinforcement schedules?",
+        "answer": "Kaplan explicitly practises fixed-ratio, variable-ratio, fixed-interval and variable-interval schedules. Identify whether the requirement depends on number of responses or passage of time, and whether it is predictable or variable. Simply Psychology provides a complementary explanation of reinforcement schedules and the relationship between behaviour and consequences."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Reinforcement schedules indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-13-1": {
+    "id": "5-13-1",
+    "title": "Behavior modification",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Behavior modification. What is the central idea?",
+        "answer": "Behavior modification"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavior modification.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Behavior modification.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Behavior modification?",
+        "answer": "It is a learning-based intervention, not simply advice or punishment."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Behavior modification?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Behavior modification indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-13-2": {
+    "id": "5-13-2",
+    "title": "Applications of behavior modification",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Applications of behavior modification. What is the central idea?",
+        "answer": "Applications of behavior modification"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of behavior modification.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Applications of behavior modification.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Applications of behavior modification?",
+        "answer": "Map each application to its learning principle."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Applications of behavior modification?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Applications of behavior modification indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-14-1": {
+    "id": "5-14-1",
+    "title": "Latent learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Latent learning. What is the central idea?",
+        "answer": "Latent learning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Latent learning.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Latent learning.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Latent learning?",
+        "answer": "Latent learning is delayed expression of acquired knowledge, not absence of learning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Latent learning?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Latent learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-14-2": {
+    "id": "5-14-2",
+    "title": "Observational learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Observational learning. What is the central idea?",
+        "answer": "learning through models involving attention, retention, reproduction and motivation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Observational learning.",
+        "answer": "Bandura"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Observational learning.",
+        "answer": "modeling"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Observational learning?",
+        "answer": "Observation is not merely imitation; cognition and motivation matter."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Observational learning?",
+        "answer": "Kaplan treats observational or social learning as learning through watching models and consequences. Bandura's Bobo-doll work is a key example, and the learner may reproduce or avoid behaviour depending on what was observed. Simply Psychology's learning-approach notes place social learning alongside classical and operant learning and emphasise imitation, identification, vicarious reinforcement and mediational processes."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Observational learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-14-3": {
+    "id": "5-14-3",
+    "title": "Stages of observational learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Stages of observational learning in 2–3 sentences.",
+        "answer": "Stages of observational learning is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Stages of observational learning?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Stages of observational learning?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Stages of observational learning?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Stages of observational learning?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Stages of observational learning indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-15-1": {
+    "id": "5-15-1",
+    "title": "Verbal learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Verbal learning. What is the central idea?",
+        "answer": "Verbal learning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Verbal learning.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Verbal learning.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Verbal learning?",
+        "answer": "It is a domain of learned material, not one single learning theory."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Verbal learning?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Verbal learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-15-2": {
+    "id": "5-15-2",
+    "title": "Discrimination learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Discrimination learning. What is the central idea?",
+        "answer": "differential treatment based on group membership or perceived group membership"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Discrimination learning.",
+        "answer": "stereotype = belief"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Discrimination learning.",
+        "answer": "prejudice = evaluation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Discrimination learning?",
+        "answer": "Keep the three concepts distinct."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Discrimination learning?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Discrimination learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-16-1": {
+    "id": "5-16-1",
+    "title": "Neurophysiology of learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Neurophysiology of learning. What is the central idea?",
+        "answer": "Neurophysiology of learning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neurophysiology of learning.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Neurophysiology of learning.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Neurophysiology of learning?",
+        "answer": "A neural correlate does not by itself constitute the full psychological definition of learning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Neurophysiology of learning?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Neurophysiology of learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-17-1": {
+    "id": "5-17-1",
+    "title": "Encoding",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Encoding. What is the central idea?",
+        "answer": "Encoding"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Encoding.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Encoding.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Encoding?",
+        "answer": "Encoding concerns entry/transformation; storage concerns retention."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Encoding?",
+        "answer": "Kaplan frames memory around encoding, storage and retrieval and distinguishes visual, acoustic and semantic encoding. It also treats elaboration, self-reference, chunking and mnemonic strategies as ways of improving later access. Simply Psychology uses the same three-process framework and highlights that encoding changes information into a form that can be stored, with meaning-based encoding important for long-term memory."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Encoding indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-17-2": {
+    "id": "5-17-2",
+    "title": "Storage",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Storage. What is the central idea?",
+        "answer": "Storage"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Storage.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Storage.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Storage?",
+        "answer": "Storage is the process; the memory systems are forms of retention in the model."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Storage?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Storage indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-17-3": {
+    "id": "5-17-3",
+    "title": "Retrieval",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Retrieval. What is the central idea?",
+        "answer": "Retrieval"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Retrieval.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Retrieval.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Retrieval?",
+        "answer": "Retrieval failure is distinct from encoding failure."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Retrieval?",
+        "answer": "Kaplan treats retrieval as accessing stored information and distinguishes recall, recognition, relearning and priming. Its exam questions turn on whether information is difficult to access versus never adequately encoded. Simply Psychology presents retrieval as getting stored information back into active use, making a useful bridge to retrieval-practice learning."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Retrieval indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-1": {
+    "id": "5-18-1",
+    "title": "Sensory memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Sensory memory. What is the central idea?",
+        "answer": "Sensory memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Sensory memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Sensory memory?",
+        "answer": "It is brief sensory retention, not perception itself."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Sensory memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Sensory memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-2": {
+    "id": "5-18-2",
+    "title": "Short-term memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Short-term memory. What is the central idea?",
+        "answer": "Short-term memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Short-term memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Short-term memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Short-term memory?",
+        "answer": "Working memory is broader than the traditional passive short-term store."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Short-term memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Short-term memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-3": {
+    "id": "5-18-3",
+    "title": "Working memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Working memory. What is the central idea?",
+        "answer": "limited system for temporarily holding and manipulating information"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Working memory.",
+        "answer": "central executive"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Working memory.",
+        "answer": "phonological loop"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Working memory?",
+        "answer": "It is more than passive storage."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Working memory?",
+        "answer": "Kaplan treats working memory as an active short-term system and distinguishes it from sensory and long-term memory. It links working memory to rehearsal, manipulation and problem solving. Simply Psychology explains Baddeley and Hitch's model as an active system involving a central executive, phonological loop and visuospatial sketchpad, with the episodic buffer added later."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Working memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-4": {
+    "id": "5-18-4",
+    "title": "Long-term memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Long-term memory. What is the central idea?",
+        "answer": "Long-term memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Long-term memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Long-term memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Long-term memory?",
+        "answer": "It is not one undifferentiated store."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Long-term memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Long-term memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-5": {
+    "id": "5-18-5",
+    "title": "Declarative memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Declarative memory. What is the central idea?",
+        "answer": "Declarative memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Declarative memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Declarative memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Declarative memory?",
+        "answer": "Explicit memory concerns conscious accessibility, not short versus long duration."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Declarative memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Declarative memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-6": {
+    "id": "5-18-6",
+    "title": "Episodic memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Episodic memory. What is the central idea?",
+        "answer": "Episodic memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Episodic memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Episodic memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Episodic memory?",
+        "answer": "The defining feature is personally experienced events."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Episodic memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Episodic memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-7": {
+    "id": "5-18-7",
+    "title": "Semantic memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Semantic memory. What is the central idea?",
+        "answer": "Semantic memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Semantic memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Semantic memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Semantic memory?",
+        "answer": "Semantic differs from episodic even though both are declarative."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Semantic memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Semantic memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-8": {
+    "id": "5-18-8",
+    "title": "Procedural memory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Procedural memory. What is the central idea?",
+        "answer": "Procedural memory"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Procedural memory.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Procedural memory.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Procedural memory?",
+        "answer": "Procedural memory concerns how to perform, not what can be consciously declared."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Procedural memory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Procedural memory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-18-9": {
+    "id": "5-18-9",
+    "title": "Atkinson-Shiffrin model",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Atkinson-Shiffrin model in 2–3 sentences.",
+        "answer": "Atkinson-Shiffrin model is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Atkinson-Shiffrin model?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Atkinson-Shiffrin model?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Atkinson-Shiffrin model?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Atkinson-Shiffrin model?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Atkinson-Shiffrin model indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-18-10": {
+    "id": "5-18-10",
+    "title": "Baddeley's working-memory model",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Baddeley's working-memory model in 2–3 sentences.",
+        "answer": "Baddeley's working-memory model is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Baddeley's working-memory model?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Baddeley's working-memory model?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Baddeley's working-memory model?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Baddeley's working-memory model?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Baddeley's working-memory model indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "5-19-1": {
+    "id": "5-19-1",
+    "title": "Interference theory",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Interference theory. What is the central idea?",
+        "answer": "forgetting through competition between memories"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interference theory.",
+        "answer": "proactive: old → new"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Interference theory.",
+        "answer": "retroactive: new → old"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Interference theory?",
+        "answer": "PRO = prior blocks new; RETRO = recent blocks old."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Interference theory?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Interference theory indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-19-2": {
+    "id": "5-19-2",
+    "title": "Retrieval failure",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Retrieval failure. What is the central idea?",
+        "answer": "Retrieval failure"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Retrieval failure.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Retrieval failure.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Retrieval failure?",
+        "answer": "Do not confuse it with encoding failure, where information was not adequately entered."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Retrieval failure?",
+        "answer": "Kaplan distinguishes retrieval problems such as interference, decay and source-related errors from failures of initial encoding. Its exam preparation asks learners to identify the specific memory process involved rather than using forgetting as one explanation. Simply Psychology's encoding–storage–retrieval framework helps separate a failure to store information from a failure to access information that was stored."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Retrieval failure indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-19-3": {
+    "id": "5-19-3",
+    "title": "Decay",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Decay. What is the central idea?",
+        "answer": "Decay"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Decay.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Decay.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Decay?",
+        "answer": "Decay emphasizes time/disuse; interference emphasizes competing information."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Decay?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Decay indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "5-19-4": {
+    "id": "5-19-4",
+    "title": "Motivated forgetting",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Motivated forgetting. What is the central idea?",
+        "answer": "Motivated forgetting"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivated forgetting.",
+        "answer": "core definition and mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Motivated forgetting.",
+        "answer": "closest distinction or comparison"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Motivated forgetting?",
+        "answer": "Do not assume every forgotten memory is deliberately repressed."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Motivated forgetting?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Motivated forgetting indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  }
+}
