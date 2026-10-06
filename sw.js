@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.3.1-canonical-microtopic-routing';
+const CACHE='netpsych-shell-v1.4.0-canonical-learning-production';
 const SHELL=[
   './',
   './index.html',
@@ -31,7 +31,6 @@ const RUNTIME_DATA=new Set([
   'quick_cards.json',
   'micro_topics.json',
   'deep_dive.json',
-  'deep_dive_enrichment.json',
   'questions.json',
   'revision_guidance.json',
   'home-learning.json',

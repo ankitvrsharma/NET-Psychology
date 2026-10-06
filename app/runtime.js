@@ -35,7 +35,7 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.3.1-canonical-microtopic-routing';
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.4.0-canonical-learning-production';
 let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
@@ -97,7 +97,7 @@ const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return
 const reviewState=(type,id)=>String(CONTENT_REVIEW?.owner_review?.[type]?.[String(id)]||'');
 const learnerVerificationTag=(type,id,audit)=>{
   const owner=reviewState(type,id);
-  if(owner==='NOT_SATISFACTORY')return 'EXPERT VERIFIED';
+  if(owner==='NOT_SATISFACTORY')return 'CONTENT NEEDS REVIEW';
   if(audit?.status==='PASS')return 'VERIFIED';
   return '';
 };
@@ -292,7 +292,7 @@ function activeRecall(){
   const recallCards=Array.from(root.querySelectorAll('[data-recall-card]'));
   const finishRecall=()=>{
     const pNow=getP(k);
-    setP(k,{recallCompletedAt:new Date().toISOString(),learnedAt:pNow.learnedAt||new Date().toISOString(),status:pNow.status==='MASTERED'?'MASTERED':'LEARNING',last:new Date().toISOString()});
+    setP(k,{recallCompletedAt:pNow.recallCompletedAt||new Date().toISOString(),learnedAt:pNow.learnedAt||new Date().toISOString(),status:pNow.status==='MASTERED'?'MASTERED':'LEARNING',last:new Date().toISOString()});
     const ratingBox=$('#revisionRating');if(ratingBox)ratingBox.hidden=false;
     ratingBox?.scrollIntoView({behavior:'smooth',block:'center'});
   };
@@ -425,7 +425,7 @@ function daily3(){
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return microtopicHref(due.u,due.t,due.m);const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return microtopicHref(started.u,started.t,started.m);return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
-function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const next=new Date(now.getTime()+days*86400000),successful=(p.successfulRevisions||0)+(rating==='good'||rating==='easy'?1:0),mastered=successful>=3&&count>=3&&rating!=='again';setP(k,{next:next.toISOString(),nextInterval:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,successfulRevisions:successful,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:days}].slice(-20),last:now.toISOString()});return next}
+function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.understandingAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function dailyPractice(){
   const root=$('#dailyPracticeApp');
@@ -688,8 +688,7 @@ function micro(){
   const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
   const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
   const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
-  const deep=String(m.detailed_explanation||m.deep||concept).trim();
-  const shortNotes=Array.isArray(m.study_notes)&&m.study_notes.length?m.study_notes.map(x=>String(x?.content||'').trim()).filter(Boolean).join('\n\n'): [concept,...kp].filter(Boolean).join('\n\n');
+  const understandingComplete=()=>setP(k,{understandingAt:getP(k).understandingAt||new Date().toISOString(),last:new Date().toISOString()});
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   let audit=null;
@@ -719,6 +718,7 @@ function micro(){
     '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT</span><b>→</b></a>'+
     '</section>'+
     '</section>';
+  root.querySelectorAll('.micro-bottom-action').forEach(link=>link.addEventListener('click',()=>understandingComplete()));
   root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
     const rating=btn.dataset.contentFeedback;
     await submitLearnerFeedback('microtopics',k,rating);
