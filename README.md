@@ -10,7 +10,7 @@ It is built around the current **10-unit, 118-topic, 549-micro-topic** syllabus 
 
 The goal is simple:
 
-> **Understand → Recall → Apply → Practice → Schedule Revision**
+> **Understand → Recall → Practice → Schedule Revision**
 
 You do not need to figure out what to study next from a long list of chapters. Start with a micro-topic, learn it, test yourself, and schedule your next return.
 
@@ -34,9 +34,9 @@ Instead of spending a long session passively reading, work through one focused m
 
 Each micro-topic is organised progressively:
 
-- **Quick Learn** — grasp the central idea quickly.
+- **Quick Learn** — a separate static quick-learning card on Home.
 - **Core Learning** — build the main mental model.
-- **Deep Learning** — connect, compare and extend the concept.
+- **Deep Dive** — connect, compare and extend the same concept.
 
 Move deeper only when you need more detail.
 
@@ -119,18 +119,13 @@ The aim is not to punish forgetting. If something is forgotten, return to it ear
 
 ## Your learning status
 
-Your progress moves through learning stages:
+Your progress moves through five learning stages:
 
-**NEW → LEARNING → RETENTION → MASTERED**
+**STARTED → LEARNED → ACTIVELY RECALLED → REVISION → MASTERED**
 
 Mastery is more than finishing a page.
 
-The learning system treats mastery as evidence across:
-
-1. **Understanding**
-2. **Retrieval**
-3. **Application**
-4. **Delayed retention**
+Mastery is not awarded merely for opening a page. The system tracks understanding, active recall and spaced revision before a concept can become mastered.
 
 So a completed micro-topic is not automatically a mastered micro-topic.
 
@@ -163,11 +158,7 @@ When you sit down to study, follow this sequence:
 ↓  
 **Understand**  
 ↓  
-**Close the notes**  
-↓  
 **Recall**  
-↓  
-**Apply**  
 ↓  
 **Practice**  
 ↓  
