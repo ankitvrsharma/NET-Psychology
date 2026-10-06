@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.4.2-progress-storage';
+const CACHE='netpsych-shell-v1.4.2';
 const SHELL=[
   './',
   './index.html',
