@@ -65,7 +65,7 @@ jobs:
           if [ "$ENRICH" = "true" ]; then ARGS="$ARGS --enrich-existing"; fi
           python scripts/source_to_content.py $ARGS
 
-      - name: AI audit generated content
+      - name: AI audit and two-retry rewrite gate
         if: ${{ github.event.inputs.synthesize_sources != 'false' || github.event.inputs.enrich_existing != 'false' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -94,7 +94,7 @@ jobs:
           NET_CONTENT_PUBLISH_TOKEN: ${{ secrets.NET_CONTENT_PUBLISH_TOKEN }}
         run: |
           if git diff --quiet; then
-            echo "No audited content changes generated."
+            echo "No audited content changes generated. Any final audit failures remain in data/content-approval-queue.json."
             exit 0
           fi
           if [ -z "$NET_CONTENT_PUBLISH_TOKEN" ]; then
