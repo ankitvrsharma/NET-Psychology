@@ -16,7 +16,6 @@ for unit in syllabus["units"]:
 
 pool_paths={
     "microtopics":"content/microtopics/micro_topics.json",
-    "quickLearn":"content/quick-learn/quick_cards.json",
     "deepDive":"content/deep-dive/deep_dive.json",
     "activeRecall":"content/active-recall/active_recall.json",
     "revisionGuidance":"content/revision/revision_guidance.json",
@@ -28,6 +27,13 @@ for name,path in pool_paths.items():
     mismatched=[k for k in canonical if k in pool and str(pool[k].get("title",""))!=str(canonical[k])]
     assert not missing and not extra and not mismatched, f"{name}: missing={len(missing)} extra={len(extra)} title_mismatches={len(mismatched)}"
     print(f"{name}: {len(pool)} entries; OK")
+
+quick=load("content/quick-learn/quick_cards.json")
+quick_micro_ids={f"{v.get('unit')}-{v.get('topic')}-{v.get('micro')}" for v in quick.values()}
+missing=[k for k in canonical if k not in quick_micro_ids]
+extra=[k for k in quick_micro_ids if k not in canonical]
+assert not missing and not extra, f"quickLearn: missing_microtopics={len(missing)} extra_microtopics={len(extra)}"
+print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; OK")
 
 questions=load("content/questions/questions.json")
 questions=questions if isinstance(questions,list) else [*questions.get("pyq",[]),*questions.get("practice",[])]
