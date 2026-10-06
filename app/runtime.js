@@ -77,6 +77,7 @@ const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(hasLea
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
 const microAvailable=(u,t,m)=>hasLearningContent(m);
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
+const microtopicHref=(u,t,m,extra={})=>{const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
@@ -753,7 +754,7 @@ function micro(){
   const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
   const deep=String(m.detailed_explanation||m.deep||concept).trim();
   const shortNotes=Array.isArray(m.study_notes)&&m.study_notes.length?m.study_notes.map(x=>String(x?.content||'').trim()).filter(Boolean).join('\n\n'): [concept,...kp].filter(Boolean).join('\n\n');
-  const nextHref=next?'microtopic.html?unit='+encodeURIComponent(next.u.id)+'&topic='+encodeURIComponent(next.t.id)+'&micro='+encodeURIComponent(next.m.id):'learn.html';
+  const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
@@ -961,7 +962,7 @@ function practice(){
     };
     const learningHrefForQuestion=q=>{
       const u=units().find(x=>String(x.id)===String(q?.unit)),t=u?.topics.find(x=>String(x.id)===String(q?.topic)),m=t?.microtopics.find(x=>String(x.id)===String(q?.micro));
-      return u&&t&&m?'microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id):'learn.html';
+      return u&&t&&m?microtopicHref(u,t,m):'learn.html';
     };
     const renderComplete=(timeUp=false)=>{
       stopTimer();
