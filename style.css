@@ -1885,3 +1885,12 @@ body[data-page="practice-session"] .practice-hero{display:none}
 @media(max-width:420px){
   .learner-feedback-actions{grid-template-columns:1fr}
 }
+
+.admin-health{max-width:980px;margin:0 auto 12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.admin-health strong{display:block;margin-top:3px;color:var(--green);font-size:20px}
+.admin-health p{margin:2px 0 0;color:var(--muted);font-size:12px}
+.review-status.satisfactory{background:#eef7f1;color:#247044}
+.review-status.not-satisfactory{background:#fff0f0;color:#9b3333}
+.admin-status.pass{background:#eef7f1;color:#247044}
+.admin-status.review{background:#fff7e8;color:#8b5a00}
+.admin-status.issue{background:#fff0f0;color:#9b3333}
