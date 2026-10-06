@@ -17,7 +17,13 @@ function initMobileNavigation(){
   window.addEventListener('resize',()=>{if(window.innerWidth>820)close()},{passive:true});
 }
 
-if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>{initMobileNavigation();initDataActions()},{once:true}); else {initMobileNavigation();initDataActions();}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>{initMobileNavigation();initDataActions();initAdminNavigation()},{once:true}); else {initMobileNavigation();initDataActions();initAdminNavigation();}
+function initAdminNavigation(){
+  const nav=document.querySelector('#site-navigation');
+  if(!nav||nav.querySelector('[data-nav="admin"]'))return;
+  if(sessionStorage.getItem('netPsychAdminToken')){const a=document.createElement('a');a.className='nav-link';a.dataset.nav='admin';a.href='admin.html';a.textContent='Admin';nav.appendChild(a)}
+}
+
 function initDataActions(){
   if(document.documentElement.dataset.actionHandlersReady==='1') return;
   document.documentElement.dataset.actionHandlersReady='1';
@@ -33,6 +39,8 @@ const EXPERT_AUDIT_VERSION='2026-10-04-expert5';
 const EXPERT_THRESHOLDS={pass:70,review:60};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
+let PUBLICATION={approved:{microtopics:[],questions:[]},rejected:{microtopics:[],questions:[]}};
+const loadPublicationState=async()=>{try{const r=await fetch('./content-publication.json?v=20261006-admin-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.approved)PUBLICATION=x}}catch(e){};safeRender()};
 const runtimeContext=Object.defineProperties({},{
   data:{get:()=>D,set:v=>{D=v}},
   questions:{get:()=>PRACTICE_QUESTIONS,set:v=>{PRACTICE_QUESTIONS=v}},
@@ -41,7 +49,7 @@ const runtimeContext=Object.defineProperties({},{
 });
 const contentAudit=window.NETPsychologyContentAudit.create(runtimeContext);
 const expertAudit=contentAudit.expertAudit;
-const contentIsPublished=contentAudit.contentIsPublished;
+const contentIsPublished=(type,id)=>{if(PUBLICATION.rejected[type]?.includes(id))return false;if(PUBLICATION.approved[type]?.includes(id))return true;return contentAudit.contentIsPublished(type,id)};
 const loadStudyData=window.NETPsychologyDataLoader.create({
   get data(){return D},
   set data(v){D=v},
@@ -1114,6 +1122,7 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+loadPublicationState();
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
   if(D&&Array.isArray(D.units)) {
