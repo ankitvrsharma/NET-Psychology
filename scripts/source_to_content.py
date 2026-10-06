@@ -12,7 +12,6 @@ QUESTIONS=ROOT/"content/questions/questions.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
 MODEL=os.getenv("NET_CONTENT_MODEL","gemini-flash-latest")
-MODEL_FALLBACKS=[x.strip() for x in os.getenv("NET_CONTENT_FALLBACKS","gemini-3.7-flash,gemini-3.6-flash").split(",") if x.strip()]
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -71,19 +70,6 @@ def _gemini_schema(schema):
     if isinstance(schema,list):
         return [_gemini_schema(x) for x in schema]
     return schema
-
-def _gemini_schema(schema):
-    if isinstance(schema, dict):
-        out={}
-        for k,v in schema.items():
-            if k=="type" and isinstance(v,str): out[k]=v.upper()
-            elif k=="properties" and isinstance(v,dict): out[k]={pk:_gemini_schema(pv) for pk,pv in v.items()}
-            elif k=="items": out[k]=_gemini_schema(v)
-            else: out[k]=_gemini_schema(v) if isinstance(v,(dict,list)) else v
-        return out
-    if isinstance(schema,list): return [_gemini_schema(x) for x in schema]
-    return schema
-
 def _resolve_model_chain():
     # Discover the current stable Gemini Flash family at runtime. This means
     # the newest available stable Flash model is always first, with the two
@@ -162,10 +148,7 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--apply",action="store_true")
     ap.add_argument("--repair-existing",action="store_true")
-    ap.add_argument("--no-source-synthesis",action="store_true")
     args=ap.parse_args()
-    if not os.getenv("OPENAI_API_KEY"):
-        raise SystemExit("OPENAI_API_KEY is required.")
     syllabus=load(SYLLABUS); refs=canonical(syllabus)
     source_chunks=[]; source_meta=[]
     for p in sorted(INBOX.rglob("*")):
@@ -227,51 +210,80 @@ def main():
         report["unresolved"]["quick"]=[cid for cid,c in quick.items() if isinstance(c,dict) and f"{c.get('unit')}-{c.get('topic')}-{c.get('micro')}" not in refs]
 
     generated=[]
-    if not args.no_source_synthesis:
-        content_schema={"type":"object","properties":{
-            "microtopic_id":{"type":"string"},"quick_learn":{"type":"string"},
-            "core_explanation":{"type":"string"},"detailed_explanation":{"type":"string"},
-            "recall_prompts":{"type":"array","items":{"type":"string"}},
-            "exam_takeaway":{"type":"string"},"source_notes":{"type":"string"}},
-            "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","source_notes"],
-            "additionalProperties":False}
-        for ref in list(refs.values()):
-            if len(generated)>=MAX_TOPICS: break
-            words=set(norm(ref["title"]).split())
-            ranked=[]
-            for src,i,text in source_chunks:
-                ranked.append((len(words & set(norm(text).split())),src,i,text))
-            ranked.sort(reverse=True,key=lambda x:x[0])
-            evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
-            if not evidence: continue
-            generated.append(call_ai(
-                "Create source-grounded UGC NET Psychology study content. Use only facts supported by the supplied excerpts; do not silently add general knowledge. Do not reproduce long source passages. Preserve source terminology, named theories/researchers, distinctions and exam-relevant relationships. Write concise learner-facing content.",
-                {"microtopic":ref,"source_excerpts":evidence},"microtopic_content",content_schema))
-        if generated: save(STAGING/"microtopics.json",generated)
-
+    content_schema={"type":"object","properties":{
+        "microtopic_id":{"type":"string"},
+        "quick_learn":{"type":"string"},
+        "core_explanation":{"type":"string"},
+        "detailed_explanation":{"type":"string"},
+        "recall_prompts":{"type":"array","items":{
+            "type":"object","properties":{
+                "type":{"type":"string"},
+                "prompt":{"type":"string"},
+                "answer":{"type":"string"}
+            },
+            "required":["type","prompt","answer"],"additionalProperties":False}},
+        "exam_takeaway":{"type":"string"},
+        "source_notes":{"type":"string"}},
+        "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","source_notes"],
+        "additionalProperties":False}
+    for ref in list(refs.values()):
+        if len(generated)>=MAX_TOPICS: break
+        words=set(norm(ref["title"]).split())
+        ranked=[]
+        for src,i,text in source_chunks:
+            ranked.append((len(words & set(norm(text).split())),src,i,text))
+        ranked.sort(reverse=True,key=lambda x:x[0])
+        evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
+        if not evidence: continue
+        generated.append(call_ai(
+            "Create source-grounded UGC NET Psychology learner content. Use only facts supported by the supplied excerpts; do not silently add general knowledge. Preserve source terminology, named theories/researchers, distinctions and exam-relevant relationships. Write one coherent concept explanation, one genuinely useful detailed explanation, and retrieval prompts that test understanding rather than copying sentences. Return concise content suitable for the canonical learner pools.",
+            {"microtopic":ref,"source_excerpts":evidence},"microtopic_content",content_schema))
+    if generated:
+        save(STAGING/"canonical-content.json",generated)
     if args.apply:
         if args.repair_existing:
-            save(QUESTIONS,qobj if isinstance(qobj,dict) else questions); save(QUICK,quick)
+            save(QUESTIONS,qobj if isinstance(qobj,dict) else questions)
+            save(QUICK,quick)
         if generated:
-            pool=load(MICRO)
+            micro_pool=load(MICRO)
+            deep_pool=load(ROOT/"content/deep-dive/deep_dive.json")
+            recall_pool=load(ROOT/"content/active-recall/active_recall.json")
             source_stamp="\n".join(sorted(x["sha256"] for x in source_meta))
             marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
+            now=datetime.now(timezone.utc).isoformat()
             def append_once(existing,label,text):
                 existing=str(existing or "")
-                block=f"\n\n[{marker} {label}]\n{text.strip()}"
+                text=str(text or "").strip()
+                if not text: return existing
+                block=f"\n\n[{marker} {label}]\n{text}"
                 return existing if f"[{marker} {label}]" in existing else existing+block
             for g in generated:
-                if g["microtopic_id"] not in pool: continue
-                e=pool[g["microtopic_id"]]
-                e["content_notes"]=append_once(e.get("content_notes"),"QUICK LEARN",g["quick_learn"])
-                e["expert_explanation"]=append_once(e.get("expert_explanation"),"SOURCE-GROUNDED EXPLANATION",g["core_explanation"])
-                e["detailed_explanation"]=append_once(e.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
-                if g["recall_prompts"]:
-                    e["application_question"]=append_once(e.get("application_question"),"RETRIEVAL PROMPTS","; ".join(g["recall_prompts"]))
-                e["recall_cue"]=append_once(e.get("recall_cue"),"EXAM TAKEAWAY",g["exam_takeaway"])
-                e["source_notes"]=append_once(e.get("source_notes"),"PROVENANCE",g["source_notes"])
-                e.setdefault("source_pipeline",[]).append({"marker":marker,"model":MODEL,"generated_at":datetime.now(timezone.utc).isoformat()})
-            save(MICRO,pool)
+                mid=g.get("microtopic_id")
+                if mid not in micro_pool: continue
+                me=micro_pool[mid]
+                me["content_notes"]=append_once(me.get("content_notes"),"QUICK LEARN",g["quick_learn"])
+                me["expert_explanation"]=append_once(me.get("expert_explanation"),"SOURCE-GROUNDED EXPLANATION",g["core_explanation"])
+                me["detailed_explanation"]=append_once(me.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
+                me["recall_cue"]=append_once(me.get("recall_cue"),"EXAM TAKEAWAY",g["exam_takeaway"])
+                me["source_notes"]=append_once(me.get("source_notes"),"PROVENANCE",g["source_notes"])
+                me.setdefault("source_pipeline",[]).append({"marker":marker,"model":MODEL,"generated_at":now})
+                de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
+                de["id"]=mid; de["title"]=me.get("title",de.get("title",""))
+                de["detailed_explanation"]=append_once(de.get("detailed_explanation"),"SOURCE-GROUNDED DETAIL",g["detailed_explanation"])
+                de["exam_takeaway"]=g.get("exam_takeaway","") or de.get("exam_takeaway","")
+                de["source_pipeline"]=de.get("source_pipeline",[])+[{"marker":marker,"model":MODEL,"generated_at":now}]
+                deep_pool[mid]=de
+                ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
+                ae["id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
+                prompts=g.get("recall_prompts") or []
+                if prompts: ae["prompts"]=prompts
+                recall_pool[mid]=ae
+            save(MICRO,micro_pool)
+            save(ROOT/"content/deep-dive/deep_dive.json",deep_pool)
+            save(ROOT/"content/active-recall/active_recall.json",recall_pool)
+        save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
+             "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
+             "repairs":report["repairs"],"unresolved":report["unresolved"]})
         save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})
