@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.8.0';
+const CACHE='netpsych-shell-v1.9.0';
 const SHELL=[
   './',
   './index.html',
@@ -67,7 +67,7 @@ self.addEventListener('fetch',event=>{
   if(NEVER_CACHE.has(url.pathname.split('/').pop())){event.respondWith(fetch(req,{cache:'no-store'}));return;}
   const name=url.pathname.split('/').pop();
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
-  const isRuntimeData=RUNTIME_DATA.has(name);
+  const isRuntimeData=RUNTIME_DATA.has(name)||url.pathname.includes('/content/chunks/')||url.pathname.includes('/data/content-indexes/');
   if(!isShell&&!isRuntimeData)return;
   const cacheKey=canonicalRequest(url);
   event.respondWith((async()=>{
