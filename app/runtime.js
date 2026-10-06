@@ -37,26 +37,24 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'2026-10-02-unit-parts-v1';
 let STATE_CACHE=null,QUICK_BANK_CACHE=null;
-let AUDIT_STATE={schema_version:1,expert_reviewed:{microtopics:[],questions:[]},updated_at:''};
-const loadAuditState=async()=>{try{const r=await fetch('./content-audit.json?v=20261006-audit-status-v1',{cache:'no-store'});if(r.ok){const x=await r.json();if(x&&x.expert_reviewed)AUDIT_STATE=x}}catch(e){};if(D)safeRender()};
-const runtimeContext=Object.defineProperties({},{
-  data:{get:()=>D,set:v=>{D=v}},
-  questions:{get:()=>PRACTICE_QUESTIONS,set:v=>{PRACTICE_QUESTIONS=v}},
-  render:{value:()=>safeRender()}
-});
-const contentAudit=window.NETPsychologyContentAudit.create(runtimeContext);
-const expertAudit=contentAudit.expertAudit;
-const contentReviewStatus=(type,id)=>AUDIT_STATE.expert_reviewed[type]?.includes(String(id))?'EXPERT REVIEWED':expertAudit(type,id).status==='PASS'?'REVIEWED':'NEED REVIEW';
-const loadStudyData=window.NETPsychologyDataLoader.create({
-  get data(){return D},
-  set data(v){D=v},
-  get questions(){return PRACTICE_QUESTIONS},
-  set questions(v){PRACTICE_QUESTIONS=v},
-  get explanations(){return PRACTICE_EXPLANATIONS},
-  set explanations(v){PRACTICE_EXPLANATIONS=v},
-  dataVersion:DATA_VERSION,
-  render:()=>safeRender()
-});
+const loadStudyData=async()=>{
+  const response=await fetch('./data.json?v='+DATA_VERSION,{cache:'default'});
+  if(!response.ok) throw new Error('Study data request failed: '+response.status);
+  D=await response.json();
+
+  if(document.body.dataset.page==='practice'||document.body.dataset.page==='practice-session'||document.body.dataset.page==='active-recall'||document.body.dataset.page==='daily-practice'){
+    const pq=await fetch('./practice_questions.json?v='+DATA_VERSION,{cache:'default'});
+    if(!pq.ok) throw new Error('Practice question bank request failed: '+pq.status);
+    PRACTICE_QUESTIONS=await pq.json();
+    try{
+      const pe=await fetch('./practice_explanations.json?v='+DATA_VERSION,{cache:'default'});
+      if(pe.ok) PRACTICE_EXPLANATIONS=await pe.json();
+    }catch(e){console.warn('Practice explanations could not be loaded:',e)}
+  }
+
+  safeRender();
+  return true;
+};
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const state=()=>{if(STATE_CACHE)return STATE_CACHE;try{STATE_CACHE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{STATE_CACHE={}}return STATE_CACHE};
 const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
@@ -564,7 +562,7 @@ function topicPage(){
     const list=topicItems.filter(m=>{const p=getP(key(u.id,t.id,m.id));if(filter==='new')return p.status==='NEW';if(filter==='learning')return p.status==='LEARNING'||p.status==='RETENTION';if(filter==='mastered')return p.status==='MASTERED';if(filter==='due')return p.next&&new Date(p.next)<=new Date();return true});
     const cards=list.map(m=>{
       const p=getP(key(u.id,t.id,m.id)),available=microAvailable(u,t,m),concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title,kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN')),qs=practiceFor(u.id,t.id,m.id),due=p.next&&new Date(p.next)<=new Date();
-      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span><span class="review-status '+contentReviewStatus('microtopics',key(u.id,t.id,m.id)).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',key(u.id,t.id,m.id))+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
+      const body='<div class="micro-card-top"><span class="micro-index">'+String(topicItems.indexOf(m)+1).padStart(2,'0')+'</span><span class="status '+String(p.status||'NEW').toLowerCase()+'">'+(p.status||'NEW')+'</span>'+(due?'<span class="due">DUE</span>':'')+'</div><h3>'+esc(m.title)+'</h3><p>'+esc(concept)+'</p><div class="micro-card-info"><span>'+(kp.length||'Key')+' key ideas</span><span>'+qs.length+' practice '+(qs.length===1?'question':'questions')+'</span></div>';
       if(!available)return '<article class="micro-card topic-micro-card content-unavailable">'+body+'<span class="link content-soon-link">COMING SOON <b>•</b></span></article>';
       return '<a class="micro-card topic-micro-card" href="microtopic.html?unit='+u.id+'&topic='+t.id+'&micro='+m.id+'">'+body+'<span class="link">'+(p.status==='NEW'?'Start learning':due?'Review now':'Continue learning')+' <b>→</b></span></a>';
     }).join('');
@@ -710,7 +708,6 @@ function mcqHTML(q,i,source='MCQ',showSource=true){
   const provenance=tags.join(' · ');
   const kind=q.kind||"direct";
   const sourceLabel=q.session?String(q.session)+" · PYQ":provenance;
-  const reviewLabel=contentReviewStatus('questions',q.id);
   return "<article class=\"mcq\" data-i=\""+i+"\" data-answer=\""+ans+"\" data-kind=\""+esc(kind)+"\">"+
     "<div class=\"mcq-meta\"><span class=\"question-kind\">"+esc(kindLabel(kind))+"</span>"+(showSource?"<span class=\"question-source\">"+esc(sourceLabel)+" · Q"+esc(q.question_number??(i+1))+"</span>":"")+"</div>"+
     structuredQuestionHTML(q)+
@@ -728,12 +725,7 @@ function mappedConcept(q){
   return {title:m.title,core,points};
 }
 function contextualExplanation(q){
-  const base=String(q?.explanation||'').trim();
-  const generic=/^(The keyed response is|Correct answer:|Evaluate each statement independently|Arrange the items according to|Check each List-I item)/i.test(base);
-  const c=mappedConcept(q);
-  if(!c||!generic)return base;
-  const detail=[c.core&&c.core.trim(),c.points.length?'Key points: '+c.points.join(' · '):''].filter(Boolean).join(' ');
-  return detail?base+' Study link — '+c.title+': '+detail:base;
+  return String(q?.explanation||PRACTICE_EXPLANATIONS?.[q?.id]||'').trim();
 }
 function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s)}})})}
 function micro(){
@@ -759,7 +751,7 @@ function micro(){
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><span class="review-status '+contentReviewStatus('microtopics',k).toLowerCase().replace(/\s+/g,'-')+'">'+contentReviewStatus('microtopics',k)+'</span><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
     '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
     (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
@@ -1130,14 +1122,9 @@ function safeRender(){
   }
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
-loadAuditState();
+
 loadStudyData().catch(err=>{
   console.error('NET Psychology data loading failed:',err);
-  if(D&&Array.isArray(D.units)) {
-    const pageRoot=document.querySelector('#practiceApp,#startPage,#homeHero,#revisionApp');
-    if(pageRoot&&!pageRoot.innerHTML.trim()) pageRoot.innerHTML='<section class="panel empty"><h1>This section could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
-    return;
-  }
   const shell=document.querySelector('main.shell');
   if(shell) shell.innerHTML='<section class="panel empty"><h1>Study data could not be loaded.</h1><p>Please refresh once the site connection is available.</p><button class="btn primary" type="button" data-action="reload">Retry</button></section>';
 });
