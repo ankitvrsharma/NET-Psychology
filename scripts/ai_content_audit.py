@@ -20,12 +20,13 @@ CONTENT_SCHEMA={"type":"object","properties":{
     "recall_prompts":{"type":"array","items":{"type":"object","properties":{
         "type":{"type":"string"},"prompt":{"type":"string"},"answer":{"type":"string"}},
         "required":["type","prompt","answer"],"additionalProperties":False}},
+    "cross_references":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"relationship":{"type":"string"},"reason":{"type":"string"}},"required":["id","relationship","reason"],"additionalProperties":False}},
     "revision_guidance":{"type":"object","properties":{
         "recall_before_review":{"type":"string"},"self_check":{"type":"string"},
         "weak_point_prompt":{"type":"string"},"rating_instruction":{"type":"string"}},
         "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],
         "additionalProperties":False},
-    "required":["microtopic_id","core_explanation","detailed_explanation",
+    "required":["microtopic_id","core_explanation","detailed_explanation","cross_references",
              "recall_prompts","revision_guidance"],
 "additionalProperties":False}
 
@@ -67,6 +68,7 @@ Do not fill source gaps from your own knowledge.
 Reject fabricated PYQs, researchers, experiments, statistics or citations.
 Reject generic AI filler when it substitutes for Psychology-specific teaching.
 Reject contradictions across the four functions.
+Reject cross-references that point to nonexistent/self micro-topics, are based only on superficial title similarity, or would mislead the learner about the conceptual relationship.
 Reject recall answers not taught by the package.
 Approve only when useful for UGC NET/NET-JRF and source-grounded.
 Use the policy literally and fail closed.
@@ -149,7 +151,16 @@ def main():
         ref=refs[mid]
         evidence=source_evidence(ref)
         history=[]
-        final_audit=None
+        # Deterministic cross-reference gate before the model audit.
+            refs_in_package=current.get("cross_references") or []
+            bad_refs=[]
+            seen=set()
+            for x in refs_in_package:
+                rid=str(x.get("id","")).strip() if isinstance(x,dict) else ""
+                if not rid or rid==mid or rid not in refs or rid in seen or not str(x.get("relationship","")).strip() or not str(x.get("reason","")).strip():
+                    bad_refs.append(rid or "<missing>")
+                seen.add(rid)
+            final_audit=None
         passed=False
 
         for attempt in range(3):
@@ -158,6 +169,8 @@ def main():
             if missing:
                 final_audit={"approved":False,"score":0,"critical_failures":["missing generated field(s): "+", ".join(missing)],
                              "issues":[],"microtopic_id":mid}
+            elif bad_refs:
+                final_audit={"approved":False,"score":0,"critical_failures":["invalid cross-reference(s): "+", ".join(bad_refs)],"issues":[],"microtopic_id":mid}
             else:
                 final_audit=audit_one(current,ref,policy,evidence)
             final_audit["attempt"]=attempt+1
