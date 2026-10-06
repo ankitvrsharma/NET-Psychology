@@ -8,6 +8,7 @@ on:
       - content/**
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
+      - scripts/source_to_content.py
       - .github/workflows/build-content.yml
   pull_request:
     branches: [main]
@@ -16,6 +17,7 @@ on:
       - content/**
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
+      - scripts/source_to_content.py
       - .github/workflows/build-content.yml
 
 permissions:
@@ -73,5 +75,7 @@ jobs:
           print(f"questions: {len(questions)} entries; unresolved mappings: {unmapped}; non-canonical mappings: {len(invalid)}")
           print(f"canonical micro-topics: {len(canonical)}")
           PY
+      - name: Compile content automation script
+        run: python -m py_compile scripts/source_to_content.py
       - name: Run static content validator
         run: python scripts/validate_content.py
