@@ -1,26 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "intake_folder": "sources/inbox",
-  "supported_extensions": [
-    ".pdf",
-    ".docx",
-    ".pptx",
-    ".txt",
-    ".md",
-    ".csv",
-    ".tsv",
-    ".json"
-  ],
+  "supported_extensions": [".pdf", ".docx", ".pptx", ".txt", ".md", ".csv", ".tsv", ".json"],
   "learner_publishing": false,
-  "pipeline": [
-    "extract",
-    "map",
-    "synthesize",
-    "teach",
-    "expert_audit",
-    "serve"
-  ],
+  "pipeline": ["extract", "map", "synthesize", "audit", "review_pr", "serve"],
   "provenance_required": true,
   "duplicate_information_policy": "Repeat source information only when it serves a different learner decision.",
-  "source_truth_policy": "Source material is evidence and must not be treated as automatically correct."
+  "source_truth_policy": "Source material is evidence and must not be treated as automatically correct.",
+  "automation_policy": "Source files are processed outside the learner runtime. Generated content is written to a review branch and published only through a pull request.",
+  "mapping_policy": "Quick Learn cards and questions may be remapped automatically only when confidence is high against the canonical syllabus. Ambiguous records remain unresolved for human review.",
+  "copyright_policy": "Generated learner content must summarize and transform source material; do not copy long passages from copyrighted books into the repository."
 }
