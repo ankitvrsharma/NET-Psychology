@@ -321,6 +321,8 @@ def main():
             revision_pool=load(REVISION)
             practice_path=ROOT/"content/practice/practice_mcqs.json"
             practice_pool=load(practice_path) if practice_path.exists() else {}
+            verification=load(VERIFICATION) if VERIFICATION.exists() else {"schema_version":1,"items":{},"updated_at":""}
+            verification.setdefault("items",{})
             source_stamp="\n".join(sorted(x["sha256"] for x in source_meta))
             marker="SOURCE PIPELINE "+hashlib.sha256(source_stamp.encode()).hexdigest()[:12]
             now=datetime.now(timezone.utc).isoformat()
@@ -355,12 +357,17 @@ def main():
                 revision_pool[mid]=rev
                 if g.get("practice_mcqs"):
                     practice_pool[mid]={"id":mid+"P","microtopic_id":mid,"title":me.get("title",""),"questions":g.get("practice_mcqs") or []}
+                approved_components=g.get("approved_components") or []
+                for component in ("microtopic","deep_dive","active_recall","revision","practice"):
+                    if component in approved_components:
+                        verification.setdefault("items",{}).setdefault(component,{})[mid]="VERIFIED"
             practice_path.parent.mkdir(parents=True,exist_ok=True)
             save(practice_path,practice_pool)
             save(MICRO,micro_pool)
             save(ROOT/"content/deep-dive/deep_dive.json",deep_pool)
             save(ROOT/"content/active-recall/active_recall.json",recall_pool)
             save(REVISION,revision_pool)
+            save(VERIFICATION,verification)
         save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})

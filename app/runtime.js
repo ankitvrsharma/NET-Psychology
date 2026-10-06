@@ -37,7 +37,7 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.4.2';
 const KEY='netPsychProgress';
-let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
+let VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
   microtopics:'content/microtopics/micro_topics.json',
@@ -80,7 +80,7 @@ const loadStudyData=async()=>{
   if(page==='revision')poolNames.add('revisionGuidance');
   await Promise.all([...poolNames].map(loadPool));
   if(page==='microtopic'){
-    try{CONTENT_REVIEW=await fetchJSON('content-audit.json','Content review state');}catch(e){CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};}
+    try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
   }
   if(CONTENT_POOLS.questions){
     const qpool=CONTENT_POOLS.questions;
@@ -95,13 +95,7 @@ const save=s=>{STATE_CACHE=s;localStorage.setItem(KEY,JSON.stringify(s));};
 const key=(u,t,m)=>`${u}-${t}-${m}`;
 const getP=k=>state()[k]||{status:'NEW',stage:0,lastCompletedStage:-1};
 const setP=(k,patch)=>{const s=state();s[k]={...getP(k),...patch};save(s);return s[k]};
-const reviewState=(type,id)=>String(CONTENT_REVIEW?.owner_review?.[type]?.[String(id)]||'');
-const learnerVerificationTag=(type,id,audit)=>{
-  const owner=reviewState(type,id);
-  if(owner==='NOT_SATISFACTORY')return 'CONTENT NEEDS REVIEW';
-  if(audit?.status==='PASS')return 'VERIFIED';
-  return '';
-};
+const learnerVerificationTag=(type,id)=>String(VERIFICATION_STATE?.items?.[type]?.[String(id)]||'');
 const feedbackKey=(type,id)=>'netPsychContentFeedback:'+type+':'+String(id)+':'+String(DATA_VERSION);
 const feedbackState=(type,id)=>{try{return localStorage.getItem(feedbackKey(type,id))||''}catch{return ''}};
 const submitLearnerFeedback=async(type,id,rating)=>{
@@ -141,8 +135,8 @@ function sourceNames(m){return sourceEntries(m).map(s=>s.title)}
 function isStartedProgress(p){return !!(p&&((p.status&&p.status!=='NEW')||p.started===true||p.startedAt||p.understanding||p.application||p.last||p.lastRevision))}
 function startedMicrotopics(){return syllabusItems().filter(x=>isStartedProgress(getP(x.k))).map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)}))}
 function progressSummary(){
-  const items=syllabusItems(),ps=items.map(x=>getP(x.k)),total=items.length,started=ps.filter(isStartedProgress).length,learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,revisionScheduled=ps.filter(p=>p.revisionCount>0||p.next||p.lastRevision).length,answered=ps.flatMap(p=>p.mcqHistory||[]),practice=state()._practiceHistory||[],allAnswers=answered.concat(practice),correct=allAnswers.filter(x=>x.correct).length;
-  return {total,started,learned,mastered,revisionScheduled,coverage:total?Math.round(learned/total*100):0,mastery:learned?Math.round(mastered/learned*100):0,retention:learned?Math.round(revisionScheduled/learned*100):0,accuracy:allAnswers.length?Math.round(correct/allAnswers.length*100):0,answers:allAnswers.length};
+  const items=syllabusItems(),ps=items.map(x=>getP(x.k)),total=items.length,started=ps.filter(isStartedProgress).length,learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,activelyRecalled=ps.filter(p=>p.recallCompletedAt).length,revision=ps.filter(p=>p.revisionCount>0||p.lastRevision).length,mastered=ps.filter(p=>p.status==='MASTERED').length,answered=ps.flatMap(p=>p.mcqHistory||[]),practice=state()._practiceHistory||[],allAnswers=answered.concat(practice),correct=allAnswers.filter(x=>x.correct).length;
+  return {total,started,learned,activelyRecalled,revision,mastered,revisionScheduled:revision,coverage:total?Math.round(learned/total*100):0,mastery:learned?Math.round(mastered/learned*100):0,retention:learned?Math.round(revision/learned*100):0,accuracy:allAnswers.length?Math.round(correct/allAnswers.length*100):0,answers:allAnswers.length};
 }
 function progressTopicSummary(){
   const topics=units().flatMap(u=>(u.topics||[]).map(t=>({u,t,microtopics:t.microtopics||[]})));
@@ -238,17 +232,14 @@ function deepDive(){
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
   document.title='Deep Dive — '+m.title+' — UGC NET Psychology';
-  const concept=section(m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title;
-  const kp=bullets(section(m.content_notes,'KEY POINTS','\n\nPYQ-STYLE PATTERN'));
-  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{}; const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||m.content_notes||concept).trim();
-  const distinction=String(m.distinction||section(m.content_notes,'COMMON TRAP','\n\n5-MINUTE TEACHING FOCUS')||'').trim();
+  const concept=String(m.expert_explanation||m.content_notes||m.title).trim();
+  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{}; const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||concept).trim();
   const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
   root.innerHTML=
     '<div class="breadcrumbs"><a href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">Micro-topic</a><span>›</span><span>Deep Dive</span></div>'+
     '<section class="page-hero deep-dive-hero"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · '+esc(u.title)+'</p></section>'+
     '<article class="deep-dive-content card"><div class="eyebrow">DETAILED EXPLANATION</div><div class="deep-dive-copy">'+esc(deep)+'</div>'+
-    (kp.length?'<section class="deep-dive-section"><div class="eyebrow">KEY POINTS</div><ul>'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
-    (distinction?'<section class="deep-dive-section"><div class="eyebrow">DISTINCTION / EXAM CAUTION</div><p>'+esc(distinction)+'</p></section>':'')+
+
     '</article>'+
     '<section class="deep-dive-next card"><div><div class="eyebrow">NEXT STEP</div><h2>Check what you can recall.</h2><p>Close the explanation, then test the concept with its mapped recall questions.</p></div><a class="btn primary" href="'+recallHref+'">CHECK YOUR RECALL →</a></section>';
 }
@@ -381,7 +372,7 @@ function quickLearnItem(){
   const last=seen[seen.length-1];let poolItems=unseen.filter(x=>x.id!==last);if(!poolItems.length)poolItems=unseen;
   const item=poolItems[Math.floor(Math.random()*poolItems.length)];seen=[...seen,item.id];
   try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}
-  return {...item,category:item.category||item.angle||'CONCEPT',href:microtopicHref({id:item.unit},{id:item.topic},{id:item.micro},{focus:'detailed',quick:item.id})};
+  return {...item,category:item.category||item.angle||'CONCEPT',href:item.href||microtopicHref({id:item.unit},{id:item.topic},{id:item.micro})};
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
@@ -686,16 +677,11 @@ function micro(){
     return;
   }
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
-  const notes=String(m.content_notes||'');
-  const concept=String(m.expert_explanation||section(notes,'CORE CONCEPT','\n\nKEY POINTS')||m.title).trim();
-  const kp=bullets(section(notes,'KEY POINTS','\n\nDISTINCTION / CAUTION'));
-  const distinction=section(notes,'DISTINCTION / CAUTION','\n\nPYQ-STYLE PATTERN').trim();
+  const concept=String(m.expert_explanation||m.content_notes||m.title).trim();
   const understandingComplete=()=>setP(k,{understandingAt:getP(k).understandingAt||new Date().toISOString(),last:new Date().toISOString()});
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
-  let audit=null;
-  try{audit=window.NETPsychologyContentAudit?.create?.({data:D,questions:PRACTICE_QUESTIONS})?.expertAudit?.('microtopics',k)||null;}catch(e){console.warn('Optional content audit unavailable for learner tag:',e)}
-  const verificationTag=learnerVerificationTag('microtopics',k,audit);
+  const verificationTag=learnerVerificationTag('microtopics',k);
   const currentFeedback=feedbackState('microtopics',k);
   setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
@@ -705,8 +691,7 @@ function micro(){
     '</header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
     '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
-    (kp.length?'<section class="micro-exam-section"><h3>KEY POINTS</h3><ul class="key-points">'+kp.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></section>':'')+
-    (distinction?'<section class="micro-exam-section"><h3>DISTINCTION</h3><p>'+esc(distinction.replace(/^•\s*/,'').trim())+'</p></section>':'')+
+
     '</div></article>'+
     '<section class="learner-content-feedback" aria-label="Content feedback">'+
     '<div><span class="eyebrow">HELP US IMPROVE</span><p>Was this content satisfactory for your preparation?</p></div>'+
@@ -1042,7 +1027,14 @@ function progress(){
   $('#progressApp').innerHTML=`<section class="page-hero progress-hero"><div class="eyebrow">PROGRESS</div><h1>See how your learning is building.</h1><p>See what you have explored, what you can recall, how you are performing in questions, and how consistently you are returning to what you have learned.</p></section>
   <section class="progress-signals"><div class="section-head"><div><div class="eyebrow">YOUR LEARNING SIGNALS</div><h2>Look at the pattern, not just the numbers.</h2><p class="page-guidance">These signals show different parts of your learning process. Use them together to understand where your learning is becoming secure and where it needs more work.</p></div></div>
     <div class="progress-category-stack">
-      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING</div><h2>Build your understanding across the syllabus.</h2><p>See how far you’ve explored the syllabus, what you’ve fully learned, and where you can begin next.</p></div></div><div class="progress-indicators">
+      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING PATH</div><h2>Track the five stages of secure learning.</h2><p>Each stage represents a different learning decision: starting, understanding, active recall, revision, and mastery.</p></div></div><div class="progress-indicators">
+        <div class="progress-indicator"><span>Started</span><strong>${s.started}</strong><small>micro-topics you have opened and begun</small></div>
+        <div class="progress-indicator"><span>Learned</span><strong>${s.learned}</strong><small>understanding checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Actively Recalled</span><strong>${s.activelyRecalled}</strong><small>active-recall checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Revision</span><strong>${s.revision}</strong><small>at least one revision checkpoint recorded</small></div>
+        <div class="progress-indicator"><span>Mastered</span><strong>${s.mastered}</strong><small>mastery condition completed</small></div>
+      </div></section>
+  <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING</div><h2>Build your understanding across the syllabus.</h2><p>See how far you’ve explored the syllabus, what you’ve fully learned, and where you can begin next.</p></div></div><div class="progress-indicators">
         <div class="progress-indicator"><span>Topics Mastered</span><strong>${topics.mastered}</strong><small>all micro-topics in the topic mastered</small></div>
         <div class="progress-indicator"><span>Topics Explored</span><strong>${topics.touched}</strong><small>at least one micro-topic started</small></div>
         <div class="progress-indicator"><span>Topics Not Touched Yet</span><strong>${topics.untouched}</strong><small>no micro-topic started yet</small></div>

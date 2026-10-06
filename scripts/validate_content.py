@@ -19,6 +19,7 @@ pool_paths={
     "deepDive":"content/deep-dive/deep_dive.json",
     "activeRecall":"content/active-recall/active_recall.json",
     "revisionGuidance":"content/revision/revision_guidance.json",
+    "practice":"content/practice/practice_mcqs.json",
 }
 for name,path in pool_paths.items():
     pool=load(path)
@@ -32,6 +33,20 @@ quick=load("content/quick-learn/quick_cards.json")
 quick_micro_ids={f"{v.get('unit')}-{v.get('topic')}-{v.get('micro')}" for v in quick.values()}
 stale_quick=[k for k in quick_micro_ids if k not in canonical]
 print(f"quickLearn: {len(quick)} cards covering {len(quick_micro_ids)} micro-topics; stale/non-canonical references: {len(stale_quick)}")
+
+practice=load("content/practice/practice_mcqs.json")
+assert isinstance(practice,dict), "practice_mcqs.json: expected object/map"
+practice_missing=[k for k in practice if k not in canonical]
+assert not practice_missing, f"practice: non-canonical micro-topic IDs: {len(practice_missing)}"
+for mid,item in practice.items():
+    assert str(item.get("id",""))==mid+"P", f"practice: invalid component id for {mid}"
+    assert str(item.get("microtopic_id",""))==mid, f"practice: invalid microtopic_id for {mid}"
+    for q in item.get("questions",[]):
+        assert isinstance(q,dict) and str(q.get("question","")).strip(), f"practice {mid}: missing question"
+        assert isinstance(q.get("options"),list) and len(q["options"])>=2, f"practice {mid}: invalid options"
+        assert str(q.get("correct_answer","")).strip(), f"practice {mid}: missing correct answer"
+        assert str(q.get("explanation","")).strip(), f"practice {mid}: missing explanation"
+print(f"Practice packages: {len(practice)}; OK")
 
 questions=load("content/questions/questions.json")
 questions=questions if isinstance(questions,list) else [*questions.get("pyq",[]),*questions.get("practice",[])]

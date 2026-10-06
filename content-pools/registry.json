@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "pools": {
     "microtopics": {
       "path": "content/microtopics/micro_topics.json",
@@ -53,16 +53,6 @@
         "home"
       ]
     },
-    "sourceSynthesis": {
-      "path": "content/source-synthesis/source_synthesis.json",
-      "format": "json-map",
-      "enabled": true,
-      "capabilities": [
-        "multi-source-synthesis",
-        "provenance",
-        "integrated-explanation"
-      ]
-    },
     "revisionGuidance": {
       "path": "content/revision/revision_guidance.json",
       "format": "json-map",
@@ -72,13 +62,13 @@
         "retrieval-before-review"
       ]
     },
-    "deepDiveEnrichment": {
-      "path": "content/deep-dive/deep_dive_enrichment.json",
+    "practice": {
+      "path": "content/practice/practice_mcqs.json",
       "format": "json-map",
       "enabled": true,
       "capabilities": [
-        "deep-dive",
-        "multi-source-enrichment"
+        "topic-practice",
+        "mcq"
       ]
     }
   },
@@ -108,53 +98,16 @@
       "role": "NTA/PYQ source registry"
     }
   },
-  "supportingContent": {
-    "sourceCatalog": {
-      "path": "content/source-synthesis/source_catalog.json",
-      "format": "json-object",
-      "enabled": true,
-      "capabilities": [
-        "source-provenance",
-        "source-library"
-      ]
-    },
-    "studySources": {
-      "path": "content/source-synthesis/study_sources.json",
-      "format": "json-object",
-      "enabled": true,
-      "capabilities": [
-        "source-policy",
-        "study-sources"
-      ]
-    },
-    "kaplanEnrichment": {
-      "path": "content/source-synthesis/kaplan_enrichment.json",
-      "format": "json-object",
-      "enabled": true,
-      "capabilities": [
-        "source-enrichment",
-        "kaplan"
-      ]
-    },
-    "simplyPsychologyEnrichment": {
-      "path": "content/source-synthesis/simply_psychology_enrichment.json",
-      "format": "json-object",
-      "enabled": true,
-      "capabilities": [
-        "source-enrichment",
-        "simply-psychology"
-      ]
-    }
-  },
   "canonicalContract": {
     "source": "data/syllabus-index.json",
     "expectedMicrotopics": 549,
     "pools": [
       "microtopics",
+      "deepDive",
       "activeRecall",
       "revisionGuidance",
-      "deepDive"
+      "practice"
     ],
-    "rule": "Each enabled learning pool must contain exactly the canonical syllabus microtopic IDs; orphan IDs are invalid and pool titles must match the canonical syllabus title."
+    "rule": "Canonical micro-topic knowledge is the primary home. Connected Deep Dive, Active Recall, Revision and Practice pools use the same canonical micro-topic IDs. Quick Learn and Daily Learning remain deliberate supplemental learning experiences with their own static content."
   }
 }
