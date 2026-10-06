@@ -1,0 +1,1766 @@
+{
+  "10-1-1": {
+    "id": "10-1-1",
+    "title": "Gender",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Gender. What is the central idea?",
+        "answer": "social and psychological dimension shaped by identity, roles, norms and context"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Gender.",
+        "answer": "gender identity"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Gender.",
+        "answer": "roles"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Gender?",
+        "answer": "Gender should not be reduced to biological sex alone."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Gender?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Gender indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-2": {
+    "id": "10-1-2",
+    "title": "Poverty",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Poverty. What is the central idea?",
+        "answer": "Poverty"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Poverty.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Poverty.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Poverty?",
+        "answer": "Poverty is a social condition and should not be reduced to individual motivation or personal failure."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Poverty?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Poverty indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-3": {
+    "id": "10-1-3",
+    "title": "Disability",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Disability. What is the central idea?",
+        "answer": "Disability"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Disability.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Disability.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Disability?",
+        "answer": "Avoid defining disability only through deficit."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Disability?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Disability indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-4": {
+    "id": "10-1-4",
+    "title": "Migration",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Migration. What is the central idea?",
+        "answer": "Migration"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Migration.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Migration.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Migration?",
+        "answer": "Migration itself is not a disorder; psychological outcomes depend on context."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Migration?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Migration indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-5": {
+    "id": "10-1-5",
+    "title": "Cultural bias",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cultural bias. What is the central idea?",
+        "answer": "Cultural bias"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cultural bias.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cultural bias.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cultural bias?",
+        "answer": "Cultural difference is not itself bias; unjustified universalization is the issue."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cultural bias?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cultural bias indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-6": {
+    "id": "10-1-6",
+    "title": "Discrimination",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Discrimination. What is the central idea?",
+        "answer": "differential treatment based on group membership or perceived group membership"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Discrimination.",
+        "answer": "stereotype = belief"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Discrimination.",
+        "answer": "prejudice = evaluation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Discrimination?",
+        "answer": "Keep the three concepts distinct."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Discrimination?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Discrimination indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-1-7": {
+    "id": "10-1-7",
+    "title": "Gender inequality and cultural bias",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Gender inequality and cultural bias in 2–3 sentences.",
+        "answer": "Gender is a psychosocial construct involving identities, roles, expectations and social meanings shaped by biological and cultural influences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Gender inequality and cultural bias?",
+        "answer": "gender identity"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Gender inequality and cultural bias?",
+        "answer": "roles/norms"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Gender inequality and cultural bias?",
+        "answer": "Gender should not be reduced to biological sex."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Gender inequality and cultural bias?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Gender inequality and cultural bias indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-1-8": {
+    "id": "10-1-8",
+    "title": "Poverty and discrimination",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Poverty and discrimination in 2–3 sentences.",
+        "answer": "Poverty can affect access to resources, stress exposure, development, health and opportunity; psychological effects are shaped by structural context."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Poverty and discrimination?",
+        "answer": "resource deprivation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Poverty and discrimination?",
+        "answer": "stress"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Poverty and discrimination?",
+        "answer": "Do not individualize poverty as a personal deficit."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Poverty and discrimination?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Poverty and discrimination indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-1-9": {
+    "id": "10-1-9",
+    "title": "Disability and discrimination",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Disability and discrimination in 2–3 sentences.",
+        "answer": "Disability reflects interaction between impairment and environmental, social and attitudinal barriers, with implications for participation and inclusion."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Disability and discrimination?",
+        "answer": "impairment"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Disability and discrimination?",
+        "answer": "barriers"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Disability and discrimination?",
+        "answer": "Disability is not synonymous with inability."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Disability and discrimination?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Disability and discrimination indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-1-10": {
+    "id": "10-1-10",
+    "title": "Migration and psychological consequences",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Migration and psychological consequences in 2–3 sentences.",
+        "answer": "Migration can involve relocation, acculturation, identity change, loss and new opportunities; outcomes depend on reasons, support and discrimination."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Migration and psychological consequences?",
+        "answer": "acculturation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Migration and psychological consequences?",
+        "answer": "identity"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Migration and psychological consequences?",
+        "answer": "Migration is heterogeneous."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Migration and psychological consequences?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Migration and psychological consequences indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-2-1": {
+    "id": "10-2-1",
+    "title": "Stigma",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Stigma. What is the central idea?",
+        "answer": "social devaluation or negative labeling associated with a characteristic or condition"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stigma.",
+        "answer": "labeling"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Stigma.",
+        "answer": "stereotyping"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Stigma?",
+        "answer": "Stigma is social/relational, not just personal feeling."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Stigma?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Stigma indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-2-2": {
+    "id": "10-2-2",
+    "title": "Marginalization",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Marginalization. What is the central idea?",
+        "answer": "Marginalization"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Marginalization.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Marginalization.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Marginalization?",
+        "answer": "Marginalization is a social process, not a personality characteristic."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Marginalization?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Marginalization indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-2-3": {
+    "id": "10-2-3",
+    "title": "Social suffering",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Social suffering. What is the central idea?",
+        "answer": "Social suffering"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social suffering.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Social suffering.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Social suffering?",
+        "answer": "It does not deny individual processes; it adds social context."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Social suffering?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Social suffering indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-2-4": {
+    "id": "10-2-4",
+    "title": "Child abuse",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Child abuse. What is the central idea?",
+        "answer": "Child abuse"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Child abuse.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Child abuse.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Child abuse?",
+        "answer": "Do not frame abuse as the child's problem; responsibility and context are central."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Child abuse?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Child abuse indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-2-5": {
+    "id": "10-2-5",
+    "title": "Domestic violence",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Domestic violence. What is the central idea?",
+        "answer": "Domestic violence"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Domestic violence.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Domestic violence.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Domestic violence?",
+        "answer": "Ordinary disagreement is not automatically domestic violence; abuse and coercion are central considerations."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Domestic violence?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Domestic violence indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-2-6": {
+    "id": "10-2-6",
+    "title": "Stigma and marginalisation",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Stigma and marginalisation in 2–3 sentences.",
+        "answer": "Stigma involves social devaluation attached to a person or group and can produce exclusion and internalized negative evaluation."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Stigma and marginalisation?",
+        "answer": "labeling"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Stigma and marginalisation?",
+        "answer": "social devaluation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Stigma and marginalisation?",
+        "answer": "Stigma is a social process."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Stigma and marginalisation?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Stigma and marginalisation indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-2-8": {
+    "id": "10-2-8",
+    "title": "Child abuse: psychological consequences",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Child abuse: psychological consequences in 2–3 sentences.",
+        "answer": "Child abuse involves harmful acts or failures of care that threaten a child's physical or psychological safety and development."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Child abuse: psychological consequences?",
+        "answer": "harm"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Child abuse: psychological consequences?",
+        "answer": "developmental impact"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Child abuse: psychological consequences?",
+        "answer": "Consequences vary with type, severity, duration, developmental stage and support."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Child abuse: psychological consequences?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Child abuse: psychological consequences indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-2-9": {
+    "id": "10-2-9",
+    "title": "Domestic violence: psychological consequences",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Domestic violence: psychological consequences in 2–3 sentences.",
+        "answer": "Domestic violence involves abuse or coercive behaviour within intimate or family relationships and can have substantial psychological consequences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Domestic violence: psychological consequences?",
+        "answer": "coercion"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Domestic violence: psychological consequences?",
+        "answer": "relationship context"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Domestic violence: psychological consequences?",
+        "answer": "It is not simply an interpersonal disagreement."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Domestic violence: psychological consequences?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Domestic violence: psychological consequences indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-3-1": {
+    "id": "10-3-1",
+    "title": "Violence",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Violence. What is the central idea?",
+        "answer": "Violence"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Violence.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Violence.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Violence?",
+        "answer": "Aggression and violence overlap but are not identical concepts."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Violence?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Violence indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-3-2": {
+    "id": "10-3-2",
+    "title": "Non-violence",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Non-violence. What is the central idea?",
+        "answer": "Non-violence"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Non-violence.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Non-violence.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Non-violence?",
+        "answer": "Non-violence is not identical to passivity."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Non-violence?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Non-violence indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-3-3": {
+    "id": "10-3-3",
+    "title": "Conflict resolution at macro level",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Conflict resolution at macro level. What is the central idea?",
+        "answer": "Conflict resolution at macro level"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Conflict resolution at macro level.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Conflict resolution at macro level.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Conflict resolution at macro level?",
+        "answer": "Resolution is broader than suppressing visible disagreement."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Conflict resolution at macro level?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Conflict resolution at macro level indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-3-4": {
+    "id": "10-3-4",
+    "title": "Role of media in conflict resolution",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Role of media in conflict resolution. What is the central idea?",
+        "answer": "Role of media in conflict resolution"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Role of media in conflict resolution.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Role of media in conflict resolution.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Role of media in conflict resolution?",
+        "answer": "Media influence is not automatically peaceful or violent."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Role of media in conflict resolution?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Role of media in conflict resolution indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-3-5": {
+    "id": "10-3-5",
+    "title": "Violence and non-violence",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Violence and non-violence in 2–3 sentences.",
+        "answer": "Violence involves actions intended to cause physical or psychological harm and is shaped by individual, interpersonal, cultural and structural influences."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Violence and non-violence?",
+        "answer": "harm"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Violence and non-violence?",
+        "answer": "aggression"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Violence and non-violence?",
+        "answer": "Violence is broader than physical aggression alone."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Violence and non-violence?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Violence and non-violence indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-3-6": {
+    "id": "10-3-6",
+    "title": "Macro-level conflict resolution",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Macro-level conflict resolution in 2–3 sentences.",
+        "answer": "Macro-level conflict resolution addresses disputes between larger groups or social systems through negotiation, dialogue, mediation and institutional change."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Macro-level conflict resolution?",
+        "answer": "group conflict"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Macro-level conflict resolution?",
+        "answer": "dialogue"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Macro-level conflict resolution?",
+        "answer": "Resolution is broader than ending overt violence."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Macro-level conflict resolution?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Macro-level conflict resolution indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-3-7": {
+    "id": "10-3-7",
+    "title": "Media and conflict resolution",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Media and conflict resolution in 2–3 sentences.",
+        "answer": "Macro-level conflict resolution addresses disputes between larger groups or social systems through negotiation, dialogue, mediation and institutional change."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Media and conflict resolution?",
+        "answer": "group conflict"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Media and conflict resolution?",
+        "answer": "dialogue"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Media and conflict resolution?",
+        "answer": "Resolution is broader than ending overt violence."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Media and conflict resolution?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Media and conflict resolution indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-4-1": {
+    "id": "10-4-1",
+    "title": "Types of wellbeing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of wellbeing. What is the central idea?",
+        "answer": "Types of wellbeing"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of wellbeing.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of wellbeing.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Types of wellbeing?",
+        "answer": "Wellbeing should not be equated with momentary happiness alone."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of wellbeing?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of wellbeing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-2": {
+    "id": "10-4-2",
+    "title": "Hedonic wellbeing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hedonic wellbeing. What is the central idea?",
+        "answer": "wellbeing emphasizing pleasure, positive affect and life satisfaction"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hedonic wellbeing.",
+        "answer": "positive affect"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hedonic wellbeing.",
+        "answer": "low negative affect"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Hedonic wellbeing?",
+        "answer": "Not identical to short-term pleasure."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Hedonic wellbeing?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hedonic wellbeing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-3": {
+    "id": "10-4-3",
+    "title": "Eudemonic wellbeing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Eudemonic wellbeing. What is the central idea?",
+        "answer": "wellbeing emphasizing meaning, purpose, growth and realizing capacities"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Eudemonic wellbeing.",
+        "answer": "meaning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Eudemonic wellbeing.",
+        "answer": "purpose"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Eudemonic wellbeing?",
+        "answer": "Not simply happiness."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Eudemonic wellbeing?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Eudemonic wellbeing indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-4": {
+    "id": "10-4-4",
+    "title": "Character strengths",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Character strengths. What is the central idea?",
+        "answer": "Character strengths"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Character strengths.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Character strengths.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Character strengths?",
+        "answer": "Strengths are not simply skills or the absence of weaknesses."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Character strengths?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Character strengths indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-5": {
+    "id": "10-4-5",
+    "title": "Resilience",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Resilience. What is the central idea?",
+        "answer": "capacity to adapt, recover or maintain functioning in adversity"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Resilience.",
+        "answer": "adaptation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Resilience.",
+        "answer": "protective factors"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Resilience?",
+        "answer": "Resilience does not mean no distress."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Resilience?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Resilience indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-6": {
+    "id": "10-4-6",
+    "title": "Post-Traumatic Growth",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Post-Traumatic Growth. What is the central idea?",
+        "answer": "positive changes in self, relationships or priorities reported following major adversity"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Post-Traumatic Growth.",
+        "answer": "meaning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Post-Traumatic Growth.",
+        "answer": "relationships"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Post-Traumatic Growth?",
+        "answer": "Growth does not imply trauma was beneficial."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Post-Traumatic Growth?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Post-Traumatic Growth indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-4-7": {
+    "id": "10-4-7",
+    "title": "Hedonic and eudemonic wellbeing",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hedonic and eudemonic wellbeing in 2–3 sentences.",
+        "answer": "Wellbeing includes positive functioning and quality of life; hedonic approaches emphasize pleasure and life satisfaction while eudaimonic approaches emphasize meaning, purpose and growth."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Hedonic and eudemonic wellbeing?",
+        "answer": "positive functioning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Hedonic and eudemonic wellbeing?",
+        "answer": "hedonic/eudaimonic distinction"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Hedonic and eudemonic wellbeing?",
+        "answer": "Do not equate wellbeing with momentary happiness."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Hedonic and eudemonic wellbeing?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hedonic and eudemonic wellbeing indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-5-1": {
+    "id": "10-5-1",
+    "title": "Health-promoting behaviors",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Health-promoting behaviors. What is the central idea?",
+        "answer": "Health-promoting behaviors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health-promoting behaviors.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health-promoting behaviors.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Health-promoting behaviors?",
+        "answer": "Define the behavior by its health function, not merely social approval."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Health-promoting behaviors?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Health-promoting behaviors indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-2": {
+    "id": "10-5-2",
+    "title": "Health-compromising behaviors",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Health-compromising behaviors. What is the central idea?",
+        "answer": "Health-compromising behaviors"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health-compromising behaviors.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Health-compromising behaviors.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Health-compromising behaviors?",
+        "answer": "Risk behavior does not make a disease outcome inevitable."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Health-compromising behaviors?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Health-compromising behaviors indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-3": {
+    "id": "10-5-3",
+    "title": "Lifestyle",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Lifestyle. What is the central idea?",
+        "answer": "Lifestyle"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lifestyle.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Lifestyle.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Lifestyle?",
+        "answer": "Lifestyle is not purely individual choice; environments influence available choices."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Lifestyle?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Lifestyle indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-4": {
+    "id": "10-5-4",
+    "title": "Diabetes",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Diabetes. What is the central idea?",
+        "answer": "Diabetes"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Diabetes.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Diabetes.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Diabetes?",
+        "answer": "Psychological factors can influence management without being treated as the sole cause."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Diabetes?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Diabetes indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-5": {
+    "id": "10-5-5",
+    "title": "Hypertension",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Hypertension. What is the central idea?",
+        "answer": "Hypertension"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hypertension.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Hypertension.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Hypertension?",
+        "answer": "Stress is one factor among several; it should not be presented as the sole cause."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Hypertension?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Hypertension indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-6": {
+    "id": "10-5-6",
+    "title": "Coronary Heart Disease",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Coronary Heart Disease. What is the central idea?",
+        "answer": "Coronary Heart Disease"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Coronary Heart Disease.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Coronary Heart Disease.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Coronary Heart Disease?",
+        "answer": "Use a multifactorial risk framework rather than a single-cause explanation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Coronary Heart Disease?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Coronary Heart Disease indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-7": {
+    "id": "10-5-7",
+    "title": "Psychoneuroimmunology",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Psychoneuroimmunology. What is the central idea?",
+        "answer": "study of interactions among psychological processes, nervous, endocrine and immune systems"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoneuroimmunology.",
+        "answer": "stress"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Psychoneuroimmunology.",
+        "answer": "neuroendocrine pathways"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Psychoneuroimmunology?",
+        "answer": "It does not mean thoughts directly cause every disease."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Psychoneuroimmunology?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Psychoneuroimmunology indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-8": {
+    "id": "10-5-8",
+    "title": "Cancer",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cancer. What is the central idea?",
+        "answer": "Cancer"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cancer.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cancer.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cancer?",
+        "answer": "Psychological stress should not be presented as a single direct cause of cancer."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cancer?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cancer indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-9": {
+    "id": "10-5-9",
+    "title": "HIV/AIDS",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain HIV/AIDS. What is the central idea?",
+        "answer": "HIV/AIDS"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about HIV/AIDS.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about HIV/AIDS.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about HIV/AIDS?",
+        "answer": "HIV infection and AIDS are related but not identical terms."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of HIV/AIDS?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes HIV/AIDS indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-5-10": {
+    "id": "10-5-10",
+    "title": "Health-promoting and health-compromising behaviours",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Health-promoting and health-compromising behaviours in 2–3 sentences.",
+        "answer": "Health-promoting behaviours support health and reduce preventable risk through activity, nutrition, sleep, preventive care and stress management."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Health-promoting and health-compromising behaviours?",
+        "answer": "protective behaviour"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Health-promoting and health-compromising behaviours?",
+        "answer": "prevention"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Health-promoting and health-compromising behaviours?",
+        "answer": "Risk reduction is not a guarantee of prevention."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Health-promoting and health-compromising behaviours?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Health-promoting and health-compromising behaviours indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-5-11": {
+    "id": "10-5-11",
+    "title": "Lifestyle and chronic disease",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Lifestyle and chronic disease in 2–3 sentences.",
+        "answer": "Lifestyle and chronic disease is a source-grounded UGC NET Psychology micro-topic. Identify its defining construct, mechanism or classification and distinguish it from the nearest related concept."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What is the first high-value point to retrieve about Lifestyle and chronic disease?",
+        "answer": "definition/core construct"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "What second point helps distinguish Lifestyle and chronic disease?",
+        "answer": "mechanism or classification"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse about Lifestyle and chronic disease?",
+        "answer": "Use source terminology and do not infer beyond the study material."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "How should the uploaded sources be used for Lifestyle and chronic disease?",
+        "answer": "Use the source-supported definition, mechanism and distinction; do not add unsupported claims."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Lifestyle and chronic disease indirectly, what should you match first?",
+        "answer": "Match the stem to the defining construct or mechanism, then verify the distinguishing feature."
+      }
+    ]
+  },
+  "10-6-1": {
+    "id": "10-6-1",
+    "title": "Digital learning",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Digital learning. What is the central idea?",
+        "answer": "Digital learning"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Digital learning.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Digital learning.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Digital learning?",
+        "answer": "Technology use is not automatically equivalent to improved learning."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Digital learning?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Digital learning indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-6-2": {
+    "id": "10-6-2",
+    "title": "Digital etiquette",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Digital etiquette. What is the central idea?",
+        "answer": "Digital etiquette"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Digital etiquette.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Digital etiquette.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Digital etiquette?",
+        "answer": "It is a social-behavioral framework, not a technical cybersecurity procedure."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Digital etiquette?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Digital etiquette indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-6-3": {
+    "id": "10-6-3",
+    "title": "Cyberbullying",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cyberbullying. What is the central idea?",
+        "answer": "harmful online behavior involving harassment, humiliation, threats or exclusion"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyberbullying.",
+        "answer": "digital context"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyberbullying.",
+        "answer": "persistence/audience"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cyberbullying?",
+        "answer": "Not every online disagreement is cyberbullying."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cyberbullying?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cyberbullying indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-6-4": {
+    "id": "10-6-4",
+    "title": "Cyber pornography: consumption",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cyber pornography: consumption. What is the central idea?",
+        "answer": "Cyber pornography: consumption"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyber pornography: consumption.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyber pornography: consumption.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cyber pornography: consumption?",
+        "answer": "Exposure alone should not be equated with addiction or disorder."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cyber pornography: consumption?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cyber pornography: consumption indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-6-5": {
+    "id": "10-6-5",
+    "title": "Cyber pornography: implications",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Cyber pornography: implications. What is the central idea?",
+        "answer": "Cyber pornography: implications"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyber pornography: implications.",
+        "answer": "definition and central psychological/social mechanism"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Cyber pornography: implications.",
+        "answer": "relevant distinction or contextual factor"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Cyber pornography: implications?",
+        "answer": "Avoid deterministic claims that exposure produces one inevitable outcome."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Cyber pornography: implications?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Cyber pornography: implications indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  },
+  "10-6-6": {
+    "id": "10-6-6",
+    "title": "Parental mediation of digital usage",
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Parental mediation of digital usage. What is the central idea?",
+        "answer": "parental strategies for guiding children's digital use and meaning-making"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Parental mediation of digital usage.",
+        "answer": "active mediation"
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Parental mediation of digital usage.",
+        "answer": "restrictive mediation"
+      },
+      {
+        "type": "DISTINCTION",
+        "prompt": "What should you not confuse or oversimplify about Parental mediation of digital usage?",
+        "answer": "Restriction alone does not build self-regulation."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Parental mediation of digital usage?",
+        "answer": "The NET source supplies the exam framework; additional uploaded textbooks provide complementary definitions, distinctions and applications."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Parental mediation of digital usage indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
+  }
+}
