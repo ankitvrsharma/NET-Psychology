@@ -1,0 +1,1211 @@
+{
+  "schema_version": 1,
+  "pyq": [
+    {
+      "id": "June-2012-6",
+      "session": "June 2012",
+      "question_number": 6,
+      "question": "Read each of the following two statements – Assertion (A) and Reason (R) and indicate your answer using the codes below : 1. Assertion (A): In Edwards Personal Preference Schedule (EPPS), forced choice format is used. 2. Reason (R) : Forced choice format reduces acquiescence response set. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true but (R) is not the correct explanation of (A). c). (A) is true but (R) is false. d). (A) is false but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(A) is true but (R) is false.",
+        "(A) is false but (R) is true."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (A) is true but (R) is false.. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 8,
+      "topic": 8,
+      "micro": 4
+    },
+    {
+      "id": "June-2012-29",
+      "session": "June 2012",
+      "question_number": 29,
+      "question": "Self-Efficacy is 17 UGC NET JRF June 2012 Paper II 17 UGC NET JRF June 2012 Paper II Tap to check answer key a). A person’s mental model of his or her ability and attitudes. b). A generalised evaluative attitude toward the self that influences both moods and behaviour c). The process by which a person comes to know or perceive the personal attributes d). A set of beliefs that one can perform adequately in a particular situation.",
+      "options": [
+        "A person’s mental model of his or her ability and attitudes.",
+        "A generalised evaluative attitude toward the self that influences both moods and behaviour",
+        "The process by which a person comes to know or perceive the personal attributes",
+        "A set of beliefs that one can perform adequately in a particular situation."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A set of beliefs that one can perform adequately in a particular situation.. The stem describes the concept or relationship represented by A set of beliefs that one can perform adequately in a particular situation.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 4
+    },
+    {
+      "id": "June-2012-33",
+      "session": "June 2012",
+      "question_number": 33,
+      "question": "The dependent variable in this experiment is:",
+      "options": [
+        "Drug dosage",
+        "Trials required to learn the task",
+        "Body weight",
+        "Time interval between the drug administration and learning the second task"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Trials required to learn the task. The stem describes the concept or relationship represented by Trials required to learn the task; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2013-7",
+      "session": "June 2013",
+      "question_number": 7,
+      "question": "Given below are two statements, one labelled as Assertion (A) and other labelled as Reason (R). 1. Assertion (A): Thinking about objects brings change attitudes. 2. Reason (R): Attitudes toward complex issues and objects are typically a mixture of positive and negative feelings. 3. Codes: a). Both (A) and (R) are true and (R) is the correct explanation of (A). b). Both (A) and (R) are true, but (R) is not the correct explanation of (A). c). (A) is true, but (R) is false. d). (A) is false, but (R) is true.",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both (A) and (R) are true and (R) is the correct explanation of (A).. Evaluate Assertion (A) and Reason (R) separately, then check whether R actually explains A. The keyed option represents the required truth/explanation relationship.",
+      "kind": "assertion-reason",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "September-2013-14",
+      "session": "September 2013",
+      "question_number": 14,
+      "question": "Which one of the following explanation may be considered as relatively appropriate for determining intelligence? a). Main contribution of genetic factors and only negligible contribution of environmental factors. b). Considerable contribution of genetic factors and some contribution of economic factors. c). Some contribution of genetic factors and main contribution of social and other factors. d). Major contribution of genetic factors and some contribution of environmental factors.",
+      "options": [
+        "Main contribution of genetic factors and only negligible contribution of environmental factors.",
+        "Considerable contribution of genetic factors and some contribution of economic factors.",
+        "Some contribution of genetic factors and main contribution of social and other factors.",
+        "Major contribution of genetic factors and some contribution of environmental factors."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Major contribution of genetic factors and some contribution of environmental factors.. The stem describes the concept or relationship represented by Major contribution of genetic factors and some contribution of environmental factors.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 8,
+      "micro": 2
+    },
+    {
+      "id": "June-2014-27",
+      "session": "June 2014",
+      "question_number": 27,
+      "question": "After the general election in a country, a social psychologist interviewed 200 voters to study their attitudes towards the winning party. This is an example of",
+      "options": [
+        "Field experiment",
+        "Attitude change experiment",
+        "Correlational study",
+        "Ex post-facto research"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Ex post-facto research. The stem describes the concept or relationship represented by Ex post-facto research; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "December-2014-41",
+      "session": "December 2014",
+      "question_number": 41,
+      "question": "Match List – I with List – II and select the correct answer by choosing from the codes given below: List I (Theory) List II (Theorist) a. Dialectical humanism 1. J.B. Watson b. Avoidance- Avoidance conflict 2. Gordon Allport c. Behaviorism 3. Erich Fromm d. Functional Autonomy 4. Dollard and Miller Codes: 1. A B C D",
+      "options": [
+        "1 2 4 3",
+        "4 3 1 2",
+        "3 4 1 2",
+        "4 3 2 1"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 3 4 1 2. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 7,
+      "micro": 4
+    },
+    {
+      "id": "December-2014-50",
+      "session": "December 2014",
+      "question_number": 50,
+      "question": "After the catastrophic earthquake, the researcher interviewed a group of subjects to understand whether the earthquake has changed their attitude towards fate. This can best be labelled as an example of a). Ex post facto field study b). Field experiment c). Attitude change experiment d). Ethological study UGC NET JRF December 2014 Paper II 230 UGC NET JRF December 2014 Paper II 230",
+      "options": [
+        "Ex post facto field study",
+        "Field experiment",
+        "Attitude change experiment",
+        "Ethological study UGC NET JRF December 2014 Paper II 230 UGC NET JRF December 2014 Paper II 230"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Ex post facto field study. The stem describes the concept or relationship represented by Ex post facto field study; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "July-2018-1",
+      "session": "July 2018",
+      "question_number": 1,
+      "question": "In Erikson’s theory, which psycho- social crises preceed and succeed Autonomy v/s Shame : 1). Basic trust v/s mistrust and Industry v/s Inferiority. 2). Initiative v/s Guilt and Industry v/s Inferiority. 3). Industry v/s Inferiority and Identity v/s Role confusion. 4). Basic trust v/s mistrust and Initiative v/s Guilt.",
+      "options": [
+        "Basic trust v/s mistrust and Industry v/s Inferiority.",
+        "Initiative v/s Guilt and Industry v/s Inferiority.",
+        "Industry v/s Inferiority and Identity v/s Role confusion.",
+        "Basic trust v/s mistrust and Initiative v/s Guilt."
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. Basic trust v/s mistrust and Initiative v/s Guilt.. The stem describes the concept or relationship represented by Basic trust v/s mistrust and Initiative v/s Guilt.; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 2
+    },
+    {
+      "id": "July-2018-68",
+      "session": "July 2018",
+      "question_number": 68,
+      "question": "Many psychologists played pivotal role in the emergence of the field of Social Psychology. Arrange them in correct chronological sequence.",
+      "options": [
+        "F. Allport; William McDougall; Kurt Lewin; Muzafer Sherif.",
+        "Kurt Lewin; William McDougall; Muzafer Sherif; F. Allport.",
+        "William McDougall; F. Allport; Kurt Lewin; Muzafer Sherif.",
+        "F. Allport; William McDougall; Muzafer Sherif; Kurt Lewin."
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. William McDougall; F. Allport; Kurt Lewin; Muzafer Sherif.. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "July-2018-85",
+      "session": "July 2018",
+      "question_number": 85,
+      "question": "Match List - I with List - II and select the correct answer by choosing from code given below: List I (Term) List II (Description) a. Conformity i) Rules indicating how individuals are expected to behave in a specific situation. b. Compli- ance ii) Social influence involving direct request from other c. Social norms iii) Social influence wherein individuals change their attitude to go along with existing norms. d. Intense indoctorin- ization (iv) Process in which members of extreme group accept the beliefs and rules in unquestioning way. Code: 1. (a) (b) (c) (d)",
+      "options": [
+        "(i) (ii) (iii) (iv)",
+        "(ii) (iii) (iv) (i)",
+        "(iii) (iv) (i) (ii)",
+        "(iii) (iv) (ii) (i)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (iii) (iv) (i) (ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Conformity involves changing behaviour or expressed beliefs to align with group or social expectations.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "December-2018-8",
+      "session": "December 2018",
+      "question_number": 8,
+      "question": "A person who tries to increase compliance by including an individual to agree first to small request is using the technique known as 1. Options:- 1). Foot-in-the door technique 2). Door-in-the-face technique 3). Elaboration technique 4). Low-ball technique",
+      "options": [
+        "Foot-in-the door technique",
+        "Door-in-the-face technique",
+        "Elaboration technique",
+        "Low-ball technique"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Door-in-the-face technique. The stem describes the concept or relationship represented by Door-in-the-face technique; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 6
+    },
+    {
+      "id": "December-2018-16",
+      "session": "December 2018",
+      "question_number": 16,
+      "question": "Which of the following are true about attribution? i). Internal attributions ascribe the causes of behaviour to personal dispositions and traits. ii). Internal attributions ascribe the causes of behaviour to individual abilities and feelings. iii). External attributions ascribe the causes of behaviours to situational demands. iv). External attributions are always unstable. v). Internal attributions are always stable. 1. Choose the correct answer from the 463 UGC NET JRF December 2018 Paper II 463 UGC NET JRF December 2018 Paper II Tap to check answer key code given below: 2. Options:- 1). (i) and (iii) are correct; (ii), (iv) and (v) are incorrect 2). (i), (ii) and (iii) are correct; (iv) and (v) are incorrect 3). (iv) and (v) are correct; (i), (ii) and (iii) are incorrect 4). (i) and (ii) are correct; (iii), (iv) and (v) are incorrect",
+      "options": [
+        "(i) and (iii) are correct; (ii), (iv) and (v) are incorrect",
+        "(i), (ii) and (iii) are correct; (iv) and (v) are incorrect",
+        "(iv) and (v) are correct; (i), (ii) and (iii) are incorrect",
+        "(i) and (ii) are correct; (iii), (iv) and (v) are incorrect"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (i) and (iii) are correct; (ii), (iv) and (v) are incorrect. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Attribution concerns how people explain the causes of behaviour or events, including whether causes are located in the person or the situation.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 3,
+      "micro": 3
+    },
+    {
+      "id": "December-2018-79",
+      "session": "December 2018",
+      "question_number": 79,
+      "question": "In which kind of bureaucracy operating core is considered as the dominant group? 1. Options:-",
+      "options": [
+        "Machine bureaucracy",
+        "Divisionalized structure",
+        "Adhocracy",
+        "Professional bureaucracy"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Machine bureaucracy. The stem describes the concept or relationship represented by Machine bureaucracy; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-11",
+      "session": "June 2019",
+      "question_number": 11,
+      "question": "Which of the following are characteristics of post-trauma growth? a). Relationships are strengthened or enhanced b). Self-views become more positive c). Life philosophies become ambiguous d). Greater acceptance of personal limitations 1. Select the comet option: 1). (a), (b) and (c) only 2). (a). (b), (d) only 3). (b), (c) and (d) only 4). (a), (c) and (d) only",
+      "options": [
+        "(a), (b) and (c) only",
+        "(a). (b), (d) only",
+        "(b), (c) and (d) only",
+        "(a), (c) and (d) only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a). (b), (d) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 8,
+      "micro": 4
+    },
+    {
+      "id": "June-2019-18",
+      "session": "June 2019",
+      "question_number": 18,
+      "question": "Which of the following is a step in transformative change unpredictable and often affective experience occurs",
+      "options": [
+        "Integration",
+        "Preparation",
+        "Inspiration",
+        "Organic inquiry"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Integration. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "June-2019-20",
+      "session": "June 2019",
+      "question_number": 20,
+      "question": "Match List-I with List-II List-I (Concept) List-II (Description) a. Reward power i) Potential to deliver threats and punishment to others b. Coercive power ii) Authority of a person by virtue of certain charecteristics c. Referent power iii) Positive reinforcement to produce change d. Legitimate power iv) Power to influence others 1. Select the correct option: 1). (a)-(iii); (b)-(ii), (c)-(iv); (d)-(i) 2). (a)-(iv); (b)-(iii), (c)-(ii); (d)-(i) 3). (a)-(iii); (b)-(i), (c)-(iv); (d)-(ii) 4). (a)-(i); (b)-(ii), (c)-(iv); (d)-(iii)",
+      "options": [
+        "(a)-(iii); (b)-(ii), (c)-(iv); (d)-(i)",
+        "(a)-(iv); (b)-(iii), (c)-(ii); (d)-(i)",
+        "(a)-(iii); (b)-(i), (c)-(iv); (d)-(ii)",
+        "(a)-(i); (b)-(ii), (c)-(iv); (d)-(iii)"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. (a)-(iii); (b)-(i), (c)-(iv); (d)-(ii). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option. Positive reinforcement increases a behaviour by presenting a consequence after the behaviour.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 4,
+      "micro": 8
+    },
+    {
+      "id": "June-2019-31",
+      "session": "June 2019",
+      "question_number": 31,
+      "question": "What is theoretical approach called which attempts to explain completely the phenomenon of one field of study in terms of the dynamics of a more basic field?",
+      "options": [
+        "Interactionism",
+        "Reductionism",
+        "Pragmatism",
+        "Comfliant solution"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Reductionism. The stem describes the concept or relationship represented by Reductionism; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-51",
+      "session": "June 2019",
+      "question_number": 51,
+      "question": "The cognitive approach of prejudice arises from which theory that an individual’s self-concept derives partly from membership in an ‘in- group’? 1). Realistic group conflict theory 2). Scapegoat theory 3). Frustration aggression theory 4). Social identity theory",
+      "options": [
+        "Realistic group conflict theory",
+        "Scapegoat theory",
+        "Frustration aggression theory",
+        "Social identity theory"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Realistic group conflict theory. The stem describes the concept or relationship represented by Realistic group conflict theory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 2
+    },
+    {
+      "id": "June-2019-62",
+      "session": "June 2019",
+      "question_number": 62,
+      "question": "Marked impairments in establishing social interactions and living in their own worlds, repetitive behaviour patterns and non-existent a poor language skills are three major characteristics of which disorder? a). Autism b). Obsessive-compulsive disorder c). Catatonic schizophrenia d). Apraxia 1. Select the correct option:",
+      "options": [
+        "Only (a)",
+        "Only (b) and (c)",
+        "Only (d)",
+        "Only (a) and (d)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Only (b) and (c). The stem describes the concept or relationship represented by Only (b) and (c); the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "June-2019-82",
+      "session": "June 2019",
+      "question_number": 82,
+      "question": "Which of the following is correct explanation of ‘outgroup homogeneity effect’? 1). Members of an in-group assume that other in-group members show their attitudes and values 2). Perception that members of outgroup are more similar to each other than members of in-group are to each other 3). The tendency to give more favourable evaluation and greater rewards to members of out-group 4). People are arbitrarily classified into group than allowed to allocate reward to each other",
+      "options": [
+        "Members of an in-group assume that other in-group members show their attitudes and values",
+        "Perception that members of outgroup are more similar to each other than members of in-group are to each other",
+        "The tendency to give more favourable evaluation and greater rewards to members of out-group",
+        "People are arbitrarily classified into group than allowed to allocate reward to each other"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Perception that members of outgroup are more similar to each other than members of in-group are to each other. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-28",
+      "session": "December 2019",
+      "question_number": 28,
+      "question": "Which of the following is excluded from Berkowitz’s frustration - aggression hypothesis? 1). Frustration always leads to aggression. 2). Social rules may inhibit aggression. 3). Frustration may result in other behaviour than aggression 4). Cognitive factors can overside aggression.",
+      "options": [
+        "Frustration always leads to aggression.",
+        "Social rules may inhibit aggression.",
+        "Frustration may result in other behaviour than aggression",
+        "Cognitive factors can overside aggression."
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Frustration always leads to aggression.. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-67",
+      "session": "December 2019",
+      "question_number": 67,
+      "question": "Eleven rural, eleven semi urban and eleven urban students were thoroughly interviewed and they were ranked (using a pooled sample of N = 331 for their communication skills. Which one of the following statistical technique would be appropriate to explore group wise difference in communication?",
+      "options": [
+        "Friedman”s test",
+        "Kruskal Wallis H test",
+        "Rank difference correlation",
+        "Oneway ANOVA for independent samples"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Kruskal Wallis H test. The stem describes the concept or relationship represented by Kruskal Wallis H test; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 2
+    },
+    {
+      "id": "December-2019-79",
+      "session": "December 2019",
+      "question_number": 79,
+      "question": "In the context of marginalization it is suggested to adopt ‘Social Empowerment Model’ while dealing with LGBTs because a). It increases this group’s collective and personal self advocacy b). They learn that they ran lead -fulfilling and satisfying” lives c). Concerns about LGBT. are social concerns and not the concern for individual d). They realise that being gay or lesbian is not a pathological condition 1. Choose the correct options: 1). (a), (b) and (c) 2). (a) and (d) 3). (b) and (c) 4). (a), (b) and (d)",
+      "options": [
+        "(a), (b) and (c)",
+        "(a) and (d)",
+        "(b) and (c)",
+        "(a), (b) and (d)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (a), (b) and (d). The stem describes the concept or relationship represented by (a), (b) and (d); the alternatives refer to different concepts or conditions.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 3,
+      "micro": 6
+    },
+    {
+      "id": "December-2019-80",
+      "session": "December 2019",
+      "question_number": 80,
+      "question": "The phenomenon where bystander assume that nothing Is wrong in an emergency as no one looks concerned is called UGC NET JRF December 2019 Paper II 528 UGC NET JRF December 2019 Paper II 528 Tap to check answer key 1). Diffusion of responsibility 2). Pluralistic ignorance 3). Prosocial behaviour 4). By stander effect",
+      "options": [
+        "Diffusion of responsibility",
+        "Pluralistic ignorance",
+        "Prosocial behaviour",
+        "By stander effect"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Pluralistic ignorance. The stem describes the concept or relationship represented by Pluralistic ignorance; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "December-2019-86",
+      "session": "December 2019",
+      "question_number": 86,
+      "question": "According to social impact theory the effect of majority on minority rests on three of following. a). Majority’s strength b). Minority’s will c). immediacy d). Number of persons 1. Choose the correct option:",
+      "options": [
+        "(a), (b), (c)",
+        "(a), (c), (d)",
+        "(b), (c), (d)",
+        "(b), (d), (a)"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (a), (c), (d). Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "September-2020-7",
+      "session": "September 2020",
+      "question_number": 7,
+      "question": "The Door in the Face Technique is based on which tactics of compliance?",
+      "options": [
+        "Tactics based on reciprocity",
+        "Tactics based on commitment or consistency",
+        "Tactics based on friendship or liking",
+        "Tactics based on scarcity"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Tactics based on reciprocity. The stem describes the concept or relationship represented by Tactics based on reciprocity; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 6
+    },
+    {
+      "id": "September-2020-49",
+      "session": "September 2020",
+      "question_number": 49,
+      "question": "Who among the following conducted one of the most famous and controversial experiments in the area of obedience?",
+      "options": [
+        "Sherif",
+        "Asch",
+        "Milgram",
+        "Cialdini"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Milgram. The stem describes the concept or relationship represented by Milgram; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 7
+    },
+    {
+      "id": "September-2020-84",
+      "session": "September 2020",
+      "question_number": 84,
+      "question": "Which of the following dimensions are essential to be mastered in multicultural counseling, as per McFadden’s transcultural perspective? a). Cultural-Historical b). Historical hostility management c). Scientific-Ideological d). Minority identity management e). Social 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, E and B only",
+        "B, D and A only",
+        "B, D and E only",
+        "A, C and E only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, C and E only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 7,
+      "micro": 2
+    },
+    {
+      "id": "June-2021-6",
+      "session": "June 2021",
+      "question_number": 6,
+      "question": "Which among the following does not refer to Social Referencing? a). Intentional search for information about others’ feelings, to help explain the meaning of uncertain circumstances and events b). It occurs around the age of 2 – 3 years c). Infants make use of facial expressions in social referencing d). Infants need to understand the significance of other’s behaviour within the context of a specific situation 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "(B) only",
+        "(A) and (C) only",
+        "(B) and (C) only",
+        "(A) and (D) only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. (B) only. The stem describes the concept or relationship represented by (B) only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 6
+    },
+    {
+      "id": "June-2021-27",
+      "session": "June 2021",
+      "question_number": 27,
+      "question": "Match List I with List II: List I (Social Concept) List II (Explanation) a. Elaboration Likelihood Model i) Gender stereotypes b. Realistic Conflict Theory ii) Central and peripheral route to persuasion c. Glass Cliff iii) Idealogical change in core aspect of a group d. Schism competition as a source of prejudice iv) Inter group Choose the correct answer from the options given below:",
+      "options": [
+        "(A)-(I), (B)-(III), (C)- (II), (D)-(IV)",
+        "(A)-(III), (B)-(IV), (C)- (I), (D)-(II)",
+        "(A)-(II), (B)-(I), (C)- (IV), (D)-(III)",
+        "(A)-(II), (B)-(IV),(C)- (I), (D)-(III)"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. (A)-(II), (B)-(IV),(C)- (I), (D)-(III). Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 7,
+      "micro": 4
+    },
+    {
+      "id": "June-2021-43",
+      "session": "June 2021",
+      "question_number": 43,
+      "question": "Which of the following statements describe the term ‘Diffusion of Responsibility?",
+      "options": [
+        "People help others in order to reduce their emotional discomfort 553 UGC NET JRF June 2021 Paper II 553 UGC NET JRF June 2021 Paper II Tap to check answer key",
+        "Greater the number of witnesses to an emergency, the less likely the victims are to receive help",
+        "Helping others is a means of increasing one’s own status and reputation",
+        "Prosocial acts are motivated solely by the desire to help someone in need"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Greater the number of witnesses to an emergency, the less likely the victims are to receive help. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 15,
+      "source_topic": "Bystander effect and diffusion of responsibility",
+      "source_tags": [
+        "PYQ"
+      ]
+    },
+    {
+      "id": "June-2021-64",
+      "session": "June 2021",
+      "question_number": 64,
+      "question": "Which of the following characterizes Cognitive Dissonance? a). Dissonance often occurs in situations involving forced compliance b). Attempts to resolve dissonance are reflected in increased cortical activity c). Dissonance cannot be reduced directly but only by adding cognitions thatjustify our behaviours d). Dissonance is stronger when we have little justification for our attitude inconsistent behaviour 1. Choose the correct answer from the options given below:-",
+      "options": [
+        "(A), (B) and (C) only",
+        "(A), (B) and (D) only",
+        "(B), (C) and (D) only",
+        "(A), (B), (C) and (D) only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. (A), (B) and (D) only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Cognitive dissonance is the uncomfortable state produced by inconsistency among cognitions or between cognitions and behaviour, often motivating efforts to reduce the inconsistency.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "June-2021-82",
+      "session": "June 2021",
+      "question_number": 82,
+      "question": "Give the correct sequence of stages in the relationship maintenance as suggested by Thibaut and Kelly (1959) in their Social Exchange Theory : a). Bargaining b). Commitment c). Sampling d). Institutionalization 1. Choose the correct answer from the options given below :",
+      "options": [
+        "A, C, B, D",
+        "C, A, B, D",
+        "B, D, A, C",
+        "C, B, D, A"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. C, A, B, D. Arrange the items according to the established chronological, developmental, or logical order. The keyed option preserves that order.",
+      "kind": "sequence",
+      "unit": 8,
+      "topic": 7,
+      "micro": 7
+    },
+    {
+      "id": "July-2022-25",
+      "session": "July 2022",
+      "question_number": 25,
+      "question": "In a normally distributed group, an examinee scores one SD above the mean. What shall be her/his percentile score?",
+      "options": [
+        "34",
+        "68",
+        "84",
+        "51"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. 84. The stem describes the concept or relationship represented by 84; the alternatives refer to different concepts or conditions. The arithmetic mean is obtained by summing the scores and dividing by the number of scores.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-37",
+      "session": "July 2022",
+      "question_number": 37,
+      "question": "Psychologists define ________ as a long lasting change in behaviour induced by experience",
+      "options": [
+        "Education",
+        "Maturation",
+        "Learning",
+        "Creativity"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Learning. The stem describes the concept or relationship represented by Learning; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "July-2022-40",
+      "session": "July 2022",
+      "question_number": 40,
+      "question": "The ‘ Robber’s Cave ‘ experiment by Sherif showed the value of ________ in reducing prejudice.",
+      "options": [
+        "Contact",
+        "Superordinate goals",
+        "Subordinate goals",
+        "Stereotypes"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Superordinate goals. The stem describes the concept or relationship represented by Superordinate goals; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-46",
+      "session": "July 2022",
+      "question_number": 46,
+      "question": "Diffusion of responsibility is a hypothesized cause of: a). Identity formation b). Prosocial behaviour c). By Stander effect d). Compliance e). Sharing behaviour 1. Choose the correct answer from the options given below:",
+      "options": [
+        "B and C only",
+        "A and B only",
+        "C and D only",
+        "A and E only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-62",
+      "session": "July 2022",
+      "question_number": 62,
+      "question": "_________ does not explain our obeying unjust commands of authority.",
+      "options": [
+        "Genetic endowment to obedience",
+        "Ingrained habit 577 UGC NET JRF July 2022 Paper II 577 UGC NET JRF July 2022 Paper II Tap to check answer key",
+        "Normative influence",
+        "Informational influence"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Genetic endowment to obedience. The stem describes the concept or relationship represented by Genetic endowment to obedience; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 7,
+      "source_topic": "Obedience",
+      "source_tags": [
+        "PYQ"
+      ]
+    },
+    {
+      "id": "July-2022-73",
+      "session": "July 2022",
+      "question_number": 73,
+      "question": "Match List I with List II List I (Theories) List II (Propositions) UGC NET JRF July 2022 Paper II 580 UGC NET JRF July 2022 Paper II 580 Tap to check answer key a. Realisitc Conflict i) Identity is formed by social comparison, categorization and construction of self identity. b. Relative Depri- vation ii) Competition for scarce resources results in intergroup tensions. c. Social Identity iii) Comparison of one self to others in ways that raise one’s self esteem. d. Social Comparison iv) Feeling of getting less than what one is entitled to. Choose the correct answer from the options given below:",
+      "options": [
+        "A - II, B - IV, C - I, D - III",
+        "A - I, B - II, C - III, D - IV",
+        "A - I, B - III, C - II, D - IV",
+        "A - IV, B – II, C - I, D - III"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A - II, B - IV, C - I, D - III. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 7,
+      "micro": 2
+    },
+    {
+      "id": "July-2022-97",
+      "session": "July 2022",
+      "question_number": 97,
+      "question": "What went wrong with the experiment because of which it was terminated on the 6th day?",
+      "options": [
+        "The experiment was boring",
+        "The university administration asked the researchers to stop the study",
+        "The prisoners felt upset and humiliated",
+        "The prisoners and guards became friends"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. The prisoners felt upset and humiliated. The stem describes the concept or relationship represented by The prisoners felt upset and humiliated; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-98",
+      "session": "July 2022",
+      "question_number": 98,
+      "question": "The experiment:",
+      "options": [
+        "Was highly appreciated",
+        "Was highly criticized",
+        "Resulted in the development and recognition of ethical guidelines",
+        "Resulted in the study of behaviour of guards 587 UGC NET JRF July 2022 Paper II 587 UGC NET JRF July 2022 Paper II Tap to check answer key"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Resulted in the development and recognition of ethical guidelines. The stem describes the concept or relationship represented by Resulted in the development and recognition of ethical guidelines; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "July-2022-100",
+      "session": "July 2022",
+      "question_number": 100,
+      "question": "This experiment is known as:",
+      "options": [
+        "Obedience experiment",
+        "Stanford prison experiment",
+        "False memory experiment",
+        "Michigan experiment UGC NET JRF July 2022 Paper II 588"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Stanford prison experiment. The stem describes the concept or relationship represented by Stanford prison experiment; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-6",
+      "session": "March 2023",
+      "question_number": 6,
+      "question": "A researcher is interested in testing the effectiveness of Pre-post intervention on a single group. The statistical test that could be used is:",
+      "options": [
+        "Correlation",
+        "Chi square",
+        "ANOVA",
+        "‘t’ test"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. ‘t’ test. The stem describes the concept or relationship represented by ‘t’ test; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-17",
+      "session": "March 2023",
+      "question_number": 17,
+      "question": "A person dressed in a gorilla suit walked unnoticed through a group of students playing basket ball. How can this phenomenon be described?",
+      "options": [
+        "Change of attention",
+        "Attention loss",
+        "Inattention blindness",
+        "Attention lapse"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Inattention blindness. The stem describes the concept or relationship represented by Inattention blindness; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-27",
+      "session": "March 2023",
+      "question_number": 27,
+      "question": "Cognitive dissonance theory explains that attitude change occurs as a result of:",
+      "options": [
+        "Distance between one’s belief and behaviour",
+        "Reduction of the unpleasant arousal people experience while they engage in a behaviour that conflicts with their attitude",
+        "A resolution of conflict by a neutral third party who studies both sides and imposes a settlement",
+        "A strategy in which people create obstacles to success so that potential failure can be blamed on these external factors"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Reduction of the unpleasant arousal people experience while they engage in a behaviour that conflicts with their attitude. The stem describes the concept or relationship represented by Reduction of the unpleasant arousal people experience while they engage in a behaviour that conflicts with their attitude; the alternatives refer to different concepts or conditions. Cognitive dissonance is the uncomfortable state produced by inconsistency among cognitions or between cognitions and behaviour, often motivating efforts to reduce the inconsistency.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "March-2023-28",
+      "session": "March 2023",
+      "question_number": 28,
+      "question": "Social loafing is defined as:",
+      "options": [
+        "Personal characteristics that others view as insurmountable handicaps preventing competent or morally trustworthy behaviour",
+        "The tendency by group members to slack off and reduce their effort on additive tasks, which cause the group’s output to fall short of its potential",
+        "The set of interpersonal relationships associated with the social position a person occupies",
+        "Individuals’ concept of self in specific social roles"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. The tendency by group members to slack off and reduce their effort on additive tasks, which cause the group’s output to fall short of its potential. The stem describes the concept or relationship represented by The tendency by group members to slack off and reduce their effort on additive tasks, which cause the group’s output to fall short of its potential; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 2
+    },
+    {
+      "id": "March-2023-39",
+      "session": "March 2023",
+      "question_number": 39,
+      "question": "In the context of health behaviour, Matarazzo (1984) claims:",
+      "options": [
+        "Behaviour that protects health as ‘behavioural immunogenes and that puts health at risk as ‘behavioural compromise’",
+        "Behaviour that protects health as ‘behavioural immunogenes and that puts health at risk as ‘Behavioural pathogens’",
+        "Behaviour that protects health as ‘psycho immunogenes’ and that puts health at risk is ‘Immuno Compromisers’",
+        "Behaviour that protects health as ‘Immunological behaviour’ and that puts health at risk as ‘pathological behaviour’"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Behaviour that protects health as ‘behavioural immunogenes and that puts health at risk as ‘Behavioural pathogens’. The stem describes the concept or relationship represented by Behaviour that protects health as ‘behavioural immunogenes and that puts health at risk as ‘Behavioural pathogens’; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 6
+    },
+    {
+      "id": "March-2023-59",
+      "session": "March 2023",
+      "question_number": 59,
+      "question": "Which of the following is true about leadership? a). Leaders influence followers b). Situation is not important in leadership c). All managers are leaders d). Transactional leaders are different from transformational leaders 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A and D only",
+        "A, B and D only UGC NET JRF March 2023 Paper II 600 UGC NET JRF March 2023 Paper II 600 Tap to check answer key",
+        "A, C and D only",
+        "A and B only"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. A and D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-60",
+      "session": "March 2023",
+      "question_number": 60,
+      "question": "Which of the following is applicable to Fiedler’s contingency model of leadership effectiveness? a). The leader’s position power b). The degree of task structure c). The leader-member relationship d). The inborn traits of the leader 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A and B only",
+        "A, B and C only",
+        "D only",
+        "A, B and D only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, B and C only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 3
+    },
+    {
+      "id": "March-2023-67",
+      "session": "March 2023",
+      "question_number": 67,
+      "question": "Match List I with List II List I List II a. Phenomenol- ogy i) Constructionist Approach b. Narrative analysis ii) Social Media c. Grounded theory iii) Eidetic Variation d. Netnographic Analysis iv) Theoretical coding Choose the correct answer from the options given below:",
+      "options": [
+        "A-I, B-III, C-IV, D-II",
+        "A-II, B-IV, C-III, D-I",
+        "A-III, B-I, C-IV, D-II",
+        "A-IV, B-I, C-III, D-II"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A-III, B-I, C-IV, D-II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "March-2023-93",
+      "session": "March 2023",
+      "question_number": 93,
+      "question": "The psychologist associated with the above experiment:",
+      "options": [
+        "Vygotsky",
+        "Piaget",
+        "Bruner",
+        "Bandura"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Piaget. The item tests a factual association: the relevant person, work, date, contribution, or term is Piaget.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 7,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-32",
+      "session": "June 2023",
+      "question_number": 32,
+      "question": "Late adulthood often involves a gradual withdrawal from the world on physical, psychological and social levels. Which theory supports this?",
+      "options": [
+        "Disengagement Theory",
+        "Activity theory",
+        "Continuity theory",
+        "Selective Isolation theory"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Disengagement Theory. The stem describes the concept or relationship represented by Disengagement Theory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-46",
+      "session": "June 2023",
+      "question_number": 46,
+      "question": "In the context of formula for Cohen’s Kappa (A). (B). (C). (D). N = Overall total of data points in the frequency matrix 1. Choose the most appropriate answer from the options given below:",
+      "options": [
+        "A, B only",
+        "A, C only",
+        "A, B, C only",
+        "A, B, C, D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, B, C, D only. The stem describes the concept or relationship represented by A, B, C, D only; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 3,
+      "micro": 6
+    },
+    {
+      "id": "June-2023-80",
+      "session": "June 2023",
+      "question_number": 80,
+      "question": "What would be the correct order of the steps involved in prosocial behaviour? (A). Accept the responsibility for helping (B). Noticing something unusual (C). decision about possession of required knowledge or skills (D). Interpreting the event as emergency (E). deciding to actually help 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, C, B, D, E",
+        "B, D, A, C, E",
+        "B, D, C, A, E",
+        "E, B, D, C, A"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. B, D, A, C, E. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 3,
+      "micro": 1
+    },
+    {
+      "id": "June-2023-89",
+      "session": "June 2023",
+      "question_number": 89,
+      "question": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R. 1. Assertion A: Project Head start and other preschool quality programme boost children’s chances of success in future by increasing their school readiness. 2. Reason R: Genes and experience together determine cognitive and social skills. 3. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        "Both A and B are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 0,
+      "type": "PYQ",
+      "explanation": "Correct answer: A. Both A and B are true and R is the correct explanation of A. The stem describes the concept or relationship represented by Both A and B are true and R is the correct explanation of A; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 2
+    },
+    {
+      "id": "December-2023-14",
+      "session": "December 2023",
+      "question_number": 14,
+      "question": "A theory which advocates prejudice stems, at least in part, from economic competition between social groups is ________.",
+      "options": [
+        "Contact hypothesis",
+        "Social identify theory",
+        "Realistic conflict theory",
+        "Repulsion hypothesis"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. Realistic conflict theory. The stem describes the concept or relationship represented by Realistic conflict theory; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-15",
+      "session": "December 2023",
+      "question_number": 15,
+      "question": "If members in a group are performing additive tasks, then _________.",
+      "options": [
+        "Social loafing will be less",
+        "Social loafing will be more",
+        "Social loafing will not exist",
+        "Level of social loafing cannot be decided"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Social loafing will be more. The stem describes the concept or relationship represented by Social loafing will be more; the alternatives refer to different concepts or conditions.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 6,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-17",
+      "session": "December 2023",
+      "question_number": 17,
+      "question": "Although she likes to wear gold ear-ring very much, Tanmaya removed the same when she joined a school where gold ornaments are not allowed This social influence is example of",
+      "options": [
+        "Compliance",
+        "Conformity",
+        "Symbol influence",
+        "Pluralistic ignorance"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. Conformity. The stem describes the concept or relationship represented by Conformity; the alternatives refer to different concepts or conditions. Conformity involves changing behaviour or expressed beliefs to align with group or social expectations.",
+      "kind": "direct",
+      "unit": 8,
+      "topic": 4,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-55",
+      "session": "December 2023",
+      "question_number": 55,
+      "question": "Resistance to persuasion may be increased (A). Reactance (B). Emotional appeal (C). Fore warning (D). Selective avoidance 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B only",
+        "B, C only",
+        "A, B, D only",
+        "A, C, D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. A, C, D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements. Psychological reactance is a motivational response that occurs when people perceive that their freedom of choice is being threatened or restricted.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 4,
+      "micro": 5
+    },
+    {
+      "id": "December-2023-59",
+      "session": "December 2023",
+      "question_number": 59,
+      "question": "Which of the following are the stages in the transtheoretical model of behaviour change: (A). Maintenance (B). Intention (C). Contemplation (D). Action 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, C only",
+        "A, C, D only",
+        "B, C, D only",
+        "B, C only"
+      ],
+      "answer": 1,
+      "type": "PYQ",
+      "explanation": "Correct answer: B. A, C, D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 3,
+      "micro": 5
+    },
+    {
+      "id": "December-2023-63",
+      "session": "December 2023",
+      "question_number": 63,
+      "question": "Which of the following statements is UGC NET JRF December 2023 Paper II 646 UGC NET JRF December 2023 Paper II 646 Tap to check answer key correct about Gestalt psychology? (A). Gestalt approach is dementistic (B). Gestalt psychology has sometimes been called phenomenology (C). Gestalt psychology can be thought of as an attempt to apply field theory from physics (D). Gestalt psychologists believed that whatever happens to a person influences everything else about the person 1. Choose the correct answer from the options given below:",
+      "options": [
+        "A, B, D only",
+        "A, C, D only",
+        "A, B, C only",
+        "B, C, D only"
+      ],
+      "answer": 3,
+      "type": "PYQ",
+      "explanation": "Correct answer: D. B, C, D only. Evaluate each statement independently against the relevant psychological principle, then select the combination containing only the supported statements.",
+      "kind": "statement-set",
+      "unit": 8,
+      "topic": 2,
+      "micro": 1
+    },
+    {
+      "id": "December-2023-72",
+      "session": "December 2023",
+      "question_number": 72,
+      "question": "Match List I with List II List I List II a. Theory of planned be- haviour i) Tajfel and Turner b. Theory of causal attribu- tion ii) Pettigrew c. Social identity theory iii) Ajzen & Fishbein d. Contact hy- pothesis iv) Kelley Choose the correct answer from the options given below:",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-III, B-IV, C-I, D-II",
+        "A-III, B-IV, C-II, D-I"
+      ],
+      "answer": 2,
+      "type": "PYQ",
+      "explanation": "Correct answer: C. A-III, B-IV, C-I, D-II. Check each List-I item against its specific person, concept, function, or description. The keyed code is correct only when all four pairings fit; a single incorrect pairing changes the option.",
+      "kind": "match",
+      "unit": 8,
+      "topic": 7,
+      "micro": 2
+    }
+  ],
+  "practice": []
+}
