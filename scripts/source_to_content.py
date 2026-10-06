@@ -264,7 +264,7 @@ def main():
             "rating_instruction":{"type":"string"}},
             "required":["recall_before_review","self_check","weak_point_prompt","rating_instruction"],"additionalProperties":False},
         "source_notes":{"type":"string"}},
-        "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","source_notes"],
+        "required":["microtopic_id","quick_learn","core_explanation","detailed_explanation","recall_prompts","exam_takeaway","revision_guidance","source_notes"],
         "additionalProperties":False}
     if not args.apply_staged:
         for ref in list(refs.values()):
