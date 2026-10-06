@@ -506,7 +506,7 @@ function topicPage(){
   const {u,t}=find();
   if(!u||!t)return $('#topicPage').innerHTML='<div class="panel empty">Topic not found.</div>';
   document.title=`${t.title} — UGC NET Psychology`;
-  const topicItems=t.microtopics||[];
+  const topicItems=microtopicItems(u,t);
   const progress=()=>{const ps=topicItems.map(m=>getP(key(u.id,t.id,m.id))),learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,mastered=ps.filter(p=>p.status==='MASTERED').length,due=ps.filter(p=>p.next&&Date.parse(p.next)<=Date.now()).length;return {started:learned,mastered,due,total:topicItems.length,percent:topicItems.length?Math.round(learned/topicItems.length*100):0}};
   const availableItems=()=>topicItems.filter(m=>microAvailable(u,t,m));
   const firstOpen=()=>{const items=availableItems(),ps=items.map(m=>getP(key(u.id,t.id,m.id)));return items.find((m,i)=>ps[i].status==='NEW'||(ps[i].next&&new Date(ps[i].next)<=new Date()))||items[0]};
