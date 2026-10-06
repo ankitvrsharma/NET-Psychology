@@ -1,1 +1,1 @@
-window.NETPSY_DATA_VERSION = "1.3.0-direct-static-pools";
+window.NETPSY_DATA_VERSION = "1.3.1-canonical-microtopic-routing";

@@ -35,7 +35,7 @@ function initDataActions(){
 }
 
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
-const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.3.0-direct-static-pools';
+const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.3.1-canonical-microtopic-routing';
 let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
@@ -125,8 +125,9 @@ const all=()=>syllabusItems().map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)})).fil
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
 const microAvailable=(u,t,m)=>hasLearningContent(microtopicItem(u,t,m));
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
-const microtopicHref=(u,t,m,extra={})=>{const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
-const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),ref=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro'))),k=u&&t&&ref?key(u.id,t.id,ref.id):null,m=k?microtopicItem(u,t,ref):null;return {u,t,m,k}};
+const microtopicHref=(u,t,m,extra={})=>{if(u?.id==null||t?.id==null||m?.id==null)throw new Error('Cannot build a micro-topic route without unit, topic and micro-topic IDs');const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
+const routeId=name=>{const value=Q.get(name);return value!==null&&/^\d+$/.test(value)?Number(value):null};
+const find=()=>{const unitId=routeId('unit'),topicId=routeId('topic'),microId=routeId('micro'),u=unitId===null?null:units().find(x=>Number(x.id)===unitId),t=u&&topicId!==null?u.topics.find(x=>Number(x.id)===topicId):null,ref=t&&microId!==null?t.microtopics.find(x=>Number(x.id)===microId):null,k=u&&t&&ref?key(u.id,t.id,ref.id):null,m=k?microtopicItem(u,t,ref):null;return {u,t,m,k}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
@@ -378,7 +379,7 @@ function quickLearnItem(){
   const last=seen[seen.length-1];let poolItems=unseen.filter(x=>x.id!==last);if(!poolItems.length)poolItems=unseen;
   const item=poolItems[Math.floor(Math.random()*poolItems.length)];seen=[...seen,item.id];
   try{localStorage.setItem(keyName,JSON.stringify({cycle:cycle.cycle,seen}))}catch(e){}
-  return {...item,category:item.category||item.angle||'CONCEPT',href:'microtopic.html?unit='+encodeURIComponent(item.unit)+'&topic='+encodeURIComponent(item.topic)+'&micro='+encodeURIComponent(item.micro)+'&focus=detailed&quick='+encodeURIComponent(item.id)};
+  return {...item,category:item.category||item.angle||'CONCEPT',href:microtopicHref({id:item.unit},{id:item.topic},{id:item.micro},{focus:'detailed',quick:item.id})};
 }
 function home(){
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
