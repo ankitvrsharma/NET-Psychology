@@ -1,4 +1,6 @@
 // VERSIONING RULE — NET-Psychology
+// Full website philosophy, architecture, naming, and change-management rules live in
+// docs/project-governance.md. Keep this local reminder in sync with that source of truth.
 // Use Semantic Versioning only: MAJOR.MINOR.PATCH (for example: 1.4.2).
 // 1.0.0 = baseline; PATCH = bug fixes; MINOR = backward-compatible features; MAJOR = breaking changes.
 // Keep version values and cache identifiers machine-comparable. Never append descriptive suffixes
