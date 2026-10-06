@@ -121,9 +121,9 @@ const hasLearningContent=m=>{
   }).join(' ').replace(/\\s+/g,' ').trim();
   return text.length>=80;
 };
-const all=()=>units().flatMap(u=>u.topics.flatMap(t=>t.microtopics.filter(hasLearningContent).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
+const all=()=>syllabusItems().map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)})).filter(x=>hasLearningContent(x.m));
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
-const microAvailable=(u,t,m)=>hasLearningContent(m);
+const microAvailable=(u,t,m)=>hasLearningContent(microtopicItem(u,t,m));
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
 const microtopicHref=(u,t,m,extra={})=>{const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
 const find=()=>{const u=units().find(x=>String(x.id)===String(Q.get('unit'))),t=u?.topics.find(x=>String(x.id)===String(Q.get('topic'))),m=t?.microtopics.find(x=>String(x.id)===String(Q.get('micro')));return {u,t,m,k:u&&t&&m?key(u.id,t.id,m.id):null}};
