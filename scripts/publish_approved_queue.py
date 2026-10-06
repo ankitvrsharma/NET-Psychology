@@ -32,11 +32,10 @@ def main():
         mid=str(item["microtopic_id"]); g=item.get("package") or {}
         if mid not in micro: raise SystemExit(f"Cannot publish {mid}: canonical micro-topic is missing.")
         me=micro[mid]
-        me["content_notes"]=g["quick_learn"]; me["expert_explanation"]=g["core_explanation"]
-        me["detailed_explanation"]=g["detailed_explanation"]; me["recall_cue"]=g["exam_takeaway"]; me["source_notes"]=g["source_notes"]
-        me["source_pipeline"]=[{"marker":marker,"publication":"OWNER_APPROVED","published_at":now}]
+        me["expert_explanation"]=g["core_explanation"]
+        me["detailed_explanation"]=g["detailed_explanation"]
         de=deep.get(mid) or {"id":mid,"title":me.get("title","")}
-        de["id"]=mid; de["title"]=me.get("title",de.get("title","")); de["detailed_explanation"]=g["detailed_explanation"]; de["exam_takeaway"]=g["exam_takeaway"]; deep[mid]=de
+        de["id"]=mid; de["title"]=me.get("title",de.get("title","")); de["detailed_explanation"]=g["detailed_explanation"]; deep[mid]=de
         ae=recall.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
         ae["id"]=mid; ae["title"]=me.get("title",ae.get("title","")); ae["prompts"]=g.get("recall_prompts") or []; recall[mid]=ae
         rg=g.get("revision_guidance") or {}; rev=revision.get(mid) or {"id":mid,"title":me.get("title","")}
