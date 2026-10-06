@@ -37,7 +37,6 @@ function initDataActions(){
 const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],PRACTICE_EXPLANATIONS={};
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.1.0-static-pools';
 let CONTENT_REVIEW={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''};
-let CONTENT_REVIEW_PROMISE=null;
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
   microtopics:'content/microtopics/micro_topics.json',
