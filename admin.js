@@ -3,6 +3,7 @@
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 let approvalQueue=[],verificationState={schema_version:2,items:{},updated_at:''},visibilityState={schema_version:1,items:{microtopics:{},questions:{}},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},questionStore=null,questions=[],filter='ALL';
+let filterUnit='ALL',filterTopic='ALL';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
 try{hiddenForMe=new Set(JSON.parse(localStorage.getItem(ADMIN_HIDDEN_KEY)||'[]'))}catch(e){}
@@ -75,38 +76,48 @@ async function saveContent(type,id,editor){
   }
   await reloadAdminContent();
 }
-async function toggleVisibility(type,id){
-  const next=JSON.parse(JSON.stringify(visibilityState||{schema_version:1,items:{microtopics:{},questions:{}}}));
-  next.items=next.items||{};next.items[type]=next.items[type]||{};
-  if(isHiddenForMe(type,id))delete next.items[type][String(id)];else next.items[type][String(id)]='HIDDEN';
-  next.updated_at=new Date().toISOString();
-  await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-visibility.json',content:JSON.stringify(next,null,2)+'\n',message:'Admin: change visibility '+type+' '+id});
-  visibilityState=next;renderQueue();
+function toggleVisibility(type,id){
+  const key=adminHiddenKey(type,id);
+  if(hiddenForMe.has(key))hiddenForMe.delete(key);else hiddenForMe.add(key);
+  saveHiddenForMe();
+  renderQueue();
 }
 function titleFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-').map(Number),unit=data?.units?.find(x=>x.id===u),topic=unit?.topics?.find(x=>x.id===t),micro=topic?.microtopics?.find(x=>x.id===m);return micro?unit.title+' · '+topic.title+' · '+micro.title:id}const q=questions.find(x=>String(x.id)===String(id));return q?.question||id}
 function learnerHref(type,id){const parts=String(id).split('-');return type==='microtopics'?'microtopic.html?unit='+encodeURIComponent(parts[0])+'&topic='+encodeURIComponent(parts[1])+'&micro='+encodeURIComponent(parts[2])+'&preview=1':'practice-session.html?previewQuestion='+encodeURIComponent(id)}
 function makeItem(type,id,audit){
   const owner=ownerReview(type,id),hidden=isHiddenForMe(type,id);
   const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
-  const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">SHOW AGAIN</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
-  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'HIDDEN':'PUBLISHED')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'HIDDEN':'PUBLISHED')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
+  const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST/button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
+  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
+}
+function rowMeta(x){
+  if(x.type!=='microtopics')return {unitId:null,topicId:null};
+  const parts=String(x.id).split('-').map(Number);
+  return {unitId:parts[0],topicId:parts[1]};
 }
 function rowsFor(selectedFilter='ALL'){
   const audit=window.NETPsychologyContentAudit.create({data:data,questions:questions}).expertAudit;
   const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));
   const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
-  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,reviewStatus:r}});
+  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),reviewStatus=review(x.type,x.id),meta=rowMeta(x);return{x,a,reviewStatus,unitId:meta.unitId,topicId:meta.topicId}});
   return rows.filter(r=>{
     const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus;
-    if(selectedFilter==='HIDDEN FOR ME')return h;
+    if(selectedFilter==='REMOVED FROM MY LIST')return h;
     if(h)return false;
+    if(filterUnit!=='ALL'&&String(r.unitId)!==String(filterUnit))return false;
+    if(filterTopic!=='ALL'&&String(r.topicId)!==String(filterTopic))return false;
     if(selectedFilter==='MICRO-TOPICS')return r.x.type==='microtopics';
     if(selectedFilter==='QUESTIONS')return r.x.type==='questions';
+    if(selectedFilter==='PYQ')return r.x.type==='questions'&&String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
+    if(selectedFilter==='MCQ')return r.x.type==='questions'&&!String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
     if(selectedFilter==='NEED REVIEW')return a.status!=='PASS'&&!rv;
+    if(selectedFilter==='NOT YET REVIEWED')return !rv;
     if(selectedFilter==='AI REVIEWED')return aiReview(r.x.type,String(r.x.id));
     if(selectedFilter==='EXPERT VERIFIED')return rv==='EXPERT VERIFIED';
     if(selectedFilter==='AUDIT PASS')return a.status==='PASS';
     if(selectedFilter==='AUDIT FAIL')return a.status==='FAIL';
+    if(selectedFilter==='MISSING CONTENT')return r.x.type==='microtopics'&&!hasContent(microInStore(r.x.id)||{});
+    if(selectedFilter==='CONTENT READY')return r.x.type==='microtopics'&&hasContent(microInStore(r.x.id)||{});
     return true;
   }).sort((a,b)=>a.a.score-b.a.score);
 }
@@ -133,16 +144,25 @@ function mountLearnerPreviews(){
   const load=frame=>{if(frame.dataset.loaded==='1')return;frame.dataset.loaded='1';frame.src=frame.dataset.src+'&previewRefresh='+Date.now()};
   if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){load(entry.target);io.unobserve(entry.target)}}),{rootMargin:'900px 0px'});frames.forEach(frame=>io.observe(frame))}else frames.slice(0,3).forEach(load);
 }
+function filterControls(){
+  const units=data?.units||[];
+  const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
+  const topics=selectedUnit?.topics||[];
+  const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','AUDIT PASS','AUDIT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
+  return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
+}
 function renderQueue(){
   const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
-  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>hidden</span></div></section><div class="admin-filters">'+['ALL','NEED REVIEW','MICRO-TOPICS','QUESTIONS','AI REVIEWED','EXPERT VERIFIED','AUDIT PASS','AUDIT FAIL','HIDDEN FOR ME'].map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter to see another review state.</p></section>');
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
+  const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
+  const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
   root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
-  root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>{const key=adminHiddenKey(b.dataset.type,b.dataset.id);if(hiddenForMe.has(key))hiddenForMe.delete(key);else hiddenForMe.add(key);saveHiddenForMe();renderQueue()});
+  root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>toggleVisibility(b.dataset.type,b.dataset.id));
   root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
   root.querySelectorAll('.admin-edit-close').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-editor');if(editor)editor.hidden=true});
-  root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
+  root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
   root.querySelectorAll('.approve-queued').forEach(b=>b.onclick=()=>approveQueued(b.dataset.id,b.dataset.component));
   mountLearnerPreviews();
 }

@@ -242,7 +242,6 @@ const loadStudyData=async()=>{
     await Promise.all([loadIndex('activeRecall'),loadPool('activeRecall'),loadPool('questions')]);
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
-    PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(visibleQuestion);
   }
   if(page==='deep-dive')await loadPool('deepDive');
   if(page==='revision')await loadIndex('microtopics');
