@@ -203,3 +203,13 @@ If you are returning after a gap:
 The objective is not to make you spend more time on the website.
 
 The objective is to help you **learn Psychology, retain it, and recall it when you need it for UGC NET.**
+
+## Accounts and saved learning state
+
+You can optionally create a learner account. When signed in, the site's learning state is backed up to Supabase so progress, revision state, practice history and bookmarks can follow you across devices. You can still browse without an account.
+
+The administrator area uses a separate Supabase role. The owner account must be promoted to the `admin` role in Supabase SQL after the first account is created. Repository-writing actions in the existing content audit workbench still require the GitHub repository credential; it is not stored in Supabase or exposed to learners.
+
+### Supabase setup
+
+Run `supabase/schema.sql` in the Supabase SQL Editor. Create your owner account at `login.html`, then promote that account once with the SQL statement documented at the bottom of the schema. Never put a Supabase secret/service-role key in the website.
