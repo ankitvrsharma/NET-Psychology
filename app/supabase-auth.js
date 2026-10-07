@@ -20,9 +20,17 @@ async function githubWrite(action,payload={}){
   const token=session?.access_token;
   if(!token)throw new Error('Admin session has expired. Please sign in again.');
   const endpoint=SUPABASE_URL+'/functions/v1/admin-github-write';
-  const response=await fetch(endpoint,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({action,...payload})});
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),12000);
+  let response;
+  try{
+    response=await fetch(endpoint,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({action,...payload}),signal:controller.signal,credentials:'omit',cache:'no-store'});
+  }catch(error){
+    if(error?.name==='AbortError') throw new Error('The secure GitHub bridge timed out after 12 seconds.');
+    throw new Error('Failed to fetch the secure GitHub bridge. Check that the Supabase Edge Function is deployed, its CORS policy allows this site, and the browser connection is HTTPS.');
+  }finally{clearTimeout(timer)}
   const text=await response.text();let data=null;try{data=text?JSON.parse(text):null}catch{data=text}
-  if(!response.ok)throw new Error(data?.message||data?.error||'Secure GitHub write failed ('+response.status+')');
+  if(!response.ok)throw new Error(data?.message||data?.error||data?.error_description||'Secure GitHub write failed ('+response.status+')');
   return data;
 }
 async function signIn(email,password){const data=await request('/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({email,password})});session=data;user=data.user;localStorage.setItem(SESSION_KEY,JSON.stringify(session));profile=await loadProfile();await ensureState();return{user,profile}}
