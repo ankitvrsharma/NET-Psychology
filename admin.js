@@ -156,7 +156,7 @@ async function changeReview(type,id,value){
     await loadAuditState();renderQueue();
   }catch(e){alert('Could not save the verification status: '+e.message)}
 }
-async function checkSite(){const checks=await Promise.all(['./index.html','./app/runtime.js','./style.css','./data/syllabus-index.json','./content/microtopics/micro_topics.json','./content/questions/questions.json','./data/content-visibility.json'].map(async path=>{try{const r=await fetch(path+'?health='+Date.now(),{cache:'no-store'});return r.ok}catch{return false}}));return checks.every(Boolean)}
+async function checkSite(){const checks=await Promise.all(['./index.html','./app/runtime.js','./style.css','./data/syllabus-index.json','./content/microtopics/micro_topics.json','./content/questions/questions.json'].map(async path=>{try{const r=await fetch(path+'?health='+Date.now(),{cache:'no-store'});return r.ok}catch{return false}}));return checks.every(Boolean)}
 async function reloadAdminContent(){const [syllabus,micro,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json')]);microPool=micro||{};questionStore=qpool;data=buildAdminData(syllabus,microPool);questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];await loadVisibility();renderQueue();}
 
 let bridgeHealth={ok:false,error:'Not checked'};
