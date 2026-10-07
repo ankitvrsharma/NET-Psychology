@@ -1,0 +1,22 @@
+/* Login page: deliberately separate from the shared stylesheet so auth layout cannot be held hostage by a stale PWA shell cache. */
+body[data-page="login"]{min-width:0;overflow-x:hidden}
+body[data-page="login"] .shell{width:100%;max-width:1180px;min-width:0;padding:34px 22px 72px}
+body[data-page="login"] #authApp{width:100%;max-width:560px;min-width:0;margin:48px auto 0!important;padding:21px;overflow:hidden}
+body[data-page="login"] #authApp h1{max-width:100%;overflow-wrap:anywhere}
+body[data-page="login"] #authApp #authMessage{display:block;width:100%;max-width:100%;margin:0 0 18px;overflow-wrap:anywhere;word-break:normal;white-space:normal}
+body[data-page="login"] #authForm{display:block!important;width:100%;min-width:0;margin:0}
+body[data-page="login"] #authForm[hidden]{display:none!important}
+body[data-page="login"] .auth-field{display:block!important;width:100%;min-width:0;max-width:none;margin:18px 0 0}
+body[data-page="login"] .auth-field span{display:block;font-size:10px;font-weight:900;letter-spacing:.08em;color:var(--muted);margin-bottom:7px}
+body[data-page="login"] .auth-field input{display:block;width:100%;min-width:0;max-width:none;height:48px;box-sizing:border-box;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit}
+body[data-page="login"] #authForm [hidden]{display:none!important}
+body[data-page="login"] .auth-actions{display:grid;grid-template-columns:1fr 1fr;width:100%;min-width:0;gap:10px;margin-top:18px}
+body[data-page="login"] .auth-actions .btn{display:inline-flex;width:100%;min-width:0;min-height:48px;white-space:normal}
+body[data-page="login"] .auth-resend{display:block;width:100%;min-width:0;min-height:46px;margin-top:10px}
+@media(max-width:720px){
+  body[data-page="login"] .shell{padding:22px 16px 48px}
+  body[data-page="login"] #authApp{margin:18px auto 0!important;padding:22px 18px}
+  body[data-page="login"] #authApp h1{font-size:clamp(32px,8vw,42px)}
+  body[data-page="login"] #authApp #authMessage{font-size:15px;line-height:1.5}
+  body[data-page="login"] .auth-actions{grid-template-columns:1fr;gap:9px}
+}
