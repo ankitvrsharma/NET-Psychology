@@ -362,7 +362,19 @@ function startPage(){
   }else if(r) r.hidden=true;
   draw('');
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
-}function learnerPage(){
+}function learningAccountPrompt(context='learning'){
+  const signedIn=Boolean(window.NETPSY_AUTH?.getUser?.());
+  if(signedIn){
+    return '<section class="learning-account-prompt synced card"><div><div class="eyebrow">LEARNING ACCOUNT</div><h2>Your learning is backed up.</h2><p>Your progress, revision schedule and practice history can follow you across devices while you are signed in.</p></div><a class="btn" href="account.html">ACCOUNT →</a></section>';
+  }
+  const copy=context==='practice'
+    ? {eyebrow:'SAVE YOUR PRACTICE',title:'Keep your practice history.',text:'Your results are currently saved only on this device. Sign in or create a free account if you want your practice history to follow you across devices.'}
+    : context==='complete'
+      ? {eyebrow:'SAVE YOUR PROGRESS',title:'Keep what you just completed.',text:'Your learning progress is currently saved only on this device. Sign in or create a free account so this progress can follow you across devices.'}
+      : {eyebrow:'SAVE YOUR LEARNING',title:'Keep your learning progress.',text:'Your progress is currently saved only on this device. If you clear browser data or change devices, it may not be available there. Sign in or create a free account to keep it synced.'};
+  return '<section class="learning-account-prompt card"><div><div class="eyebrow">'+copy.eyebrow+'</div><h2>'+copy.title+'</h2><p>'+copy.text+'</p></div><a class="btn primary" href="login.html">SIGN IN / CREATE ACCOUNT →</a></section>';
+}
+function learnerPage(){
   document.title='My Learning — UGC NET Psychology';
   const root=$('#learnJourney');
   if(!root)return;
@@ -379,7 +391,7 @@ function startPage(){
   const learned=summary.learned||0, mastered=summary.mastered||0, scheduled=summary.revisionScheduled||0;
   const progress=summary.coverage;
   root.innerHTML=
-    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.</p></section>'+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
+    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.</p></section>'+learningAccountPrompt('learning')+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
     '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
 
     '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+
@@ -478,7 +490,7 @@ function activeRecall(){
     }else if(nextItem){
       complete.innerHTML='<div class="eyebrow">KEEP GOING</div><h2>Ready for the next concept?</h2><p>Move straight to the next incomplete concept in today’s learning set.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(nextItem.u.id)+'&topic='+encodeURIComponent(nextItem.t.id)+'&micro='+encodeURIComponent(nextItem.m.id)+'">NEXT TOPIC →</a></div>';
     }else{
-      complete.innerHTML='<div class="eyebrow">TODAY’S LEARNING COMPLETE</div><h2>You’ve completed all three concepts.</h2><p>Your concepts are now in your revision cycle. Would you like to keep learning?</p><div class="complete-actions"><a class="btn" href="index.html">FINISH LEARNING</a><a class="btn primary" href="learner.html">CONTINUE LEARNING →</a></div>';
+      complete.innerHTML='<div class="eyebrow">TODAY’S LEARNING COMPLETE</div><h2>You’ve completed all three concepts.</h2><p>Your concepts are now in your revision cycle. Would you like to keep learning?</p>'+learningAccountPrompt('complete')+'<div class="complete-actions"><a class="btn" href="index.html">FINISH LEARNING</a><a class="btn primary" href="learner.html">CONTINUE LEARNING →</a></div>';
     }
     complete.hidden=false;
     complete.scrollIntoView({behavior:'smooth',block:'center'});
@@ -608,7 +620,7 @@ function dailyPractice(){
       const status=record?.correct?'correct':'incorrect';
       return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
     }).join('');
-    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section><section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
+    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section>'+learningAccountPrompt('practice')+'<section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
   };
   const renderQuestion=()=>{
     if(ended)return;
