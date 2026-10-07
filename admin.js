@@ -3,14 +3,18 @@
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 let approvalQueue=[],verificationState={schema_version:2,items:{},updated_at:''},visibilityState={schema_version:1,items:{microtopics:{},questions:{}},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},questionStore=null,questions=[],filter='ALL';
+const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
+let hiddenForMe=new Set();
+try{hiddenForMe=new Set(JSON.parse(localStorage.getItem(ADMIN_HIDDEN_KEY)||'[]'))}catch(e){}
+const adminHiddenKey=(type,id)=>type+'::'+String(id);
+const isHiddenForMe=(type,id)=>hiddenForMe.has(adminHiddenKey(type,id));
+const saveHiddenForMe=()=>localStorage.setItem(ADMIN_HIDDEN_KEY,JSON.stringify(Array.from(hiddenForMe)));
 const loadJSON=async(path)=>{const r=await fetch('./'+path+'?v=20261006-audit-static-pools',{cache:'no-store'});if(!r.ok)throw new Error(path+' '+r.status);return r.json()};
 const review=(type,id)=>String(verificationState?.items?.[type]?.[String(id)]||'');
 const ownerReview=(type,id)=>review(type,id)==='EXPERT VERIFIED'?'EXPERT VERIFIED':'';
 const aiReview=(type,id)=>['AI REVIEWED','EXPERT VERIFIED'].includes(review(type,id));
 const hasContent=m=>{const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];const text=values.map(v=>Array.isArray(v)?v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' '):v&&typeof v==='object'?JSON.stringify(v):String(v||'')).join(' ').replace(/\s+/g,' ').trim();return text.length>=80};
 async function loadAuditState(){const r=await fetch('./data/verification-state.json?v=20261006-verification',{cache:'no-store'});if(r.ok)verificationState=await r.json();if(!verificationState.items)verificationState.items={};}
-async function loadVisibility(){const r=await fetch('./data/content-visibility.json?v=20261007-visibility',{cache:'no-store'});if(r.ok)visibilityState=await r.json();if(!visibilityState.items)visibilityState.items={};visibilityState.items.microtopics=visibilityState.items.microtopics||{};visibilityState.items.questions=visibilityState.items.questions||{}}
-const isHidden=(type,id)=>String(visibilityState?.items?.[type]?.[String(id)]||'')==='HIDDEN';
 async function loadApprovalQueue(){
   const r=await fetch('./data/content-approval-queue.json?v=20261006-approval-queue',{cache:'no-store'});
   if(r.ok){const q=await r.json();approvalQueue=Array.isArray(q.pending)?q.pending:[];} else approvalQueue=[];
@@ -74,7 +78,7 @@ async function saveContent(type,id,editor){
 async function toggleVisibility(type,id){
   const next=JSON.parse(JSON.stringify(visibilityState||{schema_version:1,items:{microtopics:{},questions:{}}}));
   next.items=next.items||{};next.items[type]=next.items[type]||{};
-  if(isHidden(type,id))delete next.items[type][String(id)];else next.items[type][String(id)]='HIDDEN';
+  if(isHiddenForMe(type,id))delete next.items[type][String(id)];else next.items[type][String(id)]='HIDDEN';
   next.updated_at=new Date().toISOString();
   await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-visibility.json',content:JSON.stringify(next,null,2)+'\n',message:'Admin: change visibility '+type+' '+id});
   visibilityState=next;renderQueue();
@@ -82,7 +86,7 @@ async function toggleVisibility(type,id){
 function titleFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-').map(Number),unit=data?.units?.find(x=>x.id===u),topic=unit?.topics?.find(x=>x.id===t),micro=topic?.microtopics?.find(x=>x.id===m);return micro?unit.title+' · '+topic.title+' · '+micro.title:id}const q=questions.find(x=>String(x.id)===String(id));return q?.question||id}
 function learnerHref(type,id){const parts=String(id).split('-');return type==='microtopics'?'microtopic.html?unit='+encodeURIComponent(parts[0])+'&topic='+encodeURIComponent(parts[1])+'&micro='+encodeURIComponent(parts[2])+'&preview=1':'practice-session.html?previewQuestion='+encodeURIComponent(id)}
 function makeItem(type,id,audit){
-  const owner=ownerReview(type,id),hidden=isHidden(type,id);
+  const owner=ownerReview(type,id),hidden=isHiddenForMe(type,id);
   const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
   const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">SHOW AGAIN</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
   return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'HIDDEN':'PUBLISHED')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'HIDDEN':'PUBLISHED')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
@@ -91,8 +95,8 @@ function rowsFor(selectedFilter='ALL'){
   const audit=window.NETPsychologyContentAudit.create({data:data,questions:questions}).expertAudit;
   const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));
   const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
-  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,st:isHidden(x.type,x.id)?'HIDDEN':r||a.status}});
-  return rows.filter(r=>selectedFilter==='ALL'||(selectedFilter==='NEED REVIEW'&&!isHidden(r.x.type,r.x.id)&&r.a.status!=='PASS'&&r.st==='')||(selectedFilter==='HIDDEN'&&isHidden(r.x.type,r.x.id))||(selectedFilter==='REVIEWED'&&!isHidden(r.x.type,r.x.id)&&aiReview(r.x.type,String(r.x.id)))||(selectedFilter===r.st&&!isHidden(r.x.type,r.x.id))).sort((a,b)=>a.a.score-b.a.score);
+  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,st:isHiddenForMe(x.type,x.id)?'HIDDEN':r||a.status}});
+  return rows.filter(r=>selectedFilter==='ALL'||(selectedFilter==='NEED REVIEW'&&!isHiddenForMe(r.x.type,r.x.id)&&r.a.status!=='PASS'&&r.st==='')||(selectedFilter==='HIDDEN'&&isHiddenForMe(r.x.type,r.x.id))||(selectedFilter==='REVIEWED'&&!isHiddenForMe(r.x.type,r.x.id)&&aiReview(r.x.type,String(r.x.id)))||(selectedFilter===r.st&&!isHiddenForMe(r.x.type,r.x.id))).sort((a,b)=>a.a.score-b.a.score);
 }
 function aiPassedRows(){
   const componentLabels={microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Recall',revision:'Revision',practice:'Practice MCQs'};
@@ -118,7 +122,7 @@ function mountLearnerPreviews(){
   if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){load(entry.target);io.unobserve(entry.target)}}),{rootMargin:'900px 0px'});frames.forEach(frame=>io.observe(frame))}else frames.slice(0,3).forEach(load);
 }
 function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!isHidden(r.x.type,r.x.id)&&r.st==='').length,sat=allRows.filter(r=>r.st==='SATISFACTORY').length,hiddenCount=allRows.filter(r=>isHidden(r.x.type,r.x.id)).length,aiPassed=aiPassedRows();
+  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!isHiddenForMe(r.x.type,r.x.id)&&r.st==='').length,sat=allRows.filter(r=>r.st==='SATISFACTORY').length,hiddenCount=allRows.filter(r=>isHiddenForMe(r.x.type,r.x.id)).length,aiPassed=aiPassedRows();
   root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>hidden</span></div></section><div class="admin-filters">'+['ALL','NEED REVIEW','HIDDEN','REVIEWED','SATISFACTORY','NOT_SATISFACTORY'].map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter to see another review state.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
