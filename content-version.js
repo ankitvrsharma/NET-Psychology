@@ -8,4 +8,4 @@
 // Keep stable, descriptive filenames; use lowercase kebab-case for new filenames and do not rename
 // an existing file unless its architectural responsibility genuinely changes.
 
-window.NETPSY_DATA_VERSION = "1.7.0";
+window.NETPSY_DATA_VERSION = "1.8.1";
