@@ -1898,7 +1898,41 @@ body[data-page="practice-session"] .practice-hero{display:none}
 
 .admin-ai-passed{max-width:980px;margin:0 auto 12px;padding:22px}.admin-ai-passed h2{margin:6px 0 8px;color:var(--navy)}.admin-ai-passed>p{max-width:820px;color:var(--muted);font-size:12px;line-height:1.6}.ai-passed-summary{max-width:none;margin:14px 0;background:#f7f9fc;box-shadow:none}.admin-ai-passed-list{display:grid;gap:10px;margin-top:12px}.admin-ai-passed-list .admin-item{box-shadow:none}.admin-ai-passed .admin-status.pass{background:#eef7f1;color:#247044}
 @media(max-width:720px){.admin-ai-passed{padding:17px}}
-\n/* Authentication layout */\n.auth-actions{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}.auth-actions .btn{min-height:46px}.auth-resend{margin-top:10px}.auth-actions #authToggle{flex:1}.auth-actions #authSubmit{flex:0 0 auto}@media(max-width:520px){.auth-actions{display:grid;grid-template-columns:1fr 1fr}.auth-actions .btn{width:100%;padding-left:10px;padding-right:10px;font-size:13px}.auth-resend{width:100%}}\n\n/* Trust and identity note for the learner authentication page. */\n.auth-trust-note{margin:12px 0 0;padding:12px 14px;border:1px solid #dbe2ec;border-radius:10px;background:#f7f9fc;color:var(--muted);font-size:12px;line-height:1.55}.auth-trust-note strong{color:var(--navy)}\n@media(max-width:520px){.auth-trust-note{font-size:11.5px;padding:11px 12px}}\n
+
+/* Authentication layout — contained and responsive at mobile, tablet and desktop widths. */
+.auth-actions{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}
+.auth-actions .btn{min-height:46px}
+.auth-actions #authSubmit{flex:0 0 auto}
+.auth-actions #authToggle{flex:1 1 180px}
+.auth-resend{margin-top:10px;max-width:100%}
+body[data-page="login"] .shell{padding-top:34px}
+body[data-page="login"] #authApp{width:100%;max-width:620px;margin:3rem auto}
+body[data-page="login"] #authForm{width:100%;min-width:0}
+body[data-page="login"] .admin-field{width:100%;max-width:none;margin:18px 0}
+body[data-page="login"] .admin-field input{display:block;width:100%;min-width:0;max-width:100%;height:48px}
+body[data-page="login"] .auth-actions{width:100%;min-width:0}
+body[data-page="login"] .auth-actions .btn{min-width:0;white-space:normal}
+body[data-page="login"] .auth-resend{width:auto}
+.auth-trust-note{margin:12px 0 0;padding:12px 14px;border:1px solid #dbe2ec;border-radius:10px;background:#f7f9fc;color:var(--muted);font-size:12px;line-height:1.55}
+.auth-trust-note strong{color:var(--navy)}
+@media(max-width:720px){
+  body[data-page="login"] .shell{padding:22px 16px 48px}
+  body[data-page="login"] #authApp{margin:18px auto 0;padding:22px 18px}
+  body[data-page="login"] #authApp h1{font-size:clamp(32px,8vw,42px)}
+  body[data-page="login"] #authApp #authMessage{font-size:15px;line-height:1.5}
+  body[data-page="login"] .auth-actions{display:grid;grid-template-columns:1fr;gap:9px}
+  body[data-page="login"] .auth-actions .btn{width:100%;min-height:48px}
+  body[data-page="login"] .auth-resend{width:100%;min-height:46px}
+}
+@media(min-width:721px) and (max-width:900px){
+  body[data-page="login"] #authApp{max-width:680px;margin:26px auto 0}
+  body[data-page="login"] .auth-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  body[data-page="login"] .auth-actions #authSubmit{grid-column:1 / -1}
+  body[data-page="login"] .auth-actions #authToggle{grid-column:1 / -1}
+  body[data-page="login"] .auth-resend{width:100%}
+}
+@media(min-width:901px){body[data-page="login"] .auth-actions{align-items:stretch}}
+@media(max-width:520px){.auth-trust-note{font-size:11.5px;padding:11px 12px}}\n
 /* Final learning architecture */
 .practice-brief{display:grid;gap:18px;padding:24px;max-width:820px;margin:22px auto}.practice-brief h2{margin:4px 0 8px;color:var(--navy)}.practice-brief p{margin:0;color:var(--muted)}.learning-action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.learning-action-card{padding:20px}.learning-action-card h2{margin:5px 0;color:var(--navy)}.learning-action-card p{color:var(--muted);min-height:48px}.learn-current-progress{font-size:11px;font-weight:850;color:var(--blue);letter-spacing:.08em}.topic-study-strip h2{margin:5px 0;color:var(--navy)}
 @media(max-width:800px){.learning-action-grid{grid-template-columns:1fr}.practice-brief{margin:14px 0;padding:20px}}
