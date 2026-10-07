@@ -48,7 +48,7 @@ function aiPassedRows(){
       if(!['AI REVIEWED','EXPERT VERIFIED'].includes(status)||!componentLabels[component])continue;
       const parts=String(id).split('-').map(Number),u=data?.units?.find(x=>x.id===parts[0]),t=u?.topics?.find(x=>x.id===parts[1]),m=t?.microtopics?.find(x=>x.id===parts[2]);
       if(!u||!t||!m)continue;
-      out.push({component,id,title:u.title+' · '+t.title+' · '+m.title,componentLabel:componentLabels[component],href:component==='deep_dive'?'deep-dive.html':component==='active_recall'?'active-recall.html':component==='revision'?'revision.html':component==='practice'?'practice.html':'microtopic.html'});
+      out.push({component,id,title:u.title+' · '+t.title+' · '+m.title,componentLabel:componentLabels[component],href:component==='deepDive'?'deep-dive.html':component==='activeRecall'?'active-recall.html':component==='revision'?'revision.html':component==='practice'?'practice.html':'microtopic.html'});
     }
   }
   return out.sort((a,b)=>a.title.localeCompare(b.title)||a.componentLabel.localeCompare(b.componentLabel));
