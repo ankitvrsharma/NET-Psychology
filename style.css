@@ -1905,6 +1905,7 @@ body[data-page="login"] #authApp{width:100%;max-width:560px;min-width:0;margin:4
 body[data-page="login"] #authApp h1{max-width:100%}
 body[data-page="login"] #authApp #authMessage{display:block;width:100%;max-width:100%;margin:0 0 18px;overflow-wrap:anywhere;white-space:normal}
 body[data-page="login"] #authForm{display:block!important;width:100%;min-width:0;margin:0}
+body[data-page="login"] #authForm[hidden]{display:none!important}
 body[data-page="login"] .auth-field{display:block!important;width:100%;min-width:0;max-width:none;margin:18px 0 0}
 body[data-page="login"] .auth-field span{display:block;font-size:10px;font-weight:900;letter-spacing:.08em;color:var(--muted);margin-bottom:7px}
 body[data-page="login"] .auth-field input{display:block;width:100%;min-width:0;max-width:none;height:48px;box-sizing:border-box;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit}
