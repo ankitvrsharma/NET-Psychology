@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.9.3';
+const CACHE='netpsych-shell-v1.10.0';
 const SHELL=[
   './',
   './index.html',
@@ -26,6 +26,7 @@ const SHELL=[
 const RUNTIME_DATA=new Set([
   'syllabus-index.json',
   'home-index.json',
+  'home-learning-index.json',
   'active_recall.json',
   'quick_cards.json',
   'micro_topics.json',
