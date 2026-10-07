@@ -95,8 +95,20 @@ function rowsFor(selectedFilter='ALL'){
   const audit=window.NETPsychologyContentAudit.create({data:data,questions:questions}).expertAudit;
   const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));
   const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
-  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,st:isHiddenForMe(x.type,x.id)?'HIDDEN':r||a.status}});
-  return rows.filter(r=>selectedFilter==='ALL'||(selectedFilter==='NEED REVIEW'&&!isHiddenForMe(r.x.type,r.x.id)&&r.a.status!=='PASS'&&r.st==='')||(selectedFilter==='HIDDEN'&&isHiddenForMe(r.x.type,r.x.id))||(selectedFilter==='REVIEWED'&&!isHiddenForMe(r.x.type,r.x.id)&&aiReview(r.x.type,String(r.x.id)))||(selectedFilter===r.st&&!isHiddenForMe(r.x.type,r.x.id))).sort((a,b)=>a.a.score-b.a.score);
+  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,reviewStatus:r}});
+  return rows.filter(r=>{
+    const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus;
+    if(selectedFilter==='HIDDEN FOR ME')return h;
+    if(h)return false;
+    if(selectedFilter==='MICRO-TOPICS')return r.x.type==='microtopics';
+    if(selectedFilter==='QUESTIONS')return r.x.type==='questions';
+    if(selectedFilter==='NEED REVIEW')return a.status!=='PASS'&&!rv;
+    if(selectedFilter==='AI REVIEWED')return aiReview(r.x.type,String(r.x.id));
+    if(selectedFilter==='EXPERT VERIFIED')return rv==='EXPERT VERIFIED';
+    if(selectedFilter==='AUDIT PASS')return a.status==='PASS';
+    if(selectedFilter==='AUDIT FAIL')return a.status==='FAIL';
+    return true;
+  }).sort((a,b)=>a.a.score-b.a.score);
 }
 function aiPassedRows(){
   const componentLabels={microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Recall',revision:'Revision',practice:'Practice MCQs'};
@@ -122,12 +134,12 @@ function mountLearnerPreviews(){
   if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){load(entry.target);io.unobserve(entry.target)}}),{rootMargin:'900px 0px'});frames.forEach(frame=>io.observe(frame))}else frames.slice(0,3).forEach(load);
 }
 function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!isHiddenForMe(r.x.type,r.x.id)&&r.st==='').length,sat=allRows.filter(r=>r.st==='SATISFACTORY').length,hiddenCount=allRows.filter(r=>isHiddenForMe(r.x.type,r.x.id)).length,aiPassed=aiPassedRows();
-  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>hidden</span></div></section><div class="admin-filters">'+['ALL','NEED REVIEW','HIDDEN','REVIEWED','SATISFACTORY','NOT_SATISFACTORY'].map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter to see another review state.</p></section>');
+  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>hidden</span></div></section><div class="admin-filters">'+['ALL','NEED REVIEW','MICRO-TOPICS','QUESTIONS','AI REVIEWED','EXPERT VERIFIED','AUDIT PASS','AUDIT FAIL','HIDDEN FOR ME'].map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter to see another review state.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
   root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
-  root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=async()=>{b.disabled=true;b.textContent='SAVING…';try{await toggleVisibility(b.dataset.type,b.dataset.id)}catch(e){alert('Could not change visibility: '+e.message);renderQueue()}});
+  root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>{const key=adminHiddenKey(b.dataset.type,b.dataset.id);if(hiddenForMe.has(key))hiddenForMe.delete(key);else hiddenForMe.add(key);saveHiddenForMe();renderQueue()});
   root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
   root.querySelectorAll('.admin-edit-close').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-editor');if(editor)editor.hidden=true});
   root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
