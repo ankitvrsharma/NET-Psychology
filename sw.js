@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.11.7';
+const CACHE='netpsych-shell-v1.11.8';
 const SHELL=[
   './',
   './index.html',
@@ -35,7 +35,8 @@ const RUNTIME_DATA=new Set([
   'revision_guidance.json',
   'home-learning.json',
   'mcq_mapping.json',
-  'verification-state.json'
+  'verification-state.json',
+  'content-visibility.json'
 ]);
 const NEVER_CACHE=new Set([
   'exam_schedule.json',
@@ -73,6 +74,7 @@ self.addEventListener('fetch',event=>{
   if(req.method!=='GET')return;
   const url=new URL(req.url);
   if(url.origin!==self.location.origin)return;
+  if(url.searchParams.has('preview')||url.searchParams.has('previewQuestion')||url.searchParams.has('previewData')){event.respondWith(fetch(req,{cache:'no-store'}));return;}
   const name=url.pathname.split('/').pop();
   if(NEVER_CACHE.has(name)){
     event.respondWith(fetch(req,{cache:'no-store'}));
