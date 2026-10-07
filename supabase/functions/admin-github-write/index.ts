@@ -9,7 +9,6 @@ const ALLOWED_FILES = new Set([
   'data/content-approval-queue.json'
 ])
 const ALLOWED_WORKFLOW = 'publish-approved-content.yml'
-
 const ALLOWED_ORIGINS = new Set([
   'https://ankitvrsharma.github.io',
   'http://localhost:3000'
@@ -73,6 +72,53 @@ async function writeFile(path: string, content: string, message: string) {
       branch: 'main'
     })
   })
+}
+
+const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
+  if (req.method !== 'POST') return json({ error: 'POST required' }, 405, req)
+
+  const { data: profile, error } = await ctx.supabase
+    .from('profiles')
+    .select('role')
+    .eq('id', ctx.userClaims.sub)
+    .maybeSingle()
+
+  if (error || profile?.role !== 'admin') return json({ error: 'Admin access required.' }, 403, req)
+
+  try {
+    const body = await req.json()
+    const action = String(body?.action || '')
+
+    if (action === 'health') {
+      const me = await github('/user')
+      if (me?.login !== OWNER) return json({ ok: false, message: 'Configured GitHub credential is not the site owner.' }, 403, req)
+      await github('/repos/' + REPO)
+      return json({ ok: true, login: me.login, repository: REPO }, 200, req)
+    }
+
+    if (action === 'write_file') {
+      await writeFile(String(body.path || ''), String(body.content || ''), String(body.message || 'Admin content update'))
+      return json({ ok: true }, 200, req)
+    }
+
+    if (action === 'dispatch_workflow') {
+      const workflow = String(body.workflow || '')
+      if (workflow !== ALLOWED_WORKFLOW) throw new Error('This admin bridge cannot dispatch that workflow.')
+      const ref = String(body.ref || 'main')
+      const inputs = body.inputs && typeof body.inputs === 'object' ? body.inputs : {}
+      await github('/repos/' + REPO + '/actions/workflows/' + workflow + '/dispatches', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ref, inputs })
+      })
+      return json({ ok: true }, 200, req)
+    }
+
+    return json({ error: 'Unknown admin action.' }, 400, req)
+  } catch (error) {
+    return json({ error: error instanceof Error ? error.message : 'Admin GitHub operation failed.' }, 502, req)
+  }
+})
 
 export default {
   async fetch(req: Request) {
@@ -82,51 +128,4 @@ export default {
     Object.entries(corsHeaders(req)).forEach(([key, value]) => headers.set(key, value))
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers })
   }
-}
-
-const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
-    if (req.method !== 'POST') return json({ error: 'POST required' }, 405)
-
-    const { data: profile, error } = await ctx.supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', ctx.userClaims.sub)
-      .maybeSingle()
-
-    if (error || profile?.role !== 'admin') return json({ error: 'Admin access required.' }, 403)
-
-    try {
-      const body = await req.json()
-      const action = String(body?.action || '')
-
-      if (action === 'health') {
-        const me = await github('/user')
-        if (me?.login !== OWNER) return json({ ok: false, message: 'Configured GitHub credential is not the site owner.' }, 403)
-        await github('/repos/' + REPO)
-        return json({ ok: true, login: me.login, repository: REPO })
-      }
-
-      if (action === 'write_file') {
-        await writeFile(String(body.path || ''), String(body.content || ''), String(body.message || 'Admin content update'))
-        return json({ ok: true })
-      }
-
-      if (action === 'dispatch_workflow') {
-        const workflow = String(body.workflow || '')
-        if (workflow !== ALLOWED_WORKFLOW) throw new Error('This admin bridge cannot dispatch that workflow.')
-        const ref = String(body.ref || 'main')
-        const inputs = body.inputs && typeof body.inputs === 'object' ? body.inputs : {}
-        await github('/repos/' + REPO + '/actions/workflows/' + workflow + '/dispatches', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ref, inputs })
-        })
-        return json({ ok: true })
-      }
-
-      return json({ error: 'Unknown admin action.' }, 400)
-    } catch (error) {
-      return json({ error: error instanceof Error ? error.message : 'Admin GitHub operation failed.' }, 502)
-    }
-  })
 }
