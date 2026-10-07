@@ -1,7 +1,9 @@
 /* Stable browser entry point. Loads account persistence before the learner runtime. */
 (function(){
 'use strict';
-const VERSION='1.0.9';
+// GitHub Pages is served over HTTPS. Redirect an accidentally opened HTTP copy before app/auth requests run.
+if(location.protocol==='http:'){location.replace('https://'+location.host+location.pathname+location.search+location.hash);return;}
+const VERSION='1.1.0';
 const config=document.createElement('script');
 config.src='./supabase-config.js?v='+VERSION;
 config.async=false;
