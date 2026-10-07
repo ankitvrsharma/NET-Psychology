@@ -842,7 +842,7 @@ function micro(){
     '</section>'+
     '</section>';
   if(!previewMode)root.querySelectorAll('.micro-bottom-action').forEach(link=>link.addEventListener('click',()=>understandingComplete()));
-  root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
+  if(!previewMode)root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
     const rating=btn.dataset.contentFeedback;
     await submitLearnerFeedback('microtopics',k,rating);
     root.querySelectorAll('[data-content-feedback]').forEach(b=>b.classList.toggle('selected',b.dataset.contentFeedback===rating));
