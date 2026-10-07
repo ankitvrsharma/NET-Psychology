@@ -1,0 +1,40 @@
+name: Validate frontend shell
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "*.js"
+      - "app/**"
+      - "style.css"
+      - "manifest.webmanifest"
+      - "supabase/**"
+      - ".github/workflows/validate-frontend.yml"
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "*.js"
+      - "app/**"
+      - "style.css"
+      - "manifest.webmanifest"
+      - "supabase/**"
+      - ".github/workflows/validate-frontend.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-browser-javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+      - name: Check browser JavaScript syntax
+        run: |
+          set -euo pipefail
+          find . -type f -name "*.js" -not -path "./node_modules/*" -not -path "./.git/*" -print0 |
+            xargs -0 -n1 node --check
