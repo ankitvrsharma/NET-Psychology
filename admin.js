@@ -1,239 +1,28 @@
 (function(){
 'use strict';
-const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
+const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main',KEY='netPsychAdminToken',AUTH='netPsychAdminAuthenticated';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let approvalQueue=[],verificationState={schema_version:2,items:{},updated_at:''},visibilityState={schema_version:1,items:{microtopics:{},questions:{}},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},questionStore=null,questions=[],filter='ALL';
-let filterUnit='ALL',filterTopic='ALL';
-const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
-let hiddenForMe=new Set();
-try{hiddenForMe=new Set(JSON.parse(localStorage.getItem(ADMIN_HIDDEN_KEY)||'[]'))}catch(e){}
-const adminHiddenKey=(type,id)=>type+'::'+String(id);
-const isHiddenForMe=(type,id)=>hiddenForMe.has(adminHiddenKey(type,id));
-const saveHiddenForMe=()=>localStorage.setItem(ADMIN_HIDDEN_KEY,JSON.stringify(Array.from(hiddenForMe)));
+let token=sessionStorage.getItem(KEY)||'',auditState={schema_version:2,owner_review:{microtopics:{},questions:{}},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,questions=[],filter='NEED REVIEW';
+const api=async(path,options={})=>{const r=await fetch('https://api.github.com'+path,{...options,headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28',...(options.headers||{})}});if(!r.ok)throw new Error('GitHub API '+r.status);const text=await r.text();return text?JSON.parse(text):null};
 const loadJSON=async(path)=>{const r=await fetch('./'+path+'?v=20261006-audit-static-pools',{cache:'no-store'});if(!r.ok)throw new Error(path+' '+r.status);return r.json()};
-const review=(type,id)=>String(verificationState?.items?.[type]?.[String(id)]||'');
-const ownerReview=(type,id)=>review(type,id)==='EXPERT VERIFIED'?'EXPERT VERIFIED':'';
-const aiReview=(type,id)=>['AI REVIEWED','EXPERT VERIFIED'].includes(review(type,id));
+const review=(type,id)=>String(auditState.owner_review?.[type]?.[String(id)]||'');
 const hasContent=m=>{const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];const text=values.map(v=>Array.isArray(v)?v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' '):v&&typeof v==='object'?JSON.stringify(v):String(v||'')).join(' ').replace(/\s+/g,' ').trim();return text.length>=80};
-async function loadAuditState(){const r=await fetch('./data/verification-state.json?v=20261006-verification',{cache:'no-store'});if(r.ok)verificationState=await r.json();if(!verificationState.items)verificationState.items={};}
-async function loadApprovalQueue(){
-  const r=await fetch('./data/content-approval-queue.json?v=20261006-approval-queue',{cache:'no-store'});
-  if(r.ok){const q=await r.json();approvalQueue=Array.isArray(q.pending)?q.pending:[];} else approvalQueue=[];
-}
-async function saveApprovalQueue(next){
-  const payload=JSON.stringify({schema_version:2,updated_at:new Date().toISOString(),pending:next},null,2)+'\n';
-  await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-approval-queue.json',content:payload,message:'Admin: approve queued AI content'});
-}
-function approvalQueueCard(){
-  const pending=approvalQueue.filter(x=>x.status==='PENDING_OWNER_APPROVAL');
-  if(!pending.length) return '<section class="card admin-approval-queue"><div class="eyebrow">AI ESCALATION QUEUE</div><h2>No content awaiting owner approval</h2><p>Components that fail their independent audit after two package-aware rewrite attempts are held here instead of entering learner-facing pools.</p></section>';
-  return '<section class="card admin-approval-queue"><div class="eyebrow">AI ESCALATION QUEUE</div><h2>'+pending.length+' package'+(pending.length===1?'':'s')+' awaiting approval</h2><p>These components failed their independent audit after two package-aware rewrite attempts. Passing components are published statically; queued components remain withheld until approval.</p>'+pending.map(x=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status fail">PENDING APPROVAL</span><h3>'+esc(x.title||x.microtopic_id)+'</h3><p>Micro-topic: <b>'+esc(x.microtopic_id)+'</b> · Component: <b>'+esc(x.component||'package')+'</b> · Rewrite attempts: <b>2</b> · Final score: <b>'+esc(x.final_audit?.score??'—')+'</b></p><p>'+esc((x.final_audit?.issues||[]).join(', ')||'See audit history for details.')+'</p></div><div class="admin-actions"><button class="btn primary approve-queued" data-id="'+esc(x.microtopic_id)+'" data-component="'+esc(x.component||'')+'">APPROVE & PUBLISH</button></div></article>').join('')+'</section>';
-}
-async function approveQueued(id,component){
-  const next=approvalQueue.map(x=>(String(x.microtopic_id)===String(id)&&String(x.component||'')===String(component||''))?{...x,status:'APPROVED',approved_at:new Date().toISOString(),approved_by:OWNER}:x);
-  try{
-    await saveApprovalQueue(next);
-    approvalQueue=next;
-    await window.NETPSY_AUTH.githubWrite('dispatch_workflow',{workflow:'publish-approved-content.yml',ref:BRANCH,inputs:{microtopic_id:String(id)}});
-    renderQueue();
-  }catch(e){alert('Could not approve/publish queued content: '+e.message)}
-}
+async function loadAuditState(){const r=await fetch('./content-audit.json?v=20261006-audit-static-pools',{cache:'no-store'});if(r.ok)auditState=await r.json();if(!auditState.owner_review)auditState.owner_review={microtopics:{},questions:{}}}
 async function loadInstructions(){const r=await fetch('./data/content-enrichment-instructions.json?v=20261006-enrichment',{cache:'no-store'});if(r.ok)instructions=await r.json();if(!Array.isArray(instructions.target_microtopics))instructions.target_microtopics=[]}
-function instructionCard(){const ids=(instructions.target_microtopics||[]).join(', ');return `<section class="card admin-instructions"><div class="eyebrow">CONTENT ENRICHMENT</div><h2>Tell Gemini what to enrich</h2><p>These instructions guide the hidden source-to-content pipeline. Saving them does <b>not</b> edit learner content directly; the pipeline uses the instruction with approved source evidence, audits each package, publishes passes, and queues final failures for owner approval.</p><div class="admin-learning-contract"><b>Locked learning package:</b> Micro-topic → Deep Dive → Recall → Revision → Practice. The micro-topic remains the canonical knowledge source; Deep Dive, Recall, Revision and Practice form one connected learning package.</div><label class="admin-field"><span>Your enrichment instruction</span><textarea id="enrichmentInstruction" rows="8" placeholder="Example: Strengthen the distinction between classical and operant conditioning using the uploaded sources. Include named researchers only when the sources support them.">${esc(instructions.user_instruction||'')}</textarea></label><label class="admin-field"><span>Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="${esc(ids)}" placeholder="Example: 5-3-2, 5-3-3"></label><div class="admin-instruction-meta">Last saved: ${esc(instructions.updated_at||'Not yet saved')} · ${instructions.updated_by?esc(instructions.updated_by):'Owner instruction'}</div><div class="admin-actions"><button class="btn primary" id="saveEnrichment">SAVE INSTRUCTION</button></div><p class="admin-help">Saving triggers the source-to-content workflow. Gemini will use the saved instruction with approved sources. Audit-passed packages publish directly; packages that still fail after two rewrite attempts enter the owner approval queue.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>'`}
-async function saveInstructions(){const userInstruction=document.querySelector('#enrichmentInstruction')?.value.trim()||'';const targets=(document.querySelector('#enrichmentTargets')?.value||'').split(',').map(x=>x.trim()).filter(Boolean);const next={...instructions,user_instruction:userInstruction,target_microtopics:targets,updated_at:new Date().toISOString(),updated_by:OWNER};try{await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-enrichment-instructions.json',content:JSON.stringify(next,null,2)+'\n',message:'Admin: update content enrichment instruction'});instructions=next;renderQueue();const note=document.querySelector('#enrichmentStatus');if(note)note.textContent='Saved. The source-to-content workflow will now use this instruction and create a review PR when source-backed content changes are generated.'}catch(e){const note=document.querySelector('#enrichmentStatus');if(note)note.textContent='Could not save: '+e.message}}
-function buildAdminData(syllabus,microPool){return {...syllabus,units:(syllabus.units||[]).map(u=>({...u,topics:(u.topics||[]).map(t=>({...t,microtopics:(t.microtopics||[]).map(ref=>{const content=microPool[String(u.id)+'-'+String(t.id)+'-'+String(ref.id)];return content?{...content,id:ref.id}:ref;}))}))}))};}
+function instructionCard(){const ids=(instructions.target_microtopics||[]).join(', ');return '<section class="card admin-instructions"><div class="eyebrow">CONTENT ENRICHMENT</div><h2>Tell Gemini what to enrich</h2><p>These instructions guide the hidden source-to-content pipeline. Saving them does <b>not</b> edit learner content directly; the pipeline uses the instruction with approved source evidence and creates a review PR.</p><div class="admin-learning-contract"><b>Locked learning package:</b> Micro-topic → Deep Dive → Active Recall → Revision. The micro-topic remains the canonical knowledge source.</div><label class="admin-field"><span>Your enrichment instruction</span><textarea id="enrichmentInstruction" rows="8" placeholder="Example: Strengthen the distinction between classical and operant conditioning using the uploaded sources. Include named researchers only when the sources support them.">${esc(instructions.user_instruction||'')}</textarea></label><label class="admin-field"><span>Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="${esc(ids)}" placeholder="Example: 5-3-2, 5-3-3"></label><div class="admin-instruction-meta">Last saved: ${esc(instructions.updated_at||'Not yet saved')} · ${instructions.updated_by?esc(instructions.updated_by):'Owner instruction'}</div><div class="admin-actions"><button class="btn primary" id="saveEnrichment">SAVE INSTRUCTION</button></div><p class="admin-help">Saving triggers the source-to-content workflow. Gemini will use the saved instruction together with the approved sources. Generated changes go to a review PR; they are not published automatically.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>'}
+async function saveInstructions(){const userInstruction=document.querySelector('#enrichmentInstruction')?.value.trim()||'';const targets=(document.querySelector('#enrichmentTargets')?.value||'').split(',').map(x=>x.trim()).filter(Boolean);const next={...instructions,user_instruction:userInstruction,target_microtopics:targets,updated_at:new Date().toISOString(),updated_by:OWNER};try{const file=await api('/repos/'+REPO+'/contents/data/content-enrichment-instructions.json?ref='+encodeURIComponent(BRANCH));const body=btoa(unescape(encodeURIComponent(JSON.stringify(next,null,2)+'\n')));await api('/repos/'+REPO+'/contents/data/content-enrichment-instructions.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'Admin: update content enrichment instruction',content:body,sha:file.sha,branch:BRANCH})});instructions=next;const note=document.querySelector('#enrichmentStatus');if(note)note.textContent='Saved. The source-to-content workflow will now use this instruction and create a review PR when source-backed content changes are generated.';renderQueue()}catch(e){const note=document.querySelector('#enrichmentStatus');if(note)note.textContent='Could not save: '+e.message}}
+function buildAdminData(syllabus,microPool){return {...syllabus,units:(syllabus.units||[]).map(u=>({...u,topics:(u.topics||[]).map(t=>({...t,microtopics:(t.microtopics||[]).map(ref=>microPool[String(u.id)+'-'+String(t.id)+'-'+String(ref.id)]||ref)}))}))};}
+function loginView(message=''){root.innerHTML='<section class="admin-auth card"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>Review failed content, record your expert judgement, and keep learner-facing verification labels separate from internal review data.</p><label class="admin-field"><span>GitHub token</span><input id="adminToken" type="password" autocomplete="off" placeholder="github_pat_…"></label><button class="btn primary" id="adminLogin">SIGN IN →</button><p class="admin-help">The GitHub account must be <b>ankitvrsharma</b> and the token needs repository Contents read/write access.</p>'+(message?'<div class="admin-error" role="alert">'+esc(message)+'</div>':'')+'</section>';document.querySelector('#adminLogin').onclick=login}
+async function login(){const input=document.querySelector('#adminToken'),v=input?.value.trim();if(!v)return loginView('Enter your GitHub token.');token=v;try{const me=await api('/user');if(me.login!==OWNER)throw new Error('This GitHub account is not the site owner.');sessionStorage.setItem(KEY,token);sessionStorage.setItem(AUTH,'1');await dashboard()}catch(e){sessionStorage.removeItem(KEY);token='';loginView(e.message||'Sign-in failed.');}}
 function titleFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-').map(Number),unit=data?.units?.find(x=>x.id===u),topic=unit?.topics?.find(x=>x.id===t),micro=topic?.microtopics?.find(x=>x.id===m);return micro?unit.title+' · '+topic.title+' · '+micro.title:id}const q=questions.find(x=>String(x.id)===String(id));return q?.question||id}
 function hrefFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-');return 'microtopic.html?unit='+encodeURIComponent(u)+'&topic='+encodeURIComponent(t)+'&micro='+encodeURIComponent(m)}return 'practice.html'}
-function questionInStore(id){if(Array.isArray(questionStore))return questionStore.find(q=>String(q?.id)===String(id))||null;for(const value of Object.values(questionStore||{})){if(Array.isArray(value)){const q=value.find(x=>String(x?.id)===String(id));if(q)return q;}}return null}
-function microInStore(id){return microPool?.[String(id)]||null}
-function editorField(label,key,value,rows=6){return '<label class="admin-editor-field"><span>'+esc(label)+'</span><textarea data-edit-field="'+esc(key)+'" rows="'+rows+'">'+esc(value||'')+'</textarea></label>'}
-function editorFor(type,id){
-  if(type==='microtopics'){
-    const item=microInStore(id);if(!item)return '<div class="admin-editor-error">Content item could not be loaded.</div>';
-    const coreKey=Object.prototype.hasOwnProperty.call(item,'expert_explanation')?'expert_explanation':'content_notes';
-    const detailKey=Object.prototype.hasOwnProperty.call(item,'detailed_explanation')?'detailed_explanation':Object.prototype.hasOwnProperty.call(item,'deep_learning')?'deep_learning':Object.prototype.hasOwnProperty.call(item,'deep')?'deep':'';
-    return '<div class="admin-editor" hidden data-editor-type="'+type+'" data-editor-id="'+esc(id)+'"><div class="admin-editor-head"><div><span class="eyebrow">EDIT LEARNER CONTENT</span><strong>Micro-topic explanation</strong><p>The title and syllabus structure stay locked. Edit the learner-facing explanation.</p></div><button class="btn admin-edit-close" type="button">CANCEL</button></div>'+editorField('Core explanation · shown to learners',coreKey,item[coreKey],8)+(detailKey?editorField('Detailed explanation · Deep Dive fallback',detailKey,item[detailKey],8):'')+'<div class="admin-editor-actions"><button class="btn primary admin-save-content" type="button">SAVE CONTENT</button></div></div>';
-  }
-  const q=questionInStore(id);if(!q)return '<div class="admin-editor-error">Question could not be loaded.</div>';
-  const opts=Array.isArray(q.options)?q.options:(Array.isArray(q.o)?q.o:[]);
-  return '<div class="admin-editor" hidden data-editor-type="'+type+'" data-editor-id="'+esc(id)+'"><div class="admin-editor-head"><div><span class="eyebrow">EDIT LEARNER CONTENT</span><strong>Question</strong><p>Edit the fields used by the learner question renderer.</p></div><button class="btn admin-edit-close" type="button">CANCEL</button></div>'+editorField('Question','question',q.question||q.q,7)+'<div class="admin-option-grid">'+opts.map((v,i)=>editorField('Option '+String.fromCharCode(65+i),'option-'+i,v,3)).join('')+'</div><label class="admin-editor-field"><span>Correct answer</span><select data-edit-field="answer">'+opts.map((v,i)=>'<option value="'+i+'" '+(Number(q.answer)===i?'selected':'')+'>'+String.fromCharCode(65+i)+'</option>').join('')+'</select></label>'+editorField('Explanation shown after answering','explanation',q.explanation,7)+'<div class="admin-editor-actions"><button class="btn primary admin-save-content" type="button">SAVE CONTENT</button></div></div>';
-}
-async function saveContent(type,id,editor){
-  if(type==='microtopics'){
-    const item=microInStore(id);if(!item)throw new Error('Micro-topic not found.');
-    editor.querySelectorAll('[data-edit-field]').forEach(field=>{item[field.dataset.editField]=field.value.trim()});
-    if(!String(item.expert_explanation||item.content_notes||'').trim())throw new Error('Core explanation cannot be empty.');
-    await window.NETPSY_AUTH.githubWrite('write_file',{path:'content/microtopics/micro_topics.json',content:JSON.stringify(microPool,null,2)+'\n',message:'Admin: edit micro-topic '+id});
-  }else{
-    const q=questionInStore(id);if(!q)throw new Error('Question not found.');
-    const stem=editor.querySelector('[data-edit-field="question"]');if(stem){if(Object.prototype.hasOwnProperty.call(q,'question'))q.question=stem.value.trim();else q.q=stem.value.trim();}
-    editor.querySelectorAll('[data-edit-field^="option-"]').forEach(field=>{const i=Number(field.dataset.editField.split('-')[1]);if(Array.isArray(q.options))q.options[i]=field.value.trim();else if(Array.isArray(q.o))q.o[i]=field.value.trim()});
-    q.answer=Number(editor.querySelector('[data-edit-field="answer"]').value);
-    q.explanation=editor.querySelector('[data-edit-field="explanation"]').value.trim();
-    if(!String(q.question||q.q||'').trim())throw new Error('Question cannot be empty.');
-    if(!String(q.explanation||'').trim())throw new Error('Explanation cannot be empty.');
-    await window.NETPSY_AUTH.githubWrite('write_file',{path:'content/questions/questions.json',content:JSON.stringify(questionStore,null,2)+'\n',message:'Admin: edit question '+id});
-  }
-  await reloadAdminContent();
-}
-function toggleVisibility(type,id){
-  const key=adminHiddenKey(type,id);
-  if(hiddenForMe.has(key))hiddenForMe.delete(key);else hiddenForMe.add(key);
-  saveHiddenForMe();
-  renderQueue();
-}
-function titleFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-').map(Number),unit=data?.units?.find(x=>x.id===u),topic=unit?.topics?.find(x=>x.id===t),micro=topic?.microtopics?.find(x=>x.id===m);return micro?unit.title+' · '+topic.title+' · '+micro.title:id}const q=questions.find(x=>String(x.id)===String(id));return q?.question||id}
-function learnerHref(type,id){const parts=String(id).split('-');return type==='microtopics'?'microtopic.html?unit='+encodeURIComponent(parts[0])+'&topic='+encodeURIComponent(parts[1])+'&micro='+encodeURIComponent(parts[2])+'&preview=1':'practice-session.html?previewQuestion='+encodeURIComponent(id)}
-function makeItem(type,id,audit){
-  const owner=ownerReview(type,id),hidden=isHiddenForMe(type,id);
-  const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
-  const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
-  const geminiButton=type==='microtopics'?'<button class="btn admin-gemini" type="button" data-type="'+type+'" data-id="'+esc(id)+'">ASK GEMINI TO REWRITE</button>':'';
-  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+geminiButton+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
-}
-function rowMeta(x){
-  if(x.type!=='microtopics')return {unitId:null,topicId:null};
-  const parts=String(x.id).split('-').map(Number);
-  return {unitId:parts[0],topicId:parts[1]};
-}
-function rowsFor(selectedFilter='ALL'){
-  const audit=window.NETPsychologyContentAudit.create({data:data,questions:questions}).expertAudit;
-  const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));
-  const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
-  const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),reviewStatus=review(x.type,x.id),meta=rowMeta(x);return{x,a,reviewStatus,unitId:meta.unitId,topicId:meta.topicId}});
-  return rows.filter(r=>{
-    const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus;
-    if(selectedFilter==='REMOVED FROM MY LIST')return h;
-    if(h)return false;
-    if(filterUnit!=='ALL'&&String(r.unitId)!==String(filterUnit))return false;
-    if(filterTopic!=='ALL'&&String(r.topicId)!==String(filterTopic))return false;
-    if(selectedFilter==='MICRO-TOPICS')return r.x.type==='microtopics';
-    if(selectedFilter==='QUESTIONS')return r.x.type==='questions';
-    if(selectedFilter==='PYQ')return r.x.type==='questions'&&String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
-    if(selectedFilter==='MCQ')return r.x.type==='questions'&&!String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
-    if(selectedFilter==='NEED REVIEW')return a.status!=='PASS'&&!rv;
-    if(selectedFilter==='NOT YET REVIEWED')return !rv;
-    if(selectedFilter==='AI REVIEWED')return aiReview(r.x.type,String(r.x.id));
-    if(selectedFilter==='EXPERT VERIFIED')return rv==='EXPERT VERIFIED';
-    if(selectedFilter==='AUDIT PASS')return a.status==='PASS';
-    if(selectedFilter==='AUDIT FAIL')return a.status==='FAIL';
-    if(selectedFilter==='MISSING CONTENT')return r.x.type==='microtopics'&&!hasContent(microInStore(r.x.id)||{});
-    if(selectedFilter==='CONTENT READY')return r.x.type==='microtopics'&&hasContent(microInStore(r.x.id)||{});
-    return true;
-  }).sort((a,b)=>a.a.score-b.a.score);
-}
-function aiPassedRows(){
-  const componentLabels={microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Recall',revision:'Revision',practice:'Practice MCQs'};
-  const out=[];
-  for(const [component,items] of Object.entries(verificationState?.items||{})){
-    if(!items||typeof items!=='object')continue;
-    for(const [id,status] of Object.entries(items)){
-      if(!['AI REVIEWED','EXPERT VERIFIED'].includes(status)||!componentLabels[component])continue;
-      const parts=String(id).split('-').map(Number),u=data?.units?.find(x=>x.id===parts[0]),t=u?.topics?.find(x=>x.id===parts[1]),m=t?.microtopics?.find(x=>x.id===parts[2]);
-      if(!u||!t||!m)continue;
-      out.push({component,id,title:u.title+' · '+t.title+' · '+m.title,componentLabel:componentLabels[component],href:component==='deepDive'?'deep-dive.html':component==='activeRecall'?'active-recall.html':component==='revision'?'revision.html':component==='practice'?'practice.html':'microtopic.html'});
-    }
-  }
-  return out.sort((a,b)=>a.title.localeCompare(b.title)||a.componentLabel.localeCompare(b.componentLabel));
-}
-function aiPassedCard(){
-  const passed=aiPassedRows(),counts={microtopics:0,deepDive:0,activeRecall:0,revision:0,practice:0};
-  passed.forEach(r=>{if(counts[r.component]!=null)counts[r.component]++});
-  return '<section class="card admin-ai-passed"><div class="eyebrow">CONTENT · REVIEWED</div><h2>'+passed.length+' components passed the source-grounded AI audit</h2><p>These components passed the independent AI gate and were recorded as <b>REVIEWED</b>. Review status is separate from your expert verification.</p><div class="admin-toolbar ai-passed-summary"><div><strong>'+counts.microtopics+'</strong><span>micro-topics</span></div><div><strong>'+counts.deepDive+'</strong><span>deep dives</span></div><div><strong>'+counts.activeRecall+'</strong><span>recall</span></div><div><strong>'+counts.revision+'</strong><span>revision</span></div><div><strong>'+counts.practice+'</strong><span>practice MCQs</span></div></div>'+(passed.length?'<div class="admin-ai-passed-list">'+passed.slice(0,80).map(r=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status pass">REVIEWED · '+esc(r.componentLabel)+'</span><h3>'+esc(r.title)+'</h3><p>Reviewed component: <b>'+esc(r.componentLabel)+'</b></p></div><div class="admin-actions"><a class="btn" href="'+r.href+'">OPEN</a></div></article>').join('')+'</div>':'<p>No reviewed components are currently recorded in verification-state.json.</p>')+'</section>'}
-function mountLearnerPreviews(){
-  const frames=Array.from(root.querySelectorAll('.admin-preview-frame[data-src]'));
-  const load=frame=>{if(frame.dataset.loaded==='1')return;frame.dataset.loaded='1';frame.src=frame.dataset.src+'&previewRefresh='+Date.now()};
-  if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){load(entry.target);io.unobserve(entry.target)}}),{rootMargin:'900px 0px'});frames.forEach(frame=>io.observe(frame))}else frames.slice(0,3).forEach(load);
-}
-function filterControls(){
-  const units=data?.units||[];
-  const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
-  const topics=selectedUnit?.topics||[];
-  const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','AUDIT PASS','AUDIT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
-  return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
-}
-function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
-  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
-  root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
-  const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
-  const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
-  root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
-  root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
-  root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>toggleVisibility(b.dataset.type,b.dataset.id));
-  root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
-  root.querySelectorAll('.admin-gemini').forEach(b=>b.onclick=()=>{const id=b.dataset.id,title=titleFor('microtopics',id),instruction=document.querySelector('#enrichmentInstruction'),targets=document.querySelector('#enrichmentTargets'),box=document.querySelector('#geminiBox');if(instruction)instruction.value='Apply the saved SOURCE-GROUNDED CONTENT ENRICHMENT RULES to the complete connected five-component package for '+title+' ('+id+'). Use the approved source evidence and current published package as evidence. Treat the micro-topic as canonical; keep Deep Dive, Active Recall, Revision and Practice aligned. Improve UGC NET/NET-JRF relevance, conceptual precision, distinctions, retrieval and application only where source-supported. Preserve protected IDs, titles, mappings and provenance. Do not invent or silently add facts, researchers, experiments, statistics, dates, citations, PYQs or exam trends. Do not introduce new facts in Recall or Revision. Keep generated practice distinct from authentic PYQs. Add cross-references only when meaningful, source-supported and syllabus-valid. Avoid generic filler and repetition; audit the complete package for consistency.';if(targets)targets.value=id;if(box)box.scrollIntoView({behavior:'smooth',block:'start'});if(instruction){instruction.focus();instruction.setSelectionRange(instruction.value.length,instruction.value.length)}});
-  root.querySelectorAll('.admin-edit-close').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-editor');if(editor)editor.hidden=true});
-  root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
-  root.querySelectorAll('.approve-queued').forEach(b=>b.onclick=()=>approveQueued(b.dataset.id,b.dataset.component));
-  mountLearnerPreviews();
-}
-async function changeReview(type,id,value){
-  verificationState.items[type]=verificationState.items[type]||{};
-  if(value==='SATISFACTORY')verificationState.items[type][String(id)]='EXPERT VERIFIED';
-  else if(verificationState.items[type][String(id)]==='EXPERT VERIFIED')delete verificationState.items[type][String(id)];
-  verificationState.updated_at=new Date().toISOString();
-  try{
-    await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/verification-state.json',content:JSON.stringify(verificationState,null,2)+'\n',message:'Admin: '+(value?'set '+value.toLowerCase().replace(/_/g,' '):'clear verification')+' '+type+' '+id});
-    await loadAuditState();renderQueue();
-  }catch(e){alert('Could not save the verification status: '+e.message)}
-}
+function makeItem(type,id,audit){const owner=review(type,id),ownerLabel=owner?'<span class="review-status '+owner.toLowerCase().replace(/_/g,'-')+'">'+esc(owner.replace(/_/g,' '))+'</span>':'';const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';const auto=audit.status==='PASS'?'VERIFIED':'NO LEARNER TAG';return '<article class="admin-item"><div class="admin-item-copy">'+ownerLabel+'<span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+' · Learner tag: <b>'+auto+'</b></p></div><div class="admin-actions"><a class="btn" href="'+hrefFor(type,id)+'">OPEN</a>'+actions+'</div></article>'}
+function rowsFor(selectedFilter='ALL'){const ctx={get data(){return data},get questions(){return questions}},audit=window.NETPsychologyContentAudit.create(ctx).expertAudit;const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).filter(hasContent).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));const qs=questions.map(q=>({type:'questions',id:String(q.id)}));const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),r=review(x.type,x.id);return{x,a,st:r||a.status}});return rows.filter(r=>selectedFilter==='ALL'||(selectedFilter==='NEED REVIEW'?r.a.status!=='PASS'&&r.st==='':selectedFilter===r.st)).sort((a,b)=>a.a.score-b.a.score)}
+function renderQueue(){const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&r.st==='').length,sat=allRows.filter(r=>r.st==='SATISFACTORY').length,unsat=allRows.filter(r=>r.st==='NOT_SATISFACTORY').length;root.querySelector('#adminQueue').innerHTML=instructionCard()+'<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>satisfactory</span></div><div><strong>'+unsat+'</strong><span>not satisfactory</span></div><button class="btn" id="adminLogout">SIGN OUT</button></section><div class="admin-filters">'+['ALL','NEED REVIEW','SATISFACTORY','NOT_SATISFACTORY'].map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter to see another review state.</p></section>');root.querySelector('#adminLogout').onclick=logout;const saveButton=root.querySelector('#saveEnrichment');if(saveButton)saveButton.onclick=saveInstructions;root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''))}
+async function changeReview(type,id,value){auditState.owner_review[type]=auditState.owner_review[type]||{};if(value)auditState.owner_review[type][String(id)]=value;else delete auditState.owner_review[type][String(id)];auditState.updated_at=new Date().toISOString();try{const file=await api('/repos/'+REPO+'/contents/content-audit.json?ref='+encodeURIComponent(BRANCH));const body=btoa(unescape(encodeURIComponent(JSON.stringify(auditState,null,2)+'\n')));await api('/repos/'+REPO+'/contents/content-audit.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'Admin: '+(value?'mark '+value.toLowerCase().replace(/_/g,' '):'clear owner review')+' '+type+' '+id,content:body,sha:file.sha,branch:BRANCH})});await loadAuditState();renderQueue()}catch(e){alert('Could not save the review status: '+e.message)}}
 async function checkSite(){const checks=await Promise.all(['./index.html','./app/runtime.js','./style.css','./data/syllabus-index.json','./content/microtopics/micro_topics.json','./content/questions/questions.json'].map(async path=>{try{const r=await fetch(path+'?health='+Date.now(),{cache:'no-store'});return r.ok}catch{return false}}));return checks.every(Boolean)}
-async function reloadAdminContent(){const [syllabus,micro,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json')]);microPool=micro||{};questionStore=qpool;data=buildAdminData(syllabus,microPool);questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];renderQueue();}
-
-let bridgeHealth={ok:false,error:'Not checked'};
-function bridgeMessage(error){
-  const raw=String(error?.message||error||'Unknown bridge error');
-  if(/Failed to fetch|NetworkError|Load failed/i.test(raw)) return 'The browser could not reach the secure GitHub bridge. This is usually a deployment, CORS, network, or browser security-connection problem.';
-  if(/GITHUB_ADMIN_TOKEN/i.test(raw)) return 'The Supabase Edge Function is reachable, but its GitHub credential is not configured.';
-  if(/Admin access required|403/i.test(raw)) return 'The secure bridge rejected this account. Confirm that the signed-in Supabase profile has the admin role.';
-  if(/404/i.test(raw)) return 'The secure GitHub bridge endpoint was not found. Deploy the admin-github-write Edge Function to the configured Supabase project.';
-  return raw;
-}
-function bridgeStatusCard(){
-  if(bridgeHealth.ok) return '<section class="card admin-health"><div><div class="eyebrow">SECURE GITHUB BRIDGE</div><strong>CONNECTED</strong><p>Admin writes can reach GitHub through the protected Supabase Edge Function.</p></div></section>';
-  return '<section class="card admin-health admin-health-warning"><div><div class="eyebrow">SECURE GITHUB BRIDGE</div><strong>NOT CONNECTED</strong><p>'+esc(bridgeMessage(bridgeHealth.error))+'</p><p class="admin-help">Learner-facing content is still available. Review changes cannot be written until the bridge is available.</p><button class="btn primary" id="retryBridge">RETRY CONNECTION</button></div></section>';
-}
-async function checkBridge(){
-  try{
-    await window.NETPSY_AUTH.githubWrite('health',{repository:REPO});
-    bridgeHealth={ok:true,error:''};
-  }catch(e){bridgeHealth={ok:false,error:e}}
-  return bridgeHealth.ok;
-}
-async function dashboard(){
-  root.innerHTML='<section class="admin-hero"><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Content Audit</h1><p>Each item opens in its real learner-facing view. Edit the canonical content, ask Gemini to rewrite source-grounded content, hide it temporarily, or record your expert review without leaving this page.</p></section><div id="geminiBox">'+instructionCard()+'</div><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';
-  try{
-    const [syllabus,micro,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadApprovalQueue(),loadInstructions()]);
-    microPool=micro||{};questionStore=qpool;data=buildAdminData(syllabus,microPool);
-    questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
-    const running=await checkSite();
-    root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">STATIC CONTENT SOURCE</div><strong>CANONICAL STATIC POOLS</strong><p>Owner audit reads the published static content pools directly. Supabase is not an audit source.</p></div></section>'+bridgeStatusCard()+'<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');
-    const saveEnrichment=root.querySelector('#saveEnrichment');
-    if(saveEnrichment)saveEnrichment.onclick=async()=>{saveEnrichment.disabled=true;saveEnrichment.textContent='SAVING…';try{await saveInstructions()}finally{const current=root.querySelector('#saveEnrichment');if(current){current.disabled=false;current.textContent='SAVE INSTRUCTION'}}};
-    const retry=root.querySelector('#retryBridge');
-    if(retry)retry.onclick=async()=>{retry.disabled=true;retry.textContent='CHECKING…';await checkBridge();await dashboard()};
-    renderQueue();
-  }catch(e){
-    root.innerHTML='<section class="card"><h2>Could not load audit data</h2><p>'+esc(e.message)+'</p><button class="btn" id="adminLogout">SIGN OUT</button></section>';
-    document.querySelector('#adminLogout').onclick=logout;
-  }
-}
-async function start(){
-  try{
-    if(window.NETPSY_AUTH?.ready) await window.NETPSY_AUTH.ready;
-    if(!window.NETPSY_AUTH?.getUser?.()){location.href='login.html';return}
-    if(!window.NETPSY_AUTH.isAdmin()){location.href='progress.html';return}
-  }catch(e){
-    root.innerHTML='<section class="card admin-auth"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit</h1><p>We could not initialise your admin session.</p><p class="admin-help">'+esc(e.message)+'</p></section>';
-    return;
-  }
-  // Never block the audit UI on the optional GitHub bridge health check.
-  await dashboard();
-  checkBridge().then(()=>{
-    const queue=root.querySelector('#adminQueue');
-    if(queue){const current=root.querySelector('.admin-health');if(current)current.outerHTML=bridgeStatusCard();}
-  });
-}
+function logout(){sessionStorage.removeItem(KEY);sessionStorage.removeItem(AUTH);token='';loginView()}
+async function dashboard(){root.innerHTML='<section class="admin-hero"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>System-passed content receives <b>VERIFIED</b>. Content you mark <b>NOT SATISFACTORY</b> receives <b>EXPERT VERIFIED</b>. Other learner-facing content receives no verification tag.</p></section><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';try{const [syllabus,microPool,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions()]);data=buildAdminData(syllabus,microPool);questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];const running=await checkSite();root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');renderQueue()}catch(e){root.innerHTML='<section class="card"><h2>Could not load audit data</h2><p>'+esc(e.message)+'</p><button class="btn" id="adminLogout">SIGN OUT</button></section>';document.querySelector('#adminLogout').onclick=logout}}
+async function start(){if(!token)return loginView();try{const me=await api('/user');if(me.login!==OWNER)throw new Error('Owner account required.');await dashboard()}catch(e){logout()}}
 start();
 })();
