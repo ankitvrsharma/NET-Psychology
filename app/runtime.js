@@ -48,23 +48,29 @@ const CONTENT_POOL_PATHS=Object.freeze({
   revisionGuidance:'content/revision/revision_guidance.json',
   homeLearning:'content/home/home-learning.json'
 });
+const CONTENT_INDEX_PATHS=Object.freeze({
+  microtopics:'data/content-indexes/microtopics.json',
+  activeRecall:'data/content-indexes/active-recall.json',
+  questions:'data/content-indexes/questions.json'
+});
+const CONTENT_INDEXES=Object.create(null);
 let STATE_CACHE=null;
 async function fetchJSON(path,label){
   const response=await fetch('./'+path+'?v='+DATA_VERSION,{cache:'default'});
   if(!response.ok)throw new Error(label+' request failed: '+response.status);
   return response.json();
 }
-async function loadPool(name){
-  if(CONTENT_POOLS[name]!=null)return CONTENT_POOLS[name];
-  const path=CONTENT_POOL_PATHS[name];
-  if(!path)throw new Error('Unknown content pool: '+name);
-  const value=await fetchJSON(path,'Content pool '+name);
-  CONTENT_POOLS[name]=value;
+async function loadIndex(name){
+  if(CONTENT_INDEXES[name])return CONTENT_INDEXES[name];
+  const path=CONTENT_INDEX_PATHS[name];
+  if(!path)throw new Error('Unknown content index: '+name);
+  const value=await fetchJSON(path,'Content index '+name);
+  CONTENT_INDEXES[name]=value;
   return value;
 }
 const syllabusItems=()=>units().flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
-const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,ref.id)]||ref);
-const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||m;
+const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>microtopicItem(u,t,ref));
+const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||CONTENT_INDEXES.microtopics?.items?.[key(u.id,t.id,m.id)]||m;
 function todayKeyString(){
   const now=new Date();
   return [now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -127,6 +133,31 @@ function progressivePrefetchAllowed(){
   const type=String(c?.effectiveType||'').toLowerCase();
   return !['slow-2g','2g'].includes(type);
 }
+async function prepareDailyPracticeQuestions(){
+  const index=await loadIndex('questions');
+  const items=Array.isArray(index?.items)?index.items:[];
+  const today=todayKeyString();
+  let stored=null;try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch(e){}
+  let ids=stored?.date===today&&Array.isArray(stored.ids)&&stored.ids.length===10?stored.ids:[];
+  if(ids.length!==10){
+    const seed=Number(stored?.date===today&&stored.seed)||dailyPracticeSeed(today);
+    ids=seededShuffle(items,seed).slice(0,10).map(x=>x.id);
+    try{localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:today,seed,ids}))}catch(e){}
+  }
+  await loadPool('questions');
+  const wanted=new Set(ids.map(String));
+  const pool=CONTENT_POOLS.questions;
+  const allQuestions=Array.isArray(pool)?pool:[...(Array.isArray(pool?.pyq)?pool.pyq:[]),...(Array.isArray(pool?.practice)?pool.practice:[])];
+  PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id)));
+}
+async function preparePracticeSessionQuestions(){
+  await loadIndex('questions');
+  const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch(e){return null}})();
+  if(!saved)return;
+  await loadPool('questions');
+  const qpool=CONTENT_POOLS.questions||{pyq:[],practice:[]};
+  PRACTICE_QUESTIONS=[...(qpool.pyq||[]),...(qpool.practice||[])];
+}
 function progressivePrefetch(paths){
   if(!paths.length||!progressivePrefetchAllowed())return;
   const urls=paths.map(path=>new URL('./'+path+'?v='+DATA_VERSION,document.baseURI).href);
@@ -146,12 +177,12 @@ function progressivePrefetch(paths){
 }
 function scheduleProgressivePrefetch(page){
   const next={
-    home:['content/microtopics/micro_topics.json'],
-    daily3:['content/active-recall/active_recall.json','content/questions/questions.json'],
-    'active-recall':['content/revision/revision_guidance.json'],
-    revision:['content/questions/questions.json'],
-    microtopic:['content/active-recall/active_recall.json','content/revision/revision_guidance.json'],
-    deepDive:['content/active-recall/active_recall.json']
+    home:['data/content-indexes/microtopics.json','data/content-indexes/questions.json'],
+    daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
+    'active-recall':['data/content-indexes/microtopics.json'],
+    revision:['data/content-indexes/microtopics.json'],
+    microtopic:['data/content-indexes/active-recall.json'],
+    deepDive:['data/content-indexes/active-recall.json']
   };
   progressivePrefetch(next[page]||[]);
 }
@@ -159,23 +190,26 @@ const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
   D=await fetchJSON(page==='home'?'data/home-index.json':'data/syllabus-index.json',page==='home'?'Home index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
-  const poolNames=new Set();
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
-  if(microPages.has(page))poolNames.add('microtopics');
-  if(page==='home')poolNames.add('homeLearning');
-  if(page==='home')poolNames.add('quickLearn');
-  if(['practice','practice-session','daily-practice','active-recall'].includes(page))poolNames.add('questions');
-  if(page==='active-recall')poolNames.add('activeRecall');
-  if(page==='deep-dive')poolNames.add('deepDive');
-  if(page==='revision')poolNames.add('revisionGuidance');
-  await Promise.all([...poolNames].map(loadPool));
-  if(page==='microtopic'){
-    try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
-  }
-  if(CONTENT_POOLS.questions){
+  if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics')]);
+  if(page==='home')await loadPool('homeLearning');
+  if(page==='practice'){
+    await Promise.all([loadIndex('questions'),loadPool('questions')]);
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
   }
+  if(page==='daily-practice')await prepareDailyPracticeQuestions();
+  if(page==='practice-session')await preparePracticeSessionQuestions();
+  if(page==='microtopic'){
+    try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
+  }
+  if(page==='active-recall'){
+    await Promise.all([loadIndex('activeRecall'),loadPool('activeRecall'),loadPool('questions')]);
+    const qpool=CONTENT_POOLS.questions;
+    PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
+  }
+  if(page==='deep-dive')await loadPool('deepDive');
+  if(page==='revision')await loadIndex('microtopics');
   if(page==='home')prepareHomeDecision();
   safeRender();
   scheduleProgressivePrefetch(page);
@@ -200,6 +234,7 @@ const submitLearnerFeedback=async(type,id,rating)=>{
 };
 const units=()=>D?.units||[];
 const hasLearningContent=m=>{
+  if(m?.has_learning_content===true)return true;
   const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];
   const text=values.map(v=>{
     if(Array.isArray(v))return v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' ');
