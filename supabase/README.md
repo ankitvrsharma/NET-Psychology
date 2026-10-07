@@ -25,7 +25,7 @@ The function accepts only authenticated Supabase users whose `profiles.role` is 
 
 ### One-time setup
 
-1. Deploy the `admin-github-write` Edge Function to the Supabase project.
+1. Deploy the `admin-github-write` Edge Function to the Supabase project. Supabase CLI supports `supabase functions deploy admin-github-write`.
 2. In Supabase Edge Function Secrets, create:
    `GITHUB_ADMIN_TOKEN`
 3. Use a GitHub credential for `ankitvrsharma` with the repository permissions required by the workbench:
@@ -63,3 +63,10 @@ The publish workflow needs these GitHub repository secrets:
 - `SUPABASE_SERVICE_ROLE_KEY` — the Supabase service-role key. This is server-side only and must never be exposed to the browser. The workflow already contains the non-secret project URL.
 
 The synchronization script writes the canonical static pools to `public.content_items` with upsert semantics. The static GitHub pools remain the canonical source of truth; Supabase is the delivery copy.
+
+
+### Diagnosing the Admin Workbench
+
+The browser now keeps the audit workbench readable even when the bridge is unavailable. A **NOT CONNECTED** bridge state means the learner-facing static site is still available, but owner write actions cannot reach GitHub. Use **Retry connection** after deployment/configuration. The browser never receives `GITHUB_ADMIN_TOKEN`.
+
+For production deployment, Supabase documents Edge Function deployment and production secret management in its Edge Functions documentation. Keep `GITHUB_ADMIN_TOKEN` as a production secret; do not add it to repository files.
