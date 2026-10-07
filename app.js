@@ -1,7 +1,7 @@
 /* Stable browser entry point. Loads account persistence before the learner runtime. */
 (function(){
 'use strict';
-const VERSION='1.0.8';
+const VERSION='1.0.9';
 const config=document.createElement('script');
 config.src='./supabase-config.js?v='+VERSION;
 config.async=false;
