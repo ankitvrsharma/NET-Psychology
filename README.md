@@ -208,8 +208,22 @@ The objective is to help you **learn Psychology, retain it, and recall it when y
 
 You can optionally create a learner account. When signed in, the site's learning state is backed up to Supabase so progress, revision state, practice history and bookmarks can follow you across devices. You can still browse without an account.
 
-The administrator area uses a separate Supabase role. The owner account must be promoted to the `admin` role in Supabase SQL after the first account is created. Repository-writing actions in the existing content audit workbench still require the GitHub repository credential; it is not stored in Supabase or exposed to learners.
+The administrator area uses a separate Supabase role. The owner account must be promoted to the `admin` role in Supabase SQL after the first account is created. Repository-writing actions in the content audit workbench go through the protected Supabase `admin-github-write` Edge Function. The GitHub credential is stored only as the Edge Function secret `GITHUB_ADMIN_TOKEN`; it is never exposed to learners or browser JavaScript.
 
 ### Supabase setup
 
 Run `supabase/schema.sql` in the Supabase SQL Editor. Create your owner account at `login.html`, then promote that account once with the SQL statement documented at the bottom of the schema. Never put a Supabase secret/service-role key in the website.
+
+
+### Admin bridge setup
+
+If the Admin Workbench reports that the secure GitHub bridge cannot be reached, the learner-facing site is not broken. The one-time server setup is:
+
+1. Deploy `supabase/functions/admin-github-write/index.ts` to the configured Supabase project.
+2. Add the production Edge Function secret `GITHUB_ADMIN_TOKEN`.
+3. Give that GitHub credential access to repository contents and workflow dispatches as required by the workbench.
+4. Sign in with the Supabase account whose `profiles.role` is `admin`.
+5. Open **Admin** again and use **Retry connection**.
+
+The browser must be opened over HTTPS on the GitHub Pages site. The application redirects accidental HTTP page loads to HTTPS while preserving HTTP for local development.
+
