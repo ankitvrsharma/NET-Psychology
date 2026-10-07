@@ -7,5 +7,6 @@
 // such as "-progress-storage" or "-route-compatibility" to a version number.
 // Keep stable, descriptive filenames; use lowercase kebab-case for new filenames and do not rename
 // an existing file unless its architectural responsibility genuinely changes.
+// Preserve one canonical implementation for each learner task; do not add parallel auth flows.
 
-window.NETPSY_DATA_VERSION = "1.11.1";
+window.NETPSY_DATA_VERSION = "1.11.2";
