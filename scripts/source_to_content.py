@@ -16,6 +16,7 @@ INSTRUCTIONS=ROOT/"data/content-enrichment-instructions.json"
 VERIFICATION=ROOT/"data/verification-state.json"
 MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
+VERIFICATION_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
 def load_instructions():
@@ -361,7 +362,7 @@ def main():
                 approved_components=g.get("approved_components") or []
                 for component in ("microtopic","deep_dive","active_recall","revision","practice"):
                     if component in approved_components:
-                        verification.setdefault("items",{}).setdefault(component,{})[mid]="VERIFIED"
+                        verification.setdefault("items",{}).setdefault(VERIFICATION_KEYS[component],{})[mid]="AI REVIEWED"
             practice_path.parent.mkdir(parents=True,exist_ok=True)
             save(practice_path,practice_pool)
             save(MICRO,micro_pool)
