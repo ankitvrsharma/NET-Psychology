@@ -20,8 +20,24 @@ function initMobileNavigation(){
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>{initMobileNavigation();initDataActions();initAdminNavigation()},{once:true}); else {initMobileNavigation();initDataActions();initAdminNavigation();}
 function initAdminNavigation(){
   const nav=document.querySelector('#site-navigation');
-  if(!nav||nav.querySelector('[data-nav="admin"]'))return;
-  if(sessionStorage.getItem('netPsychAdminAuthenticated')==='1'&&sessionStorage.getItem('netPsychAdminToken')){const a=document.createElement('a');a.className='nav-link';a.dataset.nav='admin';a.href='admin.html';a.textContent='Admin';nav.appendChild(a)}
+  if(!nav)return;
+  const auth=window.NETPSY_AUTH;
+  if(auth?.getUser?.()&&!nav.querySelector('[data-nav="account"]')){
+    const a=document.createElement('a');
+    a.className='nav-link';
+    a.dataset.nav='account';
+    a.href='account.html';
+    a.textContent='Account';
+    nav.appendChild(a);
+  }
+  if(sessionStorage.getItem('netPsychAdminAuthenticated')==='1'&&sessionStorage.getItem('netPsychAdminToken')&&!nav.querySelector('[data-nav="admin"]')){
+    const a=document.createElement('a');
+    a.className='nav-link';
+    a.dataset.nav='admin';
+    a.href='admin.html';
+    a.textContent='Admin';
+    nav.appendChild(a);
+  }
 }
 
 function initDataActions(){
@@ -59,6 +75,14 @@ async function fetchJSON(path,label){
   const response=await fetch('./'+path+'?v='+DATA_VERSION,{cache:'default'});
   if(!response.ok)throw new Error(label+' request failed: '+response.status);
   return response.json();
+}
+async function loadPool(name){
+  if(CONTENT_POOLS[name]!=null)return CONTENT_POOLS[name];
+  const path=CONTENT_POOL_PATHS[name];
+  if(!path)throw new Error('Unknown content pool: '+name);
+  const value=await fetchJSON(path,'Content pool '+name);
+  CONTENT_POOLS[name]=value;
+  return value;
 }
 async function loadIndex(name){
   if(CONTENT_INDEXES[name])return CONTENT_INDEXES[name];
@@ -1153,9 +1177,14 @@ function practice(){
 function progress(){
   const s=progressSummary(),topics=progressTopicSummary();
   const started=s.started,total=s.total,interpretation=progressInterpretation(s);
+  const signedIn=Boolean(window.NETPSY_AUTH?.getUser?.());
+  const accountPrompt=signedIn
+    ? '<section class="progress-next card"><div><div class="eyebrow">PROGRESS SYNC</div><h2>Your learning state is backed up.</h2><p>Your progress, revision schedule and practice history can follow you across devices while you are signed in.</p></div><a class="btn" href="account.html">ACCOUNT →</a></section>'
+    : '<section class="progress-next card"><div><div class="eyebrow">OPTIONAL</div><h2>Keep your progress when you change devices.</h2><p>Your learning currently stays on this device. Create a free account or sign in when you want your progress, revision schedule and practice history to follow you across devices.</p></div><a class="btn" href="login.html">SAVE &amp; SYNC PROGRESS →</a></section>';
   const nextAction=topics.pending?{label:'Start Revision',href:'revision.html',note:topics.pending+' topic'+(topics.pending===1?'':'s')+' have revision work due.'}:started<total?{label:'Continue Learning',href:'unit.html?id=1',note:'Build your foundation one concept at a time. Continue from the learning path, work through the explanation, check your understanding with Active Recall, and then move forward. Completing this cycle helps turn a concept from something you have read into something you can recall and use in questions.'}:{label:'Practice Questions',href:'practice.html',note:'Use recall and application to test what you know.'};
   const errorRate=s.answers?100-s.accuracy:0;
   $('#progressApp').innerHTML=`<section class="page-hero progress-hero"><div class="eyebrow">PROGRESS</div><h1>See how your learning is building.</h1><p>See what you have explored, what you can recall, how you are performing in questions, and how consistently you are returning to what you have learned.</p></section>
+  ${accountPrompt}
   <section class="progress-signals"><div class="section-head"><div><div class="eyebrow">YOUR LEARNING SIGNALS</div><h2>Look at the pattern, not just the numbers.</h2><p class="page-guidance">These signals show different parts of your learning process. Use them together to understand where your learning is becoming secure and where it needs more work.</p></div></div>
     <div class="progress-category-stack">
       <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING PATH</div><h2>Track the five stages of secure learning.</h2><p>Each stage represents a different learning decision: starting, understanding, active recall, revision, and mastery.</p></div></div><div class="progress-indicators">
