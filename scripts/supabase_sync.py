@@ -93,12 +93,20 @@ def upsert(rows):
         print(f"  synced {start+len(batch)}/{len(rows)}")
 
 def existing_ids(content_type):
-    query=urllib.parse.urlencode({
-        "select":"id",
-        "content_type":f"eq.{content_type}",
-    })
-    data=request("content_items","GET",query="?"+query,return_json=True)
-    return {str(item["id"]) for item in data if isinstance(item,dict) and item.get("id") is not None}
+    found=set()
+    offset=0
+    while True:
+        query=urllib.parse.urlencode({
+            "select":"id",
+            "content_type":f"eq.{content_type}",
+            "limit":BATCH_SIZE,
+            "offset":offset,
+        })
+        data=request("content_items","GET",query="?"+query,return_json=True)
+        found.update(str(item["id"]) for item in data if isinstance(item,dict) and item.get("id") is not None)
+        if len(data)<BATCH_SIZE:
+            return found
+        offset += BATCH_SIZE
 
 def prune(content_type, canonical_ids):
     stale=sorted(existing_ids(content_type)-canonical_ids)
