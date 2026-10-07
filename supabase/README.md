@@ -2,7 +2,7 @@
 
 This folder adds a database-backed delivery layer without replacing GitHub as the source of truth.
 
-GitHub JSON → import script → Supabase PostgreSQL → read-only Data API → learner.
+GitHub static JSON → validation → Supabase synchronization → read-only Data API → learner.
 
 Run `supabase/schema.sql` in the Supabase SQL Editor first. Then use `scripts/supabase_import.py` with `SUPABASE_URL` and `SUPABASE_SECRET_KEY` set in your local environment. The secret key is for import only and must never be placed in the website.
 
@@ -39,3 +39,27 @@ The browser sends the signed-in Supabase session to the function; the function c
 
 The Content Audit Workbench now has an **AI AUDIT · PASSED** section and filter. It reads `data/verification-state.json` entries marked `VERIFIED`, which are written by the source-to-content AI audit only for components that pass the independent component gate. These are deliberately kept separate from the administrator's **EXPERT VERIFIED** judgement.
 
+
+
+## Content rewrite → audit → publish → sync
+
+The Admin Content Enrichment panel is the authoring control for improving existing source-backed content.
+
+1. Enter a rewrite/improvement instruction and optional canonical micro-topic IDs.
+2. Saving the instruction updates `data/content-enrichment-instructions.json`, which triggers the source-to-content workflow.
+3. Gemini rewrites the existing connected five-component package from approved source evidence.
+4. The independent AI audit checks Micro-topic, Deep Dive, Active Recall, Revision and Practice separately.
+5. Components that pass are published to the canonical static pools and marked `AI REVIEWED`.
+6. Components that fail after the rewrite attempts remain withheld in the owner approval queue.
+7. Owner-approved queue items are published and marked `EXPERT VERIFIED`.
+8. Every successful static-content publication runs the Supabase synchronization job.
+
+AI review and expert verification are intentionally different states: `AI REVIEWED` means the source-grounded AI gate passed; `EXPERT VERIFIED` means the owner explicitly approved the component.
+
+### GitHub Actions secrets for Supabase synchronization
+
+The publish workflow needs these GitHub repository secrets:
+
+- `SUPABASE_SERVICE_ROLE_KEY` — the Supabase service-role key. This is server-side only and must never be exposed to the browser. The workflow already contains the non-secret project URL.
+
+The synchronization script writes the canonical static pools to `public.content_items` with upsert semantics. The static GitHub pools remain the canonical source of truth; Supabase is the delivery copy.

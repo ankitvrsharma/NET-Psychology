@@ -11,6 +11,7 @@ DEEP=ROOT/"content/deep-dive/deep_dive.json"
 RECALL=ROOT/"content/active-recall/active_recall.json"
 REVISION=ROOT/"content/revision/revision_guidance.json"
 PRACTICE=ROOT/"content/practice/practice_mcqs.json"
+VERIFICATION_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
 VERIFICATION=ROOT/"data/verification-state.json"
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -59,7 +60,7 @@ def main():
         if "practice" in approved_components:
             practice[mid]={"id":mid+"P","microtopic_id":mid,"title":me.get("title",""),"questions":g.get("practice_mcqs") or []}
         for component in approved_components:
-            verification.setdefault("items",{}).setdefault(component,{})[mid]="EXPERT VERIFIED"
+            verification.setdefault("items",{}).setdefault(VERIFICATION_KEYS.get(component,component),{})[mid]="EXPERT VERIFIED"
         item["status"]="PUBLISHED"; item["published_at"]=now; item["publication"]="OWNER_APPROVED_COMPONENT"
     save(MICRO,micro); save(DEEP,deep); save(RECALL,recall); save(REVISION,revision); PRACTICE.parent.mkdir(parents=True,exist_ok=True); save(PRACTICE,practice); save(VERIFICATION,verification)
     queue["updated_at"]=now; queue["pending"]=pending; save(QUEUE,queue)

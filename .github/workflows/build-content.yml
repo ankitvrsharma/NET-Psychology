@@ -8,6 +8,7 @@ on:
       - content/**
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
+      - scripts/supabase_sync.py
       - scripts/source_to_content.py
       - .github/workflows/build-content.yml
   pull_request:
@@ -88,6 +89,15 @@ jobs:
           print(f"canonical micro-topics: {len(canonical)}")
           PY
       - name: Compile content automation script
-        run: python -m py_compile scripts/source_to_content.py
+        run: |
+          python -m py_compile scripts/source_to_content.py
+          python -m py_compile scripts/supabase_sync.py
       - name: Run static content validator
         run: python scripts/validate_content.py
+
+      - name: Sync canonical static pools to Supabase
+        if: ${{ github.event_name == 'push' && success() }}
+        env:
+          SUPABASE_URL: https://ncndgskqkczfurfiycng.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/supabase_sync.py
