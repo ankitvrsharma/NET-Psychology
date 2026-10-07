@@ -35,11 +35,11 @@ const RUNTIME_DATA=new Set([
   'revision_guidance.json',
   'home-learning.json',
   'mcq_mapping.json',
-  'verification-state.json',
-  'content-visibility.json'
+  'verification-state.json'
 ]);
 const NEVER_CACHE=new Set([
   'exam_schedule.json',
+  'content-visibility.json',
   'login.html',
   'login.css',
   'app/auth-page.js',
