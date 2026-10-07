@@ -8,6 +8,7 @@ on:
       - content/**
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
+      - scripts/supabase_sync.py
       - scripts/source_to_content.py
       - .github/workflows/build-content.yml
   pull_request:
