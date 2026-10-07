@@ -13,26 +13,9 @@ async function syncState(){if(!user?.id)return false;try{let state={};try{state=
 function scheduleSync(){clearTimeout(syncTimer);syncTimer=setTimeout(syncState,1000)}
 function installPersistence(){if(Storage.prototype.__netPsyWrapped)return;const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){const result=original.call(this,k,v);if(this===localStorage&&k===STATE_KEY&&user)scheduleSync();return result}}
 async function ensureState(){const remote=await loadRemoteState();let local=null;try{local=JSON.parse(localStorage.getItem(STATE_KEY)||'null')}catch{}if(remote&&typeof remote==='object'){const merged={...(remote||{}),...(local||{})};if(Array.isArray(remote._practiceHistory)||Array.isArray(local?._practiceHistory)){const seen=new Set(),history=[];for(const item of [...(remote._practiceHistory||[]),...(local?._practiceHistory||[])]){const id=JSON.stringify(item);if(!seen.has(id)){seen.add(id);history.push(item)}}merged._practiceHistory=history}localStorage.setItem(STATE_KEY,JSON.stringify(merged));if(JSON.stringify(merged)!==JSON.stringify(remote))await syncState()}else if(local&&Object.keys(local).length)await syncState()}
-async function signUp(email,password,displayName=''){const redirectTo=new URL('login.html?confirmed=1',window.location.href).href;const data=await request('/auth/v1/signup',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({email,password,data:{display_name:displayName},options:{email_redirect_to:redirectTo}})});if(data?.access_token){session=data;user=data.user;localStorage.setItem(SESSION_KEY,JSON.stringify(session));profile=await loadProfile();await ensureState()}return data}
+async function signUp(email,password,username=''){const redirectTo=new URL('login.html?confirmed=1',window.location.href).href;const cleanUsername=String(username).trim();const data=await request('/auth/v1/signup',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({email,password,data:{username:cleanUsername,display_name:cleanUsername},options:{email_redirect_to:redirectTo}})});if(data?.access_token){session=data;user=data.user;localStorage.setItem(SESSION_KEY,JSON.stringify(session));profile=await loadProfile();await ensureState()}return data}
 async function resendConfirmation(email){const redirectTo=new URL('login.html?confirmed=1',window.location.href).href;return request('/auth/v1/resend',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({type:'signup',email,options:{email_redirect_to:redirectTo}})})}
-async function githubWrite(action,payload={}){
-  if(!user?.id)throw new Error('You must be signed in as the site admin.');
-  const token=session?.access_token;
-  if(!token)throw new Error('Admin session has expired. Please sign in again.');
-  const endpoint=SUPABASE_URL+'/functions/v1/admin-github-write';
-  const controller=new AbortController();
-  const timer=setTimeout(()=>controller.abort(),12000);
-  let response;
-  try{
-    response=await fetch(endpoint,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({action,...payload}),signal:controller.signal,credentials:'omit',cache:'no-store'});
-  }catch(error){
-    if(error?.name==='AbortError') throw new Error('The secure GitHub bridge timed out after 12 seconds.');
-    throw new Error('Failed to fetch the secure GitHub bridge. Check that the Supabase Edge Function is deployed, its CORS policy allows this site, and the browser connection is HTTPS.');
-  }finally{clearTimeout(timer)}
-  const text=await response.text();let data=null;try{data=text?JSON.parse(text):null}catch{data=text}
-  if(!response.ok)throw new Error(data?.message||data?.error||data?.error_description||'Secure GitHub write failed ('+response.status+')');
-  return data;
-}
+async function githubWrite(action,payload={}){if(!user?.id)throw new Error('You must be signed in as the site admin.');const token=session?.access_token;if(!token)throw new Error('Admin session has expired. Please sign in again.');const endpoint=SUPABASE_URL+'/functions/v1/admin-github-write';const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),12000);let response;try{response=await fetch(endpoint,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({action,...payload}),signal:controller.signal,credentials:'omit',cache:'no-store'});}catch(error){if(error?.name==='AbortError')throw new Error('The secure GitHub bridge timed out after 12 seconds.');throw new Error('Failed to fetch the secure GitHub bridge. Check that the Supabase Edge Function is deployed, its CORS policy allows this site, and the browser connection is HTTPS.');}finally{clearTimeout(timer)}const text=await response.text();let data=null;try{data=text?JSON.parse(text):null}catch{data=text}if(!response.ok)throw new Error(data?.message||data?.error||data?.error_description||'Secure GitHub write failed ('+response.status+')');return data;}
 async function signIn(email,password){const data=await request('/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({email,password})});session=data;user=data.user;localStorage.setItem(SESSION_KEY,JSON.stringify(session));profile=await loadProfile();await ensureState();return{user,profile}}
 async function signOut(){try{if(session?.access_token)await request('/auth/v1/logout',{method:'POST'})}catch{}localStorage.removeItem(SESSION_KEY);session=user=profile=null}
 async function init(){installPersistence();if(!KEY)return null;await loadSession();if(user)await ensureState();window.dispatchEvent(new CustomEvent('netpsy-auth-ready',{detail:{user,profile}}));return{user,profile}}
