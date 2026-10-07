@@ -1962,3 +1962,16 @@ body[data-page="login"] .auth-resend{display:block;width:100%;min-width:0;min-he
   .admin-editor-head{display:grid}
   .admin-editor-head .btn{width:100%}
 }
+
+/* Expanded admin audit filters */
+.admin-filter-groups{max-width:980px;margin:0 auto 14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:var(--shadow)}
+.admin-filter-group{display:grid;gap:9px}
+.admin-filter-label,.admin-filter-selects label span{font-size:10px;font-weight:900;letter-spacing:.08em;color:var(--muted)}
+.admin-filters{display:flex;flex-wrap:wrap;gap:7px}
+.admin-filter{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:8px 11px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+.admin-filter:hover{border-color:var(--navy);color:var(--navy)}
+.admin-filter.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.admin-filter-selects{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px;padding-top:13px;border-top:1px solid var(--line)}
+.admin-filter-selects label{display:grid;gap:6px}
+.admin-filter-selects select{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;padding:10px 11px}
+@media(max-width:720px){.admin-filter-selects{grid-template-columns:1fr}.admin-filters{gap:6px}.admin-filter{padding:7px 9px;font-size:10px}}
