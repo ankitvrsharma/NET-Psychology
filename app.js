@@ -1,19 +1,19 @@
 /* Stable browser entry point. Loads account persistence before the learner runtime. */
 (function(){
 'use strict';
-const VERSION='1.0.7';
+const VERSION='1.0.8';
 const config=document.createElement('script');
 config.src='./supabase-config.js?v='+VERSION;
 config.async=false;
-config.onload=()=>loadAuth();
-config.onerror=()=>loadAuth();
+config.onload=loadAuth;
+config.onerror=loadAuth;
 document.head.appendChild(config);
 function loadAuth(){
   const auth=document.createElement('script');
   auth.src='./app/supabase-auth.js?v='+VERSION;
   auth.async=false;
-  auth.onload=()=>loadRuntime();
-  auth.onerror=()=>loadRuntime();
+  auth.onload=()=>Promise.resolve(window.NETPSY_AUTH?.ready).then(loadRuntime,loadRuntime);
+  auth.onerror=loadRuntime;
   document.head.appendChild(auth);
 }
 function loadRuntime(){
