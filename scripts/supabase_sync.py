@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""Synchronize the canonical static Psychology content pools into Supabase."""
+"""Synchronize the canonical static Psychology content pools into Supabase.
+
+The GitHub static pools are authoritative. Supabase is a derived delivery copy.
+This sync upserts every canonical record and prunes database records that no
+longer exist in the static pools, so the database mirrors the canonical pools.
+"""
 from pathlib import Path
-import json, os, sys, urllib.error, urllib.request
+import json, os, urllib.error, urllib.parse, urllib.request
 
 ROOT=Path(__file__).resolve().parents[1]
 SUPABASE_URL=os.getenv("SUPABASE_URL","").rstrip("/")
@@ -30,7 +35,7 @@ def iter_records(content_type, path):
         return
     if not isinstance(value,dict):
         return
-    for key,item in value.items():
+    for item in value.values():
         if isinstance(item,dict):
             yield item
 
@@ -62,7 +67,7 @@ def row(content_type, item):
         "published":True,
     }
 
-def request(path, method="GET", body=None, query=""):
+def request(path, method="GET", body=None, query="", return_json=False):
     if not SUPABASE_URL or not SUPABASE_KEY:
         raise SystemExit("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required.")
     url=SUPABASE_URL+"/rest/v1/"+path+query
@@ -75,7 +80,8 @@ def request(path, method="GET", body=None, query=""):
     })
     try:
         with urllib.request.urlopen(req,timeout=60) as response:
-            return response.status
+            raw=response.read().decode("utf-8")
+            return json.loads(raw) if return_json and raw else response.status
     except urllib.error.HTTPError as exc:
         detail=exc.read().decode("utf-8","replace")
         raise RuntimeError(f"Supabase sync failed ({exc.code}): {detail}") from exc
@@ -86,22 +92,58 @@ def upsert(rows):
         request("content_items","POST",batch,"?on_conflict=content_type,id")
         print(f"  synced {start+len(batch)}/{len(rows)}")
 
+def existing_ids(content_type):
+    found=set()
+    offset=0
+    while True:
+        query=urllib.parse.urlencode({
+            "select":"id",
+            "content_type":f"eq.{content_type}",
+            "limit":BATCH_SIZE,
+            "offset":offset,
+        })
+        data=request("content_items","GET",query="?"+query,return_json=True)
+        found.update(str(item["id"]) for item in data if isinstance(item,dict) and item.get("id") is not None)
+        if len(data)<BATCH_SIZE:
+            return found
+        offset += BATCH_SIZE
+
+def prune(content_type, canonical_ids):
+    stale=sorted(existing_ids(content_type)-canonical_ids)
+    if not stale:
+        print(f"  {content_type}: no stale Supabase records")
+        return 0
+    for start in range(0,len(stale),BATCH_SIZE):
+        batch=stale[start:start+BATCH_SIZE]
+        query=urllib.parse.urlencode({
+            "content_type":f"eq.{content_type}",
+            "id":f"in.({','.join(batch)})",
+        })
+        request("content_items","DELETE",query="?"+query)
+        print(f"  {content_type}: pruned {start+len(batch)}/{len(stale)} stale records")
+    return len(stale)
+
 def main():
-    all_rows=[]
+    if not SUPABASE_URL or not SUPABASE_KEY:
+        raise SystemExit("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required.")
+    total=0
+    pruned=0
     for content_type,relative in POOLS:
         path=ROOT/relative
         if not path.exists():
             print(f"skip {content_type}: {relative} not found")
+            # A missing canonical pool must not silently delete its database data.
             continue
         rows=[]
         for item in iter_records(content_type,relative):
             value=row(content_type,item)
             if value:
                 rows.append(value)
-        print(f"{content_type}: {len(rows)}")
+        print(f"{content_type}: {len(rows)} canonical records")
         upsert(rows)
-        all_rows.extend(rows)
-    print(f"Supabase synchronization complete: {len(all_rows)} content records.")
+        pruned += prune(content_type,{str(x["id"]) for x in rows})
+        total += len(rows)
+    print(f"Supabase synchronization complete: {total} canonical records synced; {pruned} stale records pruned.")
 
 if __name__=="__main__":
     main()

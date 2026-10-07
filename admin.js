@@ -97,7 +97,7 @@ async function dashboard(){
     data=buildAdminData(syllabus,microPool);
     questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
     const running=await checkSite();
-    root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin',bridgeStatusCard()+'<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');
+    root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">STATIC CONTENT SOURCE</div><strong>CANONICAL STATIC POOLS</strong><p>Owner audit reads the published static content pools directly. Supabase is not an audit source.</p></div></section>'+bridgeStatusCard()+'<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');
     const retry=root.querySelector('#retryBridge');
     if(retry)retry.onclick=async()=>{retry.disabled=true;retry.textContent='CHECKING…';await checkBridge();await dashboard()};
     renderQueue();
@@ -115,8 +115,12 @@ async function start(){
     root.innerHTML='<section class="card admin-auth"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>We could not initialise your admin session.</p><p class="admin-help">'+esc(e.message)+'</p></section>';
     return;
   }
-  await checkBridge();
+  // Never block the audit UI on the optional GitHub bridge health check.
   await dashboard();
+  checkBridge().then(()=>{
+    const queue=root.querySelector('#adminQueue');
+    if(queue){const current=root.querySelector('.admin-health');if(current)current.outerHTML=bridgeStatusCard();}
+  });
 }
 start();
 })();
