@@ -10,8 +10,23 @@ const ALLOWED_FILES = new Set([
 ])
 const ALLOWED_WORKFLOW = 'publish-approved-content.yml'
 
-const json = (body: unknown, status = 200) =>
-  Response.json(body, { status })
+const ALLOWED_ORIGINS = new Set([
+  'https://ankitvrsharma.github.io',
+  'http://localhost:3000'
+])
+
+function corsHeaders(req: Request) {
+  const origin = req.headers.get('Origin') || ''
+  return {
+    'Access-Control-Allow-Origin': ALLOWED_ORIGINS.has(origin) ? origin : 'https://ankitvrsharma.github.io',
+    'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Vary': 'Origin'
+  }
+}
+
+const json = (body: unknown, status = 200, req?: Request) =>
+  Response.json(body, { status, headers: corsHeaders(req || new Request('https://localhost')) })
 
 async function github(path: string, options: RequestInit = {}) {
   const token = Deno.env.get('GITHUB_ADMIN_TOKEN')
@@ -58,10 +73,18 @@ async function writeFile(path: string, content: string, message: string) {
       branch: 'main'
     })
   })
-}
 
 export default {
-  fetch: withSupabase({ auth: 'user' }, async (req, ctx) => {
+  async fetch(req: Request) {
+    if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: corsHeaders(req) })
+    const response = await authenticatedFetch(req)
+    const headers = new Headers(response.headers)
+    Object.entries(corsHeaders(req)).forEach(([key, value]) => headers.set(key, value))
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers })
+  }
+}
+
+const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
     if (req.method !== 'POST') return json({ error: 'POST required' }, 405)
 
     const { data: profile, error } = await ctx.supabase
