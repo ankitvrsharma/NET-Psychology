@@ -71,16 +71,52 @@ async function changeReview(type,id,value){
 async function checkSite(){const checks=await Promise.all(['./index.html','./app/runtime.js','./style.css','./data/syllabus-index.json','./content/microtopics/micro_topics.json','./content/questions/questions.json'].map(async path=>{try{const r=await fetch(path+'?health='+Date.now(),{cache:'no-store'});return r.ok}catch{return false}}));return checks.every(Boolean)}
 
 async function dashboard(){root.innerHTML='<section class="admin-hero"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>Review source-backed content after the independent AI audit. AI-passed content is listed separately from your expert judgement.</p></section><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';try{const [syllabus,microPool,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions(),loadApprovalQueue()]);data=buildAdminData(syllabus,microPool);questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];const running=await checkSite();root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');renderQueue()}catch(e){root.innerHTML='<section class="card"><h2>Could not load audit data</h2><p>'+esc(e.message)+'</p><button class="btn" id="adminLogout">SIGN OUT</button></section>';document.querySelector('#adminLogout').onclick=logout}}
+let bridgeHealth={ok:false,error:'Not checked'};
+function bridgeMessage(error){
+  const raw=String(error?.message||error||'Unknown bridge error');
+  if(/Failed to fetch|NetworkError|Load failed/i.test(raw)) return 'The browser could not reach the secure GitHub bridge. This is usually a deployment, CORS, network, or browser security-connection problem.';
+  if(/GITHUB_ADMIN_TOKEN/i.test(raw)) return 'The Supabase Edge Function is reachable, but its GitHub credential is not configured.';
+  if(/Admin access required|403/i.test(raw)) return 'The secure bridge rejected this account. Confirm that the signed-in Supabase profile has the admin role.';
+  if(/404/i.test(raw)) return 'The secure GitHub bridge endpoint was not found. Deploy the admin-github-write Edge Function to the configured Supabase project.';
+  return raw;
+}
+function bridgeStatusCard(){
+  if(bridgeHealth.ok) return '<section class="card admin-health"><div><div class="eyebrow">SECURE GITHUB BRIDGE</div><strong>CONNECTED</strong><p>Admin writes can reach GitHub through the protected Supabase Edge Function.</p></div></section>';
+  return '<section class="card admin-health admin-health-warning"><div><div class="eyebrow">SECURE GITHUB BRIDGE</div><strong>NOT CONNECTED</strong><p>'+esc(bridgeMessage(bridgeHealth.error))+'</p><p class="admin-help">Learner-facing content is still available. Review changes cannot be written until the bridge is available.</p><button class="btn primary" id="retryBridge">RETRY CONNECTION</button></div></section>';
+}
+async function checkBridge(){
+  try{
+    await window.NETPSY_AUTH.githubWrite('health',{repository:REPO});
+    bridgeHealth={ok:true,error:''};
+  }catch(e){bridgeHealth={ok:false,error:e}}
+  return bridgeHealth.ok;
+}
+async function dashboard(){
+  root.innerHTML='<section class="admin-hero"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>Review source-backed content after the independent AI audit. AI-passed content is listed separately from your expert judgement.</p></section><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';
+  try{
+    const [syllabus,microPool,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions(),loadApprovalQueue()]);
+    data=buildAdminData(syllabus,microPool);
+    questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
+    const running=await checkSite();
+    root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin',bridgeStatusCard()+'<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');
+    const retry=root.querySelector('#retryBridge');
+    if(retry)retry.onclick=async()=>{retry.disabled=true;retry.textContent='CHECKING…';await checkBridge();await dashboard()};
+    renderQueue();
+  }catch(e){
+    root.innerHTML='<section class="card"><h2>Could not load audit data</h2><p>'+esc(e.message)+'</p><button class="btn" id="adminLogout">SIGN OUT</button></section>';
+    document.querySelector('#adminLogout').onclick=logout;
+  }
+}
 async function start(){
   try{
     if(window.NETPSY_AUTH?.ready) await window.NETPSY_AUTH.ready;
     if(!window.NETPSY_AUTH?.getUser?.()){location.href='login.html';return}
     if(!window.NETPSY_AUTH.isAdmin()){location.href='progress.html';return}
-    await window.NETPSY_AUTH.githubWrite('health',{repository:REPO});
   }catch(e){
-    root.innerHTML='<section class="card admin-auth"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>Your admin account is authenticated. The secure GitHub write bridge still needs to be configured in Supabase before review decisions can be written to GitHub.</p><p class="admin-help">'+esc(e.message)+'</p></section>';
+    root.innerHTML='<section class="card admin-auth"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>We could not initialise your admin session.</p><p class="admin-help">'+esc(e.message)+'</p></section>';
     return;
   }
+  await checkBridge();
   await dashboard();
 }
 start();
