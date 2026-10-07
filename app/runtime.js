@@ -22,6 +22,14 @@ function initAdminNavigation(){
   const nav=document.querySelector('#site-navigation');
   if(!nav)return;
   const auth=window.NETPSY_AUTH;
+  if(!auth?.getUser?.()&&!nav.querySelector('[data-nav="signin"]')){
+    const a=document.createElement('a');
+    a.className='nav-link';
+    a.dataset.nav='signin';
+    a.href='login.html';
+    a.textContent='Sign in';
+    nav.appendChild(a);
+  }
   if(auth?.getUser?.()&&!nav.querySelector('[data-nav="account"]')){
     const a=document.createElement('a');
     a.className='nav-link';
