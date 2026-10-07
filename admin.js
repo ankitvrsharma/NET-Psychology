@@ -2,7 +2,7 @@
 'use strict';
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let token=sessionStorage.getItem(KEY)||'',approvalQueue=[],verificationState={schema_version:1,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,questions=[],filter='NEED REVIEW';
+let approvalQueue=[],verificationState={schema_version:1,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,questions=[],filter='NEED REVIEW';
 const loadJSON=async(path)=>{const r=await fetch('./'+path+'?v=20261006-audit-static-pools',{cache:'no-store'});if(!r.ok)throw new Error(path+' '+r.status);return r.json()};
 const review=(type,id)=>String(verificationState?.items?.[type]?.[String(id)]||'');
 const hasContent=m=>{const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];const text=values.map(v=>Array.isArray(v)?v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' '):v&&typeof v==='object'?JSON.stringify(v):String(v||'')).join(' ').replace(/\s+/g,' ').trim();return text.length>=80};
