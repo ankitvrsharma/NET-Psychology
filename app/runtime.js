@@ -805,6 +805,7 @@ function micro(){
   const root=$('#microPage');
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<div class="panel empty">Micro-topic not found.</div>';return}
+  const previewMode=Q.get('preview')==='1';
   const p=getP(k);
   document.title=m.title+' — UGC NET Psychology';
   if(!hasLearningContent(m)){
@@ -818,7 +819,7 @@ function micro(){
   const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
   const verificationTag=learnerVerificationTag('microtopics',k);
   const currentFeedback=feedbackState('microtopics',k);
-  setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
+  if(!previewMode)setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p>'+
@@ -840,8 +841,8 @@ function micro(){
     '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT</span><b>→</b></a>'+
     '</section>'+
     '</section>';
-  root.querySelectorAll('.micro-bottom-action').forEach(link=>link.addEventListener('click',()=>understandingComplete()));
-  root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
+  if(!previewMode)root.querySelectorAll('.micro-bottom-action').forEach(link=>link.addEventListener('click',()=>understandingComplete()));
+  if(!previewMode)root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
     const rating=btn.dataset.contentFeedback;
     await submitLearnerFeedback('microtopics',k,rating);
     root.querySelectorAll('[data-content-feedback]').forEach(b=>b.classList.toggle('selected',b.dataset.contentFeedback===rating));
@@ -850,6 +851,13 @@ function micro(){
 }
 function practice(){
   const box=$('#practiceApp');
+  const previewQuestion=Q.get('previewQuestion');
+  if(previewQuestion){
+    const q=PRACTICE_QUESTIONS.find(item=>String(item.id??item.question??'')===String(previewQuestion));
+    if(!q){box.innerHTML='<section class="panel empty"><div class="eyebrow">LEARNER PREVIEW</div><h2>Question not found.</h2></section>';return}
+    box.innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">PRACTICE SESSION</div><h2>Question 1 of 1</h2></div><div class="session-head-actions"><span class="practice-preview-label">LEARNER PREVIEW</span></div></div><div class="session-progress"><i style="width:100%"></i></div><div class="session-questions">'+mcqHTML(q,0,'PYQ',true)+'</div><div class="session-navigation"><button class="btn" type="button" disabled>← PREVIOUS</button><button class="btn" type="button" disabled>SKIP QUESTION</button><button class="btn primary" type="button" disabled>FINISH PRACTICE →</button></div></section>';
+    return;
+  }
   const unitOptions=units().map(u=>{
     const unit=`<button class="practice-unit-option" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="unit" data-value="${esc(u.id)}" data-unit="${esc(u.id)}" aria-pressed="false"><span><b>Unit ${esc(u.id)}</b> — ${esc(u.title)}</span></button>`;
     const partOptions=unitParts(u).map(part=>`<button class="practice-unit-option practice-part-option" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="part" data-unit="${esc(u.id)}" data-value="${esc(part.id)}" aria-pressed="false"><span>↳ Part ${esc(part.id)} — ${esc(part.title)}</span></button>`).join('');
