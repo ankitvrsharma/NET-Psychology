@@ -204,6 +204,22 @@ The objective is not to make you spend more time on the website.
 
 The objective is to help you **learn Psychology, retain it, and recall it when you need it for UGC NET.**
 
+## Content audit and publication architecture
+
+The content system has one authoritative source: the **published static content pools in the GitHub repository**.
+
+The lifecycle is:
+
+**Create or rewrite → AI audit → rewrite #1 if needed → re-audit → rewrite #2 if needed → final re-audit → static content pool**
+
+- Content that passes the final AI audit is published **surgically by canonical content ID** into the relevant static pool.
+- Content that still fails after the two rewrite attempts is withheld and placed in the owner approval queue.
+- The Admin Workbench audits the **static pools directly**. It does not audit a Supabase copy.
+- Supabase is a **derived synchronized copy** of the static pools. Synchronization upserts canonical records and removes stale database records that no longer exist in the static pools.
+- Supabase must never become the authoring, audit, or canonical content source.
+
+This keeps the learner-facing content, owner audit surface, and synchronized database aligned around one canonical version.
+
 ## Accounts and saved learning state
 
 You can optionally create a learner account. When signed in, the site's learning state is backed up to Supabase so progress, revision state, practice history and bookmarks can follow you across devices. You can still browse without an account.
