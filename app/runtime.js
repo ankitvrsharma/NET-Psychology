@@ -22,6 +22,7 @@ function initAdminNavigation(){
   const nav=document.querySelector('#site-navigation');
   if(!nav)return;
   const auth=window.NETPSY_AUTH;
+  nav.querySelector('[data-nav="signin"]')?.remove();
   if(!auth?.getUser?.()&&!nav.querySelector('[data-nav="signin"]')){
     const a=document.createElement('a');
     a.className='nav-link';
@@ -47,6 +48,7 @@ function initAdminNavigation(){
     nav.appendChild(a);
   }
 }
+window.addEventListener('netpsy-auth-ready',initAdminNavigation);
 
 function initDataActions(){
   if(document.documentElement.dataset.actionHandlersReady==='1') return;
@@ -209,7 +211,7 @@ function progressivePrefetch(paths){
 }
 function scheduleProgressivePrefetch(page){
   const next={
-    home:['data/content-indexes/microtopics.json','data/content-indexes/questions.json'],
+    home:['data/home-learning-index.json','data/content-indexes/questions.json'],
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
@@ -220,7 +222,7 @@ function scheduleProgressivePrefetch(page){
 }
 const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
-  D=await fetchJSON(page==='home'?'data/home-index.json':'data/syllabus-index.json',page==='home'?'Home index':'Syllabus index');
+  D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
   if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics')]);
@@ -332,7 +334,7 @@ function startPage(){
     const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
     localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
     const startTarget='learner.html';
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you understand concepts, strengthen recall, practise what you know, and return to important ideas at the right time.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
+    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR JOURNEY STARTS HERE</div><h1>A new learning journey begins.</h1><p>We have your starting point. From here, your journey will help you learn concepts, check your recall, revise at the right time, and practise what you know.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">BEGIN MY JOURNEY →</a></div></section>';
   });
   back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
   update();
@@ -380,23 +382,18 @@ function learnerPage(){
   if(!root)return;
   const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).startedAt||0));
   const current=started[0]||all()[0];
-  if(!current){
-    root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Study data is not available yet.</p></section>';
-    return;
-  }
-  const p=getP(current.k), currentIndex=all().findIndex(x=>x.k===current.k);
-  const dailyKeys=todayLearningKeys();
+  if(!current){root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Start with Learn when you are ready.</p><a class="btn primary" href="learn.html">START LEARNING →</a></section>';return}
+  const p=getP(current.k),currentIndex=all().findIndex(x=>x.k===current.k),dailyKeys=todayLearningKeys();
   const upcoming=all().filter(x=>!dailyKeys.has(x.k)).slice(Math.max(0,currentIndex+1),Math.max(0,currentIndex+1)+3);
-  const summary=progressSummary();
-  const learned=summary.learned||0, mastered=summary.mastered||0, scheduled=summary.revisionScheduled||0;
-  const progress=summary.coverage;
-  root.innerHTML=
-    '<section class="learn-journey-hero"><div class="eyebrow">YOUR LEARNING JOURNEY</div><h1>Learn one concept at a time.</h1><p>Pick up where you left off, open your current concept, and keep building your understanding one idea at a time.</p></section>'+learningAccountPrompt('learning')+'<section class="learning-summary card"><div><div class="eyebrow">LEARNING SUMMARY</div><h2>Your progress so far.</h2></div><div class="learning-summary-grid"><div><strong>'+learned+'</strong><span>Concepts learned</span></div><div><strong>'+mastered+'</strong><span>Concepts mastered</span></div><div><strong>'+scheduled+'</strong><span>In spaced revision</span></div></div></section>'+
-    '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+progress+'%</span></div><div class="bar"><i style="width:'+progress+'%"></i></div><p class="learn-current-note">'+esc(section(current.m.content_notes,'CORE CONCEPT','\n\nKEY POINTS')||current.m.title)+'</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">'+(p.status&&p.status!=='NEW'?'CONTINUE LEARNING':'START LEARNING')+' →</a></section>'+
-
-    '<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Keep moving through the syllabus.</h2></div></div>'+
-    (upcoming.length?upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join(''):'<div class="panel empty"><p>You have reached the end of the current learning sequence.</p></div>')+
-    '</section><a class="learn-syllabus-link" href="learn.html">Browse the syllabus →</a>';
+  const due=dueItems().slice(0,3);
+  const dailyDone=Array.from(dailyKeys).filter(k=>{const item=all().find(x=>x.k===k),pp=item?getP(item.k):null;return !!pp?.recallCompletedAt||pp?.status==='MASTERED'}).length;
+  root.innerHTML='<section class="learn-journey-hero"><div class="eyebrow">MY LEARNING</div><h1>What should you do next?</h1><p>Your learning page is your action queue. Continue the current concept, complete today’s learning, or return to concepts that are due.</p></section>'+learningAccountPrompt('learning')+
+  '<section class="learn-current card"><div class="learn-current-head"><div><div class="eyebrow">CONTINUE LEARNING</div><h2>'+esc(current.m.title)+'</h2><p>'+esc(current.t.title)+' · Unit '+esc(current.u.id)+'</p></div><span class="learn-current-progress">'+(p.recallCompletedAt?'READY FOR REVISION':p.status&&p.status!=='NEW'?'IN PROGRESS':'NOT STARTED')+'</span></div><p class="learn-current-note">Pick up from the concept you last worked on.</p><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(current.u.id)+'&topic='+encodeURIComponent(current.t.id)+'&micro='+encodeURIComponent(current.m.id)+'">CONTINUE LEARNING →</a></section>'+
+  '<section class="learning-action-grid"><article class="learning-action-card card"><div class="eyebrow">TODAY’S LEARNING</div><h2>3 concepts</h2><p>'+dailyDone+' of 3 concepts completed in today’s set.</p><a class="btn" href="daily3.html">CONTINUE TODAY →</a></article>'+
+  '<article class="learning-action-card card"><div class="eyebrow">TODAY’S PRACTICE</div><h2>10 questions</h2><p>Complete the fixed daily practice when you are ready.</p><a class="btn" href="daily-practice.html">START PRACTICE →</a></article>'+
+  '<article class="learning-action-card card"><div class="eyebrow">REVISION</div><h2>'+due.length+' due now</h2><p>'+(due.length?'Return to the concepts waiting for revision.':'Nothing is due right now.')+'</p><a class="btn" href="revision.html">'+(due.length?'REVISE NOW →':'VIEW REVISION →')+'</a></article></section>'+
+  (upcoming.length?'<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Continue through the syllabus.</h2></div></div>'+upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join('')+'</section>':'')+
+  '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
 }
 function deepDive(){
   const {u,t,m,k}=find(),root=$('#deepDivePage');
@@ -449,7 +446,7 @@ function activeRecall(){
     '</article>'
   ).join('');
   root.innerHTML=
-    '<section class="page-hero active-recall-hero"><div class="eyebrow">ACTIVE RECALL</div><h1>Bring this idea back from memory.</h1><p>Close your notes and retrieve the idea before you look again. Explain it, distinguish it, or apply it — then check your answer against the concept you just learned.</p></section>'+
+    '<section class="page-hero active-recall-hero"><div class="eyebrow">RECALL</div><h1>Bring this idea back from memory.</h1><p>Close your notes and recall the idea before you look again. Explain it or distinguish it, then check your answer against the concept you just learned.</p></section>'+
     (promptCards||'<section class="panel empty"><h2>Recall this concept from memory.</h2><p>This concept needs a little more source material before a recall set can be built.</p><button class="btn primary" type="button" id="confirmRecall">I RECALLED THIS CONCEPT</button></section>')+
     '<section class="revision-rating panel" id="revisionRating" hidden><div class="eyebrow">HOW WELL DID YOU RECALL IT?</div><p>Rate how well you brought the idea back from memory. Your rating determines when you will revisit it.</p><div class="revision-rating-actions"><button class="btn" type="button" data-revision-rating="again">AGAIN</button><button class="btn" type="button" data-revision-rating="hard">HARD</button><button class="btn" type="button" data-revision-rating="good">GOOD</button><button class="btn primary" type="button" data-revision-rating="easy">EASY</button></div></section>'+
     '<section class="active-recall-complete card" id="activeRecallComplete" hidden></section>';
@@ -483,14 +480,14 @@ function activeRecall(){
     const days=Math.max(1,Math.round((Date.parse(next)-Date.now())/86400000));
     const nextItem=fromRevision?null:dailySessionNext(k);
     const box=$('#revisionRating');
-    if(box)box.innerHTML='<div class="eyebrow">RECALL RATED</div><h3>'+esc(rating[0].toUpperCase()+rating.slice(1))+' · next revision in '+days+' day'+(days===1?'':'s')+'</h3>';
+    if(box)box.innerHTML='<div class="eyebrow">RECALL COMPLETE</div><h3>'+esc(rating[0].toUpperCase()+rating.slice(1))+' · next revision in '+days+' day'+(days===1?'':'s')+'</h3>';
     const complete=$('#activeRecallComplete');if(!complete)return;
     if(fromRevision){
-      complete.innerHTML='<div class="eyebrow">REVISION COMPLETE</div><h2>You’ve finished this revision.</h2><p>This concept has been scheduled according to your rating.</p><div class="complete-actions"><a class="btn primary" href="revision.html">FINISH REVISION →</a></div>';
+      complete.innerHTML='<div class="eyebrow">REVISION COMPLETE</div><h2>You’ve finished this revision.</h2><p>This concept has been scheduled according to your rating.</p><div class="complete-actions"><a class="btn" href="learner.html">CONTINUE LEARNING →</a><a class="btn primary" href="revision.html">NEXT →</a></div>';
     }else if(nextItem){
-      complete.innerHTML='<div class="eyebrow">KEEP GOING</div><h2>Ready for the next concept?</h2><p>Move straight to the next incomplete concept in today’s learning set.</p><div class="complete-actions"><a class="btn primary" href="microtopic.html?unit='+encodeURIComponent(nextItem.u.id)+'&topic='+encodeURIComponent(nextItem.t.id)+'&micro='+encodeURIComponent(nextItem.m.id)+'">NEXT TOPIC →</a></div>';
+      complete.innerHTML='<div class="eyebrow">RECALL COMPLETE</div><h2>Ready for the next concept?</h2><p>Move forward or finish today’s recall work.</p><div class="complete-actions"><a class="btn" href="microtopic.html?unit='+encodeURIComponent(nextItem.u.id)+'&topic='+encodeURIComponent(nextItem.t.id)+'&micro='+encodeURIComponent(nextItem.m.id)+'">CONTINUE LEARNING →</a><a class="btn primary" href="learner.html">FINISH</a></div>';
     }else{
-      complete.innerHTML='<div class="eyebrow">TODAY’S LEARNING COMPLETE</div><h2>You’ve completed all three concepts.</h2><p>Your concepts are now in your revision cycle. Would you like to keep learning?</p>'+learningAccountPrompt('complete')+'<div class="complete-actions"><a class="btn" href="index.html">FINISH LEARNING</a><a class="btn primary" href="learner.html">CONTINUE LEARNING →</a></div>';
+      complete.innerHTML='<div class="eyebrow">RECALL COMPLETE</div><h2>You’ve completed today’s learning.</h2><p>Your concepts are now in the revision cycle. Continue learning or finish here.</p>'+learningAccountPrompt('complete')+'<div class="complete-actions"><a class="btn" href="learner.html">CONTINUE LEARNING →</a><a class="btn primary" href="learner.html">FINISH</a></div>';
     }
     complete.hidden=false;
     complete.scrollIntoView({behavior:'smooth',block:'center'});
@@ -555,9 +552,9 @@ function home(){
   const hasStarted=started.length>0||practiceActivity,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   const continueHref='learner.html';
   if(hasStarted){
-    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">YOUR NEXT STEP</div></div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Learn at your own pace, strengthen recall, apply what you know, and return to concepts when they need attention.</p><div class="hero-actions"><a class="hero-cta" href="'+continueHref+'"><span>CONTINUE LEARNING</span><b>→</b></a></div>';
+    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">YOUR NEXT STEP</div></div><h1>KEEP BUILDING KNOWLEDGE YOU CAN RECALL.</h1><p>Learn at your own pace, strengthen recall, revise at the right time, and practise what you know.</p><div class="hero-actions"><a class="hero-cta" href="'+continueHref+'"><span>CONTINUE LEARNING</span><b>→</b></a></div>';
   }else{
-    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Strengthen recall. Revise it at the right time.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
+    hero.innerHTML='<div class="hero-kicker"><div class="eyebrow">UGC NET PSYCHOLOGY</div></div><h1>LEARN. UNDERSTAND MORE.<br>REMEMBER LONGER.</h1><p>Learn the concept. Check your recall. Revise it at the right time. Practice when you are ready.</p><div class="hero-actions"><a class="hero-cta" href="start.html"><span>START LEARNING</span></a></div>';
   }
   renderNetCountdown(summary);
   const cards={learn:'<a class="daily-focus-card" href="daily3.html"><strong>LEARN</strong><span>→</span></a>',practice:'<a class="daily-focus-card" href="daily-practice.html"><strong>PRACTICE</strong><span>→</span></a>'};
@@ -596,60 +593,23 @@ function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&
 function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.understandingAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function dailyPractice(){
-  const root=$('#dailyPracticeApp');
-  if(!root)return;
-  const now=new Date(); const todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
-  const allQuestions=PRACTICE_QUESTIONS.slice();
-  let stored=null;
-  try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
+  const root=$('#dailyPracticeApp');if(!root)return;
+  const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+  const allQuestions=PRACTICE_QUESTIONS.slice();let stored=null;try{stored=JSON.parse(localStorage.getItem('netPsychDailyPractice')||'null')}catch{stored=null}
   let questions=stored&&stored.date===todayKey&&Array.isArray(stored.ids)?stored.ids.map(id=>allQuestions.find(q=>String(q.id)===String(id))).filter(Boolean):[];
-  if(questions.length!==10){
-    const seed=Number(stored?.date===todayKey&&stored?.seed)||dailyPracticeSeed(todayKey);
-    questions=seededShuffle(allQuestions,seed).slice(0,10);
-    localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,seed,ids:questions.map(q=>q.id)}));
-  }
-  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>10 questions. One focused check.</h1><p>Work through today’s questions one at a time. Finish the set first, then review your answers and explanations to strengthen what needs another look.</p></section><section id="dailyPracticeSession"></section>';
+  if(questions.length!==10){const seed=Number(stored?.date===todayKey&&stored?.seed)||dailyPracticeSeed(todayKey);questions=seededShuffle(allQuestions,seed).slice(0,10);localStorage.setItem('netPsychDailyPractice',JSON.stringify({date:todayKey,seed,ids:questions.map(q=>q.id)}))}
+  const startKey='netPsychDailyPracticeStarted',alreadyStarted=(()=>{try{return localStorage.getItem(startKey)===todayKey}catch{return false}})();
+  root.innerHTML='<section class="page-hero daily-practice-hero"><div class="eyebrow">DAILY PRACTICE</div><h1>Before you practise</h1><p>Today’s 10 questions are a focused check of what you have been learning. Practice helps you use knowledge rather than simply recognise it.</p></section><section id="dailyPracticeSession"></section>';
   let current=0,ended=false,correctCount=0,answers={};
-  const renderComplete=()=>{
-    ended=true;
-    const percent=Math.round(correctCount/questions.length*100);
-    const review=questions.map((q,i)=>{
-      const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen;
-      const selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen];
-      const correctText=String.fromCharCode(65+answer)+'. '+opts[answer];
-      const status=record?.correct?'correct':'incorrect';
-      return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>';
-    }).join('');
-    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p></section>'+learningAccountPrompt('practice')+'<section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>';
-  };
-  const renderQuestion=()=>{
-    if(ended)return;
-    const q=questions[current],answered=Boolean(answers[current]);
-    $('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
-    const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');
-    if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-    card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{
-      if(answered||ended)return;
-      answered=true;
-      const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
-      answers[current]={chosen,correct:wasCorrect};
-      if(wasCorrect)correctCount++;
-      card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
-      nextBtn.disabled=false;
-    });
+  const renderComplete=()=>{ended=true;const percent=Math.round(correctCount/questions.length*100);const review=questions.map((q,i)=>{const record=answers[i],opts=q.options||q.o||[],answer=Number.isInteger(q.answer)?q.answer:0,chosen=record?.chosen,selectedText=chosen==null?'Not answered':String.fromCharCode(65+chosen)+'. '+opts[chosen],correctText=String.fromCharCode(65+answer)+'. '+opts[answer],status=record?.correct?'correct':'incorrect';return '<article class="practice-review-item"><div class="practice-review-head"><span class="eyebrow">QUESTION '+(i+1)+'</span><span class="practice-review-status '+status+'">'+(record?.correct?'CORRECT':record?'REVIEW':'NOT ANSWERED')+'</span></div>'+practiceQuestionHTML(q)+'<div class="practice-review-answers"><p><b>Your answer:</b> '+esc(selectedText)+'</p><p><b>Correct answer:</b> '+esc(correctText)+'</p></div><div class="practice-review-explanation"><b>Explanation</b><p>'+esc(contextualExplanation(q))+'</p></div></article>'}).join('');
+    $('#dailyPracticeSession').innerHTML='<section class="practice-complete card"><div class="eyebrow">DAILY PRACTICE COMPLETE</div><h2>You completed today’s check.</h2><p class="practice-score">'+correctCount+' of '+questions.length+' correct · '+percent+'%</p><p>Now review the explanations. Focus on the concepts behind the questions you missed or found difficult.</p><div class="complete-actions"><a class="btn" href="learner.html">CONTINUE LEARNING →</a><a class="btn primary" href="daily-practice.html">PRACTICE AGAIN</a></div></section>'+learningAccountPrompt('practice')+'<section class="practice-review"><div class="practice-review-intro"><div class="eyebrow">REVIEW</div><h2>Now learn from the questions.</h2><p>Your explanations are shown only after the full daily set is complete.</p></div>'+review+'</section>'};
+  const renderQuestion=()=>{if(ended)return;const q=questions[current],answered=Boolean(answers[current]);$('#dailyPracticeSession').innerHTML='<section class="practice-session card"><div class="session-head"><div><div class="eyebrow">DAILY PRACTICE</div><h2 id="dailySessionTitle">Question '+(current+1)+' of '+questions.length+'</h2></div><a class="text-link" href="daily3.html">Back to Daily Learning</a></div><div class="session-progress"><i style="width:'+(((current+1)/questions.length)*100)+'%"></i></div><div class="session-questions">'+mcqHTML(q,0,'DAILY PRACTICE',false)+'</div><div class="session-navigation"><button class="btn" id="dailyPrev" type="button"'+(current===0?' disabled':'')+'>← PREVIOUS</button><button class="btn primary" id="dailyNext" type="button"'+(answered?'':' disabled')+'>'+(current===questions.length-1?'FINISH PRACTICE':'NEXT QUESTION')+'</button></div></section>';
+    const card=$('#dailyPracticeSession .mcq'),nextBtn=$('#dailyNext'),prevBtn=$('#dailyPrev');if(answered)card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
+    card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{if(answered||ended)return;answered=true;const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;answers[current]={chosen,correct:wasCorrect};if(wasCorrect)correctCount++;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);nextBtn.disabled=false});
     prevBtn.onclick=()=>{if(current<=0)return;current--;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})};
-    nextBtn.onclick=()=>{
-      if(ended||!answers[current])return;
-      if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
-      else{
-        const s=state();
-        questions.forEach((q,i)=>s._practiceHistory=[...(s._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));
-        save(s);
-        renderComplete();
-        window.scrollTo({top:0,behavior:'smooth'});
-      }
-    };
+    nextBtn.onclick=()=>{if(ended||!answers[current])return;if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}else{const s=state();questions.forEach((q,i)=>s._practiceHistory=[...(s._practiceHistory||[]),{correct:Boolean(answers[i]?.correct),at:new Date().toISOString(),source:'daily'}].slice(-200));save(s);renderComplete();window.scrollTo({top:0,behavior:'smooth'})}};
   };
+  if(!alreadyStarted){$('#dailyPracticeSession').innerHTML='<section class="practice-brief card"><div><div class="eyebrow">WHY THIS EXERCISE?</div><h2>Use what you know.</h2><p>Read each question carefully, think before choosing, eliminate options when useful, and commit to your best answer. Mistakes are feedback—not a reason to stop.</p></div><div><div class="eyebrow">AFTER THE 10 QUESTIONS</div><p>Review the explanations, identify the concepts behind your errors, and return to those concepts through learning or revision.</p></div><button class="btn primary" id="startDailyPractice" type="button">START TODAY’S PRACTICE →</button></section>';$('#startDailyPractice').onclick=()=>{try{localStorage.setItem(startKey,todayKey)}catch{};renderQuestion();};return}
   renderQuestion();
 }
 function unitPage(){
@@ -664,7 +624,7 @@ function unitPage(){
   const topicCard=t=>{
     const total=t.microtopics.length,available=t.microtopics.filter(m=>microAvailable(u,t,m)).length,done=t.microtopics.filter(m=>isStartedProgress(getP(key(u.id,t.id,m.id)))).length;
     const meta='<div class="topic-card-meta"><span class="eyebrow">TOPIC '+t.id+'</span><span class="topic-progress">'+available+' of '+total+' concepts available</span></div>';
-    const body='<h3>'+esc(t.title)+'</h3><p>'+esc(t.explanation||'Build your understanding of this topic.')+'</p>';
+    const body='<h3>'+esc(t.title)+'</h3>';
     if(!available)return '<article class="topic-card content-unavailable">'+meta+body+'<span class="content-status-badge">COMING SOON</span></article>';
     return '<a class="topic-card" href="topic.html?unit='+u.id+'&topic='+t.id+'">'+meta+body+'<span class="content-status-badge available">'+done+' explored · OPEN TOPIC →</span></a>';
   };
@@ -690,7 +650,7 @@ function topicPage(){
     }).join('');
     const filters=['all','new','learning','mastered','due'].map(f=>`<button class="topic-filter ${filter===f?'active':''}" data-filter="${f}">${f==='all'?'All':f[0].toUpperCase()+f.slice(1)}${f==='due'&&s.due?' · '+s.due:''}</button>`).join('');
     const startButton=pinned?'<a class="btn primary" href="microtopic.html?unit='+u.id+'&topic='+t.id+'&micro='+pinned.id+'">'+(s.started?'Continue Learning':'Start Learning')+' <span>→</span></a>':'<span class="btn content-disabled-button">CONTENT COMING SOON</span>';
-    $('#topicPage').innerHTML=`<div class="breadcrumbs"><a href="unit.html?id=${u.id}">Unit ${u.id}</a>${partForTopic(u,t)?`<span>›</span><span>Part ${esc(partForTopic(u,t).id)}</span>`:''}<span>›</span><span>Topic ${t.id}</span></div><section class="topic-learning-hero"><div class="topic-learning-copy"><div class="eyebrow">UNIT ${u.id}${partForTopic(u,t)?` · PART ${esc(partForTopic(u,t).id)}`:''} · TOPIC ${t.id}</div><h1>${esc(t.title)}</h1><p>${esc(t.explanation||'Build a clear understanding of this topic and its key distinctions.')}</p><div class="topic-hero-actions">${startButton}<a class="btn" href="practice.html">Practice Questions</a></div></div><div class="topic-progress-card"><div class="eyebrow">TOPIC PROGRESS</div><strong>${s.percent}%</strong><div class="bar"><i style="width:${s.percent}%"></i></div><div class="topic-progress-stats"><span>${s.started}/${s.total} learned</span><span>${s.mastered} mastered</span></div></div></section><section class="card topic-notes-card"><div class="eyebrow">TOPIC NOTES</div><div class="notes topic-notes">${esc(t.notes||'Build the topic map first, then learn each micro-topic.')}</div></section><section class="topic-study-strip"><div><div class="eyebrow">HOW TO STUDY</div><h2>Move from understanding to durable recall.</h2></div><div class="topic-study-steps"><span><b>1</b> Understand</span><span><b>2</b> Recall</span><span><b>3</b> Apply</span><span><b>4</b> Practice</span><span><b>5</b> Revise</span></div></section><section class="topic-micro-section"><div class="topic-section-head"><div><div class="eyebrow">MICRO-TOPICS</div><h2>${topicItems.length} concepts to work through</h2><p>Choose one concept at a time, learn it fully, and use your progress to see what you have already worked through.</p></div><div class="topic-filters" role="tablist">${filters}</div></div><div class="micro-grid topic-micro-grid">${cards||'<div class="panel empty topic-empty"><h3>No micro-topics in this filter</h3><p>Try another filter or return to All.</p></div>'}</div></section>`;
+    $('#topicPage').innerHTML=`<div class="breadcrumbs"><a href="unit.html?id=${u.id}">Unit ${u.id}</a>${partForTopic(u,t)?`<span>›</span><span>Part ${esc(partForTopic(u,t).id)}</span>`:''}<span>›</span><span>Topic ${t.id}</span></div><section class="topic-learning-hero"><div class="topic-learning-copy"><div class="eyebrow">UNIT ${u.id}${partForTopic(u,t)?` · PART ${esc(partForTopic(u,t).id)}`:''} · TOPIC ${t.id}</div><h1>${esc(t.title)}</h1><p>${esc(t.explanation||'Build a clear understanding of this topic and its key distinctions.')}</p><div class="topic-hero-actions">${startButton}<a class="btn" href="practice.html">Practice Questions</a></div></div><div class="topic-progress-card"><div class="eyebrow">TOPIC PROGRESS</div><strong>${s.percent}%</strong><div class="bar"><i style="width:${s.percent}%"></i></div><div class="topic-progress-stats"><span>${s.started}/${s.total} learned</span><span>${s.mastered} mastered</span></div></div></section><section class="card topic-notes-card"><div class="eyebrow">TOPIC NOTES</div><div class="notes topic-notes">${esc(t.notes||'Build the topic map first, then learn each micro-topic.')}</div></section><section class="topic-study-strip"><div><div class="eyebrow">LEARNING PATH</div><h2>Learn → Recall → Revise → Practice</h2></div></section><section class="topic-micro-section"><div class="topic-section-head"><div><div class="eyebrow">MICRO-TOPICS</div><h2>${topicItems.length} concepts to work through</h2><p>Choose one concept at a time, learn it fully, and use your progress to see what you have already worked through.</p></div><div class="topic-filters" role="tablist">${filters}</div></div><div class="micro-grid topic-micro-grid">${cards||'<div class="panel empty topic-empty"><h3>No micro-topics in this filter</h3><p>Try another filter or return to All.</p></div>'}</div></section>`;
     qsa('.topic-filter').forEach(b=>b.onclick=()=>render(b.dataset.filter));
   };
   render('all');
@@ -865,7 +825,7 @@ function micro(){
     (verificationTag?'<span class="learner-verification-badge">'+esc(verificationTag)+'</span>':'')+
     '</header>'+
     '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="eyebrow">UNDERSTAND</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
+    '<div class="eyebrow">CORE EXPLANATION</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
 
     '</div></article>'+
     '<section class="learner-content-feedback" aria-label="Content feedback">'+
@@ -896,7 +856,7 @@ function practice(){
     return unit+partOptions;
   }).join('');
   const scopeHTML=`<button class="practice-unit-trigger" id="practiceUnitTrigger" type="button" aria-expanded="false" aria-controls="practiceUnitList"><span class="practice-unit-summary" id="practiceUnitSummary">No units selected</span></button><div class="practice-unit-list" id="practiceUnitList" hidden><button class="practice-unit-option practice-all-option" type="button" data-practice-choice data-choice-group="scope" data-multi="true" data-scope="all" data-value="all" aria-pressed="false"><span><b>All Units</b></span></button>${unitOptions}</div>`;
-  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you apply what you know?</h1><p>Check how well you can apply Psychology. Choose what you want to practise, answer one question at a time, and learn from your mistakes.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose what you want to practise, then work through one question at a time. In timed practice, you can skip a question and return to it before you finish.</p></div></div><div class="practice-toolbar">
+  box.innerHTML=`<section class="page-hero practice-hero"><h1>How well can you use what you know?</h1><p>Choose what you want to practise, answer one question at a time, and learn from your mistakes.</p></section><section class="practice-config card"><div class="practice-config-head"><div><div class="eyebrow">PLAN YOUR PRACTICE SESSION</div><p class="practice-config-intro">Choose what you want to practise, then work through one question at a time. In timed practice, you can skip a question and return to it before you finish.</p></div></div><div class="practice-toolbar">
 <div class="practice-unit-field"><span class="practice-field-label">Select unit</span>${scopeHTML}</div>
 <div class="practice-choice-field"><span class="practice-field-label">Type of questions</span><div class="practice-choice-group" id="practiceTypeChoices" role="group" aria-label="Question types"><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="mcq" aria-pressed="false">MCQs</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="type" data-multi="true" data-value="pyq" aria-pressed="false">PYQs</button></div><small class="practice-choice-help">Select one or both.</small></div>
 <div class="practice-choice-field"><span class="practice-field-label">Practice mode</span><div class="practice-choice-group" id="practiceModeChoices" role="group" aria-label="Practice mode"><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="self-paced" aria-pressed="false">SELF-PACED</button><button class="practice-choice" type="button" data-practice-choice data-choice-group="mode" data-value="timed" aria-pressed="false">TIMED</button></div></div>
@@ -1191,7 +1151,7 @@ function practice(){
     : '<section class="panel empty"><h2>You’re caught up.</h2><p>Complete a concept and its first spaced revision will appear here when it is scheduled.</p><a class="btn primary" href="unit.html?id=1">CONTINUE LEARNING →</a></section>';
   const dueSection=dueRows?'<section class="revision-section"><div class="section-head"><div><div class="eyebrow">DUE NOW</div><h2>Strengthen these concepts.</h2><p>Bring each idea back from memory before looking at it again.</p></div></div><div class="revision-list">'+dueRows+'</div></section>':'';
   const upcomingSection=upcomingRows?'<section class="revision-section"><div class="section-head"><div><div class="eyebrow">UPCOMING</div><h2>These will be ready later.</h2><p>Nothing is required from you yet. Return when the scheduled date arrives.</p></div></div><div class="revision-list">'+upcomingRows+'</div></section>':'';
-  root.innerHTML='<section class="page-hero revision-hero"><h1>Bring back what you’ve learned.</h1><p>Try to remember the idea before looking at it again. Strengthen what feels uncertain, notice what you’ve forgotten, and make important concepts easier to retrieve next time.</p></section>'+stateBlock+dueSection+upcomingSection+
+  root.innerHTML='<section class="page-hero revision-hero"><h1>Bring back what you’ve learned.</h1><p>Try to remember the idea before looking at it again. Strengthen what feels uncertain, notice what you’ve forgotten, and make important concepts easier to recall next time.</p></section>'+stateBlock+dueSection+upcomingSection+
     '<section class="panel revision-rules"><h2>When you revise</h2><p>Recall the idea first, check the explanation, then rate how well you remembered it. Your rating determines when you will meet the concept again.</p><ul><li><b>Again</b> — I could not recall it.</li><li><b>Hard</b> — I recalled it with effort.</li><li><b>Good</b> — I recalled it successfully.</li><li><b>Easy</b> — I recalled it quickly.</li></ul></section>';
 }
 function progress(){
@@ -1207,10 +1167,10 @@ function progress(){
   ${accountPrompt}
   <section class="progress-signals"><div class="section-head"><div><div class="eyebrow">YOUR LEARNING SIGNALS</div><h2>Look at the pattern, not just the numbers.</h2><p class="page-guidance">These signals show different parts of your learning process. Use them together to understand where your learning is becoming secure and where it needs more work.</p></div></div>
     <div class="progress-category-stack">
-      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING PATH</div><h2>Track the five stages of secure learning.</h2><p>Each stage represents a different learning decision: starting, understanding, active recall, revision, and mastery.</p></div></div><div class="progress-indicators">
+      <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING PATH</div><h2>Track the four learning functions.</h2><p>These signals describe different parts of your learning: starting, recall, revision, practice, and mastery.</p></div></div><div class="progress-indicators">
         <div class="progress-indicator"><span>Started</span><strong>${s.started}</strong><small>micro-topics you have opened and begun</small></div>
-        <div class="progress-indicator"><span>Learned</span><strong>${s.learned}</strong><small>understanding checkpoint completed</small></div>
-        <div class="progress-indicator"><span>Actively Recalled</span><strong>${s.activelyRecalled}</strong><small>active-recall checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Learned</span><strong>${s.learned}</strong><small>learning checkpoint completed</small></div>
+        <div class="progress-indicator"><span>Actively Recalled</span><strong>${s.activelyRecalled}</strong><small>recall checkpoint completed</small></div>
         <div class="progress-indicator"><span>Revision</span><strong>${s.revision}</strong><small>at least one revision checkpoint recorded</small></div>
         <div class="progress-indicator"><span>Mastered</span><strong>${s.mastered}</strong><small>mastery condition completed</small></div>
       </div></section>
@@ -1235,7 +1195,7 @@ function progress(){
   <section class="progress-next card"><div><div class="eyebrow">WHAT SHOULD YOU DO NEXT?</div><p>${nextAction.note}</p></div><a class="btn primary" href="${nextAction.href}">${nextAction.label} <span>→</span></a></section>`;
 }
 function progressInterpretation(s){
-  if(!s.started) return {title:'Start with understanding, then build recall.',note:'You have not started any micro-topics yet. Use Learn to build your foundation, then use recall and practice to turn new understanding into something you can recall.',focus:['Build syllabus coverage','Use active recall after learning','Schedule revision after completing a concept']};
+  if(!s.started) return {title:'Start with understanding, then build recall.',note:'You have not started any micro-topics yet. Use Learn to build your foundation, then use recall and practice to turn new understanding into something you can recall.',focus:['Build syllabus coverage','Check your recall after learning','Schedule revision after completing a concept']};
   if(s.coverage>=s.mastery+25 && s.coverage>=25) return {title:'Your coverage is ahead of your mastery.',note:'You have explored more concepts than you have secured. This is a useful point to slow down, recall what you know, and revisit concepts that are not yet stable.',focus:['Strengthen concept mastery','Use recall before reopening notes','Return through scheduled revision']};
   if(s.answers>=10 && s.accuracy<60) return {title:'Your question performance needs more attention.',note:'Your answered questions show that application is currently less secure than it needs to be. Use Practice to identify whether errors come from concept gaps, similar theories, or difficulty applying what you know.',focus:['Review missed questions','Revisit the linked concepts','Practise again after learning from the errors']};
   if(s.started>=10 && s.revisionScheduled<s.started*0.5) return {title:'Your learning needs more scheduled revision.',note:'You have started learning several concepts, but fewer than half have a revision checkpoint recorded. Use spaced revision so important ideas return after you have had time away from them.',focus:['Schedule revision after learning','Recall before checking explanations','Keep returning to concepts over time']};
