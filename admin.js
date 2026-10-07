@@ -53,6 +53,14 @@ async function changeReview(type,id,value){verificationState.items[type]=verific
 async function checkSite(){const checks=await Promise.all(['./index.html','./app/runtime.js','./style.css','./data/syllabus-index.json','./content/microtopics/micro_topics.json','./content/questions/questions.json'].map(async path=>{try{const r=await fetch(path+'?health='+Date.now(),{cache:'no-store'});return r.ok}catch{return false}}));return checks.every(Boolean)}
 function logout(){sessionStorage.removeItem(KEY);sessionStorage.removeItem(AUTH);token='';loginView()}
 async function dashboard(){root.innerHTML='<section class="admin-hero"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>System-passed content receives <b>VERIFIED</b>. Content you mark <b>NOT SATISFACTORY</b> receives <b>EXPERT VERIFIED</b>. Other learner-facing content receives no verification tag.</p></section><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';try{const [syllabus,microPool,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions(),loadApprovalQueue()]);data=buildAdminData(syllabus,microPool);questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];const running=await checkSite();root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');renderQueue()}catch(e){root.innerHTML='<section class="card"><h2>Could not load audit data</h2><p>'+esc(e.message)+'</p><button class="btn" id="adminLogout">SIGN OUT</button></section>';document.querySelector('#adminLogout').onclick=logout}}
-async function start(){if(!token)return loginView();try{const me=await api('/user');if(me.login!==OWNER)throw new Error('Owner account required.');await dashboard()}catch(e){logout()}}
+async function start(){
+  try{
+    if(window.NETPSY_AUTH?.ready) await window.NETPSY_AUTH.ready;
+    if(!window.NETPSY_AUTH?.getUser?.()){location.href='login.html';return}
+    if(!window.NETPSY_AUTH.isAdmin()){location.href='progress.html';return}
+  }catch(e){location.href='login.html';return}
+  if(!token)return loginView('Admin account authenticated. Enter a GitHub token only when you need this workbench to write review changes to the repository.');
+  try{const me=await api('/user');if(me.login!==OWNER)throw new Error('GitHub owner account required for repository writes.');await dashboard()}catch(e){loginView(e.message||'GitHub repository access failed.')}
+}
 start();
 })();
