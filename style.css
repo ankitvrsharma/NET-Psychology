@@ -1874,7 +1874,7 @@ body[data-page="practice-session"] .practice-hero{display:none}
 }
 
 .admin-health{max-width:980px;margin:0 auto 12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
-.admin-health strong{display:block;margin-top:3px;color:var(--green);font-size:20px}\n.admin-health-warning{border:1px solid #e5b7b7;background:#fffafa}.admin-health-warning strong{color:#9b3333}
+.admin-health strong{display:block;margin-top:3px;color:var(--green);font-size:20px}.admin-health-warning{border:1px solid #e5b7b7;background:#fffafa}.admin-health-warning strong{color:#9b3333}
 .admin-health p{margin:2px 0 0;color:var(--muted);font-size:12px}
 .review-status.satisfactory{background:#eef7f1;color:#247044}
 .review-status.not-satisfactory{background:#fff0f0;color:#9b3333}
