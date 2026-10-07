@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 // GitHub Pages is served over HTTPS. Redirect an accidentally opened HTTP copy before app/auth requests run.
-if(location.protocol==='http:'){location.replace('https://'+location.host+location.pathname+location.search+location.hash);return;}
+if(location.protocol==='http:'&&!['localhost','127.0.0.1'].includes(location.hostname)){location.replace('https://'+location.host+location.pathname+location.search+location.hash);return;}
 const VERSION='1.1.0';
 const config=document.createElement('script');
 config.src='./supabase-config.js?v='+VERSION;
