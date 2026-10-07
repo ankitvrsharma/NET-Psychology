@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.11.5';
+const CACHE='netpsych-shell-v1.11.6';
 const SHELL=[
   './',
   './index.html',
@@ -37,7 +37,14 @@ const RUNTIME_DATA=new Set([
   'mcq_mapping.json',
   'verification-state.json'
 ]);
-const NEVER_CACHE=new Set(['exam_schedule.json']);
+const NEVER_CACHE=new Set([
+  'exam_schedule.json',
+  'login.html',
+  'login.css',
+  'app/auth-page.js',
+  'app/supabase-auth.js',
+  'supabase-config.js'
+]);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));
@@ -66,8 +73,11 @@ self.addEventListener('fetch',event=>{
   if(req.method!=='GET')return;
   const url=new URL(req.url);
   if(url.origin!==self.location.origin)return;
-  if(NEVER_CACHE.has(url.pathname.split('/').pop())){event.respondWith(fetch(req,{cache:'no-store'}));return;}
   const name=url.pathname.split('/').pop();
+  if(NEVER_CACHE.has(name)){
+    event.respondWith(fetch(req,{cache:'no-store'}));
+    return;
+  }
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
   const isRuntimeData=RUNTIME_DATA.has(name)||url.pathname.includes('/data/content-indexes/');
   if(!isShell&&!isRuntimeData)return;
