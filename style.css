@@ -1886,3 +1886,12 @@ body[data-page="practice-session"] .practice-hero{display:none}
 
 /* Native hidden fields must stay hidden even when form field styles set display:grid. */
 .admin-field[hidden]{display:none!important}
+
+
+/* Contextual account prompts — explain the value of signing in without interrupting learning. */
+.learning-account-prompt{max-width:900px;margin:14px auto 20px;padding:21px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.learning-account-prompt h2{margin:4px 0 6px;color:var(--navy);font-size:21px}
+.learning-account-prompt p{margin:0;color:var(--muted);font-size:13px;line-height:1.6;max-width:720px}
+.learning-account-prompt .btn{flex:0 0 auto;white-space:nowrap}
+.learning-account-prompt.synced{background:#f7f9fd}
+@media(max-width:720px){.learning-account-prompt{display:grid;padding:19px 20px;gap:14px}.learning-account-prompt .btn{width:100%;justify-content:center}}
