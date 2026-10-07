@@ -64,11 +64,6 @@ const Q=new URLSearchParams(location.search); let D=null,PRACTICE_QUESTIONS=[],P
 const DATA_VERSION=window.NETPSY_DATA_VERSION||'1.4.2';
 const KEY='netPsychProgress';
 let VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};
-let CONTENT_VISIBILITY={schema_version:1,items:{microtopics:{},questions:{}},updated_at:''};
-const visibilityHidden=(type,id)=>String(CONTENT_VISIBILITY?.items?.[type]?.[String(id)]||'')==='HIDDEN';
-const visibleMicroKey=k=>!visibilityHidden('microtopics',k);
-const visibleQuestion=q=>q&&!visibilityHidden('questions',q.id)&&(!q.microtopic_id||visibleMicroKey(String(q.microtopic_id)));
-async function loadContentVisibility(){try{CONTENT_VISIBILITY=await fetchJSON('data/content-visibility.json','Content visibility')}catch(e){CONTENT_VISIBILITY={schema_version:1,items:{microtopics:{},questions:{}}}}}
 const CONTENT_POOLS=Object.create(null);
 const CONTENT_POOL_PATHS=Object.freeze({
   microtopics:'content/microtopics/micro_topics.json',
@@ -109,7 +104,7 @@ async function loadIndex(name){
   return value;
 }
 const syllabusItems=()=>units().flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
-const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).filter(ref=>visibleMicroKey(key(u.id,t.id,ref.id))).map(ref=>microtopicItem(u,t,ref));
+const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>microtopicItem(u,t,ref));
 const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||CONTENT_INDEXES.microtopics?.items?.[key(u.id,t.id,m.id)]||m;
 function todayKeyString(){
   const now=new Date();
@@ -188,7 +183,7 @@ async function prepareDailyPracticeQuestions(){
   const wanted=new Set(ids.map(String));
   const pool=CONTENT_POOLS.questions;
   const allQuestions=Array.isArray(pool)?pool:[...(Array.isArray(pool?.pyq)?pool.pyq:[]),...(Array.isArray(pool?.practice)?pool.practice:[])];
-  PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id))&&visibleQuestion(q));
+  PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id)));
 }
 async function preparePracticeSessionQuestions(){
   await loadIndex('questions');
@@ -197,7 +192,6 @@ async function preparePracticeSessionQuestions(){
   await loadPool('questions');
   const qpool=CONTENT_POOLS.questions||{pyq:[],practice:[]};
   PRACTICE_QUESTIONS=[...(qpool.pyq||[]),...(qpool.practice||[])];
-  if(!Q.get('previewQuestion'))PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(visibleQuestion);
 }
 function progressivePrefetch(paths){
   if(!paths.length||!progressivePrefetchAllowed())return;
@@ -229,7 +223,6 @@ function scheduleProgressivePrefetch(page){
 }
 const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
-  await loadContentVisibility();
   D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
@@ -239,7 +232,6 @@ const loadStudyData=async()=>{
     await Promise.all([loadIndex('questions'),loadPool('questions')]);
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
-    PRACTICE_QUESTIONS=PRACTICE_QUESTIONS.filter(visibleQuestion);
   }
   if(page==='daily-practice')await prepareDailyPracticeQuestions();
   if(page==='practice-session')await preparePracticeSessionQuestions();
@@ -287,9 +279,9 @@ const hasLearningContent=m=>{
   }).join(' ').replace(/\\s+/g,' ').trim();
   return text.length>=80;
 };
-const all=()=>syllabusItems().filter(x=>visibleMicroKey(x.k)).map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)})).filter(x=>hasLearningContent(x.m));
+const all=()=>syllabusItems().map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)})).filter(x=>hasLearningContent(x.m));
 const dailyLearningItems=()=>all().filter(x=>hasLearningContent(x.m));
-const microAvailable=(u,t,m)=>visibleMicroKey(key(u.id,t.id,m.id))&&hasLearningContent(microtopicItem(u,t,m));
+const microAvailable=(u,t,m)=>hasLearningContent(microtopicItem(u,t,m));
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
 const microtopicHref=(u,t,m,extra={})=>{if(u?.id==null||t?.id==null||m?.id==null)throw new Error('Cannot build a micro-topic route without unit, topic and micro-topic IDs');const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
 const routeId=name=>{const value=Q.get(name);return value!==null&&/^\d+$/.test(value)?Number(value):null};
@@ -666,7 +658,7 @@ function topicPage(){
   render('all');
 }
 function practiceFor(u,t,m){
-  return PRACTICE_QUESTIONS.filter(visibleQuestion).filter(q=>Number(q.unit)===Number(u)&&Number(q.topic)===Number(t)&&Number(q.micro)===Number(m));
+  return PRACTICE_QUESTIONS.filter(q=>Number(q.unit)===Number(u)&&Number(q.topic)===Number(t)&&Number(q.micro)===Number(m));
 }
 
 function cleanPracticeText(value){
@@ -816,7 +808,6 @@ function micro(){
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<div class="panel empty">Micro-topic not found.</div>';return}
   const previewMode=Q.get('preview')==='1';
-  if(!previewMode&&visibilityHidden('microtopics',k)){root.innerHTML='<section class="panel empty"><div class="eyebrow">CONTENT TEMPORARILY UNAVAILABLE</div><h2>This micro-topic is currently hidden.</h2><p>Please return to Learn and choose another available topic.</p></section>';return;}
   const p=getP(k);
   document.title=m.title+' — UGC NET Psychology';
   if(!hasLearningContent(m)){
