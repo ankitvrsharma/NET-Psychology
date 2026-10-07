@@ -60,7 +60,6 @@ AI review and expert verification are intentionally different states: `AI REVIEW
 
 The publish workflow needs these GitHub repository secrets:
 
-- `SUPABASE_URL` — the Supabase project URL.
-- `SUPABASE_SERVICE_ROLE_KEY` — the Supabase service-role key. This is server-side only and must never be exposed to the browser.
+- `SUPABASE_SERVICE_ROLE_KEY` — the Supabase service-role key. This is server-side only and must never be exposed to the browser. The workflow already contains the non-secret project URL.
 
 The synchronization script writes the canonical static pools to `public.content_items` with upsert semantics. The static GitHub pools remain the canonical source of truth; Supabase is the delivery copy.
