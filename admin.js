@@ -115,8 +115,12 @@ async function start(){
     root.innerHTML='<section class="card admin-auth"><div class="eyebrow">OWNER AUDIT</div><h1>Content Audit Workbench</h1><p>We could not initialise your admin session.</p><p class="admin-help">'+esc(e.message)+'</p></section>';
     return;
   }
-  await checkBridge();
+  // Never block the audit UI on the optional GitHub bridge health check.
   await dashboard();
+  checkBridge().then(()=>{
+    const queue=root.querySelector('#adminQueue');
+    if(queue){const current=root.querySelector('.admin-health');if(current)current.outerHTML=bridgeStatusCard();}
+  });
 }
 start();
 })();
