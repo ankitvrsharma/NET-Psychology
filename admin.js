@@ -2,7 +2,7 @@
 'use strict';
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let approvalQueue=[],insightsPool={},verificationState={schema_version:2,items:{},updated_at:''},visibilityState={schema_version:1,items:{microtopics:{},questions:{}},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
+let approvalQueue=[],insightsPool={},verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
 let filterUnit='ALL',filterTopic='ALL';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
@@ -15,6 +15,26 @@ const review=(type,id)=>String(verificationState?.items?.[type]?.[String(id)]||'
 const ownerReview=(type,id)=>review(type,id)==='EXPERT VERIFIED'?'EXPERT VERIFIED':'';
 const aiReview=(type,id)=>['AI REVIEWED','EXPERT VERIFIED'].includes(review(type,id));
 const hasContent=m=>{const values=[m.expert_explanation,m.detailed_explanation,m.deep_learning,m.deep,m.content_notes,m.study_notes,m.application_question,m.recall_cue,m.memory_hook,m.exam_takeaway];const text=values.map(v=>Array.isArray(v)?v.map(x=>typeof x==='object'&&x?JSON.stringify(x):String(x||'')).join(' '):v&&typeof v==='object'?JSON.stringify(v):String(v||'')).join(' ').replace(/\s+/g,' ').trim();return text.length>=80};
+function packageHealth(id){
+  const item=microInStore(id)||{},deep=deepPool?.[String(id)]||{},recall=recallPool?.[String(id)]||{},revision=revisionPool?.[String(id)]||{},practice=practicePool?.[String(id)]||{};
+  const practiceItems=Array.isArray(practice.questions)?practice.questions:[];
+  const checks={
+    microtopic:String(item.expert_explanation||item.content_notes||'').trim().length>=80,
+    deepDive:String(deep.detailed_explanation||deep.deep_learning||deep.deep||'').trim().length>=80,
+    activeRecall:Array.isArray(recall.prompts)&&recall.prompts.length>0,
+    revision:['recall_before_review','self_check','weak_point_prompt','rating_instruction'].every(k=>String(revision[k]||'').trim()),
+    practice:Array.isArray(practiceItems)&&practiceItems.length>0&&practiceItems.every(q=>q&&String(q.question||'').trim()&&Array.isArray(q.options)&&q.options.length>=2&&String(q.correct_answer||'').trim()&&String(q.explanation||'').trim())
+  };
+  const labels={microtopic:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Active Recall',revision:'Revision',practice:'Practice'};
+  const missing=Object.entries(checks).filter(([,ok])=>!ok).map(([key])=>labels[key]);
+  const score=Math.round(Object.values(checks).filter(Boolean).length/5*100);
+  return {status:missing.length?'FAIL':'PASS',score,issues:missing.length?['Missing or incomplete: '+missing.join(', ')]:[],checks};
+}
+function questionHealth(q){
+  const ok=Boolean(q&&String(q.question||q.q||'').trim()&&Array.isArray(q.options||q.o)&&(q.options||q.o).length===4&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4&&String(q.explanation||'').trim());
+  return {status:ok?'PASS':'FAIL',score:ok?100:0,issues:ok?[]:['Question fields are incomplete or invalid.']};
+}
+
 async function loadAuditState(){const r=await fetch('./data/verification-state.json?v=20261006-verification',{cache:'no-store'});if(r.ok)verificationState=await r.json();if(!verificationState.items)verificationState.items={};}
 async function loadApprovalQueue(){
   const r=await fetch('./data/content-approval-queue.json?v=20261006-approval-queue',{cache:'no-store'});
@@ -130,7 +150,7 @@ function makePackageItem(type,id,audit){
       packageComponent('activeRecall','3 · RETRIEVE · ACTIVE RECALL',recallBody,id)+
       packageComponent('revision','4 · REINFORCE · REVISION',revisionBody,id)+
       packageComponent('practice','5 · APPLY · PRACTICE MCQs',practiceBody,id)+
-    '</div><div class="admin-review-bar"><div class="admin-item-copy"><span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><p>Micro-topic audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions">'+actions+'</div></div>'+editorFor(type,id)+'</article>';
+    '</div><div class="admin-review-bar"><div class="admin-item-copy"><span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><p>Package health: <b>'+audit.score+'%</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions">'+actions+'</div></div>'+editorFor(type,id)+'</article>';
 }
 function makeItem(type,id,audit){
   if(type==='microtopics') return makePackageItem(type,id,audit);
@@ -138,7 +158,7 @@ function makeItem(type,id,audit){
   const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
   const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
   const geminiButton=type==='microtopics'?'<button class="btn admin-gemini" type="button" data-type="'+type+'" data-id="'+esc(id)+'">ASK GEMINI TO REWRITE</button>':'';
-  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+geminiButton+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
+  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Content health: <b>'+audit.score+'%</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+geminiButton+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
 }
 function rowMeta(x){
   if(x.type!=='microtopics')return {unitId:null,topicId:null};
@@ -146,7 +166,7 @@ function rowMeta(x){
   return {unitId:parts[0],topicId:parts[1]};
 }
 function rowsFor(selectedFilter='ALL'){
-  const audit=window.NETPsychologyContentAudit.create({data:data,questions:questions}).expertAudit;
+  const audit=x=>x.type==='microtopics'?packageHealth(x.id):questionHealth(questionInStore(x.id));
   const micros=(data?.units||[]).flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({type:'microtopics',id:String(u.id)+'-'+String(t.id)+'-'+String(m.id)}))));
   const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
   const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),reviewStatus=review(x.type,x.id),meta=rowMeta(x);return{x,a,reviewStatus,unitId:meta.unitId,topicId:meta.topicId}});
