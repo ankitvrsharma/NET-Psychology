@@ -63,9 +63,25 @@ jobs:
         run: |
           REPAIR="${{ github.event.inputs.repair_existing || 'true' }}"
           ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
+          SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
+          SOURCE_TRIGGERED="false"
+          REWRITE_EXISTING="false"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")"
+            if echo "$CHANGED" | grep -q "^sources/inbox/"; then SOURCE_TRIGGERED="true"; fi
+            if echo "$CHANGED" | grep -q "^data/content-enrichment-instructions.json$"; then REWRITE_EXISTING="true"; fi
+          else
+            if [ "$SYNTH" = "true" ]; then SOURCE_TRIGGERED="true"; fi
+            if [ "$ENRICH" = "true" ]; then REWRITE_EXISTING="true"; fi
+          fi
+          if [ "$SOURCE_TRIGGERED" != "true" ] && [ "$REWRITE_EXISTING" != "true" ]; then
+            echo "No content-generation trigger detected; nothing to generate."
+            exit 0
+          fi
           ARGS=""
           if [ "$REPAIR" = "true" ]; then ARGS="$ARGS --repair-existing"; fi
-          if [ "$ENRICH" = "true" ]; then ARGS="$ARGS --enrich-existing"; fi
+          if [ "$SOURCE_TRIGGERED" = "true" ]; then ARGS="$ARGS --source-triggered"; fi
+          if [ "$REWRITE_EXISTING" = "true" ]; then ARGS="$ARGS --rewrite-existing"; fi
           python scripts/source_to_content.py $ARGS
 
       - name: AI audit and two-retry rewrite gate

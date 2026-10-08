@@ -178,7 +178,9 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--apply",action="store_true")
     ap.add_argument("--repair-existing",action="store_true")
-    ap.add_argument("--enrich-existing",action="store_true",help="Use the saved admin enrichment instruction for existing source-backed content.")
+    ap.add_argument("--enrich-existing",action="store_true",help="Backward-compatible alias for applying the saved admin enrichment instruction.")
+    ap.add_argument("--rewrite-existing",action="store_true",help="Run an explicit admin rewrite against the complete approved source library; does not require a newly uploaded source.")
+    ap.add_argument("--source-triggered",action="store_true",help="Treat source changes as a trigger and search the complete approved source library for evidence.")
     ap.add_argument("--apply-staged",action="store_true",help="Publish the already audited content-staging/canonical-content.json.")
     args=ap.parse_args()
     syllabus=load(SYLLABUS); refs=canonical(syllabus); enrichment=load_instructions()
@@ -189,7 +191,7 @@ def main():
             rel=str(p.relative_to(ROOT)).replace("\\","/")
             source_meta.append({"path":rel,"sha256":sha(p),"chunks":len(cs),"characters":len(text)})
             source_chunks += [(rel,i,c) for i,c in enumerate(cs)]
-    if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.apply_staged:
+    if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.rewrite_existing and not args.apply_staged:
         print("No supported sources found."); return 0
 
     report={"schema_version":1,"provider":"Google Gemini API","model":MODEL,"sources":source_meta,
@@ -244,7 +246,10 @@ def main():
     if args.repair_existing and not args.apply_staged:
         save(STAGING/"repair-plan.json",{"questions":qobj if isinstance(qobj,dict) else questions,"quick":quick})
     generated=[]
-    target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()}
+    # Admin target IDs are job-scoped: they constrain explicit rewrites only.
+    # A source upload is a trigger, not an evidence boundary and must not inherit
+    # stale target IDs from an earlier admin request.
+    target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()} if args.rewrite_existing else set()
     verification=load(VERIFICATION) if VERIFICATION.exists() else {"schema_version":1,"items":{},"updated_at":""}
     verification_items=verification.get("items") or {}
     existing_micro=load(MICRO)
@@ -289,12 +294,33 @@ def main():
         for ref in list(refs.values()):
             if target_ids and ref["id"] not in target_ids: continue
             if len(generated)>=MAX_TOPICS: break
-            words=set(norm(ref["title"]).split())
-            ranked=[]
+            # Search the complete approved source library. Keep at least one strong
+            # excerpt from each relevant source so a newly uploaded book cannot crowd
+            # every other approved source out of the evidence set.
+            query_words=set(norm(ref["title"]+" "+ref["topic_title"]+" "+ref["unit_title"]).split())
+            per_source=[]
+            for src in sorted({x[0] for x in source_chunks}):
+                source_ranked=[]
+                for source_name,i,text in source_chunks:
+                    if source_name!=src: continue
+                    score=len(query_words & set(norm(text).split()))
+                    if score: source_ranked.append((score,source_name,i,text))
+                if source_ranked:
+                    source_ranked.sort(reverse=True,key=lambda x:x[0])
+                    per_source.append(source_ranked[0])
+            remaining=[]
             for src,i,text in source_chunks:
-                ranked.append((len(words & set(norm(text).split())),src,i,text))
-            ranked.sort(reverse=True,key=lambda x:x[0])
-            evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in ranked[:4] if score>0]
+                score=len(query_words & set(norm(text).split()))
+                if score: remaining.append((score,src,i,text))
+            remaining.sort(reverse=True,key=lambda x:x[0])
+            selected=[]
+            seen=set()
+            for row in per_source+remaining:
+                key=(row[1],row[2])
+                if key in seen: continue
+                seen.add(key); selected.append(row)
+                if len(selected)>=12: break
+            evidence=[{"source":src,"chunk":i,"text":text[:12000]} for score,src,i,text in selected if score>0]
             if not evidence: continue
             current={
                 "microtopic":existing_micro.get(ref["id"],{}),
@@ -374,24 +400,28 @@ def main():
                 me=micro_pool[mid]
                 # Surgical publication: replace only the canonical fields owned by this
                 # generated package. Preserve IDs, titles, mappings, and unrelated learner data.
-                if str(verification.setdefault("items",{}).setdefault("microtopics",{}).get(mid,""))!="EXPERT VERIFIED":
+                component_locked=lambda component: str(verification.setdefault("items",{}).setdefault(VERIFICATION_KEYS[component],{}).get(mid,""))=="EXPERT VERIFIED"
+                if not component_locked("microtopic"):
                     me["expert_explanation"]=g["core_explanation"]
                     me["cross_references"]=g.get("cross_references") or []
-                de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
-                de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title",""))
-                de["detailed_explanation"]=g["detailed_explanation"]
-                deep_pool[mid]=de
-                ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
-                ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
-                ae["prompts"]=g.get("recall_prompts") or []
-                recall_pool[mid]=ae
-                rg=g.get("revision_guidance") or {}
-                rev=revision_pool.get(mid) or {"id":mid,"title":me.get("title","")}
-                rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
-                for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
-                    rev[field]=rg.get(field,"")
-                revision_pool[mid]=rev
-                if g.get("practice_mcqs"):
+                if not component_locked("deep_dive"):
+                    de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
+                    de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title",""))
+                    de["detailed_explanation"]=g["detailed_explanation"]
+                    deep_pool[mid]=de
+                if not component_locked("active_recall"):
+                    ae=recall_pool.get(mid) or {"id":mid,"title":me.get("title",""),"prompts":[]}
+                    ae["id"]=mid+"A"; ae["microtopic_id"]=mid; ae["title"]=me.get("title",ae.get("title",""))
+                    ae["prompts"]=g.get("recall_prompts") or []
+                    recall_pool[mid]=ae
+                if not component_locked("revision"):
+                    rg=g.get("revision_guidance") or {}
+                    rev=revision_pool.get(mid) or {"id":mid,"title":me.get("title","")}
+                    rev["id"]=mid+"R"; rev["microtopic_id"]=mid; rev["title"]=me.get("title",rev.get("title",""))
+                    for field in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"):
+                        rev[field]=rg.get(field,"")
+                    revision_pool[mid]=rev
+                if not component_locked("practice") and g.get("practice_mcqs"):
                     practice_pool[mid]={"id":mid+"P","microtopic_id":mid,"title":me.get("title",""),"questions":g.get("practice_mcqs") or []}
                 approved_components=g.get("approved_components") or []
                 for component in ("microtopic","deep_dive","active_recall","revision","practice"):

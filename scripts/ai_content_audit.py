@@ -9,6 +9,8 @@ STAGING=ROOT/"content-staging/canonical-content.json"
 APPROVED=ROOT/"content-staging/canonical-content-approved.json"
 POLICY=ROOT/"data/ai-content-audit-policy.json"
 QUEUE=ROOT/"data/content-approval-queue.json"
+INSIGHTS=ROOT/"data/gemini-content-insights.json"
+QUESTIONS=ROOT/"content/questions/questions.json"
 INBOX=ROOT/"sources/inbox"
 sys.path.insert(0,str(ROOT/"scripts"))
 from source_to_content import load, extract, chunks, canonical, call_ai, norm
@@ -43,19 +45,99 @@ def restore_component(g,component,snapshot):
 
 def source_evidence(ref):
     words=set(norm(ref["title"]+" "+ref["topic_title"]+" "+ref["unit_title"]).split())
-    ranked=[]
+    per_source=[]; all_ranked=[]
     for p in sorted(INBOX.rglob("*")):
         if not p.is_file() or p.suffix.lower() not in {".pdf",".docx",".pptx",".txt",".md"}: continue
+        source=str(p.relative_to(ROOT)); source_ranked=[]
         text=extract(p)
         for i,c in enumerate(chunks(text)):
             score=len(words & set(norm(c).split()))
-            if score: ranked.append((score,str(p.relative_to(ROOT)),i,c[:12000]))
-    ranked.sort(reverse=True,key=lambda x:x[0])
-    return [{"source":x[1],"chunk":x[2],"text":x[3]} for x in ranked[:6]]
+            if score:
+                row=(score,source,i,c[:12000]); source_ranked.append(row); all_ranked.append(row)
+        if source_ranked:
+            source_ranked.sort(reverse=True,key=lambda x:x[0]); per_source.append(source_ranked[0])
+    all_ranked.sort(reverse=True,key=lambda x:x[0])
+    selected=[]; seen=set()
+    for row in per_source+all_ranked:
+        key=(row[1],row[2])
+        if key in seen: continue
+        seen.add(key); selected.append(row)
+        if len(selected)>=12: break
+    return [{"source":x[1],"chunk":x[2],"text":x[3]} for x in selected]
 
 def available(g,component):
     # All five components are required for a connected package. Missing content is a deterministic failure, not an optional omission.
     return True
+
+def published_snapshot(mid,component):
+    micro=load(ROOT/"content/microtopics/micro_topics.json")
+    if component=="microtopic":
+        item=micro.get(mid,{})
+        return {"core_explanation":item.get("expert_explanation",""),"cross_references":item.get("cross_references") or []}
+    if component=="deep_dive":
+        item=load(ROOT/"content/deep-dive/deep_dive.json").get(mid,{})
+        return {"detailed_explanation":item.get("detailed_explanation","")}
+    if component=="active_recall":
+        item=load(ROOT/"content/active-recall/active_recall.json").get(mid,{})
+        return {"recall_prompts":item.get("prompts") or []}
+    if component=="revision":
+        item=load(ROOT/"content/revision/revision_guidance.json").get(mid,{})
+        return {"revision_guidance":{k:item.get(k,"") for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction")}}
+    item=load(ROOT/"content/practice/practice_mcqs.json").get(mid,{})
+    return {"practice_mcqs":item.get("questions") or []}
+
+def verified_conflict(mid,component,verified,proposed,ref,evidence):
+    shapes={
+      "microtopic":{"type":"object","properties":{"core_explanation":{"type":"string"},"cross_references":{"type":"array","items":{"type":"object"}}},"required":["core_explanation","cross_references"],"additionalProperties":False},
+      "deep_dive":{"type":"object","properties":{"detailed_explanation":{"type":"string"}},"required":["detailed_explanation"],"additionalProperties":False},
+      "active_recall":{"type":"object","properties":{"recall_prompts":{"type":"array","items":{"type":"object"}}},"required":["recall_prompts"],"additionalProperties":False},
+      "revision":{"type":"object","properties":{"revision_guidance":{"type":"object"}},"required":["revision_guidance"],"additionalProperties":False},
+      "practice":{"type":"object","properties":{"practice_mcqs":{"type":"array","items":{"type":"object"}}},"required":["practice_mcqs"],"additionalProperties":False}
+    }
+    schema={"type":"object","properties":{"conflict":{"type":"boolean"},"severity":{"type":"string"},"conflicting_claims":{"type":"array","items":{"type":"string"}},"rationale":{"type":"string"},"proposed_version":shapes[component]},"required":["conflict","severity","conflicting_claims","rationale","proposed_version"],"additionalProperties":False}
+    prompt=f"""Determine whether new source evidence creates a MATERIAL CONTENT CONFLICT with an owner EXPERT VERIFIED {component} component.
+A wording improvement is not a conflict. A conflict exists when supplied evidence supports a materially different, contradictory, or important correction.
+Do not use outside knowledge. If evidence is insufficient, return conflict=false.
+If conflict=true, proposed_version must be source-grounded and suitable for owner comparison. Never replace the verified version automatically.
+
+CANONICAL: {json.dumps(ref,ensure_ascii=False)}
+VERIFIED VERSION: {json.dumps(verified,ensure_ascii=False)}
+NEW/PROPOSED VERSION: {json.dumps(proposed,ensure_ascii=False)}
+SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
+"""
+    return call_ai(prompt,{"microtopic":ref,"component":component,"verified_version":verified,"proposed_version":proposed,"source_evidence":evidence},"verified_conflict",schema)
+
+def pyq_evidence(mid):
+    raw=load(QUESTIONS)
+    questions=raw if isinstance(raw,list) else [*raw.get("pyq",[]),*raw.get("practice",[])]
+    out=[]
+    for q in questions:
+        qmid=f"{q.get('unit')}-{q.get('topic')}-{q.get('micro')}"
+        if qmid==mid and "pyq" in str(q.get("type","")).lower():
+            out.append({"id":q.get("id"),"year":q.get("year"),"question":q.get("question") or q.get("q"),"options":q.get("options")})
+    return out[:40]
+
+def generate_insight(mid,ref,package,evidence,conflicts):
+    pyqs=pyq_evidence(mid)
+    schema={"type":"object","properties":{
+      "priority":{"type":"string"},"strengths":{"type":"array","items":{"type":"string"}},"gaps":{"type":"array","items":{"type":"string"}},
+      "pyq_signals":{"type":"array","items":{"type":"string"}},"source_opportunities":{"type":"array","items":{"type":"string"}},
+      "learning_design_suggestions":{"type":"array","items":{"type":"string"}},"recommended_actions":{"type":"array","items":{"type":"string"}},
+      "rationale":{"type":"string"}
+    },"required":["priority","strengths","gaps","pyq_signals","source_opportunities","learning_design_suggestions","recommended_actions","rationale"],"additionalProperties":False}
+    prompt=f"""Act as the content-quality advisor for a UGC NET Psychology learning system.
+Provide INSIGHTS AND SUGGESTIONS, not an automatic rewrite. Compare authentic supplied PYQs, the current canonical five-component package, and relevant excerpts from the complete approved source library.
+Identify improvements in conceptual coverage, PYQ alignment, distinctions, retrieval quality, revision design, practice quality, source-supported depth, and unnecessary repetition.
+Never invent PYQ frequency/trends, facts, researchers, citations or exam claims. If supplied PYQs do not support a trend, say so. Respect EXPERT VERIFIED conflicts and recommend owner review rather than silently changing them.
+Suggestions must be actionable and source-grounded.
+
+CANONICAL: {json.dumps(ref,ensure_ascii=False)}
+CURRENT PACKAGE: {json.dumps(package,ensure_ascii=False)}
+AUTHENTIC PYQS: {json.dumps(pyqs,ensure_ascii=False)}
+SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
+VERIFIED CONFLICTS: {json.dumps(conflicts,ensure_ascii=False)}
+"""
+    return call_ai(prompt,{"microtopic":ref,"package":package,"pyqs":pyqs,"sources":evidence,"conflicts":conflicts},"content_insight",schema)
 
 def audit_component(g,component,ref,policy,evidence):
     criteria={
@@ -139,7 +221,24 @@ def main():
         if mid not in refs: continue
         ref=refs[mid]; evidence=source_evidence(ref)
         locked_components={c for c,key in {"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}.items() if str(verification_items.get(key,{}).get(mid,""))=="EXPERT VERIFIED"}
-        locked_snapshots={c:snapshot_component(original.get("package",original),c) for c in locked_components}
+        locked_snapshots={c:published_snapshot(mid,c) for c in locked_components}
+        conflict_items=[]
+        for component in sorted(locked_components):
+            proposed=snapshot_component(original.get("package",original),component)
+            analysis=verified_conflict(mid,component,locked_snapshots[component],proposed,ref,evidence)
+            if analysis.get("conflict"):
+                conflict_items.append({
+                    "microtopic_id":mid,"component":component,"status":"PENDING_OWNER_CONFLICT_REVIEW",
+                    "review_type":"VERIFIED_CONFLICT","title":ref["title"],"canonical":ref,
+                    "severity":analysis.get("severity","material"),
+                    "conflicting_claims":analysis.get("conflicting_claims") or [],
+                    "rationale":analysis.get("rationale",""),
+                    "verified_version":locked_snapshots[component],
+                    "proposed_version":analysis.get("proposed_version") or proposed,
+                    "generated_version":proposed,
+                    "source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
+                    "queued_at":datetime.now(timezone.utc).isoformat()
+                })
         final_audits={}; history=[]; passed_components=set()
 
         for attempt in range(3):
@@ -182,6 +281,8 @@ def main():
                 for component,snapshot in locked_snapshots.items():
                     restore_component(current,component,snapshot)
 
+        for conflict in conflict_items:
+            pending[(mid,"CONFLICT:"+conflict["component"])]=conflict
         for component in COMPONENTS:
             audit=final_audits.get(component,{})
             key=(mid,component)
@@ -194,11 +295,18 @@ def main():
                               "package":current,"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
                               "queued_at":datetime.now(timezone.utc).isoformat()}
         approved.append({"microtopic_id":mid,"package":current,"approved_components":sorted(passed_components)})
+        insight=generate_insight(mid,ref,current,evidence,conflict_items)
+        insights[mid]={"microtopic_id":mid,"title":ref["title"],"priority":insight.get("priority","medium"),"insight":insight,
+                       "pyq_count":len(pyq_evidence(mid)),"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
+                       "generated_at":datetime.now(timezone.utc).isoformat()}
         report_results.append({"microtopic_id":mid,"approved_components":sorted(passed_components),
-                               "queued_components":sorted(c for c in final_audits if c not in passed_components)})
+                               "queued_components":sorted(c for c in final_audits if c not in passed_components),
+                               "verified_conflicts":[x["component"] for x in conflict_items]})
 
     APPROVED.parent.mkdir(parents=True,exist_ok=True)
     APPROVED.write_text(json.dumps(approved,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INSIGHTS.parent.mkdir(parents=True,exist_ok=True)
+    INSIGHTS.write_text(json.dumps({"schema_version":1,"updated_at":datetime.now(timezone.utc).isoformat(),"items":insights},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     queue["schema_version"]=2; queue["updated_at"]=datetime.now(timezone.utc).isoformat(); queue["pending"]=list(pending.values())
     QUEUE.parent.mkdir(parents=True,exist_ok=True); QUEUE.write_text(json.dumps(queue,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     (ROOT/"content-staging/ai-audit.json").write_text(json.dumps({"schema_version":3,"policy":policy,"audited_packages":len(generated),"results":report_results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
