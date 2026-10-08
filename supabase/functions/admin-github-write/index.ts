@@ -77,7 +77,7 @@ async function writeFile(path: string, content: string, message: string) {
 const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
   if (req.method !== 'POST') return json({ error: 'POST required' }, 405, req)
 
-  const { data: profile, error } = await ctx.supabase
+  const { data: profile, error } = await ctx.supabaseAdmin
     .from('profiles')
     .select('role')
     .eq('id', ctx.userClaims.sub)
