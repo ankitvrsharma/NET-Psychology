@@ -69,6 +69,76 @@ def available(g,component):
     # All five components are required for a connected package. Missing content is a deterministic failure, not an optional omission.
     return True
 
+def published_snapshot(mid,component):
+    micro=load(ROOT/"content/microtopics/micro_topics.json")
+    if component=="microtopic":
+        item=micro.get(mid,{})
+        return {"core_explanation":item.get("expert_explanation",""),"cross_references":item.get("cross_references") or []}
+    if component=="deep_dive":
+        item=load(ROOT/"content/deep-dive/deep_dive.json").get(mid,{})
+        return {"detailed_explanation":item.get("detailed_explanation","")}
+    if component=="active_recall":
+        item=load(ROOT/"content/active-recall/active_recall.json").get(mid,{})
+        return {"recall_prompts":item.get("prompts") or []}
+    if component=="revision":
+        item=load(ROOT/"content/revision/revision_guidance.json").get(mid,{})
+        return {"revision_guidance":{k:item.get(k,"") for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction")}}
+    item=load(ROOT/"content/practice/practice_mcqs.json").get(mid,{})
+    return {"practice_mcqs":item.get("questions") or []}
+
+def verified_conflict(mid,component,verified,proposed,ref,evidence):
+    shapes={
+      "microtopic":{"type":"object","properties":{"core_explanation":{"type":"string"},"cross_references":{"type":"array","items":{"type":"object"}}},"required":["core_explanation","cross_references"],"additionalProperties":False},
+      "deep_dive":{"type":"object","properties":{"detailed_explanation":{"type":"string"}},"required":["detailed_explanation"],"additionalProperties":False},
+      "active_recall":{"type":"object","properties":{"recall_prompts":{"type":"array","items":{"type":"object"}}},"required":["recall_prompts"],"additionalProperties":False},
+      "revision":{"type":"object","properties":{"revision_guidance":{"type":"object"}},"required":["revision_guidance"],"additionalProperties":False},
+      "practice":{"type":"object","properties":{"practice_mcqs":{"type":"array","items":{"type":"object"}}},"required":["practice_mcqs"],"additionalProperties":False}
+    }
+    schema={"type":"object","properties":{"conflict":{"type":"boolean"},"severity":{"type":"string"},"conflicting_claims":{"type":"array","items":{"type":"string"}},"rationale":{"type":"string"},"proposed_version":shapes[component]},"required":["conflict","severity","conflicting_claims","rationale","proposed_version"],"additionalProperties":False}
+    prompt=f"""Determine whether new source evidence creates a MATERIAL CONTENT CONFLICT with an owner EXPERT VERIFIED {component} component.
+A wording improvement is not a conflict. A conflict exists when supplied evidence supports a materially different, contradictory, or important correction.
+Do not use outside knowledge. If evidence is insufficient, return conflict=false.
+If conflict=true, proposed_version must be source-grounded and suitable for owner comparison. Never replace the verified version automatically.
+
+CANONICAL: {json.dumps(ref,ensure_ascii=False)}
+VERIFIED VERSION: {json.dumps(verified,ensure_ascii=False)}
+NEW/PROPOSED VERSION: {json.dumps(proposed,ensure_ascii=False)}
+SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
+"""
+    return call_ai(prompt,{"microtopic":ref,"component":component,"verified_version":verified,"proposed_version":proposed,"source_evidence":evidence},"verified_conflict",schema)
+
+def pyq_evidence(mid):
+    raw=load(QUESTIONS)
+    questions=raw if isinstance(raw,list) else [*raw.get("pyq",[]),*raw.get("practice",[])]
+    out=[]
+    for q in questions:
+        qmid=f"{q.get('unit')}-{q.get('topic')}-{q.get('micro')}"
+        if qmid==mid and "pyq" in str(q.get("type","")).lower():
+            out.append({"id":q.get("id"),"year":q.get("year"),"question":q.get("question") or q.get("q"),"options":q.get("options")})
+    return out[:40]
+
+def generate_insight(mid,ref,package,evidence,conflicts):
+    pyqs=pyq_evidence(mid)
+    schema={"type":"object","properties":{
+      "priority":{"type":"string"},"strengths":{"type":"array","items":{"type":"string"}},"gaps":{"type":"array","items":{"type":"string"}},
+      "pyq_signals":{"type":"array","items":{"type":"string"}},"source_opportunities":{"type":"array","items":{"type":"string"}},
+      "learning_design_suggestions":{"type":"array","items":{"type":"string"}},"recommended_actions":{"type":"array","items":{"type":"string"}},
+      "rationale":{"type":"string"}
+    },"required":["priority","strengths","gaps","pyq_signals","source_opportunities","learning_design_suggestions","recommended_actions","rationale"],"additionalProperties":False}
+    prompt=f"""Act as the content-quality advisor for a UGC NET Psychology learning system.
+Provide INSIGHTS AND SUGGESTIONS, not an automatic rewrite. Compare authentic supplied PYQs, the current canonical five-component package, and relevant excerpts from the complete approved source library.
+Identify improvements in conceptual coverage, PYQ alignment, distinctions, retrieval quality, revision design, practice quality, source-supported depth, and unnecessary repetition.
+Never invent PYQ frequency/trends, facts, researchers, citations or exam claims. If supplied PYQs do not support a trend, say so. Respect EXPERT VERIFIED conflicts and recommend owner review rather than silently changing them.
+Suggestions must be actionable and source-grounded.
+
+CANONICAL: {json.dumps(ref,ensure_ascii=False)}
+CURRENT PACKAGE: {json.dumps(package,ensure_ascii=False)}
+AUTHENTIC PYQS: {json.dumps(pyqs,ensure_ascii=False)}
+SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
+VERIFIED CONFLICTS: {json.dumps(conflicts,ensure_ascii=False)}
+"""
+    return call_ai(prompt,{"microtopic":ref,"package":package,"pyqs":pyqs,"sources":evidence,"conflicts":conflicts},"content_insight",schema)
+
 def audit_component(g,component,ref,policy,evidence):
     criteria={
       "microtopic":["source_fidelity","canonical_microtopic_alignment","microtopic_exam_adequacy","no_generic_ai_filler","no_unsupported_claims"],
