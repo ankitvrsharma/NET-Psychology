@@ -81,11 +81,11 @@ def extract(p):
         # Some PDFs parse successfully with pypdf but expose little or no usable
         # text (for example scanned/OCR-heavy books). Fall back to Poppler based
         # extraction before treating the source as empty.
-        if len(re.sub(r"\\s+","",extracted)) >= 200:
+        if len(re.sub(r"\s+","",extracted)) >= 200:
             return extracted
         try:
             fallback=subprocess.run(["pdftotext","-layout",str(p),"-"],capture_output=True,text=True,check=True).stdout
-            if len(re.sub(r"\\s+","",fallback)) > len(re.sub(r"\\s+","",extracted)):
+            if len(re.sub(r"\s+","",fallback)) > len(re.sub(r"\s+","",extracted)):
                 return fallback
         except Exception:
             pass
