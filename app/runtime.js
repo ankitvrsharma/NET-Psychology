@@ -73,12 +73,6 @@ const CONTENT_POOL_PATHS=Object.freeze({
   questions:'content/questions/questions.json',
   homeLearning:'content/home/home-learning.json'
 });
-const CONTENT_INDEX_PATHS=Object.freeze({
-  microtopics:'data/content-indexes/microtopics.json',
-  activeRecall:'data/content-indexes/active-recall.json',
-  questions:'data/content-indexes/questions.json'
-});
-const CONTENT_INDEXES=Object.create(null);
 let STATE_CACHE=null;
 async function fetchJSON(path,label){
   const previewRequest=Q.get('preview')==='1'||!!Q.get('previewQuestion');
@@ -94,17 +88,9 @@ async function loadPool(name){
   CONTENT_POOLS[name]=value;
   return value;
 }
-async function loadIndex(name){
-  if(CONTENT_INDEXES[name])return CONTENT_INDEXES[name];
-  const path=CONTENT_INDEX_PATHS[name];
-  if(!path)throw new Error('Unknown content index: '+name);
-  const value=await fetchJSON(path,'Content index '+name);
-  CONTENT_INDEXES[name]=value;
-  return value;
-}
 const syllabusItems=()=>units().flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
 const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>microtopicItem(u,t,ref));
-const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||CONTENT_INDEXES.microtopics?.items?.[key(u.id,t.id,m.id)]||m;
+const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||m;
 function todayKeyString(){
   const now=new Date();
   return [now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -185,7 +171,6 @@ async function prepareDailyPracticeQuestions(){
   PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id)));
 }
 async function preparePracticeSessionQuestions(){
-  await loadIndex('questions');
   const saved=(()=>{try{return JSON.parse(sessionStorage.getItem('netPsychPracticeSetup')||'null')}catch(e){return null}})();
   if(!saved)return;
   await loadPool('questions');
@@ -228,7 +213,7 @@ const loadStudyData=async()=>{
   if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
-    await Promise.all([loadIndex('questions'),loadPool('questions')]);
+    await loadPool('questions');
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
   }
@@ -239,11 +224,10 @@ const loadStudyData=async()=>{
     try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
   }
   if(page==='active-recall'){
-    await Promise.all([loadIndex('activeRecall'),loadPool('activeRecall'),loadPool('questions')]);
+    await Promise.all([loadPool('activeRecall'),loadPool('questions')]);
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
   }
-  if(page==='revision')await loadIndex('microtopics');
   if(page==='home')prepareHomeDecision();
   safeRender();
   scheduleProgressivePrefetch(page);
