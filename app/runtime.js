@@ -216,7 +216,7 @@ function scheduleProgressivePrefetch(page){
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
-    microtopic:['data/content-indexes/active-recall.json'],
+    microtopic:['data/content-indexes/deepDive.json','data/content-indexes/activeRecall.json'],
     deepDive:['data/content-indexes/active-recall.json']
   };
   progressivePrefetch(next[page]||[]);
@@ -226,7 +226,7 @@ const loadStudyData=async()=>{
   D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
-  if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics')]);
+  if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
     await Promise.all([loadIndex('questions'),loadPool('questions')]);
@@ -397,20 +397,14 @@ function learnerPage(){
   '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
 }
 function deepDive(){
-  const {u,t,m,k}=find(),root=$('#deepDivePage');
+  const {u,t,m}=find(),root=$('#deepDivePage');
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
-  document.title='Deep Dive — '+m.title+' — UGC NET Psychology';
-  const concept=String(m.expert_explanation||m.content_notes||m.title).trim();
-  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{}; const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||concept).trim();
-  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
-  root.innerHTML=
-    '<div class="breadcrumbs"><a href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">Micro-topic</a><span>›</span><span>Deep Dive</span></div>'+
-    '<section class="page-hero deep-dive-hero"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · '+esc(u.title)+'</p></section>'+
-    '<article class="deep-dive-content card"><div class="eyebrow">DETAILED EXPLANATION</div><div class="deep-dive-copy">'+esc(deep)+'</div>'+
-
-    '</article>'+
-    '<section class="deep-dive-next card"><div><div class="eyebrow">NEXT STEP</div><h2>Check what you can recall.</h2><p>Close the explanation, then test the concept with its mapped recall questions.</p></div><a class="btn primary" href="'+recallHref+'">CHECK YOUR RECALL →</a></section>';
+  const target=microtopicHref(u,t,m);
+  if(location.pathname.endsWith('/deep-dive.html')||location.pathname.endsWith('deep-dive.html')){
+    location.replace(target);
+    return;
+  }
 }
 function dailySessionNext(currentKey){
   try{
@@ -814,41 +808,40 @@ function micro(){
     return;
   }
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
-  const concept=String(m.expert_explanation||m.content_notes||m.title).trim();
-  const understandingComplete=()=>setP(k,{understandingAt:getP(k).understandingAt||new Date().toISOString(),last:new Date().toISOString()});
+  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{};
+  const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||m.expert_explanation||m.content_notes||m.title).trim();
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
-  const fromRevision=Q.get('from')==='revision';const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
-  const verificationTag=learnerVerificationTag('microtopics',k);
-  const currentFeedback=feedbackState('microtopics',k);
+  const fromRevision=Q.get('from')==='revision';
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
+  const learningRichText=(text)=>{
+    const lines=String(text||'').replace(/\\r/g,'').split('\\n');
+    let html='',list=[];
+    const flush=()=>{if(list.length){html+='<ul>'+list.map(x=>'<li>'+x+'</li>').join('')+'</ul>';list=[];}};
+    for(const raw of lines){
+      const line=raw.trim();
+      if(!line){flush();continue}
+      if(/^###\\s+/.test(line)){flush();html+='<h3>'+esc(line.replace(/^###\\s+/,''))+'</h3>';continue}
+      if(/^##\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^##\\s+/,''))+'</h2>';continue}
+      if(/^#\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^#\\s+/,''))+'</h2>';continue}
+      if(/^[-•]\\s+/.test(line)){list.push(esc(line.replace(/^[-•]\\s+/,'')));continue}
+      flush();html+='<p>'+esc(line)+'</p>';
+    }
+    flush();
+    return html||'<p>'+esc(m.title)+'</p>';
+  };
   if(!previewMode)setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
-    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p>'+
-    (verificationTag?'<span class="learner-verification-badge">'+esc(verificationTag)+'</span>':'')+
-    '</header>'+
-    '<article class="micro-exam-content card"><div class="micro-exam-copy">'+
-    '<div class="eyebrow">CORE EXPLANATION</div><p class="micro-expert-explanation">'+esc(concept)+'</p>'+
-
-    '</div></article>'+
-    '<section class="learner-content-feedback" aria-label="Content feedback">'+
-    '<div><span class="eyebrow">HELP US IMPROVE</span><p>Was this content satisfactory for your preparation?</p></div>'+
-    '<div class="learner-feedback-actions" role="group" aria-label="Content satisfaction">'+
-    '<button class="learner-feedback-btn '+(currentFeedback==='SATISFACTORY'?'selected':'')+'" type="button" data-content-feedback="SATISFACTORY">✓ SATISFACTORY</button>'+
-    '<button class="learner-feedback-btn '+(currentFeedback==='NOT_SATISFACTORY'?'selected':'')+'" type="button" data-content-feedback="NOT_SATISFACTORY">NOT SATISFACTORY</button>'+
-    '</div><span class="learner-feedback-thanks" aria-live="polite">'+(currentFeedback?'Thank you. Your feedback helps improve the learning content.':'')+'</span></section>'+
-    '<section class="micro-bottom-navigation" aria-label="Micro-topic navigation">'+
-    '<a class="micro-bottom-action" href="deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>DEEP DIVE</span><b>←</b></a>'+
-    '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK YOUR RECALL</span><b>→</b></a>'+
-    '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT</span><b>→</b></a>'+
+    '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<article class="micro-deep-dive-content card">'+
+      '<div class="micro-deep-dive-label">DEEP DIVE</div>'+
+      '<div class="micro-deep-dive-copy">'+learningRichText(deep)+'</div>'+
+    '</article>'+
+    '<section class="micro-bottom-navigation" aria-label="Micro-topic next steps">'+
+      '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
+      '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
     '</section>';
-  if(!previewMode)root.querySelectorAll('.micro-bottom-action').forEach(link=>link.addEventListener('click',()=>understandingComplete()));
-  if(!previewMode)root.querySelectorAll('[data-content-feedback]').forEach(btn=>btn.addEventListener('click',async()=>{
-    const rating=btn.dataset.contentFeedback;
-    await submitLearnerFeedback('microtopics',k,rating);
-    root.querySelectorAll('[data-content-feedback]').forEach(b=>b.classList.toggle('selected',b.dataset.contentFeedback===rating));
-    const thanks=root.querySelector('.learner-feedback-thanks');if(thanks)thanks.textContent='Thank you. Your feedback helps improve the learning content.';
-  }));
 }
 function practice(){
   const box=$('#practiceApp');

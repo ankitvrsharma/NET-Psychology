@@ -1580,30 +1580,32 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .micro-breadcrumb a{color:var(--blue);font-weight:800;text-decoration:none}
 .micro-learn-header{padding:0 0 22px}
 .micro-learn-header h1{margin:0;color:var(--navy);font-size:clamp(32px,5vw,46px);line-height:1.08;letter-spacing:-.035em}
-.micro-exam-content{padding:28px 30px}
-.micro-expert-explanation{margin:0;color:var(--ink);font-size:17px;line-height:1.85;font-weight:500}
-.micro-exam-section{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
-.micro-exam-section h3{margin:0 0 11px;color:var(--muted);font-size:10px;letter-spacing:.11em;font-weight:900}
-.micro-exam-section p{margin:0;color:var(--ink);font-size:15px;line-height:1.75}
-.micro-exam-section .key-points{margin:0;padding-left:21px;color:var(--ink);line-height:1.75}
-.micro-exam-section .key-points li{margin:7px 0}
-.micro-learning-actions{display:grid;gap:0;margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.micro-action{min-height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border:0;border-bottom:1px solid var(--line);background:#fff;color:var(--navy);font:inherit;font-weight:850;text-decoration:none;cursor:pointer;text-align:left}
-.micro-action:last-child{border-bottom:0}
-.micro-action span{font-size:11px;letter-spacing:.08em}
-.micro-action:hover{background:#f7f9fc}
-.micro-action:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
-.micro-deep-dive-panel{padding:22px 24px;border-bottom:1px solid var(--line);background:#fafbfe}
-.micro-deep-copy{white-space:pre-line;color:var(--ink);font-size:15px;line-height:1.8}
+.micro-deep-dive-content{padding:32px 34px;background:#fff}
+.micro-deep-dive-label{margin-bottom:18px;color:var(--blue);font-size:10px;letter-spacing:.12em;font-weight:900}
+.micro-deep-dive-copy{color:var(--ink);font-size:16px;line-height:1.85}
+.micro-deep-dive-copy h2,.micro-deep-dive-copy h3{margin:28px 0 10px;color:var(--navy);line-height:1.25}
+.micro-deep-dive-copy h2{font-size:23px}
+.micro-deep-dive-copy h3{font-size:18px}
+.micro-deep-dive-copy p{margin:0 0 17px}
+.micro-deep-dive-copy ul{margin:0 0 19px;padding-left:24px}
+.micro-deep-dive-copy li{margin:7px 0}
+.micro-bottom-navigation{display:grid;grid-template-columns:1fr 1fr;margin-top:16px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.micro-bottom-action{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 20px;color:var(--navy);text-decoration:none;font-size:11px;font-weight:850;letter-spacing:.07em}
+.micro-bottom-action+.micro-bottom-action{border-left:1px solid var(--line)}
+.micro-bottom-action:hover{background:#f7f9fc;color:var(--blue)}
+.micro-bottom-action.primary{justify-content:center;background:#f4f7ff;color:var(--blue)}
+.micro-bottom-action b{font-size:16px;letter-spacing:0}
 @media(max-width:620px){
   .micro-learn-page{padding-top:4px}
   .micro-breadcrumb{margin-bottom:18px}
   .micro-learn-header{padding-bottom:18px}
-  .micro-exam-content{padding:22px 20px}
-  .micro-expert-explanation{font-size:16px;line-height:1.8}
-  .micro-exam-section{margin-top:22px;padding-top:19px}
-  .micro-exam-section p,.micro-deep-copy{font-size:14px;line-height:1.75}
-  .micro-learning-actions{border-radius:14px}
+  .micro-deep-dive-content{padding:23px 20px}
+  .micro-deep-dive-copy{font-size:15px;line-height:1.78}
+  .micro-deep-dive-copy h2{font-size:20px}
+  .micro-deep-dive-copy h3{font-size:17px}
+  .micro-bottom-navigation{grid-template-columns:1fr;border-radius:14px}
+  .micro-bottom-action{min-height:58px;padding:0 15px;font-size:10px}
+  .micro-bottom-action+.micro-bottom-action{border-left:0;border-top:1px solid var(--line)}
 }
 .active-recall-hero{max-width:900px;padding-bottom:22px}
 .active-recall-rule{margin-top:18px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#f7f9fd;color:var(--muted);font-size:13px;line-height:1.55}
