@@ -92,6 +92,7 @@ jobs:
             )"
             ENRICH="true"
             SYNTH="false"
+          else
             REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
             ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
             SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
