@@ -251,6 +251,8 @@ def main():
     existing_deep=load(ROOT/"content/deep-dive/deep_dive.json")
     existing_recall=load(ROOT/"content/active-recall/active_recall.json")
     existing_revision=load(REVISION)
+    practice_path=ROOT/"content/practice/practice_mcqs.json"
+    existing_practice=load(practice_path) if practice_path.exists() else {}
     recall_prompt_schema={"type":"object","properties":{
         "type":{"type":"string"},
         "prompt":{"type":"string"},
@@ -299,7 +301,7 @@ def main():
                 "deep_dive":existing_deep.get(ref["id"],{}),
                 "active_recall":existing_recall.get(ref["id"],{}),
                 "revision":existing_revision.get(ref["id"],{}),
-                "practice_mcqs":[]
+                "practice_mcqs":existing_practice.get(ref["id"],{}).get("questions",[]) if isinstance(existing_practice.get(ref["id"],{}),dict) else []
             }
             locked_components={
                 component for component,key in VERIFICATION_KEYS.items()
