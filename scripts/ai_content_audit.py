@@ -221,7 +221,24 @@ def main():
         if mid not in refs: continue
         ref=refs[mid]; evidence=source_evidence(ref)
         locked_components={c for c,key in {"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}.items() if str(verification_items.get(key,{}).get(mid,""))=="EXPERT VERIFIED"}
-        locked_snapshots={c:snapshot_component(original.get("package",original),c) for c in locked_components}
+        locked_snapshots={c:published_snapshot(mid,c) for c in locked_components}
+        conflict_items=[]
+        for component in sorted(locked_components):
+            proposed=snapshot_component(original.get("package",original),component)
+            analysis=verified_conflict(mid,component,locked_snapshots[component],proposed,ref,evidence)
+            if analysis.get("conflict"):
+                conflict_items.append({
+                    "microtopic_id":mid,"component":component,"status":"PENDING_OWNER_CONFLICT_REVIEW",
+                    "review_type":"VERIFIED_CONFLICT","title":ref["title"],"canonical":ref,
+                    "severity":analysis.get("severity","material"),
+                    "conflicting_claims":analysis.get("conflicting_claims") or [],
+                    "rationale":analysis.get("rationale",""),
+                    "verified_version":locked_snapshots[component],
+                    "proposed_version":analysis.get("proposed_version") or proposed,
+                    "generated_version":proposed,
+                    "source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
+                    "queued_at":datetime.now(timezone.utc).isoformat()
+                })
         final_audits={}; history=[]; passed_components=set()
 
         for attempt in range(3):
@@ -264,6 +281,8 @@ def main():
                 for component,snapshot in locked_snapshots.items():
                     restore_component(current,component,snapshot)
 
+        for conflict in conflict_items:
+            pending[(mid,"CONFLICT:"+conflict["component"])]=conflict
         for component in COMPONENTS:
             audit=final_audits.get(component,{})
             key=(mid,component)
@@ -276,11 +295,18 @@ def main():
                               "package":current,"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
                               "queued_at":datetime.now(timezone.utc).isoformat()}
         approved.append({"microtopic_id":mid,"package":current,"approved_components":sorted(passed_components)})
+        insight=generate_insight(mid,ref,current,evidence,conflict_items)
+        insights[mid]={"microtopic_id":mid,"title":ref["title"],"priority":insight.get("priority","medium"),"insight":insight,
+                       "pyq_count":len(pyq_evidence(mid)),"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
+                       "generated_at":datetime.now(timezone.utc).isoformat()}
         report_results.append({"microtopic_id":mid,"approved_components":sorted(passed_components),
-                               "queued_components":sorted(c for c in final_audits if c not in passed_components)})
+                               "queued_components":sorted(c for c in final_audits if c not in passed_components),
+                               "verified_conflicts":[x["component"] for x in conflict_items]})
 
     APPROVED.parent.mkdir(parents=True,exist_ok=True)
     APPROVED.write_text(json.dumps(approved,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INSIGHTS.parent.mkdir(parents=True,exist_ok=True)
+    INSIGHTS.write_text(json.dumps({"schema_version":1,"updated_at":datetime.now(timezone.utc).isoformat(),"items":insights},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     queue["schema_version"]=2; queue["updated_at"]=datetime.now(timezone.utc).isoformat(); queue["pending"]=list(pending.values())
     QUEUE.parent.mkdir(parents=True,exist_ok=True); QUEUE.write_text(json.dumps(queue,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     (ROOT/"content-staging/ai-audit.json").write_text(json.dumps({"schema_version":3,"policy":policy,"audited_packages":len(generated),"results":report_results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
