@@ -10,6 +10,9 @@ on:
       - scripts/validate_content.py
       - scripts/supabase_sync.py
       - scripts/source_to_content.py
+      - scripts/sync_documentation.py
+      - docs/architecture/content-architecture.md
+      - content-pools/registry.json
       - .github/workflows/build-content.yml
   pull_request:
     branches: [main]
@@ -19,6 +22,9 @@ on:
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
       - scripts/source_to_content.py
+      - scripts/sync_documentation.py
+      - docs/architecture/content-architecture.md
+      - content-pools/registry.json
       - .github/workflows/build-content.yml
 
 permissions:
