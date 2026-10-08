@@ -21,9 +21,17 @@ on:
         required: false
         default: "true"
       enrich_existing:
-        description: "Apply the saved admin enrichment instruction to source-backed learning packages"
+        description: "Generate source-grounded content for an Admin task"
         required: false
         default: "true"
+      admin_instruction:
+        description: "Job-specific instruction from the Admin panel"
+        required: false
+        default: ""
+      target_microtopics:
+        description: "Comma-separated canonical micro-topic IDs for this generation run"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -60,6 +68,8 @@ jobs:
           NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
           NET_MAX_TOPICS_PER_RUN: "54"
           NET_SKIP_GEMINI_INSIGHTS: "true"
+          NET_ADMIN_INSTRUCTION: ${{ github.event.inputs.admin_instruction || '' }}
+          NET_ADMIN_TARGETS: ${{ github.event.inputs.target_microtopics || '' }}
         run: |
           REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
           ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
