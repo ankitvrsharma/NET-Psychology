@@ -466,6 +466,24 @@ The following are recurring failure modes and should be actively resisted:
 - unverified claims about testing;
 - silently overriding an agreed decision.
 
+## 28A. Content architecture governance
+
+The content system has one canonical taxonomy: `data/syllabus-index.json`.
+
+A canonical micro-topic is represented as one connected learning package:
+
+**Understand → Expand → Retrieve → Reinforce → Apply**
+
+The newer Python connected-package audit is authoritative for AI content quality. The Admin Workbench may show learner-facing package health, but it must not maintain a second heuristic audit implementation.
+
+Expert-verified components are immutable to automated rewriting. Verification state belongs in `data/verification-state.json`; temporary owner visibility/filtering is not a second content-authority layer.
+
+Authentic PYQs/general questions remain in `content/questions/questions.json`. Package-specific original application MCQs belong in `content/practice/practice_mcqs.json`. Generated questions must never be represented as genuine PYQs.
+
+Parallel taxonomy/index files are not permitted. Runtime and validation must derive mappings from the syllabus index.
+
+Architecture documentation is generated and checked by `scripts/sync_documentation.py`; implementation changes must keep the generated contract synchronized.
+
 ## 29. How this charter changes
 
 This charter should remain stable.
