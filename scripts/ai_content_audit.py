@@ -15,12 +15,31 @@ from source_to_content import load, extract, chunks, canonical, call_ai, norm
 
 COMPONENTS=("microtopic","deep_dive","active_recall","revision","practice")
 FIELDS={
- "microtopic":["core_explanation"],
+ "microtopic":["core_explanation","cross_references"],
  "deep_dive":["detailed_explanation"],
  "active_recall":["recall_prompts"],
  "revision":["revision_guidance"],
  "practice":["practice_mcqs"],
 }
+
+def snapshot_component(g,component):
+    if component=="microtopic": return {"core_explanation":g.get("core_explanation",""),"cross_references":g.get("cross_references") or []}
+    if component=="deep_dive": return {"detailed_explanation":g.get("detailed_explanation","")}
+    if component=="active_recall": return {"recall_prompts":g.get("recall_prompts") or []}
+    if component=="revision": return {"revision_guidance":g.get("revision_guidance") or {}}
+    if component=="practice": return {"practice_mcqs":g.get("practice_mcqs") or []}
+    return {}
+def restore_component(g,component,snapshot):
+    if component=="microtopic":
+        g["core_explanation"]=snapshot.get("core_explanation",""); g["cross_references"]=snapshot.get("cross_references") or []
+    elif component=="deep_dive":
+        g["detailed_explanation"]=snapshot.get("detailed_explanation","")
+    elif component=="active_recall":
+        g["recall_prompts"]=snapshot.get("recall_prompts") or []
+    elif component=="revision":
+        g["revision_guidance"]=snapshot.get("revision_guidance") or {}
+    elif component=="practice":
+        g["practice_mcqs"]=snapshot.get("practice_mcqs") or []
 
 def source_evidence(ref):
     words=set(norm(ref["title"]+" "+ref["topic_title"]+" "+ref["unit_title"]).split())
@@ -72,14 +91,16 @@ CONNECTED PACKAGE: {json.dumps(g,ensure_ascii=False)}
 """
     return call_ai(prompt,{"component":component,"microtopic":ref,"package":g},"component_audit",schema)
 
-def rewrite_package(g,ref,evidence,audits):
-    prompt=f"""Rewrite the COMPLETE CONNECTED FIVE-COMPONENT UGC NET Psychology learning package.
-A component failed its independent audit. Rewrite the entire package together so all components remain aligned.
+def rewrite_package(g,ref,evidence,audits,locked_components):
+    prompt=f"""Rewrite the CONNECTED FIVE-COMPONENT UGC NET Psychology learning package, but rewrite ONLY components that are not marked EXPERT VERIFIED.
+A non-verified component failed its independent audit. Rewrite the non-verified components together so they remain aligned with the canonical knowledge and with any locked expert-verified components.
 Use only supplied source evidence. Do not fill gaps from outside knowledge.
 Keep the exact canonical micro-topic ID.
 Micro-topic = canonical understanding; Deep Dive = expansion; Active Recall = retrieval of taught knowledge; Revision = reinforcement; Practice = application/discrimination.
 Never invent PYQs, citations, statistics, researchers or experiments. Generated practice questions must remain clearly original practice, not PYQs.
-Preserve only source-supported cross-references. Return the complete package, not a patch.
+EXPERT VERIFIED COMPONENTS ARE LOCKED. Preserve them exactly as supplied. Do not paraphrase, shorten, expand, reformat, replace, regenerate, or "improve" a locked component. Return the complete package, not a patch.
+LOCKED COMPONENTS: {json.dumps(sorted(locked_components))}
+
 
 CANONICAL: {json.dumps(ref,ensure_ascii=False)}
 SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
@@ -105,6 +126,8 @@ def load_queue():
 def main():
     if not STAGING.exists(): print("No staged generated content found; nothing to audit."); return 0
     generated=load(STAGING); policy=load(POLICY); refs=canonical(load(ROOT/"data/syllabus-index.json"))
+    verification=load(ROOT/"data/verification-state.json") if (ROOT/"data/verification-state.json").exists() else {"items":{}}
+    verification_items=verification.get("items") or {}
     if not isinstance(generated,list) or not generated: raise SystemExit("Staged generated content is empty.")
     approved=[]; queue=load_queue()
     pending={(str(x.get("microtopic_id")),str(x.get("component"))):x for x in queue.get("pending",[]) if isinstance(x,dict)}
@@ -115,6 +138,8 @@ def main():
         mid=str(current.get("microtopic_id",""))
         if mid not in refs: continue
         ref=refs[mid]; evidence=source_evidence(ref)
+        locked_components={c for c,key in {"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}.items() if str(verification_items.get(key,{}).get(mid,""))=="EXPERT VERIFIED"}
+        locked_snapshots={c:snapshot_component(original.get("package",original),c) for c in locked_components}
         final_audits={}; history=[]; passed_components=set()
 
         for attempt in range(3):
@@ -137,18 +162,25 @@ def main():
                             bad=True
             
             for component in COMPONENTS:
-                audit={"approved":False,"score":0,"critical_failures":["deterministic component structure failed"],"issues":[],"microtopic_id":mid,"component":component} if (
+                audit={"approved":True,"score":1.0,"critical_failures":[],"issues":["expert_verified_locked"],"microtopic_id":mid,"component":component,"rationale":"Owner marked this component EXPERT VERIFIED; AI rewrite and AI approval are bypassed for this component."} if (
+                    component in locked_components and not (
+                        (component=="revision" and any(not str((current.get("revision_guidance") or {}).get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))) or
+                        (component=="practice" and any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or []))
+                    )
+                ) else ({"approved":False,"score":0,"critical_failures":["deterministic component structure failed"],"issues":[],"microtopic_id":mid,"component":component} if (
                     (component=="revision" and any(not str((current.get("revision_guidance") or {}).get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))) or
                     (component=="practice" and any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or []))
-                ) else audit_component(current,component,ref,policy,evidence)
+                ) else audit_component(current,component,ref,policy,evidence))
                 audit["attempt"]=attempt+1; component_audits[component]=audit
             history.append(component_audits); final_audits=component_audits
             passed_components={c for c,a in component_audits.items() if a.get("approved") and float(a.get("score",0))>=float(policy.get("minimum_score",0.9)) and not a.get("critical_failures")}
             failed=[c for c in component_audits if c not in passed_components]
             if not failed: break
             if attempt<2:
-                current=rewrite_package(current,ref,evidence,{c:component_audits[c] for c in failed})
+                current=rewrite_package(current,ref,evidence,{c:component_audits[c] for c in failed},locked_components)
                 current["microtopic_id"]=mid
+                for component,snapshot in locked_snapshots.items():
+                    restore_component(current,component,snapshot)
 
         for component in COMPONENTS:
             audit=final_audits.get(component,{})

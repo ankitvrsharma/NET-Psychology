@@ -17,6 +17,7 @@ VERIFICATION=ROOT/"data/verification-state.json"
 MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 VERIFICATION_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
+COMPONENTS=("microtopic","deep_dive","active_recall","revision","practice")
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
 def load_instructions():
@@ -244,10 +245,14 @@ def main():
         save(STAGING/"repair-plan.json",{"questions":qobj if isinstance(qobj,dict) else questions,"quick":quick})
     generated=[]
     target_ids={str(x) for x in enrichment.get("target_microtopics",[]) if str(x).strip()}
+    verification=load(VERIFICATION) if VERIFICATION.exists() else {"schema_version":1,"items":{},"updated_at":""}
+    verification_items=verification.get("items") or {}
     existing_micro=load(MICRO)
     existing_deep=load(ROOT/"content/deep-dive/deep_dive.json")
     existing_recall=load(ROOT/"content/active-recall/active_recall.json")
     existing_revision=load(REVISION)
+    practice_path=ROOT/"content/practice/practice_mcqs.json"
+    existing_practice=load(practice_path) if practice_path.exists() else {}
     recall_prompt_schema={"type":"object","properties":{
         "type":{"type":"string"},
         "prompt":{"type":"string"},
@@ -296,11 +301,40 @@ def main():
                 "deep_dive":existing_deep.get(ref["id"],{}),
                 "active_recall":existing_recall.get(ref["id"],{}),
                 "revision":existing_revision.get(ref["id"],{}),
-                "practice_mcqs":[]
+                "practice_mcqs":existing_practice.get(ref["id"],{}).get("questions",[]) if isinstance(existing_practice.get(ref["id"],{}),dict) else []
             }
-            generated.append(call_ai(
-                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED FIVE-COMPONENT LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall, Revision and Practice/MCQs must be derived from that same knowledge. Generate all five together when practice MCQs are requested by the package schema. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content. Practice MCQs must be original practice items, never presented as genuine PYQs, and every answer/explanation must be supported by the connected package and source evidence. Cross-references must use only supplied canonical candidates, must exclude the current micro-topic, and should identify only meaningful conceptual relationships useful for mixed-topic questions. If no candidate has a defensible relationship, return an empty cross_references array.",
-                {"microtopic":ref,"current_published_content":current,"source_excerpts":evidence},"microtopic_content",content_schema))
+            locked_components={
+                component for component,key in VERIFICATION_KEYS.items()
+                if str(verification_items.get(key,{}).get(ref["id"],""))=="EXPERT VERIFIED"
+            }
+            if len(locked_components)==len(COMPONENTS):
+                continue
+            protected={
+                "microtopic":{
+                    "core_explanation":current["microtopic"].get("expert_explanation",""),
+                    "cross_references":current["microtopic"].get("cross_references",[])
+                },
+                "deep_dive":current["deep_dive"],
+                "active_recall":current["active_recall"],
+                "revision":current["revision"],
+                "practice":current.get("practice_mcqs",[])
+            }
+            generated_item=call_ai(
+                instruction_text(enrichment)+"\n\nYou are producing ONE CONNECTED FIVE-COMPONENT LEARNING PACKAGE. The micro-topic is canonical. Deep Dive, Active Recall, Revision and Practice/MCQs must be derived from that same knowledge. Rewrite ONLY components that are NOT marked EXPERT VERIFIED in the supplied verification state. Any EXPERT VERIFIED component is locked: preserve its existing content exactly, do not paraphrase, shorten, expand, reformat, replace, or regenerate it. Non-verified components may be rewritten to align with a locked expert-verified component when source-supported. Never change an expert-verified component merely to make the package stylistically uniform. Return source-grounded content only and do not invent missing evidence. Put exam distinctions, applications, cautions, definitions, researcher/theory names and other useful qualifiers inline where they belong in the explanation. Do not create separate notes, exam-takeaway, source-note, or metadata-style learner content. Practice MCQs must be original practice items, never presented as genuine PYQs, and every answer/explanation must be supported by the connected package and source evidence. Cross-references must use only supplied canonical candidates, must exclude the current micro-topic, and should identify only meaningful conceptual relationships useful for mixed-topic questions. If no candidate has a defensible relationship, return an empty cross_references array. LOCKED COMPONENTS: "+json.dumps(sorted(list(locked_components)))+"\nLOCKED CONTENT TO PRESERVE EXACTLY: "+json.dumps(protected,ensure_ascii=False),
+                {"microtopic":ref,"current_published_content":current,"locked_components":sorted(list(locked_components)),"locked_content":protected,"source_excerpts":evidence},"microtopic_content",content_schema)
+            for component in locked_components:
+                if component=="microtopic":
+                    generated_item["core_explanation"]=protected["microtopic"]["core_explanation"]
+                    generated_item["cross_references"]=protected["microtopic"]["cross_references"]
+                elif component=="deep_dive":
+                    generated_item["detailed_explanation"]=protected["deep_dive"].get("detailed_explanation",generated_item.get("detailed_explanation",""))
+                elif component=="active_recall":
+                    generated_item["recall_prompts"]=protected["active_recall"].get("prompts",generated_item.get("recall_prompts",[]))
+                elif component=="revision":
+                    generated_item["revision_guidance"]={k:protected["revision"].get(k,"") for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction")}
+                elif component=="practice":
+                    generated_item["practice_mcqs"]=protected["practice"]
+            generated.append(generated_item)
     if generated:
         save(STAGING/"canonical-content.json",generated)
     if args.apply_staged:
@@ -340,9 +374,9 @@ def main():
                 me=micro_pool[mid]
                 # Surgical publication: replace only the canonical fields owned by this
                 # generated package. Preserve IDs, titles, mappings, and unrelated learner data.
-                me["expert_explanation"]=g["core_explanation"]
-                me["detailed_explanation"]=g["detailed_explanation"]
-                me["cross_references"]=g.get("cross_references") or []
+                if str(verification.setdefault("items",{}).setdefault("microtopics",{}).get(mid,""))!="EXPERT VERIFIED":
+                    me["expert_explanation"]=g["core_explanation"]
+                    me["cross_references"]=g.get("cross_references") or []
                 de=deep_pool.get(mid) or {"id":mid,"title":me.get("title","")}
                 de["id"]=mid+"D"; de["microtopic_id"]=mid; de["title"]=me.get("title",de.get("title",""))
                 de["detailed_explanation"]=g["detailed_explanation"]
@@ -362,7 +396,10 @@ def main():
                 approved_components=g.get("approved_components") or []
                 for component in ("microtopic","deep_dive","active_recall","revision","practice"):
                     if component in approved_components:
-                        verification.setdefault("items",{}).setdefault(VERIFICATION_KEYS[component],{})[mid]="AI REVIEWED"
+                        component_key=VERIFICATION_KEYS[component]
+                        current_status=str(verification.setdefault("items",{}).setdefault(component_key,{}).get(mid,""))
+                        if current_status!="EXPERT VERIFIED":
+                            verification["items"][component_key][mid]="AI REVIEWED"
             practice_path.parent.mkdir(parents=True,exist_ok=True)
             save(practice_path,practice_pool)
             save(MICRO,micro_pool)
