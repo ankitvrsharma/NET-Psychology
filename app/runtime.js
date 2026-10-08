@@ -397,20 +397,14 @@ function learnerPage(){
   '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
 }
 function deepDive(){
-  const {u,t,m,k}=find(),root=$('#deepDivePage');
+  const {u,t,m}=find(),root=$('#deepDivePage');
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
-  document.title='Deep Dive — '+m.title+' — UGC NET Psychology';
-  const concept=String(m.expert_explanation||m.content_notes||m.title).trim();
-  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{}; const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||concept).trim();
-  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
-  root.innerHTML=
-    '<div class="breadcrumbs"><a href="microtopic.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'">Micro-topic</a><span>›</span><span>Deep Dive</span></div>'+
-    '<section class="page-hero deep-dive-hero"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(t.title)+' · '+esc(u.title)+'</p></section>'+
-    '<article class="deep-dive-content card"><div class="eyebrow">DETAILED EXPLANATION</div><div class="deep-dive-copy">'+esc(deep)+'</div>'+
-
-    '</article>'+
-    '<section class="deep-dive-next card"><div><div class="eyebrow">NEXT STEP</div><h2>Check what you can recall.</h2><p>Close the explanation, then test the concept with its mapped recall questions.</p></div><a class="btn primary" href="'+recallHref+'">CHECK YOUR RECALL →</a></section>';
+  const target=microtopicHref(u,t,m);
+  if(location.pathname.endsWith('/deep-dive.html')||location.pathname.endsWith('deep-dive.html')){
+    location.replace(target);
+    return;
+  }
 }
 function dailySessionNext(currentKey){
   try{
