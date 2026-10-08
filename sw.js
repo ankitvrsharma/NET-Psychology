@@ -1,4 +1,4 @@
-const CACHE='netpsych-shell-v1.11.13';
+const CACHE='netpsych-shell-v1.11.14';
 const SHELL=[
   './',
   './index.html',
@@ -6,6 +6,7 @@ const SHELL=[
   './practice.html',
   './practice-session.html',
   './microtopic.html',
+  './deep-dive.html',
   './active-recall.html',
   './topic.html',
   './unit.html',
