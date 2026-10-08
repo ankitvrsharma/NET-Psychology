@@ -84,6 +84,46 @@ function toggleVisibility(type,id){
 }
 function titleFor(type,id){if(type==='microtopics'){const [u,t,m]=String(id).split('-').map(Number),unit=data?.units?.find(x=>x.id===u),topic=unit?.topics?.find(x=>x.id===t),micro=topic?.microtopics?.find(x=>x.id===m);return micro?unit.title+' · '+topic.title+' · '+micro.title:id}const q=questions.find(x=>String(x.id)===String(id));return q?.question||id}
 function learnerHref(type,id){const parts=String(id).split('-');return type==='microtopics'?'microtopic.html?unit='+encodeURIComponent(parts[0])+'&topic='+encodeURIComponent(parts[1])+'&micro='+encodeURIComponent(parts[2])+'&preview=1':'practice-session.html?previewQuestion='+encodeURIComponent(id)}
+function componentReview(component,id){
+  const key=component==='microtopics'?'microtopics':component==='deepDive'?'deepDive':component==='activeRecall'?'activeRecall':component==='revision'?'revision':'practice';
+  return String(verificationState?.items?.[key]?.[String(id)]||'');
+}
+function componentReviewButton(component,id){
+  const status=componentReview(component,id);
+  if(status==='EXPERT VERIFIED') return '<span class="admin-package-lock">EXPERT VERIFIED</span><button class="btn admin-component-review clear" type="button" data-component-review="'+component+'" data-id="'+esc(id)+'" data-review-value="">CLEAR VERIFICATION</button>';
+  const label=status==='AI REVIEWED'?'AI REVIEWED':'NOT VERIFIED';
+  return '<span class="admin-package-status">'+label+'</span><button class="btn admin-component-review" type="button" data-component-review="'+component+'" data-id="'+esc(id)+'" data-review-value="SATISFACTORY">MARK EXPERT VERIFIED</button>';
+}
+function packageText(value){
+  if(Array.isArray(value)) return value.map(packageText).join('\n');
+  if(value&&typeof value==='object') return Object.entries(value).map(([k,v])=>k+': '+packageText(v)).join('\n');
+  return String(value??'');
+}
+function packageComponent(component,title,body,id){
+  const safeBody=packageText(body).trim();
+  return '<details class="admin-package-component" open><summary><div><span class="eyebrow">'+esc(title)+'</span><strong>'+esc(componentReview(component,id)||'NOT VERIFIED')+'</strong></div><span class="admin-package-chevron">⌄</span></summary><div class="admin-package-component-body">'+
+    (safeBody?'<div class="admin-package-content">'+esc(safeBody)+'</div>':'<div class="admin-package-empty">No published content for this component yet.</div>')+
+    '<div class="admin-package-component-actions">'+componentReviewButton(component,id)+'</div></div></details>';
+}
+function makePackageItem(type,id,audit){
+  const item=microInStore(id)||{},deep=deepPool?.[String(id)]||{},recall=recallPool?.[String(id)]||{},revision=revisionPool?.[String(id)]||{},practice=practicePool?.[String(id)]||{};
+  const hidden=isHiddenForMe(type,id);
+  const locked=Object.entries({microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Active Recall',revision:'Revision',practice:'Practice'}).filter(([component])=>componentReview(component,id)==='EXPERT VERIFIED').map(([,label])=>label);
+  const practiceQuestions=Array.isArray(practice.questions)?practice.questions:[];
+  const practiceBody=practiceQuestions.map((q,i)=>'Question '+(i+1)+': '+packageText(q.question)+'\nOptions: '+packageText(q.options)+'\nCorrect answer: '+packageText(q.correct_answer)+'\nExplanation: '+packageText(q.explanation)).join('\n\n');
+  const revisionBody='Recall before review: '+packageText(revision.recall_before_review)+'\nSelf-check: '+packageText(revision.self_check)+'\nWeak-point prompt: '+packageText(revision.weak_point_prompt)+'\nRating instruction: '+packageText(revision.rating_instruction);
+  const recallBody=Array.isArray(recall.prompts)?recall.prompts.map((p,i)=>(i+1)+'. '+packageText(p.type)+'\nPrompt: '+packageText(p.prompt)+'\nAnswer: '+packageText(p.answer)).join('\n\n'):'';
+  const actions='<button class="btn admin-edit" type="button">EDIT MICRO-TOPIC</button><button class="btn admin-gemini" type="button" data-type="microtopics" data-id="'+esc(id)+'">ASK GEMINI TO REWRITE NON-VERIFIED</button>'+
+    (hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>');
+  return '<article class="admin-item admin-item-package"><div class="admin-package-head"><div><span class="eyebrow">ONE MICRO-TOPIC · COMPLETE LEARNING PACKAGE</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit all five learning functions together. '+(locked.length?'Locked by you: <b>'+esc(locked.join(', '))+'</b>.':'No component is expert verified yet.')+'</p></div><a class="btn" target="_blank" rel="noopener" href="'+learnerHref(type,id)+'">OPEN LEARNER VIEW</a></div>'+
+    '<div class="admin-package-grid">'+
+      packageComponent('microtopics','1 · UNDERSTAND · MICRO-TOPIC',item.expert_explanation||item.content_notes||'',id)+
+      packageComponent('deepDive','2 · EXPAND · DEEP DIVE',deep.detailed_explanation||deep.deep_learning||deep.deep||'',id)+
+      packageComponent('activeRecall','3 · RETRIEVE · ACTIVE RECALL',recallBody,id)+
+      packageComponent('revision','4 · REINFORCE · REVISION',revisionBody,id)+
+      packageComponent('practice','5 · APPLY · PRACTICE MCQs',practiceBody,id)+
+    '</div><div class="admin-review-bar"><div class="admin-item-copy"><span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><p>Micro-topic audit score: <b>'+audit.score+'</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions">'+actions+'</div></div>'+editorFor(type,id)+'</article>';
+}
 function makeItem(type,id,audit){
   const owner=ownerReview(type,id),hidden=isHiddenForMe(type,id);
   const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
