@@ -7,7 +7,6 @@ const SHELL=[
   './practice-session.html',
   './microtopic.html',
   './deep-dive.html',
-  './deep-dive.html',
   './active-recall.html',
   './topic.html',
   './unit.html',
@@ -27,8 +26,6 @@ const SHELL=[
 ];
 const RUNTIME_DATA=new Set([
   'syllabus-index.json',
-  'home-index.json',
-  'home-learning-index.json',
   'active_recall.json',
   'quick_cards.json',
   'micro_topics.json',
