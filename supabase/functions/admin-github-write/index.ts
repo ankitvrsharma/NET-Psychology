@@ -130,8 +130,18 @@ const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
   }
 
   if (profileResult.error) {
+    const profileError = profileResult.error as {
+      code?: string
+      message?: string
+      details?: string
+      hint?: string
+    }
     return json({
       error: 'Admin profile lookup failed.',
+      code: profileError?.code || null,
+      details: profileError?.details || null,
+      hint: profileError?.hint || null,
+      message: profileError?.message || null,
       bridge_version: BRIDGE_VERSION,
       stage: 'profile_lookup'
     }, 502, req)
