@@ -116,7 +116,7 @@ const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
       ctx.supabase
         .from('profiles')
         .select('role')
-        .eq('id', ctx.userClaims.sub)
+        .eq('id', ctx.userClaims.id)
         .maybeSingle(),
       PROFILE_TIMEOUT_MS,
       'Admin profile lookup timed out.'
