@@ -7,6 +7,7 @@ const SHELL=[
   './practice-session.html',
   './microtopic.html',
   './deep-dive.html',
+  './deep-dive.html',
   './active-recall.html',
   './topic.html',
   './unit.html',
