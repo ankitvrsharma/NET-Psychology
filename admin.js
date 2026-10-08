@@ -201,6 +201,7 @@ function renderQueue(){
   const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
   const geminiShortcut=root.querySelector('#adminGeminiShortcut');if(geminiShortcut)geminiShortcut.onclick=()=>{filter='MICRO-TOPICS';renderQueue();root.querySelector('#geminiBox')?.scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>{const instruction=root.querySelector('#enrichmentInstruction');if(instruction){instruction.focus();instruction.setSelectionRange(instruction.value.length,instruction.value.length)}},250)};
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
+  root.querySelectorAll('.admin-component-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.componentReview,b.dataset.id,b.dataset.reviewValue));
   root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
   root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>toggleVisibility(b.dataset.type,b.dataset.id));
   root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
