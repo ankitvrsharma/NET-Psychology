@@ -136,7 +136,7 @@ Never claim a live browser/device test unless one was actually performed.
 
 The architecture contract is generated from `content-pools/registry.json` into `docs/architecture/content-architecture.md`.
 
-Run `python scripts/sync_documentation.py --write` after an architecture-contract change. CI runs the same generator in check mode, and the source publication workflow can regenerate the document before publishing.
+Run `python scripts/sync_documentation.py --write` after an architecture-contract change. CI runs the same generator in check mode, so a drifted architecture document cannot pass validation silently.
 
 Keep `data/syllabus-index.json` as the only canonical taxonomy/index source. Do not recreate deleted parallel content indexes.
 
