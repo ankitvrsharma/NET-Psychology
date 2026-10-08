@@ -79,7 +79,7 @@ self.addEventListener('fetch',event=>{
     return;
   }
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
-  const isRuntimeData=RUNTIME_DATA.has(name)||url.pathname.includes('/data/content-indexes/');
+  const isRuntimeData=RUNTIME_DATA.has(name);
   if(!isShell&&!isRuntimeData)return;
   const cacheKey=canonicalRequest(url);
   event.respondWith((async()=>{
