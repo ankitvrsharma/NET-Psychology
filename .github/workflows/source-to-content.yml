@@ -77,14 +77,7 @@ jobs:
           fi
           echo "generated=false" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
-            REPAIR="$(python -c 'import json; print("true" if json.load(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")')
-          echo "generated=false" >> "$GITHUB_OUTPUT"
-          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
-            REPAIR="$(python - <<'PY'
-            import json
-            print("true" if json.loads(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")
-            PY
-            )"
+            REPAIR="$(python -c 'import json; print("true" if json.load(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")')"
             ENRICH="true"
             SYNTH="false"
           else
