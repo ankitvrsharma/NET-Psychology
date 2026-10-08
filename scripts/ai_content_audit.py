@@ -9,6 +9,8 @@ STAGING=ROOT/"content-staging/canonical-content.json"
 APPROVED=ROOT/"content-staging/canonical-content-approved.json"
 POLICY=ROOT/"data/ai-content-audit-policy.json"
 QUEUE=ROOT/"data/content-approval-queue.json"
+INSIGHTS=ROOT/"data/gemini-content-insights.json"
+QUESTIONS=ROOT/"content/questions/questions.json"
 INBOX=ROOT/"sources/inbox"
 sys.path.insert(0,str(ROOT/"scripts"))
 from source_to_content import load, extract, chunks, canonical, call_ai, norm
@@ -43,15 +45,25 @@ def restore_component(g,component,snapshot):
 
 def source_evidence(ref):
     words=set(norm(ref["title"]+" "+ref["topic_title"]+" "+ref["unit_title"]).split())
-    ranked=[]
+    per_source=[]; all_ranked=[]
     for p in sorted(INBOX.rglob("*")):
         if not p.is_file() or p.suffix.lower() not in {".pdf",".docx",".pptx",".txt",".md"}: continue
+        source=str(p.relative_to(ROOT)); source_ranked=[]
         text=extract(p)
         for i,c in enumerate(chunks(text)):
             score=len(words & set(norm(c).split()))
-            if score: ranked.append((score,str(p.relative_to(ROOT)),i,c[:12000]))
-    ranked.sort(reverse=True,key=lambda x:x[0])
-    return [{"source":x[1],"chunk":x[2],"text":x[3]} for x in ranked[:6]]
+            if score:
+                row=(score,source,i,c[:12000]); source_ranked.append(row); all_ranked.append(row)
+        if source_ranked:
+            source_ranked.sort(reverse=True,key=lambda x:x[0]); per_source.append(source_ranked[0])
+    all_ranked.sort(reverse=True,key=lambda x:x[0])
+    selected=[]; seen=set()
+    for row in per_source+all_ranked:
+        key=(row[1],row[2])
+        if key in seen: continue
+        seen.add(key); selected.append(row)
+        if len(selected)>=12: break
+    return [{"source":x[1],"chunk":x[2],"text":x[3]} for x in selected]
 
 def available(g,component):
     # All five components are required for a connected package. Missing content is a deterministic failure, not an optional omission.
