@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "enabled": true,
   "learning_architecture": {
     "canonical": "micro-topic",
@@ -37,28 +37,30 @@
         },
         {
           "level": "micro-topic",
-          "role": "section",
-          "description": "A Micro-topic is a meaningful heading/section within a Topic/Chapter. Its learner-facing content is a coherent article section that can stand on its own."
+          "role": "main section",
+          "description": "A Micro-topic is the primary learner-facing main heading/section within a Topic/Chapter, following the kind of coherent numbered/main-heading section used inside a Psychology textbook chapter. It is not a tiny checklist item; its content should form a complete, readable explanation for the relevant UGC NET/JRF requirement."
         }
       ],
       "navigation": "Unit → Topic/Chapter → Micro-topic/Section",
       "parts_note": "Existing syllabus 'parts' may remain as navigation/grouping metadata where needed; they are not an additional learner knowledge level between chapter and section."
     }
   },
-  "default_instruction": "Use the modular website instructions supplied below as the standing content contract. Apply the component-specific instruction to the corresponding output while keeping all five components connected. The optional ADMIN TASK INSTRUCTION is an additional job-specific request; it must never override source grounding, learning architecture, expert verification, or the distinction between authentic PYQs and generated practice.",
+  "default_instruction": "Use the modular website instructions supplied below as the standing content contract. Apply the component-specific instruction to the corresponding output while keeping all five components connected. The optional ADMIN TASK INSTRUCTION is additional job-specific guidance and must never override source grounding, learning architecture, expert verification, or the distinction between authentic PYQs and generated practice.",
   "user_instruction": "",
   "target_microtopics": [],
   "updated_at": "",
   "updated_by": "",
   "modular_instructions": {
     "website_philosophy": "You are generating content for a UGC NET Psychology learning system, not a generic notes generator. Follow the site's learning philosophy: source-grounded knowledge, textbook-like conceptual progression, Understand → Retrieve → Apply → Interleave → Space → Master, and one connected learning package without redundant representations. The canonical micro-topic is the knowledge anchor. Never invent unsupported facts, PYQs, dates, trends, citations, researchers, experiments or statistics.",
-    "microtopic": "Write the canonical Micro-topic as a coherent Psychology textbook/article section that is complete for the relevant UGC NET/JRF requirement. Let the concept determine structure and length. Use definitions, mechanisms, theories, researchers, evidence, distinctions, examples, applications, limitations or misconceptions only when source-supported and genuinely useful. Avoid rigid checklists, fragmented AI-note fields, filler and unnecessary repetition.",
-    "deep_dive": "Deep Dive is optional enrichment beyond the NET requirement. It must add genuinely new, source-grounded learning value such as deeper theory, historical development, broader evidence, debates, methodological nuance, advanced applications or interdisciplinary connections. Never merely paraphrase the Micro-topic.",
+    "microtopic": "Write the canonical Micro-topic as one coherent Psychology textbook/article explanation. Do not compartmentalise it into predetermined fields or cards. Explain the central idea first and let the concept determine structure and length. Integrate definitions, mechanisms, theories, researchers, evidence, examples, distinctions, applications, limitations or misconceptions directly into the narrative at the point where they improve understanding. Use a heading or short supporting element only when it serves a clear learning purpose. Avoid rigid checklists, fragmented AI-note fields, filler and unnecessary repetition.",
+    "deep_dive": "Deep Dive is a separate optional route for genuinely deeper learning beyond the core Micro-topic explanation. It should read as a coherent extended explanation, not as a collection of enrichment cards. Add genuinely new, source-grounded learning value such as deeper theory, historical development, broader evidence, debates, methodological nuance, advanced applications or interdisciplinary connections. Never merely paraphrase the Micro-topic.",
     "active_recall": "Active Recall must test retrieval, discrimination, explanation and application of knowledge already taught. It is not another notes page. Every answer must be recoverable from the connected taught content and source evidence.",
     "revision": "Revision reinforces existing knowledge through recall-before-review, weak-point identification and spaced review. Do not introduce new facts or turn revision into another explanation.",
     "practice": "Practice MCQs are original learning/application questions that test discrimination and transfer. They must remain clearly distinct from authentic PYQs. Never fabricate PYQs, years, frequencies or exam trends.",
     "cross_references": "Cross-references are static metadata between valid canonical micro-topic IDs. Use only meaningful relationships such as prerequisite, contrast, often-confused-with, extension, application, shared theorist/researcher, related construct/method or historical progression. Never link merely because titles share words and never duplicate another topic's explanation.",
     "source_use": "Use the complete approved source library as evidence. Authentic PYQs establish exam intelligence; core textbooks establish conceptual accuracy and depth; specialized sources add domain depth; preparation material may help framing but must not override stronger evidence. Preserve important source-supported distinctions and terminology. When sources do not support a point, do not silently fill the gap with general model knowledge.",
-    "verification": "EXPERT VERIFIED components are immutable. Preserve them exactly. Non-verified components may be rewritten to align with verified components when source-supported. Never downgrade expert verification."
+    "verification": "EXPERT VERIFIED components are immutable. Preserve them exactly. Non-verified components may be rewritten to align with verified components when source-supported. Never downgrade expert verification.",
+    "presentation_style": "Use a clear, accessible Psychology-textbook writing style inspired at a high level by strong public educational psychology explainers such as Simply Psychology: begin with a plain-language orientation, explain the concept coherently, use meaningful headings only when they improve comprehension, and integrate examples, researchers, evidence, distinctions, applications or limitations where they genuinely help. Do not copy, closely paraphrase, reproduce distinctive wording, or treat Simply Psychology as the primary factual authority. Ground factual claims in the approved project source library.",
+    "presentation_style_for_deep_dive": "For Deep Dive, preserve the same readable narrative style while allowing greater conceptual depth. Use subheadings only when the deeper material has distinct conceptual turns; do not force a fixed section template."
   }
 }
