@@ -28,13 +28,23 @@ def load_instructions():
         "user_instruction":"",
         "target_microtopics":[]
     }
-    if not INSTRUCTIONS.exists(): return default
-    try:
-        value=load(INSTRUCTIONS)
-        if not isinstance(value,dict): return default
-        return {**default,**value}
-    except Exception:
-        return default
+    value=default
+    if INSTRUCTIONS.exists():
+        try:
+            loaded=load(INSTRUCTIONS)
+            if isinstance(loaded,dict):
+                value={**default,**loaded}
+        except Exception:
+            pass
+    # Admin generation requests are job-scoped workflow inputs. They must not
+    # require a permanent write to the standing instruction file.
+    env_task=os.getenv("NET_ADMIN_INSTRUCTION","").strip()
+    env_targets=[x.strip() for x in os.getenv("NET_ADMIN_TARGETS","").split(",") if x.strip()]
+    if env_task:
+        value["user_instruction"]=env_task
+    if env_targets:
+        value["target_microtopics"]=env_targets
+    return value
 
 def instruction_text(cfg):
     base=str(cfg.get("default_instruction") or "").strip()
