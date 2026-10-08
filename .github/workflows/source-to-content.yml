@@ -82,7 +82,6 @@ jobs:
                 env.write("NET_ADMIN_INSTRUCTION_EOF\n")
                 env.write("NET_ADMIN_TARGETS="+",".join(str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip())+"\n")
             PY
-            PY
           fi
           echo "generated=false" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
@@ -90,9 +89,9 @@ jobs:
             import json
             print("true" if json.loads(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")
             PY
-)"
+            )"
+            ENRICH="true"
             SYNTH="false"
-          else
             REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
             ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
             SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
