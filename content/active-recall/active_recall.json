@@ -9459,16 +9459,64 @@
   "6-4-4": {
     "id": "6-4-4",
     "title": "Stages of problem solving",
-    "prompt": "Recall Stages of problem solving: core construct",
-    "answer_hint": "core construct",
-    "source_basis": []
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Types of decision-making. What is the central idea?",
+        "answer": "Decision making involves selecting among alternatives. The uploaded material distinguishes decision making from problem solving and treats types and models of decision making as a core cognitive topic."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of decision-making.",
+        "answer": "Decision making requires alternatives and a choice."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Types of decision-making.",
+        "answer": "Choices may be made under different levels of information and uncertainty."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Types of decision-making?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Types of decision-making indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
   },
   "6-4-5": {
     "id": "6-4-5",
     "title": "Algorithms",
-    "prompt": "Recall Algorithms: core construct",
-    "answer_hint": "core construct",
-    "source_basis": []
+    "prompts": [
+      {
+        "type": "FREE RECALL",
+        "prompt": "Without looking at your notes, explain Decision-making models. What is the central idea?",
+        "answer": "Decision-making models describe how alternatives are evaluated and selected. The uploaded material treats models as a way of organizing the cognitive processes involved in choice, including the information considered and the way alternatives are compared."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Decision-making models.",
+        "answer": "Models specify how alternatives are represented and evaluated."
+      },
+      {
+        "type": "KEY IDEA",
+        "prompt": "Retrieve one high-value point about Decision-making models.",
+        "answer": "Information availability affects choice."
+      },
+      {
+        "type": "SOURCE CONNECTION",
+        "prompt": "What does the multi-source comparison add to your understanding of Decision-making models?",
+        "answer": "The NET source supplies the exam framework; the additional uploaded textbooks are used as complementary lenses to clarify definitions, distinctions and applications without replacing the source-grounded terminology."
+      },
+      {
+        "type": "APPLICATION",
+        "prompt": "If a NET item describes Decision-making models indirectly, what should you match first?",
+        "answer": "Match the stem to the central proposition, then verify the relevant term/person, mechanism, classification or distinction."
+      }
+    ]
   },
   "6-4-6": {
     "id": "6-4-6",
