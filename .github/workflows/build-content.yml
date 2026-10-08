@@ -10,6 +10,9 @@ on:
       - scripts/validate_content.py
       - scripts/supabase_sync.py
       - scripts/source_to_content.py
+      - scripts/sync_documentation.py
+      - docs/architecture/content-architecture.md
+      - content-pools/registry.json
       - .github/workflows/build-content.yml
   pull_request:
     branches: [main]
@@ -19,6 +22,9 @@ on:
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
       - scripts/source_to_content.py
+      - scripts/sync_documentation.py
+      - docs/architecture/content-architecture.md
+      - content-pools/registry.json
       - .github/workflows/build-content.yml
 
 permissions:
@@ -86,11 +92,31 @@ jobs:
           invalid=[q.get('id') for q in questions if any(v is not None for v in (q.get('unit'),q.get('topic'),q.get('micro'))) and f"{q.get('unit')}-{q.get('topic')}-{q.get('micro')}" not in canonical]
           unmapped=sum(any(q.get(k) is None for k in ('unit','topic','micro')) for q in questions)
           print(f"questions: {len(questions)} entries; unresolved mappings: {unmapped}; non-canonical mappings: {len(invalid)}")
+
+          practice=json.loads(Path('content/practice/practice_mcqs.json').read_text(encoding='utf-8'))
+          assert isinstance(practice,dict), 'Practice package pool must be a JSON object'
+          practice_extra=[k for k in practice if k not in canonical]
+          assert not practice_extra, f'practice: non-canonical micro-topic IDs: {practice_extra[:10]}'
+          malformed=[]
+          for mid,item in practice.items():
+              questions_for_topic=item.get('questions',[]) if isinstance(item,dict) else []
+              if not isinstance(questions_for_topic,list) or any(
+                  not isinstance(q,dict) or not str(q.get('question','')).strip() or
+                  not isinstance(q.get('options'),list) or len(q.get('options',[]))<2 or
+                  not str(q.get('correct_answer','')).strip() or not str(q.get('explanation','')).strip()
+                  for q in questions_for_topic
+              ):
+                  malformed.append(mid)
+          assert not malformed, f'practice: malformed packages: {malformed[:10]}'
+          print(f"practice: {len(practice)} package entries; OK")
+
           print(f"canonical micro-topics: {len(canonical)}")
           PY
+      - name: Check architecture documentation
+        run: python scripts/sync_documentation.py
       - name: Compile content automation script
         run: |
-          python -m py_compile scripts/source_to_content.py
+          python -m py_compile scripts/source_to_content.py scripts/sync_documentation.py
           python -m py_compile scripts/supabase_sync.py
       - name: Run static content validator
         run: python scripts/validate_content.py

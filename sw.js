@@ -7,7 +7,6 @@ const SHELL=[
   './practice-session.html',
   './microtopic.html',
   './deep-dive.html',
-  './deep-dive.html',
   './active-recall.html',
   './topic.html',
   './unit.html',
@@ -27,8 +26,6 @@ const SHELL=[
 ];
 const RUNTIME_DATA=new Set([
   'syllabus-index.json',
-  'home-index.json',
-  'home-learning-index.json',
   'active_recall.json',
   'quick_cards.json',
   'micro_topics.json',
@@ -82,7 +79,7 @@ self.addEventListener('fetch',event=>{
     return;
   }
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
-  const isRuntimeData=RUNTIME_DATA.has(name)||url.pathname.includes('/data/content-indexes/');
+  const isRuntimeData=RUNTIME_DATA.has(name);
   if(!isShell&&!isRuntimeData)return;
   const cacheKey=canonicalRequest(url);
   event.respondWith((async()=>{

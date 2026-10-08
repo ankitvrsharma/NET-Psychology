@@ -2,7 +2,7 @@
 """Independent component audits for connected NET Psychology learning packages."""
 from pathlib import Path
 from datetime import datetime, timezone
-import json, sys
+import json, os, sys
 
 ROOT=Path(__file__).resolve().parents[1]
 STAGING=ROOT/"content-staging/canonical-content.json"
@@ -224,7 +224,8 @@ def main():
         locked_snapshots={c:published_snapshot(mid,c) for c in locked_components}
         conflict_items=[]
         for component in sorted(locked_components):
-            proposed=snapshot_component(original.get("package",original),component)
+            proposed_source=original.get("_proposed_package") or original.get("package") or original
+            proposed=snapshot_component(proposed_source,component)
             analysis=verified_conflict(mid,component,locked_snapshots[component],proposed,ref,evidence)
             if analysis.get("conflict"):
                 conflict_items.append({
@@ -256,7 +257,8 @@ def main():
                     rg=current.get("revision_guidance") or {}
                     bad=any(not str(rg.get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))
                 else:
-                    bad=any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or [])
+                    practice_items=current.get("practice_mcqs") or []
+                    bad=(not isinstance(practice_items,list) or len(practice_items)==0 or any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in practice_items))
                 if bad:
                     deterministic_failed.add(component)
 
@@ -276,10 +278,10 @@ def main():
                 "rationale":{"type":"string"}
               },"required":["approved","score","critical_failures","issues","criteria","rationale"],"additionalProperties":False
             }
-            package_schema={"type":"object","properties":{
-              c:audit_shape(c) for c in COMPONENTS
-            },"required":nonlocked,"additionalProperties":False}
             nonlocked=[c for c in COMPONENTS if c not in locked_components]
+            package_schema={"type":"object","properties":{
+              c:audit_shape(c) for c in nonlocked
+            },"required":nonlocked,"additionalProperties":False}
             if nonlocked:
                 audit_prompt=f"""Audit ALL non-locked components of ONE CONNECTED UGC NET Psychology Content 2.0 package in ONE pass.
 The learner-facing micro-topic page uses DEEP DIVE as its primary explanation, then CHECK ACTIVE RECALL and NEXT MICRO-TOPIC. Do not require or reward Short Notes, I Understand cards, Detailed Explanation cards, or any previous micro-topic-page architecture.
@@ -317,6 +319,9 @@ AUDIT ONLY THESE NON-LOCKED COMPONENTS: {json.dumps(nonlocked)}
                 current=rewrite_package(current,ref,evidence,{c:component_audits[c] for c in failed},locked_components)
                 current["microtopic_id"]=mid
                 for component,snapshot in locked_snapshots.items():
+                    # Hard protection: a rewrite may never mutate an EXPERT VERIFIED component.
+                    if snapshot_component(current,component) != snapshot:
+                        current.setdefault("_protection_events",[]).append({"component":component,"attempt":attempt+1,"action":"RESTORED_EXPERT_VERIFIED"})
                     restore_component(current,component,snapshot)
 
         for conflict in conflict_items:
@@ -332,7 +337,10 @@ AUDIT ONLY THESE NON-LOCKED COMPONENTS: {json.dumps(nonlocked)}
                               "audit_history":[h.get(component) for h in history if component in h],
                               "package":current,"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
                               "queued_at":datetime.now(timezone.utc).isoformat()}
-        approved.append({"microtopic_id":mid,"package":current,"approved_components":sorted(passed_components)})
+        approved_package=dict(current)
+        approved_package.pop("_proposed_package",None)
+        approved_package.pop("_protection_events",None)
+        approved.append({"microtopic_id":mid,"package":approved_package,"approved_components":sorted(passed_components)})
         if os.getenv("NET_SKIP_GEMINI_INSIGHTS","").lower() not in {"1","true","yes"}:
             insight=generate_insight(mid,ref,current,evidence,conflict_items)
             insights[mid]={"microtopic_id":mid,"title":ref["title"],"priority":insight.get("priority","medium"),"insight":insight,
@@ -348,7 +356,7 @@ AUDIT ONLY THESE NON-LOCKED COMPONENTS: {json.dumps(nonlocked)}
     INSIGHTS.write_text(json.dumps({"schema_version":1,"updated_at":datetime.now(timezone.utc).isoformat(),"items":insights},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     queue["schema_version"]=2; queue["updated_at"]=datetime.now(timezone.utc).isoformat(); queue["pending"]=list(pending.values())
     QUEUE.parent.mkdir(parents=True,exist_ok=True); QUEUE.write_text(json.dumps(queue,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    (ROOT/"content-staging/ai-audit.json").write_text(json.dumps({"schema_version":3,"policy":policy,"audited_packages":len(generated),"results":report_results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (ROOT/"content-staging/ai-audit.json").write_text(json.dumps({"schema_version":4,"audit_model":"connected-package","policy":policy,"audited_packages":len(generated),"results":report_results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Component audit complete for {len(generated)} connected package(s).")
     return 0
 

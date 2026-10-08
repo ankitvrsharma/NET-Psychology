@@ -8,9 +8,9 @@ This is a focused study space for **UGC NET Psychology** learners.
 
 It is built around the current **10-unit, 118-topic, 549-micro-topic** syllabus structure so that you can study Psychology in small, manageable learning units rather than trying to revise everything at once.
 
-The goal is simple:
+The learning system is organised as one connected package:
 
-> **Understand → Recall → Practice → Schedule Revision**
+> **Understand → Expand → Retrieve → Reinforce → Apply**
 
 You do not need to figure out what to study next from a long list of chapters. Start with a micro-topic, learn it, test yourself, and schedule your next return.
 
@@ -30,21 +30,23 @@ Instead of spending a long session passively reading, work through one focused m
 
 ---
 
-### 2. Understand the concept
+### 2. Expand the same concept
 
-Each micro-topic is organised progressively:
+The canonical micro-topic package has five connected functions:
 
-- **Quick Learn** — a separate static quick-learning card on Home.
-- **Core Learning** — build the main mental model.
-- **Deep Dive** — connect, compare and extend the same concept.
+- **Understand — Micro-topic:** build the core mental model.
+- **Expand — Deep Dive:** add source-supported depth, distinctions and relationships.
+- **Retrieve — Active Recall:** reconstruct what you have already learned.
+- **Reinforce — Revision:** return at spaced intervals without introducing unrelated new facts.
+- **Apply — Practice:** use original practice questions to discriminate and apply the concept.
 
-Move deeper only when you need more detail.
+**Quick Learn** and **Daily Learning** are supplemental experiences. They do not create a second canonical version of the knowledge.
 
-This helps you avoid spending the same amount of time on every concept.
+You do not need to repeat the same information across every step; each step has a different learning function.
 
 ---
 
-### 3. Recall from memory
+### 3. Retrieve from memory
 
 After learning, **close the notes and reconstruct the idea yourself**.
 
@@ -63,7 +65,7 @@ You can also record your confidence as:
 
 ---
 
-### 4. Apply what you learned
+### 4. Apply and discriminate
 
 Psychology is not only about remembering definitions.
 
@@ -194,7 +196,7 @@ Your personal learning progress is separate from the website's syllabus and stud
 
 If you are beginning from scratch:
 
-**Home → Start Learning → Choose a micro-topic → Understand → Recall → Apply → Practice → Schedule Revision**
+**Home → Start Learning → Choose a micro-topic → Understand → Expand → Retrieve → Reinforce → Apply**
 
 If you are returning after a gap:
 
@@ -204,21 +206,23 @@ The objective is not to make you spend more time on the website.
 
 The objective is to help you **learn Psychology, retain it, and recall it when you need it for UGC NET.**
 
-## Content audit and publication architecture
+## Content architecture and audit
 
-The content system has one authoritative source: the **published static content pools in the GitHub repository**.
+The canonical taxonomy is `data/syllabus-index.json`. Connected content uses the same micro-topic ID across Micro-topic, Deep Dive, Active Recall, Revision and package Practice.
 
-The lifecycle is:
+The source-to-publication lifecycle is:
 
-**Create or rewrite → AI audit → rewrite #1 if needed → re-audit → rewrite #2 if needed → final re-audit → static content pool**
+**Approved sources → Gemini proposal → protect EXPERT VERIFIED components → connected-package audit → permitted rewrites → final audit → surgical publication**
 
-- Content that passes the final AI audit is published **surgically by canonical content ID** into the relevant static pool.
-- Content that still fails after the two rewrite attempts is withheld and placed in the owner approval queue.
-- The Admin Workbench audits the **static pools directly**. It does not audit a Supabase copy.
-- Supabase is a **derived synchronized copy** of the static pools. Synchronization upserts canonical records and removes stale database records that no longer exist in the static pools.
-- Supabase must never become the authoring, audit, or canonical content source.
+- The newer Python connected-package audit is the authoritative AI audit. The retired browser heuristic audit is no longer part of the Admin Workbench.
+- Expert-verified content is locked at prompt, generation and audit stages and can never be silently downgraded to AI reviewed.
+- A failed component is withheld and placed in the owner approval queue after the permitted rewrite attempts.
+- `content/questions/questions.json` owns authentic PYQs and the general question bank; `content/practice/practice_mcqs.json` owns original package-specific application/discrimination MCQs.
+- Supabase is a derived synchronized copy. It is never the authoring, audit or canonical content source.
 
-This keeps the learner-facing content, owner audit surface, and synchronized database aligned around one canonical version.
+The architecture contract is documented in [docs/architecture/content-architecture.md](docs/architecture/content-architecture.md), governance in [docs/governance/project-governance.md](docs/governance/project-governance.md), and operations in [docs/operations/maintenance.md](docs/operations/maintenance.md).
+
+This keeps learner content, audit state and synchronized data aligned around one canonical version.
 
 ## Accounts and saved learning state
 
