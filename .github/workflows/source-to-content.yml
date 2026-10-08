@@ -59,10 +59,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
           NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
-          NET_MAX_TOPICS_PER_RUN: "549"
+          NET_MAX_TOPICS_PER_RUN: "3"
           NET_SKIP_GEMINI_INSIGHTS: "true"
         run: |
-          REPAIR="${{ github.event.inputs.repair_existing || 'true' }}"
+          REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
           ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
           SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
           SOURCE_TRIGGERED="false"
