@@ -378,11 +378,40 @@ function learnerPage(){
   (upcoming.length?'<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Continue through the syllabus.</h2></div></div>'+upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join('')+'</section>':'')+
   '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
 }
+function renderLearningRichText(text){
+  const lines=String(text||'').replace(/\\r/g,'').split('\\n');
+  let html='',list=[];
+  const flush=()=>{if(list.length){html+='<ul>'+list.map(x=>'<li>'+x+'</li>').join('')+'</ul>';list=[];}};
+  for(const raw of lines){
+    const line=raw.trim();
+    if(!line){flush();continue}
+    if(/^###\\s+/.test(line)){flush();html+='<h3>'+esc(line.replace(/^###\\s+/,''))+'</h3>';continue}
+    if(/^##\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^##\\s+/,''))+'</h2>';continue}
+    if(/^#\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^#\\s+/,''))+'</h2>';continue}
+    if(/^[-•]\\s+/.test(line)){list.push(esc(line.replace(/^[-•]\\s+/,'')));continue}
+    flush();html+='<p>'+esc(line)+'</p>';
+  }
+  flush();
+  return html||'<p>Detailed learning content is not available yet.</p>';
+}
 function deepDive(){
-  const {u,t,m}=find(),root=$('#deepDivePage');
+  const {u,t,m,k}=find(),root=$('#deepDivePage');
   if(!root)return;
   if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
-  location.replace(microtopicHref(u,t,m));
+  document.title='Deep Dive — '+m.title+' — UGC NET Psychology';
+  const entry=CONTENT_POOLS.deepDive?.[k]||{};
+  const deep=String(entry.detailed_explanation||entry.deep_learning||entry.deep||'').trim();
+  if(!deep){root.innerHTML='<section class="panel empty"><div class="eyebrow">DEEP DIVE</div><h1>This deeper explanation is not available yet.</h1><p>Return to the core Micro-topic explanation and continue learning from there.</p><a class="btn primary" href="'+microtopicHref(u,t,m)+'">BACK TO MICRO-TOPIC →</a></section>';return}
+  root.innerHTML='<section class="micro-learn-page deep-dive-page">'+
+    '<div class="micro-breadcrumb"><a href="'+microtopicHref(u,t,m)+'">Micro-topic</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
+    '<header class="micro-learn-header"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    '<article class="micro-deep-dive-content card"><div class="micro-deep-dive-copy">'+renderLearningRichText(deep)+'</div></article>'+
+    '<section class="micro-bottom-navigation" aria-label="Deep Dive next steps">'+
+      '<a class="micro-bottom-action" href="'+microtopicHref(u,t,m)+'"><span>BACK TO EXPLANATION</span><b>←</b></a>'+
+      '<a class="micro-bottom-action primary" href="active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
+      '<a class="micro-bottom-action" href="'+microtopicHref(u,t,m)+'"><span>MICRO-TOPIC</span><b>→</b></a>'+
+    '</section>'+
+    '</section>';
 }
 function dailySessionNext(currentKey){
   try{
@@ -786,36 +815,17 @@ function micro(){
     return;
   }
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
-  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{};
-  const deep=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||m.deep||m.expert_explanation||m.content_notes||m.title).trim();
+  const explanation=String(m.expert_explanation||m.content_notes||m.study_notes||m.detailed_explanation||m.deep_learning||m.deep||m.title).trim();
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
-  const fromRevision=Q.get('from')==='revision';
-  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(fromRevision?'&from=revision':'');
-  const learningRichText=(text)=>{
-    const lines=String(text||'').replace(/\\r/g,'').split('\\n');
-    let html='',list=[];
-    const flush=()=>{if(list.length){html+='<ul>'+list.map(x=>'<li>'+x+'</li>').join('')+'</ul>';list=[];}};
-    for(const raw of lines){
-      const line=raw.trim();
-      if(!line){flush();continue}
-      if(/^###\\s+/.test(line)){flush();html+='<h3>'+esc(line.replace(/^###\\s+/,''))+'</h3>';continue}
-      if(/^##\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^##\\s+/,''))+'</h2>';continue}
-      if(/^#\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^#\\s+/,''))+'</h2>';continue}
-      if(/^[-•]\\s+/.test(line)){list.push(esc(line.replace(/^[-•]\\s+/,'')));continue}
-      flush();html+='<p>'+esc(line)+'</p>';
-    }
-    flush();
-    return html||'<p>'+esc(m.title)+'</p>';
-  };
+  const deepHref='deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(Q.get('from')==='revision'?'&from=revision':'');
   if(!previewMode)setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
-    '<article class="micro-deep-dive-content card">'+
-      '<div class="micro-deep-dive-label">DEEP DIVE</div>'+
-      '<div class="micro-deep-dive-copy">'+learningRichText(deep)+'</div>'+
-    '</article>'+
+    '<article class="micro-deep-dive-content card"><div class="micro-deep-dive-copy">'+renderLearningRichText(explanation)+'</div></article>'+
     '<section class="micro-bottom-navigation" aria-label="Micro-topic next steps">'+
+      '<a class="micro-bottom-action" href="'+deepHref+'"><span>DEEP DIVE</span><b>→</b></a>'+
       '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
       '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
