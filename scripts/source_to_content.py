@@ -482,3 +482,7 @@ def main():
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})
 
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
