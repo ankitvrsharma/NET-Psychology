@@ -38,8 +38,17 @@ def load_instructions():
 
 def instruction_text(cfg):
     base=str(cfg.get("default_instruction") or "").strip()
+    modules=cfg.get("modular_instructions") or {}
+    module_order=("website_philosophy","source_use","microtopic","deep_dive","active_recall","revision","practice","cross_references","verification")
+    sections=[]
+    for key in module_order:
+        value=str(modules.get(key) or "").strip()
+        if value:
+            sections.append(key.replace("_"," ").upper()+":\n"+value)
     user=str(cfg.get("user_instruction") or "").strip()
-    return base + ("\n\nADMIN ENRICHMENT INSTRUCTION:\n"+user if user else "")
+    modular="\n\n".join(sections)
+    task=("ADMIN TASK INSTRUCTION:\n"+user) if user else ""
+    return "\n\n".join(x for x in (base,modular,task) if x)
 
 def save(p,o):
     Path(p).parent.mkdir(parents=True,exist_ok=True)

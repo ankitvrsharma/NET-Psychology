@@ -6,7 +6,6 @@ on:
     paths:
       - "sources/inbox/**"
       - "sources/source-policy.json"
-      - "data/content-enrichment-instructions.json"
       - "scripts/source_to_content.py"
       - "scripts/ai_content_audit.py"
       - "data/ai-content-audit-policy.json"
