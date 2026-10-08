@@ -23,6 +23,9 @@ on:
       - "style.css"
       - "manifest.webmanifest"
       - "supabase/**"
+      - "scripts/**"
+      - "docs/architecture/content-architecture.md"
+      - "content-pools/registry.json"
       - ".github/workflows/validate-frontend.yml"
 
 permissions:
