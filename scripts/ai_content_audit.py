@@ -244,6 +244,7 @@ def main():
         for attempt in range(3):
             current["microtopic_id"]=mid
             component_audits={}
+            deterministic_failed=set()
             for component in COMPONENTS:
                 if component=="microtopic":
                     bad=not str(current.get("core_explanation","")).strip()
@@ -255,22 +256,59 @@ def main():
                     rg=current.get("revision_guidance") or {}
                     bad=any(not str(rg.get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))
                 else:
-                    bad=False
-                    for q in current.get("practice_mcqs") or []:
-                        if not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation"):
-                            bad=True
-            
+                    bad=any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or [])
+                if bad:
+                    deterministic_failed.add(component)
+
+            audit_criteria={
+              "microtopic":["source_fidelity","canonical_microtopic_alignment","microtopic_exam_adequacy","no_generic_ai_filler","no_unsupported_claims"],
+              "deep_dive":["source_fidelity","canonical_microtopic_alignment","deep_dive_value","no_generic_ai_filler","no_unsupported_claims"],
+              "active_recall":["source_fidelity","canonical_microtopic_alignment","active_recall_retrievability","no_generic_ai_filler","no_unsupported_claims"],
+              "revision":["source_fidelity","canonical_microtopic_alignment","revision_alignment","no_generic_ai_filler","no_unsupported_claims"],
+              "practice":["source_fidelity","canonical_microtopic_alignment","practice_mcq_quality","no_fabricated_pyq","no_generic_ai_filler","no_unsupported_claims"]
+            }
+            audit_shape=lambda component: {
+              "type":"object","properties":{
+                "approved":{"type":"boolean"},"score":{"type":"number"},
+                "critical_failures":{"type":"array","items":{"type":"string"}},
+                "issues":{"type":"array","items":{"type":"string"}},
+                "criteria":{"type":"object","properties":{k:{"type":"number"} for k in audit_criteria[component]},"required":audit_criteria[component],"additionalProperties":False},
+                "rationale":{"type":"string"}
+              },"required":["approved","score","critical_failures","issues","criteria","rationale"],"additionalProperties":False
+            }
+            package_schema={"type":"object","properties":{
+              c:audit_shape(c) for c in COMPONENTS
+            },"required":list(COMPONENTS),"additionalProperties":False}
+            nonlocked=[c for c in COMPONENTS if c not in locked_components]
+            if nonlocked:
+                audit_prompt=f"""Audit ALL non-locked components of ONE CONNECTED UGC NET Psychology Content 2.0 package in ONE pass.
+The learner-facing micro-topic page uses DEEP DIVE as its primary explanation, then CHECK ACTIVE RECALL and NEXT MICRO-TOPIC. Do not require or reward Short Notes, I Understand cards, Detailed Explanation cards, or any previous micro-topic-page architecture.
+Audit every requested component independently while using the complete package as consistency context.
+Verify claims only against supplied source evidence. Do not fill source gaps from outside knowledge. Reject contradictions, generic AI filler, unsupported claims, fabricated PYQs/researchers/experiments/statistics/citations.
+For Active Recall, every answer must be taught by the package. For Practice, generated questions must be original practice, never fabricated as PYQs. For Revision, guidance must reinforce the same knowledge rather than introduce new content.
+Approve only when useful for serious UGC NET/NET-JRF preparation.
+
+COMPONENT CRITERIA: {json.dumps(audit_criteria,ensure_ascii=False)}
+POLICY: {json.dumps(policy,ensure_ascii=False)}
+CANONICAL MICRO-TOPIC: {json.dumps(ref,ensure_ascii=False)}
+SOURCE EVIDENCE: {json.dumps(evidence,ensure_ascii=False)}
+CONNECTED PACKAGE: {json.dumps(current,ensure_ascii=False)}
+LOCKED COMPONENTS: {json.dumps(sorted(locked_components))}
+AUDIT ONLY THESE NON-LOCKED COMPONENTS: {json.dumps(nonlocked)}
+"""
+                package_audits=call_ai(audit_prompt,{"microtopic":ref,"package":current,"sources":evidence,"audit_components":nonlocked},"package_component_audit",package_schema)
+            else:
+                package_audits={}
             for component in COMPONENTS:
-                audit={"approved":True,"score":1.0,"critical_failures":[],"issues":["expert_verified_locked"],"microtopic_id":mid,"component":component,"rationale":"Owner marked this component EXPERT VERIFIED; AI rewrite and AI approval are bypassed for this component."} if (
-                    component in locked_components and not (
-                        (component=="revision" and any(not str((current.get("revision_guidance") or {}).get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))) or
-                        (component=="practice" and any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or []))
-                    )
-                ) else ({"approved":False,"score":0,"critical_failures":["deterministic component structure failed"],"issues":[],"microtopic_id":mid,"component":component} if (
-                    (component=="revision" and any(not str((current.get("revision_guidance") or {}).get(k,"")).strip() for k in ("recall_before_review","self_check","weak_point_prompt","rating_instruction"))) or
-                    (component=="practice" and any(not isinstance(q,dict) or len(q.get("options") or [])<2 or not q.get("question") or not q.get("correct_answer") or not q.get("explanation") for q in current.get("practice_mcqs") or []))
-                ) else audit_component(current,component,ref,policy,evidence))
-                audit["attempt"]=attempt+1; component_audits[component]=audit
+                if component in locked_components and component not in deterministic_failed:
+                    audit={"approved":True,"score":1.0,"critical_failures":[],"issues":["expert_verified_locked"],"microtopic_id":mid,"component":component,"rationale":"Owner marked this component EXPERT VERIFIED; AI rewrite and AI approval are bypassed for this component."}
+                elif component in deterministic_failed:
+                    audit={"approved":False,"score":0,"critical_failures":["deterministic component structure failed"],"issues":[],"microtopic_id":mid,"component":component,"rationale":"Required fields or structure are missing."}
+                else:
+                    audit=package_audits.get(component,{})
+                    audit["microtopic_id"]=mid; audit["component"]=component
+                audit["attempt"]=attempt+1
+                component_audits[component]=audit
             history.append(component_audits); final_audits=component_audits
             passed_components={c for c,a in component_audits.items() if a.get("approved") and float(a.get("score",0))>=float(policy.get("minimum_score",0.9)) and not a.get("critical_failures")}
             failed=[c for c in component_audits if c not in passed_components]
@@ -295,10 +333,11 @@ def main():
                               "package":current,"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
                               "queued_at":datetime.now(timezone.utc).isoformat()}
         approved.append({"microtopic_id":mid,"package":current,"approved_components":sorted(passed_components)})
-        insight=generate_insight(mid,ref,current,evidence,conflict_items)
-        insights[mid]={"microtopic_id":mid,"title":ref["title"],"priority":insight.get("priority","medium"),"insight":insight,
-                       "pyq_count":len(pyq_evidence(mid)),"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
-                       "generated_at":datetime.now(timezone.utc).isoformat()}
+        if os.getenv("NET_SKIP_GEMINI_INSIGHTS","").lower() not in {"1","true","yes"}:
+            insight=generate_insight(mid,ref,current,evidence,conflict_items)
+            insights[mid]={"microtopic_id":mid,"title":ref["title"],"priority":insight.get("priority","medium"),"insight":insight,
+                           "pyq_count":len(pyq_evidence(mid)),"source_evidence_refs":[{"source":x["source"],"chunk":x["chunk"]} for x in evidence],
+                           "generated_at":datetime.now(timezone.utc).isoformat()}
         report_results.append({"microtopic_id":mid,"approved_components":sorted(passed_components),
                                "queued_components":sorted(c for c in final_audits if c not in passed_components),
                                "verified_conflicts":[x["component"] for x in conflict_items]})
