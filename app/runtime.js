@@ -196,7 +196,7 @@ function progressivePrefetch(paths){
 }
 function scheduleProgressivePrefetch(page){
   const next={
-    home:['data/home-learning-index.json','data/content-indexes/questions.json'],
+    home:['data/syllabus-index.json','content/questions/questions.json'],
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
