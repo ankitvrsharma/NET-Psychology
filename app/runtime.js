@@ -196,7 +196,7 @@ function progressivePrefetch(paths){
 }
 function scheduleProgressivePrefetch(page){
   const next={
-    home:['data/home-learning-index.json','data/content-indexes/questions.json'],
+    home:['data/syllabus-index.json','content/questions/questions.json'],
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
@@ -207,7 +207,7 @@ function scheduleProgressivePrefetch(page){
 }
 const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
-  D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
+  D=await fetchJSON('data/syllabus-index.json','Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
   if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
