@@ -10,6 +10,9 @@ on:
       - "style.css"
       - "manifest.webmanifest"
       - "supabase/**"
+      - "scripts/**"
+      - "docs/architecture/content-architecture.md"
+      - "content-pools/registry.json"
       - ".github/workflows/validate-frontend.yml"
   push:
     branches: [main]
@@ -40,4 +43,6 @@ jobs:
             xargs -0 -n1 node --check
       - name: Check content automation Python syntax
         run: |
-          python -m py_compile scripts/source_to_content.py scripts/ai_content_audit.py scripts/validate_content.py
+          python -m py_compile scripts/source_to_content.py scripts/ai_content_audit.py scripts/validate_content.py scripts/sync_documentation.py
+      - name: Check architecture documentation
+        run: python scripts/sync_documentation.py
