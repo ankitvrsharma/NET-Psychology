@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "request_id": "admin-generation-retry-20261008-1630",
-  "instruction": "Rewrite ONLY the non-EXPERT-VERIFIED components of the complete connected five-component package for Research Methodology and Statistics · Research Paradigms · Quantitative research (2-4-1). Locked components: none. Components available for rewrite: Micro-topic, Deep Dive, Active Recall, Revision, Practice. Use approved source evidence and current published content. Treat the micro-topic as canonical and keep all non-locked components aligned with any locked expert-verified content. Never modify, paraphrase, shorten, expand, reformat, replace or regenerate an EXPERT VERIFIED component. Do not invent facts, researchers, experiments, statistics, dates, citations, PYQs or exam trends. Keep generated practice distinct from authentic PYQs. Add cross-references only when source-supported and syllabus-valid. Avoid generic filler and repetition.",
+  "request_id": "admin-1791476850026",
+  "instruction": "Rewrite ONLY the non-EXPERT-VERIFIED components of the complete connected five-component package for Research Methodology and Statistics · Research: Meaning, Purpose and Dimensions · Meaning of research (2-1-1). Locked components: none. Components available for rewrite: Micro-topic, Deep Dive, Active Recall, Revision, Practice. Use approved source evidence and current published content. Treat the micro-topic as canonical and keep all non-locked components aligned with any locked expert-verified content. Never modify, paraphrase, shorten, expand, reformat, replace or regenerate an EXPERT VERIFIED component. Do not invent facts, researchers, experiments, statistics, dates, citations, PYQs or exam trends. Keep generated practice distinct from authentic PYQs. Add cross-references only when source-supported and syllabus-valid. Avoid generic filler and repetition.",
   "target_microtopics": [
-    "2-4-1"
+    "2-1-1"
   ],
   "repair_existing": true,
   "synthesize_sources": false,
   "enrich_existing": true,
-  "requested_at": "2026-10-08T16:30:00Z",
+  "requested_at": "2026-10-08T16:27:30.026Z",
   "requested_by": "ankitvrsharma"
-}
+}\n
