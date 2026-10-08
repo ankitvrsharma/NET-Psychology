@@ -10,6 +10,7 @@ on:
       - "scripts/ai_content_audit.py"
       - "data/ai-content-audit-policy.json"
       - ".github/workflows/source-to-content.yml"
+      - "data/content-generation-request.json"
   workflow_dispatch:
     inputs:
       repair_existing:
@@ -71,6 +72,17 @@ jobs:
           NET_ADMIN_INSTRUCTION: ${{ github.event.inputs.admin_instruction || '' }}
           NET_ADMIN_TARGETS: ${{ github.event.inputs.target_microtopics || '' }}
         run: |
+          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
+            python - <<'PY'
+import json, os
+request=json.loads(open("data/content-generation-request.json",encoding="utf-8").read())
+with open(os.environ["GITHUB_ENV"],"a",encoding="utf-8") as env:
+    env.write("NET_ADMIN_INSTRUCTION<<NET_ADMIN_INSTRUCTION_EOF\n")
+    env.write(str(request.get("instruction","")).rstrip()+"\n")
+    env.write("NET_ADMIN_INSTRUCTION_EOF\n")
+    env.write("NET_ADMIN_TARGETS="+",".join(str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip())+"\n")
+PY
+          fi
           REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
           ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
           SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
@@ -79,7 +91,7 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ]; then
             CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")"
             if echo "$CHANGED" | grep -q "^sources/inbox/"; then SOURCE_TRIGGERED="true"; fi
-            if echo "$CHANGED" | grep -q "^data/content-enrichment-instructions.json$"; then REWRITE_EXISTING="true"; fi
+            if echo "$CHANGED" | grep -q "^data/content-generation-request.json$"; then REWRITE_EXISTING="true"; fi
           else
             if [ "$SYNTH" = "true" ]; then SOURCE_TRIGGERED="true"; fi
             if [ "$ENRICH" = "true" ]; then REWRITE_EXISTING="true"; fi
