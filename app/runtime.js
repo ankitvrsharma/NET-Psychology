@@ -71,7 +71,6 @@ const CONTENT_POOL_PATHS=Object.freeze({
   deepDive:'content/deep-dive/deep_dive.json',
   activeRecall:'content/active-recall/active_recall.json',
   questions:'content/questions/questions.json',
-  revisionGuidance:'content/revision/revision_guidance.json',
   homeLearning:'content/home/home-learning.json'
 });
 const CONTENT_INDEX_PATHS=Object.freeze({
@@ -216,8 +215,7 @@ function scheduleProgressivePrefetch(page){
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
-    microtopic:['data/content-indexes/deepDive.json','data/content-indexes/activeRecall.json'],
-    deepDive:['data/content-indexes/active-recall.json']
+    microtopic:['data/content-indexes/activeRecall.json']
   };
   progressivePrefetch(next[page]||[]);
 }
@@ -225,7 +223,7 @@ const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
   D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
-  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
+  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','active-recall','revision']);
   if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
@@ -243,7 +241,6 @@ const loadStudyData=async()=>{
     const qpool=CONTENT_POOLS.questions;
     PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
   }
-  if(page==='deep-dive')await loadPool('deepDive');
   if(page==='revision')await loadIndex('microtopics');
   if(page==='home')prepareHomeDecision();
   safeRender();
@@ -284,8 +281,7 @@ const microAvailable=(u,t,m)=>hasLearningContent(microtopicItem(u,t,m));
 function todayLearningKeys(){try{const stored=JSON.parse(localStorage.getItem('netPsychDaily3')||'null');const now=new Date(),todayKey=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return stored?.date===todayKey&&Array.isArray(stored.items)?new Set(stored.items):new Set()}catch(e){return new Set()}}
 const microtopicHref=(u,t,m,extra={})=>{if(u?.id==null||t?.id==null||m?.id==null)throw new Error('Cannot build a micro-topic route without unit, topic and micro-topic IDs');const url=new URL('microtopic.html',document.baseURI);url.searchParams.set('unit',String(u.id));url.searchParams.set('topic',String(t.id));url.searchParams.set('micro',String(m.id));Object.entries(extra).forEach(([name,value])=>{if(value!=null)url.searchParams.set(name,String(value))});return url.href};
 const routeId=name=>{const value=Q.get(name);return value!==null&&/^\d+$/.test(value)?Number(value):null};
-const microRouteId=(unitId,topicId)=>{const value=Q.get('micro');if(value===null)return null;if(/^\d+$/.test(value))return Number(value);const match=value.match(/^(\d+)-(\d+)-(\d+)$/);if(!match)return null;const legacyUnit=Number(match[1]),legacyTopic=Number(match[2]),legacyMicro=Number(match[3]);return legacyUnit===unitId&&legacyTopic===topicId?legacyMicro:null};
-const find=()=>{const unitId=routeId('unit'),topicId=routeId('topic'),microId=unitId!==null&&topicId!==null?microRouteId(unitId,topicId):null,u=unitId===null?null:units().find(x=>Number(x.id)===unitId),t=u&&topicId!==null?u.topics.find(x=>Number(x.id)===topicId):null,ref=t&&microId!==null?t.microtopics.find(x=>Number(x.id)===microId):null,k=u&&t&&ref?key(u.id,t.id,ref.id):null,m=k?microtopicItem(u,t,ref):null;return {u,t,m,k}};
+const find=()=>{const unitId=routeId('unit'),topicId=routeId('topic'),microId=routeId('micro'),u=unitId===null?null:units().find(x=>Number(x.id)===unitId),t=u&&topicId!==null?u.topics.find(x=>Number(x.id)===topicId):null,ref=t&&microId!==null?t.microtopics.find(x=>Number(x.id)===microId):null,k=u&&t&&ref?key(u.id,t.id,ref.id):null,m=k?microtopicItem(u,t,ref):null;return {u,t,m,k}};
 const section=(s,a,b)=>{s=String(s||'');const i=s.indexOf(a);if(i<0)return '';const j=b?s.indexOf(b,i+a.length):-1;return s.slice(i+a.length,j<0?s.length:j).trim()};
 const bullets=s=>String(s||'').split('\n').map(x=>x.trim().replace(/^[-•]\s*/,'')).filter(Boolean);
 const date=x=>x?new Date(x).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}):'Not scheduled';
@@ -294,7 +290,7 @@ const unitParts=u=>Array.isArray(u?.parts)?u.parts:[];
 const partForTopic=(u,t)=>unitParts(u).find(p=>Array.isArray(p.topic_ids)&&p.topic_ids.map(String).includes(String(t?.id)))||null;
 function sourceEntries(m){return (m.sources||[]).map(id=>D.source_library?.find(s=>s.id===id)).filter(Boolean)}
 function sourceNames(m){return sourceEntries(m).map(s=>s.title)}
-function isStartedProgress(p){return !!(p&&((p.status&&p.status!=='NEW')||p.started===true||p.startedAt||p.understanding||p.application||p.last||p.lastRevision))}
+function isStartedProgress(p){return !!(p&&((p.status&&p.status!=='NEW')||p.started===true||p.last||p.lastRevision))}
 function startedMicrotopics(){return syllabusItems().filter(x=>isStartedProgress(getP(x.k))).map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)}))}
 function progressSummary(){
   const items=syllabusItems(),ps=items.map(x=>getP(x.k)),total=items.length,started=ps.filter(isStartedProgress).length,learned=ps.filter(p=>p.learnedAt||p.recallCompletedAt).length,activelyRecalled=ps.filter(p=>p.recallCompletedAt).length,revision=ps.filter(p=>p.revisionCount>0||p.lastRevision).length,mastered=ps.filter(p=>p.status==='MASTERED').length,answered=ps.flatMap(p=>p.mcqHistory||[]),practice=state()._practiceHistory||[],allAnswers=answered.concat(practice),correct=allAnswers.filter(x=>x.correct).length;
@@ -381,7 +377,7 @@ function learnerPage(){
   document.title='My Learning — UGC NET Psychology';
   const root=$('#learnJourney');
   if(!root)return;
-  const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).last||getP(a.k).startedAt||0));
+  const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).last||0)-new Date(getP(a.k).last||0));
   const current=started[0]||all()[0];
   if(!current){root.innerHTML='<section class="panel empty"><h2>Your learning path is ready.</h2><p>Start with Learn when you are ready.</p><a class="btn primary" href="learn.html">START LEARNING →</a></section>';return}
   const p=getP(current.k),currentIndex=all().findIndex(x=>x.k===current.k),dailyKeys=todayLearningKeys();
@@ -395,16 +391,6 @@ function learnerPage(){
   '<article class="learning-action-card card"><div class="eyebrow">REVISION</div><h2>'+due.length+' due now</h2><p>'+(due.length?'Return to the concepts waiting for revision.':'Nothing is due right now.')+'</p><a class="btn" href="revision.html">'+(due.length?'REVISE NOW →':'VIEW REVISION →')+'</a></article></section>'+
   (upcoming.length?'<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Continue through the syllabus.</h2></div></div>'+upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join('')+'</section>':'')+
   '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
-}
-function deepDive(){
-  const {u,t,m}=find(),root=$('#deepDivePage');
-  if(!root)return;
-  if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
-  const target=microtopicHref(u,t,m);
-  if(location.pathname.endsWith('/deep-dive.html')||location.pathname.endsWith('deep-dive.html')){
-    location.replace(target);
-    return;
-  }
 }
 function dailySessionNext(currentKey){
   try{
@@ -542,7 +528,7 @@ function quickLearnItem(){
   return {...item,category:item.category||item.angle||'CONCEPT',href:item.href||microtopicHref({id:item.unit},{id:item.topic},{id:item.micro})};
 }
 function home(){
-  const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||getP(b.k).startedAt||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||getP(a.k).startedAt||0));
+  const started=startedMicrotopics().sort((a,b)=>new Date(getP(b.k).lastRevision||getP(b.k).last||0)-new Date(getP(a.k).lastRevision||getP(a.k).last||0));
   const practiceActivity=Array.isArray(state()._practiceHistory)&&state()._practiceHistory.length>0;
   const hasStarted=started.length>0||practiceActivity,hero=$('#homeHero'),resume=started[0],summary=progressSummary();
   const continueHref='learner.html';
@@ -585,7 +571,7 @@ function daily3(){
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return microtopicHref(due.u,due.t,due.m);const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return microtopicHref(started.u,started.t,started.m);return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
-function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.understandingAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
+function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.learnedAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function dailyPractice(){
   const root=$('#dailyPracticeApp');if(!root)return;
@@ -1207,7 +1193,7 @@ function progressInterpretation(s){
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'deep-dive':deepDive,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
