@@ -78,8 +78,42 @@ jobs:
           fi
           echo "Admin target IDs: $NET_ADMIN_TARGETS"
           echo "Source files in inbox: $(find sources/inbox -type f | wc -l)"
-          python -c 'from pathlib import Path; from scripts.source_to_content import extract; p=Path("sources/inbox/Research_Methodology_methods_and_technques__C_R_Kothari.pdf"); print("Kothari extracted characters:", len(extract(p)) if p.exists() else "FILE_NOT_FOUND")'
-          python -c 'import os; from pathlib import Path; from scripts.source_to_content import extract,chunks,norm,load,canonical; targets=[x.strip() for x in os.environ.get("NET_ADMIN_TARGETS","").split(",") if x.strip()]; tid=targets[0] if targets else ""; refs=canonical(load(Path("data/syllabus-index.json"))); r=refs.get(tid); p=Path("sources/inbox/Research_Methodology_methods_and_technques__C_R_Kothari.pdf"); ranked=[]; q=set(norm((r or {}).get("title","")+" "+(r or {}).get("topic_title","")+" "+(r or {}).get("unit_title","")).split()); [ranked.append((len(q & set(norm(c).split())),i)) for i,c in enumerate(chunks(extract(p)))] if r and p.exists() else None; print("Evidence ranking",tid,"(Kothari):",sorted(ranked,reverse=True)[:5] if tid else "NO_ADMIN_TARGET")'
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          json_inputs = [
+              Path("data/content-generation-request.json"),
+              Path("data/content-enrichment-instructions.json"),
+              Path("data/verification-state.json"),
+              Path("data/syllabus-index.json"),
+          ]
+          for path in json_inputs:
+              if not path.exists():
+                  continue
+              try:
+                  with path.open(encoding="utf-8") as handle:
+                      json.load(handle)
+              except json.JSONDecodeError as exc:
+                  raise SystemExit(
+                      f"Invalid JSON in {path}: line {exc.lineno}, column {exc.colno}: {exc.msg}"
+                  ) from exc
+              print(f"JSON preflight OK: {path}")
+          PY
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from scripts.source_to_content import extract
+
+          files = sorted(
+              p for p in Path("sources/inbox").rglob("*")
+              if p.is_file() and p.suffix.lower() in {".pdf", ".docx", ".pptx", ".txt", ".md"}
+          )
+          print("Source extraction summary:")
+          for path in files:
+              text = extract(path)
+              print(f"  {path}: {len(text)} extracted characters")
+          PY
           echo "generated=false" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
             REPAIR="$(python -c 'import json; print("true" if json.load(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")')"
