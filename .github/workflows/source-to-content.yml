@@ -73,16 +73,11 @@ jobs:
           NET_ADMIN_TARGETS: ${{ github.event.inputs.target_microtopics || '' }}
         run: |
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
-            python - <<'PY'
-            import json, os
-            request=json.loads(open("data/content-generation-request.json",encoding="utf-8").read())
-            with open(os.environ["GITHUB_ENV"],"a",encoding="utf-8") as env:
-                env.write("NET_ADMIN_INSTRUCTION<<NET_ADMIN_INSTRUCTION_EOF\n")
-                env.write(str(request.get("instruction","")).rstrip()+"\n")
-                env.write("NET_ADMIN_INSTRUCTION_EOF\n")
-                env.write("NET_ADMIN_TARGETS="+",".join(str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip())+"\n")
-            PY
+            python -c 'import json, os; r=json.load(open("data/content-generation-request.json",encoding="utf-8")); e=open(os.environ["GITHUB_ENV"],"a",encoding="utf-8"); e.write("NET_ADMIN_INSTRUCTION<<NET_ADMIN_INSTRUCTION_EOF\n"+str(r.get("instruction","")).rstrip()+"\nNET_ADMIN_INSTRUCTION_EOF\n"); e.write("NET_ADMIN_TARGETS="+",".join(str(x).strip() for x in r.get("target_microtopics",[]) if str(x).strip())+"\n"); e.close()'
           fi
+          echo "generated=false" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
+            REPAIR="$(python -c 'import json; print("true" if json.load(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")')
           echo "generated=false" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
             REPAIR="$(python - <<'PY'
