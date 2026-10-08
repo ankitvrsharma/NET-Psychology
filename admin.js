@@ -184,8 +184,8 @@ function rowsFor(selectedFilter='ALL'){
     if(selectedFilter==='NOT YET REVIEWED')return !rv;
     if(selectedFilter==='AI REVIEWED')return aiReview(r.x.type,String(r.x.id));
     if(selectedFilter==='EXPERT VERIFIED')return rv==='EXPERT VERIFIED';
-    if(selectedFilter==='AUDIT PASS')return a.status==='PASS';
-    if(selectedFilter==='AUDIT FAIL')return a.status==='FAIL';
+    if(selectedFilter==='CONTENT PASS')return a.status==='PASS';
+    if(selectedFilter==='CONTENT FAIL')return a.status==='FAIL';
     if(selectedFilter==='MISSING CONTENT')return r.x.type==='microtopics'&&!hasContent(microInStore(r.x.id)||{});
     if(selectedFilter==='CONTENT READY')return r.x.type==='microtopics'&&hasContent(microInStore(r.x.id)||{});
     return true;
@@ -218,7 +218,7 @@ function filterControls(){
   const units=data?.units||[];
   const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
   const topics=selectedUnit?.topics||[];
-  const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','AUDIT PASS','AUDIT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
+  const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','CONTENT PASS','CONTENT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
   return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div><div class="admin-gemini-shortcut"><span>Need source-grounded enrichment?</span><button class="btn admin-gemini-shortcut-btn" type="button" id="adminGeminiShortcut">ASK GEMINI TO REWRITE A MICRO-TOPIC</button></div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
 }
 function renderQueue(){
