@@ -62,7 +62,7 @@ jobs:
         run: python -m py_compile scripts/source_to_content.py
 
       - name: Generate staged content
-        if: ${{ github.event.inputs.synthesize_sources != 'false' || github.event.inputs.repair_existing != 'false' || github.event.inputs.enrich_existing != 'false' }}
+        id: generate_content
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
@@ -83,9 +83,20 @@ with open(os.environ["GITHUB_ENV"],"a",encoding="utf-8") as env:
     env.write("NET_ADMIN_TARGETS="+",".join(str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip())+"\n")
 PY
           fi
-          REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
-          ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
-          SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
+          echo "generated=false" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
+            REPAIR="$(python - <<'PY'
+import json
+print("true" if json.loads(open("data/content-generation-request.json",encoding="utf-8").read()).get("repair_existing") else "false")
+PY
+)"
+            ENRICH="true"
+            SYNTH="false"
+          else
+            REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
+            ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
+            SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
+          fi
           SOURCE_TRIGGERED="false"
           REWRITE_EXISTING="false"
           if [ "${{ github.event_name }}" = "push" ]; then
@@ -105,9 +116,15 @@ PY
           if [ "$SOURCE_TRIGGERED" = "true" ]; then ARGS="$ARGS --source-triggered"; fi
           if [ "$REWRITE_EXISTING" = "true" ]; then ARGS="$ARGS --rewrite-existing"; fi
           python scripts/source_to_content.py $ARGS
+          if [ -f content-staging/canonical-content.json ]; then
+            echo "generated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Generation completed without staged canonical content."
+            exit 1
+          fi
 
       - name: AI audit and two-retry rewrite gate
-        if: ${{ github.event.inputs.synthesize_sources != 'false' || github.event.inputs.enrich_existing != 'false' }}
+        if: ${{ steps.generate_content.outputs.generated == 'true' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
@@ -116,7 +133,7 @@ PY
         run: python scripts/ai_content_audit.py
 
       - name: Publish audited content directly to main
-        if: ${{ success() }}
+        if: ${{ success() && steps.generate_content.outputs.generated == 'true' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
@@ -131,7 +148,7 @@ PY
         run: python scripts/validate_content.py
 
       - name: Publish approved content
-        if: ${{ success() }}
+        if: ${{ success() && steps.generate_content.outputs.generated == 'true' }}
         env:
           NET_CONTENT_PUBLISH_TOKEN: ${{ secrets.NET_CONTENT_PUBLISH_TOKEN }}
         run: |
