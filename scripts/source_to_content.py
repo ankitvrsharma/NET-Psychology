@@ -224,6 +224,9 @@ def main():
             rel=str(p.relative_to(ROOT)).replace("\\","/")
             source_meta.append({"path":rel,"sha256":sha(p),"chunks":len(cs),"characters":len(text)})
             source_chunks += [(rel,i,c) for i,c in enumerate(cs)]
+    print(f"Source ingestion: {len(source_meta)} files, {len(source_chunks)} chunks, {sum(x["characters"] for x in source_meta)} extracted characters.")
+    if not source_chunks and (args.rewrite_existing or args.source_triggered):
+        raise SystemExit("No extractable source text found in sources/inbox; generation cannot proceed source-groundedly.")
     if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.rewrite_existing and not args.apply_staged:
         print("No supported sources found."); return 0
 
