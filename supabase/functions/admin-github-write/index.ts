@@ -113,7 +113,7 @@ const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
   let profileResult: { data: { role?: string } | null; error: unknown }
   try {
     profileResult = await withTimeout(
-      ctx.supabaseAdmin
+      ctx.supabase
         .from('profiles')
         .select('role')
         .eq('id', ctx.userClaims.sub)
