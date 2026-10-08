@@ -215,7 +215,8 @@ function scheduleProgressivePrefetch(page){
     daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
     'active-recall':['data/content-indexes/microtopics.json'],
     revision:['data/content-indexes/microtopics.json'],
-    microtopic:['data/content-indexes/activeRecall.json']
+    microtopic:['data/content-indexes/activeRecall.json'],
+    'deep-dive':['data/content-indexes/activeRecall.json']
   };
   progressivePrefetch(next[page]||[]);
 }
@@ -223,7 +224,7 @@ const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
   D=await fetchJSON(page==='home'?'data/home-learning-index.json':'data/syllabus-index.json',page==='home'?'Home learning index':'Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
-  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','active-recall','revision']);
+  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
   if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
@@ -233,6 +234,7 @@ const loadStudyData=async()=>{
   }
   if(page==='daily-practice')await prepareDailyPracticeQuestions();
   if(page==='practice-session'){if(Q.get('previewQuestion')){await loadPool('questions');const qpool=CONTENT_POOLS.questions;PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];}else await preparePracticeSessionQuestions();}
+  if(page==='deep-dive')await loadPool('deepDive');
   if(page==='microtopic'){
     try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
   }
@@ -391,6 +393,12 @@ function learnerPage(){
   '<article class="learning-action-card card"><div class="eyebrow">REVISION</div><h2>'+due.length+' due now</h2><p>'+(due.length?'Return to the concepts waiting for revision.':'Nothing is due right now.')+'</p><a class="btn" href="revision.html">'+(due.length?'REVISE NOW →':'VIEW REVISION →')+'</a></article></section>'+
   (upcoming.length?'<section class="learn-up-next"><div class="section-head"><div><div class="eyebrow">UP NEXT</div><h2>Continue through the syllabus.</h2></div></div>'+upcoming.map(x=>'<a class="learn-up-next-item" href="microtopic.html?unit='+encodeURIComponent(x.u.id)+'&topic='+encodeURIComponent(x.t.id)+'&micro='+encodeURIComponent(x.m.id)+'"><span><small>UNIT '+esc(x.u.id)+' · '+esc(x.t.title)+'</small><strong>'+esc(x.m.title)+'</strong></span><b>→</b></a>').join('')+'</section>':'')+
   '<section class="learn-up-next compact-section"><div class="section-head"><div><div class="eyebrow">OTHER LEARNING TOOLS</div><h2>Choose when you need them.</h2></div></div><div class="hero-actions"><a class="btn" href="practice.html">PRACTICE</a><a class="btn" href="revision.html">REVISION</a><a class="btn" href="progress.html">PROGRESS</a></div></section>';
+}
+function deepDive(){
+  const {u,t,m}=find(),root=$('#deepDivePage');
+  if(!root)return;
+  if(!u||!t||!m){root.innerHTML='<section class="panel empty"><h2>Micro-topic not found.</h2><p>Return to Learn and choose a concept.</p></section>';return}
+  location.replace(microtopicHref(u,t,m));
 }
 function dailySessionNext(currentKey){
   try{
@@ -1193,7 +1201,7 @@ function progressInterpretation(s){
 function render(){
   const page=document.body?.dataset?.page||'';
   document.querySelectorAll('.nav-link[data-nav]').forEach(link=>link.classList.toggle('active',link.dataset.nav===(page==='practice-session'?'practice':page)));
-  const routes={home,learn:learnPage,learner:learnerPage,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
+  const routes={home,learn:learnPage,learner:learnerPage,'deep-dive':deepDive,'active-recall':activeRecall,start:startPage,daily3,'daily-practice':dailyPractice,unit:unitPage,topic:topicPage,microtopic:micro,practice, 'practice-session':practice,revision,progress};
   const fn=routes[page];
   if(typeof fn==='function') fn();
   else console.warn('No renderer registered for page:',page);
