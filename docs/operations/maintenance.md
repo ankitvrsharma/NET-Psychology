@@ -4,15 +4,14 @@ This repository is a static learner application for UGC NET Psychology. Learner 
 
 ## 1. What must remain stable
 
-The learner architecture is intentionally built around distinct decisions:
+The learner architecture is intentionally built around one connected package:
 
-- **Micro-topic:** canonical understanding.
-- **Deep Dive:** deeper explanation of the same micro-topic.
-- **Active Recall:** retrieval of knowledge already taught.
-- **Revision:** spaced reinforcement of that knowledge.
-- **Practice:** topic-wise application and discrimination.
-- **Quick Learn:** a separate static quick-learning card system.
-- **Daily Learning:** three concepts plus the daily 10-question test.
+- **Understand — Micro-topic:** canonical knowledge.
+- **Expand — Deep Dive:** source-supported depth and distinctions.
+- **Retrieve — Active Recall:** retrieval of knowledge already taught.
+- **Reinforce — Revision:** spaced strengthening of the same knowledge.
+- **Apply — Practice:** original topic-specific application/discrimination.
+- **Quick Learn / Daily Learning:** supplemental learner experiences.
 - **Progress:** Started → Learned → Actively Recalled → Revision → Mastered.
 
 Do not merge these into one generic content object or silently remove one of these learning paths.
@@ -24,10 +23,10 @@ Do not merge these into one generic content object or silently remove one of the
 - `content/deep-dive/deep_dive.json` — Deep Dive explanations.
 - `content/active-recall/active_recall.json` — retrieval prompts and answers.
 - `content/revision/revision_guidance.json` — revision guidance.
-- `content/practice/practice_mcqs.json` — topic-wise generated practice packages.
-- `content/questions/questions.json` — MCQs/PYQs used by the general Practice system.
-- `content/quick-learn/quick_cards.json` — static Quick Learn cards rendered by Home.
-- `content/home/home-learning.json` — Home learning configuration.
+- `content/practice/practice_mcqs.json` — package-specific original application/discrimination MCQs.
+- `content/questions/questions.json` — authentic PYQs and the general question bank.
+- `content/quick-learn/quick_cards.json` — supplemental Quick Learn cards.
+- `content/home/home-learning.json` — supplemental Home learning configuration.
 
 **Important:** Home must not manufacture Quick Learn knowledge from micro-topics. Quick Learn content comes from its own JSON pool.
 
@@ -39,7 +38,7 @@ Daily Learning intentionally provides:
 1. three concepts selected for the learner;
 2. a separate 10-question daily test.
 
-These are supplemental learning paths, not replacements for the canonical micro-topic → recall → revision cycle.
+These are supplemental learning paths, not replacements for the canonical five-function package.
 
 ## 4. Source intake
 
@@ -53,15 +52,15 @@ The learner browser never calls Gemini and never performs content repair.
 
 A source-backed rewrite is always generated as one connected package:
 
-**Micro-topic → Deep Dive → Active Recall → Revision → Practice**
+**Understand → Expand → Retrieve → Reinforce → Apply**
 
-The AI may rewrite the complete package when one component fails. Each component is then audited independently.
+The newer Python connected-package audit is the authoritative AI audit. The retired browser heuristic audit is not part of the Admin Workbench.
 
-- Passing component → static learner pool.
-- Failed component after the permitted rewrites → owner approval queue.
-- Owner-approved component → static learner pool with **EXPERT VERIFIED** metadata.
-- AI-audited/passing component → **VERIFIED** metadata.
-- No verification metadata → no learner-facing tag.
+- Expert-verified components are locked before generation and restored/checked after every rewrite.
+- A component may be rewritten only when it is not **EXPERT VERIFIED**.
+- Passing components are published surgically by canonical micro-topic ID.
+- Failed components remain in the owner approval queue after the permitted rewrite attempts.
+- `AI REVIEWED` and `EXPERT VERIFIED` are review states; they are never learner-facing learning content.
 
 Learners never see internal audit scores, failure reasons or approval state.
 
@@ -133,7 +132,15 @@ For normal product changes:
 
 Never claim a live browser/device test unless one was actually performed.
 
-## 13. Versioning
+## 13. Documentation synchronization
+
+The architecture contract is generated from `content-pools/registry.json` into `docs/architecture/content-architecture.md`.
+
+Run `python scripts/sync_documentation.py --write` after an architecture-contract change. CI runs the same generator in check mode, and the source publication workflow can regenerate the document before publishing.
+
+Keep `data/syllabus-index.json` as the only canonical taxonomy/index source. Do not recreate deleted parallel content indexes.
+
+## 14. Versioning
 
 Use SemVer only:
 
@@ -143,7 +150,7 @@ Use SemVer only:
 
 Keep filenames stable. Cache/content versions must move deliberately with the release.
 
-## 14. Troubleshooting
+## 15. Troubleshooting
 
 ### A page says it cannot be rendered
 Check:
@@ -165,7 +172,7 @@ Check `data/verification-state.json`. Do not load internal audit state into the 
 ### Old content appears offline
 Increment the PWA shell cache version and remove obsolete assets from `sw.js`.
 
-## 15. What not to do
+## 16. What not to do
 
 - Do not reintroduce runtime content generation.
 - Do not create a second canonical explanation for the same micro-topic.
