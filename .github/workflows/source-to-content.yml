@@ -91,6 +91,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
           NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
+          NET_SKIP_GEMINI_INSIGHTS: "true"
         run: python scripts/ai_content_audit.py
 
       - name: Publish audited content directly to main
