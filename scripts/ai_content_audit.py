@@ -278,7 +278,7 @@ def main():
             }
             package_schema={"type":"object","properties":{
               c:audit_shape(c) for c in COMPONENTS
-            },"required":list(COMPONENTS),"additionalProperties":False}
+            },"required":nonlocked,"additionalProperties":False}
             nonlocked=[c for c in COMPONENTS if c not in locked_components]
             if nonlocked:
                 audit_prompt=f"""Audit ALL non-locked components of ONE CONNECTED UGC NET Psychology Content 2.0 package in ONE pass.
