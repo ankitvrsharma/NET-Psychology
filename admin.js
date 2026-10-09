@@ -3,7 +3,7 @@
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 let verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
-let filterUnit='ALL',filterTopic='ALL',searchText='',healthFilter='ALL';
+let filterUnit='ALL',filterTopic='ALL',searchText='',filterType='ALL',filterReview='ALL',filterHealth='ALL',filterVisibility='VISIBLE';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
 try{hiddenForMe=new Set(JSON.parse(localStorage.getItem(ADMIN_HIDDEN_KEY)||'[]'))}catch(e){}
@@ -178,24 +178,23 @@ function rowsFor(selectedFilter='ALL'){
   const qs=questions.map(q=>({type:'questions',id:String(q.id)}));
   const rows=[...micros,...qs].map(x=>{const a=audit(x.type,x.id),reviewStatus=review(x.type,x.id),meta=rowMeta(x);return{x,a,reviewStatus,unitId:meta.unitId,topicId:meta.topicId}});
   return rows.filter(r=>{
-    const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus;
-    if(selectedFilter==='REMOVED FROM MY LIST')return h;
-    if(h)return false;
+    const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus,q=questionInStore(r.x.id),qtype=String(q?.type||'').toLowerCase();
+    if(filterVisibility==='REMOVED FROM MY LIST'?!h:h)return false;
     if(filterUnit!=='ALL'&&(r.unitId==null||String(r.unitId)!==String(filterUnit)))return false;
     if(filterTopic!=='ALL'&&(r.topicId==null||String(r.topicId)!==String(filterTopic)))return false;
-    if(searchText){const q=questionInStore(r.x.id),haystack=[r.x.id,titleFor(r.x.type,r.x.id),q?.question,q?.q].join(' ').toLowerCase();if(!haystack.includes(searchText.toLowerCase().trim()))return false;}
-    if(selectedFilter==='MICRO-TOPICS')return r.x.type==='microtopics';
-    if(selectedFilter==='QUESTIONS')return r.x.type==='questions';
-    if(selectedFilter==='PYQ')return r.x.type==='questions'&&String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
-    if(selectedFilter==='MCQ')return r.x.type==='questions'&&!String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
-    if(selectedFilter==='NEED REVIEW')return a.status!=='PASS'&&!rv;
-    if(selectedFilter==='NOT YET REVIEWED')return !rv;
-    if(selectedFilter==='AI REVIEWED')return aiReview(r.x.type,String(r.x.id));
-    if(selectedFilter==='EXPERT VERIFIED')return rv==='EXPERT VERIFIED';
-    if(selectedFilter==='CONTENT PASS')return a.status==='PASS';
-    if(selectedFilter==='CONTENT FAIL')return a.status==='FAIL';
-    if(selectedFilter==='MISSING CONTENT')return r.x.type==='microtopics'&&!hasContent(microInStore(r.x.id)||{});
-    if(selectedFilter==='CONTENT READY')return r.x.type==='microtopics'&&hasContent(microInStore(r.x.id)||{});
+    if(searchText){const haystack=[r.x.id,titleFor(r.x.type,r.x.id),q?.question,q?.q].join(' ').toLowerCase();if(!haystack.includes(searchText.toLowerCase().trim()))return false;}
+    if(filterType==='MICRO-TOPICS'&&r.x.type!=='microtopics')return false;
+    if(filterType==='QUESTIONS'&&r.x.type!=='questions')return false;
+    if(filterType==='PYQ'&&(r.x.type!=='questions'||!qtype.includes('pyq')))return false;
+    if(filterType==='MCQ'&&(r.x.type!=='questions'||qtype.includes('pyq')))return false;
+    if(filterReview==='NEED REVIEW'&&(a.status==='PASS'||rv))return false;
+    if(filterReview==='NOT YET REVIEWED'&&rv)return false;
+    if(filterReview==='AI REVIEWED'&&!aiReview(r.x.type,String(r.x.id)))return false;
+    if(filterReview==='EXPERT VERIFIED'&&rv!=='EXPERT VERIFIED')return false;
+    if(filterHealth==='CONTENT PASS'&&a.status!=='PASS')return false;
+    if(filterHealth==='CONTENT FAIL'&&a.status!=='FAIL')return false;
+    if(filterHealth==='MISSING CONTENT'&&(r.x.type!=='microtopics'||hasContent(microInStore(r.x.id)||{})))return false;
+    if(filterHealth==='CONTENT READY'&&(r.x.type!=='microtopics'||!hasContent(microInStore(r.x.id)||{})))return false;
     return true;
   }).sort((a,b)=>a.a.score-b.a.score);
 }
@@ -208,24 +207,24 @@ function filterControls(){
   const units=data?.units||[];
   const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
   const topics=selectedUnit?.topics||[];
-  const groups=[
-    {label:'CONTENT TYPE',items:['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ']},
-    {label:'REVIEW STATUS',items:['NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED']},
-    {label:'CONTENT HEALTH',items:['CONTENT PASS','CONTENT FAIL','MISSING CONTENT','CONTENT READY']},
-    {label:'VISIBILITY',items:['REMOVED FROM MY LIST']}
-  ];
-  return '<section class="admin-filter-groups card"><div class="admin-filter-top"><div><span class="admin-filter-label">FIND CONTENT</span><label class="admin-search"><span class="sr-only">Search content</span><input id="adminSearch" type="search" value="'+esc(searchText)+'" placeholder="Search title, question, or content ID…"></label></div><button class="btn admin-reset-filters" id="resetAdminFilters" type="button">RESET FILTERS</button></div>'+
-    groups.map(g=>'<div class="admin-filter-group"><span class="admin-filter-label">'+g.label+'</span><div class="admin-filters">'+g.items.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div>').join('')+
-    '<details class="admin-advanced-filters"><summary>Unit and topic filters</summary><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></details></section>';
+  const select=(id,label,value,options)=>'<label class="admin-control"><span>'+label+'</span><select id="'+id+'">'+options.map(o=>'<option value="'+esc(o.value)+'" '+(value===o.value?'selected':'')+'>'+esc(o.label)+'</option>').join('')+'</select></label>';
+  const types=[{value:'ALL',label:'All content types'},{value:'MICRO-TOPICS',label:'Micro-topics'},{value:'QUESTIONS',label:'All questions'},{value:'PYQ',label:'Previous-year questions'},{value:'MCQ',label:'Practice MCQs'}];
+  const reviews=[{value:'ALL',label:'All review statuses'},{value:'NEED REVIEW',label:'Needs owner review'},{value:'NOT YET REVIEWED',label:'Not yet reviewed'},{value:'AI REVIEWED',label:'AI reviewed'},{value:'EXPERT VERIFIED',label:'Expert verified'}];
+  const health=[{value:'ALL',label:'All content health'},{value:'CONTENT PASS',label:'Content pass'},{value:'CONTENT FAIL',label:'Content fail'},{value:'MISSING CONTENT',label:'Missing content'},{value:'CONTENT READY',label:'Content ready'}];
+  const visibility=[{value:'VISIBLE',label:'Visible to learners'},{value:'REMOVED FROM MY LIST',label:'Removed from my list'}];
+  return '<section class="admin-filter-groups card"><div class="admin-filter-top"><div><span class="admin-filter-label">CONTENT LIBRARY</span><h2 class="admin-filter-title">Find and review content</h2><p class="admin-filter-subtitle">Search first, then narrow the list using filters.</p></div><button class="btn admin-reset-filters" id="resetAdminFilters" type="button">Reset filters</button></div>'+
+    '<label class="admin-search"><span class="admin-filter-label">SEARCH</span><input id="adminSearch" type="search" value="'+esc(searchText)+'" placeholder="Search by title, question, or content ID…"></label>'+
+    '<div class="admin-filter-grid">'+select('adminTypeFilter','CONTENT TYPE',filterType,types)+select('adminReviewFilter','REVIEW STATUS',filterReview,reviews)+select('adminHealthFilter','CONTENT HEALTH',filterHealth,health)+select('adminVisibilityFilter','VISIBILITY',filterVisibility,visibility)+'</div>'+
+    '<details class="admin-advanced-filters"><summary>Filter by syllabus unit and topic</summary><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></details></section>';
 }
 function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size;
-  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+'<p class="admin-result-count" aria-live="polite">Showing <b>'+visible.length+'</b> matching items</p>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the search or filters to see another content set.</p></section>');
-  root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
+  const visible=rowsFor('ALL'),need=visible.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=visible.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size;
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+questions.length+'</strong><span>questions</span></div><div><strong>'+visible.filter(r=>r.x.type==='microtopics').length+'</strong><span>micro-topics in view</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>hidden by you</span></div></section>'+filterControls()+'<p class="admin-result-count" aria-live="polite">Showing <b>'+visible.length+'</b> matching items</p>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No matching content</h2><p>Try adjusting your search or clearing one or more filters.</p></section>');
   const search=root.querySelector('#adminSearch');if(search){search.oninput=()=>{const pos=search.selectionStart;searchText=search.value;renderQueue();const next=root.querySelector('#adminSearch');next?.focus();next?.setSelectionRange(pos,pos)}}
-  const reset=root.querySelector('#resetAdminFilters');if(reset)reset.onclick=()=>{filter='ALL';filterUnit='ALL';filterTopic='ALL';searchText='';renderQueue()};
-  const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
-  const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
+  const bind=(id,fn)=>{const el=root.querySelector('#'+id);if(el)el.onchange=()=>{fn(el.value);renderQueue()}};
+  bind('adminTypeFilter',v=>filterType=v);bind('adminReviewFilter',v=>filterReview=v);bind('adminHealthFilter',v=>filterHealth=v);bind('adminVisibilityFilter',v=>filterVisibility=v);
+  const reset=root.querySelector('#resetAdminFilters');if(reset)reset.onclick=()=>{filter='ALL';filterType='ALL';filterReview='ALL';filterHealth='ALL';filterVisibility='VISIBLE';filterUnit='ALL';filterTopic='ALL';searchText='';renderQueue()};
+  bind('adminUnitFilter',v=>{filterUnit=v;filterTopic='ALL'});bind('adminTopicFilter',v=>filterTopic=v);
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
   root.querySelectorAll('.admin-component-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.componentReview,b.dataset.id,b.dataset.reviewValue));
   root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
