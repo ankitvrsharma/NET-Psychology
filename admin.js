@@ -47,7 +47,8 @@ async function saveInstructions(){
   const targets=(document.querySelector('#enrichmentTargets')?.value||'').split(',').map(x=>x.trim()).filter(Boolean);
   const note=document.querySelector('#enrichmentStatus');
   if(mode==='unit_rewrite'&&!targetUnitId){if(note)note.textContent='Choose a unit for whole-unit enrichment.';return}
-  if(mode!=='unit_rewrite'&&mode!=='quick_cards_rewrite'&&mode!=='mcq_improvement'&&mode!=='pyq_improvement'&&!targets.length&&!userInstruction){if(note)note.textContent='Choose target micro-topics or describe the content task.';return}
+  if(mode==='package_rewrite'&&!targets.length){if(note)note.textContent='Choose one or more micro-topic IDs, or use whole-unit enrichment.';return}
+  if(['quick_cards_rewrite','mcq_improvement','pyq_improvement'].includes(mode)&&!targets.length&&!targetUnitId){if(note)note.textContent='Choose a unit scope or enter specific record IDs.';return}
   if(!window.NETPSY_AUTH?.githubWrite){
     if(note)note.textContent='The secure generation bridge is unavailable. Please sign in again.';
     return
