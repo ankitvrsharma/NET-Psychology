@@ -116,6 +116,11 @@ def _gemini_schema(schema):
     if isinstance(schema, dict):
         out={}
         for k,v in schema.items():
+            # Gemini's Schema REST type does not accept every JSON Schema keyword.
+            # In particular, additionalProperties=false causes HTTP 400 responses
+            # on structured-output requests; enforce shape locally after parsing.
+            if k=="additionalProperties":
+                continue
             if k=="type" and isinstance(v,str):
                 out[k]=v.upper()
             elif k=="properties" and isinstance(v,dict):
@@ -185,8 +190,16 @@ def call_ai(instructions,payload,name,schema):
                 result=json.loads(response.read().decode("utf-8"))
             text=result["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text)
+        except urllib.error.HTTPError as exc:
+            # Keep the provider's response detail: "HTTP Error 400" alone
+            # hides invalid schema fields and other actionable request errors.
+            try:
+                detail=exc.read().decode("utf-8","replace").strip()
+            except Exception:
+                detail=""
+            errors.append(f"{model}: HTTP {exc.code}: {detail or exc.reason}")
         except Exception as exc:
-            errors.append(f"{model}: {exc}")
+            errors.append(f"{model}: {type(exc).__name__}: {exc}")
     raise RuntimeError("All configured Gemini models failed: "+" | ".join(errors))
 
 def canonical(s):
