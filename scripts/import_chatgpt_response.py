@@ -150,9 +150,12 @@ def main():
     if operation in PACKAGE_OPS:
         approved["packages"],errors=validate_package_response(raw,request,refs,verification)
         if operation=="unit_rewrite":
-            expected={mid for mid,ref in refs.items() if str(ref["unit"])==str(request.get("target_unit_id",""))}
+            unit_id=str(request.get("target_unit_id",""))
+            requested_ids={str(x) for x in request.get("target_microtopics",[]) if str(x)}
+            expected={mid for mid,ref in refs.items() if str(ref["unit"])==unit_id}
+            if requested_ids: expected &= requested_ids
             actual={g.get("microtopic_id") for g in approved["packages"]}
-            if expected and actual!=expected: errors.append("whole-unit rewrite must return every canonical micro-topic in the selected unit; missing: "+", ".join(sorted(expected-actual)))
+            if expected and actual!=expected: errors.append("whole-unit rewrite must return every requested canonical micro-topic in the selected unit; missing: "+", ".join(sorted(expected-actual)))
     elif operation in {"quick_cards_rewrite","mcq_improvement","pyq_improvement"}:
         result,errors=validate_record_updates(raw,operation,request)
         if operation=="quick_cards_rewrite": approved["quick_cards"]=result
