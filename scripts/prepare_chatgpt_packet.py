@@ -3,6 +3,7 @@
 from pathlib import Path
 import json
 import sys
+import argparse
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
@@ -37,7 +38,7 @@ def published(ref):
     }
 
 def select_evidence(ref,chunks):
-    words=set(stc.norm(" ".join(ref.get(k,"") for k in ("title","topic_title","unit_title")).split()))
+    words=set(stc.norm(" ".join(ref.get(k,"") for k in ("title","topic_title","unit_title"))).split())
     ranked=[]
     per_source={}
     for source,index,text in chunks:
@@ -61,6 +62,9 @@ def make_markdown(packet):
     return "# ChatGPT Content Generation Packet\n\n"+prompt+"\n\n---\n\n## Packet metadata\n\n- Request ID: "+packet["request"].get("request_id","")+"\n- Target micro-topics: "+", ".join(t["canonical"]["id"] for t in packet["topics"])+"\n- Source excerpts are limited evidence selections; consult the complete source files when available.\n"
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--source-triggered',action='store_true',help='Choose topics by relevance to the approved source library rather than admin targets.')
+    args=parser.parse_args()
     request=stc.load(REQUEST) if REQUEST.exists() else {}
     syllabus=stc.load(stc.SYLLABUS)
     refs=stc.canonical(syllabus)
@@ -68,13 +72,20 @@ def main():
     instructions=stc.load(INSTRUCTIONS)
     policy=stc.load(POLICY)
     verification=stc.load(VERIFICATION) if VERIFICATION.exists() else {"items":{}}
-    target_ids=[str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()]
-    if not target_ids or "__ALL__" in target_ids:
-        target_ids=list(refs)
-    unknown=sorted(set(target_ids)-set(refs))
-    if unknown:
-        raise SystemExit("Unknown target micro-topic IDs: "+", ".join(unknown))
-    target_ids=target_ids[:MAX_TOPICS]
+    requested_ids=[str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()]
+    if args.source_triggered or not requested_ids or "__ALL__" in requested_ids:
+        ranked=[]
+        for mid,ref in refs.items():
+            excerpts=select_evidence(ref,source_chunks)
+            score=sum(x["relevance_score"] for x in excerpts[:3])
+            if score:
+                ranked.append((score,mid))
+        target_ids=[mid for _,mid in sorted(ranked,reverse=True)[:MAX_TOPICS]]
+    else:
+        unknown=sorted(set(requested_ids)-set(refs))
+        if unknown:
+            raise SystemExit("Unknown target micro-topic IDs: "+", ".join(unknown))
+        target_ids=requested_ids[:MAX_TOPICS]
     topics=[]
     for mid in target_ids:
         ref=refs[mid]
