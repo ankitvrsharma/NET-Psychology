@@ -20,6 +20,26 @@ for (const match of routeMap.matchAll(/(?:^|,)\s*(?:'([^']+)'|([A-Za-z][\w-]*))\
 }
 
 const htmlFiles = fs.readdirSync(root).filter(name => name.endsWith('.html'));
+const ignoredProtocols = /^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i;
+function assertLocalTargetExists(value, fromFile) {
+  if (!value || ignoredProtocols.test(value)) return;
+  const clean = value.split(/[?#]/, 1)[0];
+  if (!clean) return;
+  let decoded = clean;
+  try { decoded = decodeURIComponent(clean); } catch {}
+  const relative = decoded.startsWith('/')
+    ? decoded.replace(/^\\/+/, '').replace(/^NET-Psychology\\//, '')
+    : path.join(path.dirname(fromFile), decoded);
+  const target = path.resolve(root, relative);
+  assert.ok(target === root || target.startsWith(root + path.sep), fromFile + ' contains a local path outside the site: ' + value);
+  assert.ok(fs.existsSync(target), fromFile + ' points to a missing local file: ' + value);
+}
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(path.join(root, file), 'utf8');
+  for (const match of html.matchAll(/\\b(?:href|src)=["']([^"']+)["']/gi)) {
+    assertLocalTargetExists(match[1].trim(), file);
+  }
+}
 const appPages = [];
 for (const file of htmlFiles) {
   const html = fs.readFileSync(path.join(root, file), 'utf8');
