@@ -3,7 +3,7 @@
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 let verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
-let filterUnit='ALL',filterTopic='ALL';
+let filterUnit='ALL',filterTopic='ALL',searchText='',healthFilter='ALL';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
 try{hiddenForMe=new Set(JSON.parse(localStorage.getItem(ADMIN_HIDDEN_KEY)||'[]'))}catch(e){}
@@ -181,8 +181,9 @@ function rowsFor(selectedFilter='ALL'){
     const h=isHiddenForMe(r.x.type,r.x.id),a=r.a,rv=r.reviewStatus;
     if(selectedFilter==='REMOVED FROM MY LIST')return h;
     if(h)return false;
-    if(filterUnit!=='ALL'&&String(r.unitId)!==String(filterUnit))return false;
-    if(filterTopic!=='ALL'&&String(r.topicId)!==String(filterTopic))return false;
+    if(filterUnit!=='ALL'&&(r.unitId==null||String(r.unitId)!==String(filterUnit)))return false;
+    if(filterTopic!=='ALL'&&(r.topicId==null||String(r.topicId)!==String(filterTopic)))return false;
+    if(searchText){const q=questionInStore(r.x.id),haystack=[r.x.id,titleFor(r.x.type,r.x.id),q?.question,q?.q].join(' ').toLowerCase();if(!haystack.includes(searchText.toLowerCase().trim()))return false;}
     if(selectedFilter==='MICRO-TOPICS')return r.x.type==='microtopics';
     if(selectedFilter==='QUESTIONS')return r.x.type==='questions';
     if(selectedFilter==='PYQ')return r.x.type==='questions'&&String(questionInStore(r.x.id)?.type||'').toLowerCase().includes('pyq');
@@ -207,13 +208,22 @@ function filterControls(){
   const units=data?.units||[];
   const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
   const topics=selectedUnit?.topics||[];
-  const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','CONTENT PASS','CONTENT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
-  return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
+  const groups=[
+    {label:'CONTENT TYPE',items:['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ']},
+    {label:'REVIEW STATUS',items:['NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED']},
+    {label:'CONTENT HEALTH',items:['CONTENT PASS','CONTENT FAIL','MISSING CONTENT','CONTENT READY']},
+    {label:'VISIBILITY',items:['REMOVED FROM MY LIST']}
+  ];
+  return '<section class="admin-filter-groups card"><div class="admin-filter-top"><div><span class="admin-filter-label">FIND CONTENT</span><label class="admin-search"><span class="sr-only">Search content</span><input id="adminSearch" type="search" value="'+esc(searchText)+'" placeholder="Search title, question, or content ID…"></label></div><button class="btn admin-reset-filters" id="resetAdminFilters" type="button">RESET FILTERS</button></div>'+
+    groups.map(g=>'<div class="admin-filter-group"><span class="admin-filter-label">'+g.label+'</span><div class="admin-filters">'+g.items.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div>').join('')+
+    '<details class="admin-advanced-filters"><summary>Unit and topic filters</summary><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></details></section>';
 }
 function renderQueue(){
   const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size;
-  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+'<p class="admin-result-count" aria-live="polite">Showing <b>'+visible.length+'</b> matching items</p>'+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the search or filters to see another content set.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
+  const search=root.querySelector('#adminSearch');if(search){search.oninput=()=>{const pos=search.selectionStart;searchText=search.value;renderQueue();const next=root.querySelector('#adminSearch');next?.focus();next?.setSelectionRange(pos,pos)}}
+  const reset=root.querySelector('#resetAdminFilters');if(reset)reset.onclick=()=>{filter='ALL';filterUnit='ALL';filterTopic='ALL';searchText='';renderQueue()};
   const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
   const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
