@@ -4,9 +4,13 @@ from pathlib import Path
 import argparse, hashlib, json, os, re, subprocess, sys
 from copy import deepcopy
 from datetime import datetime, timezone
+import tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 INBOX=ROOT/"sources/inbox"
+EXTRACTION_CACHE=ROOT/".cache/source-extraction"
+EXTRACTOR_VERSION="3"
+SUPPORTED_SOURCE_SUFFIXES={".pdf",".docx",".pptx",".txt",".md"}
 SYLLABUS=ROOT/"data/syllabus-index.json"
 QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
@@ -70,26 +74,68 @@ def sha(p):
         for b in iter(lambda: f.read(1024 * 1024), b""): h.update(b)
     return h.hexdigest()
 
+def _ocr_pdf_page(path,page_number):
+    """OCR one low-text PDF page when Poppler and Tesseract are available."""
+    try:
+        with tempfile.TemporaryDirectory(prefix="net-psychology-ocr-") as tmp:
+            prefix=Path(tmp)/"page"
+            subprocess.run(
+                ["pdftoppm","-f",str(page_number),"-l",str(page_number),"-r","180","-png","-singlefile",str(path),str(prefix)],
+                capture_output=True,text=True,check=True,timeout=120
+            )
+            image=prefix.with_suffix(".png")
+            if not image.exists():
+                return ""
+            result=subprocess.run(
+                ["tesseract",str(image),"stdout","-l",os.getenv("NET_OCR_LANG","eng"),"--psm","3"],
+                capture_output=True,text=True,check=True,timeout=120
+            )
+            return result.stdout.strip()
+    except (OSError,subprocess.SubprocessError):
+        return ""
+
+def _useful_text_length(text):
+    return len(re.sub(r"\s+","",str(text or "")))
+
 def extract(p):
+    """Extract text once, retaining PDF page boundaries and OCRing low-text pages."""
     if p.suffix.lower()==".pdf":
-        extracted=""
+        pages=[]
         try:
             import pypdf
-            extracted="\n\n".join((x.extract_text() or "") for x in pypdf.PdfReader(str(p)).pages)
+            reader=pypdf.PdfReader(str(p))
+            pages=[(page.extract_text() or "").strip() for page in reader.pages]
         except Exception:
-            extracted=""
-        # Some PDFs parse successfully with pypdf but expose little or no usable
-        # text (for example scanned/OCR-heavy books). Fall back to Poppler based
-        # extraction before treating the source as empty.
-        if len(re.sub(r"\s+","",extracted)) >= 200:
-            return extracted
-        try:
-            fallback=subprocess.run(["pdftotext","-layout",str(p),"-"],capture_output=True,text=True,check=True).stdout
-            if len(re.sub(r"\s+","",fallback)) > len(re.sub(r"\s+","",extracted)):
-                return fallback
-        except Exception:
-            pass
-        return extracted
+            pages=[]
+        # Poppler sometimes extracts more usable text than the PDF text layer.
+        if pages and sum(_useful_text_length(x) for x in pages)<200:
+            try:
+                fallback=subprocess.run(
+                    ["pdftotext","-layout",str(p),"-"],
+                    capture_output=True,text=True,check=True,timeout=180
+                ).stdout
+                fallback_pages=fallback.split("\f")
+                if sum(_useful_text_length(x) for x in fallback_pages)>sum(_useful_text_length(x) for x in pages):
+                    pages=[x.strip() for x in fallback_pages if x.strip()]
+            except (OSError,subprocess.SubprocessError):
+                pass
+        if not pages:
+            try:
+                page_count=int(subprocess.run(
+                    ["pdfinfo",str(p)],capture_output=True,text=True,check=True,timeout=30
+                ).stdout.split("Pages:",1)[1].splitlines()[0].strip())
+                pages=[""]*page_count
+            except (OSError,subprocess.SubprocessError,IndexError,ValueError):
+                return ""
+        output=[]
+        for index,page_text in enumerate(pages,1):
+            # OCR only pages whose text layer is missing or nearly empty.
+            if _useful_text_length(page_text)<60:
+                ocr_text=_ocr_pdf_page(p,index)
+                if _useful_text_length(ocr_text)>_useful_text_length(page_text):
+                    page_text=ocr_text
+            output.append(f"[PAGE {index}]\n{page_text.strip()}")
+        return "\n\n".join(output)
     if p.suffix.lower() in {".txt",".md"}:
         return p.read_text(encoding="utf-8",errors="ignore")
     if p.suffix.lower()==".docx":
@@ -97,8 +143,77 @@ def extract(p):
         return "\n".join(x.text for x in Document(str(p)).paragraphs)
     if p.suffix.lower()==".pptx":
         from pptx import Presentation
-        return "\n".join(sh.text for s in Presentation(str(p)).slides for sh in s.shapes if hasattr(sh,"text"))
+        return "\n".join(sh.text for slide in Presentation(str(p)).slides for sh in slide.shapes if hasattr(sh,"text"))
     return ""
+
+def _cache_file(cache_root,relative_path,source_hash):
+    key=hashlib.sha256(f"{EXTRACTOR_VERSION}\0{relative_path}\0{source_hash}".encode("utf-8")).hexdigest()
+    return Path(cache_root)/(key+".json")
+
+def _read_cached_extraction(cache_file,relative_path,source_hash):
+    try:
+        entry=json.loads(Path(cache_file).read_text(encoding="utf-8"))
+        if (entry.get("extractor_version")==EXTRACTOR_VERSION
+            and entry.get("source_path")==relative_path
+            and entry.get("source_sha256")==source_hash
+            and isinstance(entry.get("text"),str)):
+            return entry["text"]
+    except (OSError,ValueError,TypeError):
+        pass
+    return None
+
+def cached_extract(path,relative_path,cache_root=EXTRACTION_CACHE):
+    """Return (text, cache_hit); cache key binds source path, bytes and extractor version."""
+    source_hash=sha(path)
+    cache_file=_cache_file(cache_root,relative_path,source_hash)
+    cached=_read_cached_extraction(cache_file,relative_path,source_hash)
+    if cached is not None:
+        return cached,True
+    text=extract(path)
+    entry={
+        "extractor_version":EXTRACTOR_VERSION,
+        "source_path":relative_path,
+        "source_sha256":source_hash,
+        "characters":len(text),
+        "extracted_at":datetime.now(timezone.utc).isoformat(),
+        "text":text
+    }
+    cache_file.parent.mkdir(parents=True,exist_ok=True)
+    temp_path=cache_file.with_suffix(".tmp")
+    temp_path.write_text(json.dumps(entry,ensure_ascii=False)+"\n",encoding="utf-8")
+    os.replace(temp_path,cache_file)
+    return text,False
+
+def load_source_library(inbox=INBOX,cache_root=EXTRACTION_CACHE):
+    """Load cached source extractions, re-extracting only changed or missing entries."""
+    inbox=Path(inbox)
+    files=sorted(p for p in inbox.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED_SOURCE_SUFFIXES)
+    manifest={str(p.relative_to(ROOT)).replace("\\","/"):sha(p) for p in files}
+    cache_root=Path(cache_root)
+    cache_root.mkdir(parents=True,exist_ok=True)
+    # Drop stale cache records for changed/deleted sources; never keep orphaned text.
+    for cache_file in cache_root.glob("*.json"):
+        try:
+            entry=json.loads(cache_file.read_text(encoding="utf-8"))
+            rel=entry.get("source_path")
+            if rel not in manifest or entry.get("source_sha256")!=manifest.get(rel) or entry.get("extractor_version")!=EXTRACTOR_VERSION:
+                cache_file.unlink(missing_ok=True)
+        except (OSError,ValueError,TypeError):
+            cache_file.unlink(missing_ok=True)
+    source_chunks=[]; source_meta=[]; cache_hits=0; cache_misses=0
+    for path in files:
+        rel=str(path.relative_to(ROOT)).replace("\\","/")
+        text,hit=cached_extract(path,rel,cache_root)
+        cache_hits+=int(hit); cache_misses+=int(not hit)
+        pieces=chunks(text)
+        source_meta.append({
+            "path":rel,"sha256":manifest[rel],"chunks":len(pieces),
+            "characters":len(text),"extraction_cache":"hit" if hit else "miss"
+        })
+        source_chunks.extend((rel,index,chunk) for index,chunk in enumerate(pieces))
+    stats={"files":len(source_meta),"chunks":len(source_chunks),"characters":sum(x["characters"] for x in source_meta),
+           "cache_hits":cache_hits,"cache_misses":cache_misses}
+    return source_chunks,source_meta,stats
 
 def chunks(text,size=12000):
     text=re.sub(r"\n{3,}","\n\n",text).strip()
@@ -210,6 +325,7 @@ def candidate_refs(text,refs,n=8):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--apply",action="store_true")
+    ap.add_argument("--prepare-source-cache",action="store_true",help="Extract/cache approved source files and exit without generating content.")
     ap.add_argument("--repair-existing",action="store_true")
     ap.add_argument("--enrich-existing",action="store_true",help="Backward-compatible alias for applying the saved admin enrichment instruction.")
     ap.add_argument("--rewrite-existing",action="store_true",help="Run an explicit admin rewrite against the complete approved source library; does not require a newly uploaded source.")
@@ -217,14 +333,12 @@ def main():
     ap.add_argument("--apply-staged",action="store_true",help="Publish the already audited content-staging/canonical-content.json.")
     args=ap.parse_args()
     syllabus=load(SYLLABUS); refs=canonical(syllabus); enrichment=load_instructions()
-    source_chunks=[]; source_meta=[]
-    for p in sorted(INBOX.rglob("*")):
-        if p.is_file() and p.suffix.lower() in {".pdf",".docx",".pptx",".txt",".md"}:
-            text=extract(p); cs=chunks(text)
-            rel=str(p.relative_to(ROOT)).replace("\\","/")
-            source_meta.append({"path":rel,"sha256":sha(p),"chunks":len(cs),"characters":len(text)})
-            source_chunks += [(rel,i,c) for i,c in enumerate(cs)]
-    print(f"Source ingestion: {len(source_meta)} files, {len(source_chunks)} chunks, {sum(x["characters"] for x in source_meta)} extracted characters.")
+    if args.prepare_source_cache:
+        _,_,stats=load_source_library()
+        print("Source extraction cache prepared: "+json.dumps(stats,sort_keys=True))
+        return 0
+    source_chunks,source_meta,stats=load_source_library()
+    print("Source ingestion: "+json.dumps(stats,sort_keys=True))
     if not source_chunks and (args.rewrite_existing or args.source_triggered):
         raise SystemExit("No extractable source text found in sources/inbox; generation cannot proceed source-groundedly.")
     if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.rewrite_existing and not args.apply_staged:
