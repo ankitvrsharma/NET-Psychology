@@ -115,8 +115,10 @@ def extract(p):
                     capture_output=True,text=True,check=True,timeout=180
                 ).stdout
                 fallback_pages=fallback.split("\f")
+                if fallback_pages and not fallback_pages[-1].strip():
+                    fallback_pages.pop()
                 if sum(_useful_text_length(x) for x in fallback_pages)>sum(_useful_text_length(x) for x in pages):
-                    pages=[x.strip() for x in fallback_pages if x.strip()]
+                    pages=[x.strip() for x in fallback_pages]
             except (OSError,subprocess.SubprocessError):
                 pass
         if not pages:
