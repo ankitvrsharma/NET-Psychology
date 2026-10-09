@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-grounded automation for connected five-component NET Psychology learning packages."""
+"""Repository source extraction/cache and deterministic application of validated manual ChatGPT content."""
 from pathlib import Path
 import argparse, hashlib, json, os, re, subprocess, sys
 from copy import deepcopy
@@ -19,7 +19,6 @@ MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
 INSTRUCTIONS=ROOT/"data/content-enrichment-instructions.json"
 VERIFICATION=ROOT/"data/verification-state.json"
-MODEL=os.getenv("NET_CONTENT_MODEL","gemini-3.8-flash")
 MAX_TOPICS=int(os.getenv("NET_MAX_TOPICS_PER_RUN","20"))
 VERIFICATION_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
 COMPONENTS=("microtopic","deep_dive","active_recall","revision","practice")
@@ -228,84 +227,6 @@ def chunks(text,size=12000):
     if cur: out.append(cur)
     return out
 
-def _gemini_schema(schema):
-    """Convert JSON Schema types to Gemini's REST schema enum format."""
-    if isinstance(schema, dict):
-        out={}
-        for k,v in schema.items():
-            if k=="type" and isinstance(v,str):
-                out[k]=v.upper()
-            elif k=="properties" and isinstance(v,dict):
-                out[k]={pk:_gemini_schema(pv) for pk,pv in v.items()}
-            elif k=="items":
-                out[k]=_gemini_schema(v)
-            else:
-                out[k]=_gemini_schema(v) if isinstance(v,(dict,list)) else v
-        return out
-    if isinstance(schema,list):
-        return [_gemini_schema(x) for x in schema]
-    return schema
-def _resolve_model_chain():
-    # Discover the current stable Gemini Flash family at runtime. This means
-    # the newest available stable Flash model is always first, with the two
-    # immediately previous stable versions retained as fallbacks.
-    import urllib.request, re
-    api_key=os.getenv("GEMINI_API_KEY")
-    if not api_key: raise SystemExit("GEMINI_API_KEY is required.")
-    requested=os.getenv("NET_CONTENT_MODEL","").strip()
-    configured=[x.strip() for x in os.getenv("NET_CONTENT_FALLBACKS","").split(",") if x.strip()]
-    if requested:
-        return list(dict.fromkeys([requested]+configured))
-    url="https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000"
-    try:
-        models=[]
-        next_token=None
-        while True:
-            page_url=url + (f"&pageToken={next_token}" if next_token else "")
-            page_req=urllib.request.Request(page_url,headers={"x-goog-api-key":api_key})
-            with urllib.request.urlopen(page_req,timeout=30) as response:
-                page=json.loads(response.read().decode("utf-8"))
-            models.extend(page.get("models",[]))
-            next_token=page.get("nextPageToken")
-            if not next_token:
-                break
-        versions=[]
-        for m in models:
-            name=m.get("name","").split("/")[-1]
-            if "generateContent" not in m.get("supportedGenerationMethods",[]): continue
-            match=re.fullmatch(r"gemini-(\d+)\.(\d+)-flash",name)
-            if match:
-                versions.append((int(match.group(1)),int(match.group(2)),name))
-        versions=sorted(set(versions),reverse=True)
-        if versions:
-            return [v[2] for v in versions[:3]]
-    except Exception:
-        pass
-    return ["gemini-3.8-flash","gemini-3.7-flash","gemini-3.6-flash"]+configured
-
-def call_ai(instructions,payload,name,schema):
-    import urllib.request
-    api_key=os.getenv("GEMINI_API_KEY")
-    if not api_key: raise SystemExit("GEMINI_API_KEY is required.")
-    body={
-        "systemInstruction":{"parts":[{"text":instructions}]},
-        "contents":[{"parts":[{"text":json.dumps(payload,ensure_ascii=False)}]}],
-        "generationConfig":{"responseMimeType":"application/json","responseSchema":_gemini_schema(schema),"temperature":0.2}
-    }
-    errors=[]
-    for model in _resolve_model_chain():
-        url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        req=urllib.request.Request(url,data=json.dumps(body,ensure_ascii=False).encode("utf-8"),
-                                   headers={"Content-Type":"application/json","x-goog-api-key":api_key},method="POST")
-        try:
-            with urllib.request.urlopen(req,timeout=180) as response:
-                result=json.loads(response.read().decode("utf-8"))
-            text=result["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(text)
-        except Exception as exc:
-            errors.append(f"{model}: {exc}")
-    raise RuntimeError("All configured Gemini models failed: "+" | ".join(errors))
-
 def canonical(s):
     out={}
     for u in s["units"]:
@@ -334,6 +255,8 @@ def main():
     ap.add_argument("--source-triggered",action="store_true",help="Treat source changes as a trigger and search the complete approved source library for evidence.")
     ap.add_argument("--apply-staged",action="store_true",help="Publish the already audited content-staging/canonical-content.json.")
     args=ap.parse_args()
+    if args.apply or args.repair_existing or args.enrich_existing or args.rewrite_existing or args.source_triggered:
+        raise SystemExit("The legacy model-generation path has been retired. Use the ChatGPT packet workflow; only --prepare-source-cache and --apply-staged are supported.")
     syllabus=load(SYLLABUS); refs=canonical(syllabus); enrichment=load_instructions()
     if args.prepare_source_cache:
         _,_,stats=load_source_library()
@@ -346,7 +269,7 @@ def main():
     if not source_chunks and not args.repair_existing and not args.enrich_existing and not args.rewrite_existing and not args.apply_staged:
         print("No supported sources found."); return 0
 
-    report={"schema_version":1,"provider":"Google Gemini API","model":MODEL,"sources":source_meta,
+    report={"schema_version":1,"provider":"ChatGPT conversation (manual; no API)","sources":source_meta,
             "repairs":{"quick":0,"questions":0},"unresolved":{"quick":[],"questions":[]}}
     quick=load(QUICK)
     qobj=load(QUESTIONS)
@@ -594,7 +517,7 @@ def main():
             save(ROOT/"content/active-recall/active_recall.json",recall_pool)
             save(REVISION,revision_pool)
             save(VERIFICATION,verification)
-        save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"scripts/source_to_content.py","model":MODEL,
+        save(ROOT/"content-provenance.json",{"schema_version":1,"generated_by":"manual ChatGPT packet workflow","provider":"ChatGPT conversation (manual; no API)",
              "generated_at":datetime.now(timezone.utc).isoformat(),"sources":source_meta,
              "repairs":report["repairs"],"unresolved":report["unresolved"]})
 
