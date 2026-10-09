@@ -81,7 +81,9 @@ def main():
     parser.add_argument("--source-triggered",action="store_true")
     args=parser.parse_args()
     request=stc.load(REQUEST) if REQUEST.exists() else {}
-    operation=str(request.get("operation") or "package_rewrite")
+    operation="package_rewrite" if args.source_triggered else str(request.get("operation") or "package_rewrite")
+    if args.source_triggered:
+        request={**request,"operation":"package_rewrite","target_microtopics":[],"target_record_ids":[]}
     if operation not in PACKAGE_OPS|{"quick_cards_rewrite","mcq_improvement","pyq_improvement"}:
         raise SystemExit("Unsupported content operation: "+operation)
     syllabus=stc.load(stc.SYLLABUS); refs=stc.canonical(syllabus)
@@ -93,6 +95,10 @@ def main():
     if operation=="unit_rewrite":
         if not unit_id: raise SystemExit("Whole-unit enrichment requires target_unit_id.")
         target_ids=[mid for mid,ref in refs.items() if str(ref["unit"])==unit_id]
+        if requested_ids:
+            unknown=sorted(set(requested_ids)-set(target_ids))
+            if unknown: raise SystemExit("Requested micro-topic IDs are not in unit "+unit_id+": "+", ".join(unknown))
+            target_ids=[mid for mid in target_ids if mid in set(requested_ids)]
         if not target_ids: raise SystemExit("No canonical micro-topics found for unit "+unit_id)
     elif operation in PACKAGE_OPS:
         if args.source_triggered or not requested_ids or "__ALL__" in requested_ids:
