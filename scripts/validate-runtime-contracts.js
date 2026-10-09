@@ -38,7 +38,7 @@ function assertLocalTargetExists(value, fromFile) {
 }
 for (const file of htmlFiles) {
   const html = fs.readFileSync(path.join(root, file), 'utf8');
-  for (const match of html.matchAll(/\\b(?:href|src)=["']([^"']+)["']/gi)) {
+  for (const match of html.matchAll(/\b(?:href|src)=["']([^"']+)["']/gi)) {
     assertLocalTargetExists(match[1].trim(), file);
   }
 }
