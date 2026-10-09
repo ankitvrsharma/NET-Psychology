@@ -70,13 +70,13 @@ async function approveQueued(id,component){
 }
 async function loadInsights(){try{const r=await fetch('./data/gemini-content-insights.json?v=20261008-insights',{cache:'no-store'});if(r.ok){const q=await r.json();insightsPool=q.items||{};}else insightsPool={};}catch(e){insightsPool={};}}
 async function loadInstructions(){const r=await fetch('./data/content-enrichment-instructions.json?v=20261006-enrichment',{cache:'no-store'});if(r.ok)instructions=await r.json();if(!Array.isArray(instructions.target_microtopics))instructions.target_microtopics=[]}
-function instructionCard(){return `<section class="card admin-instructions"><div class="eyebrow">CONTENT GENERATION</div><h2>Generate source-grounded content</h2><p>The website already supplies Gemini with its standing modular instructions. Tell Gemini what work to perform in this run; this request is <b>job-specific</b> and is not saved as a permanent instruction.</p><div class="admin-learning-contract"><b>Locked learning package:</b> Micro-topic → Deep Dive → Recall → Revision → Practice. The micro-topic remains the canonical knowledge source; Deep Dive, Recall, Revision and Practice form one connected learning package.</div><label class="admin-field"><span>What should Gemini do in this run?</span><textarea id="enrichmentInstruction" rows="8" placeholder="Example: Strengthen the distinction between classical and operant conditioning using the approved sources. Include named researchers only when the sources support them."></textarea></label><label class="admin-field"><span>Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="" placeholder="Example: 5-3-2, 5-3-3"></label><div class="admin-actions"><button class="btn primary" id="saveEnrichment">GENERATE CONTENT</button></div><p class="admin-help">Gemini combines the standing modular website instructions with this task, the selected micro-topics and the approved source library. The audit gate decides what can be published.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>`;}
+function instructionCard(){return `<section class="card admin-instructions"><div class="eyebrow">CONTENT GENERATION</div><h2>Generate source-grounded content</h2><p>The website already supplies Gemini with its standing modular instructions. Tell Gemini what work to perform in this run; this request is <b>job-specific</b> and is not saved as a permanent instruction.</p><div class="admin-learning-contract"><b>Locked learning package:</b> Micro-topic → Deep Dive → Recall → Revision → Practice. The micro-topic remains the canonical knowledge source; Deep Dive, Recall, Revision and Practice form one connected learning package.</div><label class="admin-field"><span>What should Gemini do in this run?</span><textarea id="enrichmentInstruction" rows="8" placeholder="Example: Strengthen the distinction between classical and operant conditioning using the approved sources. Include named researchers only when the sources support them."></textarea></label><label class="admin-field"><span>Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="" placeholder="Example: 5-3-2, 5-3-3"></label><div class="admin-actions"><button class="btn primary" id="saveEnrichment">PREPARE CHATGPT PACKET</button></div><p class="admin-help">The packet includes the standing content instructions, approved-source excerpts, current package and locked verification status. No model API key is used. Download the packet artifact from GitHub Actions, attach it to any ChatGPT conversation, then submit the returned JSON on a new branch as content-staging/chatgpt-response.json. Automated checks validate the response and open a review PR; nothing publishes directly to main.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>`;}
 async function saveInstructions(){
   const userInstruction=document.querySelector('#enrichmentInstruction')?.value.trim()||'';
   const targets=(document.querySelector('#enrichmentTargets')?.value||'').split(',').map(x=>x.trim()).filter(Boolean);
   const note=document.querySelector('#enrichmentStatus');
   if(!userInstruction){
-    if(note)note.textContent='Tell Gemini what content work to perform before starting generation.';
+    if(note)note.textContent='Describe the content task before preparing a ChatGPT packet.';
     return
   }
   if(!window.NETPSY_AUTH?.githubWrite){
@@ -85,7 +85,7 @@ async function saveInstructions(){
   }
   const button=document.querySelector('#saveEnrichment');
   if(button){button.disabled=true;button.textContent='STARTING…'}
-  if(note)note.textContent='Submitting source-grounded Gemini generation request…';
+  if(note)note.textContent='Submitting the source-grounded ChatGPT packet request…';
   const request={
     schema_version:1,
     request_id:'admin-'+Date.now(),
@@ -103,7 +103,7 @@ async function saveInstructions(){
       content:JSON.stringify(request,null,2)+'\n',
       message:'Admin: request source-grounded content generation'
     });
-    if(note)note.textContent='Generation request submitted. GitHub Actions will run Gemini with the standing modular instructions plus this task. Audit-passed content will publish; failures will enter the approval queue.';
+    if(note)note.textContent='Request submitted. GitHub Actions will prepare a source-grounded packet using the standing instructions and approved source library. Download the packet artifact, use it in any ChatGPT conversation, then add the returned JSON as content-staging/chatgpt-response.json on a new branch. The workflow validates it and opens a review PR; it does not publish directly to main.';
     renderQueue()
   }catch(e){
     if(note)note.textContent='Could not submit generation request: '+e.message
