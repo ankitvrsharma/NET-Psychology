@@ -88,6 +88,12 @@ async function loadPool(name){
   CONTENT_POOLS[name]=value;
   return value;
 }
+async function loadIndex(name){
+  if(name!=='questions')throw new Error('Unknown content index: '+name);
+  const pool=await loadPool('questions');
+  const questions=Array.isArray(pool)?pool:[...(Array.isArray(pool?.pyq)?pool.pyq:[]),...(Array.isArray(pool?.practice)?pool.practice:[])];
+  return {items:questions.filter(q=>q&&q.id!=null).map(q=>({id:q.id}))};
+}
 const syllabusItems=()=>units().flatMap(u=>(u.topics||[]).flatMap(t=>(t.microtopics||[]).map(m=>({u,t,m,k:key(u.id,t.id,m.id)}))));
 const microtopicItems=(u,t)=>((t&&t.microtopics)||[]).map(ref=>microtopicItem(u,t,ref));
 const microtopicItem=(u,t,m)=>CONTENT_POOLS.microtopics?.[key(u.id,t.id,m.id)]||m;
@@ -210,7 +216,7 @@ const loadStudyData=async()=>{
   D=await fetchJSON('data/syllabus-index.json','Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
-  if(microPages.has(page))await Promise.all([loadIndex('microtopics'),loadPool('microtopics'),loadPool('deepDive')]);
+  if(microPages.has(page))await Promise.all([loadPool('microtopics'),loadPool('deepDive')]);
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
     await loadPool('questions');
