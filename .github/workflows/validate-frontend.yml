@@ -47,6 +47,7 @@ jobs:
       - name: Check content automation Python syntax
         run: |
           python -m py_compile scripts/source_to_content.py scripts/ai_content_audit.py scripts/validate_content.py scripts/sync_documentation.py
+          python -m unittest scripts.test_source_extraction_cache -v
       - name: Check runtime loading and page route contracts
         run: node scripts/validate-runtime-contracts.js
       - name: Check architecture documentation

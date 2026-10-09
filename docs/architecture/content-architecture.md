@@ -49,7 +49,9 @@ The syllabus index is the only canonical taxonomy/index source. Runtime code and
 
 ## Source-to-publication flow
 
-Approved source evidence → Gemini proposal → protection of expert-verified components → component/package audit → permitted rewrites → approval queue for failures → surgical publication.
+Cached extraction (source SHA-256 + extractor version) → OCR only for low-text PDF pages → page-aware source evidence → Gemini proposal → protection of expert-verified components → component/package audit → permitted rewrites → approval queue for failures → surgical publication.
+
+The extraction cache is stored under `.cache/source-extraction`, excluded from Git, and persisted between workflow runs with GitHub Actions cache. Changed sources or extractor versions invalidate cached entries; missing or corrupt entries fall back to extraction.
 
 The learner runtime never calls Gemini and never authors content.
 
