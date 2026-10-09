@@ -37,11 +37,16 @@ def main():
     if not RESPONSE.exists():
         fail("missing "+str(RESPONSE.relative_to(ROOT)))
     raw=stc.load(RESPONSE)
-    packages=raw.get("packages") if isinstance(raw,dict) else raw
+    response_targets=set()
+    if isinstance(raw,dict):
+        packages=raw.get("packages")
+        response_targets={str(x).strip() for x in raw.get("target_microtopics",[]) if str(x).strip()}
+    else:
+        packages=raw
     if not isinstance(packages,list) or not packages:
-        fail("response must be a non-empty JSON array, or an object with a packages array")
+        fail("response must be a non-empty JSON array, or an object with target_microtopics and packages arrays")
     request=stc.load(REQUEST) if REQUEST.exists() else {}
-    requested={str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()}
+    requested=response_targets or {str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()}
     refs=stc.canonical(stc.load(stc.SYLLABUS))
     verification=stc.load(VERIFICATION) if VERIFICATION.exists() else {"items":{}}
     statuses=verification.get("items") or {}
