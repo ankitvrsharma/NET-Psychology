@@ -49,11 +49,11 @@ The syllabus index is the only canonical taxonomy/index source. Runtime code and
 
 ## Source-to-publication flow
 
-Cached extraction (source SHA-256 + extractor version) → OCR only for low-text PDF pages → page-aware source evidence → Gemini proposal → protection of expert-verified components → component/package audit → permitted rewrites → approval queue for failures → surgical publication.
+Cached extraction (source SHA-256 + extractor version) → OCR only for low-text PDF pages → page-aware source evidence → ChatGPT packet with standing instructions → manual ChatGPT generation without an API → schema/provenance checks → protection of expert-verified components → deterministic validation → human-review PR.
 
 The extraction cache is stored under `.cache/source-extraction`, excluded from Git, and persisted between workflow runs with GitHub Actions cache. Changed sources or extractor versions invalidate cached entries; missing or corrupt entries fall back to extraction.
 
-The learner runtime never calls Gemini and never authors content.
+The learner runtime never calls a model or authors content. GitHub Actions prepares source-grounded packets but does not call a model API or publish generated content directly to main.
 
 ## Change rule
 
