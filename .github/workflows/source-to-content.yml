@@ -1,202 +1,160 @@
-name: Source to content automation
+name: ChatGPT-assisted content pipeline
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
     paths:
       - "sources/inbox/**"
-      - "sources/source-policy.json"
-      - "scripts/source_to_content.py"
-      - "scripts/ai_content_audit.py"
-      - "data/ai-content-audit-policy.json"
-      - ".github/workflows/source-to-content.yml"
       - "data/content-generation-request.json"
-  workflow_dispatch:
-    inputs:
-      repair_existing:
-        description: "Repair stale Quick Learn references and unresolved question mappings"
-        required: false
-        default: "true"
-      synthesize_sources:
-        description: "Generate source-grounded learning content from sources/inbox"
-        required: false
-        default: "true"
-      enrich_existing:
-        description: "Generate source-grounded content for an Admin task"
-        required: false
-        default: "true"
-      admin_instruction:
-        description: "Job-specific instruction from the Admin panel"
-        required: false
-        default: ""
-      target_microtopics:
-        description: "Comma-separated canonical micro-topic IDs for this generation run"
-        required: false
-        default: ""
+      - "content-staging/chatgpt-response.json"
 
 permissions:
   contents: write
   pull-requests: write
 
 concurrency:
-  group: source-to-content
+  group: chatgpt-content-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  build-content-pr:
+  prepare-packet:
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Detect source or admin request changes
+        id: detect
+        shell: bash
+        run: |
+          CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")"
+          echo "$CHANGED"
+          if echo "$CHANGED" | grep -Eq '^(data/content-generation-request\.json|sources/inbox/)'; then
+            echo "prepare=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "prepare=false" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -q '^data/content-generation-request\.json$'; then
+            echo "request=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "request=false" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -q '^sources/inbox/'; then
+            echo "source=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "source=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-python@v5
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
         with:
           python-version: "3.12"
-      - name: Install dependencies
+      - name: Install source extraction dependencies
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
         run: |
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
-          pip install --upgrade pip
           pip install pypdf python-docx python-pptx
-
       - name: Restore persistent source extraction cache
-        id: restore_source_cache
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
         uses: actions/cache/restore@v4
         with:
           path: .cache/source-extraction
-          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
           restore-keys: |
-            source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
-            source-extraction-v3-${{ runner.os }}-
-
-      - name: Extract changed sources and OCR low-text PDF pages
-        id: prepare_source_cache
+            source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
+            source-extraction-v4-${{ runner.os }}-
+      - name: Extract and cache approved sources
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
         run: python scripts/source_to_content.py --prepare-source-cache
-
       - name: Save persistent source extraction cache
-        if: ${{ always() && hashFiles('.cache/source-extraction/*.json') != '' }}
+        if: ${{ steps.detect.outputs.prepare == 'true' && hashFiles('.cache/source-extraction/*.json') != '' }}
         uses: actions/cache/save@v4
         with:
           path: .cache/source-extraction
-          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
-      - name: Compile content automation script
-        run: python -m py_compile scripts/source_to_content.py
-
-      - name: Generate staged content
-        id: generate_content
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
-          NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
-          NET_MAX_TOPICS_PER_RUN: "54"
-          NET_SKIP_GEMINI_INSIGHTS: "true"
-          NET_ADMIN_INSTRUCTION: ${{ github.event.inputs.admin_instruction || '' }}
-          NET_ADMIN_TARGETS: ${{ github.event.inputs.target_microtopics || '' }}
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+      - name: Prepare source-grounded ChatGPT packet
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
-            export NET_ADMIN_INSTRUCTION="$(python -c 'import json; print(json.load(open("data/content-generation-request.json",encoding="utf-8")).get("instruction",""))')"
-            export NET_ADMIN_TARGETS="$(python -c 'import json; print(",".join(str(x).strip() for x in json.load(open("data/content-generation-request.json",encoding="utf-8")).get("target_microtopics",[]) if str(x).strip()))')"
-          fi
-          echo "Admin target IDs: $NET_ADMIN_TARGETS"
-          echo "Source files in inbox: $(find sources/inbox -type f | wc -l)"
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          json_inputs = [
-              Path("data/content-generation-request.json"),
-              Path("data/content-enrichment-instructions.json"),
-              Path("data/verification-state.json"),
-              Path("data/syllabus-index.json"),
-          ]
-          for path in json_inputs:
-              if not path.exists():
-                  continue
-              try:
-                  with path.open(encoding="utf-8") as handle:
-                      json.load(handle)
-              except json.JSONDecodeError as exc:
-                  raise SystemExit(
-                      f"Invalid JSON in {path}: line {exc.lineno}, column {exc.colno}: {exc.msg}"
-                  ) from exc
-              print(f"JSON preflight OK: {path}")
-          PY
-          echo "generated=false" >> "$GITHUB_OUTPUT"
-          if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
-            REPAIR="$(python -c 'import json; print("true" if json.load(open("data/content-generation-request.json",encoding="utf-8")).get("repair_existing") else "false")')"
-            ENRICH="true"
-            SYNTH="false"
+          if [ "${{ steps.detect.outputs.source }}" = "true" ] && [ "${{ steps.detect.outputs.request }}" != "true" ]; then
+            python scripts/prepare_chatgpt_packet.py --source-triggered
           else
-            REPAIR="${{ github.event.inputs.repair_existing || 'false' }}"
-            ENRICH="${{ github.event.inputs.enrich_existing || 'true' }}"
-            SYNTH="${{ github.event.inputs.synthesize_sources || 'true' }}"
+            python scripts/prepare_chatgpt_packet.py
           fi
-          SOURCE_TRIGGERED="false"
-          REWRITE_EXISTING="false"
-          if [ "${{ github.event_name }}" = "push" ]; then
-            CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")"
-            if echo "$CHANGED" | grep -q "^sources/inbox/"; then SOURCE_TRIGGERED="true"; fi
-            if echo "$CHANGED" | grep -q "^data/content-generation-request.json$"; then REWRITE_EXISTING="true"; fi
-          else
-            if [ "$SYNTH" = "true" ]; then SOURCE_TRIGGERED="true"; fi
-            if [ "$ENRICH" = "true" ]; then REWRITE_EXISTING="true"; fi
-          fi
-          if [ "$SOURCE_TRIGGERED" != "true" ] && [ "$REWRITE_EXISTING" != "true" ]; then
-            echo "No content-generation trigger detected; nothing to generate."
-            exit 0
-          fi
-          ARGS=""
-          if [ "$REPAIR" = "true" ]; then ARGS="$ARGS --repair-existing"; fi
-          if [ "$SOURCE_TRIGGERED" = "true" ]; then ARGS="$ARGS --source-triggered"; fi
-          if [ "$REWRITE_EXISTING" = "true" ]; then ARGS="$ARGS --rewrite-existing"; fi
-          python scripts/source_to_content.py $ARGS
-          if [ -f content-staging/canonical-content.json ]; then
-            echo "generated=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Generation completed without staged canonical content."
-            exit 1
-          fi
+      - name: Upload ChatGPT packet
+        if: ${{ steps.detect.outputs.prepare == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: net-psychology-chatgpt-content-packet
+          path: |
+            content-staging/chatgpt-packet.json
+            content-staging/chatgpt-packet.md
+          if-no-files-found: error
+          retention-days: 14
 
-      - name: AI audit and two-retry rewrite gate
-        if: ${{ steps.generate_content.outputs.generated == 'true' }}
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
-          NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
-          NET_SKIP_GEMINI_INSIGHTS: "true"
-        run: python scripts/ai_content_audit.py
-
-      - name: Publish audited content directly to main
-        if: ${{ success() && steps.generate_content.outputs.generated == 'true' }}
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          NET_CONTENT_MODEL: ${{ vars.NET_CONTENT_MODEL || '' }}
-          NET_CONTENT_FALLBACKS: ${{ vars.NET_CONTENT_FALLBACKS || '' }}
+  import-chatgpt-response:
+    if: ${{ github.ref != 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Detect ChatGPT response
+        id: detect
+        shell: bash
         run: |
-          REPAIR="${{ github.event.inputs.repair_existing || 'true' }}"
-          ARGS="--apply-staged"
-          if [ "$REPAIR" = "true" ]; then ARGS="$ARGS --repair-existing"; fi
-          python scripts/source_to_content.py $ARGS
-
-      - name: Validate published pools
-        run: python scripts/validate_content.py
-
-      - name: Publish approved content
-        if: ${{ success() && steps.generate_content.outputs.generated == 'true' }}
-        env:
-          NET_CONTENT_PUBLISH_TOKEN: ${{ secrets.NET_CONTENT_PUBLISH_TOKEN }}
+          CHANGED="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")"
+          if echo "$CHANGED" | grep -q '^content-staging/chatgpt-response\.json$'; then
+            echo "response=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "response=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-python@v5
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        with:
+          python-version: "3.12"
+      - name: Install source extraction dependencies
+        if: ${{ steps.detect.outputs.response == 'true' }}
         run: |
-          if git diff --quiet; then
-            echo "No audited content changes generated. Any final audit failures remain in data/content-approval-queue.json."
-            exit 0
-          fi
-          if [ -z "$NET_CONTENT_PUBLISH_TOKEN" ]; then
-            echo "NET_CONTENT_PUBLISH_TOKEN is required for direct publication. A GITHUB_TOKEN push does not trigger a GitHub Pages build."
-            exit 1
-          fi
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr
+          pip install pypdf python-docx python-pptx
+      - name: Restore persistent source extraction cache
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/source-extraction
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          restore-keys: |
+            source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
+            source-extraction-v4-${{ runner.os }}-
+      - name: Prepare any missing source cache entries
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        run: python scripts/source_to_content.py --prepare-source-cache
+      - name: Validate ChatGPT JSON and protect verified components
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        run: python scripts/import_chatgpt_response.py
+      - name: Apply validated package to a working tree
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        run: python scripts/source_to_content.py --apply-staged
+      - name: Validate published content pools
+        if: ${{ steps.detect.outputs.response == 'true' }}
+        run: |
+          python scripts/validate_content.py
+          python -m py_compile scripts/source_to_content.py scripts/prepare_chatgpt_packet.py scripts/import_chatgpt_response.py
+      - name: Open content review PR
+        if: ${{ success() && steps.detect.outputs.response == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -f content-staging/chatgpt-response.json content-staging/canonical-content-approved.json content-staging/chatgpt-import-report.json
           git config user.name "net-psychology-content-bot"
           git config user.email "actions@github.com"
-          git add content data content-provenance.json
-          git commit -m "chore: publish AI-audited Psychology content"
-          git remote set-url origin "https://x-access-token:$NET_CONTENT_PUBLISH_TOKEN@github.com/${GITHUB_REPOSITORY}.git"
-          git push origin main
+          git add content data/verification-state.json content-provenance.json content-staging
+          if git diff --cached --quiet; then
+            echo "No content changes to propose."
+            exit 0
+          fi
+          git commit -m "content: import ChatGPT-reviewed Psychology learning package"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          gh pr create --base main --head "${GITHUB_REF_NAME}" --title "Content: review ChatGPT-generated Psychology package" --body "## Source-grounded content review\n\nThis PR imports a ChatGPT-assisted package prepared from the project's approved source library and standing content instructions. The importer validated the package schema, canonical IDs, cross-references, and exact preservation of EXPERT VERIFIED components. The existing content validator passed.\n\nPlease review factual accuracy and source support before merging. This workflow uses no model API key and does not publish content directly to main."

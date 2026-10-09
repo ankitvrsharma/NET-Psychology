@@ -46,7 +46,8 @@ jobs:
             xargs -0 -n1 node --check
       - name: Check content automation Python syntax
         run: |
-          python -m py_compile scripts/source_to_content.py scripts/ai_content_audit.py scripts/validate_content.py scripts/sync_documentation.py
+          python -m py_compile scripts/source_to_content.py scripts/validate_content.py scripts/sync_documentation.py scripts/prepare_chatgpt_packet.py scripts/import_chatgpt_response.py scripts/test_chatgpt_pipeline.py
+          python -m unittest scripts.test_chatgpt_pipeline -v
           python -m unittest scripts.test_source_extraction_cache -v
       - name: Check runtime loading and page route contracts
         run: node scripts/validate-runtime-contracts.js

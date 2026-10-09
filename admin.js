@@ -2,7 +2,7 @@
 'use strict';
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let approvalQueue=[],insightsPool={},verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
+let verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
 let filterUnit='ALL',filterTopic='ALL';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
@@ -36,64 +36,34 @@ function questionHealth(q){
 }
 
 async function loadAuditState(){const r=await fetch('./data/verification-state.json?v=20261006-verification',{cache:'no-store'});if(r.ok)verificationState=await r.json();if(!verificationState.items)verificationState.items={};}
-async function loadApprovalQueue(){
-  const r=await fetch('./data/content-approval-queue.json?v=20261006-approval-queue',{cache:'no-store'});
-  if(r.ok){const q=await r.json();approvalQueue=Array.isArray(q.pending)?q.pending:[];} else approvalQueue=[];
-}
-async function saveApprovalQueue(next){
-  const payload=JSON.stringify({schema_version:2,updated_at:new Date().toISOString(),pending:next},null,2)+'\n';
-  await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-approval-queue.json',content:payload,message:'Admin: approve queued AI content'});
-}
 function packageText(value){if(Array.isArray(value))return value.map(packageText).join('\n');if(value&&typeof value==='object')return Object.entries(value).map(([k,v])=>k+': '+packageText(v)).join('\n');return String(value??'');}
-function approvalQueueCard(){
-  const pending=approvalQueue.filter(x=>x.status==='PENDING_OWNER_APPROVAL');
-  const conflicts=approvalQueue.filter(x=>x.status==='PENDING_OWNER_CONFLICT_REVIEW');
-  let html='<section class="card admin-approval-queue"><div class="eyebrow">AI REVIEW QUEUE</div>';
-  html+='<h2>'+pending.length+' audit failure'+(pending.length===1?'':'s')+' · '+conflicts.length+' verified conflict'+(conflicts.length===1?'':'s')+'</h2>';
-  if(conflicts.length) html+='<p><b>Verified conflicts never overwrite your content.</b> Compare the owner-verified version with Gemini’s source-grounded proposed version below.</p>'+conflicts.map(x=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status fail">EXPERT VERIFIED CONFLICT</span><h3>'+esc(x.title||x.microtopic_id)+'</h3><p>Micro-topic: <b>'+esc(x.microtopic_id)+'</b> · Component: <b>'+esc(x.component||'')+'</b> · Severity: <b>'+esc(x.severity||'material')+'</b></p><p>'+esc(x.rationale||'')+'</p><p><b>Conflicting claims:</b> '+esc((x.conflicting_claims||[]).join(' · '))+'</p><div class="admin-package-grid"><div><span class="eyebrow">YOUR VERIFIED VERSION</span><div class="admin-package-content">'+esc(packageText(x.verified_version))+'</div></div><div><span class="eyebrow">GEMINI PROPOSED VERSION</span><div class="admin-package-content">'+esc(packageText(x.proposed_version))+'</div></div></div></div><div class="admin-actions"><button class="btn primary keep-verified" data-id="'+esc(x.microtopic_id)+'" data-component="'+esc(x.component||'')+'">KEEP VERIFIED & CLOSE</button></div></article>').join('');
-  if(pending.length) html+='<p>Failed components remain withheld until owner approval.</p>'+pending.map(x=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status fail">PENDING APPROVAL</span><h3>'+esc(x.title||x.microtopic_id)+'</h3><p>Micro-topic: <b>'+esc(x.microtopic_id)+'</b> · Component: <b>'+esc(x.component||'package')+'</b> · Final score: <b>'+esc(x.final_audit?.score??'—')+'</b></p><p>'+esc((x.final_audit?.issues||[]).join(', ')||'See audit history for details.')+'</p></div><div class="admin-actions"><button class="btn primary approve-queued" data-id="'+esc(x.microtopic_id)+'" data-component="'+esc(x.component||'')+'">APPROVE & PUBLISH</button></div></article>').join('');
-  if(!pending.length&&!conflicts.length) html+='<p>No content is awaiting owner review.</p>';
-  return html+'</section>';
-}
-async function closeVerifiedConflict(id,component){
-  const next=approvalQueue.map(x=>(String(x.microtopic_id)===String(id)&&String(x.component||'')===String(component)&&x.status==='PENDING_OWNER_CONFLICT_REVIEW')?{...x,status:'RESOLVED_KEEP_VERIFIED',resolved_at:new Date().toISOString(),resolved_by:OWNER}:x);
-  try{await saveApprovalQueue(next);approvalQueue=next;renderQueue();}catch(e){alert('Could not close conflict: '+e.message)}
-}
-async function approveQueued(id,component){
-  const next=approvalQueue.map(x=>(String(x.microtopic_id)===String(id)&&String(x.component||'')===String(component||''))?{...x,status:'APPROVED',approved_at:new Date().toISOString(),approved_by:OWNER}:x);
-  try{
-    await saveApprovalQueue(next);
-    approvalQueue=next;
-    await window.NETPSY_AUTH.githubWrite('dispatch_workflow',{workflow:'publish-approved-content.yml',ref:BRANCH,inputs:{microtopic_id:String(id)}});
-    renderQueue();
-  }catch(e){alert('Could not approve/publish queued content: '+e.message)}
-}
-async function loadInsights(){try{const r=await fetch('./data/gemini-content-insights.json?v=20261008-insights',{cache:'no-store'});if(r.ok){const q=await r.json();insightsPool=q.items||{};}else insightsPool={};}catch(e){insightsPool={};}}
 async function loadInstructions(){const r=await fetch('./data/content-enrichment-instructions.json?v=20261006-enrichment',{cache:'no-store'});if(r.ok)instructions=await r.json();if(!Array.isArray(instructions.target_microtopics))instructions.target_microtopics=[]}
-function instructionCard(){return `<section class="card admin-instructions"><div class="eyebrow">CONTENT GENERATION</div><h2>Generate source-grounded content</h2><p>The website already supplies Gemini with its standing modular instructions. Tell Gemini what work to perform in this run; this request is <b>job-specific</b> and is not saved as a permanent instruction.</p><div class="admin-learning-contract"><b>Locked learning package:</b> Micro-topic → Deep Dive → Recall → Revision → Practice. The micro-topic remains the canonical knowledge source; Deep Dive, Recall, Revision and Practice form one connected learning package.</div><label class="admin-field"><span>What should Gemini do in this run?</span><textarea id="enrichmentInstruction" rows="8" placeholder="Example: Strengthen the distinction between classical and operant conditioning using the approved sources. Include named researchers only when the sources support them."></textarea></label><label class="admin-field"><span>Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="" placeholder="Example: 5-3-2, 5-3-3"></label><div class="admin-actions"><button class="btn primary" id="saveEnrichment">GENERATE CONTENT</button></div><p class="admin-help">Gemini combines the standing modular website instructions with this task, the selected micro-topics and the approved source library. The audit gate decides what can be published.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>`;}
+function instructionCard(){return `<section class="card admin-instructions"><div class="eyebrow">CONTENT GENERATION</div><h2>Prepare a source-grounded ChatGPT task</h2><p>Choose the content operation. Every packet applies the full standing instructions and uses only source files already present in this repository. ChatGPT runs manually in any conversation; no model API key is needed.</p><div class="admin-learning-contract"><b>Learning contract:</b> Micro-topic → Deep Dive → Active Recall → Revision → Practice. Authentic PYQs remain distinct and are never rewritten as practice questions.</div><label class="admin-field"><span>What should be improved in this run?</span><select id="generationMode"><option value="package_rewrite">Rewrite a connected micro-topic learning package</option><option value="unit_rewrite">First-time enrichment / rewrite a whole unit</option><option value="quick_cards_rewrite">Rewrite Quick Learn cards</option><option value="mcq_improvement">Improve MCQ formatting and explanations</option><option value="pyq_improvement">Improve PYQ formatting and explanations</option></select></label><label class="admin-field" id="unitTargetField"><span>Unit for whole-unit enrichment</span><select id="targetUnit"><option value="">Choose a unit</option></select></label><label class="admin-field"><span id="targetIdsLabel">Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="" placeholder="Example: 5-3-2, 5-3-3"></label><label class="admin-field"><span>Task-specific guidance (optional but recommended)</span><textarea id="enrichmentInstruction" rows="5" placeholder="Example: Improve conceptual distinctions and explanation quality using only the repository sources. Preserve expert-verified content and authentic PYQ wording."></textarea></label><div class="admin-actions"><button class="btn primary" id="saveEnrichment">PREPARE CHATGPT PACKET</button></div><p class="admin-help">Whole-unit mode includes every canonical micro-topic in the selected unit. Quick Learn mode rewrites card content while preserving IDs and syllabus mapping. MCQ mode may improve stem/options formatting and explanation; PYQ mode preserves the authentic question, options, answer and year and improves only its explanation/presentation. Returned JSON is validated and proposed for review; nothing publishes directly to main.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>`;}
+function populateGenerationTargets(){const select=document.querySelector('#targetUnit');if(!select||!data?.units)return;const previous=select.value;select.innerHTML='<option value="">Choose a unit</option>'+(data.units||[]).map(u=>'<option value="'+esc(u.id)+'">'+esc('Unit '+u.id+' · '+u.title)+'</option>').join('');if(previous)select.value=previous;const mode=document.querySelector('#generationMode')?.value||'package_rewrite';const field=document.querySelector('#unitTargetField');if(field)field.hidden=false;const unitLabel=field?.querySelector('span');if(unitLabel)unitLabel.textContent=mode==='unit_rewrite'?'Unit for whole-unit enrichment':'Optional unit scope';const label=document.querySelector('#targetIdsLabel');const input=document.querySelector('#enrichmentTargets');if(label&&input){const cfg={package_rewrite:['Optional micro-topic IDs','Example: 5-3-2, 5-3-3'],unit_rewrite:['Micro-topic IDs (optional; leave blank for entire unit)','Blank means all micro-topics in the selected unit'],quick_cards_rewrite:['Optional Quick Learn card IDs','Blank means all eligible cards in the selected unit or repository'],mcq_improvement:['Optional MCQ IDs','Blank means eligible MCQs from repository question pool'],pyq_improvement:['Optional PYQ IDs','Blank means eligible authentic PYQs from repository question pool']};const v=cfg[mode]||cfg.package_rewrite;label.textContent=v[0];input.placeholder=v[1];}}
 async function saveInstructions(){
   const userInstruction=document.querySelector('#enrichmentInstruction')?.value.trim()||'';
+  const mode=document.querySelector('#generationMode')?.value||'package_rewrite';
+  const targetUnitId=document.querySelector('#targetUnit')?.value||'';
   const targets=(document.querySelector('#enrichmentTargets')?.value||'').split(',').map(x=>x.trim()).filter(Boolean);
   const note=document.querySelector('#enrichmentStatus');
-  if(!userInstruction){
-    if(note)note.textContent='Tell Gemini what content work to perform before starting generation.';
-    return
-  }
+  if(mode==='unit_rewrite'&&!targetUnitId){if(note)note.textContent='Choose a unit for whole-unit enrichment.';return}
+  if(mode==='package_rewrite'&&!targets.length){if(note)note.textContent='Choose one or more micro-topic IDs, or use whole-unit enrichment.';return}
+  if(['quick_cards_rewrite','mcq_improvement','pyq_improvement'].includes(mode)&&!targets.length&&!targetUnitId){if(note)note.textContent='Choose a unit scope or enter specific record IDs.';return}
   if(!window.NETPSY_AUTH?.githubWrite){
     if(note)note.textContent='The secure generation bridge is unavailable. Please sign in again.';
     return
   }
   const button=document.querySelector('#saveEnrichment');
   if(button){button.disabled=true;button.textContent='STARTING…'}
-  if(note)note.textContent='Submitting source-grounded Gemini generation request…';
+  if(note)note.textContent='Submitting the source-grounded ChatGPT packet request…';
   const request={
-    schema_version:1,
+    schema_version:2,
     request_id:'admin-'+Date.now(),
+    operation:mode,
+    target_unit_id:targetUnitId,
     instruction:userInstruction,
-    target_microtopics:targets,
-    repair_existing:true,
-    synthesize_sources:false,
-    enrich_existing:true,
+    target_microtopics:mode==='package_rewrite'||mode==='unit_rewrite'?targets:[],
+    target_record_ids:mode==='quick_cards_rewrite'||mode==='mcq_improvement'||mode==='pyq_improvement'?targets:[],
     requested_at:new Date().toISOString(),
     requested_by:OWNER
   };
@@ -103,13 +73,13 @@ async function saveInstructions(){
       content:JSON.stringify(request,null,2)+'\n',
       message:'Admin: request source-grounded content generation'
     });
-    if(note)note.textContent='Generation request submitted. GitHub Actions will run Gemini with the standing modular instructions plus this task. Audit-passed content will publish; failures will enter the approval queue.';
+    if(note)note.textContent='Request submitted. GitHub Actions will prepare a source-grounded packet using the standing instructions and approved source library. Download the packet artifact, use it in any ChatGPT conversation, then add the returned JSON as content-staging/chatgpt-response.json on a new branch. The workflow validates it and opens a review PR; it does not publish directly to main.';
     renderQueue()
   }catch(e){
     if(note)note.textContent='Could not submit generation request: '+e.message
   }finally{
     const current=document.querySelector('#saveEnrichment');
-    if(current){current.disabled=false;current.textContent='GENERATE CONTENT'}
+    if(current){current.disabled=false;current.textContent='PREPARE CHATGPT PACKET'}
   }
 }
 function buildAdminData(syllabus,microPool){return {...syllabus,units:(syllabus.units||[]).map(u=>({...u,topics:(u.topics||[]).map(t=>({...t,microtopics:(t.microtopics||[]).map(ref=>{const content=microPool[String(u.id)+'-'+String(t.id)+'-'+String(ref.id)];return content?{...content,id:ref.id}:ref;})}))}))};}
@@ -179,12 +149,10 @@ function makePackageItem(type,id,audit){
   const practiceBody=practiceQuestions.map((q,i)=>'Question '+(i+1)+': '+packageText(q.question)+'\nOptions: '+packageText(q.options)+'\nCorrect answer: '+packageText(q.correct_answer)+'\nExplanation: '+packageText(q.explanation)).join('\n\n');
   const revisionBody='Recall before review: '+packageText(revision.recall_before_review)+'\nSelf-check: '+packageText(revision.self_check)+'\nWeak-point prompt: '+packageText(revision.weak_point_prompt)+'\nRating instruction: '+packageText(revision.rating_instruction);
   const recallBody=Array.isArray(recall.prompts)?recall.prompts.map((p,i)=>(i+1)+'. '+packageText(p.type)+'\nPrompt: '+packageText(p.prompt)+'\nAnswer: '+packageText(p.answer)).join('\n\n'):'';
-  const insight=insightsPool[String(id)]?.insight||null;
-  const insightCard=insight?'<section class="card"><div class="eyebrow">GEMINI · CONTENT INSIGHTS</div><h4>Priority: '+esc(insight.priority||'medium')+'</h4><p><b>Strengths:</b> '+esc((insight.strengths||[]).join(' · '))+'</p><p><b>Gaps:</b> '+esc((insight.gaps||[]).join(' · ')||'None identified')+'</p><p><b>PYQ signals:</b> '+esc((insight.pyq_signals||[]).join(' · ')||'No supported PYQ signal')+'</p><p><b>Source opportunities:</b> '+esc((insight.source_opportunities||[]).join(' · ')||'None identified')+'</p><p><b>Learning-design suggestions:</b> '+esc((insight.learning_design_suggestions||[]).join(' · ')||'None identified')+'</p><p><b>Recommended actions:</b> '+esc((insight.recommended_actions||[]).join(' · ')||'None identified')+'</p><p>'+esc(insight.rationale||'')+'</p></section>':'<section class="card"><div class="eyebrow">GEMINI · CONTENT INSIGHTS</div><p>Insights will appear here after the next source-grounded audit.</p></section>';
-  const actions='<button class="btn admin-edit" type="button">EDIT MICRO-TOPIC</button><button class="btn admin-gemini" type="button" data-type="microtopics" data-id="'+esc(id)+'">ASK GEMINI TO REWRITE NON-VERIFIED</button>'+
+  const actions='<button class="btn admin-edit" type="button">EDIT MICRO-TOPIC</button>'+
     (hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>');
   return '<article class="admin-item admin-item-package"><div class="admin-package-head"><div><span class="eyebrow">ONE MICRO-TOPIC · COMPLETE LEARNING PACKAGE</span><h3>'+esc(titleFor(type,id))+'</h3><p>Audit all five learning functions together. '+(locked.length?'Locked by you: <b>'+esc(locked.join(', '))+'</b>.':'No component is expert verified yet.')+'</p></div><a class="btn" target="_blank" rel="noopener" href="'+learnerHref(type,id)+'">OPEN LEARNER VIEW</a></div>'+
-    insightCard+'<div class="admin-package-grid">'+
+    '<div class="admin-package-grid">'+
       packageComponent('microtopics','1 · UNDERSTAND · MICRO-TOPIC',item.expert_explanation||item.content_notes||'',id)+
       packageComponent('deepDive','2 · EXPAND · DEEP DIVE',deep.detailed_explanation||deep.deep_learning||deep.deep||'',id)+
       packageComponent('activeRecall','3 · RETRIEVE · ACTIVE RECALL',recallBody,id)+
@@ -197,8 +165,7 @@ function makeItem(type,id,audit){
   const owner=ownerReview(type,id),hidden=isHiddenForMe(type,id);
   const actions=owner?'<button class="btn admin-clear" data-type="'+type+'" data-id="'+esc(id)+'">CLEAR OWNER REVIEW</button>':'<button class="btn primary admin-review" data-review="SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK SATISFACTORY</button><button class="btn admin-review" data-review="NOT_SATISFACTORY" data-type="'+type+'" data-id="'+esc(id)+'">MARK NOT SATISFACTORY</button>';
   const visibilityButton=hidden?'<button class="btn admin-show" type="button" data-type="'+type+'" data-id="'+esc(id)+'">RESTORE TO MY LIST</button>':'<button class="btn admin-hide" type="button" data-type="'+type+'" data-id="'+esc(id)+'">HIDE FOR NOW</button>';
-  const geminiButton=type==='microtopics'?'<button class="btn admin-gemini" type="button" data-type="'+type+'" data-id="'+esc(id)+'">ASK GEMINI TO REWRITE</button>':'';
-  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Content health: <b>'+audit.score+'%</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+geminiButton+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
+  return '<article class="admin-item admin-item-learner"><div class="admin-learner-preview"><div class="admin-preview-head"><div><span class="eyebrow">LEARNER VIEW · '+(type==='microtopics'?'MICRO-TOPIC':'QUESTION')+'</span><strong>'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</strong></div></div><iframe class="admin-preview-frame" data-src="'+learnerHref(type,id)+'" loading="lazy" title="Exact learner-facing render"></iframe></div><div class="admin-review-bar"><div class="admin-item-copy">'+(owner?'<span class="review-status">EXPERT VERIFIED</span>':'')+'<span class="admin-status '+(hidden?'hidden':'published')+'">'+(hidden?'REMOVED FROM MY LIST':'VISIBLE TO LEARNERS')+'</span><span class="admin-status '+String(audit.status).toLowerCase()+'">'+esc(audit.status)+'</span><h3>'+esc(titleFor(type,id))+'</h3><p>Content health: <b>'+audit.score+'%</b> · '+esc((audit.issues||[]).join(', ')||'No audit issues')+'</p></div><div class="admin-actions"><button class="btn admin-edit" type="button">EDIT CONTENT</button>'+visibilityButton+actions+'</div></div>'+editorFor(type,id)+'</article>';
 }
 function rowMeta(x){
   if(x.type!=='microtopics')return {unitId:null,topicId:null};
@@ -231,24 +198,6 @@ function rowsFor(selectedFilter='ALL'){
     return true;
   }).sort((a,b)=>a.a.score-b.a.score);
 }
-function aiPassedRows(){
-  const componentLabels={microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Recall',revision:'Revision',practice:'Practice MCQs'};
-  const out=[];
-  for(const [component,items] of Object.entries(verificationState?.items||{})){
-    if(!items||typeof items!=='object')continue;
-    for(const [id,status] of Object.entries(items)){
-      if(!['AI REVIEWED','EXPERT VERIFIED'].includes(status)||!componentLabels[component])continue;
-      const parts=String(id).split('-').map(Number),u=data?.units?.find(x=>x.id===parts[0]),t=u?.topics?.find(x=>x.id===parts[1]),m=t?.microtopics?.find(x=>x.id===parts[2]);
-      if(!u||!t||!m)continue;
-      out.push({component,id,title:u.title+' · '+t.title+' · '+m.title,componentLabel:componentLabels[component],href:component==='deepDive'?'deep-dive.html':component==='activeRecall'?'active-recall.html':component==='revision'?'revision.html':component==='practice'?'practice.html':'microtopic.html'});
-    }
-  }
-  return out.sort((a,b)=>a.title.localeCompare(b.title)||a.componentLabel.localeCompare(b.componentLabel));
-}
-function aiPassedCard(){
-  const passed=aiPassedRows(),counts={microtopics:0,deepDive:0,activeRecall:0,revision:0,practice:0};
-  passed.forEach(r=>{if(counts[r.component]!=null)counts[r.component]++});
-  return '<section class="card admin-ai-passed"><div class="eyebrow">CONTENT · REVIEWED</div><h2>'+passed.length+' components passed the source-grounded AI audit</h2><p>These components passed the independent AI gate and were recorded as <b>REVIEWED</b>. Review status is separate from your expert verification.</p><div class="admin-toolbar ai-passed-summary"><div><strong>'+counts.microtopics+'</strong><span>micro-topics</span></div><div><strong>'+counts.deepDive+'</strong><span>deep dives</span></div><div><strong>'+counts.activeRecall+'</strong><span>recall</span></div><div><strong>'+counts.revision+'</strong><span>revision</span></div><div><strong>'+counts.practice+'</strong><span>practice MCQs</span></div></div>'+(passed.length?'<div class="admin-ai-passed-list">'+passed.slice(0,80).map(r=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status pass">REVIEWED · '+esc(r.componentLabel)+'</span><h3>'+esc(r.title)+'</h3><p>Reviewed component: <b>'+esc(r.componentLabel)+'</b></p></div><div class="admin-actions"><a class="btn" href="'+r.href+'">OPEN</a></div></article>').join('')+'</div>':'<p>No reviewed components are currently recorded in verification-state.json.</p>')+'</section>'}
 function mountLearnerPreviews(){
   const frames=Array.from(root.querySelectorAll('.admin-preview-frame[data-src]'));
   const load=frame=>{if(frame.dataset.loaded==='1')return;frame.dataset.loaded='1';frame.src=frame.dataset.src+'&previewRefresh='+Date.now()};
@@ -259,25 +208,21 @@ function filterControls(){
   const selectedUnit=units.find(u=>String(u.id)===String(filterUnit));
   const topics=selectedUnit?.topics||[];
   const filters=['ALL','MICRO-TOPICS','QUESTIONS','PYQ','MCQ','NEED REVIEW','NOT YET REVIEWED','AI REVIEWED','EXPERT VERIFIED','CONTENT PASS','CONTENT FAIL','MISSING CONTENT','CONTENT READY','REMOVED FROM MY LIST'];
-  return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div><div class="admin-gemini-shortcut"><span>Need source-grounded enrichment?</span><button class="btn admin-gemini-shortcut-btn" type="button" id="adminGeminiShortcut">ASK GEMINI TO REWRITE A MICRO-TOPIC</button></div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
+  return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
 }
 function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
-  root.querySelector('#adminQueue').innerHTML=approvalQueueCard()+'<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
+  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size;
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
   const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
   const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
-  const geminiShortcut=root.querySelector('#adminGeminiShortcut');if(geminiShortcut)geminiShortcut.onclick=()=>{filter='MICRO-TOPICS';renderQueue();root.querySelector('#geminiBox')?.scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>{const instruction=root.querySelector('#enrichmentInstruction');if(instruction){instruction.focus();instruction.setSelectionRange(instruction.value.length,instruction.value.length)}},250)};
   root.querySelectorAll('.admin-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,b.dataset.review));
   root.querySelectorAll('.admin-component-review').forEach(b=>b.onclick=()=>changeReview(b.dataset.componentReview,b.dataset.id,b.dataset.reviewValue));
   root.querySelectorAll('.admin-clear').forEach(b=>b.onclick=()=>changeReview(b.dataset.type,b.dataset.id,''));
   root.querySelectorAll('.admin-hide,.admin-show').forEach(b=>b.onclick=()=>toggleVisibility(b.dataset.type,b.dataset.id));
   root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
-  root.querySelectorAll('.admin-gemini').forEach(b=>b.onclick=()=>{const id=b.dataset.id,title=titleFor('microtopics',id),instruction=document.querySelector('#enrichmentInstruction'),targets=document.querySelector('#enrichmentTargets'),box=document.querySelector('#geminiBox');const locked=Object.entries({microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Active Recall',revision:'Revision',practice:'Practice'}).filter(([component])=>componentReview(component,id)==='EXPERT VERIFIED').map(([,label])=>label);const rewriteable=Object.entries({microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Active Recall',revision:'Revision',practice:'Practice'}).filter(([component])=>componentReview(component,id)!=='EXPERT VERIFIED').map(([,label])=>label);if(instruction)instruction.value='Rewrite ONLY the non-EXPERT-VERIFIED components of the complete connected five-component package for '+title+' ('+id+'). Locked components: '+(locked.length?locked.join(', '):'none')+'. Components available for rewrite: '+(rewriteable.length?rewriteable.join(', '):'none')+'. Use approved source evidence and current published content. Treat the micro-topic as canonical and keep all non-locked components aligned with any locked expert-verified content. Never modify, paraphrase, shorten, expand, reformat, replace or regenerate an EXPERT VERIFIED component. Do not invent facts, researchers, experiments, statistics, dates, citations, PYQs or exam trends. Keep generated practice distinct from authentic PYQs. Add cross-references only when source-supported and syllabus-valid. Avoid generic filler and repetition.';if(targets)targets.value=id;if(box)box.scrollIntoView({behavior:'smooth',block:'start'});if(instruction){instruction.focus();instruction.setSelectionRange(instruction.value.length,instruction.value.length)}});
   root.querySelectorAll('.admin-edit-close').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-editor');if(editor)editor.hidden=true});
   root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
-  root.querySelectorAll('.approve-queued').forEach(b=>b.onclick=()=>approveQueued(b.dataset.id,b.dataset.component));
-  root.querySelectorAll('.keep-verified').forEach(b=>b.onclick=()=>closeVerifiedConflict(b.dataset.id,b.dataset.component));
   mountLearnerPreviews();
 }
 async function changeReview(type,id,value){
@@ -314,15 +259,17 @@ async function checkBridge(){
   return bridgeHealth.ok;
 }
 async function dashboard(){
-  root.innerHTML='<section class="admin-hero"><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Content Audit</h1><p>Each item opens in its real learner-facing view. Edit the canonical content, ask Gemini to rewrite source-grounded content, hide it temporarily, or record your expert review without leaving this page.</p></section><div id="geminiBox">'+instructionCard()+'</div><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';
+  root.innerHTML='<section class="admin-hero"><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Content Audit</h1><p>Each item opens in its real learner-facing view. Edit the canonical content, prepare a ChatGPT content packet, hide it temporarily, or record your expert review without leaving this page.</p></section><div id="contentTaskBox">'+instructionCard()+'</div><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';
   try{
-    const [syllabus,micro,deep,recall,revision,practice,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/deep-dive/deep_dive.json'),loadJSON('content/active-recall/active_recall.json'),loadJSON('content/revision/revision_guidance.json'),loadJSON('content/practice/practice_mcqs.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadApprovalQueue(),loadInstructions(),loadInsights()]);
+    const [syllabus,micro,deep,recall,revision,practice,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/deep-dive/deep_dive.json'),loadJSON('content/active-recall/active_recall.json'),loadJSON('content/revision/revision_guidance.json'),loadJSON('content/practice/practice_mcqs.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions()]);
     microPool=micro||{};deepPool=deep||{};recallPool=recall||{};revisionPool=revision||{};practicePool=practice||{};questionStore=qpool;data=buildAdminData(syllabus,microPool);
     questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
     const running=await checkSite();
     root.querySelector('#adminQueue').insertAdjacentHTML('afterbegin','<section class="card admin-health"><div><div class="eyebrow">STATIC CONTENT SOURCE</div><strong>CANONICAL STATIC POOLS</strong><p>Owner audit reads the published static content pools directly. Supabase is not an audit source.</p></div></section>'+bridgeStatusCard()+'<section class="card admin-health"><div><div class="eyebrow">WEBSITE STATUS</div><strong>'+ (running?'RUNNING':'CHECK FAILED') +'</strong><p>Core pages, runtime, stylesheet and published content pools '+(running?'are responding.':'did not all respond.')+'</p></div></section>');
     const saveEnrichment=root.querySelector('#saveEnrichment');
     if(saveEnrichment)saveEnrichment.onclick=saveInstructions;
+    const generationMode=root.querySelector('#generationMode');if(generationMode)generationMode.onchange=populateGenerationTargets;
+    populateGenerationTargets();
     const retry=root.querySelector('#retryBridge');
     if(retry)retry.onclick=async()=>{retry.disabled=true;retry.textContent='CHECKING…';await checkBridge();await dashboard()};
     renderQueue();

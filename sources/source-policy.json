@@ -17,26 +17,27 @@
     "extract_or_reuse_by_source_hash",
     "ocr_low_text_pdf_pages",
     "preserve_page_references",
-    "map",
-    "generate_connected_package",
-    "audit_each_component",
-    "publish_passing_components",
-    "queue_failed_components"
+    "select_requested_unit_or_record_scope",
+    "prepare_chatgpt_packet_with_standing_instructions",
+    "validate_returned_package_schema_and_provenance",
+    "protect_expert_verified_components",
+    "run_deterministic_content_validation",
+    "open_human_review_pull_request"
   ],
   "provenance_required": true,
   "extraction_cache": {
     "location": ".cache/source-extraction",
     "persistence": "GitHub Actions cache between workflow runs",
-    "cache_key": "source SHA-256 + relative path + extractor version",
+    "cache_key": "source SHA-256 + relative path + extractor version 4",
     "invalidation": "Re-extract when source bytes or extractor version changes; remove cache entries for deleted sources.",
     "ocr_policy": "OCR only PDF pages with missing or very low text-layer output; preserve page markers.",
     "repository_policy": "Never commit extracted source text or cache files to Git."
   },
   "duplicate_information_policy": "Repeat source information only when it serves a different learner decision.",
-  "source_truth_policy": "Source material is evidence and must not be treated as automatically correct.",
-  "automation_policy": "Source files are processed outside the learner runtime. The source-to-content workflow generates a connected five-component package, independently audits Micro-topic, Deep Dive, Active Recall, Revision and Practice, publishes passing components to static pools, and places final failures in the owner approval queue. Learner pages never run generation or audit logic.",
-  "mapping_policy": "Quick Learn cards and questions may be remapped automatically only when confidence is high against the canonical syllabus. Ambiguous records remain unresolved for human review.",
+  "source_truth_policy": "Source material is evidence and must not be treated as automatically correct. Use only resources already present in this repository; external websites, web search, outside books/articles, external APIs, and general model knowledge are not permitted as factual sources for content generation. If repository evidence is insufficient, omit the claim or flag the gap.",
+  "automation_policy": "Repository-resident approved source files are extracted once and cached by source hash, path, and extractor version. ChatGPT packets contain the complete standing instructions, operation scope, current repository content, source manifest and selected source excerpts. ChatGPT generation is manual and uses no model API. Returned changes are checked for canonical IDs, schema, expert-verified locks, record scope, and operation-specific preservation rules, then proposed in a human-review PR. No content is published directly to main.",
+  "mapping_policy": "Content enrichment preserves existing Quick Learn card and question syllabus mappings. Automatic mapping is not part of this workflow; unmapped records are excluded and require separate explicit review.",
   "copyright_policy": "Generated learner content must summarize and transform source material; do not copy long passages from copyrighted books into the repository.",
-  "feedback_policy": "Learner feedback is collected separately from learner content and may be aggregated for future AI-assisted creation or rewriting of static source-grounded content. Feedback must not alter learner content at runtime.",
+  "feedback_policy": "Learner feedback is collected separately from learner content and may inform future ChatGPT-assisted creation or rewriting of static source-grounded content. Feedback must not alter learner content at runtime.",
   "verification_policy": "Learners may see only EXPERT VERIFIED, VERIFIED, or no verification tag. Verification status is static content metadata; internal audit state is never loaded by learner pages."
 }

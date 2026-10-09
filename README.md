@@ -212,11 +212,13 @@ The canonical taxonomy is `data/syllabus-index.json`. Connected content uses the
 
 The source-to-publication lifecycle is:
 
-**Approved sources → Gemini proposal → protect EXPERT VERIFIED components → connected-package audit → permitted rewrites → final audit → surgical publication**
+**Repository sources → cached extraction/OCR → ChatGPT task packet → manual generation → schema and content validation → human-review PR**
 
-- The newer Python connected-package audit is the authoritative AI audit. The retired browser heuristic audit is no longer part of the Admin Workbench.
-- Expert-verified content is locked at prompt, generation and audit stages and can never be silently downgraded to AI reviewed.
-- A failed component is withheld and placed in the owner approval queue after the permitted rewrite attempts.
+- Content generation uses no model API key. GitHub Actions prepares a packet for use in any ChatGPT conversation.
+- The packet includes the complete standing instructions and uses only factual source files already present in `sources/inbox/` and listed in the packet manifest. External websites, outside books, APIs, memory and general model knowledge are not permitted as factual sources.
+- Admin supports connected package rewrites, first-time whole-unit enrichment, Quick Learn card rewrites, MCQ formatting/explanation improvements, and PYQ formatting/explanation improvements.
+- EXPERT VERIFIED package components are immutable. Authentic PYQ stems, option wording/order, answers, years and source identity are preserved; only whitespace formatting and explanations may be improved.
+- Returned content is validated and proposed in a human-review PR. Nothing publishes directly to `main`.
 - `content/questions/questions.json` owns authentic PYQs and the general question bank; `content/practice/practice_mcqs.json` owns original package-specific application/discrimination MCQs.
 - Supabase is a derived synchronized copy. It is never the authoring, audit or canonical content source.
 
