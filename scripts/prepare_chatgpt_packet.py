@@ -58,7 +58,10 @@ def select_evidence(ref,chunks):
     return selected
 
 def records_for(store,group=None):
-    if isinstance(store,list): return store
+    if isinstance(store,list):
+        if group=="pyq": return [x for x in store if isinstance(x,dict) and "pyq" in str(x.get("type","")).lower()]
+        if group=="practice": return [x for x in store if isinstance(x,dict) and "pyq" not in str(x.get("type","")).lower()]
+        return store
     if not isinstance(store,dict): return []
     if group:
         value=store.get(group,[])
@@ -85,7 +88,7 @@ def main():
     source_chunks,source_meta,stats=stc.load_source_library()
     instructions=stc.load(INSTRUCTIONS); policy=stc.load(POLICY)
     verification=stc.load(VERIFICATION) if VERIFICATION.exists() else {"items":{}}
-    requested_ids=[str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()]
+    requested_ids=[str(x).strip() for x in (request.get("target_record_ids") if operation in {"quick_cards_rewrite","mcq_improvement","pyq_improvement"} else request.get("target_microtopics",[])) if str(x).strip()]
     unit_id=str(request.get("target_unit_id") or "").strip()
     if operation=="unit_rewrite":
         if not unit_id: raise SystemExit("Whole-unit enrichment requires target_unit_id.")
@@ -111,7 +114,10 @@ def main():
     for mid in target_ids:
         ref=refs[mid]; excerpts=select_evidence(ref,source_chunks)
         if not excerpts:
-            if operation in PACKAGE_OPS: print("Skipping "+mid+": no matching repository source evidence.")
+            if operation in PACKAGE_OPS:
+                if requested_ids or operation=="unit_rewrite":
+                    raise SystemExit("No matching repository source evidence for requested micro-topic "+mid+"; add a source file to sources/inbox or choose a supported target.")
+                print("Skipping "+mid+": no matching repository source evidence.")
             continue
         locked=[c for c,k in VERIFY_KEYS.items() if str((statuses.get(k) or {}).get(mid,""))=="EXPERT VERIFIED"]
         topics.append({"canonical":ref,"expert_verified_components_locked":locked,"current_published_package":published(ref),"source_excerpts":excerpts})
