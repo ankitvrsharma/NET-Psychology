@@ -2,15 +2,14 @@
 """Repository source extraction/cache and deterministic application of validated manual ChatGPT content."""
 from pathlib import Path
 import argparse, hashlib, json, os, re, subprocess, sys
-from copy import deepcopy
 from datetime import datetime, timezone
 import tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 INBOX=ROOT/"sources/inbox"
 EXTRACTION_CACHE=ROOT/".cache/source-extraction"
-EXTRACTOR_VERSION="3"
-SUPPORTED_SOURCE_SUFFIXES={".pdf",".docx",".pptx",".txt",".md"}
+EXTRACTOR_VERSION="4"
+SUPPORTED_SOURCE_SUFFIXES={".pdf",".docx",".pptx",".txt",".md",".csv",".tsv",".json"}
 SYLLABUS=ROOT/"data/syllabus-index.json"
 QUICK=ROOT/"content/quick-learn/quick_cards.json"
 QUESTIONS=ROOT/"content/questions/questions.json"
@@ -95,7 +94,8 @@ def extract(p):
                     page_text=ocr_text
             output.append(f"[PAGE {index}]\n{page_text.strip()}")
         return "\n\n".join(output)
-    if p.suffix.lower() in {".txt",".md"}:
+    if p.suffix.lower() in {".txt",".md",".csv",".tsv",".json"}:
+        # Structured repository resources are retained as text evidence.
         return p.read_text(encoding="utf-8",errors="ignore")
     if p.suffix.lower()==".docx":
         from docx import Document
