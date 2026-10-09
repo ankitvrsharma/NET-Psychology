@@ -104,6 +104,8 @@ def validate_record_updates(raw,operation,request):
     if operation=="quick_cards_rewrite" and isinstance(quick_store,dict):
         current_by_id={str(k):v for k,v in quick_store.items() if isinstance(v,dict)}
     requested={str(x) for x in request.get("target_microtopics",[]) if str(x)}
+    requested_records={str(x) for x in request.get("target_record_ids",[]) if str(x)}
+    target_unit=str(request.get("target_unit_id") or "")
     seen=set(); cleaned=[]; errors=[]
     for i,row in enumerate(updates):
         if not isinstance(row,dict) or not isinstance(row.get("id"),(str,int)) or not isinstance(row.get("updates"),dict):
@@ -113,6 +115,8 @@ def validate_record_updates(raw,operation,request):
         seen.add(rid)
         current=current_by_id.get(rid)
         if not current: errors.append("unknown record ID "+rid); continue
+        if requested_records and rid not in requested_records: errors.append("record ID "+rid+" was not requested"); continue
+        if target_unit and str(current.get("unit",""))!=target_unit: errors.append("record ID "+rid+" is not mapped to selected unit "+target_unit); continue
         proposed=row["updates"]
         if not proposed: errors.append(rid+": updates cannot be empty"); continue
         if operation=="quick_cards_rewrite":
