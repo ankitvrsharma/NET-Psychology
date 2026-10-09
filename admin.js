@@ -109,7 +109,7 @@ async function saveInstructions(){
     if(note)note.textContent='Could not submit generation request: '+e.message
   }finally{
     const current=document.querySelector('#saveEnrichment');
-    if(current){current.disabled=false;current.textContent='GENERATE CONTENT'}
+    if(current){current.disabled=false;current.textContent='PREPARE CHATGPT PACKET'}
   }
 }
 function buildAdminData(syllabus,microPool){return {...syllabus,units:(syllabus.units||[]).map(u=>({...u,topics:(u.topics||[]).map(t=>({...t,microtopics:(t.microtopics||[]).map(ref=>{const content=microPool[String(u.id)+'-'+String(t.id)+'-'+String(ref.id)];return content?{...content,id:ref.id}:ref;})}))}))};}
