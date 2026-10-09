@@ -2,7 +2,7 @@
 'use strict';
 const OWNER='ankitvrsharma',REPO='ankitvrsharma/NET-Psychology',BRANCH='main';
 const root=document.querySelector('#adminApp'),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let approvalQueue=[],verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
+let verificationState={schema_version:2,items:{},updated_at:''},instructions={schema_version:1,enabled:true,default_instruction:'',user_instruction:'',target_microtopics:[],updated_at:'',updated_by:''},data=null,microPool={},deepPool={},recallPool={},revisionPool={},practicePool={},questionStore=null,questions=[],filter='ALL';
 let filterUnit='ALL',filterTopic='ALL';
 const ADMIN_HIDDEN_KEY='netPsychAdminHiddenContent:v1';
 let hiddenForMe=new Set();
@@ -36,38 +36,7 @@ function questionHealth(q){
 }
 
 async function loadAuditState(){const r=await fetch('./data/verification-state.json?v=20261006-verification',{cache:'no-store'});if(r.ok)verificationState=await r.json();if(!verificationState.items)verificationState.items={};}
-async function loadApprovalQueue(){
-  const r=await fetch('./data/content-approval-queue.json?v=20261006-approval-queue',{cache:'no-store'});
-  if(r.ok){const q=await r.json();approvalQueue=Array.isArray(q.pending)?q.pending:[];} else approvalQueue=[];
-}
-async function saveApprovalQueue(next){
-  const payload=JSON.stringify({schema_version:2,updated_at:new Date().toISOString(),pending:next},null,2)+'\n';
-  await window.NETPSY_AUTH.githubWrite('write_file',{path:'data/content-approval-queue.json',content:payload,message:'Admin: approve queued AI content'});
-}
 function packageText(value){if(Array.isArray(value))return value.map(packageText).join('\n');if(value&&typeof value==='object')return Object.entries(value).map(([k,v])=>k+': '+packageText(v)).join('\n');return String(value??'');}
-function approvalQueueCard(){
-  const pending=approvalQueue.filter(x=>x.status==='PENDING_OWNER_APPROVAL');
-  const conflicts=approvalQueue.filter(x=>x.status==='PENDING_OWNER_CONFLICT_REVIEW');
-  let html='<section class="card admin-approval-queue"><div class="eyebrow">AI REVIEW QUEUE</div>';
-  html+='<h2>'+pending.length+' audit failure'+(pending.length===1?'':'s')+' · '+conflicts.length+' verified conflict'+(conflicts.length===1?'':'s')+'</h2>';
-  if(conflicts.length) html+='<p><b>Verified conflicts never overwrite your content.</b> Compare the owner-verified version with ChatGPT’s repository-grounded proposed version below.</p>'+conflicts.map(x=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status fail">EXPERT VERIFIED CONFLICT</span><h3>'+esc(x.title||x.microtopic_id)+'</h3><p>Micro-topic: <b>'+esc(x.microtopic_id)+'</b> · Component: <b>'+esc(x.component||'')+'</b> · Severity: <b>'+esc(x.severity||'material')+'</b></p><p>'+esc(x.rationale||'')+'</p><p><b>Conflicting claims:</b> '+esc((x.conflicting_claims||[]).join(' · '))+'</p><div class="admin-package-grid"><div><span class="eyebrow">YOUR VERIFIED VERSION</span><div class="admin-package-content">'+esc(packageText(x.verified_version))+'</div></div><div><span class="eyebrow">CHATGPT PROPOSED VERSION</span><div class="admin-package-content">'+esc(packageText(x.proposed_version))+'</div></div></div></div><div class="admin-actions"><button class="btn primary keep-verified" data-id="'+esc(x.microtopic_id)+'" data-component="'+esc(x.component||'')+'">KEEP VERIFIED & CLOSE</button></div></article>').join('');
-  if(pending.length) html+='<p>Failed components remain withheld until owner approval.</p>'+pending.map(x=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status fail">PENDING APPROVAL</span><h3>'+esc(x.title||x.microtopic_id)+'</h3><p>Micro-topic: <b>'+esc(x.microtopic_id)+'</b> · Component: <b>'+esc(x.component||'package')+'</b> · Final score: <b>'+esc(x.final_audit?.score??'—')+'</b></p><p>'+esc((x.final_audit?.issues||[]).join(', ')||'See audit history for details.')+'</p></div><div class="admin-actions"><button class="btn primary approve-queued" data-id="'+esc(x.microtopic_id)+'" data-component="'+esc(x.component||'')+'">APPROVE & PUBLISH</button></div></article>').join('');
-  if(!pending.length&&!conflicts.length) html+='<p>No content is awaiting owner review.</p>';
-  return html+'</section>';
-}
-async function closeVerifiedConflict(id,component){
-  const next=approvalQueue.map(x=>(String(x.microtopic_id)===String(id)&&String(x.component||'')===String(component)&&x.status==='PENDING_OWNER_CONFLICT_REVIEW')?{...x,status:'RESOLVED_KEEP_VERIFIED',resolved_at:new Date().toISOString(),resolved_by:OWNER}:x);
-  try{await saveApprovalQueue(next);approvalQueue=next;renderQueue();}catch(e){alert('Could not close conflict: '+e.message)}
-}
-async function approveQueued(id,component){
-  const next=approvalQueue.map(x=>(String(x.microtopic_id)===String(id)&&String(x.component||'')===String(component||''))?{...x,status:'APPROVED',approved_at:new Date().toISOString(),approved_by:OWNER}:x);
-  try{
-    await saveApprovalQueue(next);
-    approvalQueue=next;
-    await window.NETPSY_AUTH.githubWrite('dispatch_workflow',{workflow:'publish-approved-content.yml',ref:BRANCH,inputs:{microtopic_id:String(id)}});
-    renderQueue();
-  }catch(e){alert('Could not approve/publish queued content: '+e.message)}
-}
 async function loadInstructions(){const r=await fetch('./data/content-enrichment-instructions.json?v=20261006-enrichment',{cache:'no-store'});if(r.ok)instructions=await r.json();if(!Array.isArray(instructions.target_microtopics))instructions.target_microtopics=[]}
 function instructionCard(){return `<section class="card admin-instructions"><div class="eyebrow">CONTENT GENERATION</div><h2>Prepare a source-grounded ChatGPT task</h2><p>Choose the content operation. Every packet applies the full standing instructions and uses only source files already present in this repository. ChatGPT runs manually in any conversation; no model API key is needed.</p><div class="admin-learning-contract"><b>Learning contract:</b> Micro-topic → Deep Dive → Active Recall → Revision → Practice. Authentic PYQs remain distinct and are never rewritten as practice questions.</div><label class="admin-field"><span>What should be improved in this run?</span><select id="generationMode"><option value="package_rewrite">Rewrite a connected micro-topic learning package</option><option value="unit_rewrite">First-time enrichment / rewrite a whole unit</option><option value="quick_cards_rewrite">Rewrite Quick Learn cards</option><option value="mcq_improvement">Improve MCQ formatting and explanations</option><option value="pyq_improvement">Improve PYQ formatting and explanations</option></select></label><label class="admin-field" id="unitTargetField"><span>Unit for whole-unit enrichment</span><select id="targetUnit"><option value="">Choose a unit</option></select></label><label class="admin-field"><span id="targetIdsLabel">Optional micro-topic IDs</span><input id="enrichmentTargets" type="text" value="" placeholder="Example: 5-3-2, 5-3-3"></label><label class="admin-field"><span>Task-specific guidance (optional but recommended)</span><textarea id="enrichmentInstruction" rows="5" placeholder="Example: Improve conceptual distinctions and explanation quality using only the repository sources. Preserve expert-verified content and authentic PYQ wording."></textarea></label><div class="admin-actions"><button class="btn primary" id="saveEnrichment">PREPARE CHATGPT PACKET</button></div><p class="admin-help">Whole-unit mode includes every canonical micro-topic in the selected unit. Quick Learn mode rewrites card content while preserving IDs and syllabus mapping. MCQ mode may improve stem/options formatting and explanation; PYQ mode preserves the authentic question, options, answer and year and improves only its explanation/presentation. Returned JSON is validated and proposed for review; nothing publishes directly to main.</p><div id="enrichmentStatus" class="admin-status-note" aria-live="polite"></div></section>`;}
 function populateGenerationTargets(){const select=document.querySelector('#targetUnit');if(!select||!data?.units)return;const previous=select.value;select.innerHTML='<option value="">Choose a unit</option>'+(data.units||[]).map(u=>'<option value="'+esc(u.id)+'">'+esc('Unit '+u.id+' · '+u.title)+'</option>').join('');if(previous)select.value=previous;const mode=document.querySelector('#generationMode')?.value||'package_rewrite';const field=document.querySelector('#unitTargetField');if(field)field.hidden=false;const unitLabel=field?.querySelector('span');if(unitLabel)unitLabel.textContent=mode==='unit_rewrite'?'Unit for whole-unit enrichment':'Optional unit scope';const label=document.querySelector('#targetIdsLabel');const input=document.querySelector('#enrichmentTargets');if(label&&input){const cfg={package_rewrite:['Optional micro-topic IDs','Example: 5-3-2, 5-3-3'],unit_rewrite:['Micro-topic IDs (optional; leave blank for entire unit)','Blank means all micro-topics in the selected unit'],quick_cards_rewrite:['Optional Quick Learn card IDs','Blank means all eligible cards in the selected unit or repository'],mcq_improvement:['Optional MCQ IDs','Blank means eligible MCQs from repository question pool'],pyq_improvement:['Optional PYQ IDs','Blank means eligible authentic PYQs from repository question pool']};const v=cfg[mode]||cfg.package_rewrite;label.textContent=v[0];input.placeholder=v[1];}}
@@ -260,7 +229,7 @@ function filterControls(){
 }
 function renderQueue(){
   const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
-  root.querySelector('#adminQueue').innerHTML=approvalQueueCard()+'<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
+  root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
   const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
   const topic=root.querySelector('#adminTopicFilter');if(topic)topic.onchange=()=>{filterTopic=topic.value;renderQueue()};
@@ -271,8 +240,6 @@ function renderQueue(){
   root.querySelectorAll('.admin-edit').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(editor){editor.hidden=!editor.hidden;if(!editor.hidden)editor.scrollIntoView({behavior:'smooth',block:'start'})}});
   root.querySelectorAll('.admin-edit-close').forEach(b=>b.onclick=()=>{const editor=b.closest('.admin-editor');if(editor)editor.hidden=true});
   root.querySelectorAll('.admin-save-content').forEach(b=>b.onclick=async()=>{const editor=b.closest('.admin-item')?.querySelector('.admin-editor');if(!editor)return;b.disabled=true;b.textContent='SAVING…';try{await saveContent(editor.dataset.editorType,editor.dataset.editorId,editor)}catch(e){alert('Could not save content: '+e.message);b.disabled=false;b.textContent='SAVE CONTENT'}});
-  root.querySelectorAll('.approve-queued').forEach(b=>b.onclick=()=>approveQueued(b.dataset.id,b.dataset.component));
-  root.querySelectorAll('.keep-verified').forEach(b=>b.onclick=()=>closeVerifiedConflict(b.dataset.id,b.dataset.component));
   mountLearnerPreviews();
 }
 async function changeReview(type,id,value){
@@ -311,7 +278,7 @@ async function checkBridge(){
 async function dashboard(){
   root.innerHTML='<section class="admin-hero"><div class="eyebrow">CONTENT MANAGEMENT</div><h1>Content Audit</h1><p>Each item opens in its real learner-facing view. Edit the canonical content, prepare a ChatGPT content packet, hide it temporarily, or record your expert review without leaving this page.</p></section><div id="contentTaskBox">'+instructionCard()+'</div><div id="adminQueue" class="admin-queue"><div class="card">Loading content…</div></div>';
   try{
-    const [syllabus,micro,deep,recall,revision,practice,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/deep-dive/deep_dive.json'),loadJSON('content/active-recall/active_recall.json'),loadJSON('content/revision/revision_guidance.json'),loadJSON('content/practice/practice_mcqs.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadApprovalQueue(),loadInstructions()]);
+    const [syllabus,micro,deep,recall,revision,practice,qpool]=await Promise.all([loadJSON('data/syllabus-index.json'),loadJSON('content/microtopics/micro_topics.json'),loadJSON('content/deep-dive/deep_dive.json'),loadJSON('content/active-recall/active_recall.json'),loadJSON('content/revision/revision_guidance.json'),loadJSON('content/practice/practice_mcqs.json'),loadJSON('content/questions/questions.json'),loadAuditState(),loadInstructions()]);
     microPool=micro||{};deepPool=deep||{};recallPool=recall||{};revisionPool=revision||{};practicePool=practice||{};questionStore=qpool;data=buildAdminData(syllabus,microPool);
     questions=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
     const running=await checkSite();
