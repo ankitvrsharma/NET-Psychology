@@ -82,6 +82,19 @@ class ChatGPTPacketTests(unittest.TestCase):
         self.assertFalse(errors)
         self.assertEqual(updates[0]["id"], "PYQ-1")
 
+    def test_mcq_correct_answer_cannot_be_changed(self):
+        qstore = {"practice": [{"id": "MCQ-1", "question": "Which theory explains learning?", "options": ["A", "B", "C", "D"], "correct_answer": "A", "explanation": "Old explanation."}]}
+        with patch.object(importer.stc, "load", return_value=qstore):
+            _, errors = importer.validate_record_updates(
+                {"question_updates": [{"id": "MCQ-1", "updates": {"correct_answer": "B", "explanation": "A detailed explanation grounded in repository source evidence, with a clear reason why the correct option fits the concept."}}]},
+                "mcq_improvement", {})
+        self.assertTrue(any("cannot update question field correct_answer" in e for e in errors))
+
+    def test_admin_exposes_all_requested_content_operations(self):
+        admin = (ROOT / "admin.js").read_text(encoding="utf-8")
+        for operation in ("unit_rewrite", "quick_cards_rewrite", "mcq_improvement", "pyq_improvement"):
+            self.assertIn(operation, admin)
+
 
 if __name__ == "__main__":
     unittest.main()
