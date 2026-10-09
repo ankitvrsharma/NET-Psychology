@@ -207,14 +207,7 @@ def main():
     parser=argparse.ArgumentParser(description="Extract/cache approved repository sources or apply validated ChatGPT content.")
     parser.add_argument("--prepare-source-cache",action="store_true",help="Extract/cache repository sources; no content generation.")
     parser.add_argument("--apply-staged",action="store_true",help="Apply the validated manual ChatGPT response.")
-    parser.add_argument("--apply",action="store_true",help=argparse.SUPPRESS)
-    parser.add_argument("--repair-existing",action="store_true",help=argparse.SUPPRESS)
-    parser.add_argument("--enrich-existing",action="store_true",help=argparse.SUPPRESS)
-    parser.add_argument("--rewrite-existing",action="store_true",help=argparse.SUPPRESS)
-    parser.add_argument("--source-triggered",action="store_true",help=argparse.SUPPRESS)
     args=parser.parse_args()
-    if args.apply or args.repair_existing or args.enrich_existing or args.rewrite_existing or args.source_triggered:
-        raise SystemExit("The legacy model-generation path has been retired. Use scripts/prepare_chatgpt_packet.py and the manual ChatGPT response workflow.")
     if args.prepare_source_cache:
         _,_,stats=load_source_library()
         print("Source extraction cache prepared: "+json.dumps(stats,sort_keys=True))
