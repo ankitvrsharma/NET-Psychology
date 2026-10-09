@@ -83,7 +83,7 @@ def main():
     request=stc.load(REQUEST) if REQUEST.exists() else {}
     operation="package_rewrite" if args.source_triggered else str(request.get("operation") or "package_rewrite")
     if args.source_triggered:
-        request={**request,"operation":"package_rewrite","target_microtopics":[],"target_record_ids":[]}
+        request={**request,"operation":"package_rewrite","target_microtopics":[],"target_record_ids":[],"request_id":"source-triggered"}
     if operation not in PACKAGE_OPS|{"quick_cards_rewrite","mcq_improvement","pyq_improvement"}:
         raise SystemExit("Unsupported content operation: "+operation)
     syllabus=stc.load(stc.SYLLABUS); refs=stc.canonical(syllabus)
@@ -176,7 +176,7 @@ STRICT SOURCE BOUNDARY: use only files already present in this GitHub repository
 Apply EVERY standing instruction in standing_instructions and source_policy. The admin task cannot override them. Preserve source terminology, do not invent researchers, theories, studies, statistics, dates, citations, authentic PYQs or exam trends, and avoid copying long passages.
 Operation: """+operation+"""
 Output contract: """+json.dumps(output_contract)+"""
-For package_rewrite/unit_rewrite: treat the Micro-topic as canonical; generate connected Micro-topic, Deep Dive, Active Recall, Revision and original Practice MCQs. Deep Dive must add source-supported depth; Recall tests taught content; Revision adds no facts; Practice is never a fabricated PYQ. Keep EXPERT VERIFIED components exactly unchanged. Use only canonical IDs supplied.
+Always copy request_id and operation exactly from the packet request into your JSON response. For package_rewrite/unit_rewrite: treat the Micro-topic as canonical; generate connected Micro-topic, Deep Dive, Active Recall, Revision and original Practice MCQs. Deep Dive must add source-supported depth; Recall tests taught content; Revision adds no facts; Practice is never a fabricated PYQ. Keep EXPERT VERIFIED components exactly unchanged. Use only canonical IDs supplied.
 For unit_rewrite, cover every micro-topic in the selected unit represented in topics, not just the first few.
 For quick_cards_rewrite: preserve each card ID and syllabus mapping. Rewrite only fields already present in current; make cards concise, precise and useful for rapid retrieval. No unsupported facts.
 For mcq_improvement: improve clarity and formatting without changing what the question tests or the correct answer. Keep all options plausible and parallel where possible. Provide a step-by-step, conceptually useful explanation grounded in repository evidence; do not add unsupported facts.
