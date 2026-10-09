@@ -17,50 +17,10 @@ QUESTIONS=ROOT/"content/questions/questions.json"
 REVISION=ROOT/"content/revision/revision_guidance.json"
 MICRO=ROOT/"content/microtopics/micro_topics.json"
 STAGING=ROOT/"content-staging"
-INSTRUCTIONS=ROOT/"data/content-enrichment-instructions.json"
 VERIFICATION=ROOT/"data/verification-state.json"
 VERIFICATION_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
 
 def load(p): return json.loads(Path(p).read_text(encoding="utf-8"))
-def load_instructions():
-    default={
-        "enabled":True,
-        "default_instruction":"Use only supplied approved source evidence. The micro-topic is the canonical knowledge source; derive Deep Dive, Active Recall, Revision and Practice/MCQs from the same knowledge without contradiction or unsupported additions. All five components form one connected learning package and must be generated/revised together when a rewrite is required.",
-        "user_instruction":"",
-        "target_microtopics":[]
-    }
-    value=default
-    if INSTRUCTIONS.exists():
-        try:
-            loaded=load(INSTRUCTIONS)
-            if isinstance(loaded,dict):
-                value={**default,**loaded}
-        except Exception:
-            pass
-    # Admin generation requests are job-scoped workflow inputs. They must not
-    # require a permanent write to the standing instruction file.
-    env_task=os.getenv("NET_ADMIN_INSTRUCTION","").strip()
-    env_targets=[x.strip() for x in os.getenv("NET_ADMIN_TARGETS","").split(",") if x.strip()]
-    if env_task:
-        value["user_instruction"]=env_task
-    if env_targets:
-        value["target_microtopics"]=env_targets
-    return value
-
-def instruction_text(cfg):
-    base=str(cfg.get("default_instruction") or "").strip()
-    modules=cfg.get("modular_instructions") or {}
-    module_order=("website_philosophy","source_use","microtopic","deep_dive","active_recall","revision","practice","cross_references","verification")
-    sections=[]
-    for key in module_order:
-        value=str(modules.get(key) or "").strip()
-        if value:
-            sections.append(key.replace("_"," ").upper()+":\n"+value)
-    user=str(cfg.get("user_instruction") or "").strip()
-    modular="\n\n".join(sections)
-    task=("ADMIN TASK INSTRUCTION:\n"+user) if user else ""
-    return "\n\n".join(x for x in (base,modular,task) if x)
-
 def save(p,o):
     Path(p).parent.mkdir(parents=True,exist_ok=True)
     Path(p).write_text(json.dumps(o,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
