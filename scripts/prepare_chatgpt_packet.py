@@ -104,8 +104,6 @@ def main():
             target_ids=requested_ids[:MAX_TOPICS]
     else:
         target_ids=[]
-        if requested_ids: target_ids=[mid for mid in requested_ids if mid in refs]
-        elif unit_id: target_ids=[mid for mid,ref in refs.items() if str(ref["unit"])==unit_id]
     if operation=="unit_rewrite" and len(target_ids)>MAX_TOPICS:
         raise SystemExit(f"Unit {unit_id} has {len(target_ids)} micro-topics, exceeding safe packet limit {MAX_TOPICS}. Split this unit into smaller topic-scoped requests.")
     topics=[]
@@ -127,6 +125,7 @@ def main():
         source_records=quick.items() if isinstance(quick,dict) else []
         for rid,item in source_records:
             if not isinstance(item,dict): continue
+            if requested_ids and str(rid) not in requested_ids: continue
             mid=canonical_id(item)
             if target_ids and mid not in target_ids: continue
             if unit_id and mid and str(refs.get(mid,{}).get("unit"))!=unit_id: continue
