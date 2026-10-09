@@ -18,6 +18,7 @@ OUT_MD=ROOT/"content-staging/chatgpt-packet.md"
 MAX_TOPICS=12
 MAX_EXCERPTS=8
 MAX_CHARS_PER_EXCERPT=4200
+_WORD_CACHE={}
 COMPONENTS=("microtopic","deep_dive","active_recall","revision","practice")
 VERIFY_KEYS={"microtopic":"microtopics","deep_dive":"deepDive","active_recall":"activeRecall","revision":"revision","practice":"practice"}
 
@@ -42,7 +43,12 @@ def select_evidence(ref,chunks):
     ranked=[]
     per_source={}
     for source,index,text in chunks:
-        score=len(words & set(stc.norm(text).split()))
+        cache_key=(source,index)
+        chunk_words=_WORD_CACHE.get(cache_key)
+        if chunk_words is None:
+            chunk_words=set(stc.norm(text).split())
+            _WORD_CACHE[cache_key]=chunk_words
+        score=len(words & chunk_words)
         if score<=0: continue
         row={"source":source,"chunk":index,"relevance_score":score,"text":text[:MAX_CHARS_PER_EXCERPT]}
         if source not in per_source or score>per_source[source]["relevance_score"]:
