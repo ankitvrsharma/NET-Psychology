@@ -355,9 +355,9 @@ function startPage(){
   $('#learnSearch')?.addEventListener('input',e=>draw(e.target.value));
 }function learningAccountPrompt(context='learning'){
   const signedIn=Boolean(window.NETPSY_AUTH?.getUser?.());
-  if(signedIn){
-    return '<section class="learning-account-prompt synced card"><div><div class="eyebrow">LEARNING ACCOUNT</div><h2>Your learning is backed up.</h2><p>Your progress, revision schedule and practice history can follow you across devices while you are signed in.</p></div><a class="btn" href="account.html">ACCOUNT →</a></section>';
-  }
+  // When signed in, the shared navigation already provides the Account destination.
+  // Keep the learner action queue focused on learning tasks rather than repeating sync status.
+  if(signedIn) return '';
   const copy=context==='practice'
     ? {eyebrow:'SAVE YOUR PRACTICE',title:'Keep your practice history.',text:'Your results are currently saved only on this device. Sign in or create a free account if you want your practice history to follow you across devices.'}
     : context==='complete'
@@ -1155,7 +1155,7 @@ function progress(){
   const started=s.started,total=s.total,interpretation=progressInterpretation(s);
   const signedIn=Boolean(window.NETPSY_AUTH?.getUser?.());
   const accountPrompt=signedIn
-    ? '<section class="progress-next card"><div><div class="eyebrow">PROGRESS SYNC</div><h2>Your learning state is backed up.</h2><p>Your progress, revision schedule and practice history can follow you across devices while you are signed in.</p></div><a class="btn" href="account.html">ACCOUNT →</a></section>'
+    ? ''
     : '<section class="progress-next card"><div><div class="eyebrow">OPTIONAL</div><h2>Keep your progress when you change devices.</h2><p>Your learning currently stays on this device. Create a free account or sign in when you want your progress, revision schedule and practice history to follow you across devices.</p></div><a class="btn" href="login.html">SAVE &amp; SYNC PROGRESS →</a></section>';
   const nextAction=topics.pending?{label:'Start Revision',href:'revision.html',note:topics.pending+' topic'+(topics.pending===1?'':'s')+' have revision work due.'}:started<total?{label:'Continue Learning',href:'unit.html?id=1',note:'Build your foundation one concept at a time. Continue from the learning path, work through the explanation, check your recall, and then move forward. Completing this cycle helps turn a concept from something you have read into something you can recall and use in questions.'}:{label:'Practice Questions',href:'practice.html',note:'Use recall and practice to test what you know.'};
   const errorRate=s.answers?100-s.accuracy:0;
