@@ -60,10 +60,10 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: .cache/source-extraction
-          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
           restore-keys: |
-            source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
-            source-extraction-v3-${{ runner.os }}-
+            source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
+            source-extraction-v4-${{ runner.os }}-
       - name: Extract and cache approved sources
         if: ${{ steps.detect.outputs.prepare == 'true' }}
         run: python scripts/source_to_content.py --prepare-source-cache
@@ -72,7 +72,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: .cache/source-extraction
-          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
       - name: Prepare source-grounded ChatGPT packet
         if: ${{ steps.detect.outputs.prepare == 'true' }}
         run: |
@@ -124,10 +124,10 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: .cache/source-extraction
-          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          key: source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
           restore-keys: |
-            source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
-            source-extraction-v3-${{ runner.os }}-
+            source-extraction-v4-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
+            source-extraction-v4-${{ runner.os }}-
       - name: Prepare any missing source cache entries
         if: ${{ steps.detect.outputs.response == 'true' }}
         run: python scripts/source_to_content.py --prepare-source-cache
