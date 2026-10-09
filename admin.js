@@ -198,24 +198,6 @@ function rowsFor(selectedFilter='ALL'){
     return true;
   }).sort((a,b)=>a.a.score-b.a.score);
 }
-function aiPassedRows(){
-  const componentLabels={microtopics:'Micro-topic',deepDive:'Deep Dive',activeRecall:'Recall',revision:'Revision',practice:'Practice MCQs'};
-  const out=[];
-  for(const [component,items] of Object.entries(verificationState?.items||{})){
-    if(!items||typeof items!=='object')continue;
-    for(const [id,status] of Object.entries(items)){
-      if(!['AI REVIEWED','EXPERT VERIFIED'].includes(status)||!componentLabels[component])continue;
-      const parts=String(id).split('-').map(Number),u=data?.units?.find(x=>x.id===parts[0]),t=u?.topics?.find(x=>x.id===parts[1]),m=t?.microtopics?.find(x=>x.id===parts[2]);
-      if(!u||!t||!m)continue;
-      out.push({component,id,title:u.title+' · '+t.title+' · '+m.title,componentLabel:componentLabels[component],href:component==='deepDive'?'deep-dive.html':component==='activeRecall'?'active-recall.html':component==='revision'?'revision.html':component==='practice'?'practice.html':'microtopic.html'});
-    }
-  }
-  return out.sort((a,b)=>a.title.localeCompare(b.title)||a.componentLabel.localeCompare(b.componentLabel));
-}
-function aiPassedCard(){
-  const passed=aiPassedRows(),counts={microtopics:0,deepDive:0,activeRecall:0,revision:0,practice:0};
-  passed.forEach(r=>{if(counts[r.component]!=null)counts[r.component]++});
-  return '<section class="card admin-ai-passed"><div class="eyebrow">CONTENT · REVIEWED</div><h2>'+passed.length+' components passed the source-grounded AI audit</h2><p>These components passed the independent AI gate and were recorded as <b>REVIEWED</b>. Review status is separate from your expert verification.</p><div class="admin-toolbar ai-passed-summary"><div><strong>'+counts.microtopics+'</strong><span>micro-topics</span></div><div><strong>'+counts.deepDive+'</strong><span>deep dives</span></div><div><strong>'+counts.activeRecall+'</strong><span>recall</span></div><div><strong>'+counts.revision+'</strong><span>revision</span></div><div><strong>'+counts.practice+'</strong><span>practice MCQs</span></div></div>'+(passed.length?'<div class="admin-ai-passed-list">'+passed.slice(0,80).map(r=>'<article class="admin-item"><div class="admin-item-copy"><span class="admin-status pass">REVIEWED · '+esc(r.componentLabel)+'</span><h3>'+esc(r.title)+'</h3><p>Reviewed component: <b>'+esc(r.componentLabel)+'</b></p></div><div class="admin-actions"><a class="btn" href="'+r.href+'">OPEN</a></div></article>').join('')+'</div>':'<p>No reviewed components are currently recorded in verification-state.json.</p>')+'</section>'}
 function mountLearnerPreviews(){
   const frames=Array.from(root.querySelectorAll('.admin-preview-frame[data-src]'));
   const load=frame=>{if(frame.dataset.loaded==='1')return;frame.dataset.loaded='1';frame.src=frame.dataset.src+'&previewRefresh='+Date.now()};
@@ -229,7 +211,7 @@ function filterControls(){
   return '<div class="admin-filter-groups"><div class="admin-filter-group"><span class="admin-filter-label">CONTENT & REVIEW</span><div class="admin-filters">'+filters.map(x=>'<button class="admin-filter '+(filter===x?'active':'')+'" data-filter="'+x+'">'+x.replace(/_/g,' ')+'</button>').join('')+'</div></div><div class="admin-filter-selects"><label><span>UNIT</span><select id="adminUnitFilter"><option value="ALL">All units</option>'+units.map(u=>'<option value="'+esc(u.id)+'" '+(String(filterUnit)===String(u.id)?'selected':'')+'>'+esc(u.title)+'</option>').join('')+'</select></label><label><span>TOPIC</span><select id="adminTopicFilter" '+(selectedUnit?'':'disabled')+'><option value="ALL">All topics</option>'+topics.map(t=>'<option value="'+esc(t.id)+'" '+(String(filterTopic)===String(t.id)?'selected':'')+'>'+esc(t.title)+'</option>').join('')+'</select></label></div></div>';
 }
 function renderQueue(){
-  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size,aiPassed=aiPassedRows();
+  const allRows=rowsFor('ALL'),visible=rowsFor(filter),need=allRows.filter(r=>r.a.status!=='PASS'&&!r.reviewStatus).length,sat=allRows.filter(r=>r.reviewStatus==='EXPERT VERIFIED').length,hiddenCount=hiddenForMe.size;
   root.querySelector('#adminQueue').innerHTML='<section class="admin-toolbar card"><div><strong>'+allRows.length+'</strong><span>content items</span></div><div><strong>'+need+'</strong><span>need owner review</span></div><div><strong>'+aiPassed.length+'</strong><span>AI passed</span></div><div><strong>'+sat+'</strong><span>expert verified</span></div><div><strong>'+hiddenCount+'</strong><span>removed from my list</span></div></section>'+filterControls()+(visible.length?visible.map(r=>makeItem(r.x.type,r.x.id,r.a)).join(''):'<section class="card admin-empty"><h2>No items in this view</h2><p>Change the filter or selection to see another content set.</p></section>');
   root.querySelectorAll('.admin-filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;renderQueue()});
   const unit=root.querySelector('#adminUnitFilter');if(unit)unit.onchange=()=>{filterUnit=unit.value;filterTopic='ALL';renderQueue()};
