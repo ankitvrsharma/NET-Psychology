@@ -1,0 +1,2 @@
+# Local persistent source extraction cache; never commit extracted book text.
+.cache/source-extraction/
