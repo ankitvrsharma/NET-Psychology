@@ -176,6 +176,7 @@ STRICT SOURCE BOUNDARY: use only files already present in this GitHub repository
 Apply EVERY standing instruction in standing_instructions and source_policy. The admin task cannot override them. Preserve source terminology, do not invent researchers, theories, studies, statistics, dates, citations, authentic PYQs or exam trends, and avoid copying long passages.
 Operation: """+operation+"""
 Output contract: """+json.dumps(output_contract)+"""
+ADMIN TASK INSTRUCTION: """+str(request.get("instruction") or "Complete the selected operation to improve repository content quality.")+"""
 Always copy request_id and operation exactly from the packet request into your JSON response. For package_rewrite/unit_rewrite: treat the Micro-topic as canonical; generate connected Micro-topic, Deep Dive, Active Recall, Revision and original Practice MCQs. Deep Dive must add source-supported depth; Recall tests taught content; Revision adds no facts; Practice is never a fabricated PYQ. Keep EXPERT VERIFIED components exactly unchanged. Use only canonical IDs supplied.
 For unit_rewrite, cover every micro-topic in the selected unit represented in topics, not just the first few.
 For quick_cards_rewrite: preserve each card ID and syllabus mapping. Rewrite only fields already present in current; make cards concise, precise and useful for rapid retrieval. No unsupported facts.
