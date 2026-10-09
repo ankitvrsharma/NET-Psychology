@@ -16,8 +16,9 @@ assert.ok(indexCalls.every(name => name === 'questions'), 'Only the questions in
 const routeMap = routesMatch[1];
 const routeKeys = new Set();
 for (const entry of routeMap.split(',')) {
-  const match = entry.trim().match(/^(?:'([^']+)'|([A-Za-z][\\w-]*))\\s*[:,]?/);
-  if (match) routeKeys.add(match[1] || match[2]);
+  const rawKey = entry.trim().split(':', 1)[0].trim();
+  const key = rawKey.startsWith("'") && rawKey.endsWith("'") ? rawKey.slice(1, -1) : rawKey;
+  if (key && /[A-Za-z]/.test(key[0])) routeKeys.add(key);
 }
 
 const htmlFiles = fs.readdirSync(root).filter(name => name.endsWith('.html'));
