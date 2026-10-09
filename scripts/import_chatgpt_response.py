@@ -40,11 +40,14 @@ def find_record(rows,rid):
 def validate_package_response(raw,request,refs,verification):
     packages=raw.get("packages") if isinstance(raw,dict) else raw
     response_targets={str(x).strip() for x in raw.get("target_microtopics",[]) if str(x).strip()} if isinstance(raw,dict) else set()
-    requested=response_targets or {str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()}
+    request_targets={str(x).strip() for x in request.get("target_microtopics",[]) if str(x).strip()}
+    requested=request_targets or response_targets
     statuses=verification.get("items") or {}
     required={"microtopic_id","core_explanation","detailed_explanation","recall_prompts","cross_references","revision_guidance","practice_mcqs"}
     if not isinstance(packages,list) or not packages: fail("response must contain a non-empty packages array")
     seen=set(); errors=[]; cleaned=[]
+    if request_targets and response_targets!=request_targets:
+        errors.append("response target_microtopics must exactly match the IDs requested in Admin")
     for index,g in enumerate(packages):
         label=f"package[{index}]"
         if not isinstance(g,dict): errors.append(label+" must be an object"); continue
@@ -146,7 +149,15 @@ def main():
     raw=stc.load(RESPONSE)
     if not isinstance(raw,dict): fail("response must be a JSON object")
     request=stc.load(REQUEST) if REQUEST.exists() else {}
+    response_request_id=str(raw.get("request_id") or "")
+    response_operation=str(raw.get("operation") or "")
+    if not response_request_id or not response_operation: fail("response must include the exact packet request_id and operation")
+    if response_request_id=="source-triggered":
+        request={**request,"request_id":"source-triggered","operation":response_operation,"target_microtopics":raw.get("target_microtopics",[]),"target_record_ids":raw.get("target_record_ids",[]),"target_unit_id":raw.get("target_unit_id","")}
+    elif response_request_id!=str(request.get("request_id") or ""):
+        fail("response request_id does not match the current Admin request; use the matching packet")
     operation=str(request.get("operation") or "package_rewrite")
+    if response_operation!=operation: fail("response operation does not match the packet request")
     refs=stc.canonical(stc.load(stc.SYLLABUS))
     verification=stc.load(VERIFICATION) if VERIFICATION.exists() else {"items":{}}
     approved={"schema_version":2,"operation":operation,"packages":[],"quick_cards":[],"question_updates":[]}
