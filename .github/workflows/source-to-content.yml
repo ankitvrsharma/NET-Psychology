@@ -55,9 +55,30 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y poppler-utils
+          sudo apt-get install -y poppler-utils tesseract-ocr
           pip install --upgrade pip
           pip install pypdf python-docx python-pptx
+
+      - name: Restore persistent source extraction cache
+        id: restore_source_cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/source-extraction
+          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
+          restore-keys: |
+            source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-
+            source-extraction-v3-${{ runner.os }}-
+
+      - name: Extract changed sources and OCR low-text PDF pages
+        id: prepare_source_cache
+        run: python scripts/source_to_content.py --prepare-source-cache
+
+      - name: Save persistent source extraction cache
+        if: ${{ always() && hashFiles('.cache/source-extraction/*.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/source-extraction
+          key: source-extraction-v3-${{ runner.os }}-${{ hashFiles('sources/inbox/**') }}-${{ hashFiles('.cache/source-extraction/*.json') }}
       - name: Compile content automation script
         run: python -m py_compile scripts/source_to_content.py
 
@@ -99,20 +120,6 @@ jobs:
                       f"Invalid JSON in {path}: line {exc.lineno}, column {exc.colno}: {exc.msg}"
                   ) from exc
               print(f"JSON preflight OK: {path}")
-          PY
-          python - <<'PY'
-          import os
-          from pathlib import Path
-          from scripts.source_to_content import extract
-
-          files = sorted(
-              p for p in Path("sources/inbox").rglob("*")
-              if p.is_file() and p.suffix.lower() in {".pdf", ".docx", ".pptx", ".txt", ".md"}
-          )
-          print("Source extraction summary:")
-          for path in files:
-              text = extract(path)
-              print(f"  {path}: {len(text)} extracted characters")
           PY
           echo "generated=false" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "push" ] && git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -q "^data/content-generation-request.json$"; then
