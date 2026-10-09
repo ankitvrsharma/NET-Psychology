@@ -31,6 +31,11 @@ Every canonical micro-topic is treated as one connected learning package:
 
 Quick Learn and Daily Learning remain supplemental learner experiences; they do not replace the canonical package.
 
+## Admin content operations
+
+Admin can prepare scoped ChatGPT packets for connected package rewrites, first-time whole-unit enrichment, Quick Learn card rewrites, MCQ formatting/explanation improvements, and PYQ formatting/explanation improvements.
+Every packet applies the complete standing content instructions and uses only factual resources already present in the repository. PYQ wording, option order, correct answer, year, source and identity are preserved; only whitespace formatting and explanations may be improved.
+
 ## Question ownership
 
 `content/questions/questions.json` owns the general question bank, including authentic PYQs and general practice items.
