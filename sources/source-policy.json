@@ -28,7 +28,7 @@
   "extraction_cache": {
     "location": ".cache/source-extraction",
     "persistence": "GitHub Actions cache between workflow runs",
-    "cache_key": "source SHA-256 + relative path + extractor version",
+    "cache_key": "source SHA-256 + relative path + extractor version 4",
     "invalidation": "Re-extract when source bytes or extractor version changes; remove cache entries for deleted sources.",
     "ocr_policy": "OCR only PDF pages with missing or very low text-layer output; preserve page markers.",
     "repository_policy": "Never commit extracted source text or cache files to Git."
