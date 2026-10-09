@@ -1,9 +1,11 @@
-"""Regression tests for the no-API ChatGPT-assisted content pipeline."""
+"""Regression tests for repository-only ChatGPT-assisted content tasks."""
 import json
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from scripts import prepare_chatgpt_packet as packet
+from scripts import import_chatgpt_response as importer
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,7 +29,7 @@ class ChatGPTPacketTests(unittest.TestCase):
         for key in ("website_philosophy", "source_use", "microtopic", "deep_dive", "active_recall", "revision", "practice", "cross_references", "verification"):
             self.assertTrue(instructions["modular_instructions"].get(key), key)
 
-    def test_request_is_valid_json_and_workflow_has_no_gemini_secret(self):
+    def test_request_is_valid_json_and_workflow_has_no_model_secret(self):
         json.loads((ROOT / "data/content-generation-request.json").read_text(encoding="utf-8"))
         workflow = (ROOT / ".github/workflows/source-to-content.yml").read_text(encoding="utf-8")
         self.assertNotIn("GEMINI_API_KEY", workflow)
@@ -35,15 +37,50 @@ class ChatGPTPacketTests(unittest.TestCase):
         self.assertIn("prepare_chatgpt_packet.py", workflow)
         self.assertIn("import_chatgpt_response.py", workflow)
 
-    def test_markdown_packet_exposes_the_prompt_for_any_chat(self):
+    def test_markdown_packet_includes_prompt_and_source_manifest(self):
         packet_data = {
             "request": {"request_id": "test"},
+            "operation": "unit_rewrite",
+            "source_manifest": [{"path": "sources/inbox/example.pdf", "sha256": "abc"}],
             "topics": [{"canonical": {"id": "1-1-1"}}],
+            "records": [],
             "chatgpt_prompt": "Apply every standing instruction and return valid JSON."
         }
         markdown = packet.make_markdown(packet_data)
         self.assertIn("Apply every standing instruction", markdown)
         self.assertIn("1-1-1", markdown)
+        self.assertIn("sources/inbox/example.pdf", markdown)
+
+    def test_repository_only_policy_is_valid_json(self):
+        policy = json.loads((ROOT / "sources/source-policy.json").read_text(encoding="utf-8"))
+        self.assertIn("repository", policy["source_truth_policy"].lower())
+        instructions = json.loads((ROOT / "data/content-enrichment-instructions.json").read_text(encoding="utf-8"))
+        self.assertIn("ONLY resources already present", instructions["modular_instructions"]["source_use"])
+
+    def test_legacy_gemini_api_code_is_removed(self):
+        source = (ROOT / "scripts/source_to_content.py").read_text(encoding="utf-8")
+        workflow = (ROOT / ".github/workflows/source-to-content.yml").read_text(encoding="utf-8")
+        admin = (ROOT / "admin.js").read_text(encoding="utf-8")
+        self.assertNotIn("GEMINI_API_KEY", source + workflow + admin)
+        self.assertNotIn("generateContent", source + workflow + admin)
+        self.assertNotIn("Gemini", admin)
+
+    def test_pyq_update_cannot_rewrite_authentic_question(self):
+        qstore = {"pyq": [{"id": "PYQ-1", "question": "Which theory explains learning?", "options": ["A", "B", "C", "D"], "answer": "A", "year": 2024, "explanation": "Old explanation."}]}
+        with patch.object(importer.stc, "load", return_value=qstore):
+            _, errors = importer.validate_record_updates(
+                {"question_updates": [{"id": "PYQ-1", "updates": {"question": "Which theory best explains learning?", "explanation": "A detailed explanation grounded in repository source evidence, with a clear reason why the correct option fits the concept."}}]},
+                "pyq_improvement", {})
+        self.assertTrue(any("question wording may not change" in e for e in errors))
+
+    def test_pyq_update_allows_whitespace_formatting_and_explanation(self):
+        qstore = {"pyq": [{"id": "PYQ-1", "question": "Which theory explains learning?", "options": ["A", "B", "C", "D"], "answer": "A", "year": 2024, "explanation": "Old explanation."}]}
+        with patch.object(importer.stc, "load", return_value=qstore):
+            updates, errors = importer.validate_record_updates(
+                {"question_updates": [{"id": "PYQ-1", "updates": {"question": "Which theory  explains learning?", "explanation": "A detailed explanation grounded in repository source evidence, with a clear reason why the correct option fits the concept."}}]},
+                "pyq_improvement", {})
+        self.assertFalse(errors)
+        self.assertEqual(updates[0]["id"], "PYQ-1")
 
 
 if __name__ == "__main__":
