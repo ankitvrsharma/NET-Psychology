@@ -2013,3 +2013,47 @@ button:disabled{opacity:.65}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:640px){.admin-filter-top{align-items:stretch;flex-direction:column}.admin-reset-filters{align-self:flex-start}.admin-filters{gap:.35rem}.admin-filter{padding:.55rem .7rem;font-size:.72rem}.admin-filter-selects{grid-template-columns:1fr!important}}
 @media(min-width:641px) and (max-width:1024px){.admin-filter-selects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Admin visual refresh: compact dashboard, aligned controls, no filter-chip wall */
+.admin-hero{max-width:1180px!important;padding:32px 0 22px!important}
+.admin-hero p{max-width:780px}
+.admin-queue{max-width:1180px!important;gap:16px!important;margin-bottom:48px!important}
+.admin-toolbar{max-width:none!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:0!important;padding:0!important;overflow:hidden}
+.admin-toolbar>div{padding:18px 20px;border-right:1px solid var(--line)}
+.admin-toolbar>div:last-child{border-right:0}
+.admin-toolbar strong{font-size:clamp(20px,2.5vw,27px)}
+.admin-toolbar span{font-size:12px;line-height:1.35}
+.admin-filter-groups{max-width:none!important;margin:0!important;padding:24px!important;border-radius:18px!important;box-shadow:0 8px 28px rgba(20,43,82,.045)!important}
+.admin-filter-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:18px}
+.admin-filter-title{margin:4px 0 5px;color:var(--navy);font-size:clamp(20px,2.5vw,25px);letter-spacing:-.025em}
+.admin-filter-subtitle{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.admin-reset-filters{white-space:nowrap;min-height:42px;padding:0 16px!important;border-radius:10px!important}
+.admin-search{display:grid;gap:8px;margin:0 0 18px}
+.admin-search input{box-sizing:border-box;width:100%;min-height:48px;border:1px solid var(--line);border-radius:11px;padding:12px 14px;font:inherit;background:#fff;color:var(--ink);outline:none}
+.admin-search input:focus,.admin-control select:focus,.admin-filter-selects select:focus{border-color:#4b6fe5;box-shadow:0 0 0 3px rgba(75,111,229,.12)}
+.admin-filter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.admin-control{display:grid;gap:7px;min-width:0}
+.admin-control>span,.admin-filter-selects label>span{font-size:10px;font-weight:850;letter-spacing:.075em;color:var(--muted)}
+.admin-control select,.admin-filter-selects select{box-sizing:border-box;width:100%;min-width:0;min-height:46px;padding:10px 32px 10px 12px;border:1px solid var(--line);border-radius:10px;background-color:#fff;color:var(--ink);font:inherit;font-size:13px}
+.admin-advanced-filters{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}
+.admin-advanced-filters summary{display:flex;align-items:center;gap:8px;cursor:pointer;color:var(--navy);font-size:13px;font-weight:750}
+.admin-filter-selects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px;padding-top:0;border-top:0}
+.admin-filter-selects label{display:grid;gap:7px;min-width:0}
+.admin-result-count{max-width:none!important;margin:2px 2px 4px!important;color:var(--muted);font-size:13px}
+.admin-item,.admin-item-package{max-width:none!important}
+.admin-item-package{border-radius:16px!important}
+@media(max-width:900px){.admin-filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-toolbar>div{padding:16px 12px}}
+@media(max-width:640px){
+ .admin-hero{padding:24px 0 14px!important}
+ .admin-queue{gap:12px!important}
+ .admin-toolbar{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .admin-toolbar>div{padding:14px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+ .admin-toolbar>div:nth-child(2n){border-right:0}
+ .admin-toolbar>div:last-child{grid-column:span 2;border-bottom:0}
+ .admin-filter-groups{padding:18px!important}
+ .admin-filter-top{align-items:stretch;flex-direction:column;gap:12px}
+ .admin-reset-filters{align-self:flex-start}
+ .admin-filter-grid{grid-template-columns:1fr;gap:11px}
+ .admin-filter-selects{grid-template-columns:1fr}
+}
