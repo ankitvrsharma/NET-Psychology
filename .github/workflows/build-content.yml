@@ -8,6 +8,9 @@ on:
       - content/**
       - content-pools/pool-integrity.js
       - scripts/validate_content.py
+      - scripts/content_health_report.py
+      - sources/source-register.json
+      - schemas/source-register.schema.json
       - scripts/supabase_sync.py
       - scripts/source_to_content.py
       - scripts/sync_documentation.py
@@ -120,6 +123,8 @@ jobs:
           python -m py_compile scripts/supabase_sync.py
       - name: Run static content validator
         run: python scripts/validate_content.py
+      - name: Generate content-health triage and validate source register
+        run: python scripts/content_health_report.py
 
       - name: Sync canonical static pools to Supabase
         if: ${{ github.event_name == 'push' && success() }}
