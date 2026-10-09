@@ -66,3 +66,48 @@ Examples of high-value evidence from the PDFs:
 ## Scope boundary
 
 This review PR adds the evidence-backed audit and candidate crosswalk only. It does not rewrite lesson content, modify the 10-unit outline, change IDs, publish unverified answer keys, or alter learner data. Those changes belong in a subsequent implementation PR once each affected chunk has been checked against the source material.
+
+
+## Expanded source base and aspirant coverage lens
+
+**This review must not rely on the REVISATHON PDFs alone.** The source inventory now explicitly includes the wider inbox library and defines how each source contributes. The syllabus is the coverage boundary; textbook and topic-specific notes teach the concepts; PYQs reveal the distinctions, applications, sequences and distractors the learner must be able to handle.
+
+### Source roles
+
+| Source | How it should inform content |
+|---|---|
+| UGC NET/JRF/SLET Psychology Paper 2 — PowerWithin | Broad exam-oriented topic map and concise concept explanations; secondary guide, not the final syllabus authority |
+| Baron and Misra | Conceptual depth, personality/social/developmental and Indian psychology perspectives |
+| Ciccarelli & White, *Psychology*, 6th ed. | Foundational explanations, examples, diagrams and conceptual contrasts |
+| *Psychology: A Self-Teaching Guide* | Self-contained teaching, checks for understanding and recall; helps test whether a chunk can be learned independently |
+| AP Psychology Prep Plus (Kaplan) | Supplementary examples and practice only where they overlap with UGC NET syllabus |
+| CHROMEIAS Personality Theories | Targeted theory summaries and comparisons |
+| CHROMEIAS Perception | Targeted perception material, cross-checked against textbook explanations |
+| REVISATHON Parts 1–7 | PYQ evidence for recurring targets, question formats, distractors and application demands |
+| Topic/unit PDFs: stress, wellbeing/mental disorder, educational, community, rehabilitation, social integration, IT/mass media, environment/population and gender psychology | Deeper unit-specific coverage for the topics named in each source |
+| Paper I research aptitude and ESPAI/inter-sensory perception files | Use only in the relevant Paper I scope or where an explicit syllabus overlap is established; do not accidentally import Paper I content into Paper II |
+
+The machine-readable audit contains the expanded source register and usage rules. Each learner-facing claim added later should carry a traceable file and page/chapter/section reference internally; a PYQ heading alone is not enough.
+
+### Think like a serious aspirant: the completion test
+
+A micro-topic is not complete merely because its title appears in the index or its definition is present. For each syllabus-relevant chunk, ask whether a learner can:
+
+1. Define the construct accurately and distinguish it from its nearest confusable concept.
+2. Explain the mechanism, stages, assumptions, dimensions or classification.
+3. Recall the relevant theorist, researcher, theory, study, term or instrument where the source and syllabus call for it.
+4. Apply the concept to a short scenario and reject plausible distractors.
+5. Interpret the relevant diagram, sequence, formula, score, table or result.
+6. Compare theories, tests, research designs, scales, therapies or models that are commonly confused.
+7. Handle the actual PYQ demand—such as matching, chronology, statement combinations, calculation or application—without turning authentic PYQs into rewritten practice items.
+8. Learn and retrieve the material in one coherent sitting. If a page requires unrelated objectives to be memorised independently, split the teaching sequence; if two pages repeat the same objective and explanation, consolidate or cross-link them.
+
+### Coverage should be evidence-led, not title-led
+
+For each of the 10 units, the next implementation phase should build a coverage matrix across syllabus statements, canonical micro-topics, textbook/source sections, topic-specific notes, authentic PYQ stems, active-recall prompts and practice. Mark each concept as **covered**, **partially covered**, **missing**, **duplicated**, or **source conflict to resolve**. Do not label an entire unit complete because it has many micro-topic titles.
+
+Priority should go to concepts that are explicitly in the syllabus, recur in PYQs, have high-confusion distractors, require calculation/sequence/application, or are missing from the current lesson explanation. Frequency alone must not exclude a syllabus concept.
+
+### Updated boundary
+
+The current PR remains an audit and evidence framework. It does not rewrite lessons or change the outline. The following content PR should use this wider source base, document evidence for each substantial change, and include source/page references where recoverable. Any uncertainty or source disagreement should remain visible for review rather than being filled in from model memory.
