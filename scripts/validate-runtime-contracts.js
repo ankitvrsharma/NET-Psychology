@@ -29,7 +29,7 @@ function assertLocalTargetExists(value, fromFile) {
   let decoded = clean;
   try { decoded = decodeURIComponent(clean); } catch {}
   const relative = decoded.startsWith('/')
-    ? decoded.replace(/^\\/+/, '').replace(/^NET-Psychology\\//, '')
+    ? decoded.split('/').filter(Boolean).join('/').replace('NET-Psychology/', '')
     : path.join(path.dirname(fromFile), decoded);
   const target = path.resolve(root, relative);
   assert.ok(target === root || target.startsWith(root + path.sep), fromFile + ' contains a local path outside the site: ' + value);
