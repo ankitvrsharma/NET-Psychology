@@ -100,7 +100,7 @@ async function saveInstructions(){
   try{
     await window.NETPSY_AUTH.githubWrite('write_file',{
       path:'data/content-generation-request.json',
-      content:JSON.stringify(request,null,2)+'\\n',
+      content:JSON.stringify(request,null,2)+'\n',
       message:'Admin: request source-grounded content generation'
     });
     if(note)note.textContent='Generation request submitted. GitHub Actions will run Gemini with the standing modular instructions plus this task. Audit-passed content will publish; failures will enter the approval queue.';

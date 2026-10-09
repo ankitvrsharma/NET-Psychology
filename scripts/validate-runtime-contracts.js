@@ -5,6 +5,16 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const runtime = fs.readFileSync(path.join(root, 'app/runtime.js'), 'utf8');
+const adminSource = fs.readFileSync(path.join(root, 'admin.js'), 'utf8');
+assert.ok(
+  adminSource.includes("content:JSON.stringify(request,null,2)+'\\n',"),
+  'Admin generation requests must end with a real newline, not a literal backslash-n.'
+);
+const generationRequestPath = path.join(root, 'data/content-generation-request.json');
+assert.doesNotThrow(
+  () => JSON.parse(fs.readFileSync(generationRequestPath, 'utf8')),
+  'The committed content-generation request must be valid JSON.'
+);
 const routesMatch = runtime.match(/const routes=\{([\s\S]*?)\};/);
 assert.ok(routesMatch, 'The shared runtime must declare its page renderer map.');
 
