@@ -14650,5 +14650,106 @@
         "rationale": "Stem uses one SD above the mean and percentile interpretation; link norm scores and normal curve."
       }
     }
-  ]
+  ],
+  "sourceStrategy": {
+    "principle": "Do not treat the REVISATHON compilation as the sole content authority. Use the official UGC NET Psychology syllabus as the coverage boundary; combine textbook explanations, topic/unit-specific notes and PYQs as complementary evidence. Clearly label source-derived facts, cross-source synthesis, and unresolved discrepancies.",
+    "sources": [
+      {
+        "name": "_NTA_UGC_NET_JRF_SLET_Psychology_Paper_2_Power_within_Psychology.pdf",
+        "role": "Broad exam-oriented topic inventory and concise explanatory material; secondary guide, not a substitute for the official syllabus."
+      },
+      {
+        "name": "Baron and Misra.pdf",
+        "role": "Core conceptual explanations, personality/social/developmental and Indian psychology perspectives; check chapter-level relevance per micro-topic."
+      },
+      {
+        "name": "Psychology by Ciccarelli White (6th edition) .pdf",
+        "role": "Introductory foundations and chapter-based explanations, examples, distinctions and practice questions."
+      },
+      {
+        "name": "Psychology - A Self-Teaching Guide.pdf",
+        "role": "Structured self-study explanations, worked checks and short recall questions; useful to test whether a chunk teaches independently."
+      },
+      {
+        "name": "CHROMEIAS-PersonalityTheories-1758011239083.pdf",
+        "role": "Topic-specific personality theory notes and quick comparisons."
+      },
+      {
+        "name": "CHROMEIASPSYCHOLGY-Perception-1750158164045.pdf",
+        "role": "Topic-specific perception notes; use alongside fuller textbook explanations."
+      },
+      {
+        "name": "AP Psychology Prep Plus 2020  2021 by Kaplan Test Prep (2).pdf",
+        "role": "Supplementary concept checks and practice style; use only where concepts overlap with the Indian UGC NET syllabus."
+      },
+      {
+        "name": "REVISATHON YT Through Last 5 Years PYQs Parts 1-7",
+        "role": "Past-question evidence for recurring concepts, discrimination targets, question formats and application demands; verify exact question text, options, answer and year against the source page where available."
+      },
+      {
+        "name": "P1-UNIT2 / Research Aptitude unit notes",
+        "role": "Supplementary Paper I research-methodology and aptitude coverage where relevant; do not confuse Paper I content with Paper II Psychology."
+      },
+      {
+        "name": "P2-UNIT2-WELLBEINGANDMENTALDISORDER-1760350775650.pdf",
+        "role": "Unit-specific mental health/wellbeing source."
+      },
+      {
+        "name": "P2-UNIT4-STRESS-1760350504657.pdf",
+        "role": "Unit-specific stress, coping and related content."
+      },
+      {
+        "name": "P2-Unit5-EducationalPsychology-1731310942249.pdf",
+        "role": "Unit-specific educational psychology source."
+      },
+      {
+        "name": "P2-UNIT6-COMMUNITYPSYCHOLOGY-1736321346922.pdf",
+        "role": "Unit-specific community psychology source."
+      },
+      {
+        "name": "P2-UNIT7-REHABPSYCHOLOGY-1764225343780.pdf",
+        "role": "Unit-specific rehabilitation psychology source."
+      },
+      {
+        "name": "P2-UNIT9-SOCIALINTEGRATION-1732602447159.pdf",
+        "role": "Unit-specific social integration source."
+      },
+      {
+        "name": "P2-UNIT10-ITMASSMEDIA-1764337665170.pdf",
+        "role": "Unit-specific IT and mass media source."
+      },
+      {
+        "name": "P2-UNIT12-ENVNPOPULATIONPSY--1765696651919.pdf",
+        "role": "Unit-specific environment and population psychology source."
+      },
+      {
+        "name": "P2-UNIT14-GENDERPSYCHOLOGY-1760350617494.pdf",
+        "role": "Unit-specific gender psychology source."
+      },
+      {
+        "name": "P1_UNIT14_ESPAICOMPAPPLICATIONINTERSENSORYPERCEPTION_176.pdf",
+        "role": "Paper I unit-specific source; distinguish from Paper II perception unless syllabus overlap is confirmed."
+      }
+    ],
+    "aspirantCoverageQuestions": [
+      "Can I define the construct precisely and distinguish it from its nearest confusable construct?",
+      "Can I explain the mechanism, stages, assumptions, dimensions or classification without looking?",
+      "Can I identify the theorist/researcher, theory, key term, study or instrument where the syllabus/source expects it?",
+      "Can I apply it to a short scenario and identify why plausible distractors are wrong?",
+      "Can I interpret the relevant diagram, sequence, formula, table, score or result where applicable?",
+      "Can I distinguish competing theories, tests, designs, scales, therapies or models?",
+      "Can I answer the kinds of matching, chronology, statement-combination, assertion/reason, calculation and application questions actually evidenced in the PYQs?",
+      "Is the chunk appropriately sized to learn and retrieve in one sitting, or does it contain multiple independent objectives?"
+    ],
+    "sourceUseRules": [
+      "Official syllabus defines coverage and all 10 existing units stay unchanged.",
+      "Use at least one suitable conceptual source plus PYQ evidence for priority content; add a topic-specific source when available.",
+      "Use textbooks for explanation and conceptual boundaries; use PYQs to determine what must be discriminated, applied or retrieved, not as the only source of truth.",
+      "Record file name and page/chapter/section for claims that will appear in learner-facing content.",
+      "Do not infer answer keys, exam years, or missing question options from headings or coaching commentary.",
+      "When sources disagree, record the disagreement and resolve it against syllabus context and stronger primary/reference evidence; do not silently blend contradictions.",
+      "Use Kaplan/AP material only for transferable concepts within syllabus scope, never to expand the NET syllabus by default.",
+      "Keep authentic PYQs separate from newly written MCQs and label generated practice honestly."
+    ]
+  }
 }
