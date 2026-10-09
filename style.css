@@ -1099,7 +1099,16 @@ body[data-page="home"] .hero-cta span{font-size:clamp(18px,1.8vw,27px);letter-sp
 .practice-unit-trigger.has-selection .practice-unit-summary{color:var(--navy);font-weight:850}
 .practice-unit-summary{margin:0;color:var(--muted);font-size:13px;line-height:1.4;font-weight:650}
 .practice-unit-list[hidden]{display:none}
-.practice-unit-list{grid-template-columns:1fr 1fr;margin-top:7px}
+.practice-unit-list{grid-template-columns:minmax(0,1fr);margin-top:7px;gap:4px}
+.practice-unit-group{min-width:0;padding:4px 0;border-bottom:1px solid var(--line)}
+.practice-unit-group:last-child{border-bottom:0}
+.practice-unit-heading{font-size:13px!important;font-weight:750!important;padding:11px 12px}
+.practice-unit-parts{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;margin:0 0 4px}
+.practice-part-option{padding:8px 12px 8px 28px!important;font-size:12px!important;font-weight:550!important;color:var(--muted)!important}
+.practice-part-option span{display:block;line-height:1.45}
+.practice-unit-heading span{display:block;line-height:1.45;overflow-wrap:anywhere}
+.practice-unit-option{white-space:normal;overflow-wrap:anywhere}
+.practice-all-option{position:sticky;top:-6px;z-index:1;background:#fff;padding:12px;border-radius:8px;font-size:13px!important}
 
 /* Practice page hero spacing. */
 .practice-hero{padding-top:8px}
