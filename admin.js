@@ -94,9 +94,6 @@ async function saveInstructions(){
     instruction:userInstruction,
     target_microtopics:mode==='package_rewrite'||mode==='unit_rewrite'?targets:[],
     target_record_ids:mode==='quick_cards_rewrite'||mode==='mcq_improvement'||mode==='pyq_improvement'?targets:[],
-    repair_existing:true,
-    synthesize_sources:false,
-    enrich_existing:true,
     requested_at:new Date().toISOString(),
     requested_by:OWNER
   };
