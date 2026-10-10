@@ -74,3 +74,5 @@ assert.match(runtime, /p\.understoodAt&&p\.recallCompletedAt&&p\.applicationAt&&
 assert.match(runtime, /id="understandMicrotopic"/, 'Micro-topic page must expose an explicit understanding checkpoint.');
 assert.match(runtime, /Short Notes/, 'Micro-topic page must include a short-notes card.');
 assert.match(runtime, /Detailed Explanation/, 'Micro-topic page must include a detailed-explanation card.');
+
+assert.match(runtime, /m\.content_notes\|\|m\.study_notes/, 'Short Notes should reuse available lesson notes when a dedicated short-note field is absent.');
