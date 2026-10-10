@@ -399,12 +399,8 @@ function renderLearningRichText(text){
   const lines=String(text||'').replace(/\\r/g,'').split('\\n');
   let html='',list=[];
   const flush=()=>{if(list.length){html+='<ul>'+list.map(x=>'<li>'+x+'</li>').join('')+'</ul>';list=[];}};
-  let droppingTemplate=false;
   for(const raw of lines){
     const line=raw.trim();
-    if(/^(?:SOURCE BASIS|STUDY RULE|PYQ-STYLE PATTERN|5-MINUTE TEACHING FOCUS)$/i.test(line)){droppingTemplate=true;continue}
-    if(/^(?:ACADEMIC CORE|CORE CONCEPT|KEY POINTS|DISTINCTION \/ CAUTION|MEMORY HOOK|MEMORY CUE|COMMON TRAP|COMMON EXAM TRAP)$/i.test(line)){droppingTemplate=false;continue}
-    if(droppingTemplate)continue;
     if(!line){flush();continue}
     if(/^###\\s+/.test(line)){flush();html+='<h3>'+esc(line.replace(/^###\\s+/,''))+'</h3>';continue}
     if(/^##\\s+/.test(line)){flush();html+='<h2>'+esc(line.replace(/^##\\s+/,''))+'</h2>';continue}
