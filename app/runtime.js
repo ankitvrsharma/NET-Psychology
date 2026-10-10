@@ -411,11 +411,11 @@ function deepDive(){
   root.innerHTML='<section class="micro-learn-page deep-dive-page">'+
     '<div class="micro-breadcrumb"><a href="'+microtopicHref(u,t,m)+'">Micro-topic</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">DEEP DIVE · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
-    '<article class="micro-deep-dive-content card"><div class="micro-deep-dive-copy">'+renderLearningRichText(deep)+'</div></article>'+
-    '<section class="micro-bottom-navigation" aria-label="Deep Dive next steps">'+
-      '<a class="micro-bottom-action" href="'+microtopicHref(u,t,m)+'"><span>BACK TO EXPLANATION</span><b>←</b></a>'+
-      '<a class="micro-bottom-action primary" href="active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
-      '<a class="micro-bottom-action" href="'+microtopicHref(u,t,m)+'"><span>MICRO-TOPIC</span><b>→</b></a>'+
+    '<article class="micro-deep-dive-content"><div class="micro-deep-dive-copy">'+renderLearningRichText(deep)+'</div></article>'+
+    '<section class="micro-learning-next-links" aria-label="Deep Dive next steps">'+
+      '<a class="micro-learning-next-link" href="'+microtopicHref(u,t,m)+'"><span>BACK TO EXPLANATION</span><b>←</b></a>'+
+      '<a class="micro-learning-next-link primary" href="active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
+      '<a class="micro-learning-next-link" href="'+microtopicHref(u,t,m)+'"><span>MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
     '</section>';
 }
@@ -829,11 +829,11 @@ function micro(){
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
-    '<article class="micro-deep-dive-content card"><div class="micro-deep-dive-copy">'+renderLearningRichText(explanation)+'</div></article>'+
-    '<section class="micro-bottom-navigation" aria-label="Micro-topic next steps">'+
-      '<a class="micro-bottom-action" href="'+deepHref+'"><span>DEEP DIVE</span><b>→</b></a>'+
-      '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
-      '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
+    '<article class="micro-deep-dive-content"><div class="micro-deep-dive-copy">'+renderLearningRichText(explanation)+'</div></article>'+
+    '<section class="micro-learning-next-links" aria-label="Micro-topic next steps">'+
+      '<a class="micro-learning-next-link" href="'+deepHref+'"><span>DEEP DIVE</span><b>→</b></a>'+
+      '<a class="micro-learning-next-link primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
+      '<a class="micro-learning-next-link" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
     '</section>';
 }
