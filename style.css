@@ -1760,16 +1760,17 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .content-status-badge.available{color:var(--blue)}
 .content-soon-link{color:#7b8799!important}
 .content-disabled-button{cursor:not-allowed;opacity:.72}
-.micro-bottom-navigation{display:grid;grid-template-columns:1fr 2fr 1fr;margin-top:16px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
-.micro-bottom-action{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 18px;color:var(--navy);text-decoration:none;font-size:11px;font-weight:850;letter-spacing:.07em}
-.micro-bottom-action+ .micro-bottom-action{border-left:1px solid var(--line)}
-.micro-bottom-action:hover{background:#f7f9fc;color:var(--blue)}
-.micro-bottom-action.primary{justify-content:center;background:#f4f7ff;color:var(--blue)}
-.micro-bottom-action b{font-size:16px;letter-spacing:0}
+/* Micro-topic editorial layout contract: article text is unboxed; navigation is links, never cards. */
+.micro-deep-dive-content{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.micro-learning-next-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin:34px 0 12px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.micro-learning-next-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--navy);text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.045em}
+.micro-learning-next-link:hover{color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+.micro-learning-next-link.primary{color:var(--blue)}
+.micro-learning-next-link b{font-size:15px;letter-spacing:0}
 @media(max-width:620px){
-  .micro-bottom-navigation{grid-template-columns:1fr 2fr 1fr;border-radius:14px}
-  .micro-bottom-action{min-height:58px;padding:0 10px;font-size:9px}
-  .micro-bottom-action b{font-size:14px}
+  .micro-deep-dive-content{padding:0}
+  .micro-learning-next-links{align-items:flex-start;flex-direction:column;gap:4px;margin-top:26px;padding:12px 0}
+  .micro-learning-next-link{width:100%;justify-content:space-between;font-size:11px}
 }
 
 /* Owner administration — same responsive system, isolated from learner components. */
