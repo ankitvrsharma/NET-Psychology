@@ -1558,7 +1558,6 @@ body[data-page="practice-session"] .practice-hero{display:none}
 .micro-learn-header{padding:0 0 22px}
 .micro-learn-header h1{margin:0;color:var(--navy);font-size:clamp(32px,5vw,46px);line-height:1.08;letter-spacing:-.035em}
 .micro-deep-dive-content{padding:32px 34px;background:#fff}
-.micro-deep-dive-label{margin-bottom:18px;color:var(--blue);font-size:10px;letter-spacing:.12em;font-weight:900}
 .micro-deep-dive-copy{color:var(--ink);font-size:16px;line-height:1.85}
 .micro-deep-dive-copy h2,.micro-deep-dive-copy h3{margin:28px 0 10px;color:var(--navy);line-height:1.25}
 .micro-deep-dive-copy h2{font-size:23px}
