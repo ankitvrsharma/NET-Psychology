@@ -63,3 +63,14 @@ for (const file of htmlFiles) {
 }
 assert.ok(appPages.length > 0, 'Expected to validate at least one app.js-powered page.');
 console.log('Runtime contract checks passed: loadIndex is defined; all loadIndex calls are supported; ' + appPages.length + ' app.js-powered pages map to a renderer.');
+
+// Learning-flow regression contracts: question provenance, mastery criteria and approved spaced revision.
+assert.match(runtime, /function questionPoolType\(q\)/, 'Practice categories must use canonical question type/pool provenance.');
+assert.match(runtime, /function flattenQuestionPool\(pool\)/, 'Question pool flattening must preserve PYQ versus practice provenance.');
+assert.match(runtime, /questionPoolType\(q\)===types\[0\]/, 'PYQs must not fall through into the MCQ category.');
+assert.match(runtime, /const REVISION_INTERVALS=\[1,3,7,14,30,60,90,180\]/, 'Revision must use the approved interval ladder.');
+assert.match(runtime, /daysLate>5\?Math\.max\(0,currentStage-1\):currentStage/, 'Late return must step back to the last successful checkpoint without clearing learning progress.');
+assert.match(runtime, /p\.understoodAt&&p\.recallCompletedAt&&p\.applicationAt&&rating!=='again'&&rating!=='hard'/, 'Mastery must require understanding, retrieval, application and successful delayed revision.');
+assert.match(runtime, /id="understandMicrotopic"/, 'Micro-topic page must expose an explicit understanding checkpoint.');
+assert.match(runtime, /Short Notes/, 'Micro-topic page must include a short-notes card.');
+assert.match(runtime, /Detailed Explanation/, 'Micro-topic page must include a detailed-explanation card.');

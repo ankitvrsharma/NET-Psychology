@@ -2184,3 +2184,22 @@ body[data-page="admin"] .admin-field textarea {
   .admin-toolbar .admin-metric strong {font-size:25px}
   .admin-toolbar .admin-metric span {font-size:10px}
 }
+
+
+/* Approved micro-topic flow: compact notes, understanding checkpoint and deeper explanation. */
+.micro-mastery-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:0 0 18px}
+.micro-mastery-step{display:flex;align-items:center;gap:9px;min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--muted);font-size:12px;font-weight:800}
+.micro-mastery-step>b{display:grid;place-items:center;flex:0 0 25px;width:25px;height:25px;border-radius:50%;background:#edf1f8;color:var(--navy)}
+.micro-mastery-step.is-done{border-color:#b9dfcc;background:#f3fbf6;color:#176444}
+.micro-mastery-step.is-done>b{background:#d9f3e4;color:#176444}
+.micro-learning-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 24px;align-items:stretch}
+.micro-learning-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:22px;background:#fff}
+.micro-learning-card h2{margin:7px 0 10px;color:var(--navy);font-size:20px;line-height:1.25}
+.micro-learning-card p,.micro-short-notes{color:var(--muted);font-size:14px;line-height:1.65}
+.micro-short-notes ul{margin:0;padding-left:19px}
+.micro-short-notes li{margin:0 0 8px}
+.micro-learning-card .btn{margin-top:auto;white-space:normal;text-align:center}
+.micro-understand-card{border-color:#c7d8f2;background:#f7faff}
+.micro-card-secondary-link{margin-top:13px;color:var(--blue);font-size:11px;font-weight:900;text-decoration:none;letter-spacing:.04em}
+@media(max-width:760px){.micro-learning-cards{grid-template-columns:1fr}.micro-learning-card{padding:20px}.micro-mastery-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:390px){.micro-mastery-step{gap:6px;padding:9px 7px;font-size:11px}.micro-mastery-step>b{flex-basis:22px;width:22px;height:22px}}

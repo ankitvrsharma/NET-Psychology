@@ -80,6 +80,19 @@ async function fetchJSON(path,label){
   if(!response.ok)throw new Error(label+' request failed: '+response.status);
   return response.json();
 }
+function questionPoolType(q){
+  const value=String(q?._poolType||q?.pool_type||q?.question_type||q?.type||'').toLowerCase();
+  if(/pyq|previous/.test(value))return 'pyq';
+  if(/mcq|practice/.test(value))return 'mcq';
+  return '';
+}
+function flattenQuestionPool(pool){
+  if(Array.isArray(pool))return pool.map(q=>({...q,_poolType:questionPoolType(q)}));
+  return [
+    ...(Array.isArray(pool?.pyq)?pool.pyq.map(q=>({...q,_poolType:'pyq'})):[]),
+    ...(Array.isArray(pool?.practice)?pool.practice.map(q=>({...q,_poolType:'mcq'})):[])
+  ];
+}
 async function loadPool(name){
   if(CONTENT_POOLS[name]!=null)return CONTENT_POOLS[name];
   const path=CONTENT_POOL_PATHS[name];
@@ -173,7 +186,7 @@ async function prepareDailyPracticeQuestions(){
   await loadPool('questions');
   const wanted=new Set(ids.map(String));
   const pool=CONTENT_POOLS.questions;
-  const allQuestions=Array.isArray(pool)?pool:[...(Array.isArray(pool?.pyq)?pool.pyq:[]),...(Array.isArray(pool?.practice)?pool.practice:[])];
+  const allQuestions=flattenQuestionPool(pool);
   PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id)));
 }
 async function preparePracticeSessionQuestions(){
@@ -181,7 +194,7 @@ async function preparePracticeSessionQuestions(){
   if(!saved)return;
   await loadPool('questions');
   const qpool=CONTENT_POOLS.questions||{pyq:[],practice:[]};
-  PRACTICE_QUESTIONS=[...(qpool.pyq||[]),...(qpool.practice||[])];
+  PRACTICE_QUESTIONS=flattenQuestionPool(qpool);
 }
 function progressivePrefetch(paths){
   if(!paths.length||!progressivePrefetchAllowed())return;
@@ -221,10 +234,10 @@ const loadStudyData=async()=>{
   if(page==='practice'){
     await loadPool('questions');
     const qpool=CONTENT_POOLS.questions;
-    PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
+    PRACTICE_QUESTIONS=flattenQuestionPool(qpool);
   }
   if(page==='daily-practice')await prepareDailyPracticeQuestions();
-  if(page==='practice-session'){if(Q.get('previewQuestion')){await loadPool('questions');const qpool=CONTENT_POOLS.questions;PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];}else await preparePracticeSessionQuestions();}
+  if(page==='practice-session'){if(Q.get('previewQuestion')){await loadPool('questions');const qpool=CONTENT_POOLS.questions;PRACTICE_QUESTIONS=flattenQuestionPool(qpool);}else await preparePracticeSessionQuestions();}
   if(page==='deep-dive')await loadPool('deepDive');
   if(page==='microtopic'){
     try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
@@ -232,7 +245,7 @@ const loadStudyData=async()=>{
   if(page==='active-recall'){
     await Promise.all([loadPool('activeRecall'),loadPool('questions')]);
     const qpool=CONTENT_POOLS.questions;
-    PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];
+    PRACTICE_QUESTIONS=flattenQuestionPool(qpool);
   }
   if(page==='home')prepareHomeDecision();
   safeRender();
@@ -484,7 +497,7 @@ function activeRecall(){
   });
   if(!recallCards.length)$('#confirmRecall')?.addEventListener('click',finishRecall);
   root.querySelectorAll('[data-revision-rating]').forEach(btn=>btn.addEventListener('click',()=>{
-    const rating=btn.dataset.revisionRating,next=scheduleRevision(k,rating);
+    const rating=btn.dataset.revisionRating,next=scheduleRevision(k,rating,fromRevision);
     const days=Math.max(1,Math.round((Date.parse(next)-Date.now())/86400000));
     const nextItem=fromRevision?null:dailySessionNext(k);
     const box=$('#revisionRating');
@@ -598,7 +611,31 @@ function daily3(){
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return microtopicHref(due.u,due.t,due.m);const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return microtopicHref(started.u,started.t,started.m);return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
-function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.learnedAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
+const REVISION_INTERVALS=[1,3,7,14,30,60,90,180];
+function scheduleRevision(k,rating='initial',isScheduledRevision=false){
+  const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];
+  if(!isScheduledRevision){
+    const next=new Date(now.getTime()+86400000);
+    setP(k,{next:next.toISOString(),nextInterval:1,stage:0,lastCompletedStage:Number.isInteger(p.lastCompletedStage)?p.lastCompletedStage:-1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:[...history,{rating,at:now.toISOString(),stage:0,interval:1,kind:'initial'}].slice(-20),status:p.status==='MASTERED'?'MASTERED':'RETENTION'});
+    return next;
+  }
+  const currentStage=Math.max(0,Math.min(REVISION_INTERVALS.length-1,Number.isInteger(p.stage)?p.stage:Math.max(0,REVISION_INTERVALS.indexOf(Number(p.nextInterval)||1))));
+  const scheduledAt=Date.parse(p.next||'');
+  const daysLate=Number.isFinite(scheduledAt)?Math.max(0,(now.getTime()-scheduledAt)/86400000):0;
+  // More than five days late: return to the last successful checkpoint, without erasing learning.
+  const effectiveStage=daysLate>5?Math.max(0,currentStage-1):currentStage;
+  let targetStage=effectiveStage;
+  if(rating==='again')targetStage=Math.max(0,effectiveStage-1);
+  else if(rating==='good')targetStage=Math.min(REVISION_INTERVALS.length-1,effectiveStage+1);
+  else if(rating==='easy')targetStage=Math.min(REVISION_INTERVALS.length-1,effectiveStage+2);
+  else targetStage=effectiveStage;
+  const days=REVISION_INTERVALS[targetStage],count=(Number(p.revisionCount)||0)+1;
+  const mastered=Boolean(p.understoodAt&&p.recallCompletedAt&&p.applicationAt&&rating!=='again'&&rating!=='hard');
+  const next=new Date(now.getTime()+days*86400000);
+  const completedStage=rating==='again'?Math.max(0,effectiveStage-1):effectiveStage;
+  setP(k,{next:next.toISOString(),nextInterval:days,stage:targetStage,lastCompletedStage:completedStage,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:days,stage:targetStage,daysLate:Math.round(daysLate),lateReset:daysLate>5,mastered}].slice(-20),last:now.toISOString()});
+  return next;
+}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function dailyPractice(){
   const root=$('#dailyPracticeApp');if(!root)return;
@@ -826,16 +863,31 @@ function micro(){
   const deepHref='deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
   const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(Q.get('from')==='revision'?'&from=revision':'');
   if(!previewMode)setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
+  const shortNotes=Array.isArray(m.short_notes)?m.short_notes:Array.isArray(m.key_points)?m.key_points:Array.isArray(m.quick_notes)?m.quick_notes:null;
+  const shortText=String(m.short_notes||m.quick_notes||'').trim();
+  const notesHTML=shortNotes&&shortNotes.length?'<ul>'+shortNotes.map(item=>'<li>'+esc(typeof item==='string'?item:item?.text||item?.point||JSON.stringify(item))+'</li>').join('')+'</ul>':shortText?renderLearningRichText(shortText):'<p>Short notes are not separately published for this concept yet. Use the core explanation above, then write a 3–5 point summary from memory.</p>';
+  const understood=Boolean(p.understoodAt),applicationDone=Boolean(p.applicationAt),recallDone=Boolean(p.recallCompletedAt),delayedDone=Boolean(p.lastRevision);
+  const masterySteps='<section class="micro-mastery-steps" aria-label="Learning progress"><div class="micro-mastery-step '+(understood?'is-done':'')+'"><b>'+(understood?'✓':'1')+'</b><span>Understand</span></div><div class="micro-mastery-step '+(recallDone?'is-done':'')+'"><b>'+(recallDone?'✓':'2')+'</b><span>Retrieve</span></div><div class="micro-mastery-step '+(applicationDone?'is-done':'')+'"><b>'+(applicationDone?'✓':'3')+'</b><span>Apply</span></div><div class="micro-mastery-step '+(delayedDone?'is-done':'')+'"><b>'+(delayedDone?'✓':'4')+'</b><span>Delayed revision</span></div></section>';
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
+    masterySteps+
     '<article class="micro-deep-dive-content card"><div class="micro-deep-dive-copy">'+renderLearningRichText(explanation)+'</div></article>'+
+    '<section class="micro-learning-cards" aria-label="Choose your next learning step">'+
+      '<article class="micro-learning-card card"><div class="eyebrow">QUICK REVIEW</div><h2>Short Notes</h2><div class="micro-short-notes">'+notesHTML+'</div></article>'+
+      '<article class="micro-learning-card card micro-understand-card"><div class="eyebrow">STEP 1 · UNDERSTAND</div><h2>'+(understood?'You understand the core idea':'Does the idea make sense?')+'</h2><p>'+(understood?'Understanding checkpoint saved. Now retrieve it from memory and apply it to a question.':'After reading the explanation, pause and check whether you can explain the core idea in your own words.')+'</p><button class="btn primary" type="button" id="understandMicrotopic" '+(understood||previewMode?'disabled':'')+'>'+(understood?'✓ I UNDERSTAND':previewMode?'PREVIEW ONLY':'I UNDERSTAND')+'</button><a class="micro-card-secondary-link" href="practice.html">APPLY WITH PRACTICE →</a></article>'+
+      '<article class="micro-learning-card card"><div class="eyebrow">GO DEEPER</div><h2>Detailed Explanation</h2><p>Explore the fuller explanation and connections when you need more depth.</p><a class="btn" href="'+deepHref+'">OPEN DETAILED EXPLANATION →</a></article>'+
+    '</section>'+
     '<section class="micro-bottom-navigation" aria-label="Micro-topic next steps">'+
-      '<a class="micro-bottom-action" href="'+deepHref+'"><span>DEEP DIVE</span><b>→</b></a>'+
-      '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
+      '<a class="micro-bottom-action primary" href="'+recallHref+'"><span>RETRIEVE FROM MEMORY</span><b>→</b></a>'+
       '<a class="micro-bottom-action" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
     '</section>';
+  root.querySelector('#understandMicrotopic')?.addEventListener('click',()=>{
+    const current=getP(k),at=current.understoodAt||new Date().toISOString();
+    setP(k,{understoodAt:at,started:true,status:current.status==='NEW'?'LEARNING':current.status,last:at});
+    micro();
+  });
 }
 function practice(){
   const box=$('#practiceApp');
@@ -896,13 +948,7 @@ function practice(){
   const setPracticeChoices=(group,values)=>document.querySelectorAll('[data-practice-choice][data-choice-group="'+group+'"]').forEach(btn=>{const on=values.includes(btn.dataset.value);btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on))});
   const getPracticePool=(types,selected)=>{
     let qs=PRACTICE_QUESTIONS.slice();
-    if(types.length===1){
-      qs=qs.filter(q=>{
-        const tags=(q.source_tags||[]).map(x=>String(x).toLowerCase());
-        const isPyq=tags.some(x=>x.includes('pyq')||x.includes('previous'));
-        return types[0]==='pyq'?isPyq:!isPyq;
-      });
-    }
+    if(types.length===1)qs=qs.filter(q=>questionPoolType(q)===types[0]);
     const allUnits=selected.length===0||selected.some(x=>x.dataset.scope==='all');
     if(allUnits)return qs;
     const unitIds=new Set(selected.filter(x=>x.dataset.scope==='unit').map(x=>String(x.dataset.value)));
@@ -934,6 +980,7 @@ function practice(){
     const expectation=$('#practiceExpectation');
     if(expectation){
       if(!selectedTypes.length||!mode||!selected.length) expectation.textContent='Select your unit, question type, and practice mode to see what your session will be like.';
+      else if(pool.length===0) expectation.textContent='No '+(selectedTypes[0]==='pyq'?'PYQ':'MCQ')+' questions are published in this selection yet. Choose the other question type or another unit.';
       else if(pool.length<Number(size)) expectation.textContent='There are not enough questions for this practice selection. Choose a different question type or add more units.';
       else if(hideSize) expectation.textContent='You’ll practice a focused 10-question set from '+scopeLabel+'. '+(mode==='timed'?'The session is timed, and explanations appear after you finish.':'The session is self-paced, with feedback as you work through each question.');
       else if(!size) expectation.textContent='Choose how many questions you want in this practice session.';
@@ -1005,7 +1052,7 @@ function practice(){
     const selectedSize=hideSize?'10':selectedPracticeChoice('size');
     if(!selectedSize||!selectedTypes.length||!selectedMode||!selectedScopes.length)return;
     if(getPracticePool(selectedTypes,selectedScopes).length<Number(selectedSize)){
-      $('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>Not enough questions available.</h2><p>Try another question type or choose more units, then start again.</p></section>';
+      $('#practiceSet').innerHTML='<section class="panel empty practice-empty"><h2>No questions available for this selection.</h2><p>The selected question category may not have any published questions for these units yet. Choose the other question type or expand your unit selection.</p></section>';
       return;
     }
     stopTimer();
@@ -1027,9 +1074,13 @@ function practice(){
     const mode=selectedMode,timed=mode==='timed';
     const totalSeconds=timed?Math.round(qs.length*(180*60/100)):0;
     let remaining=totalSeconds,current=0,correct=0,answered=false,ended=false,answers={},skipped=new Set();
-    const recordPracticeAnswer=wasCorrect=>{
-      const s=state();
-      s._practiceHistory=[...(s._practiceHistory||[]),{correct:wasCorrect,at:new Date().toISOString()}].slice(-200);
+    const recordPracticeAnswer=(wasCorrect,q)=>{
+      const s=state(),at=new Date().toISOString();
+      s._practiceHistory=[...(s._practiceHistory||[]),{correct:wasCorrect,at}].slice(-200);
+      if(wasCorrect&&q?.unit!=null&&q?.topic!=null&&q?.micro!=null){
+        const u=units().find(x=>String(x.id)===String(q.unit)),t=u?.topics.find(x=>String(x.id)===String(q.topic)),m=t?.microtopics.find(x=>String(x.id)===String(q.micro));
+        if(u&&t&&m){const topicKey=key(u.id,t.id,m.id),current=s[topicKey]||getP(topicKey);s[topicKey]={...current,applicationAt:current.applicationAt||at,applicationQuestionId:String(q.id||''),applicationHistory:[...(current.applicationHistory||[]),{questionId:String(q.id||''),correct:true,at}].slice(-20)};}
+      }
       save(s);
     };
     const learningHrefForQuestion=q=>{
@@ -1087,7 +1138,7 @@ function practice(){
         const chosen=+btn.dataset.a,answer=+card.dataset.answer,wasCorrect=chosen===answer;
         answers[current]={chosen,correct:wasCorrect};
         if(wasCorrect)correct++;
-        recordPracticeAnswer(wasCorrect);
+        recordPracticeAnswer(wasCorrect,q);
         card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);
         if(!timed){const fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=wasCorrect?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`}nextBtn.disabled=false;
         if(timed&&current===qs.length-1&&skipped.size)renderQuestion();
