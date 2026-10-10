@@ -88,6 +88,17 @@ async function loadPool(name){
   CONTENT_POOLS[name]=value;
   return value;
 }
+function normalizeQuestionPool(pool){
+  if(Array.isArray(pool))return pool.map(q=>({...q,questionCategory:questionCategory(q)}));
+  const tag=(items,category)=>(Array.isArray(items)?items:[]).map(q=>({...q,questionCategory:category}));
+  return [...tag(pool?.pyq,'pyq'),...tag(pool?.practice,'mcq')];
+}
+function questionCategory(q){
+  const type=String(q?.questionCategory||q?.type||'').trim().toLowerCase();
+  if(type==='pyq'||type.includes('previous year')||type.includes('previous-year'))return 'pyq';
+  if(type==='mcq'||type==='practice'||type==='practice mcq')return 'mcq';
+  return '';
+}
 async function loadIndex(name){
   if(name!=='questions')throw new Error('Unknown content index: '+name);
   const pool=await loadPool('questions');
@@ -173,7 +184,7 @@ async function prepareDailyPracticeQuestions(){
   await loadPool('questions');
   const wanted=new Set(ids.map(String));
   const pool=CONTENT_POOLS.questions;
-  const allQuestions=Array.isArray(pool)?pool:[...(Array.isArray(pool?.pyq)?pool.pyq:[]),...(Array.isArray(pool?.practice)?pool.practice:[])];
+  const allQuestions=normalizeQuestionPool(pool);
   PRACTICE_QUESTIONS=allQuestions.filter(q=>wanted.has(String(q.id)));
 }
 async function preparePracticeSessionQuestions(){
@@ -181,7 +192,7 @@ async function preparePracticeSessionQuestions(){
   if(!saved)return;
   await loadPool('questions');
   const qpool=CONTENT_POOLS.questions||{pyq:[],practice:[]};
-  PRACTICE_QUESTIONS=[...(qpool.pyq||[]),...(qpool.practice||[])];
+  PRACTICE_QUESTIONS=normalizeQuestionPool(qpool);
 }
 function progressivePrefetch(paths){
   if(!paths.length||!progressivePrefetchAllowed())return;
@@ -598,7 +609,7 @@ function daily3(){
 }
 function nextLink(){const ps=state(),due=all().find(x=>ps[x.k]?.next&&new Date(ps[x.k].next)<=new Date());if(due)return microtopicHref(due.u,due.t,due.m);const started=all().find(x=>ps[x.k]?.status&&ps[x.k].status!=='NEW');if(started)return microtopicHref(started.u,started.t,started.m);return 'unit.html?id=1'}
 function dueItems(){const now=Date.now();return all().filter(x=>getP(x.k).next&&Date.parse(getP(x.k).next)<=now).sort((a,b)=>Date.parse(getP(a.k).next)-Date.parse(getP(b.k).next))}
-function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.learnedAt&&p.recallCompletedAt&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
+function scheduleRevision(k,rating='initial'){const p=getP(k),now=new Date(),history=Array.isArray(p.revisionHistory)?p.revisionHistory.slice(-20):[];if(rating==='initial'){const next=new Date(now.getTime()+86400000);setP(k,{next:next.toISOString(),nextInterval:1,revisionCount:Number(p.revisionCount)||0,revisionStartedAt:p.revisionStartedAt||now.toISOString(),revisionHistory:history});return next}const count=(Number(p.revisionCount)||0)+1,previous=Math.max(1,Number(p.nextInterval)||1);let days=1;if(rating==='hard')days=Math.max(2,Math.round(previous*1.5));if(rating==='good')days=count===1?3:Math.max(4,Math.round(previous*2));if(rating==='easy')days=count===1?7:Math.max(7,Math.round(previous*2.5));const mastered=Boolean(p.learnedAt&&p.recallCompletedAt&&(p.mcqHistory||[]).some(item=>item.correct===true)&&count>=2);const next=mastered?null:new Date(now.getTime()+days*86400000);setP(k,{next:next?next.toISOString():null,nextInterval:mastered?null:days,revisionCount:count,lastRevision:now.toISOString(),lastRating:rating,rating,status:mastered?'MASTERED':'RETENTION',revisionHistory:[...history,{rating,at:now.toISOString(),interval:mastered?0:days}].slice(-20),last:now.toISOString()});return next||now}
 function interleaveBy(list,keyFn,limit){const buckets=new Map();for(const item of list){const key=keyFn(item);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item)}const out=[];while(out.length<limit&&buckets.size){for(const [key,bucket] of [...buckets]){const item=bucket.shift();if(item)out.push(item);if(!bucket.length)buckets.delete(key);if(out.length===limit)break}}return out}
 function dailyPractice(){
   const root=$('#dailyPracticeApp');if(!root)return;
@@ -807,7 +818,7 @@ function mcqHTML(q,i,source='MCQ',showSource=true){
 function contextualExplanation(q){
   return String(q?.explanation||PRACTICE_EXPLANATIONS?.[q?.id]||'').trim();
 }
-function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s)}})})}
+function wireMCQ(container,k,qs){container.querySelectorAll('.mcq').forEach(card=>{card.querySelectorAll('.mcq-option').forEach(btn=>btn.onclick=()=>{const chosen=+btn.dataset.a,answer=+card.dataset.answer,correct=chosen===answer;card.querySelectorAll('.mcq-option').forEach(b=>b.disabled=true);const q=qs[+card.dataset.i],fb=card.querySelector('.mcq-feedback');fb.hidden=false;fb.innerHTML=correct?`<b class="correct">✓ Correct</b> ${esc(contextualExplanation(q))}`:`<b class="incorrect">✕ Not quite.</b> Correct answer: <b>${String.fromCharCode(65+answer)}. ${esc((q.options||q.o)[answer])}</b><br>${esc(contextualExplanation(q))}`;if(k){const p=getP(k);setP(k,{mcqHistory:[...(p.mcqHistory||[]),{correct,at:new Date().toISOString()}].slice(-50)})}else{const s=state();s._practiceHistory=[...(s._practiceHistory||[]),{correct,at:new Date().toISOString()}].slice(-200);save(s);const mappedKey=q?.unit!=null&&q?.topic!=null&&q?.micro!=null?key(q.unit,q.topic,q.micro):'';if(mappedKey&&syllabusItems().some(x=>x.k===mappedKey)){const mapped=getP(mappedKey);setP(mappedKey,{mcqHistory:[...(mapped.mcqHistory||[]),{correct,at:new Date().toISOString(),source:'practice'}].slice(-50)})}}})})}
 function micro(){
   const {u,t,m,k}=find();
   const root=$('#microPage');
@@ -897,11 +908,7 @@ function practice(){
   const getPracticePool=(types,selected)=>{
     let qs=PRACTICE_QUESTIONS.slice();
     if(types.length===1){
-      qs=qs.filter(q=>{
-        const tags=(q.source_tags||[]).map(x=>String(x).toLowerCase());
-        const isPyq=tags.some(x=>x.includes('pyq')||x.includes('previous'));
-        return types[0]==='pyq'?isPyq:!isPyq;
-      });
+      qs=qs.filter(q=>questionCategory(q)===types[0]);
     }
     const allUnits=selected.length===0||selected.some(x=>x.dataset.scope==='all');
     if(allUnits)return qs;
@@ -934,6 +941,7 @@ function practice(){
     const expectation=$('#practiceExpectation');
     if(expectation){
       if(!selectedTypes.length||!mode||!selected.length) expectation.textContent='Select your unit, question type, and practice mode to see what your session will be like.';
+      else if(pool.length===0&&selectedTypes.length===1&&selectedTypes[0]==='mcq') expectation.textContent='No standalone MCQs are available in the question bank yet. The currently populated bank contains PYQs; choose PYQs or return when original practice MCQs have been added.';
       else if(pool.length<Number(size)) expectation.textContent='There are not enough questions for this practice selection. Choose a different question type or add more units.';
       else if(hideSize) expectation.textContent='You’ll practice a focused 10-question set from '+scopeLabel+'. '+(mode==='timed'?'The session is timed, and explanations appear after you finish.':'The session is self-paced, with feedback as you work through each question.');
       else if(!size) expectation.textContent='Choose how many questions you want in this practice session.';

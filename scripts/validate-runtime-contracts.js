@@ -62,4 +62,8 @@ for (const file of htmlFiles) {
   appPages.push(file);
 }
 assert.ok(appPages.length > 0, 'Expected to validate at least one app.js-powered page.');
-console.log('Runtime contract checks passed: loadIndex is defined; all loadIndex calls are supported; ' + appPages.length + ' app.js-powered pages map to a renderer.');
+assert.match(runtime, /function normalizeQuestionPool\(pool\)/, 'Question-bank collections must preserve canonical MCQ/PYQ categories.');
+assert.match(runtime, /qs=qs\.filter\(q=>questionCategory\(q\)===types\[0\]\)/, 'Practice filters must use canonical question categories, not optional source tags.');
+assert.match(runtime, /No standalone MCQs are available in the question bank yet/, 'An empty MCQ category must explain the current content limitation.');
+assert.match(runtime, /p\.mcqHistory\|\|\[\]\)\.some\(item=>item\.correct===true\)/, 'Mastery must require successful application, not recall and revision alone.');
+console.log('Runtime contract checks passed: routes, question categories, empty-category messaging and mastery gate; ' + appPages.length + ' app.js-powered pages map to a renderer.');
