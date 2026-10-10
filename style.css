@@ -2066,3 +2066,121 @@ button:disabled{opacity:.65}
  .admin-filter-grid{grid-template-columns:1fr;gap:11px}
  .admin-filter-selects{grid-template-columns:1fr}
 }
+
+
+/* Content Audit refinements: consistent controls, full-width action, balanced status metrics. */
+body[data-page="admin"] .admin-field select,
+body[data-page="admin"] .admin-field input,
+body[data-page="admin"] .admin-field textarea,
+body[data-page="admin"] .admin-editor-field select,
+body[data-page="admin"] .admin-editor-field input,
+body[data-page="admin"] .admin-editor-field textarea,
+body[data-page="admin"] .admin-control select,
+body[data-page="admin"] .admin-filter-selects select {
+  width:100%;
+  min-width:0;
+  min-height:48px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background-color:#fff;
+  color:var(--ink);
+  font:inherit;
+  line-height:1.45;
+  box-shadow:0 1px 2px rgba(23,51,95,.025);
+}
+body[data-page="admin"] .admin-field select {
+  appearance:none;
+  -webkit-appearance:none;
+  padding-right:42px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23718096' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 14px center;
+}
+body[data-page="admin"] .admin-field select:focus,
+body[data-page="admin"] .admin-field input:focus,
+body[data-page="admin"] .admin-field textarea:focus,
+body[data-page="admin"] .admin-editor-field select:focus,
+body[data-page="admin"] .admin-editor-field textarea:focus,
+body[data-page="admin"] .admin-control select:focus,
+body[data-page="admin"] .admin-filter-selects select:focus {
+  outline:none;
+  border-color:var(--blue);
+  box-shadow:var(--focus);
+}
+body[data-page="admin"] .admin-field textarea {
+  min-height:150px;
+  resize:vertical;
+}
+.admin-generation-actions {
+  display:flex;
+  width:100%;
+  justify-content:stretch;
+  margin:0 0 12px;
+}
+.admin-generation-actions .btn {
+  width:100%;
+  min-height:48px;
+  justify-content:center;
+  border-radius:12px;
+  font-size:11px;
+  letter-spacing:.035em;
+}
+.admin-instructions .admin-field {max-width:none}
+.admin-instructions .admin-help {margin-top:12px;max-width:900px}
+.admin-toolbar {
+  width:100%;
+  max-width:980px;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  align-items:stretch;
+  gap:0;
+  padding:0;
+  overflow:hidden;
+}
+.admin-toolbar .admin-metric {
+  min-width:0;
+  min-height:96px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  padding:18px 20px;
+}
+.admin-toolbar .admin-metric + .admin-metric {border-left:1px solid var(--line)}
+.admin-toolbar .admin-metric strong {
+  display:block;
+  color:var(--navy);
+  font-size:clamp(24px,2.5vw,31px);
+  font-weight:850;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.045em;
+  line-height:1.05;
+  overflow-wrap:anywhere;
+}
+.admin-toolbar .admin-metric span {
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:650;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+@media(max-width:720px) {
+  .admin-toolbar {grid-template-columns:repeat(3,minmax(0,1fr))}
+  .admin-toolbar .admin-metric {min-height:88px;padding:15px 14px}
+  .admin-toolbar .admin-metric:nth-child(4) {border-left:0;border-top:1px solid var(--line)}
+  .admin-toolbar .admin-metric:nth-child(5) {border-top:1px solid var(--line)}
+}
+@media(max-width:460px) {
+  .admin-toolbar {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .admin-toolbar .admin-metric {min-height:82px;padding:14px}
+  .admin-toolbar .admin-metric:nth-child(3),
+  .admin-toolbar .admin-metric:nth-child(5) {border-left:0}
+  .admin-toolbar .admin-metric:nth-child(4) {border-left:1px solid var(--line)}
+  .admin-toolbar .admin-metric:nth-child(3),
+  .admin-toolbar .admin-metric:nth-child(4),
+  .admin-toolbar .admin-metric:nth-child(5) {border-top:1px solid var(--line)}
+  .admin-toolbar .admin-metric strong {font-size:25px}
+  .admin-toolbar .admin-metric span {font-size:10px}
+}
