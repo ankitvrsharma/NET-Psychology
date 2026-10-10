@@ -1,0 +1,25 @@
+name: Guard content pool changes
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'data/**'
+      - 'scripts/guard_content_pool_reductions.py'
+      - '.github/workflows/build-content-additions.yml'
+permissions:
+  contents: read
+jobs:
+  guard-pool-reductions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Detect unexpected pool shrinkage
+        run: |
+          git fetch origin main
+          python scripts/guard_content_pool_reductions.py origin/main
