@@ -1,0 +1,30 @@
+name: Micro-topic layout regression guard
+
+on:
+  pull_request:
+    paths:
+      - 'app/runtime.js'
+      - 'style.css'
+      - 'microtopic.html'
+      - 'deep-dive.html'
+      - 'tests/microtopic-layout.test.mjs'
+      - '.github/workflows/microtopic-layout.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'app/runtime.js'
+      - 'style.css'
+      - 'microtopic.html'
+      - 'deep-dive.html'
+      - 'tests/microtopic-layout.test.mjs'
+      - '.github/workflows/microtopic-layout.yml'
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tests/microtopic-layout.test.mjs
