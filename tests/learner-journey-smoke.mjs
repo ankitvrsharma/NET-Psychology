@@ -60,7 +60,7 @@ try {
 
   const practice = await visit('/practice.html', '#practiceApp');
   assert.ok(await practice.locator('[data-practice-choice][data-scope="part"]').count() > 0, 'Practice page has no Part filters');
-  assert.ok(await practice.locator('[data-practice-choice][data-scope="part"]').first().innerText().then(t => /^Part \\d+[A-Z]\\s/.test(t)), 'Practice Part labels are malformed');
+  assert.ok(await practice.locator('[data-practice-choice][data-scope="part"]').first().innerText().then(t => /^Part \d+[A-Z]\s/.test(t)), 'Practice Part labels are malformed');
   await practice.close();
 
   await visit('/revision.html', '#revisionApp');
