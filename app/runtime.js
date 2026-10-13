@@ -894,7 +894,7 @@ function practice(){
     if(allSelected){summary.textContent='All units selected';return}
     if(!selected.length){summary.textContent='No units selected';return}
     const unitsSelected=selected.filter(x=>x.dataset.scope==='unit').map(x=>`Unit ${x.dataset.value}`);
-    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.unit}${x.dataset.value}`);
+    const partsSelected=selected.filter(x=>x.dataset.scope==='part').map(x=>`Part ${x.dataset.value}`);
     const labels=[...unitsSelected,...partsSelected];
     if(unitsSelected.length>1&&partsSelected.length===0)summary.textContent=`${unitsSelected.length} units selected`;
     else if(partsSelected.length>1&&unitsSelected.length===0)summary.textContent=`${partsSelected.length} parts selected`;
