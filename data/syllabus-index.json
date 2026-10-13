@@ -1471,7 +1471,7 @@
         {
           "id": "5D",
           "title": "Advanced Issues in Perception",
-          "description": "Review advanced perceptual topics, including signal detection and other syllabus-listed issues.",
+          "description": "Review advanced perceptual topics beyond the core processes and theories.",
           "topic_ids": [
             8
           ]
@@ -2262,7 +2262,6 @@
             5,
             6,
             7,
-            8,
             9
           ]
         },
@@ -2271,6 +2270,7 @@
           "title": "Achievement, Self-Regulation and Flow",
           "description": "Connect achievement motivation with self-regulation and flow.",
           "topic_ids": [
+            8,
             10,
             11
           ]
