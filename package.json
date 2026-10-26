@@ -6,7 +6,8 @@
   "scripts": {
     "android:sync": "cap sync android",
     "android:open": "cap open android",
-    "android:build": "cd android && ./gradlew assembleDebug"
+    "android:build": "cd android && ./gradlew assembleDebug",
+    "build:web": "node scripts/build-web.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^7.4.3",
