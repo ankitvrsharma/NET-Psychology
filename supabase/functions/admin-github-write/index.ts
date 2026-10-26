@@ -11,6 +11,7 @@ const ALLOWED_FILES = new Set([
   'data/content-enrichment-instructions.json',
   'data/content-approval-queue.json'
 ])
+const EDIT_BRANCH_PREFIX = 'admin-structure/'
 const ALLOWED_WORKFLOW = 'publish-approved-content.yml'
 const ALLOWED_ORIGINS = new Set([
   'https://ankitvrsharma.github.io',
@@ -92,18 +93,14 @@ function encodeBase64(value: string) {
   return btoa(binary)
 }
 
-async function writeFile(path: string, content: string, message: string) {
-  if (!ALLOWED_FILES.has(path)) throw new Error('This admin bridge cannot write that repository path.')
-  const file = await github('/repos/' + REPO + '/contents/' + path + '?ref=main')
+async function writeFile(path: string, content: string, message: string, branch = 'main') {
+  const isStructureEdit = branch.startsWith(EDIT_BRANCH_PREFIX) && path === 'data/syllabus-index.json'
+  const isExistingAdminWrite = branch === 'main' && ALLOWED_FILES.has(path)
+  if (!isStructureEdit && !isExistingAdminWrite) throw new Error('This admin bridge cannot write that repository path or branch.')
+  const file = await github('/repos/' + REPO + '/contents/' + path + '?ref=' + encodeURIComponent(branch))
   return github('/repos/' + REPO + '/contents/' + path, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      message,
-      content: encodeBase64(content),
-      sha: file.sha,
-      branch: 'main'
-    })
+    method: 'PUT', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, content: encodeBase64(content), sha: file.sha, branch })
   })
 }
 
@@ -188,8 +185,39 @@ const authenticatedFetch = withSupabase({ auth: 'user' }, async (req, ctx) => {
       }, 200, req)
     }
 
+    if (action === 'create_branch') {
+      const branch = String(body.branch_name || '')
+      const base = String(body.base_ref || 'main')
+      if (!/^admin-structure\/[a-z0-9-]+$/.test(branch) || base !== 'main') {
+        throw new Error('Only admin-structure/* review branches from main may be created.')
+      }
+      const ref = await github('/repos/' + REPO + '/git/ref/heads/main')
+      await github('/repos/' + REPO + '/git/refs', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ref: 'refs/heads/' + branch, sha: ref.object.sha })
+      })
+      return json({ ok: true, branch }, 200, req)
+    }
+
+    if (action === 'create_pull_request') {
+      const head = String(body.head || '')
+      const base = String(body.base || 'main')
+      if (!head.startsWith(EDIT_BRANCH_PREFIX) || base !== 'main') {
+        throw new Error('Only admin-structure/* branches may open a PR against main.')
+      }
+      const result = await github('/repos/' + REPO + '/pulls', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: String(body.title || 'Review syllabus structure edits').slice(0, 200),
+          body: String(body.body || 'Review syllabus structure edits before merging.').slice(0, 10000),
+          head, base, maintainer_can_modify: false
+        })
+      })
+      return json({ ok: true, number: result.number, url: result.html_url }, 200, req)
+    }
+
     if (action === 'write_file') {
-      await writeFile(String(body.path || ''), String(body.content || ''), String(body.message || 'Admin content update'))
+      await writeFile(String(body.path || ''), String(body.content || ''), String(body.message || 'Admin content update'), String(body.branch || 'main'))
       return json({ ok: true, bridge_version: BRIDGE_VERSION, stage: 'write_file' }, 200, req)
     }
 
