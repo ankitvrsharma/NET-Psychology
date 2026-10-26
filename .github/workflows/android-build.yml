@@ -46,6 +46,8 @@ jobs:
           java-version: '21'
       - name: Install dependencies
         run: npm install
+      - name: Prepare static website bundle
+        run: npm run build:web
       - name: Generate Android project
         run: npx cap add android
       - name: Sync web app into Android
