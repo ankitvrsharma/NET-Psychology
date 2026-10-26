@@ -1,0 +1,18 @@
+{
+  "name": "net-psychology-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UGC NET Psychology learning app with GitHub-based release automation",
+  "scripts": {
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:build": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
