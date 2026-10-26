@@ -1,5 +1,7 @@
 # UGC NET Psychology — Your Learning Guide
 
+[![GitHub Pages deployment](https://github.com/ankitvrsharma/NET-Psychology/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ankitvrsharma/NET-Psychology/actions/workflows/deploy-pages.yml)
+
 > **[🚀 Open the Website](https://ankitvrsharma.github.io/NET-Psychology/index.html)**
 
 ## What is this?
