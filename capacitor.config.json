@@ -1,0 +1,8 @@
+{
+  "appId": "in.psychomates.netpsychology",
+  "appName": "UGC NET Psychology",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  }
+}
