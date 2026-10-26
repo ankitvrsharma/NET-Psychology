@@ -14,7 +14,7 @@ function loadAuth(){
   const auth=document.createElement('script');
   auth.src='./app/supabase-auth.js?v='+VERSION;
   auth.async=false;
-  auth.onload=()=>{loadRuntime();Promise.resolve(window.NETPSY_AUTH?.ready).catch(()=>{});};
+  auth.onload=()=>{loadRuntime();Promise.resolve(window.NETPSY_AUTH?.ready).catch(()=>{});const navScript=document.createElement('script');navScript.src='./app/admin-navigation.js?v=1.0.0';navScript.async=false;document.head.appendChild(navScript);};
   auth.onerror=loadRuntime;
   document.head.appendChild(auth);
 }
