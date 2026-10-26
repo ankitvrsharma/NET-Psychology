@@ -20,7 +20,7 @@ function loadAuth(){
 }
 function loadRuntime(){
   const runtime=document.createElement('script');
-  runtime.src='./app/runtime.js?v=1.2.4';
+  runtime.src='./app/runtime.js?v=1.2.5';
   runtime.async=false;
   runtime.onerror=()=>console.error('NET Psychology learner runtime could not be loaded.');
   document.head.appendChild(runtime);
