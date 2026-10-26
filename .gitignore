@@ -1,2 +1,11 @@
 # Local persistent source extraction cache; never commit extracted book text.
 .cache/source-extraction/
+
+# Generated Android project and local Node dependencies
+node_modules/
+android/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
