@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "site": {
+    "title": "UGC NET Psychology Study Hub",
+    "description": "Focused Psychology preparation: clear concepts, active recall and spaced revision.",
+    "custom_pages_enabled": true,
+    "show_custom_pages_in_navigation": true,
+    "home_announcement_enabled": false,
+    "home_announcement_title": "",
+    "home_announcement_body": "",
+    "home_announcement_link": ""
+  },
+  "pages": []
+}
