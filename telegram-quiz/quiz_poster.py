@@ -73,7 +73,7 @@ def read_state():
         return []
 
 def save_state(ids):
-    STATE.write_text(json.dumps(ids, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    STATE.write_text(json.dumps(ids, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 def main():
     all_questions = load_questions()
@@ -88,14 +88,14 @@ def main():
     today = datetime.now().strftime("%d %B %Y")
     telegram("sendMessage", {
         "chat_id": CHAT_ID,
-        "text": f"🧠 UGC NET Psychology — Daily Quiz\\n📅 {today}\\n\\nAnswer all {DAILY_COUNT} questions. Good luck!",
+        "text": f"🧠 NET JRF PSYCHOLOGY\nDAILY QUIZ  |  {today}\n\n5 questions. Test your preparation.",
         "disable_web_page_preview": "true",
     })
     for index, q in enumerate(selected, start=1):
         source = " · ".join(x for x in [q["session"], q["paper"]] if x)
-        question_text = f"Q{index}/{DAILY_COUNT}. {q['question']}"
+        question_text = f"Q{index}. {q['question']}"
         if source:
-            question_text += f"\\n\\nSource: {source}"
+            question_text += f"\n\n📚 {source}"
         if len(question_text) > 300:
             raise RuntimeError(f"Question {q['id']} exceeds Telegram's 300-character poll limit.")
         telegram("sendPoll", {
