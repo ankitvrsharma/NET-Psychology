@@ -16,8 +16,21 @@ API = f"https://api.telegram.org/bot{BOT_TOKEN}/"
 def telegram(method, payload):
     body = urllib.parse.urlencode(payload).encode("utf-8")
     request = urllib.request.Request(API + method, data=body)
-    with urllib.request.urlopen(request, timeout=40) as response:
-        result = json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=40) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        # Telegram returns a JSON description (e.g. chat not found / not enough rights).
+        details = exc.read().decode("utf-8", errors="replace")
+        try:
+            details = json.dumps(json.loads(details), ensure_ascii=False)
+        except ValueError:
+            pass
+        raise RuntimeError(
+            f"Telegram rejected {method} (HTTP {exc.code}): {details}. "
+            "Check TELEGRAM_CHAT_ID and make sure the bot is an administrator "
+            "with permission to post in the channel."
+        ) from exc
     if not result.get("ok"):
         raise RuntimeError(f"Telegram API error in {method}: {result}")
     return result["result"]
