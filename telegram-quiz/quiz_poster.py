@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parent
 BOOK = ROOT / "data" / "question_bank.xlsx"
 STATE = ROOT / "posted_ids.json"
-DAILY_COUNT = int(os.getenv("DAILY_QUESTION_COUNT", "5"))
+DAILY_COUNT = int(os.getenv("DAILY_QUESTION_COUNT", "3"))
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 API = f"https://api.telegram.org/bot{BOT_TOKEN}/"
@@ -88,7 +88,7 @@ def main():
     today = datetime.now().strftime("%d %B %Y")
     telegram("sendMessage", {
         "chat_id": CHAT_ID,
-        "text": f"🧠 NET JRF PSYCHOLOGY\nDAILY QUIZ  |  {today}\n\n5 questions. Test your preparation.",
+        "text": f"🧠 NET JRF PSYCHOLOGY\nDAILY QUIZ.",
         "disable_web_page_preview": "true",
     })
     for index, q in enumerate(selected, start=1):
