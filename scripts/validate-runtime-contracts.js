@@ -66,4 +66,10 @@ assert.match(runtime, /function normalizeQuestionPool\(pool\)/, 'Question-bank c
 assert.match(runtime, /qs=qs\.filter\(q=>questionCategory\(q\)===types\[0\]\)/, 'Practice filters must use canonical question categories, not optional source tags.');
 assert.match(runtime, /No standalone MCQs are available in the question bank yet/, 'An empty MCQ category must explain the current content limitation.');
 assert.match(runtime, /p\.mcqHistory\|\|\[\]\)\.some\(item=>item\.correct===true\)/, 'Mastery must require successful application, not recall and revision alone.');
-console.log('Runtime contract checks passed: routes, question categories, empty-category messaging and mastery gate; ' + appPages.length + ' app.js-powered pages map to a renderer.');
+const serviceWorker = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+assert.match(serviceWorker, /const CACHE='netpsych-shell-v1\\.11\\.19';/, 'The shell cache must be versioned when its precache manifest changes.');
+assert.match(serviceWorker, /['"]\\.\\/learner\\.html['"]/, 'The learner dashboard must be included in the offline shell cache.');
+assert.match(runtime, /const dueCount=dueItems\\(\\)\\.length;/, 'The homepage daily actions must calculate the current due-revision count.');
+assert.match(runtime, /daily-focus-revision/, 'The homepage must expose a dedicated revision action.');
+assert.match(runtime, /Skip setup and start learning/, 'Learners must be able to bypass onboarding and enter the learning dashboard.');
+console.log('Runtime contract checks passed: routes, question categories, offline learner shell, daily revision action, optional onboarding and mastery gate; ' + appPages.length + ' app.js-powered pages map to a renderer.');
