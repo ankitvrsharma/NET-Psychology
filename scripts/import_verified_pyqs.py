@@ -100,7 +100,7 @@ def main():
     raw = read_json(OUTPUT,{"pyq":[],"practice":[]})
     if isinstance(raw,list): raw={"pyq":raw,"practice":[]}
     if not isinstance(raw,dict): raise ValueError("Existing question pool must be an array or object.")
-    existing = {str(q["id"]):q for q in raw.get("pyq",[]) if q.get("id") is not None}
+    existing = {str(q["id"]):q for q in raw.get("pyq",[]) if q.get("id") is not None and q.get("source_provenance") != "telegram-quiz/data/question_bank.xlsx"}
     practice = list(raw.get("practice",[]))
     imported, review = {}, []
     methods, conflicts, seen = Counter(), [], set()
