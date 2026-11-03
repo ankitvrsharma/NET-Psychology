@@ -1,6 +1,6 @@
 # Telegram Daily UGC NET Psychology Quiz
 
-Posts the daily quiz at **18:00 IST** to your Telegram channel, using the existing Excel question bank. Each daily quiz currently consists of **5 Telegram quiz polls**.
+Posts a branded daily quiz at **18:00 IST** to your Telegram channel, using the existing Excel question bank. Each daily run sends an introduction, **5 native Telegram quiz polls** with answer explanations, and a closing engagement message.
 
 ## Files
 
@@ -17,14 +17,9 @@ Create the folder `telegram-quiz/data/` in this repository and upload your exist
 
 `telegram-quiz/data/question_bank.xlsx`
 
-The workbook must contain a worksheet named **Question Bank** and these columns:
+The workbook must contain a worksheet named **Question Bank** and the columns used by your current question bank: **Exam Session**, **Paper**, **Q No.**, **Question / Instructions**, **Option A–D**, and **Correct Option**. List I, List II, and shared passage/context columns are included in the poll text when present. Legacy column names are also supported as fallbacks.
 
-- Record ID
-- Question
-- Option A, Option B, Option C, Option D
-- Answer (as printed in PDF)
-
-The script only posts rows with a non-empty Record ID, four options, and an answer key of A, B, C or D. It skips questions that exceed Telegram's poll limits (question 300 characters; each option 100 characters). It does not guess missing answers.
+The script only posts rows with a stable session/paper/question identifier, four options, and an unambiguous answer key of A, B, C or D. It skips questions that exceed Telegram's poll limits (question 300 characters; each option 100 characters). It does not guess missing answers.
 
 ### 2. Create a Telegram bot
 
@@ -62,7 +57,9 @@ The scheduled run is at **12:30 UTC**, which is **18:00 IST**. GitHub Actions sc
 
 ## Posting and repeat rules
 
-- Five independent Telegram quiz polls are sent per successful run.
+- Each successful run sends a formatted introduction, five independent Telegram quiz polls, and a closing comment/share prompt.
+- Polls are numbered (01/05 to 05/05), and the date in the introduction uses India Standard Time.
+- Telegram displays the correct option and answer text after a learner responds.
 - Telegram marks the correct option and displays the configured answer explanation after a learner responds.
 - The script uses only the answer key printed in the workbook. Missing or ambiguous answer keys are excluded.
 - Question IDs are saved in `posted_ids.json`. The bank is recycled only when fewer than five unused eligible questions remain.
