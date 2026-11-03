@@ -1180,6 +1180,7 @@ function progress(){
         <div class="progress-indicator"><span>Actively Recalled</span><strong>${s.activelyRecalled}</strong><small>recall checkpoint completed</small></div>
         <div class="progress-indicator"><span>Revision</span><strong>${s.revision}</strong><small>at least one revision checkpoint recorded</small></div>
         <div class="progress-indicator"><span>Mastered</span><strong>${s.mastered}</strong><small>learning + recall + a correct mapped question + at least two spaced revisions</small></div>
+        <div class="progress-indicator"><span>Mastery among learned</span><strong>${s.masteryAmongLearned}%</strong><small>share of learned concepts that meet the full mastery gate</small></div>
       </div></section>
   <section class="progress-category card"><div class="progress-category-head"><div><div class="eyebrow">LEARNING</div><h2>Build your understanding across the syllabus.</h2><p>See how far you’ve explored the syllabus, what you’ve fully learned, and where you can begin next.</p></div></div><div class="progress-indicators">
         <div class="progress-indicator"><span>Topics Mastered</span><strong>${topics.mastered}</strong><small>all micro-topics in the topic mastered</small></div>
