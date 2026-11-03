@@ -81,7 +81,9 @@ def load_questions():
             continue
         if any(not option or len(option) > 100 for option in options):
             continue
-        if len(full_question) > 300:
+        source_label = " · ".join(x for x in [session, paper] if x)
+        # Reserve space for the poll number and source label added by main().
+        if len(full_question) + len(source_label) + 12 > 300:
             continue
 
         records.append({
