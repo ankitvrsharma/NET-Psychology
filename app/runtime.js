@@ -1,3 +1,9 @@
+/**
+ * Shared browser runtime for the learner-facing site.
+ * Owns route dispatch, study-data loading, learning interactions, local progress,
+ * retrieval practice, spaced revision and progress summaries.
+ * Keep syllabus/content contracts and approved mastery/revision rules stable during refactors.
+ */
 (function(){
 'use strict';
 const $=s=>document.querySelector(s);
