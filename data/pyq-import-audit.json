@@ -15,7 +15,7 @@
     "curated-question-override": 72
   },
   "existing_practice_mcq_count_preserved": 0,
-  "preexisting_pyq_count": 2482,
+  "preexisting_pyq_count": 3373,
   "duplicate_or_conflict_ids": [],
   "policy": "Workbook is the authoritative PYQ inventory. Paper II uses legacy IDs; Paper III has paper-qualified IDs to prevent collisions. Existing website explanations and canonical mappings are retained where available. Unresolved answer keys remain review-only."
 }
