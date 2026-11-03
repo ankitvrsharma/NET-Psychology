@@ -54,7 +54,7 @@ def main():
         if GENERIC_EXPLANATION.search(explanation):
             counts["generic_explanations"] += 1
             generic_ids.append((key, item.get("title", "")))
-        if re.search(r"\\bSOURCE BASIS\\b", explanation, re.I):
+        if re.search(r"\bSOURCE BASIS\b", explanation, re.I):
             counts["provenance_in_explanation"] += 1
         if not item.get("key_points"):
             counts["empty_key_points"] += 1
@@ -67,7 +67,7 @@ def main():
     for name, value in counts.items():
         print(f"{name}: {value}")
     if generic_ids:
-        print("\\nGeneric explanation records:")
+        print("\nGeneric explanation records:")
         for key, title in generic_ids:
             print(f"{key} | {title}")
 
