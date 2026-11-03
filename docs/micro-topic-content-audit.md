@@ -1,6 +1,6 @@
 # Micro-topic content quality audit
 
-**Reviewed file:** `content/microtopics/micro_topics.json`  
+**Reviewed file:** \`content/microtopics/micro_topics.json\`  
 **Review date:** 3 November 2026  
 **Scope:** structural and editorial audit of the complete 549-record UGC NET Psychology micro-topic pool, followed by the enrichment update on this branch.
 
@@ -8,13 +8,13 @@
 
 - **549** micro-topic records retained and mapped to the syllabus.
 - **87/87** generic placeholder explanations rewritten with topic-specific teaching explanations.
-- **549/549** short-note `key_points` arrays populated, containing **2,421** concise points in total.
-- **106/106** generic revision-check prompts replaced with topic-specific retrieval questions.
+- **549/549** short-note \`key_points\` arrays populated, containing **2,421** concise points in total.
+- **126** generic revision-check prompts replaced with topic-specific retrieval questions. This includes the original 106 repeated prompts and 20 additional fallback-template prompts found during review.
 - **87/87** generic exam takeaways replaced with concept-specific takeaways.
 - **0** records match the known generic explanation placeholder pattern.
 - **0** records have empty short-note key-point arrays.
-- **0** records retain the known generic revision-check prompt.
-- **0** learner-facing explanation fields contain the editorial marker `SOURCE BASIS`.
+- **0** records retain either known generic revision-check template.
+- **0** learner-facing explanation fields contain the editorial marker \`SOURCE BASIS\`.
 
 ## Source and provenance limits
 
@@ -26,7 +26,7 @@ No page numbers, quotations or chapter-specific citations have been fabricated. 
 
 The three learner-facing layers have distinct jobs:
 
-- **Short notes (`key_points`):** concise retrieval cues, definitions, discriminations and essential relationships—not a second copy of the detailed explanation.
+- **Short notes (\`key_points\`):** concise retrieval cues, definitions, discriminations and essential relationships—not a second copy of the detailed explanation.
 - **Detailed explanation:** explain the concept and its mechanism, structure, stages or application where appropriate.
 - **Revision check:** prompt the learner to reconstruct a topic-specific definition, sequence, comparison, theorist, mechanism or application before revealing the note.
 
@@ -45,8 +45,8 @@ A lesson is ready to publish only when:
 
 Run:
 
-```bash
+\`\`\`bash
 python scripts/audit-microtopic-content.py content/microtopics/micro_topics.json
-```
+\`\`\`
 
 The script reports record coverage, generic placeholders, provenance markers in explanation fields, empty key points, generic revision checks, generic exam takeaways and invalid source metadata. It is an audit tool, not an automatic content rewriter.
