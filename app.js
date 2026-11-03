@@ -1,4 +1,7 @@
-/* Stable browser entry point. Loads account persistence before the learner runtime. */
+/**
+ * Browser entry point: load optional account persistence before the shared learner runtime.
+ * Local learning remains available when remote authentication is unconfigured or unavailable.
+ */
 (function(){
 'use strict';
 // GitHub Pages is served over HTTPS. Redirect an accidentally opened HTTP copy before app/auth requests run.
