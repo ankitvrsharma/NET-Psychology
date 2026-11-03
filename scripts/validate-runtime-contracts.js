@@ -92,7 +92,7 @@ const lessonText = record => lessonFields.map(field => {
 const publishedLessons = Object.entries(microContent).filter(([, record]) => record?.has_learning_content === true || lessonText(record).length >= 80);
 const placeholderLessons = publishedLessons.filter(([, record]) => /(?:ACADEMIC CORE|MICRO-TOPIC MAP|SOURCE BASIS|EXAM USE)/i.test(lessonText(record)));
 const sourceMappedLessons = publishedLessons.filter(([, record]) => Array.isArray(record?.sources) && record.sources.length > 0);
-const genericExplanationPattern = /source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application\\/context|Use source terminology and do not infer beyond the study material/i;
+const genericExplanationPattern = /source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application.context|Use source terminology and do not infer beyond the study material/i;
 const genericExplanationLessons = Object.entries(microContent).filter(([, record]) =>
   genericExplanationPattern.test([record?.explanation, record?.expert_explanation, record?.content_notes].filter(Boolean).join(' '))
 );
