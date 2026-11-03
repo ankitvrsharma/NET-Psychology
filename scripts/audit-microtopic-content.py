@@ -17,7 +17,10 @@ GENERIC_EXPLANATION = re.compile(
     r"Use source terminology and do not infer beyond the study material",
     re.I,
 )
-GENERIC_REVISION = "Recall the central idea and two supporting points before checking the note."
+GENERIC_REVISION = {
+    "Recall the central idea and two supporting points before checking the note.",
+    "Recall the central idea and two supporting points before reopening the explanation.",
+}
 GENERIC_TAKEAWAY = "definition/core construct"
 
 def main():
@@ -66,7 +69,7 @@ def main():
             counts["provenance_in_explanation"] += 1
         if not item.get("key_points"):
             counts["empty_key_points"] += 1
-        if item.get("revision_check") == GENERIC_REVISION:
+        if item.get("revision_check") in GENERIC_REVISION:
             counts["generic_revision_checks"] += 1
         if item.get("exam_takeaway") == GENERIC_TAKEAWAY:
             counts["generic_exam_takeaways"] += 1
