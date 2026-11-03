@@ -57,7 +57,7 @@ def load_questions():
         value = str(value or "").strip().upper()
         # Accept only an unambiguous A/B/C/D key, including common printed forms.
         import re
-        match = re.fullmatch(r"(?:OPTION\\s*)?([ABCD])(?:[.)])?", value)
+        match = re.fullmatch(r"(?:OPTION\s*)?([ABCD])(?:[.)])?", value)
         return match.group(1) if match else ""
 
     for row in rows:
