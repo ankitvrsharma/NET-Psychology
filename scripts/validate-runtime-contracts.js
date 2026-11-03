@@ -92,5 +92,15 @@ const lessonText = record => lessonFields.map(field => {
 const publishedLessons = Object.entries(microContent).filter(([, record]) => record?.has_learning_content === true || lessonText(record).length >= 80);
 const placeholderLessons = publishedLessons.filter(([, record]) => /(?:ACADEMIC CORE|MICRO-TOPIC MAP|SOURCE BASIS|EXAM USE)/i.test(lessonText(record)));
 const sourceMappedLessons = publishedLessons.filter(([, record]) => Array.isArray(record?.sources) && record.sources.length > 0);
-console.log('Micro-topic audit: ' + publishedLessons.length + '/' + expectedMicroKeys.size + ' learner-ready records; ' + sourceMappedLessons.length + ' with source IDs; ' + placeholderLessons.length + ' containing syllabus-scaffold labels.');
+const genericExplanationPattern = /source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application\\/context|Use source terminology and do not infer beyond the study material/i;
+const genericExplanationLessons = Object.entries(microContent).filter(([, record]) =>
+  genericExplanationPattern.test([record?.explanation, record?.expert_explanation, record?.content_notes].filter(Boolean).join(' '))
+);
+const genericRevisionChecks = Object.values(microContent).filter(record =>
+  record?.revision_check === 'Recall the central idea and two supporting points before checking the note.'
+).length;
+const emptyShortNotes = Object.values(microContent).filter(record => !Array.isArray(record?.key_points) || record.key_points.length === 0).length;
+assert.ok(genericExplanationLessons.length < expectedMicroKeys.size * 0.2, 'Generic placeholder explanations must remain below 20% of the syllabus content pool.');
+assert.equal(sourceMappedLessons.length, publishedLessons.length, 'Every learner-ready micro-topic must retain at least one source ID.');
+console.log('Micro-topic audit: ' + publishedLessons.length + '/' + expectedMicroKeys.size + ' learner-ready records; ' + sourceMappedLessons.length + ' with source IDs; ' + genericExplanationLessons.length + ' generic explanations; ' + genericRevisionChecks + ' generic revision prompts; ' + emptyShortNotes + ' records with empty short-note key points; ' + placeholderLessons.length + ' containing syllabus-scaffold labels.');
 console.log('Runtime contract checks passed: routes, question categories, offline learner shell, daily revision action, optional onboarding, progress denominator and content-pool validity; ' + appPages.length + ' app.js-powered pages map to a renderer.');
