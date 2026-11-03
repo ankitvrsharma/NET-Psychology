@@ -279,6 +279,8 @@ const hasLearningContent=m=>{
     if(v&&typeof v==='object')return JSON.stringify(v);
     return String(v||'');
   }).join(' ').replace(/\\s+/g,' ').trim();
+  const placeholderPattern=/(?:source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application.context|Use source terminology and do not infer beyond the study material)/i;
+  if(placeholderPattern.test(text))return false;
   return text.length>=80;
 };
 const all=()=>syllabusItems().map(x=>({...x,m:microtopicItem(x.u,x.t,x.m)})).filter(x=>hasLearningContent(x.m));
