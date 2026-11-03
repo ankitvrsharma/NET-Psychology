@@ -10,6 +10,7 @@
 - **549/549** records contain an explanation field, expert-explanation field, content-notes field and a source-ID array.
 - **549/549** records have an empty `key_points` array. This means the short-notes panel cannot rely on curated key-point bullets from this field.
 - **87** records use the same generic placeholder explanation (for example, “identify its defining construct…” and “application/context”) rather than explaining the named concept.
+- The runtime content-readiness rule now excludes those 87 placeholder records: **462/549** are treated as learner-ready, while **87** remain unavailable for learning until rewritten. They remain visible in the syllabus map and are not counted as released lessons.
 - **278** records include the literal editorial marker `SOURCE BASIS` inside the learner-facing explanation text. Source provenance should be kept in metadata, not mixed into the teaching explanation.
 - **106** records use the same generic revision-check prompt instead of a topic-specific retrieval question.
 - **87** records use the generic exam takeaway `definition/core construct`.
