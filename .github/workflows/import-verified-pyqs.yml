@@ -44,6 +44,8 @@ jobs:
       - name: Validate generated question pool
         run: python scripts/validate_content.py
       - name: Commit generated website content
+        env:
+          TARGET_BRANCH: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,5 +54,7 @@ jobs:
             echo "Generated question pool is already up to date."
           else
             git commit -m "Import verified PYQs into website question pool"
-            git push origin HEAD:${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            git push origin "HEAD:$TARGET_BRANCH"
           fi
