@@ -1,6 +1,15 @@
 name: Import authoritative verified PYQs into website pool
 
 on:
+  push:
+    branches: [content/import-verified-pyq-inventory]
+    paths:
+      - .github/workflows/import-verified-pyqs.yml
+      - telegram-quiz/data/question_bank.xlsx
+      - scripts/import_verified_pyqs.py
+      - data/syllabus-index.json
+      - data/mcq_mapping.json
+      - content/questions/questions.json
   pull_request:
     branches: [main]
     paths:
@@ -16,13 +25,13 @@ permissions:
 
 jobs:
   import-verified-pyqs:
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - name: Check out PR branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -43,5 +52,5 @@ jobs:
             echo "Generated question pool is already up to date."
           else
             git commit -m "Import verified PYQs into website question pool"
-            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            git push origin HEAD:${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
           fi
