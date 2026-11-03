@@ -45,46 +45,62 @@ def load_questions():
     rows = ws.iter_rows(values_only=True)
     headers = [str(v).strip() if v is not None else "" for v in next(rows)]
     records = []
+
+    def cell(item, *names):
+        for name in names:
+            value = item.get(name)
+            if value is not None and str(value).strip():
+                return str(value).strip()
+        return ""
+
+    def answer_letter(value):
+        value = str(value or "").strip().upper()
+        # Accept only an unambiguous A/B/C/D key, including common printed forms.
+        import re
+        match = re.fullmatch(r"(?:OPTION\\s*)?([ABCD])(?:[.)])?", value)
+        return match.group(1) if match else ""
+
     for row in rows:
         item = dict(zip(headers, row))
-        question = str(item.get("Question") or "").strip()
-        options = [str(item.get(f"Option {letter}") or "").strip() for letter in "ABCD"]
-        answer = str(item.get("Answer (as printed in PDF)") or "").strip().upper()
-        record_id = str(item.get("Record ID") or "").strip()
-        if not record_id or not question or answer not in {"A", "B", "C", "D"}:
+        question = cell(item, "Question / Instructions", "Question")
+        list_one = cell(item, "List I — Items", "List I - Items", "List I")
+        list_two = cell(item, "List II — Items", "List II - Items", "List II")
+        passage = cell(item, "Shared Passage / Case Context", "Passage / Case Context")
+        # Preserve all question context and matching-list material from the source workbook.
+        parts = [part for part in [passage, question, list_one, list_two] if part]
+        full_question = "\\n\\n".join(parts)
+        options = [cell(item, f"Option {letter}") for letter in "ABCD"]
+        answer = answer_letter(cell(item, "Correct Option", "Answer (as printed in PDF)", "Answer"))
+        session = cell(item, "Exam Session", "Exam Cycle / Session")
+        paper = cell(item, "Paper")
+        qno = cell(item, "Q No.", "Question No.", "Question Number")
+        # These source columns together form a stable ID; no workbook edits are needed.
+        record_id = "|".join(x for x in [session, paper, qno] if x)
+
+        if not record_id or not full_question or answer not in {"A", "B", "C", "D"}:
             continue
-        if len(question) > 260 or any(not option or len(option) > 100 for option in options):
+        if any(not option or len(option) > 100 for option in options):
             continue
+        if len(full_question) > 300:
+            continue
+
         records.append({
-            "id": record_id, "question": question, "options": options,
+            "id": record_id,
+            "question": full_question,
+            "options": options,
             "correct": "ABCD".index(answer),
-            "session": str(item.get("Exam Cycle / Session") or "").strip(),
-            "paper": str(item.get("Paper") or "").strip(),
+            "session": session,
+            "paper": paper,
         })
     wb.close()
     if not records:
-        # Print workbook structure without exposing full question text so a failed
-        # run identifies the exact header/column mismatch in the Actions log.
-        nonempty = {}
-        try:
-            wb_diag = load_workbook(BOOK, read_only=True, data_only=True)
-            ws_diag = wb_diag["Question Bank"] if "Question Bank" in wb_diag.sheetnames else wb_diag.active
-            for col_index, header in enumerate(headers):
-                nonempty[header or f"(blank column {col_index + 1})"] = sum(
-                    1 for row in ws_diag.iter_rows(min_row=2, min_col=col_index + 1,
-                                                   max_col=col_index + 1, values_only=True)
-                    if row and row[0] is not None and str(row[0]).strip()
-                )
-            wb_diag.close()
-        except Exception as diag_exc:
-            nonempty = {"diagnostic_error": str(diag_exc)}
         raise RuntimeError(
-            "No eligible questions. "
-            f"Worksheet: {ws.title!r}; headers found: {headers!r}; "
-            f"non-empty cells by column: {nonempty!r}. "
-            "Expected: Record ID, Question, Option A, Option B, Option C, "
-            "Option D, and Answer (as printed in PDF) with A/B/C/D values."
+            f"No eligible questions found in worksheet {ws.title!r}. "
+            f"Detected columns: {headers!r}. "
+            "Rows must have a question, four options, a Correct Option of A/B/C/D, "
+            "and Exam Session, Paper and Q No. to identify the question."
         )
+    print(f"Loaded {len(records)} eligible questions from {BOOK.name}.")
     return records
 
 def read_state():
