@@ -1,6 +1,6 @@
 # Telegram Daily UGC NET Psychology Quiz
 
-Posts **5 quiz polls every day at 08:00 IST** to your Telegram channel, using the existing Excel question bank.
+Posts the daily quiz at **18:00 IST** to your Telegram channel, using the existing Excel question bank. Each daily quiz currently consists of **5 Telegram quiz polls**.
 
 ## Files
 
