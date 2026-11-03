@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Post five UGC NET Psychology quiz polls from the existing Excel question bank."""
-import json, os, random, sys, time, urllib.parse, urllib.request
+import html, json, os, random, sys, time, urllib.parse, urllib.request
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from openpyxl import load_workbook
 
@@ -124,15 +125,25 @@ def main():
         raise RuntimeError(f"Only {len(unused)} eligible questions; {DAILY_COUNT} required.")
 
     selected = random.SystemRandom().sample(unused, DAILY_COUNT)
-    today = datetime.now().strftime("%d %B %Y")
+    today = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%A, %d %B %Y")
     telegram("sendMessage", {
         "chat_id": CHAT_ID,
-        "text": f"🧠 NET JRF PSYCHOLOGY\nDAILY QUIZ.",
+        "parse_mode": "HTML",
         "disable_web_page_preview": "true",
+        "text": (
+            "🧠 <b>NET JRF PSYCHOLOGY</b>\n"
+            "━━━━━━━━━━━━━━━━━━━━\n"
+            "🎯 <b>DAILY QUIZ CHALLENGE</b>\n"
+            f"📅 {html.escape(today)}\n\n"
+            "Test your concepts with today’s exam-focused practice.\n"
+            "📚 <b>5 questions</b>  •  📝 <b>Instant answer reveal</b>\n"
+            "💡 Attempt every poll before checking the explanation.\n\n"
+            "👇 <b>Let’s begin — your daily practice starts here!</b>"
+        ),
     })
     for index, q in enumerate(selected, start=1):
         source = " · ".join(x for x in [q["session"], q["paper"]] if x)
-        question_text = f"Q{index}. {q['question']}"
+        question_text = f"{index:02d}/{len(selected):02d}  •  {q['question']}"
         if source:
             question_text += f"\n\n📚 {source}"
         if len(question_text) > 300:
@@ -142,11 +153,25 @@ def main():
             "options": json.dumps(q["options"], ensure_ascii=False),
             "type": "quiz", "correct_option_id": str(q["correct"]),
             "is_anonymous": "true",
-            "explanation": f"Correct answer: {chr(65 + q['correct'])}. {q['options'][q['correct']]}",
+            "explanation_parse_mode": "HTML",
+            "explanation": (
+                f"<b>Correct answer: {chr(65 + q['correct'])}</b>\n"
+                f"{html.escape(q['options'][q['correct']])}"
+            ),
         })
         posted.append(q["id"])
         save_state(posted)  # Persist after each successful poll, including partial-run recovery.
         time.sleep(1.2)
+    telegram("sendMessage", {
+        "chat_id": CHAT_ID,
+        "parse_mode": "HTML",
+        "text": (
+            "✅ <b>Quiz completed!</b>\n"
+            "How many did you get right? Share your score in the comments.\n"
+            "🔁 Save this post and share today’s challenge with a fellow NET aspirant."
+        ),
+        "disable_web_page_preview": "true",
+    })
     print(f"Posted {len(selected)} quiz polls. Eligible bank: {len(all_questions)} questions.")
     print("Posted IDs:", ", ".join(q["id"] for q in selected))
 
