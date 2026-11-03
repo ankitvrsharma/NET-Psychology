@@ -119,6 +119,7 @@ def main():
         stem = text_cell(row.get("Question / Instructions"))
         list_i, list_ii = text_cell(row.get("List I — Items")), text_cell(row.get("List II — Items"))
         passage = text_cell(row.get("Shared Passage / Case Context"))
+        if passage and re.fullmatch(r"[\\d\\s.,;:/-]+", passage): passage = ""
         parts = [stem]
         if list_i: parts.append("List I:\n"+list_i)
         if list_ii: parts.append("List II:\n"+list_ii)
@@ -144,7 +145,7 @@ def main():
             prior_key = f'{prior.get("unit")}-{prior.get("topic")}-{prior.get("micro")}'
             if prior_key in micro:
                 mapped, method, confidence = micro[prior_key], "existing-pool-canonical-mapping", 0.9
-                methods[method] += 1
+        methods[method] += 1
 
         record = {
             "id":qid,"question":question,"options":options,"answer":answer,
@@ -155,7 +156,7 @@ def main():
             "source_provenance":"telegram-quiz/data/question_bank.xlsx",
             "answer_key_provenance":"Authoritative verified inventory designated by the site owner",
             "explanation":"The source workbook provides the answer key but no explanatory rationale. Use the mapped micro-topic learning notes to study the concept; an authored explanation has not been added.",
-            "source_page":text_cell(row.get("Source PDF Page")) or None,
+            "source_page":(text_cell(row.get("Source PDF Page")) if re.fullmatch(r"\\d+", text_cell(row.get("Source PDF Page"))) else None),
             "mapping_method":method,"mapping_confidence":confidence,
             "unit":mapped["unit"] if mapped else None,
             "topic":mapped["topic"] if mapped else None,
