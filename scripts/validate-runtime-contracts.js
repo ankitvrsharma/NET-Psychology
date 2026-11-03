@@ -79,4 +79,17 @@ const syllabus = JSON.parse(fs.readFileSync(path.join(root, 'data/syllabus-index
 const microContent = JSON.parse(fs.readFileSync(path.join(root, 'content/microtopics/micro_topics.json'), 'utf8'));
 assert.ok(syllabus.units.length === 10, 'The syllabus must retain all ten navigational units.');
 assert.ok(microContent && typeof microContent === 'object' && !Array.isArray(microContent), 'The micro-topic content pool must be valid JSON, even when no lessons are published yet.');
+const expectedMicroKeys = new Set(syllabus.units.flatMap(unit => (unit.topics || []).flatMap(topic => (topic.microtopics || []).map(micro => [unit.id, topic.id, micro.id].join('-')))));
+const orphanContentKeys = Object.keys(microContent).filter(key => !expectedMicroKeys.has(key));
+assert.deepEqual(orphanContentKeys, [], 'Micro-topic content must map to a real syllabus micro-topic.');
+const lessonFields = ['expert_explanation', 'detailed_explanation', 'deep_learning', 'deep', 'content_notes', 'study_notes', 'application_question', 'recall_cue', 'memory_hook', 'exam_takeaway'];
+const lessonText = record => lessonFields.map(field => {
+  const value = record?.[field];
+  return Array.isArray(value) ? value.map(item => typeof item === 'object' && item ? JSON.stringify(item) : String(item || '')).join(' ')
+    : value && typeof value === 'object' ? JSON.stringify(value) : String(value || '');
+}).join(' ').replace(/\\s+/g, ' ').trim();
+const publishedLessons = Object.entries(microContent).filter(([, record]) => record?.has_learning_content === true || lessonText(record).length >= 80);
+const placeholderLessons = publishedLessons.filter(([, record]) => /(?:ACADEMIC CORE|MICRO-TOPIC MAP|SOURCE BASIS|EXAM USE)/i.test(lessonText(record)));
+const sourceMappedLessons = publishedLessons.filter(([, record]) => Array.isArray(record?.sources) && record.sources.length > 0);
+console.log('Micro-topic audit: ' + publishedLessons.length + '/' + expectedMicroKeys.size + ' learner-ready records; ' + sourceMappedLessons.length + ' with source IDs; ' + placeholderLessons.length + ' containing syllabus-scaffold labels.');
 console.log('Runtime contract checks passed: routes, question categories, offline learner shell, daily revision action, optional onboarding, progress denominator and content-pool validity; ' + appPages.length + ' app.js-powered pages map to a renderer.');
