@@ -226,8 +226,11 @@ const loadStudyData=async()=>{
   const page=document.body?.dataset?.page||'';
   D=await fetchJSON('data/syllabus-index.json','Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
-  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision']);
-  if(microPages.has(page))await Promise.all([loadPool('microtopics'),loadPool('deepDive')]);
+  const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision','progress']);
+  if(microPages.has(page)){
+    await loadPool('microtopics');
+    if(page!=='progress')await loadPool('deepDive');
+  }
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
     await loadPool('questions');
