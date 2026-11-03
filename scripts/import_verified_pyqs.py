@@ -138,7 +138,6 @@ def main():
             continue
 
         mapped, method, confidence = map_question(question+"\n"+"\n".join(options), legacy_id, micro, mapping)
-        methods[method] += 1
         prior = existing.get(qid)
         # Existing website mappings are useful only if they point to the current canonical taxonomy.
         if mapped is None and prior:
