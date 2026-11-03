@@ -74,6 +74,7 @@ assert.match(runtime, /daily-focus-revision/, 'The homepage must expose a dedica
 assert.match(runtime, /Skip setup and start learning/, 'Learners must be able to bypass onboarding and enter the learning dashboard.');
 assert.match(runtime, /masteryAmongLearned/, 'Progress must distinguish mastery among learned concepts from syllabus-wide mastery coverage.');
 assert.match(runtime, /contentPending/, 'Progress must disclose syllabus concepts without released learning content.');
+assert.match(runtime, /'revision','progress'\]\)/, 'The progress page must load the micro-topic pool before calculating content availability.');
 assert.match(runtime, /s\.coverage>=s\.mastery\+25/, 'Progress interpretation must compare coverage and mastery using the same syllabus-wide denominator.');
 const syllabus = JSON.parse(fs.readFileSync(path.join(root, 'data/syllabus-index.json'), 'utf8'));
 const microContent = JSON.parse(fs.readFileSync(path.join(root, 'content/microtopics/micro_topics.json'), 'utf8'));
