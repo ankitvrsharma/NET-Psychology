@@ -68,7 +68,7 @@ def load_questions():
         passage = cell(item, "Shared Passage / Case Context", "Passage / Case Context")
         # Preserve all question context and matching-list material from the source workbook.
         parts = [part for part in [passage, question, list_one, list_two] if part]
-        full_question = "\\n\\n".join(parts)
+        full_question = "\n\n".join(parts)
         options = [cell(item, f"Option {letter}") for letter in "ABCD"]
         answer = answer_letter(cell(item, "Correct Option", "Answer (as printed in PDF)", "Answer"))
         session = cell(item, "Exam Session", "Exam Cycle / Session")
