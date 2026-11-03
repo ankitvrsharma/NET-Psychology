@@ -1,8 +1,9 @@
-const CACHE='netpsych-shell-v1.11.18';
+const CACHE='netpsych-shell-v1.11.19';
 const SHELL=[
   './',
   './index.html',
   './learn.html',
+  './learner.html',
   './practice.html',
   './practice-session.html',
   './microtopic.html',
