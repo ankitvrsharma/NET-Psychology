@@ -25,6 +25,8 @@ const SHELL=[
   './content-version.js',
   './manifest.webmanifest'
 ];
+// Cache only explicitly listed learner shell files and public study-data pools.
+// Authentication and preview requests remain outside this allowlist by default.
 const RUNTIME_DATA=new Set([
   'syllabus-index.json',
   'active_recall.json',
@@ -35,15 +37,6 @@ const RUNTIME_DATA=new Set([
   'home-learning.json',
   'mcq_mapping.json',
   'verification-state.json'
-]);
-const NEVER_CACHE=new Set([
-  'exam_schedule.json',
-  'content-visibility.json',
-  'login.html',
-  'login.css',
-  'app/auth-page.js',
-  'app/supabase-auth.js',
-  'supabase-config.js'
 ]);
 const canonicalRequest=url=>new Request(url.origin+url.pathname,{method:'GET'});
 self.addEventListener('install',event=>{
@@ -75,10 +68,6 @@ self.addEventListener('fetch',event=>{
   if(url.origin!==self.location.origin)return;
   if(url.searchParams.has('preview')||url.searchParams.has('previewQuestion')||url.searchParams.has('previewData')){event.respondWith(fetch(req,{cache:'no-store'}));return;}
   const name=url.pathname.split('/').pop();
-  if(NEVER_CACHE.has(name)){
-    event.respondWith(fetch(req,{cache:'no-store'}));
-    return;
-  }
   const isShell=SHELL.some(path=>new URL(path,self.location.href).pathname===url.pathname);
   const isRuntimeData=RUNTIME_DATA.has(name);
   if(!isShell&&!isRuntimeData)return;
