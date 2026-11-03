@@ -33,8 +33,21 @@ async function githubWrite(action,payload={}){
   if(!response.ok)throw new Error(data?.message||data?.error||data?.error_description||'Secure GitHub write failed ('+response.status+')');
   return data;
 }
+async function publishSiteDocument(documentKey,document,published=true){
+  if(!user?.id||!profile||profile.role!=='admin')throw new Error('Administrator access is required to publish website changes.');
+  const token=session?.access_token;if(!token)throw new Error('Admin session has expired. Please sign in again.');
+  const endpoint=SUPABASE_URL+'/functions/v1/site-studio-publish';
+  const response=await fetch(endpoint,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({document_key:documentKey,document,published}),credentials:'omit',cache:'no-store'});
+  const text=await response.text();let data=null;try{data=text?JSON.parse(text):null}catch{data=text}
+  if(!response.ok)throw new Error(data?.error||data?.message||'Direct publishing failed ('+response.status+').');
+  return data;
+}
+async function readPublishedSiteDocument(documentKey){
+  const rows=await request('/rest/v1/site_documents?select=document,revision,updated_at&document_key=eq.'+encodeURIComponent(documentKey)+'&published=eq.true&limit=1',{token:KEY});
+  return rows?.[0]||null;
+}
 async function signIn(email,password){const data=await request('/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:KEY},body:JSON.stringify({email,password})});session=data;user=data.user;localStorage.setItem(SESSION_KEY,JSON.stringify(session));profile=await loadProfile();await ensureState();return{user,profile}}
 async function signOut(){try{if(session?.access_token)await request('/auth/v1/logout',{method:'POST'})}catch{}localStorage.removeItem(SESSION_KEY);session=user=profile=null}
 async function init(){installPersistence();if(!KEY)return null;await loadSession();if(user)await ensureState();window.dispatchEvent(new CustomEvent('netpsy-auth-ready',{detail:{user,profile}}));return{user,profile}}
-window.NETPSY_AUTH={ready:init(),signUp,signIn,resendConfirmation,signOut,syncState,githubWrite,isAdmin:()=>profile?.role==='admin',getUser:()=>user,getProfile:()=>profile,getSession:()=>session,config:{url:SUPABASE_URL,ref:REF}};
+window.NETPSY_AUTH={ready:init(),signUp,signIn,resendConfirmation,signOut,syncState,githubWrite,publishSiteDocument,readPublishedSiteDocument,isAdmin:()=>profile?.role==='admin',getUser:()=>user,getProfile:()=>profile,getSession:()=>session,config:{url:SUPABASE_URL,ref:REF}};
 })();
