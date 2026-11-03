@@ -7,12 +7,12 @@
   "mapped_count": 1945,
   "unmapped_count": 1131,
   "mapping_methods": {
-    "needs-manual-mapping": 1974,
+    "needs-manual-mapping": 3074,
     "existing-pool-canonical-mapping": 877,
-    "conservative-title-match": 849,
-    "curated-topic-map": 147,
-    "unmapped": 34,
-    "curated-question-override": 72
+    "conservative-title-match": 1698,
+    "curated-topic-map": 294,
+    "unmapped": 65,
+    "curated-question-override": 144
   },
   "existing_practice_mcq_count_preserved": 0,
   "preexisting_pyq_count": 3373,
