@@ -58,7 +58,7 @@ Never paste the bot token into source code, issues, or chat messages.
 4. Select **Run workflow** to test a post immediately.
 5. Confirm that the five quiz polls appear in your channel.
 
-The scheduled run is at **02:30 UTC**, which is **08:00 IST**. GitHub Actions scheduled workflows can start a little later than the exact minute during periods of platform load.
+The scheduled run is at **12:30 UTC**, which is **18:00 IST**. GitHub Actions scheduled workflows can start a little later than the exact minute during periods of platform load.
 
 ## Posting and repeat rules
 
