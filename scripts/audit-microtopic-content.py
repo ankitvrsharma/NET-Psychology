@@ -32,6 +32,7 @@ def main():
         "missing_sources": 0,
         "unknown_sources": 0,
         "generic_explanations": 0,
+        "learner_ready_records": 0,
         "provenance_in_explanation": 0,
         "empty_key_points": 0,
         "generic_revision_checks": 0,
@@ -54,6 +55,13 @@ def main():
         if GENERIC_EXPLANATION.search(explanation):
             counts["generic_explanations"] += 1
             generic_ids.append((key, item.get("title", "")))
+        else:
+            readiness_fields = ("expert_explanation", "detailed_explanation", "deep_learning", "deep",
+                                "content_notes", "study_notes", "application_question", "recall_cue",
+                                "memory_hook", "exam_takeaway")
+            readiness_text = " ".join(str(item.get(field) or "") for field in readiness_fields).strip()
+            if len(readiness_text) >= 80:
+                counts["learner_ready_records"] += 1
         if re.search(r"\bSOURCE BASIS\b", explanation, re.I):
             counts["provenance_in_explanation"] += 1
         if not item.get("key_points"):
