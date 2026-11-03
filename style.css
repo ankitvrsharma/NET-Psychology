@@ -2187,3 +2187,19 @@ body[data-page="admin"] .admin-field textarea {
 
 /* Live syllabus structure editor */
 .admin-structure-editor{margin:1.2rem 0}.structure-toolbar{display:flex;align-items:end;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1rem 0}.structure-toolbar label{display:grid;gap:.4rem;min-width:min(100%,18rem);font-weight:650}.structure-toolbar select,.structure-field textarea{width:100%;font:inherit;border:1px solid var(--line,#cbd5e1);border-radius:.65rem;padding:.65rem;background:var(--surface,#fff);color:inherit}.structure-field{display:grid;gap:.35rem;margin:.7rem 0}.structure-field>span{font-size:.9rem;font-weight:650}.structure-field textarea{resize:vertical;min-height:3rem}.structure-node{border:1px solid var(--line,#dbe2ea);border-radius:.8rem;padding:.75rem;margin:.65rem 0}.structure-node>summary{display:flex;gap:.8rem;justify-content:space-between;align-items:center;cursor:pointer;flex-wrap:wrap}.structure-node>summary span{font-size:.8rem;opacity:.7}.structure-moves,.structure-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0}.structure-field{margin:.7rem 0}.structure-micro-list{padding:.75rem;border-radius:.6rem;background:var(--surface-muted,#f5f7fa);margin-top:.8rem}.structure-actions{position:sticky;bottom:.5rem;background:var(--surface,#fff);border:1px solid var(--line,#dbe2ea);border-radius:.8rem;padding:.75rem;z-index:2}.structure-actions .btn{min-height:2.7rem}@media(max-width:600px){.structure-actions{flex-direction:column}.structure-actions .btn{width:100%}.structure-node>summary{align-items:flex-start;flex-direction:column}}
+
+
+/* Learner experience improvements: make revision a first-class daily action and keep setup optional. */
+body[data-page="home"] .daily-focus-actions{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-page="home"] .daily-focus-card strong{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+body[data-page="home"] .daily-focus-card small{display:inline-flex;align-items:center;padding:3px 6px;border-radius:999px;background:#eef2ff;color:#405fbb;font-size:9px;font-weight:850;letter-spacing:.04em}
+body[data-page="home"] .daily-focus-revision{border-color:#d9e2f6}
+body[data-page="home"] .daily-focus-card:focus-visible,
+.start-skip:focus-visible{outline:3px solid rgba(63,103,217,.28);outline-offset:3px}
+.start-skip-wrap{margin:16px 0 0;text-align:center}
+.start-skip{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:8px 12px;color:var(--blue);font-size:13px;font-weight:750;text-decoration:none;border-radius:10px}
+.start-skip:hover{background:#f1f4fb}
+@media(max-width:760px){
+  body[data-page="home"] .daily-focus-actions{grid-template-columns:1fr}
+  body[data-page="home"] .daily-focus-card{min-height:58px}
+}

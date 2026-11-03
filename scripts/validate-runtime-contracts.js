@@ -66,4 +66,42 @@ assert.match(runtime, /function normalizeQuestionPool\(pool\)/, 'Question-bank c
 assert.match(runtime, /qs=qs\.filter\(q=>questionCategory\(q\)===types\[0\]\)/, 'Practice filters must use canonical question categories, not optional source tags.');
 assert.match(runtime, /No standalone MCQs are available in the question bank yet/, 'An empty MCQ category must explain the current content limitation.');
 assert.match(runtime, /p\.mcqHistory\|\|\[\]\)\.some\(item=>item\.correct===true\)/, 'Mastery must require successful application, not recall and revision alone.');
-console.log('Runtime contract checks passed: routes, question categories, empty-category messaging and mastery gate; ' + appPages.length + ' app.js-powered pages map to a renderer.');
+const serviceWorker = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+assert.match(serviceWorker, /const CACHE='netpsych-shell-v1\.11\.19';/, 'The shell cache must be versioned when its precache manifest changes.');
+assert.match(serviceWorker, /['"]\.\/learner\.html['"]/, 'The learner dashboard must be included in the offline shell cache.');
+assert.match(runtime, /const dueCount=dueItems\(\)\.length;/, 'The homepage daily actions must calculate the current due-revision count.');
+assert.match(runtime, /daily-focus-revision/, 'The homepage must expose a dedicated revision action.');
+assert.match(runtime, /Skip setup and start learning/, 'Learners must be able to bypass onboarding and enter the learning dashboard.');
+assert.match(runtime, /masteryAmongLearned/, 'Progress must distinguish mastery among learned concepts from syllabus-wide mastery coverage.');
+assert.match(runtime, /contentPending/, 'Progress must disclose syllabus concepts without released learning content.');
+assert.match(runtime, /placeholderPattern\.test\(text\)\)return false/, 'Generic scaffold text must not be counted as learner-ready lesson content.');
+assert.match(runtime, /'revision','progress'\]\)/, 'The progress page must load the micro-topic pool before calculating content availability.');
+assert.match(runtime, /s\.coverage>=s\.mastery\+25/, 'Progress interpretation must compare coverage and mastery using the same syllabus-wide denominator.');
+const syllabus = JSON.parse(fs.readFileSync(path.join(root, 'data/syllabus-index.json'), 'utf8'));
+const microContent = JSON.parse(fs.readFileSync(path.join(root, 'content/microtopics/micro_topics.json'), 'utf8'));
+assert.ok(syllabus.units.length === 10, 'The syllabus must retain all ten navigational units.');
+assert.ok(microContent && typeof microContent === 'object' && !Array.isArray(microContent), 'The micro-topic content pool must be valid JSON, even when no lessons are published yet.');
+const expectedMicroKeys = new Set(syllabus.units.flatMap(unit => (unit.topics || []).flatMap(topic => (topic.microtopics || []).map(micro => [unit.id, topic.id, micro.id].join('-')))));
+const orphanContentKeys = Object.keys(microContent).filter(key => !expectedMicroKeys.has(key));
+assert.deepEqual(orphanContentKeys, [], 'Micro-topic content must map to a real syllabus micro-topic.');
+const lessonFields = ['expert_explanation', 'detailed_explanation', 'deep_learning', 'deep', 'content_notes', 'study_notes', 'application_question', 'recall_cue', 'memory_hook', 'exam_takeaway'];
+const lessonText = record => lessonFields.map(field => {
+  const value = record?.[field];
+  return Array.isArray(value) ? value.map(item => typeof item === 'object' && item ? JSON.stringify(item) : String(item || '')).join(' ')
+    : value && typeof value === 'object' ? JSON.stringify(value) : String(value || '');
+}).join(' ').replace(/\\s+/g, ' ').trim();
+const publishedLessons = Object.entries(microContent).filter(([, record]) => (record?.has_learning_content === true || lessonText(record).length >= 80) && !/source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application.context|Use source terminology and do not infer beyond the study material/i.test([record?.explanation, record?.expert_explanation, record?.content_notes].filter(Boolean).join(' ')));
+const placeholderLessons = publishedLessons.filter(([, record]) => /(?:ACADEMIC CORE|MICRO-TOPIC MAP|SOURCE BASIS|EXAM USE)/i.test(lessonText(record)));
+const sourceMappedLessons = publishedLessons.filter(([, record]) => Array.isArray(record?.sources) && record.sources.length > 0);
+const genericExplanationPattern = /source-grounded UGC NET Psychology micro-topic|Identify its defining construct|application.context|Use source terminology and do not infer beyond the study material/i;
+const genericExplanationLessons = Object.entries(microContent).filter(([, record]) =>
+  genericExplanationPattern.test([record?.explanation, record?.expert_explanation, record?.content_notes].filter(Boolean).join(' '))
+);
+const genericRevisionChecks = Object.values(microContent).filter(record =>
+  record?.revision_check === 'Recall the central idea and two supporting points before checking the note.'
+).length;
+const emptyShortNotes = Object.values(microContent).filter(record => !Array.isArray(record?.key_points) || record.key_points.length === 0).length;
+assert.ok(genericExplanationLessons.length < expectedMicroKeys.size * 0.2, 'Generic placeholder explanations must remain below 20% of the syllabus content pool.');
+assert.equal(sourceMappedLessons.length, publishedLessons.length, 'Every learner-ready micro-topic must retain at least one source ID.');
+console.log('Micro-topic audit: ' + publishedLessons.length + '/' + expectedMicroKeys.size + ' learner-ready records; ' + sourceMappedLessons.length + ' with source IDs; ' + genericExplanationLessons.length + ' generic explanations; ' + genericRevisionChecks + ' generic revision prompts; ' + emptyShortNotes + ' records with empty short-note key points; ' + placeholderLessons.length + ' containing syllabus-scaffold labels.');
+console.log('Runtime contract checks passed: routes, question categories, offline learner shell, daily revision action, optional onboarding, progress denominator and content-pool validity; ' + appPages.length + ' app.js-powered pages map to a renderer.');
