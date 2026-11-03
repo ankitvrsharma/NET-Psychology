@@ -63,7 +63,28 @@ def load_questions():
         })
     wb.close()
     if not records:
-        raise RuntimeError("No eligible questions. Check the worksheet and answer-key column.")
+        # Print workbook structure without exposing full question text so a failed
+        # run identifies the exact header/column mismatch in the Actions log.
+        nonempty = {}
+        try:
+            wb_diag = load_workbook(BOOK, read_only=True, data_only=True)
+            ws_diag = wb_diag["Question Bank"] if "Question Bank" in wb_diag.sheetnames else wb_diag.active
+            for col_index, header in enumerate(headers):
+                nonempty[header or f"(blank column {col_index + 1})"] = sum(
+                    1 for row in ws_diag.iter_rows(min_row=2, min_col=col_index + 1,
+                                                   max_col=col_index + 1, values_only=True)
+                    if row and row[0] is not None and str(row[0]).strip()
+                )
+            wb_diag.close()
+        except Exception as diag_exc:
+            nonempty = {"diagnostic_error": str(diag_exc)}
+        raise RuntimeError(
+            "No eligible questions. "
+            f"Worksheet: {ws.title!r}; headers found: {headers!r}; "
+            f"non-empty cells by column: {nonempty!r}. "
+            "Expected: Record ID, Question, Option A, Option B, Option C, "
+            "Option D, and Answer (as printed in PDF) with A/B/C/D values."
+        )
     return records
 
 def read_state():
