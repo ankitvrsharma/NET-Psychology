@@ -2,8 +2,8 @@ name: Telegram Daily Psychology Quiz
 
 on:
   schedule:
-    # 08:00 Asia/Kolkata (UTC+05:30) = 02:30 UTC
-    - cron: "30 2 * * *"
+    # 18:00 Asia/Kolkata (UTC+05:30) = 12:30 UTC
+    - cron: "30 12 * * *"
   workflow_dispatch:
 
 permissions:
