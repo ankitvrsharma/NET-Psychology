@@ -95,7 +95,6 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
 💡 <i>Attempt every question before checking your score.</i>
 ━━━━━━━━━━━━━━━━━━━━
 👇 <b>Your quiz starts below. All the best!</b>""".format(date_label=date_label, count=count)
-        await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
         for i,q in enumerate(selected):
             source=f"\n\n📚 {q['source']}" if q["source"] else ""
             poll=types.Poll(
@@ -113,6 +112,8 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
                 schedule_date=int(times[i+1].timestamp())))
             posted.append(q["id"]); save_state(posted)
             await asyncio.sleep(1)
+        # Queue the intro only after all polls have been accepted by Telegram.
+        await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
         outro=(
             "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\\n"
             "How many answers did you get right?\\n\\n"
