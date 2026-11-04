@@ -19,6 +19,10 @@ def cell(row,*names):
         if value is not None and str(value).strip(): return str(value).strip()
     return ""
 
+def telegram_length(text):
+    # Count UTF-16 code units conservatively for Telegram's MTProto limits.
+    return len(text.encode("utf-16-le")) // 2
+
 def load_questions():
     import re
     wb=load_workbook(BOOK,read_only=True,data_only=True)
@@ -41,8 +45,12 @@ def load_questions():
         qno=cell(item,"Q No.","Question No.","Question Number")
         rid="|".join(x for x in (session,paper,qno) if x)
         source=" · ".join(x for x in (session,paper) if x)
-        if not rid or not question or not match or any(not x or len(x)>100 for x in options): continue
-        if len(question)+len(source)+20>290: continue
+        if not rid or not question or not match: continue
+        if any(not x or telegram_length(x)>100 for x in options): continue
+        source_suffix=f"\n\n📚 {source}" if source else ""
+        # User-created MTProto polls allow at most 255 characters. Validate
+        # the exact formatted question, including numbering and source label.
+        if telegram_length(f"05/05  •  {question}{source_suffix}")>255: continue
         records.append({"id":rid,"question":question,"options":options,"correct":"ABCD".index(match.group(1)),"source":source})
     wb.close()
     if not records: raise RuntimeError(f"No eligible questions in {ws.title!r}; columns={headers!r}")
