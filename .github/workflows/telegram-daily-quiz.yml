@@ -47,6 +47,16 @@ jobs:
           QUIZ_TEST_MODE: "false"
           REFRESH_LEGACY_QUIZ_QUEUE: "true"
         run: python schedule_quiz.py
+      - name: Disable one-time queue migration after success
+        run: |
+          sed -i 's/REFRESH_LEGACY_QUIZ_QUEUE: "true"/REFRESH_LEGACY_QUIZ_QUEUE: "false"/' .github/workflows/telegram-daily-quiz.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/telegram-daily-quiz.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Disable one-time Telegram quiz queue migration"
+            git push
+          fi
       - name: Save no-repeat history
         if: always()
         run: |
