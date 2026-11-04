@@ -79,14 +79,22 @@ async def main():
             raise RuntimeError("Telegram session is not authorised; regenerate TELEGRAM_SESSION.")
         peer=await client.get_entity(channel)
         date_label=first.strftime("%A, %d %B %Y")
-        intro=("🧠 NET JRF PSYCHOLOGY\n━━━━━━━━━━━━━━━━━━━━\n"
-               "🎯 DAILY QUIZ CHALLENGE\n"
-               f"📅 {date_label}\n\n"
-               "Test your concepts with today's exam-focused practice.\n"
-               f"📚 {count} questions  •  📝 Instant answer reveal\n"
-               "💡 Attempt every poll before checking the explanation.\n\n"
-               "👇 Let's begin — your daily practice starts here!")
-        await client.send_message(peer,intro,schedule=times[0])
+        intro=(
+            "🧠 <b>NET JRF PSYCHOLOGY</b>\\n"
+            "<i>Daily practice. Stronger concepts. Better scores.</i>\\n"
+            "━━━━━━━━━━━━━━━━━━━━\\n"
+            "🎯 <b>DAILY QUIZ CHALLENGE</b>\\n"
+            f"📅 {date_label}\\n\\n"
+            f"Challenge yourself with <b>{count} exam-focused questions</b>.\\n\\n"
+            "📝 <b>HOW TO PARTICIPATE</b>\\n"
+            "1. Read each question carefully.\\n"
+            "2. Select your answer in the poll.\\n"
+            "3. Check the correct answer after voting.\\n\\n"
+            "💡 <i>Attempt every question before checking your score.</i>\\n"
+            "━━━━━━━━━━━━━━━━━━━━\\n"
+            "👇 <b>Your quiz starts below. All the best!</b>"
+        )
+        await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
         for i,q in enumerate(selected):
             source=f"\n\n📚 {q['source']}" if q["source"] else ""
             poll=types.Poll(
@@ -104,10 +112,14 @@ async def main():
                 schedule_date=int(times[i+1].timestamp())))
             posted.append(q["id"]); save_state(posted)
             await asyncio.sleep(1)
-        await client.send_message(peer,
-            "✅ QUIZ COMPLETED!\nHow many did you get right? Share your score in the comments.\n"
-            "🔁 Share today's challenge with a fellow NET aspirant.",
-            schedule=times[-1])
+        outro=(
+            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\\n"
+            "How many answers did you get right?\\n\\n"
+            "💬 Share your score in the comments.\\n"
+            "🔁 Challenge a friend preparing for NET/JRF.\\n"
+            "<i>Consistency turns preparation into progress.</i>"
+        )
+        await client.send_message(peer,outro,parse_mode="html",schedule=times[-1])
         print(f"Added intro, {count} quiz polls and closing message to Telegram's scheduled queue.")
         print(f"First post: {times[0].isoformat()}")
     finally:
