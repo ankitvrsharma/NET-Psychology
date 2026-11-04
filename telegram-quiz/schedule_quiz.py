@@ -202,8 +202,9 @@ async def schedule_quiz(client,peer,selected,quiz_date,posted_ids):
                 text=f"Q{i+1}/{count} — Select your answer (see question above)",
                 entities=[]),
             answers=[types.InputPollAnswer(
-                text=types.TextWithEntities(text=label,entities=[]),media=None)
-                for label in ["A","B","C","D"]],
+                text=types.TextWithEntities(
+                    text=f"{label}. {option}",entities=[]),media=None)
+                for label,option in zip("ABCD",q["options"])],
             quiz=True)
         media=types.InputMediaPoll(poll=poll,correct_answers=[q["correct"]],
                                    solution=None,solution_entities=None)
@@ -266,6 +267,50 @@ async def main():
                 message_date=getattr(message,"date",None)
                 if message_date:
                     existing_quiz_dates.append(message_date.astimezone(IST).date())
+        # One-time self-healing migration: replace legacy quizzes whose native polls
+        # contain only A/B/C/D with full answer text. Keep all unrelated scheduled posts.
+        refresh_ids=[]
+        ordered=sorted(queued,key=lambda m:getattr(m,"date",datetime.min.replace(tzinfo=IST)))
+        for i,message in enumerate(ordered):
+            if "DAILY QUIZ CHALLENGE" not in (getattr(message,"message","") or ""):
+                continue
+            block=[]
+            has_legacy_poll=False
+            found_outro=False
+            for candidate in ordered[i:]:
+                block.append(candidate)
+                media=getattr(candidate,"media",None)
+                poll=getattr(media,"poll",None)
+                if poll:
+                    labels=[]
+                    for answer in getattr(poll,"answers",[]):
+                        answer_text=getattr(answer,"text",None)
+                        labels.append(getattr(answer_text,"text",""))
+                    if labels==["A","B","C","D"]:
+                        has_legacy_poll=True
+                candidate_text=getattr(candidate,"message","") or ""
+                if "YOU'VE COMPLETED TODAY'S QUIZ" in candidate_text:
+                    found_outro=True
+                    break
+                # Never let an incomplete block consume the next day's unrelated queue.
+                if candidate is not message and getattr(candidate,"date",None):
+                    if candidate.date.astimezone(IST).date()!=message.date.astimezone(IST).date():
+                        break
+            if has_legacy_poll and found_outro:
+                refresh_ids.extend(getattr(x,"id") for x in block if getattr(x,"id",None))
+        if refresh_ids:
+            await client(functions.messages.DeleteScheduledMessagesRequest(
+                peer=peer,id=refresh_ids))
+            print(f"Removed {len(refresh_ids)} legacy quiz messages for replacement with full poll options.")
+            history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
+            queued=list(history.messages)
+            existing_quiz_dates=[]
+            for message in queued:
+                message_text=getattr(message,"message","") or ""
+                if "DAILY QUIZ CHALLENGE" in message_text:
+                    message_date=getattr(message,"date",None)
+                    if message_date:
+                        existing_quiz_dates.append(message_date.astimezone(IST).date())
         existing_quizzes=len(existing_quiz_dates)
         available_slots=max(0,queue_limit-len(queued))
         quizzes_needed=max(0,target_quizzes-existing_quizzes)
