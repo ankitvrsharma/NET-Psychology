@@ -63,12 +63,14 @@ async def main():
     count=int(os.getenv("DAILY_QUESTION_COUNT","5"))
     hour=int(os.getenv("QUIZ_POST_HOUR_IST","18"))
     minute=int(os.getenv("QUIZ_POST_MINUTE_IST","0"))
-    questions=load_questions()
-    posted=read_state()
-    unused=[q for q in questions if q["id"] not in set(posted)]
-    if len(unused)<count: posted=[]; unused=questions[:]
-    if len(unused)<count: raise RuntimeError(f"Only {len(unused)} eligible questions; {count} required.")
-    selected=random.SystemRandom().sample(unused,count)
+    test_mode=os.getenv("QUIZ_TEST_MODE","").lower() in {"1","true","yes"}
+    if not test_mode:
+        questions=load_questions()
+        posted=read_state()
+        unused=[q for q in questions if q["id"] not in set(posted)]
+        if len(unused)<count: posted=[]; unused=questions[:]
+        if len(unused)<count: raise RuntimeError(f"Only {len(unused)} eligible questions; {count} required.")
+        selected=random.SystemRandom().sample(unused,count)
     first=datetime.now(IST).replace(hour=hour,minute=minute,second=0,microsecond=0)
     if first<=datetime.now(IST)+timedelta(minutes=10): first+=timedelta(days=1)
     times=[first+timedelta(minutes=i) for i in range(count+2)]
@@ -81,7 +83,7 @@ async def main():
 
         # Isolated smoke test: one fixed, known-answer quiz poll. It does not
         # read or update the question bank/history and sends no intro/outro.
-        if os.getenv("QUIZ_TEST_MODE","").lower() in {"1","true","yes"}:
+        if test_mode:
             test_poll=types.Poll(
                 id=random.getrandbits(63),
                 hash=random.getrandbits(63),
