@@ -1,7 +1,9 @@
-name: Schedule Daily Psychology Quiz in Telegram
+name: Maintain Advance Daily Psychology Quiz Queue
 
 on:
-  # Temporarily pause the daily trigger until the isolated poll test passes.
+  # 17:35 IST (12:05 UTC): top up Telegram's native queue to seven days ahead.
+  schedule:
+    - cron: "5 12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +27,7 @@ jobs:
           cache-dependency-path: telegram-quiz/requirements.txt
       - name: Install dependencies
         run: pip install -r telegram-quiz/requirements.txt
-      - name: Add quiz to Telegram scheduled queue
+      - name: Top up Telegram's native scheduled queue
         working-directory: telegram-quiz
         env:
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
@@ -35,6 +37,8 @@ jobs:
           DAILY_QUESTION_COUNT: "5"
           QUIZ_POST_HOUR_IST: "18"
           QUIZ_POST_MINUTE_IST: "0"
+          TARGET_QUIZZES_AHEAD: "7"
+          MAX_SCHEDULED_MESSAGES: "80"
           QUIZ_TEST_MODE: "false"
         run: python schedule_quiz.py
       - name: Save no-repeat history
