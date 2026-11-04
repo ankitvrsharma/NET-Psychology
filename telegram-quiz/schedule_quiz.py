@@ -78,6 +78,37 @@ async def main():
         if not await client.is_user_authorized():
             raise RuntimeError("Telegram session is not authorised; regenerate TELEGRAM_SESSION.")
         peer=await client.get_entity(channel)
+
+        # Isolated smoke test: one fixed, known-answer quiz poll. It does not
+        # read or update the question bank/history and sends no intro/outro.
+        if os.getenv("QUIZ_TEST_MODE","").lower() in {"1","true","yes"}:
+            test_poll=types.Poll(
+                id=random.getrandbits(63),
+                hash=random.getrandbits(63),
+                question=types.TextWithEntities(
+                    text="TEST ONLY — Which option is the correct answer?",
+                    entities=[]),
+                answers=[
+                    types.PollAnswer(
+                        text=types.TextWithEntities(text=label,entities=[]),
+                        option=bytes([idx]))
+                    for idx,label in enumerate(
+                        ["Option A — incorrect","Option B — correct",
+                         "Option C — incorrect","Option D — incorrect"])
+                ],
+                quiz=True)
+            test_media=types.InputMediaPoll(
+                poll=test_poll,correct_answers=[1],
+                solution=None,solution_entities=None)
+            test_time=datetime.now(IST)+timedelta(minutes=10)
+            await client(functions.messages.SendMediaRequest(
+                peer=peer,media=test_media,message="",
+                random_id=random.getrandbits(63),
+                schedule_date=int(test_time.timestamp())))
+            print("TEST MODE: Telegram accepted one fixed quiz poll.")
+            print(f"Test poll scheduled for {test_time.isoformat()}.")
+            return
+
         date_label=first.strftime("%A, %d %B %Y")
         intro = """🧠 <b>NET JRF PSYCHOLOGY</b>
 <i>Daily practice. Stronger concepts. Better scores.</i>
@@ -115,10 +146,10 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
         # Queue the intro only after all polls have been accepted by Telegram.
         await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
         outro=(
-            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\\n"
-            "How many answers did you get right?\\n\\n"
-            "💬 Share your score in the comments.\\n"
-            "🔁 Challenge a friend preparing for NET/JRF.\\n"
+            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\n"
+            "How many answers did you get right?\n\n"
+            "💬 Share your score in the comments.\n"
+            "🔁 Challenge a friend preparing for NET/JRF.\n"
             "<i>Consistency turns preparation into progress.</i>"
         )
         await client.send_message(peer,outro,parse_mode="html",schedule=times[-1])
