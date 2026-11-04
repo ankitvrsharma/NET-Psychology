@@ -16,9 +16,9 @@ def make_poll(suffix, quiz):
             text=f"{MARKER}_{suffix}: temporary test — please ignore",
             entities=[]),
         answers=[
-            types.PollAnswer(
+            types.InputPollAnswer(
                 text=types.TextWithEntities(text=label, entities=[]),
-                option=os.urandom(8))
+                media=None)
             for label in ("Diagnostic option A", "Diagnostic option B")
         ],
         quiz=quiz)
