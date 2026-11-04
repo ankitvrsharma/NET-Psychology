@@ -95,8 +95,10 @@ async def main():
                 question=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}",
                 answers=[types.PollAnswer(text=opt,option=bytes([j])) for j,opt in enumerate(q["options"])],
                 quiz=True)
+            # Omit optional solution text: Telethon requires solution and
+            # solution_entities to be either both present or both absent.
             media=types.InputMediaPoll(poll=poll,correct_answers=[q["correct"]],
-                solution=f"Correct answer: {chr(65+q['correct'])}. {q['options'][q['correct']]}")
+                solution=None,solution_entities=None)
             await client(functions.messages.SendMediaRequest(
                 peer=peer,media=media,message="",random_id=random.getrandbits(63),
                 schedule_date=int(times[i+1].timestamp())))
