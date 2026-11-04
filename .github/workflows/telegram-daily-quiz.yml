@@ -45,6 +45,7 @@ jobs:
           TARGET_QUIZZES_AHEAD: "7"
           MAX_SCHEDULED_MESSAGES: "80"
           QUIZ_TEST_MODE: "false"
+          REFRESH_LEGACY_QUIZ_QUEUE: "true"
         run: python schedule_quiz.py
       - name: Save no-repeat history
         if: always()
