@@ -100,8 +100,8 @@ async def main():
             poll=types.Poll(
                 id=random.getrandbits(63),
                 hash=random.getrandbits(63),
-                question=types.TextWithEntities(text=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}"),
-                answers=[types.PollAnswer(text=types.TextWithEntities(text=opt),option=bytes([j])) for j,opt in enumerate(q["options"])],
+                question=types.TextWithEntities(text=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}",entities=[]),
+                answers=[types.PollAnswer(text=types.TextWithEntities(text=opt,entities=[]),option=bytes([j])) for j,opt in enumerate(q["options"])],
                 quiz=True)
             # Omit optional solution text: Telethon requires solution and
             # solution_entities to be either both present or both absent.
