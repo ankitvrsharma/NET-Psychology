@@ -58,9 +58,11 @@ async def main():
         if stale:
             print(f"Removed {len(stale)} stale diagnostic message(s).")
         schedule_at = datetime.now(timezone.utc) + timedelta(minutes=3)
-        for suffix, quiz in (("REGULAR", False), ("QUIZ", True)):
+        for suffix, quiz, correct in (("REGULAR", False, None), ("QUIZ_INDEX_0", True, [0]), ("QUIZ_INDEX_1", True, [1])):
             try:
                 media = make_poll(suffix, quiz)
+                if quiz:
+                    media.correct_answers = correct
                 await client(functions.messages.SendMediaRequest(
                     peer=peer, media=media, message="",
                     random_id=random.getrandbits(63),
@@ -77,7 +79,7 @@ async def main():
                 except Exception as cleanup_exc:
                     print(f"CLEANUP WARNING: {type(cleanup_exc).__name__}: {cleanup_exc}")
                 if suffix == "REGULAR":
-                    print("Quiz test skipped because the regular poll failed.")
+                    print("Quiz tests skipped because the regular poll failed.")
                 raise
     finally:
         await client.disconnect()
