@@ -3,12 +3,6 @@ name: Schedule Daily Psychology Quiz in Telegram
 on:
   # Temporarily pause the daily trigger until the isolated poll test passes.
   workflow_dispatch:
-    inputs:
-      test_poll_only:
-        description: "Run one fixed Telegram quiz poll test (no question bank/history changes)"
-        required: true
-        type: boolean
-        default: true
 
 permissions:
   contents: write
@@ -41,7 +35,7 @@ jobs:
           DAILY_QUESTION_COUNT: "5"
           QUIZ_POST_HOUR_IST: "18"
           QUIZ_POST_MINUTE_IST: "0"
-          QUIZ_TEST_MODE: ${{ inputs.test_poll_only }}
+          QUIZ_TEST_MODE: "true"
         run: python schedule_quiz.py
       - name: Save no-repeat history
         if: always()
