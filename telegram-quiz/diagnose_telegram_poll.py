@@ -80,7 +80,9 @@ async def main():
                     print(f"CLEANUP WARNING: {type(cleanup_exc).__name__}: {cleanup_exc}")
                 if suffix == "REGULAR":
                     print("Quiz tests skipped because the regular poll failed.")
-                raise
+                    raise
+                # Continue to the alternate answer index for comparison.
+                continue
     finally:
         await client.disconnect()
 
