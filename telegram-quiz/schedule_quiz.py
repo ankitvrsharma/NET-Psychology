@@ -31,12 +31,12 @@ def split_telegram_text(text, limit=3500):
     current=""
     # Prefer paragraph/sentence boundaries, then split oversized segments by words.
     segments=[]
-    for paragraph in text.split("\\n"):
+    for paragraph in text.split("\n"):
         if telegram_length(paragraph) <= limit:
             segments.append(paragraph)
         else:
             sentence_parts=[]
-            for sentence in paragraph.replace("? ", "?\\n").replace(". ", ".\\n").replace("; ", ";\\n").split("\\n"):
+            for sentence in paragraph.replace("? ", "?\n").replace(". ", ".\n").replace("; ", ";\n").split("\n"):
                 if telegram_length(sentence) <= limit:
                     sentence_parts.append(sentence)
                 else:
@@ -52,7 +52,7 @@ def split_telegram_text(text, limit=3500):
                     if piece: sentence_parts.append(piece)
             segments.extend(sentence_parts)
     for segment in segments:
-        candidate=(current+"\\n"+segment).strip()
+        candidate=(current+"\n"+segment).strip()
         if telegram_length(candidate)>limit and current:
             chunks.append(current)
             current=segment
@@ -85,10 +85,6 @@ def load_questions():
         source=" · ".join(x for x in (session,paper) if x)
         if not rid or not question or not match: continue
         if any(not x or telegram_length(x)>100 for x in options): continue
-        source_suffix=f"\n\n📚 {source}" if source else ""
-        # User-created MTProto polls allow at most 255 characters. Validate
-        # the exact formatted question, including numbering and source label.
-        if telegram_length(f"05/05  •  {question}{source_suffix}")>255: continue
         records.append({"id":rid,"question":question,"options":options,"correct":"ABCD".index(match.group(1)),"source":source})
     wb.close()
     if not records: raise RuntimeError(f"No eligible questions in {ws.title!r}; columns={headers!r}")
@@ -183,12 +179,12 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
 👇 <b>Your quiz starts below. All the best!</b>""".format(date_label=date_label, count=count)
         await client.send_message(peer,intro,parse_mode="html",schedule=take_slot())
         for i,q in enumerate(selected):
-            source=f"\\n\\n📚 Source: {q['source']}" if q["source"] else ""
-            option_text="\\n".join(f"{label}. {value}" for label,value in zip("ABCD",q["options"]))
-            full_material=f"🧠 QUESTION {i+1}/{count}\\n\\n{q['question']}{source}\\n\\nOPTIONS\\n{option_text}"
+            source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
+            option_text="\n".join(f"{label}. {value}" for label,value in zip("ABCD",q["options"]))
+            full_material=f"🧠 QUESTION {i+1}/{count}\n\n{q['question']}{source}\n\nOPTIONS\n{option_text}"
             chunks=split_telegram_text(full_material)
             for part_no,chunk in enumerate(chunks,1):
-                part_label=f"\\n\\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
+                part_label=f"\n\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
                 await client.send_message(
                     peer,chunk+part_label,schedule=take_slot())
                 await asyncio.sleep(0.5)
@@ -215,10 +211,10 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
             save_state(posted)
             await asyncio.sleep(0.5)
         outro=(
-            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\\n"
-            "How many answers did you get right?\\n\\n"
-            "💬 Share your score in the comments.\\n"
-            "🔁 Challenge a friend preparing for NET/JRF.\\n"
+            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\n"
+            "How many answers did you get right?\n\n"
+            "💬 Share your score in the comments.\n"
+            "🔁 Challenge a friend preparing for NET/JRF.\n"
             "<i>Consistency turns preparation into progress.</i>"
         )
         await client.send_message(peer,outro,parse_mode="html",schedule=take_slot())
