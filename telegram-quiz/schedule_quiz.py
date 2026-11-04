@@ -91,6 +91,7 @@ async def main():
             source=f"\n\n📚 {q['source']}" if q["source"] else ""
             poll=types.Poll(
                 id=random.getrandbits(63),
+                hash=random.getrandbits(63),
                 question=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}",
                 answers=[types.PollAnswer(text=opt,option=bytes([j])) for j,opt in enumerate(q["options"])],
                 quiz=True)
