@@ -1,6 +1,6 @@
 # Telegram Daily UGC NET Psychology Quiz
 
-Posts a branded daily quiz at **18:00 IST** to your Telegram channel, using the existing Excel question bank. Each daily run sends an introduction, **5 native Telegram quiz polls** with answer explanations, and a closing engagement message.
+Prepares the daily quiz and places the introduction, **5 native Telegram quiz polls**, and closing message into Telegram's server-side scheduled queue for publication from **18:00 IST**. GitHub runs at 17:35 IST to prepare the queue.
 
 ## Files
 
@@ -68,3 +68,24 @@ The scheduled run is at **12:30 UTC**, which is **18:00 IST**. GitHub Actions sc
 ## Important answer-key limitation
 
 The source workbook's answer field is labelled “as printed in PDF”. This automation does not independently verify each answer against NTA's final answer key. Review answer keys before using the polls as authoritative exam guidance.
+
+
+## Native Telegram scheduled queue (personal account)
+
+The quiz publisher now uses Telegram MTProto through Telethon. It schedules the introduction, five quiz polls and closing message directly in the channel's Telegram scheduled queue. Your personal account must be an administrator of the channel with permission to post.
+
+### One-time account setup
+
+1. Open https://my.telegram.org while signed in with your Telegram account, choose **API development tools**, and create an application. Keep the API ID and API Hash private.
+2. On a trusted computer (or Android with Termux and Python), install Telethon: `pip install Telethon==1.43.0`.
+3. Run `python create_user_session.py` from this folder. Enter your API ID, API Hash and phone number. Complete Telegram's login code and 2-step verification if requested.
+4. Add these GitHub Actions repository secrets under **Settings → Secrets and variables → Actions**:
+   - `TELEGRAM_API_ID`
+   - `TELEGRAM_API_HASH`
+   - `TELEGRAM_SESSION` (the session string printed by the helper)
+   - `TELEGRAM_CHAT_ID` (channel username such as `@yourchannel`, or its numeric ID)
+5. Run **Schedule Daily Psychology Quiz in Telegram** manually once. Confirm the posts appear in the channel's Scheduled Messages list.
+
+**Security:** A Telegram session string grants access to your account. Never send it to anyone, paste it into chat, commit it to Git, or expose it in workflow logs. Store it only as a private GitHub Actions secret. Revoke active sessions from Telegram Settings → Devices if it is ever exposed.
+
+The workflow runs at 17:35 IST and schedules publication beginning at 18:00 IST, one item per minute. If the workflow runs too close to 18:00, the script moves the sequence to the next day to ensure Telegram has time to queue it.
