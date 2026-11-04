@@ -79,21 +79,22 @@ async def main():
             raise RuntimeError("Telegram session is not authorised; regenerate TELEGRAM_SESSION.")
         peer=await client.get_entity(channel)
         date_label=first.strftime("%A, %d %B %Y")
-        intro=(
-            "🧠 <b>NET JRF PSYCHOLOGY</b>\\n"
-            "<i>Daily practice. Stronger concepts. Better scores.</i>\\n"
-            "━━━━━━━━━━━━━━━━━━━━\\n"
-            "🎯 <b>DAILY QUIZ CHALLENGE</b>\\n"
-            f"📅 {date_label}\\n\\n"
-            f"Challenge yourself with <b>{count} exam-focused questions</b>.\\n\\n"
-            "📝 <b>HOW TO PARTICIPATE</b>\\n"
-            "1. Read each question carefully.\\n"
-            "2. Select your answer in the poll.\\n"
-            "3. Check the correct answer after voting.\\n\\n"
-            "💡 <i>Attempt every question before checking your score.</i>\\n"
-            "━━━━━━━━━━━━━━━━━━━━\\n"
-            "👇 <b>Your quiz starts below. All the best!</b>"
-        )
+        intro = """🧠 <b>NET JRF PSYCHOLOGY</b>
+<i>Daily practice. Stronger concepts. Better scores.</i>
+━━━━━━━━━━━━━━━━━━━━
+🎯 <b>DAILY QUIZ CHALLENGE</b>
+📅 {date_label}
+
+Challenge yourself with <b>{count} exam-focused questions</b>.
+
+📝 <b>HOW TO PARTICIPATE</b>
+1. Read each question carefully.
+2. Select your answer in the poll.
+3. Check the correct answer after voting.
+
+💡 <i>Attempt every question before checking your score.</i>
+━━━━━━━━━━━━━━━━━━━━
+👇 <b>Your quiz starts below. All the best!</b>""".format(date_label=date_label, count=count)
         await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
         for i,q in enumerate(selected):
             source=f"\n\n📚 {q['source']}" if q["source"] else ""
