@@ -120,8 +120,9 @@ def save_state(ids):
 
 def question_material(q,index,count):
     source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
-    option_text="\n".join(f"{label}. {value}" for label,value in zip("ABCD",q["options"]))
-    full=f"🧠 QUESTION {index+1}/{count}\n\n{q['question']}{source}\n\nOPTIONS\n{option_text}"
+    # Keep answer choices exclusively inside Telegram's native quiz poll.
+    # Repeating them in this text message makes the question appear twice.
+    full=f"🧠 QUESTION {index+1}/{count}\n\n{q['question']}{source}"
     return split_telegram_text(full)
 
 def quiz_message_count(selected):
@@ -330,13 +331,18 @@ async def main():
         for offset in range(quizzes_needed):
             selected=choose_questions(all_questions,used_ids,count)
             needed=quiz_message_count(selected)
-            if total_added_messages+needed>available_slots:
-                print(f"Stopping before the next quiz: it needs {needed} messages but only "
-                      f"{available_slots-total_added_messages} safe slots remain.")
+            remaining_slots=available_slots-total_added_messages
+            if needed>queue_limit or needed>remaining_slots:
+                print(f"Skipping this quiz entirely: a complete {count}-question quiz needs "
+                      f"{needed} scheduled messages, but only {remaining_slots} safe slots "
+                      f"remain (queue ceiling {queue_limit}). No part of this quiz was scheduled.")
                 break
             quiz_date=start_date+timedelta(days=offset)
             added,final_slot=await schedule_quiz(
                 client,peer,selected,quiz_date,posted_ids)
+            if added!=needed:
+                raise RuntimeError(f"Quiz message-count mismatch: preflight expected {needed}, "
+                                   f"but scheduler reported {added}.")
             added_quizzes+=1
             total_added_messages+=added
             print(f"Scheduled quiz {added_quizzes} for {quiz_date.isoformat()}: "
