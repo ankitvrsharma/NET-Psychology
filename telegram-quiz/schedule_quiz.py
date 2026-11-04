@@ -23,6 +23,44 @@ def telegram_length(text):
     # Count UTF-16 code units conservatively for Telegram's MTProto limits.
     return len(text.encode("utf-16-le")) // 2
 
+def split_telegram_text(text, limit=3500):
+    """Split long question material into readable Telegram-sized messages."""
+    if telegram_length(text) <= limit:
+        return [text]
+    chunks=[]
+    current=""
+    # Prefer paragraph/sentence boundaries, then split oversized segments by words.
+    segments=[]
+    for paragraph in text.split("\\n"):
+        if telegram_length(paragraph) <= limit:
+            segments.append(paragraph)
+        else:
+            sentence_parts=[]
+            for sentence in paragraph.replace("? ", "?\\n").replace(". ", ".\\n").replace("; ", ";\\n").split("\\n"):
+                if telegram_length(sentence) <= limit:
+                    sentence_parts.append(sentence)
+                else:
+                    words=sentence.split()
+                    piece=""
+                    for word in words:
+                        candidate=(piece+" "+word).strip()
+                        if telegram_length(candidate)>limit and piece:
+                            sentence_parts.append(piece)
+                            piece=word
+                        else:
+                            piece=candidate
+                    if piece: sentence_parts.append(piece)
+            segments.extend(sentence_parts)
+    for segment in segments:
+        candidate=(current+"\\n"+segment).strip()
+        if telegram_length(candidate)>limit and current:
+            chunks.append(current)
+            current=segment
+        else:
+            current=candidate
+    if current: chunks.append(current)
+    return chunks
+
 def load_questions():
     import re
     wb=load_workbook(BOOK,read_only=True,data_only=True)
@@ -81,7 +119,14 @@ async def main():
         selected=random.SystemRandom().sample(unused,count)
     first=datetime.now(IST).replace(hour=hour,minute=minute,second=0,microsecond=0)
     if first<=datetime.now(IST)+timedelta(minutes=10): first+=timedelta(days=1)
-    times=[first+timedelta(minutes=i) for i in range(count+2)]
+    # Build the complete publication sequence dynamically: intro, every
+    # question/option text part, its native quiz poll, then the closing message.
+    next_slot=first
+    def take_slot():
+        nonlocal next_slot
+        slot=next_slot
+        next_slot += timedelta(minutes=1)
+        return slot
     client=TelegramClient(StringSession(session),api_id,api_hash)
     await client.connect()
     try:
@@ -136,35 +181,50 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
 💡 <i>Attempt every question before checking your score.</i>
 ━━━━━━━━━━━━━━━━━━━━
 👇 <b>Your quiz starts below. All the best!</b>""".format(date_label=date_label, count=count)
+        await client.send_message(peer,intro,parse_mode="html",schedule=take_slot())
         for i,q in enumerate(selected):
-            source=f"\n\n📚 {q['source']}" if q["source"] else ""
+            source=f"\\n\\n📚 Source: {q['source']}" if q["source"] else ""
+            option_text="\\n".join(f"{label}. {value}" for label,value in zip("ABCD",q["options"]))
+            full_material=f"🧠 QUESTION {i+1}/{count}\\n\\n{q['question']}{source}\\n\\nOPTIONS\\n{option_text}"
+            chunks=split_telegram_text(full_material)
+            for part_no,chunk in enumerate(chunks,1):
+                part_label=f"\\n\\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
+                await client.send_message(
+                    peer,chunk+part_label,schedule=take_slot())
+                await asyncio.sleep(0.5)
             poll=types.Poll(
                 id=random.getrandbits(63),
                 hash=random.getrandbits(63),
-                question=types.TextWithEntities(text=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}",entities=[]),
-                answers=[types.InputPollAnswer(text=types.TextWithEntities(text=opt,entities=[]),media=None) for opt in q["options"]],
+                question=types.TextWithEntities(
+                    text=f"Q{i+1}/{count} — Select your answer (see question above)",
+                    entities=[]),
+                answers=[
+                    types.InputPollAnswer(
+                        text=types.TextWithEntities(text=label,entities=[]),
+                        media=None)
+                    for label in ["A","B","C","D"]],
                 quiz=True)
-            # Omit optional solution text: Telethon requires solution and
-            # solution_entities to be either both present or both absent.
-            media=types.InputMediaPoll(poll=poll,correct_answers=[q["correct"]],
+            media=types.InputMediaPoll(
+                poll=poll,correct_answers=[q["correct"]],
                 solution=None,solution_entities=None)
             await client(functions.messages.SendMediaRequest(
-                peer=peer,media=media,message="",random_id=random.getrandbits(63),
-                schedule_date=int(times[i+1].timestamp())))
-            posted.append(q["id"]); save_state(posted)
-            await asyncio.sleep(1)
-        # Queue the intro only after all polls have been accepted by Telegram.
-        await client.send_message(peer,intro,parse_mode="html",schedule=times[0])
+                peer=peer,media=media,message="",
+                random_id=random.getrandbits(63),
+                schedule_date=int(take_slot().timestamp())))
+            posted.append(q["id"])
+            save_state(posted)
+            await asyncio.sleep(0.5)
         outro=(
-            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\n"
-            "How many answers did you get right?\n\n"
-            "💬 Share your score in the comments.\n"
-            "🔁 Challenge a friend preparing for NET/JRF.\n"
+            "🏁 <b>YOU'VE COMPLETED TODAY'S QUIZ!</b>\\n"
+            "How many answers did you get right?\\n\\n"
+            "💬 Share your score in the comments.\\n"
+            "🔁 Challenge a friend preparing for NET/JRF.\\n"
             "<i>Consistency turns preparation into progress.</i>"
         )
-        await client.send_message(peer,outro,parse_mode="html",schedule=times[-1])
-        print(f"Added intro, {count} quiz polls and closing message to Telegram's scheduled queue.")
-        print(f"First post: {times[0].isoformat()}")
+        await client.send_message(peer,outro,parse_mode="html",schedule=take_slot())
+        print(f"Added intro, {count} complete questions (with all text parts and answer choices), {count} native quiz polls and closing message to Telegram's scheduled queue.")
+        print(f"First post: {first.isoformat()}")
+        print(f"Last post: {(next_slot-timedelta(minutes=1)).isoformat()}")
     finally:
         await client.disconnect()
 
