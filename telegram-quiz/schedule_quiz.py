@@ -200,7 +200,7 @@ async def schedule_quiz(client,peer,selected,quiz_date,posted_ids):
             id=random.getrandbits(63),
             hash=random.getrandbits(63),
             question=types.TextWithEntities(
-                text=f"Q{i+1}/{count} — Select your answer (see question above)",
+                text=f"QUESTION {i+1}/{count}",
                 entities=[]),
             answers=[types.InputPollAnswer(
                 text=types.TextWithEntities(
