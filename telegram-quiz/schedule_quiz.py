@@ -105,7 +105,7 @@ async def main():
                 quiz=True)
             # Omit optional solution text: Telethon requires solution and
             # solution_entities to be either both present or both absent.
-            media=types.InputMediaPoll(poll=poll,correct_answers=[bytes([q["correct"]])],
+            media=types.InputMediaPoll(poll=poll,correct_answers=[q["correct"]],
                 solution=None,solution_entities=None)
             await client(functions.messages.SendMediaRequest(
                 peer=peer,media=media,message="",random_id=random.getrandbits(63),
