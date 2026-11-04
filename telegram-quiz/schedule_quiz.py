@@ -84,7 +84,7 @@ def load_questions():
         rid="|".join(x for x in (session,paper,qno) if x)
         source=" · ".join(x for x in (session,paper) if x)
         if not rid or not question or not match: continue
-        if any(not x or telegram_length(x)>100 for x in options): continue
+        if any(not x for x in options): continue
         records.append({"id":rid,"question":question,"options":options,"correct":"ABCD".index(match.group(1)),"source":source})
     wb.close()
     if not records: raise RuntimeError(f"No eligible questions in {ws.title!r}; columns={headers!r}")
