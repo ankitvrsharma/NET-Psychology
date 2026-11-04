@@ -93,7 +93,7 @@ async def main():
                 answers=[
                     types.PollAnswer(
                         text=types.TextWithEntities(text=label,entities=[]),
-                        option=bytes([idx]))
+                        option=os.urandom(4))
                     for idx,label in enumerate(
                         ["Option A — incorrect","Option B — correct",
                          "Option C — incorrect","Option D — incorrect"])
@@ -134,7 +134,7 @@ Challenge yourself with <b>{count} exam-focused questions</b>.
                 id=random.getrandbits(63),
                 hash=random.getrandbits(63),
                 question=types.TextWithEntities(text=f"{i+1:02d}/{count:02d}  •  {q['question']}{source}",entities=[]),
-                answers=[types.PollAnswer(text=types.TextWithEntities(text=opt,entities=[]),option=bytes([j])) for j,opt in enumerate(q["options"])],
+                answers=[types.PollAnswer(text=types.TextWithEntities(text=opt,entities=[]),option=os.urandom(4)) for opt in q["options"]],
                 quiz=True)
             # Omit optional solution text: Telethon requires solution and
             # solution_entities to be either both present or both absent.
