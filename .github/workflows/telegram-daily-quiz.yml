@@ -35,8 +35,8 @@ jobs:
           DAILY_QUESTION_COUNT: "5"
           QUIZ_POST_HOUR_IST: "18"
           QUIZ_POST_MINUTE_IST: "0"
-          QUIZ_TEST_MODE: "true"
-        run: python diagnose_telegram_poll.py
+          QUIZ_TEST_MODE: "false"
+        run: python schedule_quiz.py
       - name: Save no-repeat history
         if: always()
         run: |
