@@ -267,26 +267,37 @@ async def main():
                 message_date=getattr(message,"date",None)
                 if message_date:
                     existing_quiz_dates.append(message_date.astimezone(IST).date())
-        # Explicit one-time migration: remove complete quiz batches (intro through outro),
-        # regardless of how Telegram serialises legacy poll objects in its API response.
+        # One-time migration: remove quiz batches by their introduction and schedule window.
+        # Do not depend on Telegram returning the closing-message text verbatim.
         force_refresh=os.getenv("REFRESH_LEGACY_QUIZ_QUEUE","false").lower() in {"1","true","yes"}
         if force_refresh:
             refresh_ids=[]
-            in_quiz=False
             ordered=sorted(queued,key=lambda m:getattr(m,"date",datetime.min.replace(tzinfo=IST)))
-            for message in ordered:
+            for index,message in enumerate(ordered):
                 message_text=getattr(message,"message","") or ""
-                if "DAILY QUIZ CHALLENGE" in message_text:
-                    in_quiz=True
-                if in_quiz and getattr(message,"id",None):
-                    refresh_ids.append(message.id)
-                if in_quiz and "YOU'VE COMPLETED TODAY'S QUIZ" in message_text:
-                    in_quiz=False
-            if in_quiz:
-                raise RuntimeError("Legacy quiz migration found an incomplete batch; refusing to delete a partial queue.")
+                if "DAILY QUIZ CHALLENGE" not in message_text:
+                    continue
+                start=getattr(message,"date",None)
+                if start is None:
+                    continue
+                start=start.astimezone(IST)
+                # Quiz messages are scheduled one minute apart. A 30-minute window
+                # safely covers all five questions, split text parts, polls and outro.
+                for candidate in ordered[index:]:
+                    candidate_date=getattr(candidate,"date",None)
+                    if candidate_date is None:
+                        continue
+                    candidate_date=candidate_date.astimezone(IST)
+                    if candidate is not message and candidate_date-start>timedelta(minutes=30):
+                        break
+                    if getattr(candidate,"id",None):
+                        refresh_ids.append(candidate.id)
+            refresh_ids=list(dict.fromkeys(refresh_ids))
             if refresh_ids:
                 await client(functions.messages.DeleteScheduledMessagesRequest(peer=peer,id=refresh_ids))
-                print(f"Migration removed {len(refresh_ids)} scheduled quiz messages; unrelated scheduled messages were preserved.")
+                print(f"Migration removed {len(refresh_ids)} scheduled quiz messages; unrelated posts outside quiz windows were preserved.")
+            else:
+                print("Migration found no scheduled quiz introductions to replace.")
             history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
             queued=list(history.messages)
             existing_quiz_dates=[]
