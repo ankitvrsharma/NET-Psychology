@@ -5,11 +5,17 @@ on:
   schedule:
     - cron: "5 12 * * *"
   workflow_dispatch:
-  # Run the one-time legacy-poll migration immediately after scheduler code changes.
-  push:
-    paths:
-      - "telegram-quiz/schedule_quiz.py"
-      - ".github/workflows/telegram-daily-quiz.yml"
+    inputs:
+      quiz_test_mode:
+        description: "Send and immediately remove a temporary test poll; do not rebuild the queue."
+        required: false
+        type: boolean
+        default: false
+      refresh_legacy_queue:
+        description: "Remove existing daily quiz batches before rebuilding the queue. Use only for a deliberate one-time recovery."
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -45,8 +51,8 @@ jobs:
           QUIZ_POST_MINUTE_IST: "0"
           TARGET_QUIZZES_AHEAD: "7"
           MAX_SCHEDULED_MESSAGES: "80"
-          QUIZ_TEST_MODE: "false"
-          REFRESH_LEGACY_QUIZ_QUEUE: "true"
+          QUIZ_TEST_MODE: ${{ inputs.quiz_test_mode }}
+          REFRESH_LEGACY_QUIZ_QUEUE: ${{ inputs.refresh_legacy_queue }}
         run: python schedule_quiz.py
       - name: Save no-repeat history
         if: always()

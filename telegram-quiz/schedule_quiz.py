@@ -118,11 +118,11 @@ def read_state():
 def save_state(ids):
     STATE.write_text(json.dumps(ids,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
-TELEGRAM_POLL_QUESTION_LIMIT=300
+TELEGRAM_POLL_QUESTION_LIMIT=255  # MTProto user-account limit; bots may use up to 300.
 TELEGRAM_POLL_OPTION_LIMIT=100
 
 def poll_can_carry_full_content(q):
-    """Telegram polls cap the question at 300 and each answer at 100 UTF-16 units."""
+    """MTProto user polls allow 255 UTF-16 units; each answer allows 100."""
     return (telegram_length(q["question"]) <= TELEGRAM_POLL_QUESTION_LIMIT
             and all(telegram_length(option) <= TELEGRAM_POLL_OPTION_LIMIT
                     for option in q["options"]))
@@ -252,10 +252,10 @@ async def main():
         peer=await client.get_entity(channel)
 
         if test_mode:
+            test_question="TEST ONLY — Which option is the correct answer?"
             test_poll=types.Poll(
                 id=random.getrandbits(63),hash=random.getrandbits(63),
-                question=types.TextWithEntities(
-                    text="TEST ONLY — Which option is the correct answer?",entities=[]),
+                question=types.TextWithEntities(text=test_question,entities=[]),
                 answers=[types.PollAnswer(
                     text=types.TextWithEntities(text=label,entities=[]),option=os.urandom(4))
                     for label in ["Option A — incorrect","Option B — correct",
@@ -264,11 +264,54 @@ async def main():
             test_media=types.InputMediaPoll(poll=test_poll,correct_answers=[1],
                                             solution=None,solution_entities=None)
             test_time=datetime.now(IST)+timedelta(minutes=10)
-            await client(functions.messages.SendMediaRequest(
+            sent=await client(functions.messages.SendMediaRequest(
                 peer=peer,media=test_media,message="",
                 random_id=random.getrandbits(63),
                 schedule_date=int(test_time.timestamp())))
-            print(f"TEST MODE: Telegram accepted one fixed quiz poll for {test_time.isoformat()}.")
+            # Capture the scheduled message ID from Telegram's send response first.
+            # History lookup is an additional verification/fallback, never a prerequisite
+            # for attempting cleanup after a successful send.
+            test_ids=[]
+            for update in getattr(sent,"updates",[]):
+                message=getattr(update,"message",None)
+                poll=getattr(getattr(message,"media",None),"poll",None)
+                question=getattr(poll,"question",None)
+                if getattr(question,"text",None)==test_question and getattr(message,"id",None):
+                    test_ids.append(message.id)
+            history_verified=False
+            history_error=None
+            try:
+                history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
+                for message in history.messages:
+                    poll=getattr(getattr(message,"media",None),"poll",None)
+                    question=getattr(poll,"question",None)
+                    if getattr(question,"text",None)==test_question:
+                        test_ids.append(message.id)
+                        history_verified=True
+            except Exception as exc:
+                history_error=exc
+            test_ids=list(dict.fromkeys(test_ids))
+            cleanup_error=None
+            if test_ids:
+                try:
+                    await client(functions.messages.DeleteScheduledMessagesRequest(peer=peer,id=test_ids))
+                except Exception as exc:
+                    cleanup_error=exc
+            if cleanup_error:
+                raise RuntimeError(
+                    "Telegram accepted the test poll, but deleting the temporary scheduled poll failed. "
+                    "Check the channel's scheduled messages immediately.") from cleanup_error
+            if not test_ids:
+                detail=f" History lookup failed: {history_error}" if history_error else ""
+                raise RuntimeError(
+                    "Telegram accepted the test request, but no scheduled message ID was available "
+                    "to confirm and clean up the test poll." + detail)
+            if not history_verified:
+                detail=f" (history lookup also failed: {history_error})" if history_error else ""
+                raise RuntimeError(
+                    "The temporary test poll was deleted using the send response ID, but history "
+                    "could not independently verify it." + detail)
+            print("TEST MODE: Telegram accepted the quiz poll, verified it in scheduled history, and removed it.")
             return
 
         history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
