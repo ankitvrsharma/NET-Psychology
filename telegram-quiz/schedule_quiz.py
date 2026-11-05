@@ -121,15 +121,19 @@ def save_state(ids):
 TELEGRAM_POLL_QUESTION_LIMIT=255  # MTProto user-account limit; bots may use up to 300.
 TELEGRAM_POLL_OPTION_LIMIT=100
 
-def poll_can_carry_full_content(q):
+def numbered_poll_question(q,index,count):
+    """Give every native poll a consistent visible position in the daily sequence."""
+    return f"QUESTION {index+1}/{count} — {q['question']}"
+
+def poll_can_carry_full_content(q,index,count):
     """MTProto user polls allow 255 UTF-16 units; each answer allows 100."""
-    return (telegram_length(q["question"]) <= TELEGRAM_POLL_QUESTION_LIMIT
+    return (telegram_length(numbered_poll_question(q,index,count)) <= TELEGRAM_POLL_QUESTION_LIMIT
             and all(telegram_length(option) <= TELEGRAM_POLL_OPTION_LIMIT
                     for option in q["options"]))
 
 def question_material(q,index,count):
     """Fallback text contains the complete stem and options when poll limits are exceeded."""
-    if poll_can_carry_full_content(q):
+    if poll_can_carry_full_content(q,index,count):
         return []
     source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
     options="\n".join(f"{label}. {option}" for label,option in zip("ABCD",q["options"]))
@@ -207,8 +211,8 @@ async def schedule_quiz(client,peer,selected,quiz_date,posted_ids):
             suffix=f"\n\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
             await client.send_message(peer,chunk+suffix,schedule=take_slot())
             await asyncio.sleep(0.25)
-        full_content_in_poll=poll_can_carry_full_content(q)
-        poll_question=(q["question"] if full_content_in_poll
+        full_content_in_poll=poll_can_carry_full_content(q,i,count)
+        poll_question=(numbered_poll_question(q,i,count) if full_content_in_poll
                        else f"QUESTION {i+1}/{count} — select the correct option")
         poll_answers=(q["options"] if full_content_in_poll else
                       [f"Option {label}" for label in "ABCD"])
