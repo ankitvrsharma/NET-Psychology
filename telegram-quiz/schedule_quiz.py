@@ -118,17 +118,28 @@ def read_state():
 def save_state(ids):
     STATE.write_text(json.dumps(ids,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
+TELEGRAM_POLL_QUESTION_LIMIT=300
+TELEGRAM_POLL_OPTION_LIMIT=100
+
+def poll_can_carry_full_content(q):
+    """Telegram polls cap the question at 300 and each answer at 100 UTF-16 units."""
+    return (telegram_length(q["question"]) <= TELEGRAM_POLL_QUESTION_LIMIT
+            and all(telegram_length(option) <= TELEGRAM_POLL_OPTION_LIMIT
+                    for option in q["options"]))
+
 def question_material(q,index,count):
+    """Fallback text contains the complete stem and options when poll limits are exceeded."""
+    if poll_can_carry_full_content(q):
+        return []
     source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
-    # Keep answer choices exclusively inside Telegram's native quiz poll.
-    # Repeating them in this text message makes the question appear twice.
-    full=f"🧠 QUESTION {index+1}/{count}\n\n{q['question']}{source}"
+    options="\n".join(f"{label}. {option}" for label,option in zip("ABCD",q["options"]))
+    full=f"🧠 QUESTION {index+1}/{count}\n\n{q['question']}\n\n{options}{source}"
     return split_telegram_text(full)
 
 def quiz_message_count(selected):
     total=2  # introduction and closing message
     for index,q in enumerate(selected):
-        total += len(question_material(q,index,len(selected))) + 1  # text parts + native poll
+        total += len(question_material(q,index,len(selected))) + 1  # fallback text parts + native poll
     return total
 
 def choose_questions(all_questions,used_ids,count):
@@ -196,16 +207,18 @@ async def schedule_quiz(client,peer,selected,quiz_date,posted_ids):
             suffix=f"\n\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
             await client.send_message(peer,chunk+suffix,schedule=take_slot())
             await asyncio.sleep(0.25)
+        full_content_in_poll=poll_can_carry_full_content(q)
+        poll_question=(q["question"] if full_content_in_poll
+                       else f"QUESTION {i+1}/{count} — select the correct option")
+        poll_answers=(q["options"] if full_content_in_poll else
+                      [f"Option {label}" for label in "ABCD"])
         poll=types.Poll(
             id=random.getrandbits(63),
             hash=random.getrandbits(63),
-            question=types.TextWithEntities(
-                text=f"QUESTION {i+1}/{count}",
-                entities=[]),
+            question=types.TextWithEntities(text=poll_question,entities=[]),
             answers=[types.InputPollAnswer(
-                text=types.TextWithEntities(
-                    text=f"{label}. {option}",entities=[]),media=None)
-                for label,option in zip("ABCD",q["options"])],
+                text=types.TextWithEntities(text=option,entities=[]),media=None)
+                for option in poll_answers],
             quiz=True)
         media=types.InputMediaPoll(poll=poll,correct_answers=[q["correct"]],
                                    solution=None,solution_entities=None)
