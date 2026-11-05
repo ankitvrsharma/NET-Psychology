@@ -345,7 +345,11 @@ async def main():
                 is_quiz_outro="YOU'VE COMPLETED TODAY'S QUIZ" in message_text
                 is_fallback_stem=message_text.startswith("🧠 QUESTION ")
                 is_fallback_part=bool(re.search(r"\(Part \d+/\d+\)$",message_text))
-                is_known_question_poll=poll_question.strip() in known_question_texts
+                unnumbered_poll_question=re.sub(
+                    r"^QUESTION \d+/\d+ — ", "", poll_question.strip())
+                is_known_question_poll=(
+                    poll_question.strip() in known_question_texts
+                    or unnumbered_poll_question in known_question_texts)
                 is_compact_fallback_poll=bool(re.fullmatch(
                     r"QUESTION \d+/\d+ — select the correct option",poll_question.strip()))
                 if (is_quiz_intro or is_quiz_outro or is_fallback_stem or is_fallback_part
