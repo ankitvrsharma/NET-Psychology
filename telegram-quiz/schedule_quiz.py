@@ -131,9 +131,9 @@ def question_material(q,index,count):
     """Fallback text contains the complete stem and options when poll limits are exceeded."""
     if poll_can_carry_full_content(q):
         return []
-    source=f"\\n\\n📚 Source: {q['source']}" if q["source"] else ""
-    options="\\n".join(f"{label}. {option}" for label,option in zip("ABCD",q["options"]))
-    full=f"🧠 QUESTION {index+1}/{count}\\n\\n{q['question']}\\n\\n{options}{source}"
+    source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
+    options="\n".join(f"{label}. {option}" for label,option in zip("ABCD",q["options"]))
+    full=f"🧠 QUESTION {index+1}/{count}\n\n{q['question']}\n\n{options}{source}"
     return split_telegram_text(full)
 
 def quiz_message_count(selected):
