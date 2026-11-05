@@ -121,15 +121,19 @@ def save_state(ids):
 TELEGRAM_POLL_QUESTION_LIMIT=255  # MTProto user-account limit; bots may use up to 300.
 TELEGRAM_POLL_OPTION_LIMIT=100
 
-def poll_can_carry_full_content(q):
+def numbered_poll_question(q,index,count):
+    """Give every native poll a consistent visible position in the daily sequence."""
+    return f"QUESTION {index+1}/{count} — {q['question']}"
+
+def poll_can_carry_full_content(q,index,count):
     """MTProto user polls allow 255 UTF-16 units; each answer allows 100."""
-    return (telegram_length(q["question"]) <= TELEGRAM_POLL_QUESTION_LIMIT
+    return (telegram_length(numbered_poll_question(q,index,count)) <= TELEGRAM_POLL_QUESTION_LIMIT
             and all(telegram_length(option) <= TELEGRAM_POLL_OPTION_LIMIT
                     for option in q["options"]))
 
 def question_material(q,index,count):
     """Fallback text contains the complete stem and options when poll limits are exceeded."""
-    if poll_can_carry_full_content(q):
+    if poll_can_carry_full_content(q,index,count):
         return []
     source=f"\n\n📚 Source: {q['source']}" if q["source"] else ""
     options="\n".join(f"{label}. {option}" for label,option in zip("ABCD",q["options"]))
@@ -207,8 +211,8 @@ async def schedule_quiz(client,peer,selected,quiz_date,posted_ids):
             suffix=f"\n\n(Part {part_no}/{len(chunks)})" if len(chunks)>1 else ""
             await client.send_message(peer,chunk+suffix,schedule=take_slot())
             await asyncio.sleep(0.25)
-        full_content_in_poll=poll_can_carry_full_content(q)
-        poll_question=(q["question"] if full_content_in_poll
+        full_content_in_poll=poll_can_carry_full_content(q,i,count)
+        poll_question=(numbered_poll_question(q,i,count) if full_content_in_poll
                        else f"QUESTION {i+1}/{count} — select the correct option")
         poll_answers=(q["options"] if full_content_in_poll else
                       [f"Option {label}" for label in "ABCD"])
@@ -324,37 +328,40 @@ async def main():
                 message_date=getattr(message,"date",None)
                 if message_date:
                     existing_quiz_dates.append(message_date.astimezone(IST).date())
-        # One-time migration: remove quiz batches by their introduction and schedule window.
-        # Do not depend on Telegram returning the closing-message text verbatim.
+        # One-time migration: remove complete quiz batches AND orphaned quiz fragments.
+        # Failed historical runs may have left question polls before an intro or after an outro.
         force_refresh=os.getenv("REFRESH_LEGACY_QUIZ_QUEUE","false").lower() in {"1","true","yes"}
         if force_refresh:
+            all_questions=load_questions()
+            known_question_texts={q["question"].strip() for q in all_questions}
             refresh_ids=[]
             ordered=sorted(queued,key=lambda m:getattr(m,"date",datetime.min.replace(tzinfo=IST)))
-            for index,message in enumerate(ordered):
-                message_text=getattr(message,"message","") or ""
-                if "DAILY QUIZ CHALLENGE" not in message_text:
-                    continue
-                start=getattr(message,"date",None)
-                if start is None:
-                    continue
-                start=start.astimezone(IST)
-                # Quiz messages are scheduled one minute apart. A 30-minute window
-                # safely covers all five questions, split text parts, polls and outro.
-                for candidate in ordered[index:]:
-                    candidate_date=getattr(candidate,"date",None)
-                    if candidate_date is None:
-                        continue
-                    candidate_date=candidate_date.astimezone(IST)
-                    if candidate is not message and candidate_date-start>timedelta(minutes=30):
-                        break
-                    if getattr(candidate,"id",None):
-                        refresh_ids.append(candidate.id)
+            for message in ordered:
+                message_text=(getattr(message,"message","") or "").strip()
+                media=getattr(message,"media",None)
+                poll=getattr(media,"poll",None)
+                poll_question=getattr(getattr(poll,"question",None),"text","") or ""
+                is_quiz_intro="DAILY QUIZ CHALLENGE" in message_text
+                is_quiz_outro="YOU'VE COMPLETED TODAY'S QUIZ" in message_text
+                is_fallback_stem=message_text.startswith("🧠 QUESTION ")
+                is_fallback_part=bool(re.search(r"\(Part \d+/\d+\)$",message_text))
+                unnumbered_poll_question=re.sub(
+                    r"^QUESTION \d+/\d+ — ", "", poll_question.strip())
+                is_known_question_poll=(
+                    poll_question.strip() in known_question_texts
+                    or unnumbered_poll_question in known_question_texts)
+                is_compact_fallback_poll=bool(re.fullmatch(
+                    r"QUESTION \d+/\d+ — select the correct option",poll_question.strip()))
+                if (is_quiz_intro or is_quiz_outro or is_fallback_stem or is_fallback_part
+                        or is_known_question_poll or is_compact_fallback_poll):
+                    if getattr(message,"id",None):
+                        refresh_ids.append(message.id)
             refresh_ids=list(dict.fromkeys(refresh_ids))
             if refresh_ids:
                 await client(functions.messages.DeleteScheduledMessagesRequest(peer=peer,id=refresh_ids))
-                print(f"Migration removed {len(refresh_ids)} scheduled quiz messages; unrelated posts outside quiz windows were preserved.")
+                print(f"Migration removed {len(refresh_ids)} recognised quiz messages, including orphaned questions and polls; unrelated scheduled posts were preserved.")
             else:
-                print("Migration found no scheduled quiz introductions to replace.")
+                print("Migration found no recognised quiz messages to replace.")
             history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
             queued=list(history.messages)
             existing_quiz_dates=[]
