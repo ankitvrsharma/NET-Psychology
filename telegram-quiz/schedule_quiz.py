@@ -264,22 +264,54 @@ async def main():
             test_media=types.InputMediaPoll(poll=test_poll,correct_answers=[1],
                                             solution=None,solution_entities=None)
             test_time=datetime.now(IST)+timedelta(minutes=10)
-            await client(functions.messages.SendMediaRequest(
+            sent=await client(functions.messages.SendMediaRequest(
                 peer=peer,media=test_media,message="",
                 random_id=random.getrandbits(63),
                 schedule_date=int(test_time.timestamp())))
-            # Verify acceptance, then remove the temporary poll so it never posts publicly.
-            history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
+            # Capture the scheduled message ID from Telegram's send response first.
+            # History lookup is an additional verification/fallback, never a prerequisite
+            # for attempting cleanup after a successful send.
             test_ids=[]
-            for message in history.messages:
+            for update in getattr(sent,"updates",[]):
+                message=getattr(update,"message",None)
                 poll=getattr(getattr(message,"media",None),"poll",None)
                 question=getattr(poll,"question",None)
-                if getattr(question,"text",None)==test_question:
+                if getattr(question,"text",None)==test_question and getattr(message,"id",None):
                     test_ids.append(message.id)
+            history_verified=False
+            history_error=None
+            try:
+                history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
+                for message in history.messages:
+                    poll=getattr(getattr(message,"media",None),"poll",None)
+                    question=getattr(poll,"question",None)
+                    if getattr(question,"text",None)==test_question:
+                        test_ids.append(message.id)
+                        history_verified=True
+            except Exception as exc:
+                history_error=exc
+            test_ids=list(dict.fromkeys(test_ids))
+            cleanup_error=None
+            if test_ids:
+                try:
+                    await client(functions.messages.DeleteScheduledMessagesRequest(peer=peer,id=test_ids))
+                except Exception as exc:
+                    cleanup_error=exc
+            if cleanup_error:
+                raise RuntimeError(
+                    "Telegram accepted the test poll, but deleting the temporary scheduled poll failed. "
+                    "Check the channel's scheduled messages immediately.") from cleanup_error
             if not test_ids:
-                raise RuntimeError("Telegram accepted the test request but the scheduled test poll could not be found for cleanup.")
-            await client(functions.messages.DeleteScheduledMessagesRequest(peer=peer,id=test_ids))
-            print("TEST MODE: Telegram accepted the quiz poll and the temporary scheduled test message was removed.")
+                detail=f" History lookup failed: {history_error}" if history_error else ""
+                raise RuntimeError(
+                    "Telegram accepted the test request, but no scheduled message ID was available "
+                    "to confirm and clean up the test poll." + detail)
+            if not history_verified:
+                detail=f" (history lookup also failed: {history_error})" if history_error else ""
+                raise RuntimeError(
+                    "The temporary test poll was deleted using the send response ID, but history "
+                    "could not independently verify it." + detail)
+            print("TEST MODE: Telegram accepted the quiz poll, verified it in scheduled history, and removed it.")
             return
 
         history=await client(functions.messages.GetScheduledHistoryRequest(peer=peer,hash=0))
