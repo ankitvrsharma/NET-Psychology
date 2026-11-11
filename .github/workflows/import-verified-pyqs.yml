@@ -1,0 +1,60 @@
+name: Import authoritative verified PYQs into website pool
+
+on:
+  push:
+    branches: [content/import-verified-pyq-inventory]
+    paths:
+      - .github/workflows/import-verified-pyqs.yml
+      - telegram-quiz/data/question_bank.xlsx
+      - scripts/import_verified_pyqs.py
+      - data/syllabus-index.json
+      - data/mcq_mapping.json
+      - content/questions/questions.json
+  pull_request:
+    branches: [main]
+    paths:
+      - telegram-quiz/data/question_bank.xlsx
+      - scripts/import_verified_pyqs.py
+      - data/syllabus-index.json
+      - data/mcq_mapping.json
+      - content/questions/questions.json
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  import-verified-pyqs:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install workbook reader
+        run: python -m pip install openpyxl==3.1.5
+      - name: Import workbook and merge existing website pool
+        run: python scripts/import_verified_pyqs.py
+      - name: Validate generated question pool
+        run: python scripts/validate_content.py
+      - name: Commit generated website content
+        env:
+          TARGET_BRANCH: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/questions/questions.json data/pyq-import-audit.json
+          if git diff --cached --quiet; then
+            echo "Generated question pool is already up to date."
+          else
+            git commit -m "Import verified PYQs into website question pool"
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi
