@@ -1,0 +1,20 @@
+{
+  "source": "telegram-quiz/data/question_bank.xlsx",
+  "source_sheet": "Question Bank",
+  "source_rows_seen": 3100,
+  "imported_pyq_count": 3076,
+  "unresolved_answer_or_structure_count": 24,
+  "mapped_count": 1067,
+  "unmapped_count": 2009,
+  "mapping_methods": {
+    "needs-manual-mapping": 1960,
+    "conservative-title-match": 848,
+    "curated-topic-map": 147,
+    "unmapped": 49,
+    "curated-question-override": 72
+  },
+  "existing_practice_mcq_count_preserved": 0,
+  "preexisting_pyq_count": 0,
+  "duplicate_or_conflict_ids": [],
+  "policy": "Workbook is the authoritative PYQ inventory. Paper II uses legacy IDs; Paper III has paper-qualified IDs to prevent collisions. Existing website explanations and canonical mappings are retained where available. Unresolved answer keys remain review-only."
+}
