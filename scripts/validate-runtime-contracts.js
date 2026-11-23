@@ -71,7 +71,7 @@ assert.match(serviceWorker, /const CACHE='netpsych-shell-v1\.11\.20';/, 'The she
 assert.match(serviceWorker, /['"]\.\/learner\.html['"]/, 'The learner dashboard must be included in the offline shell cache.');
 assert.match(runtime, /const dueCount=dueItems\(\)\.length;/, 'The homepage daily actions must calculate the current due-revision count.');
 assert.match(runtime, /daily-focus-revision/, 'The homepage must expose a dedicated revision action.');
-assert.match(runtime, /Skip setup and start learning/, 'Learners must be able to bypass onboarding and enter the learning dashboard.');
+assert.match(runtime, /Start with the next concept|START LEARNING/, 'The start page must take learners directly to the learning dashboard without profiling.');
 assert.match(runtime, /masteryAmongLearned/, 'Progress must distinguish mastery among learned concepts from syllabus-wide mastery coverage.');
 assert.match(runtime, /contentPending/, 'Progress must disclose syllabus concepts without released learning content.');
 assert.match(runtime, /placeholderPattern\.test\(text\)\)return false/, 'Generic scaffold text must not be counted as learner-ready lesson content.');
