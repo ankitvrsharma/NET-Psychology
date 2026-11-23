@@ -2203,3 +2203,20 @@ body[data-page="home"] .daily-focus-card:focus-visible,
   body[data-page="home"] .daily-focus-actions{grid-template-columns:1fr}
   body[data-page="home"] .daily-focus-card{min-height:58px}
 }
+
+
+/* Micro-topic support cards: progressive learning support without competing with the main explanation. */
+.micro-support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:30px 0 22px;align-items:start}
+.micro-support-card{min-width:0;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.micro-support-card h2{margin:5px 0 12px;color:var(--navy);font-size:20px;line-height:1.25}
+.micro-support-copy,.micro-support-card>p,.micro-support-details .micro-deep-dive-copy{color:var(--ink);font-size:14px}
+.micro-support-copy ul{padding-left:20px;margin:8px 0}
+.micro-support-copy li{margin:0 0 7px}
+.micro-support-hint,.micro-support-empty{color:var(--muted)!important;font-size:13px!important}
+.micro-support-card .btn{margin-top:8px}
+.micro-support-details{border-top:1px solid var(--line);padding-top:10px}
+.micro-support-details summary{cursor:pointer;color:var(--blue);font-weight:750;font-size:14px}
+.micro-support-details[open] summary{margin-bottom:12px}
+.micro-support-details .micro-deep-dive-copy h2,.micro-support-details .micro-deep-dive-copy h3{font-size:16px}
+@media(max-width:900px){.micro-support-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.micro-support-card:last-child{grid-column:1/-1}}
+@media(max-width:620px){.micro-support-grid{grid-template-columns:1fr;gap:10px;margin-top:22px}.micro-support-card:last-child{grid-column:auto}.micro-support-card{padding:16px}}
