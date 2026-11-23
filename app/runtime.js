@@ -243,7 +243,6 @@ const loadStudyData=async()=>{
   }
   if(page==='daily-practice')await prepareDailyPracticeQuestions();
   if(page==='practice-session'){if(Q.get('previewQuestion')){await loadPool('questions');const qpool=CONTENT_POOLS.questions;PRACTICE_QUESTIONS=Array.isArray(qpool)?qpool:[...(Array.isArray(qpool?.pyq)?qpool.pyq:[]),...(Array.isArray(qpool?.practice)?qpool.practice:[])];}else await preparePracticeSessionQuestions();}
-  if(page==='deep-dive')await loadPool('deepDive');
   if(page==='microtopic'){
     try{VERIFICATION_STATE=await fetchJSON('data/verification-state.json','Verification state');}catch(e){VERIFICATION_STATE={schema_version:1,items:{},updated_at:''};}
   }
