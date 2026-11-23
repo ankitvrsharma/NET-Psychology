@@ -220,11 +220,11 @@ function progressivePrefetch(paths){
 function scheduleProgressivePrefetch(page){
   const next={
     home:['data/syllabus-index.json','content/questions/questions.json'],
-    daily3:['data/content-indexes/active-recall.json','data/content-indexes/questions.json'],
-    'active-recall':['data/content-indexes/microtopics.json'],
-    revision:['data/content-indexes/microtopics.json'],
-    microtopic:['data/content-indexes/activeRecall.json'],
-    'deep-dive':['data/content-indexes/activeRecall.json']
+    daily3:['content/active-recall/active_recall.json','content/questions/questions.json'],
+    'active-recall':['content/microtopics/micro_topics.json'],
+    revision:['content/microtopics/micro_topics.json'],
+    microtopic:['content/active-recall/active_recall.json'],
+    'deep-dive':['content/active-recall/active_recall.json']
   };
   progressivePrefetch(next[page]||[]);
 }
@@ -233,10 +233,8 @@ const loadStudyData=async()=>{
   D=await fetchJSON('data/syllabus-index.json','Syllabus index');
   if(!D||!Array.isArray(D.units))throw new Error('Syllabus index has an invalid structure');
   const microPages=new Set(['learn','learner','daily3','unit','topic','microtopic','deep-dive','active-recall','revision','progress']);
-  if(microPages.has(page)){
-    await loadPool('microtopics');
-    if(page!=='progress')await loadPool('deepDive');
-  }
+  if(microPages.has(page))await loadPool('microtopics');
+  if(page==='microtopic'||page==='deep-dive')await loadPool('deepDive');
   if(page==='home')await loadPool('homeLearning');
   if(page==='practice'){
     await loadPool('questions');
@@ -323,33 +321,9 @@ function startPage(){
   document.title='Start Learning — UGC NET Psychology';
   const root=$('#startPage');
   if(!root)return;
-  let existing=null;
-  try{existing=JSON.parse(localStorage.getItem('netPsychStartProfile')||'null')}catch{existing=null}
-  if(existing&&existing.experience){
-    const target='learner.html';
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING PROFILE</div><h1>Welcome back.</h1><p>Your starting point is saved. You can continue from where you left off or change your learning profile.</p><div class="start-profile-actions"><a class="btn primary" href="'+target+'">CONTINUE MY LEARNING →</a><button class="btn" type="button" id="editStartProfile">EDIT PROFILE</button></div></section>';
-    $('#editStartProfile').onclick=()=>{localStorage.removeItem('netPsychStartProfile');startPage()};
-    return;
-  }
-  root.innerHTML="<section class=\"start-hero\"><div class=\"eyebrow\">OPTIONAL SETUP</div><h1>Make this learning path yours.</h1><p>Answer a few questions to save a starting profile, or skip setup and begin learning immediately.</p></section>\n  <form class=\"start-form\" id=\"startForm\">\n    <div class=\"start-progress\"><span>1 of 4</span><i><b style=\"width:25%\"></b></i></div>\n    <div class=\"start-step active\" data-step=\"1\"><fieldset><legend>1. Where are you starting from?</legend>\n      <label><input type=\"radio\" name=\"experience\" value=\"new-net\" required><span>I’m new to UGC NET Psychology</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"psych-new-net\"><span>I know Psychology but I’m new to NET preparation</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"prepared\"><span>I’ve prepared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"appeared\"><span>I’ve appeared for NET before</span></label>\n      <label><input type=\"radio\" name=\"experience\" value=\"revision\"><span>I mainly need revision and practice</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"2\"><fieldset><legend>2. How confident do you currently feel?</legend>\n      <label><input type=\"radio\" name=\"confidence\" value=\"1\" required><span>I struggle with most concepts</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"2\"><span>I know some basics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"3\"><span>I understand many topics</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"4\"><span>I’m fairly confident</span></label>\n      <label><input type=\"radio\" name=\"confidence\" value=\"5\"><span>I can explain and apply most concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"3\"><fieldset><legend>3. What are your biggest challenges?</legend><p class=\"start-help\">Choose up to 2.</p>\n      <label><input type=\"checkbox\" name=\"challenge\" value=\"0\"><span>Understanding difficult concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"1\"><span>Remembering what I study</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"2\"><span>Confusing similar theories or concepts</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"3\"><span>Applying concepts to situations</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"4\"><span>Solving MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"5\"><span>Revising consistently</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"6\"><span>Knowing what to study next</span></label><label><input type=\"checkbox\" name=\"challenge\" value=\"7\"><span>Managing the large syllabus</span></label>\n    </fieldset></div>\n    <div class=\"start-step\" data-step=\"4\"><fieldset><legend>4. What helps you learn best?</legend><p class=\"start-help\">Choose up to 3. These are preferences, not fixed learning styles.</p>\n      <label><input type=\"checkbox\" name=\"preference\" value=\"0\"><span>Clear explanations</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"1\"><span>Examples and applications</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"2\"><span>Recall questions</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"3\"><span>MCQs and PYQs</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"4\"><span>Visual summaries</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"5\"><span>Short revision notes</span></label><label><input type=\"checkbox\" name=\"preference\" value=\"6\"><span>Comparisons between similar concepts</span></label>\n    </fieldset></div>\n    <div class=\"start-actions\"><button class=\"btn\" type=\"button\" id=\"startBack\" hidden>← Back</button><button class=\"btn primary\" type=\"button\" id=\"startNext\">Next →</button></div>\n    <p class=\"start-skip-wrap\"><a class=\"start-skip\" href=\"learner.html\">Skip setup and start learning →</a></p>\n";
-  const form=$('#startForm'),steps=Array.from(form.querySelectorAll('.start-step')),progress=form.querySelector('.start-progress'),next=$('#startNext'),back=$('#startBack'); let current=0;
-  const update=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));progress.querySelector('span').textContent=(current+1)+' of '+steps.length;progress.querySelector('b').style.width=((current+1)/steps.length*100)+'%';back.hidden=current===0;next.textContent=current===steps.length-1?'Create my learning profile →':'Next →';};
-  form.addEventListener('change',e=>{
-    if(e.target.name==='challenge' && form.querySelectorAll('input[name="challenge"]:checked').length>2)e.target.checked=false;
-    if(e.target.name==='preference' && form.querySelectorAll('input[name="preference"]:checked').length>3)e.target.checked=false;
-  });
-  const valid=()=>{if(current===0)return !!form.querySelector('input[name="experience"]:checked');if(current===1)return !!form.querySelector('input[name="confidence"]:checked');if(current===2)return form.querySelectorAll('input[name="challenge"]:checked').length>0;return form.querySelectorAll('input[name="preference"]:checked').length>0;};
-  next.addEventListener('click',()=>{
-    if(!valid()){alert(current===2?'Choose at least one challenge.':current===3?'Choose at least one preference.':'Please select an answer to continue.');return;}
-    if(current<steps.length-1){current++;update();window.scrollTo({top:0,behavior:'smooth'});return;}
-    const data={experience:form.querySelector('[name="experience"]:checked').value,confidence:form.querySelector('[name="confidence"]:checked').value,challenges:Array.from(form.querySelectorAll('[name="challenge"]:checked')).map(x=>x.value),learningPreferences:Array.from(form.querySelectorAll('[name="preference"]:checked')).map(x=>x.value),created:new Date().toISOString(),updated:new Date().toISOString()};
-    localStorage.setItem('netPsychStartProfile',JSON.stringify(data));
-    const startTarget='learner.html';
-    root.innerHTML='<section class="start-profile card"><div class="eyebrow">YOUR LEARNING STARTS HERE</div><h1>Your learning setup is ready.</h1><p>Your starting point is saved. From here, you can learn concepts, check your recall, revise at the right time, and practice what you know.</p><div class="start-profile-actions"><a class="btn primary" href="'+startTarget+'">START LEARNING →</a></div></section>';
-  });
-  back.addEventListener('click',()=>{if(current>0){current--;update();window.scrollTo({top:0,behavior:'smooth'});}});
-  update();
-}function learnPage(){
+  root.innerHTML='<section class="start-hero"><div class="eyebrow">UGC NET PSYCHOLOGY</div><h1>Start with the next concept.</h1><p>Follow the syllabus, understand one micro-topic at a time, retrieve what you learn, and return for scheduled revision and practice.</p><a class="btn primary" href="learner.html">START LEARNING →</a></section>';
+}
+function learnPage(){
   document.title='Learn — UGC NET Psychology';
   const resume=all().filter(x=>{const p=getP(x.k);return p.status&&p.status!=='NEW'}).sort((a,b)=>new Date(getP(b.k).lastRevision||0)-new Date(getP(a.k).lastRevision||0))[0];
   const countNode=document.querySelector('#learnMicroCount');if(countNode)countNode.textContent=all().length+' micro-topics';
@@ -846,15 +820,27 @@ function micro(){
   const items=all(),idx=items.findIndex(x=>x.k===k),next=items[idx+1];
   const explanation=String(m.expert_explanation||m.content_notes||m.study_notes||m.detailed_explanation||m.deep_learning||m.deep||m.title).trim();
   const nextHref=next?microtopicHref(next.u,next.t,next.m):'learn.html';
-  const deepHref='deep-dive.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
-  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id)+(Q.get('from')==='revision'?'&from=revision':'');
+  const deepEntry=CONTENT_POOLS.deepDive?.[k]||{};
+  const detailed=String(deepEntry.detailed_explanation||deepEntry.deep_learning||deepEntry.deep||m.detailed_explanation||'').trim();
+  const shortNotes=Array.isArray(m.key_points)&&m.key_points.length
+    ? '<ul>'+m.key_points.map(item=>'<li>'+esc(item)+'</li>').join('')+'</ul>'
+    : renderLearningRichText(String(m.content_notes||m.exam_takeaway||m.memory_hook||'Short notes are not available for this micro-topic yet.'));
+  const understandPrompt=String(m.application_question||m.recall_cue||m.exam_takeaway||'Explain the central idea in your own words before checking your recall.').trim();
+  const deepContent=detailed
+    ? '<details class="micro-support-details"><summary>Open detailed explanation</summary><div class="micro-deep-dive-copy">'+renderLearningRichText(detailed)+'</div></details>'
+    : '<p class="micro-support-empty">A separate detailed explanation has not been published for this micro-topic yet.</p>';
+  const recallHref='active-recall.html?unit='+encodeURIComponent(u.id)+'&topic='+encodeURIComponent(t.id)+'&micro='+encodeURIComponent(m.id);
   if(!previewMode)setP(k,{started:true,status:p.status==='NEW'?'LEARNING':p.status,last:new Date().toISOString()});
   root.innerHTML='<section class="micro-learn-page">'+
     '<div class="micro-breadcrumb"><a href="learn.html">Learn</a><span>›</span><span>'+esc(t.title)+'</span></div>'+
     '<header class="micro-learn-header"><div class="eyebrow">MICRO-TOPIC · UNIT '+esc(u.id)+' · TOPIC '+esc(t.id)+'</div><h1>'+esc(m.title)+'</h1><p class="micro-parent">'+esc(t.title)+' · '+esc(u.title)+'</p></header>'+
     '<article class="micro-deep-dive-content"><div class="micro-deep-dive-copy">'+renderLearningRichText(explanation)+'</div></article>'+
+    '<section class="micro-support-grid" aria-label="Micro-topic learning support">'+
+      '<article class="micro-support-card"><div class="eyebrow">01 · CONSOLIDATE</div><h2>Short Notes</h2><div class="micro-support-copy">'+shortNotes+'</div></article>'+
+      '<article class="micro-support-card"><div class="eyebrow">02 · SELF-CHECK</div><h2>I Understand</h2><div class="micro-support-copy">'+renderLearningRichText(understandPrompt)+'</div><p class="micro-support-hint">Try explaining the idea without looking at the explanation.</p><a class="btn primary" href="'+recallHref+'">CHECK MY RECALL →</a></article>'+
+      '<article class="micro-support-card"><div class="eyebrow">03 · GO DEEPER</div><h2>Detailed Explanation</h2>'+deepContent+'</article>'+
+    '</section>'+
     '<section class="micro-learning-next-links" aria-label="Micro-topic next steps">'+
-      '<a class="micro-learning-next-link" href="'+deepHref+'"><span>DEEP DIVE</span><b>→</b></a>'+
       '<a class="micro-learning-next-link primary" href="'+recallHref+'"><span>CHECK ACTIVE RECALL</span><b>→</b></a>'+
       '<a class="micro-learning-next-link" href="'+nextHref+'"><span>NEXT MICRO-TOPIC</span><b>→</b></a>'+
     '</section>'+
