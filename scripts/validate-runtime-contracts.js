@@ -76,13 +76,13 @@ assert.match(runtime, /masteryAmongLearned/, 'Progress must distinguish mastery 
 assert.match(runtime, /contentPending/, 'Progress must disclose syllabus concepts without released learning content.');
 assert.match(runtime, /placeholderPattern\.test\(text\)\)return false/, 'Generic scaffold text must not be counted as learner-ready lesson content.');
 assert.match(runtime, /'revision','progress'\]\)/, 'The progress page must load the micro-topic pool before calculating content availability.');
-assert.match(runtime, /content\\/active-recall\\/active_recall\\.json/, 'Progressive prefetch must use the existing active-recall pool.');
-assert.doesNotMatch(runtime, /data\\/content-indexes\\//, 'Progressive prefetch must not request the removed content-indexes directory.');
+assert.match(runtime, /content\/active-recall\/active_recall\.json/, 'Progressive prefetch must use the existing active-recall pool.');
+assert.doesNotMatch(runtime, /data\/content-indexes\//, 'Progressive prefetch must not request the removed content-indexes directory.');
 assert.match(runtime, /micro-support-grid/, 'Micro-topic pages must provide the three learning-support cards.');
 assert.match(runtime, /Short Notes/, 'Micro-topic pages must expose concise short notes.');
 assert.match(runtime, /I Understand/, 'Micro-topic pages must provide an understanding self-check.');
 assert.match(runtime, /Detailed Explanation/, 'Micro-topic pages must expose progressive detailed explanation.');
-assert.match(runtime, /if\\(page==='microtopic'\\|\\|page==='deep-dive'\\)await loadPool\\('deepDive'\\)/, 'Deep Dive content must load only on pages that display it.');
+assert.match(runtime, /if\(page==='microtopic'\|\|page==='deep-dive'\)await loadPool\('deepDive'\)/, 'Deep Dive content must load only on pages that display it.');
 assert.doesNotMatch(runtime, /start-progress|start-step|start-profile/, 'The unused learner profiling questionnaire must not add a setup step.');
 assert.match(runtime, /s\.coverage>=s\.mastery\+25/, 'Progress interpretation must compare coverage and mastery using the same syllabus-wide denominator.');
 const syllabus = JSON.parse(fs.readFileSync(path.join(root, 'data/syllabus-index.json'), 'utf8'));
